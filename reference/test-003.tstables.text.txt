@@ -1,0 +1,16 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 11, sections: 1, total size: 16 bytes
+  - Section 0:
+    TS id:     930 (0x03A2)
+    Program:   800 (0x0320)  PID:   33 (0x0021)
+
+* PMT, TID 2 (0x02), PID 33 (0x0021)
+  Version: 11, sections: 1, total size: 27 bytes
+  - Section 0:
+    Program: 800 (0x0320), PCR PID: none
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 64 (0x0040)
+    - Descriptor 0: Extension Descriptor (0x7F, 127), 4 bytes
+      Extended descriptor: T2MI (0x11, 17)
+      T2-MI stream id: 0, T2-MI stream count: 1, PCR/ISCR common clock: no
+

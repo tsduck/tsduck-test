@@ -1,0 +1,11 @@
+title:test-003 normalized
+ts:id=930:services=1:clearservices=1:scrambledservices=0:pids=4:clearpids=4:scrambledpids=0:pcrpids=0:unreferencedpids=0:packets=111551:invalidsyncs=0:transporterrors=0:suspectignored=0:bytes=20971588:bitrate=0:bitrate204=0:userbitrate=0:userbitrate204=0:pcrbitrate=0:pcrbitrate204=0:duration=0:
+global:pids=2:clearpids=2:scrambledpids=0:packets=15507:bitrate=0:bitrate204=0:access=clear:pidlist=0,8191:
+unreferenced:pids=0:clearpids=0:scrambledpids=0:packets=0:bitrate=0:bitrate204=0:access=clear:pidlist=:
+service:id=800:tsid=930:orignetwid=0:access=clear:pids=2:clearpids=2:scrambledpids=0:packets=96044:bitrate=0:bitrate204=0:servtype=0:t2mi:pmtpid=33:pidlist=33,64:provider=(unknown):name=(T2-MI)
+pid:pid=0:access=clear:servcount=0:global:bitrate=0:bitrate204=0:packets=205:clear=205:scrambled=0:invalidscrambling=0:af=0:pcr=0:discontinuities=0:duplicated=0:unitstart=205:description=PAT
+pid:pid=33:pmt:access=clear:servcount=1:servlist=800:bitrate=0:bitrate204=0:packets=205:clear=205:scrambled=0:invalidscrambling=0:af=0:pcr=0:discontinuities=0:duplicated=0:unitstart=205:description=PMT
+pid:pid=64:access=clear:streamid=224:servcount=1:servlist=800:t2mi:plp=102:bitrate=0:bitrate204=0:packets=95839:clear=95839:scrambled=0:invalidscrambling=0:af=181:pcr=0:discontinuities=0:duplicated=0:pes=3811:invalidpesprefix=3810:description=T2-MI (PLP: 0x66 (102))
+pid:pid=8191:access=clear:servcount=0:global:bitrate=0:bitrate204=0:packets=15302:clear=15302:scrambled=0:invalidscrambling=0:af=0:pcr=0:discontinuities=0:duplicated=0:unitstart=0:description=Stuffing
+table:pid=0:tid=0:tidext=930:tables=205:sections=205:repetitionpkt=543:minrepetitionpkt=542:maxrepetitionpkt=544:firstversion=11:lastversion=11:versions=11:
+table:pid=33:tid=2:tidext=800:tables=205:sections=205:repetitionpkt=543:minrepetitionpkt=542:maxrepetitionpkt=544:firstversion=11:lastversion=11:versions=11:
