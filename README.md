@@ -16,18 +16,6 @@ Similarly, the tests for TSDuck are divided in two parts.
   would clutter the tsduck repository. The repository `tsduck-test` contains those tests and
   the relevant scripts and data files.
 
-### Large files
-
-This repository contains large files, typically transport stream files.
-
-Initially, these files were not stored inside the regular GitHub repository.
-Instead, they used the "[Git Large File Storage](https://git-lfs.github.com)" (LFS) feature of GitHub.
-However, using LFS on GitHub happended to be a pain, as experienced by others and explained in
-[this article](https://medium.com/@megastep/github-s-large-file-storage-is-no-panacea-for-open-source-quite-the-opposite-12c0e16a9a91).
-
-As a consequence, the transport stream files were re-integrated into the Git
-repository. But we know limit their size to 20 MB.
-
 ### Structure of test suite
 
 In short, execute the script `run-all-tests.sh` to run the complete test suite.
@@ -77,3 +65,15 @@ failure, it appears that the modification of the output is intentional. In that
 case, re-run the command `tests/test-NNN.sh --init` to update the reference
 output files. Do not forget to manually validate them since they will act as
 the new reference.
+
+### Large files
+
+This repository contains large files, typically transport stream files.
+
+Initially, these files were not stored inside the regular GitHub repository.
+Instead, they used the "[Git Large File Storage](https://git-lfs.github.com)" (LFS) feature of GitHub.
+However, using LFS on GitHub happended to be a pain, as experienced by others and explained in
+[this article](https://medium.com/@megastep/github-s-large-file-storage-is-no-panacea-for-open-source-quite-the-opposite-12c0e16a9a91).
+
+As a consequence, the transport stream files were re-integrated into the Git
+repository. But we now limit their size to 20 MB.
