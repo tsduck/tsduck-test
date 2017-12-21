@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="6" network_id="0x1234" actual="true">
+    <network_name_descriptor network_name="ASTRA 1"/>
+    <linkage_descriptor transport_stream_id="0x0454" original_network_id="0x0001" service_id="0x000C" linkage_type="0x01"/>
+    <linkage_descriptor transport_stream_id="0x0457" original_network_id="0x0001" service_id="0x000D" linkage_type="0x01"/>
+    <linkage_descriptor transport_stream_id="0x0457" original_network_id="0x0001" service_id="0x0000" linkage_type="0x04"/>
+    <linkage_descriptor transport_stream_id="0x0454" original_network_id="0x0001" service_id="0x0000" linkage_type="0x04">
+      <private_data>
+        4E 4F
+      </private_data>
+    </linkage_descriptor>
+    <linkage_descriptor transport_stream_id="0x0457" original_network_id="0x0001" service_id="0x0000" linkage_type="0x0A">
+      <private_data>
+        02
+      </private_data>
+    </linkage_descriptor>
+    <linkage_descriptor transport_stream_id="0x0460" original_network_id="0x0001" service_id="0x0000" linkage_type="0x0C">
+      <private_data>
+        02 FF FF
+      </private_data>
+    </linkage_descriptor>
+    <network_name_descriptor network_name="FOO NET"/>
+    <transport_stream transport_stream_id="0x03EA" original_network_id="0x0001">
+      <satellite_delivery_system_descriptor frequency="11,229,000,000" orbital_position="19.2" west_east_flag="east" polarization="vertical" roll_off="0.35" modulation_system="DVB-S2" modulation_type="8PSK" symbol_rate="22,000,000" FEC_inner="2/3"/>
+    </transport_stream>
+    <transport_stream transport_stream_id="0x03EB" original_network_id="0x0001">
+      <satellite_delivery_system_descriptor frequency="11,243,750,000" orbital_position="19.2" west_east_flag="east" polarization="horizontal" roll_off="0.35" modulation_system="DVB-S" modulation_type="QPSK" symbol_rate="22,000,000" FEC_inner="5/6"/>
+    </transport_stream>
+  </NIT>
+</tsduck>

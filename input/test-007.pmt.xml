@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="11" service_id="0x2269" PCR_PID="0x038E">
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x03D6">
+      <private_data>
+        10 01 01 13 01 20 14 03 03 29 40
+      </private_data>
+    </CA_descriptor>
+    <component elementary_PID="0x038E" stream_type="0x1B"/>
+    <component elementary_PID="0x0399" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x039A" stream_type="0x06">
+      <AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x03AE" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="foo" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x03AF" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="bar" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+</tsduck>
