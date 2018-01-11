@@ -1,0 +1,368 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                  test-010 tsanalyze full  |
+|=============================================================================|
+|  Transport Stream Id: ...... 11100 (0x2B5C)  |  Services: .............. 3  |
+|  Bytes: ........................ 10,485,888  |  PID's: Total: ......... 17  |
+|  TS packets: ....................... 55,776  |         Clear: ......... 14  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 3  |
+|     With transport error: ............... 0  |         With PCR's: ..... 3  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ............... 57,538,868 b/s   62,435,793 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ...................................... 1 sec (0 mn 1 sec)  |
+|  First TDT UTC time stamp: ....................................... Unknown  |
+|  Last TDT UTC time stamp: ........................................ Unknown  |
+|  First TOT local time stamp: ..................................... Unknown  |
+|  Last TOT local time stamp: ...................................... Unknown  |
+|  TOT country code: ..............................................  Unknown  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x11F9  Funbox UHD ................................... S   22,356,969 b/s  |
+|  0x11FA  C4K360 ....................................... C   17,790,049 b/s  |
+|  0x11FB  TRAVELXP 4K .................................. C   17,367,090 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless explicitely specified otherwise, all bitrates are based on  |
+|  188 bytes per packet.                                                      |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                          test-010 tsanalyze full  |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 24, PID's: 6 (clear: 6, scrambled: 0)                          |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C       24,758 b/s  |
+|  0x0000  PAT .......................................... C        3,094 b/s  |
+|  0x0001  CAT .......................................... C        3,094 b/s  |
+|  0x0011  SDT/BAT ...................................... C        1,031 b/s  |
+|  0x0400  Viaccess EMM for SOID 334384 (0x051A30) ...... C        6,189 b/s  |
+|  0x0401  Viaccess EMM for SOID 334352 (0x051A10) ...... C        6,189 b/s  |
+|  0x0402  Viaccess EMM for SOID 334368 (0x051A20) ...... C        5,158 b/s  |
+|=============================================================================|
+|  Service: 0x11F9 (4601), TS: 0x2B5C (11100), Original Netw: 0x013E (318)    |
+|  Service name: Funbox UHD, provider: SPI                                    |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 21,672, PID's: 5 (clear: 2, scrambled: 3)                      |
+|  PMT PID: 0x0100 (256), PCR PID: 0x0101 (257)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S   22,356,969 b/s  |
+|  0x0100  PMT .......................................... C        3,094 b/s  |
+|  0x0101  HEVC video ................................... S   21,954,643 b/s  |
+|  0x0102  HE-AAC Audio (qaa) ........................... S      196,005 b/s  |
+|  0x0103  HE-AAC Audio (ger) ........................... S      196,005 b/s  |
+|  0x0104  Viaccess ECM for SOID 334384 (0x051A30) ...... C        7,221 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x11FA (4602), TS: 0x2B5C (11100), Original Netw: 0x013E (318)    |
+|  Service name: C4K360, provider: (unknown)                                  |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 17,245, PID's: 3 (clear: 3, scrambled: 0)                      |
+|  PMT PID: 0x0164 (356), PCR PID: 0x0165 (357)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C   17,790,049 b/s  |
+|  0x0164  PMT .......................................... C        3,094 b/s  |
+|  0x0165  HEVC video ................................... C   17,428,986 b/s  |
+|  0x0166  HE-AAC Audio (und, Audio layer 0, dual channe  C      357,967 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x11FB (4603), TS: 0x2B5C (11100), Original Netw: 0x013E (318)    |
+|  Service name: TRAVELXP 4K, provider: (unknown)                             |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 16,835, PID's: 3 (clear: 3, scrambled: 0)                      |
+|  PMT PID: 0x01C8 (456), PCR PID: 0x01C9 (457)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C   17,367,090 b/s  |
+|  0x01C8  PMT .......................................... C        3,094 b/s  |
+|  0x01C9  HEVC video ................................... C   17,166,958 b/s  |
+|  0x01CA  HE-AAC Audio (eng) ........................... C      197,036 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                              test-010 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,094 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,094 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,031 b/s  Packets: ............. 1  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 1  |
+|=============================================================================|
+|  PID: 0x0100 (256)                                                     PMT  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,094 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0101 (257)                                              HEVC video  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate:  21,954,643 b/s  Packets: ........ 21,282  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 133  Unexpect: ....... 195  |
+|  Crypto-Per: ...... 0 sec  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 59  Packets: ......... 74  |
+|                            TSrate: . 57,639,754 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0102 (258)                                      HE-AAC Audio (qaa)  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 196,005 b/s  Packets: ........... 190  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ............ 0  Unexpect: ......... 2  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 1  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0103 (259)                                      HE-AAC Audio (ger)  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 196,005 b/s  Packets: ........... 190  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ............ 0  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0104 (260)                 Viaccess ECM for SOID 334384 (0x051A30)  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,221 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 7  |
+|=============================================================================|
+|  PID: 0x0164 (356)                                                     PMT  |
+|  Service: 0x11FA (4602) C4K360                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,094 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0165 (357)                                              HEVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  Service: 0x11FA (4602) C4K360                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate:  17,428,986 b/s  Packets: ........ 16,895  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 166  Unexpect: ....... 141  |
+|                            Duplicated: .......... 1  PES:                   |
+|                            PCR: ................ 97  Packets: ......... 70  |
+|                            TSrate: . 57,635,790 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0166 (358)                                      HE-AAC Audio (und)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer 0, dual channel                                                |
+|  Service: 0x11FA (4602) C4K360                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 357,967 b/s  Packets: ........... 347  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 135  Unexpect: ......... 4  |
+|                            Duplicated: .......... 1  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 66  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01C8 (456)                                                     PMT  |
+|  Service: 0x11FB (4603) TRAVELXP 4K                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,094 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x01C9 (457)                                              HEVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  Service: 0x11FB (4603) TRAVELXP 4K                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate:  17,166,958 b/s  Packets: ........ 16,641  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 166  Unexpect: ....... 134  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................ 94  Packets: ......... 72  |
+|                            TSrate: . 57,384,849 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01CA (458)                                      HE-AAC Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x11FB (4603) TRAVELXP 4K                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 197,036 b/s  Packets: ........... 191  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
+|                            Duplicated: .......... 1  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0400 (1024)                Viaccess EMM for SOID 334384 (0x051A30)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,189 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 6  |
+|=============================================================================|
+|  PID: 0x0401 (1025)                Viaccess EMM for SOID 334352 (0x051A10)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,189 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 6  |
+|=============================================================================|
+|  PID: 0x0402 (1026)                Viaccess EMM for SOID 334368 (0x051A20)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,158 b/s  Packets: ............. 5  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 5  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                 test-010 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x2B5C (11100)                                     |
+|      Repetition: ..... 475  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 475  ms  Version: ........... 13                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 475  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 476  ms  Version: ........... 16                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x2B5C (11100)                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x0100 (256)                                                     PMT  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x11F9 (4601)                                      |
+|      Repetition: ..... 476  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 476  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 476  ms  Version: ........... 27                     |
+|=============================================================================|
+|  PID: 0x0104 (260)                 Viaccess ECM for SOID 334384 (0x051A30)  |
+|  Service: 0x11F9 (4601) Funbox UHD                                          |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0164 (356)                                                     PMT  |
+|  Service: 0x11FA (4602) C4K360                                              |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x11FA (4602)                                      |
+|      Repetition: ..... 474  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 474  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 474  ms  Version: ........... 16                     |
+|=============================================================================|
+|  PID: 0x01C8 (456)                                                     PMT  |
+|  Service: 0x11FB (4603) TRAVELXP 4K                                         |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x11FB (4603)                                      |
+|      Repetition: ..... 476  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 476  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 476  ms  Version: ........... 15                     |
+|=============================================================================|
+|  PID: 0x0400 (1024)                Viaccess EMM for SOID 334384 (0x051A30)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ..... 262  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 262  ms                                              |
+|      Max repet.: ..... 262  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8C (140, Viaccess EMM-GH (even))                                         |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0401 (1025)                Viaccess EMM for SOID 334352 (0x051A10)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ..... 378  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 253  ms                                              |
+|      Max repet.: ..... 503  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0402 (1026)                Viaccess EMM for SOID 334368 (0x051A20)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ..... 262  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 262  ms                                              |
+|      Max repet.: ..... 262  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8C (140, Viaccess EMM-GH (even))                                         |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+===============================================================================
+

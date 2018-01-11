@@ -1,0 +1,111 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 13, sections: 1, total size: 28 bytes
+  - Section 0:
+    TS id:   11100 (0x2B5C)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:  4601 (0x11F9)  PID:  256 (0x0100)
+    Program:  4602 (0x11FA)  PID:  356 (0x0164)
+    Program:  4603 (0x11FB)  PID:  456 (0x01C8)
+
+* CAT, TID 1 (0x01), PID 1 (0x0001)
+  Version: 16, sections: 1, total size: 63 bytes
+  - Section 0:
+    - Descriptor 0: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), EMM PID: 1024 (0x0400)
+      Private CA data:
+      0000:  10 01 00 13 01 20 14 03 05 1A 30           ..... ....0
+    - Descriptor 1: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), EMM PID: 1025 (0x0401)
+      Private CA data:
+      0000:  10 01 00 13 01 20 14 03 05 1A 10           ..... .....
+    - Descriptor 2: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), EMM PID: 1026 (0x0402)
+      Private CA data:
+      0000:  10 01 00 13 01 20 14 03 05 1A 20           ..... ....
+
+* PMT, TID 2 (0x02), PID 456 (0x01C8)
+  Version: 15, sections: 1, total size: 53 bytes
+  - Section 0:
+    Program: 4603 (0x11FB), PCR PID: 457 (0x01C9)
+    Elementary stream: type 0x24 (HEVC video), PID: 457 (0x01C9)
+    - Descriptor 0: HEVC Video (0x38, 56), 15 bytes
+      Profile space: 0, tier: false, profile IDC: 2
+      Profile compatibility: 0x20000000
+      Progressive source: true, interlaced source: false, non packed: true, frame only: true
+      Reserved-zero 44 bits: 0x00000000000
+      Level IDC: 153, still pictures: false, 24-hour pictures: false
+      Temporal id min: 7, max: 7
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 458 (0x01CA)
+    - Descriptor 0: AAC (0x7C, 124), 2 bytes
+      Profile and level: 0x51
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* PMT, TID 2 (0x02), PID 356 (0x0164)
+  Version: 16, sections: 1, total size: 53 bytes
+  - Section 0:
+    Program: 4602 (0x11FA), PCR PID: 357 (0x0165)
+    Elementary stream: type 0x24 (HEVC video), PID: 357 (0x0165)
+    - Descriptor 0: HEVC Video (0x38, 56), 15 bytes
+      Profile space: 0, tier: false, profile IDC: 2
+      Profile compatibility: 0x20000000
+      Progressive source: true, interlaced source: false, non packed: true, frame only: true
+      Reserved-zero 44 bits: 0x00000000000
+      Level IDC: 153, still pictures: false, 24-hour pictures: false
+      Temporal id min: 7, max: 7
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 358 (0x0166)
+    - Descriptor 0: AAC (0x7C, 124), 2 bytes
+      Profile and level: 0x51
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: und, Type: 0x00 (undefined)
+
+* PMT, TID 2 (0x02), PID 256 (0x0100)
+  Version: 27, sections: 1, total size: 85 bytes
+  - Section 0:
+    Program: 4601 (0x11F9), PCR PID: 257 (0x0101)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), ECM PID: 260 (0x0104)
+      Private CA data:
+      0000:  10 01 00 13 01 20 14 03 05 1A 30           ..... ....0
+    Elementary stream: type 0x24 (HEVC video), PID: 257 (0x0101)
+    - Descriptor 0: HEVC Video (0x38, 56), 15 bytes
+      Profile space: 0, tier: false, profile IDC: 2
+      Profile compatibility: 0x20000000
+      Progressive source: true, interlaced source: false, non packed: false, frame only: true
+      Reserved-zero 44 bits: 0x00000000000
+      Level IDC: 153, still pictures: false, 24-hour pictures: false
+      Temporal id min: 7, max: 7
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 258 (0x0102)
+    - Descriptor 0: AAC (0x7C, 124), 2 bytes
+      Profile and level: 0x29
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 259 (0x0103)
+    - Descriptor 0: AAC (0x7C, 124), 2 bytes
+      Profile and level: 0x29
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: ger, Type: 0x00 (undefined)
+
+* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+  Version: 24, sections: 1, total size: 75 bytes
+  - Section 0:
+    Transport Stream Id: 11100 (0x2B5C)
+    Original Network Id: 318 (0x013E)
+    Service Id: 4601 (0x11F9), EITs: no, EITp/f: no, CA mode: controlled
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 16 bytes
+      Service type: 0x19 (Advanced codec HD digital television service)
+      Service: "Funbox UHD", Provider: "SPI"
+    Service Id: 4602 (0x11FA), EITs: no, EITp/f: no, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 9 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "C4K360", Provider: ""
+    Service Id: 4603 (0x11FB), EITs: no, EITp/f: no, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 14 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "TRAVELXP 4K", Provider: ""
+
