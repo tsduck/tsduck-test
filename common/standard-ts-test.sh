@@ -116,7 +116,7 @@ test_text $SCRIPT.tstables.text.log
 
 # ==== tstables, XML files
 
-$(tspath tstables) $(fpath "$INFILE") $PIDS \
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index \
     --xml $(fpath "$OUTDIR/$SCRIPT.tstables.xml") \
     >"$OUTDIR/$SCRIPT.tstables.xml.log" 2>&1
 
