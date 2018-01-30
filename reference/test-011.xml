@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="1" current="true" service_id="0x226A" PCR_PID="0x03F2">
+    <!-- PID 0x03E8 (1000) -->
+    <CA_descriptor CA_system_id="0xCAFE" CA_PID="0x1B5A">
+      <private_data>
+        DE AD BE EF
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0xF000" CA_PID="0x1B5B">
+      <private_data>
+        BA DC AF EE
+      </private_data>
+    </CA_descriptor>
+    <component elementary_PID="0x03F2" stream_type="0x1B"/>
+    <component elementary_PID="0x03FD" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x0413" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <CAT version="8" current="true">
+    <!-- PID 0x0001 (1) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1449">
+      <private_data>
+        02 FE 22
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x164E">
+      <private_data>
+        02 33 41
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1647">
+      <private_data>
+        02 33 17
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1646">
+      <private_data>
+        02 33 15
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1645">
+      <private_data>
+        02 33 11
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x1650">
+      <private_data>
+        06 33 41 33 42 33 43
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168A">
+      <private_data>
+        13 01 20 14 03 04 0F 40
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x1690">
+      <private_data>
+        13 01 20 14 03 03 28 30 14 03 D0 00 C0
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168F">
+      <private_data>
+        13 01 20 14 03 03 29 40
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x1699">
+      <private_data>
+        13 01 20 14 03 03 29 20
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168C">
+      <private_data>
+        13 01 20 14 03 03 0B 00 14 03 03 28 30
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x165D">
+      <private_data>
+        06 33 41 33 11 33 15
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1234" CA_PID="0x1B58">
+      <private_data>
+        01 23 45 67 89
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x5678" CA_PID="0x1B59">
+      <private_data>
+        45 67 89
+      </private_data>
+    </CA_descriptor>
+  </CAT>
+</tsduck>

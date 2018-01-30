@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PAT version="2" current="true" transport_stream_id="0x0FA6">
+    <!-- PID 0x0000 (0), first TS packet: 2, last: 2 -->
+    <service service_id="0x0FA6" program_map_PID="0x00A0"/>
+  </PAT>
+  <PMT version="2" current="true" service_id="0x0FA6" PCR_PID="0x0424">
+    <!-- PID 0x00A0 (160), first TS packet: 16, last: 16 -->
+    <component elementary_PID="0x0424" stream_type="0x1B"/>
+    <component elementary_PID="0x0425" stream_type="0x04">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x0426" stream_type="0x04">
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x0427" stream_type="0x04">
+      <ISO_639_language_descriptor>
+        <language code="deu" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x042B" stream_type="0x04">
+      <ISO_639_language_descriptor>
+        <language code="qad" audio_type="0x03"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x042C" stream_type="0x06">
+      <teletext_descriptor>
+        <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
+        <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
+      </teletext_descriptor>
+      <generic_descriptor tag="0x45">
+        01 08 E7 C7 E8 C8 E9 C9 EA CA
+      </generic_descriptor>
+    </component>
+  </PMT>
+</tsduck>

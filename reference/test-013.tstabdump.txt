@@ -1,0 +1,27 @@
+
+* PAT, TID 0 (0x00)
+  Section: 0 (last: 0), version: 18, size: 16 bytes
+  TS id:       1 (0x0001)
+  Program:  1060 (0x0424)  PID: 1060 (0x0424)
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 31, size: 38 bytes
+  Program: 1060 (0x0424), PCR PID: 1061 (0x0425)
+  Elementary stream: type 0x1B (AVC video), PID: 1061 (0x0425)
+  Elementary stream: type 0x03 (MPEG-1 Audio), PID: 1062 (0x0426)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1064 (0x0428)
+  - Descriptor 0: Teletext (0x56, 86), 5 bytes
+    Language: rus, Type: 5 (0x05)
+    Type: Teletext subtitles for hearing impaired
+    Magazine: 1, page: 0, full page: 100
+
+* SDT Actual, TID 66 (0x42)
+  Section: 0 (last: 0), version: 13, size: 42 bytes
+  Transport Stream Id: 1 (0x0001)
+  Original Network Id: 8835 (0x2283)
+  Service Id: 1060 (0x0424), EITs: yes, EITp/f: yes, CA mode: free
+  Running status: running
+  - Descriptor 0: Service (0x48, 72), 20 bytes
+    Service type: 0x16 (Advanced codec SD digital television service)
+    Service: "06 РОССИЯ-К", Provider: "РТРС"
+

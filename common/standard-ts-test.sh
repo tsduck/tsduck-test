@@ -37,7 +37,7 @@ test_text $SCRIPT.tspsi.log
 
 # ==== analyze and psi, as plugins
 
-$(tspath tsp) \
+$(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" \
     -P analyze --normalized -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" \
@@ -88,14 +88,14 @@ test_text $SCRIPT.tsdate.log
 
 # ==== tsdump, first 10 packets.
 
-($(tspath tsp) -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump)) \
+($(tspath tsp) --synchronous-log -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump)) \
     >"$OUTDIR/$SCRIPT.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsdump.log"
 
 test_text $SCRIPT.tsdump.txt
 test_text $SCRIPT.tsdump.log
 
-($(tspath tsp) -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump) --header) \
+($(tspath tsp) --synchronous-log -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump) --header) \
     >"$OUTDIR/$SCRIPT.tsdump.header.txt" \
     2>"$OUTDIR/$SCRIPT.tsdump.header.log"
 

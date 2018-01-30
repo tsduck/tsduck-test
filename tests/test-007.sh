@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) \
+$(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
     -P history --cas --time -o  $(fpath "$OUTDIR/$SCRIPT.history.txt") \
     -P pcrextract -o  $(fpath "$OUTDIR/$SCRIPT.pcrextract.txt") \
