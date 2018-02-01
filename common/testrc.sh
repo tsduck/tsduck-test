@@ -45,12 +45,17 @@ prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
 case $(uname -s | tr A-Z a-z) in
     cygwin*|msys*|mingw*)
         WINDOWS=true
-        TSDUCKBIN=$TSDUCKDIR/build/msvc2017/Release-x64
+        TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc2017
+        TSDUCKBIN_RELEASE=Release-x64
+        TSDUCKBIN_DEBUG=Debug-x64
         EXE=.exe
         ;;
     *)
         WINDOWS=false
-        TSDUCKBIN=$TSDUCKDIR/src/tstools/release-$(uname -m | sed -e 's/i.86/i386/')
+        ARCH=$(uname -m | sed -e 's/i.86/i386/')
+        TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
+        TSDUCKBIN_RELEASE=release-$ARCH
+        TSDUCKBIN_DEBUG=debug-$ARCH
         EXE=
         ;;
 esac
@@ -66,7 +71,11 @@ Common test options:
 
   --dev
       Use development versions of TSDuck as compiled in the Git repository in
-      $TSDUCKBIN
+      $TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
+
+  --debug
+      Use debug versions of TSDuck as compiled in the Git repository in
+      $TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
 
   --help
       Display this help text.
@@ -89,6 +98,11 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --dev*)
             DEVEL=true
+            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
+            ;;
+        --debug*)
+            DEVEL=true
+            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
             ;;
         --help)
             showhelp
