@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 119 bytes
+  Version: 0, sections: 1, total size: 147 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -52,4 +52,20 @@
     - Descriptor 9: Application Signalling (0x6F, 111), 6 bytes
       Application type: 4660 (0x1234), AIT Version: 12 (0x0C)
       Application type: 22136 (0x5678), AIT Version: 31 (0x1F)
+    - Descriptor 10: Teletext (0x56, 86), 10 bytes
+      Language: fra, Type: 5 (0x05)
+      Type: Teletext subtitles for hearing impaired
+      Magazine: 0, page: 136, full page: 888
+      Language: fra, Type: 2 (0x02)
+      Type: Teletext subtitles
+      Magazine: 0, page: 137, full page: 889
+    - Descriptor 11: Teletext (0x56, 86), 0 bytes
+    - Descriptor 12: VBI Teletext (0x46, 70), 10 bytes
+      Language: fra, Type: 5 (0x05)
+      Type: Teletext subtitles for hearing impaired
+      Magazine: 0, page: 136, full page: 888
+      Language: fra, Type: 2 (0x02)
+      Type: Teletext subtitles
+      Magazine: 0, page: 137, full page: 889
+    - Descriptor 13: VBI Teletext (0x46, 70), 0 bytes
 

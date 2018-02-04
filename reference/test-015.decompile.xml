@@ -22,5 +22,15 @@
       <application application_type="0x1234" AIT_version_number="0x0C"/>
       <application application_type="0x5678" AIT_version_number="0x1F"/>
     </application_signalling_descriptor>
+    <teletext_descriptor>
+      <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
+      <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
+    </teletext_descriptor>
+    <teletext_descriptor/>
+    <VBI_teletext_descriptor>
+      <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
+      <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
+    </VBI_teletext_descriptor>
+    <VBI_teletext_descriptor/>
   </PMT>
 </tsduck>
