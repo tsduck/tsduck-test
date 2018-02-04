@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 166 bytes
+  Section: 0 (last: 0), version: 0, size: 197 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -76,4 +76,19 @@
     Data service id: 0x03 (unknown)
     Associated data:
     01 23 45 67 89 AB CD EF                                .#Eg....
+  - Descriptor 16: Maximum Bitrate (0x0E, 14), 3 bytes
+    Maximum bitrate: 0x00004268 (17000), 6,800,000 bits/second
+  - Descriptor 17: Time Shifted Event (0x4F, 79), 4 bytes
+    Reference service id: 0x1234 (4660)
+    Reference event id: 0x5678 (22136)
+  - Descriptor 18: Time Shifted Service (0x4C, 76), 2 bytes
+    Reference service id: 0x9ABC (39612)
+  - Descriptor 19: NVOD Reference (0x4B, 75), 0 bytes
+  - Descriptor 20: NVOD Reference (0x4B, 75), 12 bytes
+    - Transport stream id: 0x1234 (4660)
+      Original network id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+    - Transport stream id: 0xFEDC (65244)
+      Original network id: 0xBA98 (47768)
+      Service id: 0x7654 (30292)
 

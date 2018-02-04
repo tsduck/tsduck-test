@@ -45,5 +45,13 @@
         </reserved>
       </service>
     </VBI_data_descriptor>
+    <maximum_bitrate_descriptor maximum_bitrate="6,800,000"/>
+    <time_shifted_event_descriptor reference_service_id="0x1234" reference_event_id="0x5678"/>
+    <time_shifted_service_descriptor reference_service_id="0x9ABC"/>
+    <NVOD_reference_descriptor/>
+    <NVOD_reference_descriptor>
+      <service transport_stream_id="0x1234" original_network_id="0x5678" service_id="0x9ABC"/>
+      <service transport_stream_id="0xFEDC" original_network_id="0xBA98" service_id="0x7654"/>
+    </NVOD_reference_descriptor>
   </PMT>
 </tsduck>
