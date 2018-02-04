@@ -1,0 +1,55 @@
+
+* PMT, TID 2 (0x02), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 119 bytes
+  - Section 0:
+    Program: 0 (0x0000), PCR PID: none
+    Program information:
+    - Descriptor 0: Component (0x50, 80), 6 bytes
+      Content/type: 0x0102 (MPEG-2 video, 16:9 aspect ratio with pan vectors, 25 Hz)
+      Component tag: 0 (0x00)
+      Language: fre
+    - Descriptor 1: Component (0x50, 80), 26 bytes
+      Content/type: 0x1902 (AC-4 main audio, stereo)
+      Component tag: 15 (0x0F)
+      Language: eng
+      Description: "A string description"
+    - Descriptor 2: AAC (0x7C, 124), 1 bytes
+      Profile and level: 0x45
+    - Descriptor 3: AAC (0x7C, 124), 8 bytes
+      Profile and level: 0x21
+      AAC type: 0x40 (HE-AAC audio description for the visually impaired)
+      Additional information:
+      0000:  01 23 45 67 89                             .#Eg.
+    - Descriptor 4: DTS (0x7B, 123), 5 bytes
+      Sample rate code: 48 kHz
+      Bit rate code: 256 kb/s
+      NBLKS: 16
+      FSIZE: 4660
+      Surround mode: 5 / C+L+R+SL+SR
+      LFE (Low Frequency Effect) audio channel: off
+      Extended surround flag: none
+    - Descriptor 5: DTS (0x7B, 123), 9 bytes
+      Sample rate code: 48 kHz
+      Bit rate code: 256 kb/s
+      NBLKS: 16
+      FSIZE: 4660
+      Surround mode: 5 / C+L+R+SL+SR
+      LFE (Low Frequency Effect) audio channel: on
+      Extended surround flag: discrete
+      Additional information:
+      0000:  78 96 54 12                                x.T.
+    - Descriptor 6: Cable Delivery System (0x44, 68), 11 bytes
+      Frequency: 312.0000 MHz
+      Symbol rate: 27.4500 Msymbol/s
+      Modulation: 16-QAM
+      Outer FEC: RS(204/188), Inner FEC: 3/5 conv. code rate
+    - Descriptor 7: Cable Delivery System (0x44, 68), 11 bytes
+      Frequency: 220.1237 MHz
+      Symbol rate: 18.0000 Msymbol/s
+      Modulation: 64-QAM
+      Outer FEC: none, Inner FEC: 3/4 conv. code rate
+    - Descriptor 8: Application Signalling (0x6F, 111), 0 bytes
+    - Descriptor 9: Application Signalling (0x6F, 111), 6 bytes
+      Application type: 4660 (0x1234), AIT Version: 12 (0x0C)
+      Application type: 22136 (0x5678), AIT Version: 31 (0x1F)
+

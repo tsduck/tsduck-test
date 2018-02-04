@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <PMT service_id="0">
+
+    <component_descriptor stream_content="1" component_type="2" language_code="fre"/>
+
+    <component_descriptor
+        stream_content="9"
+        stream_content_ext="1"
+        component_type="2"
+        component_tag="15"
+        language_code="eng"
+        text="A string description"/>
+
+    <AAC_descriptor profile_and_level="0x45"/>
+
+    <AAC_descriptor
+        profile_and_level="0x21"
+        SAOC_DE="true"
+        AAC_type="0x40">
+      <additional_info>
+        0123456789
+      </additional_info>
+    </AAC_descriptor>
+
+    
+    <DTS_descriptor
+        sample_rate_code="0x0D"
+        bit_rate_code="0x08"
+        nblks="0x10"
+        fsize="0x1234"
+        surround_mode="0x09"/>
+
+    <DTS_descriptor
+        sample_rate_code="0x0D"
+        bit_rate_code="0x08"
+        nblks="0x10"
+        fsize="0x1234"
+        surround_mode="0x09"
+        lfe="true"
+        extended_surround="0x02">
+      <additional_info>
+        78 96 54 12
+      </additional_info>
+    </DTS_descriptor>
+
+    <cable_delivery_system_descriptor
+        frequency="312000000"
+        symbol_rate="27450000"
+        FEC_inner="3/5"/>
+
+    <cable_delivery_system_descriptor
+        frequency="220123789"
+        FEC_outer="none"
+        modulation="64-QAM"
+        symbol_rate="18000000"
+        FEC_inner="3/4"/>
+
+    <application_signalling_descriptor/>
+
+    <application_signalling_descriptor>
+      <application application_type="0x1234" AIT_version_number="12"/>
+      <application application_type="0x5678" AIT_version_number="31"/>
+    </application_signalling_descriptor>
+
+  </PMT>
+
+</tsduck>
