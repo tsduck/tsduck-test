@@ -32,5 +32,18 @@
       <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
     </VBI_teletext_descriptor>
     <VBI_teletext_descriptor/>
+    <VBI_data_descriptor/>
+    <VBI_data_descriptor>
+      <service data_service_id="1">
+        <field field_parity="false" line_offset="0"/>
+        <field field_parity="false" line_offset="10"/>
+        <field field_parity="true" line_offset="20"/>
+      </service>
+      <service data_service_id="3">
+        <reserved>
+          01 23 45 67 89 AB CD EF
+        </reserved>
+      </service>
+    </VBI_data_descriptor>
   </PMT>
 </tsduck>

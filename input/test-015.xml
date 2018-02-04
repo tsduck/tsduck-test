@@ -77,6 +77,21 @@
 
     <VBI_teletext_descriptor/>
 
+    <VBI_data_descriptor/>
+
+    <VBI_data_descriptor>
+      <service data_service_id="1">
+        <field/>
+        <field line_offset="10"/>
+        <field field_parity="true" line_offset="20"/>
+      </service>
+      <service data_service_id="3">
+        <reserved>
+          01234567 89ABCDEF
+        </reserved>
+      </service>
+    </VBI_data_descriptor>
+
   </PMT>
 
 </tsduck>

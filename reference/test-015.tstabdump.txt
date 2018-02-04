@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 147 bytes
+  Section: 0 (last: 0), version: 0, size: 166 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -67,4 +67,13 @@
     Type: Teletext subtitles
     Magazine: 0, page: 137, full page: 889
   - Descriptor 13: VBI Teletext (0x46, 70), 0 bytes
+  - Descriptor 14: VBI Data (0x45, 69), 0 bytes
+  - Descriptor 15: VBI Data (0x45, 69), 15 bytes
+    Data service id: 0x01 (EBU teletext)
+    Field parity: 0, line offset: 0
+    Field parity: 0, line offset: 10
+    Field parity: 1, line offset: 20
+    Data service id: 0x03 (unknown)
+    Associated data:
+    01 23 45 67 89 AB CD EF                                .#Eg....
 

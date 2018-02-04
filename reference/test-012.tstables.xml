@@ -32,9 +32,18 @@
         <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
         <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
       </teletext_descriptor>
-      <generic_descriptor tag="0x45">
-        01 08 E7 C7 E8 C8 E9 C9 EA CA
-      </generic_descriptor>
+      <VBI_data_descriptor>
+        <service data_service_id="1">
+          <field field_parity="true" line_offset="7"/>
+          <field field_parity="false" line_offset="7"/>
+          <field field_parity="true" line_offset="8"/>
+          <field field_parity="false" line_offset="8"/>
+          <field field_parity="true" line_offset="9"/>
+          <field field_parity="false" line_offset="9"/>
+          <field field_parity="true" line_offset="10"/>
+          <field field_parity="false" line_offset="10"/>
+        </service>
+      </VBI_data_descriptor>
     </component>
   </PMT>
 </tsduck>
