@@ -328,7 +328,7 @@
     Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 4005 (0x0FA5)
     - Descriptor 0: Data Broadcast Id (0x66, 102), 16 bytes
       Data broadcast id: 0x0140 (320, Canal+)
-      Data Broadcast Id selector:
+      Data Broadcast selector:
       07 1B 05 01 04 6E 61 6D 65 04 6D 65 73 73        .....name.mess
 
 * PAT, TID 0 (0x00), PID 0 (0x0000)
@@ -605,8 +605,8 @@
       Original network Id: 1 (0x0001)
       Service id: 0 (0x0000)
       Linkage type: 0x0C (TS containing INT BAT or NIT)
-      Private data:
-      0000:  02 FF FF                                   ...
+      INT linkage table type: BAT
+      Bouquet id: 0xFFFF (65535)
     - Descriptor 7: Linkage (0x4A, 74), 7 bytes
       Transport stream id: 1120 (0x0460)
       Original network Id: 1 (0x0001)
