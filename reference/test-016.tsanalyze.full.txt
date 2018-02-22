@@ -1,0 +1,386 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                  test-016 tsanalyze full  |
+|=============================================================================|
+|  Transport Stream Id: ...... 60300 (0xEB8C)  |  Services: .............. 2  |
+|  Bytes: ........................ 10,485,888  |  PID's: Total: ......... 14  |
+|  TS packets: ....................... 55,776  |         Clear: ......... 14  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 0  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ...................... Unknown          Unknown  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ................................................. Unknown  |
+|  First TDT UTC time stamp: ....................................... Unknown  |
+|  Last TDT UTC time stamp: ........................................ Unknown  |
+|  First TOT local time stamp: ..................................... Unknown  |
+|  Last TOT local time stamp: ...................................... Unknown  |
+|  TOT country code: ..............................................  Unknown  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x000A  CANALETTO .................................... C          Unknown  |
+|  0x00B7  Int Table .................................... C          Unknown  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
+|  188 bytes per packet.                                                      |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                          test-016 tsanalyze full  |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 21, PID's: 4 (clear: 4, scrambled: 0)                          |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C          Unknown  |
+|  0x0000  PAT .......................................... C          Unknown  |
+|  0x0001  CAT .......................................... C          Unknown  |
+|  0x0010  DVB-NIT ...................................... C          Unknown  |
+|  0x0011  SDT/BAT ...................................... C          Unknown  |
+|=============================================================================|
+|  Service: 0x000A (10), TS: 0xEB8C (60300), Original Netw: 0x013E (318)      |
+|  Service name: CANALETTO, provider: EUTELSAT                                |
+|  Service type: 0x0C (Data broadcast service)                                |
+|  TS packets: 55,740, PID's: 8 (clear: 8, scrambled: 0)                      |
+|  PMT PID: 0x07D0 (2000), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Data broadcast service ....................... C          Unknown  |
+|  0x07D0  PMT .......................................... C          Unknown  |
+|  0x07D1  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D2  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D3  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D4  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D5  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D6  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|  0x07D7  DSM-CC Sections (MPE) ........................ C          Unknown  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00B7 (183), TS: 0xEB8C (60300), Original Netw: 0x013E (318)     |
+|  Service name: Int Table, provider: EUTELSAT                                |
+|  Service type: 0x80 (unknown)                                               |
+|  TS packets: 15, PID's: 2 (clear: 2, scrambled: 0)                          |
+|  PMT PID: 0x0BB8 (3000), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  unknown (0x80) ............................... C          Unknown  |
+|  0x0BB8  PMT .......................................... C          Unknown  |
+|  0x0BB9  DSM-CC Sections (INT, IP/MAC Notification) ... C          Unknown  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                              test-016 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 7  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 7  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 2  |
+|=============================================================================|
+|  PID: 0x07D0 (2000)                                                    PMT  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x07D1 (2001)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ......... 6,167  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 698  |
+|=============================================================================|
+|  PID: 0x07D2 (2002)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ......... 8,436  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 951  |
+|=============================================================================|
+|  PID: 0x07D3 (2003)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ......... 2,909  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 345  |
+|=============================================================================|
+|  PID: 0x07D4 (2004)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ......... 7,667  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 876  |
+|=============================================================================|
+|  PID: 0x07D5 (2005)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ........ 10,615  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ... 1,290  |
+|=============================================================================|
+|  PID: 0x07D6 (2006)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ......... 9,313  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ... 1,040  |
+|=============================================================================|
+|  PID: 0x07D7 (2007)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ........ 10,625  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ... 1,292  |
+|=============================================================================|
+|  PID: 0x0BB8 (3000)                                                    PMT  |
+|  Service: 0x00B7 (183) Int Table                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0BB9 (3001)             DSM-CC Sections (INT, IP/MAC Notification)  |
+|  Service: 0x00B7 (183) Int Table                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 4  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                 test-016 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0xEB8C (60300)                                     |
+|      Repetition: ... 7206  pkt  Section cnt: ........ 7                     |
+|      Min repet.: ... 7049  pkt  Table cnt: .......... 7                     |
+|      Max repet.: ... 7433  pkt  Version: ............ 4                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ... 7205  pkt  Section cnt: ........ 7                     |
+|      Min repet.: ... 7051  pkt  Table cnt: .......... 7                     |
+|      Max repet.: ... 7431  pkt  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x007E (126)                               |
+|      Repetition: .. 14921  pkt  Section cnt: ........ 3                     |
+|      Min repet.: .. 14857  pkt  Table cnt: .......... 3                     |
+|      Max repet.: .. 14984  pkt  Version: ............ 9                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0xEB8C (60300)                             |
+|      Repetition: .. 29917  pkt  Section cnt: ........ 2                     |
+|      Min repet.: .. 29917  pkt  Table cnt: .......... 2                     |
+|      Max repet.: .. 29917  pkt  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x07D0 (2000)                                                    PMT  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x000A (10)                                        |
+|      Repetition: ... 7220  pkt  Section cnt: ........ 7                     |
+|      Min repet.: ... 7003  pkt  Table cnt: .......... 7                     |
+|      Max repet.: ... 7473  pkt  Version: ............ 8                     |
+|=============================================================================|
+|  PID: 0x07D1 (2001)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0214 (532)                                |
+|      Repetition: .... 170  pkt  Section cnt: ...... 274                     |
+|      Min repet.: .... 105  pkt  Table cnt: ........ 274                     |
+|      Max repet.: .... 267  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0314 (788)                                |
+|      Repetition: .... 151  pkt  Section cnt: ...... 310                     |
+|      Min repet.: ..... 63  pkt  Table cnt: ........ 310                     |
+|      Max repet.: .... 218  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D2 (2002)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0D14 (3348)                               |
+|      Repetition: .... 171  pkt  Section cnt: ...... 272                     |
+|      Min repet.: ..... 92  pkt  Table cnt: ........ 272                     |
+|      Max repet.: .... 246  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0E14 (3604)                               |
+|      Repetition: .... 185  pkt  Section cnt: ...... 252                     |
+|      Min repet.: .... 132  pkt  Table cnt: ........ 252                     |
+|      Max repet.: .... 289  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1014 (4116)                               |
+|      Repetition: .... 168  pkt  Section cnt: ...... 276                     |
+|      Min repet.: ..... 68  pkt  Table cnt: ........ 276                     |
+|      Max repet.: .... 288  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D3 (2003)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1814 (6164)                               |
+|      Repetition: .... 163  pkt  Section cnt: ...... 286                     |
+|      Min repet.: ..... 47  pkt  Table cnt: ........ 286                     |
+|      Max repet.: .... 295  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D4 (2004)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0514 (1300)                               |
+|      Repetition: .... 188  pkt  Section cnt: ...... 248                     |
+|      Min repet.: ..... 76  pkt  Table cnt: ........ 248                     |
+|      Max repet.: .... 271  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0614 (1556)                               |
+|      Repetition: .... 198  pkt  Section cnt: ...... 236                     |
+|      Min repet.: .... 159  pkt  Table cnt: ........ 236                     |
+|      Max repet.: .... 316  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0714 (1812)                               |
+|      Repetition: .... 185  pkt  Section cnt: ...... 251                     |
+|      Min repet.: ..... 64  pkt  Table cnt: ........ 251                     |
+|      Max repet.: .... 289  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D5 (2005)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0914 (2324)                               |
+|      Repetition: .... 179  pkt  Section cnt: ...... 261                     |
+|      Min repet.: ..... 96  pkt  Table cnt: ........ 261                     |
+|      Max repet.: .... 299  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0A14 (2580)                               |
+|      Repetition: .... 197  pkt  Section cnt: ...... 236                     |
+|      Min repet.: .... 142  pkt  Table cnt: ........ 236                     |
+|      Max repet.: .... 310  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0B14 (2836)                               |
+|      Repetition: .... 172  pkt  Section cnt: ...... 271                     |
+|      Min repet.: ..... 77  pkt  Table cnt: ........ 271                     |
+|      Max repet.: .... 244  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x0C14 (3092)                               |
+|      Repetition: .... 153  pkt  Section cnt: ...... 304                     |
+|      Min repet.: ..... 70  pkt  Table cnt: ........ 304                     |
+|      Max repet.: .... 204  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D6 (2006)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1214 (4628)                               |
+|      Repetition: .... 171  pkt  Section cnt: ...... 273                     |
+|      Min repet.: .... 115  pkt  Table cnt: ........ 273                     |
+|      Max repet.: .... 253  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1314 (4884)                               |
+|      Repetition: .... 163  pkt  Section cnt: ...... 286                     |
+|      Min repet.: ..... 91  pkt  Table cnt: ........ 286                     |
+|      Max repet.: .... 229  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1414 (5140)                               |
+|      Repetition: .... 151  pkt  Section cnt: ...... 309                     |
+|      Min repet.: ..... 46  pkt  Table cnt: ........ 309                     |
+|      Max repet.: .... 202  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07D7 (2007)                                  DSM-CC Sections (MPE)  |
+|  Service: 0x000A (10) CANALETTO                                             |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1514 (5396)                               |
+|      Repetition: .... 171  pkt  Section cnt: ...... 272                     |
+|      Min repet.: ..... 76  pkt  Table cnt: ........ 272                     |
+|      Max repet.: .... 236  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1614 (5652)                               |
+|      Repetition: .... 177  pkt  Section cnt: ...... 264                     |
+|      Min repet.: ..... 74  pkt  Table cnt: ........ 264                     |
+|      Max repet.: .... 307  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1714 (5908)                               |
+|      Repetition: .... 163  pkt  Section cnt: ...... 286                     |
+|      Min repet.: ..... 84  pkt  Table cnt: ........ 286                     |
+|      Max repet.: .... 225  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0x1914 (6420)                               |
+|      Repetition: .... 182  pkt  Section cnt: ...... 256                     |
+|      Min repet.: .... 128  pkt  Table cnt: ........ 256                     |
+|      Max repet.: .... 289  pkt  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x3E (62, DSM-CC PD), TID ext: 0xC814 (51220)                              |
+|      Repetition: ... 4980  pkt  Section cnt: ........ 3                     |
+|      Min repet.: ... 4877  pkt  Table cnt: .......... 3                     |
+|      Max repet.: ... 5083  pkt  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0BB8 (3000)                                                    PMT  |
+|  Service: 0x00B7 (183) Int Table                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x00B7 (183)                                       |
+|      Repetition: ... 7224  pkt  Section cnt: ........ 7                     |
+|      Min repet.: ... 7012  pkt  Table cnt: .......... 7                     |
+|      Max repet.: ... 7433  pkt  Version: ........... 15                     |
+|=============================================================================|
+|  PID: 0x0BB9 (3001)             DSM-CC Sections (INT, IP/MAC Notification)  |
+|  Service: 0x00B7 (183) Int Table                                            |
+|-----------------------------------------------------------------------------|
+|  0x4C (76, INT (IP/MAC Notification)), TID ext: 0x0104 (260)                |
+|      Repetition: .. 14935  pkt  Section cnt: ........ 2                     |
+|      Min repet.: .. 14935  pkt  Table cnt: .......... 2                     |
+|      Max repet.: .. 14935  pkt  Version: ............ 6                     |
+===============================================================================
+
