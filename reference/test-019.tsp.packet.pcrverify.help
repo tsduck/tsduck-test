@@ -1,0 +1,40 @@
+
+Verify PCR's from TS packets.
+
+Usage: tsp -P pcrverify [options]
+
+Options:
+
+  -a
+  --absolute
+      Use absolute values in PCR unit. By default, use micro-second equivalent
+      values (one micro-second = 27 PCR units).
+
+  -b value
+  --bitrate value
+      Verify the PCR's according to this transport bitrate. By default,
+      use the input bitrate as reported by the input device.
+
+  --help
+      Display this help text.
+
+  -j value
+  --jitter-max value
+      Maximum allowed jitter. PCR's with a higher jitter are reported, others
+      are ignored. If --absolute, the specified value is in PCR units,
+      otherwise it is in micro-seconds. The default is 27,000 PCR units
+      or 1,000 micro-seconds.
+
+  -p value
+  --pid value
+      PID filter: select packets with this PID value.
+      Several -p or --pid options may be specified.
+      Without -p or --pid option, PCR's from all PID's are used.
+
+  -t
+  --time-stamp
+      Display time of each event.
+
+  --version
+      Display the version number.
+

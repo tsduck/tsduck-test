@@ -1,0 +1,53 @@
+
+Report a history of major events on the transport stream.
+
+Usage: tsp -P history [options]
+
+Options:
+
+  -c
+  --cas
+      Report all CAS events (ECM, crypto-periods).
+
+  -e
+  --eit
+      Report all EIT. By default, EIT are not reported.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-stream-id-change
+      Do not report stream_id modifications in a stream. Some subtitle streams
+      may constantly swap between "private stream" and "padding stream". This
+      option suppresses these annoying messages.
+
+  -o filename
+  --output-file filename
+      Specify the output file for reporting history lines. By default, report
+      history lines on standard error using the tsp logging mechanism.
+
+  -s value
+  --suspend-packet-threshold value
+      Number of packets in TS after which a PID is considered as suspended.
+      By default, if no packet is found in a PID during 60 seconds, the PID
+      is considered as suspended.
+
+  -t
+  --time-all
+      Report all TDT and TOT. By default, only report TDT preceeding
+      another event.
+
+  --version
+      Display the version number.
+
+Without option --output-file, output is formated as:
+  * history: PKT#: MESSAGE
+
+Some messages may be out of sync. To sort messages according to their packet
+numbers, use a command like:
+  tsp -P history ...  2>&1 | grep '* history:' | sort -t : -k 2 -n
+
+When an output file is specified using --output-file, the sort command becomes:
+  sort -n output-file-name
+

@@ -1,0 +1,37 @@
+
+Remove a service.
+
+Usage: tsp -P svremove [options] service
+
+Service:
+  Specifies the service to remove. If the argument is an integer value
+  (either decimal or hexadecimal), it is interpreted as a service id.
+  Otherwise, it is interpreted as a service name, as specified in the SDT.
+  The name is not case sensitive and blanks are ignored.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -a
+  --ignore-absent
+      Ignore service if not present in the transport stream. By default, tsp
+      fails if the service is not found.
+
+  -b
+  --ignore-bat
+      Do not modify the BAT.
+
+  -n
+  --ignore-nit
+      Do not modify the NIT.
+
+  -s
+  --stuffing
+      Replace excluded packets with stuffing (null packets) instead
+      of removing them. Useful to preserve bitrate.
+
+  --version
+      Display the version number.
+

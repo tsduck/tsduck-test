@@ -1,0 +1,38 @@
+
+Smartcard Listing Utility.
+
+Usage: tssmartcard [options] [reader-name]
+
+Parameters:
+  The optional reader-name parameter indicates the smartcard reader device
+  name to list or reset. Without any option or parameter, the command lists
+  all smartcard reader devices in the system.
+
+Options:
+
+  -c
+  --cold-reset
+      Perfom a cold reset on the smartcard.
+
+  -e
+  --eject
+      Eject the smartcard.
+
+  --help
+      Display this help text.
+
+  -t value
+  --timeout value
+      Timeout in milliseconds. The default is 1000 ms.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+
+  -w
+  --warm-reset
+      Perfom a warm reset on the smartcard.
+

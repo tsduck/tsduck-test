@@ -1,0 +1,65 @@
+
+Receive TS packets from UDP/IP, multicast or unicast.
+
+Usage: tsp -I ip [options] [address:]port
+
+Parameter:
+  The parameter [address:]port describes the destination of UDP packets.
+  The 'port' part is mandatory and specifies the UDP port to listen on.
+  The 'address' part is optional. It specifies an IP multicast address
+  to listen on. It can be also a host name that translates to a multicast
+  address.
+
+Options:
+
+  -b value
+  --buffer-size value
+      Specify the UDP socket receive buffer size (socket option).
+
+  -d value
+  --display-interval value
+      Specify the interval in seconds between two displays of the evaluated
+      real-time input bitrate. The default is to never display the bitrate.
+      This option is ignored if --evaluation-interval is not specified.
+
+  -e value
+  --evaluation-interval value
+      Specify that the real-time input bitrate shall be evaluated on a regular
+      basis. The value specifies the number of seconds between two evaluations.
+      By default, the real-time input bitrate is never evaluated and the input
+      bitrate is evaluated from the PCR in the input packets.
+
+  -f
+  --first-source
+      Filter UDP packets based on the source address. Use the sender address of
+      the first received packet as only allowed source. This option is useful
+      when several sources send packets to the same destination address and port.
+      Accepting all packets could result in a corrupted stream and only one
+      sender shall be accepted. To allow a more precise selection of the sender,
+      use option --source. Options --first-source and --source are mutually
+      exclusive.
+
+  --help
+      Display this help text.
+
+  -l address
+  --local-address address
+      Specify the IP address of the local interface on which to listen.
+      It can be also a host name that translates to a local address.
+      By default, listen on all local interfaces.
+
+  -r
+  --reuse-port
+      Set the reuse port socket option.
+
+  -s address[:port]
+  --source address[:port]
+      Filter UDP packets based on the specified source address. This option is
+      useful when several sources send packets to the same destination address
+      and port. Accepting all packets could result in a corrupted stream and
+      only one sender shall be accepted. Options --first-source and --source
+      are mutually exclusive.
+
+  --version
+      Display the version number.
+

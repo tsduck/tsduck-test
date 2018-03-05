@@ -1,0 +1,65 @@
+
+Perform various transformations on the CAT
+
+Usage: tsp -P cat [options]
+
+Options:
+
+  -a casid/pid[/private-data]
+  --add-ca-descriptor casid/pid[/private-data]
+      Add a CA_descriptor in the CAT with the specified CA System Id and
+      EMM PID. The optional private data must be a suite of hexadecimal digits.
+      Several --add-ca-descriptor options may be specified to add several
+      descriptors.
+
+  -b value
+  --bitrate value
+      Specifies the bitrate in bits / second of the CAT if a new one is
+      created. The default is 3,000 b/s.
+
+  --cleanup-private-descriptors
+      Remove all private descriptors without preceding private_data_specifier
+      descriptor.
+
+  -c
+  --create
+      Create a new empty CAT if none was received after one second. This is
+      equivalent to --create-after 1000.
+
+  --create-after milliseconds
+      Create a new empty CAT if none was received after the specified number
+      of milliseconds. This can be useful to force the creation of a CAT in
+      a TS that has none (the CAT is an optional table). If an actual CAT is
+      received later, it will be used as the base for transformations instead
+      of the empty one.
+
+  --help
+      Display this help text.
+
+  -i
+  --increment-version
+      Increment the version number of the CAT.
+
+  --inter-packet value
+      When a new CAT is created and --bitrate is not present, this option
+      specifies the packet interval for the CAT PID, that is to say the
+      number of TS packets in the transport between two packets of the
+      CAT PID. Use instead of --bitrate if the global bitrate of the TS
+      cannot be determined.
+
+  -v value
+  --new-version value
+      Specify a new value for the version of the CAT.
+
+  -r value
+  --remove-casid value
+      Remove all CA_descriptors with the specified CA System Id.
+      Several --remove-casid options may be specified.
+
+  --remove-pid value
+      Remove all CA_descriptors with the specified EMM PID value.
+      Several --remove-pid options may be specified.
+
+  --version
+      Display the version number.
+

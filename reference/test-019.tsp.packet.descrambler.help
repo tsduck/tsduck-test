@@ -1,0 +1,34 @@
+
+DVB descrambler using static control words.
+
+Usage: tsp -P descrambler [options]
+
+Options:
+
+  -c value
+  --cw value
+      Specifies a fixed and constant control word for all TS packets.
+      The value must be a string of 16 hexadecimal digits.
+
+  -f name
+  --cw-file name
+      Specifies a text file containing the list of control words to apply.
+      Each line of the file must contain exactly 16 hexadecimal digits.
+      The next control word is used each time the "scrambling_control"
+      changes in the TS packets header.
+
+  --help
+      Display this help text.
+
+  -n
+  --no-entropy-reduction
+      Do not perform CW entropy reduction to 48 bits. Keep full 64-bits CW.
+
+  -p value
+  --pid value
+      Descramble packets with this PID value. Several -p or --pid options may be
+      specified. By default, all PID's with scrambled packets are descrambled.
+
+  --version
+      Display the version number.
+

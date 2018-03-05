@@ -1,0 +1,36 @@
+
+MPEG Transport Stream File Truncation Utility.
+
+Usage: tsftrunc [options] filename ...
+
+Files:
+
+  MPEG capture files to be truncated.
+
+Options:
+
+  -b value
+  --byte value
+      Truncate the file at the next packet boundary after the specified size
+      in bytes. Mutually exclusive with --packet.
+
+  --help
+      Display this help text.
+
+  -n
+  --noaction
+      Do not perform truncation, check mode only.
+
+  -p value
+  --packet value
+      Index of first packet to truncate. If unspecified, all complete
+      packets are kept in the file. Extraneous bytes at end of file
+      (after last multiple of 188 bytes) are truncated.
+
+  -v
+  --verbose
+      Produce verbose messages.
+
+  --version
+      Display the version number.
+

@@ -1,0 +1,80 @@
+
+Check version, download and upgrade TSDuck.
+
+Usage: tsversion [options]
+
+Options:
+
+  -a
+  --all
+      List all available versions of TSDuck from GitHub.
+
+  -b
+  --binary
+      With --download, fetch the binary installers of the latest version. This
+      is the default. When --source is specified, specify --binary if you also
+      need the binary installers.
+
+  -c
+  --check
+      Check if a new version of TSDuck is available from GitHub.
+
+  -d
+  --download
+      Download the latest version (or the version specified by --name) from
+      GitHub. By default, download the binary installers for the current
+      operating system and architecture. Specify --source to download the
+      source code.
+
+  -f
+  --force
+      Force downloads even if a file with same name and size already exists.
+
+  --help
+      Display this help text.
+
+  -l
+  --latest
+      Display the latest version of TSDuck from GitHub.
+
+  -n version-name
+  --name version-name
+      Get information for or download from GitHub the specified version, not
+      the latest one.
+
+  -o dir-name
+  --output-directory dir-name
+      Output directory for downloaded files (current directory by default).
+
+  --proxy-host name
+      Optional proxy host name for Internet access.
+
+  --proxy-password string
+      Optional proxy password for Internet access (for use with --proxy-user).
+
+  --proxy-port value
+      Optional proxy port for Internet access (for use with --proxy-host).
+
+  --proxy-user name
+      Optional proxy user name for Internet access.
+
+  -s
+  --source
+      With --download, download the source code archive instead of the binary
+      installers.
+
+  -t
+  --this
+      Display the current version of TSDuck (this executable).
+
+  -u
+  --upgrade
+      Upgrade TSDuck to the latest version.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

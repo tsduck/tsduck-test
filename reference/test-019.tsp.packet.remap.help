@@ -1,0 +1,36 @@
+
+Generic PID remapper.
+
+Usage: tsp -P remap [options] [pid[-pid]=newpid ...]
+
+Specifying PID remapping:
+
+  Each remapping is specified as "pid=newpid" or "pid1-pid2=newpid"
+  (all PID's can be specified as decimal or hexadecimal values).
+  In the first form, the PID "pid" is remapped to "newpid".
+  In the later form, all PID's within the range "pid1" to "pid2"
+  (inclusive) are respectively remapped to "newpid", "newpid"+1, etc.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -n
+  --no-psi
+      Do not modify the PSI. By default, the PAT, CAT and PMT's are
+      modified so that previous references to the remapped PID's will
+      point to the new PID values.
+
+  -u
+  --unchecked
+      Do not perform any consistency checking while remapping PID's.
+      - Remapping to or from a predefined PID is accepted.
+      - Remapping two PID's to the same PID or to a PID which is
+        already present in the input is accepted.
+      Note that this option should be used with care since the
+      resulting stream can be illegal or inconsistent.
+
+  --version
+      Display the version number.
+

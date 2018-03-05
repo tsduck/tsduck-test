@@ -1,0 +1,83 @@
+
+MPEG Transport Stream Files Comparison Utility.
+
+Usage: tscmp [options] filename-1 filename-2
+
+Files:
+
+  MPEG capture files to be compared.
+
+Options:
+
+  --buffered-packets value
+      Specifies the files input buffer size in TS packets.
+      The default is 10,000 TS packets.
+
+  -b value
+  --byte-offset value
+      Start reading the files at the specified byte offset (default: 0).
+
+  --cc-ignore
+      Ignore continuity counters when comparing packets. Useful if one file
+      has been resynchronized.
+
+  -c
+  --continue
+      Continue the comparison up to the end of files. By default, stop after
+      the first differing packet.
+
+  -d
+  --dump
+      Dump the content of all differing packets.
+
+  --help
+      Display this help text.
+
+  -n
+  --normalized
+      Report in a normalized output format (useful for automatic analysis).
+
+  -p value
+  --packet-offset value
+      Start reading the files at the specified TS packet (default: 0).
+
+  --payload-only
+      Compare only the payload of the packets, ignore header and adaptation
+      field.
+
+  --pcr-ignore
+      Ignore PCR and OPCR when comparing packets. Useful if one file has been
+      resynchronized.
+
+  --pid-ignore
+      Ignore PID value when comparing packets. Useful if one file has gone
+      through a remapping process.
+
+  -q
+  --quiet
+      Do not output any message. The process simply terminates with a success
+      status if the files are identical and a failure status if they differ.
+
+  -s
+  --subset
+      Specifies that the second file is a subset of the first one. This means
+      that the second file is expected to be identical to the first one, except
+      that some packets may be missing. When a difference is found, the first
+      file is read ahead until a matching packet is found.
+      See also --threshold-diff.
+
+  -t value
+  --threshold-diff value
+      When used with --subset, this value specifies the maximum number of
+      differing bytes in packets to declare them equal. When two packets have
+      more differing bytes than this threshold, the packets are reported as
+      different and the first file is read ahead. The default is zero, which
+      means that two packets must be strictly identical to declare them equal.
+
+  -v
+  --verbose
+      Produce verbose messages.
+
+  --version
+      Display the version number.
+

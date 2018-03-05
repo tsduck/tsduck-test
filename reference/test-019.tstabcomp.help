@@ -1,0 +1,65 @@
+
+PSI/SI tables compiler.
+
+Usage: tstabcomp [options] filename ...
+
+Input files:
+
+  XML source files to compile or binary table files to decompile. By default,
+  files ending in .xml are compiled and files ending in .bin are decompiled.
+  For other files, explicitly specify --compile or --decompile.
+
+Options:
+
+  -c
+  --compile
+      Compile all files as XML source files into binary files. This is the
+      default for .xml files.
+
+  -d
+  --decompile
+      Decompile all files as binary files into XML files. This is the default
+      for .bin files.
+
+  --default-charset name
+      Default DVB character set to use. The available table names are:
+      ISO-6937, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
+      ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5,
+      ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, UNICODE, UTF-8.
+
+      With --compile, this character set is used to encode strings. If a
+      given string cannot be encoded with this character set or if this option
+      is not specified, an appropriate character set is automatically selected.
+
+      With --decompile, this character set is used to interpret DVB strings
+      without explicit character table code. According to DVB standard ETSI EN
+      300 468, the default DVB character set is ISO-6937. However, some bogus
+      signalization may assume that the default character set is different,
+      typically the usual local character table for the region. This option
+      forces a non-standard character table.
+
+  --help
+      Display this help text.
+
+  -o filepath
+  --output filepath
+      Specify the output file name. By default, the output file has the same
+      name as the input and extension .bin (compile) or .xml (decompile). If
+      the specified path is a directory, the output file is built from this
+      directory and default file name. If more than one input file is specified,
+      the output path, if present, must be a directory name.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+
+  -x
+  --xml-model
+      Display the XML model of the table files. This model is not a full
+      XML-Schema, this is an informal template file which describes the
+      expected syntax of TSDuck XML files. If --output is specified, save
+      the model here. Do not specify input files.
+

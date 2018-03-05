@@ -1,0 +1,101 @@
+
+Analyze PES packets.
+
+Usage: tsp -P pes [options]
+
+Options:
+
+  -a
+  --audio-attributes
+      Display audio attributes.
+
+  --avc-access-unit
+      Dump all AVC (ISO 14496-10, ITU H.264) access units (aka "NALunits").
+
+  -b
+  --binary
+      Include binary dump in addition to hexadecimal.
+
+  -h
+  --header
+      Dump PES packet header.
+
+  --help
+      Display this help text.
+
+  -x value
+  --max-dump-count value
+      Specify the maximum number of times data dump occurs with options
+      --trace-packets, --header, --payload, --start-code, --avc-access-unit.
+      Default: unlimited.
+
+  -m value
+  --max-dump-size value
+      Specify the maximum dump size for options --header, --payload,
+      --start-code, --avc-access-unit.
+
+  --max-payload-size value
+      Display PES packets with no payload or with a payload the size (in bytes)
+      of which is not greater than the specified value.
+
+  --min-payload-size value
+      Display PES packets with a payload the size (in bytes) of which is equal
+      to or greater than the specified value.
+
+  --nal-unit-type value
+      AVC NALunit filter: with --avc-access-unit, select access units with
+      this type (default: all access units). Several --nal-unit-type options
+      may be specified.
+
+  --negate-nal-unit-type
+      Negate the AVC NALunit filter: specified access units are excluded.
+
+  -n
+  --negate-pid
+      Negate the PID filter: specified PID's are excluded.
+
+  --nibble
+      Same as --binary but add separator between 4-bit nibbles.
+
+  -o filename
+  --output-file filename
+      Specify the output file for the report (default: standard output).
+
+  --packet-index
+      Display the index of the first and last TS packet of each displayed
+      PES packet.
+
+  -p value
+  --pid value
+      PID filter: select packets with this PID value (default: all PID's
+      containing PES packets). Several -p or --pid options may be specified.
+
+  --payload
+      Dump PES packet payload.
+
+  --sei-avc
+      Dump all SEI (Supplemental Enhancement Information) in AVC/H.264
+      access units.
+
+  -s
+  --start-code
+      Dump all start codes in PES packet payload.
+
+  -t
+  --trace-packets
+      Trace all PES packets.
+
+  --uuid-sei value
+      AVC SEI filter: with --sei-avc, select "user data unregistered" SEI
+      access units with the specified UUID value (default: all SEI). Several
+      --uuid-sei options may be specified. The UUID value must be 16 bytes long.
+      It must be either an ASCII string of exactly 16 characters or a hexa-
+      decimal value representing 16 bytes.
+
+  --version
+      Display the version number.
+
+  -v
+  --video-attributes
+      Display video attributes.
+

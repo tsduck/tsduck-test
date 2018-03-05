@@ -1,0 +1,59 @@
+
+Control a Dektec Device.
+
+Usage: tsdektec [options] [device]
+
+Device:
+
+  Device index, from 0 to N-1 (with N being the number of Dektec devices
+  in the system). The default is 0. Use option --list-all to have a
+  complete list of devices in the system.
+
+Options:
+
+  -a
+  --all
+      List all Dektec devices available on the system.
+
+  --help
+      Display this help text.
+
+  -i port-number
+  --input port-number
+      Set the specified port in input mode. This applies to bidirectional
+      ports which can be either set in input or output mode.
+
+  -l state
+  --led state
+      Set the state of the LED on the rear panel. Useful to identify a
+      Dektec device when more than one is present. The state is one of
+      "off", "green", "red", "yellow", "hardware". See also
+      option --wait (the led state is automatically returned to
+      "hardware" after exit).
+
+  -n
+  --normalized
+      With --all, list the Dektec devices in a normalized output format
+      (useful for automatic analysis).
+
+  -o port-number
+  --output port-number
+      Set the specified port in output mode. This applies to bidirectional
+      ports which can be either set in input or output mode.
+
+  -r
+  --reset
+      Reset the device.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+
+  -w seconds
+  --wait seconds
+      Wait the specified number of seconds before exiting. The default
+      if 5 seconds if option --led is specified and 0 otherwise.
+

@@ -1,0 +1,39 @@
+
+Rename a transport stream.
+
+Usage: tsp -P tsrename [options]
+
+Options:
+
+  -a
+  --add
+      Equivalent to --add-bat --add-nit.
+
+  --add-bat
+      Add a new entry for the renamed TS in the BAT and keep the previous
+      entry. By default, the TS entry is renamed.
+
+  --add-nit
+      Add a new entry for the renamed TS in the NIT and keep the previous
+      entry. By default, the TS entry is renamed.
+
+  --help
+      Display this help text.
+
+  --ignore-bat
+      Do not modify the BAT.
+
+  --ignore-nit
+      Do not modify the NIT.
+
+  -o value
+  --original-network-id value
+      Modify the original network id. By default, it is unchanged.
+
+  -t value
+  --ts-id value
+      Modify the transport stream id. By default, it is unchanged.
+
+  --version
+      Display the version number.
+

@@ -1,0 +1,47 @@
+
+MPEG Transport Stream Bitrate Evaluation Utility.
+
+Usage: tsbitrate [options] [filename]
+
+Input file:
+
+  MPEG capture file (standard input if omitted).
+
+Options:
+
+  -a
+  --all
+      Analyze all packets in the input file. By default, stop analysis when
+      enough PCR information has been collected.
+
+  -d
+  --dts
+      Use DTS (Decoding Time Stamps) from video PID's instead of PCR
+      (Program Clock Reference) from the transport layer.
+
+  -f
+  --full
+      Full analysis. The file is entirely analyzed (as with --all) and the
+      final report includes a complete per PID bitrate analysis.
+
+  --help
+      Display this help text.
+
+  --min-pcr value
+      Stop analysis when that number of PCR are read from the required
+      minimum number of PID (default: 64).
+
+  --min-pid value
+      Minimum number of PID to get PCR from (default: 1).
+
+  -v
+  --value-only
+      Display only the bitrate value, in bits/seconds, based on
+      188-byte packets. Useful to reuse the value in command lines.
+
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

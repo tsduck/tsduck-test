@@ -1,0 +1,69 @@
+
+Insert TS packets in a TS.
+
+Usage: tsp -P mux [options] input-file
+
+Input file:
+
+  Binary file containing 188-byte transport packets.
+
+Options:
+
+  -b value
+  --bitrate value
+      Specifies the bitrate for the inserted packets, in bits/second.
+      By default, all stuffing packets are replaced which means that
+      the bitrate is neither constant nor guaranteed.
+
+  --byte-offset value
+      Start reading the file at the specified byte offset (default: 0).
+      This option is allowed only if the input file is a regular file.
+
+  --help
+      Display this help text.
+
+  -i value
+  --inter-packet value
+      Specifies the packet interval for the inserted packets, that is to say
+      the number of TS packets in the transport between two new packets.
+      Use instead of --bitrate if the global bitrate of the TS cannot be
+      determined.
+
+  -j
+  --joint-termination
+      Perform a "joint termination" when file insersion is complete.
+      See "tsp --help" for more details on "joint termination".
+
+  --no-continuity-update
+      Do not update continuity counters in the inserted packets. By default,
+      the continuity counters are updated in each inserted PID to preserve the
+      continuity.
+
+  --no-pid-conflict-check
+      Do not check PID conflicts between the TS and the new inserted packets.
+      By default, the processing is aborted if packets from the same PID are
+      found both in the TS and the inserted packets.
+
+  --packet-offset value
+      Start reading the file at the specified TS packet (default: 0).
+      This option is allowed only if the input file is a regular file.
+
+  -p value
+  --pid value
+      Force the PID value of all inserted packets.
+
+  -r count
+  --repeat count
+      Repeat the playout of the file the specified number of times. By default,
+      the file is infinitely repeated. This option is allowed only if the
+      input file is a regular file.
+
+  -t
+  --terminate
+      Terminate packet processing when file insersion is complete. By default,
+      when packet insertion is complete, the transmission continues and the
+      stuffing is no longer modified.
+
+  --version
+      Display the version number.
+

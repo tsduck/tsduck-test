@@ -1,0 +1,54 @@
+
+Extract Teletext subtitles in SRT format.
+
+Usage: tsp -P teletext [options]
+
+Options:
+
+  -c
+  --colors
+      Add font color tags in the subtitles. By default, no color is specified.
+
+  --help
+      Display this help text.
+
+  -l name
+  --language name
+      Specifies the language of the subtitles to select. This option is useful
+      only with --service, when the PMT of the service declares Teletext
+      subtitles in different languages.
+
+  -m value
+  --max-frames value
+      Specifies the maximum number of Teletext frames to extract. The processing
+      is then stopped. By default, all frames are extracted.
+
+  -o filename
+  --output-file filename
+      Specifies the SRT output file name. This is a text file. By default, the
+      SRT subtitles are displayed on the standard output.
+
+  --page value
+      Specifies the Teletext page to extract. This option is useful only when
+      the Teletext PID contains several pages. By default, the first Teletext
+      frame defines the page to use.
+
+  -p value
+  --pid value
+      Specifies the PID carrying Teletext subtitles. Alternatively, if the
+      Teletext PID is properly signalled in the PMT of its service, the option
+      --service can be used instead.
+
+  -s value
+  --service value
+      Specifies the service with Teletext subtitles. If the argument is an
+      integer value (either decimal or hexadecimal), it is interpreted as a
+      service id. Otherwise, it is interpreted as a service name, as specified
+      in the SDT. The name is not case sensitive and blanks are ignored.
+      The first teletext_descriptor in the PMT of the service is used to
+      identify the PID carrying Teletext subtitles. If neither --service nor
+      --pid is specified, the first service in the PAT is used.
+
+  --version
+      Display the version number.
+

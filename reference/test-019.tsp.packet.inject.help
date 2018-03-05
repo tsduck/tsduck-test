@@ -1,0 +1,97 @@
+
+Inject tables and sections in a TS.
+
+Usage: tsp -P inject [options] input-file[=rate] ...
+
+Input files:
+
+  Binary or XML files containing one or more sections or tables. By default,
+  files ending in .xml are XML and files ending in .bin are binary. For other
+  file names, explicitly specify --binary or --xml.
+
+  If different repetition rates are required for different files,
+  a parameter can be "filename=value" where value is the
+  repetition rate in milliseconds for all sections in that file.
+
+Options:
+
+  --binary
+      Specify that all input files are binary, regardless of their file name.
+
+  -b value
+  --bitrate value
+      Specifies the bitrate for the new PID, in bits/second.
+
+  -e value
+  --evaluate-interval value
+      When used with --replace and when specific repetition rates are
+      specified for some input files, the bitrate of the target PID is
+      re-evaluated on a regular basis. The value of this option specifies
+      the number of packet in the target PID before re-evaluating its
+      bitrate. The default is 100 packets.
+
+  -f
+  --force-crc
+      Force recomputation of CRC32 in long sections. Ignore CRC32 values
+      in input file.
+
+  --help
+      Display this help text.
+
+  -i value
+  --inter-packet value
+      Specifies the packet interval for the new PID, that is to say the
+      number of TS packets in the transport between two packets of the
+      new PID. Use instead of --bitrate if the global bitrate of the TS
+      cannot be determined.
+
+  -j
+  --joint-termination
+      Perform a "joint termination" when section insersion is complete.
+      Meaningful only when --repeat is specified.
+      See "tsp --help" for more details on "joint termination".
+
+  -p value
+  --pid value
+      PID of the output TS packets. This is a required parameter, there is
+      no default value. To replace the content of an existing PID, use option
+      --replace. To steal stuffing packets and create a new PID, use either
+      option --bitrate or --inter-packet. Exactly one option --replace,
+      --bitrate or --inter-packet must be specified.
+
+  --poll-files
+      Poll the presence and modification date of the input files. When a file
+      is created, modified or deleted, reload all files at the next section
+      boundary. When a file is deleted, its sections are no longer injected.
+      By default, all input files are loaded once at initialization time and
+      an error is generated if a file is missing.
+
+  --repeat count
+      Repeat the insertion of a complete cycle of sections the specified number
+      of times. By default, the sections are infinitely repeated.
+
+  -r
+  --replace
+      Replace the content of an existing PID. Do not steal stuffing.
+
+  -s
+  --stuffing
+      Insert stuffing at end of each section, up to the next TS packet
+      boundary. By default, sections are packed and start in the middle
+      of a TS packet, after the previous section. Note, however, that
+      section headers are never scattered over a packet boundary.
+
+  -t
+  --terminate
+      Terminate packet processing when section insersion is complete.
+      Meaningful only when --repeat is specified. By default, when section
+      insertion is complete, the transmission continues and the stuffing is
+      no longer modified (if --replace is specified, the PID is then replaced
+      by stuffing).
+
+  --version
+      Display the version number.
+
+  --xml
+      Specify that all input files are XML, regardless of their file name.
+

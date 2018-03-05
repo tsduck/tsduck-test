@@ -1,0 +1,47 @@
+
+DVB SimulCrypt data injector using EMMG/PDG <=> MUX protocol.
+
+Usage: tsp -P datainject [options]
+
+Options:
+
+  -b value
+  --bitrate-max value
+      Specifies the maximum bitrate for the data PID in bits / second.
+      By default, the data PID bitrate is limited by the stuffing bitrate
+      (data insertion is performed by replacing stuffing packets).
+
+  -v value
+  --emmg-mux-version value
+      Specifies the version of the EMMG/PDG <=> MUX DVB SimulCrypt protocol.
+      Valid values are 2 and 3. The default is 2.
+
+  --help
+      Display this help text.
+
+  -p value
+  --pid value
+      Specifies the PID for the data insertion. This option is mandatory.
+
+  -q value
+  --queue-size value
+      Specifies the maximum number of data TS packets in the internal queue,
+      ie. packets which are received from the EMMG/PDG client but not yet
+      inserted into the TS. The default is 100.
+
+  -r
+  --reuse-port
+      Set the "reuse port" (or "reuse address") TCP option on the server.
+
+  -s [address:]port
+  --server [address:]port
+      Specifies the local TCP port on which the plugin listens for an incoming
+      EMMG/PDG connection. This option is mandatory.
+      When present, the optional address shall specify a local IP address or
+      host name (by default, the plugin accepts connections on any local IP
+      interface). This plugin behaves as a MUX, ie. a TCP server, and accepts
+      only one EMMG/PDG connection at a time.
+
+  --version
+      Display the version number.
+

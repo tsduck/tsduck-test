@@ -1,0 +1,31 @@
+
+Update TDT and TOT with a new time reference
+
+Usage: tsp -P timeref [options]
+
+Options:
+
+  -a seconds
+  --add seconds
+      Add the specified number of seconds to all UTC time. Specify a negative
+      value to make the time reference go backward.
+
+  --help
+      Display this help text.
+
+  --notdt
+      Do not update TDT.
+
+  --notot
+      Do not update TOT.
+
+  -s time
+  --start time
+      Specify a new UTC date & time reference for the first packet in the
+      stream. Then, the time reference is updated according to the number
+      of packets and the bitrate. A time value must be in the format
+      "year/month/day:hour:minute:second".
+
+  --version
+      Display the version number.
+

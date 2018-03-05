@@ -1,0 +1,113 @@
+
+DVB scrambler.
+
+Usage: tsp -P scrambler [options] service
+
+Service:
+  Specifies the service to scramble.
+  If the argument is an integer value (either decimal or hexadecimal), it is
+  interpreted as a service id. Otherwise, it is interpreted as a service name,
+  as specified in the SDT. The name is not case sensitive and blanks are
+  ignored. If the input TS does not contain an SDT, use service ids only.
+
+Options:
+
+  -a value
+  --access-criteria value
+      Specifies the access criteria for the service as sent to the ECMG.
+      The value must be a suite of hexadecimal digits.
+
+  -b value
+  --bitrate-ecm value
+      Specifies the bitrate for ECM PID's in bits / second. The default is
+      30,000 b/s.
+
+  --channel-id value
+      Specifies the DVB SimulCrypt ECM_channel_id for the ECMG (default: 1).
+
+  -d seconds
+  --cp-duration seconds
+      Specifies the crypto-period duration in seconds (default: 10).
+
+  --component-level
+      Add CA_descriptors at component level in the PMT. By default, the
+      CA_descriptor is added at program level.
+
+  -c value
+  --control-word value
+      Specifies a fixed and constant control word for all TS packets.
+      The value must be a string of 16 hexadecimal digits. When using
+      this option, no ECMG is required.
+
+  -i value
+  --ecm-id value
+      Specifies the DVB SimulCrypt ECM_id for the ECMG (default: 1).
+
+  -e host:port
+  --ecmg host:port
+      Specify an ECM Generator. Without ECMG, a fixed control word must be
+      specified using --control-word.
+
+  -v value
+  --ecmg-scs-version value
+      Specifies the version of the ECMG <=> SCS DVB SimulCrypt protocol.
+      Valid values are 2 and 3. The default is 2.
+
+  --help
+      Display this help text.
+
+  --ignore-scrambled
+      Ignore packets which are already scrambled. Since these packets
+      are likely scrambled with a different control word, descrambling
+      will not be possible the usual way.
+
+  --no-audio
+      Do not scramble audio components in the selected service. By default,
+      all audio components are scrambled.
+
+  -n
+  --no-entropy-reduction
+      Do not perform CW entropy reduction to 48 bits. Keep full 64-bits CW.
+
+  --no-video
+      Do not scramble video components in the selected service. By default,
+      all video components are scrambled.
+
+  --partial-scrambling count
+      Do not scramble all packets, only one packet every "count" packets.
+      The default value is 1, meaning that all packets are scrambled.
+      Specifying higher values is a way to reduce the scrambling CPU load
+      while keeping the service mostly scrambled.
+
+  --pid-ecm value
+      Specifies the new ECM PID for the service. By defaut, use the first
+      unused PID immediately following the PMT PID. Using the default, there
+      is a risk to later discover that this PID is already used. In that case,
+      specify --pid-ecm with a notoriously unused PID value.
+
+  -p value
+  --private-data value
+      Specifies the private data to insert in the CA_descriptor in the PMT.
+      The value must be a suite of hexadecimal digits.
+
+  --stream-id value
+      Specifies the DVB SimulCrypt ECM_stream_id for the ECMG (default: 1).
+
+  --subtitles
+      Scramble subtitles components in the selected service. By default, the
+      subtitles components are not scrambled.
+
+  -s value
+  --super-cas-id value
+      Specify the DVB SimulCrypt Super_CAS_Id. This is required when --ecmg
+      is specified.
+
+  --synchronous
+      Specify to synchronously generate the ECM's. By default, continue
+      processing packets while generating ECM's. Use this option with
+      offline packet processing. Use the default (asynchronous) with live
+      packet processing.
+
+  --version
+      Display the version number.
+

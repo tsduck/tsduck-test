@@ -1,0 +1,46 @@
+
+Extract clear (non scrambled) sequences of a transport stream.
+
+Usage: tsp -P clear [options]
+
+The extraction of clear sequences is based on one "reference" service.
+(see option -s). When a clear packet is found on any audio or video stream of
+the reference service, all packets in the TS are transmitted. When no clear
+packet has been found in the last second, all packets in the TS are dropped.
+
+Options:
+
+  -a
+  --audio
+      Check only audio PIDs for clear packets. By default, audio and video
+      PIDs are checked.
+
+  -d value
+  --drop-after-packets value
+      Specifies the number of packets after the last clear packet to wait
+      before stopping the packet transmission. By default, stop 1 second
+      after the last clear packet (based on current bitrate).
+
+  --help
+      Display this help text.
+
+  -s name-or-id
+  --service name-or-id
+      Specify the reference service. If the argument is an integer value
+      (either decimal or hexadecimal), it is interpreted as a service id.
+      Otherwise, it is interpreted as a service name, as specified in the
+      SDT. The name is not case sensitive and blanks are ignored. If this
+      option is not specified, the first service in the PAT is used.
+
+  --stuffing
+      Replace excluded packets with stuffing (null packets) instead
+      of removing them. Useful to preserve bitrate.
+
+  --version
+      Display the version number.
+
+  -v
+  --video
+      Check only video PIDs for clear packets. By default, audio and video
+      PIDs are checked.
+

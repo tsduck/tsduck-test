@@ -1,0 +1,147 @@
+
+MPEG Transport Stream Processor: Receive a TS from a user-specified input
+plug-in, apply MPEG packet processing through several user-specified packet
+processor plug-in's and send the processed stream to a user-specified output
+plug-in. All input, processors and output plug-in's are shared libraries.
+
+Usage: tsp  [tsp-options] \
+    [-I input-name [input-options]] \
+    [-P processor-name [processor-options]] ... \
+    [-O output-name [output-options]]
+
+All tsp-options must be placed on the command line before the input,
+processors and output specifications. The tsp-options are:
+
+  -a nullpkt/inpkt
+  --add-input-stuffing nullpkt/inpkt
+      Specify that <nullpkt> null TS packets must be automatically inserted
+      after every <inpkt> input TS packets. Both <nullpkt> and <inpkt> must
+      be non-zero integer values. This option is useful to artificially
+      increase the input bitrate by adding stuffing. Example: the option
+      "-a 14/24" adds 14 null packets every 24 input packets, effectively
+      turning a 24 Mb/s input stream (terrestrial) into a 38 Mb/s stream
+      (satellite).
+
+  -b value
+  --bitrate value
+      Specify the input bitrate, in bits/seconds. By default, the input
+      bitrate is provided by the input plugin or by analysis of the PCR.
+
+  --bitrate-adjust-interval value
+      Specify the interval in seconds between bitrate adjustments,
+      ie. when the output bitrate is adjusted to the input one.
+      The default is 5 seconds.
+      Some output processors ignore this setting. Typically, ASI
+      or modulator devices use it, while file devices ignore it.
+      This option is ignored if --bitrate is specified.
+
+  --buffer-size-mb value
+      Specify the buffer size in mega-bytes. This is the size of
+      the buffer between the input and output devices. The default
+      is 16 MB.
+
+  -d[N]
+  --debug[=N]
+      Produce debug output. Specify an optional debug level N.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-joint-termination
+      Ignore all --joint-termination options in plugins.
+      The idea behind "joint termination" is to terminate tsp when several
+      plugins have jointly terminated their processing. Some plugins have
+      a --joint-termination option. When set, the plugin executes until some
+      plugin-specific condition. When all plugins with --joint-termination set
+      have reached their termination condition, tsp terminates. The option
+      --ignore-joint-termination disables the termination of tsp when all
+      plugins have reached their joint termination condition.
+
+  -l
+  --list-processors
+      List all available processors.
+
+  --log-message-count value
+      Specify the maximum number of buffered log messages. Log messages are
+      displayed asynchronously in a low priority thread. This value specifies
+      the maximum number of buffered log messages in memory, before being
+      displayed. When too many messages are logged in a short period of time,
+      while plugins use all CPU power, extra messages are dropped. Increase
+      this value if you think that too many messages are dropped. The default
+      is 512 messages.
+
+  --max-flushed-packets value
+      Specify the maximum number of packets to be processed before flushing
+      them to the next processor or the output. When the processing time
+      is high and some packets are lost, try decreasing this value.
+      The default is 10000 packets.
+
+  --max-input-packets value
+      Specify the maximum number of packets to be received at a time from
+      the input plug-in. By default, tsp reads as many packets as it can,
+      depending on the free space in the buffer.
+
+  -m
+  --monitor
+      Continuously monitor the system resources which are used by tsp.
+      This includes CPU load, virtual memory usage. Useful to verify the
+      stability of the application.
+
+  -s
+  --synchronous-log
+      Each logged message is guaranteed to be displayed, synchronously, without
+      any loss of message. The downside is that a plugin thread may be blocked
+      for a short while when too many messages are logged. This option shall be
+      used when all log messages are needed and the source and destination are
+      not live streams (files for instance). This option is not recommended for
+      live streams, when the responsiveness of the application is more important
+      than the logged messages.
+
+  -t
+  --timed-log
+      Each logged message contains a time stamp.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+
+The following options activate the user-specified plug-in's.
+
+  -I name
+  --input name
+      Designate the shared library plug-in for packet input.
+      By default, read packets from standard input.
+
+  -O name
+  --output name
+      Designate the shared library plug-in for packet output.
+      By default, write packets to standard output.
+
+  -P name
+  --processor name
+      Designate a shared library plug-in for packet processing. Several
+      packet processors are allowed. Each packet is successively processed
+      by each processor, in the order of the command line. By default, there
+      is no processor and the packets are directly passed from the input to
+      the output.
+
+The specified <name> is used to locate a shared library. It can be designated
+in a number of ways, in the following order:
+
+  . If the name contains a '/', it is only interpreted as a file path for
+    the shared library.
+  . If not found, the file is searched into the all directories in environment
+    variable TSPLUGINS_PATH and in the same directory as the tsp executable
+    file. In each directory, file named tsplugin_<name>.so is searched
+    first, then the file <name>, with or without .so.
+  . Finally, the standard system algorithm is applied to locate the shared library
+    file. See the man page of dlopen(3) for more details.
+
+Input-options, processor-options and output-options are specific to their
+corresponding plug-in. Try "tsp {-I|-O|-P} name --help" to display the
+help text for a specific plug-in.
+

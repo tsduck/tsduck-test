@@ -1,0 +1,32 @@
+
+MPEG Transport Stream Time (TDT/TOT) Extraction Utility.
+
+Usage: tsdate [options] [filename]
+
+Input file:
+
+  MPEG capture file (standard input if omitted).
+
+Options:
+
+  -a
+  --all
+      Report all TDT/TOT tables (default: report only the first table
+      of each type).
+
+  --help
+      Display this help text.
+
+  --notdt
+      Ignore Time & Date Table (TDT).
+
+  --notot
+      Ignore Time Offset Table (TOT).
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

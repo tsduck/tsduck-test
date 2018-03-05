@@ -1,0 +1,31 @@
+
+Fork a process and send TS packets to its standard input.
+
+Usage: tsp -P fork [options] 'command'
+
+Command:
+  Specifies the command line to execute in the created process.
+
+Options:
+
+  -b value
+  --buffered-packets value
+      Specifies the number of TS packets to buffer before sending them
+      through the pipe to the forked process. By default, the packets are
+      not buffered and sent one by one.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-abort
+      Ignore early termination of child process. By default, if the child
+      process aborts and no longer reads the packets, tsp also aborts.
+
+  -n
+  --nowait
+      Do not wait for child process termination at end of input.
+
+  --version
+      Display the version number.
+

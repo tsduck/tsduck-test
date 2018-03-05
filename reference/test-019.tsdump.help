@@ -1,0 +1,54 @@
+
+MPEG Transport Stream Packet Dump Utility.
+
+Usage: tsdump [options] [filename]
+
+Input file:
+
+  MPEG capture file (standard input if omitted).
+
+Options:
+
+  -a
+  --ascii
+      Include ASCII dump in addition to hexadecimal.
+
+  -b
+  --binary
+      Include binary dump in addition to hexadecimal.
+
+  -c
+  --c-style
+      Same as --raw-dump (no interpretation of packet) but dump the
+      bytes in C-language style.
+
+  -h
+  --headers-only
+      Dump packet headers only, not payload.
+
+  --help
+      Display this help text.
+
+  -n
+  --nibble
+      Same as --binary but add separator between 4-bit nibbles.
+
+  -o
+  --offset
+      Include offset from start of packet with hexadecimal dump.
+
+  -p
+  --payload
+      Hexadecimal dump of TS payload only, skip TS header.
+
+  -r
+  --raw-file
+      Raw dump of file, do not interpret as TS packets.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

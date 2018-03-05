@@ -1,0 +1,43 @@
+
+Perform various transformations on the PAT
+
+Usage: tsp -P pat [options]
+
+Options:
+
+  -a sid/pid
+  --add-service sid/pid
+      Add the specified service_id / PMT-PID in the PAT. Several --add-service
+      options may be specified to add several services.
+
+  --help
+      Display this help text.
+
+  -i
+  --increment-version
+      Increment the version number of the PAT.
+
+  -n pid
+  --nit pid
+      Add or modify the NIT PID in the PAT.
+
+  -r sid
+  --remove-service sid
+      Remove the specified service_id from the PAT. Several --remove-service
+      options may be specified to remove several services.
+
+  -u
+  --remove-nit
+      Remove the NIT PID from the PAT.
+
+  -t id
+  --tsid id
+      Specify a new value for the transport stream id in the PAT.
+
+  -v value
+  --new-version value
+      Specify a new value for the version of the PAT.
+
+  --version
+      Display the version number.
+

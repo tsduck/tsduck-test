@@ -1,0 +1,31 @@
+
+MPEG Transport Stream Fix Continuity Counters Utility.
+
+Usage: tsfixcc [options] filename
+
+File:
+
+  MPEG capture file to be modified.
+
+Options:
+
+  -c
+  --circular
+      Enforce continuity when the file is played repeatedly.
+      Add empty packets, if necessary, on each PID so that the
+      continuity is preserved between end and beginning of file.
+
+  --help
+      Display this help text.
+
+  -n
+  --noaction
+      Display what should be performed but do not modify the file.
+
+  -v
+  --verbose
+      Produce verbose messages.
+
+  --version
+      Display the version number.
+

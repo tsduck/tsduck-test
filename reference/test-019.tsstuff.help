@@ -1,0 +1,70 @@
+
+Add stuffing to a TS file to reach a target bitrate.
+
+Usage: tsstuff [options] [input-file]
+
+Input file:
+  The input file is a TS file, typically with variable bitrate content.
+  By default, the standard input is used.
+
+Options:
+
+  -b value
+  --bitrate value
+      Target constant bitrate of the output file. This is mandatory parameter,
+      there is no default.
+
+  --buffer-size value
+      Input buffer size, in bytes. Must be large enough to always contain two
+      time stamps in the reference PID. Default: 4,194,304 bytes.
+
+  -d
+  --dts-based
+      Use Decoding Time Stamps (DTS) in the reference PID to evaluate the
+      amount of stuffing to insert. The default is to use Program Clock
+      References (PCR) instead of DTS.
+
+  -f value
+  --final-inter-packet value
+      Number of stuffing packets to add between input packets after the last
+      time stamp (PCR or DTS). By default, use the same number as in the
+      previous segment, between the last two time stamps.
+
+  --help
+      Display this help text.
+
+  -i value
+  --initial-inter-packet value
+      Number of stuffing packets to add between input packets before the first
+      time stamp (PCR or DTS). By default, use the same number as in the
+      first segment, between the first two time stamps.
+
+  -l value
+  --leading-packets value
+      Number of consecutive stuffing packets to add at the beginning of the
+      output file, before the first input packet. The default is zero.
+
+  -o filename
+  --output filename
+      Output file name (standard output by default). The output file is a TS
+      file with the same packets as the input file with interspersed stuffing
+      packets and a constant bitrate.
+
+  -r value
+  --reference-pid value
+      PID in which to collect time stamps (PCR or DTS) to use as reference
+      for the insertion of stuffing packets. By default, use the first PID
+      containing the specified type of time stamps (PCR or DTS).
+
+  -t value
+  --trailing-packets value
+      Number of consecutive stuffing packets to add at the end of the
+      output file, after the last input packet. The default is zero.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

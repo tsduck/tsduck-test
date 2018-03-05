@@ -1,0 +1,72 @@
+
+Filter TS packets according to various conditions.
+
+Usage: tsp -P filter [options]
+
+Options:
+
+  --adaptation-field
+      Select packets with an adaptation field.
+
+  -c
+  --clear
+      Select clear (unscrambled) packets.
+      Equivalent to --scrambling-control 0.
+
+  --help
+      Display this help text.
+
+  --max-adaptation-field-size value
+      Select packets with no adaptation field or with an adaptation field the
+      size (in bytes) of which is not greater than the specified value.
+
+  --max-payload-size value
+      Select packets with no payload or with a payload the size (in bytes) of
+      which is not greater than the specified value.
+
+  --min-adaptation-field-size value
+      Select packets with an adaptation field the size (in bytes) of which
+      is equal to or greater than the specified value.
+
+  --min-payload-size value
+      Select packets with a payload the size (in bytes) of which is equal
+      to or greater than the specified value.
+
+  -n
+  --negate
+      Negate the filter: specified packets are excluded.
+
+  --payload
+      Select packets with a payload.
+
+  --pcr
+      Select packets with PCR or OPCR.
+
+  --pes
+      Select packets with clear PES headers.
+
+  -p value
+  --pid value
+      PID filter: select packets with this PID value.
+      Several -p or --pid options may be specified.
+
+  --scrambling-control value
+      Select packets with the specified scrambling control value. Valid
+      values are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
+
+  -s
+  --stuffing
+      Replace excluded packets with stuffing (null packets) instead
+      of removing them. Useful to preserve bitrate.
+
+  --unit-start
+      Select packets with payload unit start indicator.
+
+  -v
+  --valid
+      Select valid packets. A valid packet starts with 0x47 and has
+      its transport_error_indicator cleared.
+
+  --version
+      Display the version number.
+

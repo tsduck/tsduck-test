@@ -1,0 +1,129 @@
+
+MPEG Transport Stream Analysis Utility.
+
+Usage: tsanalyze [options] [filename]
+
+Input file:
+
+  MPEG capture file (standard input if omitted).
+
+Options:
+
+  -b value
+  --bitrate value
+      Specifies the bitrate of the transport stream in bits/second
+      (based on 188-byte packets). By default, the bitrate is
+      evaluated using the PCR in the transport stream.
+
+  --help
+      Display this help text.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+
+Controlling analysis:
+
+  --default-charset name
+      Default character set to use when interpreting DVB strings without
+      explicit character table code. According to DVB standard ETSI EN 300 468,
+      the default DVB character set is ISO-6937. However, some bogus
+      signalization may assume that the default character set is different,
+      typically the usual local character table for the region. This option
+      forces a non-standard character table. The available table names are:
+      ISO-6937, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
+      ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5,
+      ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, UNICODE, UTF-8.
+
+  --suspect-max-consecutive value
+      Specifies the maximum number of consecutive "suspect" packets.
+      The default value is 1. If set to zero, the suspect packet detection
+      is disabled.
+
+      Suspect packets are TS packets which are technically correct but which
+      may be suspected of being incorrect, resulting in analysis errors.
+      Typically, in the middle of a suite of packets with uncorrectable
+      binary errors, one packet may appear to have no such error while
+      it has some errors in fact. To avoid adding this type of packets in the
+      analysis, a packet is declared as "suspect" (and consequently ignored in
+      the analysis) when:
+      - its PID is unknown (no other packet was found in this PID)
+      - it immediately follows a certain amount of packet containing errors
+        (see option --suspect-min-error-count)
+      - it immediately follows no more than the specified number consecutive
+        suspect packets.
+
+  --suspect-min-error-count value
+      Specifies the minimum number of consecutive packets with errors before
+      starting "suspect" packet detection. See also option
+      --suspect-max-consecutive. The default value is 1. If set to zero,
+      the suspect packet detection is disabled.
+
+Controlling output:
+
+  The output can include full synthetic analysis (options *-analysis),
+  fully normalized output (option --normalized) or a simple list of
+  values on one line (options --*-list). The second and third type of
+  options are useful to write automated scripts.
+
+  If output-control options are specified, only the selected outputs
+  are produced. If no option is given, the default is:
+  --ts-analysis --service-analysis --pid-analysis --table-analysis
+
+  --ts-analysis
+      Report global transport stream analysis.
+
+  --service-analysis
+      Report analysis for each service.
+
+  --pid-analysis
+      Report analysis for each PID.
+
+  --table-analysis
+      Report analysis for each table.
+
+  --error-analysis
+      Report analysis about detected errors.
+
+  --normalized
+      Complete report about the transport stream, the services and
+      the PID's in a normalized output format (useful for automatic
+      analysis).
+
+  --service-list
+      Report the list of all service ids.
+
+  --pid-list
+      Report the list of all PID's.
+
+  --global-pid-list
+      Report the list of all global PID's, that is to say PID's
+      which are not referenced by a specific service but are or
+      are referenced by the standard DVB PSI/SI. This include, for
+      instance, PID's of the PAT, EMM's, EIT's, stuffing, etc.
+
+  --unreferenced-pid-list
+      Report the list of all unreferenced PID's, that is to say
+      PID's which are neither referenced by a service nor known
+      as or referenced by the standard DVB PSI/SI.
+
+  --service-pid-list value
+      Report the list of all PID's which are referenced by the
+      specified service id.
+
+  --pes-pid-list
+      Report the list of all PID's which are declared as carrying
+      PES packets (audio, video, subtitles, etc).
+
+  --title string
+      Display the specified string as title header.
+
+  --prefix string
+      For one-line displays (options --*-list), prepend the
+      specified string to all values. For instance, options
+      --global --prefix -p outputs something like '-p 0 -p 1 -p 16',
+      which is an acceptable option list for the tsp filter plugin.
+

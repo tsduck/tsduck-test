@@ -1,0 +1,24 @@
+
+Generate null packets.
+
+Usage: tsp -I null [options] [count]
+
+Count:
+  Specify the number of null packets to generate. After the last packet,
+  an end-of-file condition is generated. By default, if count is not
+  specified, null packets are generated endlessly.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -j
+  --joint-termination
+      When the number of null packets is specified, perform a "joint
+      termination" when completed instead of unconditional termination.
+      See "tsp --help" for more details on "joint termination".
+
+  --version
+      Display the version number.
+

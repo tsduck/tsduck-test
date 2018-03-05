@@ -1,0 +1,104 @@
+
+Perform various transformations on the PMT
+
+Usage: tsp -P pmt [options]
+
+Options:
+
+  --ac3-atsc2dvb
+      Change the description of AC-3 audio streams from ATSC to DVB method.
+      In details, this means that all components with stream_type 0x81 are
+      modified with stream_type 0x06 (PES private data) and an AC-3_descriptor
+      is added on this component (if none was already there).
+
+  --add-ca-descriptor casid/pid[/private-data]
+      Add a CA_descriptor at program level in the PMT with the specified CA
+      System Id and ECM PID. The optional private data must be a suite of
+      hexadecimal digits. Several --add-ca-descriptor options may be specified
+      to add several descriptors.
+
+  -a pid/stream_type
+  --add-pid pid/stream_type
+      Add the specified PID / stream-type component in the PMT. Several
+      --add-pid options may be specified to add several components.
+
+  --add-stream-identifier
+      Add a stream_identifier_descriptor on all components. The component_tag
+      are uniquely allocated inside the service. Existing stream_identifier
+      descriptors are left unmodified.
+
+  --audio-language language-code[:audio-type[:location]]
+      Specifies the language for an audio stream in the PMT. Several options
+      can be specified to set the languages of several audio streams.
+      The "language-code" is a 3-character string. The audio-type is optional,
+      its default value is zero. The "location" indicates how to locate the
+      audio stream. Its format is either "Pn" or "An". In the first case,
+      "n" designates a PID value and in the second case the audio stream number
+      inside the PMT, starting with 1. The default location is "A1", ie. the
+      first audio stream inside the PMT.
+
+  --cleanup-private-descriptors
+      Remove all private descriptors without preceding private_data_specifier
+      descriptor.
+
+  --eac3-atsc2dvb
+      Change the description of Enhanced-AC-3 (aka AC-3+ or DD+) audio streams
+      from ATSC to DVB method. In details, this means that all components with
+      stream_type 0x87 are modified with stream_type 0x06 (PES private data)
+      and an enhanced_AC-3_descriptor is added on this component (if none was
+      already there).
+
+  --help
+      Display this help text.
+
+  --increment-version
+      Increment the version number of the PMT.
+
+  -i value
+  --new-service-id value
+      Change the service id in the PMT.
+
+  -m old-pid/new-pid
+  --move-pid old-pid/new-pid
+      Change the PID value of a component in the PMT. Several --move-pid
+      options may be specified to move several components.
+
+  --pds value
+      With option --remove-descriptor, specify the private data specifier
+      which applies to the descriptor tag values above 0x80.
+
+  -p value
+  --pmt-pid value
+      Specify the PID carrying the PMT to modify. All PMT's in this PID will be
+      modified. Options --pmt-pid and --service are mutually exclusive. If
+      neither are specified, the first service in the PAT is used.
+
+  --pcr-pid value
+      Change the PCR PID value in the PMT.
+
+  --remove-descriptor value
+      Remove from the PMT all descriptors with the specified tag. Several
+      --remove-descriptor options may be specified to remove several types of
+      descriptors. See also option --pds.
+
+  -r value
+  --remove-pid value
+      Remove the component with the specified PID from the PMT. Several
+      --remove-pid options may be specified to remove several components.
+
+  -s name-or-id
+  --service name-or-id
+      Specify the service the PMT of which must be modified. If the argument is
+      an integer value (either decimal or hexadecimal), it is interpreted as a
+      service id. Otherwise, it is interpreted as a service name, as specified
+      in the SDT. The name is not case sensitive and blanks are ignored.
+      Options --pmt-pid and --service are mutually exclusive. If neither are
+      specified, the first service in the PAT is used.
+
+  -v value
+  --new-version value
+      Specify a new value for the version of the PMT.
+
+  --version
+      Display the version number.
+

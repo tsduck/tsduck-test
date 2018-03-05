@@ -1,0 +1,25 @@
+
+Permanently recompute bitrate based on PCR analysis.
+
+Usage: tsp -P pcrbitrate [options]
+
+Options:
+
+  -d
+  --dts
+      Use DTS (Decoding Time Stamps) from video PID's instead of PCR
+      (Program Clock Reference) from the transport layer.
+
+  --help
+      Display this help text.
+
+  --min-pcr value
+      Stop analysis when that number of PCR are read from the required
+      minimum number of PID (default: 128).
+
+  --min-pid value
+      Minimum number of PID to get PCR from (default: 1).
+
+  --version
+      Display the version number.
+

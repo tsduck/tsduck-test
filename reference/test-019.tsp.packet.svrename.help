@@ -1,0 +1,49 @@
+
+Rename a service, assign a new service name and/or new service id.
+
+Usage: tsp -P svrename [options] service
+
+Service:
+  Specifies the service to rename. If the argument is an integer value
+  (either decimal or hexadecimal), it is interpreted as a service id.
+  Otherwise, it is interpreted as a service name, as specified in the SDT.
+  The name is not case sensitive and blanks are ignored.
+
+Options:
+
+  -f value
+  --free-ca-mode value
+      Specify a new free_CA_mode to set in the SDT (0 or 1).
+
+  --help
+      Display this help text.
+
+  -i value
+  --id value
+      Specify a new service id value.
+
+  --ignore-bat
+      Do not modify the BAT.
+
+  --ignore-nit
+      Do not modify the NIT.
+
+  -l value
+  --lcn value
+      Specify a new logical channel number (LCN).
+
+  -n value
+  --name value
+      Specify a new service name.
+
+  -r value
+  --running-status value
+      Specify a new running_status to set in the SDT (0 to 7).
+
+  -t value
+  --type value
+      Specify a new service type.
+
+  --version
+      Display the version number.
+

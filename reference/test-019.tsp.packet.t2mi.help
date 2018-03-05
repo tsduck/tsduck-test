@@ -1,0 +1,49 @@
+
+Extract T2-MI (DVB-T2 Modulator Interface) packets.
+
+Usage: tsp -P t2mi [options]
+
+Options:
+
+  -a
+  --append
+      With --output-file, if the file already exists, append to the end of the
+      file. By default, existing files are overwritten.
+
+  -e
+  --extract
+      Extract encapsulated TS packets from one PLP of a T2-MI stream.
+      This is the default if neither --extract nor --log is specified.
+      By default, the transport stream is completely replaced by the extracted
+      stream. See option --output-file.
+
+  --help
+      Display this help text.
+
+  -k
+  --keep
+      With --output-file, keep existing file (abort if the specified file
+      already exists). By default, existing files are overwritten.
+
+  -l
+  --log
+      Log all T2-MI packets using one single summary line per packet.
+
+  -o filename
+  --output-file filename
+      Specify that the extracted stream is saved in this file. In that case,
+      the main transport stream is passed unchanged to the next plugin.
+
+  -p value
+  --pid value
+      Specify the PID carrying the T2-MI encapsulation. By default, use the
+      first component with a T2MI_descriptor in a service.
+
+  --plp value
+      Specify the PLP (Physical Layer Pipe) to extract from the T2-MI
+      encapsulation. By default, use the first PLP which is found.
+      Ignored if --extract is not used.
+
+  --version
+      Display the version number.
+

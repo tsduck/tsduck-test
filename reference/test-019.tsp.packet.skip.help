@@ -1,0 +1,21 @@
+
+Skip leading TS packets of a stream.
+
+Usage: tsp -P skip [options] count
+
+Count:
+  Number of leading packets to skip.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -s
+  --stuffing
+      Replace excluded leading packets with stuffing (null packets) instead
+      of removing them.
+
+  --version
+      Display the version number.
+

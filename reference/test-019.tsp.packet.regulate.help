@@ -1,0 +1,28 @@
+
+Regulate the TS packets flow to a specified bitrate.
+
+Usage: tsp -P regulate [options]
+
+Regulate (slow down only) the TS packets flow according to a specified
+bitrate. Useful to play a non-regulated input (such as a TS file) to a
+non-regulated output device such as IP multicast.
+
+Options:
+
+  -b value
+  --bitrate value
+      Specify the bitrate in b/s. By default, use the "input" bitrate,
+      typically resulting from the PCR analysis of the input file.
+
+  --help
+      Display this help text.
+
+  -p value
+  --packet-burst value
+      Number of packets to burst at a time. Does not modify the average
+      output bitrate but influence smoothing and CPU load. The default
+      is 16 packets.
+
+  --version
+      Display the version number.
+

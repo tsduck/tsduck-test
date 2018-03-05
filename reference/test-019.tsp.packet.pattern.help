@@ -1,0 +1,41 @@
+
+Replace packet payload with a binary pattern on selected PID's.
+
+Usage: tsp -P pattern [options] pattern
+
+Pattern:
+  Specifies the binary pattern to apply on TS packets payload.
+  The value must be a string of hexadecimal digits specifying any
+  number of bytes.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -n
+  --negate
+      Negate the PID filter: modify packets on all PID's, expect the
+      specified ones.
+
+  -o value
+  --offset-non-pusi value
+      Specify starting offset in payload of packets with the PUSI (payload.
+      unit start indicator) not set. By default, the pattern replacement
+      starts at the beginning of the packet payload (offset 0).
+
+  -u value
+  --offset-pusi value
+      Specify starting offset in payload of packets with the PUSI (payload.
+      unit start indicator) set. By default, the pattern replacement
+      starts at the beginning of the packet payload (offset 0).
+
+  -p value
+  --pid value
+      Select packets with this PID value. Several -p or --pid options
+      may be specified to select multiple PID's. If no such option is
+      specified, packets from all PID's are modified.
+
+  --version
+      Display the version number.
+

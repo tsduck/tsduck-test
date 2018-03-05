@@ -1,0 +1,63 @@
+
+Extracts PCR, OPCR, PTS, DTS from TS packet for analysis.
+
+Usage: tsp -P pcrextract [options]
+
+Options:
+
+  -c
+  --csv
+      Report data in CSV (comma-separated values) format. All values are reported
+      in decimal. This is the default output format. It is suitable for later
+      analysis using tools such as Microsoft Excel.
+
+  -d
+  --dts
+      Report Decoding Time Stamps (DTS). By default, if none of --pcr, --opcr,
+      --pts, --dts is specified, report them all.
+
+  -g
+  --good-pts-only
+      Keep only "good" PTS, ie. PTS which have a higher value than the
+      previous good PTS. This eliminates PTS from out-of-sequence B-frames.
+
+  --help
+      Display this help text.
+
+  -l
+  --log
+      Report data in "log" format through the standard tsp logging system.
+      All values are reported in hexadecimal.
+
+  -n
+  --noheader
+      Do not output initial header line in CSV format.
+
+  --opcr
+      Report Original Program Clock References (OPCR). By default, if none of
+      --pcr, --opcr, --pts, --dts is specified, report them all.
+
+  -o filename
+  --output-file filename
+      Output file name for CSV reporting (standard error by default).
+
+  --pcr
+      Report Program Clock References (PCR). By default, if none of --pcr,
+      --opcr, --pts, --dts is specified, report them all.
+
+  -p value
+  --pid value
+      Specifies a PID to analyze. By default, all PID's are analyzed.
+      Several --pid options may be specified.
+
+  --pts
+      Report Presentation Time Stamps (PTS). By default, if none of --pcr,
+      --opcr, --pts, --dts is specified, report them all.
+
+  -s string
+  --separator string
+      Field separator string in CSV output (default: ';').
+
+  --version
+      Display the version number.
+

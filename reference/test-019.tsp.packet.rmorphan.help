@@ -1,0 +1,18 @@
+
+Remove orphan (unreferenced) PID's.
+
+Usage: tsp -P rmorphan [options]
+
+Options:
+
+  --help
+      Display this help text.
+
+  -s
+  --stuffing
+      Replace excluded packets with stuffing (null packets) instead
+      of removing them. Useful to preserve bitrate.
+
+  --version
+      Display the version number.
+

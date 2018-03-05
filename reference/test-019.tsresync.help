@@ -1,0 +1,59 @@
+
+MPEG Transport Stream Resynchronizer.
+
+Usage: tsresync [options] [filename]
+
+Input file:
+
+  MPEG transport stream file (standard input if omitted).
+
+Options:
+
+  -c
+  --continue
+      Continue re-resynchronizing after loss of synchronization.
+      By default, stop after first packet not starting with 0x47.
+
+  -h value
+  --header-size value
+      When used with --packet-size, specifies the size of extra data preceeding
+      each packet in the input file. The default is zero.
+
+  --help
+      Display this help text.
+
+  -k
+  --keep
+      Keep TS packet size from input to output file. By default, strip extra
+      data and reduce packets to 188 bytes. See option --packet-size for a
+      description of supported input packet sizes.
+
+  -m value
+  --min-contiguous value
+      Minimum size containing contiguous valid packets to consider a slice of
+      input file as containing actual packets (default: 512 kB).
+
+  -o filename
+  --output filename
+      Output file name (standard output by default).
+
+  -p value
+  --packet-size value
+      Expected TS packet size in bytes. By default, try 188-byte (standard),
+      204-byte (trailing 16-byte Reed-Solomon outer FEC), 192-byte (leading
+      4-byte timestamp in M2TS/Blu-ray disc files). If the input file contains
+      any other type of packet encapsulation, use options --packet-size and
+      --header-size.
+
+  -s value
+  --sync-size value
+      Number of initial bytes to analyze to find start of packet
+      synchronization (default: 1 MB).
+
+  -v
+  --verbose
+      Display verbose information.
+
+  --version
+      Display the version number.
+
