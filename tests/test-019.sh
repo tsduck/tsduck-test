@@ -4,12 +4,12 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-# The following tools and plugins have output texts which depend on the operating
-# system. They are currently exluded from the test: tslsdvb tsscan dektec dvb
+# The following tools and plugins have output texts which depend on the operating system.
+# They are currently excluded from the test: tslsdvb tsp tsscan dektec dvb play
 
 TOOLS=(
     tsanalyze tsbitrate tscmp tsdate tsdektec tsdump tsfixcc tsftrunc
-    tspacketize tsp tspsi tsresync tssmartcard tsstuff tstabcomp
+    tspacketize tspsi tsresync tssmartcard tsstuff tstabcomp
     tstabdump tstables tsterinfo tsversion
 )
 
@@ -18,7 +18,7 @@ INPUT_PLUGINS=(
 )
 
 OUTPUT_PLUGINS=(
-    drop file ip play
+    drop file ip
 )
 
 PACKET_PLUGINS=(
