@@ -22,6 +22,11 @@ Options:
       Add the specified PID / stream-type component in the PMT. Several
       --add-pid options may be specified to add several components.
 
+  --add-programinfo-id value
+      Add a registration_descriptor in the program-level descriptor list in the
+      PMT. The value is the format_identifier in registration_descriptor, e.g.
+      0x43554549 for CUEI.
+
   --add-stream-identifier
       Add a stream_identifier_descriptor on all components. The component_tag
       are uniquely allocated inside the service. Existing stream_identifier
@@ -94,6 +99,16 @@ Options:
       in the SDT. The name is not case sensitive and blanks are ignored.
       Options --pmt-pid and --service are mutually exclusive. If neither are
       specified, the first service in the PAT is used.
+
+  --set-cue-type pid/type
+      In the component with the specified PID, add an SCTE 35 cue_identifier
+      descriptor with the specified cue stream type. Several --set-cue-type
+      options may be specified.
+
+  --set-stream-identifier pid/id
+      In the component with the specified PID, add a stream_identifier_descriptor
+      with the specified id. Several --set-stream-identifier options may be
+      specified.
 
   -v value
   --new-version value
