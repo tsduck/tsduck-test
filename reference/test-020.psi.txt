@@ -1,0 +1,306 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 12, sections: 1, total size: 60 bytes
+  - Section 0:
+    TS id:    1080 (0x0438)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:  8801 (0x2261)  PID:  100 (0x0064)
+    Program:  8802 (0x2262)  PID:  200 (0x00C8)
+    Program:  8803 (0x2263)  PID:  300 (0x012C)
+    Program:  8804 (0x2264)  PID:  400 (0x0190)
+    Program:  8805 (0x2265)  PID:  500 (0x01F4)
+    Program:  8806 (0x2266)  PID:  600 (0x0258)
+    Program:  8807 (0x2267)  PID:  700 (0x02BC)
+    Program:  8808 (0x2268)  PID:  800 (0x0320)
+    Program:  8809 (0x2269)  PID:  900 (0x0384)
+    Program:  8810 (0x226A)  PID: 1000 (0x03E8)
+    Program:  8899 (0x22C3)  PID: 4099 (0x1003)
+
+* PMT, TID 2 (0x02), PID 600 (0x0258)
+  Version: 8, sections: 1, total size: 72 bytes
+  - Section 0:
+    Program: 8806 (0x2266), PCR PID: 610 (0x0262)
+    Elementary stream: type 0x1B (AVC video), PID: 610 (0x0262)
+    - Descriptor 0: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x01 (All commands)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 621 (0x026D)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 2: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x02 (Segmentation)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 642 (0x0282)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 643 (0x0283)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 500 (0x01F4)
+  Version: 30, sections: 1, total size: 87 bytes
+  - Section 0:
+    Program: 8805 (0x2265), PCR PID: 510 (0x01FE)
+    Elementary stream: type 0x1B (AVC video), PID: 510 (0x01FE)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 521 (0x0209)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 123 (0x7B)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 522 (0x020A)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 542 (0x021E)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 543 (0x021F)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 400 (0x0190)
+  Version: 14, sections: 1, total size: 81 bytes
+  - Section 0:
+    Program: 8804 (0x2264), PCR PID: 410 (0x019A)
+    Elementary stream: type 0x1B (AVC video), PID: 410 (0x019A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 421 (0x01A5)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 422 (0x01A6)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 442 (0x01BA)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 443 (0x01BB)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 200 (0x00C8)
+  Version: 15, sections: 1, total size: 96 bytes
+  - Section 0:
+    Program: 8802 (0x2262), PCR PID: 210 (0x00D2)
+    Elementary stream: type 0x1B (AVC video), PID: 210 (0x00D2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 221 (0x00DD)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 222 (0x00DE)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 242 (0x00F2)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 243 (0x00F3)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 4369 (0x1111)
+    - Descriptor 0: Data Broadcast Id (0x66, 102), 8 bytes
+      Data broadcast id: 0x000B (11, IP/MAC Notification service)
+      - Platform id: 0x000004 (TV digitale mobile, Telecom Italia)
+        Action type: 0x01, version: 3
+
+* PMT, TID 2 (0x02), PID 100 (0x0064)
+  Version: 10, sections: 1, total size: 106 bytes
+  - Section 0:
+    Program: 8801 (0x2261), PCR PID: 110 (0x006E)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 8 bytes
+      CA System Id: 0x0100 (Canal Plus), ECM PID: 123 (0x007B)
+      Private CA data:
+      0000:  01 23 45 67                                .#Eg
+    Elementary stream: type 0x1B (AVC video), PID: 110 (0x006E)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 121 (0x0079)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 122 (0x007A)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 123 (0x007B)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 143 (0x008F)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 900 (0x0384)
+  Version: 7, sections: 1, total size: 81 bytes
+  - Section 0:
+    Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+    Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 800 (0x0320)
+  Version: 7, sections: 1, total size: 81 bytes
+  - Section 0:
+    Program: 8808 (0x2268), PCR PID: 810 (0x032A)
+    Elementary stream: type 0x1B (AVC video), PID: 810 (0x032A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 821 (0x0335)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 822 (0x0336)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 842 (0x034A)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 843 (0x034B)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 1000 (0x03E8)
+  Version: 1, sections: 1, total size: 51 bytes
+  - Section 0:
+    Program: 8810 (0x226A), PCR PID: 1010 (0x03F2)
+    Elementary stream: type 0x1B (AVC video), PID: 1010 (0x03F2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1021 (0x03FD)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1043 (0x0413)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+
+* PMT, TID 2 (0x02), PID 300 (0x012C)
+  Version: 13, sections: 1, total size: 96 bytes
+  - Section 0:
+    Program: 8803 (0x2263), PCR PID: 310 (0x0136)
+    Elementary stream: type 0x1B (AVC video), PID: 310 (0x0136)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0 (0x00)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 321 (0x0141)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
+    - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 322 (0x0142)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 343 (0x0157)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 4 (0x04)
+
+* PMT, TID 2 (0x02), PID 4099 (0x1003)
+  Version: 0, sections: 1, total size: 39 bytes
+  - Section 0:
+    Program: 8899 (0x22C3), PCR PID: none
+    Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 4005 (0x0FA5)
+    - Descriptor 0: Data Broadcast Id (0x66, 102), 16 bytes
+      Data broadcast id: 0x0140 (320, Canal+)
+      Data Broadcast selector:
+      07 1B 05 01 04 6E 61 6D 65 04 6D 65 73 73        .....name.mess
+
+* PMT, TID 2 (0x02), PID 700 (0x02BC)
+  Version: 5, sections: 1, total size: 81 bytes
+  - Section 0:
+    Program: 8807 (0x2267), PCR PID: 710 (0x02C6)
+    Elementary stream: type 0x1B (AVC video), PID: 710 (0x02C6)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 721 (0x02D1)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 722 (0x02D2)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 742 (0x02E6)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 16 (0x10)
+      Type: DVB subtitles, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 743 (0x02E7)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+

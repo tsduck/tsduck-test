@@ -105,6 +105,12 @@ Options:
       descriptor with the specified cue stream type. Several --set-cue-type
       options may be specified.
 
+  --set-data-broadcast-id pid/id[/selector]
+      In the component with the specified PID, add a data_broadcast_id_descriptor
+      with the specified data_broadcast_id. The optional selector is a suite of
+      hexadecimal characters representing the content of the selector bytes.
+      Several --set-data-broadcast-id options may be specified.
+
   --set-stream-identifier pid/id
       In the component with the specified PID, add a stream_identifier_descriptor
       with the specified id. Several --set-stream-identifier options may be
