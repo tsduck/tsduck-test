@@ -52,7 +52,7 @@ case $(uname -s | tr A-Z a-z) in
         ;;
     *)
         WINDOWS=false
-        ARCH=$(uname -m | sed -e 's/i.86/i386/')
+        ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
         TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
         TSDUCKBIN_RELEASE=release-$ARCH
         TSDUCKBIN_DEBUG=debug-$ARCH
