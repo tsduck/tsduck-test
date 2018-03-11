@@ -1,7 +1,7 @@
 
-Receive TS packets from UDP/IP, multicast or unicast.
+Inject an incoming UDP stream into MPE (Multi-Protocol Encapsulation).
 
-Usage: tsp -I ip [options] [address:]port
+Usage: tsp -P mpeinject [options] [address:]port
 
 Parameter:
 
@@ -45,23 +45,41 @@ UDP reception options:
       only one sender shall be accepted. Options --first-source and --source
       are mutually exclusive.
 
+MPE encapsulation options:
+
+  --mac-address nn:nn:nn:nn:nn:nn
+      Specify the default destination MAC address to set in MPE sections for
+      unicast IP packets. The default is 00:00:00:00:00:00. For multicast IP
+      packets, the MAC address is automatically computed.
+
+  --new-destination address[:port]
+      Change the destination IP address and UDP port in MPE sections. If the
+      port is not specified, the original destination port from the UDP datagram
+      is used. By default, the destination address is not modified.
+
+  --new-source address[:port]
+      Change the source IP address and UDP port in MPE sections. If the port is
+      not specified, the original source port from the UDP datagram is used. By
+      default, the source address is not modified.
+
 Other options:
-
-  -d value
-  --display-interval value
-      Specify the interval in seconds between two displays of the evaluated
-      real-time input bitrate. The default is to never display the bitrate.
-      This option is ignored if --evaluation-interval is not specified.
-
-  -e value
-  --evaluation-interval value
-      Specify that the real-time input bitrate shall be evaluated on a regular
-      basis. The value specifies the number of seconds between two evaluations.
-      By default, the real-time input bitrate is never evaluated and the input
-      bitrate is evaluated from the PCR in the input packets.
 
   --help
       Display this help text.
+
+  --max-queue value
+      Specify the maximum number of queued UDP datagrams before their insertion
+      into the MPE stream. The default is 32.
+
+  -p value
+  --pid value
+      Specify the PID into which the MPE datagrams shall be inserted. This is a
+      mandatory parameter.
+
+  --replace
+      Replace the target PID if it exists. By default, the plugin only replaces
+       null packets and tsp stops with an error if incoming packets are found
+       with the target PID.
 
   --version
       Display the version number.

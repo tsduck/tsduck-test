@@ -1,0 +1,72 @@
+
+Extract MPE (Multi-Protocol Encapsulation) datagrams.
+
+Usage: tsp -P mpe [options]
+
+Options:
+
+  -a
+  --append
+      With --output-file, if the file already exists, append to the end of the
+      file. By default, existing files are overwritten.
+
+  -d address[:port]
+  --destination address[:port]
+      Filter MPE UDP datagrams based on the specified destination IP address.
+
+  --help
+      Display this help text.
+
+  --local-address address
+      With --udp-forward, specify the IP address of the outgoing local interface
+      for multicast traffic. It can be also a host name that translates to a
+      local address.
+
+  -l
+  --log
+      Log all MPE datagrams using a short summary for each of them.
+
+  -m value
+  --max-datagram value
+      Specify the maximum number of datagrams to extract, then stop. By default,
+      all datagrams are extracted.
+
+  -o filename
+  --output-file filename
+      Specify that the extracted UDP datagrams are saved in this file. The UDP
+      messages are written without any encapsulation.
+
+  -p value
+  --pid value
+      Extract MPE datagrams from this PID. Several -p or --pid options may be
+      specified. When no PID is specified, use all PID's carrying MPE which are
+      properly declared in the signalization.
+
+  -r address[:port]
+  --redirect address[:port]
+      With --udp-forward, redirect all UDP datagrams to the specified socket
+      address. By default, all datagram are forwarded to their original
+      destination address. If you specify a redirected address, it is
+      recommended to use --destination to filter a specific stream. If the
+      port is not specified, the original port is used.
+
+  -s address[:port]
+  --source address[:port]
+      Filter MPE UDP datagrams based on the specified source IP address.
+
+  --ttl value
+      With --udp-forward, specify the TTL (Time-To-Live) socket option.
+      The actual option is either "Unicast TTL" or "Multicast TTL",
+      depending on the destination address. By default, use the same TTL
+      as specified in the received MPE encapsulated datagram.
+
+  -u
+  --udp-forward
+      Forward all received MPE encapsulated UDP datagrams on the local network.
+      By default, the destination address and port of each datagram is left
+      unchanged. The source address of the forwarded datagrams will be the
+      address of the local machine.
+
+  --version
+      Display the version number.
+
