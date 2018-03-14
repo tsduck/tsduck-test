@@ -13,12 +13,18 @@ Options:
   -e
   --extract
       Extract encapsulated TS packets from one PLP of a T2-MI stream.
-      This is the default if neither --extract nor --log is specified.
-      By default, the transport stream is completely replaced by the extracted
-      stream. See option --output-file.
+      This is the default if neither --extract nor --log nor --identify is
+      specified. By default, the transport stream is completely replaced by
+      the extracted stream. See option --output-file.
 
   --help
       Display this help text.
+
+  -i
+  --identify
+      Identify all T2-MI PID's and PLP's. If --pid is specified, only identify
+      PLP's in this PID. If --pid is not specified, identify all PID's carrying
+      T2-MI and their PLP's (require a fully compliant T2-MI signalization).
 
   -k
   --keep
