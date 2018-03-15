@@ -10,6 +10,10 @@ Tables and sections logging options:
   output. Several destinations can be specified at the same time: human-readable
   text output, binary output, UDP/IP messages.
 
+  --all-once
+      Same as --all-sections but collect each section only once per combination of
+      PID, table id, table id extension, section number and version.
+
   -a
   --all-sections
       Display/save all sections, as they appear in the stream. By default,
@@ -105,6 +109,19 @@ Tables and sections logging options:
       the standard output. If you need text formatting on the standard output in
       addition to other output like binary files or UPD/IP, explicitly specify
       this option with "-" as output file name.
+
+  --pack-all-sections
+      Same as --all-sections but also modify each long section so that it becomes a
+      valid complete table. Its section_number and last_section_number are forced
+      to zero. Use with care because this may create inconsistent tables. This
+      option can be useful with tables with sparse sections such as EIT's to save
+      them in XML format.
+
+  --pack-and-flush
+      Before exiting, pack incomplete tables, ignoring missing sections, and flush
+      them. Use with care because this may create inconsistent tables. Unlike option
+      --pack-all-sections, --pack-and-flush does not force --all-sections because it
+      only applies to the last incomplete tables before exiting.
 
   --packet-index
       Display the index of the first and last TS packet of each displayed
