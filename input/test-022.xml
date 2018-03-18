@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <CAT>
+    <adaptation_field_data_descriptor adaptation_field_data_identifier="0x00"/>
+    <adaptation_field_data_descriptor adaptation_field_data_identifier="0xFF"/>
+    <ancillary_data_descriptor ancillary_data_identifier="0x00"/>
+    <ancillary_data_descriptor ancillary_data_identifier="0xFF"/>
+  </CAT>
+
+  <INT platform_id="0x123456">
+
+    <target_IP_address_descriptor IPv4_addr_mask="12.34.56.78"/>
+
+    <target_IP_address_descriptor IPv4_addr_mask="12.34.56.78">
+      <address IPv4_addr="1.2.3.4"/>
+      <address IPv4_addr="54.124.12.78"/>
+    </target_IP_address_descriptor>
+
+    <target_IP_slash_descriptor/>
+
+    <target_IP_slash_descriptor>
+      <address IPv4_addr="1.2.3.4" IPv4_slash_mask="16"/>
+      <address IPv4_addr="5.6.7.8" IPv4_slash_mask="24"/>
+    </target_IP_slash_descriptor>
+
+    <target_IP_source_slash_descriptor/>
+    
+    <target_IP_source_slash_descriptor>
+      <address
+          IPv4_source_addr="1.2.3.4" IPv4_source_slash_mask="8"
+          IPv4_dest_addr="5.6.7.8" IPv4_dest_slash_mask="16"/>
+      <address
+          IPv4_source_addr="45.85.35.14" IPv4_source_slash_mask="24"
+          IPv4_dest_addr="123.124.178.1" IPv4_dest_slash_mask="25"/>
+    </target_IP_source_slash_descriptor>
+
+    <target_MAC_address_descriptor MAC_addr_mask="01:A3:E4:BA:45:74">
+      <address MAC_addr="AB:CD:EF:01:23:45"/>
+    </target_MAC_address_descriptor>
+
+    <target_MAC_address_range_descriptor>
+      <range MAC_addr_low="12:78:65:32:59:32" MAC_addr_high="78:44:54:54:98:87"/>
+    </target_MAC_address_range_descriptor>
+
+    <target_serial_number_descriptor/>
+    
+    <target_serial_number_descriptor>
+      12 34 56 78
+    </target_serial_number_descriptor>
+
+    <target_smartcard_descriptor super_CA_system_id="0x98765432"/>
+    
+    <target_smartcard_descriptor super_CA_system_id="0x12345678">
+      45 89 32 84 21 54
+    </target_smartcard_descriptor>
+
+  </INT>
+
+</tsduck>

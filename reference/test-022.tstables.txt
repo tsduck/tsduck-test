@@ -1,0 +1,67 @@
+
+* CAT, TID 1 (0x01), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 24 bytes
+  - Section 0:
+    - Descriptor 0: Adaptation Field Data (0x70, 112), 1 bytes
+      Adaptation field data identifier: 0x00
+    - Descriptor 1: Adaptation Field Data (0x70, 112), 1 bytes
+      Adaptation field data identifier: 0xFF
+        0x01 (Announcement switching data field (ETSI TS 101 154))
+        0x02 (AU_information data field (ETSI TS 101 154))
+        0x04 (PVR_assist_information_data_field (ETSI TS 101 154))
+        0x08 (tsap_timeline (DVB BlueBook A167-2))
+        0x10 (reserved_0 for future use)
+        0x20 (reserved_0 for future use)
+        0x40 (reserved_0 for future use)
+        0x80 (reserved_0 for future use)
+    - Descriptor 2: Ancillary Data (0x6B, 107), 1 bytes
+      Ancillary data identifier: 0x00
+    - Descriptor 3: Ancillary Data (0x6B, 107), 1 bytes
+      Ancillary data identifier: 0xFF
+        0x01 (DVD-Video Ancillary Data (ETSI TS 101 154))
+        0x02 (Extended Ancillary Data (ETSI TS 101 154))
+        0x04 (Announcement Switching Data (ETSI TS 101 154))
+        0x08 (DAB Ancillary Data (ETSI EN 300 401))
+        0x10 (Scale Factor Error Check (ScF-CRC) (ETSI TS 101 154))
+        0x20 (MPEG-4 ancillary data (ETSI TS 101 154))
+        0x40 (RDS via UECP (ETSI TS 101 154))
+        0x80 (reserved_0 for future use)
+
+* INT (IP/MAC Notification), TID 76 (0x4C), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 130 bytes
+  - Section 0:
+    Platform id: 0x123456 (unknown)
+    Action type: 0x01, processing order: 0x00, id hash: 0x70 (valid)
+    Platform descriptors:
+      - Descriptor 0: INT Target IP Address (0x09, 9), 4 bytes
+        Address mask: 12.34.56.78
+      - Descriptor 1: INT Target IP Address (0x09, 9), 12 bytes
+        Address mask: 12.34.56.78
+        Address: 1.2.3.4
+        Address: 54.124.12.78
+      - Descriptor 2: INT Target IP Slash (0x0F, 15), 0 bytes
+      - Descriptor 3: INT Target IP Slash (0x0F, 15), 10 bytes
+        Address/mask: 1.2.3.4/16
+        Address/mask: 5.6.7.8/24
+      - Descriptor 4: INT Target IP Source Slash (0x10, 16), 0 bytes
+      - Descriptor 5: INT Target IP Source Slash (0x10, 16), 20 bytes
+        - Source:      1.2.3.4/8
+          Destination: 5.6.7.8/16
+        - Source:      45.85.35.14/24
+          Destination: 123.124.178.1/25
+      - Descriptor 6: INT Target MAC Address (0x07, 7), 12 bytes
+        Address mask: 01:A3:E4:BA:45:74
+        Address: AB:CD:EF:01:23:45
+      - Descriptor 7: INT Target MAC Address Range (0x0E, 14), 12 bytes
+        First address: 12:78:65:32:59:32, last: 78:44:54:54:98:87
+      - Descriptor 8: INT Target Serial Number (0x08, 8), 0 bytes
+        Serial number (0 bytes): 
+      - Descriptor 9: INT Target Serial Number (0x08, 8), 4 bytes
+        Serial number (4 bytes): 12 34 56 78
+      - Descriptor 10: INT Target Smartcard (0x06, 6), 4 bytes
+        Super CAS Id: 0x98765432 (2557891634)
+        Private data (0 bytes): 
+      - Descriptor 11: INT Target Smartcard (0x06, 6), 10 bytes
+        Super CAS Id: 0x12345678 (305419896)
+        Private data (6 bytes): 45 89 32 84 21 54
+
