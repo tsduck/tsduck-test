@@ -1,12 +1,23 @@
 
-Check continuity counters on TS packets.
+Check or fix continuity counters on TS packets.
 
 Usage: tsp -P continuity [options]
 
 Options:
 
+  -f
+  --fix
+      Fix incorrect continuity counters. By default, only display
+      discontinuities.
+
   --help
       Display this help text.
+
+  -p value
+  --pid value
+      Check or fix continuity counters only in packets with this PID value.
+      Several -p or --pid options may be specified. By default, all PID's
+      are checked or fixed.
 
   -t 'string'
   --tag 'string'
