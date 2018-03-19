@@ -1,16 +1,17 @@
 
-Read packets from a file.
+Read packets from one or more files.
 
-Usage: tsp -I file [options] [file-name]
+Usage: tsp -I file [options] [file-name ...]
 
 File-name:
-  Name of the input file. Use standard input by default.
+  Name of the input files. The files are read in sequence. Use standard
+  input by default.
 
 Options:
 
   -b value
   --byte-offset value
-      Start reading the file at the specified byte offset (default: 0).
+      Start reading each file at the specified byte offset (default: 0).
       This option is allowed only if the input file is a regular file.
 
   --help
@@ -28,7 +29,7 @@ Options:
 
   -r count
   --repeat count
-      Repeat the playout of the file the specified number of times
+      Repeat the playout of each file the specified number of times
       (default: only once). This option is allowed only if the
       input file is a regular file.
 
