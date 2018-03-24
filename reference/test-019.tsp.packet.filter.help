@@ -8,6 +8,10 @@ Options:
   --adaptation-field
       Select packets with an adaptation field.
 
+  --after-packets count
+      Let the first 'count' packets pass transparently without filtering. Start
+      to apply the filtering criteria after that number of packets.
+
   -c
   --clear
       Select clear (unscrambled) packets.

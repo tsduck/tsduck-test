@@ -17,6 +17,10 @@ UDP reception options:
   --buffer-size value
       Specify the UDP socket receive buffer size (socket option).
 
+  --default-interface
+      Let the system find the appropriate local interface on which to listen.
+      By default, listen on all local interfaces.
+
   -f
   --first-source
       Filter UDP packets based on the source address. Use the sender address of

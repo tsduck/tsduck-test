@@ -29,10 +29,26 @@ Options:
       Use instead of --bitrate if the global bitrate of the TS cannot be
       determined.
 
+  --inter-time value
+      Specifies the time interval for the inserted packets, that is to say the
+      difference between the nearest PCR clock value at the point of insertion
+      in milliseconds. Example: 1000 will keep roughly 1 second space between
+      two inserted packets. The default is 0, it means inter-time is disabled.
+      Use --pts-pid to specify the PID carrying the PCR clock of interest.
+
   -j
   --joint-termination
       Perform a "joint termination" when file insersion is complete.
       See "tsp --help" for more details on "joint termination".
+
+  --max-insert-count value
+      Stop inserting packets after this number of packets was inserted.
+
+  --max-pts value
+      Stop inserting packets when this PTS time has passed in the --pts-pid.
+
+  --min-pts value
+      Start inserting packets when this PTS time has passed in the --pts-pid.
 
   --no-continuity-update
       Do not update continuity counters in the inserted packets. By default,
@@ -51,6 +67,11 @@ Options:
   -p value
   --pid value
       Force the PID value of all inserted packets.
+
+  --pts-pid value
+      Defines the PID carrying PCR or PTS values for --min-pts and --max-pts.
+      When no PTS values are found, PCR are used. PCR values are divided by 300,
+      the system clock sub-factor, to get the corresponding PTS values.
 
   -r count
   --repeat count
