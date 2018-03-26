@@ -24,6 +24,21 @@
       <address IPv4_source_addr="1.2.3.4" IPv4_source_slash_mask="8" IPv4_dest_addr="5.6.7.8" IPv4_dest_slash_mask="16"/>
       <address IPv4_source_addr="45.85.35.14" IPv4_source_slash_mask="24" IPv4_dest_addr="123.124.178.1" IPv4_dest_slash_mask="25"/>
     </target_IP_source_slash_descriptor>
+    <target_IPv6_address_descriptor IPv6_addr_mask="ffff:ffff:ff00::"/>
+    <target_IPv6_address_descriptor IPv6_addr_mask="ffff:f0::">
+      <address IPv6_addr="fe80::93a3:dea0:2108:b81e"/>
+      <address IPv6_addr="fe80::ba3:a0:8:be"/>
+    </target_IPv6_address_descriptor>
+    <target_IPv6_slash_descriptor/>
+    <target_IPv6_slash_descriptor>
+      <address IPv6_addr="1:2:3:4:5:6:7:8" IPv6_slash_mask="72"/>
+      <address IPv6_addr="fe80::93a3:dea0:2108:b81e" IPv6_slash_mask="128"/>
+    </target_IPv6_slash_descriptor>
+    <target_IPv6_source_slash_descriptor/>
+    <target_IPv6_source_slash_descriptor>
+      <address IPv6_source_addr="41:252:53:48:95:996:a7:ced8" IPv6_source_slash_mask="8" IPv6_dest_addr="fe80::93a3:dea0:2108:b81e" IPv6_dest_slash_mask="16"/>
+      <address IPv6_source_addr="fe80::ba3:a0:8:be" IPv6_source_slash_mask="128" IPv6_dest_addr="::1" IPv6_dest_slash_mask="64"/>
+    </target_IPv6_source_slash_descriptor>
     <target_MAC_address_descriptor MAC_addr_mask="01:A3:E4:BA:45:74">
       <address MAC_addr="AB:CD:EF:01:23:45"/>
     </target_MAC_address_descriptor>
@@ -38,5 +53,13 @@
     <target_smartcard_descriptor super_CA_system_id="0x12345678">
       45 89 32 84 21 54
     </target_smartcard_descriptor>
+    <IPMAC_generic_stream_location_descriptor interactive_network_id="0x1234" modulation_system_type="DVB-T2" modulation_system_id="0x0000" PHY_stream_id="0x0000"/>
+    <IPMAC_generic_stream_location_descriptor interactive_network_id="0x1234" modulation_system_type="0xAB" modulation_system_id="0x7894" PHY_stream_id="0x4568">
+      <selector_bytes>
+        12 34 56 78
+      </selector_bytes>
+    </IPMAC_generic_stream_location_descriptor>
+    <ISP_access_mode_descriptor access_mode="dialup"/>
+    <ISP_access_mode_descriptor access_mode="0xBC"/>
   </INT>
 </tsduck>
