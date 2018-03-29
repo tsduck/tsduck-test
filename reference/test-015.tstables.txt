@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 197 bytes
+  Version: 0, sections: 1, total size: 240 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -92,4 +92,26 @@
       - Transport stream id: 0xFEDC (65244)
         Original network id: 0xBA98 (47768)
         Service id: 0x7654 (30292)
+    - Descriptor 21: Scrambling (0x65, 101), 1 bytes
+      Scrambling mode: 0x02 (DVB-CSA2)
+    - Descriptor 22: Scrambling (0x65, 101), 1 bytes
+      Scrambling mode: 0x70 (ATIS IIF IDSA for MPEG-2 TS)
+    - Descriptor 23: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: CP (0x02, 2)
+      CP System Id: 0x0001 (DVB CPCM Auxiliary Data), CP PID: 512 (0x0200)
+    - Descriptor 24: Extension Descriptor (0x7F, 127), 10 bytes
+      Extended descriptor: CP (0x02, 2)
+      CP System Id: 0x5678 (unknown), CP PID: 7117 (0x1BCD)
+      Private CP data:
+      0000:  01 23 45 67 89                             .#Eg.
+    - Descriptor 25: Extension Descriptor (0x7F, 127), 1 bytes
+      Extended descriptor: CP Identifier (0x03, 3)
+    - Descriptor 26: Extension Descriptor (0x7F, 127), 13 bytes
+      Extended descriptor: CP Identifier (0x03, 3)
+      CP System Id: 0x0000 (DVB CPCM Content Licence)
+      CP System Id: 0x0001 (DVB CPCM Auxiliary Data)
+      CP System Id: 0x0002 (DVB CPCM Revocation List)
+      CP System Id: 0x0100 (DTCP Renewability Messages)
+      CP System Id: 0x0101 (HDCP Renewability Messages)
+      CP System Id: 0x1234 (unknown)
 
