@@ -17,6 +17,11 @@ Options:
       Specifies the access criteria for the service as sent to the ECMG.
       The value must be a suite of hexadecimal digits.
 
+  --atis-idsa
+      Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the default).
+      The control words are 16-byte long instead of 8-byte. A scrambling
+      descriptor is automatically added to the PMT to indicate ATIS-IDSA.
+
   -b value
   --bitrate-ecm value
       Specifies the bitrate for ECM PID's in bits / second. The default is
@@ -35,9 +40,9 @@ Options:
 
   -c value
   --control-word value
-      Specifies a fixed and constant control word for all TS packets.
-      The value must be a string of 16 hexadecimal digits. When using
-      this option, no ECMG is required.
+      Specifies a fixed and constant control word for all TS packets. The value
+      must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
+      When using this option, no ECMG is required.
 
   -i value
   --ecm-id value
@@ -68,6 +73,7 @@ Options:
   -n
   --no-entropy-reduction
       Do not perform CW entropy reduction to 48 bits. Keep full 64-bits CW.
+      Ignored with --atis-idsa.
 
   --no-video
       Do not scramble video components in the selected service. By default,
