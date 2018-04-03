@@ -1,9 +1,22 @@
 
-DVB descrambler using static control words.
+Generic DVB descrambler.
 
 Usage: tsp -P descrambler [options]
 
-Options:
+General options:
+
+  --help
+      Display this help text.
+
+  -p value
+  --pid value
+      Descramble packets with this PID value. Several -p or --pid options may be
+      specified. By default, all PID's with scrambled packets are descrambled.
+
+  --version
+      Display the version number.
+
+Transport stream scrambling options:
 
   --atis-idsa
       Use ATIS-IDSA descrambling (ATIS-0800006) instead of DVB-CSA2 (the
@@ -19,21 +32,11 @@ Options:
       Specifies a text file containing the list of control words to apply.
       Each line of the file must contain exactly 16 hexadecimal digits (32
       digits with --atis-idsa). The next control word is used each time the
-      "scrambling_control" changes in the TS packets header.
-
-  --help
-      Display this help text.
+      "scrambling_control" changes in the TS packets header. When all control
+      words are used, the first one is used again, and so on.
 
   -n
   --no-entropy-reduction
       Do not perform CW entropy reduction to 48 bits. Keep full 64-bits CW.
       Ignored with --atis-idsa.
-
-  -p value
-  --pid value
-      Descramble packets with this PID value. Several -p or --pid options may be
-      specified. By default, all PID's with scrambled packets are descrambled.
-
-  --version
-      Display the version number.
 
