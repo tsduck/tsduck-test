@@ -1,7 +1,23 @@
 
 Generic DVB descrambler.
 
-Usage: tsp -P descrambler [options]
+Usage: tsp -P descrambler [options] [service]
+
+This plugin descrambles fixed PID's with fixed control words. As a demo, it can
+also descramble services for which clear ECM's were generated using the utility
+named tsecmg, a DVB SimulCrypt-compliant ECMG for test and demo.
+
+Service:
+  Specifies the optional service to descramble. If no fixed control word is
+  specified, ECM's from the service are used to extract control words.
+
+  If the argument is an integer value (either decimal or hexadecimal), it is
+  interpreted as a service id. Otherwise, it is interpreted as a service name,
+  as specified in the SDT. The name is not case sensitive and blanks are
+  ignored. If the input TS does not contain an SDT, use service ids only.
+
+  If the argument is omitted, --pid options shall be specified to list explicit
+  PID's to descramble and fixed control words shall be specified as well.
 
 General options:
 
@@ -11,7 +27,13 @@ General options:
   -p value
   --pid value
       Descramble packets with this PID value. Several -p or --pid options may be
-      specified. By default, all PID's with scrambled packets are descrambled.
+      specified. By default, descramble the specified service.
+
+  --synchronous
+      Specify to synchronously decipher the ECM's. By default, continue
+      processing packets while processing ECM's. Use this option with
+      offline packet processing. Use the default (asynchronous) with live
+      packet processing.
 
   --version
       Display the version number.
