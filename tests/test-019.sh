@@ -9,7 +9,7 @@ test_cleanup "$SCRIPT.*"
 
 TOOLS=(
     tsanalyze tsbitrate tscmp tsdate tsdektec tsdump tsfixcc tsftrunc
-    tspacketize tspsi tsresync tssmartcard tsstuff tstabcomp
+    tsecmg tspacketize tspsi tsresync tssmartcard tsstuff tstabcomp
     tstabdump tstables tsterinfo tsversion
 )
 

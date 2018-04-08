@@ -5,12 +5,25 @@ Usage: tstabdump [options] [filename ...]
 
 Input file:
 
-  MPEG capture file (standard input if omitted).
+  Binary section file. Several files can be specified. By default, without
+  file and without --ip-udp, the binary tables are read from the standard input.
 
-Options:
+  With --ip-udp, no file shall be specified. Binary sections and tables are
+  received over UDP/IP as sent by the utility 'tstables' or the plugin 'tables'.
+
+General options:
 
   --help
       Display this help text.
+
+  -x value
+  --max-tables value
+      Maximum number of tables to dump. Stop logging tables when this limit is
+      reached. Useful with --ip-udp which never ends otherwise.
+
+  --no-encapsulation
+      With --ip-udp, receive the tables as raw binary messages in UDP packets.
+      By default, the tables are formatted into TLV messages.
 
   -v
   --verbose
@@ -80,4 +93,44 @@ Tables and sections formatting options:
       indicates the byte order of the Tag and Length fields.
 
       All fields are optional. The default values are "auto,auto,1,1,msb".
+
+UDP reception options:
+
+  --buffer-size value
+      Specify the UDP socket receive buffer size (socket option).
+
+  --default-interface
+      Let the system find the appropriate local interface on which to listen.
+      By default, listen on all local interfaces.
+
+  --first-source
+      Filter UDP packets based on the source address. Use the sender address of
+      the first received packet as only allowed source. This option is useful
+      when several sources send packets to the same destination address and port.
+      Accepting all packets could result in a corrupted stream and only one
+      sender shall be accepted. To allow a more precise selection of the sender,
+      use option --source. Options --first-source and --source are mutually
+      exclusive.
+
+  --ip-udp [address:]port
+      The parameter [address:]port describes the destination of UDP packets to
+      receive. The 'port' part is mandatory and specifies the UDP port to
+      listen on. The 'address' part is optional. It specifies an IP multicast
+      address to listen on. It can be also a host name that translates to a
+      multicast address.
+
+  --local-address address
+      Specify the IP address of the local interface on which to listen.
+      It can be also a host name that translates to a local address.
+      By default, listen on all local interfaces.
+
+  --reuse-port
+      Set the reuse port socket option.
+
+  --source address[:port]
+      Filter UDP packets based on the specified source address. This option is
+      useful when several sources send packets to the same destination address
+      and port. Accepting all packets could result in a corrupted stream and
+      only one sender shall be accepted. Options --first-source and --source
+      are mutually exclusive.
 
