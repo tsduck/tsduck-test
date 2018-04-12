@@ -7,7 +7,8 @@ This plugin descrambles fixed PID's with fixed control words. As a demo, it can
 also descramble services for which clear ECM's were generated using the utility
 named tsecmg, a DVB SimulCrypt-compliant ECMG for test and demo.
 
-Service:
+Service parameter:
+
   Specifies the optional service to descramble. If no fixed control word is
   specified, ECM's from the service are used to extract control words.
 
@@ -19,10 +20,7 @@ Service:
   If the argument is omitted, --pid options shall be specified to list explicit
   PID's to descramble and fixed control words shall be specified as well.
 
-General options:
-
-  --help
-      Display this help text.
+Generic descrambler options:
 
   -p value
   --pid value
@@ -35,19 +33,19 @@ General options:
       offline packet processing. Use the default (asynchronous) with live
       packet processing.
 
-  --version
-      Display the version number.
-
 Transport stream scrambling options:
 
   --atis-idsa
-      Use ATIS-IDSA descrambling (ATIS-0800006) instead of DVB-CSA2 (the
+      Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
       default). The control words are 16-byte long instead of 8-byte.
 
   -c value
   --cw value
       Specifies a fixed and constant control word for all TS packets. The value
       must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
+
+  --dvb-csa2
+      Use DVB-CSA2 scrambling. This is the default.
 
   -f name
   --cw-file name
@@ -61,4 +59,18 @@ Transport stream scrambling options:
   --no-entropy-reduction
       With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
       Keep full 64-bit control words. Ignored with --atis-idsa.
+
+General options:
+
+  --cas-id value
+      Specify the CA_system_id to filter when searching for ECM streams. Since
+      this descrambler is a demo tool using clear ECM's, it is unlikely that
+      other real ECM streams exist. So, by default, any ECM stream is used to
+      get the clear ECM's.
+
+  --help
+      Display this help text.
+
+  --version
+      Display the version number.
 

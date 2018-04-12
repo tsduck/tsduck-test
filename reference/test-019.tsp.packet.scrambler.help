@@ -116,13 +116,16 @@ General options:
 Transport stream scrambling options:
 
   --atis-idsa
-      Use ATIS-IDSA descrambling (ATIS-0800006) instead of DVB-CSA2 (the
+      Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
       default). The control words are 16-byte long instead of 8-byte.
 
   -c value
   --cw value
       Specifies a fixed and constant control word for all TS packets. The value
       must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
+
+  --dvb-csa2
+      Use DVB-CSA2 scrambling. This is the default.
 
   -f name
   --cw-file name

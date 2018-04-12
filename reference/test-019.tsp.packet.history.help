@@ -22,6 +22,13 @@ Options:
       may constantly swap between "private stream" and "padding stream". This
       option suppresses these annoying messages.
 
+  -m
+  --milli-seconds
+      For each message, report time in milli-seconds from the beginning of the
+      stream instead of the TS packet number. This time is a playback time based
+      on the current TS bitrate (use plugin pcrbitrate when necessary).
+
+
   -o filename
   --output-file filename
       Specify the output file for reporting history lines. By default, report
