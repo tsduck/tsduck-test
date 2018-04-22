@@ -54,6 +54,9 @@ Options:
   --source address[:port]
       Filter MPE UDP datagrams based on the specified source IP address.
 
+  --sync-layout
+      With --log, display the layout of 0x47 sync bytes in the UDP payload.
+
   --ttl value
       With --udp-forward, specify the TTL (Time-To-Live) socket option.
       The actual option is either "Unicast TTL" or "Multicast TTL",
