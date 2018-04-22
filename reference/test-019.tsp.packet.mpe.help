@@ -14,6 +14,16 @@ Options:
   --destination address[:port]
       Filter MPE UDP datagrams based on the specified destination IP address.
 
+  --dump-datagram
+      With --log, dump each complete network datagram.
+
+  --dump-udp
+      With --log, dump the UDP payload of each network datagram.
+
+  --dump-max value
+      With --dump-datagram or --dump-udp, specify the maxumum number of bytes
+      to dump. By default, dump everything.
+
   --help
       Display this help text.
 
@@ -49,6 +59,10 @@ Options:
       destination address. If you specify a redirected address, it is
       recommended to use --destination to filter a specific stream. If the
       port is not specified, the original port is used.
+
+  --skip value
+      With --output-file, --dump-datagram or --dump-udp, specify the initial
+      number of bytes to skip. By default, save or dump from the beginning.
 
   -s address[:port]
   --source address[:port]
