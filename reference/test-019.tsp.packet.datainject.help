@@ -11,6 +11,9 @@ Options:
       By default, the data PID bitrate is limited by the stuffing bitrate
       (data insertion is performed by replacing stuffing packets).
 
+  --buffer-size value
+      Specify the TCP and UDP socket receive buffer size (socket option).
+
   -v value
   --emmg-mux-version value
       Specifies the version of the EMMG/PDG <=> MUX DVB SimulCrypt protocol.
