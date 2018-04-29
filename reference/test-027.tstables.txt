@@ -142,7 +142,7 @@
     CRC32: 0xD6A82198 (OK)
 
 * SCTE 35 Splice Information, TID 252 (0xFC), PID 200 (0x00C8)
-  Short section, total size: 66 bytes
+  Short section, total size: 182 bytes
   - Section 0:
     Protocol version: 0x00 (0)
     Encryption: none
@@ -161,5 +161,41 @@
         Component tag: 0x01 (1), UTC: 2018/04/29 20:14:51
         Component tag: 0x02 (2), UTC: 2018/04/29 20:15:10
       Unique program id: 0x4562 (17762), avail: 0x00 (0), avails expected: 0
-    CRC32: 0x1BFAA955 (OK)
+    - Descriptor 0: SCTE 35 Avail (0x00, 0), 8 bytes
+      Identifier: 0x43554549 ("CUEI")
+      Provider id: 0x98765432
+    - Descriptor 1: SCTE 35 DTMF (0x01, 1), 12 bytes
+      Identifier: 0x43554549 ("CUEI")
+      Pre-roll: 8 x 1/10 second
+      DTMF: "*1234#"
+    - Descriptor 2: SCTE 35 Time (0x03, 3), 16 bytes
+      Identifier: 0x43554549 ("CUEI")
+      TAI: 1,525,032,891 seconds (2018/04/29 20:14:51) + 1,234 ns, UTC offset: 21
+    - Descriptor 3: SCTE 35 Segmentation (0x02, 2), 9 bytes
+      Identifier: 0x43554549 ("CUEI")
+      Segmentation event id: 0xDEADBEEF, cancel: 1
+    - Descriptor 4: SCTE 35 Segmentation (0x02, 2), 19 bytes
+      Identifier: 0x43554549 ("CUEI")
+      Segmentation event id: 0xBEEFBEEF, cancel: 0
+      Program segmentation: 1, has duration: 0, not restricted: 1
+      Segmentation upid type: 0x03 (Ad-ID), 4 bytes
+        01 02 03 04
+      Segmentation type id: 0x10 (Program Start)
+      Segment number: 0, expected segments: 1
+    - Descriptor 5: SCTE 35 Segmentation (0x02, 2), 40 bytes
+      Identifier: 0x43554549 ("CUEI")
+      Segmentation event id: 0x36985214, cancel: 0
+      Program segmentation: 0, has duration: 1, not restricted: 0
+      Web delivery allowed: 1, no regional blackout: 0
+      Archive allowed: 0, device restrictions: 1
+      Component count: 2
+      Component tag: 1, PTS offset: 123
+      Component tag: 2, PTS offset: 456
+      Segment duration: 987654
+      Segmentation upid type: 0x0B (ATSC Content Identifier), 5 bytes
+        78 96 54 12 30
+      Segmentation type id: 0x34 (Provider Placement Opportunity Start)
+      Segment number: 1, expected segments: 7
+      Sub-segment number: 2, expected sub-segments: 4
+    CRC32: 0x36622388 (OK)
 

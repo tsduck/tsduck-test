@@ -67,5 +67,21 @@
         <component component_tag="2" utc_splice_time="1,525,032,910"/>
       </splice_event>
     </splice_schedule>
+    <splice_avail_descriptor identifier="0x43554549" provider_avail_id="0x98765432"/>
+    <splice_DTMF_descriptor identifier="0x43554549" preroll="8" DTMF="*1234#"/>
+    <splice_time_descriptor identifier="0x43554549" TAI_seconds="1,525,032,891" TAI_ns="1,234" UTC_offset="21"/>
+    <splice_segmentation_descriptor identifier="0x43554549" segmentation_event_id="0xDEADBEEF" segmentation_event_cancel="true"/>
+    <splice_segmentation_descriptor identifier="0x43554549" segmentation_event_id="0xBEEFBEEF" segmentation_event_cancel="false" segmentation_type_id="0x10" segment_num="0" segments_expected="1">
+      <segmentation_upid type="0x03">
+        01 02 03 04
+      </segmentation_upid>
+    </splice_segmentation_descriptor>
+    <splice_segmentation_descriptor identifier="0x43554549" segmentation_event_id="0x36985214" segmentation_event_cancel="false" web_delivery_allowed="true" no_regional_blackout="false" archive_allowed="false" device_restrictions="1" segmentation_duration="987,654" segmentation_type_id="0x34" segment_num="1" segments_expected="7" sub_segment_num="2" sub_segments_expected="4">
+      <segmentation_upid type="0x0B">
+        78 96 54 12 30
+      </segmentation_upid>
+      <component component_tag="1" pts_offset="123"/>
+      <component component_tag="2" pts_offset="456"/>
+    </splice_segmentation_descriptor>
   </splice_information_table>
 </tsduck>
