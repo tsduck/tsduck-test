@@ -1,0 +1,152 @@
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 20 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x00 (SpliceNull), size: 0 bytes
+  CRC32: 0x7A4FBFFF (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 20 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x07 (BandwidthReservation), size: 0 bytes
+  CRC32: 0x7F44F86A (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 25 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x06 (TimeSignal), size: 5 bytes
+  Time: 123,456,789
+  CRC32: 0x1AC7D4EA (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 21 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x06 (TimeSignal), size: 1 bytes
+  Time: unset
+  CRC32: 0x31C853BC (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 24 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0xFF (PrivateCommand), size: 4 bytes
+  Command identifier: 0xDEADBEEF (3,735,928,559)
+  CRC32: 0x6E1A19ED (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 29 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0xFF (PrivateCommand), size: 9 bytes
+  Command identifier: 0x12345678 (305,419,896)
+  Remaining command content:
+    0000:  98 76 54 32 10                                   .vT2.
+  CRC32: 0x53C4A663 (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 20 bytes
+  Protocol version: 0x04 (4)
+  Encryption: none
+  PTS adjustment: 0x00006F855 (456789)
+  CW index: 0x00 (0), tier: 0x147 (327)
+  Command type: 0x00 (SpliceNull), size: 0 bytes
+  CRC32: 0x1873D3E7 (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 25 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x05 (SpliceInsert), size: 5 bytes
+  Splice event id: 0x12345678, cancel: 1
+  CRC32: 0xA1086A07 (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 30 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x05 (SpliceInsert), size: 10 bytes
+  Splice event id: 0x12345678, cancel: 0
+  Out of network: yes, program splice: yes, duration set: no, immediate: yes
+  Unique program id: 0x6789 (26505), avail: 0x00 (0), avails expected: 0
+  CRC32: 0xD99E073C (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 35 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x05 (SpliceInsert), size: 15 bytes
+  Splice event id: 0x12345678, cancel: 0
+  Out of network: yes, program splice: yes, duration set: no, immediate: no
+  Time PTS: 789,456
+  Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
+  CRC32: 0x710342A5 (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 54 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x05 (SpliceInsert), size: 34 bytes
+  Splice event id: 0x12345678, cancel: 0
+  Out of network: yes, program splice: no, duration set: yes, immediate: no
+  Number of components: 3
+    Component tag: 0x01 (1), time PTS: 123,789
+    Component tag: 0x02 (2), time PTS: 123,751
+    Component tag: 0x03 (3), time PTS: 123,801
+  Duration PTS: 0x0000001C8 (456), auto return: no
+  Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
+  CRC32: 0x98BF35BA (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 21 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x04 (SpliceSchedule), size: 1 bytes
+  CRC32: 0xD6A82198 (OK)
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 66 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x04 (SpliceSchedule), size: 46 bytes
+  - Splice event id: 0x78912305, cancel: 1
+  - Splice event id: 0x78914861, cancel: 0
+    Out of network: yes, program splice: yes, duration set: yes
+    UTC: 2018/04/29 20:14:58
+    Duration PTS: 0x00000FC35 (64565), auto return: yes
+    Unique program id: 0x4562 (17762), avail: 0x00 (0), avails expected: 0
+  - Splice event id: 0x78914861, cancel: 0
+    Out of network: no, program splice: no, duration set: no
+    Number of components: 2
+      Component tag: 0x01 (1), UTC: 2018/04/29 20:14:51
+      Component tag: 0x02 (2), UTC: 2018/04/29 20:15:10
+    Unique program id: 0x4562 (17762), avail: 0x00 (0), avails expected: 0
+  CRC32: 0x1BFAA955 (OK)
+

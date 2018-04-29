@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_null/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <bandwidth_reservation/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <time_signal pts_time="123,456,789"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <time_signal/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <private_command identifier="0xDEADBEEF"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <private_command identifier="0x12345678">
+      98 76 54 32 10
+    </private_command>
+  </splice_information_table>
+  <splice_information_table protocol_version="4" pts_adjustment="456,789" tier="0x0147">
+    <!-- PID 0x00C8 (200) -->
+    <splice_null/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_insert splice_event_id="0x12345678" splice_event_cancel="true"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_insert splice_event_id="0x12345678" splice_event_cancel="false" out_of_network="true" splice_immediate="true" unique_program_id="0x6789" avail_num="0" avails_expected="0"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_insert splice_event_id="0x12345678" splice_event_cancel="false" out_of_network="true" splice_immediate="false" unique_program_id="0x6754" avail_num="1" avails_expected="3" pts_time="789,456"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_insert splice_event_id="0x12345678" splice_event_cancel="false" out_of_network="true" splice_immediate="false" unique_program_id="0x6754" avail_num="1" avails_expected="3">
+      <break_duration auto_return="false" duration="456"/>
+      <component component_tag="1" pts_time="123,789"/>
+      <component component_tag="2" pts_time="123,751"/>
+      <component component_tag="3" pts_time="123,801"/>
+    </splice_insert>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_schedule/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_schedule>
+      <splice_event splice_event_id="0x78912305" splice_event_cancel="true"/>
+      <splice_event splice_event_id="0x78914861" splice_event_cancel="false" out_of_network="true" unique_program_id="0x4562" avail_num="0" avails_expected="0" utc_splice_time="1,525,032,898">
+        <break_duration auto_return="true" duration="64,565"/>
+      </splice_event>
+      <splice_event splice_event_id="0x78914861" splice_event_cancel="false" out_of_network="false" unique_program_id="0x4562" avail_num="0" avails_expected="0">
+        <component component_tag="1" utc_splice_time="1,525,032,891"/>
+        <component component_tag="2" utc_splice_time="1,525,032,910"/>
+      </splice_event>
+    </splice_schedule>
+  </splice_information_table>
+</tsduck>
