@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  
+  <splice_information_table>
+    <!-- splice out 6 seconds after start -->
+    <splice_insert splice_event_id="0x400004F6"
+                   unique_program_id="0x0001"
+                   out_of_network="true"
+                   pts_time="0x13D77598B">
+      <break_duration auto_return="false" duration="0x000072032"/>
+    </splice_insert>
+    <splice_avail_descriptor provider_avail_id="11"/>
+  </splice_information_table>
+  
+  <splice_information_table>
+    <!-- splice in 12 seconds after start -->
+    <splice_insert splice_event_id="0x400004F6"
+                   unique_program_id="0x0001"
+                   out_of_network="false"
+                   pts_time="0x13D7E79BD"/>
+    <splice_avail_descriptor provider_avail_id="11"/>
+  </splice_information_table>
+
+  <splice_information_table>
+    <!-- should be inserted first -->
+    <splice_null/>
+  </splice_information_table>
+
+</tsduck>
