@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 240 bytes
+  Section: 0 (last: 0), version: 0, size: 412 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -113,4 +113,24 @@
     CP System Id: 0x0100 (DTCP Renewability Messages)
     CP System Id: 0x0101 (HDCP Renewability Messages)
     CP System Id: 0x1234 (unknown)
+  - Descriptor 27: Service Identifier (0x71, 113), 11 bytes
+    Service identifier: "Foo service"
+  - Descriptor 28: Multilingual Bouquet Name (0x5C, 92), 0 bytes
+  - Descriptor 29: Multilingual Bouquet Name (0x5C, 92), 27 bytes
+    Language: foo, name: "Foo bouquet"
+    Language: bar, name: "Bar maid"
+  - Descriptor 30: Multilingual Network Name (0x5B, 91), 0 bytes
+  - Descriptor 31: Multilingual Network Name (0x5B, 91), 27 bytes
+    Language: foo, name: "Foo network"
+    Language: bar, name: "Bar maid"
+  - Descriptor 32: Multilingual Component (0x5E, 94), 1 bytes
+    Component tag: 0x07 (7)
+  - Descriptor 33: Multilingual Component (0x5E, 94), 35 bytes
+    Component tag: 0x0A (10)
+    Language: foo, name: "Foo component"
+    Language: bar, name: "Bar component"
+  - Descriptor 34: Multilingual Service Name (0x5D, 93), 0 bytes
+  - Descriptor 35: Multilingual Service Name (0x5D, 93), 53 bytes
+    Language: foo, provider: "Foo provider", service: "Foo service"
+    Language: bar, provider: "Bar provider", service: "Bar maid"
 

@@ -2,7 +2,7 @@
 <tsduck>
   <AIT version="0" current="true" test_application_flag="false" application_type="0x0001">
     <!-- PID 0x1EC6 (7878) -->
-    <application control_code="0xB6">
+    <application control_code="0x01">
       <application_identifier organisation_id="0x0000000B" application_id="0x1AB6"/>
       <generic_descriptor tag="0x02">
         00 01 01 7F 0A
@@ -10,9 +10,9 @@
       <generic_descriptor tag="0x00">
         05 00 01 01 00 02 FF 3C 01
       </generic_descriptor>
-      <generic_descriptor tag="0x01">
-        65 6E 67 0C 4C 61 75 6E 63 68 65 72 20 53 41 54
-      </generic_descriptor>
+      <application_name_descriptor>
+        <language code="eng" application_name="Launcher SAT"/>
+      </application_name_descriptor>
       <generic_descriptor tag="0x03">
       </generic_descriptor>
       <generic_descriptor tag="0x04">

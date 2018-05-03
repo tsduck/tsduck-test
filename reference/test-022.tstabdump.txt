@@ -95,3 +95,18 @@
     - Descriptor 21: INT ISP Access Mode (0x14, 20), 1 bytes
       Access mode: 0xBC (188)
 
+* AIT, TID 116 (0x74)
+  Section: 0 (last: 0), version: 0, size: 55 bytes
+  Application type: 1 (0x0001), Test application: 1
+  Common descriptor loop:
+  - Descriptor 0: AIT Application Name (0x01, 1), 0 bytes
+  - Descriptor 1: AIT Application Name (0x01, 1), 22 bytes
+    Language: foo, name: "Foo app"
+    Language: bar, name: "Bar app"
+  - Descriptor 2: Application Signalling (0x6F, 111), 0 bytes
+  - Descriptor 3: Application Signalling (0x6F, 111), 6 bytes
+    Application type: 1 (0x0001), AIT Version: 2 (0x02)
+    Application type: 3 (0x0003), AIT Version: 4 (0x04)
+  - Descriptor 4: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 1 (0x01)
+

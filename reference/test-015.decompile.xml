@@ -70,5 +70,26 @@
       <CP_system_id value="0x0101"/>
       <CP_system_id value="0x1234"/>
     </CP_identifier_descriptor>
+    <service_identifier_descriptor service_identifier="Foo service"/>
+    <multilingual_bouquet_name_descriptor/>
+    <multilingual_bouquet_name_descriptor>
+      <language code="foo" bouquet_name="Foo bouquet"/>
+      <language code="bar" bouquet_name="Bar maid"/>
+    </multilingual_bouquet_name_descriptor>
+    <multilingual_network_name_descriptor/>
+    <multilingual_network_name_descriptor>
+      <language code="foo" network_name="Foo network"/>
+      <language code="bar" network_name="Bar maid"/>
+    </multilingual_network_name_descriptor>
+    <multilingual_component_descriptor component_tag="7"/>
+    <multilingual_component_descriptor component_tag="10">
+      <language code="foo" description="Foo component"/>
+      <language code="bar" description="Bar component"/>
+    </multilingual_component_descriptor>
+    <multilingual_service_name_descriptor/>
+    <multilingual_service_name_descriptor>
+      <language code="foo" service_provider_name="Foo provider" service_name="Foo service"/>
+      <language code="bar" service_provider_name="Bar provider" service_name="Bar maid"/>
+    </multilingual_service_name_descriptor>
   </PMT>
 </tsduck>

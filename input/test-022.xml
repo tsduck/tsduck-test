@@ -98,4 +98,24 @@
 
   </INT>
 
+  <AIT application_type="1">
+
+    <application_name_descriptor/>
+
+    <application_name_descriptor>
+      <language code="foo" application_name="Foo app"/>
+      <language code="bar" application_name="Bar app"/>
+    </application_name_descriptor>
+
+    <application_signalling_descriptor/>
+
+    <application_signalling_descriptor>
+      <application application_type="1" AIT_version_number="2"/>
+      <application application_type="3" AIT_version_number="4"/>
+    </application_signalling_descriptor>
+
+    <application_usage_descriptor usage_type="1"/>
+
+  </AIT>
+
 </tsduck>

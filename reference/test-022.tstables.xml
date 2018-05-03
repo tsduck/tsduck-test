@@ -62,4 +62,18 @@
     <ISP_access_mode_descriptor access_mode="dialup"/>
     <ISP_access_mode_descriptor access_mode="0xBC"/>
   </INT>
+  <AIT version="0" current="true" test_application_flag="true" application_type="0x0001">
+    <!-- PID 0x00C8 (200) -->
+    <application_name_descriptor/>
+    <application_name_descriptor>
+      <language code="foo" application_name="Foo app"/>
+      <language code="bar" application_name="Bar app"/>
+    </application_name_descriptor>
+    <application_signalling_descriptor/>
+    <application_signalling_descriptor>
+      <application application_type="0x0001" AIT_version_number="0x02"/>
+      <application application_type="0x0003" AIT_version_number="0x04"/>
+    </application_signalling_descriptor>
+    <application_usage_descriptor usage_type="0x01"/>
+  </AIT>
 </tsduck>

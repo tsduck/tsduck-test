@@ -8,12 +8,18 @@ INFILE="$INDIR/test-018.ts"
 
 $(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
-    -P tables --pid 0x1ec5 -o $(fpath "$OUTDIR/$SCRIPT.ait.txt") \
-    -P tables --pid 0x1ec6 --xml-output $(fpath "$OUTDIR/$SCRIPT.ait.xml") \
+    -P tables --pid 0x1ec5 \
+              --text $(fpath "$OUTDIR/$SCRIPT.ait.1ec5.txt") \
+              --xml $(fpath "$OUTDIR/$SCRIPT.ait.1ec5.xml") \
+    -P tables --pid 0x1ec6 \
+              --text $(fpath "$OUTDIR/$SCRIPT.ait.1ec6.txt") \
+              --xml $(fpath "$OUTDIR/$SCRIPT.ait.1ec6.xml") \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
 
 test_bin $SCRIPT.ts
 test_text $SCRIPT.tsp.log
-test_text $SCRIPT.ait.txt
-test_text $SCRIPT.ait.xml
+test_text $SCRIPT.ait.1ec5.txt
+test_text $SCRIPT.ait.1ec5.xml
+test_text $SCRIPT.ait.1ec6.txt
+test_text $SCRIPT.ait.1ec6.xml
