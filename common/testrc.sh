@@ -48,6 +48,8 @@ case $(uname -s | tr A-Z a-z) in
         TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc2017
         TSDUCKBIN_RELEASE=Release-x64
         TSDUCKBIN_DEBUG=Debug-x64
+        TSDUCKBIN32_RELEASE=Release-Win32
+        TSDUCKBIN32_DEBUG=Debug-Win32
         EXE=.exe
         ;;
     *)
@@ -56,6 +58,8 @@ case $(uname -s | tr A-Z a-z) in
         TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
         TSDUCKBIN_RELEASE=release-$ARCH
         TSDUCKBIN_DEBUG=debug-$ARCH
+        TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
+        TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
         EXE=
         ;;
 esac
@@ -73,9 +77,17 @@ Common test options:
       Use development versions of TSDuck as compiled in the Git repository in
       $TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
 
+  --dev32
+      Use development versions of TSDuck as compiled in the Git repository in
+      $TSDUCKBIN_ROOT/$TSDUCKBIN32_RELEASE
+
   --debug
       Use debug versions of TSDuck as compiled in the Git repository in
       $TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
+
+  --debug32
+      Use debug versions of TSDuck as compiled in the Git repository in
+      $TSDUCKBIN_ROOT/$TSDUCKBIN32_DEBUG
 
   --help
       Display this help text.
@@ -96,13 +108,21 @@ EOF
 # Decode command line options.
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        --dev*)
+        --dev)
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
             ;;
-        --debug*)
+        --dev32)
+            DEVEL=true
+            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN32_RELEASE
+            ;;
+        --debug)
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
+            ;;
+        --debug32)
+            DEVEL=true
+            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN32_DEBUG
             ;;
         --help)
             showhelp
