@@ -50,7 +50,7 @@
 |   Total  Digital television service ................... C    4,931,261 b/s  |
 |  0x0100  Unreferenced ................................. C       44,283 b/s  |
 |  0x0810  PMT .......................................... C       15,779 b/s  |
-|  0x1000  MPEG-2 Video (32x96, unknown (0x3A), level 5.  C    4,620,258 b/s  |
+|  0x1000  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    4,620,258 b/s  |
 |  0x1001  MPEG-1 Audio (Audio layer II, 192 kb/s, @48,0  C      250,940 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
@@ -96,27 +96,7 @@
 |=============================================================================|
 |  PID: 0x1000 (4096)                                           MPEG-2 Video  |
 |  PES stream id: 0xE0 (Video 0)                                              |
-|  32x96, unknown (0x3A), level 5.5, 4:2:0                                    |
-|  32x96, unknown (0x4A), level 5.5, 4:2:0                                    |
-|  42x44, unknown (0x2A), level 5.5, 4:2:0                                    |
-|  14x4294967294, unknown (0x4B), level 0.4, 4:2:0                            |
-|  32x96, unknown (0x32), level 5.5, 4:2:0                                    |
-|  14x4294967294, unknown (0x43), level 2.7, 4:2:0                            |
-|  14x4294967294, unknown (0x4B), level 2.7, 4:2:0                            |
 |  720x576i, @25 Hz, 16:9, 4:2:0                                              |
-|  15x374, scalable baseline profile, level 2.7, monochrome                   |
-|  16x32, unknown (0x3A), level 6.3, 4:2:0                                    |
-|  208x32, unknown (0x3A), level 5.5, 4:2:0                                   |
-|  4294967292x4, unknown (0x4B), level 2.7, 4:2:0                             |
-|  208x32, unknown (0x62), level 5.5, 4:2:0                                   |
-|  208x32, baseline profile, level 5.5, 4:2:0                                 |
-|  80x32, scalable baseline profile, level 2.7, monochrome                    |
-|  208x32, unknown (0x4A), level 5.5, 4:2:0                                   |
-|  4294967292x4, unknown (0x5B), level 2.7, 4:2:0                             |
-|  208x32, unknown (0x52), level 5.5, 4:2:0                                   |
-|  4294967292x4, unknown (0x6B), level 2.7, 4:2:0                             |
-|  208x32, unknown (0x5A), level 5.5, 4:2:0                                   |
-|  4294967292x4, unknown (0x63), level 2.7, 4:2:0                             |
 |  Service: 0x0810 (2064) P1.1                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
