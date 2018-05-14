@@ -17,7 +17,7 @@ Options:
   -v value
   --emmg-mux-version value
       Specifies the version of the EMMG/PDG <=> MUX DVB SimulCrypt protocol.
-      Valid values are 2 and 3. The default is 2.
+      Valid values are 1 to 5. The default is 2.
 
   --help
       Display this help text.
@@ -28,9 +28,9 @@ Options:
 
   -q value
   --queue-size value
-      Specifies the maximum number of data TS packets in the internal queue,
-      ie. packets which are received from the EMMG/PDG client but not yet
-      inserted into the TS. The default is 100.
+      Specifies the maximum number of sections or TS packets in the internal
+      queue, ie. sections or packets which are received from the EMMG/PDG
+      client but not yet inserted into the TS. The default is 1000.
 
   -r
   --reuse-port
