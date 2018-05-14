@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 412 bytes
+  Version: 0, sections: 1, total size: 454 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -134,4 +134,22 @@
     - Descriptor 35: Multilingual Service Name (0x5D, 93), 53 bytes
       Language: foo, provider: "Foo provider", service: "Foo service"
       Language: bar, provider: "Bar provider", service: "Bar maid"
+    - Descriptor 36: Extension Descriptor (0x7F, 127), 2 bytes
+      Extended descriptor: AC-4 (0x15, 21)
+    - Descriptor 37: Extension Descriptor (0x7F, 127), 9 bytes
+      Extended descriptor: AC-4 (0x15, 21)
+      Dialog enhancement enabled: 0, channel mode: 0x01 (Stereo)
+      AC-4 TOC (in DSI):
+        0000:  12 35 65 32 23                             .5e2#
+    - Descriptor 38: Extension Descriptor (0x7F, 127), 8 bytes
+      Extended descriptor: AC-4 (0x15, 21)
+      Additional information:
+        0000:  78 96 23 12 45 46                          x.#.EF
+    - Descriptor 39: Extension Descriptor (0x7F, 127), 15 bytes
+      Extended descriptor: AC-4 (0x15, 21)
+      Dialog enhancement enabled: 1, channel mode: 0x02 (Multi-channel)
+      AC-4 TOC (in DSI):
+        0000:  12 35 65 32 23                             .5e2#
+      Additional information:
+        0000:  78 96 23 12 45 46                          x.#.EF
 
