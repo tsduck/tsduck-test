@@ -116,6 +116,100 @@
 
     <application_usage_descriptor usage_type="1"/>
 
+    <dvb_j_application_descriptor/>
+
+    <dvb_j_application_descriptor>
+      <parameter value="sample"/>
+      <parameter value="parameter"/>
+      <parameter value="test"/>
+    </dvb_j_application_descriptor>
+
+    <dvb_j_application_location_descriptor
+        base_directory="/base/dir"
+        classpath_extension="ext/dir;other/dir2"
+        initial_class="entryPoint"/>
+
+    <dvb_html_application_descriptor/>
+
+    <dvb_html_application_descriptor parameter="sample param">
+      <application id="1"/>
+      <application id="10"/>
+      <application id="100"/>
+    </dvb_html_application_descriptor>
+
+    <dvb_html_application_boundary_descriptor
+        label="sample label"
+        regular_expression="regexp[.*]"/>
+
+    <dvb_html_application_location_descriptor
+        physical_root="sample/root"
+        initial_path="and/sample/path"/>
+
+    <ip_signalling_descriptor platform_id="0x12345"/>
+
+    <prefetch_descriptor transport_protocol_label="1"/>
+
+    <prefetch_descriptor transport_protocol_label="2">
+      <module label="mod1" prefetch_priority="20"/>
+      <module label="Module 2" prefetch_priority="75"/>
+    </prefetch_descriptor>
+
+    <DII_location_descriptor transport_protocol_label="3"/>
+
+    <DII_location_descriptor transport_protocol_label="4">
+      <module DII_identification="1" association_tag="2"/>
+      <module DII_identification="3" association_tag="4"/>
+      <module DII_identification="5" association_tag="6"/>
+      <module DII_identification="7" association_tag="8"/>
+    </DII_location_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="5">
+      <object_carousel
+          original_network_id="1"
+          transport_stream_id="2"
+          service_id="3"
+          component_tag="34"/>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="6">
+      <object_carousel component_tag="35"/>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="7">
+      <ip_mpe alignment_indicator="true"/>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="8">
+      <ip_mpe
+          original_network_id="10"
+          transport_stream_id="11"
+          service_id="12"
+          alignment_indicator="false">
+        <url value="foo://bar/"/>
+        <url value="foo2://bar3/"/>
+      </ip_mpe>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="9">
+      <http>
+        <url base="http://a/">
+          <extension value="a/b"/>
+          <extension value="c/d/e"/>
+          <extension value="f"/>
+        </url>
+      </http>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="10">
+      <protocol id="0x1234">
+        45 63 21 47 89 52 01
+      </protocol>
+    </transport_protocol_descriptor>
+
+    <transport_protocol_descriptor transport_protocol_label="11">
+      <protocol id="0x5678"/>
+    </transport_protocol_descriptor>
+
   </AIT>
 
 </tsduck>

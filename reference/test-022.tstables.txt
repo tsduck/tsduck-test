@@ -98,7 +98,7 @@
         Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 55 bytes
+  Version: 0, sections: 1, total size: 299 bytes
   - Section 0:
     Application type: 1 (0x0001), Test application: 1
     Common descriptor loop:
@@ -112,4 +112,73 @@
       Application type: 3 (0x0003), AIT Version: 4 (0x04)
     - Descriptor 4: AIT Application Usage (0x16, 22), 1 bytes
       Usage type: 1 (0x01)
+    - Descriptor 5: AIT DVB-J Application (0x03, 3), 0 bytes
+    - Descriptor 6: AIT DVB-J Application (0x03, 3), 22 bytes
+      Parameter: "sample"
+      Parameter: "parameter"
+      Parameter: "test"
+    - Descriptor 7: AIT DVB-J Application Location (0x04, 4), 39 bytes
+      Base directory: "/base/dir"
+      Classpath ext: "ext/dir;other/dir2"
+      Initial class: "entryPoint"
+    - Descriptor 8: AIT DVB-HTML Application (0x08, 8), 1 bytes
+      Parameter: ""
+    - Descriptor 9: AIT DVB-HTML Application (0x08, 8), 19 bytes
+      Application id: 0x0001 (1)
+      Application id: 0x000A (10)
+      Application id: 0x0064 (100)
+      Parameter: "sample param"
+    - Descriptor 10: AIT DVB-HTML Application Boundary (0x0A, 10), 23 bytes
+      Label: "sample label"
+      Regexp: "regexp[.*]"
+    - Descriptor 11: AIT DVB-HTML Application Location (0x09, 9), 27 bytes
+      Physical root: "sample/root"
+      Initial path: "and/sample/path"
+    - Descriptor 12: AIT IP Signalling (0x11, 17), 3 bytes
+      Platform id: 0x012345 (unknown)
+    - Descriptor 13: AIT Prefetch (0x0C, 12), 1 bytes
+      Transport protocol label: 0x01 (1)
+    - Descriptor 14: AIT Prefetch (0x0C, 12), 17 bytes
+      Transport protocol label: 0x02 (2)
+      Label: "mod1", prefetch priority: 20
+      Label: "Module 2", prefetch priority: 75
+    - Descriptor 15: AIT DII Location (0x0D, 13), 1 bytes
+      Transport protocol label: 0x03 (3)
+    - Descriptor 16: AIT DII Location (0x0D, 13), 17 bytes
+      Transport protocol label: 0x04 (4)
+      DII id: 0x0001 (1), tag: 0x0002 (2)
+      DII id: 0x0003 (3), tag: 0x0004 (4)
+      DII id: 0x0005 (5), tag: 0x0006 (6)
+      DII id: 0x0007 (7), tag: 0x0008 (8)
+    - Descriptor 17: AIT Transport Protocol (0x02, 2), 5 bytes
+      Protocol id: 0x0001 (1, MHP Object Carousel)
+      Transport protocol label: 0x05 (5)
+      Extraneous 2 bytes:
+      0000:  7F 00                                      ..
+    - Descriptor 18: AIT Transport Protocol (0x02, 2), 5 bytes
+      Protocol id: 0x0001 (1, MHP Object Carousel)
+      Transport protocol label: 0x06 (6)
+      Extraneous 2 bytes:
+      0000:  7F 00                                      ..
+    - Descriptor 19: AIT Transport Protocol (0x02, 2), 5 bytes
+      Protocol id: 0x0002 (2, IP via DVB-MPE)
+      Transport protocol label: 0x07 (7)
+      Extraneous 2 bytes:
+      0000:  7F 7F                                      ..
+    - Descriptor 20: AIT Transport Protocol (0x02, 2), 5 bytes
+      Protocol id: 0x0002 (2, IP via DVB-MPE)
+      Transport protocol label: 0x08 (8)
+      Extraneous 2 bytes:
+      0000:  7F 7F                                      ..
+    - Descriptor 21: AIT Transport Protocol (0x02, 2), 3 bytes
+      Protocol id: 0x0003 (3, HTTP over interaction channel)
+      Transport protocol label: 0x09 (9)
+    - Descriptor 22: AIT Transport Protocol (0x02, 2), 10 bytes
+      Protocol id: 0x1234 (4660, unknown)
+      Transport protocol label: 0x0A (10)
+      Extraneous 7 bytes:
+      0000:  45 63 21 47 89 52 01                       Ec!G.R.
+    - Descriptor 23: AIT Transport Protocol (0x02, 2), 3 bytes
+      Protocol id: 0x5678 (22136, unknown)
+      Transport protocol label: 0x0B (11)
 

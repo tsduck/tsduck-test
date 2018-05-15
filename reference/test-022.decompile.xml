@@ -72,5 +72,56 @@
       <application application_type="0x0003" AIT_version_number="0x04"/>
     </application_signalling_descriptor>
     <application_usage_descriptor usage_type="0x01"/>
+    <dvb_j_application_descriptor/>
+    <dvb_j_application_descriptor>
+      <parameter value="sample"/>
+      <parameter value="parameter"/>
+      <parameter value="test"/>
+    </dvb_j_application_descriptor>
+    <dvb_j_application_location_descriptor base_directory="/base/dir" classpath_extension="ext/dir;other/dir2" initial_class="entryPoint"/>
+    <dvb_html_application_descriptor parameter=""/>
+    <dvb_html_application_descriptor parameter="sample param">
+      <application id="0x0001"/>
+      <application id="0x000A"/>
+      <application id="0x0064"/>
+    </dvb_html_application_descriptor>
+    <dvb_html_application_boundary_descriptor label="sample label" regular_expression="regexp[.*]"/>
+    <dvb_html_application_location_descriptor physical_root="sample/root" initial_path="and/sample/path"/>
+    <ip_signalling_descriptor platform_id="0x00012345"/>
+    <prefetch_descriptor transport_protocol_label="0x01"/>
+    <prefetch_descriptor transport_protocol_label="0x02">
+      <module label="mod1" prefetch_priority="20"/>
+      <module label="Module 2" prefetch_priority="75"/>
+    </prefetch_descriptor>
+    <DII_location_descriptor transport_protocol_label="0x03"/>
+    <DII_location_descriptor transport_protocol_label="0x04">
+      <module DII_identification="0x0001" association_tag="0x0002"/>
+      <module DII_identification="0x0003" association_tag="0x0004"/>
+      <module DII_identification="0x0005" association_tag="0x0006"/>
+      <module DII_identification="0x0007" association_tag="0x0008"/>
+    </DII_location_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x05">
+      <object_carousel component_tag="0x00"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x06">
+      <object_carousel component_tag="0x00"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x07">
+      <ip_mpe alignment_indicator="false"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x08">
+      <ip_mpe alignment_indicator="false"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x09">
+      <http/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x0A">
+      <protocol id="0x1234">
+        45 63 21 47 89 52 01
+      </protocol>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x0B">
+      <protocol id="0x5678"/>
+    </transport_protocol_descriptor>
   </AIT>
 </tsduck>

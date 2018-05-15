@@ -9,12 +9,12 @@
     - Descriptor 1: AIT Application Name (0x01, 1), 23 bytes
       Language: ita, name: "Programmi TV BB SAT"
     - Descriptor 2: AIT DVB-J Application Location (0x04, 4), 43 bytes
-      0000:  01 2F 00 69 74 2E 6D 65 64 69 61 73 65 74  ./.it.mediaset
-      000E:  2E 73 63 68 65 64 75 6C 65 73 74 76 2E 50  .schedulestv.P
-      001C:  6F 72 74 61 6C 65 4C 69 67 68 74 58 6C 65  ortaleLightXle
-      002A:  74                                         t
+      Base directory: "/"
+      Classpath ext: ""
+      Initial class: "it.mediaset.schedulestv.PortaleLightXlet"
     - Descriptor 3: AIT DVB-J Application (0x03, 3), 0 bytes
     - Descriptor 4: AIT Transport Protocol (0x02, 2), 72 bytes
+      Extraneous 72 bytes:
       0000:  00 03 01 30 68 74 74 70 3A 2F 2F 6D 68 70  ...0http://mhp
       000E:  2E 64 67 74 76 2E 6D 65 64 69 61 73 65 74  .dgtv.mediaset
       001C:  2E 69 74 2F 61 70 70 6C 2F 50 72 6F 67 72  .it/appl/Progr
