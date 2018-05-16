@@ -4,10 +4,13 @@
     <!-- PID 0x1EC6 (7878) -->
     <application control_code="0x01">
       <application_identifier organisation_id="0x0000000B" application_id="0x1AB6"/>
-      <transport_protocol_descriptor/>
-      <generic_descriptor tag="0x00">
-        05 00 01 01 00 02 FF 3C 01
-      </generic_descriptor>
+      <transport_protocol_descriptor transport_protocol_label="0x01">
+        <object_carousel component_tag="0x0A"/>
+      </transport_protocol_descriptor>
+      <application_descriptor service_bound="true" visibility="3" application_priority="60">
+        <profile application_profile="0x0001" version="1.0.2"/>
+        <transport_protocol label="0x01"/>
+      </application_descriptor>
       <application_name_descriptor>
         <language code="eng" application_name="Launcher SAT"/>
       </application_name_descriptor>

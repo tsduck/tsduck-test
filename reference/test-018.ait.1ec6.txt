@@ -5,10 +5,13 @@
     Application type: 1 (0x0001), Test application: 0
     Application: Identifier: (Organization id: 11 (0x0000000B), Application id: 6838 (0x1AB6)), Control code: 1
     - Descriptor 0: AIT Transport Protocol (0x02, 2), 5 bytes
-      Extraneous 5 bytes:
-      0000:  00 01 01 7F 0A                             .....
+      Protocol id: 0x0001 (1, MHP Object Carousel)
+      Transport protocol label: 0x01 (1)
+      Component tag: 0x0A (10)
     - Descriptor 1: AIT Application (0x00, 0), 9 bytes
-      0000:  05 00 01 01 00 02 FF 3C 01                 .......<.
+      Profile: 0x0001 (1), version: 1.0.2
+      Service bound: 1, visibility: 3, priority: 60
+      Transport protocol label: 0x01 (1)
     - Descriptor 2: AIT Application Name (0x01, 1), 16 bytes
       Language: eng, name: "Launcher SAT"
     - Descriptor 3: AIT DVB-J Application (0x03, 3), 0 bytes

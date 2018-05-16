@@ -96,7 +96,7 @@
       Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74)
-  Section: 0 (last: 0), version: 0, size: 299 bytes
+  Section: 0 (last: 0), version: 0, size: 411 bytes
   Application type: 1 (0x0001), Test application: 1
   Common descriptor loop:
   - Descriptor 0: AIT Application Name (0x01, 1), 0 bytes
@@ -147,35 +147,57 @@
     DII id: 0x0003 (3), tag: 0x0004 (4)
     DII id: 0x0005 (5), tag: 0x0006 (6)
     DII id: 0x0007 (7), tag: 0x0008 (8)
-  - Descriptor 17: AIT Transport Protocol (0x02, 2), 5 bytes
+  - Descriptor 17: AIT Transport Protocol (0x02, 2), 11 bytes
     Protocol id: 0x0001 (1, MHP Object Carousel)
     Transport protocol label: 0x05 (5)
-    Extraneous 2 bytes:
-    0000:  7F 00                                            ..
+    Original network id: 0x0001 (1)
+    Transport stream id: 0x0002 (2)
+    Service id: 0x0003 (3)
+    Component tag: 0x22 (34)
   - Descriptor 18: AIT Transport Protocol (0x02, 2), 5 bytes
     Protocol id: 0x0001 (1, MHP Object Carousel)
     Transport protocol label: 0x06 (6)
-    Extraneous 2 bytes:
-    0000:  7F 00                                            ..
+    Component tag: 0x23 (35)
   - Descriptor 19: AIT Transport Protocol (0x02, 2), 5 bytes
     Protocol id: 0x0002 (2, IP via DVB-MPE)
     Transport protocol label: 0x07 (7)
-    Extraneous 2 bytes:
-    0000:  7F 7F                                            ..
-  - Descriptor 20: AIT Transport Protocol (0x02, 2), 5 bytes
+    Alignment indicator: 1
+  - Descriptor 20: AIT Transport Protocol (0x02, 2), 35 bytes
     Protocol id: 0x0002 (2, IP via DVB-MPE)
     Transport protocol label: 0x08 (8)
-    Extraneous 2 bytes:
-    0000:  7F 7F                                            ..
-  - Descriptor 21: AIT Transport Protocol (0x02, 2), 3 bytes
+    Original network id: 0x000A (10)
+    Transport stream id: 0x000B (11)
+    Service id: 0x000C (12)
+    Alignment indicator: 0
+    URL: "foo://bar/"
+    URL: "foo2://bar3/"
+  - Descriptor 21: AIT Transport Protocol (0x02, 2), 55 bytes
     Protocol id: 0x0003 (3, HTTP over interaction channel)
     Transport protocol label: 0x09 (9)
+    URL base: "http://a/"
+      Extension: "a/b"
+      Extension: "c/d/e"
+      Extension: "f"
+    URL base: "http://cd/"
+    URL base: "http://xyz/"
+      Extension: "u/v"
   - Descriptor 22: AIT Transport Protocol (0x02, 2), 10 bytes
     Protocol id: 0x1234 (4660, unknown)
     Transport protocol label: 0x0A (10)
-    Extraneous 7 bytes:
-    0000:  45 63 21 47 89 52 01                             Ec!G.R.
+    Selector: 7 bytes
+      0000:  45 63 21 47 89 52 01                       Ec!G.R.
   - Descriptor 23: AIT Transport Protocol (0x02, 2), 3 bytes
     Protocol id: 0x5678 (22136, unknown)
     Transport protocol label: 0x0B (11)
+    Selector: 0 bytes
+  - Descriptor 24: AIT Application (0x00, 0), 3 bytes
+    Service bound: 1, visibility: 1, priority: 20
+  - Descriptor 25: AIT Application (0x00, 0), 17 bytes
+    Profile: 0x0001 (1), version: 2.3.4
+    Profile: 0x0008 (8), version: 11.12.13
+    Service bound: 0, visibility: 3, priority: 75
+    Transport protocol label: 0x05 (5)
+    Transport protocol label: 0x06 (6)
+    Transport protocol label: 0x07 (7)
+    Transport protocol label: 0x08 (8)
 

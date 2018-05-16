@@ -101,19 +101,32 @@
       <module DII_identification="0x0007" association_tag="0x0008"/>
     </DII_location_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x05">
-      <object_carousel component_tag="0x00"/>
+      <object_carousel original_network_id="0x0001" transport_stream_id="0x0002" service_id="0x0003" component_tag="0x22"/>
     </transport_protocol_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x06">
-      <object_carousel component_tag="0x00"/>
+      <object_carousel component_tag="0x23"/>
     </transport_protocol_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x07">
-      <ip_mpe alignment_indicator="false"/>
+      <ip_mpe alignment_indicator="true"/>
     </transport_protocol_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x08">
-      <ip_mpe alignment_indicator="false"/>
+      <ip_mpe original_network_id="0x000A" transport_stream_id="0x000B" service_id="0x000C" alignment_indicator="false">
+        <url value="foo://bar/"/>
+        <url value="foo2://bar3/"/>
+      </ip_mpe>
     </transport_protocol_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x09">
-      <http/>
+      <http>
+        <url base="http://a/">
+          <extension value="a/b"/>
+          <extension value="c/d/e"/>
+          <extension value="f"/>
+        </url>
+        <url base="http://cd/"/>
+        <url base="http://xyz/">
+          <extension value="u/v"/>
+        </url>
+      </http>
     </transport_protocol_descriptor>
     <transport_protocol_descriptor transport_protocol_label="0x0A">
       <protocol id="0x1234">
@@ -123,5 +136,14 @@
     <transport_protocol_descriptor transport_protocol_label="0x0B">
       <protocol id="0x5678"/>
     </transport_protocol_descriptor>
+    <application_descriptor service_bound="true" visibility="1" application_priority="20"/>
+    <application_descriptor service_bound="false" visibility="3" application_priority="75">
+      <profile application_profile="0x0001" version="2.3.4"/>
+      <profile application_profile="0x0008" version="11.12.13"/>
+      <transport_protocol label="0x05"/>
+      <transport_protocol label="0x06"/>
+      <transport_protocol label="0x07"/>
+      <transport_protocol label="0x08"/>
+    </application_descriptor>
   </AIT>
 </tsduck>

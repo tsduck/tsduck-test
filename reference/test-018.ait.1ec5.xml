@@ -4,15 +4,22 @@
     <!-- PID 0x1EC5 (7877) -->
     <application control_code="0x02">
       <application_identifier organisation_id="0x0000000B" application_id="0x1AB5"/>
-      <generic_descriptor tag="0x00">
-        05 00 01 01 01 01 3F 3C 01
-      </generic_descriptor>
+      <application_descriptor service_bound="false" visibility="1" application_priority="60">
+        <profile application_profile="0x0001" version="1.1.1"/>
+        <transport_protocol label="0x01"/>
+      </application_descriptor>
       <application_name_descriptor>
         <language code="ita" application_name="Programmi TV BB SAT"/>
       </application_name_descriptor>
       <dvb_j_application_location_descriptor base_directory="/" classpath_extension="" initial_class="it.mediaset.schedulestv.PortaleLightXlet"/>
       <dvb_j_application_descriptor/>
-      <transport_protocol_descriptor/>
+      <transport_protocol_descriptor transport_protocol_label="0x01">
+        <http>
+          <url base="http://mhp.dgtv.mediaset.it/appl/ProgrammiTvSat/">
+            <extension value="ProgrammiTvSat.zip"/>
+          </url>
+        </http>
+      </transport_protocol_descriptor>
     </application>
   </AIT>
 </tsduck>

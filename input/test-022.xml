@@ -197,6 +197,10 @@
           <extension value="c/d/e"/>
           <extension value="f"/>
         </url>
+        <url base="http://cd/"/>
+        <url base="http://xyz/">
+          <extension value="u/v"/>
+        </url>
       </http>
     </transport_protocol_descriptor>
 
@@ -209,6 +213,23 @@
     <transport_protocol_descriptor transport_protocol_label="11">
       <protocol id="0x5678"/>
     </transport_protocol_descriptor>
+
+    <application_descriptor
+        service_bound="true"
+        visibility="1"
+        application_priority="20"/>
+
+    <application_descriptor
+        service_bound="false"
+        visibility="3"
+        application_priority="75">
+      <profile application_profile="1" version="2.3.4"/>
+      <profile application_profile="8" version="11.12.13"/>
+      <transport_protocol label="5"/>
+      <transport_protocol label="6"/>
+      <transport_protocol label="7"/>
+      <transport_protocol label="8"/>
+    </application_descriptor>
 
   </AIT>
 

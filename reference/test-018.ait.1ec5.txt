@@ -5,7 +5,9 @@
     Application type: 1 (0x0001), Test application: 0
     Application: Identifier: (Organization id: 11 (0x0000000B), Application id: 6837 (0x1AB5)), Control code: 2
     - Descriptor 0: AIT Application (0x00, 0), 9 bytes
-      0000:  05 00 01 01 01 01 3F 3C 01                 ......?<.
+      Profile: 0x0001 (1), version: 1.1.1
+      Service bound: 0, visibility: 1, priority: 60
+      Transport protocol label: 0x01 (1)
     - Descriptor 1: AIT Application Name (0x01, 1), 23 bytes
       Language: ita, name: "Programmi TV BB SAT"
     - Descriptor 2: AIT DVB-J Application Location (0x04, 4), 43 bytes
@@ -14,11 +16,8 @@
       Initial class: "it.mediaset.schedulestv.PortaleLightXlet"
     - Descriptor 3: AIT DVB-J Application (0x03, 3), 0 bytes
     - Descriptor 4: AIT Transport Protocol (0x02, 2), 72 bytes
-      Extraneous 72 bytes:
-      0000:  00 03 01 30 68 74 74 70 3A 2F 2F 6D 68 70  ...0http://mhp
-      000E:  2E 64 67 74 76 2E 6D 65 64 69 61 73 65 74  .dgtv.mediaset
-      001C:  2E 69 74 2F 61 70 70 6C 2F 50 72 6F 67 72  .it/appl/Progr
-      002A:  61 6D 6D 69 54 76 53 61 74 2F 01 12 50 72  ammiTvSat/..Pr
-      0038:  6F 67 72 61 6D 6D 69 54 76 53 61 74 2E 7A  ogrammiTvSat.z
-      0046:  69 70                                      ip
+      Protocol id: 0x0003 (3, HTTP over interaction channel)
+      Transport protocol label: 0x01 (1)
+      URL base: "http://mhp.dgtv.mediaset.it/appl/ProgrammiTvSat/"
+        Extension: "ProgrammiTvSat.zip"
 
