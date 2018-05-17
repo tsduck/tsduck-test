@@ -63,6 +63,18 @@ General options:
       are likely scrambled with a different control word, descrambling
       will not be possible the usual way.
 
+  --log-data[=level]
+      Same as --log-protocol but applies to CW_provision and ECM_response
+      messages only. To debug the session management without being flooded by
+      data messages, use --log-protocol=info --log-data=debug.
+
+  --log-protocol[=level]
+      Log all ECMG <=> SCS protocol messages using the specified level. If the
+      option is not present, the messages are logged at debug level only. If the
+      option is present without value, the messages are logged at info level.
+      A level can be a numerical debug level or any of the following:
+      fatal, severe, error, warning, info, verbose, debug.
+
   --no-audio
       Do not scramble audio components in the selected service. By default,
       all audio components are scrambled.

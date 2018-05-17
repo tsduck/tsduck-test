@@ -1,0 +1,130 @@
+
+Minimal generic DVB SimulCrypt-compliant EMMG.
+
+Usage: tsemmg [options] [section-file ...]
+
+Parameters:
+
+  The parameters are files containing sections in binary or XML format. Several
+  files can be specified. All sections are loaded and injected in the MUX using
+  the EMMG/PDG <=> MUX protocol. The list of all sections from all files is
+  cycled as long as tsemmg is running. The sections can be of any type, not
+  only EMM's.
+
+  If no input file is specified, tsemmg generates fixed-size fake EMM's. See
+  options --emm-size, --emm-min-table-id and --emm-max-table-id.
+
+Options:
+
+  -b value
+  --bandwidth value
+      Specify the bandwidth of the data which are sent to the MUX in kilobits
+      per second. Default: 100 kb/s.
+
+  --bytes-per-send value
+      Specify the average size in bytes of each data provision. The exact value
+      depends on sections and packets sizes. Default: 500 bytes.
+
+  --channel-id value
+      This option sets the DVB SimulCrypt parameter 'data_channel_id'.
+      Default: 1.
+
+  -c value
+  --client-id value
+      This option sets the DVB SimulCrypt parameter 'client_id'. Default: 0.
+      For EMM injection, the most signification 16 bits shall be the
+      'CA_system_id' of the corresponding CAS.
+
+  --cycles value
+      Inject the sections from the input files the specified number of times.
+      By default, inject sections indefinitely.
+
+  -d value
+  --data-id value
+      This option sets the DVB SimulCrypt parameter 'data_id'. Default: 0.
+
+  --emm-max-table-id value
+      Specify the maximum table id of the automatically generated fake EMM's.
+      When generating fake EMM's, the table ids are cycled from the minimum to
+      the maximum value. The default is 0x8F.
+
+  --emm-min-table-id value
+      Specify the minimum table id of the automatically generated fake EMM's.
+      The default is 0x82.
+
+  --emm-size value
+      Specify the size in bytes of the automatically generated fake EMM's.
+      The default is 100 bytes.
+
+  --emmg-mux-version value
+      Specify the version of the EMMG/PDG <=> MUX DVB SimulCrypt protocol.
+      Valid values are 1 to 5. The default is 2.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-allocated
+      Ignore the allocated bandwidth as returned by the MUX, continue to send
+      data at the planned bandwidth, even if it is higher than the allocated
+      bandwidth.
+
+  --log-data[=level]
+      Same as --log-protocol but applies to data_provision messages only. To
+      debug the session management without being flooded by data messages, use
+      --log-protocol=info --log-data=debug.
+
+  --log-protocol[=level]
+      Log all EMMG/PDG <=> MUX protocol messages using the specified level. If
+      the option is not present, the messages are logged at debug level only.
+      If the option is present without value, the messages are logged at info
+      level. A level can be a numerical debug level or any of the following:
+      fatal, severe, error, warning, info, verbose, debug.
+
+  --max-bytes value
+      Stop after sending the specified number of bytes. By default, send data
+      indefinitely.
+
+  -m address:port
+  --mux address:port
+      Specify the IP address (or host name) and TCP port of the MUX. This is a
+      required parameter, there is no default.
+
+  --requested-bandwidth value
+      This option sets the DVB SimulCrypt parameter 'bandwidth' in the
+      'stream_BW_request' message. The value is in kilobits per second. The
+      default is the value of the --bandwidth option. Specifying distinct values
+      for --bandwidth and --requested-bandwidth can be used for testing the
+      behavior of a MUX.
+
+  -s
+  --section-mode
+      Send EMM's or data in section format. This option sets the DVB SimulCrypt
+      parameter 'section_TSpkt_flag' to zero. By default, EMM's and data are
+      sent in TS packet format.
+
+  --stream-id value
+      This option sets the DVB SimulCrypt parameter 'data_stream_id'.
+      Default: 1.
+
+  -t value
+  --type value
+      This option sets the DVB SimulCrypt parameter 'data_type'. Default: 0
+      (EMM). In addition to integer values, the following names can be used:
+      'emm' (0), 'private-data' (1), 'ecm' (2).
+
+  -u [address:]port
+  --udp [address:]port
+      Specify that the 'data_provision' messages shall be sent using UDP. By
+      default, the 'data_provision' messages are sent over TCP using the same
+      TCP connection as the management commands. If the IP address (or host
+      name) is not specified, use the same IP address as the --mux option. The
+      port number is required, even if it is the same as the TCP port.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the version number.
+

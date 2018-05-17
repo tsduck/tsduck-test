@@ -22,6 +22,18 @@ Options:
   --help
       Display this help text.
 
+  --log-data[=level]
+      Same as --log-protocol but applies to data_provision messages only. To
+      debug the session management without being flooded by data messages, use
+      --log-protocol=info --log-data=debug.
+
+  --log-protocol[=level]
+      Log all EMMG/PDG <=> MUX protocol messages using the specified level. If
+      the option is not present, the messages are logged at debug level only.
+      If the option is present without value, the messages are logged at info
+      level. A level can be a numerical debug level or any of the following:
+      fatal, severe, error, warning, info, verbose, debug.
+
   -p value
   --pid value
       Specifies the PID for the data insertion. This option is mandatory.

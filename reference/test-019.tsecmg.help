@@ -41,6 +41,18 @@ Options:
   --help
       Display this help text.
 
+  --log-data[=level]
+      Same as --log-protocol but applies to CW_provision and ECM_response
+      messages only. To debug the session management without being flooded by
+      data messages, use --log-protocol=info --log-data=debug.
+
+  --log-protocol[=level]
+      Log all ECMG <=> SCS protocol messages using the specified level. If the
+      option is not present, the messages are logged at debug level only. If the
+      option is present without value, the messages are logged at info level.
+      A level can be a numerical debug level or any of the following:
+      fatal, severe, error, warning, info, verbose, debug.
+
   --max-comp-time value
       Specify the maximum ECM computation time in milliseconds. This option sets
       the DVB SimulCrypt option 'max_comp_time'. By default, use the value of
