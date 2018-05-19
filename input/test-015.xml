@@ -182,6 +182,25 @@
       </additional_info>
     </AC4_descriptor>
 
+    <service_move_descriptor
+        new_original_network_id="0x1234"
+        new_transport_stream_id="0x5678"
+        new_service_id="0xABCD"/>
+
+    <service_availability_descriptor availability="true"/>
+
+    <service_availability_descriptor availability="false">
+      <cell id="0x1234"/>
+      <cell id="0x5678"/>
+      <cell id="0x9ABC"/>
+    </service_availability_descriptor>
+
+    <stuffing_descriptor/>
+
+    <stuffing_descriptor>
+      01 23 45 67 89
+    </stuffing_descriptor>
+
   </PMT>
 
 </tsduck>

@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 454 bytes
+  Version: 0, sections: 1, total size: 483 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -152,4 +152,20 @@
         0000:  12 35 65 32 23                             .5e2#
       Additional information:
         0000:  78 96 23 12 45 46                          x.#.EF
+    - Descriptor 40: Service Move (0x60, 96), 6 bytes
+      New original network id: 0x1234 (4660)
+      New transport stream id: 0x5678 (22136)
+      New service id: 0xABCD (43981)
+    - Descriptor 41: Service Availability (0x72, 114), 1 bytes
+      Availability: true
+    - Descriptor 42: Service Availability (0x72, 114), 7 bytes
+      Availability: false
+      Cell id: 0x1234 (4660)
+      Cell id: 0x5678 (22136)
+      Cell id: 0x9ABC (39612)
+    - Descriptor 43: Stuffing (0x42, 66), 0 bytes
+      Stuffing data, 0 bytes
+    - Descriptor 44: Stuffing (0x42, 66), 5 bytes
+      Stuffing data, 5 bytes
+      0000:  01 23 45 67 89                             .#Eg.
 
