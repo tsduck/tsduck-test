@@ -122,5 +122,11 @@
     <stuffing_descriptor>
       01 23 45 67 89
     </stuffing_descriptor>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="true" fixed_frame_rate="false" temporal_poc="true" picture_to_display_conversion="false"/>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="true"/>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="false"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369"/>
   </PMT>
 </tsduck>

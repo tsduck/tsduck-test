@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 483 bytes
+  Section: 0 (last: 0), version: 0, size: 543 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -167,4 +167,34 @@
   - Descriptor 44: Stuffing (0x42, 66), 5 bytes
     Stuffing data, 5 bytes
     0000:  01 23 45 67 89                                   .#Eg.
+  - Descriptor 45: AVC Timing and HRD (0x2A, 42), 2 bytes
+    HRD management valid: true
+    Fixed frame rate: false
+    Temporal picture order count: true
+    Picture to display conversion: false
+  - Descriptor 46: AVC Timing and HRD (0x2A, 42), 7 bytes
+    HRD management valid: false
+    Num. units in tick: 1,234,567
+    Fixed frame rate: true
+    Temporal picture order count: false
+    Picture to display conversion: true
+  - Descriptor 47: AVC Timing and HRD (0x2A, 42), 15 bytes
+    HRD management valid: true
+    90 kHz: N = 789,654, K = 365,214
+    Num. units in tick: 741,369
+    Fixed frame rate: true
+    Temporal picture order count: false
+    Picture to display conversion: false
+  - Descriptor 48: MPEG-2 Extension (0x3F, 63), 2 bytes
+    MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
+    HRD management valid: true
+  - Descriptor 49: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
+    HRD management valid: false
+    Num. units in tick: 1,234,567
+  - Descriptor 50: MPEG-2 Extension (0x3F, 63), 15 bytes
+    MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
+    HRD management valid: true
+    90 kHz: N = 789,654, K = 365,214
+    Num. units in tick: 741,369
 
