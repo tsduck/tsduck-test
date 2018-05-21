@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 543 bytes
+  Version: 0, sections: 1, total size: 593 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -198,4 +198,40 @@
       HRD management valid: true
       90 kHz: N = 789,654, K = 365,214
       Num. units in tick: 741,369
+    - Descriptor 51: External ES id (0x20, 32), 2 bytes
+      External ES id: 0x4567 (17767)
+    - Descriptor 52: MPEG-4 Audio Stream (0x1C, 28), 1 bytes
+      MPEG-4 Audio profile and level: 0x12 (18)
+    - Descriptor 53: MPEG-4 Video Stream (0x1B, 27), 1 bytes
+      MPEG-4 Video profile and level: 0x34 (52)
+    - Descriptor 54: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x03 (3, GOP or SEQ)
+    - Descriptor 55: Hierarchy (0x04, 4), 4 bytes
+      Temporal scalability: true
+      Spatial scalability: false
+      Quality scalability: true
+      Hierarchy type: 0x09 (9, MVC video sub-bitstream or MVCD video sub-bitstream)
+      Hierarchy layer index: 10
+      Tref present: false
+      Hierarchy embedded layer index: 11
+      Hierarchy channel: 12
+    - Descriptor 56: Audio Stream (0x03, 3), 1 bytes
+      Free format: true, variable rate: false
+      ID: 0, layer: 2
+    - Descriptor 57: Video Stream (0x02, 2), 1 bytes
+      Multiple frame rate: true, frame rate: 0x02 (24 fps)
+      MPEG-1 only: true, constained parameter: false, still picture: true
+    - Descriptor 58: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x03 (25 fps)
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x30 (48)
+      Chroma format: 0x02 (4:2:2)
+      Frame rate extension: false
+    - Descriptor 59: Target Background Grid (0x07, 7), 4 bytes
+      Size: 100x200, aspect ratio: 3 (16:9)
+    - Descriptor 60: Video Window (0x08, 8), 4 bytes
+      Offset x: 50, y: 70, window priority: 1
+    - Descriptor 61: Smoothing Buffer (0x10, 16), 6 bytes
+      Smoothing buffer leak rate: 0x00123456 (1193046) x 400 b/s
+      Smoothing buffer size: 0x00258963 (2460003) bytes
 
