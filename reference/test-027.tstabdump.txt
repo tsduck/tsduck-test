@@ -186,3 +186,19 @@
     Sub-segment number: 2, expected sub-segments: 4
   CRC32: 0x36622388 (OK)
 
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 45 bytes
+  Protocol version: 0x00 (0)
+  Encryption: none
+  PTS adjustment: 0x000000000 (0)
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x05 (SpliceInsert), size: 15 bytes
+  Splice event id: 0x00000001, cancel: 0
+  Out of network: yes, program splice: yes, duration set: yes, immediate: yes
+  Duration PTS: 0x00066FF30 (6750000), auto return: no
+  Unique program id: 0x0001 (1), avail: 0x00 (0), avails expected: 0
+  - Descriptor 0: SCTE 35 Avail (0x00, 0), 8 bytes
+    Identifier: 0x43554549 ("CUEI")
+    Provider id: 0x00000012
+  CRC32: 0x99EBD2E0 (OK)
+

@@ -84,4 +84,11 @@
       <component component_tag="2" pts_offset="456"/>
     </splice_segmentation_descriptor>
   </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <!-- PID 0x00C8 (200) -->
+    <splice_insert splice_event_id="0x00000001" splice_event_cancel="false" out_of_network="true" splice_immediate="true" unique_program_id="0x0001" avail_num="0" avails_expected="0">
+      <break_duration auto_return="false" duration="6,750,000"/>
+    </splice_insert>
+    <splice_avail_descriptor identifier="0x43554549" provider_avail_id="0x00000012"/>
+  </splice_information_table>
 </tsduck>

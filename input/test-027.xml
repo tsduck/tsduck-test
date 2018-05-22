@@ -126,4 +126,12 @@
     </splice_segmentation_descriptor>
   </splice_information_table>
 
+  <!-- See issue #51 -->
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <splice_insert splice_event_id="0x00000001" out_of_network="true" splice_immediate="true" unique_program_id="0x0001">
+      <break_duration auto_return="false" duration="6,750,000"/>
+    </splice_insert>
+    <splice_avail_descriptor identifier="0x43554549" provider_avail_id="0x00000012"/>
+  </splice_information_table>
+
 </tsduck>
