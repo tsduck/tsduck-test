@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 593 bytes
+  Version: 0, sections: 1, total size: 608 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -234,4 +234,20 @@
     - Descriptor 61: Smoothing Buffer (0x10, 16), 6 bytes
       Smoothing buffer leak rate: 0x00123456 (1193046) x 400 b/s
       Smoothing buffer size: 0x00258963 (2460003) bytes
+    - Descriptor 62: Time Slice FEC Identifier (0x77, 119), 3 bytes
+      Use time slice: true
+      MPE FEC: Reed-Solomon(255, 191, 64)
+      Frame size: 1536 kbits, 768 rows
+      Max burst duration: 0x45 (69)
+      Max average rate: reserved value 0x08
+      Time slice FEC id: 0x03 (3)
+    - Descriptor 63: Time Slice FEC Identifier (0x77, 119), 8 bytes
+      Use time slice: false
+      MPE FEC: none
+      Frame size: 2048 kbits, 1024 rows
+      Max burst duration: 0x67 (103)
+      Max average rate: 128 kbps
+      Time slice FEC id: 0x09 (9)
+      Id selector bytes:
+      0000:  01 23 45 67 89                             .#Eg.
 

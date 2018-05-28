@@ -291,6 +291,25 @@
         sb_leak_rate="0x123456"
         sb_size="0x258963"/>
 
+    <time_slice_fec_identifier_descriptor
+        time_slicing="true"
+        mpe_fec="1"
+        frame_size="2"
+        max_burst_duration="0x45"
+        max_average_rate="8"
+        time_slice_fec_id="3">
+    </time_slice_fec_identifier_descriptor>
+
+    <time_slice_fec_identifier_descriptor
+        time_slicing="false"
+        mpe_fec="0"
+        frame_size="3"
+        max_burst_duration="0x67"
+        max_average_rate="3"
+        time_slice_fec_id="9">
+      <id_selector_bytes>0123456789</id_selector_bytes>
+    </time_slice_fec_identifier_descriptor>
+
   </PMT>
 
 </tsduck>
