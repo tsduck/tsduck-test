@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 608 bytes
+  Version: 0, sections: 1, total size: 624 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -240,7 +240,7 @@
       Frame size: 1536 kbits, 768 rows
       Max burst duration: 0x45 (69)
       Max average rate: reserved value 0x08
-      Time slice FEC id: 0x03 (3)
+      Time slice FEC id: 0x00 (0)
     - Descriptor 63: Time Slice FEC Identifier (0x77, 119), 8 bytes
       Use time slice: false
       MPE FEC: none
@@ -250,4 +250,12 @@
       Time slice FEC id: 0x09 (9)
       Id selector bytes:
       0000:  01 23 45 67 89                             .#Eg.
+    - Descriptor 64: ECM Repetition Rate (0x78, 120), 4 bytes
+      CA System Id: 0x1234 (TV/Com)
+      ECM repetition rate: 100 ms
+    - Descriptor 65: ECM Repetition Rate (0x78, 120), 8 bytes
+      CA System Id: 0x5678 (unknown)
+      ECM repetition rate: 200 ms
+      Private data:
+      0000:  78 96 32 14                                x.2.
 

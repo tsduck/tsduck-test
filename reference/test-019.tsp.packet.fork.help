@@ -10,9 +10,10 @@ Options:
 
   -b value
   --buffered-packets value
-      Specifies the number of TS packets to buffer before sending them
-      through the pipe to the forked process. By default, the packets are
-      not buffered and sent one by one.
+      Specifies the number of TS packets to buffer before sending them through
+      the pipe to the forked process. When set to zero, the packets are not
+      buffered and sent one by one. The default is 500 packets in real-time mode
+      and 1000 packets in offline mode.
 
   --help
       Display this help text.

@@ -139,11 +139,17 @@
     <target_background_grid_descriptor horizontal_size="100" vertical_size="200" aspect_ratio_information="3"/>
     <video_window_descriptor horizontal_offset="50" vertical_offset="70" window_priority="1"/>
     <smoothing_buffer_descriptor sb_leak_rate="0x00123456" sb_size="0x00258963"/>
-    <time_slice_fec_identifier_descriptor time_slicing="true" mpe_fec="0x01" frame_size="0x02" max_burst_duration="0x45" max_average_rate="0x08" time_slice_fec_id="0x03"/>
+    <time_slice_fec_identifier_descriptor time_slicing="true" mpe_fec="0x01" frame_size="0x02" max_burst_duration="0x45" max_average_rate="0x08" time_slice_fec_id="0x00"/>
     <time_slice_fec_identifier_descriptor time_slicing="false" mpe_fec="0x00" frame_size="0x03" max_burst_duration="0x67" max_average_rate="0x03" time_slice_fec_id="0x09">
       <id_selector_bytes>
         01 23 45 67 89
       </id_selector_bytes>
     </time_slice_fec_identifier_descriptor>
+    <ECM_repetition_rate_descriptor CA_system_id="0x1234" ECM_repetition_rate="100"/>
+    <ECM_repetition_rate_descriptor CA_system_id="0x5678" ECM_repetition_rate="200">
+      <private_data>
+        78 96 32 14
+      </private_data>
+    </ECM_repetition_rate_descriptor>
   </PMT>
 </tsduck>

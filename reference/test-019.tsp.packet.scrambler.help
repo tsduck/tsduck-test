@@ -117,10 +117,9 @@ General options:
       is specified.
 
   --synchronous
-      Specify to synchronously generate the ECM's. By default, continue
-      processing packets while generating ECM's. Use this option with
-      offline packet processing. Use the default (asynchronous) with live
-      packet processing.
+      Specify to synchronously generate the ECM's. By default, in real-time
+      mode, the packet processing continues while generating ECM's. This option
+      is always on in offline mode.
 
   --version
       Display the version number.

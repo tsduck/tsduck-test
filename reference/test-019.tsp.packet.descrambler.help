@@ -28,10 +28,9 @@ Generic descrambler options:
       specified. By default, descramble the specified service.
 
   --synchronous
-      Specify to synchronously decipher the ECM's. By default, continue
-      processing packets while processing ECM's. Use this option with
-      offline packet processing. Use the default (asynchronous) with live
-      packet processing.
+      Specify to synchronously decipher the ECM's. By default, in real-time
+      mode, the packet processing continues while processing ECM's. This option
+      is always on in offline mode.
 
 Transport stream scrambling options:
 

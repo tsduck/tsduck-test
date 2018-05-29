@@ -296,8 +296,7 @@
         mpe_fec="1"
         frame_size="2"
         max_burst_duration="0x45"
-        max_average_rate="8"
-        time_slice_fec_id="3">
+        max_average_rate="8">
     </time_slice_fec_identifier_descriptor>
 
     <time_slice_fec_identifier_descriptor
@@ -309,6 +308,16 @@
         time_slice_fec_id="9">
       <id_selector_bytes>0123456789</id_selector_bytes>
     </time_slice_fec_identifier_descriptor>
+
+    <ECM_repetition_rate_descriptor
+        CA_system_id="0x1234"
+        ECM_repetition_rate="100"/>
+
+    <ECM_repetition_rate_descriptor
+        CA_system_id="0x5678"
+        ECM_repetition_rate="200">
+      <private_data>78963214</private_data>
+    </ECM_repetition_rate_descriptor>
 
   </PMT>
 
