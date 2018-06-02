@@ -152,4 +152,18 @@
       </private_data>
     </ECM_repetition_rate_descriptor>
   </PMT>
+  <discontinuity_information_table transition="false">
+    <!-- PID 0x00C8 (200) -->
+  </discontinuity_information_table>
+  <discontinuity_information_table transition="true">
+    <!-- PID 0x00C8 (200) -->
+  </discontinuity_information_table>
+  <selection_information_table version="12" current="true">
+    <!-- PID 0x00C8 (200) -->
+    <partial_transport_stream_descriptor peak_rate="0x00012345"/>
+    <service service_id="0x4567" running_status="not-running"/>
+    <service service_id="0x7418" running_status="running">
+      <partial_transport_stream_descriptor peak_rate="0x00078964" minimum_overall_smoothing_rate="0x00096325" maximum_overall_smoothing_buffer="0x1234"/>
+    </service>
+  </selection_information_table>
 </tsduck>

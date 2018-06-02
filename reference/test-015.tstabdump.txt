@@ -258,3 +258,25 @@
     Private data:
     0000:  78 96 32 14                                      x.2.
 
+* DIT (Discontinuity Information), TID 126 (0x7E)
+  Short section, size: 4 bytes
+  Transition: no
+
+* DIT (Discontinuity Information), TID 126 (0x7E)
+  Short section, size: 4 bytes
+  Transition: yes
+
+* SIT (Selection Information), TID 127 (0x7F)
+  Section: 0 (last: 0), version: 12, size: 42 bytes
+  Global information:
+  - Descriptor 0: Partial Transport Stream (0x63, 99), 8 bytes
+    Peak rate: 0x00012345 (74565) x 400 b/s
+    Min smoothing rate: undefined
+    Max smoothing buffer: undefined
+  Service id: 17767 (0x4567), Status: not-running
+  Service id: 29720 (0x7418), Status: running
+  - Descriptor 0: Partial Transport Stream (0x63, 99), 8 bytes
+    Peak rate: 0x00078964 (493924) x 400 b/s
+    Min smoothing rate: 0x00096325 (615205) x 400 b/s
+    Max smoothing buffer: 0x1234 (4660) bytes
+
