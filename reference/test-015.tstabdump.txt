@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 624 bytes
+  Section: 0 (last: 0), version: 0, size: 637 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -257,6 +257,14 @@
     ECM repetition rate: 200 ms
     Private data:
     0000:  78 96 32 14                                      x.2.
+  - Descriptor 66: Extension Descriptor (0x7F, 127), 7 bytes
+    Extended descriptor: Service Relocated (0x0B, 11)
+    Old original network id: 0x1234 (4660)
+    Old transport stream id: 0x5678 (22136)
+    Old service id: 0xABCD (43981)
+  - Descriptor 67: System Clock (0x0B, 11), 2 bytes
+    External clock reference: false
+    Clock accuracy integer: 47, exponent: 3
 
 * DIT (Discontinuity Information), TID 126 (0x7E)
   Short section, size: 4 bytes
