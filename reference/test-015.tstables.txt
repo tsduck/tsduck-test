@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 637 bytes
+  Version: 0, sections: 1, total size: 674 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -266,6 +266,21 @@
     - Descriptor 67: System Clock (0x0B, 11), 2 bytes
       External clock reference: false
       Clock accuracy integer: 47, exponent: 3
+    - Descriptor 68: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
+      Bound valid: no
+    - Descriptor 69: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
+      Bound valid: yes
+      LTW offset bounds: lower: 0x3039 (12345), upper: 0x5D57 (23895)
+    - Descriptor 70: Copyright (0x0D, 13), 4 bytes
+      Copyright identifier: 0x00001234
+    - Descriptor 71: Copyright (0x0D, 13), 9 bytes
+      Copyright identifier: 0x00006789
+      Additional copyright info:
+      0000:  78 96 32 14 52                             x.2.R
+    - Descriptor 72: IBP (0x12, 18), 2 bytes
+      Closed GOP: no, identical GOP: yes, max GOP length: 0x00000018 (24)
+    - Descriptor 73: SL (0x1E, 30), 2 bytes
+      ES id: 0x9876 (39030)
 
 * DIT (Discontinuity Information), TID 126 (0x7E), PID 200 (0x00C8)
   Short section, total size: 4 bytes

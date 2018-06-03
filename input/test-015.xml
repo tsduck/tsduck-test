@@ -329,6 +329,27 @@
         clock_accuracy_integer="47"
         clock_accuracy_exponent="3"/>
 
+    <multiplex_buffer_utilization_descriptor/>
+
+    <multiplex_buffer_utilization_descriptor
+        LTW_offset_lower_bound="12345"
+        LTW_offset_upper_bound="23895"/>
+
+    <copyright_descriptor copyright_identifier="0x1234"/>
+
+    <copyright_descriptor copyright_identifier="0x6789">
+      <additional_copyright_info>
+        78 96 32 14 52
+      </additional_copyright_info>
+    </copyright_descriptor>
+
+    <IBP_descriptor
+        closed_gop="false"
+        identical_gop="true"
+        max_gop_length="24"/>
+
+    <SL_descriptor ES_ID="0x9876"/>
+
   </PMT>
 
   <discontinuity_information_table transition="false"/>

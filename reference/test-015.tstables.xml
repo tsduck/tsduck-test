@@ -153,6 +153,16 @@
     </ECM_repetition_rate_descriptor>
     <service_relocated_descriptor old_original_network_id="0x1234" old_transport_stream_id="0x5678" old_service_id="0xABCD"/>
     <system_clock_descriptor external_clock_reference="false" clock_accuracy_integer="47" clock_accuracy_exponent="3"/>
+    <multiplex_buffer_utilization_descriptor/>
+    <multiplex_buffer_utilization_descriptor LTW_offset_lower_bound="12,345" LTW_offset_upper_bound="23,895"/>
+    <copyright_descriptor copyright_identifier="0x00001234"/>
+    <copyright_descriptor copyright_identifier="0x00006789">
+      <additional_copyright_info>
+        78 96 32 14 52
+      </additional_copyright_info>
+    </copyright_descriptor>
+    <IBP_descriptor closed_gop="false" identical_gop="true" max_gop_length="24"/>
+    <SL_descriptor ES_ID="0x9876"/>
   </PMT>
   <discontinuity_information_table transition="false">
     <!-- PID 0x00C8 (200) -->
