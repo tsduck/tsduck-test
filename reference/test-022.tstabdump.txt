@@ -96,7 +96,7 @@
       Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74)
-  Section: 0 (last: 0), version: 0, size: 411 bytes
+  Section: 0 (last: 0), version: 0, size: 438 bytes
   Application type: 1 (0x0001), Test application: 1
   Common descriptor loop:
   - Descriptor 0: AIT Application Name (0x01, 1), 0 bytes
@@ -200,4 +200,19 @@
     Transport protocol label: 0x06 (6)
     Transport protocol label: 0x07 (7)
     Transport protocol label: 0x08 (8)
+  - Descriptor 26: AIT Application Storage (0x10, 16), 7 bytes
+    Storage property: 0x01 (1)
+    Not launchable from broadcast: no
+    Launchable completely from cache: yes
+    Is launchable with older version: no
+    Version: 0x12345678 (305419896)
+    Storage property: 0x11 (17)
+  - Descriptor 27: AIT External Application Authorisation (0x05, 5), 0 bytes
+  - Descriptor 28: AIT External Application Authorisation (0x05, 5), 14 bytes
+    - Organization id: 0x12345678 (305419896)
+      Application id: 0xABCD (43981)
+      Priority: 0x08 (8)
+    - Organization id: 0x98765432 (2557891634)
+      Application id: 0xDEAD (57005)
+      Priority: 0x59 (89)
 

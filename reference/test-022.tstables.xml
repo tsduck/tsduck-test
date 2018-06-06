@@ -148,5 +148,11 @@
       <transport_protocol label="0x07"/>
       <transport_protocol label="0x08"/>
     </application_descriptor>
+    <application_storage_descriptor storage_property="0x01" not_launchable_from_broadcast="false" launchable_completely_from_cache="true" is_launchable_with_older_version="false" version="0x12345678" priority="17"/>
+    <external_application_authorization_descriptor/>
+    <external_application_authorization_descriptor>
+      <application organisation_id="0x12345678" application_id="0xABCD" application_priority="8"/>
+      <application organisation_id="0x98765432" application_id="0xDEAD" application_priority="89"/>
+    </external_application_authorization_descriptor>
   </AIT>
 </tsduck>
