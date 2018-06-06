@@ -57,6 +57,17 @@ Options:
       interface). This plugin behaves as a MUX, ie. a TCP server, and accepts
       only one EMMG/PDG connection at a time.
 
+  -u [address:]port
+  --udp [address:]port
+      Specifies the local UDP port on which the plugin listens for data
+      provision messages (these messages can be sent using TCP or UDP). By
+      default, use the same port and optional local address as specified for
+      TCP using option --server.
+
+  --unregulated
+      Insert data packets immediately. Do not regulate insertion, do not limit
+      the data bitrate.
+
   --version
       Display the version number.
 
