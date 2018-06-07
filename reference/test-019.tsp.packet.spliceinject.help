@@ -104,9 +104,13 @@ UDP input options:
   --buffer-size value
       Specifies the UDP socket receive buffer size (socket option).
 
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely necessary.
+
   -r
   --reuse-port
-      Set the "reuse port" (or "reuse address") UDP option on the server.
+      Set the reuse port socket option. This is now enabled by default, the option
+      is present for legacy only.
 
   -u [address:]port
   --udp [address:]port

@@ -36,9 +36,13 @@ UDP reception options:
       It can be also a host name that translates to a local address.
       By default, listen on all local interfaces.
 
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely necessary.
+
   -r
   --reuse-port
-      Set the reuse port socket option.
+      Set the reuse port socket option. This is now enabled by default, the option
+      is present for legacy only.
 
   -s address[:port]
   --source address[:port]

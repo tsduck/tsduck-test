@@ -58,6 +58,9 @@ Options:
       the DVB SimulCrypt option 'max_comp_time'. By default, use the value of
       --comp-time (which is itself zero by default) plus 100 ms.
 
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely necessary.
+
   -o
   --once
       Accept only one client and exit at the end of the session.
