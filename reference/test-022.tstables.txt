@@ -98,7 +98,7 @@
         Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 438 bytes
+  Version: 0, sections: 1, total size: 524 bytes
   - Section 0:
     Application type: 1 (0x0001), Test application: 1
     Common descriptor loop:
@@ -218,4 +218,25 @@
       - Organization id: 0x98765432 (2557891634)
         Application id: 0xDEAD (57005)
         Priority: 0x59 (89)
+    - Descriptor 29: AIT Simple Application Location (0x15, 21), 15 bytes
+      Initial path: "http://foo/bar/"
+    - Descriptor 30: AIT Simple Application Boundary (0x17, 23), 1 bytes
+      Number of prefixes: 0
+    - Descriptor 31: AIT Simple Application Boundary (0x17, 23), 28 bytes
+      Number of prefixes: 2
+      Boundary extension: "http://x/y/z"
+      Boundary extension: "proto://root/"
+    - Descriptor 32: AIT Application Icons (0x0B, 11), 14 bytes
+      Icon locator: "dir/foo.ico"
+      Icon flags: 0x0080
+        - 128 x 128 for broadcast pixels on 4:3 display
+    - Descriptor 33: AIT Application Icons (0x0B, 11), 18 bytes
+      Icon locator: "a/b/c.ico"
+      Icon flags: 0x0047
+        - 32 x 32 for square pixel display
+        - 32 x 32 for broadcast pixels on 4:3 display
+        - 24 x 32 for broadcast pixels on 16:9 display
+        - 128 x 128 for square pixel display
+      Reserved bytes:
+        0000:  12 36 54 78 96 32                          .6Tx.2
 

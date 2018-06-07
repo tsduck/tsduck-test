@@ -252,6 +252,27 @@
           application_priority="89"/>
     </external_application_authorization_descriptor>
 
+    <simple_application_location_descriptor initial_path="http://foo/bar/"/>
+
+    <simple_application_boundary_descriptor/>
+
+    <simple_application_boundary_descriptor>
+      <prefix boundary_extension="http://x/y/z"/>
+      <prefix boundary_extension="proto://root/"/>
+    </simple_application_boundary_descriptor>
+
+    <application_icons_descriptor
+        icon_locator="dir/foo.ico"
+        icon_flags="0x0080"/>
+
+    <application_icons_descriptor
+        icon_locator="a/b/c.ico"
+        icon_flags="0x0047">
+      <reserved_future_use>
+        12 36 54 78 96 32
+      </reserved_future_use>
+    </application_icons_descriptor>
+
   </AIT>
 
 </tsduck>
