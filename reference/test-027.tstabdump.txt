@@ -24,7 +24,7 @@
   PTS adjustment: 0x000000000 (0)
   CW index: 0x00 (0), tier: 0xFFF (4095)
   Command type: 0x06 (TimeSignal), size: 5 bytes
-  Time: 123,456,789
+  Time: 0x0075BCD15
   CRC32: 0x1AC7D4EA (OK)
 
 * SCTE 35 Splice Information, TID 252 (0xFC)
@@ -99,7 +99,7 @@
   Command type: 0x05 (SpliceInsert), size: 15 bytes
   Splice event id: 0x12345678, cancel: 0
   Out of network: yes, program splice: yes, duration set: no, immediate: no
-  Time PTS: 789,456
+  Time PTS: 0x0000C0BD0
   Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
   CRC32: 0x710342A5 (OK)
 
@@ -113,9 +113,9 @@
   Splice event id: 0x12345678, cancel: 0
   Out of network: yes, program splice: no, duration set: yes, immediate: no
   Number of components: 3
-    Component tag: 0x01 (1), time PTS: 123,789
-    Component tag: 0x02 (2), time PTS: 123,751
-    Component tag: 0x03 (3), time PTS: 123,801
+    Component tag: 0x01 (1), time PTS: 0x00001E38D
+    Component tag: 0x02 (2), time PTS: 0x00001E367
+    Component tag: 0x03 (3), time PTS: 0x00001E399
   Duration PTS: 0x0000001C8 (456), auto return: no
   Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
   CRC32: 0x98BF35BA (OK)
