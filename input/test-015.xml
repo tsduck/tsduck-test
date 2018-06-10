@@ -350,6 +350,44 @@
 
     <SL_descriptor ES_ID="0x9876"/>
 
+    <carousel_identifier_descriptor carousel_id="0x12345678"/>
+
+    <carousel_identifier_descriptor carousel_id="0x96325874">
+      <private_data>
+        45 69 87
+      </private_data>
+    </carousel_identifier_descriptor>
+
+    <association_tag_descriptor
+        association_tag="0x5823"
+        use="0x7854"/>
+
+    <association_tag_descriptor
+        association_tag="0x8523"
+        use="0x9654">
+      <selector_bytes>
+        85 23 69
+      </selector_bytes>
+      <private_data>
+        12 25 74 89 63
+      </private_data>
+    </association_tag_descriptor>
+
+    <deferred_association_tags_descriptor
+        transport_stream_id="0x1234"
+        program_number="0x5678"/>
+
+    <deferred_association_tags_descriptor
+        transport_stream_id="0x7896"
+        program_number="0x7418">
+      <association tag="0x9654"/>
+      <association tag="0x1236"/>
+      <association tag="0x8546"/>
+      <private_data>
+        78 96 54 12 36
+      </private_data>
+    </deferred_association_tags_descriptor>
+
   </PMT>
 
   <discontinuity_information_table transition="false"/>

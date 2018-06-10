@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 674 bytes
+  Section: 0 (last: 0), version: 0, size: 736 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
@@ -280,6 +280,31 @@
     Closed GOP: no, identical GOP: yes, max GOP length: 0x00000018 (24)
   - Descriptor 73: SL (0x1E, 30), 2 bytes
     ES id: 0x9876 (39030)
+  - Descriptor 74: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
+    Carousel id: 0x12345678 (305419896)
+  - Descriptor 75: DSM-CC Carousel Identifier (0x13, 19), 7 bytes
+    Carousel id: 0x96325874 (2519881844)
+    Private data:
+    0000:  45 69 87                                         Ei.
+  - Descriptor 76: DSM-CC Association Tag (0x14, 20), 5 bytes
+    Association tag: 0x5823 (22563), use: 0x7854 (30804)
+  - Descriptor 77: DSM-CC Association Tag (0x14, 20), 13 bytes
+    Association tag: 0x8523 (34083), use: 0x9654 (38484)
+    Selector bytes:
+    0000:  85 23 69                                         .#i
+    Private data:
+    0000:  12 25 74 89 63                                   .%t.c
+  - Descriptor 78: DSM-CC Deferred Association Tags (0x15, 21), 5 bytes
+    Transport stream id: 0x1234 (4660)
+    Program number: 0x5678 (22136)
+  - Descriptor 79: DSM-CC Deferred Association Tags (0x15, 21), 16 bytes
+    Association tag: 0x9654 (38484)
+    Association tag: 0x1236 (4662)
+    Association tag: 0x8546 (34118)
+    Transport stream id: 0x7896 (30870)
+    Program number: 0x7418 (29720)
+    Private data:
+    0000:  78 96 54 12 36                                   x.T.6
 
 * DIT (Discontinuity Information), TID 126 (0x7E)
   Short section, size: 4 bytes
