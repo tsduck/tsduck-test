@@ -117,7 +117,8 @@ UDP reception options:
       receive. The 'port' part is mandatory and specifies the UDP port to
       listen on. The 'address' part is optional. It specifies an IP multicast
       address to listen on. It can be also a host name that translates to a
-      multicast address.
+      multicast address. An optional source address can be specified as
+      'source@address:port' in the case of SSM.
 
   --local-address address
       Specify the IP address of the local interface on which to listen.
@@ -137,4 +138,9 @@ UDP reception options:
       and port. Accepting all packets could result in a corrupted stream and
       only one sender shall be accepted. Options --first-source and --source
       are mutually exclusive.
+
+  --ssm
+      Force the usage of Source-Specific Multicast (SSM) using the source which
+      is specified by the option --source. The --ssm option is implicit when the
+      syntax 'source@address:port' is used.
 

@@ -25,6 +25,11 @@ Options:
       Specifies how many TS packets should be grouped into a UDP packet.
       The default is 7, the maximum is 128.
 
+  -s value
+  --tos value
+      Specifies the TOS (Type-Of-Service) socket option. Setting this value
+      may depend on the user's privilege or operating system configuration.
+
   -t value
   --ttl value
       Specifies the TTL (Time-To-Live) socket option. The actual option
