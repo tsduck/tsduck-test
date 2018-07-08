@@ -8,7 +8,7 @@ Options:
   -w value
   --bandwidth value
       Specify the OFMD bandwith, used to compute the resulting bitrate.
-      Must be one of "8-MHz", "7-MHz", "6-MHz", "5-MHz" (default: 8-MHz).
+      Must be one of "5-MHz", "6-MHz", "7-MHz", "8-MHz".
 
   -b value
   --bitrate value
@@ -18,7 +18,11 @@ Options:
   -c value
   --constellation value
       Specify the OFMD constellation, used to compute the resulting bitrate.
-      Must be one of "QPSK", "16-QAM", "64-QAM" (default: 64-QAM).
+      Must be one of "16-QAM", "64-QAM", "QPSK".
+
+  -d
+  --debug
+      Produce debug traces.
 
   -f value
   --frequency value
@@ -27,7 +31,7 @@ Options:
   -g value
   --guard-interval value
       Specify the OFMD guard interval, used to compute the resulting bitrate.
-      Must be one of "1/32", "1/16", "1/8", "1/4" (no default).
+      Must be one of "1/16", "1/32", "1/4", "1/8".
 
   --help
       Display this help text.
@@ -35,8 +39,8 @@ Options:
   -h value
   --high-priority-fec value
       Specify the OFMD error correction for high priority streams, used to
-      compute the resulting bitrate. Must be one of "1/2", "2/3", "3/4",
-      "5/6", "7/8" (no default).
+      compute the resulting bitrate.
+      Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
 
   -m value
   --max-guess value
@@ -46,13 +50,13 @@ Options:
 
   -o value
   --offset-count value
-      Specify the number of offsets from the UHF or VHF channel. The default
-      is zero. See options --uhf-channel and --vhf-channel.
+      Specify the number of offsets from the UHF or VHF channel. The default is
+      zero. See options --uhf-channel and --vhf-channel.
 
   -s
   --simple
-      Produce simple output: only numbers, no comment, typically useful
-      to write scripts.
+      Produce simple output: only numbers, no comment, typically useful to
+      write scripts.
 
   -u value
   --uhf-channel value
@@ -63,7 +67,7 @@ Options:
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 
   -v value
   --vhf-channel value

@@ -3,48 +3,26 @@ Extract PSI Information
 
 Usage: tsp -P psi [options]
 
-
-PSI logging options:
+Options:
 
   -a
   --all-versions
-      Display all versions of PSI tables (need to read the complete
-      transport stream). By default, display only the first version
-      of each PSI table and stop when all expected PSI are extracted.
+      Display all versions of PSI tables (need to read the complete transport
+      stream). By default, display only the first version of each PSI table and
+      stop when all expected PSI are extracted.
+
+  -c
+  --c-style
+      Same as --raw-dump (no interpretation of section) but dump the bytes in
+      C-language style.
 
   --cat-only
       Display only the CAT, ignore other PSI tables.
 
-  -c
   --clear
-      Indicate that this is a clear transport stream, without
-      conditional access information. Useful to avoid reading the
-      complete transport stream, waiting for a non-existent CAT.
-
-  -d
-  --dump
-      Dump all PSI sections.
-
-  --help
-      Display this help text.
-
-  -o filename
-  --output-file filename
-      File name for text output.
-
-  -v
-  --verbose
-      Produce verbose output.
-
-  --version
-      Display the version number.
-
-Tables and sections formatting options:
-
-  -c
-  --c-style
-      Same as --raw-dump (no interpretation of section) but dump the
-      bytes in C-language style.
+      Indicate that this is a clear transport stream, without conditional
+      access information. Useful to avoid reading the complete transport
+      stream, waiting for a non-existent CAT.
 
   --default-charset name
       Default character set to use when interpreting DVB strings without
@@ -52,18 +30,23 @@ Tables and sections formatting options:
       the default DVB character set is ISO-6937. However, some bogus
       signalization may assume that the default character set is different,
       typically the usual local character table for the region. This option
-      forces a non-standard character table. The available table names are:
+      forces a non-standard character table. The available table names are
       ISO-6937, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
-      ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5,
-      ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, UNICODE, UTF-8.
+      ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6,
+      ISO-8859-7, ISO-8859-8, ISO-8859-9, UNICODE, UTF-8.
 
   --default-pds value
       Default private data specifier. This option is meaningful only when the
       signalization is incorrect, when private descriptors appear in tables
       without a preceding private_data_specifier_descriptor. The specified
       value is used as private data specifier to interpret private descriptors.
-      The PDS value can be an integer or one of (not case-sensitive):
-      Nagra, TPS, EACEM, EICTA, Logiways, CanalPlus, Eutelsat.
+      The PDS value can be an integer or one of (not case-sensitive) names.
+      Must be one of "CanalPlus", "EACEM", "EICTA", "Eutelsat", "Logiways",
+      "Nagra", "TPS".
+
+  -d
+  --dump
+      Dump all PSI sections.
 
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
@@ -72,8 +55,11 @@ Tables and sections formatting options:
       encoding for Latin & Western Europe languages. However, this is not the
       default DVB character set and it should be properly specified in all
       strings, which is not the case with some operators. Using this option,
-      all DVB strings without explicit table code are assumed to use ISO-8859-15
-      instead of the standard ISO-6937 encoding.
+      all DVB strings without explicit table code are assumed to use
+      ISO-8859-15 instead of the standard ISO-6937 encoding.
+
+  --help
+      Display this help text.
 
   --nested-tlv[=min-size]
       With option --tlv, try to interpret the value field of each TLV record as
@@ -81,23 +67,27 @@ Tables and sections formatting options:
       interpretation is performed only on value fields larger than this size.
       The syntax of the nested TLV is the same as the enclosing TLV.
 
+  -o value
+  --output-file value
+      File name for text output.
+
   -r
   --raw-dump
       Raw dump of section, no interpretation.
 
-  --tlv syntax
+  --tlv value
       For sections of unknown types, this option specifies how to interpret
       some parts of the section payload as TLV records. Several --tlv options
       are allowed, each one describes a part of the section payload.
-
+      
       Each syntax string has the form "start,size,tagSize,lengthSize,order".
-      The start and size fields define the offset and size of the TLV area
-      in the section payload. If the size field is "auto", the TLV extends up
-      to the end of the section. If the start field is "auto", the longest
-      TLV area in the section payload will be used. The fields tagSize and
-      lengthSize indicate the size in bytes of the Tag and Length fields in
-      the TLV structure. The field order must be either "msb" or "lsb" and
+      The start and size fields define the offset and size of the TLV area in
+      the section payload. If the size field is "auto", the TLV extends up to
+      the end of the section. If the start field is "auto", the longest TLV
+      area in the section payload will be used. The fields tagSize and
+      lengthSize indicate the size in bytes of the Tag and Length fields in the
+      TLV structure. The field order must be either "msb" or "lsb" and
       indicates the byte order of the Tag and Length fields.
-
+      
       All fields are optional. The default values are "auto,auto,1,1,msb".
 

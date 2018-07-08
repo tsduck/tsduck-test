@@ -3,7 +3,7 @@ Fix continuity counters in a transport stream
 
 Usage: tsfixcc [options] filename
 
-File:
+Parameter:
 
   MPEG capture file to be modified.
 
@@ -11,9 +11,13 @@ Options:
 
   -c
   --circular
-      Enforce continuity when the file is played repeatedly.
-      Add empty packets, if necessary, on each PID so that the
-      continuity is preserved between end and beginning of file.
+      Enforce continuity when the file is played repeatedly. Add empty packets,
+      if necessary, on each PID so that the continuity is preserved between end
+      and beginning of file.
+
+  -d
+  --debug
+      Produce debug traces.
 
   --help
       Display this help text.
@@ -24,8 +28,8 @@ Options:
 
   -v
   --verbose
-      Produce verbose messages.
+      Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

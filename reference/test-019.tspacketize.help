@@ -3,19 +3,18 @@ Packetize PSI/SI sections in a transport stream PID
 
 Usage: tspacketize [options] [input-file[=rate] ...]
 
-Input files:
+Parameters:
 
-  Binary or XML files containing one or more sections or tables. By default,
-  files ending in .xml are XML and files ending in .bin are binary. For other
-  file names, explicitly specify --binary or --xml. If the file name is
-  omitted, the standard input is used (binary by default, specify --xml
+  Input binary or XML files containing one or more sections or tables. By
+  default, files ending in .xml are XML and files ending in .bin are binary.
+  For other file names, explicitly specify --binary or --xml. If the file name
+  is omitted, the standard input is used (binary by default, specify --xml
   otherwise).
-
-  If different repetition rates are required for different files,
-  a parameter can be "filename=value" where value is the
-  repetition rate in milliseconds for all sections in that file.
-  For repetition rates to be effective, the bitrate of the target
-  PID must be specified, see option -b or --bitrate.
+  
+  If different repetition rates are required for different files, a parameter
+  can be "filename=value" where value is the repetition rate in milliseconds
+  for all sections in that file. For repetition rates to be effective, the
+  bitrate of the target PID must be specified, see option -b or --bitrate.
 
 Options:
 
@@ -25,43 +24,47 @@ Options:
   -b value
   --bitrate value
       Specifies the bitrate (in bits/second) of the target PID. This
-      information is used to schedule sections in the output list of
-      packets when specific bitrates are specified for sections.
+      information is used to schedule sections in the output list of packets
+      when specific bitrates are specified for sections.
 
   -c
   --continuous
       Continuous packetization. By default, generate one cycle of sections.
 
+  -d
+  --debug
+      Produce debug traces.
+
   -f
   --force-crc
-      Force recomputation of CRC32 in long sections. Ignore the CRC32
-      values in the input files.
+      Force recomputation of CRC32 in long sections. Ignore the CRC32 values in
+      the input files.
 
   --help
       Display this help text.
 
-  -o file-name
-  --output file-name
+  -o value
+  --output value
       Output file name for TS packets. By default, use standard output.
 
   -p value
   --pid value
-      PID of the output TS packets. This is a required parameter, there is
-      no default value.
+      PID of the output TS packets. This is a required parameter, there is no
+      default value.
 
   -s
   --stuffing
       Insert stuffing at end of each section, up to the next TS packet
-      boundary. By default, sections are packed and start in the middle
-      of a TS packet, after the previous section. Note, however, that
-      section headers are never scattered over a packet boundary.
+      boundary. By default, sections are packed and start in the middle of a TS
+      packet, after the previous section. Note, however, that section headers
+      are never scattered over a packet boundary.
 
   -v
   --verbose
-      Display verbose information.
+      Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 
   --xml
       Specify that all input files are XML, regardless of their file name.

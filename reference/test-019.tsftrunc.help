@@ -3,7 +3,7 @@ Truncate an MPEG transport stream file
 
 Usage: tsftrunc [options] filename ...
 
-Files:
+Parameters:
 
   MPEG capture files to be truncated.
 
@@ -11,8 +11,12 @@ Options:
 
   -b value
   --byte value
-      Truncate the file at the next packet boundary after the specified size
-      in bytes. Mutually exclusive with --packet.
+      Truncate the file at the next packet boundary after the specified size in
+      bytes. Mutually exclusive with --packet.
+
+  -d
+  --debug
+      Produce debug traces.
 
   --help
       Display this help text.
@@ -23,14 +27,14 @@ Options:
 
   -p value
   --packet value
-      Index of first packet to truncate. If unspecified, all complete
-      packets are kept in the file. Extraneous bytes at end of file
-      (after last multiple of 188 bytes) are truncated.
+      Index of first packet to truncate. If unspecified, all complete packets
+      are kept in the file. Extraneous bytes at end of file (after last
+      multiple of 188 bytes) are truncated.
 
   -v
   --verbose
-      Produce verbose messages.
+      Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

@@ -3,73 +3,67 @@ Generic DVB descrambler.
 
 Usage: tsp -P descrambler [options] [service]
 
-This plugin descrambles fixed PID's with fixed control words. As a demo, it can
-also descramble services for which clear ECM's were generated using the utility
-named tsecmg, a DVB SimulCrypt-compliant ECMG for test and demo.
-
-Service parameter:
+Parameter:
 
   Specifies the optional service to descramble. If no fixed control word is
   specified, ECM's from the service are used to extract control words.
-
+  
   If the argument is an integer value (either decimal or hexadecimal), it is
   interpreted as a service id. Otherwise, it is interpreted as a service name,
   as specified in the SDT. The name is not case sensitive and blanks are
   ignored. If the input TS does not contain an SDT, use service ids only.
-
+  
   If the argument is omitted, --pid options shall be specified to list explicit
   PID's to descramble and fixed control words shall be specified as well.
 
-Generic descrambler options:
-
-  -p value
-  --pid value
-      Descramble packets with this PID value. Several -p or --pid options may be
-      specified. By default, descramble the specified service.
-
-  --synchronous
-      Specify to synchronously decipher the ECM's. By default, in real-time
-      mode, the packet processing continues while processing ECM's. This option
-      is always on in offline mode.
-
-Transport stream scrambling options:
+Options:
 
   --atis-idsa
       Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
       default). The control words are 16-byte long instead of 8-byte.
-
-  -c value
-  --cw value
-      Specifies a fixed and constant control word for all TS packets. The value
-      must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
-
-  --dvb-csa2
-      Use DVB-CSA2 scrambling. This is the default.
-
-  -f name
-  --cw-file name
-      Specifies a text file containing the list of control words to apply.
-      Each line of the file must contain exactly 16 hexadecimal digits (32
-      digits with --atis-idsa). The next control word is used each time the
-      "scrambling_control" changes in the TS packets header. When all control
-      words are used, the first one is used again, and so on.
-
-  -n
-  --no-entropy-reduction
-      With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
-      Keep full 64-bit control words. Ignored with --atis-idsa.
-
-General options:
 
   --cas-id value
       Specify the CA_system_id to filter when searching for ECM streams. Since
       this descrambler is a demo tool using clear ECM's, it is unlikely that
       other real ECM streams exist. So, by default, any ECM stream is used to
       get the clear ECM's.
+      
+      This plugin descrambles fixed PID's with fixed control words. As a demo,
+      it can also descramble services for which clear ECM's were generated
+      using the utility named tsecmg, a DVB SimulCrypt-compliant ECMG for test
+      and demo.
+
+  -c value
+  --cw value
+      Specifies a fixed and constant control word for all TS packets. The value
+      must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
+
+  -f name
+  --cw-file name
+      Specifies a text file containing the list of control words to apply. Each
+      line of the file must contain exactly 16 hexadecimal digits (32 digits
+      with --atis-idsa). The next control word is used each time the
+      "scrambling_control" changes in the TS packets header. When all control
+      words are used, the first one is used again, and so on.
+
+  --dvb-csa2
+      Use DVB-CSA2 scrambling. This is the default.
 
   --help
       Display this help text.
 
-  --version
-      Display the version number.
+  -n
+  --no-entropy-reduction
+      With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
+      Keep full 64-bit control words. Ignored with --atis-idsa.
+
+  -p value
+  --pid value
+      Descramble packets with this PID value. Several -p or --pid options may
+      be specified. By default, descramble the specified service.
+
+  --synchronous
+      Specify to synchronously decipher the ECM's. By default, in real-time
+      mode, the packet processing continues while processing ECM's. This option
+      is always on in offline mode.
 

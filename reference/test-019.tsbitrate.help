@@ -3,7 +3,7 @@ Evaluate the bitrate of a transport stream
 
 Usage: tsbitrate [options] [filename]
 
-Input file:
+Parameter:
 
   MPEG capture file (standard input if omitted).
 
@@ -14,10 +14,13 @@ Options:
       Analyze all packets in the input file. By default, stop analysis when
       enough PCR information has been collected.
 
+  --debug
+      Produce debug traces.
+
   -d
   --dts
-      Use DTS (Decoding Time Stamps) from video PID's instead of PCR
-      (Program Clock Reference) from the transport layer.
+      Use DTS (Decoding Time Stamps) from video PID's instead of PCR (Program
+      Clock Reference) from the transport layer
 
   -f
   --full
@@ -28,20 +31,20 @@ Options:
       Display this help text.
 
   --min-pcr value
-      Stop analysis when that number of PCR are read from the required
-      minimum number of PID (default: 64).
+      p analysis when that number of PCR are read from the required minimum
+      number of PID (default: 64).
 
   --min-pid value
-      Minimum number of PID to get PCR from (default: 1).
+      Minimum number of PID's to get PCR from (default: 1).
 
   -v
   --value-only
-      Display only the bitrate value, in bits/seconds, based on
-      188-byte packets. Useful to reuse the value in command lines.
+      Display only the bitrate value, in bits/seconds, based on 188-byte
+      packets. Useful to reuse the value in scripts.
 
   --verbose
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

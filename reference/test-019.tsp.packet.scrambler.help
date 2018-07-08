@@ -3,43 +3,63 @@ DVB scrambler
 
 Usage: tsp -P scrambler [options] [service]
 
-Service parameter:
+Parameter:
 
   Specifies the optional service to scramble. If no service is specified, a
   list of PID's to scramble must be provided using --pid options. When PID's
   are provided, fixed control words must be specified as well.
-
+  
   If no fixed CW is specified, a random CW is generated for each crypto-period
   and ECM's containing the current and next CW's are created and inserted in
   the stream. ECM's can be created only when a service is specified.
-
+  
   If the argument is an integer value (either decimal or hexadecimal), it is
   interpreted as a service id. Otherwise, it is interpreted as a service name,
   as specified in the SDT. The name is not case sensitive and blanks are
   ignored. If the input TS does not contain an SDT, use service ids only.
 
-General options:
+Options:
 
   -a value
   --access-criteria value
-      Specifies the access criteria for the service as sent to the ECMG.
-      The value must be a suite of hexadecimal digits.
+      Specifies the access criteria for the service as sent to the ECMG. The
+      value must be a suite of hexadecimal digits.
+
+  --atis-idsa
+      Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
+      default). The control words are 16-byte long instead of 8-byte.
 
   -b value
   --bitrate-ecm value
-      Specifies the bitrate for ECM PID's in bits / second. The default is
-      30,000 b/s.
+      Specifies the bitrate for ECM PID's in bits / second. The default is 30,
+      000 b/s.
 
   --channel-id value
       Specifies the DVB SimulCrypt ECM_channel_id for the ECMG (default: 1).
+
+  --component-level
+      Add CA_descriptors at component level in the PMT. By default, the
+      CA_descriptor is added at program level.
 
   -d seconds
   --cp-duration seconds
       Specifies the crypto-period duration in seconds (default: 10).
 
-  --component-level
-      Add CA_descriptors at component level in the PMT. By default, the
-      CA_descriptor is added at program level.
+  -c value
+  --cw value
+      Specifies a fixed and constant control word for all TS packets. The value
+      must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
+
+  -f name
+  --cw-file name
+      Specifies a text file containing the list of control words to apply. Each
+      line of the file must contain exactly 16 hexadecimal digits (32 digits
+      with --atis-idsa). The next control word is used each time the
+      "scrambling_control" changes in the TS packets header. When all control
+      words are used, the first one is used again, and so on.
+
+  --dvb-csa2
+      Use DVB-CSA2 scrambling. This is the default.
 
   -i value
   --ecm-id value
@@ -52,42 +72,50 @@ General options:
 
   -v value
   --ecmg-scs-version value
-      Specifies the version of the ECMG <=> SCS DVB SimulCrypt protocol.
-      Valid values are 2 and 3. The default is 2.
+      Specifies the version of the ECMG <=> SCS DVB SimulCrypt protocol. Valid
+      values are 2 and 3. The default is 2.
 
   --help
       Display this help text.
 
   --ignore-scrambled
-      Ignore packets which are already scrambled. Since these packets
-      are likely scrambled with a different control word, descrambling
-      will not be possible the usual way.
+      Ignore packets which are already scrambled. Since these packets are
+      likely scrambled with a different control word, descrambling will not be
+      possible the usual way.
 
   --log-data[=level]
       Same as --log-protocol but applies to CW_provision and ECM_response
       messages only. To debug the session management without being flooded by
       data messages, use --log-protocol=info --log-data=debug.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
 
   --log-protocol[=level]
       Log all ECMG <=> SCS protocol messages using the specified level. If the
-      option is not present, the messages are logged at debug level only. If the
-      option is present without value, the messages are logged at info level.
-      A level can be a numerical debug level or any of the following:
-      fatal, severe, error, warning, info, verbose, debug.
+      option is not present, the messages are logged at debug level only. If
+      the option is present without value, the messages are logged at info
+      level. A level can be a numerical debug level or a name.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
 
   --no-audio
-      Do not scramble audio components in the selected service. By default,
-      all audio components are scrambled.
+      Do not scramble audio components in the selected service. By default, all
+      audio components are scrambled.
+
+  -n
+  --no-entropy-reduction
+      With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
+      Keep full 64-bit control words. Ignored with --atis-idsa.
 
   --no-video
-      Do not scramble video components in the selected service. By default,
-      all video components are scrambled.
+      Do not scramble video components in the selected service. By default, all
+      video components are scrambled.
 
   --partial-scrambling count
-      Do not scramble all packets, only one packet every "count" packets.
-      The default value is 1, meaning that all packets are scrambled.
-      Specifying higher values is a way to reduce the scrambling CPU load
-      while keeping the service mostly scrambled.
+      Do not scramble all packets, only one packet every "count" packets. The
+      default value is 1, meaning that all packets are scrambled. Specifying
+      higher values is a way to reduce the scrambling CPU load while keeping
+      the service mostly scrambled.
 
   -p value
   --pid value
@@ -96,13 +124,13 @@ General options:
 
   --pid-ecm value
       Specifies the new ECM PID for the service. By defaut, use the first
-      unused PID immediately following the PMT PID. Using the default, there
-      is a risk to later discover that this PID is already used. In that case,
+      unused PID immediately following the PMT PID. Using the default, there is
+      a risk to later discover that this PID is already used. In that case,
       specify --pid-ecm with a notoriously unused PID value.
 
   --private-data value
-      Specifies the private data to insert in the CA_descriptor in the PMT.
-      The value must be a suite of hexadecimal digits.
+      Specifies the private data to insert in the CA_descriptor in the PMT. The
+      value must be a suite of hexadecimal digits.
 
   --stream-id value
       Specifies the DVB SimulCrypt ECM_stream_id for the ECMG (default: 1).
@@ -113,41 +141,11 @@ General options:
 
   -s value
   --super-cas-id value
-      Specify the DVB SimulCrypt Super_CAS_Id. This is required when --ecmg
-      is specified.
+      Specify the DVB SimulCrypt Super_CAS_Id. This is required when --ecmg is
+      specified.
 
   --synchronous
       Specify to synchronously generate the ECM's. By default, in real-time
       mode, the packet processing continues while generating ECM's. This option
       is always on in offline mode.
-
-  --version
-      Display the version number.
-
-Transport stream scrambling options:
-
-  --atis-idsa
-      Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
-      default). The control words are 16-byte long instead of 8-byte.
-
-  -c value
-  --cw value
-      Specifies a fixed and constant control word for all TS packets. The value
-      must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
-
-  --dvb-csa2
-      Use DVB-CSA2 scrambling. This is the default.
-
-  -f name
-  --cw-file name
-      Specifies a text file containing the list of control words to apply.
-      Each line of the file must contain exactly 16 hexadecimal digits (32
-      digits with --atis-idsa). The next control word is used each time the
-      "scrambling_control" changes in the TS packets header. When all control
-      words are used, the first one is used again, and so on.
-
-  -n
-  --no-entropy-reduction
-      With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
-      Keep full 64-bit control words. Ignored with --atis-idsa.
 

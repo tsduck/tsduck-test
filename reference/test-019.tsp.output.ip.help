@@ -4,39 +4,36 @@ Send TS packets using UDP/IP, multicast or unicast
 Usage: tsp -O ip [options] address:port
 
 Parameter:
-  The parameter address:port describes the destination for UDP packets.
-  The 'address' specifies an IP address which can be either unicast or
-  multicast. It can be also a host name that translates to an IP address.
-  The 'port' specifies the destination UDP port.
+
+  The parameter address:port describes the destination for UDP packets. The
+  'address' specifies an IP address which can be either unicast or multicast.
+  It can be also a host name that translates to an IP address. The 'port'
+  specifies the destination UDP port.
 
 Options:
 
   --help
       Display this help text.
 
-  -l address
-  --local-address address
-      When the destination is a multicast address, specify the IP address
-      of the outgoing local interface. It can be also a host name that
-      translates to a local address.
+  -l value
+  --local-address value
+      When the destination is a multicast address, specify the IP address of
+      the outgoing local interface. It can be also a host name that translates
+      to a local address.
 
   -p value
   --packet-burst value
-      Specifies how many TS packets should be grouped into a UDP packet.
-      The default is 7, the maximum is 128.
+      Specifies how many TS packets should be grouped into a UDP packet. The
+      default is 7, the maximum is 128.
 
   -s value
   --tos value
-      Specifies the TOS (Type-Of-Service) socket option. Setting this value
-      may depend on the user's privilege or operating system configuration.
+      Specifies the TOS (Type-Of-Service) socket option. Setting this value may
+      depend on the user's privilege or operating system configuration.
 
   -t value
   --ttl value
-      Specifies the TTL (Time-To-Live) socket option. The actual option
-      is either "Unicast TTL" or "Multicast TTL", depending on the
-      destination address. Remember that the default Multicast TTL is 1
-      on most systems.
-
-  --version
-      Display the version number.
+      Specifies the TTL (Time-To-Live) socket option. The actual option is
+      either "Unicast TTL" or "Multicast TTL", depending on the destination
+      address. Remember that the default Multicast TTL is 1 on most systems.
 

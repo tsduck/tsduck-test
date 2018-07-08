@@ -3,7 +3,7 @@ Extract the date and time (TDT/TOT) from a transport stream
 
 Usage: tsdate [options] [filename]
 
-Input file:
+Parameter:
 
   MPEG capture file (standard input if omitted).
 
@@ -11,8 +11,12 @@ Options:
 
   -a
   --all
-      Report all TDT/TOT tables (default: report only the first table
-      of each type).
+      Report all TDT/TOT tables (default: report only the first table of each
+      type).
+
+  -d
+  --debug
+      Produce debug traces.
 
   --help
       Display this help text.
@@ -28,5 +32,5 @@ Options:
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

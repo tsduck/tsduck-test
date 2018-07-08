@@ -3,11 +3,11 @@ Control Dektec devices
 
 Usage: tsdektec [options] [device]
 
-Device:
+Parameter:
 
-  Device index, from 0 to N-1 (with N being the number of Dektec devices
-  in the system). The default is 0. Use option --list-all to have a
-  complete list of devices in the system.
+  Device index, from 0 to N-1 (with N being the number of Dektec devices in the
+  system). The default is 0. Use option --all to have a complete list of
+  devices in the system.
 
 Options:
 
@@ -15,26 +15,29 @@ Options:
   --all
       List all Dektec devices available on the system.
 
+  -d
+  --debug
+      Produce debug traces.
+
   --help
       Display this help text.
 
   -i port-number
   --input port-number
-      Set the specified port in input mode. This applies to bidirectional
-      ports which can be either set in input or output mode.
+      Set the specified port in input mode. This applies to bidirectional ports
+      which can be either set in input or output mode.
 
   -l state
   --led state
-      Set the state of the LED on the rear panel. Useful to identify a
-      Dektec device when more than one is present. The state is one of
-      "off", "green", "red", "yellow", "hardware". See also
-      option --wait (the led state is automatically returned to
-      "hardware" after exit).
+      Set the state of the LED on the rear panel. Useful to identify a Dektec
+      device when more than one is present. See also option --wait (the led
+      state is automatically returned to "hardware" after exit).
+      Must be one of "green", "hardware", "off", "red", "yellow".
 
   -n
   --normalized
-      With --all, list the Dektec devices in a normalized output format
-      (useful for automatic analysis).
+      With --all, list the Dektec devices in a normalized output format (useful
+      for automatic analysis).
 
   -o port-number
   --output port-number
@@ -50,10 +53,10 @@ Options:
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 
   -w seconds
   --wait seconds
-      Wait the specified number of seconds before exiting. The default
-      if 5 seconds if option --led is specified and 0 otherwise.
+      Wait the specified number of seconds before exiting. The default if 5
+      seconds if option --led is specified and 0 otherwise.
 

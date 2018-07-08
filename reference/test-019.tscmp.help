@@ -3,7 +3,7 @@ Compare two transport stream files
 
 Usage: tscmp [options] filename-1 filename-2
 
-Files:
+Parameters:
 
   MPEG capture files to be compared.
 
@@ -18,13 +18,16 @@ Options:
       Start reading the files at the specified byte offset (default: 0).
 
   --cc-ignore
-      Ignore continuity counters when comparing packets. Useful if one file
-      has been resynchronized.
+      Ignore continuity counters when comparing packets. Useful if one file has
+      been resynchronized.
 
   -c
   --continue
       Continue the comparison up to the end of files. By default, stop after
       the first differing packet.
+
+  --debug
+      Produce debug traces.
 
   -d
   --dump
@@ -76,8 +79,8 @@ Options:
 
   -v
   --verbose
-      Produce verbose messages.
+      Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

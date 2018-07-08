@@ -3,9 +3,9 @@ Dump and format MPEG transport stream packets
 
 Usage: tsdump [options] [filename]
 
-Input file:
+Parameter:
 
-  MPEG capture file (standard input if omitted).
+  Input MPEG capture file (standard input if omitted).
 
 Options:
 
@@ -19,8 +19,12 @@ Options:
 
   -c
   --c-style
-      Same as --raw-dump (no interpretation of packet) but dump the
-      bytes in C-language style.
+      Same as --raw-dump (no interpretation of packet) but dump the bytes in
+      C-language style.
+
+  -d
+  --debug
+      Produce debug traces.
 
   -h
   --headers-only
@@ -50,5 +54,5 @@ Options:
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

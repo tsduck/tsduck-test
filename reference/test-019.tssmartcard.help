@@ -3,16 +3,21 @@ List or control smartcards
 
 Usage: tssmartcard [options] [reader-name]
 
-Parameters:
-  The optional reader-name parameter indicates the smartcard reader device
-  name to list or reset. Without any option or parameter, the command lists
-  all smartcard reader devices in the system.
+Parameter:
+
+  The optional reader-name parameter indicates the smartcard reader device name
+  to list or reset. Without any option or parameter, the command lists all
+  smartcard reader devices in the system.
 
 Options:
 
   -c
   --cold-reset
       Perfom a cold reset on the smartcard.
+
+  -d
+  --debug
+      Produce debug traces.
 
   -e
   --eject
@@ -30,7 +35,7 @@ Options:
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 
   -w
   --warm-reset

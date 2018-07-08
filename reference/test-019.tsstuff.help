@@ -3,9 +3,10 @@ Add stuffing to a transport stream to reach a target bitrate
 
 Usage: tsstuff [options] [input-file]
 
-Input file:
-  The input file is a TS file, typically with variable bitrate content.
-  By default, the standard input is used.
+Parameter:
+
+  The input file is a TS file, typically with variable bitrate content. By
+  default, the standard input is used.
 
 Options:
 
@@ -17,6 +18,9 @@ Options:
   --buffer-size value
       Input buffer size, in bytes. Must be large enough to always contain two
       time stamps in the reference PID. Default: 4,194,304 bytes.
+
+  --debug
+      Produce debug traces.
 
   -d
   --dts-based
@@ -36,8 +40,8 @@ Options:
   -i value
   --initial-inter-packet value
       Number of stuffing packets to add between input packets before the first
-      time stamp (PCR or DTS). By default, use the same number as in the
-      first segment, between the first two time stamps.
+      time stamp (PCR or DTS). By default, use the same number as in the first
+      segment, between the first two time stamps.
 
   -l value
   --leading-packets value
@@ -45,26 +49,26 @@ Options:
       output file, before the first input packet. The default is zero.
 
   -o filename
-  --output filename
+  --output-file filename
       Output file name (standard output by default). The output file is a TS
       file with the same packets as the input file with interspersed stuffing
       packets and a constant bitrate.
 
   -r value
   --reference-pid value
-      PID in which to collect time stamps (PCR or DTS) to use as reference
-      for the insertion of stuffing packets. By default, use the first PID
+      PID in which to collect time stamps (PCR or DTS) to use as reference for
+      the insertion of stuffing packets. By default, use the first PID
       containing the specified type of time stamps (PCR or DTS).
 
   -t value
   --trailing-packets value
-      Number of consecutive stuffing packets to add at the end of the
-      output file, after the last input packet. The default is zero.
+      Number of consecutive stuffing packets to add at the end of the output
+      file, after the last input packet. The default is zero.
 
   -v
   --verbose
       Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

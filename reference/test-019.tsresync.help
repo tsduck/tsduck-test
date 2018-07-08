@@ -3,16 +3,20 @@ Resynchronize a non-standard or corrupted MPEG transport stream
 
 Usage: tsresync [options] [filename]
 
-Input file:
+Parameter:
 
-  MPEG transport stream file (standard input if omitted).
+  Input MPEG transport stream file (standard input if omitted).
 
 Options:
 
   -c
   --continue
-      Continue re-resynchronizing after loss of synchronization.
-      By default, stop after first packet not starting with 0x47.
+      Continue re-resynchronizing after loss of synchronization. By default,
+      stop after first packet not starting with 0x47.
+
+  -d
+  --debug
+      Produce debug traces.
 
   -h value
   --header-size value
@@ -52,8 +56,8 @@ Options:
 
   -v
   --verbose
-      Display verbose information.
+      Produce verbose output.
 
   --version
-      Display the version number.
+      Display the TSDuck version number.
 

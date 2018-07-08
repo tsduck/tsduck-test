@@ -5,14 +5,14 @@ Usage: tsp -P mpeinject [options] [address:]port
 
 Parameter:
 
-  The parameter [address:]port describes the destination of UDP packets to
-  receive. The 'port' part is mandatory and specifies the UDP port to listen
-  on. The 'address' part is optional. It specifies an IP multicast address to
-  listen on. It can be also a host name that translates to a multicast address.
-  An optional source address can be specified as 'source@address:port' in the
-  case of SSM.
+  The [address:]port describes the destination of UDP packets to receive. The
+  'port' part is mandatory and specifies the UDP port to listen on. The
+  'address' part is optional. It specifies an IP multicast address to listen
+  on. It can be also a host name that translates to a multicast address. An
+  optional source address can be specified as 'source@address:port' in the case
+  of SSM.
 
-UDP reception options:
+Options:
 
   -b value
   --buffer-size value
@@ -26,25 +26,58 @@ UDP reception options:
   --first-source
       Filter UDP packets based on the source address. Use the sender address of
       the first received packet as only allowed source. This option is useful
-      when several sources send packets to the same destination address and port.
-      Accepting all packets could result in a corrupted stream and only one
-      sender shall be accepted. To allow a more precise selection of the sender,
-      use option --source. Options --first-source and --source are mutually
-      exclusive.
+      when several sources send packets to the same destination address and
+      port. Accepting all packets could result in a corrupted stream and only
+      one sender shall be accepted. To allow a more precise selection of the
+      sender, use option --source. Options --first-source and --source are
+      mutually exclusive.
+
+  --help
+      Display this help text.
 
   -l address
   --local-address address
-      Specify the IP address of the local interface on which to listen.
-      It can be also a host name that translates to a local address.
-      By default, listen on all local interfaces.
+      Specify the IP address of the local interface on which to listen. It can
+      be also a host name that translates to a local address. By default,
+      listen on all local interfaces.
+
+  --mac-address nn:nn:nn:nn:nn:nn
+      Specify the default destination MAC address to set in MPE sections for
+      unicast IP packets. The default is 00:00:00:00:00:00. For multicast IP
+      packets, the MAC address is automatically computed.
+
+  --max-queue value
+      Specify the maximum number of queued UDP datagrams before their insertion
+      into the MPE stream. The default is 32.
+
+  --new-destination address[:port]
+      Change the destination IP address and UDP port in MPE sections. If the
+      port is not specified, the original destination port from the UDP
+      datagram is used. By default, the destination address is not modified.
+
+  --new-source address[:port]
+      Change the source IP address and UDP port in MPE sections. If the port is
+      not specified, the original source port from the UDP datagram is used. By
+      default, the source address is not modified.
 
   --no-reuse-port
-      Disable the reuse port socket option. Do not use unless completely necessary.
+      Disable the reuse port socket option. Do not use unless completely
+      necessary.
+
+  -p value
+  --pid value
+      Specify the PID into which the MPE datagrams shall be inserted. This is a
+      mandatory parameter.
+
+  --replace
+      Replace the target PID if it exists. By default, the plugin only replaces
+      null packets and tsp stops with an error if incoming packets are found
+      with the target PID.
 
   -r
   --reuse-port
-      Set the reuse port socket option. This is now enabled by default, the option
-      is present for legacy only.
+      Set the reuse port socket option. This is now enabled by default, the
+      option is present for legacy only.
 
   -s address[:port]
   --source address[:port]
@@ -56,45 +89,6 @@ UDP reception options:
 
   --ssm
       Force the usage of Source-Specific Multicast (SSM) using the source which
-      is specified by the option --source. The --ssm option is implicit when the
-      syntax 'source@address:port' is used.
-
-MPE encapsulation options:
-
-  --mac-address nn:nn:nn:nn:nn:nn
-      Specify the default destination MAC address to set in MPE sections for
-      unicast IP packets. The default is 00:00:00:00:00:00. For multicast IP
-      packets, the MAC address is automatically computed.
-
-  --new-destination address[:port]
-      Change the destination IP address and UDP port in MPE sections. If the
-      port is not specified, the original destination port from the UDP datagram
-      is used. By default, the destination address is not modified.
-
-  --new-source address[:port]
-      Change the source IP address and UDP port in MPE sections. If the port is
-      not specified, the original source port from the UDP datagram is used. By
-      default, the source address is not modified.
-
-Other options:
-
-  --help
-      Display this help text.
-
-  --max-queue value
-      Specify the maximum number of queued UDP datagrams before their insertion
-      into the MPE stream. The default is 32.
-
-  -p value
-  --pid value
-      Specify the PID into which the MPE datagrams shall be inserted. This is a
-      mandatory parameter.
-
-  --replace
-      Replace the target PID if it exists. By default, the plugin only replaces
-       null packets and tsp stops with an error if incoming packets are found
-       with the target PID.
-
-  --version
-      Display the version number.
+      is specified by the option --source. The --ssm option is implicit when
+      the syntax 'source@address:port' is used.
 
