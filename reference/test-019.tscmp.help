@@ -26,8 +26,9 @@ Options:
       Continue the comparison up to the end of files. By default, stop after
       the first differing packet.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -d
   --dump

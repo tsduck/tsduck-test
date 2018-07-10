@@ -31,8 +31,9 @@ Options:
       Same as --raw-dump (no interpretation of section) but dump the bytes in
       C-language style.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --default-charset name
       Default character set to use when interpreting DVB strings without

@@ -7,8 +7,8 @@ Options:
 
   -a
   --all-nits
-      Analyze all NIT's (NIT actual and NIT other). By default, only the
-      NIT actual is analyzed.
+      Analyze all NIT's (NIT actual and NIT other). By default, only the NIT
+      actual is analyzed.
 
   -c[prefix]
   --comment[=prefix]
@@ -20,28 +20,28 @@ Options:
   --dvb-options
       The characteristics of each transponder are formatted as a list of
       command-line options for the tsp plugin "dvb" such as --frequency,
-      --symbol-rate, etc. By default, the tuning information are formatted
-      as Linux DVB "zap" configuration files as used by the standard
-      utilities "szap", "czap" and "tzap".
+      --symbol-rate, etc. By default, the tuning information are formatted as
+      Linux DVB "zap" configuration files as used by the standard utilities
+      "szap", "czap" and "tzap".
 
   --help
       Display this help text.
 
   -o filename
   --output-file filename
-      Specify the output text file for the analysis result.
-      By default, use the standard output.
+      Specify the output text file for the analysis result. By default, use the
+      standard output.
 
   -p value
   --pid value
-      Specify the PID on which the NIT is expected. By default, the PAT
-      is analyzed to get the PID of the NIT. DVB-compliant networks should
-      use PID 16 (0x0010) for the NIT and signal it in the PAT.
+      Specify the PID on which the NIT is expected. By default, the PAT is
+      analyzed to get the PID of the NIT. DVB-compliant networks should use PID
+      16 (0x0010) for the NIT and signal it in the PAT.
 
   -t
   --terminate
-      Stop the packet transmission after the first NIT is analyzed.
-      Should be specified when tsp is used only to scan the NIT.
+      Stop the packet transmission after the first NIT is analyzed. Should be
+      specified when tsp is used only to scan the NIT.
 
   -v[prefix]
   --variable[=prefix]
@@ -49,7 +49,4 @@ Options:
       definition. The name of each variable is built from a prefix and the TS
       id. The default prefix is "TS" and can be changed through the optional
       value of the option --variable.
-
-  --version
-      Display the version number.
 

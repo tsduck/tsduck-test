@@ -43,8 +43,9 @@ Options:
   --data-id value
       This option sets the DVB SimulCrypt parameter 'data_id'. Default: 0.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --emm-max-table-id value
       Specify the maximum table id of the automatically generated fake EMM's.

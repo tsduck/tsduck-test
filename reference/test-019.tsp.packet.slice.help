@@ -7,23 +7,23 @@ Options:
 
   -d value
   --drop value
-      All packets are dropped after the specified packet number.
-      Several --drop options may be specified.
+      All packets are dropped after the specified packet number. Several --drop
+      options may be specified.
 
   --help
       Display this help text.
 
   -i
   --ignore-pcr
-      When --seconds or --milli-seconds is used, do not use PCR's to
-      compute time values. Only rely on bitrate as determined by previous
-      plugins in the chain.
+      When --seconds or --milli-seconds is used, do not use PCR's to compute
+      time values. Only rely on bitrate as determined by previous plugins in
+      the chain.
 
   -m
   --milli-seconds
       With options --drop, --null, --pass and --stop, interpret the integer
-      values as milli-seconds from the beginning, not as packet numbers.
-      Time is measured based on bitrate and packet count, not on real time.
+      values as milli-seconds from the beginning, not as packet numbers. Time
+      is measured based on bitrate and packet count, not on real time.
 
   -n value
   --null value
@@ -38,14 +38,11 @@ Options:
 
   --seconds
       With options --drop, --null, --pass and --stop, interpret the integer
-      values as seconds from the beginning, not as packet numbers.
-      Time is measured based on bitrate and packet count, not on real time.
+      values as seconds from the beginning, not as packet numbers. Time is
+      measured based on bitrate and packet count, not on real time.
 
   -s value
   --stop value
       Packet transmission stops after the specified packet number and tsp
       terminates.
-
-  --version
-      Display the version number.
 

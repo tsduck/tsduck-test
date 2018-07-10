@@ -14,9 +14,10 @@ Options:
       Truncate the file at the next packet boundary after the specified size in
       bytes. Mutually exclusive with --packet.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --help
       Display this help text.

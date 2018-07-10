@@ -14,9 +14,10 @@ Options:
       Report all TDT/TOT tables (default: report only the first table of each
       type).
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --help
       Display this help text.

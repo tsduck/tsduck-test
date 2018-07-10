@@ -22,9 +22,10 @@ Options:
       Same as --raw-dump (no interpretation of packet) but dump the bytes in
       C-language style.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -h
   --headers-only

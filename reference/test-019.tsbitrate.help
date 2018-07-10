@@ -14,8 +14,9 @@ Options:
       Analyze all packets in the input file. By default, stop analysis when
       enough PCR information has been collected.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -d
   --dts

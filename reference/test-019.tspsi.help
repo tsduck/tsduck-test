@@ -28,8 +28,9 @@ Options:
       access information. Useful to avoid reading the complete transport
       stream, waiting for a non-existent CAT.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --default-charset name
       Default character set to use when interpreting DVB strings without

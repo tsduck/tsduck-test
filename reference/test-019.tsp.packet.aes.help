@@ -3,11 +3,12 @@ Experimental AES scrambling of TS packets
 
 Usage: tsp -P aes [options] [service]
 
-Service:
+Parameter:
+
   Specifies the service to scramble. If the argument is an integer value
   (either decimal or hexadecimal), it is interpreted as a service id.
-  Otherwise, it is interpreted as a service name, as specified in the SDT.
-  The name is not case sensitive and blanks are ignored. If the service is
+  Otherwise, it is interpreted as a service name, as specified in the SDT. The
+  name is not case sensitive and blanks are ignored. If the service is
   unspecified, individual PID's are scrambled (see option --pid).
 
 Options:
@@ -26,12 +27,12 @@ Options:
       packets with a payload shorter than 16 bytes are left clear.
 
   --cts3
-      Use ECB Cipher Text Stealing (ECB-CTS) mode, as defined by Wikipedia.
-      TS packets with a payload shorter than 17 bytes are left clear.
+      Use ECB Cipher Text Stealing (ECB-CTS) mode, as defined by Wikipedia. TS
+      packets with a payload shorter than 17 bytes are left clear.
 
   --cts4
-      Use (weird) ECB Cipher Text Stealing (ECB-CTS) mode, as implemented in
-      ST 71xx chips. TS packets with a payload shorter than 17 bytes are left
+      Use (weird) ECB Cipher Text Stealing (ECB-CTS) mode, as implemented in ST
+      71xx chips. TS packets with a payload shorter than 17 bytes are left
       clear.
 
   -d
@@ -39,13 +40,13 @@ Options:
       Descramble instead of scramble.
 
   --dvs042
-      Use DVS 042 (now ANSI/SCTE 52 2003) cipher block chaining mode.
-      TS packets with a payload shorter than 16 bytes are left clear.
+      Use DVS 042 (now ANSI/SCTE 52 2003) cipher block chaining mode. TS
+      packets with a payload shorter than 16 bytes are left clear.
 
   --ecb
       Use Electronic Code Book (ECB) mode without padding. The residue (last
-      part of the packet payload, shorter than 16 bytes) is left clear.
-      This is the default mode.
+      part of the packet payload, shorter than 16 bytes) is left clear. This is
+      the default mode.
 
   --help
       Display this help text.
@@ -57,15 +58,12 @@ Options:
 
   -k value
   --key value
-      Specifies a fixed and constant AES key for all TS packets. The value
-      must be a string of 32 or 64 hexadecimal digits. This is a mandatory
+      Specifies a fixed and constant AES key for all TS packets. The value must
+      be a string of 32 or 64 hexadecimal digits. This is a mandatory
       parameter.
 
   -p value
   --pid value
       Specifies a PID to scramble. Can be used instead of specifying a service.
       Several -p or --pid options may be specified.
-
-  --version
-      Display the version number.
 

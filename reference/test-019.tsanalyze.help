@@ -15,9 +15,10 @@ Options:
       188-byte packets). By default, the bitrate is evaluated using the PCR in
       the transport stream.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --default-charset value
       Default character set to use when interpreting DVB strings without

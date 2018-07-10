@@ -19,8 +19,9 @@ Options:
       Input buffer size, in bytes. Must be large enough to always contain two
       time stamps in the reference PID. Default: 4,194,304 bytes.
 
-  --debug
-      Produce debug traces.
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -d
   --dts-based

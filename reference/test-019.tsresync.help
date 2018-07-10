@@ -14,9 +14,10 @@ Options:
       Continue re-resynchronizing after loss of synchronization. By default,
       stop after first packet not starting with 0x47.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -h value
   --header-size value

@@ -15,9 +15,10 @@ Options:
   --cold-reset
       Perfom a cold reset on the smartcard.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -e
   --eject

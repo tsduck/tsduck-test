@@ -6,8 +6,8 @@ Usage: tsp -P pmt [options]
 Options:
 
   --ac3-atsc2dvb
-      Change the description of AC-3 audio streams from ATSC to DVB method.
-      In details, this means that all components with stream_type 0x81 are
+      Change the description of AC-3 audio streams from ATSC to DVB method. In
+      details, this means that all components with stream_type 0x81 are
       modified with stream_type 0x06 (PES private data) and an AC-3_descriptor
       is added on this component (if none was already there).
 
@@ -35,10 +35,11 @@ Options:
   --audio-language language-code[:audio-type[:location]]
       Specifies the language for an audio stream in the PMT. Several options
       can be specified to set the languages of several audio streams.
+      
       The "language-code" is a 3-character string. The audio-type is optional,
       its default value is zero. The "location" indicates how to locate the
-      audio stream. Its format is either "Pn" or "An". In the first case,
-      "n" designates a PID value and in the second case the audio stream number
+      audio stream. Its format is either "Pn" or "An". In the first case, "n"
+      designates a PID value and in the second case the audio stream number
       inside the PMT, starting with 1. The default location is "A1", ie. the
       first audio stream inside the PMT.
 
@@ -59,27 +60,31 @@ Options:
   --increment-version
       Increment the version number of the PMT.
 
-  -i value
-  --new-service-id value
-      Change the service id in the PMT.
-
   -m old-pid/new-pid
   --move-pid old-pid/new-pid
       Change the PID value of a component in the PMT. Several --move-pid
       options may be specified to move several components.
 
+  -i value
+  --new-service-id value
+      Change the service id in the PMT.
+
+  -v value
+  --new-version value
+      Specify a new value for the version of the PMT.
+
+  --pcr-pid value
+      Change the PCR PID value in the PMT.
+
   --pds value
-      With option --remove-descriptor, specify the private data specifier
-      which applies to the descriptor tag values above 0x80.
+      With option --remove-descriptor, specify the private data specifier which
+      applies to the descriptor tag values above 0x80.
 
   -p value
   --pmt-pid value
       Specify the PID carrying the PMT to modify. All PMT's in this PID will be
       modified. Options --pmt-pid and --service are mutually exclusive. If
       neither are specified, the first service in the PAT is used.
-
-  --pcr-pid value
-      Change the PCR PID value in the PMT.
 
   --remove-descriptor value
       Remove from the PMT all descriptors with the specified tag. Several
@@ -90,6 +95,11 @@ Options:
   --remove-pid value
       Remove the component with the specified PID from the PMT. Several
       --remove-pid options may be specified to remove several components.
+
+  --remove-stream-type value[-value]
+      Remove all components with a stream type matching the specified value (or
+      in the specified range of values). Several --remove-stream-type options
+      may be specified.
 
   -s name-or-id
   --service name-or-id
@@ -106,20 +116,14 @@ Options:
       options may be specified.
 
   --set-data-broadcast-id pid/id[/selector]
-      In the component with the specified PID, add a data_broadcast_id_descriptor
-      with the specified data_broadcast_id. The optional selector is a suite of
-      hexadecimal characters representing the content of the selector bytes.
-      Several --set-data-broadcast-id options may be specified.
+      In the component with the specified PID, add a
+      data_broadcast_id_descriptor with the specified data_broadcast_id. The
+      optional selector is a suite of hexadecimal characters representing the
+      content of the selector bytes. Several --set-data-broadcast-id options
+      may be specified.
 
   --set-stream-identifier pid/id
-      In the component with the specified PID, add a stream_identifier_descriptor
-      with the specified id. Several --set-stream-identifier options may be
-      specified.
-
-  -v value
-  --new-version value
-      Specify a new value for the version of the PMT.
-
-  --version
-      Display the version number.
+      In the component with the specified PID, add a
+      stream_identifier_descriptor with the specified id. Several
+      --set-stream-identifier options may be specified.
 

@@ -14,13 +14,13 @@ Options:
       service. For new services, the default is 0.
 
   --eit-schedule value
-      Specify a new EIT_schedule_flag value for the added or modified
-      service. For new services, the default is 0.
+      Specify a new EIT_schedule_flag value for the added or modified service.
+      For new services, the default is 0.
 
   -f value
   --free-ca-mode value
-      Specify a new free_CA_mode value for the added or modified service.
-      For new services, the default is 0.
+      Specify a new free_CA_mode value for the added or modified service. For
+      new services, the default is 0.
 
   --help
       Display this help text.
@@ -31,8 +31,8 @@ Options:
 
   -n value
   --name value
-      Specify a new service name for the added or modified service.
-      For new services, the default is an empty string.
+      Specify a new service name for the added or modified service. For new
+      services, the default is an empty string.
 
   -v value
   --new-version value
@@ -40,10 +40,10 @@ Options:
 
   -p value
   --provider value
-      Specify a new provider name for the added or modified service.
-      For new services, the default is an empty string.
+      Specify a new provider name for the added or modified service. For new
+      services, the default is an empty string.
 
-  --remove-service sid
+  --remove-service id
       Remove the specified service_id from the SDT. Several --remove-service
       options may be specified to remove several services.
 
@@ -52,8 +52,8 @@ Options:
       Specify a new running_status (0 to 7) for the added or modified service.
       For new services, the default is 4 ("running").
 
-  -s value
-  --service-id value
+  -s id
+  --service-id id
       Add a new service or modify the existing service with the specified
       service-id.
 
@@ -61,7 +61,4 @@ Options:
   --type value
       Specify a new service type for the added or modified service. For new
       services, the default is 0x01 ("digital television service").
-
-  --version
-      Display the version number.
 

@@ -26,9 +26,10 @@ Options:
       'CW_per_msg' - 1. By default, use 2 control words per ECM, the current
       one and next one.
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   --delay-start value
       This option sets the DVB SimulCrypt option 'delay_start', in

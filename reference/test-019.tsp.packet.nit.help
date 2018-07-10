@@ -20,9 +20,9 @@ Options:
   --lcn value
       Specify which operation to perform on logical_channel_number (LCN)
       descriptors. The value is a positive integer:
-        1: Remove all LCN descriptors.
-        2: Remove one entry every two entries in each LCN descriptor.
-        3: Duplicate one entry every two entries in each LCN descriptor.
+      1: Remove all LCN descriptors.
+      2: Remove one entry every two entries in each LCN descriptor.
+      3: Duplicate one entry every two entries in each LCN descriptor.
 
   --mpe-fec value
       Set the "MPE-FEC indicator" in the terrestrial delivery system
@@ -33,14 +33,14 @@ Options:
       Specify a new value for the version of the NIT.
 
   --pds value
-      With option --remove-descriptor, specify the private data specifier
-      which applies to the descriptor tag values above 0x80.
+      With option --remove-descriptor, specify the private data specifier which
+      applies to the descriptor tag values above 0x80.
 
   -p value
   --pid value
-      Specify the PID on which the NIT is expected. By default, the PAT
-      is analyzed to get the PID of the NIT. DVB-compliant networks should
-      use PID 16 (0x0010) for the NIT and signal it in the PAT.
+      Specify the PID on which the NIT is expected. By default, the PAT is
+      analyzed to get the PID of the NIT. DVB-compliant networks should use PID
+      16 (0x0010) for the NIT and signal it in the PAT.
 
   --remove-descriptor value
       Remove from the NIT all descriptors with the specified tag. Several
@@ -50,25 +50,21 @@ Options:
   -r value
   --remove-service value
       Remove the specified service_id from the following descriptors:
-      service_list_descriptor, logical_channel_number_descriptor.
-      Several --remove-service options may be specified to remove several
-      services.
+      service_list_descriptor, logical_channel_number_descriptor. Several
+      --remove-service options may be specified to remove several services.
 
   --remove-ts value
-      Remove the specified ts_id from the NIT. Several --remove-ts options
-      may be specified to remove several TS.
+      Remove the specified ts_id from the NIT. Several --remove-ts options may
+      be specified to remove several TS.
 
   -s value
   --sld value
-      Specify which operation to perform on service_list_descriptors.
-      The value is a positive integer:
-        1: Remove all service_list_descriptors.
-        2: Remove one entry every two entries in each descriptor.
+      Specify which operation to perform on service_list_descriptors. The value
+      is a positive integer:
+      1: Remove all service_list_descriptors.
+      2: Remove one entry every two entries in each descriptor.
 
   --time-slicing value
       Set the "time slicing indicator" in the terrestrial delivery system
       descriptors to the specified value (0 or 1).
-
-  --version
-      Display the version number.
 

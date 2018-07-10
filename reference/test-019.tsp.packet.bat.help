@@ -26,8 +26,8 @@ Options:
       Specify a new value for the version of the BAT.
 
   --pds value
-      With option --remove-descriptor, specify the private data specifier
-      which applies to the descriptor tag values above 0x80.
+      With option --remove-descriptor, specify the private data specifier which
+      applies to the descriptor tag values above 0x80.
 
   --remove-descriptor value
       Remove from the BAT all descriptors with the specified tag. Several
@@ -37,14 +37,10 @@ Options:
   -r value
   --remove-service value
       Remove the specified service_id from the following descriptors:
-      service_list_descriptor, logical_channel_number_descriptor.
-      Several --remove-service options may be specified to remove several
-      services.
+      service_list_descriptor, logical_channel_number_descriptor. Several
+      --remove-service options may be specified to remove several services.
 
   --remove-ts value
-      Remove the specified ts_id from the BAT. Several --remove-ts options
-      may be specified to remove several TS.
-
-  --version
-      Display the version number.
+      Remove the specified ts_id from the BAT. Several --remove-ts options may
+      be specified to remove several TS.
 

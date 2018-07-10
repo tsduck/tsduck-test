@@ -20,9 +20,10 @@ Options:
       Specify the OFMD constellation, used to compute the resulting bitrate.
       Must be one of "16-QAM", "64-QAM", "QPSK".
 
-  -d
-  --debug
-      Produce debug traces.
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
 
   -f value
   --frequency value

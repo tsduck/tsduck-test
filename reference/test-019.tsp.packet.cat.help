@@ -7,8 +7,8 @@ Options:
 
   -a casid/pid[/private-data]
   --add-ca-descriptor casid/pid[/private-data]
-      Add a CA_descriptor in the CAT with the specified CA System Id and
-      EMM PID. The optional private data must be a suite of hexadecimal digits.
+      Add a CA_descriptor in the CAT with the specified CA System Id and EMM
+      PID. The optional private data must be a suite of hexadecimal digits.
       Several --add-ca-descriptor options may be specified to add several
       descriptors.
 
@@ -26,10 +26,10 @@ Options:
       Create a new empty CAT if none was received after one second. This is
       equivalent to --create-after 1000.
 
-  --create-after milliseconds
-      Create a new empty CAT if none was received after the specified number
-      of milliseconds. This can be useful to force the creation of a CAT in
-      a TS that has none (the CAT is an optional table). If an actual CAT is
+  --create-after value
+      e a new empty CAT if none was received after the specified number of
+      milliseconds. This can be useful to force the creation of a CAT in a TS
+      that has none (the CAT is an optional table). If an actual CAT is
       received later, it will be used as the base for transformations instead
       of the empty one.
 
@@ -42,10 +42,10 @@ Options:
 
   --inter-packet value
       When a new CAT is created and --bitrate is not present, this option
-      specifies the packet interval for the CAT PID, that is to say the
-      number of TS packets in the transport between two packets of the
-      CAT PID. Use instead of --bitrate if the global bitrate of the TS
-      cannot be determined.
+      specifies the packet interval for the CAT PID, that is to say the number
+      of TS packets in the transport between two packets of the CAT PID. Use
+      instead of --bitrate if the global bitrate of the TS cannot be
+      determined.
 
   -v value
   --new-version value
@@ -53,13 +53,10 @@ Options:
 
   -r value
   --remove-casid value
-      Remove all CA_descriptors with the specified CA System Id.
-      Several --remove-casid options may be specified.
+      Remove all CA_descriptors with the specified CA System Id. Several
+      --remove-casid options may be specified.
 
   --remove-pid value
-      Remove all CA_descriptors with the specified EMM PID value.
-      Several --remove-pid options may be specified.
-
-  --version
-      Display the version number.
+      Remove all CA_descriptors with the specified EMM PID value. Several
+      --remove-pid options may be specified.
 

@@ -3,25 +3,25 @@ Zap on one service: Produce an SPTS containing only the specified service
 
 Usage: tsp -P zap [options] service
 
-Service:
+Parameter:
+
   Specifies the service to keep. If the argument is an integer value (either
-  decimal or hexadecimal), it is interpreted as a service id. Otherwise, it
-  is interpreted as a service name, as specified in the SDT. The name is not
-  case sensitive and blanks are ignored. If the input TS does not contain an
-  SDT, use a service id.
+  decimal or hexadecimal), it is interpreted as a service id. Otherwise, it is
+  interpreted as a service name, as specified in the SDT. The name is not case
+  sensitive and blanks are ignored. If the input TS does not contain an SDT,
+  use a service id.
 
 Options:
 
-  -a name
-  --audio name
+  -a value
+  --audio value
       Remove all audio components except the specified one. The name is a
       three-letters language code. By default, keep all audio components.
 
   -c
   --cas
-      Keep Conditional Access System sections (CAT and EMM's).
-      Remove them by default. Note that the ECM's for the specified
-      service are always kept.
+      Keep Conditional Access System sections (CAT and EMM's). Remove them by
+      default. Note that the ECM's for the specified service are always kept.
 
   --help
       Display this help text.
@@ -36,19 +36,16 @@ Options:
 
   -p
   --pes-only
-      Keep only the PES elementary streams (audio, video, subtitles).
-      Remove all PSI/SI and CAS information.
+      Keep only the PES elementary streams (audio, video, subtitles). Remove
+      all PSI/SI and CAS information.
 
   -s
   --stuffing
-      Replace excluded packets with stuffing (null packets) instead
-      of removing them. Useful to preserve bitrate.
+      Replace excluded packets with stuffing (null packets) instead of removing
+      them. Useful to preserve bitrate.
 
-  -t name
-  --subtitles name
+  -t value
+  --subtitles value
       Remove all subtitles except the specified one. The name is a
       three-letters language code. By default, keep all subtitles.
-
-  --version
-      Display the version number.
 
