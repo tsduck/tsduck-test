@@ -28,9 +28,21 @@ Options:
       Set the "MPE-FEC indicator" in the terrestrial delivery system
       descriptors to the specified value (0 or 1).
 
+  --network-id id
+      Set the specified new value as network id in the NIT.
+
+  --network-name name
+      Set the specified value as network name in the NIT. Any existing
+      network_name_descriptoris removed. A new network_name_descriptor is
+      created with the new name.
+
   -v value
   --new-version value
       Specify a new value for the version of the NIT.
+
+  --nit-other id
+      Do not modify the NIT Actual. Modify the NIT Other with the specified
+      network id.
 
   --pds value
       With option --remove-descriptor, specify the private data specifier which
