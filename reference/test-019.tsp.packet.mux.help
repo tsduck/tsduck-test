@@ -3,21 +3,21 @@ Insert TS packets in a transport stream
 
 Usage: tsp -P mux [options] input-file
 
-Input file:
+Parameter:
 
-  Binary file containing 188-byte transport packets.
+  Input binary file containing 188-byte transport packets.
 
 Options:
 
   -b value
   --bitrate value
-      Specifies the bitrate for the inserted packets, in bits/second.
-      By default, all stuffing packets are replaced which means that
-      the bitrate is neither constant nor guaranteed.
+      Specifies the bitrate for the inserted packets, in bits/second. By
+      default, all stuffing packets are replaced which means that the bitrate
+      is neither constant nor guaranteed.
 
   --byte-offset value
-      Start reading the file at the specified byte offset (default: 0).
-      This option is allowed only if the input file is a regular file.
+      Start reading the file at the specified byte offset (default: 0). This
+      option is allowed only if the input file is a regular file.
 
   --help
       Display this help text.
@@ -25,8 +25,8 @@ Options:
   -i value
   --inter-packet value
       Specifies the packet interval for the inserted packets, that is to say
-      the number of TS packets in the transport between two new packets.
-      Use instead of --bitrate if the global bitrate of the TS cannot be
+      the number of TS packets in the transport between two new packets. Use
+      instead of --bitrate if the global bitrate of the TS cannot be
       determined.
 
   --inter-time value
@@ -38,8 +38,8 @@ Options:
 
   -j
   --joint-termination
-      Perform a "joint termination" when file insersion is complete.
-      See "tsp --help" for more details on "joint termination".
+      Perform a "joint termination" when file insersion is complete. See "tsp
+      --help" for more details on "joint termination".
 
   --max-insert-count value
       Stop inserting packets after this number of packets was inserted.
@@ -61,8 +61,8 @@ Options:
       found both in the TS and the inserted packets.
 
   --packet-offset value
-      Start reading the file at the specified TS packet (default: 0).
-      This option is allowed only if the input file is a regular file.
+      Start reading the file at the specified TS packet (default: 0). This
+      option is allowed only if the input file is a regular file.
 
   -p value
   --pid value
@@ -70,14 +70,14 @@ Options:
 
   --pts-pid value
       Defines the PID carrying PCR or PTS values for --min-pts and --max-pts.
-      When no PTS values are found, PCR are used. PCR values are divided by 300,
-      the system clock sub-factor, to get the corresponding PTS values.
+      When no PTS values are found, PCR are used. PCR values are divided by
+      300, the system clock sub-factor, to get the corresponding PTS values.
 
-  -r count
-  --repeat count
+  -r value
+  --repeat value
       Repeat the playout of the file the specified number of times. By default,
-      the file is infinitely repeated. This option is allowed only if the
-      input file is a regular file.
+      the file is infinitely repeated. This option is allowed only if the input
+      file is a regular file.
 
   -t
   --terminate

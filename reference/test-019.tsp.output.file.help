@@ -3,21 +3,22 @@ Write packets to a file
 
 Usage: tsp -O file [options] [file-name]
 
-File-name:
+Parameter:
+
   Name of the created output file. Use standard output by default.
 
 Options:
 
   -a
   --append
-      If the file already exists, append to the end of the file.
-      By default, existing files are overwritten.
+      If the file already exists, append to the end of the file. By default,
+      existing files are overwritten.
 
   --help
       Display this help text.
 
   -k
   --keep
-      Keep existing file (abort if the specified file already exists).
-      By default, existing files are overwritten.
+      Keep existing file (abort if the specified file already exists). By
+      default, existing files are overwritten.
 

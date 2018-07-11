@@ -3,22 +3,25 @@ Monitor bitrate for a given pid
 
 Usage: tsp -P bitrate_monitor [options] pid
 
-PID:
-      Specifies the PID to monitor.
+Parameter:
+
+  Specifies the PID to monitor.
 
 Options:
 
-  -a command
-  --alarm-command command
+  -a 'command'
+  --alarm-command 'command'
       Command to be run when an alarm is detected (bitrate out of range).
 
-  --min value
-      Set minimum allowed value for bitrate (bits/s).
-      Default: 10 b/s.
+  --help
+      Display this help text.
 
   --max value
-      Set maximum allowed value for bitrate (bits/s).
-      Default: 4,294,967,295 b/s.
+      Set maximum allowed value for bitrate (bits/s). Default: 4,294,967,295
+      b/s.
+
+  --min value
+      Set minimum allowed value for bitrate (bits/s). Default: 10 b/s.
 
   -p value
   --periodic-bitrate value
@@ -27,9 +30,5 @@ Options:
 
   -t value
   --time-interval value
-      Time interval (in seconds) used to compute the bitrate.
-      Default: 5 s.
-
-  --help
-      Display this help text.
+      Time interval (in seconds) used to compute the bitrate. Default: 5 s.
 

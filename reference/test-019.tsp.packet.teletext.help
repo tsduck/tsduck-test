@@ -20,8 +20,8 @@ Options:
 
   -m value
   --max-frames value
-      Specifies the maximum number of Teletext frames to extract. The processing
-      is then stopped. By default, all frames are extracted.
+      Specifies the maximum number of Teletext frames to extract. The
+      processing is then stopped. By default, all frames are extracted.
 
   -o filename
   --output-file filename
@@ -44,8 +44,8 @@ Options:
       Specifies the service with Teletext subtitles. If the argument is an
       integer value (either decimal or hexadecimal), it is interpreted as a
       service id. Otherwise, it is interpreted as a service name, as specified
-      in the SDT. The name is not case sensitive and blanks are ignored.
-      The first teletext_descriptor in the PMT of the service is used to
-      identify the PID carrying Teletext subtitles. If neither --service nor
-      --pid is specified, the first service in the PAT is used.
+      in the SDT. The name is not case sensitive and blanks are ignored. The
+      first teletext_descriptor in the PMT of the service is used to identify
+      the PID carrying Teletext subtitles. If neither --service nor --pid is
+      specified, the first service in the PAT is used.
 

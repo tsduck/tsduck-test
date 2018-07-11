@@ -3,16 +3,12 @@ Regulate the TS packets flow based on PCR or bitrate
 
 Usage: tsp -P regulate [options]
 
-Regulate (slow down only) the TS packets flow according to a specified
-bitrate or based on PCR values from a reference PID. Useful to play a
-non-regulated input (such as a TS file) to a non-regulated output device
-such as IP multicast.
-
 Options:
 
   -b value
   --bitrate value
-      Specify the bitrate in b/s. By default, use the "input" bitrate,
+      Specify a bitrate in b/s and regulate (slow down only) the TS packets
+      flow according to this bitrate. By default, use the "input" bitrate,
       typically resulting from the PCR analysis of the input file.
 
   --help
@@ -20,9 +16,8 @@ Options:
 
   -p value
   --packet-burst value
-      Number of packets to burst at a time. Does not modify the average
-      output bitrate but influence smoothing and CPU load. The default
-      is 16 packets.
+      Number of packets to burst at a time. Does not modify the average output
+      bitrate but influence smoothing and CPU load. The default is 16 packets.
 
   --pcr-synchronous
       Regulate the flow based on the Program Clock Reference from the transport
@@ -32,6 +27,7 @@ Options:
       With --pcr-synchronous, specify the reference PID for PCR's. By default,
       use the first PID containing PCR's.
 
+  -w value
   --wait-min value
       With --pcr-synchronous, specify the minimum wait time in milli-seconds.
       The default is 50 ms.

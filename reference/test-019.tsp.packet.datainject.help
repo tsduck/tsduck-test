@@ -7,9 +7,9 @@ Options:
 
   -b value
   --bitrate-max value
-      Specifies the maximum bitrate for the data PID in bits / second.
-      By default, the data PID bitrate is limited by the stuffing bitrate
-      (data insertion is performed by replacing stuffing packets).
+      Specifies the maximum bitrate for the data PID in bits / second. By
+      default, the data PID bitrate is limited by the stuffing bitrate (data
+      insertion is performed by replacing stuffing packets).
 
   --buffer-size value
       Specify the TCP and UDP socket receive buffer size (socket option).
@@ -26,16 +26,20 @@ Options:
       Same as --log-protocol but applies to data_provision messages only. To
       debug the session management without being flooded by data messages, use
       --log-protocol=info --log-data=debug.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
 
   --log-protocol[=level]
       Log all EMMG/PDG <=> MUX protocol messages using the specified level. If
       the option is not present, the messages are logged at debug level only.
       If the option is present without value, the messages are logged at info
-      level. A level can be a numerical debug level or any of the following:
-      debug, error, fatal, info, severe, verbose, warning.
+      level. A level can be a numerical debug level or a name.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
 
   --no-reuse-port
-      Disable the reuse port socket option. Do not use unless completely necessary.
+      Disable the reuse port socket option. Do not use unless completely
+      necessary.
 
   -p value
   --pid value
@@ -45,21 +49,21 @@ Options:
   --queue-size value
       Specifies the maximum number of sections or TS packets in the internal
       queue, ie. sections or packets which are received from the EMMG/PDG
-      client but not yet inserted into the TS. The default is 1000.
+      client but not yet inserted into the TS. The default is 1,000.
 
   -r
   --reuse-port
-      Set the reuse port socket option. This is now enabled by default, the option
-      is present for legacy only.
+      Set the reuse port socket option. This is now enabled by default, the
+      option is present for legacy only.
 
   -s [address:]port
   --server [address:]port
       Specifies the local TCP port on which the plugin listens for an incoming
-      EMMG/PDG connection. This option is mandatory.
-      When present, the optional address shall specify a local IP address or
-      host name (by default, the plugin accepts connections on any local IP
-      interface). This plugin behaves as a MUX, ie. a TCP server, and accepts
-      only one EMMG/PDG connection at a time.
+      EMMG/PDG connection. This option is mandatory. When present, the optional
+      address shall specify a local IP address or host name (by default, the
+      plugin accepts connections on any local IP interface). This plugin
+      behaves as a MUX, ie. a TCP server, and accepts only one EMMG/PDG
+      connection at a time.
 
   -u [address:]port
   --udp [address:]port

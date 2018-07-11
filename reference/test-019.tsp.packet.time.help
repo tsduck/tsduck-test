@@ -5,50 +5,50 @@ Usage: tsp -P time [options]
 
 Options:
 
-  -d time
-  --drop time
-      All packets are dropped after the specified time.
-      Several --drop options may be specified
+  -d value
+  --drop value
+      All packets are dropped after the specified time. Several --drop options
+      may be specified.
+      
+      Specifying time values:
+      
+      A time value must be in the format "year/month/day:hour:minute:second"
+      (unless --relative is specified, in which case it is a number of
+      seconds). An empty value ("") means "from the beginning", that is to say
+      when tsp starts. By default, packets are passed when tsp starts.
 
   --help
       Display this help text.
 
-  -n time
-  --null time
+  -n value
+  --null value
       All packets are replaced by null packets after the specified time.
-      Several --null options may be specified
+      Several --null options may be specified.
 
-  -p time
-  --pass time
-      All packets are passed unmodified after the specified time.
-      Several --pass options may be specified
-
-  -s time
-  --stop time
-      Packet transmission stops after the specified time and tsp terminates.
+  -p value
+  --pass value
+      All packets are passed unmodified after the specified time. Several
+      --pass options may be specified.
 
   -r
   --relative
       All time values are interpreted as a number of seconds relative to the
       tsp start time. By default, all time values are interpreted as an
-      absolute time in the format "year/month/day:hour:minute:second".
-      Option --relative is incompatible with --tdt or --utc.
+      absolute time in the format "year/month/day:hour:minute:second". Option
+      --relative is incompatible with --tdt or --utc.
+
+  -s value
+  --stop value
+      Packet transmission stops after the specified time and tsp terminates.
 
   -t
   --tdt
       Use the Time & Date Table (TDT) from the transport stream as time
-      reference instead of the system clock. Since the TDT contains UTC
-      time, all time values in the command line must be UTC also.
+      reference instead of the system clock. Since the TDT contains UTC time,
+      all time values in the command line must be UTC also.
 
   -u
   --utc
-      Specifies that all time values in the command line are in UTC.
-      By default, the time values are interpreted as system local time.
-
-Specifying time values:
-
-  A time value must be in the format "year/month/day:hour:minute:second"
-  (unless --relative is specified, in which case it is a number of seconds).
-  An empty value ("") means "from the beginning", that is to say when
-  tsp starts. By default, packets are passed when tsp starts.
+      Specifies that all time values in the command line are in UTC. By
+      default, the time values are interpreted as system local time.
 

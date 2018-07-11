@@ -7,9 +7,9 @@ Options:
 
   -c
   --csv
-      Report data in CSV (comma-separated values) format. All values are reported
-      in decimal. This is the default output format. It is suitable for later
-      analysis using tools such as Microsoft Excel.
+      Report data in CSV (comma-separated values) format. All values are
+      reported in decimal. This is the default output format. It is suitable
+      for later analysis using tools such as Microsoft Excel.
 
   -d
   --dts
@@ -18,16 +18,16 @@ Options:
 
   -g
   --good-pts-only
-      Keep only "good" PTS, ie. PTS which have a higher value than the
-      previous good PTS. This eliminates PTS from out-of-sequence B-frames.
+      Keep only "good" PTS, ie. PTS which have a higher value than the previous
+      good PTS. This eliminates PTS from out-of-sequence B-frames.
 
   --help
       Display this help text.
 
   -l
   --log
-      Report data in "log" format through the standard tsp logging system.
-      All values are reported in hexadecimal.
+      Report data in "log" format through the standard tsp logging system. All
+      values are reported in hexadecimal.
 
   -n
   --noheader
@@ -47,14 +47,14 @@ Options:
 
   -p value
   --pid value
-      Specifies a PID to analyze. By default, all PID's are analyzed.
-      Several --pid options may be specified.
+      Specifies a PID to analyze. By default, all PID's are analyzed. Several
+      --pid options may be specified.
 
   --pts
       Report Presentation Time Stamps (PTS). By default, if none of --pcr,
       --opcr, --pts, --dts is specified, report them all.
 
-  -s string
-  --separator string
-      Field separator string in CSV output (default: ';').
+  -s value
+  --separator value
+      stringField separator string in CSV output (default: ';').
 

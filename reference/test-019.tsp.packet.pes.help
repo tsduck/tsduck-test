@@ -43,9 +43,9 @@ Options:
       to or greater than the specified value.
 
   --nal-unit-type value
-      AVC NALunit filter: with --avc-access-unit, select access units with
-      this type (default: all access units). Several --nal-unit-type options
-      may be specified.
+      AVC NALunit filter: with --avc-access-unit, select access units with this
+      type (default: all access units). Several --nal-unit-type options may be
+      specified.
 
   --negate-nal-unit-type
       Negate the AVC NALunit filter: specified access units are excluded.
@@ -62,20 +62,20 @@ Options:
       Specify the output file for the report (default: standard output).
 
   --packet-index
-      Display the index of the first and last TS packet of each displayed
-      PES packet.
+      Display the index of the first and last TS packet of each displayed PES
+      packet.
+
+  --payload
+      Dump PES packet payload.
 
   -p value
   --pid value
       PID filter: select packets with this PID value (default: all PID's
       containing PES packets). Several -p or --pid options may be specified.
 
-  --payload
-      Dump PES packet payload.
-
   --sei-avc
-      Dump all SEI (Supplemental Enhancement Information) in AVC/H.264
-      access units.
+      Dump all SEI (Supplemental Enhancement Information) in AVC/H.264 access
+      units.
 
   -s
   --start-code
@@ -83,14 +83,14 @@ Options:
 
   -t
   --trace-packets
-      Trace all PES packets.
+      race all PES packets.
 
   --uuid-sei value
       AVC SEI filter: with --sei-avc, select "user data unregistered" SEI
       access units with the specified UUID value (default: all SEI). Several
-      --uuid-sei options may be specified. The UUID value must be 16 bytes long.
-      It must be either an ASCII string of exactly 16 characters or a hexa-
-      decimal value representing 16 bytes.
+      --uuid-sei options may be specified. The UUID value must be 16 bytes
+      long. It must be either an ASCII string of exactly 16 characters or a
+      hexa- decimal value representing 16 bytes.
 
   -v
   --video-attributes

@@ -3,11 +3,12 @@ Rename a service, assign a new service name and/or new service id
 
 Usage: tsp -P svrename [options] service
 
-Service:
-  Specifies the service to rename. If the argument is an integer value
-  (either decimal or hexadecimal), it is interpreted as a service id.
-  Otherwise, it is interpreted as a service name, as specified in the SDT.
-  The name is not case sensitive and blanks are ignored.
+Parameter:
+
+  Specifies the service to rename. If the argument is an integer value (either
+  decimal or hexadecimal), it is interpreted as a service id. Otherwise, it is
+  interpreted as a service name, as specified in the SDT. The name is not case
+  sensitive and blanks are ignored.
 
 Options:
 
@@ -35,9 +36,13 @@ Options:
   --lcn value
       Specify a new logical channel number (LCN).
 
-  -n value
-  --name value
+  -n string
+  --name string
       Specify a new service name.
+
+  -p string
+  --provider string
+      Specify a new provider name.
 
   -r value
   --running-status value

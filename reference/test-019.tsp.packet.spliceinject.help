@@ -11,75 +11,42 @@ to provide the sections: files or UDP.
 
 Files shall be specified as one single specification with optional wildcards.
 Example: --files '/path/to/dir/*'. All files which are copied or updated into
-this directory are automatically loaded and injected. It is possible to auto-
-matically delete all files after being loaded.
+this directory are automatically loaded and injected. It is possible to
+automatically delete all files after being loaded.
 
 UDP datagrams shall contain exactly one XML document or binary sections. The
 sections are injected upon reception.
 
-General options:
+Options:
+
+  --buffer-size value
+      Specifies the UDP socket receive buffer size (socket option).
+
+  -d
+  --delete-files
+      Specifies that the input files should be deleted after being loaded. By
+      default, the files are left unmodified after being loaded. When a loaded
+      file is modified later, it is reloaded and re-injected.
+
+  -f 'file-wildcard'
+  --files 'file-wildcard'
+      A file specification with optional wildcards indicating which files
+      should be polled. When such a file is created or updated, it is loaded
+      and its content is interpreted as binary or XML tables. All tables shall
+      be splice information tables.
 
   --help
       Display this help text.
 
   --inject-count value
       For non-immediate splice_insert() commands, specifies the number of times
-      the same splice information section is injected. The default is 2.
-      Other splice commands are injected once only.
+      the same splice information section is injected. The default is 2. Other
+      splice commands are injected once only.
 
   --inject-interval value
       For non-immediate splice_insert() commands, specifies the interval in
       milliseconds between two insertions of the same splice information
       section. The default is 800 ms.
-
-  --pcr-pid value
-      Specifies the PID carrying PCR reference clock. By default, use the PCR
-      PID as declared in the PMT of the service.
-
-  -p value
-  --pid value
-      Specifies the PID for the injection of the splice information tables. By
-      default, the injection of splice commands is done in the component of the
-      service with a stream type equal to 0x86 in the PMT, as specified by SCTE
-      35 standard.
-
-  --pts-pid value
-      Specifies the PID carrying PTS reference clock. By default, use the video
-      PID as declared in the PMT of the service.
-
-  --queue-size value
-      Specifies the maximum number of sections in the internal queue, sections
-      which are received from files or UDP but not yet inserted into the TS.
-      The default is 100.
-
-  -s value
-  --service value
-      Specifies the service for the insertion of the splice information tables.
-      If the argument is an integer value (either decimal or hexadecimal), it is
-      interpreted as a service id. Otherwise, it is interpreted as a service
-      name, as specified in the SDT. The name is not case sensitive and blanks
-      are ignored. If no service is specified, the options --pid and --pts-pid
-      must be specified (--pcr-pid is optional).
-
-  --start-delay value
-      For non-immediate splice_insert() commands, start to insert the first
-      section this number of milliseconds before the specified splice PTS
-      value. The default is 2,000 ms.
-
-File input options:
-
-  -d
-  --delete-files
-      Specifies that the files should be deleted after being loaded. By default,
-      the files are left unmodified after being loaded. When a loaded file is
-      modified later, it is reloaded and re-injected.
-
-  -f 'file-wildcard'
-  --files 'file-wildcard'
-      A file specification with optional wildcards indicating which files should
-      be polled. When such a file is created or updated, it is loaded and its
-      content is interpreted as binary or XML tables. All tables shall be splice
-      information tables.
 
   --max-file-size value
       Files larger than the specified size are ignored. This avoids loading
@@ -92,22 +59,52 @@ File input options:
       poll notifications when a file is being written and his size modified at
       each poll. The default is 500 ms.
 
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely
+      necessary.
+
+  --pcr-pid value
+      Specifies the PID carrying PCR reference clock. By default, use the PCR
+      PID as declared in the PMT of the service.
+
+  -p value
+  --pid value
+      Specifies the PID for the injection of the splice information tables. By
+      default, the injection of splice commands is done in the component of the
+      service with a stream type equal to 0x86 in the PMT, as specified by SCTE
+      35 standard.
+
   --poll-interval value
       Specifies the interval in milliseconds between two poll operations. The
       default is 500 ms.
 
-UDP input options:
+  --pts-pid value
+      Specifies the PID carrying PTS reference clock. By default, use the video
+      PID as declared in the PMT of the service.
 
-  --buffer-size value
-      Specifies the UDP socket receive buffer size (socket option).
-
-  --no-reuse-port
-      Disable the reuse port socket option. Do not use unless completely necessary.
+  --queue-size value
+      Specifies the maximum number of sections in the internal queue, sections
+      which are received from files or UDP but not yet inserted into the TS.
+      The default is 100.
 
   -r
   --reuse-port
-      Set the reuse port socket option. This is now enabled by default, the option
-      is present for legacy only.
+      Set the reuse port socket option. This is now enabled by default, the
+      option is present for legacy only.
+
+  -s value
+  --service value
+      Specifies the service for the insertion of the splice information tables.
+      If the argument is an integer value (either decimal or hexadecimal), it
+      is interpreted as a service id. Otherwise, it is interpreted as a service
+      name, as specified in the SDT. The name is not case sensitive and blanks
+      are ignored. If no service is specified, the options --pid and --pts-pid
+      must be specified (--pcr-pid is optional).
+
+  --start-delay value
+      For non-immediate splice_insert() commands, start to insert the first
+      section this number of milliseconds before the specified splice PTS
+      value. The default is 2,000 ms.
 
   -u [address:]port
   --udp [address:]port
@@ -115,4 +112,13 @@ UDP input options:
       binary or XML splice information tables. When present, the optional
       address shall specify a local IP address or host name (by default, the
       plugin accepts connections on any local IP interface).
+
+  --wait-first-batch
+      This option is typically designed to support automated non-regression
+      testing. It is not really useful in real situations. When specified, the
+      start of the plugin is suspended until the first batch of splice commands
+      is loaded and queued. This is the guarantee for a deterministic behaviour
+      and determinism is required for automated non-regression testing. Without
+      this option, the input files or messages are loaded and queued
+      asynchronously.
 

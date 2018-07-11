@@ -25,33 +25,33 @@ Options:
   -m
   --milli-seconds
       For each message, report time in milli-seconds from the beginning of the
-      stream instead of the TS packet number. This time is a playback time based
-      on the current TS bitrate (use plugin pcrbitrate when necessary).
-
+      stream instead of the TS packet number. This time is a playback time
+      based on the current TS bitrate (use plugin pcrbitrate when necessary).
 
   -o filename
   --output-file filename
       Specify the output file for reporting history lines. By default, report
       history lines on standard error using the tsp logging mechanism.
+      
+      Without option --output-file, output is formated as:
+      * history: PKT#: MESSAGE
+      
+      Some messages may be out of sync. To sort messages according to their
+      packet numbers, use a command like:
+      tsp -P history ...  2>&1 | grep '* history:' | sort -t : -k 2 -n
+      
+      When an output file is specified using --output-file, the sort command
+      becomes:
+      sort -n output-file-name
 
   -s value
   --suspend-packet-threshold value
-      Number of packets in TS after which a PID is considered as suspended.
-      By default, if no packet is found in a PID during 60 seconds, the PID
-      is considered as suspended.
+      Number of packets in TS after which a PID is considered as suspended. By
+      default, if no packet is found in a PID during 60 seconds, the PID is
+      considered as suspended.
 
   -t
   --time-all
-      Report all TDT and TOT. By default, only report TDT preceeding
-      another event.
-
-Without option --output-file, output is formated as:
-  * history: PKT#: MESSAGE
-
-Some messages may be out of sync. To sort messages according to their packet
-numbers, use a command like:
-  tsp -P history ...  2>&1 | grep '* history:' | sort -t : -k 2 -n
-
-When an output file is specified using --output-file, the sort command becomes:
-  sort -n output-file-name
+      Report all TDT and TOT. By default, only report TDT preceeding another
+      event.
 

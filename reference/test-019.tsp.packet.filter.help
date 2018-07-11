@@ -14,8 +14,7 @@ Options:
 
   -c
   --clear
-      Select clear (unscrambled) packets.
-      Equivalent to --scrambling-control 0.
+      Select clear (unscrambled) packets. Equivalent to --scrambling-control 0.
 
   --help
       Display this help text.
@@ -29,12 +28,12 @@ Options:
       which is not greater than the specified value.
 
   --min-adaptation-field-size value
-      Select packets with an adaptation field the size (in bytes) of which
-      is equal to or greater than the specified value.
+      Select packets with an adaptation field the size (in bytes) of which is
+      equal to or greater than the specified value.
 
   --min-payload-size value
-      Select packets with a payload the size (in bytes) of which is equal
-      to or greater than the specified value.
+      Select packets with a payload the size (in bytes) of which is equal to or
+      greater than the specified value.
 
   -n
   --negate
@@ -51,23 +50,23 @@ Options:
 
   -p value
   --pid value
-      PID filter: select packets with this PID value.
-      Several -p or --pid options may be specified.
+      PID filter: select packets with this PID value. Several -p or --pid
+      options may be specified.
 
   --scrambling-control value
-      Select packets with the specified scrambling control value. Valid
-      values are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
+      Select packets with the specified scrambling control value. Valid values
+      are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
 
   -s
   --stuffing
-      Replace excluded packets with stuffing (null packets) instead
-      of removing them. Useful to preserve bitrate.
+      Replace excluded packets with stuffing (null packets) instead of removing
+      them. Useful to preserve bitrate.
 
   --unit-start
       Select packets with payload unit start indicator.
 
   -v
   --valid
-      Select valid packets. A valid packet starts with 0x47 and has
-      its transport_error_indicator cleared.
+      Select valid packets. A valid packet starts with 0x47 and has its
+      transport_error_indicator cleared.
 

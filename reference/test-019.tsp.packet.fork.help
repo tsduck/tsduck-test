@@ -3,7 +3,8 @@ Fork a process and send TS packets to its standard input
 
 Usage: tsp -P fork [options] 'command'
 
-Command:
+Parameter:
+
   Specifies the command line to execute in the created process.
 
 Options:
@@ -12,8 +13,8 @@ Options:
   --buffered-packets value
       Specifies the number of TS packets to buffer before sending them through
       the pipe to the forked process. When set to zero, the packets are not
-      buffered and sent one by one. The default is 500 packets in real-time mode
-      and 1000 packets in offline mode.
+      buffered and sent one by one. The default is 500 packets in real-time
+      mode and 1000 packets in offline mode.
 
   --help
       Display this help text.

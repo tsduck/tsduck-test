@@ -12,10 +12,10 @@ Options:
 
   -e
   --extract
-      Extract encapsulated TS packets from one PLP of a T2-MI stream.
-      This is the default if neither --extract nor --log nor --identify is
-      specified. By default, the transport stream is completely replaced by
-      the extracted stream. See option --output-file.
+      Extract encapsulated TS packets from one PLP of a T2-MI stream. This is
+      the default if neither --extract nor --log nor --identify is specified.
+      By default, the transport stream is completely replaced by the extracted
+      stream. See option --output-file.
 
   --help
       Display this help text.
@@ -47,6 +47,6 @@ Options:
 
   --plp value
       Specify the PLP (Physical Layer Pipe) to extract from the T2-MI
-      encapsulation. By default, use the first PLP which is found.
-      Ignored if --extract is not used.
+      encapsulation. By default, use the first PLP which is found. Ignored if
+      --extract is not used.
 

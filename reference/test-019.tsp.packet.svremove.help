@@ -3,11 +3,12 @@ Remove a service
 
 Usage: tsp -P svremove [options] service
 
-Service:
-  Specifies the service to remove. If the argument is an integer value
-  (either decimal or hexadecimal), it is interpreted as a service id.
-  Otherwise, it is interpreted as a service name, as specified in the SDT.
-  The name is not case sensitive and blanks are ignored.
+Parameter:
+
+  Specifies the service to remove. If the argument is an integer value (either
+  decimal or hexadecimal), it is interpreted as a service id. Otherwise, it is
+  interpreted as a service name, as specified in the SDT. The name is not case
+  sensitive and blanks are ignored.
 
 Options:
 
@@ -33,6 +34,6 @@ Options:
 
   -s
   --stuffing
-      Replace excluded packets with stuffing (null packets) instead
-      of removing them. Useful to preserve bitrate.
+      Replace excluded packets with stuffing (null packets) instead of removing
+      them. Useful to preserve bitrate.
 
