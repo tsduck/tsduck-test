@@ -58,8 +58,15 @@ Options:
       all DVB strings without explicit table code are assumed to use
       ISO-8859-15 instead of the standard ISO-6937 encoding.
 
+  --exclude-current
+      Exclude PSI tables with "current" indicator. This is rarely necessary.
+      See also --include-next.
+
   --help
       Display this help text.
+
+  --include-next
+      Include PSI tables with "next" indicator. By default, they are excluded.
 
   --nested-tlv[=min-size]
       With option --tlv, try to interpret the value field of each TLV record as
