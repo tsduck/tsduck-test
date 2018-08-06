@@ -23,6 +23,7 @@ Options:
   --start value
       Specify a new UTC date & time reference for the first packet in the
       stream. Then, the time reference is updated according to the number of
-      packets and the bitrate. A time value must be in the format
-      "year/month/day:hour:minute:second".
+      packets and the bitrate. The time value can be in the format
+      "year/month/day:hour:minute:second", or use the predefined name "system"
+      for getting current time from the system clock.
 
