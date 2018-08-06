@@ -1,0 +1,102 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ............. Unknown  |  Services: .............. 0  |
+|  Bytes: ........................... 215,260  |  PID's: Total: .......... 3  |
+|  TS packets: ........................ 1,145  |         Clear: .......... 3  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 0  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 1  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ...................... Unknown          Unknown  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ................................................. Unknown  |
+|  First TDT UTC time stamp: ....................................... Unknown  |
+|  Last TDT UTC time stamp: ........................................ Unknown  |
+|  First TOT local time stamp: ..................................... Unknown  |
+|  Last TOT local time stamp: ...................................... Unknown  |
+|  TOT country code: ..............................................  Unknown  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
+|  188 bytes per packet.                                                      |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 670, PID's: 2 (clear: 2, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C          Unknown  |
+|  0x0001  CAT .......................................... C          Unknown  |
+|  0x1449  Nagravision EMM .............................. C          Unknown  |
+|  0x1645  Nagravision EMM .............................. C          Unknown  |
+|  0x1646  Nagravision EMM .............................. C          Unknown  |
+|  0x1647  Nagravision EMM .............................. C          Unknown  |
+|  0x164E  Nagravision EMM .............................. C          Unknown  |
+|  0x1650  Nagravision EMM .............................. C          Unknown  |
+|  0x165D  Nagravision EMM .............................. C          Unknown  |
+|  0x168A  Viaccess EMM for SOID 266048 (0x040F40) ...... C          Unknown  |
+|  0x168C  Viaccess EMM for SOID 199424 (0x030B00), 2068  C          Unknown  |
+|  0x168F  Viaccess EMM for SOID 207168 (0x032940) ...... C          Unknown  |
+|  0x1690  Viaccess EMM for SOID 206896 (0x032830), 1363  C          Unknown  |
+|  0x1699  Viaccess EMM for SOID 207136 (0x032920) ...... C          Unknown  |
+|  0x1FFF  Stuffing ..................................... C          Unknown  |
+|=============================================================================|
+|  Unreferenced PID's                                                         |
+|  TS packets: 475, PID's: 1 (clear: 1, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Unreferenced PID's ........................... C          Unknown  |
+|  0x0444  Unreferenced ................................. C          Unknown  |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ............ 35  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 35  |
+|=============================================================================|
+|  PID: 0x0444 (1092)                                           Unreferenced  |
+|-----------------------------------------------------------------------------|
+|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ........... 475  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 212  |
+|=============================================================================|
+|  PID: 0x1FFF (8191)                                               Stuffing  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... Unknown  Packets: ........... 635  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 33  pkt  Section cnt: ....... 35                     |
+|      Min repet.: ..... 27  pkt  Table cnt: ......... 35                     |
+|      Max repet.: ..... 36  pkt  Version: ............ 8                     |
+===============================================================================
+
