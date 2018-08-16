@@ -43,9 +43,24 @@ Options:
       inside the PMT, starting with 1. The default location is "A1", ie. the
       first audio stream inside the PMT.
 
+  -b value
+  --bitrate value
+      Specifies the bitrate in bits / second of the PMT PID if a new one is
+      created. The default is 3,000 b/s.
+
   --cleanup-private-descriptors
       Remove all private descriptors without preceding private_data_specifier
       descriptor.
+
+  -c
+  --create
+      Create a new empty PMT if none was received after one second. This is
+      equivalent to --create-after 1000.
+
+  --create-after value
+      Create a new empty PMT if none was received after the specified number of
+      milliseconds. If the actual PMT is received later, it will be used as the
+      base for transformations instead of the empty one.
 
   --eac3-atsc2dvb
       Change the description of Enhanced-AC-3 (aka AC-3+ or DD+) audio streams
@@ -59,6 +74,12 @@ Options:
 
   --increment-version
       Increment the version number of the PMT.
+
+  --inter-packet value
+      When a new PMT is created and --bitrate is not present, this option
+      specifies the packet interval for the PID, that is to say the number of
+      TS packets in the transport between two packets of the PID. Use instead
+      of --bitrate if the global bitrate of the TS cannot be determined.
 
   -m old-pid/new-pid
   --move-pid old-pid/new-pid

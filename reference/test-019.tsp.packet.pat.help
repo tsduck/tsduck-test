@@ -10,12 +10,33 @@ Options:
       Add the specified service_id / PMT-PID in the PAT. Several --add-service
       options may be specified to add several services.
 
+  -b value
+  --bitrate value
+      Specifies the bitrate in bits / second of the PAT PID if a new one is
+      created. The default is 3,000 b/s.
+
+  -c
+  --create
+      Create a new empty PAT if none was received after one second. This is
+      equivalent to --create-after 1000.
+
+  --create-after value
+      Create a new empty PAT if none was received after the specified number of
+      milliseconds. If the actual PAT is received later, it will be used as the
+      base for transformations instead of the empty one.
+
   --help
       Display this help text.
 
   -i
   --increment-version
       Increment the version number of the PAT.
+
+  --inter-packet value
+      When a new PAT is created and --bitrate is not present, this option
+      specifies the packet interval for the PID, that is to say the number of
+      TS packets in the transport between two packets of the PID. Use instead
+      of --bitrate if the global bitrate of the TS cannot be determined.
 
   -v value
   --new-version value
@@ -35,6 +56,9 @@ Options:
       options may be specified to remove several services.
 
   -t id
-  --tsid id
+  --ts-id id
       Specify a new value for the transport stream id in the PAT.
+
+  --tsid id
+      Same as --ts-id (for compatibility).
 

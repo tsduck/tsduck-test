@@ -1,13 +1,28 @@
 
-Perform various transformations on the NIT Actual
+Perform various transformations on the NIT
 
 Usage: tsp -P nit [options]
 
 Options:
 
+  -b value
+  --bitrate value
+      Specifies the bitrate in bits / second of the NIT PID if a new one is
+      created. The default is 3,000 b/s.
+
   --cleanup-private-descriptors
       Remove all private descriptors without preceding private_data_specifier
       descriptor.
+
+  -c
+  --create
+      Create a new empty NIT if none was received after one second. This is
+      equivalent to --create-after 1000.
+
+  --create-after value
+      Create a new empty NIT if none was received after the specified number of
+      milliseconds. If the actual NIT is received later, it will be used as the
+      base for transformations instead of the empty one.
 
   --help
       Display this help text.
@@ -15,6 +30,12 @@ Options:
   -i
   --increment-version
       Increment the version number of the NIT.
+
+  --inter-packet value
+      When a new NIT is created and --bitrate is not present, this option
+      specifies the packet interval for the PID, that is to say the number of
+      TS packets in the transport between two packets of the PID. Use instead
+      of --bitrate if the global bitrate of the TS cannot be determined.
 
   -l value
   --lcn value
@@ -41,6 +62,10 @@ Options:
       Specify a new value for the version of the NIT.
 
   --nit-other id
+      Same as --other (for compatibility).
+
+  -o id
+  --other id
       Do not modify the NIT Actual. Modify the NIT Other with the specified
       network id.
 
@@ -50,9 +75,7 @@ Options:
 
   -p value
   --pid value
-      Specify the PID on which the NIT is expected. By default, the PAT is
-      analyzed to get the PID of the NIT. DVB-compliant networks should use PID
-      16 (0x0010) for the NIT and signal it in the PAT.
+      Specify the PID on which the NIT is expected. By default, use PID 16.
 
   --remove-descriptor value
       Remove from the NIT all descriptors with the specified tag. Several

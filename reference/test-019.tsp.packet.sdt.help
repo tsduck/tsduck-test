@@ -5,9 +5,24 @@ Usage: tsp -P sdt [options]
 
 Options:
 
+  -b value
+  --bitrate value
+      Specifies the bitrate in bits / second of the SDT PID if a new one is
+      created. The default is 3,000 b/s.
+
   --cleanup-private-descriptors
       Remove all private descriptors without preceding private_data_specifier
       descriptor.
+
+  -c
+  --create
+      Create a new empty SDT if none was received after one second. This is
+      equivalent to --create-after 1000.
+
+  --create-after value
+      Create a new empty SDT if none was received after the specified number of
+      milliseconds. If the actual SDT is received later, it will be used as the
+      base for transformations instead of the empty one.
 
   --eit-pf value
       Specify a new EIT_present_following_flag value for the added or modified
@@ -29,6 +44,12 @@ Options:
   --increment-version
       Increment the version number of the SDT.
 
+  --inter-packet value
+      When a new SDT is created and --bitrate is not present, this option
+      specifies the packet interval for the PID, that is to say the number of
+      TS packets in the transport between two packets of the PID. Use instead
+      of --bitrate if the global bitrate of the TS cannot be determined.
+
   -n value
   --name value
       Specify a new service name for the added or modified service. For new
@@ -37,6 +58,14 @@ Options:
   -v value
   --new-version value
       Specify a new value for the version of the SDT.
+
+  --original-network-id id
+      Modify the original network id in the SDT with the specified value.
+
+  -o id
+  --other id
+      Modify the SDT Other with the specified TS id. By default, modify the SDT
+      Actual.
 
   -p value
   --provider value
@@ -56,6 +85,9 @@ Options:
   --service-id id
       Add a new service or modify the existing service with the specified
       service-id.
+
+  --ts-id id
+      Modify the transport stream id in the SDT with the specified value.
 
   -t value
   --type value
