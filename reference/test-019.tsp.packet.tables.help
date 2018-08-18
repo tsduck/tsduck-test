@@ -189,6 +189,14 @@ Options:
   --raw-dump
       Raw dump of section, no interpretation.
 
+  --rewrite-binary
+      With --binary-output, rewrite the same file with each table. The
+      specified file always contains one single table, the latest one.
+
+  --rewrite-xml
+      With --xml-output, rewrite the same file with each table. The specified
+      file always contains one single table, the latest one.
+
   --text-output value
       A synonym for --output-file.
 
