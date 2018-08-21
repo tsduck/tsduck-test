@@ -15,6 +15,15 @@ $(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze full" \
 test_text $SCRIPT.tsanalyze.full.txt
 test_text $SCRIPT.tsanalyze.full.log
 
+# ==== tsanalyze, as a command, wide display
+
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze wide" --wide-display \
+    >"$OUTDIR/$SCRIPT.tsanalyze.wide.txt" \
+    2>"$OUTDIR/$SCRIPT.tsanalyze.wide.log"
+
+test_text $SCRIPT.tsanalyze.wide.txt
+test_text $SCRIPT.tsanalyze.wide.log
+
 # ==== tsanalyze, as a command, normalized format
 
 $(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normalized \
