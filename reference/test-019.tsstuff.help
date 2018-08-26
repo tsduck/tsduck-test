@@ -49,6 +49,12 @@ Options:
       Number of consecutive stuffing packets to add at the beginning of the
       output file, before the first input packet. The default is zero.
 
+  -m value
+  --min-interval value
+      Minimum interval, in milli-seconds, between two recomputations of the
+      amount of stuffing to insert. This duration is based on time-stamps, not
+      real time. The default is 100 ms.
+
   -o filename
   --output-file filename
       Output file name (standard output by default). The output file is a TS

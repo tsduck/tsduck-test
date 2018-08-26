@@ -113,12 +113,9 @@ Options:
       address shall specify a local IP address or host name (by default, the
       plugin accepts connections on any local IP interface).
 
+  -w
   --wait-first-batch
-      This option is typically designed to support automated non-regression
-      testing. It is not really useful in real situations. When specified, the
-      start of the plugin is suspended until the first batch of splice commands
-      is loaded and queued. This is the guarantee for a deterministic behaviour
-      and determinism is required for automated non-regression testing. Without
-      this option, the input files or messages are loaded and queued
-      asynchronously.
+      When this option is specified, the start of the plugin is suspended until
+      the first batch of splice commands is loaded and queued. Without this
+      option, the input files or messages are loaded and queued asynchronously.
 
