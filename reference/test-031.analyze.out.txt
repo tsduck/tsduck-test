@@ -1,0 +1,2175 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ....... 1080 (0x0438)  |  Services: ............. 10  |
+|  Bytes: ........................ 20,971,588  |  PID's: Total: ........ 118  |
+|  TS packets: ...................... 111,551  |         Clear: ......... 97  |
+|     With invalid sync: .................. 0  |         Scrambled: ..... 21  |
+|     With transport error: ............... 0  |         With PCR's: ..... 9  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 1  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ......................... 47,790,521 b/s   51,857,799 b/s  |
+|  Estimated based on PCR's: ............... 47,784,279 b/s   51,851,026 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ...................................... 3 sec (0 mn 3 sec)  |
+|  First TDT UTC time stamp: ....................................... Unknown  |
+|  Last TDT UTC time stamp: ........................................ Unknown  |
+|  First TOT local time stamp: ..................................... Unknown  |
+|  Last TOT local time stamp: ...................................... Unknown  |
+|  TOT country code: ..............................................  Unknown  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x2262  CANAL+ DECALE ................................ C    3,493,753 b/s  |
+|  0x2263  CANAL+ CINEMA ................................ S    2,795,431 b/s  |
+|  0x2264  CANAL+ SPORT ................................. S    5,740,380 b/s  |
+|  0x2265  CANAL+ FAMILY ................................ S    3,650,983 b/s  |
+|  0x2266  CANAL+ SERIES ................................ S    3,190,861 b/s  |
+|  0x2267  CINE+ FRISSON ................................ S    5,335,524 b/s  |
+|  0x2268  CINE+ FAMIZ .................................. S    5,007,356 b/s  |
+|  0x2269  CINE+ CLASSIC ................................ S    6,028,277 b/s  |
+|  0x226A  CNEWS ........................................ C    3,908,462 b/s  |
+|  0x22C3  DATASYSTEM ................................... C      131,524 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
+|  188 bytes per packet.                                                      |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 19,432, PID's: 18 (clear: 18, scrambled: 0)                    |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C    8,325,029 b/s  |
+|  0x0000  PAT .......................................... C       14,566 b/s  |
+|  0x0001  CAT .......................................... C       14,566 b/s  |
+|  0x0010  DVB-NIT ...................................... C       33,845 b/s  |
+|  0x0011  SDT/BAT ...................................... C       14,994 b/s  |
+|  0x0012  EIT .......................................... C      308,032 b/s  |
+|  0x1449  Nagravision EMM .............................. C      253,195 b/s  |
+|  0x1645  Nagravision EMM .............................. C        6,426 b/s  |
+|  0x1646  Nagravision EMM .............................. C       66,404 b/s  |
+|  0x1647  Nagravision EMM .............................. C        5,141 b/s  |
+|  0x164E  Nagravision EMM .............................. C      104,962 b/s  |
+|  0x1650  Nagravision EMM .............................. C        6,854 b/s  |
+|  0x165D  Nagravision EMM .............................. C        6,426 b/s  |
+|  0x168A  Viaccess EMM for SOID 266048 (0x040F40) ...... C        9,853 b/s  |
+|  0x168C  Viaccess EMM for SOID 199424 (0x030B00), 2068  C        9,425 b/s  |
+|  0x168F  Viaccess EMM for SOID 207168 (0x032940) ...... C      145,662 b/s  |
+|  0x1690  Viaccess EMM for SOID 206896 (0x032830), 1363  C       38,986 b/s  |
+|  0x1699  Viaccess EMM for SOID 207136 (0x032920) ...... C        4,712 b/s  |
+|  0x1FFF  Stuffing ..................................... C    7,280,973 b/s  |
+|=============================================================================|
+|  Unreferenced PID's                                                         |
+|  TS packets: 427, PID's: 1 (clear: 1, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Unreferenced PID's ........................... C      182,934 b/s  |
+|  0x0BC9  Unreferenced ................................. C      182,934 b/s  |
+|=============================================================================|
+|  Service: 0x2262 (8802), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CANAL+ DECALE, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 8,155, PID's: 6 (clear: 6, scrambled: 0)                       |
+|  PMT PID: 0x00C8 (200), PCR PID: 0x00D2 (210)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C    3,493,753 b/s  |
+|  0x00C8  PMT .......................................... C       14,566 b/s  |
+|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    3,071,332 b/s  |
+|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      191,503 b/s  |
+|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      191,503 b/s  |
+|  0x00F2  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
+|  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       24,848 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2263 (8803), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CANAL+ CINEMA, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 6,525, PID's: 13 (clear: 10, scrambled: 3)                     |
+|  PMT PID: 0x012C (300), PCR PID: 0x0136 (310)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    2,795,431 b/s  |
+|  0x012C  PMT .......................................... C       14,566 b/s  |
+|  0x0136  AVC video .................................... S    2,065,405 b/s  |
+|  0x0141  AC-3 Audio (fra) ............................. S      409,996 b/s  |
+|  0x0142  AC-3 Audio (eng) ............................. S      227,918 b/s  |
+|  0x0156  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
+|  0x0157  Subtitles (fra, DVB subtitles for hard of hea  C       11,995 b/s  |
+|  0x016E  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0173  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0178  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0179  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x017C  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x017E  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,283 b/s  |
+|  0x0183  Viaccess ECM for SOID 266048 (0x040F40) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2264 (8804), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CANAL+ SPORT, provider: CSAT                                 |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 13,399, PID's: 13 (clear: 10, scrambled: 3)                    |
+|  PMT PID: 0x0190 (400), PCR PID: 0x019A (410)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    5,740,380 b/s  |
+|  0x0190  PMT .......................................... C       14,566 b/s  |
+|  0x019A  AVC video .................................... S    5,277,260 b/s  |
+|  0x01A5  AC-3 Audio (fra) ............................. S      191,503 b/s  |
+|  0x01A6  AC-3 Audio (eng) ............................. S      191,503 b/s  |
+|  0x01BA  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
+|  0x01BB  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
+|  0x01D2  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x01D7  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x01DC  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x01DD  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x01E0  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x01E2  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,283 b/s  |
+|  0x01E7  Viaccess ECM for SOID 266048 (0x040F40) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2265 (8805), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CANAL+ FAMILY, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 8,522, PID's: 13 (clear: 10, scrambled: 3)                     |
+|  PMT PID: 0x01F4 (500), PCR PID: 0x01FE (510)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    3,650,983 b/s  |
+|  0x01F4  PMT .......................................... C       14,566 b/s  |
+|  0x01FE  AVC video .................................... S    3,165,156 b/s  |
+|  0x0209  AC-3 Audio (fra) ............................. S      191,503 b/s  |
+|  0x020A  AC-3 Audio (eng) ............................. S      191,074 b/s  |
+|  0x021E  Subtitles (fra, DVB subtitles, no aspect rati  C       15,423 b/s  |
+|  0x021F  Subtitles (fra, DVB subtitles for hard of hea  C        7,711 b/s  |
+|  0x0236  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x023B  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0240  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0241  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0244  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x0246  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,283 b/s  |
+|  0x024B  Viaccess ECM for SOID 266048 (0x040F40) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2266 (8806), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CANAL+ SERIES, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 7,448, PID's: 13 (clear: 10, scrambled: 3)                     |
+|  PMT PID: 0x0258 (600), PCR PID: 0x0262 (610)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    3,190,861 b/s  |
+|  0x0258  PMT .......................................... C       14,566 b/s  |
+|  0x0262  AVC video .................................... S    2,690,897 b/s  |
+|  0x026D  AC-3 Audio (fra) ............................. S      191,074 b/s  |
+|  0x026E  AC-3 Audio (eng) ............................. S      191,503 b/s  |
+|  0x0282  Subtitles (fra, DVB subtitles, no aspect rati  C       24,848 b/s  |
+|  0x0283  Subtitles (fra, DVB subtitles for hard of hea  C       12,424 b/s  |
+|  0x029A  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x029F  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x02A4  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x02A5  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x02A8  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x02AA  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,283 b/s  |
+|  0x02AF  Viaccess ECM for SOID 266048 (0x040F40) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2267 (8807), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CINE+ FRISSON, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 12,454, PID's: 13 (clear: 10, scrambled: 3)                    |
+|  PMT PID: 0x02BC (700), PCR PID: 0x02C6 (710)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    5,335,524 b/s  |
+|  0x02BC  PMT .......................................... C       14,566 b/s  |
+|  0x02C6  AVC video .................................... S    4,867,691 b/s  |
+|  0x02D1  AC-3 Audio (fra) ............................. S      191,503 b/s  |
+|  0x02D2  AC-3 Audio (eng) ............................. S      191,503 b/s  |
+|  0x02E6  Subtitles (fra, DVB subtitles, no aspect rati  C        4,712 b/s  |
+|  0x02E7  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
+|  0x02FD  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0303  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0308  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0309  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x030C  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x030D  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,283 b/s  |
+|  0x030E  Viaccess ECM for SOID 207168 (0x032940) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2268 (8808), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CINE+ FAMIZ, provider: CSAT                                  |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 11,688, PID's: 13 (clear: 10, scrambled: 3)                    |
+|  PMT PID: 0x0320 (800), PCR PID: 0x032A (810)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    5,007,356 b/s  |
+|  0x0320  PMT .......................................... C       14,566 b/s  |
+|  0x032A  AVC video .................................... S    4,543,379 b/s  |
+|  0x0335  AC-3 Audio (fra) ............................. S      191,074 b/s  |
+|  0x0336  AC-3 Audio (eng) ............................. S      191,074 b/s  |
+|  0x034A  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
+|  0x034B  Subtitles (fra, DVB subtitles for hard of hea  C        1,713 b/s  |
+|  0x0361  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0367  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x036C  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x036D  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x0370  Viaccess ECM for SOID 206896 (0x032830) ...... C       14,566 b/s  |
+|  0x0371  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,283 b/s  |
+|  0x0372  Viaccess ECM for SOID 207168 (0x032940) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x2269 (8809), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CINE+ CLASSIC, provider: CSAT                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 14,071, PID's: 13 (clear: 10, scrambled: 3)                    |
+|  PMT PID: 0x0384 (900), PCR PID: 0x038E (910)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . S    6,028,277 b/s  |
+|  0x0384  PMT .......................................... C       14,566 b/s  |
+|  0x038E  AVC video .................................... S    5,520,173 b/s  |
+|  0x0399  AC-3 Audio (fra) ............................. S      191,503 b/s  |
+|  0x039A  AC-3 Audio (eng) ............................. S      191,503 b/s  |
+|  0x03AE  Subtitles (fra, DVB subtitles, no aspect rati  C       14,566 b/s  |
+|  0x03AF  Subtitles (fra, DVB subtitles for hard of hea  C       23,134 b/s  |
+|  0x03C5  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x03CB  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x03D0  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x03D1  Nagravision ECM .............................. C        7,283 b/s  |
+|  0x03D4  Viaccess ECM for SOID 206896 (0x032830) ...... C       21,849 b/s  |
+|  0x03D5  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,283 b/s  |
+|  0x03D6  Viaccess ECM for SOID 207168 (0x032940) ...... C       14,566 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x226A (8810), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: CNEWS, provider: CSAT                                        |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 9,123, PID's: 4 (clear: 4, scrambled: 0)                       |
+|  PMT PID: 0x03E8 (1000), PCR PID: 0x03F2 (1010)                             |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C    3,908,462 b/s  |
+|  0x03E8  PMT .......................................... C       14,566 b/s  |
+|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    3,702,393 b/s  |
+|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      191,503 b/s  |
+|  0x0413  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x22C3 (8899), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
+|  Service name: DATASYSTEM, provider: CSAT                                   |
+|  Service type: 0x0C (Data broadcast service)                                |
+|  TS packets: 307, PID's: 5 (clear: 5, scrambled: 0)                         |
+|  PMT PID: 0x1003 (4099), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Data broadcast service ....................... C      131,524 b/s  |
+|  0x0FA5  MPEG-2 Private sections (Canal+) ............. C       48,411 b/s  |
+|  0x1003  PMT .......................................... C       14,566 b/s  |
+|  0x1800  MPEG-2 Private sections ...................... C       30,417 b/s  |
+|  0x1801  MPEG-2 Private sections ...................... C       22,706 b/s  |
+|  0x1802  MPEG-2 Private sections ...................... C       15,423 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 33,845 b/s  Packets: ............ 79  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 19  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 14,994 b/s  Packets: ............ 35  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 308,032 b/s  Packets: ........... 719  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 334  |
+|=============================================================================|
+|  PID: 0x00C8 (200)                                                     PMT  |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x00D2 (210)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,071,332 b/s  Packets: ......... 7,169  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 185  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................ 97  Packets: ......... 84  |
+|                            TSrate: . 47,782,779 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00DD (221)                                        AC-3 Audio (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 6                      |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 43  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00DE (222)                                        AC-3 Audio (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 6                      |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 43  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00F3 (243)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 24,848 b/s  Packets: ............ 58  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 2  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 1  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x0136 (310)                                               AVC video  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 2,065,405 b/s  Packets: ......... 4,821  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 187  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 98  Packets: ......... 88  |
+|                            TSrate: . 47,780,470 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0141 (321)                                        AC-3 Audio (fra)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 409,996 b/s  Packets: ........... 957  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 212  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ........ 106  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0142 (322)                                        AC-3 Audio (eng)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 227,918 b/s  Packets: ........... 532  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 212  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ........ 106  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0157 (343)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 11,995 b/s  Packets: ............ 28  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 1  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x016E (366)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0173 (371)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0178 (376)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0179 (377)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x017C (380)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x017E (382)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0183 (387)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x019A (410)                                               AVC video  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 5,277,260 b/s  Packets: ........ 12,318  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 179  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 97  Packets: ......... 82  |
+|                            TSrate: . 47,783,267 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01A5 (421)                                        AC-3 Audio (fra)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01A6 (422)                                        AC-3 Audio (eng)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01D2 (466)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01D7 (471)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01DC (476)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01DD (477)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01E0 (480)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01E2 (482)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01E7 (487)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x01F4 (500)                                                     PMT  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x01FE (510)                                               AVC video  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,165,156 b/s  Packets: ......... 7,388  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 182  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 97  Packets: ......... 83  |
+|                            TSrate: . 47,784,346 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0209 (521)                                        AC-3 Audio (fra)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x020A (522)                                        AC-3 Audio (eng)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,074 b/s  Packets: ........... 446  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x021E (542)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles, no aspect ratio                                             |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,423 b/s  Packets: ............ 36  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 3  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x021F (543)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,711 b/s  Packets: ............ 18  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 2  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0236 (566)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x023B (571)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0240 (576)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0241 (577)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0244 (580)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0246 (582)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x024B (587)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0258 (600)                                                     PMT  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x0262 (610)                                               AVC video  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 2,690,897 b/s  Packets: ......... 6,281  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 178  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 98  Packets: ......... 77  |
+|                            TSrate: . 47,787,010 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x026D (621)                                        AC-3 Audio (fra)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,074 b/s  Packets: ........... 446  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x026E (622)                                        AC-3 Audio (eng)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0282 (642)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles, no aspect ratio                                             |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 24,848 b/s  Packets: ............ 58  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 3  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0283 (643)                                         Subtitles (fra)  |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 12,424 b/s  Packets: ............ 29  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 0  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x029A (666)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x029F (671)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02A4 (676)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02A5 (677)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02A8 (680)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02AA (682)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02AF (687)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x02BC (700)                                                     PMT  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x02C6 (710)                                               AVC video  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,867,691 b/s  Packets: ........ 11,362  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 193  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 97  Packets: ......... 93  |
+|                            TSrate: . 47,782,980 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02D1 (721)                                        AC-3 Audio (fra)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02D2 (722)                                        AC-3 Audio (eng)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02E6 (742)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles, no aspect ratio                                             |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 4,712 b/s  Packets: ............ 11  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 1  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02FD (765)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0303 (771)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0308 (776)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0309 (777)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x030C (780)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x030D (781)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x030E (782)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0320 (800)                                                     PMT  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x032A (810)                                               AVC video  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,543,379 b/s  Packets: ........ 10,605  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 191  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 98  Packets: ......... 90  |
+|                            TSrate: . 47,786,250 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0335 (821)                                        AC-3 Audio (fra)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,074 b/s  Packets: ........... 446  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 44  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0336 (822)                                        AC-3 Audio (eng)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,074 b/s  Packets: ........... 446  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 44  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 22  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x034B (843)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,713 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 2  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 1  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0361 (865)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0367 (871)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x036C (876)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x036D (877)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0370 (880)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0371 (881)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0372 (882)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0384 (900)                                                     PMT  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x038E (910)                                               AVC video  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 5,520,173 b/s  Packets: ........ 12,885  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: .......... 184  Unexpect: ......... 1  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................ 97  Packets: ......... 85  |
+|                            TSrate: . 47,783,793 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0399 (921)                                        AC-3 Audio (fra)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x039A (922)                                        AC-3 Audio (eng)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: ...... Scrambled  Adapt.F.: ........... 42  Unexpect: ......... 0  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x03AE (942)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles, no aspect ratio                                             |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 2  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x03AF (943)                                         Subtitles (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 23,134 b/s  Packets: ............ 54  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 3  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x03C5 (965)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03CB (971)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03D0 (976)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03D1 (977)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03D4 (980)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 21,849 b/s  Packets: ............ 51  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03D5 (981)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,283 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03D6 (982)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x03E8 (1000)                                                    PMT  |
+|  Service: 0x226A (8810) CNEWS                                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x03F2 (1010)                                              AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x226A (8810) CNEWS                                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,702,393 b/s  Packets: ......... 8,642  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 175  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................ 98  Packets: ......... 75  |
+|                            TSrate: . 47,787,610 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x03FD (1021)                                       AC-3 Audio (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 6                      |
+|  Service: 0x226A (8810) CNEWS                                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 191,503 b/s  Packets: ........... 447  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 42  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 21  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0BC9 (3017)                                           Unreferenced  |
+|-----------------------------------------------------------------------------|
+|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Bitrate: ... 182,934 b/s  Packets: ........... 427  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 74  |
+|=============================================================================|
+|  PID: 0x0FA5 (4005)                       MPEG-2 Private sections (Canal+)  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 48,411 b/s  Packets: ........... 113  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 113  |
+|=============================================================================|
+|  PID: 0x1003 (4099)                                                    PMT  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,566 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x1449 (5193)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 253,195 b/s  Packets: ........... 591  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 587  |
+|=============================================================================|
+|  PID: 0x1645 (5701)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,426 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 0  |
+|=============================================================================|
+|  PID: 0x1646 (5702)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 66,404 b/s  Packets: ........... 155  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 155  |
+|=============================================================================|
+|  PID: 0x1647 (5703)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,141 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 0  |
+|=============================================================================|
+|  PID: 0x164E (5710)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 104,962 b/s  Packets: ........... 245  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 245  |
+|=============================================================================|
+|  PID: 0x1650 (5712)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,854 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 2  |
+|=============================================================================|
+|  PID: 0x165D (5725)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,426 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 0  |
+|=============================================================================|
+|  PID: 0x168A (5770)                Viaccess EMM for SOID 266048 (0x040F40)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 9,853 b/s  Packets: ............ 23  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 23  |
+|=============================================================================|
+|  PID: 0x168C (5772)                                                         |
+|                 Viaccess EMM for SOID 199424 (0x030B00), 206896 (0x032830)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 9,425 b/s  Packets: ............ 22  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 22  |
+|=============================================================================|
+|  PID: 0x168F (5775)                Viaccess EMM for SOID 207168 (0x032940)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 145,662 b/s  Packets: ........... 340  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 340  |
+|=============================================================================|
+|  PID: 0x1690 (5776)                                                         |
+|               Viaccess EMM for SOID 206896 (0x032830), 13631680 (0xD000C0)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 38,986 b/s  Packets: ............ 91  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 91  |
+|=============================================================================|
+|  PID: 0x1699 (5785)                Viaccess EMM for SOID 207136 (0x032920)  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 4,712 b/s  Packets: ............ 11  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 11  |
+|=============================================================================|
+|  PID: 0x1800 (6144)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 30,417 b/s  Packets: ............ 71  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 71  |
+|=============================================================================|
+|  PID: 0x1801 (6145)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 22,706 b/s  Packets: ............ 53  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 53  |
+|=============================================================================|
+|  PID: 0x1802 (6146)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,423 b/s  Packets: ............ 36  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 36  |
+|=============================================================================|
+|  PID: 0x1FFF (8191)                                               Stuffing  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: . 7,280,973 b/s  Packets: ........ 16,995  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x0438 (1080)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 94  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 105  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ...... 99  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 93  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 106  ms  Version: ............ 8                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x0001 (1)                                 |
+|      Repetition: ..... 499  ms  Section cnt: ....... 18                     |
+|      Min repet.: ..... 494  ms  Table cnt: .......... 6                     |
+|      Max repet.: ..... 505  ms  Version: ........... 26                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x0438 (1080)                              |
+|      Repetition: ..... 158  ms  Section cnt: ....... 13                     |
+|      Min repet.: ....... 2  ms  Table cnt: ......... 13                     |
+|      Max repet.: ..... 516  ms  Version: ........... 10                     |
+|-----------------------------------------------------------------------------|
+|  0x4A (74, BAT), TID ext: 0xC001 (49153)                                    |
+|      Repetition: ..... 424  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 424  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 424  ms  Version: ........... 15                     |
+|-----------------------------------------------------------------------------|
+|  0x4A (74, BAT), TID ext: 0xC01D (49181)                                    |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 9                     |
+|=============================================================================|
+|  PID: 0x00C8 (200)                                                     PMT  |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2262 (8802)                                      |
+|      Repetition: ..... 100  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 93  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 107  ms  Version: ........... 15                     |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2263 (8803)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 89  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 109  ms  Version: ........... 13                     |
+|=============================================================================|
+|  PID: 0x016E (366)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 198  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 187  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x0173 (371)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 203  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 253  ms                                              |
+|=============================================================================|
+|  PID: 0x0178 (376)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x0179 (377)                                         Nagravision ECM  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 206  ms                                              |
+|=============================================================================|
+|  PID: 0x017C (380)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x017E (382)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0183 (387)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 200  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 194  ms                                              |
+|      Max repet.: ..... 205  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 204  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 204  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2264 (8804)                                      |
+|      Repetition: ..... 100  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 93  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 106  ms  Version: ........... 14                     |
+|=============================================================================|
+|  PID: 0x01D2 (466)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 195  ms                                              |
+|      Max repet.: ..... 210  ms                                              |
+|=============================================================================|
+|  PID: 0x01D7 (471)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 195  ms                                              |
+|      Max repet.: ..... 209  ms                                              |
+|=============================================================================|
+|  PID: 0x01DC (476)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 198  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 190  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x01DD (477)                                         Nagravision ECM  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 195  ms                                              |
+|      Max repet.: ..... 208  ms                                              |
+|=============================================================================|
+|  PID: 0x01E0 (480)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 201  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 201  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x01E2 (482)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 193  ms                                              |
+|      Max repet.: ..... 205  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x01E7 (487)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2264 (8804) CANAL+ SPORT                                        |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 191  ms                                              |
+|      Max repet.: ..... 206  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x01F4 (500)                                                     PMT  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2265 (8805)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 93  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 106  ms  Version: ........... 30                     |
+|=============================================================================|
+|  PID: 0x0236 (566)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x023B (571)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x0240 (576)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x0241 (577)                                         Nagravision ECM  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 193  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|=============================================================================|
+|  PID: 0x0244 (580)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 202  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0246 (582)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 200  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 194  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x024B (587)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0258 (600)                                                     PMT  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2266 (8806)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 93  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 106  ms  Version: ............ 8                     |
+|=============================================================================|
+|  PID: 0x029A (666)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Nagravision ECM (even))                                         |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 207  ms                                              |
+|=============================================================================|
+|  PID: 0x029F (671)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Nagravision ECM (even))                                         |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x02A4 (676)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Nagravision ECM (even))                                         |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|=============================================================================|
+|  PID: 0x02A5 (677)                                         Nagravision ECM  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Nagravision ECM (even))                                         |
+|      Repetition: ..... 199  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 195  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|=============================================================================|
+|  PID: 0x02A8 (680)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 207  ms                                              |
+|=============================================================================|
+|  PID: 0x02AA (682)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x02AF (687)                 Viaccess ECM for SOID 266048 (0x040F40)  |
+|  Service: 0x2266 (8806) CANAL+ SERIES                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 201  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 219  ms                                              |
+|=============================================================================|
+|  PID: 0x02BC (700)                                                     PMT  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2267 (8807)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 88  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 110  ms  Version: ............ 5                     |
+|=============================================================================|
+|  PID: 0x02FD (765)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 193  ms                                              |
+|      Max repet.: ..... 206  ms                                              |
+|=============================================================================|
+|  PID: 0x0303 (771)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 202  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 230  ms                                              |
+|=============================================================================|
+|  PID: 0x0308 (776)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 209  ms                                              |
+|=============================================================================|
+|  PID: 0x0309 (777)                                         Nagravision ECM  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x030C (780)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 194  ms                                              |
+|      Max repet.: ..... 205  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x030D (781)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x030E (782)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2267 (8807) CINE+ FRISSON                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0320 (800)                                                     PMT  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2268 (8808)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 95  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 108  ms  Version: ............ 7                     |
+|=============================================================================|
+|  PID: 0x0361 (865)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0367 (871)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x036C (876)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 205  ms                                              |
+|=============================================================================|
+|  PID: 0x036D (877)                                         Nagravision ECM  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 198  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 191  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|=============================================================================|
+|  PID: 0x0370 (880)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0371 (881)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0372 (882)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x0384 (900)                                                     PMT  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x2269 (8809)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 95  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 107  ms  Version: ............ 7                     |
+|=============================================================================|
+|  PID: 0x03C5 (965)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 201  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 194  ms                                              |
+|      Max repet.: ..... 231  ms                                              |
+|=============================================================================|
+|  PID: 0x03CB (971)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 195  ms                                              |
+|      Max repet.: ..... 210  ms                                              |
+|=============================================================================|
+|  PID: 0x03D0 (976)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 199  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 202  ms                                              |
+|=============================================================================|
+|  PID: 0x03D1 (977)                                         Nagravision ECM  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Nagravision ECM (odd))                                          |
+|      Repetition: ..... 200  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 198  ms                                              |
+|      Max repet.: ..... 205  ms                                              |
+|=============================================================================|
+|  PID: 0x03D4 (980)                 Viaccess ECM for SOID 206896 (0x032830)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 197  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x03D5 (981)                 Viaccess ECM for SOID 207136 (0x032920)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 196  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x03D6 (982)                 Viaccess ECM for SOID 207168 (0x032940)  |
+|  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, Viaccess ECM (even))                                            |
+|      Repetition: ..... 199  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 194  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x81 (129, Viaccess ECM (odd))                                             |
+|      Repetition: ..... 200  ms  Section cnt: ........ 2                     |
+|      Min repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x03E8 (1000)                                                    PMT  |
+|  Service: 0x226A (8810) CNEWS                                               |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x226A (8810)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 94  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 108  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x1003 (4099)                                                    PMT  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x22C3 (8899)                                      |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 89  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 109  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x1449 (5193)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  0x82 (130, Nagravision EMM)                                                |
+|      Repetition: ....... 4  ms  Section cnt: ...... 805                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ..... 345  ms                                              |
+|=============================================================================|
+|  PID: 0x1646 (5702)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  0x84 (132, Nagravision EMM)                                                |
+|      Repetition: ...... 21  ms  Section cnt: ...... 152                     |
+|      Min repet.: ...... 19  ms                                              |
+|      Max repet.: ...... 43  ms                                              |
+|=============================================================================|
+|  PID: 0x164E (5710)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  0x84 (132, Nagravision EMM)                                                |
+|      Repetition: ...... 13  ms  Section cnt: ...... 239                     |
+|      Min repet.: ....... 6  ms                                              |
+|      Max repet.: ..... 200  ms                                              |
+|=============================================================================|
+|  PID: 0x1650 (5712)                                        Nagravision EMM  |
+|-----------------------------------------------------------------------------|
+|  0x83 (131, Nagravision EMM)                                                |
+|      Repetition: ..... 180  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 148  ms                                              |
+|      Max repet.: ..... 299  ms                                              |
+|=============================================================================|
+|  PID: 0x168A (5770)                Viaccess EMM for SOID 266048 (0x040F40)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ..... 317  ms  Section cnt: ....... 10                     |
+|      Min repet.: ..... 149  ms                                              |
+|      Max repet.: .... 1350  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8C (140, Viaccess EMM-GH (even))                                         |
+|      Repetition: ..... 631  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 150  ms                                              |
+|      Max repet.: .... 1955  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ..... 110  ms  Section cnt: ....... 20                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: .... 1053  ms                                              |
+|=============================================================================|
+|  PID: 0x168C (5772)                                                         |
+|                 Viaccess EMM for SOID 199424 (0x030B00), 206896 (0x032830)  |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ...... 49  ms  Section cnt: ....... 65                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ..... 151  ms                                              |
+|=============================================================================|
+|  PID: 0x168F (5775)                Viaccess EMM for SOID 207168 (0x032940)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ...... 10  ms  Section cnt: ....... 96                     |
+|      Min repet.: ....... 6  ms                                              |
+|      Max repet.: ...... 52  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8C (140, Viaccess EMM-GH (even))                                         |
+|      Repetition: ..... 158  ms  Section cnt: ....... 15                     |
+|      Min repet.: ..... 148  ms                                              |
+|      Max repet.: ..... 220  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ...... 29  ms  Section cnt: ........ 4                     |
+|      Min repet.: ....... 9  ms                                              |
+|      Max repet.: ...... 69  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ....... 7  ms  Section cnt: ...... 395                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ..... 593  ms                                              |
+|=============================================================================|
+|  PID: 0x1690 (5776)                                                         |
+|               Viaccess EMM for SOID 206896 (0x032830), 13631680 (0xD000C0)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ...... 77  ms  Section cnt: ....... 20                     |
+|      Min repet.: ...... 36  ms                                              |
+|      Max repet.: ..... 713  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8C (140, Viaccess EMM-GH (even))                                         |
+|      Repetition: ..... 331  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 299  ms                                              |
+|      Max repet.: ..... 414  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8D (141, Viaccess EMM-GH (odd))                                          |
+|      Repetition: ..... 101  ms  Section cnt: ........ 8                     |
+|      Min repet.: ...... 73  ms                                              |
+|      Max repet.: ..... 189  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8E (142, Viaccess EMM-S)                                                 |
+|      Repetition: ...... 16  ms  Section cnt: ...... 187                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ..... 676  ms                                              |
+|=============================================================================|
+|  PID: 0x1699 (5785)                Viaccess EMM for SOID 207136 (0x032920)  |
+|-----------------------------------------------------------------------------|
+|  0x88 (136, Viaccess EMM-U)                                                 |
+|      Repetition: ..... 429  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 300  ms                                              |
+|      Max repet.: ..... 601  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8A (138, Viaccess EMM-GA (even))                                         |
+|      Repetition: .... 1803  ms  Section cnt: ........ 2                     |
+|      Min repet.: .... 1803  ms                                              |
+|      Max repet.: .... 1803  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x8B (139, Viaccess EMM-GA (odd))                                          |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x1800 (6144)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  0xB1 (177, LL_FEC_parity_data_table (ETSI EN 301 790)), TID ext: 0x1234 (  |
+|      Repetition: ..... 200  ms  Section cnt: ....... 32                     |
+|      Min repet.: ..... 200  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 200  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0xB2 (178, unknown), TID ext: 0x1234 (4660)                                |
+|      Repetition: ..... 100  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 49  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 150  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x1801 (6145)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  0xB3 (179, unknown), TID ext: 0x1234 (4660)                                |
+|      Repetition: ..... 199  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 199  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 200  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0xB4 (180, unknown), TID ext: 0x1234 (4660)                                |
+|      Repetition: ..... 299  ms  Section cnt: ....... 33                     |
+|      Min repet.: ..... 266  ms  Table cnt: ......... 11                     |
+|      Max repet.: ..... 333  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x1802 (6146)                                MPEG-2 Private sections  |
+|  Service: 0x22C3 (8899) DATASYSTEM                                          |
+|-----------------------------------------------------------------------------|
+|  0xB5 (181, unknown), TID ext: 0x1234 (4660)                                |
+|      Repetition: ...... 99  ms  Section cnt: ....... 33                     |
+|      Min repet.: ...... 99  ms  Table cnt: ......... 33                     |
+|      Max repet.: ..... 100  ms  Version: ............ 0                     |
+===============================================================================
+
