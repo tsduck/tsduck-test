@@ -21,7 +21,7 @@
 |  TOT country code: ..............................................  Unknown  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x0101  (unknown) .................................... C    7,138,300 b/s  |
+|  0x0101  France 2 ..................................... C    7,138,300 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
@@ -37,17 +37,17 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Global PID's ................................. C       17,485 b/s  |
-|  0x0000  PAT .......................................... C       14,795 b/s  |
-|  0x1FFF  Stuffing ..................................... C        2,690 b/s  |
+|  0x0000  PAT .......................................... C       16,140 b/s  |
+|  0x0011  SDT/BAT ...................................... C        1,345 b/s  |
 |=============================================================================|
-|  Service: 0x0101 (257), TS: 0x0001 (1), Original Netw: 0x0000 (0)           |
-|  Service name: (unknown), provider: (unknown)                               |
-|  Service type: 0x00 (unknown)                                               |
+|  Service: 0x0101 (257), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: France 2, provider: GR1 A                                    |
+|  Service type: 0x01 (Digital television service)                            |
 |  TS packets: 5,307, PID's: 7 (clear: 7, scrambled: 0)                       |
 |  PMT PID: 0x006E (110), PCR PID: 0x0078 (120)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  unknown (0x00) ............................... C    7,138,300 b/s  |
+|   Total  Digital television service ................... C    7,138,300 b/s  |
 |  0x006E  PMT .......................................... C       16,140 b/s  |
 |  0x0078  AVC video (1920x1080, high profile, level 4.0  C    6,676,940 b/s  |
 |  0x0082  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      133,162 b/s  |
@@ -65,13 +65,21 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 14,795 b/s  Packets: ............ 11  Expected: ......... 0  |
+|  Bitrate: .... 16,140 b/s  Packets: ............ 12  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
-|                            PCR: ................. 0  Unit start: ...... 11  |
+|                            PCR: ................. 0  Unit start: ...... 12  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,345 b/s  Packets: ............. 1  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 1  |
 |=============================================================================|
 |  PID: 0x006E (110)                                                     PMT  |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 16,140 b/s  Packets: ............ 12  Expected: ......... 0  |
@@ -82,7 +90,7 @@
 |  PID: 0x0078 (120)                                               AVC video  |
 |  PES stream id: 0xE0 (Video 0)                                              |
 |  1920x1080, high profile, level 4.0, 4:2:0                                  |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: . 6,676,940 b/s  Packets: ......... 4,964  Expected: ......... 0  |
@@ -94,7 +102,7 @@
 |  PID: 0x0082 (130)                                      E-AC-3 Audio (fre)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ... 133,162 b/s  Packets: ............ 99  Expected: ......... 0  |
@@ -106,7 +114,7 @@
 |  PID: 0x0083 (131)                                      E-AC-3 Audio (qad)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  E-AC-3, stereo (L,R), @48,000 Hz, visually impaired, bsid 16               |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ... 131,817 b/s  Packets: ............ 98  Expected: ......... 0  |
@@ -118,7 +126,7 @@
 |  PID: 0x0084 (132)                                      E-AC-3 Audio (qaa)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ... 131,817 b/s  Packets: ............ 98  Expected: ......... 0  |
@@ -130,7 +138,7 @@
 |  PID: 0x008C (140)                                         Subtitles (fra)  |
 |  PES stream id: 0xBE (Padding stream)                                       |
 |  DVB subtitles for hard of hearing, high definition                         |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 44,387 b/s  Packets: ............ 33  Expected: ......... 0  |
@@ -142,7 +150,7 @@
 |  PID: 0x008E (142)                                         Subtitles (fra)  |
 |  PES stream id: 0xBE (Padding stream)                                       |
 |  DVB subtitles, high definition                                             |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ..... 4,035 b/s  Packets: ............. 3  Expected: ......... 0  |
@@ -150,14 +158,6 @@
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 3  |
 |                                                      Inv.Start: ........ 0  |
-|=============================================================================|
-|  PID: 0x1FFF (8191)                                               Stuffing  |
-|-----------------------------------------------------------------------------|
-|  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 2,690 b/s  Packets: ............. 2  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  Sections:              |
-|                            PCR: ................. 0  Unit start: ....... 0  |
 ===============================================================================
 
 
@@ -167,16 +167,23 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0001 (1)                                         |
-|      Repetition: ..... 100  ms  Section cnt: ....... 11                     |
-|      Min repet.: ...... 87  ms  Table cnt: ......... 11                     |
+|      Repetition: ...... 96  ms  Section cnt: ....... 12                     |
+|      Min repet.: ...... 51  ms  Table cnt: ......... 12                     |
 |      Max repet.: ..... 109  ms  Version: ............ 6                     |
 |=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x0001 (1)                                 |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 19                     |
+|=============================================================================|
 |  PID: 0x006E (110)                                                     PMT  |
-|  Service: 0x0101 (257) (unknown)                                            |
+|  Service: 0x0101 (257) France 2                                             |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x0101 (257)                                       |
-|      Repetition: ...... 99  ms  Section cnt: ....... 11                     |
-|      Min repet.: ...... 86  ms  Table cnt: ......... 11                     |
+|      Repetition: ..... 100  ms  Section cnt: ....... 12                     |
+|      Min repet.: ...... 86  ms  Table cnt: ......... 12                     |
 |      Max repet.: ..... 112  ms  Version: ............ 1                     |
 ===============================================================================
 
