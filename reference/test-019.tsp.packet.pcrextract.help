@@ -54,6 +54,12 @@ Options:
       Report Presentation Time Stamps (PTS). By default, if none of --pcr,
       --opcr, --pts, --dts is specified, report them all.
 
+  --scte35
+      Detect and report PTS in SCTE 35 commands. Imply --log and --pts. If no
+      --pid option is specified, detect all SCTE 35 PID's. If some --pid option
+      is specified, report only SCTE PID's which are synchronized with the
+      specified --pid options.
+
   -s value
   --separator value
       stringField separator string in CSV output (default: ';').
