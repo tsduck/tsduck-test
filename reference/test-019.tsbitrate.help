@@ -31,6 +31,14 @@ Options:
   --help
       Display this help text.
 
+  -i
+  --ignore-errors
+      Ignore transport stream errors such as discontinuities. When errors are
+      not ignored (the default), the bitrate of the original stream (before
+      corruptions) is evaluated. When errors are ignored, the bitrate of the
+      received stream is evaluated, missing packets being considered as
+      non-existent.
+
   --min-pcr value
       p analysis when that number of PCR are read from the required minimum
       number of PID (default: 64).
