@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <DSMCC_stream_descriptors_table>
+
+    <NPT_reference_descriptor
+        STC_reference="0x5678"
+        NPT_reference="0x1234"
+        scale_numerator="0"
+        scale_denominator="0"/>
+
+    <NPT_reference_descriptor
+        post_discontinuity="false"
+        content_id="3"
+        STC_reference="0x123456789"
+        NPT_reference="0x198765432"
+        scale_numerator="10"
+        scale_denominator="13"/>
+
+    <NPT_endpoint_descriptor start_NPT="0x123456789" stop_NPT="0x12345ABCD"/>
+
+    <stream_mode_descriptor stream_mode="1"/>
+
+    <stream_event_descriptor event_id="1" event_NPT="0x123456789"/>
+
+    <stream_event_descriptor event_id="2" event_NPT="0x12345ABCD">
+      <private_data>
+        01 02 03
+      </private_data>
+    </stream_event_descriptor>
+
+    <stream_event_descriptor event_id="3" event_NPT="0x1234567EE">
+      <private_text>Test</private_text>
+    </stream_event_descriptor>
+
+  </DSMCC_stream_descriptors_table>
+
+</tsduck>

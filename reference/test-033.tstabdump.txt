@@ -1,0 +1,32 @@
+
+* DSM-CC SD, TID 61 (0x3D)
+  Section: 0 (last: 0), version: 0, size: 115 bytes
+  Table id extension: 0xFFFF (65535)
+  - Descriptor 0: DSM-CC NPT Reference (0x17, 23), 18 bytes
+    Post discontinuity: false
+    Content id: 0x0000007F (127)
+    STC reference: 0x000005678 (22136)
+    NPT reference: 0x000001234 (4660)
+    NPT/STC scale: 0/0
+  - Descriptor 1: DSM-CC NPT Reference (0x17, 23), 18 bytes
+    Post discontinuity: false
+    Content id: 0x00000003 (3)
+    STC reference: 0x123456789 (4886718345)
+    NPT reference: 0x198765432 (6852858930)
+    NPT/STC scale: 10/13
+  - Descriptor 2: DSM-CC NPT Endpoint (0x18, 24), 14 bytes
+    Start NPT: 0x123456789 (4886718345)
+    Stop NPT:  0x12345ABCD (4886735821)
+  - Descriptor 3: DSM-CC Stream Mode (0x19, 25), 2 bytes
+    Stream mode: 0x01 (Pause)
+  - Descriptor 4: DSM-CC Stream Event (0x1A, 26), 10 bytes
+    Event id: 0x0001 (1), NPT: 0x123456789 (4886718345)
+  - Descriptor 5: DSM-CC Stream Event (0x1A, 26), 13 bytes
+    Event id: 0x0002 (2), NPT: 0x12345ABCD (4886735821)
+    Private data:
+    0000:  01 02 03                                         ...
+  - Descriptor 6: DSM-CC Stream Event (0x1A, 26), 14 bytes
+    Event id: 0x0003 (3), NPT: 0x1234567EE (4886718446)
+    Private data:
+    0000:  54 65 73 74                                      Test
+
