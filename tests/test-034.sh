@@ -18,3 +18,14 @@ $(tspath tsswitch) --synchronous-log \
 
 test_bin $SCRIPT.1.ts
 test_text $SCRIPT.1.log
+
+# Same with two cycles.
+$(tspath tsswitch) --synchronous-log --cycle 2 \
+    -I file $(fpath "$INFILE1") \
+    -I file $(fpath "$INFILE2") \
+    -I file $(fpath "$INFILE3") \
+    -O file $(fpath "$OUTDIR/$SCRIPT.2.ts") \
+    >"$OUTDIR/$SCRIPT.2.log" 2>&1
+
+test_bin $SCRIPT.2.ts
+test_text $SCRIPT.2.log
