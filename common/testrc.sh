@@ -41,8 +41,11 @@ usage() { echo >&2 "invalid command, try \"$SCRIPT --help\""; exit 1; }
 # Prefix of a file path (remove extension).
 prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
 
-# Detect various types of UNIX-like environments on UNIX
-case $(uname -s | tr A-Z a-z) in
+# Operating system.
+OS=$(uname -s | tr A-Z a-z)
+
+# Detect various types of UNIX-like environments on UNIX.
+case $OS in
     cygwin*|msys*|mingw*)
         WINDOWS=true
         TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc2017
@@ -167,6 +170,10 @@ if $WINDOWS; then
 else
     fpath() { echo "$1"; }
 fi
+
+# Command prefix on macOS.
+CMDPREFIX=
+[[ $OS == darwin && -n "$LD_LIBRARY_PATH" ]] && CMDPREFIX="LD_LIBRARY_PATH=$LD_LIBRARY_PATH "
 
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }

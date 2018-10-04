@@ -35,9 +35,9 @@ test_text $SCRIPT.2.log
 
 # Same with created processes.
 $(tspath tsswitch) --synchronous-log --cycle 2 \
-    -I fork 'tsp -I file '$(fpath "$INFILE1") \
-    -I fork 'tsp -I file '$(fpath "$INFILE2") \
-    -I fork 'tsp -I file '$(fpath "$INFILE3") \
+    -I fork "${CMDPREFIX}tsp -I file "$(fpath "$INFILE1") \
+    -I fork "${CMDPREFIX}tsp -I file "$(fpath "$INFILE2") \
+    -I fork "${CMDPREFIX}tsp -I file "$(fpath "$INFILE3") \
     -O file $(fpath "$OUTDIR/$SCRIPT.3.ts") \
     >"$OUTDIR/$SCRIPT.3.log" 2>&1
 
