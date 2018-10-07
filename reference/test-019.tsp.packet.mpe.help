@@ -42,6 +42,22 @@ Options:
       Specify the maximum number of datagrams to extract, then stop. By
       default, all datagrams are extracted.
 
+  --max-net-size value
+      Specify the maximum size in bytes of the network datagrams to filter.
+
+  --max-udp-size value
+      Specify the maximum size in bytes of the UDP datagrams to filter.
+
+  --min-net-size value
+      Specify the minimum size in bytes of the network datagrams to filter.
+
+  --min-udp-size value
+      Specify the minimum size in bytes of the UDP datagrams to filter.
+
+  --net-size value
+      Specify the exact size in bytes of the network datagrams to filter. This
+      option is incompatible with --min-net-size and --max-net-size.
+
   -o filename
   --output-file filename
       Specify that the extracted UDP datagrams are saved in this file. The UDP
@@ -84,4 +100,8 @@ Options:
       By default, the destination address and port of each datagram is left
       unchanged. The source address of the forwarded datagrams will be the
       address of the local machine.
+
+  --udp-size value
+      Specify the exact size in bytes of the UDP datagrams to filter. This
+      option is incompatible with --min-udp-size and --max-udp-size.
 
