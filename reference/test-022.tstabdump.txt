@@ -96,7 +96,7 @@
       Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74)
-  Section: 0 (last: 0), version: 0, size: 524 bytes
+  Section: 0 (last: 0), version: 0, size: 534 bytes
   Application type: 1 (0x0001), Test application: 1
   Common descriptor loop:
   - Descriptor 0: AIT Application Name (0x01, 1), 0 bytes
@@ -236,4 +236,14 @@
       - 128 x 128 for square pixel display
     Reserved bytes:
       0000:  12 36 54 78 96 32                          .6Tx.2
+  - Descriptor 34: AIT Graphics Constraints (0x14, 20), 1 bytes
+    Can run without visible UI: true
+    Handles configuration changed: false
+    Handles externally controlled video: true
+  - Descriptor 35: AIT Graphics Constraints (0x14, 20), 5 bytes
+    Can run without visible UI: false
+    Handles configuration changed: true
+    Handles externally controlled video: false
+    Graphics configuration bytes:
+      01 23 45 67                                      .#Eg
 
