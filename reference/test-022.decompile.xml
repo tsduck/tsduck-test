@@ -169,5 +169,20 @@
         01 23 45 67
       </graphics_configuration>
     </graphics_constraints_descriptor>
+    <application_recording_descriptor scheduled_recording="true" trick_mode_aware="false" time_shift="true" dynamic="false" av_synced="true" initiating_replay="false"/>
+    <application_recording_descriptor scheduled_recording="false" trick_mode_aware="true" time_shift="false" dynamic="true" av_synced="false" initiating_replay="true">
+      <label label="Foo" storage_properties="1"/>
+      <label label="BarDone" storage_properties="2"/>
+      <component tag="0x11"/>
+      <component tag="0x82"/>
+      <component tag="0xAA"/>
+      <component tag="0xFE"/>
+      <private>
+        05 69 87 41 56 32
+      </private>
+      <reserved_future_use>
+        78 96 32 14 56
+      </reserved_future_use>
+    </application_recording_descriptor>
   </AIT>
 </tsduck>

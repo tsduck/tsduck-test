@@ -30,9 +30,9 @@ Options:
 
   -i value
   --interval value
-      Produce a new output file at regular intervals. After outputing a file,
-      the analysis context is reset, ie. each output file contains a fully
-      independent analysis.
+      Produce a new output file at regular intervals. The interval value is in
+      seconds. After outputing a file, the analysis context is reset, ie. each
+      output file contains a fully independent analysis.
 
   -m
   --multiple-files
@@ -45,8 +45,8 @@ Options:
       Complete report about the transport stream, the services and the PID's in
       a normalized output format (useful for automatic analysis).
 
-  -o value
-  --output-file value
+  -o filename
+  --output-file filename
       Specify the output text file for the analysis result. By default, use the
       standard output.
 

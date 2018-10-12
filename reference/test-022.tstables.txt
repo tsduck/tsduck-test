@@ -98,7 +98,7 @@
         Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 534 bytes
+  Version: 0, sections: 1, total size: 575 bytes
   - Section 0:
     Application type: 1 (0x0001), Test application: 1
     Common descriptor loop:
@@ -249,4 +249,28 @@
       Handles externally controlled video: false
       Graphics configuration bytes:
         01 23 45 67                                      .#Eg
+    - Descriptor 36: AIT Application Recording (0x06, 6), 4 bytes
+      Scheduled recording: true
+      Trick mode aware: false
+      Time shift: true
+      Dynamic: false
+      Av synced: true
+      Initiating replay: false
+    - Descriptor 37: AIT Application Recording (0x06, 6), 33 bytes
+      Scheduled recording: false
+      Trick mode aware: true
+      Time shift: false
+      Dynamic: true
+      Av synced: false
+      Initiating replay: true
+      Label: "Foo", storage properties: 0x01
+      Label: "BarDone", storage properties: 0x02
+      Component tag: 0x11 (17)
+      Component tag: 0x82 (130)
+      Component tag: 0xAA (170)
+      Component tag: 0xFE (254)
+      Private data:
+        0000:  05 69 87 41 56 32                          .i.AV2
+      Reserved bytes:
+        0000:  78 96 32 14 56                             x.2.V
 
