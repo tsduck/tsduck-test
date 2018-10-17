@@ -328,3 +328,22 @@
     Min smoothing rate: 0x00096325 (615205) x 400 b/s
     Max smoothing buffer: 0x1234 (4660) bytes
 
+* TSDT, TID 3 (0x03)
+  Section: 0 (last: 0), version: 0, size: 39 bytes
+  - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
+    Compliance: "DVB"
+  - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
+    Extended descriptor: CI Ancillary Data (0x14, 20)
+  - Descriptor 2: Extension Descriptor (0x7F, 127), 6 bytes
+    Extended descriptor: CI Ancillary Data (0x14, 20)
+    Ancillary data:
+    0000:  12 34 56 78 9A                                   .4Vx.
+  - Descriptor 3: Extension Descriptor (0x7F, 127), 2 bytes
+    Extended descriptor: DTS Neural (0x0F, 15)
+    Config Id: 0x02 (2))
+  - Descriptor 4: Extension Descriptor (0x7F, 127), 5 bytes
+    Extended descriptor: DTS Neural (0x0F, 15)
+    Config Id: 0x05 (5))
+    Additional info:
+    0000:  01 89 45                                         ..E
+

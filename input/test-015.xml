@@ -405,4 +405,26 @@
     </service>
   </selection_information_table>
 
+  <TSDT>
+
+    <transport_stream_descriptor compliance="DVB"/>
+
+    <CI_ancillary_data_descriptor/>
+
+    <CI_ancillary_data_descriptor>
+      <ancillary_data>
+        12 34 56 78 9A
+      </ancillary_data>
+    </CI_ancillary_data_descriptor>
+
+    <DTS_neural_descriptor config_id="0x02"/>
+
+    <DTS_neural_descriptor config_id="0x05">
+      <additional_info>
+        01 89 45
+      </additional_info>
+    </DTS_neural_descriptor>
+
+  </TSDT>
+
 </tsduck>
