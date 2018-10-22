@@ -23,8 +23,7 @@
 |  Srv Id  Service Name                              Access          Bitrate  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
-|  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
-|  188 bytes per packet.                                                      |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
 ===============================================================================
 
 
@@ -36,6 +35,7 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Global PID's ................................. C          Unknown  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C          Unknown  |
 |  0x0001  CAT .......................................... C          Unknown  |
 |  0x1449  Nagravision EMM .............................. C          Unknown  |
 |  0x1645  Nagravision EMM .............................. C          Unknown  |

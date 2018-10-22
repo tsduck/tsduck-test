@@ -36,8 +36,7 @@
 |  0x26AC  (unknown) .................................... C          Unknown  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
-|  Note 2: Unless explicitly specified otherwise, all bitrates are based on   |
-|  188 bytes per packet.                                                      |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
 ===============================================================================
 
 
@@ -49,6 +48,7 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Global PID's ................................. C      840,949 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      407,397 b/s  |
 |  0x0000  PAT .......................................... C       15,515 b/s  |
 |  0x0001  CAT .......................................... C       15,515 b/s  |
 |  0x0010  DVB-NIT ...................................... C       32,361 b/s  |
