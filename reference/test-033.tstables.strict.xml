@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <DSMCC_stream_descriptors_table version="0" current="true" table_id_extension="0xFFFF">
+    <!-- PID 0x00C8 (200) -->
+    <NPT_reference_descriptor post_discontinuity="false" content_id="0x7F" STC_reference="0x0000000000005678" NPT_reference="0x0000000000001234" scale_numerator="0" scale_denominator="0"/>
+    <NPT_reference_descriptor post_discontinuity="false" content_id="0x03" STC_reference="0x0000000123456789" NPT_reference="0x0000000198765432" scale_numerator="10" scale_denominator="13"/>
+    <NPT_endpoint_descriptor start_NPT="0x0000000123456789" stop_NPT="0x000000012345ABCD"/>
+    <stream_mode_descriptor stream_mode="0x01"/>
+    <stream_event_descriptor event_id="0x0001" event_NPT="0x0000000123456789"/>
+    <stream_event_descriptor event_id="0x0002" event_NPT="0x000000012345ABCD">
+      <private_data>
+        01 02 03
+      </private_data>
+    </stream_event_descriptor>
+    <stream_event_descriptor event_id="0x0003" event_NPT="0x00000001234567EE">
+      <private_text>Test</private_text>
+    </stream_event_descriptor>
+  </DSMCC_stream_descriptors_table>
+</tsduck>

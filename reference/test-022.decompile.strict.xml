@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <CAT version="0" current="true">
+    <adaptation_field_data_descriptor adaptation_field_data_identifier="0x00"/>
+    <adaptation_field_data_descriptor adaptation_field_data_identifier="0xFF"/>
+    <ancillary_data_descriptor ancillary_data_identifier="0x00"/>
+    <ancillary_data_descriptor ancillary_data_identifier="0xFF"/>
+  </CAT>
+  <INT version="0" current="true" action_type="0x01" processing_order="0x00" platform_id="0x00123456">
+    <target_IP_address_descriptor IPv4_addr_mask="12.34.56.78"/>
+    <target_IP_address_descriptor IPv4_addr_mask="12.34.56.78">
+      <address IPv4_addr="1.2.3.4"/>
+      <address IPv4_addr="54.124.12.78"/>
+    </target_IP_address_descriptor>
+    <target_IP_slash_descriptor/>
+    <target_IP_slash_descriptor>
+      <address IPv4_addr="1.2.3.4" IPv4_slash_mask="16"/>
+      <address IPv4_addr="5.6.7.8" IPv4_slash_mask="24"/>
+    </target_IP_slash_descriptor>
+    <target_IP_source_slash_descriptor/>
+    <target_IP_source_slash_descriptor>
+      <address IPv4_source_addr="1.2.3.4" IPv4_source_slash_mask="8" IPv4_dest_addr="5.6.7.8" IPv4_dest_slash_mask="16"/>
+      <address IPv4_source_addr="45.85.35.14" IPv4_source_slash_mask="24" IPv4_dest_addr="123.124.178.1" IPv4_dest_slash_mask="25"/>
+    </target_IP_source_slash_descriptor>
+    <target_IPv6_address_descriptor IPv6_addr_mask="ffff:ffff:ff00::"/>
+    <target_IPv6_address_descriptor IPv6_addr_mask="ffff:f0::">
+      <address IPv6_addr="fe80::93a3:dea0:2108:b81e"/>
+      <address IPv6_addr="fe80::ba3:a0:8:be"/>
+    </target_IPv6_address_descriptor>
+    <target_IPv6_slash_descriptor/>
+    <target_IPv6_slash_descriptor>
+      <address IPv6_addr="1:2:3:4:5:6:7:8" IPv6_slash_mask="72"/>
+      <address IPv6_addr="fe80::93a3:dea0:2108:b81e" IPv6_slash_mask="128"/>
+    </target_IPv6_slash_descriptor>
+    <target_IPv6_source_slash_descriptor/>
+    <target_IPv6_source_slash_descriptor>
+      <address IPv6_source_addr="41:252:53:48:95:996:a7:ced8" IPv6_source_slash_mask="8" IPv6_dest_addr="fe80::93a3:dea0:2108:b81e" IPv6_dest_slash_mask="16"/>
+      <address IPv6_source_addr="fe80::ba3:a0:8:be" IPv6_source_slash_mask="128" IPv6_dest_addr="::1" IPv6_dest_slash_mask="64"/>
+    </target_IPv6_source_slash_descriptor>
+    <target_MAC_address_descriptor MAC_addr_mask="01:A3:E4:BA:45:74">
+      <address MAC_addr="AB:CD:EF:01:23:45"/>
+    </target_MAC_address_descriptor>
+    <target_MAC_address_range_descriptor>
+      <range MAC_addr_low="12:78:65:32:59:32" MAC_addr_high="78:44:54:54:98:87"/>
+    </target_MAC_address_range_descriptor>
+    <target_serial_number_descriptor/>
+    <target_serial_number_descriptor>
+      12 34 56 78
+    </target_serial_number_descriptor>
+    <target_smartcard_descriptor super_CA_system_id="0x98765432"/>
+    <target_smartcard_descriptor super_CA_system_id="0x12345678">
+      45 89 32 84 21 54
+    </target_smartcard_descriptor>
+    <IPMAC_generic_stream_location_descriptor interactive_network_id="0x1234" modulation_system_type="DVB-T2" modulation_system_id="0x0000" PHY_stream_id="0x0000"/>
+    <IPMAC_generic_stream_location_descriptor interactive_network_id="0x1234" modulation_system_type="0xAB" modulation_system_id="0x7894" PHY_stream_id="0x4568">
+      <selector_bytes>
+        12 34 56 78
+      </selector_bytes>
+    </IPMAC_generic_stream_location_descriptor>
+    <ISP_access_mode_descriptor access_mode="dialup"/>
+    <ISP_access_mode_descriptor access_mode="0xBC"/>
+  </INT>
+  <AIT version="0" current="true" test_application_flag="true" application_type="0x0001">
+    <application_name_descriptor/>
+    <application_name_descriptor>
+      <language code="foo" application_name="Foo app"/>
+      <language code="bar" application_name="Bar app"/>
+    </application_name_descriptor>
+    <application_signalling_descriptor/>
+    <application_signalling_descriptor>
+      <application application_type="0x0001" AIT_version_number="0x02"/>
+      <application application_type="0x0003" AIT_version_number="0x04"/>
+    </application_signalling_descriptor>
+    <application_usage_descriptor usage_type="0x01"/>
+    <dvb_j_application_descriptor/>
+    <dvb_j_application_descriptor>
+      <parameter value="sample"/>
+      <parameter value="parameter"/>
+      <parameter value="test"/>
+    </dvb_j_application_descriptor>
+    <dvb_j_application_location_descriptor base_directory="/base/dir" classpath_extension="ext/dir;other/dir2" initial_class="entryPoint"/>
+    <dvb_html_application_descriptor parameter=""/>
+    <dvb_html_application_descriptor parameter="sample param">
+      <application id="0x0001"/>
+      <application id="0x000A"/>
+      <application id="0x0064"/>
+    </dvb_html_application_descriptor>
+    <dvb_html_application_boundary_descriptor label="sample label" regular_expression="regexp[.*]"/>
+    <dvb_html_application_location_descriptor physical_root="sample/root" initial_path="and/sample/path"/>
+    <ip_signalling_descriptor platform_id="0x00012345"/>
+    <prefetch_descriptor transport_protocol_label="0x01"/>
+    <prefetch_descriptor transport_protocol_label="0x02">
+      <module label="mod1" prefetch_priority="20"/>
+      <module label="Module 2" prefetch_priority="75"/>
+    </prefetch_descriptor>
+    <DII_location_descriptor transport_protocol_label="0x03"/>
+    <DII_location_descriptor transport_protocol_label="0x04">
+      <module DII_identification="0x0001" association_tag="0x0002"/>
+      <module DII_identification="0x0003" association_tag="0x0004"/>
+      <module DII_identification="0x0005" association_tag="0x0006"/>
+      <module DII_identification="0x0007" association_tag="0x0008"/>
+    </DII_location_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x05">
+      <object_carousel original_network_id="0x0001" transport_stream_id="0x0002" service_id="0x0003" component_tag="0x22"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x06">
+      <object_carousel component_tag="0x23"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x07">
+      <ip_mpe alignment_indicator="true"/>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x08">
+      <ip_mpe original_network_id="0x000A" transport_stream_id="0x000B" service_id="0x000C" alignment_indicator="false">
+        <url value="foo://bar/"/>
+        <url value="foo2://bar3/"/>
+      </ip_mpe>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x09">
+      <http>
+        <url base="http://a/">
+          <extension value="a/b"/>
+          <extension value="c/d/e"/>
+          <extension value="f"/>
+        </url>
+        <url base="http://cd/"/>
+        <url base="http://xyz/">
+          <extension value="u/v"/>
+        </url>
+      </http>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x0A">
+      <protocol id="0x1234">
+        45 63 21 47 89 52 01
+      </protocol>
+    </transport_protocol_descriptor>
+    <transport_protocol_descriptor transport_protocol_label="0x0B">
+      <protocol id="0x5678"/>
+    </transport_protocol_descriptor>
+    <application_descriptor service_bound="true" visibility="1" application_priority="20"/>
+    <application_descriptor service_bound="false" visibility="3" application_priority="75">
+      <profile application_profile="0x0001" version="2.3.4"/>
+      <profile application_profile="0x0008" version="11.12.13"/>
+      <transport_protocol label="0x05"/>
+      <transport_protocol label="0x06"/>
+      <transport_protocol label="0x07"/>
+      <transport_protocol label="0x08"/>
+    </application_descriptor>
+    <application_storage_descriptor storage_property="0x01" not_launchable_from_broadcast="false" launchable_completely_from_cache="true" is_launchable_with_older_version="false" version="0x12345678" priority="17"/>
+    <external_application_authorization_descriptor/>
+    <external_application_authorization_descriptor>
+      <application organization_id="0x12345678" application_id="0xABCD" application_priority="8"/>
+      <application organization_id="0x98765432" application_id="0xDEAD" application_priority="89"/>
+    </external_application_authorization_descriptor>
+    <simple_application_location_descriptor initial_path="http://foo/bar/"/>
+    <simple_application_boundary_descriptor/>
+    <simple_application_boundary_descriptor>
+      <prefix boundary_extension="http://x/y/z"/>
+      <prefix boundary_extension="proto://root/"/>
+    </simple_application_boundary_descriptor>
+    <application_icons_descriptor icon_locator="dir/foo.ico" icon_flags="0x0080"/>
+    <application_icons_descriptor icon_locator="a/b/c.ico" icon_flags="0x0047">
+      <reserved_future_use>
+        12 36 54 78 96 32
+      </reserved_future_use>
+    </application_icons_descriptor>
+    <graphics_constraints_descriptor can_run_without_visible_ui="true" handles_configuration_changed="false" handles_externally_controlled_video="true"/>
+    <graphics_constraints_descriptor can_run_without_visible_ui="false" handles_configuration_changed="true" handles_externally_controlled_video="false">
+      <graphics_configuration>
+        01 23 45 67
+      </graphics_configuration>
+    </graphics_constraints_descriptor>
+    <application_recording_descriptor scheduled_recording="true" trick_mode_aware="false" time_shift="true" dynamic="false" av_synced="true" initiating_replay="false"/>
+    <application_recording_descriptor scheduled_recording="false" trick_mode_aware="true" time_shift="false" dynamic="true" av_synced="false" initiating_replay="true">
+      <label label="Foo" storage_properties="1"/>
+      <label label="BarDone" storage_properties="2"/>
+      <component tag="0x11"/>
+      <component tag="0x82"/>
+      <component tag="0xAA"/>
+      <component tag="0xFE"/>
+      <private>
+        05 69 87 41 56 32
+      </private>
+      <reserved_future_use>
+        78 96 32 14 56
+      </reserved_future_use>
+    </application_recording_descriptor>
+  </AIT>
+</tsduck>

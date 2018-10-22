@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="0" current="true" service_id="0x0000">
+    <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x02" component_tag="0x00" language_code="fre" text=""/>
+    <component_descriptor stream_content="0x09" stream_content_ext="0x01" component_type="0x02" component_tag="0x0F" language_code="eng" text="A string description"/>
+    <AAC_descriptor profile_and_level="0x45" SAOC_DE="false"/>
+    <AAC_descriptor profile_and_level="0x21" SAOC_DE="true" AAC_type="0x40">
+      <additional_info>
+        01 23 45 67 89
+      </additional_info>
+    </AAC_descriptor>
+    <DTS_descriptor sample_rate_code="0x0D" bit_rate_code="0x08" nblks="0x10" fsize="0x1234" surround_mode="0x09" lfe="false" extended_surround="0x00"/>
+    <DTS_descriptor sample_rate_code="0x0D" bit_rate_code="0x08" nblks="0x10" fsize="0x1234" surround_mode="0x09" lfe="true" extended_surround="0x02">
+      <additional_info>
+        78 96 54 12
+      </additional_info>
+    </DTS_descriptor>
+    <cable_delivery_system_descriptor frequency="312,000,000" FEC_outer="RS" modulation="16-QAM" symbol_rate="27,450,000" FEC_inner="3/5"/>
+    <cable_delivery_system_descriptor frequency="220,123,700" FEC_outer="none" modulation="64-QAM" symbol_rate="18,000,000" FEC_inner="3/4"/>
+    <application_signalling_descriptor/>
+    <application_signalling_descriptor>
+      <application application_type="0x1234" AIT_version_number="0x0C"/>
+      <application application_type="0x5678" AIT_version_number="0x1F"/>
+    </application_signalling_descriptor>
+    <teletext_descriptor>
+      <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
+      <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
+    </teletext_descriptor>
+    <teletext_descriptor/>
+    <VBI_teletext_descriptor>
+      <teletext language_code="fra" teletext_type="0x05" page_number="888"/>
+      <teletext language_code="fra" teletext_type="0x02" page_number="889"/>
+    </VBI_teletext_descriptor>
+    <VBI_teletext_descriptor/>
+    <VBI_data_descriptor/>
+    <VBI_data_descriptor>
+      <service data_service_id="1">
+        <field field_parity="false" line_offset="0"/>
+        <field field_parity="false" line_offset="10"/>
+        <field field_parity="true" line_offset="20"/>
+      </service>
+      <service data_service_id="3">
+        <reserved>
+          01 23 45 67 89 AB CD EF
+        </reserved>
+      </service>
+    </VBI_data_descriptor>
+    <maximum_bitrate_descriptor maximum_bitrate="6,800,000"/>
+    <time_shifted_event_descriptor reference_service_id="0x1234" reference_event_id="0x5678"/>
+    <time_shifted_service_descriptor reference_service_id="0x9ABC"/>
+    <NVOD_reference_descriptor/>
+    <NVOD_reference_descriptor>
+      <service transport_stream_id="0x1234" original_network_id="0x5678" service_id="0x9ABC"/>
+      <service transport_stream_id="0xFEDC" original_network_id="0xBA98" service_id="0x7654"/>
+    </NVOD_reference_descriptor>
+    <scrambling_descriptor scrambling_mode="0x02"/>
+    <scrambling_descriptor scrambling_mode="0x70"/>
+    <CP_descriptor CP_system_id="0x0001" CP_PID="0x0200"/>
+    <CP_descriptor CP_system_id="0x5678" CP_PID="0x1BCD">
+      <private_data>
+        01 23 45 67 89
+      </private_data>
+    </CP_descriptor>
+    <CP_identifier_descriptor/>
+    <CP_identifier_descriptor>
+      <CP_system_id value="0x0000"/>
+      <CP_system_id value="0x0001"/>
+      <CP_system_id value="0x0002"/>
+      <CP_system_id value="0x0100"/>
+      <CP_system_id value="0x0101"/>
+      <CP_system_id value="0x1234"/>
+    </CP_identifier_descriptor>
+    <service_identifier_descriptor service_identifier="Foo service"/>
+    <multilingual_bouquet_name_descriptor/>
+    <multilingual_bouquet_name_descriptor>
+      <language code="foo" bouquet_name="Foo bouquet"/>
+      <language code="bar" bouquet_name="Bar maid"/>
+    </multilingual_bouquet_name_descriptor>
+    <multilingual_network_name_descriptor/>
+    <multilingual_network_name_descriptor>
+      <language code="foo" network_name="Foo network"/>
+      <language code="bar" network_name="Bar maid"/>
+    </multilingual_network_name_descriptor>
+    <multilingual_component_descriptor component_tag="7"/>
+    <multilingual_component_descriptor component_tag="10">
+      <language code="foo" description="Foo component"/>
+      <language code="bar" description="Bar component"/>
+    </multilingual_component_descriptor>
+    <multilingual_service_name_descriptor/>
+    <multilingual_service_name_descriptor>
+      <language code="foo" service_provider_name="Foo provider" service_name="Foo service"/>
+      <language code="bar" service_provider_name="Bar provider" service_name="Bar maid"/>
+    </multilingual_service_name_descriptor>
+    <AC4_descriptor/>
+    <AC4_descriptor ac4_dialog_enhancement_enabled="false" ac4_channel_mode="1">
+      <ac4_dsi_toc>
+        12 35 65 32 23
+      </ac4_dsi_toc>
+    </AC4_descriptor>
+    <AC4_descriptor>
+      <additional_info>
+        78 96 23 12 45 46
+      </additional_info>
+    </AC4_descriptor>
+    <AC4_descriptor ac4_dialog_enhancement_enabled="true" ac4_channel_mode="2">
+      <ac4_dsi_toc>
+        12 35 65 32 23
+      </ac4_dsi_toc>
+      <additional_info>
+        78 96 23 12 45 46
+      </additional_info>
+    </AC4_descriptor>
+    <service_move_descriptor new_original_network_id="0x1234" new_transport_stream_id="0x5678" new_service_id="0xABCD"/>
+    <service_availability_descriptor availability="true"/>
+    <service_availability_descriptor availability="false">
+      <cell id="0x1234"/>
+      <cell id="0x5678"/>
+      <cell id="0x9ABC"/>
+    </service_availability_descriptor>
+    <stuffing_descriptor/>
+    <stuffing_descriptor>
+      01 23 45 67 89
+    </stuffing_descriptor>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="true" fixed_frame_rate="false" temporal_poc="true" picture_to_display_conversion="false"/>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="true"/>
+    <AVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="false"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369"/>
+    <external_ES_ID_descriptor external_ES_ID="0x4567"/>
+    <MPEG4_audio_descriptor MPEG4_audio_profile_and_level="0x12"/>
+    <MPEG4_video_descriptor MPEG4_visual_profile_and_level="0x34"/>
+    <data_stream_alignment_descriptor alignment_type="0x03"/>
+    <hierarchy_descriptor temporal_scalability="true" spatial_scalability="false" quality_scalability="true" hierarchy_type="9" hierarchy_layer_index="10" tref_present="false" hierarchy_embedded_layer_index="11" hierarchy_channel="12"/>
+    <audio_stream_descriptor free_format="true" ID="0" layer="2" variable_rate_audio="false"/>
+    <video_stream_descriptor multiple_frame_rate="true" frame_rate_code="2" MPEG_1_only="true" constrained_parameter="false" still_picture="true"/>
+    <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="3" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x30" chroma_format="2" frame_rate_extension="false"/>
+    <target_background_grid_descriptor horizontal_size="100" vertical_size="200" aspect_ratio_information="3"/>
+    <video_window_descriptor horizontal_offset="50" vertical_offset="70" window_priority="1"/>
+    <smoothing_buffer_descriptor sb_leak_rate="0x00123456" sb_size="0x00258963"/>
+    <time_slice_fec_identifier_descriptor time_slicing="true" mpe_fec="0x01" frame_size="0x02" max_burst_duration="0x45" max_average_rate="0x08" time_slice_fec_id="0x00"/>
+    <time_slice_fec_identifier_descriptor time_slicing="false" mpe_fec="0x00" frame_size="0x03" max_burst_duration="0x67" max_average_rate="0x03" time_slice_fec_id="0x09">
+      <id_selector_bytes>
+        01 23 45 67 89
+      </id_selector_bytes>
+    </time_slice_fec_identifier_descriptor>
+    <ECM_repetition_rate_descriptor CA_system_id="0x1234" ECM_repetition_rate="100"/>
+    <ECM_repetition_rate_descriptor CA_system_id="0x5678" ECM_repetition_rate="200">
+      <private_data>
+        78 96 32 14
+      </private_data>
+    </ECM_repetition_rate_descriptor>
+    <service_relocated_descriptor old_original_network_id="0x1234" old_transport_stream_id="0x5678" old_service_id="0xABCD"/>
+    <system_clock_descriptor external_clock_reference="false" clock_accuracy_integer="47" clock_accuracy_exponent="3"/>
+    <multiplex_buffer_utilization_descriptor/>
+    <multiplex_buffer_utilization_descriptor LTW_offset_lower_bound="12,345" LTW_offset_upper_bound="23,895"/>
+    <copyright_descriptor copyright_identifier="0x00001234"/>
+    <copyright_descriptor copyright_identifier="0x00006789">
+      <additional_copyright_info>
+        78 96 32 14 52
+      </additional_copyright_info>
+    </copyright_descriptor>
+    <IBP_descriptor closed_gop="false" identical_gop="true" max_gop_length="24"/>
+    <SL_descriptor ES_ID="0x9876"/>
+    <carousel_identifier_descriptor carousel_id="0x12345678"/>
+    <carousel_identifier_descriptor carousel_id="0x96325874">
+      <private_data>
+        45 69 87
+      </private_data>
+    </carousel_identifier_descriptor>
+    <association_tag_descriptor association_tag="0x5823" use="0x7854"/>
+    <association_tag_descriptor association_tag="0x8523" use="0x9654">
+      <selector_bytes>
+        85 23 69
+      </selector_bytes>
+      <private_data>
+        12 25 74 89 63
+      </private_data>
+    </association_tag_descriptor>
+    <deferred_association_tags_descriptor transport_stream_id="0x1234" program_number="0x5678"/>
+    <deferred_association_tags_descriptor transport_stream_id="0x7896" program_number="0x7418">
+      <association tag="0x9654"/>
+      <association tag="0x1236"/>
+      <association tag="0x8546"/>
+      <private_data>
+        78 96 54 12 36
+      </private_data>
+    </deferred_association_tags_descriptor>
+  </PMT>
+  <discontinuity_information_table transition="false"/>
+  <discontinuity_information_table transition="true"/>
+  <selection_information_table version="12" current="true">
+    <partial_transport_stream_descriptor peak_rate="0x00012345"/>
+    <service service_id="0x4567" running_status="not-running"/>
+    <service service_id="0x7418" running_status="running">
+      <partial_transport_stream_descriptor peak_rate="0x00078964" minimum_overall_smoothing_rate="0x00096325" maximum_overall_smoothing_buffer="0x1234"/>
+    </service>
+  </selection_information_table>
+  <TSDT version="0" current="true">
+    <transport_stream_descriptor compliance="DVB"/>
+    <CI_ancillary_data_descriptor/>
+    <CI_ancillary_data_descriptor>
+      <ancillary_data>
+        12 34 56 78 9A
+      </ancillary_data>
+    </CI_ancillary_data_descriptor>
+    <DTS_neural_descriptor config_id="0x02"/>
+    <DTS_neural_descriptor config_id="0x05">
+      <additional_info>
+        01 89 45
+      </additional_info>
+    </DTS_neural_descriptor>
+  </TSDT>
+</tsduck>

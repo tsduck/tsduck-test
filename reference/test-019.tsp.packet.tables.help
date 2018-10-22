@@ -197,6 +197,11 @@ Options:
       With --xml-output, rewrite the same file with each table. The specified
       file always contains one single table, the latest one.
 
+  --strict-xml
+      Save XML documents in strictly conformant XML format. By default, do not
+      escape characters when this is not syntactically necessary to make the
+      XML text more human-readable.
+
   --text-output value
       A synonym for --output-file.
 

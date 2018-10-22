@@ -26,6 +26,14 @@ $(tspath tstabcomp) \
 test_text $SCRIPT.decompile.xml
 test_text $SCRIPT.decompile.log
 
+$(tspath tstabcomp) --strict-xml \
+    --decompile $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
+    --output $(fpath "$OUTDIR/$SCRIPT.decompile.strict.xml") \
+    >"$OUTDIR/$SCRIPT.decompile.strict.log" 2>&1
+
+test_text $SCRIPT.decompile.strict.xml
+test_text $SCRIPT.decompile.strict.log
+
 # ==== tspacketize
 
 $(tspath tspacketize) $(fpath "$INFILE") --pid 200 --output $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
@@ -44,6 +52,13 @@ $(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
 test_text $SCRIPT.tstables.txt
 test_text $SCRIPT.tstables.xml
 test_text $SCRIPT.tstables.log
+
+$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
+    --strict-xml --xml $(fpath "$OUTDIR/$SCRIPT.tstables.strict.xml") \
+    >"$OUTDIR/$SCRIPT.tstables.strict.log" 2>&1
+
+test_text $SCRIPT.tstables.strict.xml
+test_text $SCRIPT.tstables.strict.log
 
 # ==== tstabdump
 

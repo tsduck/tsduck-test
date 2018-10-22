@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PAT version="11" current="true" transport_stream_id="0x03A2">
+    <!-- PID 0x0000 (0), first TS packet: 515, last: 515 -->
+    <service service_id="0x0320" program_map_PID="0x0021"/>
+  </PAT>
+  <PMT version="11" current="true" service_id="0x0320">
+    <!-- PID 0x0021 (33), first TS packet: 517, last: 517 -->
+    <component elementary_PID="0x0040" stream_type="0x06">
+      <T2MI_descriptor t2mi_stream_id="0x00" num_t2mi_streams_minus_one="0" pcr_iscr_common_clock_flag="false"/>
+    </component>
+  </PMT>
+</tsduck>

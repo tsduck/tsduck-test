@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="8" current="true" service_id="0x000A">
+    <!-- PID 0x07D0 (2000), first TS packet: 1,917, last: 1,917 -->
+    <component elementary_PID="0x07D1" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x01"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D2" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x02"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D3" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x03"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D4" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x04"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D5" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x05"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D6" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x06"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+    <component elementary_PID="0x07D7" stream_type="0x0D">
+      <stream_identifier_descriptor component_tag="0x07"/>
+      <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
+    </component>
+  </PMT>
+  <PMT version="15" current="true" service_id="0x00B7">
+    <!-- PID 0x0BB8 (3000), first TS packet: 2,308, last: 2,308 -->
+    <component elementary_PID="0x0BB9" stream_type="0x0D">
+      <data_broadcast_id_descriptor data_broadcast_id="0x000B">
+        <selector_bytes>
+          05 00 00 04 01 E6
+        </selector_bytes>
+      </data_broadcast_id_descriptor>
+    </component>
+  </PMT>
+  <CAT version="1" current="true">
+    <!-- PID 0x0001 (1), first TS packet: 5,733, last: 5,733 -->
+  </CAT>
+  <PAT version="4" current="true" transport_stream_id="0xEB8C" network_PID="0x0010">
+    <!-- PID 0x0000 (0), first TS packet: 5,764, last: 5,764 -->
+    <service service_id="0x000A" program_map_PID="0x07D0"/>
+    <service service_id="0x00B7" program_map_PID="0x0BB8"/>
+  </PAT>
+  <SDT version="12" current="true" transport_stream_id="0xEB8C" original_network_id="0x013E" actual="true">
+    <!-- PID 0x0011 (17), first TS packet: 9,889, last: 9,890 -->
+    <service service_id="0x000A" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x01" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet1</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x03" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>PUSH</text>
+      </data_broadcast_descriptor>
+      <service_descriptor service_type="0x0C" service_provider_name="EUTELSAT" service_name="CANALETTO"/>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x02" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet2</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x03" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>PUSH</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x04" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet 3</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x05" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet4</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x06" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet5</text>
+      </data_broadcast_descriptor>
+      <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x07" language_code="ENG">
+        <selector_bytes>
+          D7 01
+        </selector_bytes>
+        <text>bouquet6</text>
+      </data_broadcast_descriptor>
+    </service>
+    <service service_id="0x00B7" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x80" service_provider_name="EUTELSAT" service_name="Int Table"/>
+    </service>
+  </SDT>
+  <NIT version="9" current="true" network_id="0x007E" actual="true">
+    <!-- PID 0x0010 (16), first TS packet: 11,805, last: 11,805 -->
+    <linkage_descriptor transport_stream_id="0xEB8C" original_network_id="0x007E" service_id="0x00B7" linkage_type="0x0B">
+      <private_data>
+        11 00 00 04 0D 45 4E 47 09 43 41 4E 41 4C 45 54
+        54 4F
+      </private_data>
+    </linkage_descriptor>
+    <transport_stream transport_stream_id="0xEB8C" original_network_id="0x007E">
+      <satellite_delivery_system_descriptor frequency="12,015,000,000" orbital_position="13.0" west_east_flag="east" polarization="horizontal" roll_off="0.20" modulation_system="DVB-S2" modulation_type="8PSK" symbol_rate="27,500,000" FEC_inner="3/4"/>
+    </transport_stream>
+  </NIT>
+</tsduck>

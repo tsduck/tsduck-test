@@ -132,6 +132,13 @@ $(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index \
 test_text $SCRIPT.tstables.xml
 test_text $SCRIPT.tstables.xml.log
 
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index \
+    --strict-xml --xml $(fpath "$OUTDIR/$SCRIPT.tstables.strict.xml") \
+    >"$OUTDIR/$SCRIPT.tstables.strict.xml.log" 2>&1
+
+test_text $SCRIPT.tstables.strict.xml
+test_text $SCRIPT.tstables.strict.xml.log
+
 # ==== tstables, binary sections
 
 $(tspath tstables) $(fpath "$INFILE") $PIDS \

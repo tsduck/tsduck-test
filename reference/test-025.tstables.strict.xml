@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <SDT version="1" current="true" transport_stream_id="0x0001" original_network_id="0x0001" actual="true">
+    <!-- PID 0x0011 (17), first TS packet: 57, last: 57 -->
+    <service service_id="0x0810" EIT_schedule="false" EIT_present_following="false" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x01" service_provider_name="DVB" service_name="P1.1"/>
+    </service>
+  </SDT>
+  <PAT version="1" current="true" transport_stream_id="0x0001">
+    <!-- PID 0x0000 (0), first TS packet: 226, last: 226 -->
+    <service service_id="0x0810" program_map_PID="0x0810"/>
+  </PAT>
+  <PMT version="1" current="true" service_id="0x0810" PCR_PID="0x0100">
+    <!-- PID 0x0810 (2064), first TS packet: 259, last: 259 -->
+    <component elementary_PID="0x1000" stream_type="0x02"/>
+    <component elementary_PID="0x1001" stream_type="0x03"/>
+  </PMT>
+</tsduck>
