@@ -16,12 +16,22 @@ Options:
   -a value
   --audio value
       Remove all audio components except the specified one. The name is a
-      three-letters language code. By default, keep all audio components.
+      three-letters language code. By default, keep all audio components. This
+      option and the --audio-pid option are mutually exclusive.
+
+  --audio-pid value
+      Remove all audio components except the specified audio PID. By default,
+      keep all audio components. This option and the --audio option are
+      mutually exclusive.
 
   -c
   --cas
       Keep Conditional Access System sections (CAT and EMM's). Remove them by
       default. Note that the ECM's for the specified service are always kept.
+
+  --eit
+      Keep EIT sections for the specified service. EIT sections for other
+      services are removed. By default, all EIT's are removed.
 
   --help
       Display this help text.
