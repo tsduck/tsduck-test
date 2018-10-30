@@ -77,6 +77,11 @@ Options:
       Dump all SEI (Supplemental Enhancement Information) in AVC/H.264 access
       units.
 
+  --sei-type value
+      SEI type filter: with --sei-avc, select SEI access units with this type
+      (default: all SEI access units). Several --sei-type options may be
+      specified.
+
   -s
   --start-code
       Dump all start codes in PES packet payload.
