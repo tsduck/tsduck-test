@@ -2,16 +2,16 @@
 ===============================================================================
 |  TRANSPORT STREAM ANALYSIS REPORT                                           |
 |=============================================================================|
-|  Transport Stream Id: ....... 1080 (0x0438)  |  Services: .............. 2  |
-|  Bytes: ......................... 4,656,760  |  PID's: Total: ......... 12  |
-|  TS packets: ....................... 24,770  |         Clear: ......... 12  |
+|  Transport Stream Id: ....... 1080 (0x0438)  |  Services: .............. 1  |
+|  Bytes: ......................... 2,691,784  |  PID's: Total: .......... 8  |
+|  TS packets: ....................... 14,318  |         Clear: .......... 8  |
 |     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
 |     With transport error: ............... 0  |         With PCR's: ..... 2  |
 |     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
-|  User-specified: ......................... 15,764,307 b/s   17,105,950 b/s  |
-|  Estimated based on PCR's: ............... 14,599,285 b/s   15,841,777 b/s  |
+|  User-specified: ......................... 10,201,477 b/s   11,069,687 b/s  |
+|  Estimated based on PCR's: ................ 8,520,132 b/s    9,245,250 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ...................................... 2 sec (0 mn 2 sec)  |
 |  First TDT UTC time stamp: ....................................... Unknown  |
@@ -21,8 +21,7 @@
 |  TOT country code: ..............................................  Unknown  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x2262  CANAL+ DECALE ................................ C    3,971,943 b/s  |
-|  0x226A  CNEWS ........................................ C    4,721,018 b/s  |
+|  0x2262  CANAL+ DECALE ................................ C   10,160,864 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -33,44 +32,29 @@
 |  SERVICES ANALYSIS REPORT                                                   |
 |=============================================================================|
 |  Global PID's                                                               |
-|  TS packets: 11,111, PID's: 4 (clear: 4, scrambled: 0)                      |
+|  TS packets: 57, PID's: 2 (clear: 2, scrambled: 0)                          |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C    7,071,344 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      330,942 b/s  |
-|  0x0000  PAT .......................................... C       16,547 b/s  |
-|  0x0011  SDT/BAT ...................................... C       19,729 b/s  |
-|  0x0012  EIT .......................................... C      294,665 b/s  |
-|  0x1FFF  Stuffing ..................................... C    6,740,402 b/s  |
+|   Total  Global PID's ................................. C       40,612 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       40,612 b/s  |
+|  0x0000  PAT .......................................... C       18,524 b/s  |
+|  0x0011  SDT/BAT ...................................... C       22,087 b/s  |
 |=============================================================================|
 |  Service: 0x2262 (8802), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
 |  Service name: CANAL+ DECALE, provider: CSAT                                |
 |  Service type: 0x19 (Advanced codec HD digital television service)          |
-|  TS packets: 6,241, PID's: 6 (clear: 6, scrambled: 0)                       |
+|  TS packets: 14,261, PID's: 7 (clear: 7, scrambled: 0)                      |
 |  PMT PID: 0x00C8 (200), PCR PID: 0x00D2 (210)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    3,971,943 b/s  |
-|  0x00C8  PMT .......................................... C       16,547 b/s  |
-|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    3,509,260 b/s  |
-|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      213,203 b/s  |
-|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      213,203 b/s  |
+|   Total  Advanced codec HD digital television service . C   10,160,864 b/s  |
+|  0x00C8  PMT .......................................... C       18,524 b/s  |
+|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    3,901,612 b/s  |
+|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      236,547 b/s  |
+|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      236,547 b/s  |
 |  0x00F2  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
-|  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       19,729 b/s  |
-|          (C=Clear, S=Scrambled, +=Shared)                                   |
-|=============================================================================|
-|  Service: 0x226A (8810), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
-|  Service name: CNEWS, provider: CSAT                                        |
-|  Service type: 0x19 (Advanced codec HD digital television service)          |
-|  TS packets: 7,418, PID's: 4 (clear: 4, scrambled: 0)                       |
-|  PMT PID: 0x03E8 (1000), PCR PID: 0x03F2 (1010)                             |
-|-----------------------------------------------------------------------------|
-|     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    4,721,018 b/s  |
-|  0x03E8  PMT .......................................... C       15,910 b/s  |
-|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    4,491,268 b/s  |
-|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      213,839 b/s  |
-|  0x0413  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
+|  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       22,087 b/s  |
+|  0x1000  unknown (0x99) ............................... C    5,745,544 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -81,7 +65,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 16,547 b/s  Packets: ............ 26  Expected: ......... 0  |
+|  Bitrate: .... 18,524 b/s  Packets: ............ 26  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 26  |
@@ -89,24 +73,16 @@
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 19,729 b/s  Packets: ............ 31  Expected: ......... 0  |
+|  Bitrate: .... 22,087 b/s  Packets: ............ 31  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 31  |
-|=============================================================================|
-|  PID: 0x0012 (18)                                                      EIT  |
-|-----------------------------------------------------------------------------|
-|  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 294,665 b/s  Packets: ........... 463  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  Sections:              |
-|                            PCR: ................. 0  Unit start: ..... 219  |
 |=============================================================================|
 |  PID: 0x00C8 (200)                                                     PMT  |
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 16,547 b/s  Packets: ............ 26  Expected: ......... 0  |
+|  Bitrate: .... 18,524 b/s  Packets: ............ 26  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 26  |
@@ -117,11 +93,11 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,509,260 b/s  Packets: ......... 5,514  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: .......... 136  Unexpect: ......... 0  |
+|  Bitrate: . 3,901,612 b/s  Packets: ......... 5,476  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 135  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
-|                            PCR: ................ 73  Packets: ......... 60  |
-|                            TSrate: . 14,593,507 b/s  Inv.Start: ........ 0  |
+|                            PCR: ................ 72  Packets: ......... 60  |
+|                            TSrate: .. 8,520,126 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00DD (221)                                        AC-3 Audio (fra)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
@@ -129,7 +105,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 213,203 b/s  Packets: ........... 335  Expected: ......... 0  |
+|  Bitrate: ... 236,547 b/s  Packets: ........... 332  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 16  |
@@ -141,7 +117,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 213,203 b/s  Packets: ........... 335  Expected: ......... 0  |
+|  Bitrate: ... 236,547 b/s  Packets: ........... 332  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 16  |
@@ -153,52 +129,21 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 19,729 b/s  Packets: ............ 31  Expected: ......... 0  |
+|  Bitrate: .... 22,087 b/s  Packets: ............ 31  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 1  |
 |                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x03E8 (1000)                                                    PMT  |
-|  Service: 0x226A (8810) CNEWS                                               |
+|  PID: 0x1000 (4096)                                         unknown (0x99)  |
+|  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,910 b/s  Packets: ............ 25  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|  Bitrate: . 5,745,544 b/s  Packets: ......... 8,064  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 72  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
-|                            PCR: ................. 0  Unit start: ...... 25  |
-|=============================================================================|
-|  PID: 0x03F2 (1010)                                              AVC video  |
-|  PES stream id: 0xE0 (Video 0)                                              |
-|  1920x1080, high profile, level 4.0, 4:2:0                                  |
-|  Service: 0x226A (8810) CNEWS                                               |
-|-----------------------------------------------------------------------------|
-|  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,491,268 b/s  Packets: ......... 7,057  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: .......... 134  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  PES:                   |
-|                            PCR: ................ 73  Packets: ......... 60  |
-|                            TSrate: . 14,605,063 b/s  Inv.Start: ........ 0  |
-|=============================================================================|
-|  PID: 0x03FD (1021)                                       AC-3 Audio (fra)  |
-|  PES stream id: 0xBD (Private stream 1)                                     |
-|  AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 6                      |
-|  Service: 0x226A (8810) CNEWS                                               |
-|-----------------------------------------------------------------------------|
-|  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 213,839 b/s  Packets: ........... 336  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  PES:                   |
-|                            PCR: ................. 0  Packets: ......... 16  |
-|                                                      Inv.Start: ........ 0  |
-|=============================================================================|
-|  PID: 0x1FFF (8191)                                               Stuffing  |
-|-----------------------------------------------------------------------------|
-|  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: . 6,740,402 b/s  Packets: ........ 10,591  Expected: ......... 0  |
-|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  Sections:              |
-|                            PCR: ................. 0  Unit start: ....... 0  |
+|                            PCR: ................ 72  Unit start: ... 7,890  |
+|                            TSrate: .. 8,520,138 b/s                         |
 ===============================================================================
 
 
@@ -208,31 +153,23 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0438 (1080)                                      |
-|      Repetition: ...... 92  ms  Section cnt: ....... 26                     |
-|      Min repet.: ...... 76  ms  Table cnt: ......... 26                     |
-|      Max repet.: ..... 104  ms  Version: ........... 12                     |
+|      Repetition: ...... 83  ms  Section cnt: ....... 26                     |
+|      Min repet.: ...... 62  ms  Table cnt: ......... 26                     |
+|      Max repet.: ..... 100  ms  Version: ........... 13                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0438 (1080)                              |
-|      Repetition: ...... 64  ms  Section cnt: ....... 31                     |
+|      Repetition: ...... 57  ms  Section cnt: ....... 31                     |
 |      Min repet.: ....... 0  ms  Table cnt: ......... 31                     |
-|      Max repet.: ..... 389  ms  Version: ........... 10                     |
+|      Max repet.: ..... 341  ms  Version: ........... 11                     |
 |=============================================================================|
 |  PID: 0x00C8 (200)                                                     PMT  |
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x2262 (8802)                                      |
-|      Repetition: ...... 92  ms  Section cnt: ....... 26                     |
-|      Min repet.: ...... 77  ms  Table cnt: ......... 26                     |
-|      Max repet.: ..... 107  ms  Version: ........... 15                     |
-|=============================================================================|
-|  PID: 0x03E8 (1000)                                                    PMT  |
-|  Service: 0x226A (8810) CNEWS                                               |
-|-----------------------------------------------------------------------------|
-|  0x02 (2, PMT), TID ext: 0x226A (8810)                                      |
-|      Repetition: ...... 92  ms  Section cnt: ....... 25                     |
-|      Min repet.: ...... 73  ms  Table cnt: ......... 25                     |
-|      Max repet.: ..... 101  ms  Version: ............ 1                     |
+|      Repetition: ...... 83  ms  Section cnt: ....... 26                     |
+|      Min repet.: ...... 62  ms  Table cnt: ......... 26                     |
+|      Max repet.: ..... 107  ms  Version: ........... 16                     |
 ===============================================================================
 
