@@ -865,7 +865,7 @@
   </PMT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D5B" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 1,627, last: 4,680 -->
-    <event event_id="0x00E0" start_time="2017-08-23 12:00:00" duration="00:15:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x00E0" start_time="2017-08-23 12:00:00" duration="00:15:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Basket Room - Luigi Datome</event_name>
         <text></text>
@@ -883,7 +883,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x00E3" start_time="2017-08-23 10:15:00" duration="01:45:00" running_status="running" CA_mode="true">
+    <event event_id="0x00E3" start_time="2017-08-23 10:15:00" duration="01:45:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Basket: Francia - Italia</event_name>
         <text></text>
@@ -1208,7 +1208,7 @@
   </SDT>
   <EIT type="pf" version="20" current="true" actual="true" service_id="0x2D68" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 5,018, last: 7,790 -->
-    <event event_id="0x01C8" start_time="2017-08-23 11:00:38" duration="00:05:00" running_status="running" CA_mode="true">
+    <event event_id="0x01C8" start_time="2017-08-23 11:00:38" duration="00:05:00" running_status="running" CA_mode="true" preferred_section="0">
       <time_shifted_event_descriptor reference_service_id="0x0BB8" reference_event_id="0x9AB0"/>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -1217,7 +1217,7 @@
         03 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01CA" start_time="2017-08-23 11:05:38" duration="00:47:30" running_status="not-running" CA_mode="true">
+    <event event_id="0x01CA" start_time="2017-08-23 11:05:38" duration="00:47:30" running_status="not-running" CA_mode="true" preferred_section="1">
       <time_shifted_event_descriptor reference_service_id="0x0BB8" reference_event_id="0x3000"/>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -1243,7 +1243,7 @@
   </EIT>
   <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D5D" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 7,116, last: 8,484 -->
-    <event event_id="0x0016" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0016" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1261,7 +1261,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0017" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0017" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1282,7 +1282,7 @@
   </EIT>
   <EIT type="pf" version="9" current="true" actual="true" service_id="0x2D53" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 8,144, last: 8,843 -->
-    <event event_id="0x01DC" start_time="2017-08-23 13:00:00" duration="02:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x01DC" start_time="2017-08-23 13:00:00" duration="02:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Primafila</event_name>
         <text></text>
@@ -1300,7 +1300,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01EB" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x01EB" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Primafila</event_name>
         <text></text>
@@ -1649,7 +1649,7 @@
   </SDT>
   <EIT type="pf" version="13" current="true" actual="true" service_id="0x2D5F" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 9,171, last: 12,280 -->
-    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1667,7 +1667,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1688,7 +1688,7 @@
   </EIT>
   <EIT type="pf" version="5" current="true" actual="true" service_id="0x0585" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 9,517, last: 12,949 -->
-    <event event_id="0x0359" start_time="2017-08-23 10:15:00" duration="01:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0359" start_time="2017-08-23 10:15:00" duration="01:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>La seconda casa non si scorda mai</event_name>
         <text></text>
@@ -1709,7 +1709,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0363" start_time="2017-08-23 11:15:00" duration="00:55:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0363" start_time="2017-08-23 11:15:00" duration="00:55:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>100% Sexy</event_name>
         <text></text>
@@ -1730,7 +1730,7 @@
   </EIT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x2D54" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 10,554, last: 13,973 -->
-    <event event_id="0x0132" start_time="2017-08-23 11:00:00" duration="01:34:41" running_status="running" CA_mode="true">
+    <event event_id="0x0132" start_time="2017-08-23 11:00:00" duration="01:34:41" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sopravvissuti</event_name>
         <text></text>
@@ -1784,7 +1784,7 @@
         71 5F 61 13 AE E7 BA 1B
       </generic_descriptor>
     </event>
-    <event event_id="0x0179" start_time="2017-08-23 12:34:41" duration="00:25:19" running_status="not-running" CA_mode="true">
+    <event event_id="0x0179" start_time="2017-08-23 12:34:41" duration="00:25:19" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 15:00 Sopravvissuti</event_name>
         <text></text>
@@ -2065,7 +2065,7 @@
   </SDT>
   <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D61" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 14,327, last: 17,425 -->
-    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -2083,7 +2083,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -2532,7 +2532,7 @@
   </SDT>
   <EIT type="pf" version="0" current="true" actual="true" service_id="0x05BD" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 14,680, last: 18,122 -->
-    <event event_id="0x00BD" start_time="2017-08-23 11:35:00" duration="01:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x00BD" start_time="2017-08-23 11:35:00" duration="01:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Cucine da incubo USA</event_name>
         <text></text>
@@ -2554,7 +2554,7 @@
         5F 28 77 3A A9 32 75 72 77 09 3A 28 5A C7 B7 C2
       </generic_descriptor>
     </event>
-    <event event_id="0x00F9" start_time="2017-08-23 10:40:00" duration="00:55:00" running_status="running" CA_mode="true">
+    <event event_id="0x00F9" start_time="2017-08-23 10:40:00" duration="00:55:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Cucine da incubo USA</event_name>
         <text></text>
@@ -2803,7 +2803,7 @@
   </SDT>
   <EIT type="pf" version="30" current="true" actual="true" service_id="0x2D55" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 15,715, last: 19,139 -->
-    <event event_id="0x012A" start_time="2017-08-23 11:21:15" duration="00:08:45" running_status="not-running" CA_mode="true">
+    <event event_id="0x012A" start_time="2017-08-23 11:21:15" duration="00:08:45" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 La cura dal benessere</event_name>
         <text></text>
@@ -2824,7 +2824,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01E5" start_time="2017-08-23 09:00:00" duration="02:21:15" running_status="running" CA_mode="true">
+    <event event_id="0x01E5" start_time="2017-08-23 09:00:00" duration="02:21:15" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>La cura dal benessere</event_name>
         <text></text>
@@ -2954,7 +2954,7 @@
   </SDT>
   <EIT type="pf" version="20" current="true" actual="true" service_id="0x0BB8" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x00" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 21,207, last: 21,881 -->
-    <event event_id="0x3000" start_time="1970-01-01 00:00:00" duration="00:47:30" running_status="undefined" CA_mode="true">
+    <event event_id="0x3000" start_time="1970-01-01 00:00:00" duration="00:47:30" running_status="undefined" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>I 90 anni della Regina</event_name>
         <text></text>
@@ -2963,7 +2963,7 @@
         <text>"I 90 anni della Regina" - Con interviste ai membri della famiglia reale, ripercorriamo una storia di ispirazione e dovere, la storia della regina Elisabetta II. Scopriamo i numerosi appuntamenti e impegni nell'anno del suo 90esimo compleanno.</text>
       </extended_event_descriptor>
     </event>
-    <event event_id="0x9AB0" start_time="1970-01-01 00:00:00" duration="00:05:00" running_status="undefined" CA_mode="true">
+    <event event_id="0x9AB0" start_time="1970-01-01 00:00:00" duration="00:05:00" running_status="undefined" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Push VOD Buffer Slot</event_name>
         <text></text>
@@ -3261,7 +3261,7 @@
   </SDT>
   <EIT type="pf" version="7" current="true" actual="true" service_id="0x2D62" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 19,465, last: 23,607 -->
-    <event event_id="0x000E" start_time="2017-08-23 13:00:00" duration="05:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x000E" start_time="2017-08-23 13:00:00" duration="05:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>WWE - SummerSlam</event_name>
         <text></text>
@@ -3318,7 +3318,7 @@
         39 39 70 81
       </generic_descriptor>
     </event>
-    <event event_id="0x0012" start_time="2017-08-23 08:00:00" duration="05:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0012" start_time="2017-08-23 08:00:00" duration="05:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>WWE - SummerSlam</event_name>
         <text></text>
@@ -3378,7 +3378,7 @@
   </EIT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D56" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 22,249, last: 24,333 -->
-    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3396,7 +3396,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3430,7 +3430,7 @@
   </SDT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D48" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 23,954, last: 25,011 -->
-    <event event_id="0x000D" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x000D" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>test</event_name>
         <text></text>
@@ -3448,7 +3448,7 @@
         0B FF
       </generic_descriptor>
     </event>
-    <event event_id="0x000E" start_time="2017-08-23 16:00:00" duration="06:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x000E" start_time="2017-08-23 16:00:00" duration="06:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>test</event_name>
         <text></text>
@@ -3588,7 +3588,7 @@
   </SDT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D63" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 24,659, last: 27,054 -->
-    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
+    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3606,7 +3606,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3627,7 +3627,7 @@
   </EIT>
   <EIT type="pf" version="5" current="true" actual="true" service_id="0x2D4D" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 583, last: 28,105 -->
-    <event event_id="0x0030" start_time="2017-08-23 10:35:00" duration="00:50:00" running_status="running" CA_mode="true">
+    <event event_id="0x0030" start_time="2017-08-23 10:35:00" duration="00:50:00" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>The Shield</event_name>
         <text></text>
@@ -3655,7 +3655,7 @@
         5F AC B6 A6 D2 D8 6B CD 80 B5 8F 6F 85
       </generic_descriptor>
     </event>
-    <event event_id="0x0038" start_time="2017-08-23 11:25:00" duration="00:50:00" running_status="not-running" CA_mode="true">
+    <event event_id="0x0038" start_time="2017-08-23 11:25:00" duration="00:50:00" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>The Shield</event_name>
         <text></text>
@@ -3686,7 +3686,7 @@
   </EIT>
   <EIT type="pf" version="29" current="true" actual="true" service_id="0x2D57" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 25,341, last: 29,147 -->
-    <event event_id="0x00BA" start_time="2017-08-23 09:30:00" duration="01:41:34" running_status="running" CA_mode="true">
+    <event event_id="0x00BA" start_time="2017-08-23 09:30:00" duration="01:41:34" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>17 anni (E come uscirne vivi)</event_name>
         <text></text>
@@ -3740,7 +3740,7 @@
         80 F3 AA 1A 3B
       </generic_descriptor>
     </event>
-    <event event_id="0x022E" start_time="2017-08-23 11:11:34" duration="00:18:26" running_status="not-running" CA_mode="true">
+    <event event_id="0x022E" start_time="2017-08-23 11:11:34" duration="00:18:26" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 17 anni (E come uscirne vivi)</event_name>
         <text></text>
@@ -3764,7 +3764,7 @@
   </EIT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D65" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 2,298, last: 30,898 -->
-    <event event_id="0x0138" start_time="2017-08-23 11:10:56" duration="00:19:04" running_status="not-running" CA_mode="true">
+    <event event_id="0x0138" start_time="2017-08-23 11:10:56" duration="00:19:04" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 Fast &amp; Furious 8</event_name>
         <text></text>
@@ -3785,7 +3785,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01B0" start_time="2017-08-23 09:00:00" duration="02:10:56" running_status="running" CA_mode="true">
+    <event event_id="0x01B0" start_time="2017-08-23 09:00:00" duration="02:10:56" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Fast &amp; Furious 8</event_name>
         <text></text>
@@ -4252,7 +4252,7 @@
   </SDT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D51" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 5,362, last: 34,665 -->
-    <event event_id="0x0172" start_time="2017-08-23 11:02:03" duration="00:27:57" running_status="running" CA_mode="true">
+    <event event_id="0x0172" start_time="2017-08-23 11:02:03" duration="00:27:57" running_status="running" CA_mode="true" preferred_section="0">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 Sleepless - Il giustiziere</event_name>
         <text></text>
@@ -4273,7 +4273,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01C6" start_time="2017-08-23 11:30:00" duration="01:32:03" running_status="not-running" CA_mode="true">
+    <event event_id="0x01C6" start_time="2017-08-23 11:30:00" duration="01:32:03" running_status="not-running" CA_mode="true" preferred_section="1">
       <short_event_descriptor language_code="ita">
         <event_name>Sleepless - Il giustiziere</event_name>
         <text></text>
@@ -7829,7 +7829,7 @@
         02
       </private_data>
     </linkage_descriptor>
-    <transport_stream transport_stream_id="0x1388" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x1388" original_network_id="0x013E" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x34BC" service_type="0x83"/>
@@ -7838,7 +7838,7 @@
         FF FF 34 BC 83 0D AC FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x3070" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x3070" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x213F" service_type="0x01"/>
         <service service_id="0x2140" service_type="0x01"/>
@@ -7856,7 +7856,7 @@
         00 66 06 6E 21 41 01 03 81 00 67 06 7E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x30D4" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x30D4" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x4534" service_type="0x19"/>
       </service_list_descriptor>
@@ -7865,7 +7865,7 @@
         00 04 45 34 19 15 56 00 68 06 8E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x23F0" original_network_id="0x013F">
+    <transport_stream transport_stream_id="0x23F0" original_network_id="0x013F" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x2488" service_type="0x01"/>
         <service service_id="0x2492" service_type="0x01"/>
@@ -7876,7 +7876,7 @@
         02 B2 2B 2E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x0320" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x0320" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x057F" service_type="0x01"/>
@@ -7894,7 +7894,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x14B4" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x14B4" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x37A6" service_type="0x19"/>
@@ -7909,7 +7909,7 @@
         FF FF 37 D7 83 01 27 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x15E0" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x15E0" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1E76" service_type="0x83"/>
@@ -7918,7 +7918,7 @@
         FF FF 1E 76 83 03 1E FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1644" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1644" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0FBF" service_type="0x01"/>
@@ -7929,7 +7929,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x16A8" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x16A8" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0E66" service_type="0x96"/>
@@ -7946,7 +7946,7 @@
         70 83 02 B8 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x170C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x170C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x251A" service_type="0x83"/>
@@ -7955,7 +7955,7 @@
         FF FF 25 1A 83 01 F2 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1838" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1838" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2AF7" service_type="0x83"/>
@@ -7971,7 +7971,7 @@
         FF FF 2A F7 83 03 E7 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x189C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x189C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1FBF" service_type="0x01"/>
@@ -7984,7 +7984,7 @@
         FF FF 20 06 83 00 C6 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1900" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1900" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2B39" service_type="0x9B"/>
@@ -7996,7 +7996,7 @@
         FF FF FF F1 2B 57 83 00 5F FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x19C8" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x19C8" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2B6A" service_type="0x01"/>
@@ -8016,7 +8016,7 @@
         FF FF 2B BF 83 00 C7 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1A2C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1A2C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2DC4" service_type="0x01"/>
@@ -8029,7 +8029,7 @@
         FF FF 2E 17 83 03 1F FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1A90" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1A90" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C23" service_type="0x83"/>
@@ -8038,7 +8038,7 @@
         FF FF 2C 23 83 01 2B FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1AF4" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1AF4" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0DC4" service_type="0x82"/>
@@ -8049,7 +8049,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1D4C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1D4C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1020" service_type="0x19"/>
@@ -8064,7 +8064,7 @@
         FF FF 10 63 83 00 C3 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1E14" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1E14" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0FC6" service_type="0x01"/>
@@ -8075,7 +8075,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2008" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2008" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x10CA" service_type="0x83"/>
@@ -8088,7 +8088,7 @@
         FF FF 10 CA 83 01 2A FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x206C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x206C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1C80" service_type="0x83"/>
@@ -8097,7 +8097,7 @@
         FF FF 1C 80 83 01 28 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2198" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2198" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0F89" service_type="0x83"/>
@@ -8106,7 +8106,7 @@
         FF FF 0F 89 83 03 D1 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2260" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2260" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2DB3" service_type="0x83"/>
@@ -8124,7 +8124,7 @@
         02 64 26 4E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x251C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x251C" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C2E" service_type="0x01"/>
@@ -8155,7 +8155,7 @@
         FE 2C 87 83 01 8F FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2580" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2580" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C8B" service_type="0x01"/>
@@ -8185,7 +8185,7 @@
         01 D2 02 72 27 2E 2C EB 83 01 F3 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2648" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2648" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x38C4" service_type="0x01"/>
@@ -8196,7 +8196,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2710" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2710" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x340B" service_type="0x01"/>
@@ -8212,7 +8212,7 @@
         FF FF 34 51 83 01 89 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2774" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2774" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2D4F" service_type="0x83"/>
@@ -8252,7 +8252,7 @@
         02
       </private_data>
     </linkage_descriptor>
-    <transport_stream transport_stream_id="0x2E18" original_network_id="0x00B0">
+    <transport_stream transport_stream_id="0x2E18" original_network_id="0x00B0" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x0008" service_type="0x01"/>
       </service_list_descriptor>
@@ -8261,7 +8261,7 @@
         FF FF 00 08 01 14 4B 02 36 23 6E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x0708" original_network_id="0x00C8">
+    <transport_stream transport_stream_id="0x0708" original_network_id="0x00C8" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x0E2C" service_type="0x01"/>
       </service_list_descriptor>
@@ -8270,7 +8270,7 @@
         FF FF 0E 2C 01 14 C0 01 FE 1F EE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1770" original_network_id="0x0110">
+    <transport_stream transport_stream_id="0x1770" original_network_id="0x0110" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x0008" service_type="0x01"/>
       </service_list_descriptor>
@@ -8279,7 +8279,7 @@
         FF FF 00 08 01 15 23 01 FD 1F DE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x00C8" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x00C8" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x3619" service_type="0x01"/>
         <service service_id="0x361A" service_type="0x01"/>
@@ -8290,7 +8290,7 @@
         02 13 21 3E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x0258" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x0258" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x44DD" service_type="0x05"/>
       </service_list_descriptor>
@@ -8299,7 +8299,7 @@
         FF FF 44 DD 05 14 18 02 18 21 8E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1388" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x1388" original_network_id="0x013E" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x34BC" service_type="0x83"/>
@@ -8310,7 +8310,7 @@
         02 1C 21 CE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x13EF" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x13EF" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x2529" service_type="0x05"/>
       </service_list_descriptor>
@@ -8319,7 +8319,7 @@
         FF FF 25 29 05 14 25 02 31 23 1E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1518" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x1518" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x0CE6" service_type="0x05"/>
         <service service_id="0x0CF2" service_type="0x05"/>
@@ -8330,7 +8330,7 @@
         02 0D 20 DE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1B58" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x1B58" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x02C4" service_type="0x05"/>
       </service_list_descriptor>
@@ -8339,7 +8339,7 @@
         FF FF 02 C4 05 13 FA 02 30 23 0E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1C20" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x1C20" original_network_id="0x013E" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x1C22" service_type="0x05"/>
         <service service_id="0x1C38" service_type="0x05"/>
@@ -8351,7 +8351,7 @@
         02 44 24 4E 1C 55 01 15 1F 02 08 20 8E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x22C4" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x22C4" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x07E1" service_type="0x05"/>
       </service_list_descriptor>
@@ -8361,7 +8361,7 @@
         07 A1 7A 1E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x24B8" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x24B8" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x200B" service_type="0x05"/>
         <service service_id="0x200C" service_type="0x05"/>
@@ -8373,7 +8373,7 @@
         02 12 21 2E 20 10 05 14 51 02 41 24 1E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2CEC" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x2CEC" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x439F" service_type="0x05"/>
       </service_list_descriptor>
@@ -8382,7 +8382,7 @@
         FF FF 43 9F 05 14 9F 02 24 22 4E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2FA8" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x2FA8" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x1D27" service_type="0x01"/>
       </service_list_descriptor>
@@ -8391,7 +8391,7 @@
         FF FF 1D 27 01 14 AB 02 10 21 0E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x3070" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x3070" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x2144" service_type="0x01"/>
       </service_list_descriptor>
@@ -8400,7 +8400,7 @@
         FF FF 21 44 01 03 7F 01 FC 1F CE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x3138" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x3138" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x06A9" service_type="0x01"/>
         <service service_id="0x06AA" service_type="0x01"/>
@@ -8415,7 +8415,7 @@
         14 4E 02 3F 23 FE 06 B0 05 14 99 02 34 23 4E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x319C" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x319C" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x025F" service_type="0x01"/>
       </service_list_descriptor>
@@ -8424,7 +8424,7 @@
         FF FF 02 5F 01 14 53 02 1F 21 FE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x332C" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x332C" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x1C86" service_type="0x01"/>
         <service service_id="0x1C89" service_type="0x01"/>
@@ -8438,7 +8438,7 @@
         14 B1 02 15 21 5E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x33F4" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x33F4" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x132B" service_type="0x05"/>
       </service_list_descriptor>
@@ -8447,7 +8447,7 @@
         FF FF 13 2B 05 14 46 02 28 22 8E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x3CF0" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x3CF0" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x29D1" service_type="0x05"/>
         <service service_id="0x29DB" service_type="0x01"/>
@@ -8458,7 +8458,7 @@
         02 16 21 6E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x3DB8" original_network_id="0x013E">
+    <transport_stream transport_stream_id="0x3DB8" original_network_id="0x013E" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x4241" service_type="0x01"/>
       </service_list_descriptor>
@@ -8467,7 +8467,7 @@
         FF FF 42 41 01 14 48 02 2E 22 EE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x25E4" original_network_id="0x02BE">
+    <transport_stream transport_stream_id="0x25E4" original_network_id="0x02BE" preferred_section="1">
       <service_list_descriptor>
         <service service_id="0x0008" service_type="0x01"/>
       </service_list_descriptor>
@@ -8476,7 +8476,7 @@
         FF FF 00 08 01 14 4C 02 38 23 8E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x0320" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x0320" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0599" service_type="0x01"/>
@@ -8488,7 +8488,7 @@
         01 C7 1C 7E 05 D7 83 01 EF FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x14B4" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x14B4" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x37D7" service_type="0x83"/>
@@ -8497,7 +8497,7 @@
         FF FF 37 D7 83 01 27 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x15E0" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x15E0" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1E76" service_type="0x83"/>
@@ -8506,7 +8506,7 @@
         FF FF 1E 76 83 03 1E FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1644" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1644" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x10E1" service_type="0x01"/>
@@ -8520,7 +8520,7 @@
         01 8E FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x16A8" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x16A8" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0E39" service_type="0x01"/>
@@ -8531,7 +8531,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x170C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x170C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x251A" service_type="0x83"/>
@@ -8540,7 +8540,7 @@
         FF FF 25 1A 83 01 F2 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1838" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1838" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2AF7" service_type="0x83"/>
@@ -8549,7 +8549,7 @@
         FF FF 2A F7 83 03 E7 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x189C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x189C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1FA7" service_type="0x01"/>
@@ -8564,7 +8564,7 @@
         00 8F 01 C9 1C 9E 20 06 83 00 C6 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1900" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1900" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2B13" service_type="0x19"/>
@@ -8576,7 +8576,7 @@
         00 E1 0E 1E 2B 57 83 00 5F FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x19C8" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x19C8" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2B71" service_type="0x01"/>
@@ -8588,7 +8588,7 @@
         FF FF FF F0 2B CB 01 00 D3 02 0E 20 EE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1A2C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1A2C" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2E17" service_type="0x83"/>
@@ -8597,7 +8597,7 @@
         FF FF 2E 17 83 03 1F FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1A90" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1A90" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C23" service_type="0x83"/>
@@ -8608,7 +8608,7 @@
         01 9D 19 DE
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1AF4" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1AF4" original_network_id="0xFBFF" preferred_section="0">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0DB9" service_type="0x19"/>
@@ -8622,7 +8622,7 @@
         02 56 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1D4C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1D4C" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1015" service_type="0x19"/>
@@ -8634,7 +8634,7 @@
         00 8A 08 AE 10 63 83 00 C3 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x1E14" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x1E14" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0FD9" service_type="0x01"/>
@@ -8646,7 +8646,7 @@
         01 94 19 4E 10 02 83 00 62 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2008" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2008" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x10CA" service_type="0x83"/>
@@ -8657,7 +8657,7 @@
         01 93 19 3E
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x206C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x206C" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x1C80" service_type="0x83"/>
@@ -8666,7 +8666,7 @@
         FF FF 1C 80 83 01 28 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2198" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2198" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x0F89" service_type="0x83"/>
@@ -8675,7 +8675,7 @@
         FF FF 0F 89 83 03 D1 FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2260" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2260" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2DB3" service_type="0x83"/>
@@ -8684,7 +8684,7 @@
         FF FF 2D B3 83 02 BB FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x251C" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x251C" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C3A" service_type="0x01"/>
@@ -8695,7 +8695,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2580" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2580" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2C90" service_type="0x01"/>
@@ -8706,7 +8706,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2648" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2648" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x38D0" service_type="0x01"/>
@@ -8717,7 +8717,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2710" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2710" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x3424" service_type="0x01"/>
@@ -8728,7 +8728,7 @@
         FF FF FF F0
       </generic_descriptor>
     </transport_stream>
-    <transport_stream transport_stream_id="0x2774" original_network_id="0xFBFF">
+    <transport_stream transport_stream_id="0x2774" original_network_id="0xFBFF" preferred_section="1">
       <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
       <service_list_descriptor>
         <service service_id="0x2D4F" service_type="0x83"/>
