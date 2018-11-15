@@ -63,11 +63,11 @@ Options:
       Specify that the extracted UDP datagrams are saved in this file. The UDP
       messages are written without any encapsulation.
 
-  -p value
-  --pid value
-      Extract MPE datagrams from this PID. Several -p or --pid options may be
-      specified. When no PID is specified, use all PID's carrying MPE which are
-      properly declared in the signalization.
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Extract MPE datagrams from these PID's. Several -p or --pid options may
+      be specified. When no PID is specified, use all PID's carrying MPE which
+      are properly declared in the signalization.
 
   -r address[:port]
   --redirect address[:port]

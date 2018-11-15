@@ -48,9 +48,9 @@ Options:
   --pes
       Select packets with clear PES headers.
 
-  -p value
-  --pid value
-      PID filter: select packets with this PID value. Several -p or --pid
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      PID filter: select packets with these PID values. Several -p or --pid
       options may be specified.
 
   --scrambling-control value

@@ -57,10 +57,11 @@ Options:
       With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
       Keep full 64-bit control words. Ignored with --atis-idsa.
 
-  -p value
-  --pid value
-      Descramble packets with this PID value. Several -p or --pid options may
-      be specified. By default, descramble the specified service.
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Descramble packets with this PID value or range of PID values. Several -p
+      or --pid options may be specified. By default, descramble the specified
+      service.
 
   --synchronous
       Specify to synchronously decipher the ECM's. By default, in real-time

@@ -68,9 +68,9 @@ Options:
   --payload
       Dump PES packet payload.
 
-  -p value
-  --pid value
-      PID filter: select packets with this PID value (default: all PID's
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      PID filter: select packets with these PID values (default: all PID's
       containing PES packets). Several -p or --pid options may be specified.
 
   --sei-avc

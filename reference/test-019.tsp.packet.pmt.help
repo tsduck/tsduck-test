@@ -112,9 +112,9 @@ Options:
       --remove-descriptor options may be specified to remove several types of
       descriptors. See also option --pds.
 
-  -r value
-  --remove-pid value
-      Remove the component with the specified PID from the PMT. Several
+  -r pid1[-pid2]
+  --remove-pid pid1[-pid2]
+      Remove the component with the specified PID's from the PMT. Several
       --remove-pid options may be specified to remove several components.
 
   --remove-stream-type value[-value]

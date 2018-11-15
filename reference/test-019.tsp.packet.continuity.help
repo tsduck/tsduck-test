@@ -13,11 +13,11 @@ Options:
   --help
       Display this help text.
 
-  -p value
-  --pid value
-      Check or fix continuity counters only in packets with this PID value.
-      Several -p or --pid options may be specified. By default, all PID's are
-      checked or fixed.
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Check or fix continuity counters only in packets with this PID value or
+      range of values. Several -p or --pid options may be specified. By
+      default, all PID's are checked or fixed.
 
   -t 'string'
   --tag 'string'

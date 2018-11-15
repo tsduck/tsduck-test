@@ -25,9 +25,9 @@ Options:
       otherwise it is in micro-seconds. The default is 27,000 PCR units or 1,
       000 micro-seconds.
 
-  -p value
-  --pid value
-      PID filter: select packets with this PID value. Several -p or --pid
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      PID filter: select packets with these PID values. Several -p or --pid
       options may be specified. Without -p or --pid option, PCR's from all
       PID's are used.
 

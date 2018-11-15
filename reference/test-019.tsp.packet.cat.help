@@ -48,12 +48,12 @@ Options:
   --new-version value
       Specify a new value for the version of the CAT.
 
-  -r value
-  --remove-casid value
-      Remove all CA_descriptors with the specified CA System Id. Several
-      --remove-casid options may be specified.
+  -r casid1[-casid2]
+  --remove-casid casid1[-casid2]
+      Remove all CA_descriptors with the specified CA System Id or range of
+      ids. Several --remove-casid options may be specified.
 
-  --remove-pid value
-      Remove all CA_descriptors with the specified EMM PID value. Several
-      --remove-pid options may be specified.
+  --remove-pid pid1[-pid2]
+      Remove all CA_descriptors with the specified EMM PID value or range of
+      values. Several --remove-pid options may be specified.
 

@@ -45,9 +45,9 @@ Options:
       section is considered as "stuffing" when its payload is filled with the
       same byte value (all 0x00 or all 0xFF for instance).
 
-  -p value
-  --pid value
-      Analyze all tables from this PID. Several -p or --pid options may be
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Analyze all tables from these PID's. Several -p or --pid options may be
       specified.
 
   --safeaccess

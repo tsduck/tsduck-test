@@ -181,12 +181,13 @@ Options:
       Display the index of the first and last TS packet of each displayed
       section or table.
 
-  -p value
-  --pid value
-      PID filter: select packets with this PID value, Several -p or --pid
-      options may be specified. Without -p or --pid option, all PID's are used
-      (this can be a dangerous option on complete transport streams since PID's
-      not containing sections can be accidentally selected).
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      PID filter: select packets with this PID value or range of PID values,
+      Several -p or --pid options may be specified. Without -p or --pid option,
+      all PID's are used (this can be a dangerous option on complete transport
+      streams since PID's not containing sections can be accidentally
+      selected).
 
   --psi-si
       Add all PID's containing PSI/SI tables, ie. PAT, CAT, PMT, NIT, SDT and
@@ -213,17 +214,18 @@ Options:
   --text-output value
       A synonym for --output-file.
 
-  -t value
-  --tid value
-      TID filter: select sections with this TID (table id) value. Several -t or
-      --tid options may be specified. Without -t or --tid option, all tables
-      are saved.
+  -t tid1[-tid2]
+  --tid tid1[-tid2]
+      TID filter: select sections with this TID (table id) value or range of
+      TID values. Several -t or --tid options may be specified. Without -t or
+      --tid option, all tables are saved.
 
-  -e value
-  --tid-ext value
+  -e ext1[-ext2]
+  --tid-ext ext1[-ext2]
       TID extension filter: select sections with this table id extension value
-      (apply to long sections only). Several -e or --tid-ext options may be
-      specified. Without -e or --tid-ext option, all tables are saved.
+      or range of values (apply to long sections only). Several -e or --tid-ext
+      options may be specified. Without -e or --tid-ext option, all tables are
+      saved.
 
   --time-stamp
       Display a time stamp (current local time) with each table.

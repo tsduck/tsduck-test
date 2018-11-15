@@ -30,9 +30,9 @@ Options:
       unit start indicator) set. By default, the pattern replacement starts at
       the beginning of the packet payload (offset 0).
 
-  -p value
-  --pid value
-      Select packets with this PID value. Several -p or --pid options may be
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Select packets with these PID values. Several -p or --pid options may be
       specified to select multiple PID's. If no such option is specified,
       packets from all PID's are modified.
 

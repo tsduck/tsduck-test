@@ -116,10 +116,10 @@ Options:
       higher values is a way to reduce the scrambling CPU load while keeping
       the service mostly scrambled.
 
-  -p value
-  --pid value
-      Scramble packets with this PID value. Several -p or --pid options may be
-      specified. By default, scramble the specified service.
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Scramble packets with these PID values. Several -p or --pid options may
+      be specified. By default, scramble the specified service.
 
   --pid-ecm value
       Specifies the new ECM PID for the service. By defaut, use the first

@@ -32,9 +32,9 @@ Options:
       Specify the output file for reporting packet counters. By default, report
       on standard error using the tsp logging mechanism.
 
-  -p value
-  --pid value
-      PID filter: select packets with this PID value. Several -p or --pid
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      PID filter: select packets with these PID values. Several -p or --pid
       options may be specified. By default, if --pid is not specified, all
       PID's are selected.
 
