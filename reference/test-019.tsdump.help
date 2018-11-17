@@ -34,6 +34,14 @@ Options:
   --help
       Display this help text.
 
+  -l
+  --log
+      Display a short one-line log of each packet instead of full dump.
+
+  --log-size value
+      With option --log, specify how many bytes are displayed in each packet.
+      The default is 188 bytes (complete packet).
+
   -m value
   --max-packets value
       Maximum number of packets to dump per file.
@@ -42,13 +50,20 @@ Options:
   --nibble
       Same as --binary but add separator between 4-bit nibbles.
 
+  --no-headers
+      Do not display header information.
+
   -o
   --offset
       Include offset from start of packet with hexadecimal dump.
 
-  -p
   --payload
       Hexadecimal dump of TS payload only, skip TS header.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Dump only packets with these PID values. Several --pid options may be
+      specified. By default, all packets are displayed.
 
   -r
   --raw-file
