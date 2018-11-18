@@ -76,6 +76,11 @@ Options:
       Exclude short sections and long sections with "current" indicator. This
       is rarely necessary. See also --include-next.
 
+  --fill-eit
+      Before exiting, add missing empty sections in EIT's and flush them. This
+      can be useful with segmented EIT schedule where empty sections at end of
+      segments are usually not transmitted.
+
   -f
   --flush
       Flush output after each display.
@@ -168,7 +173,8 @@ Options:
       becomes a valid complete table. Its section_number and
       last_section_number are forced to zero. Use with care because this may
       create inconsistent tables. This option can be useful with tables with
-      sparse sections such as EIT's to save them in XML format.
+      sparse sections such as EIT's to save them in XML format (as an
+      alternative, see also --fill-eit).
 
   --pack-and-flush
       Before exiting, pack incomplete tables, ignoring missing sections, and

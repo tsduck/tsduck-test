@@ -863,15 +863,15 @@
       </data_broadcast_id_descriptor>
     </component>
   </PMT>
-  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D5B" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D5B" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 1,627, last: 4,680 -->
-    <event event_id="0x00E0" start_time="2017-08-23 12:00:00" duration="00:15:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x00E3" start_time="2017-08-23 10:15:00" duration="01:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
-        <event_name>Basket Room - Luigi Datome</event_name>
+        <event_name>Basket: Francia - Italia</event_name>
         <text></text>
       </short_event_descriptor>
       <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
-        <text>Speciale Nazionale: Flavio Tranquillo intervista Luigi Datome, uno sguardo profondo dentro la Nazionale che si sta preparando in vista dei prossimi Europei. In esclusiva tutte le 76 partite del torneo.</text>
+        <text>Torneo di Tolosa - L&apos;Italia di Ettore Messina affronta la Francia, un&apos;altra delle squadre che si sta preparando all&apos;appuntamento con Eurobasket. Telecronaca di Flavio Tranquillo e Davide Pessina.</text>
       </extended_event_descriptor>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -883,13 +883,13 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x00E3" start_time="2017-08-23 10:15:00" duration="01:45:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x00E0" start_time="2017-08-23 12:00:00" duration="00:15:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
-        <event_name>Basket: Francia - Italia</event_name>
+        <event_name>Basket Room - Luigi Datome</event_name>
         <text></text>
       </short_event_descriptor>
       <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
-        <text>Torneo di Tolosa - L&apos;Italia di Ettore Messina affronta la Francia, un&apos;altra delle squadre che si sta preparando all&apos;appuntamento con Eurobasket. Telecronaca di Flavio Tranquillo e Davide Pessina.</text>
+        <text>Speciale Nazionale: Flavio Tranquillo intervista Luigi Datome, uno sguardo profondo dentro la Nazionale che si sta preparando in vista dei prossimi Europei. In esclusiva tutte le 76 partite del torneo.</text>
       </extended_event_descriptor>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -1206,9 +1206,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="20" current="true" actual="true" service_id="0x2D68" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="20" current="true" actual="true" service_id="0x2D68" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 5,018, last: 7,790 -->
-    <event event_id="0x01C8" start_time="2017-08-23 11:00:38" duration="00:05:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x01C8" start_time="2017-08-23 11:00:38" duration="00:05:00" running_status="running" CA_mode="true">
       <time_shifted_event_descriptor reference_service_id="0x0BB8" reference_event_id="0x9AB0"/>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -1217,7 +1217,7 @@
         03 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01CA" start_time="2017-08-23 11:05:38" duration="00:47:30" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x01CA" start_time="2017-08-23 11:05:38" duration="00:47:30" running_status="not-running" CA_mode="true">
       <time_shifted_event_descriptor reference_service_id="0x0BB8" reference_event_id="0x3000"/>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
       <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
@@ -1241,9 +1241,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D5D" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D5D" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 7,116, last: 8,484 -->
-    <event event_id="0x0016" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0016" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1261,7 +1261,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0017" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0017" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1280,9 +1280,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="9" current="true" actual="true" service_id="0x2D53" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="9" current="true" actual="true" service_id="0x2D53" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 8,144, last: 8,843 -->
-    <event event_id="0x01DC" start_time="2017-08-23 13:00:00" duration="02:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x01EB" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Primafila</event_name>
         <text></text>
@@ -1300,7 +1300,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01EB" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x01DC" start_time="2017-08-23 13:00:00" duration="02:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Primafila</event_name>
         <text></text>
@@ -1647,9 +1647,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="13" current="true" actual="true" service_id="0x2D5F" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="13" current="true" actual="true" service_id="0x2D5F" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 9,171, last: 12,280 -->
-    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1667,7 +1667,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -1686,9 +1686,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="5" current="true" actual="true" service_id="0x0585" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="5" current="true" actual="true" service_id="0x0585" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 9,517, last: 12,949 -->
-    <event event_id="0x0359" start_time="2017-08-23 10:15:00" duration="01:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0359" start_time="2017-08-23 10:15:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>La seconda casa non si scorda mai</event_name>
         <text></text>
@@ -1709,7 +1709,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0363" start_time="2017-08-23 11:15:00" duration="00:55:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0363" start_time="2017-08-23 11:15:00" duration="00:55:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>100% Sexy</event_name>
         <text></text>
@@ -1728,9 +1728,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="2" current="true" actual="true" service_id="0x2D54" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="2" current="true" actual="true" service_id="0x2D54" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 10,554, last: 13,973 -->
-    <event event_id="0x0132" start_time="2017-08-23 11:00:00" duration="01:34:41" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0132" start_time="2017-08-23 11:00:00" duration="01:34:41" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sopravvissuti</event_name>
         <text></text>
@@ -1784,7 +1784,7 @@
         71 5F 61 13 AE E7 BA 1B
       </generic_descriptor>
     </event>
-    <event event_id="0x0179" start_time="2017-08-23 12:34:41" duration="00:25:19" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0179" start_time="2017-08-23 12:34:41" duration="00:25:19" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 15:00 Sopravvissuti</event_name>
         <text></text>
@@ -2063,9 +2063,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D61" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D61" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 14,327, last: 17,425 -->
-    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -2083,7 +2083,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0016" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -2530,31 +2530,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="0" current="true" actual="true" service_id="0x05BD" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="0" current="true" actual="true" service_id="0x05BD" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 14,680, last: 18,122 -->
-    <event event_id="0x00BD" start_time="2017-08-23 11:35:00" duration="01:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
-      <short_event_descriptor language_code="ita">
-        <event_name>Cucine da incubo USA</event_name>
-        <text></text>
-      </short_event_descriptor>
-      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
-        <text>6&apos; Stagione Ep.12 - &apos;Mill Street Bistro&apos; Gordon visita il Mill Street Bistro in Ohio per trasformare il locale, ma il proprietario del ristorante e&apos; ostile e non vuole cooperare con Ramsay. Prossimo Ep. Mer 30 AGO 11:50.</text>
-      </extended_event_descriptor>
-      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
-      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
-      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
-      <content_descriptor>
-        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
-      </content_descriptor>
-      <generic_descriptor tag="0xCC">
-        07 FF
-      </generic_descriptor>
-      <generic_descriptor tag="0xB4">
-        01 D5 00 7F E2 8B 4C 2C 07 08 4A 41 2B 02 D6 3D
-        5F 28 77 3A A9 32 75 72 77 09 3A 28 5A C7 B7 C2
-      </generic_descriptor>
-    </event>
-    <event event_id="0x00F9" start_time="2017-08-23 10:40:00" duration="00:55:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x00F9" start_time="2017-08-23 10:40:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Cucine da incubo USA</event_name>
         <text></text>
@@ -2576,6 +2554,28 @@
       </generic_descriptor>
       <generic_descriptor tag="0xB4">
         01 D5 00 BD E2 84 51 72 07 08 4A 41 2B 02 D6 3D
+        5F 28 77 3A A9 32 75 72 77 09 3A 28 5A C7 B7 C2
+      </generic_descriptor>
+    </event>
+    <event event_id="0x00BD" start_time="2017-08-23 11:35:00" duration="01:00:00" running_status="not-running" CA_mode="true">
+      <short_event_descriptor language_code="ita">
+        <event_name>Cucine da incubo USA</event_name>
+        <text></text>
+      </short_event_descriptor>
+      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
+        <text>6&apos; Stagione Ep.12 - &apos;Mill Street Bistro&apos; Gordon visita il Mill Street Bistro in Ohio per trasformare il locale, ma il proprietario del ristorante e&apos; ostile e non vuole cooperare con Ramsay. Prossimo Ep. Mer 30 AGO 11:50.</text>
+      </extended_event_descriptor>
+      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
+      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
+      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
+      <content_descriptor>
+        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
+      </content_descriptor>
+      <generic_descriptor tag="0xCC">
+        07 FF
+      </generic_descriptor>
+      <generic_descriptor tag="0xB4">
+        01 D5 00 7F E2 8B 4C 2C 07 08 4A 41 2B 02 D6 3D
         5F 28 77 3A A9 32 75 72 77 09 3A 28 5A C7 B7 C2
       </generic_descriptor>
     </event>
@@ -2801,30 +2801,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="30" current="true" actual="true" service_id="0x2D55" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="30" current="true" actual="true" service_id="0x2D55" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 15,715, last: 19,139 -->
-    <event event_id="0x012A" start_time="2017-08-23 11:21:15" duration="00:08:45" running_status="not-running" CA_mode="true" preferred_section="1">
-      <short_event_descriptor language_code="ita">
-        <event_name>Alle 13:30 La cura dal benessere</event_name>
-        <text></text>
-      </short_event_descriptor>
-      <extended_event_descriptor descriptor_number="0" last_descriptor_number="1" language_code="ita">
-        <text>Cod. 141943 - Per info, prezzi e promozioni premi il tasto Primafila. - (2016) di Gore Verbinski. Con Dane DeHaan, Jason Isaacs. Nel regno del male in un disturbante thriller gotico del premio Oscar Gore Verbinski. Un manager giunge in un centro be</text>
-      </extended_event_descriptor>
-      <extended_event_descriptor descriptor_number="1" last_descriptor_number="1" language_code="ita">
-        <text>nessere situato sulle Alpi svizzere per riportare a casa il Ceo della sua azienda, ma rimane intrappolato nella terrificante clinica del dottor Heinrich Volmer.</text>
-      </extended_event_descriptor>
-      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
-      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
-      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
-      <content_descriptor>
-        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
-      </content_descriptor>
-      <generic_descriptor tag="0xCC">
-        07 FF
-      </generic_descriptor>
-    </event>
-    <event event_id="0x01E5" start_time="2017-08-23 09:00:00" duration="02:21:15" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x01E5" start_time="2017-08-23 09:00:00" duration="02:21:15" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>La cura dal benessere</event_name>
         <text></text>
@@ -2876,6 +2855,27 @@
         D4 14 B2 D5 DB A5 0A AC B8 DD 87 4B 40 71 0D 3A
         15 64 A6 C0 F7 D7 37 E4 67 DA 09 21 31 D5 02 71
         A0 6C 5A E6 CF
+      </generic_descriptor>
+    </event>
+    <event event_id="0x012A" start_time="2017-08-23 11:21:15" duration="00:08:45" running_status="not-running" CA_mode="true">
+      <short_event_descriptor language_code="ita">
+        <event_name>Alle 13:30 La cura dal benessere</event_name>
+        <text></text>
+      </short_event_descriptor>
+      <extended_event_descriptor descriptor_number="0" last_descriptor_number="1" language_code="ita">
+        <text>Cod. 141943 - Per info, prezzi e promozioni premi il tasto Primafila. - (2016) di Gore Verbinski. Con Dane DeHaan, Jason Isaacs. Nel regno del male in un disturbante thriller gotico del premio Oscar Gore Verbinski. Un manager giunge in un centro be</text>
+      </extended_event_descriptor>
+      <extended_event_descriptor descriptor_number="1" last_descriptor_number="1" language_code="ita">
+        <text>nessere situato sulle Alpi svizzere per riportare a casa il Ceo della sua azienda, ma rimane intrappolato nella terrificante clinica del dottor Heinrich Volmer.</text>
+      </extended_event_descriptor>
+      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
+      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
+      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
+      <content_descriptor>
+        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
+      </content_descriptor>
+      <generic_descriptor tag="0xCC">
+        07 FF
       </generic_descriptor>
     </event>
   </EIT>
@@ -2952,24 +2952,24 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="20" current="true" actual="true" service_id="0x0BB8" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x00" last_table_id="0x4E">
+  <EIT type="pf" version="20" current="true" actual="true" service_id="0x0BB8" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 21,207, last: 21,881 -->
-    <event event_id="0x3000" start_time="1970-01-01 00:00:00" duration="00:47:30" running_status="undefined" CA_mode="true" preferred_section="0">
-      <short_event_descriptor language_code="ita">
-        <event_name>I 90 anni della Regina</event_name>
-        <text></text>
-      </short_event_descriptor>
-      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
-        <text>&quot;I 90 anni della Regina&quot; - Con interviste ai membri della famiglia reale, ripercorriamo una storia di ispirazione e dovere, la storia della regina Elisabetta II. Scopriamo i numerosi appuntamenti e impegni nell&apos;anno del suo 90esimo compleanno.</text>
-      </extended_event_descriptor>
-    </event>
-    <event event_id="0x9AB0" start_time="1970-01-01 00:00:00" duration="00:05:00" running_status="undefined" CA_mode="true" preferred_section="0">
+    <event event_id="0x9AB0" start_time="1970-01-01 00:00:00" duration="00:05:00" running_status="undefined" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Push VOD Buffer Slot</event_name>
         <text></text>
       </short_event_descriptor>
       <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
         <text>...programmazione non disponibile</text>
+      </extended_event_descriptor>
+    </event>
+    <event event_id="0x3000" start_time="1970-01-01 00:00:00" duration="00:47:30" running_status="undefined" CA_mode="true">
+      <short_event_descriptor language_code="ita">
+        <event_name>I 90 anni della Regina</event_name>
+        <text></text>
+      </short_event_descriptor>
+      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
+        <text>&quot;I 90 anni della Regina&quot; - Con interviste ai membri della famiglia reale, ripercorriamo una storia di ispirazione e dovere, la storia della regina Elisabetta II. Scopriamo i numerosi appuntamenti e impegni nell&apos;anno del suo 90esimo compleanno.</text>
       </extended_event_descriptor>
     </event>
   </EIT>
@@ -3259,66 +3259,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="7" current="true" actual="true" service_id="0x2D62" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="7" current="true" actual="true" service_id="0x2D62" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 19,465, last: 23,607 -->
-    <event event_id="0x000E" start_time="2017-08-23 13:00:00" duration="05:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
-      <short_event_descriptor language_code="ita">
-        <event_name>WWE - SummerSlam</event_name>
-        <text></text>
-      </short_event_descriptor>
-      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
-        <text>WWE - SummerSlam. In diretta la notte tra domenica 20/08 e lunedì 21/08 alle ore 01:00. Repliche dal 21/08 al 24/08 alle ore 10-15-20 (Cod. 747474 - Euro 14,90), anche on demand.</text>
-      </extended_event_descriptor>
-      <parental_rating_descriptor>
-        <country country_code="ITA" rating="0x0B"/>
-      </parental_rating_descriptor>
-      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
-      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
-      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
-      <content_descriptor>
-        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0xC0"/>
-      </content_descriptor>
-      <generic_descriptor tag="0xCC">
-        13 FF
-      </generic_descriptor>
-      <generic_descriptor tag="0xC5">
-        FF F1 09 19 00 00 04 00 8B 90 89 C0 02 70 09 66
-        DD F5 97 7E 14 6B 23 D3 01 F7 5D 4D 93 CE 3F 6F
-        FB C0 D5 BD 06 2A EC 8F D9 EB 5E 89 4B 4D 1B 22
-        B3 1B 48 3F 64 0E 42 A4 F1 3C F8 BD CC 88 F1 67
-        E9 2E A2 EF 2B 21 D7 D1 75 4B 28 88 B6 0E 09 9A
-        CD F2 83 57 AE 30 AF 11 8D 29 31 92 A1 3F 4E 6C
-        A7 AA 1C 18 6F B6 BF A9 B5 A8 EB 93 58 40 86 28
-        15 05 B9 CF D9 C1 4E A5 2E 21 16 F0 C5 58 89 34
-        A1 17 3C 21 C3 FA 86 E1 AB DD BB CA 78 8F 9F 83
-        7C 35 AA 9B
-      </generic_descriptor>
-      <generic_descriptor tag="0xC5">
-        FF F1 09 3B 00 00 04 00 8B 90 89 C0 02 9B A9 6D
-        2D D7 75 C2 19 DE 60 7E C9 37 6C 12 A7 C9 53 9B
-        1B D6 58 F5 10 A7 59 75 B8 38 B5 8B 10 6F DD CA
-        B6 C0 91 BE 59 9E 15 F0 B4 B0 DD D3 CB 8D 28 5F
-        79 54 08 3B 58 06 AF 56 12 4A D1 61 77 63 3B 61
-        04 DF 30 4B BD 09 39 FB E8 D9 FD B2 BB 6B 69 9F
-        7F 40 BC B6 BC 95 1D EC 84 2A 3E 87 DB 3F 6F F9
-        BF 70 29 A6 6A DC 57 47 D2 9F 94 7A EC 0F 20 97
-        E5 2C C5 1C CD 7C D4 40 E0 F4 94 0D C5 A2 C7 7E
-        0B A8 10 A5
-      </generic_descriptor>
-      <generic_descriptor tag="0xC5">
-        FF F1 09 CD 00 00 04 00 8B 90 89 C8 04 46 30 80
-        3C 54 4F 6F BA 78 DD B0 70 DB 9D 47 FB 75 24 7A
-        96 72 49 5B 64 0D A6 79 68 B1 BA F5 A5 C1 01 9D
-        10 EC 28 72 AD D3 A3 C5 E0 03 B0 FF 4B 6D 94 1D
-        A6 C5 C2 71 A7 F0 71 D8 C9 56 C8 CF 42 E3 A6 A4
-        01 F2 71 C2 78 21 2A 23 C1 A5 A1 BC 68 C5 3D 43
-        6E C5 51 57 DD BB 6F 2C E9 B5 94 F4 75 8E 00 BA
-        31 9E 92 18 10 96 86 C3 07 0D 76 1A D4 6C 8F DC
-        C2 71 8A 97 0C 38 B7 43 E3 6D 07 A1 9D B9 E5 92
-        39 39 70 81
-      </generic_descriptor>
-    </event>
-    <event event_id="0x0012" start_time="2017-08-23 08:00:00" duration="05:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0012" start_time="2017-08-23 08:00:00" duration="05:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>WWE - SummerSlam</event_name>
         <text></text>
@@ -3375,10 +3318,67 @@
         B3 E1 B5 42 B9 DC 63 FE 51 D7 E6 D2 CE 2C
       </generic_descriptor>
     </event>
+    <event event_id="0x000E" start_time="2017-08-23 13:00:00" duration="05:00:00" running_status="not-running" CA_mode="true">
+      <short_event_descriptor language_code="ita">
+        <event_name>WWE - SummerSlam</event_name>
+        <text></text>
+      </short_event_descriptor>
+      <extended_event_descriptor descriptor_number="0" last_descriptor_number="0" language_code="ita">
+        <text>WWE - SummerSlam. In diretta la notte tra domenica 20/08 e lunedì 21/08 alle ore 01:00. Repliche dal 21/08 al 24/08 alle ore 10-15-20 (Cod. 747474 - Euro 14,90), anche on demand.</text>
+      </extended_event_descriptor>
+      <parental_rating_descriptor>
+        <country country_code="ITA" rating="0x0B"/>
+      </parental_rating_descriptor>
+      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
+      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
+      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
+      <content_descriptor>
+        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0xC0"/>
+      </content_descriptor>
+      <generic_descriptor tag="0xCC">
+        13 FF
+      </generic_descriptor>
+      <generic_descriptor tag="0xC5">
+        FF F1 09 19 00 00 04 00 8B 90 89 C0 02 70 09 66
+        DD F5 97 7E 14 6B 23 D3 01 F7 5D 4D 93 CE 3F 6F
+        FB C0 D5 BD 06 2A EC 8F D9 EB 5E 89 4B 4D 1B 22
+        B3 1B 48 3F 64 0E 42 A4 F1 3C F8 BD CC 88 F1 67
+        E9 2E A2 EF 2B 21 D7 D1 75 4B 28 88 B6 0E 09 9A
+        CD F2 83 57 AE 30 AF 11 8D 29 31 92 A1 3F 4E 6C
+        A7 AA 1C 18 6F B6 BF A9 B5 A8 EB 93 58 40 86 28
+        15 05 B9 CF D9 C1 4E A5 2E 21 16 F0 C5 58 89 34
+        A1 17 3C 21 C3 FA 86 E1 AB DD BB CA 78 8F 9F 83
+        7C 35 AA 9B
+      </generic_descriptor>
+      <generic_descriptor tag="0xC5">
+        FF F1 09 3B 00 00 04 00 8B 90 89 C0 02 9B A9 6D
+        2D D7 75 C2 19 DE 60 7E C9 37 6C 12 A7 C9 53 9B
+        1B D6 58 F5 10 A7 59 75 B8 38 B5 8B 10 6F DD CA
+        B6 C0 91 BE 59 9E 15 F0 B4 B0 DD D3 CB 8D 28 5F
+        79 54 08 3B 58 06 AF 56 12 4A D1 61 77 63 3B 61
+        04 DF 30 4B BD 09 39 FB E8 D9 FD B2 BB 6B 69 9F
+        7F 40 BC B6 BC 95 1D EC 84 2A 3E 87 DB 3F 6F F9
+        BF 70 29 A6 6A DC 57 47 D2 9F 94 7A EC 0F 20 97
+        E5 2C C5 1C CD 7C D4 40 E0 F4 94 0D C5 A2 C7 7E
+        0B A8 10 A5
+      </generic_descriptor>
+      <generic_descriptor tag="0xC5">
+        FF F1 09 CD 00 00 04 00 8B 90 89 C8 04 46 30 80
+        3C 54 4F 6F BA 78 DD B0 70 DB 9D 47 FB 75 24 7A
+        96 72 49 5B 64 0D A6 79 68 B1 BA F5 A5 C1 01 9D
+        10 EC 28 72 AD D3 A3 C5 E0 03 B0 FF 4B 6D 94 1D
+        A6 C5 C2 71 A7 F0 71 D8 C9 56 C8 CF 42 E3 A6 A4
+        01 F2 71 C2 78 21 2A 23 C1 A5 A1 BC 68 C5 3D 43
+        6E C5 51 57 DD BB 6F 2C E9 B5 94 F4 75 8E 00 BA
+        31 9E 92 18 10 96 86 C3 07 0D 76 1A D4 6C 8F DC
+        C2 71 8A 97 0C 38 B7 43 E3 6D 07 A1 9D B9 E5 92
+        39 39 70 81
+      </generic_descriptor>
+    </event>
   </EIT>
-  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D56" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D56" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 22,249, last: 24,333 -->
-    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3396,7 +3396,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3428,9 +3428,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D48" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D48" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 23,954, last: 25,011 -->
-    <event event_id="0x000D" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x000D" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>test</event_name>
         <text></text>
@@ -3448,7 +3448,7 @@
         0B FF
       </generic_descriptor>
     </event>
-    <event event_id="0x000E" start_time="2017-08-23 16:00:00" duration="06:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x000E" start_time="2017-08-23 16:00:00" duration="06:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>test</event_name>
         <text></text>
@@ -3586,9 +3586,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D63" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D63" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 24,659, last: 27,054 -->
-    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3606,7 +3606,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0014" start_time="2017-08-23 16:00:00" duration="12:00:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
         <text></text>
@@ -3625,9 +3625,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="5" current="true" actual="true" service_id="0x2D4D" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="5" current="true" actual="true" service_id="0x2D4D" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 583, last: 28,105 -->
-    <event event_id="0x0030" start_time="2017-08-23 10:35:00" duration="00:50:00" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0030" start_time="2017-08-23 10:35:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>The Shield</event_name>
         <text></text>
@@ -3655,7 +3655,7 @@
         5F AC B6 A6 D2 D8 6B CD 80 B5 8F 6F 85
       </generic_descriptor>
     </event>
-    <event event_id="0x0038" start_time="2017-08-23 11:25:00" duration="00:50:00" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x0038" start_time="2017-08-23 11:25:00" duration="00:50:00" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>The Shield</event_name>
         <text></text>
@@ -3684,9 +3684,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="29" current="true" actual="true" service_id="0x2D57" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="29" current="true" actual="true" service_id="0x2D57" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 25,341, last: 29,147 -->
-    <event event_id="0x00BA" start_time="2017-08-23 09:30:00" duration="01:41:34" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x00BA" start_time="2017-08-23 09:30:00" duration="01:41:34" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>17 anni (E come uscirne vivi)</event_name>
         <text></text>
@@ -3740,7 +3740,7 @@
         80 F3 AA 1A 3B
       </generic_descriptor>
     </event>
-    <event event_id="0x022E" start_time="2017-08-23 11:11:34" duration="00:18:26" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x022E" start_time="2017-08-23 11:11:34" duration="00:18:26" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 17 anni (E come uscirne vivi)</event_name>
         <text></text>
@@ -3762,30 +3762,9 @@
       </generic_descriptor>
     </event>
   </EIT>
-  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D65" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D65" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 2,298, last: 30,898 -->
-    <event event_id="0x0138" start_time="2017-08-23 11:10:56" duration="00:19:04" running_status="not-running" CA_mode="true" preferred_section="1">
-      <short_event_descriptor language_code="ita">
-        <event_name>Alle 13:30 Fast &amp; Furious 8</event_name>
-        <text></text>
-      </short_event_descriptor>
-      <extended_event_descriptor descriptor_number="0" last_descriptor_number="1" language_code="ita">
-        <text>Cod. 142012 - Per info, prezzi e promozioni premi il tasto Primafila. - (2017) di F. Gary Gray. Con Vin Diesel, Jason Statham. Tornano i muscoli e i motori della saga blockbuster in un iperbolico ottavo capitolo che schiera Vin Diesel, Jason Statha</text>
-      </extended_event_descriptor>
-      <extended_event_descriptor descriptor_number="1" last_descriptor_number="1" language_code="ita">
-        <text>m, Dwayne Johnson, Kurt Russell e il premio Oscar Charlize Theron. Un&apos;affascinante dark lady seduce Dominique Toretto e lo convince a tradire i suoi amici.</text>
-      </extended_event_descriptor>
-      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
-      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
-      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
-      <content_descriptor>
-        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
-      </content_descriptor>
-      <generic_descriptor tag="0xCC">
-        07 FF
-      </generic_descriptor>
-    </event>
-    <event event_id="0x01B0" start_time="2017-08-23 09:00:00" duration="02:10:56" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x01B0" start_time="2017-08-23 09:00:00" duration="02:10:56" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Fast &amp; Furious 8</event_name>
         <text></text>
@@ -3837,6 +3816,27 @@
         13 CD 6F 78 C5 8F 4F 04 BE C9 0E F2 A6 F9 E9 EC
         92 E7 6C 59 1C 32 AA FF 96 92 F3 F7 5D 76 C9 E0
         56 A4 27 00 52
+      </generic_descriptor>
+    </event>
+    <event event_id="0x0138" start_time="2017-08-23 11:10:56" duration="00:19:04" running_status="not-running" CA_mode="true">
+      <short_event_descriptor language_code="ita">
+        <event_name>Alle 13:30 Fast &amp; Furious 8</event_name>
+        <text></text>
+      </short_event_descriptor>
+      <extended_event_descriptor descriptor_number="0" last_descriptor_number="1" language_code="ita">
+        <text>Cod. 142012 - Per info, prezzi e promozioni premi il tasto Primafila. - (2017) di F. Gary Gray. Con Vin Diesel, Jason Statham. Tornano i muscoli e i motori della saga blockbuster in un iperbolico ottavo capitolo che schiera Vin Diesel, Jason Statha</text>
+      </extended_event_descriptor>
+      <extended_event_descriptor descriptor_number="1" last_descriptor_number="1" language_code="ita">
+        <text>m, Dwayne Johnson, Kurt Russell e il premio Oscar Charlize Theron. Un&apos;affascinante dark lady seduce Dominique Toretto e lo convince a tradire i suoi amici.</text>
+      </extended_event_descriptor>
+      <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
+      <component_descriptor stream_content="0x02" stream_content_ext="0x0F" component_type="0x03" component_tag="0xFF" language_code="ita" text=""/>
+      <private_data_specifier_descriptor private_data_specifier="0x00000002"/>
+      <content_descriptor>
+        <content content_nibble_level_1="0" content_nibble_level_2="0" user_byte="0x00"/>
+      </content_descriptor>
+      <generic_descriptor tag="0xCC">
+        07 FF
       </generic_descriptor>
     </event>
   </EIT>
@@ -4250,9 +4250,9 @@
       </generic_descriptor>
     </service>
   </SDT>
-  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D51" transport_stream_id="0x2774" original_network_id="0xFBFF" segment_last_section_number="0x01" last_table_id="0x4E">
+  <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D51" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
     <!-- PID 0x0012 (18), first TS packet: 5,362, last: 34,665 -->
-    <event event_id="0x0172" start_time="2017-08-23 11:02:03" duration="00:27:57" running_status="running" CA_mode="true" preferred_section="0">
+    <event event_id="0x0172" start_time="2017-08-23 11:02:03" duration="00:27:57" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 Sleepless - Il giustiziere</event_name>
         <text></text>
@@ -4273,7 +4273,7 @@
         07 FF
       </generic_descriptor>
     </event>
-    <event event_id="0x01C6" start_time="2017-08-23 11:30:00" duration="01:32:03" running_status="not-running" CA_mode="true" preferred_section="1">
+    <event event_id="0x01C6" start_time="2017-08-23 11:30:00" duration="01:32:03" running_status="not-running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sleepless - Il giustiziere</event_name>
         <text></text>
