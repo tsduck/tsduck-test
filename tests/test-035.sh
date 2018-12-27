@@ -89,3 +89,5 @@ test-encap()
 
 test-encap
 test-encap --pack .pack
+test-encap "--pes-mode 1" .pes1
+test-encap "--pes-mode 2" .pes2
