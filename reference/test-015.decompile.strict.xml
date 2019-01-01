@@ -210,5 +210,18 @@
         01 89 45
       </additional_info>
     </DTS_neural_descriptor>
+    <audio_preselection_descriptor/>
+    <audio_preselection_descriptor>
+      <preselection preselection_id="1" audio_rendering_indication="2" audio_description="false" spoken_subtitles="true" dialogue_enhancement="false" interactivity_enabled="true"/>
+      <preselection preselection_id="2" audio_rendering_indication="3" audio_description="true" spoken_subtitles="false" dialogue_enhancement="true" interactivity_enabled="false" ISO_639_language_code="foo" message_id="0xAB">
+        <multi_stream_info>
+          <component tag="0x01"/>
+          <component tag="0x02"/>
+        </multi_stream_info>
+        <future_extension>
+          25 89 63 21 47
+        </future_extension>
+      </preselection>
+    </audio_preselection_descriptor>
   </TSDT>
 </tsduck>
