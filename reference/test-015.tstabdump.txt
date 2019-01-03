@@ -329,7 +329,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 64 bytes
+  Section: 0 (last: 0), version: 0, size: 75 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -369,4 +369,13 @@
         Component tag: 0x02 (2)
       Future extension:
         0000:  25 89 63 21 47                             %.c!G
+  - Descriptor 7: Extension Descriptor (0x7F, 127), 2 bytes
+    Extended descriptor: Protection Message (0x18, 24)
+    Component count: 0
+  - Descriptor 8: Extension Descriptor (0x7F, 127), 5 bytes
+    Extended descriptor: Protection Message (0x18, 24)
+    Component count: 3
+    Component tag: 0x07 (7)
+    Component tag: 0xEA (234)
+    Component tag: 0x2F (47)
 
