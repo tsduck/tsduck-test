@@ -12,6 +12,12 @@ Parameter:
 
 Options:
 
+  -e
+  --enforce-burst
+      Enforce that the number of TS packets per UDP packet is exactly what is
+      specified in option --packet-burst. By default, this is only a maximum
+      value.
+
   --help
       Display this help text.
 
@@ -23,8 +29,8 @@ Options:
 
   -p value
   --packet-burst value
-      Specifies how many TS packets should be grouped into a UDP packet. The
-      default is 7, the maximum is 128.
+      Specifies the maximum number of TS packets per UDP packet. The default is
+      7, the maximum is 128.
 
   -s value
   --tos value
