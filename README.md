@@ -77,3 +77,47 @@ However, using LFS on GitHub happended to be a pain, as experienced by others an
 
 As a consequence, the transport stream files were re-integrated into the Git
 repository. But we now limit their size to 20 MB.
+
+### Tests list
+
+| Test | Description
+| ---- | -----------
+| 001  | Analyze an Astra live stream
+| 002  | Analyze an Eutelsat Hot Bird live stream
+| 003  | Analyze a live stream containing T2-MI encapsulation
+| 004  | `tsdump` in raw mode
+| 005  | `tstabcomp`
+| 006  | `tspacketize`
+| 007  | Various `tsp` plugins
+| 008  | `zap` plugin
+| 009  | `rmorphan` plugin
+| 010  | Analyze a live stream with HEVC
+| 011  | Adding CA descriptors in PAT and PMT
+| 012  | Teletext, French language
+| 013  | Teletext, Russian language
+| 014  | SI analysis and conversions: various descriptors
+| 015  | SI analysis and conversions: various descriptors
+| 016  | Analyze an Eutelsat Hot Bird live stream with MPE data broadcast
+| 017  | IP/MAC Notification Table (INT)
+| 018  | Application Information Table (AIT)
+| 019  | Integrity of help texts
+| 020  | `pmt` plugin
+| 021  | `tsp` stuffing options
+| 022  | INT-specific descriptors
+| 023  | `file` input plugin with more than one file
+| 024  | `continuity` plugin
+| 025  | Non-regression on a stream which crashed `tsanalyzer` (issue #49)
+| 026  | Scrambling
+| 027  | SCTE 35 Splice Information Table (SIT)
+| 028  | SCTE 35 injection
+| 029  | DVB-T bitrates
+| 030  | `sections` plugin
+| 031  | `inject` plugin with repetition rates
+| 032  | DSM-CC stream events
+| 033  | DSM-CC descriptors
+| 034  | `tsswitch`
+| 035  | `encap` and `decap` plugins
+| 036  | `duplicate` plugin
+| 037  | Tables with `preferred_section` XML attributes
+| 038  | Tables with Czech diacritics
+| 039  | `scrambler` plugin with multiple CW in text file

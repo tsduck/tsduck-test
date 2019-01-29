@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test various tsp plugin
+# Test various tsp plugins
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
