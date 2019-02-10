@@ -20,9 +20,8 @@ Options:
   --dvb-options
       The characteristics of each transponder are formatted as a list of
       command-line options for the tsp plugin "dvb" such as --frequency,
-      --symbol-rate, etc. By default, the tuning information are formatted as
-      Linux DVB "zap" configuration files as used by the standard utilities
-      "szap", "czap" and "tzap".
+      --symbol-rate, etc. This is the default when no --save-channels or
+      --update-channels is specified.
 
   --help
       Display this help text.
@@ -43,10 +42,22 @@ Options:
       analyzed to get the PID of the NIT. DVB-compliant networks should use PID
       16 (0x0010) for the NIT and signal it in the PAT.
 
+  --save-channels filename
+      Save the description of all transport streams in the specified XML file.
+      If the file name is "-", use the default tuning configuration file. See
+      also option --update-channels.
+
   -t
   --terminate
       Stop the packet transmission after the first NIT is analyzed. Should be
       specified when tsp is used only to scan the NIT.
+
+  --update-channels filename
+      Update the description of all transport streams in the specified XML
+      file. The content of each transport stream is preserved, only the tuning
+      information is updated. If the file does not exist, it is created. If the
+      file name is "-", use the default tuning configuration file. See also
+      option --save-channels.
 
   -v[prefix]
   --variable[=prefix]
