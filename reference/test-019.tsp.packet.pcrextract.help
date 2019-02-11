@@ -16,6 +16,13 @@ Options:
       Report Decoding Time Stamps (DTS). By default, if none of --pcr, --opcr,
       --pts, --dts is specified, report them all.
 
+  -e
+  --evaluate-pcr-offset
+      Evaluate the offset from the PCR to PTS/DTS for packets with PTS/DTS but
+      without PCR. This evaluation may be incorrect if the bitrate is not
+      constant or incorrectly estimated. By default, the offset is reported
+      only for packets containing a PTS/DTS and a PCR.
+
   -g
   --good-pts-only
       Keep only "good" PTS, ie. PTS which have a higher value than the previous
