@@ -156,6 +156,10 @@ Options:
       With --ip-udp, send the tables as raw binary messages in UDP packets. By
       default, the tables are formatted into TLV messages.
 
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
   -o value
   --output-file value
       Save the tables or sections in human-readable text format in the

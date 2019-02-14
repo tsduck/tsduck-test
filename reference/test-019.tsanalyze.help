@@ -43,6 +43,10 @@ Options:
   --help
       Display this help text.
 
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
   --normalized
       Complete report about the transport stream, the services and the PID's in
       a normalized output format (useful for automatic analysis).

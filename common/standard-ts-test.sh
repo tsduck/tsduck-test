@@ -118,7 +118,7 @@ PIDS="-p 0 -p 1 -p 2 -p 16 -p 17 -p 18 -p 19 $PMTPIDS"
 
 $(tspath tstables) $(fpath "$INFILE") $PIDS \
     --output-file $(fpath "$OUTDIR/$SCRIPT.tstables.text.txt") \
-    2>"$OUTDIR/$SCRIPT.tstables.text.log"
+    >"$OUTDIR/$SCRIPT.tstables.text.log" 2>&1
 
 test_text $SCRIPT.tstables.text.txt
 test_text $SCRIPT.tstables.text.log

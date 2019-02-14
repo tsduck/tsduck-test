@@ -53,6 +53,10 @@ Options:
   --no-headers
       Do not display header information.
 
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
   -o
   --offset
       Include offset from start of packet with hexadecimal dump.

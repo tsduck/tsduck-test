@@ -82,6 +82,10 @@ Options:
       interpretation is performed only on value fields larger than this size.
       The syntax of the nested TLV is the same as the enclosing TLV.
 
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
   -o value
   --output-file value
       File name for text output.

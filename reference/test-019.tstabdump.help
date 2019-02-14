@@ -102,6 +102,10 @@ Options:
       With --ip-udp, receive the tables as raw binary messages in UDP packets.
       By default, the tables are formatted into TLV messages.
 
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely
       necessary.
