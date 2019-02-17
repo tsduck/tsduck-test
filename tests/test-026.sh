@@ -68,3 +68,24 @@ test_text $SCRIPT.deatis.analyze.txt
 test_text $SCRIPT.atis.psi.txt
 test_text $SCRIPT.deatis.psi.txt
 test_text $SCRIPT.tsp.atis.log
+
+# DVB-CISSA scrambling / descrambling.
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INFILE") \
+    -P scrambler 0x0101 -c 0123456789ABCDEFFEDCBA9876543210 --dvb-cissa \
+    -P analyze -o $(fpath "$OUTDIR/$SCRIPT.cissa.analyze.txt") \
+    -P psi -a -o $(fpath "$OUTDIR/$SCRIPT.cissa.psi.txt") \
+    -P file $(fpath "$OUTDIR/$SCRIPT.cissa.ts") \
+    -P descrambler 0x0101 -c 0123456789ABCDEFFEDCBA9876543210 --dvb-cissa \
+    -P analyze -o $(fpath "$OUTDIR/$SCRIPT.decissa.analyze.txt") \
+    -P psi -a -o $(fpath "$OUTDIR/$SCRIPT.decissa.psi.txt") \
+    -O file $(fpath "$OUTDIR/$SCRIPT.decissa.ts") \
+    >"$OUTDIR/$SCRIPT.tsp.cissa.log" 2>&1
+
+test_bin $SCRIPT.cissa.ts
+test_bin $SCRIPT.decissa.ts
+test_text $SCRIPT.cissa.analyze.txt
+test_text $SCRIPT.decissa.analyze.txt
+test_text $SCRIPT.cissa.psi.txt
+test_text $SCRIPT.decissa.psi.txt
+test_text $SCRIPT.tsp.cissa.log

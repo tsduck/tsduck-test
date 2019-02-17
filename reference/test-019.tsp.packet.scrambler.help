@@ -54,9 +54,13 @@ Options:
   --cw-file name
       Specifies a text file containing the list of control words to apply. Each
       line of the file must contain exactly 16 hexadecimal digits (32 digits
-      with --atis-idsa). The next control word is used each time the
-      "scrambling_control" changes in the TS packets header. When all control
-      words are used, the first one is used again, and so on.
+      with --atis-idsa or --dvb-cissa). The next control word is used each time
+      the "scrambling_control" changes in the TS packets header. When all
+      control words are used, the first one is used again, and so on.
+
+  --dvb-cissa
+      Use DVB-CISSA scrambling instead of DVB-CSA2 (the default). The control
+      words are 16-byte long instead of 8-byte.
 
   --dvb-csa2
       Use DVB-CSA2 scrambling. This is the default.
@@ -104,7 +108,7 @@ Options:
   -n
   --no-entropy-reduction
       With DVB-CSA2, do not perform control word entropy reduction to 48 bits.
-      Keep full 64-bit control words. Ignored with --atis-idsa.
+      Keep full 64-bit control words. Ignored with --atis-idsa or --dvb-cissa.
 
   --no-video
       Do not scramble video components in the selected service. By default, all
