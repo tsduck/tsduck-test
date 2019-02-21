@@ -20,10 +20,13 @@ Options:
       Specify the OFMD constellation, used to compute the resulting bitrate.
       Must be one of "16-QAM", "64-QAM", "QPSK".
 
-  -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
+
+  -d
+  --default-region
+      Display the default region for UHF/VHF band frequency layout.
 
   -f value
   --frequency value
@@ -36,6 +39,10 @@ Options:
 
   --help
       Display this help text.
+
+  -r name
+  --hf-band-region name
+      Specify the region for UHF/VHF band frequency layout.
 
   -h value
   --high-priority-fec value
