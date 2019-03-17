@@ -1,11 +1,7 @@
 
-Monitor bitrate for a given pid
+Monitor bitrate for TS or a given PID
 
-Usage: tsp -P bitrate_monitor [options] pid
-
-Parameter:
-
-  Specifies the PID to monitor.
+Usage: tsp -P bitrate_monitor [options]
 
 Options:
 
@@ -27,6 +23,14 @@ Options:
   --periodic-bitrate value
       Always report bitrate at the specific interval in seconds, even if the
       bitrate is in range.
+
+  --pid value
+      Specifies the PID to monitor. By default, when no --pid is specified,
+      monitor the bitrate of the full TS.
+
+  --tag 'string'
+      Message tag to be displayed in alarms. Useful when the plugin is used
+      several times in the same process.
 
   -t value
   --time-interval value
