@@ -1,0 +1,128 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 2, sections: 1, total size: 28 bytes
+  - Section 0:
+    TS id:    8161 (0x1FE1)
+    Program:     3 (0x0003)  PID:   48 (0x0030)
+    Program:     4 (0x0004)  PID:   64 (0x0040)
+    Program:     5 (0x0005)  PID:   80 (0x0050)
+    Program:     6 (0x0006)  PID:   96 (0x0060)
+
+* PMT, TID 2 (0x02), PID 64 (0x0040)
+  Version: 7, sections: 1, total size: 88 bytes
+  - Section 0:
+    Program: 4 (0x0004), PCR PID: 65 (0x0041)
+    Program information:
+    - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 65 (0x0041)
+    - Descriptor 0: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x48 (72)
+      Chroma format: 0x01 (4:2:0)
+      Frame rate extension: false
+    - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x02 (2, Video access unit)
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 68 (0x0044)
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x41432D33 ("AC-3")
+    - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
+      000E:  31                                         1
+    - Descriptor 2: unknown (0x81, 129), 10 bytes
+      0000:  08 28 05 FF 0F 01 BF 65 6E 67              .(.....eng
+    - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* PMT, TID 2 (0x02), PID 48 (0x0030)
+  Version: 2, sections: 1, total size: 88 bytes
+  - Section 0:
+    Program: 3 (0x0003), PCR PID: 49 (0x0031)
+    Program information:
+    - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
+    - Descriptor 0: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x44 (68)
+      Chroma format: 0x01 (4:2:0)
+      Frame rate extension: false
+    - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x02 (2, Video access unit)
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x41432D33 ("AC-3")
+    - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
+      000E:  31                                         1
+    - Descriptor 2: unknown (0x81, 129), 10 bytes
+      0000:  08 38 05 FF 0F 01 BF 65 6E 67              .8.....eng
+    - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* PMT, TID 2 (0x02), PID 96 (0x0060)
+  Version: 1, sections: 1, total size: 126 bytes
+  - Section 0:
+    Program: 6 (0x0006), PCR PID: 97 (0x0061)
+    Program information:
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x47413934 ("GA94")
+    - Descriptor 1: Smoothing Buffer (0x10, 16), 6 bytes
+      Smoothing buffer leak rate: 0x0000BD5B (48475) x 400 b/s
+      Smoothing buffer size: 0x00000800 (2048) bytes
+    - Descriptor 2: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+    - Descriptor 3: table update (ETSI EN 301 790) (0xAA, 170), 1 bytes
+      0000:  FF                                         .
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 97 (0x0061)
+    - Descriptor 0: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x48 (72)
+      Chroma format: 0x01 (4:2:0)
+      Frame rate extension: false
+    - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x02 (2, Video access unit)
+    - Descriptor 2: unknown (0x86, 134), 19 bytes
+      0000:  E3 65 6E 67 7E 3F FF 65 6E 67 7F 3F FF 65  .eng~?.eng.?.e
+      000E:  6E 67 C1 3F FF                             ng.?.
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 100 (0x0064)
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x41432D33 ("AC-3")
+    - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
+      000E:  31                                         1
+    - Descriptor 2: unknown (0x81, 129), 10 bytes
+      0000:  08 28 05 FF 0F 01 BF 65 6E 67              .(.....eng
+    - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* PMT, TID 2 (0x02), PID 80 (0x0050)
+  Version: 6, sections: 1, total size: 88 bytes
+  - Section 0:
+    Program: 5 (0x0005), PCR PID: 81 (0x0051)
+    Program information:
+    - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 81 (0x0051)
+    - Descriptor 0: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x48 (72)
+      Chroma format: 0x01 (4:2:0)
+      Frame rate extension: false
+    - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x02 (2, Video access unit)
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 84 (0x0054)
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x41432D33 ("AC-3")
+    - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
+      000E:  31                                         1
+    - Descriptor 2: unknown (0x81, 129), 10 bytes
+      0000:  08 28 05 FF 0F 01 BF 65 6E 67              .(.....eng
+    - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
