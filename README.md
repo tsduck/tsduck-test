@@ -121,3 +121,4 @@ repository. But we now limit their size to 20 MB.
 | 037  | Tables with `preferred_section` XML attributes
 | 038  | Tables with Czech diacritics
 | 039  | `scrambler` plugin with multiple CW in text file
+| 040  | Analyze an ATSC live stream
