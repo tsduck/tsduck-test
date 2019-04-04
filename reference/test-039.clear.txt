@@ -10,10 +10,10 @@
 |     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
-|  User-specified: .......................... 3,761,023 b/s    4,081,110 b/s  |
+|  User-specified: .......................... 4,210,325 b/s    4,568,650 b/s  |
 |  Estimated based on PCR's: ................ 4,210,325 b/s    4,568,650 b/s  |
 |-----------------------------------------------------------------------------|
-|  Broadcast time: .................................... 17 sec (0 mn 17 sec)  |
+|  Broadcast time: .................................... 15 sec (0 mn 15 sec)  |
 |  First TDT UTC time stamp: ........................... 2019/01/30 10:42:48  |
 |  Last TDT UTC time stamp: ............................ 2019/01/30 10:42:48  |
 |  First TOT local time stamp: ......................... 2019/01/30 11:42:48  |
@@ -21,7 +21,7 @@
 |  TOT country code: ................................................... FRA  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x0204  CNEWS ........................................ C    3,746,616 b/s  |
+|  0x0204  CNEWS ........................................ C    4,194,197 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -35,11 +35,11 @@
 |  TS packets: 163, PID's: 3 (clear: 3, scrambled: 0)                         |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C       14,406 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       14,406 b/s  |
-|  0x0000  PAT .......................................... C       13,522 b/s  |
-|  0x0011  SDT/BAT ...................................... C          707 b/s  |
-|  0x0014  TDT/TOT ...................................... C          176 b/s  |
+|   Total  Global PID's ................................. C       16,127 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       16,127 b/s  |
+|  0x0000  PAT .......................................... C       15,137 b/s  |
+|  0x0011  SDT/BAT ...................................... C          791 b/s  |
+|  0x0014  TDT/TOT ...................................... C          197 b/s  |
 |=============================================================================|
 |  Service: 0x0204 (516), TS: 0x0002 (2), Original Netw: 0x20FA (8442)        |
 |  Service name: CNEWS, provider: NTN                                         |
@@ -48,12 +48,12 @@
 |  PMT PID: 0x019A (410), PCR PID: 0x01A4 (420)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    3,746,616 b/s  |
-|  0x019A  PMT .......................................... C       13,522 b/s  |
-|  0x01A4  AVC video (1920x1080, high profile, level 4.0  C    3,569,675 b/s  |
-|  0x01AE  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      119,051 b/s  |
-|  0x01B8  Subtitles (fre, DVB subtitles for hard of hea  C        3,005 b/s  |
-|  0x01D6  MPEG-2 Private sections (AIT) ................ C       41,362 b/s  |
+|   Total  Advanced codec HD digital television service . C    4,194,197 b/s  |
+|  0x019A  PMT .......................................... C       15,137 b/s  |
+|  0x01A4  AVC video (1920x1080, high profile, level 4.0  C    3,996,118 b/s  |
+|  0x01AE  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      133,273 b/s  |
+|  0x01B8  Subtitles (fre, DVB subtitles for hard of hea  C        3,363 b/s  |
+|  0x01D6  MPEG-2 Private sections (AIT) ................ C       46,304 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -64,7 +64,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 13,522 b/s  Packets: ........... 153  Expected: ......... 0  |
+|  Bitrate: .... 15,137 b/s  Packets: ........... 153  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 153  |
@@ -72,7 +72,7 @@
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ....... 707 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ....... 791 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -80,7 +80,7 @@
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ....... 176 b/s  Packets: ............. 2  Expected: ......... 0  |
+|  Bitrate: ....... 197 b/s  Packets: ............. 2  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 2  |
@@ -89,7 +89,7 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,522 b/s  Packets: ........... 153  Expected: ......... 0  |
+|  Bitrate: .... 15,137 b/s  Packets: ........... 153  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 153  |
@@ -100,7 +100,7 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,569,675 b/s  Packets: ........ 40,389  Expected: ......... 0  |
+|  Bitrate: . 3,996,118 b/s  Packets: ........ 40,389  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 832  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 434  Packets: ........ 388  |
@@ -112,7 +112,7 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 119,051 b/s  Packets: ......... 1,347  Expected: ......... 0  |
+|  Bitrate: ... 133,273 b/s  Packets: ......... 1,347  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........ 1,347  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 79  |
@@ -124,7 +124,7 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 3,005 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Bitrate: ..... 3,363 b/s  Packets: ............ 34  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 34  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 34  |
@@ -134,7 +134,7 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 41,362 b/s  Packets: ........... 468  Expected: ......... 0  |
+|  Bitrate: .... 46,304 b/s  Packets: ........... 468  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 468  |
@@ -147,16 +147,16 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0002 (2)                                         |
-|      Repetition: ..... 111  ms  Section cnt: ...... 153                     |
-|      Min repet.: ...... 69  ms  Table cnt: ........ 153                     |
-|      Max repet.: ..... 175  ms  Version: ............ 6                     |
+|      Repetition: ..... 100  ms  Section cnt: ...... 153                     |
+|      Min repet.: ...... 62  ms  Table cnt: ........ 153                     |
+|      Max repet.: ..... 156  ms  Version: ............ 6                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0002 (2)                                 |
-|      Repetition: .... 2263  ms  Section cnt: ........ 8                     |
-|      Min repet.: .... 1774  ms  Table cnt: .......... 8                     |
-|      Max repet.: .... 2608  ms  Version: ........... 16                     |
+|      Repetition: .... 2022  ms  Section cnt: ........ 8                     |
+|      Min repet.: .... 1585  ms  Table cnt: .......... 8                     |
+|      Max repet.: .... 2330  ms  Version: ........... 16                     |
 |=============================================================================|
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
@@ -174,16 +174,16 @@
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x0204 (516)                                       |
-|      Repetition: ..... 111  ms  Section cnt: ...... 153                     |
-|      Min repet.: ...... 68  ms  Table cnt: ........ 153                     |
-|      Max repet.: ..... 174  ms  Version: ............ 1                     |
+|      Repetition: ..... 100  ms  Section cnt: ...... 153                     |
+|      Min repet.: ...... 61  ms  Table cnt: ........ 153                     |
+|      Max repet.: ..... 156  ms  Version: ............ 1                     |
 |=============================================================================|
 |  PID: 0x01D6 (470)                           MPEG-2 Private sections (AIT)  |
 |  Service: 0x0204 (516) CNEWS                                                |
 |-----------------------------------------------------------------------------|
 |  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
-|      Repetition: ...... 36  ms  Section cnt: ...... 468                     |
-|      Min repet.: ...... 21  ms  Table cnt: ........ 468                     |
-|      Max repet.: ...... 58  ms  Version: ............ 7                     |
+|      Repetition: ...... 32  ms  Section cnt: ...... 468                     |
+|      Min repet.: ...... 18  ms  Table cnt: ........ 468                     |
+|      Max repet.: ...... 52  ms  Version: ............ 7                     |
 ===============================================================================
 
