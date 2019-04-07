@@ -53,6 +53,11 @@ Options:
       directory and default file name. If more than one input file is
       specified, the output path, if present, must be a directory name.
 
+  --pack-and-flush
+      When loading a binary file for decompilation, pack incomplete tables,
+      ignoring missing sections, and flush them. Use with care because this may
+      create inconsistent tables.
+
   --strict-xml
       Save XML documents in strictly conformant XML format. By default, do not
       escape characters when this is not syntactically necessary to make the
