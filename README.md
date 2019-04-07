@@ -122,3 +122,4 @@ repository. But we now limit their size to 20 MB.
 | 038  | Tables with Czech diacritics
 | 039  | `scrambler` plugin with multiple CW in text file
 | 040  | Analyze an ATSC live stream
+| 041  | `tsfixcc` and `continuity` plugin
