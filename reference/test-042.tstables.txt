@@ -1,0 +1,78 @@
+
+* MGT (ATSC), TID 199 (0xC7), PID 200 (0x00C8)
+  Version: 12, sections: 1, total size: 138 bytes
+  - Section 0:
+    Protocol version: 0, number of table types: 11
+    - Table type: TVCT-current (0x0000)
+      PID: 0x1FFB (8187), version: 11, size: 218 bytes
+    - Table type: ETT (0x0004)
+      PID: 0x1E80 (7808), version: 10, size: 68 bytes
+    - Table type: EIT-0 (0x0100)
+      PID: 0x1D00 (7424), version: 10, size: 1423 bytes
+    - Table type: EIT-1 (0x0101)
+      PID: 0x1D01 (7425), version: 10, size: 1708 bytes
+    - Table type: EIT-2 (0x0102)
+      PID: 0x1D02 (7426), version: 10, size: 1487 bytes
+    - Table type: EIT-3 (0x0103)
+      PID: 0x1D03 (7427), version: 10, size: 1087 bytes
+    - Table type: ETT-0 (0x0200)
+      PID: 0x1E00 (7680), version: 10, size: 1848 bytes
+    - Table type: ETT-1 (0x0201)
+      PID: 0x1E01 (7681), version: 10, size: 1845 bytes
+    - Table type: ETT-2 (0x0202)
+      PID: 0x1E02 (7682), version: 10, size: 2524 bytes
+    - Table type: ETT-3 (0x0203)
+      PID: 0x1E03 (7683), version: 10, size: 1898 bytes
+    - Table type: RRT-1 (0x0301)
+      PID: 0x1FFB (8187), version: 0, size: 979 bytes
+
+* STT (ATSC), TID 205 (0xCD), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 20 bytes
+  - Section 0:
+    Protocol version: 0
+    System time: 0x49B8E889 (1236854921), GPS-UTC offset: 0x0C (12)
+    Corresponding UTC time: 2019/03/17 10:48:29
+    Daylight saving time: no, next switch day: 3, hour: 15
+
+* TVCT (ATSC), TID 200 (0xC8), PID 200 (0x00C8)
+  Version: 11, sections: 1, total size: 218 bytes
+  - Section 0:
+    Transport stream id: 0x1FE1 (8161)
+    Protocol version: 0, number of channels: 4
+    - Channel 62.1, short name: "KULX   "
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0003 (3)
+      ETM location: 1, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0001 (1)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
+        0000:  E0 31 03 02 E0 31 00 00 00 81 E0 34 65 6E  .1...1.....4en
+        000E:  67 81 E0 35 65 6E 67                       g..5eng
+    - Channel 62.2, short name: "TelXito"
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0004 (4)
+      ETM location: 1, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0002 (2)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 41 02 02 E0 41 00 00 00 81 E0 44 65 6E  .A...A.....Den
+        000E:  67                                         g
+    - Channel 62.3, short name: "LightTV"
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0005 (5)
+      ETM location: 0, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0003 (3)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 51 02 02 E0 51 00 00 00 81 E0 54 65 6E  .Q...Q.....Ten
+        000E:  67                                         g
+    - Channel 62.4, short name: "Quest  "
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0006 (6)
+      ETM location: 0, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0004 (4)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 61 02 02 E0 61 00 00 00 81 E0 64 65 6E  .a...a.....den
+        000E:  67                                         g
+
