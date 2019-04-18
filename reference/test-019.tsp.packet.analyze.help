@@ -5,7 +5,7 @@ Usage: tsp -P analyze [options]
 
 Options:
 
-  --default-charset value
+  --default-charset name
       Default character set to use when interpreting DVB strings without
       explicit character table code. According to DVB standard ETSI EN 300 468,
       the default DVB character set is ISO-6937. However, some bogus
@@ -18,6 +18,16 @@ Options:
 
   --error-analysis
       Report analysis about detected errors.
+
+  --europe
+      A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
+      for commonly incorrect signalization on some European satellites. In that
+      signalization, the character encoding is ISO-8859-15, the most common
+      encoding for Latin & Western Europe languages. However, this is not the
+      default DVB character set and it should be properly specified in all
+      strings, which is not the case with some operators. Using this option,
+      all DVB strings without explicit table code are assumed to use
+      ISO-8859-15 instead of the standard ISO-6937 encoding.
 
   --global-pid-list
       Report the list of all global PID's, that is to say PID's which are not
