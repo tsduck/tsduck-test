@@ -5,6 +5,13 @@ Usage: tsp -P analyze [options]
 
 Options:
 
+  --atsc
+      Assume that the transport stream is an ATSC one. ATSC streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ATSC-related stuff are found in the TS before the first
+      ATSC-specific table. For instance, when a PMT with ATSC-specific
+      descriptors is found before the first ATSC MGT or VCT.
+
   --default-charset name
       Default character set to use when interpreting DVB strings without
       explicit character table code. According to DVB standard ETSI EN 300 468,

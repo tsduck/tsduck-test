@@ -15,6 +15,13 @@ Options:
       stream). By default, display only the first version of each PSI table and
       stop when all expected PSI are extracted.
 
+  --atsc
+      Assume that the transport stream is an ATSC one. ATSC streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ATSC-related stuff are found in the TS before the first
+      ATSC-specific table. For instance, when a PMT with ATSC-specific
+      descriptors is found before the first ATSC MGT or VCT.
+
   -c
   --c-style
       Same as --raw-dump (no interpretation of section) but dump the bytes in

@@ -21,6 +21,13 @@ Options:
       mode is incompatible with --xml-output since valid XML structures may
       contain complete tables only.
 
+  --atsc
+      Assume that the transport stream is an ATSC one. ATSC streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ATSC-related stuff are found in the TS before the first
+      ATSC-specific table. For instance, when a PMT with ATSC-specific
+      descriptors is found before the first ATSC MGT or VCT.
+
   -b filename
   --binary-output filename
       Save sections in the specified binary output file. See also option -m,
