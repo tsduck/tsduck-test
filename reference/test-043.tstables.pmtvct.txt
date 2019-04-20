@@ -1,0 +1,70 @@
+
+* PMT, TID 2 (0x02), PID 48 (0x0030)
+  Version: 2, sections: 1, total size: 88 bytes
+  - Section 0:
+    Program: 3 (0x0003), PCR PID: 49 (0x0031)
+    Program information:
+    - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
+    - Descriptor 0: Video Stream (0x02, 2), 3 bytes
+      Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
+      MPEG-1 only: false, constained parameter: true, still picture: false
+      Profile and level: 0x44 (68)
+      Chroma format: 0x01 (4:2:0)
+      Frame rate extension: false
+    - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
+      Alignment type: 0x02 (2, Video access unit)
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x41432D33 ("AC-3")
+    - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
+      000E:  31                                         1
+    - Descriptor 2: unknown (0x81, 129), 10 bytes
+      0000:  08 38 05 FF 0F 01 BF 65 6E 67              .8.....eng
+    - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* TVCT (ATSC), TID 200 (0xC8), PID 8187 (0x1FFB)
+  Version: 11, sections: 1, total size: 218 bytes
+  - Section 0:
+    Transport stream id: 0x1FE1 (8161)
+    Protocol version: 0, number of channels: 4
+    - Channel 10.1, short name: "KULX   "
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0003 (3)
+      ETM location: 1, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0001 (1)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
+        0000:  E0 31 03 02 E0 31 00 00 00 81 E0 34 65 6E  .1...1.....4en
+        000E:  67 81 E0 35 65 6E 67                       g..5eng
+    - Channel 10.2, short name: "TelXito"
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0004 (4)
+      ETM location: 1, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0002 (2)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 41 02 02 E0 41 00 00 00 81 E0 44 65 6E  .A...A.....Den
+        000E:  67                                         g
+    - Channel 10.3, short name: "LightTV"
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0005 (5)
+      ETM location: 0, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0003 (3)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 51 02 02 E0 51 00 00 00 81 E0 54 65 6E  .Q...Q.....Ten
+        000E:  67                                         g
+    - Channel 10.4, short name: "Quest  "
+      Modulation: ATSC 8-VSB, frequency: 0
+      TS id: 0x1FE1 (8161), program number: 0x0006 (6)
+      ETM location: 0, access controlled: no
+      Hidden: no, hide guide: no
+      Service type: ATSC Digital Television, source id: 0x0004 (4)
+      - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+        0000:  E0 61 02 02 E0 61 00 00 00 81 E0 64 65 6E  .a...a.....den
+        000E:  67                                         g
+
