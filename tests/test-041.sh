@@ -6,8 +6,11 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/$SCRIPT.ts"
 
-# CC values in input file (one single PID):
-# 0:7 1:8 2:2 (+disc.ind.) 3:3 4:4 5:5 6:6 7:7 8:7 9:7 10:8 11:3 12:4 13:5 14:5 15:6
+# CC values in input file (index:cc:
+# PID 123:
+#   0:7 1:8 2:2 (+disc.ind.) 3:3 4:4 5:5 6:6 7:7 8:7 9:7 10:8 11:3 12:4 13:5 14:5 15:6
+# PID 100:
+#   16:5 17:6 18:6 (no pl) 19:6 (no pl) 20:7 (no pl)
 
 cp "$INFILE" "$OUTDIR/$SCRIPT.tsfixcc.1.ts"
 $(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.1.ts" \
