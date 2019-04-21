@@ -125,3 +125,4 @@ repository. But we now limit their size to 20 MB.
 | 041  | `tsfixcc` and `continuity` plugin
 | 042  | SI analysis and conversions: ATSC tables
 | 043  | Using `--atsc` option on table analysis
+| 044  | `craft` plugin
