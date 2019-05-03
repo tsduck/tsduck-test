@@ -17,6 +17,8 @@ $(tspath tsp) --synchronous-log \
     -P pat -r 8810 -a 9900/6001 --increment-version \
     -P tables --pid 0 --tid 0 -o $(fpath "$OUTDIR/$SCRIPT.pat.txt") \
     -P pmt --service 8804 -r 442 -r 443 --remove-descriptor 9 --increment-version \
+           --add-registration 0x12345678 --add-registration 0x43554549 \
+           --add-pid-registration 422/0x43554549 --add-pid-registration 421/0x4B4C5641 \
     -P tables --pid 400 -o $(fpath "$OUTDIR/$SCRIPT.pmt.txt") \
     -P nitscan --comment --dvb-options --variable=FOO_ -o $(fpath "$OUTDIR/$SCRIPT.nitscan.txt") \
     -P nit --increment-version --remove-ts 10 --remove-ts 1003 --remove-ts 1004 \

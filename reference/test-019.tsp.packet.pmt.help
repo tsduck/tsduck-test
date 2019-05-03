@@ -22,7 +22,15 @@ Options:
       Add the specified PID / stream-type component in the PMT. Several
       --add-pid options may be specified to add several components.
 
-  --add-programinfo-id value
+  --add-pid-registration pid/id
+      Add a registration_descriptor in the descriptor list of the specified PID
+      in the PMT. The value is the format_identifier in
+      registration_descriptor, e.g. 0x43554549 for CUEI.
+
+  --add-programinfo-id id
+      A legacy synonym for --add-registration.
+
+  --add-registration id
       Add a registration_descriptor in the program-level descriptor list in the
       PMT. The value is the format_identifier in registration_descriptor, e.g.
       0x43554549 for CUEI.

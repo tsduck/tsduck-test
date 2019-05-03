@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 $(tspath tsp) --synchronous-log --add-input-stuffing 1/5 \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P pmt --pmt-pid 0x03E8 \
-           --add-programinfo-id 0x43554549 \
+           --add-registration 0x43554549 \
            --add-pid 0x0500/0x86 \
            --set-stream-identifier 0x03F2/1 \
            --set-stream-identifier 0x03FD/2 \
