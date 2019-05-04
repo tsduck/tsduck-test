@@ -10,6 +10,13 @@ Options:
       Add the specified number of seconds to all UTC time. Specify a negative
       value to make the time reference go backward.
 
+  --eit
+      Update events start time in EIT's. By default, EIT's are not modified.
+      When --add is used, the specified offset is applied to all events start
+      time. When --start is used, EIT's are dropped until the first TDT or TOT
+      is encountered. Then, the difference between the first TDT or TOT time
+      and the new time reference at this point is applied.
+
   --help
       Display this help text.
 
