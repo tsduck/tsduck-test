@@ -102,6 +102,12 @@ Options:
   --new-version value
       Specify a new value for the version of the PMT.
 
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
   --pcr-pid value
       Change the PCR PID value in the PMT.
 

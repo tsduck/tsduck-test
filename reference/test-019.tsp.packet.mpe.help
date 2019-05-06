@@ -58,6 +58,12 @@ Options:
       Specify the exact size in bytes of the network datagrams to filter. This
       option is incompatible with --min-net-size and --max-net-size.
 
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
   -o filename
   --output-file filename
       Specify that the extracted UDP datagrams are saved in this file. The UDP

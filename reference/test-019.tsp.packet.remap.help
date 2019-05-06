@@ -22,6 +22,12 @@ Options:
       that previous references to the remapped PID's will point to the new PID
       values.
 
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
   -u
   --unchecked
       Do not perform any consistency checking while remapping PID's. Remapping

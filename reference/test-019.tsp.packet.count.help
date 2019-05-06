@@ -27,6 +27,12 @@ Options:
   --negate
       Negate the filter: specified PID's are excluded.
 
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
   -o filename
   --output-file filename
       Specify the output file for reporting packet counters. By default, report
@@ -43,6 +49,10 @@ Options:
       Display a final summary of packet counts per PID. This is the default,
       unless --all or --total is specified, in which case the final summary is
       reported only if --summary is specified.
+
+  --tag 'string'
+      Message tag to be displayed with count report lines. Useful when the
+      plugin is used several times in the same process.
 
   -t
   --total

@@ -19,6 +19,20 @@ Options:
   --help
       Display this help text.
 
+  -l label1[-label2]
+  --label label1[-label2]
+      Select packets with any of the specified labels. Labels should have
+      typically be set by a previous plugin in the chain. Several --label
+      options may be specified.
+      
+      Note that the option --label is different from the generic option
+      --only-label. The generic option --only-label acts at tsp level and
+      controls which packets are passed to the plugin. All other packets are
+      directly passed to the next plugin without going through this plugin. The
+      option --label, on the other hand, is specific to the filter plugin and
+      selects packets with specific labels among the packets which are passed
+      to this plugin.
+
   --max-adaptation-field-size value
       Select packets with no adaptation field or with an adaptation field the
       size (in bytes) of which is not greater than the specified value.
@@ -39,6 +53,12 @@ Options:
   --negate
       Negate the filter: specified packets are excluded.
 
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
   --payload
       Select packets with a payload.
 
@@ -56,6 +76,11 @@ Options:
   --scrambling-control value
       Select packets with the specified scrambling control value. Valid values
       are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
+
+  --set-label label1[-label2]
+      Set the specified labels on the selected packets. Do not drop unselected
+      packets, simply mark selected ones. Several --set-label options may be
+      specified.
 
   -s
   --stuffing
