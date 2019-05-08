@@ -16,8 +16,18 @@ Options:
   --clear
       Select clear (unscrambled) packets. Equivalent to --scrambling-control 0.
 
+  --every count
+      Select one packet every that number of packets.
+
   --help
       Display this help text.
+
+  --input-stuffing
+      Select packets which were articially inserted as stuffing before the
+      input plugin (using tsp options --add-start-stuffing,
+      --add-input-stuffing and --add-stop-stuffing). Be aware that these
+      packets may no longer be null packets if some previous plugin injected
+      data, replacing stuffing.
 
   -l label1[-label2]
   --label label1[-label2]
@@ -52,6 +62,10 @@ Options:
   -n
   --negate
       Negate the filter: specified packets are excluded.
+
+  --nullified
+      Select packets which were explicitly turned into null packets by some
+      previous plugin in the chain (typically using a --stuffing option).
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
