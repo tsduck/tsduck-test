@@ -87,6 +87,11 @@ Options:
       PID filter: select packets with these PID values. Several -p or --pid
       options may be specified.
 
+  --reset-label label1[-label2]
+      Clear the specified labels on the selected packets. Do not drop
+      unselected packets, simply clear labels on selected ones. Several
+      --reset-label options may be specified.
+
   --scrambling-control value
       Select packets with the specified scrambling control value. Valid values
       are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
