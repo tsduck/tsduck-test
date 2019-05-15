@@ -73,6 +73,17 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
+  --pattern value
+      Select packets containing the specified pattern bytes. The value must be
+      a string of hexadecimal digits specifying any number of bytes. By
+      default, the packet is selected when the value is anywhere inside the
+      packet. With option --search-payload, only search the pattern in the
+      payload of the packet. With option --search-offset, the packet is
+      selected only if the pattern is at the specified offset in the packet.
+      When --search-payload and --search-offset are both specified, the packet
+      is selected only if the pattern is at the specified offset in the
+      payload.
+
   --payload
       Select packets with a payload.
 
@@ -95,6 +106,14 @@ Options:
   --scrambling-control value
       Select packets with the specified scrambling control value. Valid values
       are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
+
+  --search-offset value
+      With --pattern, only search the set of bytes at the specified offset in
+      the packet (the default) or in the payload (with --search-payload).
+
+  --search-payload
+      With --pattern, only search the set of bytes in the payload of the
+      packet. Do not search the pattern in the header or adaptation field.
 
   --set-label label1[-label2]
       Set the specified labels on the selected packets. Do not drop unselected
