@@ -7,8 +7,9 @@ and a collection of small command line tools and plugins.
 
 Similarly, the tests for TSDuck are divided in two parts.
 
-- The TSDuck library has its own unitary test suite based on CppUnit. This test suite is part of
-  the [main tsduck](https://github.com/tsduck/tsduck) repository for TSDuck in directory `src/utest`.
+- The TSDuck library has its own unitary test suite based on a custom framework named "TSUnit".
+  This test suite is part of the [main tsduck](https://github.com/tsduck/tsduck) repository for
+  TSDuck in directory `src/utest`.
   This test suite is fully automated. The `utest` executable is built twice, once using the shared
   library and once using the static library. Both versions of the test suite are built and run using
   `make test`.
