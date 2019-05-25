@@ -1,0 +1,123 @@
+
+Craft specific low-level transformations on packets
+
+Usage: tsp -P craft [options]
+
+This plugin modifies precise fields in all TS packets. Some operations may need
+space in the adaptation field. By default, the payload is left unmodified and a
+transformation is rejected if it needs to enlarge the adaptation field since
+this would destroy part of the existing payload. Enlarging the adaptation field
+is possible only when --payload-pattern is specified, in which case the payload
+is overwritten anyway.
+
+Options:
+
+  --clear-discontinuity
+      Clear the discontinuity_indicator in the packets.
+
+  --clear-error
+      Clear the transport_error_indicator in the packets.
+
+  --clear-es-priority
+      Clear the elementary_stream_priority_indicator in the packets.
+
+  --clear-priority
+      Clear the transport_priority flag in the packets.
+
+  --clear-pusi
+      Clear the payload_unit_start_indicator in the packets.
+
+  --clear-random-access
+      Clear the random_access_indicator in the packets.
+
+  --continuity-counter value
+      Specify the value of the continuity_counter field.
+
+  --discontinuity
+      Set the discontinuity_indicator in the packets. Space is required in the
+      adaptation field.
+
+  --error
+      Set the transport_error_indicator in the packets.
+
+  --es-priority
+      Set the elementary_stream_priority_indicator in the packets. Space is
+      required in the adaptation field.
+
+  --help
+      Display this help text.
+
+  --no-opcr
+      Remove the OPCR from the packets.
+
+  --no-payload
+      Remove the payload, equivalent to --payload-size 0.
+
+  --no-pcr
+      Remove the PCR from the packets.
+
+  --no-private-data
+      Remove the private data from adaptation field.
+
+  --no-splice-countdown
+      Remove the splicing point from the packets.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --opcr value
+      Set this OPCR value in the packets. Space is required in the adaptation
+      field.
+
+  --pack-pes-header
+      When a TS packet contains the start of a PES packet and the header of
+      this PES packet contains stuffing, shift the TS payload to remove all
+      possible stuffing from the PES header. Create TS stuffing in the
+      adaptation field to compensate.
+
+  --payload-pattern value
+      Overwrite the payload and specify the binary pattern to apply. The value
+      must be a string of hexadecimal digits specifying any number of bytes.
+      The pattern is repeated to fill the payload.
+
+  --payload-size size
+      Resize the packet payload to the specified value in bytes. When
+      necessary, an adaptation field is created or enlarged. Without
+      --payload-pattern, the existing payload is either shrunk or enlarged.
+      When an existing payload is shrunk, the end of the payload is truncated.
+      When an existing payload is enlarged, its end is padded with 0xFF bytes.
+
+  --pcr value
+      Set this PCR value in the packets. Space is required in the adaptation
+      field.
+
+  -p value
+  --pid value
+      Modify the PID to the specified value.
+
+  --priority
+      Set the transport_priority flag in the packets.
+
+  --private-data value
+      Specify the binary content of the transport_private_data in the
+      adaptation field. The value must be a string of hexadecimal digits
+      specifying any number of bytes. Space is required in the adaptation
+      field.
+
+  --pusi
+      Set the payload_unit_start_indicator in the packets.
+
+  --random-access
+      Set the random_access_indicator in the packets. Space is required in the
+      adaptation field.
+
+  --scrambling value
+      Specify the value of the transport_scrambling_control field.
+
+  --splice-countdown value
+      Create a splicing point and set this splice countdown value in the
+      packets. Space is required in the adaptation field.
+

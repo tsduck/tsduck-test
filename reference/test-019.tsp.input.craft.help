@@ -1,0 +1,86 @@
+
+Build specifically crafted input packets
+
+Usage: tsp -I craft [options]
+
+Options:
+
+  --cc value
+      Specify the initial value of the continuity_counter field (0 by default).
+
+  --constant-cc
+      Do not increment the continuity counter. By default, the continuity
+      counter in incremented when the packet has a payload.
+
+  -c value
+  --count value
+      Specify the number of crafted packets to generate. After the last packet,
+      an end-of-file condition is generated. By default, if --count is not
+      specified, crafted packets are generated endlessly.
+
+  --discontinuity
+      Set the discontinuity_indicator in the packets. An adaptation field is
+      created.
+
+  --error
+      Set the transport_error_indicator in the packets.
+
+  --es-priority
+      Set the elementary_stream_priority_indicator in the packets. An
+      adaptation field is created.
+
+  --help
+      Display this help text.
+
+  -j
+  --joint-termination
+      When the number of crafted packets is specified, perform a "joint
+      termination" when completed instead of unconditional termination. See
+      "tsp --help" for more details on "joint termination".
+
+  --no-payload
+      Do not use a payload, equivalent to --payload-size 0.
+
+  --opcr value
+      Set this OPCR value in the packets. An adaptation field is created.
+
+  --payload-pattern value
+      Specify the binary pattern to apply on packets payload. The value must be
+      a string of hexadecimal digits specifying any number of bytes. The
+      pattern is repeated to fill the payload. The default is FF.
+
+  --payload-size size
+      Specify the size of the packet payload in bytes. When necessary, an
+      adaptation field is created. By default, the payload uses all free space
+      in the packet.
+
+  --pcr value
+      Set this PCR value in the packets. An adaptation field is created.
+
+  -p value
+  --pid value
+      Specify the PID for the packets (0 by default).
+
+  --priority
+      Set the transport_priority flag in the packets.
+
+  --private-data value
+      Specify the binary content of the transport_private_data in the
+      adaptation field. The value must be a string of hexadecimal digits
+      specifying any number of bytes.
+
+  --pusi
+      Set the payload_unit_start_indicator in the packets.
+
+  --random-access
+      Set the random_access_indicator in the packets. An adaptation field is
+      created.
+
+  --scrambling value
+      Specify the value of the transport_scrambling_control field (0 by
+      default).
+
+  --splice-countdown value
+      Create a splicing point and set this splice countdown value in the
+      packets. An adaptation field is created.
+

@@ -7,7 +7,9 @@ Options:
 
   -a 'command'
   --alarm-command 'command'
-      Command to be run when an alarm is detected (bitrate out of range).
+      Command to run when the bitrate goes either out of range or back to
+      normal. The command receives an additional string parameter containing an
+      informational message.
 
   --help
       Display this help text.
@@ -33,6 +35,31 @@ Options:
   --pid value
       Specifies the PID to monitor. By default, when no --pid is specified,
       monitor the bitrate of the full TS.
+
+  --set-label-above label1[-label2]
+      Set the specified labels on all packets while the bitrate is above
+      normal. Several --set-label-above options may be specified.
+
+  --set-label-below label1[-label2]
+      Set the specified labels on all packets while the bitrate is below
+      normal. Several --set-label-below options may be specified.
+
+  --set-label-go-above label1[-label2]
+      Set the specified labels on one packet when the bitrate goes above
+      normal. Several --set-label-go-above options may be specified.
+
+  --set-label-go-below label1[-label2]
+      Set the specified labels on one packet when the bitrate goes below
+      normal. Several --set-label-go-below options may be specified.
+
+  --set-label-go-normal label1[-label2]
+      Set the specified labels on one packet when the bitrate goes back to
+      normal (within range). Several --set-label-go-normal options may be
+      specified.
+
+  --set-label-normal label1[-label2]
+      Set the specified labels on all packets while the bitrate is normal
+      (within range). Several --set-label-normal options may be specified.
 
   --tag 'string'
       Message tag to be displayed in alarms. Useful when the plugin is used

@@ -1,0 +1,73 @@
+
+Trigger actions on selected labeled TS packets
+
+Usage: tsp -P trigger [options]
+
+Options:
+
+  -a
+  --all-labels
+      All labels from options --label shall be set on a packet to be selected
+      (logical 'and'). By default, a packet is selected if any label is set
+      (logical 'or').
+
+  -e 'command'
+  --execute 'command'
+      Run the specified command when the current packet triggers the actions.
+
+  --help
+      Display this help text.
+
+  -l label1[-label2]
+  --label label1[-label2]
+      Trigger the actions on packets with any of the specified labels. Labels
+      should have typically be set by a previous plugin in the chain. By
+      default, without option --label, the actions are triggered on all packets
+      in the stream. Several --label options may be specified.
+      
+      Note that the option --label is different from the generic option
+      --only-label. The generic option --only-label acts at tsp level and
+      controls which packets are passed to the plugin. All other packets are
+      directly passed to the next plugin without going through this plugin. The
+      option --label, on the other hand, is specific to the trigger plugin and
+      selects packets with specific labels among the packets which are passed
+      to this plugin.
+
+  --local-address address
+      With --udp, when the destination is a multicast address, specify the IP
+      address of the outgoing local interface. It can be also a host name that
+      translates to a local address.
+
+  --min-inter-packet count
+      Specify the minimum number of packets between two triggered actions.
+      Actions which should be triggered in the meantime are ignored.
+
+  --min-inter-time milliseconds
+      Specify the minimum time, in milliseconds, between two triggered actions.
+      Actions which should be triggered in the meantime are ignored.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --ttl value
+      With --udp, specifies the TTL (Time-To-Live) socket option. The actual
+      option is either "Unicast TTL" or "Multicast TTL", depending on the
+      destination address. Remember that the default Multicast TTL is 1 on most
+      systems.
+
+  -u address:port
+  --udp address:port
+      Send a UDP/IP message to the specified destination when the current
+      packet triggers the actions. The 'address' specifies an IP address which
+      can be either unicast or multicast. It can be also a host name that
+      translates to an IP address. The 'port' specifies the destination UDP
+      port.
+
+  --udp-message hexa-string
+      With --udp, specifies the binary message to send as UDP datagram. The
+      value must be a string of hexadecimal digits specifying any number of
+      bytes.
+
