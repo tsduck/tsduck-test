@@ -27,7 +27,7 @@ PACKET_PLUGINS=(
     nitscan pat pattern pcrbitrate pcrextract pcrverify pes pmt psi reduce
     regulate remap rmorphan rmsplice scrambler sdt sifilter skip slice
     stuffanalyze svremove svrename t2mi tables teletext time timeref
-    tsrename until zap mpe mpeinject spliceinject trigger craft
+    tsrename until zap mpe mpeinject spliceinject trigger craft cutoff
 )
 
 for cmd in ${TOOLS[@]}; do
