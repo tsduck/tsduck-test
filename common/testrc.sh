@@ -48,7 +48,7 @@ OS=$(uname -s | tr A-Z a-z)
 case $OS in
     cygwin*|msys*|mingw*)
         WINDOWS=true
-        TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc2017
+        TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc
         TSDUCKBIN_RELEASE=Release-x64
         TSDUCKBIN_DEBUG=Debug-x64
         TSDUCKBIN32_RELEASE=Release-Win32
