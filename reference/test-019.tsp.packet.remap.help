@@ -9,7 +9,7 @@ Parameters:
   can be specified as decimal or hexadecimal values). In the first form, the
   PID "pid" is remapped to "newpid". In the latter form, all PID's within the
   range "pid1" to "pid2" (inclusive) are respectively remapped to "newpid",
-  "newpid"+1, etc.
+  "newpid"+1, etc. This behaviour is changed using option --single.
 
 Options:
 
@@ -27,6 +27,12 @@ Options:
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  -s
+  --single
+      When a remapping is in the form "pid1-pid2=newpid", remap all input PID's
+      to the same "newpid" value, not "newpid", "newpid"+1, etc. This option
+      forces --unchecked since distinct PID's are remapped to the same one.
 
   -u
   --unchecked
