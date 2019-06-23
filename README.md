@@ -129,3 +129,4 @@ repository. But we now limit their size to 20 MB.
 | 044  | `craft` plugin
 | 045  | `timeref` plugin
 | 046  | `filter` plugin
+| 047  | `remap` plugin

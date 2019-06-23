@@ -1,0 +1,60 @@
+
+Duplicate PID's, reusing null packets
+
+Usage: tsp -P duplicate [options] [pid[-pid]=newpid ...]
+
+Parameters:
+
+  Each duplication is specified as "pid=newpid" or "pid1-pid2=newpid" (all
+  PID's can be specified as decimal or hexadecimal values). In the first form,
+  the PID "pid" is duplicated to "newpid". In the latter form, all PID's within
+  the range "pid1" to "pid2" (inclusive) are respectively duplicated to
+  "newpid", "newpid"+1, etc. This behaviour can be changed using option
+  --single. The null PID 0x1FFF cannot be duplicated.
+
+Options:
+
+  -d
+  --drop-overflow
+      Silently drop overflow packets. By default, overflow packets trigger
+      warnings. See also option --max-buffered-packets.
+
+  --help
+      Display this help text.
+
+  -m value
+  --max-buffered-packets value
+      Specify the maximum number of buffered packets. The input packets to
+      duplicate are internally buffered until a null packet is found and
+      replaced by the buffered packet. An overflow is usually caused by
+      insufficient null packets in the input stream. The default is 1,024
+      packets.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --reset-label label1[-label2]
+      Clear the specified labels on the duplicated packets. Several
+      --reset-label options may be specified.
+
+  --set-label label1[-label2]
+      Set the specified labels on the duplicated packets. Several --set-label
+      options may be specified.
+
+  -s
+  --single
+      When a duplication is in the form "pid1-pid2=newpid", duplicate all input
+      PID's to the same "newpid" value, not "newpid", "newpid"+1, etc. This
+      option forces --unchecked since distinct PID's are duplicated to the same
+      one.
+
+  -u
+  --unchecked
+      Do not perform any consistency checking while duplicating PID's;
+      duplicating two PID's to the same PID or to a PID which is already
+      present in the input is accepted. Note that this option should be used
+      with care since the resulting stream can be illegal or inconsistent.
+

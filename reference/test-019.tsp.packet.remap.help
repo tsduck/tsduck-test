@@ -9,7 +9,8 @@ Parameters:
   can be specified as decimal or hexadecimal values). In the first form, the
   PID "pid" is remapped to "newpid". In the latter form, all PID's within the
   range "pid1" to "pid2" (inclusive) are respectively remapped to "newpid",
-  "newpid"+1, etc. This behaviour is changed using option --single.
+  "newpid"+1, etc. This behaviour can be changed using option --single. The
+  null PID 0x1FFF cannot be remapped.
 
 Options:
 
@@ -28,6 +29,14 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
+  --reset-label label1[-label2]
+      Clear the specified labels on the remapped packets. Several --reset-label
+      options may be specified.
+
+  --set-label label1[-label2]
+      Set the specified labels on the remapped packets. Several --set-label
+      options may be specified.
+
   -s
   --single
       When a remapping is in the form "pid1-pid2=newpid", remap all input PID's
@@ -36,9 +45,8 @@ Options:
 
   -u
   --unchecked
-      Do not perform any consistency checking while remapping PID's. Remapping
-      to or from a predefined PID is accepted. Remapping two PID's to the same
-      PID or to a PID which is already present in the input is accepted. Note
-      that this option should be used with care since the resulting stream can
-      be illegal or inconsistent.
+      Do not perform any consistency checking while remapping PID's; remapping
+      two PID's to the same PID or to a PID which is already present in the
+      input is accepted. Note that this option should be used with care since
+      the resulting stream can be illegal or inconsistent.
 
