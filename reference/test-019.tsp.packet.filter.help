@@ -103,6 +103,12 @@ Options:
       unselected packets, simply clear labels on selected ones. Several
       --reset-label options may be specified.
 
+  --reset-permanent-label label1[-label2]
+      Clear the specified labels on all packets, selected and unselected ones,
+      after at least one was selected. Do not drop unselected packets, simply
+      use selected ones as trigger. Several --reset-permanent-label options may
+      be specified.
+
   --scrambling-control value
       Select packets with the specified scrambling control value. Valid values
       are 0 (clear), 1 (reserved), 2 (even key), 3 (odd key).
@@ -119,6 +125,12 @@ Options:
       Set the specified labels on the selected packets. Do not drop unselected
       packets, simply mark selected ones. Several --set-label options may be
       specified.
+
+  --set-permanent-label label1[-label2]
+      Set the specified labels on all packets, selected and unselected ones,
+      after at least one was selected. Do not drop unselected packets, simply
+      use selected ones as trigger. Several --set-permanent-label options may
+      be specified.
 
   -s
   --stuffing

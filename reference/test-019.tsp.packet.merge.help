@@ -1,0 +1,77 @@
+
+Merge TS packets coming from the standard output of a command
+
+Usage: tsp -P merge [options] 'command'
+
+Parameter:
+
+  Specifies the command line to execute in the created process.
+
+Options:
+
+  -d pid[-pid]
+  --drop pid[-pid]
+      Drop the specified PID or range of PID's from the merged stream. By
+      default, the PID's 0x00 to 0x1F are dropped and all other PID's are
+      passed. This can be modified using options --drop and --pass. Several
+      options --drop can be specified.
+
+  --help
+      Display this help text.
+
+  --ignore-conflicts
+      Ignore PID conflicts. By default, when packets with the same PID are
+      present in the two streams, the PID is dropped from the merged stream.
+      Warning: this is a dangerous option which can result in an inconsistent
+      transport stream.
+
+  -j
+  --joint-termination
+      Perform a "joint termination" when the merged stream is terminated. See
+      "tsp --help" for more details on "joint termination".
+
+  --max-queue value
+      Specify the maximum number of queued TS packets before their insertion
+      into the stream. The default is 1,000.
+
+  --no-pcr-restamp
+      Do not restamp PCR's from the merged TS into the main TS. By default,
+      PCR's in the merged stream are restamped to match their position in the
+      final stream. The DTS and PTS are never restamped because they are
+      independent from their position in the stream. When the PCR's in the
+      merged stream have discontinuities (such as when cycling a TS file),
+      restamping the PCR's can break the video playout since they become
+      decorrelated with the DTS and PTS.
+
+  --no-psi-merge
+      Do not merge PSI/SI from the merged TS into the main TS. By default, the
+      PAT, CAT and SDT are merged so that the services from the merged stream
+      are properly referenced and PID's 0x00 to 0x1F are dropped from the
+      merged stream.
+
+  --no-wait
+      Do not wait for child process termination at end of processing.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  -p pid[-pid]
+  --pass pid[-pid]
+      Pass the specified PID or range of PID's from the merged stream. By
+      default, the PID's 0x00 to 0x1F are dropped and all other PID's are
+      passed. This can be modified using options --drop and --pass. Several
+      options --pass can be specified.
+
+  --terminate
+      Terminate packet processing when the merged stream is terminated. By
+      default, when packet insertion is complete, the transmission continues
+      and the stuffing is no longer modified.
+
+  -t
+  --transparent
+      Pass all PID's without logical transformation. Equivalent to
+      --no-psi-merge --ignore-conflicts --pass 0x00-0x1F.
+

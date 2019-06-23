@@ -28,7 +28,7 @@ PACKET_PLUGINS=(
     regulate remap rmorphan rmsplice scrambler sdt sifilter skip slice
     stuffanalyze svremove svrename t2mi tables teletext time timeref
     tsrename until zap mpe mpeinject spliceinject trigger craft cutoff
-    duplicate
+    duplicate merge
 )
 
 for cmd in ${TOOLS[@]}; do
