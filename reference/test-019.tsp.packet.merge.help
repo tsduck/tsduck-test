@@ -65,6 +65,16 @@ Options:
       passed. This can be modified using options --drop and --pass. Several
       options --pass can be specified.
 
+  --reset-label label1[-label2]
+      Clear the specified labels on the merged packets. Apply to original
+      packets from the merged stream only, not to updated PSI. Several
+      --reset-label options may be specified.
+
+  --set-label label1[-label2]
+      Set the specified labels on the merged packets. Apply to original packets
+      from the merged stream only, not to updated PSI. Several --set-label
+      options may be specified.
+
   --terminate
       Terminate packet processing when the merged stream is terminated. By
       default, when packet insertion is complete, the transmission continues

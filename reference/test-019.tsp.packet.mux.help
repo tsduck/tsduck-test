@@ -85,9 +85,17 @@ Options:
       the file is infinitely repeated. This option is allowed only if the input
       file is a regular file.
 
+  --reset-label label1[-label2]
+      Clear the specified labels on the muxed packets. Several --reset-label
+      options may be specified.
+
+  --set-label label1[-label2]
+      Set the specified labels on the muxed packets. Several --set-label
+      options may be specified.
+
   -t
   --terminate
-      Terminate packet processing when file insersion is complete. By default,
-      when packet insertion is complete, the transmission continues and the
-      stuffing is no longer modified.
+      Terminate packet processing when the file insertion is complete. By
+      default, when packet insertion is complete, the transmission continues
+      and the stuffing is no longer modified.
 
