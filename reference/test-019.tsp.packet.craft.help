@@ -62,6 +62,11 @@ Options:
   --no-splice-countdown
       Remove the splicing point from the packets.
 
+  --offset-pattern value
+      Specify starting offset in payload when using --payload-pattern. By
+      default, the pattern replacement starts at the beginning of the packet
+      payload.
+
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
@@ -93,6 +98,14 @@ Options:
   --pcr value
       Set this PCR value in the packets. Space is required in the adaptation
       field.
+
+  --pes-payload
+      With this option, the modified payload is the PES payload, not the TS
+      payload. When the TS packet does not contain the start of a PES packet,
+      the TS payload is not modified. With --payload-size, the TS payload is
+      resized so that the part of the PES payload which is in the TS packet
+      gets the specified size. With --payload-pattern and --offset-pattern, the
+      pattern is applied inside the PES payload.
 
   -p value
   --pid value
