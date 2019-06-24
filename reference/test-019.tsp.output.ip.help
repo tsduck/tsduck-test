@@ -32,6 +32,28 @@ Options:
       Specifies the maximum number of TS packets per UDP packet. The default is
       7, the maximum is 128.
 
+  --payload-type value
+      With --rtp, specify the payload type. By default, use 33, the standard
+      RTP type for MPEG2-TS.
+
+  --pcr-pid value
+      With --rtp, specify the PID containing the PCR's which are used as
+      reference for RTP timestamps. By default, use the first PID containing
+      PCR's.
+
+  -r
+  --rtp
+      Use the Real-time Transport Protocol (RTP) in output UDP datagrams. By
+      default, TS packets are sent in UDP datagrams without encapsulation.
+
+  --ssrc-identifier value
+      With --rtp, specify the SSRC identifier. By default, use a random value.
+      Do not modify unless there is a good reason to do so.
+
+  --start-sequence-number value
+      With --rtp, specify the initial sequence number. By default, use a random
+      value. Do not modify unless there is a good reason to do so.
+
   -s value
   --tos value
       Specifies the TOS (Type-Of-Service) socket option. Setting this value may

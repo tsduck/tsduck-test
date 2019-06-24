@@ -39,7 +39,7 @@ Options:
       "tsp --help" for more details on "joint termination".
 
   --no-payload
-      Do not use a payload, equivalent to --payload-size 0.
+      Do not use a payload.
 
   --opcr value
       Set this OPCR value in the packets. An adaptation field is created.
@@ -51,8 +51,10 @@ Options:
 
   --payload-size size
       Specify the size of the packet payload in bytes. When necessary, an
-      adaptation field is created. By default, the payload uses all free space
-      in the packet.
+      adaptation field is created. Note that --payload-size 0 specifies that a
+      payload exists with a zero size. This is different from --no-payload
+      which also specifies that the payload does not exist. By default, the
+      payload uses all free space in the packet.
 
   --pcr value
       Set this PCR value in the packets. An adaptation field is created.

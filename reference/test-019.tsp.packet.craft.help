@@ -51,7 +51,7 @@ Options:
       Remove the OPCR from the packets.
 
   --no-payload
-      Remove the payload, equivalent to --payload-size 0.
+      Remove the payload.
 
   --no-pcr
       Remove the PCR from the packets.
@@ -94,6 +94,9 @@ Options:
       --payload-pattern, the existing payload is either shrunk or enlarged.
       When an existing payload is shrunk, the end of the payload is truncated.
       When an existing payload is enlarged, its end is padded with 0xFF bytes.
+      Note that --payload-size 0 specifies that a payload exists with a zero
+      size. This is different from --no-payload which also specifies that the
+      payload does not exist.
 
   --pcr value
       Set this PCR value in the packets. Space is required in the adaptation
