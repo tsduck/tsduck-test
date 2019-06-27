@@ -5,15 +5,23 @@ Usage: tsp -I file [options] [file-name ...]
 
 Parameters:
 
-  Name of the input files. The files are read in sequence. Use standard input
-  by default.
+  Names of the input files. If no file is specified, the standard input is
+  used. When several files are specified, use '-' as file name to specify the
+  standard input. The files are read in sequence, unless --interleave is
+  specified.
 
 Options:
 
   -b value
   --byte-offset value
       Start reading each file at the specified byte offset (default: 0). This
-      option is allowed only if the input file is a regular file.
+      option is allowed only if all input files are regular files.
+
+  -f
+  --first-terminate
+      With --interleave, terminate when any file reaches the end of file. By
+      default, continue reading until the last file reaches the end of file
+      (other files are replaced with null packets after their end of file).
 
   --help
       Display this help text.
@@ -23,14 +31,28 @@ Options:
       Repeat the playout of the file infinitely (default: only once). This
       option is allowed only if the input file is a regular file.
 
+  --interleave[=value]
+      Interleave files instead of reading them one by one. All files are
+      simultaneously opened. The optional value is a chunk size N, a packet
+      count (default is 1). N packets are read from the first file, then N from
+      the second file, etc. and then loop back to N packets again from the
+      first file, etc.
+
+  -l value
+  --label-base value
+      Set a label on each input packet. Packets from the first file are tagged
+      with the specified base label, packets from the second file with base
+      label plus one, and so on. For a given file, if the computed label is
+      above the maximum (31), its packets are not labelled.
+
   -p value
   --packet-offset value
       Start reading each file at the specified TS packet (default: 0). This
-      option is allowed only if the input file is a regular file.
+      option is allowed only if all input files are regular files.
 
   -r value
   --repeat value
       Repeat the playout of each file the specified number of times (default:
-      only once). This option is allowed only if the input file is a regular
-      file.
+      only once). This option is allowed only if all input files are regular
+      files.
 
