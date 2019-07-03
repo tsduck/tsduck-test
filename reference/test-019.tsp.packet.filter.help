@@ -29,6 +29,16 @@ Options:
       packets may no longer be null packets if some previous plugin injected
       data, replacing stuffing.
 
+  -i index1[-[index2]]
+  --interval index1[-[index2]]
+      Select all packets in the specified interval from the start of the
+      stream. The packets in the stream are indexed starting at zero. In the
+      form 'index1', only one packet is selected, at the specified index. In
+      the form 'index1-index2', all packets in the specified range of indexes,
+      inclusive, are selected. In the form 'index1-', all packets starting at
+      the specified index are selected, up to the end of the stream. Several
+      options --interval can be specified.
+
   -l label1[-label2]
   --label label1[-label2]
       Select packets with any of the specified labels. Labels should have
