@@ -6,6 +6,7 @@
 
 # Build script name from caller's name.
 SCRIPT=$(basename ${BASH_SOURCE[1]} .sh)
+SCRIPTDIR=$(cd $(dirname ${BASH_SOURCE[1]}); pwd)
 
 # Root directory of test repository and subdirs.
 COMMONDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
