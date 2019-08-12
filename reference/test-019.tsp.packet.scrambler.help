@@ -25,6 +25,29 @@ Options:
       Specifies the access criteria for the service as sent to the ECMG. The
       value must be a suite of hexadecimal digits.
 
+  --aes-cbc
+      Use AES-CBC scrambling instead of DVB-CSA2 (the default). The control
+      words are 16-byte long instead of 8-byte. The residue is left clear.
+      Specify a fixed initialization vector using the --iv option.
+      
+      Note that this is a non-standard TS scrambling mode. The only standard
+      AES-based scrambling modes are ATIS-IDSA and DVB-CISSA (DVB-CISSA is the
+      same as AES-CBC with a DVB-defined IV). The TSDuck scrambler
+      automatically sets the scrambling_descriptor with user-defined value
+      0xF0.
+
+  --aes-ctr
+      Use AES-CTR scrambling instead of DVB-CSA2 (the default). The control
+      words are 16-byte long instead of 8-byte. The residue is included in the
+      scrambling. Specify a fixed initialization vector using the --iv option.
+      See the option --ctr-counter-bits for the size of the counter part in the
+      IV.
+      
+      Note that this is a non-standard TS scrambling mode. The only standard
+      AES-based scrambling modes are ATIS-IDSA and DVB-CISSA. The TSDuck
+      scrambler automatically sets the scrambling_descriptor with user-defined
+      value 0xF1.
+
   --atis-idsa
       Use ATIS-IDSA scrambling (ATIS-0800006) instead of DVB-CSA2 (the
       default). The control words are 16-byte long instead of 8-byte.
@@ -44,6 +67,12 @@ Options:
   -d seconds
   --cp-duration seconds
       Specifies the crypto-period duration in seconds (default: 10).
+
+  --ctr-counter-bits value
+      With --aes-ctr, specifies the size in bits of the counter part. In the
+      initialization vector, the fixed nounce part uses the first 128-N bits
+      and the counter part uses the last N bits. By default, the counter part
+      uses the second half of the IV (64 bits).
 
   -c value
   --cw value
@@ -85,6 +114,11 @@ Options:
       Ignore packets which are already scrambled. Since these packets are
       likely scrambled with a different control word, descrambling will not be
       possible the usual way.
+
+  --iv value
+      With --aes-cbc or --aes-ctr, specifies a fixed initialization vector for
+      all TS packets. The value must be a string of 32 hexadecimal digits. The
+      default IV is all zeroes.
 
   --log-data[=level]
       Same as --log-protocol but applies to CW_provision and ECM_response
