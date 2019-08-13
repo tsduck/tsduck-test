@@ -101,6 +101,12 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
+  --output-cw-file name
+      Specifies a text file to create. Each line of the file will contain a
+      control word in hexadecimal digits. Each time a new control word is used
+      to scramble or descramble packets, it is logged in the file. The created
+      file can be used later using --cw-file.
+
   -p pid1[-pid2]
   --pid pid1[-pid2]
       Descramble packets with this PID value or range of PID values. Several -p
