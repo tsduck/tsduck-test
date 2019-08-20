@@ -124,6 +124,12 @@ Options:
       Maximum number of tables to dump. Stop logging tables when this limit is
       reached.
 
+  --mediaguard
+      Interpret all EMM and ECM from unknown CAS as coming from MediaGuard. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
   -m
   --multiple-files
       Create multiple binary output files, one per section. A binary output
@@ -133,6 +139,12 @@ Options:
       'base_pXXXX_tXX_eXXXX_vXX_sXX.ext' for long sections, where the XX
       specify the hexadecimal values of the PID, TID (table id), TIDext (table
       id extension), version and section index.
+
+  --nagravision
+      Interpret all EMM and ECM from unknown CAS as coming from NagraVision. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
 
   --negate-pid
       Negate the PID filter: specified PID's are excluded. Warning: this can be
@@ -275,6 +287,19 @@ Options:
 
   --version
       Display the TSDuck version number.
+
+  --viaccess
+      Interpret all EMM and ECM from unknown CAS as coming from Viaccess. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
+  --widevine
+      Interpret all EMM and ECM from unknown CAS as coming from Widevine CAS.
+      By default, EMM's and ECM's are interpreted according to the
+      CA_descriptor which references their PID. This option is useful when
+      analyzing partial transport streams without CAT or PMT to correctly
+      identify the CA PID's.
 
   --xml-output filename
       Save the tables in XML format in the specified file. To output the XML
