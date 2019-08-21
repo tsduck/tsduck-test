@@ -34,6 +34,12 @@ Options:
       Same as --raw-dump (no interpretation of section) but dump the bytes in
       C-language style.
 
+  --conax
+      Interpret all EMM and ECM from unknown CAS as coming from Conax. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
   --default-charset name
       Default character set to use when interpreting DVB strings without
       explicit character table code. According to DVB standard ETSI EN 300 468,
@@ -98,6 +104,12 @@ Options:
       multicast. It can be also a host name that translates to an IP address.
       The 'port' specifies the destination UDP port.
 
+  --irdeto
+      Interpret all EMM and ECM from unknown CAS as coming from Irdeto. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
   --local-udp address
       With --ip-udp, when the destination is a multicast address, specify the
       IP address of the outgoing local interface. It can be also a host name
@@ -137,6 +149,13 @@ Options:
       default, EMM's and ECM's are interpreted according to the CA_descriptor
       which references their PID. This option is useful when analyzing partial
       transport streams without CAT or PMT to correctly identify the CA PID's.
+
+  --nds
+      Interpret all EMM and ECM from unknown CAS as coming from Synamedia
+      (formerly known as NDS). By default, EMM's and ECM's are interpreted
+      according to the CA_descriptor which references their PID. This option is
+      useful when analyzing partial transport streams without CAT or PMT to
+      correctly identify the CA PID's.
 
   --negate-pid
       Negate the PID filter: specified PID's are excluded. Warning: this can be

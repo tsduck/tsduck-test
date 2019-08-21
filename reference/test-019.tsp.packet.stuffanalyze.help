@@ -9,6 +9,9 @@ Options:
       With options --ecm or --emm, select only ECM or EMM for the specified CA
       system id value. Equivalent to --min-cas value --max-cas value.
 
+  --conax
+      Equivalent to --min-cas 0x0B00 --max-cas 0x0BFF.
+
   --ecm
       Extract PID's containing ECM.
 
@@ -17,6 +20,9 @@ Options:
 
   --help
       Display this help text.
+
+  --irdeto
+      Equivalent to --min-cas 0x0600 --max-cas 0x06FF.
 
   --max-cas value
       With options --ecm or --emm, select only ECM or EMM for the CA system id
@@ -31,6 +37,9 @@ Options:
 
   --nagravision
       Equivalent to --min-cas 0x1800 --max-cas 0x18FF.
+
+  --nds
+      Equivalent to --min-cas 0x0900 --max-cas 0x09FF.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
@@ -61,4 +70,7 @@ Options:
 
   --viaccess
       Equivalent to --min-cas 0x0500 --max-cas 0x05FF.
+
+  --widevine
+      Equivalent to --min-cas 0x4AD4 --max-cas 0x4AD5.
 

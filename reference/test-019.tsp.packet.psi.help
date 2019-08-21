@@ -31,6 +31,12 @@ Options:
       access information. Useful to avoid reading the complete transport
       stream, waiting for a non-existent CAT.
 
+  --conax
+      Interpret all EMM and ECM from unknown CAS as coming from Conax. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
   --default-charset name
       Default character set to use when interpreting DVB strings without
       explicit character table code. According to DVB standard ETSI EN 300 468,
@@ -75,6 +81,12 @@ Options:
   --include-next
       Include PSI tables with "next" indicator. By default, they are excluded.
 
+  --irdeto
+      Interpret all EMM and ECM from unknown CAS as coming from Irdeto. By
+      default, EMM's and ECM's are interpreted according to the CA_descriptor
+      which references their PID. This option is useful when analyzing partial
+      transport streams without CAT or PMT to correctly identify the CA PID's.
+
   --mediaguard
       Interpret all EMM and ECM from unknown CAS as coming from MediaGuard. By
       default, EMM's and ECM's are interpreted according to the CA_descriptor
@@ -86,6 +98,13 @@ Options:
       default, EMM's and ECM's are interpreted according to the CA_descriptor
       which references their PID. This option is useful when analyzing partial
       transport streams without CAT or PMT to correctly identify the CA PID's.
+
+  --nds
+      Interpret all EMM and ECM from unknown CAS as coming from Synamedia
+      (formerly known as NDS). By default, EMM's and ECM's are interpreted
+      according to the CA_descriptor which references their PID. This option is
+      useful when analyzing partial transport streams without CAT or PMT to
+      correctly identify the CA PID's.
 
   --nested-tlv[=min-size]
       With option --tlv, try to interpret the value field of each TLV record as
