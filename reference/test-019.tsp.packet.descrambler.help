@@ -113,6 +113,10 @@ Options:
       or --pid options may be specified. By default, descramble the specified
       service.
 
+  --swap-cw
+      Swap even and odd control words from the ECM's. Useful when a crazy ECMG
+      inadvertently swapped the CW before generating the ECM.
+
   --synchronous
       Specify to synchronously decipher the ECM's. By default, in real-time
       mode, the packet processing continues while processing ECM's. This option
