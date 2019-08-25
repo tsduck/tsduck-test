@@ -32,10 +32,14 @@ Options:
       stream, waiting for a non-existent CAT.
 
   --conax
-      Interpret all EMM and ECM from unknown CAS as coming from Conax. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0B00.
+
+  --default-cas-id value
+      Interpret all EMM's and ECM's from unknown CAS as coming from the
+      specified CA_System_Id. By default, EMM's and ECM's are interpreted
+      according to the CA_descriptor which references their PID. This option is
+      useful when analyzing partial transport streams without CAT or PMT to
+      correctly identify the CA PID's.
 
   --default-charset name
       Default character set to use when interpreting DVB strings without
@@ -82,29 +86,16 @@ Options:
       Include PSI tables with "next" indicator. By default, they are excluded.
 
   --irdeto
-      Interpret all EMM and ECM from unknown CAS as coming from Irdeto. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0600.
 
   --mediaguard
-      Interpret all EMM and ECM from unknown CAS as coming from MediaGuard. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0100.
 
   --nagravision
-      Interpret all EMM and ECM from unknown CAS as coming from NagraVision. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x1800.
 
   --nds
-      Interpret all EMM and ECM from unknown CAS as coming from Synamedia
-      (formerly known as NDS). By default, EMM's and ECM's are interpreted
-      according to the CA_descriptor which references their PID. This option is
-      useful when analyzing partial transport streams without CAT or PMT to
-      correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0900.
 
   --nested-tlv[=min-size]
       With option --tlv, try to interpret the value field of each TLV record as
@@ -126,6 +117,9 @@ Options:
   --raw-dump
       Raw dump of section, no interpretation.
 
+  --safeaccess
+      Equivalent to --default-cas-id 0x4ADC.
+
   --tlv value
       For sections of unknown types, this option specifies how to interpret
       some parts of the section payload as TLV records. Several --tlv options
@@ -143,15 +137,8 @@ Options:
       All fields are optional. The default values are "auto,auto,1,1,msb".
 
   --viaccess
-      Interpret all EMM and ECM from unknown CAS as coming from Viaccess. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0500.
 
   --widevine
-      Interpret all EMM and ECM from unknown CAS as coming from Widevine CAS.
-      By default, EMM's and ECM's are interpreted according to the
-      CA_descriptor which references their PID. This option is useful when
-      analyzing partial transport streams without CAT or PMT to correctly
-      identify the CA PID's.
+      Equivalent to --default-cas-id 0x4AD4.
 

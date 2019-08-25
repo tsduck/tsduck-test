@@ -39,14 +39,18 @@ Options:
       C-language style.
 
   --conax
-      Interpret all EMM and ECM from unknown CAS as coming from Conax. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0B00.
 
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
+
+  --default-cas-id value
+      Interpret all EMM's and ECM's from unknown CAS as coming from the
+      specified CA_System_Id. By default, EMM's and ECM's are interpreted
+      according to the CA_descriptor which references their PID. This option is
+      useful when analyzing partial transport streams without CAT or PMT to
+      correctly identify the CA PID's.
 
   --default-charset name
       Default character set to use when interpreting DVB strings without
@@ -113,10 +117,7 @@ Options:
       The 'port' specifies the destination UDP port.
 
   --irdeto
-      Interpret all EMM and ECM from unknown CAS as coming from Irdeto. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0600.
 
   --local-udp address
       With --ip-udp, when the destination is a multicast address, specify the
@@ -137,10 +138,7 @@ Options:
       reached.
 
   --mediaguard
-      Interpret all EMM and ECM from unknown CAS as coming from MediaGuard. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0100.
 
   -m
   --multiple-files
@@ -153,17 +151,10 @@ Options:
       id extension), version and section index.
 
   --nagravision
-      Interpret all EMM and ECM from unknown CAS as coming from NagraVision. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x1800.
 
   --nds
-      Interpret all EMM and ECM from unknown CAS as coming from Synamedia
-      (formerly known as NDS). By default, EMM's and ECM's are interpreted
-      according to the CA_descriptor which references their PID. This option is
-      useful when analyzing partial transport streams without CAT or PMT to
-      correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0900.
 
   --negate-pid
       Negate the PID filter: specified PID's are excluded. Warning: this can be
@@ -254,6 +245,9 @@ Options:
       With --xml-output, rewrite the same file with each table. The specified
       file always contains one single table, the latest one.
 
+  --safeaccess
+      Equivalent to --default-cas-id 0x4ADC.
+
   --strict-xml
       Save XML documents in strictly conformant XML format. By default, do not
       escape characters when this is not syntactically necessary to make the
@@ -308,17 +302,10 @@ Options:
       Display the TSDuck version number.
 
   --viaccess
-      Interpret all EMM and ECM from unknown CAS as coming from Viaccess. By
-      default, EMM's and ECM's are interpreted according to the CA_descriptor
-      which references their PID. This option is useful when analyzing partial
-      transport streams without CAT or PMT to correctly identify the CA PID's.
+      Equivalent to --default-cas-id 0x0500.
 
   --widevine
-      Interpret all EMM and ECM from unknown CAS as coming from Widevine CAS.
-      By default, EMM's and ECM's are interpreted according to the
-      CA_descriptor which references their PID. This option is useful when
-      analyzing partial transport streams without CAT or PMT to correctly
-      identify the CA PID's.
+      Equivalent to --default-cas-id 0x4AD4.
 
   --xml-output filename
       Save the tables in XML format in the specified file. To output the XML
