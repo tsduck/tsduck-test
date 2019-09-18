@@ -135,3 +135,5 @@ repository. But we now limit their size to 20 MB.
 | 046  | `filter` plugin
 | 047  | `remap` plugin
 | 048  | `psimerge` plugin
+| 049  | `continuity` plugin with duplicate packets
+| 050  | SCTE 18 (Emergency Alert System) signalization

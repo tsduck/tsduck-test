@@ -1,0 +1,19 @@
+
+* Cable Emergency Alert (ATSC), TID 216 (0xD8), PID 8187 (0x1FFB)
+  Version: 5, sections: 1, total size: 85 bytes
+  - Section 0:
+    Protocol version: 0x00 (0)
+    EAS event id: 0x0A75 (2677)
+    Originator code: "EAS", event code: "RWT"
+    Nature of activation: Number of strings: 1
+      Language: "eng", text: "REQUIRED WEEKLY TEST"
+    Remaining: 29 seconds, start time: immediate, duration: 15 minutes
+    Details: OOB id: 0x2613 (9747), major.minor: 15.20
+    Audio: OOB id: 0x0000 (0)
+    Number of locations: 2
+      State code: 42, county: 91, subdivision: All or unspecified (0x0)
+      State code: 42, county: 101, subdivision: All or unspecified (0x0)
+    Number of exceptions: 0
+    - Descriptor 0: SCTE 18 EAS In-Band Details Channel (0x00, 0), 3 bytes
+      RF channel: 15, program number: 0x0014 (20)
+

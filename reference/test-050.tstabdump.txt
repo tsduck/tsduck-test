@@ -1,0 +1,70 @@
+
+* Cable Emergency Alert (ATSC), TID 216 (0xD8)
+  Section: 0 (last: 0), version: 1, size: 49 bytes
+  Protocol version: 0x00 (0)
+  EAS event id: 0x1234 (4660)
+  Originator code: "CIV", event code: "EQW"
+  Remaining: 0 seconds, start time: immediate, duration: 0 minutes
+  Details: OOB id: 0x0000 (0), major.minor: 0.0
+  Audio: OOB id: 0x0000 (0)
+  Number of locations: 1
+    State code: 11, county: 222, subdivision: Northwest (0x1)
+  Number of exceptions: 0
+
+* Cable Emergency Alert (ATSC), TID 216 (0xD8)
+  Section: 0 (last: 0), version: 2, size: 330 bytes
+  Protocol version: 0x00 (0)
+  EAS event id: 0x8765 (34661)
+  Originator code: "FOO", event code: "BAR"
+  Nature of activation: Number of strings: 2
+    Language: "eng", text: "Warning message"
+    Language: "foo", text: "Glooby boolga"
+  Remaining: 30 seconds, start time: 2016/09/15 21:12:45, duration: 15 minutes
+  Details: OOB id: 0x7413 (29715), major.minor: 12.15
+  Audio: OOB id: 0x9654 (38484)
+  Alert text: Number of strings: 2
+    Language: "eng", text: "This is a long message text without real meaning."
+    Language: "fre", text: "Tout ça ne veut pas dire grand chose."
+  Number of locations: 3
+    State code: 1, county: 841, subdivision: All or unspecified (0x0)
+    State code: 2, county: 123, subdivision: Central (0x5)
+    State code: 3, county: 431, subdivision: West Central (0x4)
+  Number of exceptions: 4
+    In-band: true, exception major.minor: 1.2
+    In-band: true, exception major.minor: 3.123
+    In-band: false, exception OOB id: 0x0753 (1875)
+    In-band: false, exception OOB id: 0x1597 (5527)
+  - Descriptor 0: SCTE 18 EAS In-Band Details Channel (0x00, 0), 3 bytes
+    RF channel: 11, program number: 0x1234 (4660)
+  - Descriptor 1: SCTE 18 EAS In-Band Exceptions Channel (0x01, 1), 1 bytes
+    Exception channel count: 0
+  - Descriptor 2: SCTE 18 EAS In-Band Exceptions Channel (0x01, 1), 7 bytes
+    Exception channel count: 2
+      RF channel: 10, program number 0x1234 (4660)
+      RF channel: 22, program number 0x5235 (21045)
+  - Descriptor 3: SCTE 18 EAS Emergency Alert Metadata (0x03, 3), 2 bytes
+    Fragment number: 1
+    XML fragment: ""
+  - Descriptor 4: SCTE 18 EAS Emergency Alert Metadata (0x03, 3), 31 bytes
+    Fragment number: 2
+    XML fragment: "<AlertText><Foo/></AlertText>"
+  - Descriptor 5: SCTE 18 EAS Audio File (0x02, 2), 1 bytes
+    Number of audio sources: 0
+  - Descriptor 6: SCTE 18 EAS Audio File (0x02, 2), 52 bytes
+    Number of audio sources: 3
+    - Audio format: Audio Interchange File Format (AIFF) ‐ Extended (0x02)
+      Audio source: unknown (0x00)
+    - Audio format: Audio Interchange File Format (AIFF) ‐ Extended (0x02)
+      File name: "FOO-AUDIO.WAV"
+      Audio source: Out‐of‐band DSM‐CC Object Carousel (0x01)
+      Program number: 0x5678 (22136)
+      Carousel id: 0x12345678 (305419896)
+      Application id: 0x9876 (39030)
+    - Audio format: Waveform audio format (WAV) ‐ Basic (0x03)
+      File name: "bar.wav"
+      Audio source: Out‐of‐band DSM‐CC Data Carousel (0x02)
+      Program number: 0x4569 (17769)
+      Download id: 0x15975315 (362238741)
+      Module id: 0x85245691 (2233751185)
+      Application id: 0x1258 (4696)
+
