@@ -5,7 +5,8 @@
     Program: 3 (0x0003), PCR PID: 49 (0x0031)
     Program information:
     - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
-      0000:  01 65 6E 67 01 00 00 03 65 6E 63           .eng....enc
+      Component name: Number of strings: 1
+        Language: "eng", text: "enc"
     Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
     - Descriptor 0: Video Stream (0x02, 2), 3 bytes
       Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
@@ -19,8 +20,8 @@
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x41432D33 ("AC-3")
     - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
-      0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D  .eng....audio-
-      000E:  31                                         1
+      Component name: Number of strings: 1
+        Language: "eng", text: "audio-1"
     - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
       0000:  08 38 05 FF 0F 01 BF 65 6E 67              .8.....eng
     - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
@@ -38,8 +39,10 @@
       Hidden: no, hide guide: no
       Service type: ATSC Digital Television, source id: 0x0001 (1)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
-        0000:  E0 31 03 02 E0 31 00 00 00 81 E0 34 65 6E  .1...1.....4en
-        000E:  67 81 E0 35 65 6E 67                       g..5eng
+        PCR PID: 0x0031 (49), number of elements: 3
+        - PID: 0x0031 (49), language: "", type: 0x02 (Digital radio sound service)
+        - PID: 0x0034 (52), language: "eng", type: 0x81 (unknown)
+        - PID: 0x0035 (53), language: "eng", type: 0x81 (unknown)
     - Channel 10.2, short name: "TelXito"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0004 (4)
@@ -47,8 +50,9 @@
       Hidden: no, hide guide: no
       Service type: ATSC Digital Television, source id: 0x0002 (2)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-        0000:  E0 41 02 02 E0 41 00 00 00 81 E0 44 65 6E  .A...A.....Den
-        000E:  67                                         g
+        PCR PID: 0x0041 (65), number of elements: 2
+        - PID: 0x0041 (65), language: "", type: 0x02 (Digital radio sound service)
+        - PID: 0x0044 (68), language: "eng", type: 0x81 (unknown)
     - Channel 10.3, short name: "LightTV"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0005 (5)
@@ -56,8 +60,9 @@
       Hidden: no, hide guide: no
       Service type: ATSC Digital Television, source id: 0x0003 (3)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-        0000:  E0 51 02 02 E0 51 00 00 00 81 E0 54 65 6E  .Q...Q.....Ten
-        000E:  67                                         g
+        PCR PID: 0x0051 (81), number of elements: 2
+        - PID: 0x0051 (81), language: "", type: 0x02 (Digital radio sound service)
+        - PID: 0x0054 (84), language: "eng", type: 0x81 (unknown)
     - Channel 10.4, short name: "Quest  "
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0006 (6)
@@ -65,6 +70,7 @@
       Hidden: no, hide guide: no
       Service type: ATSC Digital Television, source id: 0x0004 (4)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-        0000:  E0 61 02 02 E0 61 00 00 00 81 E0 64 65 6E  .a...a.....den
-        000E:  67                                         g
+        PCR PID: 0x0061 (97), number of elements: 2
+        - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
+        - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 

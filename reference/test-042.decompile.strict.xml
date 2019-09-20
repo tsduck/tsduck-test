@@ -16,25 +16,29 @@
   <STT protocol_version="0" system_time="1,236,854,921" GPS_UTC_offset="12" DS_status="false" DS_day_of_month="3" DS_hour="15"/>
   <TVCT version="11" current="true" transport_stream_id="0x1FE1" protocol_version="0">
     <channel short_name="KULX   " major_channel_number="62" minor_channel_number="1" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0003" ETM_location="1" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0001">
-      <generic_descriptor tag="0xA1">
-        E0 31 03 02 E0 31 00 00 00 81 E0 34 65 6E 67 81
-        E0 35 65 6E 67
-      </generic_descriptor>
+      <service_location_descriptor PCR_PID="0x0031">
+        <component stream_type="0x02" elementary_PID="0x0031"/>
+        <component stream_type="0x81" elementary_PID="0x0034" ISO_639_language_code="eng"/>
+        <component stream_type="0x81" elementary_PID="0x0035" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
     </channel>
     <channel short_name="TelXito" major_channel_number="62" minor_channel_number="2" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0004" ETM_location="1" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0002">
-      <generic_descriptor tag="0xA1">
-        E0 41 02 02 E0 41 00 00 00 81 E0 44 65 6E 67
-      </generic_descriptor>
+      <service_location_descriptor PCR_PID="0x0041">
+        <component stream_type="0x02" elementary_PID="0x0041"/>
+        <component stream_type="0x81" elementary_PID="0x0044" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
     </channel>
     <channel short_name="LightTV" major_channel_number="62" minor_channel_number="3" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0005" ETM_location="0" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0003">
-      <generic_descriptor tag="0xA1">
-        E0 51 02 02 E0 51 00 00 00 81 E0 54 65 6E 67
-      </generic_descriptor>
+      <service_location_descriptor PCR_PID="0x0051">
+        <component stream_type="0x02" elementary_PID="0x0051"/>
+        <component stream_type="0x81" elementary_PID="0x0054" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
     </channel>
     <channel short_name="Quest  " major_channel_number="62" minor_channel_number="4" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0006" ETM_location="0" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0004">
-      <generic_descriptor tag="0xA1">
-        E0 61 02 02 E0 61 00 00 00 81 E0 64 65 6E 67
-      </generic_descriptor>
+      <service_location_descriptor PCR_PID="0x0061">
+        <component stream_type="0x02" elementary_PID="0x0061"/>
+        <component stream_type="0x81" elementary_PID="0x0064" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
     </channel>
   </TVCT>
 </tsduck>
