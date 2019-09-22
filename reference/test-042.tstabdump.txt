@@ -78,3 +78,75 @@
       - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
       - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 
+* MGT (ATSC), TID 199 (0xC7)
+  Section: 0 (last: 0), version: 0, size: 192 bytes
+  Protocol version: 0, number of table types: 0
+  - Global descriptors:
+    - Descriptor 0: ATSC Component Name (0xA3, 163), 1 bytes
+      Component name: Number of strings: 0
+    - Descriptor 1: ATSC Component Name (0xA3, 163), 37 bytes
+      Component name: Number of strings: 2
+        Language: "eng", text: "Component name"
+        Language: "foo", text: "Bar name"
+    - Descriptor 2: ATSC Extended Channel Name (0xA0, 160), 1 bytes
+      Long channel name: Number of strings: 0
+    - Descriptor 3: ATSC Extended Channel Name (0xA0, 160), 25 bytes
+      Long channel name: Number of strings: 1
+        Language: "eng", text: "Long channel name"
+    - Descriptor 4: ATSC Service Location (0xA1, 161), 3 bytes
+      PCR PID: none, number of elements: 0
+    - Descriptor 5: ATSC Service Location (0xA1, 161), 21 bytes
+      PCR PID: 0x1234 (4660), number of elements: 3
+      - PID: 0x0567 (1383), language: "eng", type: 0x02 (Digital radio sound service)
+      - PID: 0x09AB (2475), language: "", type: 0x03 (Teletext service)
+      - PID: 0x1DEF (7663), language: "foo", type: 0x04 (NVOD reference service)
+    - Descriptor 6: ATSC AC-3 Audio (0x81, 129), 7 bytes
+      Sample rate: 32 kHz (0x2)
+      AC-3 coding version: 0x01 (1)
+      Bit rate: 56 kb/s (0x03)
+      Surround mode: NOT Dolby surround encoded (0x1)
+      Bitstream mode: associated service: visually impaired (VI) (0x2)
+      Num. channels: 3/1 (0x5)
+      Full service: true
+      Associated services flags: 0xEF
+      Text: ""
+    - Descriptor 7: ATSC AC-3 Audio (0x81, 129), 29 bytes
+      Sample rate: 44.1 kHz (0x1)
+      AC-3 coding version: 0x06 (6)
+      Bit rate: 512 kb/s (0x10)
+      Surround mode: Not indicated (0x0)
+      Bitstream mode: main audio service: music and effects (ME) (0x1)
+      Num. channels: 1 (0x8)
+      Full service: false
+      Main audio service id: 6
+      Priority: 0
+      Text: "Text string"
+      Language: "eng"
+      Language 2: "foo"
+      Additional information:
+      0000:  01 23 45 67 89                             .#Eg.
+    - Descriptor 8: ATSC E-AC-3 Audio Stream (0xCC, 204), 3 bytes
+      Mixinfo exists: false
+      Full service: true
+      Audio service type: complete main (CM) (0x0)
+      Num. channels: unknown (0x6)
+    - Descriptor 9: ATSC E-AC-3 Audio Stream (0xCC, 204), 28 bytes
+      Mixinfo exists: true
+      Full service: false
+      Audio service type: commentary (C) (0x5)
+      Num. channels: 2-channel Dolby Surround encoded (stereo) (0x3)
+      Bit stream id (bsid): 0x0F (15)
+      Priority: 2
+      Main id: 0x04 (4)
+      Associated service (asvc): 0xEF (239)
+      Substream 1: 0x12 (18)
+      Substream 2: 0x34 (52)
+      Substream 3: 0x56 (86)
+      Language: "eng"
+      Language 2: "foo"
+      Substream 1 language: "s01"
+      Substream 2 language: "s02"
+      Substream 3 language: "s03"
+      Additional information:
+      0000:  98 76 54 32 10                             .vT2.
+
