@@ -79,7 +79,7 @@
       - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 
 * MGT (ATSC), TID 199 (0xC7)
-  Section: 0 (last: 0), version: 0, size: 192 bytes
+  Section: 0 (last: 0), version: 0, size: 255 bytes
   Protocol version: 0, number of table types: 0
   - Global descriptors:
     - Descriptor 0: ATSC Component Name (0xA3, 163), 1 bytes
@@ -149,4 +149,35 @@
       Substream 3 language: "s03"
       Additional information:
       0000:  98 76 54 32 10                             .vT2.
+    - Descriptor 10: ATSC Genre (0xAB, 171), 1 bytes
+      Attribute count: 0
+    - Descriptor 11: ATSC Genre (0xAB, 171), 4 bytes
+      Attribute count: 3
+       - Attribute: 0x20 (Education)
+       - Attribute: 0x7F (Western)
+       - Attribute: 0xA3 (Rock & Roll)
+    - Descriptor 12: ATSC Stuffing (0x80, 128), 0 bytes
+      Stuffing data, 0 bytes
+    - Descriptor 13: ATSC Stuffing (0x80, 128), 5 bytes
+      Stuffing data, 5 bytes
+      0000:  01 23 45 67 89                             .#Eg.
+    - Descriptor 14: ATSC Redistribution Control (0xAA, 170), 0 bytes
+      RC information, 0 bytes
+    - Descriptor 15: ATSC Redistribution Control (0xAA, 170), 0 bytes
+      RC information, 0 bytes
+    - Descriptor 16: ATSC Redistribution Control (0xAA, 170), 5 bytes
+      RC information, 5 bytes
+      0000:  98 76 54 32 10                             .vT2.
+    - Descriptor 17: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+      Number of services: 0
+    - Descriptor 18: ATSC Time-Shifted Service (0xA2, 162), 11 bytes
+      Number of services: 2
+      - Time shift: 5 mn, service: 1.2
+      - Time shift: 30 mn, service: 100.200
+    - Descriptor 19: ATSC Caption Service (0x86, 134), 1 bytes
+      Number of services: 0
+    - Descriptor 20: ATSC Caption Service (0x86, 134), 13 bytes
+      Number of services: 2
+      - Language: "foo", digital: false, line 21: true, easy reader: true, wide: false
+      - Language: "bar", digital: true, service: 0x23 (35), easy reader: false, wide: true
 

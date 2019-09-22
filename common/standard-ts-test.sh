@@ -114,7 +114,7 @@ test_text $SCRIPT.tsdump.header.log
 # ==== tstables, save all psi/si, search for PMT's
 
 PMTPIDS=$(grep '^table:.*tid=2:' $OUTDIR/$SCRIPT.tsanalyze.norm.txt | sed -e 's/^.*:pid=/-p /' -e 's/:.*$//' | tr '\n' ' ')
-PIDS="-p 0 -p 1 -p 2 -p 16 -p 17 -p 18 -p 19 $PMTPIDS"
+PIDS="-p 0 -p 1 -p 2 -p 16 -p 17 -p 18 -p 19 -p 0x1FFB $PMTPIDS"
 
 $(tspath tstables) $(fpath "$INFILE") $PIDS \
     --output-file $(fpath "$OUTDIR/$SCRIPT.tstables.text.txt") \

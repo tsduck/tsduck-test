@@ -73,5 +73,32 @@
         98 76 54 32 10
       </additional_info>
     </ATSC_EAC3_audio_descriptor>
+    <genre_descriptor/>
+    <genre_descriptor>
+      <attribute value="0x20"/>
+      <attribute value="0x7F"/>
+      <attribute value="0xA3"/>
+    </genre_descriptor>
+    <ATSC_stuffing_descriptor/>
+    <ATSC_stuffing_descriptor>
+      01 23 45 67 89
+    </ATSC_stuffing_descriptor>
+    <redistribution_control_descriptor/>
+    <redistribution_control_descriptor/>
+    <redistribution_control_descriptor>
+      <rc_information>
+        98 76 54 32 10
+      </rc_information>
+    </redistribution_control_descriptor>
+    <ATSC_time_shifted_service_descriptor/>
+    <ATSC_time_shifted_service_descriptor>
+      <service time_shift="5" major_channel_number="1" minor_channel_number="2"/>
+      <service time_shift="30" major_channel_number="100" minor_channel_number="200"/>
+    </ATSC_time_shifted_service_descriptor>
+    <caption_service_descriptor/>
+    <caption_service_descriptor>
+      <service language="foo" digital_cc="false" line21_field="true" easy_reader="true" wide_aspect_ratio="false"/>
+      <service language="bar" digital_cc="true" caption_service_number="0x23" easy_reader="false" wide_aspect_ratio="true"/>
+    </caption_service_descriptor>
   </MGT>
 </tsduck>

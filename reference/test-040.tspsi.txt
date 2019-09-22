@@ -172,6 +172,7 @@
       Component name: Number of strings: 1
         Language: "eng", text: "enc"
     - Descriptor 3: ATSC Redistribution Control (0xAA, 170), 1 bytes
+      RC information, 1 bytes
       0000:  FF                                         .
     Elementary stream: type 0x02 (MPEG-2 Video), PID: 97 (0x0061)
     - Descriptor 0: Video Stream (0x02, 2), 3 bytes
@@ -183,8 +184,10 @@
     - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
       Alignment type: 0x02 (2, Video access unit)
     - Descriptor 2: ATSC Caption Service (0x86, 134), 19 bytes
-      0000:  E3 65 6E 67 7E 3F FF 65 6E 67 7F 3F FF 65  .eng~?.eng.?.e
-      000E:  6E 67 C1 3F FF                             ng.?.
+      Number of services: 3
+      - Language: "eng", digital: false, line 21: false, easy reader: false, wide: false
+      - Language: "eng", digital: false, line 21: true, easy reader: false, wide: false
+      - Language: "eng", digital: true, service: 0x01 (1), easy reader: false, wide: false
     Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 100 (0x0064)
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x41432D33 ("AC-3")

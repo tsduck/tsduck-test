@@ -1,4 +1,83 @@
 
+* MGT (ATSC), TID 199 (0xC7)
+  Section: 0 (last: 0), version: 12, size: 138 bytes
+  Protocol version: 0, number of table types: 11
+  - Table type: TVCT-current (0x0000)
+    PID: 0x1FFB (8187), version: 11, size: 218 bytes
+  - Table type: ETT (0x0004)
+    PID: 0x1E80 (7808), version: 10, size: 68 bytes
+  - Table type: EIT-0 (0x0100)
+    PID: 0x1D00 (7424), version: 10, size: 1423 bytes
+  - Table type: EIT-1 (0x0101)
+    PID: 0x1D01 (7425), version: 10, size: 1708 bytes
+  - Table type: EIT-2 (0x0102)
+    PID: 0x1D02 (7426), version: 10, size: 1487 bytes
+  - Table type: EIT-3 (0x0103)
+    PID: 0x1D03 (7427), version: 10, size: 1087 bytes
+  - Table type: ETT-0 (0x0200)
+    PID: 0x1E00 (7680), version: 10, size: 1848 bytes
+  - Table type: ETT-1 (0x0201)
+    PID: 0x1E01 (7681), version: 10, size: 1845 bytes
+  - Table type: ETT-2 (0x0202)
+    PID: 0x1E02 (7682), version: 10, size: 2524 bytes
+  - Table type: ETT-3 (0x0203)
+    PID: 0x1E03 (7683), version: 10, size: 1898 bytes
+  - Table type: RRT-1 (0x0301)
+    PID: 0x1FFB (8187), version: 0, size: 979 bytes
+
+* STT (ATSC), TID 205 (0xCD)
+  Section: 0 (last: 0), version: 0, size: 20 bytes
+  Protocol version: 0
+  System time: 0x49B8E887 (1236854919), GPS-UTC offset: 0x12 (18)
+  Corresponding UTC time: 2019/03/17 10:48:21
+  Daylight saving time: yes, next switch day: 0, hour: 0
+
+* TVCT (ATSC), TID 200 (0xC8)
+  Section: 0 (last: 0), version: 11, size: 218 bytes
+  Transport stream id: 0x1FE1 (8161)
+  Protocol version: 0, number of channels: 4
+  - Channel 10.1, short name: "KULX   "
+    Modulation: ATSC 8-VSB, frequency: 0
+    TS id: 0x1FE1 (8161), program number: 0x0003 (3)
+    ETM location: 1, access controlled: no
+    Hidden: no, hide guide: no
+    Service type: ATSC Digital Television, source id: 0x0001 (1)
+    - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
+      PCR PID: 0x0031 (49), number of elements: 3
+      - PID: 0x0031 (49), language: "", type: 0x02 (Digital radio sound service)
+      - PID: 0x0034 (52), language: "eng", type: 0x81 (unknown)
+      - PID: 0x0035 (53), language: "eng", type: 0x81 (unknown)
+  - Channel 10.2, short name: "TelXito"
+    Modulation: ATSC 8-VSB, frequency: 0
+    TS id: 0x1FE1 (8161), program number: 0x0004 (4)
+    ETM location: 1, access controlled: no
+    Hidden: no, hide guide: no
+    Service type: ATSC Digital Television, source id: 0x0002 (2)
+    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+      PCR PID: 0x0041 (65), number of elements: 2
+      - PID: 0x0041 (65), language: "", type: 0x02 (Digital radio sound service)
+      - PID: 0x0044 (68), language: "eng", type: 0x81 (unknown)
+  - Channel 10.3, short name: "LightTV"
+    Modulation: ATSC 8-VSB, frequency: 0
+    TS id: 0x1FE1 (8161), program number: 0x0005 (5)
+    ETM location: 0, access controlled: no
+    Hidden: no, hide guide: no
+    Service type: ATSC Digital Television, source id: 0x0003 (3)
+    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+      PCR PID: 0x0051 (81), number of elements: 2
+      - PID: 0x0051 (81), language: "", type: 0x02 (Digital radio sound service)
+      - PID: 0x0054 (84), language: "eng", type: 0x81 (unknown)
+  - Channel 10.4, short name: "Quest  "
+    Modulation: ATSC 8-VSB, frequency: 0
+    TS id: 0x1FE1 (8161), program number: 0x0006 (6)
+    ETM location: 0, access controlled: no
+    Hidden: no, hide guide: no
+    Service type: ATSC Digital Television, source id: 0x0004 (4)
+    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
+      PCR PID: 0x0061 (97), number of elements: 2
+      - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
+      - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
+
 * PAT, TID 0 (0x00)
   Section: 0 (last: 0), version: 2, size: 28 bytes
   TS id:    8161 (0x1FE1)
@@ -11,8 +90,9 @@
   Section: 0 (last: 0), version: 7, size: 88 bytes
   Program: 4 (0x0004), PCR PID: 65 (0x0041)
   Program information:
-  - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
-    0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
+  - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "enc"
   Elementary stream: type 0x02 (MPEG-2 Video), PID: 65 (0x0041)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
@@ -25,10 +105,21 @@
   Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 68 (0x0044)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
-  - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
-    0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31     .eng....audio-1
-  - Descriptor 2: unknown (0x81, 129), 10 bytes
-    0000:  08 28 05 FF 0F 01 BF 65 6E 67                    .(.....eng
+  - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "audio-1"
+  - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
+    Sample rate: 48 kHz (0x0)
+    AC-3 coding version: 0x08 (8)
+    Bit rate: 192 kb/s (0x0A)
+    Surround mode: Not indicated (0x0)
+    Bitstream mode: main audio service: complete main (CM) (0x0)
+    Num. channels: 2/0 (0x2)
+    Full service: true
+    Main audio service id: 0
+    Priority: 1
+    Text: ""
+    Language: "eng"
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
@@ -36,8 +127,9 @@
   Section: 0 (last: 0), version: 2, size: 88 bytes
   Program: 3 (0x0003), PCR PID: 49 (0x0031)
   Program information:
-  - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
-    0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
+  - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "enc"
   Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
@@ -50,10 +142,21 @@
   Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
-  - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
-    0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31     .eng....audio-1
-  - Descriptor 2: unknown (0x81, 129), 10 bytes
-    0000:  08 38 05 FF 0F 01 BF 65 6E 67                    .8.....eng
+  - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "audio-1"
+  - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
+    Sample rate: 48 kHz (0x0)
+    AC-3 coding version: 0x08 (8)
+    Bit rate: 384 kb/s (0x0E)
+    Surround mode: Not indicated (0x0)
+    Bitstream mode: main audio service: complete main (CM) (0x0)
+    Num. channels: 2/0 (0x2)
+    Full service: true
+    Main audio service id: 0
+    Priority: 1
+    Text: ""
+    Language: "eng"
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
@@ -66,9 +169,11 @@
   - Descriptor 1: Smoothing Buffer (0x10, 16), 6 bytes
     Smoothing buffer leak rate: 0x0000BD5B (48475) x 400 b/s
     Smoothing buffer size: 0x00000800 (2048) bytes
-  - Descriptor 2: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
-    0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
-  - Descriptor 3: table update (ETSI EN 301 790) (0xAA, 170), 1 bytes
+  - Descriptor 2: ATSC Component Name (0xA3, 163), 11 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "enc"
+  - Descriptor 3: ATSC Redistribution Control (0xAA, 170), 1 bytes
+    RC information, 1 bytes
     0000:  FF                                               .
   Elementary stream: type 0x02 (MPEG-2 Video), PID: 97 (0x0061)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
@@ -79,16 +184,29 @@
     Frame rate extension: false
   - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
     Alignment type: 0x02 (2, Video access unit)
-  - Descriptor 2: unknown (0x86, 134), 19 bytes
-    0000:  E3 65 6E 67 7E 3F FF 65 6E 67 7F 3F FF 65 6E 67  .eng~?.eng.?.eng
-    0010:  C1 3F FF                                         .?.
+  - Descriptor 2: ATSC Caption Service (0x86, 134), 19 bytes
+    Number of services: 3
+    - Language: "eng", digital: false, line 21: false, easy reader: false, wide: false
+    - Language: "eng", digital: false, line 21: true, easy reader: false, wide: false
+    - Language: "eng", digital: true, service: 0x01 (1), easy reader: false, wide: false
   Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 100 (0x0064)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
-  - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
-    0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31     .eng....audio-1
-  - Descriptor 2: unknown (0x81, 129), 10 bytes
-    0000:  08 28 05 FF 0F 01 BF 65 6E 67                    .(.....eng
+  - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "audio-1"
+  - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
+    Sample rate: 48 kHz (0x0)
+    AC-3 coding version: 0x08 (8)
+    Bit rate: 192 kb/s (0x0A)
+    Surround mode: Not indicated (0x0)
+    Bitstream mode: main audio service: complete main (CM) (0x0)
+    Num. channels: 2/0 (0x2)
+    Full service: true
+    Main audio service id: 0
+    Priority: 1
+    Text: ""
+    Language: "eng"
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
@@ -96,8 +214,9 @@
   Section: 0 (last: 0), version: 6, size: 88 bytes
   Program: 5 (0x0005), PCR PID: 81 (0x0051)
   Program information:
-  - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
-    0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
+  - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "enc"
   Elementary stream: type 0x02 (MPEG-2 Video), PID: 81 (0x0051)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
@@ -110,10 +229,21 @@
   Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 84 (0x0054)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
-  - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
-    0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31     .eng....audio-1
-  - Descriptor 2: unknown (0x81, 129), 10 bytes
-    0000:  08 28 05 FF 0F 01 BF 65 6E 67                    .(.....eng
+  - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
+    Component name: Number of strings: 1
+      Language: "eng", text: "audio-1"
+  - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
+    Sample rate: 48 kHz (0x0)
+    AC-3 coding version: 0x08 (8)
+    Bit rate: 192 kb/s (0x0A)
+    Surround mode: Not indicated (0x0)
+    Bitstream mode: main audio service: complete main (CM) (0x0)
+    Num. channels: 2/0 (0x2)
+    Full service: true
+    Main audio service id: 0
+    Priority: 1
+    Text: ""
+    Language: "eng"
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 

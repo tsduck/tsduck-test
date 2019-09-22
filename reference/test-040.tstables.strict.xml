@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
+  <MGT version="12" protocol_version="0">
+    <!-- PID 0x1FFB (8187), first TS packet: 104, last: 104 -->
+    <table type="TVCT-current" PID="0x1FFB" version_number="11" number_bytes="218"/>
+    <table type="ETT" PID="0x1E80" version_number="10" number_bytes="68"/>
+    <table type="EIT-0" PID="0x1D00" version_number="10" number_bytes="1,423"/>
+    <table type="EIT-1" PID="0x1D01" version_number="10" number_bytes="1,708"/>
+    <table type="EIT-2" PID="0x1D02" version_number="10" number_bytes="1,487"/>
+    <table type="EIT-3" PID="0x1D03" version_number="10" number_bytes="1,087"/>
+    <table type="ETT-0" PID="0x1E00" version_number="10" number_bytes="1,848"/>
+    <table type="ETT-1" PID="0x1E01" version_number="10" number_bytes="1,845"/>
+    <table type="ETT-2" PID="0x1E02" version_number="10" number_bytes="2,524"/>
+    <table type="ETT-3" PID="0x1E03" version_number="10" number_bytes="1,898"/>
+    <table type="RRT-1" PID="0x1FFB" version_number="0" number_bytes="979"/>
+  </MGT>
+  <STT protocol_version="0" system_time="1,236,854,919" GPS_UTC_offset="18" DS_status="true">
+    <!-- PID 0x1FFB (8187), first TS packet: 360, last: 360 -->
+  </STT>
+  <TVCT version="11" current="true" transport_stream_id="0x1FE1" protocol_version="0">
+    <!-- PID 0x1FFB (8187), first TS packet: 1,149, last: 1,150 -->
+    <channel short_name="KULX   " major_channel_number="10" minor_channel_number="1" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0003" ETM_location="1" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0001">
+      <service_location_descriptor PCR_PID="0x0031">
+        <component stream_type="0x02" elementary_PID="0x0031"/>
+        <component stream_type="0x81" elementary_PID="0x0034" ISO_639_language_code="eng"/>
+        <component stream_type="0x81" elementary_PID="0x0035" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
+    </channel>
+    <channel short_name="TelXito" major_channel_number="10" minor_channel_number="2" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0004" ETM_location="1" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0002">
+      <service_location_descriptor PCR_PID="0x0041">
+        <component stream_type="0x02" elementary_PID="0x0041"/>
+        <component stream_type="0x81" elementary_PID="0x0044" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
+    </channel>
+    <channel short_name="LightTV" major_channel_number="10" minor_channel_number="3" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0005" ETM_location="0" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0003">
+      <service_location_descriptor PCR_PID="0x0051">
+        <component stream_type="0x02" elementary_PID="0x0051"/>
+        <component stream_type="0x81" elementary_PID="0x0054" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
+    </channel>
+    <channel short_name="Quest  " major_channel_number="10" minor_channel_number="4" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0006" ETM_location="0" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0004">
+      <service_location_descriptor PCR_PID="0x0061">
+        <component stream_type="0x02" elementary_PID="0x0061"/>
+        <component stream_type="0x81" elementary_PID="0x0064" ISO_639_language_code="eng"/>
+      </service_location_descriptor>
+    </channel>
+  </TVCT>
   <PAT version="2" current="true" transport_stream_id="0x1FE1">
     <!-- PID 0x0000 (0), first TS packet: 1,182, last: 1,182 -->
     <service service_id="0x0003" program_map_PID="0x0030"/>
@@ -9,21 +54,23 @@
   </PAT>
   <PMT version="7" current="true" service_id="0x0004" PCR_PID="0x0041">
     <!-- PID 0x0040 (64), first TS packet: 1,973, last: 1,973 -->
-    <generic_descriptor tag="0xA3">
-      01 65 6E 67 01 00 00 03 65 6E 63
-    </generic_descriptor>
+    <component_name_descriptor>
+      <component_name_string>
+        <string language="eng" text="enc"/>
+      </component_name_string>
+    </component_name_descriptor>
     <component elementary_PID="0x0041" stream_type="0x02">
       <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="4" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x48" chroma_format="1" frame_rate_extension="false"/>
       <data_stream_alignment_descriptor alignment_type="0x02"/>
     </component>
     <component elementary_PID="0x0044" stream_type="0x81">
       <registration_descriptor format_identifier="0x41432D33"/>
-      <generic_descriptor tag="0xA3">
-        01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31
-      </generic_descriptor>
-      <generic_descriptor tag="0x81">
-        08 28 05 FF 0F 01 BF 65 6E 67
-      </generic_descriptor>
+      <component_name_descriptor>
+        <component_name_string>
+          <string language="eng" text="audio-1"/>
+        </component_name_string>
+      </component_name_descriptor>
+      <ATSC_AC3_audio_stream_descriptor sample_rate_code="0x00" bsid="0x08" bit_rate_code="0x0A" surround_mode="0x00" bsmod="0x00" num_channels="0x02" full_svc="true" mainid="0x00" priority="0x01" language="eng"/>
       <ISO_639_language_descriptor>
         <language code="eng" audio_type="0x00"/>
       </ISO_639_language_descriptor>
@@ -31,21 +78,23 @@
   </PMT>
   <PMT version="2" current="true" service_id="0x0003" PCR_PID="0x0031">
     <!-- PID 0x0030 (48), first TS packet: 4,088, last: 4,088 -->
-    <generic_descriptor tag="0xA3">
-      01 65 6E 67 01 00 00 03 65 6E 63
-    </generic_descriptor>
+    <component_name_descriptor>
+      <component_name_string>
+        <string language="eng" text="enc"/>
+      </component_name_string>
+    </component_name_descriptor>
     <component elementary_PID="0x0031" stream_type="0x02">
       <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="7" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x44" chroma_format="1" frame_rate_extension="false"/>
       <data_stream_alignment_descriptor alignment_type="0x02"/>
     </component>
     <component elementary_PID="0x0034" stream_type="0x81">
       <registration_descriptor format_identifier="0x41432D33"/>
-      <generic_descriptor tag="0xA3">
-        01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31
-      </generic_descriptor>
-      <generic_descriptor tag="0x81">
-        08 38 05 FF 0F 01 BF 65 6E 67
-      </generic_descriptor>
+      <component_name_descriptor>
+        <component_name_string>
+          <string language="eng" text="audio-1"/>
+        </component_name_string>
+      </component_name_descriptor>
+      <ATSC_AC3_audio_stream_descriptor sample_rate_code="0x00" bsid="0x08" bit_rate_code="0x0E" surround_mode="0x00" bsmod="0x00" num_channels="0x02" full_svc="true" mainid="0x00" priority="0x01" language="eng"/>
       <ISO_639_language_descriptor>
         <language code="eng" audio_type="0x00"/>
       </ISO_639_language_descriptor>
@@ -55,28 +104,33 @@
     <!-- PID 0x0060 (96), first TS packet: 4,089, last: 4,089 -->
     <registration_descriptor format_identifier="0x47413934"/>
     <smoothing_buffer_descriptor sb_leak_rate="0x0000BD5B" sb_size="0x00000800"/>
-    <generic_descriptor tag="0xA3">
-      01 65 6E 67 01 00 00 03 65 6E 63
-    </generic_descriptor>
-    <generic_descriptor tag="0xAA">
-      FF
-    </generic_descriptor>
+    <component_name_descriptor>
+      <component_name_string>
+        <string language="eng" text="enc"/>
+      </component_name_string>
+    </component_name_descriptor>
+    <redistribution_control_descriptor>
+      <rc_information>
+        FF
+      </rc_information>
+    </redistribution_control_descriptor>
     <component elementary_PID="0x0061" stream_type="0x02">
       <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="4" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x48" chroma_format="1" frame_rate_extension="false"/>
       <data_stream_alignment_descriptor alignment_type="0x02"/>
-      <generic_descriptor tag="0x86">
-        E3 65 6E 67 7E 3F FF 65 6E 67 7F 3F FF 65 6E 67
-        C1 3F FF
-      </generic_descriptor>
+      <caption_service_descriptor>
+        <service language="eng" digital_cc="false" line21_field="false" easy_reader="false" wide_aspect_ratio="false"/>
+        <service language="eng" digital_cc="false" line21_field="true" easy_reader="false" wide_aspect_ratio="false"/>
+        <service language="eng" digital_cc="true" caption_service_number="0x01" easy_reader="false" wide_aspect_ratio="false"/>
+      </caption_service_descriptor>
     </component>
     <component elementary_PID="0x0064" stream_type="0x81">
       <registration_descriptor format_identifier="0x41432D33"/>
-      <generic_descriptor tag="0xA3">
-        01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31
-      </generic_descriptor>
-      <generic_descriptor tag="0x81">
-        08 28 05 FF 0F 01 BF 65 6E 67
-      </generic_descriptor>
+      <component_name_descriptor>
+        <component_name_string>
+          <string language="eng" text="audio-1"/>
+        </component_name_string>
+      </component_name_descriptor>
+      <ATSC_AC3_audio_stream_descriptor sample_rate_code="0x00" bsid="0x08" bit_rate_code="0x0A" surround_mode="0x00" bsmod="0x00" num_channels="0x02" full_svc="true" mainid="0x00" priority="0x01" language="eng"/>
       <ISO_639_language_descriptor>
         <language code="eng" audio_type="0x00"/>
       </ISO_639_language_descriptor>
@@ -84,21 +138,23 @@
   </PMT>
   <PMT version="6" current="true" service_id="0x0005" PCR_PID="0x0051">
     <!-- PID 0x0050 (80), first TS packet: 4,395, last: 4,395 -->
-    <generic_descriptor tag="0xA3">
-      01 65 6E 67 01 00 00 03 65 6E 63
-    </generic_descriptor>
+    <component_name_descriptor>
+      <component_name_string>
+        <string language="eng" text="enc"/>
+      </component_name_string>
+    </component_name_descriptor>
     <component elementary_PID="0x0051" stream_type="0x02">
       <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="4" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x48" chroma_format="1" frame_rate_extension="false"/>
       <data_stream_alignment_descriptor alignment_type="0x02"/>
     </component>
     <component elementary_PID="0x0054" stream_type="0x81">
       <registration_descriptor format_identifier="0x41432D33"/>
-      <generic_descriptor tag="0xA3">
-        01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31
-      </generic_descriptor>
-      <generic_descriptor tag="0x81">
-        08 28 05 FF 0F 01 BF 65 6E 67
-      </generic_descriptor>
+      <component_name_descriptor>
+        <component_name_string>
+          <string language="eng" text="audio-1"/>
+        </component_name_string>
+      </component_name_descriptor>
+      <ATSC_AC3_audio_stream_descriptor sample_rate_code="0x00" bsid="0x08" bit_rate_code="0x0A" surround_mode="0x00" bsmod="0x00" num_channels="0x02" full_svc="true" mainid="0x00" priority="0x01" language="eng"/>
       <ISO_639_language_descriptor>
         <language code="eng" audio_type="0x00"/>
       </ISO_639_language_descriptor>

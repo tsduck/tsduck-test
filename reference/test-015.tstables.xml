@@ -48,7 +48,7 @@
     </VBI_data_descriptor>
     <maximum_bitrate_descriptor maximum_bitrate="6,800,000"/>
     <time_shifted_event_descriptor reference_service_id="0x1234" reference_event_id="0x5678"/>
-    <time_shifted_service_descriptor reference_service_id="0x9ABC"/>
+    <DVB_time_shifted_service_descriptor reference_service_id="0x9ABC"/>
     <NVOD_reference_descriptor/>
     <NVOD_reference_descriptor>
       <service transport_stream_id="0x1234" original_network_id="0x5678" service_id="0x9ABC"/>
@@ -118,10 +118,10 @@
       <cell id="0x5678"/>
       <cell id="0x9ABC"/>
     </service_availability_descriptor>
-    <stuffing_descriptor/>
-    <stuffing_descriptor>
+    <DVB_stuffing_descriptor/>
+    <DVB_stuffing_descriptor>
       01 23 45 67 89
-    </stuffing_descriptor>
+    </DVB_stuffing_descriptor>
     <AVC_timing_and_HRD_descriptor hrd_management_valid="true" fixed_frame_rate="false" temporal_poc="true" picture_to_display_conversion="false"/>
     <AVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="true"/>
     <AVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="false"/>
