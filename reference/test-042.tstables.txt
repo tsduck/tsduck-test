@@ -82,7 +82,7 @@
         - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 
 * MGT (ATSC), TID 199 (0xC7), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 255 bytes
+  Version: 0, sections: 1, total size: 336 bytes
   - Section 0:
     Protocol version: 0, number of table types: 0
     - Global descriptors:
@@ -184,4 +184,23 @@
         Number of services: 2
         - Language: "foo", digital: false, line 21: true, easy reader: true, wide: false
         - Language: "bar", digital: true, service: 0x23 (35), easy reader: false, wide: true
+      - Descriptor 21: ATSC Content Advisory (0x87, 135), 1 bytes
+        Number of regions: 0
+      - Descriptor 22: ATSC Content Advisory (0x87, 135), 76 bytes
+        Number of regions: 4
+        - Rating region: 0x01 (1), number of dimensions: 0
+        - Rating region: 0x02 (2), number of dimensions: 3
+            Rating dimension j: 0x0A (10), rating value: 0x00000001 (1)
+            Rating dimension j: 0x14 (20), rating value: 0x00000002 (2)
+            Rating dimension j: 0x1E (30), rating value: 0x00000003 (3)
+        - Rating region: 0x03 (3), number of dimensions: 0
+          Rating description: Number of strings: 2
+            Language: "eng", text: "English text"
+            Language: "foo", text: "Foo text"
+        - Rating region: 0x04 (4), number of dimensions: 3
+            Rating dimension j: 0x0C (12), rating value: 0x0000000A (10)
+            Rating dimension j: 0x16 (22), rating value: 0x0000000B (11)
+            Rating dimension j: 0x20 (32), rating value: 0x0000000C (12)
+          Rating description: Number of strings: 1
+            Language: "Bar", text: "Bar text"
 

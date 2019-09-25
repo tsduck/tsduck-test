@@ -105,5 +105,28 @@
       <service language="foo" digital_cc="false" line21_field="true" easy_reader="true" wide_aspect_ratio="false"/>
       <service language="bar" digital_cc="true" caption_service_number="0x23" easy_reader="false" wide_aspect_ratio="true"/>
     </caption_service_descriptor>
+    <content_advisory_descriptor/>
+    <content_advisory_descriptor>
+      <region rating_region="0x01"/>
+      <region rating_region="0x02">
+        <dimension rating_dimension_j="0x0A" rating_value="0x01"/>
+        <dimension rating_dimension_j="0x14" rating_value="0x02"/>
+        <dimension rating_dimension_j="0x1E" rating_value="0x03"/>
+      </region>
+      <region rating_region="0x03">
+        <rating_description>
+          <string language="eng" text="English text"/>
+          <string language="foo" text="Foo text"/>
+        </rating_description>
+      </region>
+      <region rating_region="0x04">
+        <dimension rating_dimension_j="0x0C" rating_value="0x0A"/>
+        <dimension rating_dimension_j="0x16" rating_value="0x0B"/>
+        <dimension rating_dimension_j="0x20" rating_value="0x0C"/>
+        <rating_description>
+          <string language="Bar" text="Bar text"/>
+        </rating_description>
+      </region>
+    </content_advisory_descriptor>
   </MGT>
 </tsduck>

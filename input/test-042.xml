@@ -179,6 +179,29 @@
                easy_reader="false"
                wide_aspect_ratio="true"/>
     </caption_service_descriptor>
+    <content_advisory_descriptor/>
+    <content_advisory_descriptor>
+      <region rating_region="1"/>
+      <region rating_region="2">
+        <dimension rating_dimension_j="10" rating_value="1"/>
+        <dimension rating_dimension_j="20" rating_value="2"/>
+        <dimension rating_dimension_j="30" rating_value="3"/>
+      </region>
+      <region rating_region="3">
+        <rating_description>
+          <string language="eng" text="English text"/>
+          <string language="foo" text="Foo text"/>
+        </rating_description>
+      </region>
+      <region rating_region="4">
+        <dimension rating_dimension_j="12" rating_value="10"/>
+        <dimension rating_dimension_j="22" rating_value="11"/>
+        <dimension rating_dimension_j="32" rating_value="12"/>
+        <rating_description>
+          <string language="Bar" text="Bar text"/>
+        </rating_description>
+      </region>
+    </content_advisory_descriptor>
   </MGT>
     
 </tsduck>
