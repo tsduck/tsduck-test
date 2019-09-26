@@ -124,4 +124,11 @@
       </region>
     </content_advisory_descriptor>
   </MGT>
+  <ETT version="0" protocol_version="0" ETT_table_id_extension="0x1234" ETM_id="0x56789ABC"/>
+  <ETT version="2" protocol_version="1" ETT_table_id_extension="0xCDEF" ETM_id="0x01234567">
+    <extended_text_message>
+      <string language="eng" text="Extended English Text"/>
+      <string language="foo" text="Foo Bar Extension"/>
+    </extended_text_message>
+  </ETT>
 </tsduck>

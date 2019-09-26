@@ -200,3 +200,17 @@
         Rating description: Number of strings: 1
           Language: "Bar", text: "Bar text"
 
+* ETT (ATSC), TID 204 (0xCC)
+  Section: 0 (last: 0), version: 0, size: 18 bytes
+  ETT table id extension: 0x1234 (4660)
+  Protocol version: 0, ETM id: 0x56789ABC (1450744508)
+  Extended text message: Number of strings: 0
+
+* ETT (ATSC), TID 204 (0xCC)
+  Section: 0 (last: 0), version: 2, size: 70 bytes
+  ETT table id extension: 0xCDEF (52719)
+  Protocol version: 1, ETM id: 0x01234567 (19088743)
+  Extended text message: Number of strings: 2
+    Language: "eng", text: "Extended English Text"
+    Language: "foo", text: "Foo Bar Extension"
+
