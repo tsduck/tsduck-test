@@ -139,4 +139,20 @@
       <string language="foo" text="Foo Bar Extension"/>
     </extended_text_message>
   </ETT>
+  <ATSC_EIT version="0" source_id="0x1234" protocol_version="0">
+    <!-- PID 0x00C8 (200) -->
+  </ATSC_EIT>
+  <ATSC_EIT version="3" source_id="0x5678" protocol_version="2">
+    <!-- PID 0x00C8 (200) -->
+    <event event_id="0x3BCD" start_time="2019-09-28 00:41:12" ETM_location="0x01" length_in_seconds="3,600"/>
+    <event event_id="0x1698" start_time="2042-09-28 12:42:54" ETM_location="0x02" length_in_seconds="1,800">
+      <title_text>
+        <string language="eng" text="English title"/>
+        <string language="foo" text="Foo title"/>
+      </title_text>
+      <ATSC_time_shifted_service_descriptor/>
+      <caption_service_descriptor/>
+      <content_advisory_descriptor/>
+    </event>
+  </ATSC_EIT>
 </tsduck>

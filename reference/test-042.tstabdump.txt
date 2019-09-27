@@ -186,17 +186,17 @@
       Number of regions: 4
       - Rating region: 0x01 (1), number of dimensions: 0
       - Rating region: 0x02 (2), number of dimensions: 3
-          Rating dimension j: 0x0A (10), rating value: 0x00000001 (1)
-          Rating dimension j: 0x14 (20), rating value: 0x00000002 (2)
-          Rating dimension j: 0x1E (30), rating value: 0x00000003 (3)
+          Rating dimension j: 0x0A (10), rating value: 1
+          Rating dimension j: 0x14 (20), rating value: 2
+          Rating dimension j: 0x1E (30), rating value: 3
       - Rating region: 0x03 (3), number of dimensions: 0
         Rating description: Number of strings: 2
           Language: "eng", text: "English text"
           Language: "foo", text: "Foo text"
       - Rating region: 0x04 (4), number of dimensions: 3
-          Rating dimension j: 0x0C (12), rating value: 0x0000000A (10)
-          Rating dimension j: 0x16 (22), rating value: 0x0000000B (11)
-          Rating dimension j: 0x20 (32), rating value: 0x0000000C (12)
+          Rating dimension j: 0x0C (12), rating value: 10
+          Rating dimension j: 0x16 (22), rating value: 11
+          Rating dimension j: 0x20 (32), rating value: 12
         Rating description: Number of strings: 1
           Language: "Bar", text: "Bar text"
 
@@ -213,4 +213,31 @@
   Extended text message: Number of strings: 2
     Language: "eng", text: "Extended English Text"
     Language: "foo", text: "Foo Bar Extension"
+
+* EIT (ATSC), TID 203 (0xCB)
+  Section: 0 (last: 0), version: 0, size: 14 bytes
+  Source Id: 0x1234 (4660)
+  Protocol version: 0, number of events: 0
+
+* EIT (ATSC), TID 203 (0xCB)
+  Section: 0 (last: 0), version: 3, size: 84 bytes
+  Source Id: 0x5678 (22136)
+  Protocol version: 2, number of events: 2
+  - Event Id: 0x3BCD (15309)
+    Start UTC: 2019/09/28 00:41:12
+    ETM location: 1
+    Duration: 3600 seconds
+  - Event Id: 0x1698 (5784)
+    Start UTC: 2042/09/28 12:42:54
+    ETM location: 2
+    Duration: 1800 seconds
+    Title text: Number of strings: 2
+      Language: "eng", text: "English title"
+      Language: "foo", text: "Foo title"
+    - Descriptor 0: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+      Number of services: 0
+    - Descriptor 1: ATSC Caption Service (0x86, 134), 1 bytes
+      Number of services: 0
+    - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
+      Number of regions: 0
 
