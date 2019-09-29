@@ -102,6 +102,12 @@ Options:
   --irdeto
       Equivalent to --default-cas-id 0x0600.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
   --local-address address
       Specify the IP address of the local interface on which to listen. It can
       be also a host name that translates to a local address. By default,

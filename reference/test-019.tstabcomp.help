@@ -60,6 +60,12 @@ Options:
   --help
       Display this help text.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
   -o filepath
   --output filepath
       Specify the output file name. By default, the output file has the same

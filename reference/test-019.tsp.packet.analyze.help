@@ -51,6 +51,12 @@ Options:
       seconds. After outputing a file, the analysis context is reset, ie. each
       output file contains a fully independent analysis.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
   -m
   --multiple-files
       When used with --interval and --output-file, create a new file for each

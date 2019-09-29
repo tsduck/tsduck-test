@@ -111,6 +111,12 @@ Options:
   --irdeto
       Equivalent to --default-cas-id 0x0600.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
   --local-udp address
       With --ip-udp, when the destination is a multicast address, specify the
       IP address of the outgoing local interface. It can be also a host name

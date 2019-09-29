@@ -60,6 +60,12 @@ Options:
   --help
       Display this help text.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
   --no-pager
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
