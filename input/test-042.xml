@@ -228,4 +228,51 @@
     </event>
   </ATSC_EIT>
 
+  <RRT rating_region="7"/>
+
+  <RRT version="21" protocol_version="12" rating_region="0xAC">
+    <rating_region_name>
+      <string language="eng" text="english region"/>
+      <string language="foo" text="bar region"/>
+    </rating_region_name>
+    <dimension graduated_scale="false">
+      <dimension_name>
+        <string language="eng" text="english dimension"/>
+        <string language="bar" text="bar dimension"/>
+      </dimension_name>
+      <value>
+        <abbrev_rating_value>
+          <string language="eng" text="1"/>
+        </abbrev_rating_value>
+        <rating_value>
+          <string language="eng" text="value 1"/>
+        </rating_value>
+      </value>
+      <value>
+        <abbrev_rating_value>
+          <string language="eng" text="2"/>
+        </abbrev_rating_value>
+        <rating_value>
+          <string language="eng" text="value 2"/>
+        </rating_value>
+      </value>
+    </dimension>
+    <dimension graduated_scale="true">
+      <dimension_name>
+        <string language="bar" text="Qwerty"/>
+      </dimension_name>
+      <value>
+        <rating_value>
+          <string language="foo" text="foo 2"/>
+        </rating_value>
+      </value>
+    </dimension>
+    <ATSC_time_shifted_service_descriptor/>
+    <ATSC_time_shifted_service_descriptor>
+      <service time_shift="5" major_channel_number="1" minor_channel_number="2"/>
+      <service time_shift="30" major_channel_number="100" minor_channel_number="200"/>
+    </ATSC_time_shifted_service_descriptor>
+    <caption_service_descriptor/>
+  </RRT>
+
 </tsduck>
