@@ -79,7 +79,7 @@
       - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 
 * MGT (ATSC), TID 199 (0xC7)
-  Section: 0 (last: 0), version: 0, size: 336 bytes
+  Section: 0 (last: 0), version: 0, size: 403 bytes
   Protocol version: 0, number of table types: 0
   - Global descriptors:
     - Descriptor 0: ATSC Component Name (0xA3, 163), 1 bytes
@@ -199,6 +199,19 @@
           Rating dimension j: 0x20 (32), rating value: 12
         Rating description: Number of strings: 1
           Language: "Bar", text: "Bar text"
+    - Descriptor 23: ATSC DCC Arriving Request (0xA9, 169), 2 bytes
+      DCC arriving request type: 0xF1 (241)
+    - Descriptor 24: ATSC DCC Arriving Request (0xA9, 169), 37 bytes
+      DCC arriving request type: 0x12 (18)
+      DCC arriving request text: Number of strings: 2
+        Language: "eng", text: "English text"
+        Language: "foo", text: "Foo text"
+    - Descriptor 25: ATSC DCC Departing Request (0xA8, 168), 2 bytes
+      DCC departing request type: 0x78 (120)
+    - Descriptor 26: ATSC DCC Departing Request (0xA8, 168), 18 bytes
+      DCC departing request type: 0xB3 (179)
+      DCC departing request text: Number of strings: 1
+        Language: "foo", text: "Bar text"
 
 * ETT (ATSC), TID 204 (0xCC)
   Section: 0 (last: 0), version: 0, size: 18 bytes

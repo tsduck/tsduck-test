@@ -202,6 +202,19 @@
         </rating_description>
       </region>
     </content_advisory_descriptor>
+    <dcc_arriving_request_descriptor dcc_arriving_request_type="0xF1"/>
+    <dcc_arriving_request_descriptor dcc_arriving_request_type="0x12">
+      <dcc_arriving_request_text>
+        <string language="eng" text="English text"/>
+        <string language="foo" text="Foo text"/>
+      </dcc_arriving_request_text>
+    </dcc_arriving_request_descriptor>
+    <dcc_departing_request_descriptor dcc_departing_request_type="0x78"/>
+    <dcc_departing_request_descriptor dcc_departing_request_type="0xB3">
+      <dcc_departing_request_text>
+        <string language="foo" text="Bar text"/>
+      </dcc_departing_request_text>
+    </dcc_departing_request_descriptor>
   </MGT>
     
   <ETT ETT_table_id_extension="0x1234" ETM_id="0x56789ABC"/>
