@@ -226,4 +226,18 @@
       </dcc_county_location_code_text>
     </update>
   </DCCSCT>
+  <DCCT version="0" protocol_version="0" dcc_subtype="0x00" dcc_id="0x89"/>
+  <DCCT version="28" protocol_version="23" dcc_subtype="0x78" dcc_id="0x9A">
+    <ATSC_time_shifted_service_descriptor/>
+    <caption_service_descriptor/>
+    <content_advisory_descriptor/>
+    <dcc_test dcc_context="channel_redirect" dcc_from_major_channel_number="300" dcc_from_minor_channel_number="301" dcc_to_major_channel_number="302" dcc_to_minor_channel_number="303" dcc_start_time="2019-09-30 10:11:12" dcc_end_time="2019-09-30 11:23:45"/>
+    <dcc_test dcc_context="temporary_retune" dcc_from_major_channel_number="500" dcc_from_minor_channel_number="501" dcc_to_major_channel_number="502" dcc_to_minor_channel_number="503" dcc_start_time="2019-01-30 10:11:12" dcc_end_time="2019-02-10 11:23:45">
+      <ATSC_time_shifted_service_descriptor/>
+      <dcc_term dcc_selection_type="0x02" dcc_selection_id="0x0123456789ABCDEF"/>
+      <dcc_term dcc_selection_type="0x09" dcc_selection_id="0xFEDCBA9876543210">
+        <content_advisory_descriptor/>
+      </dcc_term>
+    </dcc_test>
+  </DCCT>
 </tsduck>
