@@ -307,3 +307,41 @@
       - Descriptor 2: ATSC Caption Service (0x86, 134), 1 bytes
         Number of services: 0
 
+* DCCSCT (ATSC), TID 212 (0xD4), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 16 bytes
+  - Section 0:
+    Protocol version: 0, DCCSCT type: 0x0000, number of updates: 0
+
+* DCCSCT (ATSC), TID 212 (0xD4), PID 200 (0x00C8)
+  Version: 23, sections: 1, total size: 113 bytes
+  - Section 0:
+    Protocol version: 2, DCCSCT type: 0x1234, number of updates: 3
+    - Update type: 0x01 (new_genre_category)
+      Genre category code: 0x12 (18)
+      Genre category name: Number of strings: 1
+        Language: "eng", text: "Genre category"
+      Descriptors for this update:
+      - Descriptor 0: ATSC Content Advisory (0x87, 135), 1 bytes
+        Number of regions: 0
+    - Update type: 0x02 (new_state)
+      DCC state location code: 0x34 (52)
+      DCC state location: Number of strings: 1
+        Language: "foo", text: "New state"
+      Descriptors for this update:
+      - Descriptor 0: ATSC Caption Service (0x86, 134), 1 bytes
+        Number of services: 0
+    - Update type: 0x03 (new_county)
+      State code: 0x56 (86), DCC county location code: 0x234 (564)
+      DCC county location: Number of strings: 1
+        Language: "foo", text: "County location"
+      Descriptors for this update:
+      - Descriptor 0: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+        Number of services: 0
+    Additional descriptors:
+    - Descriptor 0: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+      Number of services: 0
+    - Descriptor 1: ATSC Caption Service (0x86, 134), 1 bytes
+      Number of services: 0
+    - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
+      Number of regions: 0
+

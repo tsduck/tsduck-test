@@ -216,4 +216,31 @@
     </ATSC_time_shifted_service_descriptor>
     <caption_service_descriptor/>
   </RRT>
+  <DCCSCT version="0" protocol_version="0" dccsct_type="0x0000">
+    <!-- PID 0x00C8 (200) -->
+  </DCCSCT>
+  <DCCSCT version="23" protocol_version="2" dccsct_type="0x1234">
+    <!-- PID 0x00C8 (200) -->
+    <ATSC_time_shifted_service_descriptor/>
+    <caption_service_descriptor/>
+    <content_advisory_descriptor/>
+    <update update_type="new_genre_category" genre_category_code="0x12">
+      <content_advisory_descriptor/>
+      <genre_category_name_text>
+        <string language="eng" text="Genre category"/>
+      </genre_category_name_text>
+    </update>
+    <update update_type="new_state" dcc_state_location_code="0x34">
+      <caption_service_descriptor/>
+      <dcc_state_location_code_text>
+        <string language="foo" text="New state"/>
+      </dcc_state_location_code_text>
+    </update>
+    <update update_type="new_county" state_code="0x56" dcc_county_location_code="0x0234">
+      <ATSC_time_shifted_service_descriptor/>
+      <dcc_county_location_code_text>
+        <string language="foo" text="County location"/>
+      </dcc_county_location_code_text>
+    </update>
+  </DCCSCT>
 </tsduck>
