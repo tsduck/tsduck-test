@@ -1,0 +1,55 @@
+
+Generate HTTP Live Streaming (HLS) media
+
+Usage: tsp -O hls [options] filename
+
+Parameter:
+
+  Specify the name template of the output media segment files. A number is
+  automatically added to the name part so that successive segment files receive
+  distinct names. Example: if the specified file name is foo-.ts, the various
+  segment files are named foo-000000.ts, foo-000001.ts, etc.
+  
+  If the specified template already contains trailing digits, this unmodified
+  name is used for the first segment. Then, the integer part is incremented.
+  Example: if the specified file name is foo-027.ts, the various segment files
+  are named foo-027.ts, foo-028.ts, etc.
+
+Options:
+
+  -d value
+  --duration value
+      Specify the target duration in seconds of media segments. The default is
+      10 seconds per segment for VoD streams and 5 seconds for live streams.
+
+  -f value
+  --fixed-segment-size value
+      Specify the size in bytes of all media segments. By default, the segment
+      size is variable and based on the --duration parameter. When
+      --fixed-segment-size is specified, the --duration parameter is only used
+      as a hint in the playlist file.
+
+  --help
+      Display this help text.
+
+  -l value
+  --live value
+      Specify that the output is a live stream. The specified value indicates
+      the number of simultaneously available media segments. Obsolete media
+      segment files are automatically deleted. By default, the output stream is
+      considered as VoD and all created media segments are preserved.
+
+  -p filename
+  --playlist filename
+      Specify the name of the playlist file. The playlist file is rewritten
+      each time a new segment file is completed or an obsolete one is deleted.
+      The playlist and the segment files can be written to distinct directories
+      but, in all cases, the URI of the segment files in the playlist are
+      always relative to the playlist location. By default, no playlist file is
+      created (media segments only).
+
+  -s value
+  --start-media-sequence value
+      Initial media sequence number in #EXT-X-MEDIA-SEQUENCE directive in the
+      playlist. The default is zero.
+

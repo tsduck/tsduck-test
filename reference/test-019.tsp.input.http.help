@@ -1,0 +1,58 @@
+
+Read a transport stream from an HTTP server
+
+Usage: tsp -I http [options] url
+
+Parameter:
+
+  Specify the URL from which to read the transport stream.
+
+Options:
+
+  --connection-timeout value
+      Specify the connection timeout in milliseconds. By default, let the
+      operating system decide.
+
+  --help
+      Display this help text.
+
+  --ignore-errors
+      With --repeat or --infinite, repeat also in case of error. By default,
+      repetition stops on error.
+
+  -i
+  --infinite
+      Repeat the playout of the content infinitely (default: only once). The
+      URL is re-opened each time and the content may be different.
+
+  --max-queue value
+      Specify the maximum number of queued TS packets before their insertion
+      into the stream. The default is 1,000.
+
+  --proxy-host name
+      Optional proxy host name for Internet access.
+
+  --proxy-password string
+      Optional proxy password for Internet access (for use with --proxy-user).
+
+  --proxy-port value
+      Optional proxy port for Internet access (for use with --proxy-host).
+
+  --proxy-user name
+      Optional proxy user name for Internet access.
+
+  --receive-timeout value
+      Specify the data reception timeout in milliseconds. This timeout applies
+      to each receive operation, individually. By default, let the operating
+      system decide.
+
+  --reconnect-delay value
+      With --repeat or --infinite, wait the specified number of milliseconds
+      before reconnecting. By default, repeat immediately.
+
+  -r count
+  --repeat count
+      Repeat the playout of the content the specified number of times (default:
+      only once). The URL is re-opened each time and the content may be
+      different.
+

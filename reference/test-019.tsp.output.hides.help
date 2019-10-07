@@ -1,0 +1,63 @@
+
+Send packets to a HiDes modulator device
+
+Usage: tsp -O hides [options]
+
+Options:
+
+  -a value
+  --adapter value
+      Specify the HiDes adapter number to use. By default, the first HiDes
+      device is selected. Use the command tshides to list all HiDes devices.
+
+  -b value
+  --bandwidth value
+      Bandwidth in MHz. The default is 8 MHz.
+      Must be one of "5", "6", "7", "8".
+
+  -c value
+  --constellation value
+      Constellation type. The default is 64-QAM.
+      Must be one of "16-QAM", "64-QAM", "QPSK".
+
+  --dc-compensation i-value/q-value
+      Specify the DC offset compensation values for I and Q. Each offset value
+      shall be in the range -512 to 512.
+
+  -d name
+  --device name
+      Specify the HiDes device name to use. By default, the first HiDes device
+      is selected. Use the command tshides to list all HiDes devices.
+
+  -f value
+  --frequency value
+      Frequency, in Hz, of the output carrier. This parameter is mandatory.
+      There is no default.
+
+  --gain value
+      Adjust the output gain to the specified value in dB. The allowed gain
+      range depends on the device, the frequency and the bandwidth.
+
+  -g value
+  --guard-interval value
+      Guard interval. The default is 1/32.
+      Must be one of "1/16", "1/32", "1/4", "1/8".
+
+  --help
+      Display this help text.
+
+  -h value
+  --high-priority-fec value
+      Error correction for high priority streams. The default is 2/3.
+      Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
+
+  -s value
+  --spectral-inversion value
+      Spectral inversion. The default is auto.
+      Must be one of "auto", "off", "on".
+
+  -t value
+  --transmission-mode value
+      Transmission mode. The default is 8K.
+      Must be one of "2K", "4K", "8K".
+

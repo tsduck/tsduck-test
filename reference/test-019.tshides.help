@@ -1,0 +1,50 @@
+
+List HiDes modulator devices
+
+Usage: tshides [options]
+
+Options:
+
+  -a value
+  --adapter value
+      Specify the HiDes adapter number to list. By default, list all HiDes
+      devices.
+
+  -b value
+  --bandwidth value
+      Bandwidth in MHz with --gain-range. The default is 8 MHz.
+      Must be one of "5", "6", "7", "8".
+
+  -c
+  --count
+      Only display the number of devices.
+
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  -d name
+  --device name
+      Specify the HiDes device name to list. By default, list all HiDes
+      devices.
+
+  -f value
+  --frequency value
+      Frequency, in Hz, of the output carrier with --gain-range. The default is
+      the first UHF channel.
+
+  -g
+  --gain-range
+      Display the allowed range of output gain for the specified device, using
+      the specified frequency and bandwidth.
+
+  --help
+      Display this help text.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

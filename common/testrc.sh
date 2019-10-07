@@ -45,28 +45,34 @@ prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
 # Operating system.
 OS=$(uname -s | tr A-Z a-z)
 
-# Detect various types of UNIX-like environments on UNIX.
 case $OS in
     cygwin*|msys*|mingw*)
-        WINDOWS=true
-        TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc
-        TSDUCKBIN_RELEASE=Release-x64
-        TSDUCKBIN_DEBUG=Debug-x64
-        TSDUCKBIN32_RELEASE=Release-Win32
-        TSDUCKBIN32_DEBUG=Debug-Win32
-        EXE=.exe
+        OS=windows
         ;;
-    *)
-        WINDOWS=false
-        ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
-        TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
-        TSDUCKBIN_RELEASE=release-$ARCH
-        TSDUCKBIN_DEBUG=debug-$ARCH
-        TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
-        TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
-        EXE=
+    darwin)
+        OS=mac
         ;;
 esac
+
+# Detect various types of UNIX-like environments on UNIX.
+if [[ $OS == windows ]]; then
+    WINDOWS=true
+    TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc
+    TSDUCKBIN_RELEASE=Release-x64
+    TSDUCKBIN_DEBUG=Debug-x64
+    TSDUCKBIN32_RELEASE=Release-Win32
+    TSDUCKBIN32_DEBUG=Debug-Win32
+    EXE=.exe
+else
+    WINDOWS=false
+    ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
+    TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
+    TSDUCKBIN_RELEASE=release-$ARCH
+    TSDUCKBIN_DEBUG=debug-$ARCH
+    TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
+    TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
+    EXE=
+fi
 
 # Display help text
 showhelp()
@@ -174,7 +180,7 @@ fi
 
 # Command prefix on macOS.
 CMDPREFIX=
-[[ $OS == darwin && -n "$LD_LIBRARY_PATH" ]] && CMDPREFIX="LD_LIBRARY_PATH=$LD_LIBRARY_PATH "
+[[ $OS == mac && -n "$LD_LIBRARY_PATH" ]] && CMDPREFIX="LD_LIBRARY_PATH=$LD_LIBRARY_PATH "
 
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }

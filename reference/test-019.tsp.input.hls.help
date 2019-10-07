@@ -1,0 +1,112 @@
+
+Receive HTTP Live Streaming (HLS) media
+
+Usage: tsp -I hls [options] url
+
+Parameter:
+
+  Specify the URL of an HLS manifest or playlist. This is typically an URL
+  ending in .m3u8. The playlist can be either a master one, referencing several
+  versions of the same content (with various bitrates or resolutions). The
+  playlist can also be a media playlist, referencing all segments of one single
+  content.
+
+Options:
+
+  --connection-timeout value
+      Specify the connection timeout in milliseconds. By default, let the
+      operating system decide.
+
+  --help
+      Display this help text.
+
+  --highest-bitrate
+      When the URL is a master playlist, use the content with the highest
+      bitrate.
+
+  --highest-resolution
+      When the URL is a master playlist, use the content with the highest
+      screen resolution.
+
+  -l
+  --list-variants
+      When the URL is a master playlist, list all possible streams bitrates and
+      resolutions.
+
+  --live
+      Specify that the input is a live stream and the playout shall start at
+      the last segment in the playlist.
+      This is an alias for --start-segment -1.
+
+  --lowest-bitrate
+      When the URL is a master playlist, use the content with the lowest
+      bitrate.
+
+  --lowest-resolution
+      When the URL is a master playlist, use the content with the lowest screen
+      resolution.
+
+  --max-bitrate value
+      When the URL is a master playlist, select a content the bitrate of which
+      is lower than the specified maximum.
+
+  --max-height value
+      When the URL is a master playlist, select a content the resolution of
+      which has a lower height than the specified maximum.
+
+  --max-queue value
+      Specify the maximum number of queued TS packets before their insertion
+      into the stream. The default is 1,000.
+
+  --max-width value
+      When the URL is a master playlist, select a content the resolution of
+      which has a lower width than the specified maximum.
+
+  --min-bitrate value
+      When the URL is a master playlist, select a content the bitrate of which
+      is higher than the specified minimum.
+
+  --min-height value
+      When the URL is a master playlist, select a content the resolution of
+      which has a higher height than the specified minimum.
+
+  --min-width value
+      When the URL is a master playlist, select a content the resolution of
+      which has a higher width than the specified minimum.
+
+  --proxy-host name
+      Optional proxy host name for Internet access.
+
+  --proxy-password string
+      Optional proxy password for Internet access (for use with --proxy-user).
+
+  --proxy-port value
+      Optional proxy port for Internet access (for use with --proxy-host).
+
+  --proxy-user name
+      Optional proxy user name for Internet access.
+
+  --receive-timeout value
+      Specify the data reception timeout in milliseconds. This timeout applies
+      to each receive operation, individually. By default, let the operating
+      system decide.
+
+  --save-files directory-name
+      Specify a directory where all downloaded files, media segments and
+      playlists, are saved before being passed to the next plugin. This is
+      typically a debug option to analyze the input HLS structure.
+
+  -s value
+  --segment-count value
+      Stop receiving the HLS stream after receiving the specified number of
+      media segments. By default, receive the complete content.
+
+  --start-segment value
+      Start at the specified segment in the initial playlist. By default, start
+      with the first media segment.
+      
+      The value can be positive or negative. Positive values are indexes from
+      the start of the playlist: 0 is the first segment (the default), +1 is
+      the second segment, etc. Negative values are indexes from the end of the
+      playlist: -1 is the last segment, -2 is the preceding segment, etc.
+

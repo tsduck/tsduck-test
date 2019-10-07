@@ -4,49 +4,53 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-# The following tools and plugins have output texts which depend on the operating system.
-# They are currently excluded from the test: tslsdvb tsp tsscan dektec dvb play
+# Some tools and plugins have output texts which depend on the operating system.
+# Their name is preceded by an equal sign, meaning that there is one reference
+# file per operating system.
 
 TOOLS=(
-    tsanalyze tsbitrate tscmp tsdate tsdektec tsdump tsfixcc tsftrunc
-    tsecmg tsemmg tspacketize tspsi tsresync tssmartcard tsstuff tstabcomp
-    tstabdump tstables tsterinfo
+    tsanalyze tsbitrate tscmp tsdate tsdektec tsdump tsecmg tsemmg tsfixcc
+    tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspsi tsresync =tsscan
+    tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
+    
 )
 
 INPUT_PLUGINS=(
-    file ip null craft
+    craft =dektec =dvb file fork hls http ip null
 )
 
 OUTPUT_PLUGINS=(
-    drop file ip
+    =dektec drop file fork hides hls ip =play
 )
 
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
-    datainject descrambler eit file filter fork history inject mux nit
-    nitscan pat pattern pcrbitrate pcrextract pcrverify pes pmt psi reduce
-    regulate remap rmorphan rmsplice scrambler sdt sifilter skip slice
-    stuffanalyze svremove svrename t2mi tables teletext time timeref
-    tsrename until zap mpe mpeinject spliceinject trigger craft cutoff
-    duplicate merge
+    craft cutoff datainject descrambler duplicate eit file filter fork
+    history inject limit merge mpe mpeinject mux nit nitscan pat pattern
+    pcradjust pcrbitrate pcrextract pcrverify pes pmt psi psimerge reduce
+    regulate remap rmorphan rmsplice scrambler sdt sections sifilter skip
+    slice spliceinject stuffanalyze svremove svrename t2mi tables teletext
+    time timeref trigger tsrename until zap
 )
 
-for cmd in ${TOOLS[@]}; do
-    $(tspath $cmd) --help >"$OUTDIR/$SCRIPT.$cmd.help" 2>&1
-    test_text $SCRIPT.$cmd.help
+helpfile() { [[ "$1" == =* ]] && echo ${1/=/}.$OS.help || echo $1.help; }
+
+for name in ${TOOLS[@]}; do
+    $(tspath ${name/=/}) --help >"$OUTDIR/$SCRIPT.$(helpfile $name)" 2>&1
+    test_text $SCRIPT.$(helpfile $name)
 done
 
-for plug in ${INPUT_PLUGINS[@]}; do
-    $(tspath tsp) -I $plug --help >"$OUTDIR/$SCRIPT.tsp.input.$plug.help" 2>&1
-    test_text $SCRIPT.tsp.input.$plug.help
+for name in ${INPUT_PLUGINS[@]}; do
+    $(tspath tsp) -I ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.input.$(helpfile $name)" 2>&1
+    test_text $SCRIPT.tsp.input.$(helpfile $name)
 done
 
-for plug in ${OUTPUT_PLUGINS[@]}; do
-    $(tspath tsp) -O $plug --help >"$OUTDIR/$SCRIPT.tsp.output.$plug.help" 2>&1
-    test_text $SCRIPT.tsp.output.$plug.help
+for name in ${OUTPUT_PLUGINS[@]}; do
+    $(tspath tsp) -O ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.output.$(helpfile $name)" 2>&1
+    test_text $SCRIPT.tsp.output.$(helpfile $name)
 done
 
-for plug in ${PACKET_PLUGINS[@]}; do
-    $(tspath tsp) -P $plug --help >"$OUTDIR/$SCRIPT.tsp.packet.$plug.help" 2>&1
-    test_text $SCRIPT.tsp.packet.$plug.help
+for name in ${PACKET_PLUGINS[@]}; do
+    $(tspath tsp) -P ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$(helpfile $name)" 2>&1
+    test_text $SCRIPT.tsp.packet.$(helpfile $name)
 done

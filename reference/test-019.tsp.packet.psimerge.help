@@ -1,0 +1,55 @@
+
+Merge PSI/SI from mixed streams
+
+Usage: tsp -P psimerge [options]
+
+This plugin assumes that the PSI/SI for two independent streams are multiplexed
+in the same transport streams but the packets from each original stream are
+independently labelled. This plugin merges the PSI/SI from these two streams
+into one.
+
+Options:
+
+  --help
+      Display this help text.
+
+  --main-label value
+      Specify the label which is set on packets from the 'main' stream. The
+      maximum label value is 31. By default, the main stream is made of packets
+      without label. At least one of --main-label and --merge-label must be
+      specified.
+
+  --merge-label value
+      Specify the label which is set on packets from the 'merge' stream. The
+      maximum label value is 31. By default, the merge stream is made of
+      packets without label. At least one of --main-label and --merge-label
+      must be specified.
+
+  --no-bat
+      Do not merge the BAT.
+
+  --no-cat
+      Do not merge the CAT.
+
+  --no-eit
+      Do not merge the EIT's.
+
+  --no-nit
+      Do not merge the NIT Actual.
+
+  --no-pat
+      Do not merge the PAT.
+
+  --no-sdt
+      Do not merge the SDT Actual.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --time-from-merge
+      Use the TDT/TOT time reference from the 'merge' stream. By default, use
+      the TDT/TOT time reference from the 'main' stream.
+

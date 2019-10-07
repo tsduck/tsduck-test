@@ -1,0 +1,57 @@
+
+Remove or merge sections from various PID's
+
+Usage: tsp -P sections [options]
+
+Options:
+
+  -e id1[-id2]
+  --etid-remove id1[-id2]
+      Remove all sections with the corresponding "extended table id" values.
+      The value is a combination of the table id and the table id extension.
+      For example, the option -e 0x4A1234 removes all BAT sections (table id
+      0x4A) for bouquet id 0x1234 (table id extension). Several options
+      --etid-remove can be specified.
+
+  --help
+      Display this help text.
+
+  -n
+  --null-pid-reuse
+      With this option, null packets can be replaced by packets for the output
+      PID. By default, only packets from input PID's are replaced by output
+      packets. This option may need to be used when --stuffing is specified and
+      the input PID's contained packed sections. In that case, the output
+      payload can be larger than the input and additional packets must be used.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  -o value
+  --output-pid value
+      Specifies the output PID. By default, the first input PID on the command
+      line is used. If the output PID is different from all input PID's and
+      this output PID already exists in the transport stream, an error is
+      generated.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Specify input PID's. More than one input PID can be specified. All
+      sections from all input PID's are merged into the output PID. At least
+      one input PID must be specified.
+
+  -s
+  --stuffing
+      Insert stuffing at end of each section, up to the next TS packet
+      boundary. By default, sections are packed and start in the middle of a TS
+      packet, after the previous section. Note, however, that section headers
+      are never scattered over a packet boundary.
+
+  -t id1[-id2]
+  --tid-remove id1[-id2]
+      Remove all sections with the corresponding table id. Several options
+      --tid-remove can be specified.
+
