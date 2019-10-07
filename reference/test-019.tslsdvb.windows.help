@@ -1,0 +1,44 @@
+
+List DVB tuner devices
+
+Usage: tslsdvb [options]
+
+Options:
+
+  -a N
+  --adapter N
+      Specifies the Nth DVB adapter in the system. This option can be used
+      instead of device name.
+
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  -d name
+  --device-name name
+      Specify the DVB receiver device name. This is a DirectShow/BDA tuner
+      filter name (not case sensitive, blanks are ignored). By default, the
+      first DVB receiver device is used. Use the tslsdvb utility to list all
+      DVB devices.
+
+  -e
+  --enumerate-devices
+      Legacy option, equivalent to --test enumerate-devices.
+
+  --help
+      Display this help text.
+
+  -t name
+  --test name
+      Run a specific DirectShow test. Very verbose output, for debug only. The
+      default is none.
+      Must be one of "bda-tuners", "enumerate-devices", "none",
+      "tuning-spaces".
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

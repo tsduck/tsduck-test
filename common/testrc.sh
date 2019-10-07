@@ -54,6 +54,10 @@ case $OS in
         ;;
 esac
 
+# All operating systems and "other" operating systems.
+ALLOS="linux mac windows"
+OTHEROS=${ALLOS/$OS/}
+
 # Detect various types of UNIX-like environments on UNIX.
 if [[ $OS == windows ]]; then
     WINDOWS=true
@@ -233,7 +237,11 @@ test_exit() {
 # Cleanup temporary output file matching a wildcard.
 # Syntax: test_cleanup test-file-wildcard
 test_cleanup() {
-    [[ -n "$1" ]] && rm -rf "$OUTDIR"/$1
+    if [[ -n "$1" ]]; then
+        ls -d 2>/dev/null "$OUTDIR"/$1 |
+            for os in $OTHEROS; do grep -v '\.'$os"\."; done |
+            while read file; do rm -rf "$file"; done
+    fi
 }
 
 # Check a temporary text file in 'tmp' against a reference file in 'reference'.
