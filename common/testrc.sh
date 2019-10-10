@@ -238,9 +238,9 @@ test_exit() {
 # Syntax: test_cleanup test-file-wildcard
 test_cleanup() {
     if [[ -n "$1" ]]; then
-        ls -d 2>/dev/null "$OUTDIR"/$1 |
-            for os in $OTHEROS; do grep -v '\.'$os"\."; done |
-            while read file; do rm -rf "$file"; done
+        local grepopts=
+        for os in $OTHEROS; do grepopts="$grepopts -e .$os."; done
+        rm -rf $(ls -d 2>/dev/null "$OUTDIR"/$1 | fgrep -v $grepopts)
     fi
 }
 
