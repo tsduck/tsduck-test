@@ -7,7 +7,7 @@ Options:
 
   -a N
   --adapter N
-      Specifies the Nth DVB adapter in the system. This option can be used
+      Specifies the Nth tuner device in the system. This option can be used
       instead of device name.
 
   --debug[=level]
@@ -16,10 +16,9 @@ Options:
 
   -d name
   --device-name name
-      Specify the DVB receiver device name. This is a DirectShow/BDA tuner
-      filter name (not case sensitive, blanks are ignored). By default, the
-      first DVB receiver device is used. Use the tslsdvb utility to list all
-      DVB devices.
+      Specify the receiver device name. This is a DirectShow/BDA tuner filter
+      name (not case sensitive, blanks are ignored). By default, the first
+      receiver device is used. Use the tslsdvb utility to list all DVB devices.
 
   -e
   --enumerate-devices

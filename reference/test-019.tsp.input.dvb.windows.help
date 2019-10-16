@@ -7,11 +7,12 @@ Options:
 
   -a N
   --adapter N
-      Specifies the Nth DVB adapter in the system. This option can be used
+      Specifies the Nth tuner device in the system. This option can be used
       instead of device name.
 
   --bandwidth value
-      Used for DVB-T/T2 tuners only. The default is "8-MHz".
+      Used for terrestrial tuners only. Bandwidth. The default is "8-MHz" for
+      DVB-T/T2.
       Must be one of "1.712-MHz", "10-MHz", "5-MHz", "6-MHz", "7-MHz", "8-MHz",
       "auto".
 
@@ -23,9 +24,9 @@ Options:
       this file is used.
 
   --delivery-system value
-      Used for DVB-S and DVB-S2 tuners only. Which delivery system to use. The
-      default is "DVB-S".
-      Must be one of "ATSC", "ATSC-MH", "CMMB", "DAB", "DSS", "DTMB",
+      Specify which delivery system to use. By default, use the default system
+      for the tuner.
+      Must be one of "ATSC", "ATSC-MH", "CMMB", "DAB", "DSS", "DTMB", "DVB-C",
       "DVB-C/A", "DVB-C/B", "DVB-C/C", "DVB-C2", "DVB-H", "DVB-S",
       "DVB-S-Turbo", "DVB-S2", "DVB-T", "DVB-T2", "ISDB-C", "ISDB-S", "ISDB-T",
       "undefined".
@@ -37,13 +38,12 @@ Options:
 
   -d name
   --device-name name
-      Specify the DVB receiver device name. This is a DirectShow/BDA tuner
-      filter name (not case sensitive, blanks are ignored). By default, the
-      first DVB receiver device is used. Use the tslsdvb utility to list all
-      DVB devices.
+      Specify the receiver device name. This is a DirectShow/BDA tuner filter
+      name (not case sensitive, blanks are ignored). By default, the first
+      receiver device is used. Use the tslsdvb utility to list all DVB devices.
 
   --fec-inner value
-      Used for DVB-S/S2 and DVB-C tuners only. Inner Forward Error Correction.
+      Used for satellite and cable tuners only. Inner Forward Error Correction.
       The default is "auto".
       Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
       "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
@@ -53,7 +53,8 @@ Options:
       Carrier frequency in Hz (all tuners). There is no default.
 
   --guard-interval value
-      Used for DVB-T/T2 tuners only. The default is "1/32".
+      Used for terrestrial tuners only. Guard interval. The default is "1/32"
+      for DVB-T/T2.
       Must be one of "1/128", "1/16", "1/32", "1/4", "1/8", "19/128", "19/256",
       "PN-420", "PN-595", "PN-945", "auto".
 
@@ -82,11 +83,11 @@ Options:
       selection. Warning: this option is supported on Linux only.
 
   --lnb low_freq[,high_freq,switch_freq]
-      Used for DVB-S and DVB-S2 tuners only. Description of the LNB.  All
-      frequencies are in MHz. low_freq and high_freq are the frequencies of the
-      local oscillators. switch_freq is the limit between the low and high
-      band. high_freq and switch_freq are used for dual-band LNB's only. The
-      default is a universal LNB: low_freq = 9750 MHz, high_freq = 10600 MHz,
+      Used for satellite tuners only. Description of the LNB.  All frequencies
+      are in MHz. low_freq and high_freq are the frequencies of the local
+      oscillators. switch_freq is the limit between the low and high band.
+      high_freq and switch_freq are used for dual-band LNB's only. The default
+      is a universal LNB: low_freq = 9750 MHz, high_freq = 10600 MHz,
       switch_freq = 11700 MHz.
 
   --low-priority-fec value
@@ -98,15 +99,15 @@ Options:
   -m value
   --modulation value
       Used for DVB-C, DVB-T, DVB-S2 and ATSC tuners. Modulation type. The
-      default is "64-QAM" for DVB-T/T2 and DVB-C, "QPSK" for DVB-S2, "8-VSB"
-      for ATSC.
+      default is "64-QAM" for DVB-T/T2, "64-QAM" for DVB-C, "QPSK" for DVB-S2,
+      "8-VSB" for ATSC.
       Must be one of "128-QAM", "16-APSK", "16-QAM", "16-VSB", "256-QAM",
       "32-APSK", "32-QAM", "4-QAM-NR", "64-QAM", "8-PSK", "8-VSB", "DQPSK",
       "QAM", "QPSK".
 
   --offset-count value
-      Used for DVB-T or ATSC tuners only. Specify the number of offsets from
-      the UHF or VHF channel. The default is zero. See options --uhf-channel or
+      Used for terrestrial tuners only. Specify the number of offsets from the
+      UHF or VHF channel. The default is zero. See options --uhf-channel or
       --vhf-channel.
 
   --pilots value
@@ -130,8 +131,7 @@ Options:
       Must be one of "COMBO", "GOLD", "ROOT".
 
   --polarity value
-      Used for DVB-S and DVB-S2 tuners only. Polarity. The default is
-      "vertical".
+      Used for satellite tuners only. Polarity. The default is "vertical".
       Must be one of "auto", "horizontal", "left", "none", "right", "vertical".
 
   --receive-timeout milliseconds
@@ -145,9 +145,8 @@ Options:
       Must be one of "0.20", "0.25", "0.35", "auto".
 
   --satellite-number value
-      Used for DVB-S and DVB-S2 tuners only. Satellite/dish number. Must be 0
-      to 3 with DiSEqC switches and 0 to 1 for non-DiSEqC switches. The default
-      is 0.
+      Used for satellite tuners only. Satellite/dish number. Must be 0 to 3
+      with DiSEqC switches and 0 to 1 fornon-DiSEqC switches. The default is 0.
 
   --signal-timeout seconds
       Specifies the timeout, in seconds, for DVB signal locking. If no signal
@@ -161,12 +160,13 @@ Options:
 
   -s value
   --symbol-rate value
-      Used for DVB-S, DVB-S2 and DVB-C tuners only. Symbol rate in
-      symbols/second. The default is 27,500,000 sym/s for satellite and 6,900,
-      000 sym/s for cable.
+      Used for satellite and cable tuners only. Symbol rate in symbols/second.
+      The default is 27,500,000 sym/s for satellite and 6,900,000 sym/s for
+      cable.
 
   --transmission-mode value
-      Used for DVB-T tuners only. Transmission mode. The default is "8K".
+      Used for terrestrial tuners only. Transmission mode. The default is "8K"
+      for DVB-T/T2.
       Must be one of "16K", "1K", "2K", "2K-interleaved", "32K", "4K",
       "4K-interleaved", "8K", "C=1", "C=3780", "auto".
 
@@ -178,14 +178,16 @@ Options:
       depends on the system. On Windows, the default file is
       %APPDATA%\tsduck\channels.xml.
 
+  -u value
   --uhf-channel value
-      Used for DVB-T or ATSC tuners only. Specify the UHF channel number of the
+      Used for terrestrial tuners only. Specify the UHF channel number of the
       carrier. Can be used in replacement to --frequency. Can be combined with
       an --offset-count option. The UHF frequency layout depends on the region,
       see --hf-band-region option.
 
+  -v value
   --vhf-channel value
-      Used for DVB-T or ATSC tuners only. Specify the VHF channel number of the
+      Used for terrestrial tuners only. Specify the VHF channel number of the
       carrier. Can be used in replacement to --frequency. Can be combined with
       an --offset-count option. The VHF frequency layout depends on the region,
       see --hf-band-region option.
