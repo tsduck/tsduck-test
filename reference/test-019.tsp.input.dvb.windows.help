@@ -139,6 +139,11 @@ Options:
       disable the timeout and wait indefinitely for packets, specify zero. This
       is the default.
 
+  --receiver-name value
+      Specify the name of the DirectShow receiver filter to use. By default,
+      first try a direct connection from the tuner filter to the rest of the
+      graph. Then, try all receiver filters and concatenate them all.
+
   --roll-off value
       Used for DVB-S2 tuners only. Roll-off factor. The default is "0.35"
       (implied for DVB-S, default for DVB-S2).
