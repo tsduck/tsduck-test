@@ -5,6 +5,438 @@ Usage: tsp -O dektec [options]
 
 Options:
 
+  --204
+      ASI devices: Send 204-byte packets (188 meaningful bytes plus 16 stuffing
+      bytes for RS coding). By default, send 188-byte packets.
+
+  --bandwidth value
+      DVB-T/H, DVB-T2, ADTB-T and DMB-T/H modulators: indicate bandwidth in
+      MHz. The default is 8 MHz. The bandwidth values 1.7 and 10 MHz are valid
+      for DVB-T2 only.
+      Must be one of "1.7", "10", "5", "6", "7", "8".
+
+  --bandwidth-extension
+      DVB-T2 modulators: indicate that the extended carrier mode is used. By
+      default, use normal carrier mode.
+
+  -b value
+  --bitrate value
+      Specify output bitrate in bits/second. By default, use the input device
+      bitrate or, if the input device cannot report bitrate, analyze some PCR's
+      at the beginning of the input stream to evaluate the original bitrate of
+      the transport stream.
+
+  --cell-id value
+      DVB-T and DVB-T2 modulators: indicate the cell identifier to set in the
+      transmission parameters signaling (TPS). Disabled by default with DVB-T.
+      Default value is 0 with DVB-T2.
+
+  -c value
+  --channel value
+      Channel index on the output Dektec device. By default, use the first
+      output channel on the device.
+
+  --cmmb-area-id value
+      CMMB modulators: indicate the area id. The valid range is 0 to 127. The
+      default is zero.
+
+  --cmmb-bandwidth value
+      CMMB modulators: indicate bandwidth in MHz. The default is 8 MHz.
+      Must be one of "2", "8".
+
+  --cmmb-pid value
+      CMMB modulators: indicate the PID of the CMMB stream in the transport
+      stream. This is a required parameter for CMMB modulation.
+
+  --cmmb-transmitter-id value
+      CMMB modulators: indicate the transmitter id. The valid range is 0 to
+      127. The default is zero.
+
+  --constellation value
+      DVB-T modulators: indicate the constellation type. The default is 64-QAM.
+      Must be one of "16-QAM", "64-QAM", "QPSK".
+
+  -r value
+  --convolutional-rate value
+      For modulators devices only: specify the convolutional rate. The
+      specified value depends on the modulation type.
+      DVB-S: 1/2, 2/3, 3/4, 4/5, 5/6, 6/7, 7/8.
+      DVB-S2: 1/2, 1/3, 1/4, 2/3, 2/5, 3/4, 3/5, 4/5, 5/6, 6/7, 7/8, 8/9, 9/10.
+      DVB-T: 1/2, 2/3, 3/4, 5/6, 7/8.
+      The default is 3/4.
+      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
+      "5/6", "6/7", "7/8", "8/9", "9/10".
+
+  -d value
+  --device value
+      Device index, from 0 to N-1 (with N being the number of Dektec devices in
+      the system). Use the command "tsdektec -a [-v]" to have a complete list
+      of devices in the system. By default, use the first output Dektec device.
+
+  --dmb-constellation value
+      DMB-T/H, ADTB-T modulators: indicate the constellation type. The default
+      is 64-QAM. 4-QAM-NR and 32-QAM can be used only with --dmb-fec 0.8.
+      Must be one of "16-QAM", "32-QAM", "4-QAM", "4-QAM-NR", "64-QAM".
+
+  --dmb-fec value
+      DMB-T/H, ADTB-T modulators: indicate the FEC code rate. The default is 0.
+      8.
+      Must be one of "0.4", "0.6", "0.8".
+
+  --dmb-frame-numbering
+      DMB-T/H, ADTB-T modulators: indicate to use frame numbering. The default
+      is to use no frame numbering.
+
+  --dmb-header value
+      DMB-T/H, ADTB-T modulators: indicate the FEC frame header mode. The
+      default is PN945.
+      Must be one of "PN420", "PN595", "PN945".
+
+  --dmb-interleaver value
+      DMB-T/H, ADTB-T modulators: indicate the interleaver mode. Must be one 1
+      (B=54, M=240) or 2 (B=54, M=720). The default is 1.
+      Must be one of "1", "2".
+
+  --fef
+      DVB-T2 modulators: enable insertion of FEF's (Future Extension Frames).
+      Not enabled by default.
+
+  --fef-interval value
+      DVB-T2 modulators: indicate the number of T2 frames between two FEF
+      parts. The valid range is 1 to 255 and --t2-fpsf shall be divisible by
+      --fef-interval. The default is 1.
+
+  --fef-length value
+      DVB-T2 modulators: indicate the length of a FEF-part in number of T-units
+      (= samples). The valid range is 0 to 0x3FFFFF. The default is 1.
+
+  --fef-s1 value
+      -T2 modulators: indicate the S1-field value in the P1 signalling data.
+      Valid values: 2, 3, 4, 5, 6 and 7. The default is 2.
+
+  --fef-s2 value
+      DVB-T2 modulators: indicate the S2-field value in the P1 signalling data.
+      Valid values: 1, 3, 5, 7, 9, 11, 13 and 15. The default is 1.
+
+  --fef-signal value
+      DVB-T2 modulators: indicate the type of signal generated during the FEF
+      period. Must be one of "0" (zero I/Q samples during FEF), "1K" (1K OFDM
+      symbols with 852 active carriers containing BPSK symbols, same PRBS as
+      the T2 dummy cells, not reset between symbols) or "1K-384" (1K OFDM
+      symbols with 384 active carriers containing BPSK symbols). The default is
+      0.
+      Must be one of "0", "1K", "1K-384".
+
+  --fef-type value
+      DVB-T2 modulators: indicate the FEF type. The valid range is 0 ... 15.
+      The default is 0.
+
+  --fft-mode value
+      DVB-T2 modulators: indicate the FFT mode. The default is 32K.
+      Must be one of "16K", "1K", "2K", "32K", "4K", "8K".
+
+  --fifo-size value
+      Set the FIFO size in bytes of the output channel in the Dektec device.
+      The default value depends on the device type.
+
+  -f value
+  --frequency value
+      All modulator devices: indicate the frequency, in Hz, of the output
+      carrier. There is no default. For OFDM modulators, the options
+      --uhf-channel or --vhf-channel and --offset-count may be used instead.
+      For DVB-S/S2 modulators, the specified frequency is the "intermediate"
+      frequency. For convenience, the option --satellite-frequency can be used
+      instead of --frequency when the intermediate frequency is unknown. For
+      DTA-107 modulators, the valid range is 950 MHz to 2150 MHz. For DTA-110
+      and 110T modulators, the valid range is 400 MHz to 862 MHz. For DTA-115
+      modulators, the valid range is 47 MHz to 862 MHz.
+
+  -g value
+  --guard-interval value
+      DVB-T modulators: indicate the guard interval. The default is 1/32.
+      Must be one of "1/16", "1/32", "1/4", "1/8".
+
   --help
       Display this help text.
+
+  --hf-band-region name
+      Specify the region for UHF/VHF band frequency layout.
+
+  --indepth-interleave
+      DVB-T modulators: indicate to use in-depth interleave. The default is
+      native interleave.
+
+  -i
+  --input-modulation
+      All modulators devices: try to guess modulation parameters from input
+      stream. If the input plugin is "dvb", use its modulation parameters.
+      Otherwise, if the specified modulation is DVB-T, try to guess some
+      modulation parameters from the bitrate.
+
+  --instant-detach
+      At end of stream, perform an "instant detach" of the output channel. The
+      default is to wait until all bytes are sent. The default is fine for ASI
+      devices. With modulators, the "wait until sent" mode may hang at end of
+      stream and --instant-detach avoids this.
+
+  --inversion
+      All modulators devices: enable spectral inversion.
+
+  --j83 value
+      QAM modulators: indicate the ITU-T J.83 annex to use. Must be one of "A"
+      (DVB-C), "B" (American QAM) or "C" (Japanese QAM). The default is A.
+      Must be one of "A", "B", "C".
+
+  -l value
+  --level value
+      Modulators: indicate the output level in units of 0.1 dBm (e.g. --level
+      -30 means -3 dBm). Not supported by all devices. For DTA-107 modulators,
+      the valid range is -47.0 to -27.0 dBm. For DTA-115, QAM, the valid range
+      is -35.0 to 0.0 dBm. For DTA-115, OFDM, ISDB-T, the valid range is -38.0
+      to -3.0 dBm.
+
+  --lnb value
+      DVB-S/S2 modulators: description of the LNB which is used to convert the
+      --satellite-frequency into an intermediate frequency. This option is
+      useless when --satellite-frequency is not specified. The format of the
+      string is "low_freq[,high_freq[,switch_freq]]" where all frequencies are
+      in MHz. The characteristics of the default universal LNB are low_freq =
+      9750 MHz, high_freq = 10600 MHz, switch_freq = 11700 MHz.
+
+  --maintain-preload
+      If the FIFO were preloaded, roughly maintain the FIFO buffer size in
+      order to maintain the delay from real-time. If the FIFO size drops to
+      zero bytes, pause transmission till it gets back to the preload FIFO
+      size.
+
+  --miso value
+      DVB-T2 modulators: indicate the MISO mode. The default si OFF. This mode
+      can be used to simulate antenna 1, antenna 2 or the average of antenna 1
+      and antenna 2 to simulate reception halfway between the antennas.
+      Must be one of "1", "2", "BOTH", "OFF".
+
+  -m value
+  --modulation value
+      For modulators, indicate the modulation type. For DVB-H, specify DVB-T.
+      For DMB-H, specify DMB-T. The supported modulation types depend on the
+      device model. The default modulation type is:
+      DTA-107:   DVB-S-QPSK
+      DTA-107S2: DVB-S2-QPSK
+      DTA-110:   64-QAM
+      DTA-110T:  DVB-T
+      DTA-115:   DVB-T
+      Must be one of "128-QAM", "16-QAM", "256-QAM", "32-QAM", "4-QAM",
+      "64-QAM", "ADTB-T", "ATSC-VSB", "CMMB", "DMB-T", "DVB-S", "DVB-S-BPSK",
+      "DVB-S-QPSK", "DVB-S2", "DVB-S2-16APSK", "DVB-S2-32APSK", "DVB-S2-8PSK",
+      "DVB-S2-QPSK", "DVB-T", "DVB-T2", "ISDB-T".
+
+  --mpe-fec
+      DVB-T/H modulators: indicate that at least one elementary stream uses
+      MPE-FEC (DVB-H signalling).
+
+  -o value
+  --offset-count value
+      UHF and VHF modulators: indicate the number of offsets from the UHF or
+      VHF channel. The default is zero. See options --uhf-channel and
+      --vhf-channel.
+
+  --papr value
+      DVB-T2 modulators: indicate the Peak to Average Power Reduction method.
+      Must be one of NONE, ACE (Active Constellation Extension), TR (power
+      reduction with reserved carriers) or BOTH (both ACE and TS). The default
+      is NONE.
+      Must be one of "ACE", "BOTH", "NONE", "TR".
+
+  -p value
+  --pilot-pattern value
+      DVB-T2 modulators: indicate the pilot pattern to use, a value in the
+      range 1 to 8. The default is 7.
+      Must be one of "1", "2", "3", "4", "5", "6", "7", "8".
+
+  --pilots
+      DVB-S2 and ADTB-T modulators: enable pilots (default: no pilot).
+
+  --plp0-code-rate value
+      DVB-T2 modulators: indicate the convolutional coding rate used by the PLP
+      #0. The default is 2/3.
+      Must be one of "1/2", "2/3", "3/4", "3/5", "4/5", "5/6".
+
+  --plp0-fec-type value
+      DVB-T2 modulators: indicate the FEC type used by the PLP #0. The default
+      is 64K LPDC.
+      Must be one of "16K", "64K".
+
+  --plp0-group-id value
+      DVB-T2 modulators: indicate the PLP group with which the PLP #0 is
+      associated. The valid range is 0 to 255. The default is 0.
+
+  --plp0-high-efficiency
+      DVB-T2 modulators: indicate that the PLP #0 uses High Efficiency Mode
+      (HEM). Otherwise Normal Mode (NM) is used.
+
+  --plp0-id value
+      DVB-T2 modulators: indicate the unique identification of the PLP #0
+      within the T2 system. The valid range is 0 to 255. The default is 0.
+
+  --plp0-il-length value
+      DVB-T2 modulators: indicate the time interleaving length for PLP #0. If
+      --plp0-il-type is set to "ONE-TO-ONE" (the default), this parameter
+      specifies the number of TI-blocks per interleaving frame. If
+      --plp0-il-type is set to "MULTI", this parameter specifies the number of
+      T2 frames to which each interleaving frame is mapped. The valid range is
+      0 to 255. The default is 3.
+
+  --plp0-il-type value
+      DVB-T2 modulators: indicate the type of interleaving used by the PLP #0.
+      Must be one of "ONE-TO-ONE" (one interleaving frame corresponds to one T2
+      frame) or "MULTI" (one interleaving frame is carried in multiple T2
+      frames). The default is ONE-TO-ONE.
+      Must be one of "MULTI", "ONE-TO-ONE".
+
+  --plp0-in-band
+      DVB-T2 modulators: indicate that the in-band flag is set and in-band
+      signalling information is inserted in PLP #0.
+
+  --plp0-issy value
+      DVB-T2 modulators: type of ISSY field to compute and insert in PLP #0.
+      The default is NONE.
+      Must be one of "LONG", "NONE", "SHORT".
+
+  --plp0-modulation value
+      DVB-T2 modulators: indicate the modulation used by PLP #0. The default is
+      256-QAM.
+      Must be one of "16-QAM", "256-QAM", "64-QAM", "BPSK", "QPSK".
+
+  --plp0-null-packet-deletion
+      DVB-T2 modulators: indicate that null-packet deletion is active in PLP
+      #0. Otherwise it is not active.
+
+  --plp0-rotation
+      DVB-T2 modulators: indicate that constellation rotation is used for PLP
+      #0. Otherwise not.
+
+  --plp0-type value
+      DVB-T2 modulators: indicate the PLP type for PLP #0. The default is
+      COMMON.
+      Must be one of "1", "2", "COMMON".
+
+  --preload-fifo
+      Preload FIFO (hardware buffer) before starting transmission. Preloading
+      the FIFO will introduce a variable delay to the start of transmission,
+      _if_ the delivery of packets to the plug-in is pre-regulated, based on
+      the size of the FIFO, the TS bit rate, and the size of the FIFO to
+      preload, as controlled by the --preload-fifo-percentage or
+      --preload-fifo-delay options. If the delivery of packets to the plug-in
+      isn't self-regulated (i.e. they are delivered faster than real-time, as
+      might occur when loading from file), there is no benefit to preloading
+      the FIFO, because in that case, the FIFO will fill up quickly anyway. On
+      implicitly when using a modulator for output.
+
+  --preload-fifo-delay value
+      The use of this option indicates that the size of the FIFO to preload
+      prior to starting transmission should be calculated based on the
+      specified delay, in milliseconds, and the configured bit rate. That is,
+      transmission will start after the specified delay worth of media has been
+      preloaded. This option takes precedence over the
+      --preload-fifo-percentage option. There is no default value, and the
+      valid range is 100-100000.
+
+  --preload-fifo-percentage value
+      Percentage of size of FIFO to preload prior to starting transmission
+      (default: 80%).
+
+  -q value
+  --qam-b value
+      QAM modulators: with --j83 B, indicate the QAM-B interleaver mode. The
+      default is I128-J1D.
+      Must be one of "I128-J1", "I128-J1D", "I128-J2", "I128-J3", "I128-J4",
+      "I128-J5", "I128-J6", "I128-J7", "I128-J8", "I16-J8", "I32-J4", "I64-J2",
+      "I8-J16".
+
+  --s2-gold-code value
+      DVB-S2 modulators: indicate the physical layer scrambling initialization
+      sequence, aka "gold code".
+
+  --s2-short-fec-frame
+      DVB-S2 modulators: use short FEC frames, 16 200 bits (default: long FEC
+      frames, 64 800 bits).
+
+  --satellite-frequency value
+      DVB-S/S2 modulators: indicate the target satellite frequency, in Hz, of
+      the output carrier. The actual frequency at the output of the modulator
+      is the "intermediate" frequency which is computed based on the
+      characteristics of the LNB (see option --lnb). This option is useful when
+      the satellite frequency is better known than the intermediate frequency.
+      The options --frequency and --satellite-frequency are mutually exclusive.
+
+  -s
+  --stuffing
+      Automatically generate stuffing packets if we fail to provide packets
+      fast enough.
+
+  --symbol-rate value
+      DVB-C/S/S2 modulators: Specify the symbol rate in symbols/second. By
+      default, the symbol rate is implicitly computed from the convolutional
+      rate, the modulation type and the bitrate. But when --symbol-rate is
+      specified, the input bitrate is ignored and the output bitrate is forced
+      to the value resulting from the combination of the specified symbol rate,
+      convolutional rate and modulation type. The options --symbol-rate and
+      --bitrate are mutually exclusive.
+
+  --t2-fpsf value
+      DVB-T2 modulators: indicate the number of T2 frames per super-frame. Must
+      be in the range 1 to 255. The default is 2.
+
+  --t2-guard-interval value
+      DVB-T2 modulators: indicates the guard interval. The default is 1/128.
+      Must be one of "1/128", "1/16", "1/32", "1/4", "1/8", "19/128", "19/256".
+
+  --t2-l1-modulation value
+      DVB-T2 modulators: indicate the modulation type used for the L1-post
+      signalling block. The default is 16-QAM.
+      Must be one of "16-QAM", "64-QAM", "BPSK", "QPSK".
+
+  --t2-network-id value
+      DVB-T2 modulators: indicate the DVB-T2 network identification. The
+      default is 0.
+
+  --t2-system-id value
+      DVB-T2 modulators: indicate the DVB-T2 system identification. The default
+      is 0.
+
+  --time-slice
+      DVB-T/H modulators: indicate that at least one elementary stream uses
+      time slicing (DVB-H signalling).
+
+  -t value
+  --transmission-mode value
+      DVB-T modulators: indicate the transmission mode. The default is 8K.
+      Must be one of "2K", "4K", "8K".
+
+  -u value
+  --uhf-channel value
+      UHF modulators: indicate the UHF channel number of the output carrier.
+      Can be used in replacement to --frequency. Can be combined with an
+      --offset-count option. The UHF frequency layout depends on the region,
+      see --hf-band-region option.
+
+  -v value
+  --vhf-channel value
+      VHF modulators: indicate the VHF channel number of the output carrier.
+      Can be used in replacement to --frequency. Can be combined with an
+      --offset-count option. The VHF frequency layout depends on the region,
+      see --hf-band-region option.
+
+  --vsb value
+      ATSC modulators: indicate the VSB constellation. The default is 8.
+      Must be one of "16", "8".
+
+  --vsb-taps value
+      ATSC modulators: indicate the number of taps of each phase of the
+      root-raised cosine filter that is used to shape the spectrum of the
+      output signal. The number of taps can have any value between 2 and 256
+      (the implementation is optimized for powers of 2). Specifying more taps
+      improves the spectrum, but increases processor overhead. The recommend
+      (and default) number of taps is 64 taps. If insufficient CPU power is
+      available, 32 taps produces acceptable results, too.
 
