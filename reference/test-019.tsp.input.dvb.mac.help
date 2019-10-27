@@ -11,7 +11,7 @@ Options:
 
   --bandwidth value
       Used for terrestrial tuners only. Bandwidth. The default is "8-MHz" for
-      DVB-T/T2.
+      DVB-T/T2, "6-MHz" for ISDB-T.
       Must be one of "1.712-MHz", "10-MHz", "5-MHz", "6-MHz", "7-MHz", "8-MHz",
       "auto".
 
@@ -47,7 +47,7 @@ Options:
 
   --guard-interval value
       Used for terrestrial tuners only. Guard interval. The default is "1/32"
-      for DVB-T/T2.
+      for DVB-T/T2, "1/32" for ISDB-T.
       Must be one of "1/128", "1/16", "1/32", "1/4", "1/8", "19/128", "19/256",
       "PN-420", "PN-595", "PN-945", "auto".
 
@@ -69,6 +69,72 @@ Options:
       streams. The default is "auto".
       Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
       "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+
+  --isdbt-layer-a-fec value
+      Used for ISDB-T tuners only. Error correction for layer A. The default is
+      automatically detected.
+      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
+      "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+
+  --isdbt-layer-a-modulation value
+      Used for ISDB-T tuners only. Modulation for layer A. The default is
+      automatically detected.
+      Must be one of "128-QAM", "16-APSK", "16-QAM", "16-VSB", "256-QAM",
+      "32-APSK", "32-QAM", "4-QAM-NR", "64-QAM", "8-PSK", "8-VSB", "DQPSK",
+      "QAM", "QPSK".
+
+  --isdbt-layer-a-segment-count value
+      Used for ISDB-T tuners only. Number of segments for layer A. Possible
+      values: 0 to 13. The default is automatically detected.
+
+  --isdbt-layer-a-time-interleaving value
+      Used for ISDB-T tuners only. Time interleaving for layer A. Possible
+      values: 0 to 3. The default is automatically detected.
+
+  --isdbt-layer-b-fec value
+      Same as --isdbt-layer-a-fec for layer B.
+      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
+      "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+
+  --isdbt-layer-b-modulation value
+      Same as --isdbt-layer-a-modulation for layer B.
+      Must be one of "128-QAM", "16-APSK", "16-QAM", "16-VSB", "256-QAM",
+      "32-APSK", "32-QAM", "4-QAM-NR", "64-QAM", "8-PSK", "8-VSB", "DQPSK",
+      "QAM", "QPSK".
+
+  --isdbt-layer-b-segment-count value
+      Same as --isdbt-layer-a-segment-count for layer B.
+
+  --isdbt-layer-b-time-interleaving value
+      Same as --isdbt-layer-a-time-interleaving for layer B.
+
+  --isdbt-layer-c-fec value
+      Same as --isdbt-layer-a-fec for layer C.
+      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
+      "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+
+  --isdbt-layer-c-modulation value
+      Same as --isdbt-layer-a-modulation for layer C.
+      Must be one of "128-QAM", "16-APSK", "16-QAM", "16-VSB", "256-QAM",
+      "32-APSK", "32-QAM", "4-QAM-NR", "64-QAM", "8-PSK", "8-VSB", "DQPSK",
+      "QAM", "QPSK".
+
+  --isdbt-layer-c-segment-count value
+      Same as --isdbt-layer-a-segment-count for layer C.
+
+  --isdbt-layer-c-time-interleaving value
+      Same as --isdbt-layer-a-time-interleaving for layer C.
+
+  --isdbt-layers 'string'
+      Used for ISDB-T tuners only. Hierarchical reception in ISDB-T is achieved
+      by enabling or disabling layers in the decoding process. The specified
+      string contains a combination of characters 'A', 'B', 'C', indicating
+      which layers shall be used. The default is "ABC" (all layers).
+
+  --isdbt-partial-reception
+      Used for ISDB-T tuners only. Specify that the reception of the ISDB-T
+      channel is in partial reception mode. The default is automatically
+      detected.
 
   --isi value
       Used for DVB-S2 tuners only. Input Stream Id (ISI) number to select, from
@@ -141,11 +207,31 @@ Options:
       Used for satellite tuners only. Satellite/dish number. Must be 0 to 3
       with DiSEqC switches and 0 to 1 fornon-DiSEqC switches. The default is 0.
 
+  --sb-segment-count value
+      Used for ISDB-T tuners only. With --sound-broadcasting, specify the total
+      count of connected ISDB-Tsb channels. Possible values: 1 to 13. The
+      default is 13.
+
+  --sb-segment-index value
+      Used for ISDB-T tuners only. With --sound-broadcasting, specify the index
+      of the segment to be demodulated for an ISDB-Tsb channel where several of
+      them are transmitted in the connected manner. Possible values: 0 to
+      sb-segment-count - 1. The default is 0.
+
+  --sb-subchannel-id value
+      Used for ISDB-T tuners only. With --sound-broadcasting, specify the
+      sub-channel id of the segment to be demodulated in the ISDB-Tsb channel.
+      Possible values: 0 to 41. The default is 0.
+
   --signal-timeout seconds
       Specifies the timeout, in seconds, for DVB signal locking. If no signal
       is detected after this timeout, the command aborts. To disable the
       timeout and wait indefinitely for the signal, specify zero. The default
       is 5 seconds.
+
+  --sound-broadcasting
+      Used for ISDB-T tuners only. Specify that the reception is an ISDB-Tsb
+      (sound broadcasting) channel instead of an ISDB-T one
 
   --spectral-inversion value
       Spectral inversion. The default is "auto".
@@ -154,12 +240,12 @@ Options:
   -s value
   --symbol-rate value
       Used for satellite and cable tuners only. Symbol rate in symbols/second.
-      The default is 27,500,000 sym/s for satellite and 6,900,000 sym/s for
-      cable.
+      The default is 27,500,000 sym/s for DVB-S, 6,900,000 sym/s for DVB-C, 27,
+      500,000 sym/s for ISDB-S,
 
   --transmission-mode value
       Used for terrestrial tuners only. Transmission mode. The default is "8K"
-      for DVB-T/T2.
+      for DVB-T/T2, "8K" for ISDB-T.
       Must be one of "16K", "1K", "2K", "2K-interleaved", "32K", "4K",
       "4K-interleaved", "8K", "C=1", "C=3780", "auto".
 
