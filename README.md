@@ -139,3 +139,4 @@ repository. But we now limit their size to 20 MB.
 | 050  | SCTE 18 (Emergency Alert System) signalization
 | 051  | Analyze and convert EIT's from an ATSC live stream
 | 052  | Analyze and convert the RRT from an ATSC live stream
+| 053  | NorDig private descriptors

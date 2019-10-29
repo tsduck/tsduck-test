@@ -1,0 +1,22 @@
+
+* NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 82 bytes
+  - Section 0:
+    Network Id: 0 (0x0000)
+    Network information:
+    - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000029 (NorDig)
+    - Descriptor 1: NorDig Logical Channel (V1) (0x83, 131), 0 bytes
+    - Descriptor 2: NorDig Logical Channel (V2) (0x87, 135), 0 bytes
+    - Descriptor 3: NorDig Logical Channel (V1) (0x83, 131), 12 bytes
+      Service Id:  4660 (0x1234), Visible: 1, Channel number:   1
+      Service Id:  9029 (0x2345), Visible: 0, Channel number: 200
+      Service Id: 13398 (0x3456), Visible: 1, Channel number: 16383
+    - Descriptor 4: NorDig Logical Channel (V2) (0x87, 135), 40 bytes
+      - Channel list id: 0x01 (1), name: "list1", country code: "foo"
+      - Channel list id: 0xAB (171), name: "list2", country code: "bar"
+        Service Id:  4660 (0x1234), Visible: 1, Channel number:   1
+        Service Id:  9029 (0x2345), Visible: 0, Channel number: 200
+        Service Id: 13398 (0x3456), Visible: 1, Channel number: 1023
+      - Channel list id: 0x05 (5), name: "", country code: "abc"
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <NIT network_id="0">
+
+    <private_data_specifier_descriptor private_data_specifier="nordig"/>
+
+    <nordig_logical_channel_descriptor_v1/>
+    <nordig_logical_channel_descriptor_v2/>
+    
+    <nordig_logical_channel_descriptor_v1>
+      <service service_id="0x1234" logical_channel_number="1"/>
+      <service service_id="0x2345" logical_channel_number="200" visible_service="false"/>
+      <service service_id="0x3456" logical_channel_number="0x3FFF" visible_service="true"/>
+    </nordig_logical_channel_descriptor_v1>
+
+    <nordig_logical_channel_descriptor_v2>
+      <channel_list id="0x01" name="list1" country_code="foo"/>
+      <channel_list id="0xAB" name="list2" country_code="bar">
+        <service service_id="0x1234" logical_channel_number="1"/>
+        <service service_id="0x2345" logical_channel_number="200" visible_service="false"/>
+        <service service_id="0x3456" logical_channel_number="0x03FF" visible_service="true"/>
+      </channel_list>
+      <channel_list id="0x05" name="" country_code="abc"/>
+    </nordig_logical_channel_descriptor_v2>
+
+  </NIT>
+
+</tsduck>
