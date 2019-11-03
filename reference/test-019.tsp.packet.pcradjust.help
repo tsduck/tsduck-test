@@ -29,9 +29,9 @@ Options:
       video and audio.
 
   --min-ms-interval milliseconds
-      Specify the minimum interval between two PCR's in miliseconds. On a given
-      PID, if the interval between two PCR's is larger than the minimum, the
-      next null packet will be replaced with an empty packet with a PCR for
+      Specify the minimum interval between two PCR's in milliseconds. On a
+      given PID, if the interval between two PCR's is larger than the minimum,
+      the next null packet will be replaced with an empty packet with a PCR for
       that PID.
 
   --only-label label1[-label2]
