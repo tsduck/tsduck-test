@@ -103,6 +103,11 @@ Options:
       to enforce the offline defaults and the explicit values 'yes', 'true',
       'on' are used to enforce the real-time defaults.
 
+  --receive-timeout milliseconds
+      Specify a timeout in milliseconds for all input operations. Equivalent to
+      the same --receive-timeout options in some plugins. By default, there is
+      no input timeout.
+
   -s
   --synchronous-log
       Each logged message is guaranteed to be displayed, synchronously, without
