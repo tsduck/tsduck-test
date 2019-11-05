@@ -107,8 +107,9 @@ Options:
   -t value
   --receive-timeout value
       Specify the data reception timeout in milliseconds. This timeout applies
-      to each receive operation, individually. By default, receive operations
-      wait for data, possibly forever.
+      to each receive operation, individually. A zero timeout means
+      non-blocking reception. By default, receive operations wait for data,
+      possibly forever.
 
   --satellite-frequency value
       DVB-S/S2 receivers: indicate the target satellite frequency, in Hz, of
