@@ -1,14 +1,15 @@
 
 Rename a service, assign a new service name and/or new service id
 
-Usage: tsp -P svrename [options] service
+Usage: tsp -P svrename [options] [service]
 
 Parameter:
 
   Specifies the service to rename. If the argument is an integer value (either
   decimal or hexadecimal), it is interpreted as a service id. Otherwise, it is
   interpreted as a service name, as specified in the SDT. The name is not case
-  sensitive and blanks are ignored.
+  sensitive and blanks are ignored. If no service is specified, the first
+  service in the PAT is used.
 
 Options:
 
