@@ -45,6 +45,11 @@ Options:
       Set the specified port in output mode. This applies to bidirectional
       ports which can be either set in input or output mode.
 
+  -p value
+  --power-mode value
+      On DTU-315 USB modulators, set the power mode to the specified value.
+      Must be one of "high-quality", "low-power".
+
   -r
   --reset
       Reset the device.
