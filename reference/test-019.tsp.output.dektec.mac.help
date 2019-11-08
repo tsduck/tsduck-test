@@ -320,6 +320,10 @@ Options:
       COMMON.
       Must be one of "1", "2", "COMMON".
 
+  --power-mode value
+      DTU-315 modulators: set the power mode to the specified value.
+      Must be one of "high-quality", "low-power".
+
   --preload-fifo
       Preload FIFO (hardware buffer) before starting transmission. Preloading
       the FIFO will introduce a variable delay to the start of transmission,
