@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT network_id="0">
+    <private_data_specifier_descriptor private_data_specifier="bskyb"/>
+    <sky_logical_channel_number_descriptor region_id="0x1234"/>
+    <sky_logical_channel_number_descriptor region_id="0x5678">
+      <service service_id="0x9ABC"
+               service_type="0xDE"
+               channel_id="0xF012"
+               logical_channel_number="100"
+               sky_id="0x5678"/>
+      <service service_id="0xFEDC"
+               service_type="0xBA"
+               channel_id="0x9876"
+               logical_channel_number="200"
+               sky_id="0x8765"/>
+    </sky_logical_channel_number_descriptor>
+  </NIT>
+</tsduck>

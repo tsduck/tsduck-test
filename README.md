@@ -141,3 +141,4 @@ repository. But we now limit their size to 20 MB.
 | 052  | Analyze and convert the RRT from an ATSC live stream
 | 053  | NorDig private descriptors
 | 054  | `timeshift` plugin
+| 055  | BskyB private descriptors
