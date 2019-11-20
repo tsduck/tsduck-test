@@ -10,6 +10,11 @@ Options:
       Specifies the bitrate in bits / second of the NIT PID if a new one is
       created. The default is 3,000 b/s.
 
+  --build-service-list-descriptors
+      Build service_list_descriptors in the NIT according to the information
+      which is collected in the PAT and the SDT. See also option
+      --default-service-type.
+
   --cleanup-private-descriptors
       Remove all private descriptors without preceding private_data_specifier
       descriptor.
@@ -23,6 +28,12 @@ Options:
       Create a new empty NIT if none was received after the specified number of
       milliseconds. If the actual NIT is received later, it will be used as the
       base for transformations instead of the empty one.
+
+  --default-service-type value
+      With --build-service-list-descriptors, specify the default service type
+      of services which are found in the PAT but not in the SDT. By default,
+      services without known service type are not added in created service list
+      descriptors.
 
   --help
       Display this help text.
