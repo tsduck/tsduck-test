@@ -27,6 +27,10 @@ Options:
       the outgoing local interface. It can be also a host name that translates
       to a local address.
 
+  --local-port value
+      Specify the local UDP source port for outgoing packets. By default, a
+      random source port is used.
+
   -p value
   --packet-burst value
       Specifies the maximum number of TS packets per UDP packet. The default is

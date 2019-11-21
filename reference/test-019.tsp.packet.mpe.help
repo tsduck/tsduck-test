@@ -10,10 +10,9 @@ Options:
       With --output-file, if the file already exists, append to the end of the
       file. By default, existing files are overwritten.
 
-  -d value
-  --destination value
-      address[:port]Filter MPE UDP datagrams based on the specified destination
-      IP address.
+  -d address[:port]
+  --destination address[:port]
+      Filter MPE UDP datagrams based on the specified destination IP address.
 
   --dump-datagram
       With --log, dump each complete network datagram.
@@ -32,6 +31,10 @@ Options:
       With --udp-forward, specify the IP address of the outgoing local
       interface for multicast traffic. It can be also a host name that
       translates to a local address.
+
+  --local-port value
+      With --udp-forward, specify the local UDP source port for outgoing
+      packets. By default, a random source port is used.
 
   -l
   --log
