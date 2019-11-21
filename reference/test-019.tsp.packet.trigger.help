@@ -1,5 +1,5 @@
 
-Trigger actions on selected labeled TS packets
+Trigger actions on selected TS packets
 
 Usage: tsp -P trigger [options]
 
@@ -51,6 +51,12 @@ Options:
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  --start
+      Trigger the actions on tsp start.
+
+  --stop
+      Trigger the actions on tsp stop.
 
   --ttl value
       With --udp, specifies the TTL (Time-To-Live) socket option. The actual
