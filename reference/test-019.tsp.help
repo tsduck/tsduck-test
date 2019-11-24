@@ -41,6 +41,29 @@ Options:
       Specify the buffer size in mega-bytes. This is the size of the buffer
       between the input and output devices. The default is 16 MB.
 
+  --control-local address
+      Specify the IP address of the local interface on which to listen for
+      control commands. It can be also a host name that translates to a local
+      address. By default, listen on all local interfaces.
+
+  --control-port value
+      Specify the TCP port on which tsp listens for control commands. If
+      unspecified, no control commands are expected.
+
+  --control-reuse-port
+      Set the 'reuse port' socket option on the control TCP server port. This
+      option is not enabled by default to avoid accidentally running two tsp
+      commands with the same control port.
+
+  --control-source address
+      Specify a remote IP address which is allowed to send control commands. By
+      default, as a security precaution, only the local host is allowed to
+      connect. Several --control-source options are allowed.
+
+  --control-timeout milliseconds
+      Specify the reception timeout in milliseconds for control commands. The
+      default timeout is 5000 ms.
+
   -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
