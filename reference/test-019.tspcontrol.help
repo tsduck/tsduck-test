@@ -1,0 +1,121 @@
+
+Send control commands to a running tsp
+
+Usage: tspcontrol [options] command ...
+
+Parameters:
+
+  The control command to send to tsp.
+
+Options:
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -t [address:]port
+  --tsp [address:]port
+      Specify the IP address (or host name) and port where the tsp process
+      expects control commands (tsp option --control-port). If the IP address
+      is omitted, the local host is used. This is a required parameter, there
+      is no default.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+
+Control commands: 
+
+  ==== Terminate the tsp process
+
+  Usage: tspcontrol exit [options]
+
+  Options:
+
+    --abort
+        Specify to immediately abort the tsp process. By default, this command
+        notifies each plugin to terminate and let the processing continue until
+        the process naturally exits.
+
+  ==== List all running plugins
+
+  Usage: tspcontrol list [options]
+
+  Options:
+
+    -v
+    --verbose
+        Produce verbose output.
+
+  ==== Restart plugin with different parameters
+
+  Usage: tspcontrol restart [options] plugin-index [plugin-options ...]
+
+  Parameters:
+
+    Index of the plugin to restart, followed by the new plugin parameters to
+    use.
+
+  Options:
+
+    -s
+    --same
+        Restart the plugin with the same options and parameters. By default,
+        when no plugin options are specified, restart with no option at all.
+
+    -v
+    --verbose
+        Produce verbose output.
+
+  ==== Resume a suspended plugin
+
+  Usage: tspcontrol resume [options] plugin-index
+
+  Parameters:
+
+    Index of the plugin to resume.
+
+  Options:
+
+    -v
+    --verbose
+        Produce verbose output.
+
+  ==== Change log level in the tsp process
+
+  Usage: tspcontrol set-log level
+
+  Parameter:
+
+    Specify a new logging level for the tsp process. It can be either a name or
+    a positive value for higher debug levels.
+    Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+    "warning".
+
+  ==== Suspend a plugin
+
+  Usage: tspcontrol suspend [options] plugin-index
+
+  Suspend a plugin. When a packet processing plugin is suspended, the TS
+  packets are directly passed from the previous to the next plugin, without
+  going through the suspended one. When the output plugin is suspended, the
+  output packets are dropped. The input plugin cannot be suspended. Use the
+  command list to list all running plugins.
+
+  Parameters:
+
+    Index of the plugin to suspend.
+
+  Options:
+
+    -v
+    --verbose
+        Produce verbose output.
+

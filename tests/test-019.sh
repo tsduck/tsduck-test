@@ -10,9 +10,8 @@ test_cleanup "$SCRIPT.*"
 
 TOOLS=(
     tsanalyze tsbitrate tscmp tsdate tsdektec tsdump tsecmg tsemmg tsfixcc
-    tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspsi tsresync =tsscan
-    tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    
+    tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspcontrol tspsi tsresync
+    =tsscan tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
 )
 
 INPUT_PLUGINS=(
