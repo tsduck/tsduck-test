@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 75 bytes
+  Section: 0 (last: 0), version: 0, size: 195 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -395,4 +395,90 @@
     Component tag: 0x07 (7)
     Component tag: 0xEA (234)
     Component tag: 0x2F (47)
+  - Descriptor 9: Extension Descriptor (0x7F, 127), 8 bytes
+    Extended descriptor: C2 Delivery System (0x0D, 13)
+    PLP id: 0x04 (4), data slice id: 0x07 (7)
+    Frequency: 123,456,789 Hz (0x075BCD15)
+    Tuning frequency type: 0x0 (Data Slice tuning frequency)
+    Symbol duration: 0x1 (597,33 μs (4k FFT mode for 6MHz CATV systems))
+    Guard interval: 1 (1/64)
+  - Descriptor 10: Extension Descriptor (0x7F, 127), 8 bytes
+    Extended descriptor: C2 Delivery System (0x0D, 13)
+    PLP id: 0xCD (205), data slice id: 0xFA (250)
+    Frequency: 3,698,741,258 Hz (0xDC76500A)
+    Tuning frequency type: 0x1 (C2 system centre frequency)
+    Symbol duration: 0x2 (unknown)
+    Guard interval: 6 (6)
+  - Descriptor 11: Extension Descriptor (0x7F, 127), 1 bytes
+    Extended descriptor: C2 Bundle Delivery System (0x16, 22)
+  - Descriptor 12: Extension Descriptor (0x7F, 127), 17 bytes
+    Extended descriptor: C2 Bundle Delivery System (0x16, 22)
+    - PLP id: 0x04 (4), data slice id: 0x07 (7)
+      Frequency: 123,456,789 Hz (0x075BCD15)
+      Tuning frequency type: 0x0 (Data Slice tuning frequency)
+      Symbol duration: 0x1 (597,33 μs (4k FFT mode for 6MHz CATV systems))
+      Guard interval: 1 (1/64)
+      Master channel: true
+    - PLP id: 0xCD (205), data slice id: 0xFA (250)
+      Frequency: 3,698,741,258 Hz (0xDC76500A)
+      Tuning frequency type: 0x1 (C2 system centre frequency)
+      Symbol duration: 0x2 (unknown)
+      Guard interval: 6 (6)
+      Master channel: false
+  - Descriptor 13: Extension Descriptor (0x7F, 127), 4 bytes
+    Extended descriptor: T2 Delivery System (0x04, 4)
+    PLP id: 0xAB (171), T2 system id: 0xCDEF (52719)
+  - Descriptor 14: Extension Descriptor (0x7F, 127), 13 bytes
+    Extended descriptor: T2 Delivery System (0x04, 4)
+    PLP id: 0x12 (18), T2 system id: 0x3456 (13398)
+    SISO/MISO: MISO
+    Bandwidth: 1.712MHz
+    Guard interval: 19/128
+    Transmission mode: 32k
+    Other frequency: true
+    TFS arrangement: false
+    - Cell id: 0x6789 (26505)
+      Centre frequency: 3,456,789,120 Hz
+  - Descriptor 15: Extension Descriptor (0x7F, 127), 36 bytes
+    Extended descriptor: T2 Delivery System (0x04, 4)
+    PLP id: 0x56 (86), T2 system id: 0x789A (30874)
+    SISO/MISO: SISO
+    Bandwidth: 10MHz
+    Guard interval: 19/256
+    Transmission mode: 1k
+    Other frequency: false
+    TFS arrangement: true
+    - Cell id: 0x1234 (4660)
+    - Cell id: 0x678A (26506)
+      Centre frequency: 1,234,567,890 Hz
+      Centre frequency: 987,654,320 Hz
+      Centre frequency: 2,654,321,140 Hz
+      Cell id ext: 0x12 (18), transp. frequency: 4,012,369,980 Hz
+      Cell id ext: 0xFA (250), transp. frequency: 1,789,123,450 Hz
+  - Descriptor 16: Extension Descriptor (0x7F, 127), 2 bytes
+    Extended descriptor: SH Delivery System (0x05, 5)
+    Diversity mode: 0x05, FEC diversity, FEC at link
+  - Descriptor 17: Extension Descriptor (0x7F, 127), 13 bytes
+    Extended descriptor: SH Delivery System (0x05, 5)
+    Diversity mode: 0x0A, paTS, FEC at phy
+    - Modulation type: OFDM
+      Bandwidth: 1.7MHz
+      Priority: 1
+      Constellation & hierarchy: 0x2 (16-QAM hierarchical alpha = 1)
+      Code rate: 0x5 (1/3 complementary)
+      Guard interval: 1/16
+      Transmission mode: 4k
+      Common frequency: false
+      Common multiplier: 5
+    - Modulation type: TDM
+      Polarization: vertical
+      Roll off: 0.15
+      Modulation mode: 16APSK
+      Code rate: 0x2 (1/4 standard)
+      Symbol rate code: 0x01 (1)
+      Common multiplier: 7
+      Number of late taps: 24
+      Number of slices: 54
+      Slice distance: 102
+      Non-late increments: 45
 

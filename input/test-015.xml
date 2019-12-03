@@ -493,6 +493,107 @@
       <component tag="0x2F"/>
     </protection_message_descriptor>
 
+    <C2_delivery_system_descriptor
+        plp_id="4"
+        data_slice_id="7"
+        C2_system_tuning_frequency="123,456,789"
+        C2_system_tuning_frequency_type="0"
+        active_OFDM_symbol_duration="1"
+        guard_interval="1/64"/>
+
+    <C2_delivery_system_descriptor
+        plp_id="0xCD"
+        data_slice_id="0xFA"
+        C2_system_tuning_frequency="3,698,741,258"
+        C2_system_tuning_frequency_type="1"
+        active_OFDM_symbol_duration="2"
+        guard_interval="6"/>
+
+    <C2_bundle_delivery_system_descriptor/>
+
+    <C2_bundle_delivery_system_descriptor>
+      <plp plp_id="4"
+           data_slice_id="7"
+           C2_system_tuning_frequency="123,456,789"
+           C2_system_tuning_frequency_type="0"
+           active_OFDM_symbol_duration="1"
+           guard_interval="1/64"
+           master_channel="true"/>
+      <plp plp_id="0xCD"
+           data_slice_id="0xFA"
+           C2_system_tuning_frequency="3,698,741,258"
+           C2_system_tuning_frequency_type="1"
+           active_OFDM_symbol_duration="2"
+           guard_interval="6"
+           master_channel="false"/>
+    </C2_bundle_delivery_system_descriptor>
+
+    <T2_delivery_system_descriptor plp_id="0xAB" T2_system_id="0xCDEF"/>
+
+    <T2_delivery_system_descriptor plp_id="0x12" T2_system_id="0x3456">
+      <extension
+          SISO_MISO="MISO"
+          bandwidth="1.712MHz"
+          guard_interval="19/128"
+          transmission_mode="32k"
+          other_frequency="true"
+          tfs="false">
+        <cell cell_id="0x6789">
+          <centre_frequency value="3,456,789,120"/>
+        </cell>
+      </extension>
+    </T2_delivery_system_descriptor>
+
+    <T2_delivery_system_descriptor plp_id="0x56" T2_system_id="0x789A">
+      <extension
+          SISO_MISO="SISO"
+          bandwidth="10MHz"
+          guard_interval="19/256"
+          transmission_mode="1k"
+          other_frequency="false"
+          tfs="true">
+        <cell cell_id="0x1234"/>
+        <cell cell_id="0x678A">
+          <centre_frequency value="1,234,567,890"/>
+          <centre_frequency value="987,654,320"/>
+          <centre_frequency value="2,654,321,140"/>
+          <subcell cell_id_extension="0x12" transposer_frequency="4,012,369,980"/>
+          <subcell cell_id_extension="0xFA" transposer_frequency="1,789,123,450"/>
+        </cell>
+      </extension>
+    </T2_delivery_system_descriptor>
+
+    <SH_delivery_system_descriptor diversity_mode="0x05"/>
+
+    <SH_delivery_system_descriptor diversity_mode="0x0A">
+      <modulation>
+        <OFDM
+            bandwidth="1.7MHz"
+            priority="1"
+            constellation_and_hierarchy="2"
+            code_rate="5"
+            guard_interval="1/16"
+            transmission_mode="4k"
+            common_frequency="false"/>
+        <interleaver
+            common_multiplier="5"/>
+      </modulation>
+      <modulation>
+        <TDM
+            polarization="vertical"
+            roll_off="0.15"
+            modulation_mode="16APSK"
+            code_rate="2"
+            symbol_rate="1"/>
+        <interleaver
+            common_multiplier="7"
+            nof_late_taps="24"
+            nof_slices="54"
+            slice_distance="102"
+            non_late_increments="45"/>
+      </modulation>
+    </SH_delivery_system_descriptor>
+
   </TSDT>
 
 </tsduck>
