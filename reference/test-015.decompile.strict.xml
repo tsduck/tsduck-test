@@ -269,5 +269,16 @@
         <interleaver common_multiplier="7" nof_late_taps="24" nof_slices="54" slice_distance="102" non_late_increments="45"/>
       </modulation>
     </SH_delivery_system_descriptor>
+    <S2X_satellite_delivery_system_descriptor receiver_profiles="0x15" S2X_mode="2" TS_GS_S2X_mode="1" timeslice_number="0xBC">
+      <master_channel frequency="34,567,890,000" orbital_position="19.2" west_east_flag="east" polarization="horizontal" roll_off="0.15" symbol_rate="123,456,700"/>
+      <reserved_future_use>
+        01 23 45 67 89
+      </reserved_future_use>
+    </S2X_satellite_delivery_system_descriptor>
+    <S2X_satellite_delivery_system_descriptor receiver_profiles="0x0A" S2X_mode="3" TS_GS_S2X_mode="3" scrambling_sequence_index="0x00023456">
+      <master_channel frequency="876,543,210,000" orbital_position="3.7" west_east_flag="west" polarization="vertical" roll_off="0.10" symbol_rate="456,789,600"/>
+      <channel_bond frequency="65,432,180,000" orbital_position="34.0" west_east_flag="east" polarization="right" roll_off="0.05" symbol_rate="24,675,400" input_stream_identifier="0xBD"/>
+      <channel_bond frequency="6,543,670,000" orbital_position="123.4" west_east_flag="west" polarization="left" roll_off="0.25" symbol_rate="876,400" input_stream_identifier="0x2E"/>
+    </S2X_satellite_delivery_system_descriptor>
   </TSDT>
 </tsduck>
