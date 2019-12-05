@@ -350,7 +350,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 261 bytes
+  Version: 0, sections: 1, total size: 334 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -530,4 +530,24 @@
         Roll-off factor: 0.25
         Multiple input stream: yes
         Input stream identifier: 0x2E (46)
+    - Descriptor 20: Frequency List (0x62, 98), 13 bytes
+      Coding type: 1 (satellite)
+      Centre frequency: 123,456,780,000 Hz
+      Centre frequency: 3,876,430,000 Hz
+      Centre frequency: 120,000 Hz
+    - Descriptor 21: Frequency List (0x62, 98), 5 bytes
+      Coding type: 2 (cable)
+      Centre frequency: 9,876,543,200 Hz
+    - Descriptor 22: Frequency List (0x62, 98), 9 bytes
+      Coding type: 3 (terrestrial)
+      Centre frequency: 825,000,000 Hz
+      Centre frequency: 39,123,456,780 Hz
+    - Descriptor 23: Cell Frequency Link (0x6D, 109), 0 bytes
+    - Descriptor 24: Cell Frequency Link (0x6D, 109), 36 bytes
+      - Cell id: 0x1234, frequency: 1,234,456,780 Hz
+        Cell id ext: 0xAB, frequency: 12,345,678,910 Hz
+      - Cell id: 0x5678, frequency: 9,876,543,210 Hz
+      - Cell id: 0x9ABC, frequency: 234,567,890 Hz
+        Cell id ext: 0xCD, frequency: 876,650 Hz
+        Cell id ext: 0xEF, frequency: 654,654,120 Hz
 

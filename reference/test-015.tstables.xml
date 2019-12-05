@@ -287,5 +287,28 @@
       <channel_bond frequency="65,432,180,000" orbital_position="34.0" west_east_flag="east" polarization="right" roll_off="0.05" symbol_rate="24,675,400" input_stream_identifier="0xBD"/>
       <channel_bond frequency="6,543,670,000" orbital_position="123.4" west_east_flag="west" polarization="left" roll_off="0.25" symbol_rate="876,400" input_stream_identifier="0x2E"/>
     </S2X_satellite_delivery_system_descriptor>
+    <frequency_list_descriptor coding_type="satellite">
+      <centre_frequency value="123,456,780,000"/>
+      <centre_frequency value="3,876,430,000"/>
+      <centre_frequency value="120,000"/>
+    </frequency_list_descriptor>
+    <frequency_list_descriptor coding_type="cable">
+      <centre_frequency value="9,876,543,200"/>
+    </frequency_list_descriptor>
+    <frequency_list_descriptor coding_type="terrestrial">
+      <centre_frequency value="825,000,000"/>
+      <centre_frequency value="39,123,456,780"/>
+    </frequency_list_descriptor>
+    <cell_frequency_link_descriptor/>
+    <cell_frequency_link_descriptor>
+      <cell cell_id="0x1234" frequency="1,234,456,780">
+        <subcell cell_id_extension="0xAB" transposer_frequency="12,345,678,910"/>
+      </cell>
+      <cell cell_id="0x5678" frequency="9,876,543,210"/>
+      <cell cell_id="0x9ABC" frequency="234,567,890">
+        <subcell cell_id_extension="0xCD" transposer_frequency="876,650"/>
+        <subcell cell_id_extension="0xEF" transposer_frequency="654,654,120"/>
+      </cell>
+    </cell_frequency_link_descriptor>
   </TSDT>
 </tsduck>
