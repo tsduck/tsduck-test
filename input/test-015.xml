@@ -669,6 +669,42 @@
       </cell>
     </cell_frequency_link_descriptor>
 
+    <cell_list_descriptor/>
+
+    <cell_list_descriptor>
+      <cell cell_id="0x1234"
+            cell_latitude="0"
+            cell_longitude="32767"
+            cell_extent_of_latitude="0"
+            cell_extent_of_longitude="4095"/>
+      <cell cell_id="0x5678"
+            cell_latitude="-32768"
+            cell_longitude="0"
+            cell_extent_of_latitude="4095"
+            cell_extent_of_longitude="0"/>
+      <cell cell_id="0x9ABC"
+            cell_latitude="0"
+            cell_longitude="16384"
+            cell_extent_of_latitude="50"
+            cell_extent_of_longitude="100">
+        <subcell cell_id_extension="0x12"
+                 subcell_latitude="16384"
+                 subcell_longitude="-16384"
+                 subcell_extent_of_latitude="2048"
+                 subcell_extent_of_longitude="1024"/>
+        <subcell cell_id_extension="0x34"
+                 subcell_latitude="8192"
+                 subcell_longitude="-8192"
+                 subcell_extent_of_latitude="512"
+                 subcell_extent_of_longitude="256"/>
+        <subcell cell_id_extension="0x56"
+                 subcell_latitude="-4096"
+                 subcell_longitude="4096"
+                 subcell_extent_of_latitude="128"
+                 subcell_extent_of_longitude="64"/>
+      </cell>
+    </cell_list_descriptor>
+
   </TSDT>
 
 </tsduck>

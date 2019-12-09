@@ -310,5 +310,15 @@
         <subcell cell_id_extension="0xEF" transposer_frequency="654,654,120"/>
       </cell>
     </cell_frequency_link_descriptor>
+    <cell_list_descriptor/>
+    <cell_list_descriptor>
+      <cell cell_id="0x1234" cell_latitude="0" cell_longitude="32,767" cell_extent_of_latitude="0" cell_extent_of_longitude="4,095"/>
+      <cell cell_id="0x5678" cell_latitude="-32,768" cell_longitude="0" cell_extent_of_latitude="4,095" cell_extent_of_longitude="0"/>
+      <cell cell_id="0x9ABC" cell_latitude="0" cell_longitude="16,384" cell_extent_of_latitude="50" cell_extent_of_longitude="100">
+        <subcell cell_id_extension="0x12" subcell_latitude="16,384" subcell_longitude="-16,384" subcell_extent_of_latitude="2,048" subcell_extent_of_longitude="1,024"/>
+        <subcell cell_id_extension="0x34" subcell_latitude="8,192" subcell_longitude="-8,192" subcell_extent_of_latitude="512" subcell_extent_of_longitude="256"/>
+        <subcell cell_id_extension="0x56" subcell_latitude="-4,096" subcell_longitude="4,096" subcell_extent_of_latitude="128" subcell_extent_of_longitude="64"/>
+      </cell>
+    </cell_list_descriptor>
   </TSDT>
 </tsduck>

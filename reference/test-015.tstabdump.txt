@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 334 bytes
+  Section: 0 (last: 0), version: 0, size: 392 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -540,9 +540,35 @@
   - Descriptor 23: Cell Frequency Link (0x6D, 109), 0 bytes
   - Descriptor 24: Cell Frequency Link (0x6D, 109), 36 bytes
     - Cell id: 0x1234, frequency: 1,234,456,780 Hz
-      Cell id ext: 0xAB, frequency: 12,345,678,910 Hz
+      Subcell id ext: 0xAB, frequency: 12,345,678,910 Hz
     - Cell id: 0x5678, frequency: 9,876,543,210 Hz
     - Cell id: 0x9ABC, frequency: 234,567,890 Hz
-      Cell id ext: 0xCD, frequency: 876,650 Hz
-      Cell id ext: 0xEF, frequency: 654,654,120 Hz
+      Subcell id ext: 0xCD, frequency: 876,650 Hz
+      Subcell id ext: 0xEF, frequency: 654,654,120 Hz
+  - Descriptor 25: Cell List (0x6C, 108), 0 bytes
+  - Descriptor 26: Cell List (0x6C, 108), 54 bytes
+    - Cell id: 0x1234 (4660)
+      Raw latitude/longitude: 0/32767, extent: 0/4095
+      Actual latitude range: 0º 0' 0" N to 0º 0' 0" N
+      Actual longitude range: 179º 59' 40" E to 202º 29' 20" E
+    - Cell id: 0x5678 (22136)
+      Raw latitude/longitude: -32768/0, extent: 4095/0
+      Actual latitude range: 90º 0' 0" S to 78º 45' 9" S
+      Actual longitude range: 0º 0' 0" E to 0º 0' 0" E
+    - Cell id: 0x9ABC (39612)
+      Raw latitude/longitude: 0/16384, extent: 50/100
+      Actual latitude range: 0º 0' 0" N to 0º 8' 14" N
+      Actual longitude range: 90º 0' 0" E to 90º 32' 57" E
+      - Subcell id ext: 0x12 (18)
+        Raw latitude/longitude: 16384/-16384, extent: 2048/1024
+        Actual latitude range: 45º 0' 0" N to 50º 37' 30" N
+        Actual longitude range: 90º 0' 0" W to 84º 22' 30" W
+      - Subcell id ext: 0x34 (52)
+        Raw latitude/longitude: 8192/-8192, extent: 512/256
+        Actual latitude range: 22º 30' 0" N to 23º 54' 22" N
+        Actual longitude range: 45º 0' 0" W to 43º 35' 37" W
+      - Subcell id ext: 0x56 (86)
+        Raw latitude/longitude: -4096/4096, extent: 128/64
+        Actual latitude range: 11º 15' 0" S to 10º 53' 54" S
+        Actual longitude range: 22º 30' 0" E to 22º 51' 5" E
 
