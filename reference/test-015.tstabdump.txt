@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 392 bytes
+  Section: 0 (last: 0), version: 0, size: 431 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -571,4 +571,45 @@
         Raw latitude/longitude: -4096/4096, extent: 128/64
         Actual latitude range: 11º 15' 0" S to 10º 53' 54" S
         Actual longitude range: 22º 30' 0" E to 22º 51' 5" E
+  - Descriptor 27: Extension Descriptor (0x7F, 127), 2 bytes
+    Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
+  - Descriptor 28: Extension Descriptor (0x7F, 127), 7 bytes
+    Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
+    Additional information:
+    0000:  01 23 45 67 89                                   .#Eg.
+  - Descriptor 29: Extension Descriptor (0x7F, 127), 24 bytes
+    Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
+    Substream core:
+      Asset count: 2, channel count: 7
+      Low Frequency Effects (LFE): true
+      Sampling frequency: 22.05 kHz (0x5)
+      Sample resultion > 16 bits: false
+      Asset 0:
+        Construction: Core, XCH (0x02)
+        VBR: false, post-encode bitrate scaling: false
+        Bit rate: 45 kb/s
+        Component type: 0x52
+          Full service
+          Service type: Visually Impaired (0x2)
+          Number of channels: 2 channel (stereo, LoRo) (0x2)
+        Language code: "foo"
+      Asset 1:
+        Construction: XXCH, X96 (0x0D)
+        VBR: true, post-encode bitrate scaling: true
+        Bit rate: 37.5 kb/s
+        Component type: 0x24
+          Combined service
+          Service type: Dialogue (0x4)
+          Number of channels: Multichannel audio (> 2 channels) (0x4)
+    Substream 2:
+      Asset count: 1, channel count: 3
+      Low Frequency Effects (LFE): false
+      Sampling frequency: 192 kHz (0xE)
+      Sample resultion > 16 bits: true
+      Asset 0:
+        Construction: Core, XCH (0x0B)
+        VBR: true, post-encode bitrate scaling: false
+        Bit rate: 127 kb/s
+    Additional information:
+    0000:  78 94                                            x.
 

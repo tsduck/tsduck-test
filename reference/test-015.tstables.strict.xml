@@ -320,5 +320,23 @@
         <subcell cell_id_extension="0x56" subcell_latitude="-4,096" subcell_longitude="4,096" subcell_extent_of_latitude="128" subcell_extent_of_longitude="64"/>
       </cell>
     </cell_list_descriptor>
+    <DTS_HD_descriptor/>
+    <DTS_HD_descriptor>
+      <additional_info>
+        01 23 45 67 89
+      </additional_info>
+    </DTS_HD_descriptor>
+    <DTS_HD_descriptor>
+      <substream_core channel_count="7" LFE="true" sampling_frequency="0x05" sample_resolution="false">
+        <asset_info asset_construction="0x02" vbr="false" post_encode_br_scaling="false" bit_rate="45" component_type="0x52" ISO_639_language_code="foo"/>
+        <asset_info asset_construction="0x0D" vbr="true" post_encode_br_scaling="true" bit_rate="300" component_type="0x24"/>
+      </substream_core>
+      <substream_2 channel_count="3" LFE="false" sampling_frequency="0x0E" sample_resolution="true">
+        <asset_info asset_construction="0x0B" vbr="true" post_encode_br_scaling="false" bit_rate="127"/>
+      </substream_2>
+      <additional_info>
+        78 94
+      </additional_info>
+    </DTS_HD_descriptor>
   </TSDT>
 </tsduck>

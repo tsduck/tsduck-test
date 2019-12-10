@@ -705,6 +705,50 @@
       </cell>
     </cell_list_descriptor>
 
+    <DTS_HD_descriptor/>
+
+    <DTS_HD_descriptor>
+      <additional_info>
+        0123456789
+      </additional_info>
+    </DTS_HD_descriptor>
+
+    <DTS_HD_descriptor>
+      <substream_core
+          channel_count="7"
+          LFE="true"
+          sampling_frequency="5"
+          sample_resolution="false">
+        <asset_info
+            asset_construction="2"
+            vbr="false"
+            post_encode_br_scaling="false"
+            bit_rate="45"
+            component_type="0x52"
+            ISO_639_language_code="foo"/>
+        <asset_info
+            asset_construction="13"
+            vbr="true"
+            post_encode_br_scaling="true"
+            bit_rate="0x12C"
+            component_type="0x24"/>
+      </substream_core>
+      <substream_2
+          channel_count="3"
+          LFE="false"
+          sampling_frequency="14"
+          sample_resolution="true">
+        <asset_info
+            asset_construction="11"
+            vbr="true"
+            post_encode_br_scaling="false"
+            bit_rate="127"/>
+      </substream_2>
+      <additional_info>
+        7894
+      </additional_info>
+    </DTS_HD_descriptor>
+
   </TSDT>
 
 </tsduck>
