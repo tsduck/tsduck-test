@@ -27,3 +27,14 @@ $(tspath tsp) --synchronous-log --bitrate 45,034,955 \
 test_bin $SCRIPT.2.ts
 test_text $SCRIPT.tables.2.txt
 test_text $SCRIPT.tsp.2.log
+
+$(tspath tsp) --synchronous-log --bitrate 45,034,955 \
+    -I file $(fpath "$INFILE") \
+    -P timeref --start 2019/12/11:23:45:59 --local-time-offset -240 --next-time-offset -180 --next-change 2020/03/29:01:00:00 \
+    -P tables --packet-index -a -p 0x14 -o $(fpath "$OUTDIR/$SCRIPT.tables.3.txt") \
+    -O file $(fpath "$OUTDIR/$SCRIPT.3.ts") \
+    >"$OUTDIR/$SCRIPT.tsp.3.log" 2>&1
+
+test_bin $SCRIPT.3.ts
+test_text $SCRIPT.tables.3.txt
+test_text $SCRIPT.tsp.3.log
