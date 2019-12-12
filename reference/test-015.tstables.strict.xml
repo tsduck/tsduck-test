@@ -338,5 +338,19 @@
         78 94
       </additional_info>
     </DTS_HD_descriptor>
+    <URI_linkage_descriptor uri_linkage_type="0x01" uri="foo://bar/" min_polling_interval="400"/>
+    <URI_linkage_descriptor uri_linkage_type="0xAB" uri="http://foo/bar/">
+      <private_data>
+        12 34 56 78
+      </private_data>
+    </URI_linkage_descriptor>
+    <network_change_notify_descriptor/>
+    <network_change_notify_descriptor>
+      <cell cell_id="0x1234"/>
+      <cell cell_id="0x5678">
+        <change network_change_id="0xAB" network_change_version="0xCD" start_time_of_change="2019-12-11 23:12:34" change_duration="08:52:03" receiver_category="0x00" change_type="0x02" message_id="0x81"/>
+        <change network_change_id="0xEF" network_change_version="0x67" start_time_of_change="2020-01-02 02:34:56" change_duration="11:32:45" receiver_category="0x01" change_type="0x0B" message_id="0x83" invariant_ts_tsid="0xDEAD" invariant_ts_onid="0xBEEF"/>
+      </cell>
+    </network_change_notify_descriptor>
   </TSDT>
 </tsduck>

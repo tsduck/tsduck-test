@@ -350,7 +350,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 431 bytes
+  Version: 0, sections: 1, total size: 512 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -617,4 +617,32 @@
           Bit rate: 127 kb/s
       Additional information:
       0000:  78 94                                      x.
+    - Descriptor 30: Extension Descriptor (0x7F, 127), 15 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0x01 (DVB-IPTV SD&S)
+      URI: foo://bar/
+      Min polling interval: 400 (800 seconds)
+    - Descriptor 31: Extension Descriptor (0x7F, 127), 22 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0xAB (user defined)
+      URI: http://foo/bar/
+      Private data:
+      0000:  12 34 56 78                                .4Vx
+    - Descriptor 32: Extension Descriptor (0x7F, 127), 1 bytes
+      Extended descriptor: Network Change Notify (0x07, 7)
+    - Descriptor 33: Extension Descriptor (0x7F, 127), 35 bytes
+      Extended descriptor: Network Change Notify (0x07, 7)
+      - Cell id: 0x1234
+      - Cell id: 0x5678
+        - Network change id: 0xAB, version: 0xCD
+          Start: 2019/12/11 23:12:34, duration: 08:52:03
+          Receiver category: 0x00
+          Change type: 0x2 (Minor - multiplex removed)
+          Message id: 0x81
+        - Network change id: 0xEF, version: 0x67
+          Start: 2020/01/02 02:34:56, duration: 11:32:45
+          Receiver category: 0x01
+          Change type: 0xB (Major - multiplex added)
+          Message id: 0x83
+          Invariant TS id: 0xDEAD, orig. net. id: 0xBEEF
 
