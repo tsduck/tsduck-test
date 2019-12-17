@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 512 bytes
+  Section: 0 (last: 0), version: 0, size: 567 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -640,4 +640,38 @@
         Change type: 0xB (Major - multiplex added)
         Message id: 0x83
         Invariant TS id: 0xDEAD, orig. net. id: 0xBEEF
+  - Descriptor 34: DSNG (0x68, 104), 8 bytes
+    Station identification: "Foo, bar"
+  - Descriptor 35: FTA Content Management (0x7E, 126), 1 bytes
+    User-defined: true
+    Do not scramble: false
+    Access over Internet: Enabled but only within a managed domain and after a certain short period of time
+    Do not apply revocation: true
+  - Descriptor 36: FTA Content Management (0x7E, 126), 1 bytes
+    User-defined: false
+    Do not scramble: true
+    Access over Internet: Enabled
+    Do not apply revocation: false
+  - Descriptor 37: PDC (0x69, 105), 3 bytes
+    Programme Identification Label: 11-30 23:45 (MM-DD hh:mm)
+  - Descriptor 38: Short Smoothing Buffer (0x61, 97), 1 bytes
+    Smoothing buffer size: 0x1 (1536)
+    Smoothing buffer leak rate: 0x14 (3.0 Mbit/s)
+  - Descriptor 39: Short Smoothing Buffer (0x61, 97), 6 bytes
+    Smoothing buffer size: 0x2 (DVB-reserved)
+    Smoothing buffer leak rate: 0x29 (17 Mbit/s)
+    DVB-reserved data:
+    0000:  01 23 45 67 89                                   .#Eg.
+  - Descriptor 40: Extension Descriptor (0x7F, 127), 1 bytes
+    Extended descriptor: Video Depth Range (0x10, 16)
+  - Descriptor 41: Extension Descriptor (0x7F, 127), 18 bytes
+    Extended descriptor: Video Depth Range (0x10, 16)
+    - Range type: 0x00 (0)
+      Video max disparity hint: -2048, min: 2047
+    - Range type: 0x00 (0)
+      Video max disparity hint: 123, min: -123
+    - Range type: 0x01 (1)
+    - Range type: 0x02 (2)
+      Range selector bytes:
+      0000:  01 23 45                                   .#E
 

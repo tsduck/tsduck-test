@@ -781,6 +781,41 @@
       </cell>
     </network_change_notify_descriptor>
 
+    <DSNG_descriptor station_identification="Foo, bar"/>
+
+    <FTA_content_management_descriptor
+        user_defined="true"
+        do_not_scramble="false"
+        control_remote_access_over_internet="2"
+        do_not_apply_revocation="true"/>
+
+    <FTA_content_management_descriptor
+        user_defined="false"
+        do_not_scramble="true"
+        control_remote_access_over_internet="0"
+        do_not_apply_revocation="false"/>
+
+    <PDC_descriptor programme_identification_label="11-30 23:45"/>
+
+    <short_smoothing_buffer_descriptor sb_size="1" sb_leak_rate="20"/>
+
+    <short_smoothing_buffer_descriptor sb_size="2" sb_leak_rate="41">
+      0123456789
+    </short_smoothing_buffer_descriptor>
+
+    <video_depth_range_descriptor/>
+
+    <video_depth_range_descriptor>
+      <range range_type="0" video_max_disparity_hint="-2048" video_min_disparity_hint="2047"/>
+      <range range_type="0" video_max_disparity_hint="123" video_min_disparity_hint="-123"/>
+      <range range_type="1"/>
+      <range range_type="2">
+        <range_selector>
+          01 23 45
+        </range_selector>
+      </range>
+    </video_depth_range_descriptor>
+
   </TSDT>
 
 </tsduck>

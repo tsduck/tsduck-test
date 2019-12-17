@@ -352,5 +352,24 @@
         <change network_change_id="0xEF" network_change_version="0x67" start_time_of_change="2020-01-02 02:34:56" change_duration="11:32:45" receiver_category="0x01" change_type="0x0B" message_id="0x83" invariant_ts_tsid="0xDEAD" invariant_ts_onid="0xBEEF"/>
       </cell>
     </network_change_notify_descriptor>
+    <DSNG_descriptor station_identification="Foo, bar"/>
+    <FTA_content_management_descriptor user_defined="true" do_not_scramble="false" control_remote_access_over_internet="2" do_not_apply_revocation="true"/>
+    <FTA_content_management_descriptor user_defined="false" do_not_scramble="true" control_remote_access_over_internet="0" do_not_apply_revocation="false"/>
+    <PDC_descriptor programme_identification_label="11-30 23:45"/>
+    <short_smoothing_buffer_descriptor sb_size="1" sb_leak_rate="20"/>
+    <short_smoothing_buffer_descriptor sb_size="2" sb_leak_rate="41">
+      01 23 45 67 89
+    </short_smoothing_buffer_descriptor>
+    <video_depth_range_descriptor/>
+    <video_depth_range_descriptor>
+      <range range_type="0x00" video_max_disparity_hint="-2,048" video_min_disparity_hint="2,047"/>
+      <range range_type="0x00" video_max_disparity_hint="123" video_min_disparity_hint="-123"/>
+      <range range_type="0x01"/>
+      <range range_type="0x02">
+        <range_selector>
+          01 23 45
+        </range_selector>
+      </range>
+    </video_depth_range_descriptor>
   </TSDT>
 </tsduck>
