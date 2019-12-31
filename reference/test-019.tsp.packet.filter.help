@@ -19,6 +19,10 @@ Options:
   --every count
       Select one packet every that number of packets.
 
+  --has-splice-countdown
+      Select packets which contain a splice_countdown value in adaptation
+      field.
+
   --help
       Display this help text.
 
@@ -61,6 +65,10 @@ Options:
       Select packets with no payload or with a payload the size (in bytes) of
       which is not greater than the specified value.
 
+  --max-splice-countdown value
+      Select packets with a splice_countdown value in adaptation field which is
+      lower than or equal to the specified value.
+
   --min-adaptation-field-size value
       Select packets with an adaptation field the size (in bytes) of which is
       equal to or greater than the specified value.
@@ -68,6 +76,10 @@ Options:
   --min-payload-size value
       Select packets with a payload the size (in bytes) of which is equal to or
       greater than the specified value.
+
+  --min-splice-countdown value
+      Select packets with a splice_countdown value in adaptation field which is
+      greater than or equal to the specified value.
 
   -n
   --negate
@@ -141,6 +153,10 @@ Options:
       after at least one was selected. Do not drop unselected packets, simply
       use selected ones as trigger. Several --set-permanent-label options may
       be specified.
+
+  --splice-countdown value
+      Select packets with the specified splice_countdown value in adaptation
+      field.
 
   -s
   --stuffing
