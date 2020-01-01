@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 567 bytes
+  Section: 0 (last: 0), version: 0, size: 737 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -674,4 +674,75 @@
     - Range type: 0x02 (2)
       Range selector bytes:
       0000:  01 23 45                                   .#E
+  - Descriptor 42: Extension Descriptor (0x7F, 127), 4 bytes
+    Extended descriptor: Target Region (0x09, 9)
+    Country code: "foo"
+  - Descriptor 43: Extension Descriptor (0x7F, 127), 21 bytes
+    Extended descriptor: Target Region (0x09, 9)
+    Country code: "bar"
+    - Region #0
+    - Region #1
+      Country code: "foo"
+      Primary region code: 0x12 (18)
+    - Region #2
+      Primary region code: 0x34 (52)
+      Secondary region code: 0x56 (86)
+    - Region #3
+      Country code: "abc"
+      Primary region code: 0x78 (120)
+      Secondary region code: 0x9A (154)
+      Tertiary region code: 0xBCDE (48350)
+  - Descriptor 44: Extension Descriptor (0x7F, 127), 7 bytes
+    Extended descriptor: Target Region Name (0x0A, 10)
+    Country code: "foo"
+    Language code: "bar"
+  - Descriptor 45: Extension Descriptor (0x7F, 127), 38 bytes
+    Extended descriptor: Target Region Name (0x0A, 10)
+    Country code: "ABC"
+    Language code: "DEF"
+    - Region #0
+      Region name: "region foo 1"
+      Primary region code: 0x12 (18)
+    - Region #1
+      Region name: "region bar 2"
+      Primary region code: 0x34 (52)
+      Secondary region code: 0x56 (86)
+      Tertiary region code: 0x789A (30874)
+  - Descriptor 46: Extension Descriptor (0x7F, 127), 26 bytes
+    Extended descriptor: Image Icon (0x00, 0)
+    Descriptor number: 0, last: 12
+    Icon id: 4
+    Transport mode: 0 (Delivered in the icon_data_bytes)
+    Position specified: yes
+    Coordinate system: 2 (Coordinates 1920x1080)
+    Horizontal origin: 999, vertical: 456
+    Icon type: "image/png"
+    Icon data: 8 bytes:
+    0000:  01 23 45 67 89 AB CD EF                          .#Eg....
+  - Descriptor 47: Extension Descriptor (0x7F, 127), 34 bytes
+    Extended descriptor: Image Icon (0x00, 0)
+    Descriptor number: 0, last: 7
+    Icon id: 6
+    Transport mode: 1 (Identified by URL)
+    Position specified: no
+    Icon type: "image/jpeg"
+    URL: "http://foo/bar.jpg"
+  - Descriptor 48: Extension Descriptor (0x7F, 127), 9 bytes
+    Extended descriptor: Image Icon (0x00, 0)
+    Descriptor number: 3, last: 3
+    Icon id: 6
+    Icon data: 5 bytes:
+    0000:  01 23 45 67 89                                   .#Eg.
+  - Descriptor 49: Announcement Support (0x6E, 110), 2 bytes
+    Annoucement support indicator: 0x0000
+  - Descriptor 50: Announcement Support (0x6E, 110), 11 bytes
+    Annoucement support indicator: 0x0012
+    - Announcement type: 1 (Road Traffic flash)
+      Reference type: 0 (In usual audio stream of the service)
+    - Announcement type: 4 (News flash)
+      Reference type: 2 (In a different service within the same transport stream)
+      Original network id: 0x1234 (4660)
+      Transport stream id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+      Component tag: 0xDE (222)
 
