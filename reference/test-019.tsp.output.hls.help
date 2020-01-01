@@ -32,6 +32,16 @@ Options:
   --help
       Display this help text.
 
+  --label-close label1[-label2]
+      Close the current segment as soon as possible after a packet with any of
+      the specified labels. Labels should have typically been set by a previous
+      plugin in the chain. Several --label-close options may be specified.
+      
+      In practice, the current segment is closed and renewed at the start of
+      the next PES packet on the video PID. This option is compatible with
+      --duration. The current segment is closed on a labelled packed or segment
+      duration, whichever comes first.
+
   -l value
   --live value
       Specify that the output is a live stream. The specified value indicates
