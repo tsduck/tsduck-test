@@ -350,7 +350,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 811 bytes
+  Version: 0, sections: 1, total size: 844 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -796,4 +796,26 @@
         Transport stream id: 0xBA98 (47768)
         Service id: 0x7654 (30292)
         Event id: 0x3210 (12816)
+    - Descriptor 55: MPEG-2 Extension (0x3F, 63), 1 bytes
+      MPEG extended descriptor: AF Extensions (0x04, 4)
+    - Descriptor 56: MPEG-2 AAC Audio (0x2B, 43), 3 bytes
+      MPEG-2 AAC profile: 0x01 (1)
+      MPEG-2 AAC channel configuration: 0x02 (2)
+      MPEG-2 AAC additional information: 0x8A (138)
+    - Descriptor 57: MVC Extension (0x31, 49), 8 bytes
+      Average bitrate: 1500 kb/s, maximum: 1700 kb/s
+      View association not present: true
+      Base view is left eyeview: false
+      View order min: 457, max: 845
+      Temporal id start: 1, end: 5
+      No SEI NALunit present: true
+      No prefix NALunit present: false
+    - Descriptor 58: SVC Extension (0x30, 48), 13 bytes
+      Frame size: 1236x5236
+      Frame rate: 456 frames / 256 seconds
+      Average bitrate: 4566 kb/s, maximum: 5000 kb/s
+      Dependency id: 4
+      Quality id start: 10, end: 12
+      Temporal id start: 4, end: 6
+      No SEI NALunit present: false
 

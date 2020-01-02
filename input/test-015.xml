@@ -939,6 +939,38 @@
       </cell>
     </mosaic_descriptor>
 
+    <af_extensions_descriptor/>
+
+    <MPEG2_AAC_audio_descriptor
+        MPEG2_AAC_profile="0x01"
+        MPEG2_AAC_channel_configuration="0x02"
+        MPEG2_AAC_additional_information="0x8A"/>
+
+    <MVC_extension_descriptor
+        average_bitrate="1500"
+        maximum_bitrate="1700"
+        view_association_not_present="true"
+        base_view_is_left_eyeview="false"
+        view_order_index_min="457"
+        view_order_index_max="845"
+        temporal_id_start="1"
+        temporal_id_end="5"
+        no_sei_nal_unit_present="true"
+        no_prefix_nal_unit_present="false"/>
+
+    <SVC_extension_descriptor
+        width="1236"
+        height="5236"
+        frame_rate="456"
+        average_bitrate="4566"
+        maximum_bitrate="5000"
+        dependency_id="4"
+        quality_id_start="10"
+        quality_id_end="12"
+        temporal_id_start="4"
+        temporal_id_end="6"
+        no_sei_nal_unit_present="false"/>
+
   </TSDT>
 
 </tsduck>
