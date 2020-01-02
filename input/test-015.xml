@@ -891,6 +891,54 @@
           component_tag="0xDE"/>
     </announcement_support_descriptor>
 
+    <telephone_descriptor
+        foreign_availability="true"
+        connection_type="2"/>
+
+    <telephone_descriptor
+        foreign_availability="false"
+        connection_type="30"
+        country_prefix="12"
+        international_area_code="456-789"
+        operator_code="1"
+        national_area_code="234"
+        core_number="567 789 0123"/>
+
+    <mosaic_descriptor
+        mosaic_entry_point="true"
+        number_of_horizontal_elementary_cells="0"
+        number_of_vertical_elementary_cells="7"/>
+
+    <mosaic_descriptor
+        mosaic_entry_point="false"
+        number_of_horizontal_elementary_cells="1"
+        number_of_vertical_elementary_cells="5">
+      <cell logical_cell_id="0x34"
+            logical_cell_presentation_info="2"
+            cell_linkage_info="1"
+            bouquet_id="0x1234"/>
+      <cell logical_cell_id="0x16"
+            logical_cell_presentation_info="1"
+            cell_linkage_info="2"
+            original_network_id="0x789A"
+            transport_stream_id="0xBCDE"
+            service_id="0xF012">
+        <elementary_cell id="0x02"/>
+        <elementary_cell id="0x03"/>
+        <elementary_cell id="0x34"/>
+      </cell>
+      <cell logical_cell_id="0x1A"
+            logical_cell_presentation_info="3"
+            cell_linkage_info="4"
+            original_network_id="0xFEDC"
+            transport_stream_id="0xBA98"
+            service_id="0x7654"
+            event_id="0x3210">
+        <elementary_cell id="0x1F"/>
+        <elementary_cell id="0x2E"/>
+      </cell>
+    </mosaic_descriptor>
+
   </TSDT>
 
 </tsduck>
