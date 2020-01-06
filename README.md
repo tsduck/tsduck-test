@@ -17,6 +17,17 @@ Similarly, the tests for TSDuck are divided in two parts.
   would clutter the tsduck repository. The repository `tsduck-test` contains those tests and
   the relevant scripts and data files.
 
+### Continuous integration
+
+The TSDuck repository on GitHub is integrated with [Travis CI](https://travis-ci.org/tsduck/tsduck).
+Each time a commit is pushed on GitHub and each time a pull request is submitted,
+TSDuck is automatically rebuilt on various operating systems and all tests are run
+under the control of Travis CI. Thus, TSDuck is always validated on all operating systems,
+even if a modification was previously compiled or tested on one of them only.
+
+The current status is
+[![Build Status](https://travis-ci.org/tsduck/tsduck.svg?branch=master)](https://travis-ci.org/tsduck/tsduck)
+
 ### Structure of test suite
 
 In short, execute the script `run-all-tests.sh` to run the complete test suite.
