@@ -411,5 +411,14 @@
     <MPEG2_AAC_audio_descriptor MPEG2_AAC_profile="0x01" MPEG2_AAC_channel_configuration="0x02" MPEG2_AAC_additional_information="0x8A"/>
     <MVC_extension_descriptor average_bitrate="1,500" maximum_bitrate="1,700" view_association_not_present="true" base_view_is_left_eyeview="false" view_order_index_min="457" view_order_index_max="845" temporal_id_start="1" temporal_id_end="5" no_sei_nal_unit_present="true" no_prefix_nal_unit_present="false"/>
     <SVC_extension_descriptor width="1,236" height="5,236" frame_rate="456" average_bitrate="4,566" maximum_bitrate="5,000" dependency_id="4" quality_id_start="10" quality_id_end="12" temporal_id_start="4" temporal_id_end="6" no_sei_nal_unit_present="false"/>
+    <metadata_STD_descriptor metadata_input_leak_rate="123,456" metadata_buffer_size="789,012" metadata_output_leak_rate="4,194,303"/>
+    <FMC_descriptor/>
+    <FMC_descriptor>
+      <stream ES_ID="0x1234" FlexMuxChannel="0xAB"/>
+      <stream ES_ID="0x5678" FlexMuxChannel="0xCD"/>
+      <stream ES_ID="0x9ABC" FlexMuxChannel="0xEF"/>
+    </FMC_descriptor>
+    <flexmux_timing_descriptor FCR_ES_ID="0x1234" FCRResolution="1,450,744,508" FCRLength="222" FmxRateLength="171"/>
+    <multiplex_buffer_descriptor MB_buffer_size="123,456" TB_leak_rate="789,012"/>
   </TSDT>
 </tsduck>

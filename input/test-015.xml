@@ -971,6 +971,29 @@
         temporal_id_end="6"
         no_sei_nal_unit_present="false"/>
 
+    <metadata_STD_descriptor
+        metadata_input_leak_rate="123456"
+        metadata_buffer_size="789012"
+        metadata_output_leak_rate="4194303"/>
+
+    <FMC_descriptor/>
+
+    <FMC_descriptor>
+      <stream ES_ID="0x1234" FlexMuxChannel="0xAB"/>
+      <stream ES_ID="0x5678" FlexMuxChannel="0xCD"/>
+      <stream ES_ID="0x9ABC" FlexMuxChannel="0xEF"/>
+    </FMC_descriptor>
+
+    <flexmux_timing_descriptor
+        FCR_ES_ID="0x1234"
+        FCRResolution="0x56789ABC"
+        FCRLength="0xDE"
+        FmxRateLength="0xAB"/>
+
+    <multiplex_buffer_descriptor
+        MB_buffer_size="123456"
+        TB_leak_rate="789012"/>
+
   </TSDT>
 
 </tsduck>

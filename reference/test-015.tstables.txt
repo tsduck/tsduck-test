@@ -350,7 +350,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 844 bytes
+  Version: 0, sections: 1, total size: 886 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -818,4 +818,21 @@
       Quality id start: 10, end: 12
       Temporal id start: 4, end: 6
       No SEI NALunit present: false
+    - Descriptor 59: Metadata STD (0x27, 39), 9 bytes
+      Metadata input leak rate: 123,456 (49,382,400 bits/s)
+      Metadata buffer size: 789,012 (807,948,288 bytes)
+      Metadata output leak rate: 4,194,303 (1,677,721,200 bits/s)
+    - Descriptor 60: FMC (0x1F, 31), 0 bytes
+    - Descriptor 61: FMC (0x1F, 31), 9 bytes
+      ES id: 0x1234 (4660), FlexMux channel: 0xAB (171)
+      ES id: 0x5678 (22136), FlexMux channel: 0xCD (205)
+      ES id: 0x9ABC (39612), FlexMux channel: 0xEF (239)
+    - Descriptor 62: FlexMuxTiming (0x2C, 44), 8 bytes
+      FCR ES ID: 0x1234 (4660)
+      FCR resolution: 1,450,744,508 cycles/second
+      FCR length: 222
+      FMX rate length: 171
+    - Descriptor 63: MultiplexBuffer (0x23, 35), 6 bytes
+      MB buffer size: 123,456 bytes
+      TB leak rate: 789,012 (315,604,800 bits/s)
 
