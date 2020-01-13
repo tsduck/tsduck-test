@@ -45,7 +45,7 @@ The repository contains the following subdirectories:
   These files are temporary by definition. The subdirectory `tmp` is present on
   test machines only and is excluded from the Git repository.
 
-- 'extra' : Contains some additional tests which cannot be easily automated, either
+- `extra` : Contains some additional tests which cannot be easily automated, either
   because they use specific hardware or because their results are not fully deterministic.
   These tests must be run manually.
 
