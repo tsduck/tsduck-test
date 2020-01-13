@@ -19,14 +19,11 @@ Similarly, the tests for TSDuck are divided in two parts.
 
 ### Continuous integration
 
-The TSDuck repository on GitHub is integrated with [Travis CI](https://travis-ci.org/tsduck/tsduck).
-Each time a commit is pushed on GitHub and each time a pull request is submitted,
-TSDuck is automatically rebuilt on various operating systems and all tests are run
-under the control of Travis CI. Thus, TSDuck is always validated on all operating systems,
+The TSDuck repository is integrated with "GitHub Actions", a continuous integration platform
+which is directly hosted by GitHub. Each time a commit is pushed on GitHub and each time a
+pull request is submitted, TSDuck is automatically rebuilt on Linux, Windows, macOS and all
+tests are run on each platform. Thus, TSDuck is always validated on all operating systems,
 even if a modification was previously compiled or tested on one of them only.
-
-The current status is
-[![Build Status](https://travis-ci.org/tsduck/tsduck.svg?branch=master)](https://travis-ci.org/tsduck/tsduck)
 
 ### Structure of test suite
 
