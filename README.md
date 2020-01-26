@@ -152,3 +152,4 @@ repository. But we now limit their size to 20 MB.
 | 055  | BskyB private descriptors
 | 056  | `nit` plugin with option `--build-service-list-descriptors`
 | 057  | `hls` input plugin
+| 058  | `--append` option in `file` output plugin
