@@ -36,6 +36,11 @@ Options:
   --help
       Display this help text.
 
+  -i
+  --ignore-absent
+      Do not stop if the service does not exist or disappears. Continue to pass
+      an empty stream until the service appears or re-appears.
+
   -e
   --no-ecm
       Remove all ECM PID's. By default, keep all ECM PID's.

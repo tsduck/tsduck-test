@@ -1,0 +1,204 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: .......... 4 (0x0004)  |  Services: .............. 1  |
+|  Bytes: ......................... 1,537,276  |  PID's: Total: ......... 10  |
+|  TS packets: ........................ 8,177  |         Clear: ......... 10  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 1  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: .......................... 3,531,508 b/s    3,832,061 b/s  |
+|  Estimated based on PCR's: ................ 3,495,388 b/s    3,792,868 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ...................................... 3 sec (0 mn 3 sec)  |
+|  First TDT UTC time stamp: ....................................... Unknown  |
+|  Last TDT UTC time stamp: ........................................ Unknown  |
+|  First TOT local time stamp: ......................... 2019/01/22 13:51:13  |
+|  Last TOT local time stamp: .......................... 2019/01/22 13:51:17  |
+|  TOT country code: ................................................... FRA  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x0415  France 5 ..................................... C    3,466,725 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 150, PID's: 3 (clear: 3, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C       64,782 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       64,782 b/s  |
+|  0x0000  PAT .......................................... C       29,368 b/s  |
+|  0x0011  SDT/BAT ...................................... C       34,118 b/s  |
+|  0x0014  TDT/TOT ...................................... C        1,295 b/s  |
+|=============================================================================|
+|  Service: 0x0415 (1045), TS: 0x0004 (4), Original Netw: 0x20FA (8442)       |
+|  Service name: France 5, provider: Multi4                                   |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 8,027, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0190 (400), PCR PID: 0x01A4 (420)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C    3,466,725 b/s  |
+|  0x0190  PMT .......................................... C       15,547 b/s  |
+|  0x01A4  AVC video (1920x1080, high profile, level 4.0  C    3,020,158 b/s  |
+|  0x01AE  E-AC-3 Audio (fra, E-AC-3, stereo (L,R), @48,  C      131,292 b/s  |
+|  0x01AF  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      132,588 b/s  |
+|  0x01B0  E-AC-3 Audio (qaa, E-AC-3, stereo (L,R), @48,  C      131,724 b/s  |
+|  0x01B8  Subtitles (fra, DVB subtitles for hard of hea  C       32,391 b/s  |
+|  0x01B9  Subtitles (fra, DVB subtitles, high definitio  C        3,023 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 29,368 b/s  Packets: ............ 68  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 68  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 34,118 b/s  Packets: ............ 79  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 79  |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,295 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 36  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 36  |
+|=============================================================================|
+|  PID: 0x01A4 (420)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,020,158 b/s  Packets: ......... 6,993  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 189  Unexpect: ......... 9  |
+|                            Duplicated: .......... 2  PES:                   |
+|                            PCR: ................ 98  Packets: ......... 88  |
+|                            TSrate: .. 3,495,388 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01AE (430)                                      E-AC-3 Audio (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 131,292 b/s  Packets: ........... 304  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 304  Unexpect: ........ 10  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 18  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01AF (431)                                      E-AC-3 Audio (qad)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, visually impaired, bsid 16               |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,588 b/s  Packets: ........... 307  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 307  Unexpect: ......... 9  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 19  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01B0 (432)                                      E-AC-3 Audio (qaa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 131,724 b/s  Packets: ........... 305  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 305  Unexpect: ......... 9  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 18  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01B8 (440)                                         Subtitles (fra)  |
+|  DVB subtitles for hard of hearing, high definition                         |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 32,391 b/s  Packets: ............ 75  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 9  Unexpect: ......... 3  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 9  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01B9 (441)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles, high definition                                             |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,023 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 7  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: .......... 7  |
+|                                                      Inv.Start: ........ 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x0004 (4)                                         |
+|      Repetition: ...... 50  ms  Section cnt: ....... 68  First version:  1  |
+|      Min repet.: ....... 0  ms  Table cnt: ......... 68  Last version: . 4  |
+|      Max repet.: ..... 192  ms  Versions: ..................... 1, 2, 3, 4  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x0004 (4)                                 |
+|      Repetition: ...... 43  ms  Section cnt: ....... 79  First version:  1  |
+|      Min repet.: ....... 0  ms  Table cnt: ......... 79  Last version: . 4  |
+|      Max repet.: ..... 277  ms  Versions: ..................... 1, 2, 3, 4  |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  0x73 (115, TOT)                                                            |
+|      Repetition: ..... 842  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 199  ms                                              |
+|      Max repet.: .... 1484  ms                                              |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x0415 (1045) France 5                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0415 (1045)                                      |
+|      Repetition: ...... 97  ms  Section cnt: ....... 36                     |
+|      Min repet.: ...... 83  ms  Table cnt: ......... 36                     |
+|      Max repet.: ..... 111  ms  Version: ............ 1                     |
+===============================================================================
+
