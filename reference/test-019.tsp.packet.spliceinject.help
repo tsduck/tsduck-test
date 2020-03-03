@@ -39,14 +39,14 @@ Options:
       Display this help text.
 
   --inject-count value
-      For non-immediate splice_insert() commands, specifies the number of times
-      the same splice information section is injected. The default is 2. Other
-      splice commands are injected once only.
+      For non-immediate splice_insert() and time_signal() commands, specifies
+      the number of times the same splice information section is injected. The
+      default is 2. Other splice commands are injected once only.
 
   --inject-interval value
-      For non-immediate splice_insert() commands, specifies the interval in
-      milliseconds between two insertions of the same splice information
-      section. The default is 800 ms.
+      For non-immediate splice_insert() and time_signal() commands, specifies
+      the interval in milliseconds between two insertions of the same splice
+      information section. The default is 800 ms.
 
   --max-file-size value
       Files larger than the specified size are ignored. This avoids loading
