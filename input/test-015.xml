@@ -994,6 +994,30 @@
         MB_buffer_size="123456"
         TB_leak_rate="789012"/>
 
+    <MPEG2_stereoscopic_video_format_descriptor/>
+
+    <MPEG2_stereoscopic_video_format_descriptor arrangement_type="0x67"/>
+
+    <stereoscopic_program_info_descriptor stereoscopic_service_type="2"/>
+
+    <stereoscopic_video_info_descriptor
+        base_video="true"
+        leftview="false"/>
+
+    <stereoscopic_video_info_descriptor
+        base_video="false"
+        usable_as_2D="true"
+        horizontal_upsampling_factor="3"
+        vertical_upsampling_factor="4"/>
+
+    <transport_profile_descriptor transport_profile="1"/>
+
+    <transport_profile_descriptor transport_profile="2">
+      <private_data>
+        01 02 03 04 05
+      </private_data>
+    </transport_profile_descriptor>
+
   </TSDT>
 
 </tsduck>

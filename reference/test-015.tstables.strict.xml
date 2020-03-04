@@ -427,5 +427,16 @@
     </FMC_descriptor>
     <flexmux_timing_descriptor FCR_ES_ID="0x1234" FCRResolution="1,450,744,508" FCRLength="222" FmxRateLength="171"/>
     <multiplex_buffer_descriptor MB_buffer_size="123,456" TB_leak_rate="789,012"/>
+    <MPEG2_stereoscopic_video_format_descriptor/>
+    <MPEG2_stereoscopic_video_format_descriptor arrangement_type="0x67"/>
+    <stereoscopic_program_info_descriptor stereoscopic_service_type="2"/>
+    <stereoscopic_video_info_descriptor base_video="true" leftview="false"/>
+    <stereoscopic_video_info_descriptor base_video="false" usable_as_2D="true" horizontal_upsampling_factor="3" vertical_upsampling_factor="4"/>
+    <transport_profile_descriptor transport_profile="0x01"/>
+    <transport_profile_descriptor transport_profile="0x02">
+      <private_data>
+        01 02 03 04 05
+      </private_data>
+    </transport_profile_descriptor>
   </TSDT>
 </tsduck>

@@ -346,7 +346,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 886 bytes
+  Section: 0 (last: 0), version: 0, size: 915 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -830,4 +830,23 @@
   - Descriptor 63: MultiplexBuffer (0x23, 35), 6 bytes
     MB buffer size: 123,456 bytes
     TB leak rate: 789,012 (315,604,800 bits/s)
+  - Descriptor 64: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
+  - Descriptor 65: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
+    Arrangement type: 0x67 (103)
+  - Descriptor 66: Stereoscopic Program Info (0x35, 53), 1 bytes
+    Stereoscopic service type: 2 (Frame-compatible stereoscopic 3D service)
+  - Descriptor 67: Stereoscopic Video Info (0x36, 54), 2 bytes
+    Base video: true
+    Left view: false
+  - Descriptor 68: Stereoscopic Video Info (0x36, 54), 3 bytes
+    Base video: false
+    Usable as 2D: true
+    Horizontal upsampling factor: 3 (3/4 coded resolution of base view)
+    Vertical upsampling factor: 4 (2/3 coded resolution of base view)
+  - Descriptor 69: Transport Profile (0x37, 55), 1 bytes
+    Transport profile: 0x01 (Complete profile)
+  - Descriptor 70: Transport Profile (0x37, 55), 6 bytes
+    Transport profile: 0x02 (Adaptive profile)
+    Private data:
+    0000:  01 02 03 04 05                                   .....
 
