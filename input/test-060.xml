@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <UNT OUI="0x8C09F4"/>
+
+  <UNT version="23" action_type="0x02" OUI="0xD0CDE1" processing_order="0x82">
+
+    <target_IP_address_descriptor IPv4_addr_mask="255.255.255.0">
+      <address IPv4_addr="1.2.3.4"/>
+      <address IPv4_addr="5.6.7.8"/>
+    </target_IP_address_descriptor>
+
+    <target_MAC_address_descriptor MAC_addr_mask="FF-FF-FF-00-00-00">
+      <address MAC_addr="01:23:45:67:89:AB"/>
+      <address MAC_addr="CD:EF:98:76:54:32"/>
+    </target_MAC_address_descriptor>
+
+    <SSU_subgroup_association_descriptor subgroup_tag="0x9876543210"/>
+
+    <devices>
+      <compatibilityDescriptor
+          descriptorType="0"
+          specifierData="0x123456"
+          model="0x9876"
+          version="0x5432">
+        <subDescriptor subDescriptorType="0x12">
+          012345
+        </subDescriptor>
+        <subDescriptor subDescriptorType="0x92">
+          987654ABCD
+        </subDescriptor>
+      </compatibilityDescriptor>
+      <compatibilityDescriptor
+          descriptorType="1"
+          specifierType="2"
+          specifierData="0x789ABC"
+          model="0x6789"
+          version="0x2345"/>
+      <platform>
+        <target>
+          <SSU_subgroup_association_descriptor subgroup_tag="1"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="2"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="3"/>
+        </target>
+        <operational>
+          <SSU_subgroup_association_descriptor subgroup_tag="4"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="5"/>
+        </operational>
+      </platform>
+      <platform>
+        <target>
+          <SSU_subgroup_association_descriptor subgroup_tag="6"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="7"/>
+        </target>
+        <operational>
+          <SSU_subgroup_association_descriptor subgroup_tag="8"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="9"/>
+        </operational>
+      </platform>
+    </devices>
+
+    <devices>
+      <platform>
+        <target>
+          <SSU_subgroup_association_descriptor subgroup_tag="10"/>
+          <SSU_subgroup_association_descriptor subgroup_tag="11"/>
+        </target>
+        <operational>
+          <SSU_subgroup_association_descriptor subgroup_tag="12"/>
+        </operational>
+      </platform>
+    </devices>
+
+    <SSU_uri_descriptor max_holdoff_time="10" min_polling_interval="7" uri="http://foo/bar"/>
+
+    <update_descriptor
+        update_flag="0"
+        update_method="1"
+        update_priority="2"/>
+
+    <update_descriptor
+        update_flag="2"
+        update_method="3"
+        update_priority="1">
+      <private_data>
+        25 69 47 12
+      </private_data>
+    </update_descriptor>
+
+    <scheduling_descriptor
+        start_date_time="2021-12-04 10:45:23"
+        end_date_time="2022-01-12 01;45;47"
+        final_availability="true"
+        periodicity="false"
+        period_unit="hour"
+        duration_unit="minute"
+        estimated_cycle_time_unit="second"
+        period="3"
+        duration="12"
+        estimated_cycle_time="210"/>
+
+    <scheduling_descriptor
+        start_date_time="2018-05-29 01:12:34"
+        end_date_time="2018-07-14 13:21:43"
+        final_availability="false"
+        periodicity="true"
+        period_unit="second"
+        duration_unit="hour"
+        estimated_cycle_time_unit="minute"
+        period="45"
+        duration="58"
+        estimated_cycle_time="65">
+      <private_data>
+        45 89 63 12 47
+      </private_data>
+    </scheduling_descriptor>
+
+    <SSU_event_name_descriptor ISO_639_language_code="eng">
+      <name>Foo event</name>
+      <text>Some foo description.</text>
+    </SSU_event_name_descriptor>
+
+    <SSU_location_descriptor data_broadcast_id="0x1234">
+      <private_data>
+        85 23 69
+      </private_data>
+    </SSU_location_descriptor>
+
+    <SSU_location_descriptor data_broadcast_id="0x000A" association_tag="0x9876"/>
+
+    <SSU_message_descriptor
+        descriptor_number="2"
+        last_descriptor_number="5"
+        ISO_639_language_code="eng">
+      <text>Some message.</text>
+    </SSU_message_descriptor>
+
+    <SSU_enhanced_message_descriptor
+        descriptor_number="1"
+        last_descriptor_number="13"
+        ISO_639_language_code="eng"
+        message_index="27">
+      <text>Some foo message.</text>
+    </SSU_enhanced_message_descriptor>
+
+  </UNT>
+
+</tsduck>

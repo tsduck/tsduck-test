@@ -1,0 +1,130 @@
+
+* UNT (Update Notification), TID 75 (0x4B), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 18 bytes
+  - Section 0:
+    OUI: 0x8C09F4 (ARRIS Group)
+    Action type: 0x01, processing order: 0x00, OUI hash: 0x71 (valid)
+    Common descriptors:
+      None
+    Sets of devices:
+      None
+
+* UNT (Update Notification), TID 75 (0x4B), PID 200 (0x00C8)
+  Version: 23, sections: 1, total size: 359 bytes
+  - Section 0:
+    OUI: 0xD0CDE1 (Scientech Electronics)
+    Action type: 0x02, processing order: 0x82, OUI hash: 0xFC (valid)
+    Common descriptors:
+      - Descriptor 0: UNT Target IP Address (0x09, 9), 12 bytes
+        Address mask: 255.255.255.0
+        Address: 1.2.3.4
+        Address: 5.6.7.8
+      - Descriptor 1: UNT Target MAC Address (0x07, 7), 18 bytes
+        Address mask: FF:FF:FF:00:00:00
+        Address: 01:23:45:67:89:AB
+        Address: CD:EF:98:76:54:32
+      - Descriptor 2: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+        Subgroup tag: 0x9876543210 (654820258320)
+      - Descriptor 3: UNT SSU URI (0x0D, 13), 16 bytes
+        Max holdoff time: 10 minutes
+        Min polling interval: 7 hours
+        URI: "http://foo/bar"
+      - Descriptor 4: UNT Update (0x02, 2), 1 bytes
+        Update flag: 0 (Update has to be activated manually)
+        Update method: 1 (IRD available: update when not interfere with user)
+        Update priority: 2
+      - Descriptor 5: UNT Update (0x02, 2), 5 bytes
+        Update flag: 2 (reserved for future use)
+        Update method: 3 (reserved for future use)
+        Update priority: 1
+        Private data:
+        0000:  25 69 47 12                                %iG.
+      - Descriptor 6: UNT Scheduling (0x01, 1), 14 bytes
+        Start time: 2021/12/04 10:45:23
+        End time:   2022/01/12 01:45:47
+        Final availability: true
+        Periodicity: false
+        Period: 3 hours
+        Duration: 12 minutes
+        Estimated cycle time: 210 seconds
+      - Descriptor 7: UNT Scheduling (0x01, 1), 19 bytes
+        Start time: 2018/05/29 01:12:34
+        End time:   2018/07/14 13:21:43
+        Final availability: false
+        Periodicity: true
+        Period: 45 seconds
+        Duration: 58 hours
+        Estimated cycle time: 65 minutes
+        Private data:
+        0000:  45 89 63 12 47                             E.c.G
+      - Descriptor 8: UNT SSU Event Name (0x05, 5), 35 bytes
+        Language: eng
+        Event name: "Foo event"
+        Event text: "Some foo description."
+      - Descriptor 9: UNT SSU Location (0x03, 3), 5 bytes
+        Data broadcast id: 0x1234 (unknown)
+        Private data:
+        0000:  85 23 69                                   .#i
+      - Descriptor 10: UNT SSU Location (0x03, 3), 4 bytes
+        Data broadcast id: 0x000A (System Software Update service)
+        Association tag: 0x9876 (39030)
+      - Descriptor 11: UNT Message (0x04, 4), 17 bytes
+        Descriptor number: 2, last: 5
+        Language: eng
+        Text: "Some message."
+      - Descriptor 12: UNT Enhanced Message (0x0C, 12), 22 bytes
+        Descriptor number: 1, last: 13
+        Language: eng
+        Message index: 27
+        Text: "Some foo message."
+    Sets of devices:
+      - Devices 0:
+        Compatibility descriptor: 36 bytes, 2 descriptors
+        - Descriptor 0, type 0x00 (pad descriptor)
+          Specifier type: 0x01, specifier data (OUI): 0x123456 (unknown)
+          Model: 0x9876 (39030), version: 0x5432 (21554)
+          Sub-descriptor count: 2
+          - Sub-descriptor 0, type: 0x12 (18), 3 bytes
+            0000:  01 23 45                                   .#E
+          - Sub-descriptor 1, type: 0x92 (146), 5 bytes
+            0000:  98 76 54 AB CD                             .vT..
+        - Descriptor 1, type 0x01 (system hardware descriptor)
+          Specifier type: 0x02, specifier data (OUI): 0x789ABC (unknown)
+          Model: 0x6789 (26505), version: 0x2345 (9029)
+          Sub-descriptor count: 0
+        Platform 0:
+          Target descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000001 (1)
+          - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000002 (2)
+          - Descriptor 2: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000003 (3)
+          Operational descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000004 (4)
+          - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000005 (5)
+        Platform 1:
+          Target descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000006 (6)
+          - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000007 (7)
+          Operational descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000008 (8)
+          - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x0000000009 (9)
+      - Devices 1:
+        Compatibility descriptor: 2 bytes, 0 descriptors
+        Platform 0:
+          Target descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x000000000A (10)
+          - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x000000000B (11)
+          Operational descriptors:
+          - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
+            Subgroup tag: 0x000000000C (12)
+
