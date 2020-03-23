@@ -85,6 +85,13 @@ Options:
       The option --ignore-joint-termination disables the termination of tsp
       when all plugins have reached their joint termination condition.
 
+  --initial-input-packets value
+      Specify the number of packets to initially read in the buffer before
+      starting the processing. The initial load is used to evaluate the bitrate
+      so that all subsequent plugins can have a valid bitrate value from the
+      beginning. The default initial load is half the size of the global
+      buffer.
+
   -l[value]
   --list-processors[=value]
       List all available processors.
