@@ -22,3 +22,19 @@ Options:
       Keep existing file (abort if the specified file already exists). By
       default, existing files are overwritten.
 
+  --max-retry value
+      With --reopen-on-error, specify the maximum number of times the file is
+      reopened on error. By default, the file is indefinitely reopened.
+
+  -r
+  --reopen-on-error
+      In case of write error, close the file and try to reopen it several
+      times. After a write error, attempt to reopen or recreate the file
+      immediately. Then, in case of open error, periodically retry to open the
+      file. See also options --retry-interval and --max-retry.
+
+  --retry-interval milliseconds
+      With --reopen-on-error, specify the number of milliseconds to wait before
+      attempting to reopen the file after a failure. The default is 2,000
+      milliseconds.
+
