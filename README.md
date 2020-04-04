@@ -155,3 +155,4 @@ repository. But we now limit their size to 20 MB.
 | 058  | `--append` option in `file` output plugin
 | 059  | `--ignore-absent` option in `zap` plugin
 | 060  | UNT and its specific descriptors
+| 061  | Order of sections in plugin `inject`
