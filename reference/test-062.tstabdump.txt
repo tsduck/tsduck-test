@@ -1,0 +1,488 @@
+
+* PAT, TID 0 (0x00)
+  Section: 0 (last: 0), version: 1, size: 32 bytes
+  TS id:   32464 (0x7ED0)
+  NIT:         0 (0x0000)  PID:   16 (0x0010)
+  Program: 18432 (0x4800)  PID:  496 (0x01F0)
+  Program: 18433 (0x4801)  PID: 1008 (0x03F0)
+  Program: 18816 (0x4980)  PID: 8136 (0x1FC8)
+  Program: 65520 (0xFFF0)  PID: 7408 (0x1CF0)
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 26, size: 210 bytes
+  Program: 18432 (0x4800), PCR PID: 511 (0x01FF)
+  Program information:
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 2305 (0x0901)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x0902 (2306)
+  - Descriptor 2: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 256 (0x0100)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 0 (0x00)
+  - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
+    0000:  47                                               G
+  Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 16 (0x10)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 304 (0x0130)
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x1FFF (8191)
+  - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 48 (0x30)
+  - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
+    0000:  00 08 3D                                         ..=
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 312 (0x0138)
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x1FFF (8191)
+  - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 56 (0x38)
+  - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
+    0000:  00 08 3C                                         ..<
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 320 (0x0140)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 64 (0x40)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
+    0000:  00 0C 33 3F 00 03 00 00 FF BF                    ..3?......
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 352 (0x0160)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 96 (0x60)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 353 (0x0161)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 97 (0x61)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 354 (0x0162)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 98 (0x62)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 368 (0x0170)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 112 (0x70)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 369 (0x0171)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 113 (0x71)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 370 (0x0172)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 114 (0x72)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 29, size: 210 bytes
+  Program: 18433 (0x4801), PCR PID: 511 (0x01FF)
+  Program information:
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 2305 (0x0901)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x0902 (2306)
+  - Descriptor 2: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 256 (0x0100)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 0 (0x00)
+  - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
+    0000:  47                                               G
+  Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 16 (0x10)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 304 (0x0130)
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x1FFF (8191)
+  - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 48 (0x30)
+  - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
+    0000:  00 08 3D                                         ..=
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 312 (0x0138)
+  - Descriptor 0: CA (0x09, 9), 4 bytes
+    CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+  - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    ECM PID: 0x1FFF (8191)
+  - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 56 (0x38)
+  - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
+    0000:  00 08 3C                                         ..<
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 320 (0x0140)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 64 (0x40)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
+    0000:  00 0C 33 3F 00 03 00 00 FF BF                    ..3?......
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 352 (0x0160)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 96 (0x60)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 353 (0x0161)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 97 (0x61)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 354 (0x0162)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 98 (0x62)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 368 (0x0170)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 112 (0x70)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 369 (0x0171)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 113 (0x71)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 370 (0x0172)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 114 (0x72)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0C 1F FF BF                                   .....
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 29, size: 99 bytes
+  Program: 18816 (0x4980), PCR PID: 1535 (0x05FF)
+  Program information:
+  - Descriptor 0: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  88                                               .
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 1408 (0x0580)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 128 (0x80)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
+    0000:  00 0D 3F 2F 00 0C 00 00 FF BF                    ..?/......
+  Elementary stream: type 0x1B (AVC video), PID: 1409 (0x0581)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 129 (0x81)
+  Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 1411 (0x0583)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 131 (0x83)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1415 (0x0587)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 135 (0x87)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
+    0000:  00 12 AD                                         ...
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 1417 (0x0589)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 137 (0x89)
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 1418 (0x058A)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 138 (0x8A)
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 1419 (0x058B)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 139 (0x8B)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+    0000:  00 0D 1F FF BF                                   .....
+
+* EIT p/f Actual, TID 78 (0x4E)
+  Section: 0 (last: 1), version: 4, size: 333 bytes
+  Service Id: 18432 (0x4800)
+  TS Id: 32464 (0x7ED0)
+  Original Network Id: 32464 (0x7ED0)
+  Segment last section: 1 (0x01)
+  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Event Id: 3805 (0x0EDD)
+  Start UTC: 2020/04/05 19:00:00
+  Duration: 00:30:00
+  Running status: undefined
+  CA mode: free
+  - Descriptor 0: Short Event (0x4D, 77), 143 bytes
+    Language: jpn
+    Event name: "NHK.K.e..97..$;zZzV"
+    Description: "Lk7;~ŧß0lJb@hŧ0lJb?<↓þ!!:#ŧ³̨Keø9đFO±¿€!!!Z|↑ª’¿ø![@D0f<B!$!Zµ¬↑ª’¿ø![CSED?-;R!$0KF#3$I'!$!Z5$>]↑ª’¿ø![CfB<H~8x"
+  - Descriptor 1: Extended Event (0x4E, 78), 85 bytes
+    Descriptor number: 0, last: 0
+    Language: jpn
+    "=P1i<T" : "!Z|↑ª’¿ø![@D0f<B!$!Zµ¬↑ª’¿ø![CSED?-;R!$0KF#3$I'!$!Z5$>]↑ª’¿ø![CfB<H~8x"
+    Text: ""
+  - Descriptor 2: Component (0x50, 80), 6 bytes
+    Content/type: 0x01B3 (MPEG-2 video)
+    Component tag: 0 (0x00)
+    Language: jpn
+  - Descriptor 3: Content (0x54, 84), 6 bytes
+    Content: 0x00 (unknown) / User: 0xFF
+    Content: 0x01 (unknown) / User: 0xFF
+    Content: 0x10 (movie/drama (general)) / User: 0xFF
+  - Descriptor 4: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 5: ISDB Audio Component (0xC4, 196), 23 bytes
+    0000:  F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C 4B 5C  ......jpnengF|K\
+    0010:  38 6C 0D 31 51 38 6C                             8l.1Q8l
+  - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
+    0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00        ..0...jpn.jpn.
+  - Descriptor 7: ISDB Event Group (0xD6, 214), 9 bytes
+    0000:  12 48 00 0E DD 48 01 0E DD                       .H...H...
+
+* EIT p/f Actual, TID 78 (0x4E)
+  Section: 1 (last: 1), version: 4, size: 723 bytes
+  Service Id: 18432 (0x4800)
+  TS Id: 32464 (0x7ED0)
+  Original Network Id: 32464 (0x7ED0)
+  Segment last section: 1 (0x01)
+  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Event Id: 3806 (0x0EDE)
+  Start UTC: 2020/04/05 19:30:00
+  Duration: 00:30:00
+  Running status: undefined
+  CA mode: free
+  - Descriptor 0: Short Event (0x4D, 77), 198 bytes
+    Language: jpn
+    Event name: "@..o&#s..Mh.!*.GHMp..|....3X1`.K@xF~!*I4=C.N2&.rM\@.!*!*..$;z\zV"
+    Description: "@.D9⅝¿̂Cf̨oi$*s̨;RĐ¿←̀ŧ72ÞC̨f@̇h@8LrB̨g?M«Ø<mŒ5̨;Ħ;R0i=̆Qđ3X¬œIT??LLL\@̊8ELB̌`3X=hJ,!̧*!)3X1`|Ø⅝4iIi1NGHMpNF|!9KL)Ce!*"
+  - Descriptor 1: Extended Event (0x4E, 78), 236 bytes
+    Descriptor number: 0, last: 2
+    Language: jpn
+    "HVAHFbMF" : "?7G/EY1K\L\ŧ̌oi$*sß̨3X9;þđ×>R2pœ@.D9??:̂GCf̨oi$*s̨;RĐ¿←̀ŧ72ÞC̨f@̇h@8LrB̨g?M«Ø<mŒĦ;R0iŧ̆|Ø€―º7bB`K!^Gŧ@8n-k?aN"ifk’r3XVœGbØ€―ºŋ€̌¤̊KA4/;u,N)}¿«̊¿̂Œŧ<mŒ̌;̇Q←4]8+¤3̇MJ*¢̧µ̂ŒF(²ØÞ¿Œŧ<BA)7A<0<̨x6H⅞̧ð̊|¿÷¿"
+    Text: ""
+  - Descriptor 2: Extended Event (0x4E, 78), 91 bytes
+    Descriptor number: 1, last: 2
+    Language: jpn
+    "" : "÷œ}µØI̧T??LLL\@̊8EL⅝̌µ«B̨`3X=hJ,!̧*!)3X1`|Ø⅝4iIi1NGHMpN<x6HK@xF~!*2N!'MISIA"
+    Text: ""
+  - Descriptor 3: Extended Event (0x4E, 78), 74 bytes
+    Descriptor number: 2, last: 2
+    Language: jpn
+    "=P1i<T" : "!Z8lŒ![OB5WEDKcM3;R!$N6EDD><y!$K-Eh??@i;R!$;3ED9'G7!$?e@%€Œ̨"
+    Text: ""
+  - Descriptor 4: Component (0x50, 80), 6 bytes
+    Content/type: 0x01B3 (MPEG-2 video)
+    Component tag: 0 (0x00)
+    Language: jpn
+  - Descriptor 5: Content (0x54, 84), 4 bytes
+    Content: 0x82 (economics/social advisory) / User: 0xFF
+    Content: 0xA0 (leisure hobbies (general)) / User: 0xFF
+  - Descriptor 6: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 7: ISDB Audio Component (0xC4, 196), 15 bytes
+    0000:  F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38 6C     .....ojpnF|K\8l
+  - Descriptor 8: ISDB Audio Component (0xC4, 196), 23 bytes
+    0000:  F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38 6C 21  ...../jpnF|K\8l!
+    0010:  4A 32 72 40 62 21 4B                             J2r@b!K
+  - Descriptor 9: ISDB Data Content (0xC7, 199), 14 bytes
+    0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00        ..0...jpn.jpn.
+  - Descriptor 10: ISDB Event Group (0xD6, 214), 9 bytes
+    0000:  12 48 00 0E DE 48 01 0E DE                       .H...H...
+
+* NIT Actual, TID 64 (0x40)
+  Section: 0 (last: 0), version: 13, size: 138 bytes
+  Network Id: 32464 (0x7ED0)
+  Network information:
+  - Descriptor 0: Network Name (0x40, 64), 6 bytes
+    Name: "=)ED#0"
+  - Descriptor 1: ISDB System Management (0xFE, 254), 2 bytes
+    0000:  03 01                                            ..
+  Transport Stream Id: 32464 (0x7ED0), Original Network Id: 32464 (0x7ED0)
+  - Descriptor 0: Service List (0x41, 65), 12 bytes
+    Service id: 18432 (0x4800), Type: 0x01 (Digital television service)
+    Service id: 18433 (0x4801), Type: 0x01 (Digital television service)
+    Service id: 18816 (0x4980), Type: 0xC0 (unknown)
+    Service id: 65520 (0xFFF0), Type: 0xA4 (unknown)
+  - Descriptor 1: ISDB Terrestrial Delivery System (0xFA, 250), 52 bytes
+    0000:  AC 6A 0D 1A 0D 44 0D 6E 0E 40 0E 94 0E BE 0E E8  .j...D.n.@......
+    0010:  0F 12 0F 3C 0F 66 0F BA 10 B6 10 E0 11 0A 11 34  ...<.f.........4
+    0020:  11 5E 11 B2 11 DC 12 06 12 30 12 5A 12 84 12 AE  .^.......0.Z....
+    0030:  13 2C 13 56                                      .,.V
+  - Descriptor 2: ISDB Partial Reception (0xFB, 251), 2 bytes
+    0000:  49 80                                            I.
+  - Descriptor 3: ISDB TS Information (0xCD, 205), 30 bytes
+    0000:  01 42 23 4E 23 48 23 4B 41 6D 39 67 21 26 3D 29  .B#N#H#KAm9g!&=)
+    0010:  45 44 0F 03 48 00 48 01 FF F0 AF 01 49 80        ED..H.H.....I.
+
+* EIT p/f Actual, TID 78 (0x4E)
+  Section: 0 (last: 1), version: 19, size: 242 bytes
+  Service Id: 18433 (0x4801)
+  TS Id: 32464 (0x7ED0)
+  Original Network Id: 32464 (0x7ED0)
+  Segment last section: 1 (0x01)
+  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Event Id: 3805 (0x0EDD)
+  Start UTC: 2020/04/05 19:00:00
+  Duration: 00:30:00
+  Running status: undefined
+  CA mode: free
+  - Descriptor 0: Short Event (0x4D, 77), 143 bytes
+    Language: jpn
+    Event name: "NHK.K.e..97..$;zZzV"
+    Description: "Lk7;~ŧß0lJb@hŧ0lJb?<↓þ!!:#ŧ³̨Keø9đFO±¿€!!!Z|↑ª’¿ø![@D0f<B!$!Zµ¬↑ª’¿ø![CSED?-;R!$0KF#3$I'!$!Z5$>]↑ª’¿ø![CfB<H~8x"
+  - Descriptor 1: Component (0x50, 80), 6 bytes
+    Content/type: 0x01B3 (MPEG-2 video)
+    Component tag: 0 (0x00)
+    Language: jpn
+  - Descriptor 2: Content (0x54, 84), 6 bytes
+    Content: 0x00 (unknown) / User: 0xFF
+    Content: 0x01 (unknown) / User: 0xFF
+    Content: 0x10 (movie/drama (general)) / User: 0xFF
+  - Descriptor 3: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 4: ISDB Audio Component (0xC4, 196), 23 bytes
+    0000:  F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C 4B 5C  ......jpnengF|K\
+    0010:  38 6C 0D 31 51 38 6C                             8l.1Q8l
+  - Descriptor 5: ISDB Data Content (0xC7, 199), 14 bytes
+    0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00        ..0...jpn.jpn.
+  - Descriptor 6: ISDB Event Group (0xD6, 214), 5 bytes
+    0000:  11 48 00 0E DD                                   .H...
+
+* EIT p/f Actual, TID 78 (0x4E)
+  Section: 1 (last: 1), version: 19, size: 312 bytes
+  Service Id: 18433 (0x4801)
+  TS Id: 32464 (0x7ED0)
+  Original Network Id: 32464 (0x7ED0)
+  Segment last section: 1 (0x01)
+  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Event Id: 3806 (0x0EDE)
+  Start UTC: 2020/04/05 19:30:00
+  Duration: 00:30:00
+  Running status: undefined
+  CA mode: free
+  - Descriptor 0: Short Event (0x4D, 77), 198 bytes
+    Language: jpn
+    Event name: "@..o&#s..Mh.!*.GHMp..|....3X1`.K@xF~!*I4=C.N2&.rM\@.!*!*..$;z\zV"
+    Description: "@.D9⅝¿̂Cf̨oi$*s̨;RĐ¿←̀ŧ72ÞC̨f@̇h@8LrB̨g?M«Ø<mŒ5̨;Ħ;R0i=̆Qđ3X¬œIT??LLL\@̊8ELB̌`3X=hJ,!̧*!)3X1`|Ø⅝4iIi1NGHMpNF|!9KL)Ce!*"
+  - Descriptor 1: Component (0x50, 80), 6 bytes
+    Content/type: 0x01B3 (MPEG-2 video)
+    Component tag: 0 (0x00)
+    Language: jpn
+  - Descriptor 2: Content (0x54, 84), 4 bytes
+    Content: 0x82 (economics/social advisory) / User: 0xFF
+    Content: 0xA0 (leisure hobbies (general)) / User: 0xFF
+  - Descriptor 3: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 4: ISDB Audio Component (0xC4, 196), 15 bytes
+    0000:  F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38 6C     .....ojpnF|K\8l
+  - Descriptor 5: ISDB Audio Component (0xC4, 196), 23 bytes
+    0000:  F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38 6C 21  ...../jpnF|K\8l!
+    0010:  4A 32 72 40 62 21 4B                             J2r@b!K
+  - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
+    0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00        ..0...jpn.jpn.
+  - Descriptor 7: ISDB Event Group (0xD6, 214), 5 bytes
+    0000:  11 48 00 0E DE                                   .H...
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 0, size: 160 bytes
+  Program: 65520 (0xFFF0), PCR PID: none
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7281 (0x1C71)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 113 (0x71)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7282 (0x1C72)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 114 (0x72)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7283 (0x1C73)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 115 (0x73)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7284 (0x1C74)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 116 (0x74)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7285 (0x1C75)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 117 (0x75)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7286 (0x1C76)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 118 (0x76)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7287 (0x1C77)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 119 (0x77)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7288 (0x1C78)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 120 (0x78)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7264 (0x1C60)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 96 (0x60)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7265 (0x1C61)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 97 (0x61)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7266 (0x1C62)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 98 (0x62)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+  Elementary stream: type 0x0D (DSM-CC Sections), PID: 7267 (0x1C63)
+  - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+    Component tag: 99 (0x63)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    0000:  00 09                                            ..
+
+* SDT Actual, TID 66 (0x42)
+  Section: 0 (last: 0), version: 3, size: 131 bytes
+  Transport Stream Id: 32464 (0x7ED0)
+  Original Network Id: 32464 (0x7ED0)
+  Service Id: 18432 (0x4800), EITs: yes, EITp/f: yes, CA mode: free
+  Running status: undefined
+  - Descriptor 0: Service (0x48, 72), 20 bytes
+    Service type: 0x01 (Digital television service)
+    Service: "NHK.Am9g.1..=)ED", Provider: ""
+  - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 7 bytes
+    0000:  01 FE 00 F0 01 48 00                             .....H.
+  Service Id: 18433 (0x4801), EITs: yes, EITp/f: yes, CA mode: free
+  Running status: undefined
+  - Descriptor 0: Service (0x48, 72), 20 bytes
+    Service type: 0x01 (Digital television service)
+    Service: "NHK.Am9g.2..=)ED", Provider: ""
+  - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  84                                               .
+  - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 3 bytes
+    0000:  02 FE 00                                         ...
+  Service Id: 18816 (0x4980), EITs: no, EITp/f: yes, CA mode: free
+  Running status: undefined
+  - Descriptor 0: Service (0x48, 72), 20 bytes
+    Service type: 0xC0 (unknown)
+    Service: "NHK.7HBS.G..=)ED", Provider: ""
+  - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    0000:  88                                               .
+  - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 10 bytes
+    0000:  03 0E 4E 48 4B 0F 21 5D 0E 47                    ..NHK.!].G
+
+* CAT, TID 1 (0x01)
+  Section: 0 (last: 0), version: 0, size: 19 bytes
+  - Descriptor 0: ISDB Access Control (0xF6, 246), 5 bytes
+    CA System Id: 0x000E (ARIB Content Protection)
+    Transmission type: 7 (Broadcast route)
+    EMM PID: 0x0900 (2304)
+    Private CA data:
+    0000:  01                                               .
+

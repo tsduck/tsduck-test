@@ -1,14 +1,15 @@
 #!/bin/bash
 # ------------------------------------------------------------------------------
 # Perform the "standard" set of tests on a PSI/SI XML file.
-# Syntax: source "$COMMONDIR"/standard-si-test.sh input.xml
+# Syntax: source "$COMMONDIR"/standard-si-test.sh input.xml [--atsc|--isdb]
 # ------------------------------------------------------------------------------
 
 INFILE="$INDIR/$1"
+STDOPT=$2
 
 # ==== tstabcomp (compile)
 
-$(tspath tstabcomp) \
+$(tspath tstabcomp) $STDOPT \
     --compile $(fpath "$INFILE") \
     --output $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
     >"$OUTDIR/$SCRIPT.compile.log" 2>&1
@@ -18,7 +19,7 @@ test_text $SCRIPT.compile.log
 
 # ==== tstabcomp (decompile)
 
-$(tspath tstabcomp) \
+$(tspath tstabcomp) $STDOPT \
     --decompile $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
     --output $(fpath "$OUTDIR/$SCRIPT.decompile.xml") \
     >"$OUTDIR/$SCRIPT.decompile.log" 2>&1
@@ -26,7 +27,7 @@ $(tspath tstabcomp) \
 test_text $SCRIPT.decompile.xml
 test_text $SCRIPT.decompile.log
 
-$(tspath tstabcomp) --strict-xml \
+$(tspath tstabcomp) --strict-xml $STDOPT \
     --decompile $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
     --output $(fpath "$OUTDIR/$SCRIPT.decompile.strict.xml") \
     >"$OUTDIR/$SCRIPT.decompile.strict.log" 2>&1
@@ -44,7 +45,7 @@ test_text $SCRIPT.pack.log
 
 # ==== tstables, packetized file
 
-$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
+$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") $STDOPT \
     --text $(fpath "$OUTDIR/$SCRIPT.tstables.txt") \
     --xml $(fpath "$OUTDIR/$SCRIPT.tstables.xml") \
     >"$OUTDIR/$SCRIPT.tstables.log" 2>&1
@@ -53,7 +54,7 @@ test_text $SCRIPT.tstables.txt
 test_text $SCRIPT.tstables.xml
 test_text $SCRIPT.tstables.log
 
-$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
+$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") $STDOPT \
     --strict-xml --xml $(fpath "$OUTDIR/$SCRIPT.tstables.strict.xml") \
     >"$OUTDIR/$SCRIPT.tstables.strict.log" 2>&1
 
@@ -62,7 +63,7 @@ test_text $SCRIPT.tstables.strict.log
 
 # ==== tstabdump
 
-$(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
+$(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.compile.bin") $STDOPT \
     >"$OUTDIR/$SCRIPT.tstabdump.txt" \
     2>"$OUTDIR/$SCRIPT.tstabdump.log"
 

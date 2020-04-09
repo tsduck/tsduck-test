@@ -29,7 +29,7 @@ $(tspath tsp) --synchronous-log \
     -P filter -n -p 0x0BC9 -p 0x019A -p 0x01FE -p 0x0262 -p 0x02C6 -p 0x032A -p 0x038E -p 0x03F2 \
     -P pcrbitrate --min-pcr 32 \
     -P filter -n -p 0x02D2 --stuffing \
-    -P inject $(fpath "$INDIR/$SCRIPT.pmt.bin")=100  $(fpath "$INDIR/$SCRIPT.nit.xml")=400 --pid 6000 --bitrate 50,000 \
+    -P inject $(fpath "$INDIR/$SCRIPT.pmt.bin")=100 $(fpath "$INDIR/$SCRIPT.nit.xml")=400 --pid 6000 --bitrate 50,000 \
     -P tables --pid 6000 --all-sections -o $(fpath "$OUTDIR/$SCRIPT.inject.txt") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.analyze.txt") \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \

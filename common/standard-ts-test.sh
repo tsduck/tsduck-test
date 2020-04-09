@@ -1,14 +1,15 @@
 #!/bin/bash
 # ------------------------------------------------------------------------------
 # Perform the "standard" set of tests on a transport stream file.
-# Syntax: source "$COMMONDIR"/standard-ts-test.sh input.ts
+# Syntax: source "$COMMONDIR"/standard-ts-test.sh input.ts [--atsc|--isdb]
 # ------------------------------------------------------------------------------
 
 INFILE="$INDIR/$1"
+STDOPT=$2
 
 # ==== tsanalyze, as a command
 
-$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze full" \
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze full" $STDOPT \
     >"$OUTDIR/$SCRIPT.tsanalyze.full.txt" \
     2>"$OUTDIR/$SCRIPT.tsanalyze.full.log"
 
@@ -17,7 +18,7 @@ test_text $SCRIPT.tsanalyze.full.log
 
 # ==== tsanalyze, as a command, wide display
 
-$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze wide" --wide-display \
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze wide" --wide-display $STDOPT \
     >"$OUTDIR/$SCRIPT.tsanalyze.wide.txt" \
     2>"$OUTDIR/$SCRIPT.tsanalyze.wide.log"
 
@@ -26,7 +27,7 @@ test_text $SCRIPT.tsanalyze.wide.log
 
 # ==== tsanalyze, as a command, normalized format
 
-$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normalized \
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normalized $STDOPT \
     >"$OUTDIR/$SCRIPT.tsanalyze.norm.txt" \
     2>"$OUTDIR/$SCRIPT.tsanalyze.norm.log"
 
@@ -37,7 +38,7 @@ test_text $SCRIPT.tsanalyze.norm.log
 
 # ==== tspsi, as a command
 
-$(tspath tspsi) $(fpath "$INFILE") \
+$(tspath tspsi) $(fpath "$INFILE") $STDOPT \
     >"$OUTDIR/$SCRIPT.tspsi.txt" \
     2>"$OUTDIR/$SCRIPT.tspsi.log"
 
@@ -48,9 +49,9 @@ test_text $SCRIPT.tspsi.log
 
 $(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
-    -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" \
-    -P analyze --normalized -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" \
-    -P psi --all -o $(fpath "$OUTDIR/$SCRIPT.tsp.psi.txt") \
+    -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" $STDOPT \
+    -P analyze --normalized -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" $STDOPT \
+    -P psi --all -o $(fpath "$OUTDIR/$SCRIPT.tsp.psi.txt") $STDOPT \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
 
@@ -116,7 +117,7 @@ test_text $SCRIPT.tsdump.header.log
 PMTPIDS=$(grep '^table:.*tid=2:' $OUTDIR/$SCRIPT.tsanalyze.norm.txt | sed -e 's/^.*:pid=/-p /' -e 's/:.*$//' | tr '\n' ' ')
 PIDS="-p 0 -p 1 -p 2 -p 16 -p 17 -p 18 -p 19 -p 0x1FFB $PMTPIDS"
 
-$(tspath tstables) $(fpath "$INFILE") $PIDS \
+$(tspath tstables) $(fpath "$INFILE") $PIDS $STDOPT \
     --output-file $(fpath "$OUTDIR/$SCRIPT.tstables.text.txt") \
     >"$OUTDIR/$SCRIPT.tstables.text.log" 2>&1
 
@@ -125,14 +126,14 @@ test_text $SCRIPT.tstables.text.log
 
 # ==== tstables, XML files
 
-$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index \
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index $STDOPT \
     --xml $(fpath "$OUTDIR/$SCRIPT.tstables.xml") \
     >"$OUTDIR/$SCRIPT.tstables.xml.log" 2>&1
 
 test_text $SCRIPT.tstables.xml
 test_text $SCRIPT.tstables.xml.log
 
-$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index \
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index $STDOPT \
     --strict-xml --xml $(fpath "$OUTDIR/$SCRIPT.tstables.strict.xml") \
     >"$OUTDIR/$SCRIPT.tstables.strict.xml.log" 2>&1
 
@@ -141,7 +142,7 @@ test_text $SCRIPT.tstables.strict.xml.log
 
 # ==== tstables, binary sections
 
-$(tspath tstables) $(fpath "$INFILE") $PIDS \
+$(tspath tstables) $(fpath "$INFILE") $PIDS $STDOPT \
     --binary $(fpath "$OUTDIR/$SCRIPT.tstables.bin") \
     >"$OUTDIR/$SCRIPT.tstables.bin.log" 2>&1
 
@@ -150,7 +151,7 @@ test_text $SCRIPT.tstables.bin.log
 
 # ==== tstabdump
 
-$(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.tstables.bin") \
+$(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.tstables.bin") $STDOPT \
     >"$OUTDIR/$SCRIPT.tstabdump.txt" \
     2>"$OUTDIR/$SCRIPT.tstabdump.log"
 

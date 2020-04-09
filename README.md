@@ -156,3 +156,5 @@ repository. But we now limit their size to 20 MB.
 | 059  | `--ignore-absent` option in `zap` plugin
 | 060  | UNT and its specific descriptors
 | 061  | Order of sections in plugin `inject`
+| 062  | Analyze an ISDB live stream
+| 063  | SI analysis and conversions: ISDB signalization
