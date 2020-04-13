@@ -158,6 +158,12 @@ Options:
       Select packets with the specified splice_countdown value in adaptation
       field.
 
+  --stream-id id1[-id2]
+      Select PES PID's with any of the specified stream ids. A PID starts to be
+      selected when a specified stream id appears. Such a PID is no longer
+      selected when non-specified stream id is found. Several --stream-id
+      options may be specified.
+
   -s
   --stuffing
       Replace excluded packets with stuffing (null packets) instead of removing
