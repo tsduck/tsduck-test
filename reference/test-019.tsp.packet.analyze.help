@@ -13,15 +13,16 @@ Options:
       descriptors is found before the first ATSC MGT or VCT.
 
   --default-charset name
-      Default character set to use when interpreting DVB strings without
-      explicit character table code. According to DVB standard ETSI EN 300 468,
-      the default DVB character set is ISO-6937. However, some bogus
-      signalization may assume that the default character set is different,
-      typically the usual local character table for the region. This option
-      forces a non-standard character table. The available table names are
-      ISO-6937, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
+      Default character set to use when interpreting strings from tables and
+      descriptors. By default, DVB encoding using ISO-6937 as default table is
+      used. The available table names are ARIB, ARIB-STD-B24, DVB, ISO-6937,
+      ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
       ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6,
-      ISO-8859-7, ISO-8859-8, ISO-8859-9, UNICODE, UTF-8.
+      ISO-8859-7, ISO-8859-8, ISO-8859-9, RAW-ISO-6937, RAW-ISO-8859-1,
+      RAW-ISO-8859-10, RAW-ISO-8859-11, RAW-ISO-8859-13, RAW-ISO-8859-14,
+      RAW-ISO-8859-15, RAW-ISO-8859-2, RAW-ISO-8859-3, RAW-ISO-8859-4,
+      RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
+      RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
   --error-analysis
       Report analysis about detected errors.
@@ -56,6 +57,10 @@ Options:
       normally automatically detected from their signalization. This option is
       only useful when ISDB-related stuff are found in the TS before the first
       ISDB-specific table.
+
+  --japan
+      A synonym for '--isdb --default-charset ARIB-STD-B24'. This is a handy
+      shortcut when working on Japanese transport streams.
 
   -m
   --multiple-files
