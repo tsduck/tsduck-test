@@ -321,15 +321,36 @@
         <service service_id="0x4980" service_type="0xC0"/>
         <service service_id="0xFFF0" service_type="0xA4"/>
       </service_list_descriptor>
-      <generic_descriptor tag="0xFA">
-        AC 6A 0D 1A 0D 44 0D 6E 0E 40 0E 94 0E BE 0E E8
-        0F 12 0F 3C 0F 66 0F BA 10 B6 10 E0 11 0A 11 34
-        11 5E 11 B2 11 DC 12 06 12 30 12 5A 12 84 12 AE
-        13 2C 13 56
-      </generic_descriptor>
-      <generic_descriptor tag="0xFB">
-        49 80
-      </generic_descriptor>
+      <ISDB_terrestrial_delivery_system_descriptor area_code="0x0AC6" guard_interval="1/8" transmission_mode="8k">
+        <frequency value="479,142,857"/>
+        <frequency value="485,142,857"/>
+        <frequency value="491,142,857"/>
+        <frequency value="521,142,857"/>
+        <frequency value="533,142,857"/>
+        <frequency value="539,142,857"/>
+        <frequency value="545,142,857"/>
+        <frequency value="551,142,857"/>
+        <frequency value="557,142,857"/>
+        <frequency value="563,142,857"/>
+        <frequency value="575,142,857"/>
+        <frequency value="611,142,857"/>
+        <frequency value="617,142,857"/>
+        <frequency value="623,142,857"/>
+        <frequency value="629,142,857"/>
+        <frequency value="635,142,857"/>
+        <frequency value="647,142,857"/>
+        <frequency value="653,142,857"/>
+        <frequency value="659,142,857"/>
+        <frequency value="665,142,857"/>
+        <frequency value="671,142,857"/>
+        <frequency value="677,142,857"/>
+        <frequency value="683,142,857"/>
+        <frequency value="701,142,857"/>
+        <frequency value="707,142,857"/>
+      </ISDB_terrestrial_delivery_system_descriptor>
+      <partial_reception_descriptor>
+        <service id="0x4980"/>
+      </partial_reception_descriptor>
       <generic_descriptor tag="0xCD">
         01 42 23 4E 23 48 23 4B 41 6D 39 67 21 26 3D 29
         45 44 0F 03 48 00 48 01 FF F0 AF 01 49 80
