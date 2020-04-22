@@ -11,6 +11,31 @@
       </private_data>
     </ISDB_access_control_descriptor>
 
+    <data_component_descriptor data_component_id="10"/>
+
+    <data_component_descriptor data_component_id="12">
+      <additional_data_component_info>
+        23 45 67
+      </additional_data_component_info>
+    </data_component_descriptor>
+
+    <digital_copy_control_descriptor digital_recording_control_data="3"/>
+
+    <digital_copy_control_descriptor
+        digital_recording_control_data="1"
+        user_defined="2"
+        maximum_bitrate="5">
+      <component_control
+          component_tag="100"
+          digital_recording_control_data="0"
+          user_defined="10"/>
+      <component_control
+          component_tag="101"
+          digital_recording_control_data="1"
+          user_defined="12"
+          maximum_bitrate="40"/>
+    </digital_copy_control_descriptor>
+
   </CAT>
 
 </tsduck>

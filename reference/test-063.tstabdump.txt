@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 0, size: 29 bytes
+  Section: 0 (last: 0), version: 0, size: 53 bytes
   - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
     CA System Id: 0x0004 (Secure Navi)
     Transmission type: 7 (Broadcast route)
@@ -11,4 +11,24 @@
     EMM PID: 0x00C8 (200)
     Private CA data:
     0000:  01 23 45 67 89                                   .#Eg.
+  - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0x000A (G-guide (G-Guide Gold))
+  - Descriptor 3: ISDB Data Component (0xFD, 253), 5 bytes
+    Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
+    Additional data component info:
+    0000:  23 45 67                                         #Eg
+  - Descriptor 4: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+    Recording control: 3 (Copy is forbidden)
+    User-defined: 0x0 (0)
+  - Descriptor 5: ISDB Digital Copy Control (0xC1, 193), 8 bytes
+    Recording control: 1 (Defined by service provider)
+    User-defined: 0x2 (2)
+    Maximum bitrate: 5 (1,250,000 b/s)
+    - Component tag: 0x64 (100)
+      Recording control: 0 (Copy can be made without control condition)
+      User-defined: 0xA (10)
+    - Component tag: 0x65 (101)
+      Recording control: 1 (Defined by service provider)
+      User-defined: 0xC (12)
+      Maximum bitrate: 40 (10,000,000 b/s)
 
