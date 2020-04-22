@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 53 bytes
+  Version: 0, sections: 1, total size: 79 bytes
   - Section 0:
     - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x0004 (Secure Navi)
@@ -32,4 +32,21 @@
         Recording control: 1 (Defined by service provider)
         User-defined: 0xC (12)
         Maximum bitrate: 40 (10,000,000 b/s)
+    - Descriptor 6: ISDB Terrestrial Delivery System (0xFA, 250), 2 bytes
+      Area code: 0x123 (291)
+      Guard interval: 0 (1/32)
+      Transmission mode: 2 (8k)
+    - Descriptor 7: ISDB Terrestrial Delivery System (0xFA, 250), 10 bytes
+      Area code: 0xFED (4077)
+      Guard interval: 1 (1/16)
+      Transmission mode: 0 (2k)
+      Frequency: 600,000,000 Hz
+      Frequency: 650,000,000 Hz
+      Frequency: 700,000,000 Hz
+      Frequency: 750,000,000 Hz
+    - Descriptor 8: ISDB Partial Reception (0xFB, 251), 0 bytes
+    - Descriptor 9: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x1234 (4660)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
 

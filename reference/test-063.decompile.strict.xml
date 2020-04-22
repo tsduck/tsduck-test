@@ -18,5 +18,18 @@
       <component_control component_tag="100" digital_recording_control_data="0" user_defined="10"/>
       <component_control component_tag="101" digital_recording_control_data="1" user_defined="12" maximum_bitrate="40"/>
     </digital_copy_control_descriptor>
+    <ISDB_terrestrial_delivery_system_descriptor area_code="0x0123" guard_interval="1/32" transmission_mode="8k"/>
+    <ISDB_terrestrial_delivery_system_descriptor area_code="0x0FED" guard_interval="1/16" transmission_mode="2k">
+      <frequency value="600,000,000"/>
+      <frequency value="650,000,000"/>
+      <frequency value="700,000,000"/>
+      <frequency value="750,000,000"/>
+    </ISDB_terrestrial_delivery_system_descriptor>
+    <partial_reception_descriptor/>
+    <partial_reception_descriptor>
+      <service id="0x1234"/>
+      <service id="0x5678"/>
+      <service id="0x9ABC"/>
+    </partial_reception_descriptor>
   </CAT>
 </tsduck>
