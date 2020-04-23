@@ -37,8 +37,7 @@
         Update flag: 2 (reserved for future use)
         Update method: 3 (reserved for future use)
         Update priority: 1
-        Private data:
-        0000:  25 69 47 12                                %iG.
+        Private data (4 bytes): 25 69 47 12
       - Descriptor 6: UNT Scheduling (0x01, 1), 14 bytes
         Start time: 2021/12/04 10:45:23
         End time:   2022/01/12 01:45:47
@@ -55,16 +54,14 @@
         Period: 45 seconds
         Duration: 58 hours
         Estimated cycle time: 65 minutes
-        Private data:
-        0000:  45 89 63 12 47                             E.c.G
+        Private data (5 bytes): 45 89 63 12 47
       - Descriptor 8: UNT SSU Event Name (0x05, 5), 35 bytes
         Language: eng
         Event name: "Foo event"
         Event text: "Some foo description."
       - Descriptor 9: UNT SSU Location (0x03, 3), 5 bytes
         Data broadcast id: 0x1234 (unknown)
-        Private data:
-        0000:  85 23 69                                   .#i
+        Private data (3 bytes): 85 23 69
       - Descriptor 10: UNT SSU Location (0x03, 3), 4 bytes
         Data broadcast id: 0x000A (System Software Update service)
         Association tag: 0x9876 (39030)

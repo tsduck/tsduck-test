@@ -88,8 +88,7 @@
       Modulation system type: 0xAB (171)
       Modulation system id: 0x7894 (30868)
       Physical stream id: 0x4568 (17768)
-      Selector bytes:
-      0000:  12 34 56 78                                .4Vx
+      Selector bytes (4 bytes): 12 34 56 78
     - Descriptor 20: INT ISP Access Mode (0x14, 20), 1 bytes
       Access mode: 0x01 (dialup)
     - Descriptor 21: INT ISP Access Mode (0x14, 20), 1 bytes
@@ -184,12 +183,12 @@
   - Descriptor 22: AIT Transport Protocol (0x02, 2), 10 bytes
     Protocol id: 0x1234 (4660, unknown)
     Transport protocol label: 0x0A (10)
-    Selector: 7 bytes
-      0000:  45 63 21 47 89 52 01                       Ec!G.R.
+    Selector (7 bytes): 45 63 21 47 89 52 01
+    Extraneous 7 bytes:
+    0000:  45 63 21 47 89 52 01                             Ec!G.R.
   - Descriptor 23: AIT Transport Protocol (0x02, 2), 3 bytes
     Protocol id: 0x5678 (22136, unknown)
     Transport protocol label: 0x0B (11)
-    Selector: 0 bytes
   - Descriptor 24: AIT Application (0x00, 0), 3 bytes
     Service bound: 1, visibility: 1, priority: 20
   - Descriptor 25: AIT Application (0x00, 0), 17 bytes
@@ -234,8 +233,7 @@
       - 32 x 32 for broadcast pixels on 4:3 display
       - 24 x 32 for broadcast pixels on 16:9 display
       - 128 x 128 for square pixel display
-    Reserved bytes:
-      0000:  12 36 54 78 96 32                          .6Tx.2
+    Reserved bytes (6 bytes): 12 36 54 78 96 32
   - Descriptor 34: AIT Graphics Constraints (0x14, 20), 1 bytes
     Can run without visible UI: true
     Handles configuration changed: false
@@ -244,8 +242,7 @@
     Can run without visible UI: false
     Handles configuration changed: true
     Handles externally controlled video: false
-    Graphics configuration bytes:
-      01 23 45 67                                      .#Eg
+    Graphics configuration (4 bytes): 01 23 45 67
   - Descriptor 36: AIT Application Recording (0x06, 6), 4 bytes
     Scheduled recording: true
     Trick mode aware: false
@@ -266,8 +263,6 @@
     Component tag: 0x82 (130)
     Component tag: 0xAA (170)
     Component tag: 0xFE (254)
-    Private data:
-      0000:  05 69 87 41 56 32                          .i.AV2
-    Reserved bytes:
-      0000:  78 96 32 14 56                             x.2.V
+    Private data (6 bytes): 05 69 87 41 56 32
+    Reserved bytes (5 bytes): 78 96 32 14 56
 

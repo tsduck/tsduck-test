@@ -123,8 +123,7 @@
       Text: "Text string"
       Language: "eng"
       Language 2: "foo"
-      Additional information:
-      0000:  01 23 45 67 89                             .#Eg.
+      Additional information (5 bytes): 01 23 45 67 89
     - Descriptor 8: ATSC E-AC-3 Audio Stream (0xCC, 204), 3 bytes
       Mixinfo exists: false
       Full service: true
@@ -147,8 +146,7 @@
       Substream 1 language: "s01"
       Substream 2 language: "s02"
       Substream 3 language: "s03"
-      Additional information:
-      0000:  98 76 54 32 10                             .vT2.
+      Additional information (5 bytes): 98 76 54 32 10
     - Descriptor 10: ATSC Genre (0xAB, 171), 1 bytes
       Attribute count: 0
     - Descriptor 11: ATSC Genre (0xAB, 171), 4 bytes
@@ -157,17 +155,12 @@
        - Attribute: 0x7F (Western)
        - Attribute: 0xA3 (Rock & Roll)
     - Descriptor 12: ATSC Stuffing (0x80, 128), 0 bytes
-      Stuffing data, 0 bytes
     - Descriptor 13: ATSC Stuffing (0x80, 128), 5 bytes
-      Stuffing data, 5 bytes
-      0000:  01 23 45 67 89                             .#Eg.
+      Stuffing data (5 bytes): 01 23 45 67 89
     - Descriptor 14: ATSC Redistribution Control (0xAA, 170), 0 bytes
-      RC information, 0 bytes
     - Descriptor 15: ATSC Redistribution Control (0xAA, 170), 0 bytes
-      RC information, 0 bytes
     - Descriptor 16: ATSC Redistribution Control (0xAA, 170), 5 bytes
-      RC information, 5 bytes
-      0000:  98 76 54 32 10                             .vT2.
+      RC information (5 bytes): 98 76 54 32 10
     - Descriptor 17: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
       Number of services: 0
     - Descriptor 18: ATSC Time-Shifted Service (0xA2, 162), 11 bytes

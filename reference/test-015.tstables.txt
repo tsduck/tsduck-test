@@ -18,8 +18,7 @@
     - Descriptor 3: AAC (0x7C, 124), 8 bytes
       Profile and level: 0x21
       AAC type: 0x40 (HE-AAC audio description for the visually impaired)
-      Additional information:
-      0000:  01 23 45 67 89                             .#Eg.
+      Additional information (5 bytes): 01 23 45 67 89
     - Descriptor 4: DTS (0x7B, 123), 5 bytes
       Sample rate code: 48 kHz
       Bit rate code: 256 kb/s
@@ -36,8 +35,7 @@
       Surround mode: 5 / C+L+R+SL+SR
       LFE (Low Frequency Effect) audio channel: on
       Extended surround flag: discrete
-      Additional information:
-      0000:  78 96 54 12                                x.T.
+      Additional information (4 bytes): 78 96 54 12
     - Descriptor 6: Cable Delivery System (0x44, 68), 11 bytes
       Frequency: 312.0000 MHz
       Symbol rate: 27.4500 Msymbol/s
@@ -75,8 +73,7 @@
       Field parity: 0, line offset: 10
       Field parity: 1, line offset: 20
       Data service id: 0x03 (unknown)
-      Associated data:
-      01 23 45 67 89 AB CD EF                          .#Eg....
+      Associated data (8 bytes): 01 23 45 67 89 AB CD EF
     - Descriptor 16: Maximum Bitrate (0x0E, 14), 3 bytes
       Maximum bitrate: 0x00004268 (17000), 6,800,000 bits/second
     - Descriptor 17: Time Shifted Event (0x4F, 79), 4 bytes
@@ -102,8 +99,7 @@
     - Descriptor 24: Extension Descriptor (0x7F, 127), 10 bytes
       Extended descriptor: CP (0x02, 2)
       CP System Id: 0x5678 (unknown), CP PID: 7117 (0x1BCD)
-      Private CP data:
-      0000:  01 23 45 67 89                             .#Eg.
+      Private CP data (5 bytes): 01 23 45 67 89
     - Descriptor 25: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: CP Identifier (0x03, 3)
     - Descriptor 26: Extension Descriptor (0x7F, 127), 13 bytes
@@ -139,19 +135,15 @@
     - Descriptor 37: Extension Descriptor (0x7F, 127), 9 bytes
       Extended descriptor: AC-4 (0x15, 21)
       Dialog enhancement enabled: 0, channel mode: 0x01 (Stereo)
-      AC-4 TOC (in DSI):
-        0000:  12 35 65 32 23                             .5e2#
+      AC-4 TOC (in DSI) (5 bytes): 12 35 65 32 23
     - Descriptor 38: Extension Descriptor (0x7F, 127), 8 bytes
       Extended descriptor: AC-4 (0x15, 21)
-      Additional information:
-        0000:  78 96 23 12 45 46                          x.#.EF
+      Additional information (6 bytes): 78 96 23 12 45 46
     - Descriptor 39: Extension Descriptor (0x7F, 127), 15 bytes
       Extended descriptor: AC-4 (0x15, 21)
       Dialog enhancement enabled: 1, channel mode: 0x02 (Multi-channel)
-      AC-4 TOC (in DSI):
-        0000:  12 35 65 32 23                             .5e2#
-      Additional information:
-        0000:  78 96 23 12 45 46                          x.#.EF
+      AC-4 TOC (in DSI) (5 bytes): 12 35 65 32 23
+      Additional information (6 bytes): 78 96 23 12 45 46
     - Descriptor 40: Service Move (0x60, 96), 6 bytes
       New original network id: 0x1234 (4660)
       New transport stream id: 0x5678 (22136)
@@ -164,10 +156,8 @@
       Cell id: 0x5678 (22136)
       Cell id: 0x9ABC (39612)
     - Descriptor 43: Stuffing (0x42, 66), 0 bytes
-      Stuffing data, 0 bytes
     - Descriptor 44: Stuffing (0x42, 66), 5 bytes
-      Stuffing data, 5 bytes
-      0000:  01 23 45 67 89                             .#Eg.
+      Stuffing data (5 bytes): 01 23 45 67 89
     - Descriptor 45: AVC Timing and HRD (0x2A, 42), 2 bytes
       HRD management valid: true
       Fixed frame rate: false
@@ -265,16 +255,14 @@
       Max burst duration: 0x67 (103)
       Max average rate: 128 kbps
       Time slice FEC id: 0x09 (9)
-      Id selector bytes:
-      0000:  01 23 45 67 89                             .#Eg.
+      Id selector bytes (5 bytes): 01 23 45 67 89
     - Descriptor 66: ECM Repetition Rate (0x78, 120), 4 bytes
       CA System Id: 0x1234 (TV/Com)
       ECM repetition rate: 100 ms
     - Descriptor 67: ECM Repetition Rate (0x78, 120), 8 bytes
       CA System Id: 0x5678 (unknown)
       ECM repetition rate: 200 ms
-      Private data:
-      0000:  78 96 32 14                                x.2.
+      Private data (4 bytes): 78 96 32 14
     - Descriptor 68: Extension Descriptor (0x7F, 127), 7 bytes
       Extended descriptor: Service Relocated (0x0B, 11)
       Old original network id: 0x1234 (4660)
@@ -292,8 +280,7 @@
       Copyright identifier: 0x00001234
     - Descriptor 73: Copyright (0x0D, 13), 9 bytes
       Copyright identifier: 0x00006789
-      Additional copyright info:
-      0000:  78 96 32 14 52                             x.2.R
+      Additional copyright info (5 bytes): 78 96 32 14 52
     - Descriptor 74: IBP (0x12, 18), 2 bytes
       Closed GOP: no, identical GOP: yes, max GOP length: 0x00000018 (24)
     - Descriptor 75: SL (0x1E, 30), 2 bytes
@@ -302,27 +289,25 @@
       Carousel id: 0x12345678 (305419896)
     - Descriptor 77: DSM-CC Carousel Identifier (0x13, 19), 7 bytes
       Carousel id: 0x96325874 (2519881844)
-      Private data:
-      0000:  45 69 87                                   Ei.
+      Private data (3 bytes): 45 69 87
     - Descriptor 78: DSM-CC Association Tag (0x14, 20), 5 bytes
       Association tag: 0x5823 (22563), use: 0x7854 (30804)
     - Descriptor 79: DSM-CC Association Tag (0x14, 20), 13 bytes
       Association tag: 0x8523 (34083), use: 0x9654 (38484)
-      Selector bytes:
-      0000:  85 23 69                                   .#i
-      Private data:
-      0000:  12 25 74 89 63                             .%t.c
+      Selector bytes (3 bytes): 85 23 69
+      Private data (5 bytes): 12 25 74 89 63
     - Descriptor 80: DSM-CC Deferred Association Tags (0x15, 21), 5 bytes
       Transport stream id: 0x1234 (4660)
       Program number: 0x5678 (22136)
+      Private data (8 bytes): 15 10 06 96 54 12 36 85
     - Descriptor 81: DSM-CC Deferred Association Tags (0x15, 21), 16 bytes
       Association tag: 0x9654 (38484)
       Association tag: 0x1236 (4662)
       Association tag: 0x8546 (34118)
       Transport stream id: 0x7896 (30870)
       Program number: 0x7418 (29720)
-      Private data:
-      0000:  78 96 54 12 36                             x.T.6
+      Private data (13 bytes):
+        0000:  78 96 54 12 36 36 A6 0F 02 00 00 00 00           x.T.66.......
 
 * DIT (Discontinuity Information), TID 126 (0x7E), PID 200 (0x00C8)
   Short section, total size: 4 bytes
@@ -358,16 +343,14 @@
       Extended descriptor: CI Ancillary Data (0x14, 20)
     - Descriptor 2: Extension Descriptor (0x7F, 127), 6 bytes
       Extended descriptor: CI Ancillary Data (0x14, 20)
-      Ancillary data:
-      0000:  12 34 56 78 9A                             .4Vx.
+      Ancillary data (5 bytes): 12 34 56 78 9A
     - Descriptor 3: Extension Descriptor (0x7F, 127), 2 bytes
       Extended descriptor: DTS Neural (0x0F, 15)
       Config Id: 0x02 (2))
     - Descriptor 4: Extension Descriptor (0x7F, 127), 5 bytes
       Extended descriptor: DTS Neural (0x0F, 15)
       Config Id: 0x05 (5))
-      Additional info:
-      0000:  01 89 45                                   ..E
+      Additional info (3 bytes): 01 89 45
     - Descriptor 5: Extension Descriptor (0x7F, 127), 2 bytes
       Extended descriptor: Audio Preselection (0x19, 25)
     - Descriptor 6: Extension Descriptor (0x7F, 127), 19 bytes
@@ -389,8 +372,7 @@
         Multi stream info: 2 aux components
           Component tag: 0x01 (1)
           Component tag: 0x02 (2)
-        Future extension:
-          0000:  25 89 63 21 47                             %.c!G
+        Future extension (5 bytes): 25 89 63 21 47
     - Descriptor 7: Extension Descriptor (0x7F, 127), 2 bytes
       Extended descriptor: Protection Message (0x18, 24)
       Component count: 0
@@ -499,8 +481,7 @@
         Roll-off factor: 0.15
         Multiple input stream: no
       Timeslice number: 0xBC (188)
-      Reserved for future use: 5 bytes:
-      0000:  01 23 45 67 89                             .#Eg.
+      Reserved for future use (5 bytes): 01 23 45 67 89
     - Descriptor 19: Extension Descriptor (0x7F, 127), 42 bytes
       Extended descriptor: S2X Satellite Delivery System (0x17, 23)
       Receiver profiles: 0x0A, interactive services, professional services
@@ -580,8 +561,7 @@
       Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
     - Descriptor 28: Extension Descriptor (0x7F, 127), 7 bytes
       Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
-      Additional information:
-      0000:  01 23 45 67 89                             .#Eg.
+      Additional information (5 bytes): 01 23 45 67 89
     - Descriptor 29: Extension Descriptor (0x7F, 127), 24 bytes
       Extended descriptor: DTS-HD Audio Stream (0x0E, 14)
       Substream core:
@@ -615,8 +595,7 @@
           Construction: Core, XCH (0x0B)
           VBR: true, post-encode bitrate scaling: false
           Bit rate: 127 kb/s
-      Additional information:
-      0000:  78 94                                      x.
+      Additional information (2 bytes): 78 94
     - Descriptor 30: Extension Descriptor (0x7F, 127), 15 bytes
       Extended descriptor: URI Linkage (0x13, 19)
       URI linkage type: 0x01 (DVB-IPTV SD&S)
@@ -626,8 +605,7 @@
       Extended descriptor: URI Linkage (0x13, 19)
       URI linkage type: 0xAB (user defined)
       URI: http://foo/bar/
-      Private data:
-      0000:  12 34 56 78                                .4Vx
+      Private data (4 bytes): 12 34 56 78
     - Descriptor 32: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: Network Change Notify (0x07, 7)
     - Descriptor 33: Extension Descriptor (0x7F, 127), 35 bytes
@@ -665,8 +643,7 @@
     - Descriptor 39: Short Smoothing Buffer (0x61, 97), 6 bytes
       Smoothing buffer size: 0x2 (DVB-reserved)
       Smoothing buffer leak rate: 0x29 (17 Mbit/s)
-      DVB-reserved data:
-      0000:  01 23 45 67 89                             .#Eg.
+      DVB-reserved data (5 bytes): 01 23 45 67 89
     - Descriptor 40: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: Video Depth Range (0x10, 16)
     - Descriptor 41: Extension Descriptor (0x7F, 127), 18 bytes
@@ -677,8 +654,7 @@
         Video max disparity hint: 123, min: -123
       - Range type: 0x01 (1)
       - Range type: 0x02 (2)
-        Range selector bytes:
-        0000:  01 23 45                                   .#E
+        Range selector bytes (3 bytes): 01 23 45
     - Descriptor 42: Extension Descriptor (0x7F, 127), 4 bytes
       Extended descriptor: Target Region (0x09, 9)
       Country code: "foo"
@@ -722,8 +698,7 @@
       Coordinate system: 2 (Coordinates 1920x1080)
       Horizontal origin: 999, vertical: 456
       Icon type: "image/png"
-      Icon data: 8 bytes:
-      0000:  01 23 45 67 89 AB CD EF                    .#Eg....
+      Icon data (8 bytes): 01 23 45 67 89 AB CD EF
     - Descriptor 47: Extension Descriptor (0x7F, 127), 34 bytes
       Extended descriptor: Image Icon (0x00, 0)
       Descriptor number: 0, last: 7
@@ -736,8 +711,7 @@
       Extended descriptor: Image Icon (0x00, 0)
       Descriptor number: 3, last: 3
       Icon id: 6
-      Icon data: 5 bytes:
-      0000:  01 23 45 67 89                             .#Eg.
+      Icon data (5 bytes): 01 23 45 67 89
     - Descriptor 49: Announcement Support (0x6E, 110), 2 bytes
       Annoucement support indicator: 0x0000
     - Descriptor 50: Announcement Support (0x6E, 110), 11 bytes
@@ -852,8 +826,7 @@
       Transport profile: 0x01 (Complete profile)
     - Descriptor 70: Transport Profile (0x37, 55), 6 bytes
       Transport profile: 0x02 (Adaptive profile)
-      Private data:
-      0000:  01 02 03 04 05                             .....
+      Private data (5 bytes): 01 02 03 04 05
     - Descriptor 71: JPEG-2000 Video (0x32, 50), 27 bytes
       Profile and level: 0x0345 (837)
       Horizontal size: 0x00000800 (2048)
@@ -864,6 +837,5 @@
       Color specification: 0xAB (171)
       Still mode: false
       Interlaced video: true
-      Private data:
-      0000:  98 74 56                                   .tV
+      Private data (3 bytes): 98 74 56
 

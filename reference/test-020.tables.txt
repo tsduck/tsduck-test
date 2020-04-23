@@ -135,8 +135,7 @@
     Program information:
     - Descriptor 0: CA (0x09, 9), 8 bytes
       CA System Id: 0x0100 (Canal Plus), ECM PID: 123 (0x007B)
-      Private CA data:
-      0000:  01 23 45 67                                .#Eg
+      Private CA data (4 bytes): 01 23 45 67
     Elementary stream: type 0x1B (AVC video), PID: 110 (0x006E)
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 121 (0x0079)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
@@ -275,8 +274,8 @@
     Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 4005 (0x0FA5)
     - Descriptor 0: Data Broadcast Id (0x66, 102), 16 bytes
       Data broadcast id: 0x0140 (320, Canal+)
-      Data Broadcast selector:
-      07 1B 05 01 04 6E 61 6D 65 04 6D 65 73 73        .....name.mess
+      Data Broadcast selector (14 bytes):
+        0000:  07 1B 05 01 04 6E 61 6D 65 04 6D 65 73 73        .....name.mess
 
 * PMT, TID 2 (0x02), PID 700 (0x02BC)
   Version: 5, sections: 1, total size: 81 bytes
