@@ -1,11 +1,15 @@
 #!/bin/bash
-# ------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------
 # Perform the "standard" set of tests on a PSI/SI XML file.
-# Syntax: source "$COMMONDIR"/standard-si-test.sh input.xml [--atsc|--isdb]
-# ------------------------------------------------------------------------------
+# Syntax: source "$COMMONDIR"/standard-si-test.sh input.xml [std-and-charset-options]
+# -----------------------------------------------------------------------------------
 
 INFILE="$INDIR/$1"
 STDOPT=$2
+
+# With tspacketize, we need the charset options but not the standard options.
+PACKOPT=${STDOPT/--atsc/}
+PACKOPT=${PACKOPT/--isdb/}
 
 # ==== tstabcomp (compile)
 
@@ -37,7 +41,9 @@ test_text $SCRIPT.decompile.strict.log
 
 # ==== tspacketize
 
-$(tspath tspacketize) $(fpath "$INFILE") --pid 200 --output $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
+$(tspath tspacketize) $PACKOPT \
+    $(fpath "$INFILE") --pid 200 \
+    --output $(fpath "$OUTDIR/$SCRIPT.pack.ts") \
     >"$OUTDIR/$SCRIPT.pack.log" 2>&1
 
 test_bin $SCRIPT.pack.ts

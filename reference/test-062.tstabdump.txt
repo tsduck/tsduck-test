@@ -359,8 +359,14 @@
   - Descriptor 2: ISDB Partial Reception (0xFB, 251), 2 bytes
     Service id: 0x4980 (18816)
   - Descriptor 3: ISDB TS Information (0xCD, 205), 30 bytes
-    0000:  01 42 23 4E 23 48 23 4B 41 6D 39 67 21 26 3D 29  .B#N#H#KAm9g!&=)
-    0010:  45 44 0F 03 48 00 48 01 FF F0 AF 01 49 80        ED..H.H.....I.
+    Remote control key id: 0x01 (1)
+    TS name: "ＮＨＫ総合・秋田"
+    - Transmission type info: 0x0F (15)
+      Service id: 0x4800 (18432)
+      Service id: 0x4801 (18433)
+      Service id: 0xFFF0 (65520)
+    - Transmission type info: 0xAF (175)
+      Service id: 0x4980 (18816)
 
 * EIT p/f Actual, TID 78 (0x4E)
   Section: 0 (last: 1), version: 19, size: 242 bytes

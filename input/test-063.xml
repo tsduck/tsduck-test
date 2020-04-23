@@ -53,6 +53,20 @@
       <service id="0x9ABC"/>
     </partial_reception_descriptor>
 
+    <TS_information_descriptor remote_control_key_id="0xAB" ts_name="foo"/>
+
+    <TS_information_descriptor remote_control_key_id="0x12" ts_name="bar">
+      <transmission_type transmission_type_info="0xEF">
+        <service id="0x1234"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </transmission_type>
+      <transmission_type transmission_type_info="0x23"/>
+      <reserved_future_use>
+        CD EF 12 56
+      </reserved_future_use>
+    </TS_information_descriptor>
+
   </CAT>
 
 </tsduck>

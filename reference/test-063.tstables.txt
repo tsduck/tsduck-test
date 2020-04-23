@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 79 bytes
+  Version: 0, sections: 1, total size: 111 bytes
   - Section 0:
     - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x0004 (Secure Navi)
@@ -47,4 +47,16 @@
       Service id: 0x1234 (4660)
       Service id: 0x5678 (22136)
       Service id: 0x9ABC (39612)
+    - Descriptor 10: ISDB TS Information (0xCD, 205), 7 bytes
+      Remote control key id: 0xAB (171)
+      TS name: "foo"
+    - Descriptor 11: ISDB TS Information (0xCD, 205), 21 bytes
+      Remote control key id: 0x12 (18)
+      TS name: "bar"
+      - Transmission type info: 0xEF (239)
+        Service id: 0x1234 (4660)
+        Service id: 0x5678 (22136)
+        Service id: 0x9ABC (39612)
+      - Transmission type info: 0x23 (35)
+      Reserved for future use (4 bytes): CD EF 12 56
 
