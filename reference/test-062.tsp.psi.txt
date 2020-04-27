@@ -27,7 +27,10 @@
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0 (0x00)
     - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
-      0000:  47                                         G
+      Still picture: false
+      Sequence end code: true
+      Video encode format: 1 (1080i)
+      Reserve future use: 3
     Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 16 (0x10)
@@ -116,7 +119,10 @@
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0 (0x00)
     - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
-      0000:  47                                         G
+      Still picture: false
+      Sequence end code: true
+      Video encode format: 1 (1080i)
+      Reserve future use: 3
     Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 16 (0x10)
@@ -234,7 +240,9 @@
     - Descriptor 0: Network Name (0x40, 64), 6 bytes
       Name: "秋田０"
     - Descriptor 1: ISDB System Management (0xFE, 254), 2 bytes
-      0000:  03 01                                      ..
+      Broadcasting flag: 0 (Broadcasting)
+      Broadcasting identifier: 3 (Terrestrial television)
+      Additional broadcasting id: 0x01 (1)
     Transport Stream Id: 32464 (0x7ED0), Original Network Id: 32464 (0x7ED0)
     - Descriptor 0: Service List (0x41, 65), 12 bytes
       Service id: 18432 (0x4800), Type: 0x01 (Digital television service)
@@ -361,7 +369,10 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 7 bytes
-      0000:  01 FE 00 F0 01 48 00                       .....H.
+      Logo transmission type: 0x01 (CDT transmission scheme 1: direct download data identification)
+      Logo id: 0x000 (0)
+      Logo version: 0x001 (1)
+      Download data id: 0x4800 (18432)
     Service Id: 18433 (0x4801), EITs: yes, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 20 bytes
@@ -371,7 +382,8 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 3 bytes
-      0000:  02 FE 00                                   ...
+      Logo transmission type: 0x02 (CDT transmission scheme 2: indirectly with download data identification)
+      Logo id: 0x000 (0)
     Service Id: 18816 (0x4980), EITs: no, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 20 bytes
@@ -381,7 +393,8 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x8 (8)
     - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 10 bytes
-      0000:  03 0E 4E 48 4B 0F 21 5D 0E 47              ..NHK.!].G
+      Logo transmission type: 0x03 (Simple logo system)
+      Logo characters: "NHK－G"
 
 * CAT, TID 1 (0x01), PID 1 (0x0001)
   Version: 0, sections: 1, total size: 19 bytes

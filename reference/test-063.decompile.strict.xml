@@ -43,5 +43,21 @@
         CD EF 12 56
       </reserved_future_use>
     </TS_information_descriptor>
+    <logo_transmission_descriptor logo_transmission_type="0x01" logo_id="0x0002" logo_version="0x0ABC" download_data_id="0x1234"/>
+    <logo_transmission_descriptor logo_transmission_type="0x02" logo_id="0x0123"/>
+    <logo_transmission_descriptor logo_transmission_type="0x03" logo_char="log text"/>
+    <logo_transmission_descriptor logo_transmission_type="0xDE">
+      <reserved_future_use>
+        12 34 56 78
+      </reserved_future_use>
+    </logo_transmission_descriptor>
+    <video_decode_control_descriptor still_picture="true" sequence_end_code="false" video_encode_format="2"/>
+    <video_decode_control_descriptor still_picture="false" sequence_end_code="true" video_encode_format="3" reserved_future_use="2"/>
+    <system_management_descriptor broadcasting_flag="0" broadcasting_identifier="0x01" additional_broadcasting_identification="0x23"/>
+    <system_management_descriptor broadcasting_flag="1" broadcasting_identifier="0x02" additional_broadcasting_identification="0xAB">
+      <additional_identification_info>
+        98 76 54
+      </additional_identification_info>
+    </system_management_descriptor>
   </CAT>
 </tsduck>

@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 0, size: 111 bytes
+  Section: 0 (last: 0), version: 0, size: 162 bytes
   - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
     CA System Id: 0x0004 (Secure Navi)
     Transmission type: 7 (Broadcast route)
@@ -58,4 +58,37 @@
       Service id: 0x9ABC (39612)
     - Transmission type info: 0x23 (35)
     Reserved for future use (4 bytes): CD EF 12 56
+  - Descriptor 12: ISDB Logo Transmission (0xCF, 207), 7 bytes
+    Logo transmission type: 0x01 (CDT transmission scheme 1: direct download data identification)
+    Logo id: 0x002 (2)
+    Logo version: 0xABC (2748)
+    Download data id: 0x1234 (4660)
+  - Descriptor 13: ISDB Logo Transmission (0xCF, 207), 3 bytes
+    Logo transmission type: 0x02 (CDT transmission scheme 2: indirectly with download data identification)
+    Logo id: 0x123 (291)
+  - Descriptor 14: ISDB Logo Transmission (0xCF, 207), 11 bytes
+    Logo transmission type: 0x03 (Simple logo system)
+    Logo characters: "log text"
+  - Descriptor 15: ISDB Logo Transmission (0xCF, 207), 5 bytes
+    Logo transmission type: 0xDE (unknown)
+    Reserved for future use (4 bytes): 12 34 56 78
+  - Descriptor 16: ISDB Video Decode Control (0xC8, 200), 1 bytes
+    Still picture: true
+    Sequence end code: false
+    Video encode format: 2 (720p)
+    Reserve future use: 3
+  - Descriptor 17: ISDB Video Decode Control (0xC8, 200), 1 bytes
+    Still picture: false
+    Sequence end code: true
+    Video encode format: 3 (480p)
+    Reserve future use: 2
+  - Descriptor 18: ISDB System Management (0xFE, 254), 2 bytes
+    Broadcasting flag: 0 (Broadcasting)
+    Broadcasting identifier: 1 (Satellite using 27 MHz bandwidth in 12.2 to 12.75 GHz band)
+    Additional broadcasting id: 0x23 (35)
+  - Descriptor 19: ISDB System Management (0xFE, 254), 5 bytes
+    Broadcasting flag: 1 (Non-broadcasting)
+    Broadcasting identifier: 2 (Satellite using 34.5 MHz bandwidth in 11.7 to 12.2 GHz band)
+    Additional broadcasting id: 0xAB (171)
+    Additional identification info (3 bytes): 98 76 54
 

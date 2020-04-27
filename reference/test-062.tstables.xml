@@ -14,9 +14,7 @@
     <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
     <component elementary_PID="0x0100" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x00"/>
-      <generic_descriptor tag="0xC8">
-        47
-      </generic_descriptor>
+      <video_decode_control_descriptor still_picture="false" sequence_end_code="true" video_encode_format="1"/>
     </component>
     <component elementary_PID="0x0110" stream_type="0x0F">
       <stream_identifier_descriptor component_tag="0x10"/>
@@ -105,9 +103,7 @@
     <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
     <component elementary_PID="0x0100" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x00"/>
-      <generic_descriptor tag="0xC8">
-        47
-      </generic_descriptor>
+      <video_decode_control_descriptor still_picture="false" sequence_end_code="true" video_encode_format="1"/>
     </component>
     <component elementary_PID="0x0110" stream_type="0x0F">
       <stream_identifier_descriptor component_tag="0x10"/>
@@ -311,9 +307,7 @@
   <NIT version="13" current="true" network_id="0x7ED0" actual="true">
     <!-- PID 0x0010 (16), first TS packet: 4,240, last: 4,240 -->
     <network_name_descriptor network_name="秋田０"/>
-    <generic_descriptor tag="0xFE">
-      03 01
-    </generic_descriptor>
+    <system_management_descriptor broadcasting_flag="0" broadcasting_identifier="0x03" additional_broadcasting_identification="0x01"/>
     <transport_stream transport_stream_id="0x7ED0" original_network_id="0x7ED0" preferred_section="0">
       <service_list_descriptor>
         <service service_id="0x4800" service_type="0x01"/>
@@ -470,23 +464,17 @@
     <service service_id="0x4800" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="undefined">
       <service_descriptor service_type="0x01" service_provider_name="" service_name="NHK総合1・秋田"/>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xCF">
-        01 FE 00 F0 01 48 00
-      </generic_descriptor>
+      <logo_transmission_descriptor logo_transmission_type="0x01" logo_id="0x0000" logo_version="0x0001" download_data_id="0x4800"/>
     </service>
     <service service_id="0x4801" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="undefined">
       <service_descriptor service_type="0x01" service_provider_name="" service_name="NHK総合2・秋田"/>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xCF">
-        02 FE 00
-      </generic_descriptor>
+      <logo_transmission_descriptor logo_transmission_type="0x02" logo_id="0x0000"/>
     </service>
     <service service_id="0x4980" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="undefined">
       <service_descriptor service_type="0xC0" service_provider_name="" service_name="NHK携帯G・秋田"/>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="8"/>
-      <generic_descriptor tag="0xCF">
-        03 0E 4E 48 4B 0F 21 5D 0E 47
-      </generic_descriptor>
+      <logo_transmission_descriptor logo_transmission_type="0x03" logo_char="NHK－G"/>
     </service>
   </SDT>
   <CAT version="0" current="true">
