@@ -59,5 +59,12 @@
         98 76 54
       </additional_identification_info>
     </system_management_descriptor>
+    <broadcaster_name_descriptor name="test name"/>
+    <content_availability_descriptor copy_restriction_mode="true" image_constraint_token="false" retention_mode="true" retention_state="1" encryption_mode="false"/>
+    <content_availability_descriptor copy_restriction_mode="false" image_constraint_token="true" retention_mode="false" retention_state="2" encryption_mode="true">
+      <reserved_future_use>
+        01 23 56 78
+      </reserved_future_use>
+    </content_availability_descriptor>
   </CAT>
 </tsduck>

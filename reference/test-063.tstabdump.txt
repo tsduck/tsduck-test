@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 0, size: 162 bytes
+  Section: 0 (last: 0), version: 0, size: 185 bytes
   - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
     CA System Id: 0x0004 (Secure Navi)
     Transmission type: 7 (Broadcast route)
@@ -91,4 +91,19 @@
     Broadcasting identifier: 2 (Satellite using 34.5 MHz bandwidth in 11.7 to 12.2 GHz band)
     Additional broadcasting id: 0xAB (171)
     Additional identification info (3 bytes): 98 76 54
+  - Descriptor 20: ISDB Broadcaster Name (0xD8, 216), 11 bytes
+    Broadcaster name: "test name"
+  - Descriptor 21: ISDB Content Availability (0xDE, 222), 1 bytes
+    Copy restriction mode: true
+    Image constraint toke: false
+    Retention mode: true
+    Retention state: 1 (1 week)
+    Encryption mode: false
+  - Descriptor 22: ISDB Content Availability (0xDE, 222), 5 bytes
+    Copy restriction mode: false
+    Image constraint toke: true
+    Retention mode: false
+    Retention state: 2 (2 days)
+    Encryption mode: true
+    Reserved future use (4 bytes): 01 23 56 78
 
