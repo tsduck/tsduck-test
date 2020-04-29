@@ -241,7 +241,7 @@
     Segment last section: 1 (0x01)
     Last Table Id: 78 (0x4E), EIT p/f Actual
     Event Id: 3805 (0x0EDD)
-    Start UTC: 2020/04/05 19:00:00
+    Start JST: 2020/04/05 19:00:00
     Duration: 00:30:00
     Running status: undefined
     CA mode: free
@@ -255,7 +255,7 @@
       "出演者" : "【キャスター】青井実，【サブキャスター】池田伸子，伊藤海彦，【気象キャスター】中村美公"
       Text: ""
     - Descriptor 2: Component (0x50, 80), 6 bytes
-      Content/type: 0x01B3 (MPEG-2 video)
+      Content/type: 0x01B3 (Video 1080i(1125i), 16:9 aspect ratio, without pan vectors)
       Component tag: 0 (0x00)
       Language: jpn
     - Descriptor 3: Content (0x54, 84), 6 bytes
@@ -266,8 +266,17 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 5: ISDB Audio Component (0xC4, 196), 23 bytes
-      0000:  F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C  ......jpnengF|
-      000E:  4B 5C 38 6C 0D 31 51 38 6C                 K\8l.1Q8l
+      Content type: 0x00000002 (2)
+      Component type: 0x02 (1/0 + 1/0 mode (dual monaural channel))
+      Component tag: 0x10 (16)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: true
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Language code 2: "eng"
+      Text: "日本語英語"
     - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
       0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
     - Descriptor 7: ISDB Event Group (0xD6, 214), 9 bytes
@@ -279,7 +288,7 @@
     Segment last section: 1 (0x01)
     Last Table Id: 78 (0x4E), EIT p/f Actual
     Event Id: 3806 (0x0EDE)
-    Start UTC: 2020/04/05 19:30:00
+    Start JST: 2020/04/05 19:30:00
     Duration: 00:30:00
     Running status: undefined
     CA mode: free
@@ -303,7 +312,7 @@
       "出演者" : "【語り】和久田麻由子，龍田直樹，豊嶋真千子，山田孝之，水瀬いのり"
       Text: ""
     - Descriptor 4: Component (0x50, 80), 6 bytes
-      Content/type: 0x01B3 (MPEG-2 video)
+      Content/type: 0x01B3 (Video 1080i(1125i), 16:9 aspect ratio, without pan vectors)
       Component tag: 0 (0x00)
       Language: jpn
     - Descriptor 5: Content (0x54, 84), 4 bytes
@@ -313,11 +322,27 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 7: ISDB Audio Component (0xC4, 196), 15 bytes
-      0000:  F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38  .....ojpnF|K\8
-      000E:  6C                                         l
+      Content type: 0x00000002 (2)
+      Component type: 0x03 (2/0 mode (stereo))
+      Component tag: 0x10 (16)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: true
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Text: "日本語"
     - Descriptor 8: ISDB Audio Component (0xC4, 196), 23 bytes
-      0000:  F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38  ...../jpnF|K\8
-      000E:  6C 21 4A 32 72 40 62 21 4B                 l!J2r@b!K
+      Content type: 0x00000002 (2)
+      Component type: 0x03 (2/0 mode (stereo))
+      Component tag: 0x11 (17)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: false
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Text: "日本語（解説）"
     - Descriptor 9: ISDB Data Content (0xC7, 199), 14 bytes
       0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
     - Descriptor 10: ISDB Event Group (0xD6, 214), 9 bytes
@@ -390,7 +415,7 @@
     Segment last section: 1 (0x01)
     Last Table Id: 78 (0x4E), EIT p/f Actual
     Event Id: 3805 (0x0EDD)
-    Start UTC: 2020/04/05 19:00:00
+    Start JST: 2020/04/05 19:00:00
     Duration: 00:30:00
     Running status: undefined
     CA mode: free
@@ -399,7 +424,7 @@
       Event name: "NHKニュース7🈔🈑"
       Description: "夜7時、「一歩先へ、一歩深く」　今、このニュースを届けたい　【キャスター】青井実，【サブキャスター】池田伸子，伊藤海彦，【気象キャスター】中村美公"
     - Descriptor 1: Component (0x50, 80), 6 bytes
-      Content/type: 0x01B3 (MPEG-2 video)
+      Content/type: 0x01B3 (Video 1080i(1125i), 16:9 aspect ratio, without pan vectors)
       Component tag: 0 (0x00)
       Language: jpn
     - Descriptor 2: Content (0x54, 84), 6 bytes
@@ -410,8 +435,17 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 4: ISDB Audio Component (0xC4, 196), 23 bytes
-      0000:  F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C  ......jpnengF|
-      000E:  4B 5C 38 6C 0D 31 51 38 6C                 K\8l.1Q8l
+      Content type: 0x00000002 (2)
+      Component type: 0x02 (1/0 + 1/0 mode (dual monaural channel))
+      Component tag: 0x10 (16)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: true
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Language code 2: "eng"
+      Text: "日本語英語"
     - Descriptor 5: ISDB Data Content (0xC7, 199), 14 bytes
       0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
     - Descriptor 6: ISDB Event Group (0xD6, 214), 5 bytes
@@ -423,7 +457,7 @@
     Segment last section: 1 (0x01)
     Last Table Id: 78 (0x4E), EIT p/f Actual
     Event Id: 3806 (0x0EDE)
-    Start UTC: 2020/04/05 19:30:00
+    Start JST: 2020/04/05 19:30:00
     Duration: 00:30:00
     Running status: undefined
     CA mode: free
@@ -432,7 +466,7 @@
       Event name: "ダーウィンが来た！「波乱のライオン学園に潜入！百獣の王を養成！！」🈖🈑"
       Description: "成長まっただ中のライオンの子どもたちが、群れの中で先生役の大人から狩りの技や子育て術を学ぶ。不真面目な生徒は退学処分に！？学園ドラマ顔負けの波乱の日々に密着！"
     - Descriptor 1: Component (0x50, 80), 6 bytes
-      Content/type: 0x01B3 (MPEG-2 video)
+      Content/type: 0x01B3 (Video 1080i(1125i), 16:9 aspect ratio, without pan vectors)
       Component tag: 0 (0x00)
       Language: jpn
     - Descriptor 2: Content (0x54, 84), 4 bytes
@@ -442,11 +476,27 @@
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
     - Descriptor 4: ISDB Audio Component (0xC4, 196), 15 bytes
-      0000:  F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38  .....ojpnF|K\8
-      000E:  6C                                         l
+      Content type: 0x00000002 (2)
+      Component type: 0x03 (2/0 mode (stereo))
+      Component tag: 0x10 (16)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: true
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Text: "日本語"
     - Descriptor 5: ISDB Audio Component (0xC4, 196), 23 bytes
-      0000:  F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38  ...../jpnF|K\8
-      000E:  6C 21 4A 32 72 40 62 21 4B                 l!J2r@b!K
+      Content type: 0x00000002 (2)
+      Component type: 0x03 (2/0 mode (stereo))
+      Component tag: 0x11 (17)
+      Stream type: 0x0F (MPEG-2 AAC Audio)
+      Simulcast group: 0xFF (255, none)
+      Main component: false
+      Quality indicator: 0x2 (Mode 2)
+      Sampling rate: 0x7 (48 kHz)
+      Language code: "jpn"
+      Text: "日本語（解説）"
     - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
       0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
     - Descriptor 7: ISDB Event Group (0xD6, 214), 5 bytes

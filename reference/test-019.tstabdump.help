@@ -110,8 +110,10 @@ Options:
       ISDB-specific table.
 
   --japan
-      A synonym for '--isdb --default-charset ARIB-STD-B24'. This is a handy
-      shortcut when working on Japanese transport streams.
+      A synonym for '--isdb --default-charset ARIB-STD-B24'. This option also
+      activates some specificities for Japan such as the use of JST time
+      instead of UTC. This is a handy shortcut when working on Japanese
+      transport streams.
 
   --local-address address
       Specify the IP address of the local interface on which to listen. It can

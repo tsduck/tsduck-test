@@ -246,10 +246,7 @@
         <content content_nibble_level_1="1" content_nibble_level_2="0" user_byte="0xFF"/>
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xC4">
-        F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C 4B 5C
-        38 6C 0D 31 51 38 6C
-      </generic_descriptor>
+      <audio_component_descriptor stream_content="0x02" component_type="0x02" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" ISO_639_language_code_2="eng" text="日本語英語"/>
       <generic_descriptor tag="0xC7">
         00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
       </generic_descriptor>
@@ -289,13 +286,8 @@
         <content content_nibble_level_1="10" content_nibble_level_2="0" user_byte="0xFF"/>
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xC4">
-        F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38 6C
-      </generic_descriptor>
-      <generic_descriptor tag="0xC4">
-        F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38 6C 21
-        4A 32 72 40 62 21 4B
-      </generic_descriptor>
+      <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語"/>
+      <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x11" stream_type="0x0F" main_component="false" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語（解説）"/>
       <generic_descriptor tag="0xC7">
         00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
       </generic_descriptor>
@@ -371,10 +363,7 @@
         <content content_nibble_level_1="1" content_nibble_level_2="0" user_byte="0xFF"/>
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xC4">
-        F2 02 10 0F FF EF 6A 70 6E 65 6E 67 46 7C 4B 5C
-        38 6C 0D 31 51 38 6C
-      </generic_descriptor>
+      <audio_component_descriptor stream_content="0x02" component_type="0x02" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" ISO_639_language_code_2="eng" text="日本語英語"/>
       <generic_descriptor tag="0xC7">
         00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
       </generic_descriptor>
@@ -393,13 +382,8 @@
         <content content_nibble_level_1="10" content_nibble_level_2="0" user_byte="0xFF"/>
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
-      <generic_descriptor tag="0xC4">
-        F2 03 10 0F FF 6F 6A 70 6E 46 7C 4B 5C 38 6C
-      </generic_descriptor>
-      <generic_descriptor tag="0xC4">
-        F2 03 11 0F FF 2F 6A 70 6E 46 7C 4B 5C 38 6C 21
-        4A 32 72 40 62 21 4B
-      </generic_descriptor>
+      <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語"/>
+      <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x11" stream_type="0x0F" main_component="false" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語（解説）"/>
       <generic_descriptor tag="0xC7">
         00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
       </generic_descriptor>

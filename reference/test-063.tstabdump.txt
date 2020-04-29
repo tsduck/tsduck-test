@@ -107,3 +107,52 @@
     Encryption mode: true
     Reserved future use (4 bytes): 01 23 56 78
 
+* BIT (ISDB), TID 196 (0xC4)
+  Section: 0 (last: 0), version: 0, size: 14 bytes
+  Original network id: 0x0123 (291)
+  Broadcast view property: false
+
+* BIT (ISDB), TID 196 (0xC4)
+  Section: 0 (last: 0), version: 23, size: 40 bytes
+  Original network id: 0x8765 (34661)
+  Broadcast view property: true
+  Common descriptors:
+  - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0x1234 (unknown)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0x5678 (unknown)
+  Broadcaster id: 0xAB (171)
+  Broadcaster id: 0xCD (205)
+  - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0x9ABC (unknown)
+  - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0xDEF1 (unknown)
+  - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
+    Data component id: 0x2345 (unknown)
+
+* CAT, TID 1 (0x01)
+  Section: 0 (last: 0), version: 2, size: 50 bytes
+  - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
+    Content type: 0x00000002 (2)
+    Component type: 0x08 (3/2 mode)
+    Component tag: 0x12 (18)
+    Stream type: 0x04 (MPEG-2 Audio)
+    Simulcast group: 0xFF (255, none)
+    Main component: true
+    Quality indicator: 0x1 (Mode 1)
+    Sampling rate: 0x2 (22.05 kHz)
+    Language code: "jpn"
+    Text: ""
+  - Descriptor 1: ISDB Audio Component (0xC4, 196), 25 bytes
+    Content type: 0x0000000E (14)
+    Component type: 0x40 (Commentary for visually disabled persons)
+    Component tag: 0x34 (52)
+    Stream type: 0x11 (MPEG-4 AAC Audio)
+    Simulcast group: 0x45 (69)
+    Main component: false
+    Quality indicator: 0x3 (Mode 3)
+    Sampling rate: 0x6 (44.1k Hz)
+    Language code: "foo"
+    Language code 2: "bar"
+    Text: "sample text"
+

@@ -67,4 +67,19 @@
       </reserved_future_use>
     </content_availability_descriptor>
   </CAT>
+  <BIT version="0" current="true" original_network_id="0x0123" broadcast_view_propriety="false"/>
+  <BIT version="23" current="true" original_network_id="0x8765" broadcast_view_propriety="true">
+    <data_component_descriptor data_component_id="0x1234"/>
+    <data_component_descriptor data_component_id="0x5678"/>
+    <broadcaster broadcaster_id="0xAB"/>
+    <broadcaster broadcaster_id="0xCD">
+      <data_component_descriptor data_component_id="0x9ABC"/>
+      <data_component_descriptor data_component_id="0xDEF1"/>
+      <data_component_descriptor data_component_id="0x2345"/>
+    </broadcaster>
+  </BIT>
+  <CAT version="2" current="true">
+    <audio_component_descriptor stream_content="0x02" component_type="0x08" component_tag="0x12" stream_type="0x04" main_component="true" quality_indicator="1" sampling_rate="2" ISO_639_language_code="jpn"/>
+    <audio_component_descriptor stream_content="0x0E" component_type="0x40" component_tag="0x34" stream_type="0x11" simulcast_group_tag="0x45" main_component="false" quality_indicator="3" sampling_rate="6" ISO_639_language_code="foo" ISO_639_language_code_2="bar" text="sample text"/>
+  </CAT>
 </tsduck>
