@@ -290,6 +290,48 @@
       - Transmission type info: 0xAF (175)
         Service id: 0x4980 (18816)
 
+* BIT (ISDB), TID 196 (0xC4), PID 36 (0x0024)
+  Version: 3, sections: 1, total size: 97 bytes
+  - Section 0:
+    Original network id: 0x7ED0 (32464)
+    Broadcast view property: true
+    Common descriptors:
+    - Descriptor 0: ISDB SI Parameter (0xD7, 215), 34 bytes
+      Parameter version: 0xFF (255)
+      Update time: 2003/01/01
+      - Table id: 0x40 (NIT Actual)
+        Table description (1 bytes): 01
+      - Table id: 0xC4 (BIT (ISDB))
+        Table description (1 bytes): 01
+      - Table id: 0x42 (SDT Actual)
+        Table description (1 bytes): 02
+      - Table id: 0x4E (EIT p/f Actual)
+        Table description (4 bytes): 01 01 01 22
+      - Table id: 0x50 (EIT schedule Actual)
+        Table description (14 bytes):
+          0000:  4F 08 06 0E 03 03 13 10 CF 02 06 0D 00 03        O.............
+    Broadcaster id: 0xFF (255)
+    - Descriptor 0: ISDB Extended Broadcaster (0xCE, 206), 9 bytes
+      Broadcaster type: 0x1 (Digital terrestrial television broadcast)
+      Terrestrial broadcaster id: 0x7ED1 (32465)
+      Number of affiliations: 2, number of broadcaster ids: 1
+      - Affiliation id: 0x00 (0)
+      - Affiliation id: 0x01 (1)
+      - Original network id: 0x0004 (4)
+        Broadcaster id: 0x01 (1)
+    - Descriptor 1: ISDB SI Parameter (0xD7, 215), 31 bytes
+      Parameter version: 0xFF (255)
+      Update time: 2003/01/01
+      - Table id: 0x4E (EIT p/f Actual)
+        Table description (4 bytes): FF 00 03 0A
+      - Table id: 0x58 (EIT schedule Actual)
+        Table description (12 bytes):
+          0000:  7F 08 06 0D 03 20 DF 02 06 0D 00 20              ..... .....
+      - Table id: 0xC8 (TVCT (ATSC))
+        Table description (2 bytes): 06 00
+      - Table id: 0xC3 (SDTT (ISDB))
+        Table description (2 bytes): 01 80
+
 * PMT, TID 2 (0x02), PID 7408 (0x1CF0)
   Version: 0, sections: 1, total size: 160 bytes
   - Section 0:

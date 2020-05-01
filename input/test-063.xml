@@ -166,6 +166,50 @@
         ISO_639_language_code_2="bar"
         text="sample text"/>
 
+    <SI_parameter_descriptor parameter_version="0x23" update_time="2020-05-01"/>
+
+    <SI_parameter_descriptor parameter_version="0xFA" update_time="2023-12-07">
+      <table id="0x00"/>
+      <table id="0x02">
+        01
+      </table>
+      <table id="0x42">
+        2345
+      </table>
+      <table id="0xC4">
+        6789 ABCD
+      </table>
+    </SI_parameter_descriptor>
+
+    <extended_broadcaster_descriptor broadcaster_type="9"/>
+
+    <extended_broadcaster_descriptor broadcaster_type="12">
+      <private_data>
+        0147
+      </private_data>
+    </extended_broadcaster_descriptor>
+
+    <extended_broadcaster_descriptor
+        broadcaster_type="1"
+        terrestrial_broadcaster_id="0x5678">
+      <affiliation id="0x12"/>
+      <affiliation id="0x34"/>
+      <affiliation id="0x56"/>
+      <broadcaster original_network_id="0x789A" broadcaster_id="0xBC"/>
+      <broadcaster original_network_id="0xDEF1" broadcaster_id="0x23"/>
+      <private_data>
+        78965412
+      </private_data>
+    </extended_broadcaster_descriptor>
+
+    <extended_broadcaster_descriptor
+        broadcaster_type="2"
+        terrestrial_broadcaster_id="0x3456">
+      <affiliation id="0x78"/>
+      <affiliation id="0x9A"/>
+      <broadcaster original_network_id="0xBCDE" broadcaster_id="0xF0"/>
+    </extended_broadcaster_descriptor>
+
   </CAT>
 
 </tsduck>

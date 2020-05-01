@@ -134,7 +134,7 @@
       Data component id: 0x2345 (unknown)
 
 * CAT, TID 1 (0x01), PID 200 (0x00C8)
-  Version: 2, sections: 1, total size: 50 bytes
+  Version: 2, sections: 1, total size: 113 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
       Content type: 0x00000002 (2)
@@ -159,4 +159,42 @@
       Language code: "foo"
       Language code 2: "bar"
       Text: "sample text"
+    - Descriptor 2: ISDB SI Parameter (0xD7, 215), 3 bytes
+      Parameter version: 0x23 (35)
+      Update time: 2020/05/01
+    - Descriptor 3: ISDB SI Parameter (0xD7, 215), 18 bytes
+      Parameter version: 0xFA (250)
+      Update time: 2023/12/07
+      - Table id: 0x00 (PAT)
+      - Table id: 0x02 (PMT)
+        Table description (1 bytes): 01
+      - Table id: 0x42 (SDT Actual)
+        Table description (2 bytes): 23 45
+      - Table id: 0xC4 (BIT (ISDB))
+        Table description (4 bytes): 67 89 AB CD
+    - Descriptor 4: ISDB Extended Broadcaster (0xCE, 206), 1 bytes
+      Broadcaster type: 0x9 (unknown)
+    - Descriptor 5: ISDB Extended Broadcaster (0xCE, 206), 3 bytes
+      Broadcaster type: 0xC (unknown)
+      Reserve future use (2 bytes): 01 47
+    - Descriptor 6: ISDB Extended Broadcaster (0xCE, 206), 17 bytes
+      Broadcaster type: 0x1 (Digital terrestrial television broadcast)
+      Terrestrial broadcaster id: 0x5678 (22136)
+      Number of affiliations: 3, number of broadcaster ids: 2
+      - Affiliation id: 0x12 (18)
+      - Affiliation id: 0x34 (52)
+      - Affiliation id: 0x56 (86)
+      - Original network id: 0x789A (30874)
+        Broadcaster id: 0xBC (188)
+      - Original network id: 0xDEF1 (57073)
+        Broadcaster id: 0x23 (35)
+      Private data (4 bytes): 78 96 54 12
+    - Descriptor 7: ISDB Extended Broadcaster (0xCE, 206), 9 bytes
+      Broadcaster type: 0x2 (Digital terrestrial sound broadcast)
+      Terrestrial sound broadcaster id: 0x3456 (13398)
+      Number of affiliations: 2, number of broadcaster ids: 1
+      - Sound broadcast affiliation id: 0x78 (120)
+      - Sound broadcast affiliation id: 0x9A (154)
+      - Original network id: 0xBCDE (48350)
+        Broadcaster id: 0xF0 (240)
 
