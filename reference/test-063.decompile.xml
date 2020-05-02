@@ -78,6 +78,17 @@
       <data_component_descriptor data_component_id="0x2345"/>
     </broadcaster>
   </BIT>
+  <LDT version="1" current="true" original_service_id="0x1234" transport_stream_id="0x5678" original_network_id="0x9ABC">
+    <description description_id="0xABCD">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </description>
+    <description description_id="0xDEF1">
+      <data_component_descriptor data_component_id="0x2345"/>
+      <data_component_descriptor data_component_id="0x6789"/>
+    </description>
+  </LDT>
   <CAT version="2" current="true">
     <audio_component_descriptor stream_content="0x02" component_type="0x08" component_tag="0x12" stream_type="0x04" main_component="true" quality_indicator="1" sampling_rate="2" ISO_639_language_code="jpn"/>
     <audio_component_descriptor stream_content="0x0E" component_type="0x40" component_tag="0x34" stream_type="0x11" simulcast_group_tag="0x45" main_component="false" quality_indicator="3" sampling_rate="6" ISO_639_language_code="foo" ISO_639_language_code_2="bar" text="sample text"/>

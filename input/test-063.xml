@@ -143,6 +143,21 @@
     </broadcaster>
   </BIT>
 
+  <LDT version="1"
+       original_service_id="0x1234"
+       transport_stream_id="0x5678"
+       original_network_id="0x9ABC">
+    <description description_id="0xABCD">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </description>
+    <description description_id="0xDEF1">
+      <data_component_descriptor data_component_id="0x2345"/>
+      <data_component_descriptor data_component_id="0x6789"/>
+    </description>
+  </LDT>
+
   <CAT version="2">
 
     <audio_component_descriptor
