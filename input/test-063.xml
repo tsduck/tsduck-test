@@ -225,6 +225,39 @@
       <broadcaster original_network_id="0xBCDE" broadcaster_id="0xF0"/>
     </extended_broadcaster_descriptor>
 
+    <CA_EMM_TS_descriptor
+        CA_system_id="0x1234"
+        transport_stream_id="0x5678"
+        original_network_id="0x9ABC"
+        power_supply_period="0xDE"/>
+
+    <conditional_playback_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+
+    <conditional_playback_descriptor CA_system_id="0x5678" CA_PID="0x0987">
+      <private_data>
+        741258
+      </private_data>
+    </conditional_playback_descriptor>
+
+    <CA_service_descriptor CA_system_id="0xFEDC" ca_broadcaster_group_id="0x89" message_control="20"/>
+
+    <CA_service_descriptor CA_system_id="0x1234" ca_broadcaster_group_id="0xDC" message_control="15">
+      <service id="0x9876"/>
+      <service id="0x6543"/>
+      <service id="0x21FE"/>
+    </CA_service_descriptor>
+
+    <CA_contract_info_descriptor CA_system_id="0x5678" CA_unit_id="12"/>
+
+    <CA_contract_info_descriptor CA_system_id="0x3456" CA_unit_id="7" fee_name="Test fee">
+      <component tag="0x12"/>
+      <component tag="0x34"/>
+      <component tag="0x56"/>
+      <contract_verification_info>
+        753951
+      </contract_verification_info>
+    </CA_contract_info_descriptor>
+
   </CAT>
 
 </tsduck>

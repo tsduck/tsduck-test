@@ -149,7 +149,7 @@
     Data component id: 0x6789 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 113 bytes
+  Section: 0 (last: 0), version: 2, size: 185 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x00000002 (2)
     Component type: 0x08 (3/2 mode)
@@ -211,4 +211,39 @@
     - Sound broadcast affiliation id: 0x9A (154)
     - Original network id: 0xBCDE (48350)
       Broadcaster id: 0xF0 (240)
+  - Descriptor 8: ISDB CA_EMM_TS (0xCA, 202), 7 bytes
+    CA System Id: 0x1234 (unknown)
+    Transport stream id: 0x5678 (22136)
+    Original network id: 0x9ABC (39612)
+    Power-on time: 222 minutes
+  - Descriptor 9: ISDB Conditional Playback (0xF8, 248), 4 bytes
+    CA System Id: 0xABCD (unknown)
+    EMM PID: 0x1234 (4660)
+  - Descriptor 10: ISDB Conditional Playback (0xF8, 248), 7 bytes
+    CA System Id: 0x5678 (unknown)
+    EMM PID: 0x0987 (2439)
+    Private CA data (3 bytes): 74 12 58
+  - Descriptor 11: ISDB CA Service (0xCC, 204), 4 bytes
+    CA System Id: 0xFEDC (unknown)
+    CA broadcaster group id: 0x89 (137)
+    Delay time: 20 days
+  - Descriptor 12: ISDB CA Service (0xCC, 204), 10 bytes
+    CA System Id: 0x1234 (unknown)
+    CA broadcaster group id: 0xDC (220)
+    Delay time: 15 days
+    Service id: 0x9876 (39030)
+    Service id: 0x6543 (25923)
+    Service id: 0x21FE (8702)
+  - Descriptor 13: ISDB CA Contract Information (0xCB, 203), 5 bytes
+    CA System Id: 0x5678 (unknown)
+    CA unit id: 12
+    Fee name: ""
+  - Descriptor 14: ISDB CA Contract Information (0xCB, 203), 21 bytes
+    CA System Id: 0x3456 (unknown)
+    CA unit id: 7
+    Component tag: 0x12 (18)
+    Component tag: 0x34 (52)
+    Component tag: 0x56 (86)
+    Contract verification info (3 bytes): 75 39 51
+    Fee name: "Test fee"
 
