@@ -133,6 +133,36 @@
     - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x2345 (unknown)
 
+* NBIT (Network board information body, ISDB), TID 197 (0xC5), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 12 bytes
+  - Section 0:
+    Original network id: 0x1234 (4660)
+
+* NBIT (Reference to network board information, ISDB), TID 198 (0xC6), PID 200 (0x00C8)
+  Version: 29, sections: 1, total size: 50 bytes
+  - Section 0:
+    Original network id: 0x5432 (21554)
+    - Information id: 0x1234 (4660)
+      Information type: 0x2 (Information with service_id)
+      Description body location: 0x1 (Info is in actual TS table)
+      User defined: 0x23 (35)
+      - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+        Data component id: 0x9ABC (unknown)
+      - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+        Data component id: 0xDEF1 (unknown)
+      - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
+        Data component id: 0x2345 (unknown)
+    - Information id: 0x5678 (22136)
+      Information type: 0x3 (Information with genre)
+      Description body location: 0x2 (Info is in SI prime TS table)
+      User defined: 0xFF (255)
+      Key id: 0xABCD (43981)
+      Key id: 0x5678 (22136)
+      - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+        Data component id: 0x7654 (unknown)
+      - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
+        Data component id: 0x5432 (unknown)
+
 * LDT (ISDB), TID 199 (0xC7), PID 200 (0x00C8)
   Version: 1, sections: 1, total size: 46 bytes
   - Section 0:

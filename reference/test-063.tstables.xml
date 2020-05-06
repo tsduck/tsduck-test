@@ -82,6 +82,23 @@
       <data_component_descriptor data_component_id="0x2345"/>
     </broadcaster>
   </BIT>
+  <NBIT version="0" current="true" original_network_id="0x1234" body="true">
+    <!-- PID 0x00C8 (200) -->
+  </NBIT>
+  <NBIT version="29" current="true" original_network_id="0x5432" body="false">
+    <!-- PID 0x00C8 (200) -->
+    <information information_id="0x1234" information_type="0x02" description_body_location="0x01" user_defined="0x23">
+      <data_component_descriptor data_component_id="0x9ABC"/>
+      <data_component_descriptor data_component_id="0xDEF1"/>
+      <data_component_descriptor data_component_id="0x2345"/>
+    </information>
+    <information information_id="0x5678" information_type="0x03" description_body_location="0x02">
+      <key id="0xABCD"/>
+      <key id="0x5678"/>
+      <data_component_descriptor data_component_id="0x7654"/>
+      <data_component_descriptor data_component_id="0x5432"/>
+    </information>
+  </NBIT>
   <LDT version="1" current="true" original_service_id="0x1234" transport_stream_id="0x5678" original_network_id="0x9ABC">
     <!-- PID 0x00C8 (200) -->
     <description description_id="0xABCD">
