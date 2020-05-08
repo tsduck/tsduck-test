@@ -42,13 +42,19 @@ Options:
 
   -r name
   --hf-band-region name
-      Specify the region for UHF/VHF band frequency layout.
+      Specify the region for UHF/VHF band frequency layout. The available
+      regions are americas, europe, france, japan, korea, philippines, taiwan,
+      uk, us, usa.
 
   -h value
   --high-priority-fec value
       Specify the OFMD error correction for high priority streams, used to
       compute the resulting bitrate.
       Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
+
+  --japan
+      A synonym for '--hf-band-region japan'. This is a handy shortcut when
+      working on Japanese transport streams.
 
   -m value
   --max-guess value
