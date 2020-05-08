@@ -181,6 +181,36 @@
     </description>
   </LDT>
 
+  <PCAT service_id="0x1234"
+        transport_stream_id="0x5678"
+        original_network_id="0x9ABC"
+        content_id="0x87654321"/>
+
+  <PCAT version="7"
+        service_id="0xABCD"
+        transport_stream_id="0xEF12"
+        original_network_id="0x3456"
+        content_id="0x789ABCDE">
+    <version content_version="0x4321"
+             content_minor_version="0x8765"
+             version_indicator="1"/>
+    <version content_version="0x7654"
+             content_minor_version="0x6789"
+             version_indicator="2">
+      <schedule start_time="2020-05-08 12:34:56" duration="01:23:45"/>
+      <schedule start_time="2020-06-12 23:45:09" duration="22:52:15"/>
+      <schedule start_time="2020-07-16 01:12:47" duration="00:45:54"/>
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </version>
+    <version content_version="0x89AB"
+             content_minor_version="0xCDEF"
+             version_indicator="3">
+      <data_component_descriptor data_component_id="0x2345"/>
+    </version>
+  </PCAT>
+
   <CAT version="2">
 
     <audio_component_descriptor

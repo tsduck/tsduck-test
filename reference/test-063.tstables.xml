@@ -111,6 +111,24 @@
       <data_component_descriptor data_component_id="0x6789"/>
     </description>
   </LDT>
+  <PCAT version="0" current="true" service_id="0x1234" transport_stream_id="0x5678" original_network_id="0x9ABC" content_id="0x87654321">
+    <!-- PID 0x00C8 (200) -->
+  </PCAT>
+  <PCAT version="7" current="true" service_id="0xABCD" transport_stream_id="0xEF12" original_network_id="0x3456" content_id="0x789ABCDE">
+    <!-- PID 0x00C8 (200) -->
+    <version content_version="0x4321" content_minor_version="0x8765" version_indicator="1"/>
+    <version content_version="0x7654" content_minor_version="0x6789" version_indicator="2">
+      <schedule start_time="2020-05-08 12:34:56" duration="01:23:45"/>
+      <schedule start_time="2020-06-12 23:45:09" duration="22:52:15"/>
+      <schedule start_time="2020-07-16 01:12:47" duration="00:45:54"/>
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </version>
+    <version content_version="0x89AB" content_minor_version="0xCDEF" version_indicator="3">
+      <data_component_descriptor data_component_id="0x2345"/>
+    </version>
+  </PCAT>
   <CAT version="2" current="true">
     <!-- PID 0x00C8 (200) -->
     <audio_component_descriptor stream_content="0x02" component_type="0x08" component_tag="0x12" stream_type="0x04" main_component="true" quality_indicator="1" sampling_rate="2" ISO_639_language_code="jpn"/>
