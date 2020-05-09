@@ -97,6 +97,11 @@ Options:
       (B=54, M=240) or 2 (B=54, M=720). The default is 1.
       Must be one of "1", "2".
 
+  --drop-to-maintain-preload
+      If the FIFO were preloaded, and maintaining the preload via option
+      --maintain-preload, drop any packets that would exceed the preload FIFO
+      size plus a small threshold.
+
   --fef
       DVB-T2 modulators: enable insertion of FEF's (Future Extension Frames).
       Not enabled by default.
