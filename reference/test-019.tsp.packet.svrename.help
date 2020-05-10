@@ -13,6 +13,28 @@ Parameter:
 
 Options:
 
+  --default-charset name
+      Default character set to use when interpreting strings from tables and
+      descriptors. By default, DVB encoding using ISO-6937 as default table is
+      used. The available table names are ARIB, ARIB-STD-B24, DUMP, DVB,
+      ISO-6937, ISO-8859-1, ISO-8859-10, ISO-8859-11, ISO-8859-13, ISO-8859-14,
+      ISO-8859-15, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6,
+      ISO-8859-7, ISO-8859-8, ISO-8859-9, RAW-ISO-6937, RAW-ISO-8859-1,
+      RAW-ISO-8859-10, RAW-ISO-8859-11, RAW-ISO-8859-13, RAW-ISO-8859-14,
+      RAW-ISO-8859-15, RAW-ISO-8859-2, RAW-ISO-8859-3, RAW-ISO-8859-4,
+      RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
+      RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
+
+  --europe
+      A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
+      for commonly incorrect signalization on some European satellites. In that
+      signalization, the character encoding is ISO-8859-15, the most common
+      encoding for Latin & Western Europe languages. However, this is not the
+      default DVB character set and it should be properly specified in all
+      strings, which is not the case with some operators. Using this option,
+      all DVB strings without explicit table code are assumed to use
+      ISO-8859-15 instead of the standard ISO-6937 encoding.
+
   -f value
   --free-ca-mode value
       Specify a new free_CA_mode to set in the SDT (0 or 1).
@@ -32,6 +54,10 @@ Options:
 
   --ignore-nit
       Do not modify the NIT.
+
+  --japan
+      A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
+      when working on Japanese transport streams.
 
   -l value
   --lcn value
