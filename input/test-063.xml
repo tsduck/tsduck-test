@@ -249,6 +249,29 @@
       </table>
     </SI_parameter_descriptor>
 
+    <SI_prime_TS_descriptor
+        parameter_version="0x23"
+        update_time="2020-05-01"
+        SI_prime_TS_network_id="0x4567"
+        SI_prime_transport_stream_id="0x89AB"/>
+
+    <SI_prime_TS_descriptor
+        parameter_version="0xFA"
+        update_time="2023-12-07"
+        SI_prime_TS_network_id="0x8765"
+        SI_prime_transport_stream_id="0x4321">
+      <table id="0x00"/>
+      <table id="0x02">
+        01
+      </table>
+      <table id="0x42">
+        2345
+      </table>
+      <table id="0xC4">
+        6789 ABCD
+      </table>
+    </SI_prime_TS_descriptor>
+
     <extended_broadcaster_descriptor broadcaster_type="9"/>
 
     <extended_broadcaster_descriptor broadcaster_type="12">
@@ -310,6 +333,35 @@
         753951
       </contract_verification_info>
     </CA_contract_info_descriptor>
+
+    <hierarchical_transmission_descriptor high_quality="true" reference_PID="0x2"/>
+    <hierarchical_transmission_descriptor high_quality="false" reference_PID="0x1234"/>
+
+    <board_information_descriptor title="Sample title" text="Foo bar"/>
+
+    <event_group_descriptor group_type="1"/>
+
+    <event_group_descriptor group_type="2">
+      <actual service_id="0x1234" event_id="0x5678"/>
+      <actual service_id="0x9ABC" event_id="0xDEF1"/>
+      <private_data>
+        963258
+      </private_data>
+    </event_group_descriptor>
+
+    <event_group_descriptor group_type="5">
+      <actual service_id="0x1234" event_id="0x5678"/>
+      <actual service_id="0x9ABC" event_id="0xDEF1"/>
+      <actual service_id="0x2345" event_id="0x6789"/>
+      <other original_network_id="0x4321"
+             transport_stream_id="0x8765"
+             service_id="0xFEDC"
+             event_id="0xBA98"/>
+      <other original_network_id="0x1472"
+             transport_stream_id="0x2583"
+             service_id="0x3691"
+             event_id="0x8527"/>
+    </event_group_descriptor>
 
   </CAT>
 
