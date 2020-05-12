@@ -247,12 +247,15 @@
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x02" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" ISO_639_language_code_2="eng" text="日本語英語"/>
-      <generic_descriptor tag="0xC7">
-        00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
-      </generic_descriptor>
-      <generic_descriptor tag="0xD6">
-        12 48 00 0E DD 48 01 0E DD
-      </generic_descriptor>
+      <data_content_descriptor data_component_id="0x0008" entry_component="0x30" ISO_639_language_code="jpn" text="">
+        <selector_bytes>
+          01 13 6A 70 6E
+        </selector_bytes>
+      </data_content_descriptor>
+      <event_group_descriptor group_type="1">
+        <actual service_id="0x4800" event_id="0x0EDD"/>
+        <actual service_id="0x4801" event_id="0x0EDD"/>
+      </event_group_descriptor>
     </event>
     <event event_id="0x0EDE" start_time="2020-04-05 19:30:00" duration="00:30:00" running_status="undefined" CA_mode="false">
       <short_event_descriptor language_code="jpn">
@@ -288,12 +291,15 @@
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x11" stream_type="0x0F" main_component="false" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語（解説）"/>
-      <generic_descriptor tag="0xC7">
-        00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
-      </generic_descriptor>
-      <generic_descriptor tag="0xD6">
-        12 48 00 0E DE 48 01 0E DE
-      </generic_descriptor>
+      <data_content_descriptor data_component_id="0x0008" entry_component="0x30" ISO_639_language_code="jpn" text="">
+        <selector_bytes>
+          01 13 6A 70 6E
+        </selector_bytes>
+      </data_content_descriptor>
+      <event_group_descriptor group_type="1">
+        <actual service_id="0x4800" event_id="0x0EDE"/>
+        <actual service_id="0x4801" event_id="0x0EDE"/>
+      </event_group_descriptor>
     </event>
   </EIT>
   <NIT version="13" current="true" network_id="0x7ED0" actual="true">
@@ -364,12 +370,14 @@
       </content_descriptor>
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x02" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" ISO_639_language_code_2="eng" text="日本語英語"/>
-      <generic_descriptor tag="0xC7">
-        00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
-      </generic_descriptor>
-      <generic_descriptor tag="0xD6">
-        11 48 00 0E DD
-      </generic_descriptor>
+      <data_content_descriptor data_component_id="0x0008" entry_component="0x30" ISO_639_language_code="jpn" text="">
+        <selector_bytes>
+          01 13 6A 70 6E
+        </selector_bytes>
+      </data_content_descriptor>
+      <event_group_descriptor group_type="1">
+        <actual service_id="0x4800" event_id="0x0EDD"/>
+      </event_group_descriptor>
     </event>
     <event event_id="0x0EDE" start_time="2020-04-05 19:30:00" duration="00:30:00" running_status="undefined" CA_mode="false">
       <short_event_descriptor language_code="jpn">
@@ -384,12 +392,14 @@
       <digital_copy_control_descriptor digital_recording_control_data="2" user_defined="4"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x10" stream_type="0x0F" main_component="true" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語"/>
       <audio_component_descriptor stream_content="0x02" component_type="0x03" component_tag="0x11" stream_type="0x0F" main_component="false" quality_indicator="2" sampling_rate="7" ISO_639_language_code="jpn" text="日本語（解説）"/>
-      <generic_descriptor tag="0xC7">
-        00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00
-      </generic_descriptor>
-      <generic_descriptor tag="0xD6">
-        11 48 00 0E DE
-      </generic_descriptor>
+      <data_content_descriptor data_component_id="0x0008" entry_component="0x30" ISO_639_language_code="jpn" text="">
+        <selector_bytes>
+          01 13 6A 70 6E
+        </selector_bytes>
+      </data_content_descriptor>
+      <event_group_descriptor group_type="1">
+        <actual service_id="0x4800" event_id="0x0EDE"/>
+      </event_group_descriptor>
     </event>
   </EIT>
   <PMT version="0" current="true" service_id="0xFFF0">

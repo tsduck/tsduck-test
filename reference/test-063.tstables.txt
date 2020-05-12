@@ -219,7 +219,7 @@
         Data component id: 0x2345 (unknown)
 
 * CAT, TID 1 (0x01), PID 200 (0x00C8)
-  Version: 2, sections: 1, total size: 303 bytes
+  Version: 2, sections: 1, total size: 361 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
       Content type: 0x00000002 (2)
@@ -372,4 +372,19 @@
         Transport stream id: 0x2583 (9603)
         Service id:          0x3691 (13969)
         Event id:            0x8527 (34087)
+    - Descriptor 23: ISDB Data Content (0xC7, 199), 27 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Entry component: 0xEA (234)
+      Language: "foo"
+      Text: "Description text"
+    - Descriptor 24: ISDB Data Content (0xC7, 199), 27 bytes
+      Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
+      Entry component: 0x02 (2)
+      Selector bytes (3 bytes): 12 34 56
+      Component ref: 0x12 (18)
+      Component ref: 0x34 (52)
+      Component ref: 0x56 (86)
+      Component ref: 0x78 (120)
+      Language: "bar"
+      Text: "Barbatruc"
 

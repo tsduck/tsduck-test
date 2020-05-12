@@ -278,9 +278,18 @@
       Language code 2: "eng"
       Text: "日本語英語"
     - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
-      0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Entry component: 0x30 (48)
+      Selector bytes (5 bytes): 01 13 6A 70 6E
+      Language: "jpn"
+      Text: ""
     - Descriptor 7: ISDB Event Group (0xD6, 214), 9 bytes
-      0000:  12 48 00 0E DD 48 01 0E DD                 .H...H...
+      Group type: 1 (Event common)
+      Actual events:
+      - Service id: 0x4800 (18432)
+        Event id:   0x0EDD (3805)
+      - Service id: 0x4801 (18433)
+        Event id:   0x0EDD (3805)
   - Section 1:
     Service Id: 18432 (0x4800)
     TS Id: 32464 (0x7ED0)
@@ -344,9 +353,18 @@
       Language code: "jpn"
       Text: "日本語（解説）"
     - Descriptor 9: ISDB Data Content (0xC7, 199), 14 bytes
-      0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Entry component: 0x30 (48)
+      Selector bytes (5 bytes): 01 13 6A 70 6E
+      Language: "jpn"
+      Text: ""
     - Descriptor 10: ISDB Event Group (0xD6, 214), 9 bytes
-      0000:  12 48 00 0E DE 48 01 0E DE                 .H...H...
+      Group type: 1 (Event common)
+      Actual events:
+      - Service id: 0x4800 (18432)
+        Event id:   0x0EDE (3806)
+      - Service id: 0x4801 (18433)
+        Event id:   0x0EDE (3806)
 
 * NIT Actual, TID 64 (0x40), PID 16 (0x0010)
   Version: 13, sections: 1, total size: 138 bytes
@@ -447,9 +465,16 @@
       Language code 2: "eng"
       Text: "日本語英語"
     - Descriptor 5: ISDB Data Content (0xC7, 199), 14 bytes
-      0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Entry component: 0x30 (48)
+      Selector bytes (5 bytes): 01 13 6A 70 6E
+      Language: "jpn"
+      Text: ""
     - Descriptor 6: ISDB Event Group (0xD6, 214), 5 bytes
-      0000:  11 48 00 0E DD                             .H...
+      Group type: 1 (Event common)
+      Actual events:
+      - Service id: 0x4800 (18432)
+        Event id:   0x0EDD (3805)
   - Section 1:
     Service Id: 18433 (0x4801)
     TS Id: 32464 (0x7ED0)
@@ -498,9 +523,16 @@
       Language code: "jpn"
       Text: "日本語（解説）"
     - Descriptor 6: ISDB Data Content (0xC7, 199), 14 bytes
-      0000:  00 08 30 05 01 13 6A 70 6E 00 6A 70 6E 00  ..0...jpn.jpn.
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Entry component: 0x30 (48)
+      Selector bytes (5 bytes): 01 13 6A 70 6E
+      Language: "jpn"
+      Text: ""
     - Descriptor 7: ISDB Event Group (0xD6, 214), 5 bytes
-      0000:  11 48 00 0E DE                             .H...
+      Group type: 1 (Event common)
+      Actual events:
+      - Service id: 0x4800 (18432)
+        Event id:   0x0EDE (3806)
 
 * PMT, TID 2 (0x02), PID 7408 (0x1CF0)
   Version: 0, sections: 1, total size: 160 bytes

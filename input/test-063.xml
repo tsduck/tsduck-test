@@ -363,6 +363,26 @@
              event_id="0x8527"/>
     </event_group_descriptor>
 
+    <data_content_descriptor
+        data_component_id="8"
+        entry_component="0xEA"
+        ISO_639_language_code="foo"
+        text="Description text"/>
+
+    <data_content_descriptor
+        data_component_id="12"
+        entry_component="2"
+        ISO_639_language_code="bar"
+        text="Barbatruc">
+      <selector_bytes>
+        123456
+      </selector_bytes>
+      <component ref="0x12"/>
+      <component ref="0x34"/>
+      <component ref="0x56"/>
+      <component ref="0x78"/>
+    </data_content_descriptor>
+
   </CAT>
 
 </tsduck>

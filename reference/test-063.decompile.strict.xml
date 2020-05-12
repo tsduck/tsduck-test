@@ -208,5 +208,15 @@
       <other original_network_id="0x4321" transport_stream_id="0x8765" service_id="0xFEDC" event_id="0xBA98"/>
       <other original_network_id="0x1472" transport_stream_id="0x2583" service_id="0x3691" event_id="0x8527"/>
     </event_group_descriptor>
+    <data_content_descriptor data_component_id="0x0008" entry_component="0xEA" ISO_639_language_code="foo" text="Description text"/>
+    <data_content_descriptor data_component_id="0x000C" entry_component="0x02" ISO_639_language_code="bar" text="Barbatruc">
+      <selector_bytes>
+        12 34 56
+      </selector_bytes>
+      <component ref="0x12"/>
+      <component ref="0x34"/>
+      <component ref="0x56"/>
+      <component ref="0x78"/>
+    </data_content_descriptor>
   </CAT>
 </tsduck>
