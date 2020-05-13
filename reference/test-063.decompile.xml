@@ -218,5 +218,15 @@
       <component ref="0x56"/>
       <component ref="0x78"/>
     </data_content_descriptor>
+    <service_group_descriptor service_group_type="0"/>
+    <service_group_descriptor service_group_type="1">
+      <service primary_service_id="0x1234" secondary_service_id="0x9ABC"/>
+      <service primary_service_id="0x5678" secondary_service_id="0xDEF0"/>
+    </service_group_descriptor>
+    <service_group_descriptor service_group_type="2">
+      <private_data>
+        74 12 58 96
+      </private_data>
+    </service_group_descriptor>
   </CAT>
 </tsduck>
