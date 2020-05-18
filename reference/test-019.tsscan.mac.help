@@ -207,13 +207,12 @@ Options:
       offsets above the "last" one. This means that if a signal is found at
       offset +2, offset +3 will be checked anyway, etc. up to offset +5.
 
-  --lnb low_freq[,high_freq,switch_freq]
-      Used for satellite tuners only. Description of the LNB.  All frequencies
-      are in MHz. low_freq and high_freq are the frequencies of the local
-      oscillators. switch_freq is the limit between the low and high band.
-      high_freq and switch_freq are used for dual-band LNB's only. The default
-      is a universal LNB: low_freq = 9750 MHz, high_freq = 10600 MHz,
-      switch_freq = 11700 MHz.
+  --lnb name
+      Used for satellite tuners only. Description of the LNB. The specified
+      string is the name (or an alias for that name) of a preconfigured LNB in
+      the configuration file tsduck.lnbs.xml. For compatibility, the legacy
+      format 'low_freq[,high_freq,switch_freq]' is also accepted (all
+      frequencies are in MHz). The default is a universal extended LNB.
 
   --low-priority-fec value
       Used for DVB-T/T2 tuners only. Error correction for low priority streams.

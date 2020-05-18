@@ -200,13 +200,14 @@ Options:
       is -35.0 to 0.0 dBm. For DTA-115, OFDM, ISDB-T, the valid range is -38.0
       to -3.0 dBm.
 
-  --lnb value
+  --lnb name
       DVB-S/S2 modulators: description of the LNB which is used to convert the
       --satellite-frequency into an intermediate frequency. This option is
-      useless when --satellite-frequency is not specified. The format of the
-      string is "low_freq[,high_freq[,switch_freq]]" where all frequencies are
-      in MHz. The characteristics of the default universal LNB are low_freq =
-      9750 MHz, high_freq = 10600 MHz, switch_freq = 11700 MHz.
+      useless when --satellite-frequency is not specified. The specified string
+      is the name (or an alias for that name) of a preconfigured LNB in the
+      configuration file tsduck.lnbs.xml. For compatibility, the legacy format
+      'low_freq[,high_freq,switch_freq]' is also accepted (all frequencies are
+      in MHz). The default is a universal extended LNB.
 
   --maintain-preload
       If the FIFO were preloaded, roughly maintain the FIFO buffer size in
