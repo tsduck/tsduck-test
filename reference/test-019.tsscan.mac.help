@@ -30,9 +30,15 @@ Options:
   -c name
   --channel-transponder name
       Tune to the transponder containing the specified channel. The channel
-      name is not case-sensitive and blanks are ignored. The channel is
-      searched in a "tuning file" and the corresponding tuning information in
-      this file is used.
+      name is not case-sensitive and blanks are ignored. It is either an "HF
+      band channel" or a "TV channel".
+
+      An "HF band channel" has the format "band-number" such as "UHF-22"
+      (terrestrial) or "BS-12" (Japanese satellite). See also option
+      --offset-count.
+
+      A "TV channel" name is searched in a "tuning file" and the corresponding
+      tuning information in this file is used. See also option --tuning-file.
 
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more

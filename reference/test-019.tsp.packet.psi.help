@@ -137,7 +137,7 @@ Options:
       For sections of unknown types, this option specifies how to interpret
       some parts of the section payload as TLV records. Several --tlv options
       are allowed, each one describes a part of the section payload.
-      
+
       Each syntax string has the form "start,size,tagSize,lengthSize,order".
       The start and size fields define the offset and size of the TLV area in
       the section payload. If the size field is "auto", the TLV extends up to
@@ -146,7 +146,7 @@ Options:
       lengthSize indicate the size in bytes of the Tag and Length fields in the
       TLV structure. The field order must be either "msb" or "lsb" and
       indicates the byte order of the Tag and Length fields.
-      
+
       All fields are optional. The default values are "auto,auto,1,1,msb".
 
   --viaccess

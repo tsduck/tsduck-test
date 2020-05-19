@@ -38,14 +38,14 @@ Options:
   --output-file filename
       Specify the output file for reporting history lines. By default, report
       history lines on standard error using the tsp logging mechanism.
-      
+
       Without option --output-file, output is formated as:
       * history: PKT#: MESSAGE
-      
+
       Some messages may be out of sync. To sort messages according to their
       packet numbers, use a command like:
       tsp -P history ...  2>&1 | grep '* history:' | sort -t : -k 2 -n
-      
+
       When an output file is specified using --output-file, the sort command
       becomes:
       sort -n output-file-name

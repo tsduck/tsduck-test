@@ -9,7 +9,7 @@ Parameter:
   automatically added to the name part so that successive segment files receive
   distinct names. Example: if the specified file name is foo-.ts, the various
   segment files are named foo-000000.ts, foo-000001.ts, etc.
-  
+
   If the specified template already contains trailing digits, this unmodified
   name is used for the first segment. Then, the integer part is incremented.
   Example: if the specified file name is foo-027.ts, the various segment files
@@ -36,7 +36,7 @@ Options:
       Close the current segment as soon as possible after a packet with any of
       the specified labels. Labels should have typically been set by a previous
       plugin in the chain. Several --label-close options may be specified.
-      
+
       In practice, the current segment is closed and renewed at the start of
       the next PES packet on the video PID. This option is compatible with
       --duration. The current segment is closed on a labelled packed or segment

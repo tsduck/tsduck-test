@@ -116,7 +116,7 @@ Options:
       Specifies the maximum number of consecutive "suspect" packets. The
       default value is 1. If set to zero, the suspect packet detection is
       disabled.
-      
+
       Suspect packets are TS packets which are technically correct but which
       may be suspected of being incorrect, resulting in analysis errors.
       Typically, in the middle of a suite of packets with uncorrectable binary
@@ -144,12 +144,12 @@ Options:
 
   --ts-analysis
       Report global transport stream analysis.
-      
+
       The output can include full synthetic analysis (options *-analysis),
       fully normalized output (option --normalized) or a simple list of values
       on one line (options --*-list). The second and third type of options are
       useful to write automated scripts.
-      
+
       If output-control options are specified, only the selected outputs are
       produced. If no option is given, the default is: --ts-analysis
       --service-analysis --pid-analysis --table-analysis
