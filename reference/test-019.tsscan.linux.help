@@ -345,11 +345,17 @@ Options:
       Spectral inversion. The default is "auto".
       Must be one of "auto", "off", "on".
 
+  --stream-id value
+      Used for ISDB-S tuners only. In the case of multi-stream broadcasting,
+      specify the inner transport stream id. By default, use the first inner
+      transport stream, if any is found. Warning: this option is supported on
+      Linux only.
+
   -s value
   --symbol-rate value
       Used for satellite and cable tuners only. Symbol rate in symbols/second.
-      The default is 27,500,000 sym/s for DVB-S, 6,900,000 sym/s for DVB-C, 27,
-      500,000 sym/s for ISDB-S,
+      The default is 27,500,000 sym/s for DVB-S, 6,900,000 sym/s for DVB-C, 28,
+      860,000 sym/s for ISDB-S,
 
   --transmission-mode value
       Used for terrestrial tuners only. Transmission mode. The default is "8K"
