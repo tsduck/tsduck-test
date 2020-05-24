@@ -1,7 +1,10 @@
 
-Scan a DVB network
+Scan a DTV network frequencies and services
 
 Usage: tsscan [options]
+
+There are three mutually exclusive types of network scanning. Exactly one of
+the following options shall be specified: --nit-scan, --uhf-band, --vhf-band.
 
 Options:
 
@@ -244,6 +247,11 @@ Options:
       "QAM", "QPSK".
 
   -n
+  --nit-scan
+      Tuning parameters for a reference transport stream must be present
+      (frequency or channel reference). The NIT is read on the specified
+      frequency and a full scan of the corresponding network is performed.
+
   --no-offset
       For UHF/VHF-band scanning, scan only the central frequency of each
       channel. This is now the default. Specify option --use-offsets to scan
@@ -366,12 +374,11 @@ Options:
 
   -u
   --uhf-band
-      Perform a complete DVB-T or ATSC UHF-band scanning. Do not use the NIT.
-
-      If tuning parameters are present (frequency or channel reference), the
-      NIT is read on the specified frequency and a full scan of the
-      corresponding network is performed. By default, without specific
-      frequency, an UHF-band scanning is performed.
+      Perform a complete UHF-band scanning (DVB-T, ISDB-T or ATSC). Use the
+      predefined UHF frequency layout of the specified region (see option
+      --hf-band-region). By default, scan the center frequency of each channel
+      only. Use option --use-offsets to scan all predefined offsets in each
+      channel.
 
   --uhf-channel value
       Used for terrestrial tuners only. Specify the UHF channel number of the
@@ -404,7 +411,7 @@ Options:
 
   -v
   --vhf-band
-      Perform a complete DVB-T or ATSC VHF-band scanning. See also --uhf-band.
+      Perform a complete VHF-band scanning. See also option --uhf-band.
 
   --vhf-channel value
       Used for terrestrial tuners only. Specify the VHF channel number of the
