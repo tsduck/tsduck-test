@@ -211,7 +211,7 @@
       Data component id: 0x2345 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 382 bytes
+  Section: 0 (last: 0), version: 2, size: 407 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x00000002 (2)
     Component type: 0x08 (3/2 mode)
@@ -390,4 +390,13 @@
   - Descriptor 27: ISDB Service Group (0xE0, 224), 5 bytes
     Group type: 2 (unknown)
     Private data (4 bytes): 74 12 58 96
+  - Descriptor 28: ISDB Area Broadcast Information (0xE1, 225), 1 bytes
+  - Descriptor 29: ISDB Area Broadcast Information (0xE1, 225), 20 bytes
+    - Station id: 0x00654321 (6636321)
+      Location code: 0xABCD (43981)
+      Broadcast signal format: 0x02 (One-segment area broadcasting)
+      Additional station info (5 bytes): 98 76 54 32 10
+    - Station id: 0x00741852 (7608402)
+      Location code: 0x1234 (4660)
+      Broadcast signal format: 0x05 (Full segment broadcasting for multimedia transmission)
 
