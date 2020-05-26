@@ -237,5 +237,19 @@
       </station>
       <station station_id="0x00741852" location_code="0x1234" broadcast_signal_format="0x05"/>
     </area_broadcasting_information_descriptor>
+    <emergency_information_descriptor/>
+    <emergency_information_descriptor>
+      <event service_id="0x1234" started="true" signal_level="0"/>
+      <event service_id="0x5678" started="false" signal_level="1">
+        <area code="0x0123"/>
+        <area code="0x0456"/>
+        <area code="0x0789"/>
+        <area code="0x0ABC"/>
+        <area code="0x0DEF"/>
+      </event>
+      <event service_id="0xABCD" started="false" signal_level="0"/>
+    </emergency_information_descriptor>
+    <series_descriptor series_id="0x1234" repeat_label="1" program_pattern="1" episode_number="23" last_episode_number="47"/>
+    <series_descriptor series_id="0x5678" repeat_label="0" program_pattern="5" expire_date="2020-05-30" episode_number="289" last_episode_number="302" series_name="Test series"/>
   </CAT>
 </tsduck>

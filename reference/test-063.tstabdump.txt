@@ -211,7 +211,7 @@
       Data component id: 0x2345 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 407 bytes
+  Section: 0 (last: 0), version: 2, size: 466 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x00000002 (2)
     Component type: 0x08 (3/2 mode)
@@ -399,4 +399,34 @@
     - Station id: 0x00741852 (7608402)
       Location code: 0x1234 (4660)
       Broadcast signal format: 0x05 (Full segment broadcasting for multimedia transmission)
+  - Descriptor 30: ISDB Emergency Information (0xFC, 252), 0 bytes
+  - Descriptor 31: ISDB Emergency Information (0xFC, 252), 22 bytes
+    - Event service id: 0x1234 (4660)
+      Event is started: true
+      Signal level: 0
+    - Event service id: 0x5678 (22136)
+      Event is started: false
+      Signal level: 1
+      Area code: 0x123 (291)
+      Area code: 0x456 (1110)
+      Area code: 0x789 (1929)
+      Area code: 0xABC (2748)
+      Area code: 0xDEF (3567)
+    - Event service id: 0xABCD (43981)
+      Event is started: false
+      Signal level: 0
+  - Descriptor 32: ISDB Series (0xD5, 213), 8 bytes
+    Series id: 0x1234 (4660)
+    Repeat label: 1
+    Program pattern: 1 (Regular program (every day, every day except weekend, only weekends, etc.))
+    Expire date: unspecified
+    Episode: 23/47
+    Series name: ""
+  - Descriptor 33: ISDB Series (0xD5, 213), 21 bytes
+    Series id: 0x5678 (22136)
+    Repeat label: 0
+    Program pattern: 5 (Division of long hour program)
+    Expire date: 2020/05/30
+    Episode: 289/302
+    Series name: "Test series"
 
