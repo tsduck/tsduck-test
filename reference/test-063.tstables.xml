@@ -129,6 +129,41 @@
       <data_component_descriptor data_component_id="0x2345"/>
     </version>
   </PCAT>
+  <ITT version="0" current="true" event_id="0x1234">
+    <!-- PID 0x00C8 (200) -->
+  </ITT>
+  <ITT version="7" current="true" event_id="0x9876">
+    <!-- PID 0x00C8 (200) -->
+    <data_component_descriptor data_component_id="0xEF12"/>
+    <data_component_descriptor data_component_id="0x3456"/>
+    <data_component_descriptor data_component_id="0x789A"/>
+  </ITT>
+  <LIT version="0" current="true" event_id="0x1234" service_id="0x5678" transport_stream_id="0x9ABC" original_network_id="0xDEF1">
+    <!-- PID 0x00C8 (200) -->
+  </LIT>
+  <LIT version="6" current="true" event_id="0xFEDC" service_id="0xBA98" transport_stream_id="0x7654" original_network_id="0x3210">
+    <!-- PID 0x00C8 (200) -->
+    <event local_event_id="0x1289"/>
+    <event local_event_id="0x3456">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </event>
+    <event local_event_id="0x5678">
+      <data_component_descriptor data_component_id="0x789A"/>
+    </event>
+  </LIT>
+  <ERT version="0" current="true" event_relation_id="0x1234" information_provider_id="0x5678" relation_type="1">
+    <!-- PID 0x00C8 (200) -->
+  </ERT>
+  <ERT version="27" current="true" event_relation_id="0x9876" information_provider_id="0x5432" relation_type="2">
+    <!-- PID 0x00C8 (200) -->
+    <relation node_id="0x1234" collection_mode="1" parent_node_id="0x7894" reference_number="0x32"/>
+    <relation node_id="0x1478" collection_mode="2" parent_node_id="0x3692" reference_number="0x45">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+    </relation>
+  </ERT>
   <CAT version="2" current="true">
     <!-- PID 0x00C8 (200) -->
     <audio_component_descriptor stream_content="0x02" component_type="0x08" component_tag="0x12" stream_type="0x04" main_component="true" quality_indicator="1" sampling_rate="2" ISO_639_language_code="jpn"/>

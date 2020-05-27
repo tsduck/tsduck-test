@@ -211,6 +211,58 @@
     </version>
   </PCAT>
 
+  <ITT event_id="0x1234"/>
+
+  <ITT version="7" event_id="0x9876">
+    <data_component_descriptor data_component_id="0xEF12"/>
+    <data_component_descriptor data_component_id="0x3456"/>
+    <data_component_descriptor data_component_id="0x789A"/>
+  </ITT>
+
+  <LIT event_id="0x1234"
+       service_id="0x5678"
+       transport_stream_id="0x9ABC"
+       original_network_id="0xDEF1"/>
+
+  <LIT version="6"
+       event_id="0xFEDC"
+       service_id="0xBA98"
+       transport_stream_id="0x7654"
+       original_network_id="0x3210">
+    <event local_event_id="0x1289"/>
+    <event local_event_id="0x3456">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+      <data_component_descriptor data_component_id="0x789A"/>
+    </event>
+    <event local_event_id="0x5678">
+      <data_component_descriptor data_component_id="0x789A"/>
+    </event>
+  </LIT>
+
+  <ERT event_relation_id="0x1234"
+       information_provider_id="0x5678"
+       relation_type="1"/>
+
+  <ERT version="27"
+       event_relation_id="0x9876"
+       information_provider_id="0x5432"
+       relation_type="2">
+    <relation
+        node_id="0x1234"
+        collection_mode="1"
+        parent_node_id="0x7894"
+        reference_number="0x32"/>
+    <relation
+        node_id="0x1478"
+        collection_mode="2"
+        parent_node_id="0x3692"
+        reference_number="0x45">
+      <data_component_descriptor data_component_id="0xEF12"/>
+      <data_component_descriptor data_component_id="0x3456"/>
+    </relation>
+  </ERT>
+
   <CAT version="2">
 
     <audio_component_descriptor
