@@ -298,5 +298,14 @@
     </emergency_information_descriptor>
     <series_descriptor series_id="0x1234" repeat_label="1" program_pattern="1" episode_number="23" last_episode_number="47"/>
     <series_descriptor series_id="0x5678" repeat_label="0" program_pattern="5" expire_date="2020-05-30" episode_number="289" last_episode_number="302" series_name="Test series"/>
+    <short_node_information_descriptor ISO_639_language_code="foo"/>
+    <short_node_information_descriptor ISO_639_language_code="bar" node_name="Test node name" text="And its description"/>
+    <reference_descriptor information_provider_id="0x1234" event_relation_id="0x5678"/>
+    <reference_descriptor information_provider_id="0x9876" event_relation_id="0x5432">
+      <reference reference_node_id="0x1234" reference_number="0x56" last_reference_number="0x78"/>
+      <reference reference_node_id="0x9123" reference_number="0x45" last_reference_number="0x67"/>
+    </reference_descriptor>
+    <node_relation_descriptor reference_type="0" reference_node_id="0x1234" reference_number="0x56"/>
+    <node_relation_descriptor reference_type="7" information_provider_id="0x9876" event_relation_id="0x5432" reference_node_id="0x1987" reference_number="0x65"/>
   </CAT>
 </tsduck>

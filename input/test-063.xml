@@ -489,6 +489,41 @@
         last_episode_number="302"
         series_name="Test series"/>
 
+    <short_node_information_descriptor ISO_639_language_code="foo"/>
+
+    <short_node_information_descriptor
+        ISO_639_language_code="bar"
+        node_name="Test node name"
+        text="And its description"/>
+
+    <reference_descriptor
+        information_provider_id="0x1234"
+        event_relation_id="0x5678"/>
+
+    <reference_descriptor
+        information_provider_id="0x9876"
+        event_relation_id="0x5432">
+      <reference
+          reference_node_id="0x1234"
+          reference_number="0x56"
+          last_reference_number="0x78"/>
+      <reference
+          reference_node_id="0x9123"
+          reference_number="0x45"
+          last_reference_number="0x67"/>
+    </reference_descriptor>
+
+    <node_relation_descriptor
+        reference_node_id="0x1234"
+        reference_number="0x56"/>
+
+    <node_relation_descriptor
+        reference_type="7"
+        information_provider_id="0x9876"
+        event_relation_id="0x5432"
+        reference_node_id="0x1987"
+        reference_number="0x65"/>
+
   </CAT>
 
 </tsduck>

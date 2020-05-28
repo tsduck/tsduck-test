@@ -274,7 +274,7 @@
       Data component id: 0x3456 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 466 bytes
+  Section: 0 (last: 0), version: 2, size: 553 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x00000002 (2)
     Component type: 0x08 (3/2 mode)
@@ -492,4 +492,34 @@
     Expire date: 2020/05/30
     Episode: 289/302
     Series name: "Test series"
+  - Descriptor 34: ISDB Short Node Information (0xD3, 211), 5 bytes
+    Language: "foo"
+    Node name: ""
+    Text: ""
+  - Descriptor 35: ISDB Short Node Information (0xD3, 211), 42 bytes
+    Language: "bar"
+    Node name: "Test node name"
+    Text: "And its description"
+  - Descriptor 36: ISDB Reference (0xD1, 209), 4 bytes
+    Information provider id: 0x1234 (4660)
+    Event relation id: 0x5678 (22136)
+  - Descriptor 37: ISDB Reference (0xD1, 209), 12 bytes
+    Information provider id: 0x9876 (39030)
+    Event relation id: 0x5432 (21554)
+    - Reference node id: 0x1234 (4660)
+      Reference number: 0x56 (86)
+      Last reference number: 0x78 (120)
+    - Reference node id: 0x9123 (37155)
+      Reference number: 0x45 (69)
+      Last reference number: 0x67 (103)
+  - Descriptor 38: ISDB Node Relation (0xD2, 210), 4 bytes
+    Reference type: 0
+    Reference node id: 0x1234 (4660)
+    Reference number: 0x56 (86)
+  - Descriptor 39: ISDB Node Relation (0xD2, 210), 8 bytes
+    Reference type: 7
+    Information provider id: 0x9876 (39030)
+    Event relation id: 0x5432 (21554)
+    Reference node id: 0x1987 (6535)
+    Reference number: 0x65 (101)
 
