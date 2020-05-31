@@ -61,18 +61,18 @@ OTHEROS=${ALLOS/$OS/}
 # Detect various types of UNIX-like environments on UNIX.
 if [[ $OS == windows ]]; then
     WINDOWS=true
-    TSDUCKBIN_ROOT=$TSDUCKDIR/build/msvc
-    TSDUCKBIN_RELEASE=Release-x64
-    TSDUCKBIN_DEBUG=Debug-x64
-    TSDUCKBIN32_RELEASE=Release-Win32
-    TSDUCKBIN32_DEBUG=Debug-Win32
+    TSDUCKBIN_ROOT=$TSDUCKDIR/bin
+    TSDUCKBIN_RELEASE=$TSDUCKBIN_ROOT/Release-x64
+    TSDUCKBIN_DEBUG=$TSDUCKBIN_ROOT/Debug-x64
+    TSDUCKBIN32_RELEASE=$TSDUCKBIN_ROOT/Release-Win32
+    TSDUCKBIN32_DEBUG=$TSDUCKBIN_ROOT/Debug-Win32
     EXE=.exe
 else
     WINDOWS=false
     ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
     TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
-    TSDUCKBIN_RELEASE=release-$ARCH
-    TSDUCKBIN_DEBUG=debug-$ARCH
+    TSDUCKBIN_RELEASE=$($TSDUCKDIR/build/setenv.sh --display)
+    TSDUCKBIN_DEBUG=$($TSDUCKDIR/build/setenv.sh --display --debug)
     TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
     TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
     EXE=
@@ -89,19 +89,19 @@ Common test options:
 
   --dev
       Use development versions of TSDuck as compiled in the Git repository in
-      $TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
+      $TSDUCKBIN_RELEASE
 
   --dev32
       Use development versions of TSDuck as compiled in the Git repository in
-      $TSDUCKBIN_ROOT/$TSDUCKBIN32_RELEASE
+      $TSDUCKBIN32_RELEASE
 
   --debug
       Use debug versions of TSDuck as compiled in the Git repository in
-      $TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
+      $TSDUCKBIN_DEBUG
 
   --debug32
       Use debug versions of TSDuck as compiled in the Git repository in
-      $TSDUCKBIN_ROOT/$TSDUCKBIN32_DEBUG
+      $TSDUCKBIN32_DEBUG
 
   --help
       Display this help text.
@@ -124,19 +124,19 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --dev)
             DEVEL=true
-            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_RELEASE
+            TSDUCKBIN=$TSDUCKBIN_RELEASE
             ;;
         --dev32)
             DEVEL=true
-            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN32_RELEASE
+            TSDUCKBIN=$TSDUCKBIN32_RELEASE
             ;;
         --debug)
             DEVEL=true
-            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN_DEBUG
+            TSDUCKBIN=$TSDUCKBIN_DEBUG
             ;;
         --debug32)
             DEVEL=true
-            TSDUCKBIN=$TSDUCKBIN_ROOT/$TSDUCKBIN32_DEBUG
+            TSDUCKBIN=$TSDUCKBIN32_DEBUG
             ;;
         --help)
             showhelp
@@ -164,12 +164,6 @@ if $DEVEL; then
 
     # Build the path for a TSDuck command.
     tspath() { echo "$TSDUCKBIN/$1$EXE"; }
-
-    # With make (not MSVC), we need to set some environment variables.
-    if ! $WINDOWS; then
-        [[ -s "$TSDUCKBIN/setenv.sh" ]] || error "not found: $TSDUCKBIN/setenv.sh"
-        source "$TSDUCKBIN/setenv.sh"
-    fi
 else
     # Build the path for a TSDuck command (use the installed product).
     tspath() { echo "$1$EXE"; }
