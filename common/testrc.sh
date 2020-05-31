@@ -176,10 +176,6 @@ else
     fpath() { echo "$1"; }
 fi
 
-# Command prefix on macOS.
-CMDPREFIX=
-[[ $OS == mac && -n "$LD_LIBRARY_PATH" ]] && CMDPREFIX="LD_LIBRARY_PATH=$LD_LIBRARY_PATH "
-
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }
 
