@@ -158,3 +158,4 @@ repository. But we now limit their size to 20 MB.
 | 061  | Order of sections in plugin `inject`
 | 062  | Analyze a Japanese ISDB live stream
 | 063  | SI analysis and conversions: ISDB signalization
+| 064  | `pcrverify` plugin
