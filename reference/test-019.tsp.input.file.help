@@ -23,6 +23,15 @@ Options:
       default, continue reading until the last file reaches the end of file
       (other files are replaced with null packets after their end of file).
 
+  --format name
+      Specify the format of the input files. By default, the format is
+      automatically and independently detected for each file. But the
+      auto-detection may fail in some cases (for instance when the first
+      time-stamp of an M2TS file starts with 0x47). Using this option forces a
+      specific format. If a specific format is specified, all input files must
+      have the same format.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
+
   --help
       Display this help text.
 

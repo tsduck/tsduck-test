@@ -32,6 +32,11 @@ Options:
       are kept in the file. Extraneous bytes at end of file (after last
       multiple of 188 bytes) are truncated.
 
+  -s value
+  --size-of-packet value
+      TS packet size in bytes. The default is 188 bytes. Alternate packet sizes
+      are useful for M2TS or other TS file formats.
+
   -v
   --verbose
       Produce verbose output.
