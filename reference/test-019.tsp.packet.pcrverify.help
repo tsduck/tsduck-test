@@ -18,12 +18,25 @@ Options:
   --help
       Display this help text.
 
+  -i
+  --input-synchronous
+      Verify the PCR's according to each packet input timestamp. This method is
+      meaningful only with real-time input sources or if the input source can
+      recreate reliable input timestamps (M2TS files for instance). With this
+      option, the bitrate is ignored.
+
   -j value
   --jitter-max value
       Maximum allowed jitter. PCR's with a higher jitter are reported, others
       are ignored. If --absolute, the specified value is in PCR units,
       otherwise it is in micro-seconds. The default is 27,000 PCR units or 1,
       000 micro-seconds.
+
+  --jitter-unreal value
+      Maximum realistic jitter. Any jitter above this value is unrealistic and
+      ignored (probably because of a PCR leap). If --absolute, the specified
+      value is in PCR units, otherwise it is in micro-seconds. The default is
+      270,000,000 PCR units or 10,000,000 micro-seconds (10 seconds).
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
