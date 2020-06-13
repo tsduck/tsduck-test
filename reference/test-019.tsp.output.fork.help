@@ -13,6 +13,11 @@ Options:
   --buffered-packets value
       Windows only: Specifies the pipe buffer size in number of TS packets.
 
+  --format name
+      Specify the format of the output TS stream. By default, the format is a
+      standard TS.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
+
   --help
       Display this help text.
 

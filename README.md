@@ -160,3 +160,4 @@ repository. But we now limit their size to 20 MB.
 | 063  | SI analysis and conversions: ISDB signalization
 | 064  | `pcrverify` plugin
 | 065  | M2TS file format
+| 066  | Preserve packet metadata in `fork` and `timeshift`

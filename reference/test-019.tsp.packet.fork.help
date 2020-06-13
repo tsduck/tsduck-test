@@ -16,6 +16,11 @@ Options:
       buffered and sent one by one. The default is 500 packets in real-time
       mode and 1000 packets in offline mode.
 
+  --format name
+      Specify the format of the output TS stream. By default, the format is a
+      standard TS.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
+
   --help
       Display this help text.
 
