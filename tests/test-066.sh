@@ -35,3 +35,21 @@ test_bin $SCRIPT.2.ts
 
 cmp "$INFILE" "$TMPDIR/$SCRIPT.2.m2ts" >"$OUTDIR/$SCRIPT.cmp.2.log" 2>&1
 test_text $SCRIPT.cmp.2.log
+
+# TSDuck file format through fork and pipe
+$(tspath tsp) --synchronous-log \
+    -I fork "$(fpath $(tspath tsp)) -I file "$(fpath "$INFILE")" -P filter --every 1000 --set-label 27 -O file --format duck" \
+    -O file --format duck \
+    2>"$OUTDIR/$SCRIPT.tsp.3a.log" | \
+$(tspath tsp) --synchronous-log \
+    -P file --only-label 27 $(fpath "$OUTDIR/$SCRIPT.3.ts") \
+    -O file $(fpath "$TMPDIR/$SCRIPT.3.m2ts") --format m2ts \
+    >"$OUTDIR/$SCRIPT.tsp.3b.log" 2>&1
+
+test_text $SCRIPT.tsp.3a.log
+test_text $SCRIPT.tsp.3b.log
+test_bin $SCRIPT.3.ts
+
+cmp "$INFILE" "$TMPDIR/$SCRIPT.3.m2ts" >"$OUTDIR/$SCRIPT.cmp.3.log" 2>&1
+test_text $SCRIPT.cmp.3.log
+
