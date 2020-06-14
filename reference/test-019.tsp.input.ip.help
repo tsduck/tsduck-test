@@ -81,3 +81,17 @@ Options:
       is specified by the option --source. The --ssm option is implicit when
       the syntax 'source@address:port' is used.
 
+  --timestamp-priority name
+      Specify how the input time-stamp of each packet is computed. The name
+      specifies an ordered list. The first available time-stamp value is used
+      as input time-stamp. The possible time-stamp sources are:
+      - rtp : The RTP time stamp, when the UDP packet is an RTP packet.
+      - kernel : A kernel-provided time-stamp for the packet, when available
+      (Linux only).
+      - tsp : A software time-stamp, provided by tsp when the input plugin
+      returns a chunk of packets.
+      The tsp-provided time-stamp is always available, always comes last and is
+      less precise. The default is rtp-kernel-tsp.
+      Must be one of "kernel-rtp-tsp", "kernel-tsp", "rtp-kernel-tsp",
+      "rtp-tsp", "tsp".
+

@@ -188,6 +188,18 @@ Options:
       This string can be used completely free-form, however it's highly
       recommended to follow the SRT Access Control guidlines.
 
+  --timestamp-priority name
+      Specify how the input time-stamp of each packet is computed. The name
+      specifies an ordered list. The first available time-stamp value is used
+      as input time-stamp. The possible time-stamp sources are:
+      - rtp : The RTP time stamp, when the UDP packet is an RTP packet.
+      - srt : SRT source time stamp.
+      - tsp : A software time-stamp, provided by tsp when the input plugin
+      returns a chunk of packets.
+      The tsp-provided time-stamp is always available, always comes last and is
+      less precise. The default is rtp-srt-tsp.
+      Must be one of "rtp-srt-tsp", "rtp-tsp", "srt-rtp-tsp", "srt-tsp", "tsp".
+
   --tlpktdrop value
       Too-late Packet Drop. When enabled on receiver, it skips missing packets
       that have not been delivered in time and delivers the subsequent packets
