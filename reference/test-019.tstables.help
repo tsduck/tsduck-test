@@ -5,7 +5,7 @@ Usage: tstables [options] [filename]
 
 Parameter:
 
-  Input MPEG capture file (standard input if omitted).
+  Input transport stream file (standard input if omitted).
 
 Options:
 
@@ -102,6 +102,13 @@ Options:
   -f
   --flush
       Flush output after each display.
+
+  --format name
+      Specify the format of the input file. By default, the format is
+      automatically detected. But the auto-detection may fail in some cases
+      (for instance when the first time-stamp of an M2TS file starts with
+      0x47). Using this option forces a specific format.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
 
   --help
       Display this help text.

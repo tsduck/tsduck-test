@@ -23,6 +23,13 @@ Options:
       Use DTS (Decoding Time Stamps) from video PID's instead of PCR (Program
       Clock Reference) from the transport layer
 
+  --format name
+      Specify the format of the input file. By default, the format is
+      automatically detected. But the auto-detection may fail in some cases
+      (for instance when the first time-stamp of an M2TS file starts with
+      0x47). Using this option forces a specific format.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
+
   -f
   --full
       Full analysis. The file is entirely analyzed (as with --all) and the

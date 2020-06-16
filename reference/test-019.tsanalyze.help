@@ -5,7 +5,7 @@ Usage: tsanalyze [options] [filename]
 
 Parameter:
 
-  Input MPEG capture file (standard input if omitted).
+  Input transport stream file (standard input if omitted).
 
 Options:
 
@@ -51,6 +51,13 @@ Options:
       strings, which is not the case with some operators. Using this option,
       all DVB strings without explicit table code are assumed to use
       ISO-8859-15 instead of the standard ISO-6937 encoding.
+
+  --format name
+      Specify the format of the input file. By default, the format is
+      automatically detected. But the auto-detection may fail in some cases
+      (for instance when the first time-stamp of an M2TS file starts with
+      0x47). Using this option forces a specific format.
+      Must be one of "M2TS", "TS", "autodetect", "duck".
 
   --global-pid-list
       Report the list of all global PID's, that is to say PID's which are not

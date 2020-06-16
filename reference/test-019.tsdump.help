@@ -27,6 +27,17 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
+  -f name
+  --format name
+      Specify the format of the input files. By default, when dumping TS
+      packets, the format is automatically and independently detected for each
+      file. But the auto-detection may fail in some cases  (for instance when
+      the first time-stamp of an M2TS file starts with 0x47). Using this option
+      forces a specific format. If a specific format is specified, all input
+      files must have the same format. This option is ignored with --raw-file:
+      the complete raw structure of the file is dumped .
+      Must be one of "M2TS", "TS", "autodetect", "duck".
+
   -h
   --headers-only
       Dump packet headers only, not payload.
