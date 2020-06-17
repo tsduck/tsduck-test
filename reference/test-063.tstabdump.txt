@@ -1,6 +1,6 @@
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 0, size: 185 bytes
+  Section: 0 (last: 0), version: 0, size: 181 bytes
   - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
     CA System Id: 0x0004 (Secure Navi)
     Transmission type: 7 (Broadcast route)
@@ -46,10 +46,10 @@
     Service id: 0x1234 (4660)
     Service id: 0x5678 (22136)
     Service id: 0x9ABC (39612)
-  - Descriptor 10: ISDB TS Information (0xCD, 205), 7 bytes
+  - Descriptor 10: ISDB TS Information (0xCD, 205), 6 bytes
     Remote control key id: 0xAB (171)
     TS name: "foo"
-  - Descriptor 11: ISDB TS Information (0xCD, 205), 21 bytes
+  - Descriptor 11: ISDB TS Information (0xCD, 205), 20 bytes
     Remote control key id: 0x12 (18)
     TS name: "bar"
     - Transmission type info: 0xEF (239)
@@ -66,7 +66,7 @@
   - Descriptor 13: ISDB Logo Transmission (0xCF, 207), 3 bytes
     Logo transmission type: 0x02 (CDT transmission scheme 2: indirectly with download data identification)
     Logo id: 0x123 (291)
-  - Descriptor 14: ISDB Logo Transmission (0xCF, 207), 11 bytes
+  - Descriptor 14: ISDB Logo Transmission (0xCF, 207), 10 bytes
     Logo transmission type: 0x03 (Simple logo system)
     Logo characters: "log text"
   - Descriptor 15: ISDB Logo Transmission (0xCF, 207), 5 bytes
@@ -91,7 +91,7 @@
     Broadcasting identifier: 2 (Satellite using 34.5 MHz bandwidth in 11.7 to 12.2 GHz band)
     Additional broadcasting id: 0xAB (171)
     Additional identification info (3 bytes): 98 76 54
-  - Descriptor 20: ISDB Broadcaster Name (0xD8, 216), 11 bytes
+  - Descriptor 20: ISDB Broadcaster Name (0xD8, 216), 10 bytes
     Broadcaster name: "test name"
   - Descriptor 21: ISDB Content Availability (0xDE, 222), 1 bytes
     Copy restriction mode: true
@@ -274,7 +274,7 @@
       Data component id: 0x3456 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 553 bytes
+  Section: 0 (last: 0), version: 2, size: 544 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x00000002 (2)
     Component type: 0x08 (3/2 mode)
@@ -286,7 +286,7 @@
     Sampling rate: 0x2 (22.05 kHz)
     Language code: "jpn"
     Text: ""
-  - Descriptor 1: ISDB Audio Component (0xC4, 196), 25 bytes
+  - Descriptor 1: ISDB Audio Component (0xC4, 196), 24 bytes
     Content type: 0x0000000E (14)
     Component type: 0x40 (Commentary for visually disabled persons)
     Component tag: 0x34 (52)
@@ -380,7 +380,7 @@
     CA System Id: 0x5678 (unknown)
     CA unit id: 12
     Fee name: ""
-  - Descriptor 16: ISDB CA Contract Information (0xCB, 203), 21 bytes
+  - Descriptor 16: ISDB CA Contract Information (0xCB, 203), 20 bytes
     CA System Id: 0x3456 (unknown)
     CA unit id: 7
     Component tag: 0x12 (18)
@@ -394,7 +394,7 @@
   - Descriptor 18: ISDB Hierarchical Transmission (0xC0, 192), 3 bytes
     Quality level: low
     Reference PID: 0x1234 (4660)
-  - Descriptor 19: ISDB Board Information (0xDB, 219), 25 bytes
+  - Descriptor 19: ISDB Board Information (0xDB, 219), 23 bytes
     Title: "Sample title"
     Text: "Foo bar"
   - Descriptor 20: ISDB Event Group (0xD6, 214), 1 bytes
@@ -426,12 +426,12 @@
       Transport stream id: 0x2583 (9603)
       Service id:          0x3691 (13969)
       Event id:            0x8527 (34087)
-  - Descriptor 23: ISDB Data Content (0xC7, 199), 27 bytes
+  - Descriptor 23: ISDB Data Content (0xC7, 199), 26 bytes
     Data component id: 0x0008 (ARIB subtitle & teletext coding)
     Entry component: 0xEA (234)
     Language: "foo"
     Text: "Description text"
-  - Descriptor 24: ISDB Data Content (0xC7, 199), 27 bytes
+  - Descriptor 24: ISDB Data Content (0xC7, 199), 26 bytes
     Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
     Entry component: 0x02 (2)
     Selector bytes (3 bytes): 12 34 56
@@ -485,7 +485,7 @@
     Expire date: unspecified
     Episode: 23/47
     Series name: ""
-  - Descriptor 33: ISDB Series (0xD5, 213), 21 bytes
+  - Descriptor 33: ISDB Series (0xD5, 213), 20 bytes
     Series id: 0x5678 (22136)
     Repeat label: 0
     Program pattern: 5 (Division of long hour program)
@@ -496,7 +496,7 @@
     Language: "foo"
     Node name: ""
     Text: ""
-  - Descriptor 35: ISDB Short Node Information (0xD3, 211), 42 bytes
+  - Descriptor 35: ISDB Short Node Information (0xD3, 211), 40 bytes
     Language: "bar"
     Node name: "Test node name"
     Text: "And its description"
