@@ -161,3 +161,4 @@ repository. But we now limit their size to 20 MB.
 | 064  | `pcrverify` plugin
 | 065  | M2TS file format
 | 066  | Preserve packet metadata in `fork` and `timeshift`
+| 067  | DTG private descriptors

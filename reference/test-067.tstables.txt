@@ -1,0 +1,45 @@
+
+* NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 147 bytes
+  - Section 0:
+    Network Id: 0 (0x0000)
+    Network information:
+    - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x0000233A (DTT UK (OFCOM, formerly ITC))
+    - Descriptor 1: UK DTT Logical Channel (0x83, 131), 0 bytes
+    - Descriptor 2: UK DTT HD Simulcast Logical Channel Number (0x88, 136), 0 bytes
+    - Descriptor 3: UK DTT Preferred Name List (0x84, 132), 0 bytes
+    - Descriptor 4: UK DTT Service Attribute (0x86, 134), 0 bytes
+    - Descriptor 5: UK DTT Logical Channel (0x83, 131), 12 bytes
+      Service Id:  4660 (0x1234), Visible: 1, Channel number: 1021
+      Service Id: 22136 (0x5678), Visible: 0, Channel number:  10
+      Service Id: 39612 (0x9ABC), Visible: 1, Channel number:  85
+    - Descriptor 6: UK DTT HD Simulcast Logical Channel Number (0x88, 136), 4 bytes
+      Service Id:  4660 (0x1234), Visible: 0, Channel number: 987
+    - Descriptor 7: UK DTT Preferred Name Identifier (0x85, 133), 1 bytes
+      Name identifier: 139
+    - Descriptor 8: UK DTT Preferred Name List (0x84, 132), 26 bytes
+      Language: eng, name count: 2
+      Id: 35, Name: "Name 23"
+      Id: 174, Name: "Name AE"
+      Language: fre, name count: 0
+    - Descriptor 9: UK DTT Short Service Name (0x87, 135), 7 bytes
+      Name: "Foo Bar"
+    - Descriptor 10: UK DTT Service Attribute (0x86, 134), 6 bytes
+      Service Id:  4660 (0x1234), numeric selection: true, visible: false
+      Service Id: 22136 (0x5678), numeric selection: false, visible: true
+    - Descriptor 11: UK DTT Guidance (0x89, 137), 17 bytes
+      Guidance type: 0
+      Language: "foo"
+      Text: "Some foo text"
+    - Descriptor 12: UK DTT Guidance (0x89, 137), 18 bytes
+      Guidance type: 1
+      Guidance mode: false
+      Language: "bar"
+      Text: "Some bar text"
+    - Descriptor 13: UK DTT Guidance (0x89, 137), 1 bytes
+      Guidance type: 2
+    - Descriptor 14: UK DTT Guidance (0x89, 137), 5 bytes
+      Guidance type: 3
+      Reserved (4 bytes): 12 34 56 78
+
