@@ -108,7 +108,7 @@ repository. But we now limit their size to 20 MB.
 | 011  | Adding CA descriptors in PAT and PMT
 | 012  | Teletext, French language
 | 013  | Teletext, Russian language
-| 014  | SI analysis and conversions: various descriptors
+| 014  | SI analysis and conversions: EACEM private descriptors
 | 015  | SI analysis and conversions: various descriptors
 | 016  | Analyze an Eutelsat Hot Bird live stream with MPE data broadcast
 | 017  | IP/MAC Notification Table (INT)
@@ -116,7 +116,7 @@ repository. But we now limit their size to 20 MB.
 | 019  | Integrity of help texts
 | 020  | `pmt` plugin
 | 021  | `tsp` stuffing options
-| 022  | INT-specific descriptors
+| 022  | SI analysis and conversions: INT and AIT-specific descriptors
 | 023  | `file` input plugin with more than one file
 | 024  | `continuity` plugin
 | 025  | Non-regression on a stream which crashed `tsanalyzer` (issue #49)
@@ -127,7 +127,7 @@ repository. But we now limit their size to 20 MB.
 | 030  | `sections` plugin
 | 031  | `inject` plugin with repetition rates
 | 032  | DSM-CC stream events
-| 033  | DSM-CC descriptors
+| 033  | SI analysis and conversions: DSM-CC descriptors
 | 034  | `tsswitch`
 | 035  | `encap` and `decap` plugins
 | 036  | `duplicate` plugin
@@ -147,9 +147,9 @@ repository. But we now limit their size to 20 MB.
 | 050  | SCTE 18 (Emergency Alert System) signalization
 | 051  | Analyze and convert EIT's from an ATSC live stream
 | 052  | Analyze and convert the RRT from an ATSC live stream
-| 053  | NorDig private descriptors
+| 053  | SI analysis and conversions: NorDig private descriptors
 | 054  | `timeshift` plugin
-| 055  | BskyB private descriptors
+| 055  | SI analysis and conversions: BskyB private descriptors
 | 056  | `nit` plugin with option `--build-service-list-descriptors`
 | 057  | `hls` input plugin
 | 058  | `--append` option in `file` output plugin
@@ -161,4 +161,4 @@ repository. But we now limit their size to 20 MB.
 | 064  | `pcrverify` plugin
 | 065  | M2TS file format
 | 066  | Preserve packet metadata in `fork` and `timeshift`
-| 067  | DTG private descriptors
+| 067  | SI analysis and conversions: DTG private descriptors

@@ -27,7 +27,7 @@
       0x80 (reserved_0 for future use)
 
 * INT (IP/MAC Notification), TID 76 (0x4C)
-  Section: 0 (last: 0), version: 0, size: 336 bytes
+  Section: 0 (last: 0), version: 0, size: 378 bytes
   Platform id: 0x123456 (unknown)
   Action type: 0x01, processing order: 0x00, id hash: 0x70 (valid)
   Platform descriptors:
@@ -89,9 +89,21 @@
       Modulation system id: 0x7894 (30868)
       Physical stream id: 0x4568 (17768)
       Selector bytes (4 bytes): 12 34 56 78
-    - Descriptor 20: INT ISP Access Mode (0x14, 20), 1 bytes
+    - Descriptor 20: INT IP/MAC Platform Name (0x0C, 12), 11 bytes
+      Language: foo
+      Platform name: Bar Text
+    - Descriptor 21: INT IP/MAC Platform Provider Name (0x0D, 13), 16 bytes
+      Language: bar
+      Platform name: Provider Name
+    - Descriptor 22: INT IP/MAC Stream Location (0x13, 19), 9 bytes
+      Network id: 0x1234 (4660)
+      Original network id: 0x5678 (22136)
+      Transport stream id: 0x9ABC (39612)
+      Service id: 0x6543 (25923)
+      Component tag: 0x21 (33)
+    - Descriptor 23: INT ISP Access Mode (0x14, 20), 1 bytes
       Access mode: 0x01 (dialup)
-    - Descriptor 21: INT ISP Access Mode (0x14, 20), 1 bytes
+    - Descriptor 24: INT ISP Access Mode (0x14, 20), 1 bytes
       Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74)

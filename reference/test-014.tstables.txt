@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 76 bytes
+  Version: 0, sections: 1, total size: 108 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -18,4 +18,14 @@
       Language: esp, name count: 1
       Id: 189, Name: "Mañana"
       Language: fre, name count: 0
+    - Descriptor 5: Logical Channel Number (0x83, 131), 0 bytes
+    - Descriptor 6: Logical Channel Number (0x83, 131), 12 bytes
+      Service Id:  4660 (0x1234), Visible: 1, Channel number:  11
+      Service Id: 22136 (0x5678), Visible: 0, Channel number:  22
+      Service Id: 39612 (0x9ABC), Visible: 1, Channel number:  33
+    - Descriptor 7: HD Simulcast Logical Channel Number (0x88, 136), 0 bytes
+    - Descriptor 8: HD Simulcast Logical Channel Number (0x88, 136), 12 bytes
+      Service Id:  4660 (0x1234), Visible: 1, Channel number: 101
+      Service Id: 22136 (0x5678), Visible: 0, Channel number: 202
+      Service Id: 39612 (0x9ABC), Visible: 1, Channel number: 303
 

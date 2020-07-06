@@ -96,7 +96,7 @@
 
     <time_shifted_event_descriptor reference_service_id="0x1234" reference_event_id="0x5678"/>
 
-    <time_shifted_service_descriptor reference_service_id="0x9ABC"/>
+    <DVB_time_shifted_service_descriptor reference_service_id="0x9ABC"/>
 
     <NVOD_reference_descriptor/>
 
@@ -171,7 +171,7 @@
       </additional_info>
     </AC4_descriptor>
 
-    <AC4_descriptor
+    <DVB_AC4_descriptor
         ac4_dialog_enhancement_enabled="true"
         ac4_channel_mode="2">
       <ac4_dsi_toc>
@@ -180,7 +180,7 @@
       <additional_info>
         78 96 23 12 45 46
       </additional_info>
-    </AC4_descriptor>
+    </DVB_AC4_descriptor>
 
     <service_move_descriptor
         new_original_network_id="0x1234"
@@ -197,9 +197,9 @@
 
     <stuffing_descriptor/>
 
-    <stuffing_descriptor>
+    <DVB_stuffing_descriptor>
       01 23 45 67 89
-    </stuffing_descriptor>
+    </DVB_stuffing_descriptor>
 
     <AVC_timing_and_HRD_descriptor
         hrd_management_valid="true"
@@ -1033,6 +1033,44 @@
         98 74 56
       </private_data>
     </J2K_video_descriptor>
+
+    <cue_identifier_descriptor cue_stream_type="insert_null_schedule"/>
+    <cue_identifier_descriptor cue_stream_type="all"/>
+
+    <DVB_AC3_descriptor/>
+
+    <DVB_AC3_descriptor component_type="0x12" bsid="0x34" mainid="0x56" asvc="0x78"/>
+
+    <DVB_AC3_descriptor component_type="0x9A" mainid="0xBC">
+      <additional_info>
+        987654
+      </additional_info>
+    </DVB_AC3_descriptor>
+
+    <DVB_enhanced_AC3_descriptor
+        mixinfoexists="true"
+        component_type="0x12"
+        bsid="0x34"
+        mainid="0x56"
+        asvc="0x78"
+        substream1="0x9A"
+        substream2="0xBC"
+        substream3="0xDE">
+      <additional_info>
+        14785236
+      </additional_info>
+    </DVB_enhanced_AC3_descriptor>
+
+    <private_data_indicator_descriptor private_data_indicator="0x12345678"/>
+    <private_data_indicator_descriptor private_data_indicator="0"/>
+
+    <registration_descriptor format_identifier="0x98765432"/>
+
+    <registration_descriptor format_identifier="0x12345678">
+      <additional_identification_info>
+        987654
+      </additional_identification_info>
+    </registration_descriptor>
 
   </TSDT>
 

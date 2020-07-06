@@ -436,5 +436,27 @@
         98 74 56
       </private_data>
     </J2K_video_descriptor>
+    <cue_identifier_descriptor cue_stream_type="insert_null_schedule"/>
+    <cue_identifier_descriptor cue_stream_type="all"/>
+    <DVB_AC3_descriptor/>
+    <DVB_AC3_descriptor component_type="0x12" bsid="0x34" mainid="0x56" asvc="0x78"/>
+    <DVB_AC3_descriptor component_type="0x9A" mainid="0xBC">
+      <additional_info>
+        98 76 54
+      </additional_info>
+    </DVB_AC3_descriptor>
+    <DVB_enhanced_AC3_descriptor mixinfoexists="true" component_type="0x12" bsid="0x34" mainid="0x56" asvc="0x78" substream1="0x9A" substream2="0xBC" substream3="0xDE">
+      <additional_info>
+        14 78 52 36
+      </additional_info>
+    </DVB_enhanced_AC3_descriptor>
+    <private_data_indicator_descriptor private_data_indicator="0x12345678"/>
+    <private_data_indicator_descriptor private_data_indicator="0x00000000"/>
+    <registration_descriptor format_identifier="0x98765432"/>
+    <registration_descriptor format_identifier="0x12345678">
+      <additional_identification_info>
+        98 76 54
+      </additional_identification_info>
+    </registration_descriptor>
   </TSDT>
 </tsduck>

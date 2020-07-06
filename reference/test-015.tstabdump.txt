@@ -329,7 +329,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 944 bytes
+  Section: 0 (last: 0), version: 0, size: 1009 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -831,4 +831,37 @@
     Still mode: false
     Interlaced video: true
     Private data (3 bytes): 98 74 56
+  - Descriptor 72: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+    Cue stream type: 0x00 (splice_insert, splice_null, splice_schedule)
+  - Descriptor 73: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+    Cue stream type: 0x01 (All commands)
+  - Descriptor 74: AC-3 (0x6A, 106), 1 bytes
+  - Descriptor 75: AC-3 (0x6A, 106), 5 bytes
+    Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
+    AC-3 coding version: 52 (0x34)
+    Main audio service id: 86 (0x56)
+    Associated to: 0x78
+  - Descriptor 76: AC-3 (0x6A, 106), 6 bytes
+    Component type: 0x9A (Enhanced AC-3, combined, hearing impaired, 2 channels)
+    Main audio service id: 188 (0xBC)
+    Additional information (3 bytes): 98 76 54
+  - Descriptor 77: Enhanced AC-3 (0x7A, 122), 12 bytes
+    Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
+    AC-3 coding version: 52 (0x34)
+    Main audio service id: 86 (0x56)
+    Associated to: 0x78
+    Substream 0: Mixing control metadata
+    Substream 1: 0x9A (Enhanced AC-3, combined, hearing impaired, 2 channels)
+    Substream 2: 0xBC (Enhanced AC-3, combined, voiceover, multichannel > 2)
+    Substream 3: 0xDE (Enhanced AC-3, full, hearing impaired, multiple substreams)
+    Additional information (4 bytes): 14 78 52 36
+  - Descriptor 78: Private Data Indicator (0x0F, 15), 4 bytes
+    Private data indicator: 0x12345678
+  - Descriptor 79: Private Data Indicator (0x0F, 15), 4 bytes
+    Private data indicator: 0x00000000
+  - Descriptor 80: Registration (0x05, 5), 4 bytes
+    Format identifier: 0x98765432
+  - Descriptor 81: Registration (0x05, 5), 7 bytes
+    Format identifier: 0x12345678
+    Additional identification info (3 bytes): 98 76 54
 

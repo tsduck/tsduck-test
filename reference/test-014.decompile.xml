@@ -15,5 +15,17 @@
       </language>
       <language code="fre"/>
     </eacem_preferred_name_list_descriptor>
+    <eacem_logical_channel_number_descriptor/>
+    <eacem_logical_channel_number_descriptor>
+      <service service_id="0x1234" logical_channel_number="11" visible_service="true"/>
+      <service service_id="0x5678" logical_channel_number="22" visible_service="false"/>
+      <service service_id="0x9ABC" logical_channel_number="33" visible_service="true"/>
+    </eacem_logical_channel_number_descriptor>
+    <eacem_HD_simulcast_logical_channel_descriptor/>
+    <eacem_HD_simulcast_logical_channel_descriptor>
+      <service service_id="0x1234" logical_channel_number="101" visible_service="true"/>
+      <service service_id="0x5678" logical_channel_number="202" visible_service="false"/>
+      <service service_id="0x9ABC" logical_channel_number="303" visible_service="true"/>
+    </eacem_HD_simulcast_logical_channel_descriptor>
   </PMT>
 </tsduck>
