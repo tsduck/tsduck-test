@@ -48,6 +48,23 @@ Options:
       RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
+  --eit-base-date date
+      With --eit-normalization, use the specified date as "last midnight"
+      reference for the allocation of the various EIT events in sections and
+      segments. The date must be in the format "year/month/day". By default,
+      use the oldest date in all EIT sections as base date.
+
+  --eit-normalization
+      Reorganize all EIT sections according to ETSI TS 101 211 rules. One
+      single EIT p/f subtable is built per service. It is split in two
+      sections, one for present and one for following events. All EIT schedule
+      are kept but they are completely reorganized. All events are extracted
+      and spread over new EIT sections according to ETSI TS 101 211 rules. If
+      several files are specified, the reorganization of EIT's is performed
+      inside each file independently. This is fine as long as all EIT's for a
+      given service are in the same input file. See also option
+      --eit-base-date.
+
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
       for commonly incorrect signalization on some European satellites. In that
@@ -73,6 +90,11 @@ Options:
   -o value
   --output value
       Output file name for TS packets. By default, use standard output.
+
+  --pack-and-flush
+      When loading a binary section file, pack incomplete tables and flush
+      them. Sections are renumbered to remove any hole between sections. Use
+      with care because this may create inconsistent tables.
 
   -p value
   --pid value
