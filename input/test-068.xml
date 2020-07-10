@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <!-- EIT p/f actual, 1 event on service 1 -->
+  <EIT type="pf" service_id="1" transport_stream_id="10" original_network_id="20">
+    <event event_id="1000" start_time="2020-06-10 20:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event name</event_name>
+        <text>Event text</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT p/f other, 4 events on service 2 over 2 sections -->
+  <EIT type="pf" actual="false" service_id="2" transport_stream_id="20" original_network_id="20">
+    <event event_id="1003" start_time="2020-06-10 10:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event name 3</event_name>
+        <text>Event text 3</text>
+      </short_event_descriptor>
+    </event>
+    <event event_id="1001" start_time="2020-06-10 05:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event name 1</event_name>
+        <text>Event text 1</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+  <EIT type="pf" actual="false" service_id="2" transport_stream_id="20" original_network_id="20">
+    <event event_id="1002" start_time="2020-06-10 08:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event name 2</event_name>
+        <text>Event text 2</text>
+      </short_event_descriptor>
+    </event>
+    <event event_id="1004" start_time="2020-06-10 21:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event name 4</event_name>
+        <text>Event text 4</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT sched actual, 1 event on service 1 -->
+  <EIT type="0" service_id="1" transport_stream_id="10" original_network_id="20">
+    <event event_id="2000" start_time="2020-06-10 18:30:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2000 name</event_name>
+        <text>Event 2000 text</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- Test that non-EIT tables are preserved -->
+  <PAT transport_stream_id="10">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="2" program_map_PID="200"/>
+    <service service_id="3" program_map_PID="300"/>
+  </PAT>
+
+  <!-- EIT sched actual, 1 event on service 1, 3 days later, same table, not same section -->
+  <EIT type="0" service_id="1" transport_stream_id="10" original_network_id="20">
+    <event event_id="2001" start_time="2020-06-13 11:30:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2001 name</event_name>
+        <text>Event 2001 text</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+</tsduck>
