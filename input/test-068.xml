@@ -58,12 +58,38 @@
     <service service_id="3" program_map_PID="300"/>
   </PAT>
 
-  <!-- EIT sched actual, 1 event on service 1, 3 days later, same table, not same section -->
+  <!-- EIT sched actual, 1 event on service 1, 3 days later, same table, not same segment -->
   <EIT type="0" service_id="1" transport_stream_id="10" original_network_id="20">
     <event event_id="2001" start_time="2020-06-13 11:30:00" duration="00:10:00">
       <short_event_descriptor language_code="foo">
         <event_name>Event 2001 name</event_name>
         <text>Event 2001 text</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT sched actual, 1 event on service 1, 10 days later, different table -->
+  <EIT type="0" service_id="1" transport_stream_id="10" original_network_id="20">
+    <event event_id="2003" start_time="2020-06-21 10:30:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2003 name</event_name>
+        <text>Event 2003 text</text>
+      </short_event_descriptor>
+    </event>
+    <event event_id="2002" start_time="2020-06-21 10:00:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2002 name</event_name>
+        <text>Event 2002 text</text>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT sched other, events on service 2, very large, more than one section -->
+  <EIT type="0" actual="false" service_id="2" transport_stream_id="20" original_network_id="20">
+    <event event_id="3500" start_time="2020-06-13 11:30:00" duration="00:10:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3500 name</event_name>
+        <text>Event 3500 text</text>
       </short_event_descriptor>
     </event>
   </EIT>
