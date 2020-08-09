@@ -176,6 +176,9 @@ else
     fpath() { echo "$1"; }
 fi
 
+# Disable loading extensions to avoid locally installed extensions generating different logs.
+export TSLIBEXT_NONE=true
+
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }
 
