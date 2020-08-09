@@ -48,7 +48,6 @@ XMLFILE="$TMPDIR/$SCRIPT.xml"
     echo '</tsduck>'
 ) >"$XMLFILE"
 
-
 # Without EIT normalization
 $(tspath tstabcomp) \
     $(fpath "$XMLFILE") \

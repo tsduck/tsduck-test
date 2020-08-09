@@ -163,3 +163,4 @@ repository. But we now limit their size to 20 MB.
 | 066  | Preserve packet metadata in `fork` and `timeshift`
 | 067  | SI analysis and conversions: DTG private descriptors
 | 068  | EIT normalization
+| 069  | Non-regression on `tsecmg` (issue #619)
