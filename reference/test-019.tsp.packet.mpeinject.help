@@ -70,6 +70,12 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
+  --pack-sections
+      Specify to pack DSM-CC sections containing MPE datagrams. With this
+      option, each DSM-CC section starts in the same TS packet as the previous
+      section. By default, the last TS packet of a DSM-CC section is stuffed
+      and the next section starts in the next TS packet of the PID.
+
   -p value
   --pid value
       Specify the PID into which the MPE datagrams shall be inserted. This is a
