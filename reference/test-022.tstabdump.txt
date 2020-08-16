@@ -31,80 +31,80 @@
   Platform id: 0x123456 (unknown)
   Action type: 0x01, processing order: 0x00, id hash: 0x70 (valid)
   Platform descriptors:
-    - Descriptor 0: INT Target IP Address (0x09, 9), 4 bytes
-      Address mask: 12.34.56.78
-    - Descriptor 1: INT Target IP Address (0x09, 9), 12 bytes
-      Address mask: 12.34.56.78
-      Address: 1.2.3.4
-      Address: 54.124.12.78
-    - Descriptor 2: INT Target IP Slash (0x0F, 15), 0 bytes
-    - Descriptor 3: INT Target IP Slash (0x0F, 15), 10 bytes
-      Address/mask: 1.2.3.4/16
-      Address/mask: 5.6.7.8/24
-    - Descriptor 4: INT Target IP Source Slash (0x10, 16), 0 bytes
-    - Descriptor 5: INT Target IP Source Slash (0x10, 16), 20 bytes
-      - Source:      1.2.3.4/8
-        Destination: 5.6.7.8/16
-      - Source:      45.85.35.14/24
-        Destination: 123.124.178.1/25
-    - Descriptor 6: INT Target IPv6 Address (0x0A, 10), 16 bytes
-      Address mask: ffff:ffff:ff00::
-    - Descriptor 7: INT Target IPv6 Address (0x0A, 10), 48 bytes
-      Address mask: ffff:f0::
-      Address: fe80::93a3:dea0:2108:b81e
-      Address: fe80::ba3:a0:8:be
-    - Descriptor 8: INT Target IPv6 Slash (0x11, 17), 0 bytes
-    - Descriptor 9: INT Target IPv6 Slash (0x11, 17), 34 bytes
-      Address/mask: 1:2:3:4:5:6:7:8/72
-      Address/mask: fe80::93a3:dea0:2108:b81e/128
-    - Descriptor 10: INT Target IPv6 Source Slash (0x12, 18), 0 bytes
-    - Descriptor 11: INT Target IPv6 Source Slash (0x12, 18), 68 bytes
-      - Source:      41:252:53:48:95:996:a7:ced8/8
-        Destination: fe80::93a3:dea0:2108:b81e/16
-      - Source:      fe80::ba3:a0:8:be/128
-        Destination: ::1/64
-    - Descriptor 12: INT Target MAC Address (0x07, 7), 12 bytes
-      Address mask: 01:A3:E4:BA:45:74
-      Address: AB:CD:EF:01:23:45
-    - Descriptor 13: INT Target MAC Address Range (0x0E, 14), 12 bytes
-      First address: 12:78:65:32:59:32, last: 78:44:54:54:98:87
-    - Descriptor 14: INT Target Serial Number (0x08, 8), 0 bytes
-      Serial number (0 bytes): 
-    - Descriptor 15: INT Target Serial Number (0x08, 8), 4 bytes
-      Serial number (4 bytes): 12 34 56 78
-    - Descriptor 16: INT Target Smartcard (0x06, 6), 4 bytes
-      Super CAS Id: 0x98765432 (2557891634)
-      Private data (0 bytes): 
-    - Descriptor 17: INT Target Smartcard (0x06, 6), 10 bytes
-      Super CAS Id: 0x12345678 (305419896)
-      Private data (6 bytes): 45 89 32 84 21 54
-    - Descriptor 18: INT IP/MAC Generic Stream Location (0x15, 21), 7 bytes
-      Interactive network id: 0x1234 (4660)
-      Modulation system type: 0x01 (DVB-T2)
-      Modulation system id: 0x0000 (0)
-      Physical stream id: 0x0000 (0)
-    - Descriptor 19: INT IP/MAC Generic Stream Location (0x15, 21), 11 bytes
-      Interactive network id: 0x1234 (4660)
-      Modulation system type: 0xAB (171)
-      Modulation system id: 0x7894 (30868)
-      Physical stream id: 0x4568 (17768)
-      Selector bytes (4 bytes): 12 34 56 78
-    - Descriptor 20: INT IP/MAC Platform Name (0x0C, 12), 11 bytes
-      Language: foo
-      Platform name: Bar Text
-    - Descriptor 21: INT IP/MAC Platform Provider Name (0x0D, 13), 16 bytes
-      Language: bar
-      Platform name: Provider Name
-    - Descriptor 22: INT IP/MAC Stream Location (0x13, 19), 9 bytes
-      Network id: 0x1234 (4660)
-      Original network id: 0x5678 (22136)
-      Transport stream id: 0x9ABC (39612)
-      Service id: 0x6543 (25923)
-      Component tag: 0x21 (33)
-    - Descriptor 23: INT ISP Access Mode (0x14, 20), 1 bytes
-      Access mode: 0x01 (dialup)
-    - Descriptor 24: INT ISP Access Mode (0x14, 20), 1 bytes
-      Access mode: 0xBC (188)
+  - Descriptor 0: INT Target IP Address (0x09, 9), 4 bytes
+    Address mask: 12.34.56.78
+  - Descriptor 1: INT Target IP Address (0x09, 9), 12 bytes
+    Address mask: 12.34.56.78
+    Address: 1.2.3.4
+    Address: 54.124.12.78
+  - Descriptor 2: INT Target IP Slash (0x0F, 15), 0 bytes
+  - Descriptor 3: INT Target IP Slash (0x0F, 15), 10 bytes
+    Address/mask: 1.2.3.4/16
+    Address/mask: 5.6.7.8/24
+  - Descriptor 4: INT Target IP Source Slash (0x10, 16), 0 bytes
+  - Descriptor 5: INT Target IP Source Slash (0x10, 16), 20 bytes
+    - Source:      1.2.3.4/8
+      Destination: 5.6.7.8/16
+    - Source:      45.85.35.14/24
+      Destination: 123.124.178.1/25
+  - Descriptor 6: INT Target IPv6 Address (0x0A, 10), 16 bytes
+    Address mask: ffff:ffff:ff00::
+  - Descriptor 7: INT Target IPv6 Address (0x0A, 10), 48 bytes
+    Address mask: ffff:f0::
+    Address: fe80::93a3:dea0:2108:b81e
+    Address: fe80::ba3:a0:8:be
+  - Descriptor 8: INT Target IPv6 Slash (0x11, 17), 0 bytes
+  - Descriptor 9: INT Target IPv6 Slash (0x11, 17), 34 bytes
+    Address/mask: 1:2:3:4:5:6:7:8/72
+    Address/mask: fe80::93a3:dea0:2108:b81e/128
+  - Descriptor 10: INT Target IPv6 Source Slash (0x12, 18), 0 bytes
+  - Descriptor 11: INT Target IPv6 Source Slash (0x12, 18), 68 bytes
+    - Source:      41:252:53:48:95:996:a7:ced8/8
+      Destination: fe80::93a3:dea0:2108:b81e/16
+    - Source:      fe80::ba3:a0:8:be/128
+      Destination: ::1/64
+  - Descriptor 12: INT Target MAC Address (0x07, 7), 12 bytes
+    Address mask: 01:A3:E4:BA:45:74
+    Address: AB:CD:EF:01:23:45
+  - Descriptor 13: INT Target MAC Address Range (0x0E, 14), 12 bytes
+    First address: 12:78:65:32:59:32, last: 78:44:54:54:98:87
+  - Descriptor 14: INT Target Serial Number (0x08, 8), 0 bytes
+    Serial number (0 bytes): 
+  - Descriptor 15: INT Target Serial Number (0x08, 8), 4 bytes
+    Serial number (4 bytes): 12 34 56 78
+  - Descriptor 16: INT Target Smartcard (0x06, 6), 4 bytes
+    Super CAS Id: 0x98765432 (2557891634)
+    Private data (0 bytes): 
+  - Descriptor 17: INT Target Smartcard (0x06, 6), 10 bytes
+    Super CAS Id: 0x12345678 (305419896)
+    Private data (6 bytes): 45 89 32 84 21 54
+  - Descriptor 18: INT IP/MAC Generic Stream Location (0x15, 21), 7 bytes
+    Interactive network id: 0x1234 (4660)
+    Modulation system type: 0x01 (DVB-T2)
+    Modulation system id: 0x0000 (0)
+    Physical stream id: 0x0000 (0)
+  - Descriptor 19: INT IP/MAC Generic Stream Location (0x15, 21), 11 bytes
+    Interactive network id: 0x1234 (4660)
+    Modulation system type: 0xAB (171)
+    Modulation system id: 0x7894 (30868)
+    Physical stream id: 0x4568 (17768)
+    Selector bytes (4 bytes): 12 34 56 78
+  - Descriptor 20: INT IP/MAC Platform Name (0x0C, 12), 11 bytes
+    Language: foo
+    Platform name: Bar Text
+  - Descriptor 21: INT IP/MAC Platform Provider Name (0x0D, 13), 16 bytes
+    Language: bar
+    Platform name: Provider Name
+  - Descriptor 22: INT IP/MAC Stream Location (0x13, 19), 9 bytes
+    Network id: 0x1234 (4660)
+    Original network id: 0x5678 (22136)
+    Transport stream id: 0x9ABC (39612)
+    Service id: 0x6543 (25923)
+    Component tag: 0x21 (33)
+  - Descriptor 23: INT ISP Access Mode (0x14, 20), 1 bytes
+    Access mode: 0x01 (dialup)
+  - Descriptor 24: INT ISP Access Mode (0x14, 20), 1 bytes
+    Access mode: 0xBC (188)
 
 * AIT, TID 116 (0x74)
   Section: 0 (last: 0), version: 0, size: 575 bytes
