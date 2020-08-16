@@ -26,6 +26,29 @@
       0x40 (RDS via UECP (ETSI TS 101 154))
       0x80 (reserved_0 for future use)
 
+* AIT, TID 116 (0x74)
+  Section: 0 (last: 0), version: 21, size: 16 bytes
+  Application type: 4660 (0x1234), Test application: 1
+
+* AIT, TID 116 (0x74)
+  Section: 0 (last: 0), version: 10, size: 52 bytes
+  Application type: 30874 (0x789A), Test application: 0
+  Common descriptor loop:
+  - Descriptor 0: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 1 (0x01)
+  - Descriptor 1: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 2 (0x02)
+  - Descriptor 2: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 3 (0x03)
+  Application: Identifier: (Organization id: 305419896 (0x12345678), Application id: 39612 (0x9ABC)), Control code: 7
+  Application: Identifier: (Organization id: 2271560481 (0x87654321), Application id: 52137 (0xCBA9)), Control code: 171
+  - Descriptor 0: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 129 (0x81)
+  - Descriptor 1: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 130 (0x82)
+  - Descriptor 2: AIT Application Usage (0x16, 22), 1 bytes
+    Usage type: 131 (0x83)
+
 * INT (IP/MAC Notification), TID 76 (0x4C)
   Section: 0 (last: 0), version: 0, size: 378 bytes
   Platform id: 0x123456 (unknown)

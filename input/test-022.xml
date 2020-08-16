@@ -8,6 +8,23 @@
     <ancillary_data_descriptor ancillary_data_identifier="0xFF"/>
   </CAT>
 
+  <AIT version="21" application_type="0x1234"/>
+
+  <AIT version="10" test_application_flag="false" application_type="0x789A">
+    <application_usage_descriptor usage_type="0x01"/>
+    <application_usage_descriptor usage_type="0x02"/>
+    <application_usage_descriptor usage_type="0x03"/>
+    <application control_code="0x07">
+      <application_identifier organization_id="0x12345678" application_id="0x9ABC"/>
+    </application>
+    <application control_code="0xAB">
+      <application_identifier organization_id="0x87654321" application_id="0xCBA9"/>
+      <application_usage_descriptor usage_type="0x81"/>
+      <application_usage_descriptor usage_type="0x82"/>
+      <application_usage_descriptor usage_type="0x83"/>
+    </application>
+  </AIT>
+
   <INT platform_id="0x123456">
 
     <target_IP_address_descriptor IPv4_addr_mask="12.34.56.78"/>
