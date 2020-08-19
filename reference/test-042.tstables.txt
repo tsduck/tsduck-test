@@ -35,11 +35,11 @@
     Daylight saving time: no, next switch day: 3, hour: 15
 
 * TVCT (ATSC), TID 200 (0xC8), PID 200 (0x00C8)
-  Version: 11, sections: 1, total size: 218 bytes
+  Version: 11, sections: 1, total size: 257 bytes
   - Section 0:
     Transport stream id: 0x1FE1 (8161)
     Protocol version: 0, number of channels: 4
-    - Channel 62.1, short name: "KULX   "
+    - Channel 10.1, short name: "KULX   "
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0003 (3)
       ETM location: 1, access controlled: no
@@ -50,7 +50,7 @@
         - PID: 0x0031 (49), language: "", type: 0x02 (Digital radio sound service)
         - PID: 0x0034 (52), language: "eng", type: 0x81 (unknown)
         - PID: 0x0035 (53), language: "eng", type: 0x81 (unknown)
-    - Channel 62.2, short name: "TelXito"
+    - Channel 10.2, short name: "TelXito"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0004 (4)
       ETM location: 1, access controlled: no
@@ -60,7 +60,7 @@
         PCR PID: 0x0041 (65), number of elements: 2
         - PID: 0x0041 (65), language: "", type: 0x02 (Digital radio sound service)
         - PID: 0x0044 (68), language: "eng", type: 0x81 (unknown)
-    - Channel 62.3, short name: "LightTV"
+    - Channel 10.3, short name: "LightTV"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0005 (5)
       ETM location: 0, access controlled: no
@@ -70,7 +70,7 @@
         PCR PID: 0x0051 (81), number of elements: 2
         - PID: 0x0051 (81), language: "", type: 0x02 (Digital radio sound service)
         - PID: 0x0054 (84), language: "eng", type: 0x81 (unknown)
-    - Channel 62.4, short name: "Quest  "
+    - Channel 10.4, short name: "Quest  "
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0006 (6)
       ETM location: 0, access controlled: no
@@ -80,135 +80,140 @@
         PCR PID: 0x0061 (97), number of elements: 2
         - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
         - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
+    Additional descriptors:
+    - Descriptor 0: ATSC Component Name (0xA3, 163), 37 bytes
+      Component name: Number of strings: 2
+        Language: "eng", text: "Component name"
+        Language: "foo", text: "Bar name"
 
 * MGT (ATSC), TID 199 (0xC7), PID 200 (0x00C8)
   Version: 0, sections: 1, total size: 403 bytes
   - Section 0:
     Protocol version: 0, number of table types: 0
-    - Global descriptors:
-      - Descriptor 0: ATSC Component Name (0xA3, 163), 1 bytes
-        Component name: Number of strings: 0
-      - Descriptor 1: ATSC Component Name (0xA3, 163), 37 bytes
-        Component name: Number of strings: 2
-          Language: "eng", text: "Component name"
-          Language: "foo", text: "Bar name"
-      - Descriptor 2: ATSC Extended Channel Name (0xA0, 160), 1 bytes
-        Long channel name: Number of strings: 0
-      - Descriptor 3: ATSC Extended Channel Name (0xA0, 160), 25 bytes
-        Long channel name: Number of strings: 1
-          Language: "eng", text: "Long channel name"
-      - Descriptor 4: ATSC Service Location (0xA1, 161), 3 bytes
-        PCR PID: none, number of elements: 0
-      - Descriptor 5: ATSC Service Location (0xA1, 161), 21 bytes
-        PCR PID: 0x1234 (4660), number of elements: 3
-        - PID: 0x0567 (1383), language: "eng", type: 0x02 (Digital radio sound service)
-        - PID: 0x09AB (2475), language: "", type: 0x03 (Teletext service)
-        - PID: 0x1DEF (7663), language: "foo", type: 0x04 (NVOD reference service)
-      - Descriptor 6: ATSC AC-3 Audio (0x81, 129), 7 bytes
-        Sample rate: 32 kHz (0x2)
-        AC-3 coding version: 0x01 (1)
-        Bit rate: 56 kb/s (0x03)
-        Surround mode: NOT Dolby surround encoded (0x1)
-        Bitstream mode: associated service: visually impaired (VI) (0x2)
-        Num. channels: 3/1 (0x5)
-        Full service: true
-        Associated services flags: 0xEF
-        Text: ""
-      - Descriptor 7: ATSC AC-3 Audio (0x81, 129), 29 bytes
-        Sample rate: 44.1 kHz (0x1)
-        AC-3 coding version: 0x06 (6)
-        Bit rate: 512 kb/s (0x10)
-        Surround mode: Not indicated (0x0)
-        Bitstream mode: main audio service: music and effects (ME) (0x1)
-        Num. channels: 1 (0x8)
-        Full service: false
-        Main audio service id: 6
-        Priority: 0
-        Text: "Text string"
-        Language: "eng"
-        Language 2: "foo"
-        Additional information (5 bytes): 01 23 45 67 89
-      - Descriptor 8: ATSC E-AC-3 Audio Stream (0xCC, 204), 3 bytes
-        Mixinfo exists: false
-        Full service: true
-        Audio service type: complete main (CM) (0x0)
-        Num. channels: unknown (0x6)
-      - Descriptor 9: ATSC E-AC-3 Audio Stream (0xCC, 204), 28 bytes
-        Mixinfo exists: true
-        Full service: false
-        Audio service type: commentary (C) (0x5)
-        Num. channels: 2-channel Dolby Surround encoded (stereo) (0x3)
-        Bit stream id (bsid): 0x0F (15)
-        Priority: 2
-        Main id: 0x04 (4)
-        Associated service (asvc): 0xEF (239)
-        Substream 1: 0x12 (18)
-        Substream 2: 0x34 (52)
-        Substream 3: 0x56 (86)
-        Language: "eng"
-        Language 2: "foo"
-        Substream 1 language: "s01"
-        Substream 2 language: "s02"
-        Substream 3 language: "s03"
-        Additional information (5 bytes): 98 76 54 32 10
-      - Descriptor 10: ATSC Genre (0xAB, 171), 1 bytes
-        Attribute count: 0
-      - Descriptor 11: ATSC Genre (0xAB, 171), 4 bytes
-        Attribute count: 3
-         - Attribute: 0x20 (Education)
-         - Attribute: 0x7F (Western)
-         - Attribute: 0xA3 (Rock & Roll)
-      - Descriptor 12: ATSC Stuffing (0x80, 128), 0 bytes
-      - Descriptor 13: ATSC Stuffing (0x80, 128), 5 bytes
-        Stuffing data (5 bytes): 01 23 45 67 89
-      - Descriptor 14: ATSC Redistribution Control (0xAA, 170), 0 bytes
-      - Descriptor 15: ATSC Redistribution Control (0xAA, 170), 0 bytes
-      - Descriptor 16: ATSC Redistribution Control (0xAA, 170), 5 bytes
-        RC information (5 bytes): 98 76 54 32 10
-      - Descriptor 17: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
-        Number of services: 0
-      - Descriptor 18: ATSC Time-Shifted Service (0xA2, 162), 11 bytes
-        Number of services: 2
-        - Time shift: 5 mn, service: 1.2
-        - Time shift: 30 mn, service: 100.200
-      - Descriptor 19: ATSC Caption Service (0x86, 134), 1 bytes
-        Number of services: 0
-      - Descriptor 20: ATSC Caption Service (0x86, 134), 13 bytes
-        Number of services: 2
-        - Language: "foo", digital: false, line 21: true, easy reader: true, wide: false
-        - Language: "bar", digital: true, service: 0x23 (35), easy reader: false, wide: true
-      - Descriptor 21: ATSC Content Advisory (0x87, 135), 1 bytes
-        Number of regions: 0
-      - Descriptor 22: ATSC Content Advisory (0x87, 135), 76 bytes
-        Number of regions: 4
-        - Rating region: 0x01 (1), number of dimensions: 0
-        - Rating region: 0x02 (2), number of dimensions: 3
-            Rating dimension j: 0x0A (10), rating value: 1
-            Rating dimension j: 0x14 (20), rating value: 2
-            Rating dimension j: 0x1E (30), rating value: 3
-        - Rating region: 0x03 (3), number of dimensions: 0
-          Rating description: Number of strings: 2
-            Language: "eng", text: "English text"
-            Language: "foo", text: "Foo text"
-        - Rating region: 0x04 (4), number of dimensions: 3
-            Rating dimension j: 0x0C (12), rating value: 10
-            Rating dimension j: 0x16 (22), rating value: 11
-            Rating dimension j: 0x20 (32), rating value: 12
-          Rating description: Number of strings: 1
-            Language: "Bar", text: "Bar text"
-      - Descriptor 23: ATSC DCC Arriving Request (0xA9, 169), 2 bytes
-        DCC arriving request type: 0xF1 (241)
-      - Descriptor 24: ATSC DCC Arriving Request (0xA9, 169), 37 bytes
-        DCC arriving request type: 0x12 (18)
-        DCC arriving request text: Number of strings: 2
+    Global descriptors:
+    - Descriptor 0: ATSC Component Name (0xA3, 163), 1 bytes
+      Component name: Number of strings: 0
+    - Descriptor 1: ATSC Component Name (0xA3, 163), 37 bytes
+      Component name: Number of strings: 2
+        Language: "eng", text: "Component name"
+        Language: "foo", text: "Bar name"
+    - Descriptor 2: ATSC Extended Channel Name (0xA0, 160), 1 bytes
+      Long channel name: Number of strings: 0
+    - Descriptor 3: ATSC Extended Channel Name (0xA0, 160), 25 bytes
+      Long channel name: Number of strings: 1
+        Language: "eng", text: "Long channel name"
+    - Descriptor 4: ATSC Service Location (0xA1, 161), 3 bytes
+      PCR PID: none, number of elements: 0
+    - Descriptor 5: ATSC Service Location (0xA1, 161), 21 bytes
+      PCR PID: 0x1234 (4660), number of elements: 3
+      - PID: 0x0567 (1383), language: "eng", type: 0x02 (Digital radio sound service)
+      - PID: 0x09AB (2475), language: "", type: 0x03 (Teletext service)
+      - PID: 0x1DEF (7663), language: "foo", type: 0x04 (NVOD reference service)
+    - Descriptor 6: ATSC AC-3 Audio (0x81, 129), 7 bytes
+      Sample rate: 32 kHz (0x2)
+      AC-3 coding version: 0x01 (1)
+      Bit rate: 56 kb/s (0x03)
+      Surround mode: NOT Dolby surround encoded (0x1)
+      Bitstream mode: associated service: visually impaired (VI) (0x2)
+      Num. channels: 3/1 (0x5)
+      Full service: true
+      Associated services flags: 0xEF
+      Text: ""
+    - Descriptor 7: ATSC AC-3 Audio (0x81, 129), 29 bytes
+      Sample rate: 44.1 kHz (0x1)
+      AC-3 coding version: 0x06 (6)
+      Bit rate: 512 kb/s (0x10)
+      Surround mode: Not indicated (0x0)
+      Bitstream mode: main audio service: music and effects (ME) (0x1)
+      Num. channels: 1 (0x8)
+      Full service: false
+      Main audio service id: 6
+      Priority: 0
+      Text: "Text string"
+      Language: "eng"
+      Language 2: "foo"
+      Additional information (5 bytes): 01 23 45 67 89
+    - Descriptor 8: ATSC E-AC-3 Audio Stream (0xCC, 204), 3 bytes
+      Mixinfo exists: false
+      Full service: true
+      Audio service type: complete main (CM) (0x0)
+      Num. channels: unknown (0x6)
+    - Descriptor 9: ATSC E-AC-3 Audio Stream (0xCC, 204), 28 bytes
+      Mixinfo exists: true
+      Full service: false
+      Audio service type: commentary (C) (0x5)
+      Num. channels: 2-channel Dolby Surround encoded (stereo) (0x3)
+      Bit stream id (bsid): 0x0F (15)
+      Priority: 2
+      Main id: 0x04 (4)
+      Associated service (asvc): 0xEF (239)
+      Substream 1: 0x12 (18)
+      Substream 2: 0x34 (52)
+      Substream 3: 0x56 (86)
+      Language: "eng"
+      Language 2: "foo"
+      Substream 1 language: "s01"
+      Substream 2 language: "s02"
+      Substream 3 language: "s03"
+      Additional information (5 bytes): 98 76 54 32 10
+    - Descriptor 10: ATSC Genre (0xAB, 171), 1 bytes
+      Attribute count: 0
+    - Descriptor 11: ATSC Genre (0xAB, 171), 4 bytes
+      Attribute count: 3
+       - Attribute: 0x20 (Education)
+       - Attribute: 0x7F (Western)
+       - Attribute: 0xA3 (Rock & Roll)
+    - Descriptor 12: ATSC Stuffing (0x80, 128), 0 bytes
+    - Descriptor 13: ATSC Stuffing (0x80, 128), 5 bytes
+      Stuffing data (5 bytes): 01 23 45 67 89
+    - Descriptor 14: ATSC Redistribution Control (0xAA, 170), 0 bytes
+    - Descriptor 15: ATSC Redistribution Control (0xAA, 170), 0 bytes
+    - Descriptor 16: ATSC Redistribution Control (0xAA, 170), 5 bytes
+      RC information (5 bytes): 98 76 54 32 10
+    - Descriptor 17: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+      Number of services: 0
+    - Descriptor 18: ATSC Time-Shifted Service (0xA2, 162), 11 bytes
+      Number of services: 2
+      - Time shift: 5 mn, service: 1.2
+      - Time shift: 30 mn, service: 100.200
+    - Descriptor 19: ATSC Caption Service (0x86, 134), 1 bytes
+      Number of services: 0
+    - Descriptor 20: ATSC Caption Service (0x86, 134), 13 bytes
+      Number of services: 2
+      - Language: "foo", digital: false, line 21: true, easy reader: true, wide: false
+      - Language: "bar", digital: true, service: 0x23 (35), easy reader: false, wide: true
+    - Descriptor 21: ATSC Content Advisory (0x87, 135), 1 bytes
+      Number of regions: 0
+    - Descriptor 22: ATSC Content Advisory (0x87, 135), 76 bytes
+      Number of regions: 4
+      - Rating region: 0x01 (1), number of dimensions: 0
+      - Rating region: 0x02 (2), number of dimensions: 3
+          Rating dimension j: 0x0A (10), rating value: 1
+          Rating dimension j: 0x14 (20), rating value: 2
+          Rating dimension j: 0x1E (30), rating value: 3
+      - Rating region: 0x03 (3), number of dimensions: 0
+        Rating description: Number of strings: 2
           Language: "eng", text: "English text"
           Language: "foo", text: "Foo text"
-      - Descriptor 25: ATSC DCC Departing Request (0xA8, 168), 2 bytes
-        DCC departing request type: 0x78 (120)
-      - Descriptor 26: ATSC DCC Departing Request (0xA8, 168), 18 bytes
-        DCC departing request type: 0xB3 (179)
-        DCC departing request text: Number of strings: 1
-          Language: "foo", text: "Bar text"
+      - Rating region: 0x04 (4), number of dimensions: 3
+          Rating dimension j: 0x0C (12), rating value: 10
+          Rating dimension j: 0x16 (22), rating value: 11
+          Rating dimension j: 0x20 (32), rating value: 12
+        Rating description: Number of strings: 1
+          Language: "Bar", text: "Bar text"
+    - Descriptor 23: ATSC DCC Arriving Request (0xA9, 169), 2 bytes
+      DCC arriving request type: 0xF1 (241)
+    - Descriptor 24: ATSC DCC Arriving Request (0xA9, 169), 37 bytes
+      DCC arriving request type: 0x12 (18)
+      DCC arriving request text: Number of strings: 2
+        Language: "eng", text: "English text"
+        Language: "foo", text: "Foo text"
+    - Descriptor 25: ATSC DCC Departing Request (0xA8, 168), 2 bytes
+      DCC departing request type: 0x78 (120)
+    - Descriptor 26: ATSC DCC Departing Request (0xA8, 168), 18 bytes
+      DCC departing request type: 0xB3 (179)
+      DCC departing request text: Number of strings: 1
+        Language: "foo", text: "Bar text"
 
 * ETT (ATSC), TID 204 (0xCC), PID 200 (0x00C8)
   Version: 0, sections: 1, total size: 18 bytes
