@@ -295,15 +295,15 @@
       Graduated scale: true, number of rating values: 1
         Rating value: Number of strings: 1
         Language: "foo", text: "foo 2"
-    - Descriptors:
-      - Descriptor 0: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
-        Number of services: 0
-      - Descriptor 1: ATSC Time-Shifted Service (0xA2, 162), 11 bytes
-        Number of services: 2
-        - Time shift: 5 mn, service: 1.2
-        - Time shift: 30 mn, service: 100.200
-      - Descriptor 2: ATSC Caption Service (0x86, 134), 1 bytes
-        Number of services: 0
+    Descriptors
+    - Descriptor 0: ATSC Time-Shifted Service (0xA2, 162), 1 bytes
+      Number of services: 0
+    - Descriptor 1: ATSC Time-Shifted Service (0xA2, 162), 11 bytes
+      Number of services: 2
+      - Time shift: 5 mn, service: 1.2
+      - Time shift: 30 mn, service: 100.200
+    - Descriptor 2: ATSC Caption Service (0x86, 134), 1 bytes
+      Number of services: 0
 
 * DCCSCT (ATSC), TID 212 (0xD4), PID 200 (0x00C8)
   Version: 0, sections: 1, total size: 16 bytes
