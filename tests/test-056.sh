@@ -13,7 +13,7 @@ $(tspath tsp) --synchronous-log \
     -P tables --pid 16 --text $(fpath "$OUTDIR/$SCRIPT.nit.1.txt") \
                        --binary $(fpath "$OUTDIR/$SCRIPT.nit.1.bin") \
                        --xml $(fpath "$OUTDIR/$SCRIPT.nit.1.xml") \
-    -O drop
+    -O drop \
     >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1
 
 test_bin $SCRIPT.nit.1.bin
@@ -29,7 +29,7 @@ $(tspath tsp) --synchronous-log \
     -P tables --pid 16 --text $(fpath "$OUTDIR/$SCRIPT.nit.2.txt") \
                        --binary $(fpath "$OUTDIR/$SCRIPT.nit.2.bin") \
                        --xml $(fpath "$OUTDIR/$SCRIPT.nit.2.xml") \
-    -O drop
+    -O drop \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1
 
 test_bin $SCRIPT.nit.2.bin
