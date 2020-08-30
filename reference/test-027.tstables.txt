@@ -177,8 +177,8 @@
       Identifier: 0x43554549 ("CUEI")
       Segmentation event id: 0xBEEFBEEF, cancel: 0
       Program segmentation: 1, has duration: 0, not restricted: 1
-      Segmentation upid type: 0x03 (Ad-ID), 4 bytes
-        01 02 03 04
+      Segmentation upid type: 0x03 (Ad-ID)
+      Upid data (4 bytes): 01 02 03 04
       Segmentation type id: 0x10 (Program Start)
       Segment number: 0, expected segments: 1
     - Descriptor 5: SCTE 35 Segmentation (0x02, 2), 40 bytes
@@ -191,8 +191,8 @@
       Component tag: 1, PTS offset: 123
       Component tag: 2, PTS offset: 456
       Segment duration: 987654
-      Segmentation upid type: 0x0B (ATSC Content Identifier), 5 bytes
-        78 96 54 12 30
+      Segmentation upid type: 0x0B (ATSC Content Identifier)
+      Upid data (5 bytes): 78 96 54 12 30
       Segmentation type id: 0x34 (Provider Placement Opportunity Start)
       Segment number: 1, expected segments: 7
       Sub-segment number: 2, expected sub-segments: 4
