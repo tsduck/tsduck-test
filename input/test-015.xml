@@ -1072,6 +1072,54 @@
       </additional_identification_info>
     </registration_descriptor>
 
+    <MVC_operation_point_descriptor
+        profile_idc="0xAB"
+        constraint_set0="false"
+        constraint_set1="true"
+        constraint_set2="false"
+        constraint_set3="true"
+        constraint_set4="false"
+        constraint_set5="true"
+        AVC_compatible_flags="1">
+      <level level_idc="0xCD"/>
+      <level level_idc="0xEF">
+        <operation_point
+            applicable_temporal_id="1"
+            num_target_output_views="85"/>
+        <operation_point
+            applicable_temporal_id="2"
+            num_target_output_views="12">
+          <ES reference="0x01"/>
+          <ES reference="0x35"/>
+          <ES reference="0x24"/>
+          <ES reference="0x0F"/>
+        </operation_point>
+      </level>
+    </MVC_operation_point_descriptor>
+
+    <HEVC_hierarchy_extension_descriptor
+        extension_dimension_bits="0xA801"
+        hierarchy_layer_index="0x32"
+        temporal_id="5"
+        nuh_layer_id="0x23"
+        tref_present="false"
+        hierarchy_channel="0x1B">
+      <embedded_layer hierarchy_layer_index="0x01"/>
+      <embedded_layer hierarchy_layer_index="0x12"/>
+      <embedded_layer hierarchy_layer_index="0x23"/>
+      <embedded_layer hierarchy_layer_index="0x31"/>
+    </HEVC_hierarchy_extension_descriptor>
+
+    <green_extension_descriptor/>
+
+    <green_extension_descriptor>
+      <constant_backlight_voltage_time_interval value="200"/>
+      <constant_backlight_voltage_time_interval value="3456"/>
+      <constant_backlight_voltage_time_interval value="45678"/>
+      <max_variation value="852"/>
+      <max_variation value="36980"/>
+    </green_extension_descriptor>
+
   </TSDT>
 
 </tsduck>

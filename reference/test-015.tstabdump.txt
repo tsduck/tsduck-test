@@ -330,7 +330,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 0, size: 1009 bytes
+  Section: 0 (last: 1), version: 0, size: 1009 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -865,4 +865,56 @@
   - Descriptor 81: Registration (0x05, 5), 7 bytes
     Format identifier: 0x12345678
     Additional identification info (3 bytes): 98 76 54
+
+* TSDT, TID 3 (0x03)
+  Section: 1 (last: 1), version: 0, size: 64 bytes
+  - Descriptor 0: MVC Operation Point (0x33, 51), 17 bytes
+    Profile IDC: 0xAB (171)
+    Constraint set: 0:false, 1:true, 2:false, 3:true, 4:false, 5:true
+    AVC compatible flags: 1
+    Level count: 2
+    - Level IDC: 0xCD (205)
+      Operation points count: 0
+    - Level IDC: 0xEF (239)
+      Operation points count: 2
+      - Applicable temporal id: 1
+        Num target output views: 85
+        ES count: 0
+      - Applicable temporal id: 2
+        Num target output views: 12
+        ES count: 4
+        ES reference: 0x01 (1)
+        ES reference: 0x35 (53)
+        ES reference: 0x24 (36)
+        ES reference: 0x0F (15)
+  - Descriptor 1: MPEG-2 Extension (0x3F, 63), 11 bytes
+    MPEG extended descriptor: HEVC Hierarchy Extension (0x06, 6)
+    Extension dimension bits: 0xA801
+      Bit 0: Multi-view enhancement
+      Bit 2: Depth enhancement
+      Bit 4: Auxiliary enhancement
+      Bit 15: Reserved
+    Hierarchy layer index: 0x32 (50)
+    Temporal id: 5
+    NUH layer id: 0x23 (35)
+    TREF present: false
+    Number of embedded layers: 4
+    Hierarchy channel: 0x1B (27)
+    Hierarchy embeddedlayer index[0]: 0x01 (1)
+    Hierarchy embeddedlayer index[1]: 0x12 (18)
+    Hierarchy embeddedlayer index[2]: 0x23 (35)
+    Hierarchy embeddedlayer index[3]: 0x31 (49)
+  - Descriptor 2: MPEG-2 Extension (0x3F, 63), 3 bytes
+    MPEG extended descriptor: Green Extension (0x07, 7)
+    Number of backlight voltage time intervals: 0
+    Number of variations: 0
+  - Descriptor 3: MPEG-2 Extension (0x3F, 63), 13 bytes
+    MPEG extended descriptor: Green Extension (0x07, 7)
+    Number of backlight voltage time intervals: 3
+      Constant backlight voltage time intervals [0]: 0x00C8 (200)
+      Constant backlight voltage time intervals [1]: 0x0D80 (3456)
+      Constant backlight voltage time intervals [2]: 0xB26E (45678)
+    Number of variations: 2
+      Max variation [0]: 0x0354 (852)
+      Max variation [1]: 0x9074 (36980)
 
