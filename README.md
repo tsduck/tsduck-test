@@ -164,3 +164,4 @@ repository. But we now limit their size to 20 MB.
 | 067  | SI analysis and conversions: DTG private descriptors
 | 068  | EIT normalization
 | 069  | Non-regression on `tsecmg` (issue #619)
+| 070  | Non-regression on `fork` packet processor plugin (issue #633)

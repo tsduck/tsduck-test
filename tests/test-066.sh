@@ -52,4 +52,3 @@ test_bin $SCRIPT.3.ts
 
 cmp "$INFILE" "$TMPDIR/$SCRIPT.3.m2ts" >"$OUTDIR/$SCRIPT.cmp.3.log" 2>&1
 test_text $SCRIPT.cmp.3.log
-
