@@ -867,7 +867,7 @@
     Additional identification info (3 bytes): 98 76 54
 
 * TSDT, TID 3 (0x03)
-  Section: 1 (last: 1), version: 0, size: 64 bytes
+  Section: 1 (last: 1), version: 0, size: 99 bytes
   - Descriptor 0: MVC Operation Point (0x33, 51), 17 bytes
     Profile IDC: 0xAB (171)
     Constraint set: 0:false, 1:true, 2:false, 3:true, 4:false, 5:true
@@ -917,4 +917,24 @@
     Number of variations: 2
       Max variation [0]: 0x0354 (852)
       Max variation [1]: 0x9074 (36980)
+  - Descriptor 4: MPEG-2 Extension (0x3F, 63), 1 bytes
+    MPEG extended descriptor: Virtual Segmentation (0x10, 16)
+  - Descriptor 5: MPEG-2 Extension (0x3F, 63), 13 bytes
+    MPEG extended descriptor: Virtual Segmentation (0x10, 16)
+    Ticks per seconds: 12,345
+    Maximum duration length: 0 bytes + 5 bits
+    - Partition id: 0, SAP type max: 5
+      Boundary PID: 0x1234 (4660)
+    - Partition id: 2, SAP type max: 1
+      Maximum duration: 0 ticks
+    - Partition id: 3, SAP type max: 3
+      Maximum duration: 10 ticks
+  - Descriptor 6: MPEG-2 Extension (0x3F, 63), 15 bytes
+    MPEG extended descriptor: Virtual Segmentation (0x10, 16)
+    Ticks per seconds: 12,345
+    Maximum duration length: 3 bytes + 5 bits
+    - Partition id: 4, SAP type max: 7
+      Maximum duration: 3 ticks
+    - Partition id: 5, SAP type max: 2
+      Maximum duration: 100,000,000 ticks
 

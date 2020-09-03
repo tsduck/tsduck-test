@@ -1120,6 +1120,33 @@
       <max_variation value="36980"/>
     </green_extension_descriptor>
 
+    <virtual_segmentation_descriptor/>
+
+    <virtual_segmentation_descriptor ticks_per_second="12345">
+      <partition
+          partition_id="0"
+          SAP_type_max="5"
+          boundary_PID="0x1234"/>
+      <partition
+          partition_id="2"
+          SAP_type_max="1"/>
+      <partition
+          partition_id="3"
+          SAP_type_max="3"
+          maximum_duration="10"/>
+    </virtual_segmentation_descriptor>
+
+    <virtual_segmentation_descriptor ticks_per_second="12345">
+      <partition
+          partition_id="4"
+          SAP_type_max="7"
+          maximum_duration="3"/>
+      <partition
+          partition_id="5"
+          SAP_type_max="2"
+          maximum_duration="100,000,000"/>
+    </virtual_segmentation_descriptor>
+
   </TSDT>
 
 </tsduck>
