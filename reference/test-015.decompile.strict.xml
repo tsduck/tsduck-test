@@ -494,5 +494,52 @@
       <partition partition_id="4" SAP_type_max="7" maximum_duration="3"/>
       <partition partition_id="5" SAP_type_max="2" maximum_duration="100,000,000"/>
     </virtual_segmentation_descriptor>
+    <content_labelling_descriptor metadata_application_format="0x0010" content_time_base_indicator="2" content_time_base_value="5,123,456,789" metadata_time_base_value="4,987,654,321" content_id="0x34">
+      <content_reference_id>
+        01 23 45 67
+      </content_reference_id>
+      <private_data>
+        96 85 27 41
+      </private_data>
+    </content_labelling_descriptor>
+    <content_labelling_descriptor metadata_application_format="0xFFFF" metadata_application_format_identifier="0x12345678" content_time_base_indicator="5">
+      <time_base_association_data>
+        74 18 52
+      </time_base_association_data>
+    </content_labelling_descriptor>
+    <metadata_pointer_descriptor metadata_application_format="0xFFFF" metadata_application_format_identifier="0x12345678" metadata_format="0xFF" metadata_format_identifier="0x87654321" metadata_service_id="0xAB" MPEG_carriage_flags="3">
+      <metadata_locator>
+        96 38 52
+      </metadata_locator>
+      <private_data>
+        14 72 58
+      </private_data>
+    </metadata_pointer_descriptor>
+    <metadata_pointer_descriptor metadata_application_format="0x0011" metadata_format="0x10" metadata_service_id="0xEF" MPEG_carriage_flags="1" program_number="0x1234" transport_stream_location="0x5678" transport_stream_id="0xABCD"/>
+    <metadata_descriptor metadata_application_format="0xFFFF" metadata_application_format_identifier="0x12345678" metadata_format="0xFF" metadata_format_identifier="0x87654321" metadata_service_id="0xCD" decoder_config_flags="1">
+      <service_identification>
+        01 23 45
+      </service_identification>
+      <decoder_config>
+        45 69 87
+      </decoder_config>
+      <private_data>
+        45 63 21
+      </private_data>
+    </metadata_descriptor>
+    <metadata_descriptor metadata_application_format="0x0010" metadata_format="0x11" metadata_service_id="0x78" decoder_config_flags="3">
+      <dec_config_identification>
+        14 78 52 36 90
+      </dec_config_identification>
+    </metadata_descriptor>
+    <metadata_descriptor metadata_application_format="0x0011" metadata_format="0x12" metadata_service_id="0x23" decoder_config_flags="4" decoder_config_metadata_service_id="0xDE"/>
+    <metadata_descriptor metadata_application_format="0x0123" metadata_format="0x20" metadata_service_id="0x78" decoder_config_flags="6">
+      <reserved_data>
+        78 96 54
+      </reserved_data>
+      <private_data>
+        AB
+      </private_data>
+    </metadata_descriptor>
   </TSDT>
 </tsduck>

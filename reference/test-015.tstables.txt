@@ -334,7 +334,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 2, total size: 1108 bytes
+  Version: 0, sections: 2, total size: 1240 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -940,4 +940,63 @@
         Maximum duration: 3 ticks
       - Partition id: 5, SAP type max: 2
         Maximum duration: 100,000,000 ticks
+    - Descriptor 7: Content Labelling (0x24, 36), 23 bytes
+      Metadata application format: 0x0010 (ISO 15706 (ISAN) encoded in its binary form)
+      Content time base indicator: 0x2 (Use of NPT)
+      Content reference id (4 bytes): 01 23 45 67
+      Content time base: 0x13161BF15 (5,123,456,789)
+      Metadata time base: 0x1294990B1 (4,987,654,321)
+      Content id: 0x34 (52)
+      Private data (4 bytes): 96 85 27 41
+    - Descriptor 8: Content Labelling (0x24, 36), 11 bytes
+      Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
+      Metadata application format identifier: 0x12345678 (305419896)
+      Content time base indicator: 0x5 (Reserved)
+      Time base association data (3 bytes): 74 18 52
+    - Descriptor 9: Metadata Pointer (0x25, 37), 20 bytes
+      Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
+      Metadata application format identifier: 0x12345678 (305419896)
+      Metadata format: 0xFF (Defined by metadata_format_identifier field)
+      Metadata format identifier: 0x87654321 (2271560481)
+      Metadata service id: 0xAB (171)
+      MPEG carriage flags: 3 (Undefined)
+      Metadata location record (3 bytes): 96 38 52
+      Private data (3 bytes): 14 72 58
+    - Descriptor 10: Metadata Pointer (0x25, 37), 11 bytes
+      Metadata application format: 0x0011 (ISO 15706-2 (V-ISAN) encoded in its binary form)
+      Metadata format: 0x10 (ISO/IEC 15938-1 TeM)
+      Metadata service id: 0xEF (239)
+      MPEG carriage flags: 1 (Carriage in a different TS)
+      Program number: 0x1234 (4660)
+      Transport stream location: 0x5678 (22136)
+      Transport stream id: 0xABCD (43981)
+    - Descriptor 11: Metadata (0x26, 38), 24 bytes
+      Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
+      Metadata application format identifier: 0x12345678 (305419896)
+      Metadata format: 0xFF (Defined by metadata_format_identifier field)
+      Metadata format identifier: 0x87654321 (2271560481)
+      Metadata service id: 0xCD (205)
+      Decoder config flags: 1 (Configuration is in the decoder_config_byte field)
+      Service identification record (3 bytes): 01 23 45
+      Decoder config (3 bytes): 45 69 87
+      Private data (3 bytes): 45 63 21
+    - Descriptor 12: Metadata (0x26, 38), 11 bytes
+      Metadata application format: 0x0010 (ISO 15706 (ISAN) encoded in its binary form)
+      Metadata format: 0x11 (ISO/IEC 15938-1 BiM)
+      Metadata service id: 0x78 (120)
+      Decoder config flags: 3 (Configuration is in a DSM-CC carousel)
+      Decoder config identification record (5 bytes): 14 78 52 36 90
+    - Descriptor 13: Metadata (0x26, 38), 6 bytes
+      Metadata application format: 0x0011 (ISO 15706-2 (V-ISAN) encoded in its binary form)
+      Metadata format: 0x12 (Reserved)
+      Metadata service id: 0x23 (35)
+      Decoder config flags: 4 (Configuration is in another metadata service)
+      Decoder config metadata service id: 0xDE (222)
+    - Descriptor 14: Metadata (0x26, 38), 10 bytes
+      Metadata application format: 0x0123 (User defined)
+      Metadata format: 0x20 (Reserved)
+      Metadata service id: 0x78 (120)
+      Decoder config flags: 6 (Reserved)
+      Reserved data (3 bytes): 78 96 54
+      Private data (1 bytes): AB
 
