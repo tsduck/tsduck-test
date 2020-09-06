@@ -334,7 +334,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 2, total size: 1240 bytes
+  Version: 0, sections: 2, total size: 1272 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -999,4 +999,35 @@
       Decoder config flags: 6 (Reserved)
       Reserved data (3 bytes): 78 96 54
       Private data (1 bytes): AB
+    - Descriptor 15: MPEG-2 Extension (0x3F, 63), 9 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
+      3D-audio profile level indication: 0xAB (171)
+      Interactivity enabled: false
+      Reference channel layout: 0x34 (52)
+      Reserved data (5 bytes): 01 23 45 67 89
+    - Descriptor 16: MPEG-2 Extension (0x3F, 63), 4 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
+      3D-audio profile level indication: 0x01 (1)
+      Interactivity enabled: true
+      Reference channel layout: 0x02 (2)
+    - Descriptor 17: MPEG-2 Extension (0x3F, 63), 2 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
+      This is main stream: false
+      This stream id: 0x71 (113)
+    - Descriptor 18: MPEG-2 Extension (0x3F, 63), 9 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
+      This is main stream: true
+      This stream id: 0x0F (15)
+      Number of auxiliary streams: 11
+      Number of mae groups: 3
+      - MAE group id: 0x12 (18)
+        Is in main stream: true
+      - MAE group id: 0x13 (19)
+        Is in main stream: false
+        Is in TS: true
+        Auxiliary stream id: 0x5A (90)
+      - MAE group id: 0x14 (20)
+        Is in main stream: false
+        Is in TS: false
+        Auxiliary stream id: 0x5B (91)
 
