@@ -554,7 +554,11 @@
       </reserved>
     </MPEGH_3D_audio_descriptor>
     <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0x01" interactivity_enabled="true" reference_channel_layout="0x02"/>
-    <MPEGH_3D_audio_multi_stream_descriptor this_is_main_stream="false" this_stream_id="0x71"/>
+    <MPEGH_3D_audio_multi_stream_descriptor this_is_main_stream="false" this_stream_id="0x71">
+      <reserved>
+        01 23 45
+      </reserved>
+    </MPEGH_3D_audio_multi_stream_descriptor>
     <MPEGH_3D_audio_multi_stream_descriptor this_is_main_stream="true" this_stream_id="0x0F" num_auxiliary_streams="11">
       <mae_group mae_group_id="0x12" is_in_main_stream="true"/>
       <mae_group mae_group_id="0x13" is_in_main_stream="false" is_in_ts="true" auxiliary_stream_id="0x5A"/>

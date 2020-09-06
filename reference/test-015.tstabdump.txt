@@ -867,7 +867,7 @@
     Additional identification info (3 bytes): 98 76 54
 
 * TSDT, TID 3 (0x03)
-  Section: 1 (last: 1), version: 0, size: 263 bytes
+  Section: 1 (last: 1), version: 0, size: 266 bytes
   - Descriptor 0: MVC Operation Point (0x33, 51), 17 bytes
     Profile IDC: 0xAB (171)
     Constraint set: 0:false, 1:true, 2:false, 3:true, 4:false, 5:true
@@ -1007,10 +1007,11 @@
     3D-audio profile level indication: 0x01 (1)
     Interactivity enabled: true
     Reference channel layout: 0x02 (2)
-  - Descriptor 17: MPEG-2 Extension (0x3F, 63), 2 bytes
+  - Descriptor 17: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
     This is main stream: false
     This stream id: 0x71 (113)
+    Reserved data (3 bytes): 01 23 45
   - Descriptor 18: MPEG-2 Extension (0x3F, 63), 9 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
     This is main stream: true
