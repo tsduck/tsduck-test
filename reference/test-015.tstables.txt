@@ -1032,3 +1032,86 @@
         Is in TS: false
         Auxiliary stream id: 0x5B (91)
 
+* Content Identifier, TID 119 (0x77), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 17 bytes
+  - Section 0:
+    Service id: 0x1234 (4660)
+    Transport stream id: 0x5678 (22136)
+    Original network id: 0xABCD (43981)
+    Number of prepend string: 1
+      Prepend[0] = ""
+
+* Content Identifier, TID 119 (0x77), PID 200 (0x00C8)
+  Version: 2, sections: 1, total size: 64 bytes
+  - Section 0:
+    Service id: 0xFEDC (65244)
+    Transport stream id: 0x8765 (34661)
+    Original network id: 0x4321 (17185)
+    Number of prepend string: 3
+      Prepend[0] = "foo://bar"
+      Prepend[1] = "scoo"
+      Prepend[2] = "bidoo"
+    - CRID reference: 0x1234 (4660)
+      Prepend string index: 0
+      Unique string: "abcdef"
+    - CRID reference: 0x5678 (22136)
+      Prepend string index: 2
+      Unique string: "ghijk"
+    - CRID reference: 0xABCD (43981)
+      Prepend string index: 255
+      Unique string: "xyzt"
+
+* Resolution Provider Notification, TID 121 (0x79), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 15 bytes
+  - Section 0:
+    Context id: 0x1234 (4660)
+    Context id type: 0x02 (context_id is a network_id)
+    RNT top-level descriptors:
+    - None
+
+* Resolution Provider Notification, TID 121 (0x79), PID 200 (0x00C8)
+  Version: 11, sections: 1, total size: 151 bytes
+  - Section 0:
+    Context id: 0xABCD (43981)
+    Context id type: 0x00 (context_id is a bouquet_id)
+    RNT top-level descriptors:
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0 (0x00)
+    - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Resolution provider name: "Provider 1"
+      Provider-level descriptors:
+      - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+        Component tag: 3 (0x03)
+      - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
+        Component tag: 4 (0x04)
+      - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+        Component tag: 5 (0x05)
+      - CRID authority name: "Authority 1.1"
+        CRID authority policy: 0 (CRID's are permanent)
+        CRID authority-level descriptors:
+        - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+          Component tag: 6 (0x06)
+      - CRID authority name: "Authority 1.2"
+        CRID authority policy: 1 (CRID's are transient)
+        CRID authority-level descriptors:
+        - None
+    - Resolution provider name: "Provider 2"
+      Provider-level descriptors:
+      - None
+    - Resolution provider name: "Provider 3"
+      Provider-level descriptors:
+      - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+        Component tag: 7 (0x07)
+      - CRID authority name: "Authority 3.1"
+        CRID authority policy: 2 (CRID's may be either transient or permanent)
+        CRID authority-level descriptors:
+        - None
+      - CRID authority name: "Authority 3.2"
+        CRID authority policy: 3 (Reserved)
+        CRID authority-level descriptors:
+        - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+          Component tag: 8 (0x08)
+
