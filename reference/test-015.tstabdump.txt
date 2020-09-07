@@ -1108,3 +1108,21 @@
       - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
         Component tag: 8 (0x08)
 
+* TSDT, TID 3 (0x03)
+  Section: 0 (last: 0), version: 2, size: 41 bytes
+  - Descriptor 0: TVA Id (0x75, 117), 0 bytes
+  - Descriptor 1: TVA Id (0x75, 117), 6 bytes
+    TVA id: 0x1234 (4660), running status: 2 (starting)
+    TVA id: 0xABCD (43981), running status: 6 (completed)
+  - Descriptor 2: Content Identifier (0x76, 118), 0 bytes
+  - Descriptor 3: Content Identifier (0x76, 118), 13 bytes
+    - CRID type: 0x01 (CRID references the item of content that this event is an instance of)
+      CRID location: 0 (Carried explicitly within descriptor)
+      CRID: "foo/bar"
+    - CRID type: 0x02 (CRID references a series that this event belongs to)
+      CRID location: 1 (Carried in Content Identifier Table (CIT))
+      CRID reference: 0x1234 (4660)
+    - CRID type: 0x03 (CRID references a recommendation (group or single item of content))
+      CRID location: 2 (DVB reserved)
+  - Descriptor 4: Related Content (0x74, 116), 0 bytes
+

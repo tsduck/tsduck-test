@@ -1326,4 +1326,25 @@
     </resolution_provider>
   </RNT>
 
+  <TSDT version="2">
+
+    <TVA_id_descriptor/>
+
+    <TVA_id_descriptor>
+      <TVA id="0x1234" running_status="2"/>
+      <TVA id="0xABCD" running_status="6"/>
+    </TVA_id_descriptor>
+
+    <content_identifier_descriptor/>
+
+    <content_identifier_descriptor>
+      <crid crid_type="1" crid_location="0" crid="foo/bar"/>
+      <crid crid_type="2" crid_location="1" crid_ref="0x1234"/>
+      <crid crid_type="3" crid_location="2"/>
+    </content_identifier_descriptor>
+
+    <related_content_descriptor/>
+
+  </TSDT>
+
 </tsduck>

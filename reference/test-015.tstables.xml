@@ -604,4 +604,19 @@
       </CRID_authority>
     </resolution_provider>
   </RNT>
+  <TSDT version="2" current="true">
+    <!-- PID 0x00C8 (200) -->
+    <TVA_id_descriptor/>
+    <TVA_id_descriptor>
+      <TVA id="0x1234" running_status="2"/>
+      <TVA id="0xABCD" running_status="6"/>
+    </TVA_id_descriptor>
+    <content_identifier_descriptor/>
+    <content_identifier_descriptor>
+      <crid crid_type="0x01" crid_location="0" crid="foo/bar"/>
+      <crid crid_type="0x02" crid_location="1" crid_ref="0x1234"/>
+      <crid crid_type="0x03" crid_location="2"/>
+    </content_identifier_descriptor>
+    <related_content_descriptor/>
+  </TSDT>
 </tsduck>
