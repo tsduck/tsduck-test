@@ -466,7 +466,7 @@
     Extended descriptor: S2X Satellite Delivery System (0x17, 23)
     Receiver profiles: 0x15, broadcast services, DSNG, VL-SNR
     S2X mode: 0x2 (S2X + time slicing)
-    TS/GS S2X mode: 0x1 (GSE)
+    TS/GS S2X mode: 1 (GSE)
     Master channel:
       Orbital position: 19.2 degree, east
       Frequency: 34.56789 GHz
@@ -480,7 +480,7 @@
     Extended descriptor: S2X Satellite Delivery System (0x17, 23)
     Receiver profiles: 0x0A, interactive services, professional services
     S2X mode: 0x3 (S2X + channel bonding)
-    TS/GS S2X mode: 0x3 (Transport Stream)
+    TS/GS S2X mode: 3 (Transport Stream)
     Scrambling sequence index: 0x23456
     Master channel:
       Orbital position: 3.7 degree, west
@@ -622,12 +622,12 @@
   - Descriptor 35: FTA Content Management (0x7E, 126), 1 bytes
     User-defined: true
     Do not scramble: false
-    Access over Internet: Enabled but only within a managed domain and after a certain short period of time
+    Access over Internet: 2 (Enabled but only within a managed domain and after a certain short period of time)
     Do not apply revocation: true
   - Descriptor 36: FTA Content Management (0x7E, 126), 1 bytes
     User-defined: false
     Do not scramble: true
-    Access over Internet: Enabled
+    Access over Internet: 0 (Enabled)
     Do not apply revocation: false
   - Descriptor 37: PDC (0x69, 105), 3 bytes
     Programme Identification Label: 11-30 23:45 (MM-DD hh:mm)
@@ -1109,7 +1109,7 @@
         Component tag: 8 (0x08)
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 0), version: 2, size: 41 bytes
+  Section: 0 (last: 0), version: 2, size: 52 bytes
   - Descriptor 0: TVA Id (0x75, 117), 0 bytes
   - Descriptor 1: TVA Id (0x75, 117), 6 bytes
     TVA id: 0x1234 (4660), running status: 2 (starting)
@@ -1125,4 +1125,13 @@
     - CRID type: 0x03 (CRID references a recommendation (group or single item of content))
       CRID location: 2 (DVB reserved)
   - Descriptor 4: Related Content (0x74, 116), 0 bytes
+  - Descriptor 5: S2 Satellite Delivery System (0x79, 121), 1 bytes
+    Backward compatibility: false
+    TS/GS mode: 3 (reserved)
+  - Descriptor 6: S2 Satellite Delivery System (0x79, 121), 6 bytes
+    Backward compatibility: true
+    TS/GS mode: 1 (GSE)
+    Scrambling sequence index: 0x23456
+    Input stream identifier: 0xAB
+    Time slice number: 0xCD
 
