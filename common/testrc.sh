@@ -179,6 +179,9 @@ fi
 # Disable loading extensions to avoid locally installed extensions generating different logs.
 export TSLIBEXT_NONE=true
 
+# Do not check new versions.
+export TSDUCK_NO_VERSION_CHECK=true
+
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }
 
