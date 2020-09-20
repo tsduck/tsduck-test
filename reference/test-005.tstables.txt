@@ -1,0 +1,316 @@
+
+* PAT, TID 0 (0x00), PID 200 (0x00C8)
+  Version: 8, sections: 1, total size: 24 bytes
+  - Section 0:
+    TS id:      18 (0x0012)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:     1 (0x0001)  PID: 4660 (0x1234)
+    Program:     2 (0x0002)  PID: 1656 (0x0678)
+
+* CAT, TID 1 (0x01), PID 200 (0x00C8)
+  Version: 29, sections: 1, total size: 42 bytes
+  - Section 0:
+    - Descriptor 0: CA (0x09, 9), 8 bytes
+      CA System Id: 0x6789 (unknown), EMM PID: 291 (0x0123)
+      Private CA data (4 bytes): 01 02 03 04
+    - Descriptor 1: CA (0x09, 9), 6 bytes
+      CA System Id: 0x1234 (TV/Com), EMM PID: 292 (0x0124)
+      Private CA data (2 bytes): 11 12
+    - Descriptor 2: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0777 (Jerrold/GI/Motorola), EMM PID: 293 (0x0125)
+    - Descriptor 3: unknown (0x90, 144), 4 bytes
+      0000:  04 45 38 32                                .E82
+
+* PMT, TID 2 (0x02), PID 200 (0x00C8)
+  Version: 4, sections: 1, total size: 46 bytes
+  - Section 0:
+    Program: 1110 (0x0456), PCR PID: 4660 (0x1234)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0777 (Jerrold/GI/Motorola), ECM PID: 593 (0x0251)
+    Elementary stream: type 0x12 (MPEG-4 SL or FlexMux in PES packets), PID: 1383 (0x0567)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 8 bytes
+      Language: fre, Type: 0x45 (unknown)
+      Language: deu, Type: 0x78 (unknown)
+    - Descriptor 1: Extension Descriptor (0x7F, 127), 7 bytes
+      Extended descriptor: T2MI (0x11, 17)
+      T2-MI stream id: 2, T2-MI stream count: -3, PCR/ISCR common clock: yes
+      Extraneous 3 bytes:
+      0000:  01 02 03                                   ...
+
+* NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 65 bytes
+  - Section 0:
+    Network Id: 17801 (0x4589)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 5 bytes
+      Name: "net 1"
+    Transport Stream Id: 20 (0x0014), Original Network Id: 642 (0x0282)
+    - Descriptor 0: Bouquet Name (0x47, 71), 6 bytes
+      Name: "nit 11"
+    - Descriptor 1: Bouquet Name (0x47, 71), 6 bytes
+      Name: "nit 12"
+    Transport Stream Id: 4660 (0x1234), Original Network Id: 1666 (0x0682)
+    - Descriptor 0: Bouquet Name (0x47, 71), 5 bytes
+      Name: "nit 1"
+    - Descriptor 1: Bouquet Name (0x47, 71), 5 bytes
+      Name: "nit 2"
+
+* NIT Other, TID 65 (0x41), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 461 bytes
+  - Section 0:
+    Network Id: 17801 (0x4589)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 6 bytes
+      Name: "net 21"
+    - Descriptor 1: AC-3 (0x6A, 106), 7 bytes
+      Component type: 0x2D (AC-3, combined, commentary, multichannel > 5.1)
+      AC-3 coding version: 7 (0x07)
+      Main audio service id: 78 (0x4E)
+      Associated to: 0x04
+      Additional information (2 bytes): 01 02
+    - Descriptor 2: CA Identifier (0x53, 83), 4 bytes
+      CA System Id: 0x4567 (unknown)
+      CA System Id: 0x0565 (Viaccess)
+    - Descriptor 3: Content (0x54, 84), 4 bytes
+      Content: 0x13 (science fiction/fantasy/horror) / User: 0x45
+      Content: 0x2A (unknown) / User: 0x66
+    - Descriptor 4: Data Broadcast (0x64, 100), 28 bytes
+      Data broadcast id: 0x4567 (17767, unknown)
+      Component tag: 172 (0xAC), 
+      Data Broadcast selector (4 bytes): 01 02 56 89
+      Language: xyz
+      Description: "This is the text"
+    - Descriptor 5: Data Broadcast Id (0x66, 102), 5 bytes
+      Data broadcast id: 0x786C (30828, unknown)
+      Data Broadcast selector (3 bytes): 01 89 65
+    - Descriptor 6: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 7: EICTA Stream Identifier (0x86, 134), 1 bytes
+      Version: 120
+    - Descriptor 8: Enhanced AC-3 (0x7A, 122), 13 bytes
+      Component type: 0x43 (AC-3, full, complete main, 2 channels dolby surround)
+      AC-3 coding version: 120 (0x78)
+      Main audio service id: 104 (0x68)
+      Associated to: 0x67
+      Substream 0: Mixing control metadata
+      Substream 1: 0xB8 (Enhanced AC-3, combined, voiceover, mono)
+      Substream 2: 0xC5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+      Substream 3: 0x45 (AC-3, full, complete main, multichannel > 5.1)
+      Additional information (5 bytes): 56 98 23 B8 CF
+    - Descriptor 9: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x0000055F (Eutelsat)
+    - Descriptor 10: Eutelsat Channel Number (0x83, 131), 16 bytes
+      Service Id: 30911 (0xX), Channel number:  45, TS Id: 46708 (0xB674), Net Id: 13460 (0x3494)
+      Service Id:  8895 (0xX), Channel number: 157, TS Id: 46627 (0xB623), Net Id: 14212 (0x3784)
+    - Descriptor 11: Extended Event (0x4E, 78), 42 bytes
+      Descriptor number: 1, last: 4
+      Language: egg
+      "Desc 1" : "Name 1"
+      "Desc 2" : "Name 2"
+      Text: "The text"
+    - Descriptor 12: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 13: HD Simulcast Logical Channel Number (0x88, 136), 8 bytes
+      Service Id: 38535 (0x9687), Visible: 1, Channel number:  78
+      Service Id: 39031 (0x9877), Visible: 0, Channel number:  12
+    - Descriptor 14: Logical Channel Number (0x83, 131), 8 bytes
+      Service Id: 48966 (0xBF46), Visible: 1, Channel number:  45
+      Service Id:  8597 (0x2195), Visible: 0, Channel number: 789
+    - Descriptor 15: Linkage (0x4A, 74), 16 bytes
+      Transport stream id: 4933 (0x1345)
+      Original network Id: 39039 (0x987F)
+      Service id: 52734 (0xCDFE)
+      Linkage type: 0x08 (mobile hand-over)
+      Hand-over type: 0x02, local variation of same service, Origin: NIT
+      Network id: 13364 (0x3434)
+      Original service id: 34660 (0x8764)
+      Private data (4 bytes): 01 45 E8 45
+    - Descriptor 16: Linkage (0x4A, 74), 10 bytes
+      Transport stream id: 4933 (0x1345)
+      Original network Id: 39039 (0x987F)
+      Service id: 52734 (0xCDFE)
+      Linkage type: 0x0D (event linkage)
+      Private data (3 bytes): 34 44 BF
+    - Descriptor 17: Linkage (0x4A, 74), 30 bytes
+      Transport stream id: 5445 (0x1545)
+      Original network Id: 39039 (0x987F)
+      Service id: 49662 (0xC1FE)
+      Linkage type: 0x0F (unknown)
+      Private data (23 bytes):
+        0000:  13 12 34 9C 34 45 76 34 57 87 64 87 64 67 42 1B  ..4.4Ev4W.d.dgB.
+        0010:  CD A9 67 42 01 45 E8                             ..gB.E.
+    - Descriptor 18: Extension Descriptor (0x7F, 127), 16 bytes
+      Extended descriptor: Message (0x08, 8)
+      Message id: 103, language: zaf
+      Message: "The message"
+    - Descriptor 19: Parental Rating (0x55, 85), 8 bytes
+      Country code: qsd, rating: 0x22 (broadcaster-defined)
+      Country code: ger, rating: 0x07 (min. 10 years)
+    - Descriptor 20: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x54654BD5 (unknown)
+    - Descriptor 21: S2 Satellite Delivery System (0x79, 121), 5 bytes
+      Backward compatibility: false
+      TS/GS mode: 3 (reserved)
+      Scrambling sequence index: 0x00074
+      Input stream identifier: 0x45
+    - Descriptor 22: Satellite Delivery System (0x43, 67), 11 bytes
+      Orbital position: 19.2 degree, east
+      Frequency: 12.09400 GHz
+      Symbol rate: 23.9000 Msymbol/s
+      Polarization: linear - vertical (1)
+      Delivery system: DVB-S2
+      Modulation: 8-PSK (2), roll off: alpha=0.20 (2)
+      Inner FEC: 5/6 (4)
+    - Descriptor 23: Service (0x48, 72), 20 bytes
+      Service type: 0x65 (unknown)
+      Service: "The Service", Provider: "Azerty"
+    - Descriptor 24: Service List (0x41, 65), 9 bytes
+      Service id: 21601 (0x5461), Type: 0x56 (unknown)
+      Service id: 1396 (0x0574), Type: 0x12 (unknown)
+      Service id: 9089 (0x2381), Type: 0x78 (unknown)
+    - Descriptor 25: Short Event (0x4D, 77), 21 bytes
+      Language: egt
+      Event name: "The name"
+      Description: "The text"
+    - Descriptor 26: STD (0x11, 17), 1 bytes
+      Link valid flag: 1 (leak)
+    - Descriptor 27: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 89 (0x59)
+    - Descriptor 28: Subtitling (0x59, 89), 16 bytes
+      Language: rth, Type: 101 (0x65)
+      Type: unknown (0x65)
+      Composition page: 35105 (0x8921), Ancillary page: 25110 (0x6216)
+      Language: gtf, Type: 97 (0x61)
+      Type: unknown (0x61)
+      Composition page: 4665 (0x1239), Ancillary page: 8505 (0x2139)
+    - Descriptor 29: Extension Descriptor (0x7F, 127), 10 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: unknown (0x06)
+      Language: rtg
+      Private data (5 bytes): 01 65 68 96 32
+    - Descriptor 30: Teletext (0x56, 86), 10 bytes
+      Language: ezg, Type: 18 (0x12)
+      Type: unknown (0x12)
+      Magazine: 0, page: 137, full page: 889
+      Language: reh, Type: 4 (0x04)
+      Type: Programme schedule page
+      Magazine: 3, page: 135, full page: 387
+    - Descriptor 31: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 841,465,000 Hz, Bandwidth: 8 MHz
+      Priority: low, Time slicing: unused, MPE-FEC: used
+      Constellation pattern: 64-QAM
+      Hierarchy: alpha = 1, in-depth interleaver
+      Code rate: high prio: 3/4, low prio: 2/3
+      Guard interval: 1/16
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 32: AVC Video (0x28, 40), 4 bytes
+      Profile IDC: 45, level IDC: 78
+      Constraint set0: true, set1: false, set2: true, AVC compatible flags: 0x17
+      Still pictures: true, 24-hour pictures: false
+    Transport Stream Id: 25923 (0x6543), Original Network Id: 39030 (0x9876)
+    - Descriptor 0: Bouquet Name (0x47, 71), 6 bytes
+      Name: "nit 21"
+    - Descriptor 1: Bouquet Name (0x47, 71), 6 bytes
+      Name: "nit 22"
+
+* RST, TID 113 (0x71), PID 200 (0x00C8)
+  Short section, total size: 30 bytes
+  - Section 0:
+    TS: 4664 (0x1238), Orig. Netw.: 21651 (0x5493), Service: 22068 (0x5634), Event: 42611 (0xA673), Status: starting
+    TS: 5720 (0x1658), Orig. Netw.: 18019 (0x4663), Service: 34356 (0x8634), Event: 41587 (0xA273), Status: not-running
+    TS: 4713 (0x1269), Orig. Netw.: 13635 (0x3543), Service: 22102 (0x5656), Event: 17779 (0x4573), Status: running
+
+* SDT Actual, TID 66 (0x42), PID 200 (0x00C8)
+  Version: 2, sections: 1, total size: 46 bytes
+  - Section 0:
+    Transport Stream Id: 30870 (0x7896)
+    Original Network Id: 18092 (0x46AC)
+    Service Id: 18009 (0x4659), EITs: no, EITp/f: yes, CA mode: free
+    Running status: undefined
+    - Descriptor 0: Country Availability (0x49, 73), 7 bytes
+      Available: yes
+      Country code: "abc"
+      Country code: "def"
+    - Descriptor 1: Country Availability (0x49, 73), 4 bytes
+      Available: no
+      Country code: "xyz"
+    Service Id: 18089 (0x46A9), EITs: yes, EITp/f: no, CA mode: controlled
+    Running status: pausing
+    - Descriptor 0: Country Availability (0x49, 73), 4 bytes
+      Available: no
+      Country code: "yui"
+
+* TDT, TID 112 (0x70), PID 200 (0x00C8)
+  Short section, total size: 8 bytes
+  - Section 0:
+    UTC time: 2017/09/12 14:27:12
+
+* TOT, TID 115 (0x73), PID 200 (0x00C8)
+  Short section, total size: 42 bytes
+  - Section 0:
+    UTC time: 2017/09/12 14:28:10
+    - Descriptor 0: Local Time Offset (0x58, 88), 26 bytes
+      Country code: abc
+      Region id: 1 (0x01), polarity: west of Greenwich
+      Local time offset: -02:00
+      Next change: 2018/03/07 02:00:00
+      Next time offset: -01:00
+      Country code: erg
+      Region id: 17 (0x11), polarity: east of Greenwich
+      Local time offset: 02:00
+      Next change: 2018/03/07 04:00:00
+      Next time offset: 01:30
+    CRC32: 0x3EBC2311 (OK)
+
+* EIT p/f Actual, TID 78 (0x4E), PID 200 (0x00C8)
+  Version: 2, sections: 1, total size: 64 bytes
+  - Section 0:
+    Service Id: 564 (0x0234)
+    TS Id: 18017 (0x4661)
+    Original Network Id: 25114 (0x621A)
+    Segment last section: 0 (0x00)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 30340 (0x7684)
+      Start UTC: 2017/09/21 14:28:30
+      Duration: 01:47:44
+      Running status: starting
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 32 bytes
+        Language: egt
+        Event name: "Event name"
+        Description: "Event description"
+
+* EIT schedule Other, TID 104 (0x68), PID 200 (0x00C8)
+  Version: 4, sections: 1, total size: 64 bytes
+  - Section 0:
+    Service Id: 1638 (0x0666)
+    TS Id: 18067 (0x4693)
+    Original Network Id: 4712 (0x1268)
+    Segment last section: 0 (0x00)
+    Last Table Id: 105 (0x69), EIT schedule Other
+    - Event Id: 30340 (0x7684)
+      Start UTC: 2017/09/21 14:28:30
+      Duration: 01:47:44
+      Running status: starting
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 32 bytes
+        Language: egt
+        Event name: "Event name"
+        Description: "Event description"
+
+* unknown (0xDE), TID 222 (0xDE), PID 200 (0x00C8)
+  Short section, total size: 13 bytes
+  - Section 0:
+    0000:  01 02 03 14 15 16 17 18 19 1A                    ..........
+
+* SDTT (ISDB), TID 195 (0xC3), PID 200 (0x00C8)
+  Version: 23, sections: 2, total size: 39 bytes
+  - Section 0:
+    TIDext: 4660 (0x1234)
+    0000:  14 15 16 17 18 19 1A                             .......
+  - Section 1:
+    TIDext: 4660 (0x1234)
+    0000:  24 25 26 27 48 59 6A 7B                          $%&'HYj{
+
