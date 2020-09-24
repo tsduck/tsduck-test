@@ -134,7 +134,7 @@
     <MPEG4_audio_descriptor MPEG4_audio_profile_and_level="0x12"/>
     <MPEG4_video_descriptor MPEG4_visual_profile_and_level="0x34"/>
     <data_stream_alignment_descriptor alignment_type="0x03"/>
-    <hierarchy_descriptor temporal_scalability="true" spatial_scalability="false" quality_scalability="true" hierarchy_type="9" hierarchy_layer_index="10" tref_present="false" hierarchy_embedded_layer_index="11" hierarchy_channel="12"/>
+    <hierarchy_descriptor no_view_scalability_flag="true" no_temporal_scalability="true" no_spatial_scalability="false" no_quality_scalability="true" hierarchy_type="9" hierarchy_layer_index="10" tref_present="false" hierarchy_embedded_layer_index="11" hierarchy_channel="12"/>
     <audio_stream_descriptor free_format="true" ID="0" layer="2" variable_rate_audio="false"/>
     <video_stream_descriptor multiple_frame_rate="true" frame_rate_code="2" MPEG_1_only="true" constrained_parameter="false" still_picture="true"/>
     <video_stream_descriptor multiple_frame_rate="false" frame_rate_code="3" MPEG_1_only="false" constrained_parameter="true" still_picture="false" profile_and_level_indication="0x30" chroma_format="2" frame_rate_extension="false"/>
