@@ -39,6 +39,11 @@ Options:
       RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
+  --deterministic
+      Enforce a deterministic and reproduceable output. Do not output
+      non-reproduceable information such as system time (useful for automated
+      tests).
+
   --error-analysis
       Report analysis about detected errors.
 

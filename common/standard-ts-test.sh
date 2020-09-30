@@ -27,12 +27,10 @@ test_text $SCRIPT.tsanalyze.wide.log
 
 # ==== tsanalyze, as a command, normalized format
 
-$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normalized $STDOPT \
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normalized --deterministic $STDOPT \
     >"$OUTDIR/$SCRIPT.tsanalyze.norm.txt" \
     2>"$OUTDIR/$SCRIPT.tsanalyze.norm.log"
 
-# remove current system time info from output, non reproduceable
-sed -i -e'/^time:.*:system:/d' "$OUTDIR/$SCRIPT.tsanalyze.norm.txt"
 test_text $SCRIPT.tsanalyze.norm.txt
 test_text $SCRIPT.tsanalyze.norm.log
 
@@ -50,13 +48,12 @@ test_text $SCRIPT.tspsi.log
 $(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" $STDOPT \
-    -P analyze --normalized -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" $STDOPT \
-    -P analyze --json -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.json") --title "$SCRIPT JSON" $STDOPT \
+    -P analyze --normalized --deterministic -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" $STDOPT \
+    -P analyze --json --deterministic -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.json") --title "$SCRIPT JSON" $STDOPT \
     -P psi --all -o $(fpath "$OUTDIR/$SCRIPT.tsp.psi.txt") $STDOPT \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
 
-sed -i -e '/^time:.*:system:/d' "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt"
 test_text $SCRIPT.tsp.analyze.full.txt
 test_text $SCRIPT.tsp.analyze.norm.txt
 test_text $SCRIPT.tsp.analyze.json
