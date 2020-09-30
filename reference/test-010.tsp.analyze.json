@@ -1,0 +1,932 @@
+{
+  "pids": [
+    {
+      "audio": false,
+      "bitrate": 3093,
+      "bitrate-204": 3356,
+      "description": "PAT",
+      "ecm": false,
+      "emm": false,
+      "global": true,
+      "id": 0,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 3,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 3
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 3,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 3093,
+      "bitrate-204": 3356,
+      "description": "CAT",
+      "ecm": false,
+      "emm": false,
+      "global": true,
+      "id": 1,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 3,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 3
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 3,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 1031,
+      "bitrate-204": 1118,
+      "description": "SDT/BAT",
+      "ecm": false,
+      "emm": false,
+      "global": true,
+      "id": 17,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 1,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 1
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 1,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 3093,
+      "bitrate-204": 3356,
+      "description": "PMT",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 256,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 3,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 3
+      },
+      "pmt": true,
+      "service-count": 1,
+      "services": [
+        4601
+      ],
+      "t2mi": false,
+      "unit-start": 3,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 21942199,
+      "bitrate-204": 23809620,
+      "crypto-period": 0,
+      "description": "HEVC video",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 257,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": true,
+      "packets": {
+        "af": 133,
+        "clear": 2,
+        "discontinuities": 195,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 59,
+        "scrambled": 21280,
+        "total": 21282
+      },
+      "pes": 74,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4601
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": true
+    },
+    {
+      "audio": true,
+      "bitrate": 195894,
+      "bitrate-204": 212565,
+      "description": "HE-AAC Audio (qaa)",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 258,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": true,
+      "language": "qaa",
+      "packets": {
+        "af": 0,
+        "clear": 0,
+        "discontinuities": 2,
+        "duplicated": 1,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 190,
+        "total": 190
+      },
+      "pes": 22,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4601
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": true,
+      "bitrate": 195894,
+      "bitrate-204": 212565,
+      "description": "HE-AAC Audio (ger)",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 259,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": true,
+      "language": "ger",
+      "packets": {
+        "af": 0,
+        "clear": 0,
+        "discontinuities": 1,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 190,
+        "total": 190
+      },
+      "pes": 22,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4601
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 7217,
+      "bitrate-204": 7831,
+      "cas": 1280,
+      "description": "Viaccess ECM for SOID 334384 (0x051A30)",
+      "ecm": true,
+      "emm": false,
+      "global": false,
+      "id": 260,
+      "is-scrambled": false,
+      "operators": [
+        334384
+      ],
+      "packets": {
+        "af": 0,
+        "clear": 7,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 7
+      },
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4601
+      ],
+      "t2mi": false,
+      "unit-start": 7,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 3093,
+      "bitrate-204": 3356,
+      "description": "PMT",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 356,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 3,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 3
+      },
+      "pmt": true,
+      "service-count": 1,
+      "services": [
+        4602
+      ],
+      "t2mi": false,
+      "unit-start": 3,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 17419107,
+      "bitrate-204": 18901584,
+      "description": "HEVC video",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 357,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": false,
+      "packets": {
+        "af": 166,
+        "clear": 16895,
+        "discontinuities": 141,
+        "duplicated": 1,
+        "invalid-scrambling": 0,
+        "pcr": 97,
+        "scrambled": 0,
+        "total": 16895
+      },
+      "pes": 70,
+      "pes-stream-id": 224,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4602
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": true
+    },
+    {
+      "audio": true,
+      "bitrate": 357764,
+      "bitrate-204": 388212,
+      "description": "HE-AAC Audio (und, Audio layer 0, dual channel)",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 358,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": false,
+      "language": "und",
+      "packets": {
+        "af": 135,
+        "clear": 347,
+        "discontinuities": 4,
+        "duplicated": 1,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 347
+      },
+      "pes": 66,
+      "pes-stream-id": 192,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4602
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 3093,
+      "bitrate-204": 3356,
+      "description": "PMT",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 456,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 3,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 3
+      },
+      "pmt": true,
+      "service-count": 1,
+      "services": [
+        4603
+      ],
+      "t2mi": false,
+      "unit-start": 3,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 17157228,
+      "bitrate-204": 18617417,
+      "description": "HEVC video",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 457,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": false,
+      "packets": {
+        "af": 166,
+        "clear": 16641,
+        "discontinuities": 134,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 94,
+        "scrambled": 0,
+        "total": 16641
+      },
+      "pes": 72,
+      "pes-stream-id": 224,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4603
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": true
+    },
+    {
+      "audio": true,
+      "bitrate": 196925,
+      "bitrate-204": 213684,
+      "description": "HE-AAC Audio (eng)",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 458,
+      "invalid-pes-prefix": 0,
+      "is-scrambled": false,
+      "language": "eng",
+      "packets": {
+        "af": 0,
+        "clear": 191,
+        "discontinuities": 1,
+        "duplicated": 1,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 191
+      },
+      "pes": 22,
+      "pes-stream-id": 192,
+      "pmt": false,
+      "service-count": 1,
+      "services": [
+        4603
+      ],
+      "t2mi": false,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 6186,
+      "bitrate-204": 6712,
+      "cas": 1280,
+      "description": "Viaccess EMM for SOID 334384 (0x051A30)",
+      "ecm": false,
+      "emm": true,
+      "global": true,
+      "id": 1024,
+      "is-scrambled": false,
+      "operators": [
+        334384
+      ],
+      "packets": {
+        "af": 0,
+        "clear": 6,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 6
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 6,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 6186,
+      "bitrate-204": 6712,
+      "cas": 1280,
+      "description": "Viaccess EMM for SOID 334352 (0x051A10)",
+      "ecm": false,
+      "emm": true,
+      "global": true,
+      "id": 1025,
+      "is-scrambled": false,
+      "operators": [
+        334352
+      ],
+      "packets": {
+        "af": 0,
+        "clear": 6,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 6
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 6,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 5155,
+      "bitrate-204": 5593,
+      "cas": 1280,
+      "description": "Viaccess EMM for SOID 334368 (0x051A20)",
+      "ecm": false,
+      "emm": true,
+      "global": true,
+      "id": 1026,
+      "is-scrambled": false,
+      "operators": [
+        334368
+      ],
+      "packets": {
+        "af": 0,
+        "clear": 5,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 5
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 5,
+      "unreferenced": false,
+      "video": false
+    }
+  ],
+  "services": [
+    {
+      "bitrate": 22344297,
+      "bitrate-204": 24245939,
+      "components": {
+        "clear": 2,
+        "scrambled": 3,
+        "total": 5
+      },
+      "id": 4601,
+      "is-scrambled": true,
+      "name": "Funbox UHD",
+      "original-network-id": 318,
+      "packets": 21672,
+      "pcr-pid": 257,
+      "pids": [
+        256,
+        257,
+        258,
+        259,
+        260
+      ],
+      "pmt-pid": 256,
+      "provider": "SPI",
+      "ssu": false,
+      "t2mi": false,
+      "tsid": 11100,
+      "type": 25,
+      "type-name": "MetaData in DSM-CC Sync. Download Protocol"
+    },
+    {
+      "bitrate": 17779965,
+      "bitrate-204": 19293153,
+      "components": {
+        "clear": 3,
+        "scrambled": 0,
+        "total": 3
+      },
+      "id": 4602,
+      "is-scrambled": false,
+      "name": "C4K360",
+      "original-network-id": 318,
+      "packets": 17245,
+      "pcr-pid": 357,
+      "pids": [
+        356,
+        357,
+        358
+      ],
+      "pmt-pid": 356,
+      "provider": "(unknown)",
+      "ssu": false,
+      "t2mi": false,
+      "tsid": 11100,
+      "type": 1,
+      "type-name": "MPEG-1 Video"
+    },
+    {
+      "bitrate": 17357246,
+      "bitrate-204": 18834458,
+      "components": {
+        "clear": 3,
+        "scrambled": 0,
+        "total": 3
+      },
+      "id": 4603,
+      "is-scrambled": false,
+      "name": "TRAVELXP 4K",
+      "original-network-id": 318,
+      "packets": 16835,
+      "pcr-pid": 457,
+      "pids": [
+        456,
+        457,
+        458
+      ],
+      "pmt-pid": 456,
+      "provider": "(unknown)",
+      "ssu": false,
+      "t2mi": false,
+      "tsid": 11100,
+      "type": 1,
+      "type-name": "MPEG-1 Video"
+    }
+  ],
+  "tables": [
+    {
+      "first-version": 13,
+      "last-version": 13,
+      "max-repetition-ms": 476,
+      "max-repetition-pkt": 18209,
+      "min-repetition-ms": 475,
+      "min-repetition-pkt": 18197,
+      "pid": 0,
+      "repetition-ms": 476,
+      "repetition-pkt": 18203,
+      "sections": 3,
+      "tables": 3,
+      "tid": 0,
+      "tid-ext": 11100,
+      "versions": [
+        13
+      ]
+    },
+    {
+      "first-version": 16,
+      "last-version": 16,
+      "max-repetition-ms": 476,
+      "max-repetition-pkt": 18213,
+      "min-repetition-ms": 475,
+      "min-repetition-pkt": 18196,
+      "pid": 1,
+      "repetition-ms": 476,
+      "repetition-pkt": 18205,
+      "sections": 3,
+      "tables": 3,
+      "tid": 1,
+      "tid-ext": 65535,
+      "versions": [
+        16
+      ]
+    },
+    {
+      "first-version": 24,
+      "last-version": 24,
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 17,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 66,
+      "tid-ext": 11100,
+      "versions": [
+        24
+      ]
+    },
+    {
+      "first-version": 27,
+      "last-version": 27,
+      "max-repetition-ms": 476,
+      "max-repetition-pkt": 18226,
+      "min-repetition-ms": 476,
+      "min-repetition-pkt": 18226,
+      "pid": 256,
+      "repetition-ms": 476,
+      "repetition-pkt": 18226,
+      "sections": 2,
+      "tables": 2,
+      "tid": 2,
+      "tid-ext": 4601,
+      "versions": [
+        27
+      ]
+    },
+    {
+      "max-repetition-ms": 200,
+      "max-repetition-pkt": 7684,
+      "min-repetition-ms": 200,
+      "min-repetition-pkt": 7659,
+      "pid": 260,
+      "repetition-ms": 200,
+      "repetition-pkt": 7672,
+      "sections": 3,
+      "tables": 3,
+      "tid": 129
+    },
+    {
+      "first-version": 16,
+      "last-version": 16,
+      "max-repetition-ms": 474,
+      "max-repetition-pkt": 18138,
+      "min-repetition-ms": 474,
+      "min-repetition-pkt": 18138,
+      "pid": 356,
+      "repetition-ms": 474,
+      "repetition-pkt": 18138,
+      "sections": 2,
+      "tables": 2,
+      "tid": 2,
+      "tid-ext": 4602,
+      "versions": [
+        16
+      ]
+    },
+    {
+      "first-version": 15,
+      "last-version": 15,
+      "max-repetition-ms": 476,
+      "max-repetition-pkt": 18213,
+      "min-repetition-ms": 476,
+      "min-repetition-pkt": 18213,
+      "pid": 456,
+      "repetition-ms": 476,
+      "repetition-pkt": 18213,
+      "sections": 2,
+      "tables": 2,
+      "tid": 2,
+      "tid-ext": 4603,
+      "versions": [
+        15
+      ]
+    },
+    {
+      "max-repetition-ms": 262,
+      "max-repetition-pkt": 10030,
+      "min-repetition-ms": 262,
+      "min-repetition-pkt": 10030,
+      "pid": 1024,
+      "repetition-ms": 262,
+      "repetition-pkt": 10030,
+      "sections": 2,
+      "tables": 2,
+      "tid": 136
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1024,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 140
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1024,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 141
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1024,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 2,
+      "tables": 2,
+      "tid": 142
+    },
+    {
+      "max-repetition-ms": 503,
+      "max-repetition-pkt": 19261,
+      "min-repetition-ms": 253,
+      "min-repetition-pkt": 9689,
+      "pid": 1025,
+      "repetition-ms": 378,
+      "repetition-pkt": 14475,
+      "sections": 3,
+      "tables": 3,
+      "tid": 136
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1025,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 141
+    },
+    {
+      "max-repetition-ms": 262,
+      "max-repetition-pkt": 10038,
+      "min-repetition-ms": 262,
+      "min-repetition-pkt": 10038,
+      "pid": 1026,
+      "repetition-ms": 262,
+      "repetition-pkt": 10038,
+      "sections": 2,
+      "tables": 2,
+      "tid": 136
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1026,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 140
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1026,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 141
+    },
+    {
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 1026,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 2,
+      "tables": 2,
+      "tid": 142
+    }
+  ],
+  "time": {
+    "local": {
+      "system": {
+        "first": {
+          "date": "2020/09/30",
+          "secondsince2000": 654823880,
+          "time": "23:31:20.527"
+        },
+        "last": {
+          "date": "2020/09/30",
+          "secondsince2000": 654823880,
+          "time": "23:31:20.552"
+        }
+      }
+    },
+    "utc": {
+      "system": {
+        "first": {
+          "date": "2020/09/30",
+          "secondsince2000": 654816680,
+          "time": "21:31:20.527"
+        },
+        "last": {
+          "date": "2020/09/30",
+          "secondsince2000": 654816680,
+          "time": "21:31:20.552"
+        }
+      }
+    }
+  },
+  "title": "test-010 JSON",
+  "ts": {
+    "bitrate": 57506254,
+    "bitrate-204": 62400403,
+    "bytes": 10485888,
+    "duration": 1,
+    "id": 11100,
+    "packets": {
+      "invalid-syncs": 0,
+      "suspect-ignored": 0,
+      "total": 55776,
+      "transport-errors": 0
+    },
+    "pcr-bitrate": 57538868,
+    "pcr-bitrate-204": 62435793,
+    "pids": {
+      "clear": 14,
+      "global": {
+        "bitrate": 24744,
+        "bitrate-204": 26849,
+        "clear": 6,
+        "is-scrambled": false,
+        "packets": 24,
+        "pids": [
+          0,
+          1,
+          17,
+          1024,
+          1025,
+          1026
+        ],
+        "scrambled": 0,
+        "total": 6
+      },
+      "pcr": 3,
+      "scrambled": 3,
+      "total": 17,
+      "unreferenced": 0
+    },
+    "services": {
+      "clear": 2,
+      "scrambled": 1,
+      "total": 3
+    },
+    "user-bitrate": 57506254,
+    "user-bitrate-204": 62400403
+  }
+}

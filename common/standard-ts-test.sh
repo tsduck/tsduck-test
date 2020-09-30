@@ -51,6 +51,7 @@ $(tspath tsp) --synchronous-log \
     -I file $(fpath "$INFILE") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" $STDOPT \
     -P analyze --normalized -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" $STDOPT \
+    -P analyze --json -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.json") --title "$SCRIPT JSON" $STDOPT \
     -P psi --all -o $(fpath "$OUTDIR/$SCRIPT.tsp.psi.txt") $STDOPT \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
@@ -58,6 +59,7 @@ $(tspath tsp) --synchronous-log \
 sed -i -e '/^time:.*:system:/d' "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt"
 test_text $SCRIPT.tsp.analyze.full.txt
 test_text $SCRIPT.tsp.analyze.norm.txt
+test_text $SCRIPT.tsp.analyze.json
 test_text $SCRIPT.tsp.psi.txt
 test_text $SCRIPT.tsp.log
 
