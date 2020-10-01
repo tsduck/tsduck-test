@@ -166,3 +166,4 @@ repository. But we now limit their size to 20 MB.
 | 069  | Non-regression on `tsecmg` (issue #619)
 | 070  | Non-regression on `fork` packet processor plugin (issue #633)
 | 071  | RS204 file format
+| 072  | Non-regression on `pes` plugin (issue #646)
