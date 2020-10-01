@@ -286,5 +286,28 @@
     </reference_descriptor>
     <node_relation_descriptor reference_type="0" reference_node_id="0x1234" reference_number="0x56"/>
     <node_relation_descriptor reference_type="7" information_provider_id="0x9876" event_relation_id="0x5432" reference_node_id="0x1987" reference_number="0x65"/>
+    <basic_local_event_descriptor segmentation_mode="1" start_time_NPT="0x0000000123456789" end_time_NPT="0x0000000198765432">
+      <component tag="0xAB"/>
+      <component tag="0xCD"/>
+      <component tag="0xEF"/>
+    </basic_local_event_descriptor>
+    <basic_local_event_descriptor segmentation_mode="2" start_time="12:34:56" duration="00:23:45"/>
+    <basic_local_event_descriptor segmentation_mode="3" start_time="02:34:56" duration="23:45:12" start_time_extension="123" duration_extension="456">
+      <component tag="0xEF"/>
+    </basic_local_event_descriptor>
+    <basic_local_event_descriptor segmentation_mode="8">
+      <reserved_data>
+        12 34 56
+      </reserved_data>
+      <component tag="0xAB"/>
+      <component tag="0xCD"/>
+    </basic_local_event_descriptor>
+    <STC_reference_descriptor STC_reference_mode="1" external_event_id="0x1234" external_service_id="0x5678" external_network_id="0x9ABC" NPT_reference="0x0000000123456789" STC_reference="0x0000000198765432"/>
+    <STC_reference_descriptor STC_reference_mode="5" time_reference="12:34:56" time_reference_extension="789" STC_reference="0x0000000123456789"/>
+    <STC_reference_descriptor STC_reference_mode="9">
+      <reserved_data>
+        12 34 56 78
+      </reserved_data>
+    </STC_reference_descriptor>
   </CAT>
 </tsduck>
