@@ -290,7 +290,7 @@
       Copyright identifier: 0x00006789
       Additional copyright info (5 bytes): 78 96 32 14 52
     - Descriptor 75: IBP (0x12, 18), 2 bytes
-      Closed GOP: no, identical GOP: yes, max GOP length: 0x00000018 (24)
+      Closed GOP: false, identical GOP: true, max GOP length: 0x0018 (24)
     - Descriptor 76: SL (0x1E, 30), 2 bytes
       ES id: 0x9876 (39030)
     - Descriptor 77: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
@@ -480,12 +480,12 @@
       S2X mode: 0x2 (S2X + time slicing)
       TS/GS S2X mode: 1 (GSE)
       Master channel:
-        Orbital position: 19.2 degree, east
         Frequency: 34.56789 GHz
-        Symbol rate: 123.4567 Msymbol/s
-        Polarization: horizontal
-        Roll-off factor: 0.15
+        Orbital position: 19.2 degree, east
+        Polarization: linear - horizontal (0)
         Multiple input stream: no
+        Roll-off factor: 0.15
+        Symbol rate: 123.4567 Msymbol/s
       Timeslice number: 0xBC (188)
       Reserved for future use (5 bytes): 01 23 45 67 89
     - Descriptor 19: Extension Descriptor (0x7F, 127), 42 bytes
@@ -495,27 +495,27 @@
       TS/GS S2X mode: 3 (Transport Stream)
       Scrambling sequence index: 0x23456
       Master channel:
-        Orbital position: 3.7 degree, west
         Frequency: 876.54321 GHz
-        Symbol rate: 456.7896 Msymbol/s
-        Polarization: vertical
-        Roll-off factor: 0.10
+        Orbital position: 3.7 degree, west
+        Polarization: linear - vertical (1)
         Multiple input stream: no
+        Roll-off factor: 0.10
+        Symbol rate: 456.7896 Msymbol/s
       Channel bond 0:
-        Orbital position: 34.0 degree, east
         Frequency: 65.43218 GHz
-        Symbol rate: 24.6754 Msymbol/s
-        Polarization: right
-        Roll-off factor: 0.05
+        Orbital position: 34.0 degree, east
+        Polarization: circular - right (3)
         Multiple input stream: yes
+        Roll-off factor: 0.05
+        Symbol rate: 24.6754 Msymbol/s
         Input stream identifier: 0xBD (189)
       Channel bond 1:
-        Orbital position: 123.4 degree, west
         Frequency: 6.54367 GHz
-        Symbol rate: 0.8764 Msymbol/s
-        Polarization: left
-        Roll-off factor: 0.25
+        Orbital position: 123.4 degree, west
+        Polarization: circular - left (2)
         Multiple input stream: yes
+        Roll-off factor: 0.25
+        Symbol rate: 0.8764 Msymbol/s
         Input stream identifier: 0x2E (46)
     - Descriptor 20: Frequency List (0x62, 98), 13 bytes
       Coding type: 1 (satellite)
