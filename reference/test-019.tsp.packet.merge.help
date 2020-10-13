@@ -9,12 +9,27 @@ Parameter:
 
 Options:
 
+  -b value
+  --bitrate value
+      Specify the target bitrate of the merged stream, in bits/seconds. By
+      default, the bitrate of the merged stream is computed from its PCR. The
+      bitrate of the merged stream is used to smoothen packet insertion in the
+      main stream.
+
   -d pid[-pid]
   --drop pid[-pid]
       Drop the specified PID or range of PID's from the merged stream. By
       default, the PID's 0x00 to 0x1F are dropped and all other PID's are
       passed. This can be modified using options --drop and --pass. Several
       options --drop can be specified.
+
+  --force-threshold value
+      When the insertion of the merged stream is smoothened, packets are
+      inserted in the main stream at some regular interval, leaving additional
+      packets in the queue until their natural insertion point. However, to
+      avoid losing packets, if the number of packets in the queue is above the
+      specified threshold, the insertion is forced. The default threshold is
+      half the size of the packet queue.
 
   --format name
       Specify the format of the input stream. By default, the format is
@@ -31,6 +46,14 @@ Options:
       present in the two streams, the PID is dropped from the merged stream.
       Warning: this is a dangerous option which can result in an inconsistent
       transport stream.
+
+  --incremental-pcr-restamp
+      When restamping PCR's from the merged TS into the main TS, compute each
+      new PCR from the last restampted one. By default, all PCR's are
+      restampted from the initial PCR in the PID. The default method is more
+      precise on constant bitrate (CBR) streams. The incremental method gives
+      better results on variable bitrate (VBR) streams. See also option
+      --no-pcr-restamp.
 
   -j
   --joint-termination
@@ -55,6 +78,14 @@ Options:
       PAT, CAT and SDT are merged so that the services from the merged stream
       are properly referenced and PID's 0x00 to 0x1F are dropped from the
       merged stream.
+
+  --no-smoothing
+      Do not attempt to smoothen the insertion of the merged stream. Incoming
+      packets from the merged stream are inserted as soon as null packets are
+      available in the main stream. If the main stream contains a lot of null
+      packets, this may lead to bursts in the merged packets. By default, if
+      the bitrate of the merged stream is known, the merged packets are
+      inserted at the target interval in the main stream.
 
   --no-wait
       Do not wait for child process termination at end of processing.
