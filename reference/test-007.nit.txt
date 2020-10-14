@@ -1,6 +1,6 @@
 
 * NIT Actual, TID 64 (0x40), PID 16 (0x0010)
-  Version: 27, sections: 1, total size: 2096 bytes
+  Version: 27, sections: 3, total size: 2128 bytes
   - Section 0:
     Network Id: 1 (0x0001)
     Network information:
@@ -474,6 +474,8 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
+  - Section 1:
+    Network Id: 1 (0x0001)
     Transport Stream Id: 1060 (0x0424), Original Network Id: 1 (0x0001)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.87650 GHz
@@ -951,6 +953,8 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
+  - Section 2:
+    Network Id: 1 (0x0001)
     Transport Stream Id: 14 (0x000E), Original Network Id: 133 (0x0085)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.87550 GHz
