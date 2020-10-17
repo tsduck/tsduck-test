@@ -103,6 +103,16 @@ Options:
       passed. This can be modified using options --drop and --pass. Several
       options --pass can be specified.
 
+  --pcr-reset-backwards
+      When restamping PCR's, the PCR adjustment is usually small and stays
+      behind the PTS and DTS. But, after hours of continuous restamping, some
+      inaccuracy my appear and the recomputed PCR may move ahead of PCR and
+      DTS. With this option, as soon as a recomputed PCR is ahead of the PTS or
+      DTS in the same packet, PCR restamping is reset and restarts from the
+      original PCR value in this packet. Note that this creates a small PCR
+      leap in the stream. The option has, of course, no effect on scrambled
+      streams.
+
   --reset-label label1[-label2]
       Clear the specified labels on the merged packets. Apply to original
       packets from the merged stream only, not to updated PSI. Several
