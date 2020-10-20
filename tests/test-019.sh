@@ -28,8 +28,8 @@ PACKET_PLUGINS=(
     history inject limit merge mpe mpeinject mux nit nitscan pat pattern
     pcradjust pcrbitrate pcrextract pcrverify pes pmt psi psimerge reduce
     regulate remap rmorphan rmsplice scrambler sdt sections sifilter skip
-    slice spliceinject stuffanalyze svremove svrename t2mi tables teletext
-    time timeref timeshift trigger tsrename until zap
+    slice spliceinject stats stuffanalyze svremove svrename t2mi tables
+    teletext time timeref timeshift trigger tsrename until zap
 )
 
 helpfile() { [[ "$1" == =* ]] && echo ${1/=/}.$OS.help || echo $1.help; }

@@ -28,8 +28,9 @@ Options:
       inserted in the main stream at some regular interval, leaving additional
       packets in the queue until their natural insertion point. However, to
       avoid losing packets, if the number of packets in the queue is above the
-      specified threshold, the insertion is forced. The default threshold is
-      half the size of the packet queue.
+      specified threshold, the insertion is forced. When set to zero, insertion
+      is never forced. The default threshold is half the size of the packet
+      queue.
 
   --format name
       Specify the format of the input stream. By default, the format is
