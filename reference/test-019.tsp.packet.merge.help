@@ -9,6 +9,15 @@ Parameter:
 
 Options:
 
+  --acceleration-threshold value
+      When the insertion of the merged stream is smoothened, packets are
+      inserted in the main stream at some regular interval, leaving additional
+      packets in the queue until their natural insertion point. However, to
+      avoid losing packets, if the number of packets in the queue is above the
+      specified threshold, the insertion is accelerated. When set to zero,
+      insertion is never accelerated. The default threshold is half the size of
+      the packet queue.
+
   -b value
   --bitrate value
       Specify the target bitrate of the merged stream, in bits/seconds. By
@@ -22,15 +31,6 @@ Options:
       default, the PID's 0x00 to 0x1F are dropped and all other PID's are
       passed. This can be modified using options --drop and --pass. Several
       options --drop can be specified.
-
-  --force-threshold value
-      When the insertion of the merged stream is smoothened, packets are
-      inserted in the main stream at some regular interval, leaving additional
-      packets in the queue until their natural insertion point. However, to
-      avoid losing packets, if the number of packets in the queue is above the
-      specified threshold, the insertion is forced. When set to zero, insertion
-      is never forced. The default threshold is half the size of the packet
-      queue.
 
   --format name
       Specify the format of the input stream. By default, the format is
