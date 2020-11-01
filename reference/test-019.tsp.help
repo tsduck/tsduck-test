@@ -174,6 +174,11 @@ Options:
       this value if you think that too many messages are dropped. The default
       is 512 messages.
 
+  --log-plugin-index
+      In log messages, add the plugin index to the plugin name. This can be
+      useful if the same plugin is used several times and all instances log
+      many messages.
+
   --max-flushed-packets value
       Specify the maximum number of packets to be processed before flushing
       them to the next processor or the output. When the processing time is
