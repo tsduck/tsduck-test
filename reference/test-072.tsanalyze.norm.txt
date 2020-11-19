@@ -1,6 +1,11 @@
 title:test-072 tsanalyze norm
-ts:services=0:clearservices=0:scrambledservices=0:pids=2:clearpids=2:scrambledpids=0:pcrpids=1:unreferencedpids=2:packets=9690:invalidsyncs=0:transporterrors=0:suspectignored=0:bytes=1821720:bitrate=1213134:bitrate204=1316379:userbitrate=0:userbitrate204=0:pcrbitrate=1213134:pcrbitrate204=1316379:duration=12:
-global:pids=0:clearpids=0:scrambledpids=0:packets=0:bitrate=0:bitrate204=0:access=clear:pidlist=:
-unreferenced:pids=2:clearpids=2:scrambledpids=0:packets=9690:bitrate=1213134:bitrate204=1316379:access=clear:pidlist=100,101:
-pid:pid=100:access=clear:streamid=192:servcount=0:unreferenced:bitrate=141594:bitrate204=153644:packets=1131:clear=1131:scrambled=0:invalidscrambling=0:af=559:pcr=0:discontinuities=0:duplicated=0:unitstart=559:description=Unreferenced (Audio layer 0, dual channel)
-pid:pid=101:access=clear:streamid=224:servcount=0:unreferenced:bitrate=1071539:bitrate204=1162733:packets=8559:clear=8559:scrambled=0:invalidscrambling=0:af=600:pcr=300:discontinuities=0:duplicated=0:unitstart=300:description=Unreferenced (1024x576, high profile, level 3.1, 4:2:0)
+ts:id=1:services=1:clearservices=1:scrambledservices=0:pids=4:clearpids=4:scrambledpids=0:pcrpids=1:unreferencedpids=0:packets=9692:invalidsyncs=0:transporterrors=0:suspectignored=0:bytes=1822096:bitrate=1213134:bitrate204=1316379:userbitrate=0:userbitrate204=0:pcrbitrate=1213134:pcrbitrate204=1316379:duration=12:
+global:pids=1:clearpids=1:scrambledpids=0:packets=1:bitrate=125:bitrate204=135:access=clear:pidlist=0:
+unreferenced:pids=0:clearpids=0:scrambledpids=0:packets=0:bitrate=0:bitrate204=0:access=clear:pidlist=:
+service:id=1:tsid=1:orignetwid=0:access=clear:pids=3:clearpids=3:scrambledpids=0:packets=9691:bitrate=1213008:bitrate204=1316242:servtype=0:pmtpid=99:pidlist=99,100,101:provider=(unknown):name=(unknown)
+pid:pid=0:access=clear:servcount=0:global:bitrate=125:bitrate204=135:packets=1:clear=1:scrambled=0:invalidscrambling=0:af=0:pcr=0:discontinuities=0:duplicated=0:unitstart=1:description=PAT
+pid:pid=99:pmt:access=clear:servcount=1:servlist=1:bitrate=125:bitrate204=135:packets=1:clear=1:scrambled=0:invalidscrambling=0:af=0:pcr=0:discontinuities=0:duplicated=0:unitstart=1:description=PMT
+pid:pid=100:access=clear:streamid=192:audio:servcount=1:servlist=1:bitrate=141565:bitrate204=153613:packets=1131:clear=1131:scrambled=0:invalidscrambling=0:af=559:pcr=0:discontinuities=0:duplicated=0:pes=559:invalidpesprefix=0:description=MPEG-2 Audio (Audio layer 0, dual channel)
+pid:pid=101:access=clear:streamid=224:video:servcount=1:servlist=1:bitrate=1071317:bitrate204=1162492:packets=8559:clear=8559:scrambled=0:invalidscrambling=0:af=600:pcr=300:discontinuities=0:duplicated=0:pes=300:invalidpesprefix=0:description=AVC video (1024x576, high profile, level 3.1, 4:2:0)
+table:pid=0:tid=0:tidext=1:tables=1:sections=1:repetitionpkt=0:minrepetitionpkt=0:maxrepetitionpkt=0:repetitionms=0:minrepetitionms=0:maxrepetitionms=0:firstversion=0:lastversion=0:versions=0:
+table:pid=99:tid=2:tidext=1:tables=1:sections=1:repetitionpkt=0:minrepetitionpkt=0:maxrepetitionpkt=0:repetitionms=0:minrepetitionms=0:maxrepetitionms=0:firstversion=0:lastversion=0:versions=0:

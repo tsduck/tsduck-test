@@ -2,13 +2,71 @@
   "pids": [
     {
       "audio": false,
-      "bitrate": 141594,
-      "bitrate-204": 153644,
-      "description": "Unreferenced (Audio layer 0, dual channel)",
+      "bitrate": 125,
+      "bitrate-204": 135,
+      "description": "PAT",
       "ecm": false,
       "emm": false,
       "global": true,
+      "id": 0,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 1,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 1
+      },
+      "pmt": false,
+      "service-count": 0,
+      "t2mi": false,
+      "unit-start": 1,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": false,
+      "bitrate": 125,
+      "bitrate-204": 135,
+      "description": "PMT",
+      "ecm": false,
+      "emm": false,
+      "global": false,
+      "id": 99,
+      "is-scrambled": false,
+      "packets": {
+        "af": 0,
+        "clear": 1,
+        "discontinuities": 0,
+        "duplicated": 0,
+        "invalid-scrambling": 0,
+        "pcr": 0,
+        "scrambled": 0,
+        "total": 1
+      },
+      "pmt": true,
+      "service-count": 1,
+      "services": [
+        1
+      ],
+      "t2mi": false,
+      "unit-start": 1,
+      "unreferenced": false,
+      "video": false
+    },
+    {
+      "audio": true,
+      "bitrate": 141565,
+      "bitrate-204": 153613,
+      "description": "MPEG-2 Audio (Audio layer 0, dual channel)",
+      "ecm": false,
+      "emm": false,
+      "global": false,
       "id": 100,
+      "invalid-pes-prefix": 0,
       "is-scrambled": false,
       "packets": {
         "af": 559,
@@ -20,23 +78,27 @@
         "scrambled": 0,
         "total": 1131
       },
+      "pes": 559,
       "pes-stream-id": 192,
       "pmt": false,
-      "service-count": 0,
+      "service-count": 1,
+      "services": [
+        1
+      ],
       "t2mi": false,
-      "unit-start": 559,
-      "unreferenced": true,
+      "unreferenced": false,
       "video": false
     },
     {
       "audio": false,
-      "bitrate": 1071539,
-      "bitrate-204": 1162733,
-      "description": "Unreferenced (1024x576, high profile, level 3.1, 4:2:0)",
+      "bitrate": 1071317,
+      "bitrate-204": 1162492,
+      "description": "AVC video (1024x576, high profile, level 3.1, 4:2:0)",
       "ecm": false,
       "emm": false,
-      "global": true,
+      "global": false,
       "id": 101,
+      "invalid-pes-prefix": 0,
       "is-scrambled": false,
       "packets": {
         "af": 600,
@@ -48,49 +110,122 @@
         "scrambled": 0,
         "total": 8559
       },
+      "pes": 300,
       "pes-stream-id": 224,
       "pmt": false,
-      "service-count": 0,
+      "service-count": 1,
+      "services": [
+        1
+      ],
       "t2mi": false,
-      "unit-start": 300,
-      "unreferenced": true,
-      "video": false
+      "unreferenced": false,
+      "video": true
+    }
+  ],
+  "services": [
+    {
+      "bitrate": 1213008,
+      "bitrate-204": 1316242,
+      "components": {
+        "clear": 3,
+        "scrambled": 0,
+        "total": 3
+      },
+      "id": 1,
+      "is-scrambled": false,
+      "name": "(unknown)",
+      "original-network-id": 0,
+      "packets": 9691,
+      "pids": [
+        99,
+        100,
+        101
+      ],
+      "pmt-pid": 99,
+      "provider": "(unknown)",
+      "ssu": false,
+      "t2mi": false,
+      "tsid": 1,
+      "type": 0,
+      "type-name": "unknown (0x00)"
+    }
+  ],
+  "tables": [
+    {
+      "first-version": 0,
+      "last-version": 0,
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 0,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 0,
+      "tid-ext": 1,
+      "versions": [
+        0
+      ]
+    },
+    {
+      "first-version": 0,
+      "last-version": 0,
+      "max-repetition-ms": 0,
+      "max-repetition-pkt": 0,
+      "min-repetition-ms": 0,
+      "min-repetition-pkt": 0,
+      "pid": 99,
+      "repetition-ms": 0,
+      "repetition-pkt": 0,
+      "sections": 1,
+      "tables": 1,
+      "tid": 2,
+      "tid-ext": 1,
+      "versions": [
+        0
+      ]
     }
   ],
   "title": "test-072 JSON",
   "ts": {
     "bitrate": 1213134,
     "bitrate-204": 1316379,
-    "bytes": 1821720,
+    "bytes": 1822096,
     "duration": 12,
+    "id": 1,
     "packets": {
       "invalid-syncs": 0,
       "suspect-ignored": 0,
-      "total": 9690,
+      "total": 9692,
       "transport-errors": 0
     },
     "pcr-bitrate": 1213134,
     "pcr-bitrate-204": 1316379,
     "pids": {
-      "clear": 2,
+      "clear": 4,
       "global": {
-        "bitrate": 0,
-        "bitrate-204": 0,
-        "clear": 0,
+        "bitrate": 125,
+        "bitrate-204": 135,
+        "clear": 1,
         "is-scrambled": false,
-        "packets": 0,
+        "packets": 1,
+        "pids": [
+          0
+        ],
         "scrambled": 0,
-        "total": 0
+        "total": 1
       },
       "pcr": 1,
       "scrambled": 0,
-      "total": 2,
-      "unreferenced": 2
+      "total": 4,
+      "unreferenced": 0
     },
     "services": {
-      "clear": 0,
+      "clear": 1,
       "scrambled": 0,
-      "total": 0
+      "total": 1
     },
     "user-bitrate": 1213134,
     "user-bitrate-204": 1316379

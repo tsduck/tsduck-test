@@ -10,11 +10,22 @@ Options:
       Display audio attributes.
 
   --avc-access-unit
-      Dump all AVC (ISO 14496-10, ITU H.264) access units (aka "NALunits").
+      Dump all AVC (H.264), HEVC (H.265) or VVC (H.266) access units (aka
+      "NALunits").
 
   -b
   --binary
       Include binary dump in addition to hexadecimal.
+
+  --h26x-default-format name
+      The video formats AVC (H.264), HEVC (H.265) and VVC (H.266) use the same
+      binary bitstream format. But the formats of their NALunits are different.
+      When analyzing PES packets of one of these formats, the plugin must know
+      which is the actual one. This is usually automatically done from the
+      stream type in the PMT of the service. However, if the PID is
+      unreferenced or if the PMT was previously filtered out, this option
+      indicates which format to use. The default is AVC (H.264).
+      Must be one of "AVC", "H.264", "H.265", "H.266", "HEVC", "VVC".
 
   -h
   --header
@@ -47,12 +58,13 @@ Options:
       to or greater than the specified value.
 
   --nal-unit-type value
-      AVC NALunit filter: with --avc-access-unit, select access units with this
-      type (default: all access units). Several --nal-unit-type options may be
-      specified.
+      AVC (H.264), HEVC (H.265) or VVC (H.266) NALunit filter: with
+      --avc-access-unit, select access units with this type (default: all
+      access units). Several --nal-unit-type options may be specified.
 
   --negate-nal-unit-type
-      Negate the AVC NALunit filter: specified access units are excluded.
+      Negate the AVC/HEVC/VVC NALunit filter: specified access units are
+      excluded.
 
   -n
   --negate-pid
@@ -89,8 +101,8 @@ Options:
       the standard output is used.
 
   --sei-avc
-      Dump all SEI (Supplemental Enhancement Information) in AVC/H.264 access
-      units.
+      Dump all SEI (Supplemental Enhancement Information) in AVC (H.264), HEVC
+      (H.265) or VVC (H.266) access units.
 
   --sei-type value
       SEI type filter: with --sei-avc, select SEI access units with this type
@@ -106,8 +118,8 @@ Options:
       Trace all PES packets.
 
   --uuid-sei value
-      AVC SEI filter: with --sei-avc, select "user data unregistered" SEI
-      access units with the specified UUID value (default: all SEI). Several
+      SEI filter: with --sei-avc, select "user data unregistered" SEI access
+      units with the specified UUID value (default: all SEI). Several
       --uuid-sei options may be specified. The UUID value must be 16 bytes
       long. It must be either an ASCII string of exactly 16 characters or a
       hexadecimal value representing 16 bytes.

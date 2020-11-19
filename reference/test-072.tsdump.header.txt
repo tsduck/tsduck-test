@@ -1,6 +1,20 @@
 
 * Packet 0
   ---- TS Header ----
+  PID: 0 (0x0000), header size: 4, sync: 0x47
+  Error: 0, unit start: 1, priority: 0
+  Scrambling: 0, continuity counter: 0
+  Adaptation field: no (0 bytes), payload: yes (184 bytes)
+
+* Packet 1
+  ---- TS Header ----
+  PID: 99 (0x0063), header size: 4, sync: 0x47
+  Error: 0, unit start: 1, priority: 0
+  Scrambling: 0, continuity counter: 0
+  Adaptation field: no (0 bytes), payload: yes (184 bytes)
+
+* Packet 2
+  ---- TS Header ----
   PID: 101 (0x0065), header size: 12, sync: 0x47
   Error: 0, unit start: 1, priority: 0
   Scrambling: 0, continuity counter: 1
@@ -12,66 +26,52 @@
   PES packet length: 2
   PTS: 0x014D4D8C0 (PCR+388 ms)
 
-* Packet 1
+* Packet 3
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 2
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 2
+* Packet 4
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 3
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 3
+* Packet 5
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 4
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 4
+* Packet 6
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 5
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 5
+* Packet 7
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 6
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 6
+* Packet 8
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
   Scrambling: 0, continuity counter: 7
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 
-* Packet 7
-  ---- TS Header ----
-  PID: 101 (0x0065), header size: 4, sync: 0x47
-  Error: 0, unit start: 0, priority: 0
-  Scrambling: 0, continuity counter: 8
-  Adaptation field: no (0 bytes), payload: yes (184 bytes)
-
-* Packet 8
-  ---- TS Header ----
-  PID: 101 (0x0065), header size: 4, sync: 0x47
-  Error: 0, unit start: 0, priority: 0
-  Scrambling: 0, continuity counter: 9
-  Adaptation field: no (0 bytes), payload: yes (184 bytes)
-
 * Packet 9
   ---- TS Header ----
   PID: 101 (0x0065), header size: 4, sync: 0x47
   Error: 0, unit start: 0, priority: 0
-  Scrambling: 0, continuity counter: 10
+  Scrambling: 0, continuity counter: 8
   Adaptation field: no (0 bytes), payload: yes (184 bytes)
 

@@ -168,3 +168,4 @@ repository. But we now limit their size to 20 MB.
 | 071  | RS204 file format
 | 072  | Non-regression on `pes` plugin (issue #646)
 | 073  | `stats` plugin
+| 074  | `pes` plugin with access unit analysis
