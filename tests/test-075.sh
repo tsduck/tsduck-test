@@ -12,10 +12,12 @@ for ((i=0; $i<${#NAMES[@]}; i++)); do
 
     $(tspath tstables) $(fpath "$INDIR/test-002.ts") \
         --pid 20 --tid 112 --max-tables 1 $opt \
-        >"$OUTDIR/$SCRIPT.$i.txt" \
-        2>"$OUTDIR/$SCRIPT.$i.log"
+        --text $(fpath "$OUTDIR/$SCRIPT.$i.txt") \
+        --xml $(fpath "$OUTDIR/$SCRIPT.$i.xml") \
+        >"$OUTDIR/$SCRIPT.$i.log" 2>&1
 
     test_text $SCRIPT.$i.txt
+    test_text $SCRIPT.$i.xml
     test_text $SCRIPT.$i.log
 
 done
