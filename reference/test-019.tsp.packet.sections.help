@@ -11,7 +11,7 @@ Options:
       The value is a combination of the table id and the table id extension.
       For example, the option -e 0x4A1234 removes all BAT sections (table id
       0x4A) for bouquet id 0x1234 (table id extension). Several options
-      --etid-remove can be specified.
+      --etid-remove can be specified. See also option --reverse-etid.
 
   --help
       Display this help text.
@@ -42,6 +42,18 @@ Options:
       Specify input PID's. More than one input PID can be specified. All
       sections from all input PID's are merged into the output PID. At least
       one input PID must be specified.
+
+  -r
+  --reverse-etid
+      With option --etid-remove, reverse the table id and the table id
+      extension parts in the "extended table id" values. With this option, the
+      values in --etid-remove are 0xEEEETT instead of 0xTTEEEE where 'TT' is
+      the table id part and 'EEEE' the table id extension part. This option can
+      be useful when specifying ranges of values. For instance, the option
+      '--etid-remove 0x4A1234-0x4A1250' removes BAT sections (table id 0x4A)
+      for all service ids in the range 0x1234 to 0x1250. On the other hand, the
+      options '--etid-remove 0x12344E-0x12346F --reverse-etid' remove all EIT
+      sections (table ids 0x4E to 0x6F) for the service id 0x1234.
 
   -s
   --stuffing
