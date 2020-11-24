@@ -22,7 +22,7 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
-  --brasil
+  --brazil
       A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
       when working on South American ISDB-Tb transport streams.
 
@@ -184,11 +184,11 @@ Options:
       the syntax 'source@address:port' is used.
 
   --time-reference name
-      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
-      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
-      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
-      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
-      ISDB-Tb in Brasil).
+      Use a non-standard (non-UTC) time reference in TDT/TOT. This is typically
+      used in ARIB ISDB and ABNT ISDB-Tb standards. The specified name can be
+      either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'. Examples:
+      'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT ISDB-Tb in
+      Brazil).
 
   --tlv value
       For sections of unknown types, this option specifies how to interpret
