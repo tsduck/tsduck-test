@@ -33,6 +33,10 @@ Options:
       Save sections in the specified binary output file. See also option -m,
       --multiple-files.
 
+  --brasil
+      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
+
   -c
   --c-style
       Same as --raw-dump (no interpretation of section) but dump the bytes in
@@ -134,10 +138,9 @@ Options:
       ISDB-specific table.
 
   --japan
-      A synonym for '--isdb --default-charset ARIB-STD-B24'. This option also
-      activates some specificities for Japan such as the use of JST time
-      instead of UTC. This is a handy shortcut when working on Japanese
-      transport streams.
+      A synonym for '--isdb --default-charset ARIB-STD-B24 --time-reference
+      JST'. This is a handy shortcut when working on Japanese transport
+      streams.
 
   --local-udp address
       With --ip-udp, when the destination is a multicast address, specify the
@@ -288,6 +291,13 @@ Options:
       or range of values (apply to long sections only). Several -e or --tid-ext
       options may be specified. Without -e or --tid-ext option, all tables are
       saved.
+
+  --time-reference name
+      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
+      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
+      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
+      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
+      ISDB-Tb in Brasil).
 
   --time-stamp
       Display a time stamp (current local time) with each table.

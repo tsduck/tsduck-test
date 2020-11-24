@@ -14,6 +14,17 @@ Options:
       Report all TDT/TOT tables (default: report only the first table of each
       type).
 
+  --atsc
+      Assume that the transport stream is an ATSC one. ATSC streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ATSC-related stuff are found in the TS before the first
+      ATSC-specific table. For instance, when a PMT with ATSC-specific
+      descriptors is found before the first ATSC MGT or VCT.
+
+  --brasil
+      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
+
   -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
@@ -30,11 +41,28 @@ Options:
   --help
       Display this help text.
 
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
+  --japan
+      A synonym for '--isdb --time-reference JST'. This is a handy shortcut
+      when working on Japanese transport streams.
+
   --notdt
       Ignore Time & Date Table (TDT).
 
   --notot
       Ignore Time Offset Table (TOT).
+
+  --time-reference name
+      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
+      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
+      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
+      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
+      ISDB-Tb in Brasil).
 
   -v
   --verbose

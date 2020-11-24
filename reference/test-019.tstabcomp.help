@@ -18,6 +18,10 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
+  --brasil
+      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
+
   -c
   --compile
       Compile all files as XML source files into binary files. This is the
@@ -85,10 +89,9 @@ Options:
       ISDB-specific table.
 
   --japan
-      A synonym for '--isdb --default-charset ARIB-STD-B24'. This option also
-      activates some specificities for Japan such as the use of JST time
-      instead of UTC. This is a handy shortcut when working on Japanese
-      transport streams.
+      A synonym for '--isdb --default-charset ARIB-STD-B24 --time-reference
+      JST'. This is a handy shortcut when working on Japanese transport
+      streams.
 
   -o filepath
   --output filepath
@@ -107,6 +110,13 @@ Options:
       Save XML documents in strictly conformant XML format. By default, do not
       escape characters when this is not syntactically necessary to make the
       XML text more human-readable.
+
+  --time-reference name
+      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
+      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
+      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
+      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
+      ISDB-Tb in Brasil).
 
   -v
   --verbose

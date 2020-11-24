@@ -22,6 +22,10 @@ Options:
       188-byte packets). By default, the bitrate is evaluated using the PCR in
       the transport stream.
 
+  --brasil
+      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
+
   -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
@@ -80,10 +84,9 @@ Options:
       ISDB-specific table.
 
   --japan
-      A synonym for '--isdb --default-charset ARIB-STD-B24'. This option also
-      activates some specificities for Japan such as the use of JST time
-      instead of UTC. This is a handy shortcut when working on Japanese
-      transport streams.
+      A synonym for '--isdb --default-charset ARIB-STD-B24 --time-reference
+      JST'. This is a handy shortcut when working on Japanese transport
+      streams.
 
   --json
       Complete report about the transport stream, the services and the PID's in
@@ -149,6 +152,13 @@ Options:
 
   --table-analysis
       Report analysis for each table.
+
+  --time-reference name
+      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
+      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
+      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
+      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
+      ISDB-Tb in Brasil).
 
   --title value
       Display the specified string as title header.

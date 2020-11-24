@@ -22,6 +22,10 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
+  --brasil
+      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
+
   --buffer-size value
       Specify the UDP socket receive buffer size (socket option).
 
@@ -110,10 +114,9 @@ Options:
       ISDB-specific table.
 
   --japan
-      A synonym for '--isdb --default-charset ARIB-STD-B24'. This option also
-      activates some specificities for Japan such as the use of JST time
-      instead of UTC. This is a handy shortcut when working on Japanese
-      transport streams.
+      A synonym for '--isdb --default-charset ARIB-STD-B24 --time-reference
+      JST'. This is a handy shortcut when working on Japanese transport
+      streams.
 
   --local-address address
       Specify the IP address of the local interface on which to listen. It can
@@ -179,6 +182,13 @@ Options:
       Force the usage of Source-Specific Multicast (SSM) using the source which
       is specified by the option --source. The --ssm option is implicit when
       the syntax 'source@address:port' is used.
+
+  --time-reference name
+      Use a non-standard (non-UTC) time reference in TDT, TOT or EIT. This is
+      typically used in ARIB ISDB and ABNT ISDB-Tb standards. The specified
+      name can be either 'UTC', 'JST' (Japan Standard Time) or 'UTC+|-hh[:mm]'.
+      Examples: 'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT
+      ISDB-Tb in Brasil).
 
   --tlv value
       For sections of unknown types, this option specifies how to interpret
