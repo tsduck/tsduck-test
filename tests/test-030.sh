@@ -18,3 +18,29 @@ test_text $SCRIPT.analyze.in.txt
 test_text $SCRIPT.analyze.out.txt
 test_text $SCRIPT.tables.txt
 test_text $SCRIPT.tsp.log
+
+# Test various combinations of options.
+
+OPTIONS=(
+    ""
+    "--tid-remove 2"
+    "--tid-ext-remove 0x2269 --version-remove 7"
+    "--tid-ext-remove 0x2269 --version-remove 7 --and"
+    "--etid-remove 0x022260-0x022266"
+)
+PIDS="0x0000 0x0001 0x0064 0x00C8 0x012C 0x0190 0x01F4 0x0258 0x02BC 0x0320 0x0384 0x03E8 0x1003"
+PIDSOPT="--pid ${PIDS// / --pid }"
+
+for ((i=0; $i<${#OPTIONS[@]}; i++)); do
+
+    $(tspath tsp) --synchronous-log \
+        -I file $(fpath "$INDIR/test-001.ts") \
+        -P sections ${OPTIONS[$i]} $PIDSOPT --output-pid 0x1F00 \
+        -P tables --pid 0x1F00 --log --text $(fpath "$OUTDIR/$SCRIPT.$i.txt") \
+        -O drop \
+        >"$OUTDIR/$SCRIPT.$i.log" 2>&1
+
+    test_text $SCRIPT.$i.txt
+    test_text $SCRIPT.$i.log
+
+done

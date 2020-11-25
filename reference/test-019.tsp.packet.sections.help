@@ -5,7 +5,11 @@ Usage: tsp -P sections [options]
 
 Options:
 
-  -e id1[-id2]
+  -a
+  --and
+      Remove a section when all remove conditions are true. By default, a
+      section is removed as soon as one remove condition is true.
+
   --etid-remove id1[-id2]
       Remove all sections with the corresponding "extended table id" values.
       The value is a combination of the table id and the table id extension.
@@ -62,8 +66,18 @@ Options:
       packet, after the previous section. Note, however, that section headers
       are never scattered over a packet boundary.
 
+  -e id1[-id2]
+  --tid-ext-remove id1[-id2]
+      Remove all sections with the corresponding table id extension. Several
+      options --tid-ext-remove can be specified.
+
   -t id1[-id2]
   --tid-remove id1[-id2]
       Remove all sections with the corresponding table id. Several options
       --tid-remove can be specified.
+
+  -v v1[-v2]
+  --version-remove v1[-v2]
+      Remove all sections with the corresponding versions. Several options
+      --version-remove can be specified.
 
