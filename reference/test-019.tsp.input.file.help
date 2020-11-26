@@ -12,6 +12,20 @@ Parameters:
 
 Options:
 
+  --add-start-stuffing count
+      Specify that <count> null TS packets must be automatically inserted at
+      the start of the input file, before the first actual packet in the file.
+      If several input files are specified, several options
+      --add-start-stuffing are allowed. If there are less options than input
+      files, the last value is used for subsequent files.
+
+  --add-stop-stuffing count
+      Specify that <count> null TS packets must be automatically appended at
+      the end of the input file, after the last actual packet in the file. If
+      several input files are specified, several options --add-stop-stuffing
+      are allowed. If there are less options than input files, the last value
+      is used for subsequent files.
+
   -b value
   --byte-offset value
       Start reading each file at the specified byte offset (default: 0). This

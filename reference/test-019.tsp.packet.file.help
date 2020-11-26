@@ -9,6 +9,15 @@ Parameter:
 
 Options:
 
+  --add-start-stuffing count
+      Specify that <count> null TS packets must be automatically inserted at
+      the start of the output file, before what comes from the previous
+      plugins.
+
+  --add-stop-stuffing count
+      Specify that <count> null TS packets must be automatically appended at
+      the end of the output file, after what comes from the previous plugins.
+
   -a
   --append
       If the file already exists, append to the end of the file. By default,
