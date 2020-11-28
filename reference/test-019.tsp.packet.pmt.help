@@ -56,6 +56,10 @@ Options:
       Specifies the bitrate in bits / second of the PMT PID if a new one is
       created. The default is 3,000 b/s.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   --cleanup-private-descriptors
       Remove all private descriptors without preceding private_data_specifier
       descriptor.
@@ -140,6 +144,10 @@ Options:
   --pds value
       With option --remove-descriptor, specify the private data specifier which
       applies to the descriptor tag values above 0x80.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p value
   --pmt-pid value

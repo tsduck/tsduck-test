@@ -19,6 +19,10 @@ Options:
       splice-out/in sequences. This can be necessary to improve the video
       transition.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c
   --continue
       Continue stream processing even if no "splice information stream" is
@@ -73,6 +77,10 @@ Options:
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -s
   --stuffing

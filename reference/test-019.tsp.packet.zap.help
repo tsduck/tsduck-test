@@ -24,6 +24,10 @@ Options:
       keep all audio components. This option and the --audio option are
       mutually exclusive.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c
   --cas
       Keep Conditional Access System sections (CAT and EMM's). Remove them by
@@ -85,6 +89,10 @@ Options:
   --pes-only
       Keep only the PES elementary streams (audio, video, subtitles). Remove
       all PSI/SI and CAS information.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -s
   --stuffing

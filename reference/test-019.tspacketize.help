@@ -27,6 +27,10 @@ Options:
       information is used to schedule sections in the output list of packets
       when specific bitrates are specified for sections.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c
   --continuous
       Continuous packetization. By default, generate one cycle of sections.
@@ -95,6 +99,10 @@ Options:
       When loading a binary section file, pack incomplete tables and flush
       them. Sections are renumbered to remove any hole between sections. Use
       with care because this may create inconsistent tables.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p value
   --pid value

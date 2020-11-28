@@ -19,8 +19,9 @@ Options:
       descriptors is found before the first ATSC MGT or VCT.
 
   --brazil
-      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
-      when working on South American ISDB-Tb transport streams.
+      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
+      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
+      transport streams.
 
   -c
   --compile
@@ -105,6 +106,11 @@ Options:
       When loading a binary section file, pack incomplete tables and flush
       them. Sections are renumbered to remove any hole between sections. Use
       with care because this may create inconsistent tables.
+
+  --philippines
+      A synonym for '--isdb --default-charset RAW-UTF-8 --time-reference
+      UTC+8'. This is a handy shortcut when working on Philippines transport
+      streams.
 
   --strict-xml
       Save XML documents in strictly conformant XML format. By default, do not

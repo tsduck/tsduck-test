@@ -5,6 +5,10 @@ Usage: tsp -P teletext [options]
 
 Options:
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c
   --colors
       Add font color tags in the subtitles. By default, no color is specified.
@@ -64,6 +68,10 @@ Options:
       Specifies the Teletext page to extract. This option is useful only when
       the Teletext PID contains several pages. By default, the first Teletext
       frame defines the page to use.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p value
   --pid value

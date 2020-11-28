@@ -10,6 +10,10 @@ Options:
       Analyze all NIT's (NIT actual and NIT other). By default, only the NIT
       actual is analyzed.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c[prefix]
   --comment[=prefix]
       Add a comment line before each tuning information. The optional prefix
@@ -67,6 +71,10 @@ Options:
   --output-file filename
       Specify the output text file for the analysis result. By default, use the
       standard output.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p value
   --pid value

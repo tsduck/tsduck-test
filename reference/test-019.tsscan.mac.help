@@ -30,6 +30,10 @@ Options:
       offsets with required minimum quality and strength. Note that some tuners
       cannot report a correct signal strength, making this option useless.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c name
   --channel-transponder name
       Tune to the transponder containing the specified channel. The channel
@@ -261,6 +265,10 @@ Options:
       Used for terrestrial tuners only. Specify the number of offsets from the
       UHF or VHF channel. The default is zero. See options --uhf-channel or
       --vhf-channel.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8 --hf-band-region philippines'.
+      This is a handy shortcut when working on Philippines transport streams.
 
   --pilots value
       Used for DVB-S2 tuners only. Presence of pilots frames. The default is

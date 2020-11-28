@@ -23,8 +23,9 @@ Options:
       descriptors is found before the first ATSC MGT or VCT.
 
   --brazil
-      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
-      when working on South American ISDB-Tb transport streams.
+      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
+      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
+      transport streams.
 
   -c
   --c-style
@@ -141,6 +142,11 @@ Options:
   -o value
   --output-file value
       File name for text output.
+
+  --philippines
+      A synonym for '--isdb --default-charset RAW-UTF-8 --time-reference
+      UTC+8'. This is a handy shortcut when working on Philippines transport
+      streams.
 
   -r
   --raw-dump

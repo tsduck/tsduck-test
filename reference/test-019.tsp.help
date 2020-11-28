@@ -45,8 +45,9 @@ Options:
       --bitrate is specified.
 
   --brazil
-      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
-      when working on South American ISDB-Tb transport streams.
+      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
+      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
+      transport streams.
 
   --buffer-size-mb value
       Specify the buffer size in mega-bytes. This is the size of the buffer
@@ -208,6 +209,11 @@ Options:
 
   --nds
       Equivalent to --default-cas-id 0x0900.
+
+  --philippines
+      A synonym for '--isdb --default-charset RAW-UTF-8 --hf-band-region
+      philippines --time-reference UTC+8'. This is a handy shortcut when
+      working on Philippines transport streams.
 
   -r[value]
   --realtime[=value]

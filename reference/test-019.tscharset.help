@@ -5,6 +5,10 @@ Usage: tscharset [options]
 
 Options:
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   -c
   --c-style
       Output binary data in C/C++ syntax, using 0x prefix.
@@ -75,6 +79,10 @@ Options:
   -o value
   --output value
       Output file name. By default, use standard output.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   --to-utf-16
       With --decode (and without --verbose), display an hexadecimal

@@ -10,6 +10,10 @@ Options:
       Check only audio PIDs for clear packets. By default, audio and video PIDs
       are checked.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   --default-charset name
       Default character set to use when interpreting strings from tables and
       descriptors. By default, DVB encoding using ISO-6937 as default table is
@@ -50,6 +54,10 @@ Options:
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -s value
   --service value

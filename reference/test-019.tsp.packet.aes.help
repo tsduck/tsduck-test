@@ -13,6 +13,10 @@ Parameter:
 
 Options:
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   --cbc
       Use Cipher Block Chaining (CBC) mode without padding. The residue (last
       part of the packet payload, shorter than 16 bytes) is left clear.
@@ -93,6 +97,10 @@ Options:
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p pid1[-pid2]
   --pid pid1[-pid2]

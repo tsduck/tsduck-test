@@ -57,6 +57,10 @@ Options:
       Specifies the bitrate for ECM PID's in bits / second. The default is 30,
       000 b/s.
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   --channel-id value
       Specifies the DVB SimulCrypt ECM_channel_id for the ECMG (default: 1).
 
@@ -191,6 +195,10 @@ Options:
       default value is 1, meaning that all packets are scrambled. Specifying
       higher values is a way to reduce the scrambling CPU load while keeping
       the service mostly scrambled.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p pid1[-pid2]
   --pid pid1[-pid2]

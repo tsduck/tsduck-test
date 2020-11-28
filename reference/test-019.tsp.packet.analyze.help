@@ -13,8 +13,9 @@ Options:
       descriptors is found before the first ATSC MGT or VCT.
 
   --brazil
-      A synonym for '--isdb --time-reference UTC-3'. This is a handy shortcut
-      when working on South American ISDB-Tb transport streams.
+      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
+      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
+      transport streams.
 
   --default-charset name
       Default character set to use when interpreting strings from tables and
@@ -101,6 +102,11 @@ Options:
   --pes-pid-list
       Report the list of all PID's which are declared as carrying PES packets
       (audio, video, subtitles, etc).
+
+  --philippines
+      A synonym for '--isdb --default-charset RAW-UTF-8 --time-reference
+      UTC+8'. This is a handy shortcut when working on Philippines transport
+      streams.
 
   --pid-analysis
       Report analysis for each PID.

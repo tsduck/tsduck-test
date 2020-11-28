@@ -19,6 +19,10 @@ sections are injected upon reception.
 
 Options:
 
+  --brazil
+      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
+      shortcut when working on South American ISDB-Tb transport streams.
+
   --buffer-size value
       Specifies the UDP socket receive buffer size (socket option).
 
@@ -98,6 +102,10 @@ Options:
   --pcr-pid value
       Specifies the PID carrying PCR reference clock. By default, use the PCR
       PID as declared in the PMT of the service.
+
+  --philippines
+      A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
+      when working on Philippines transport streams.
 
   -p value
   --pid value
