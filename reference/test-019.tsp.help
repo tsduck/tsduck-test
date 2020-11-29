@@ -45,9 +45,9 @@ Options:
       --bitrate is specified.
 
   --brazil
-      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
-      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
-      transport streams.
+      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --hf-band-region
+      brazil --time-reference UTC-3'. This is a handy shortcut when working on
+      South American ISDB-Tb transport streams.
 
   --buffer-size-mb value
       Specify the buffer size in mega-bytes. This is the size of the buffer
@@ -128,8 +128,9 @@ Options:
 
   --hf-band-region name
       Specify the region for UHF/VHF band frequency layout. The available
-      regions are americas, europe, france, japan, korea, philippines, taiwan,
-      uk, us, usa.
+      regions are abnt, argentina, botswana, brazil, chile, ecuador, europe,
+      france, japan, korea, north-america, paraguay, philippines,
+      south-america, taiwan, uk, us, usa.
 
   -i
   --ignore-joint-termination

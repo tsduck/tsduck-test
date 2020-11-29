@@ -15,6 +15,10 @@ Options:
       Transport stream bitrate in b/s, based on 188-byte packets. Given this
       bitrate, tsterinfo will try to guess the OFDM modulation parameters.
 
+  --brazil
+      A synonym for '--hf-band-region brazil'. This is a handy shortcut when
+      working on South American ISDB-Tb transport streams.
+
   -c value
   --constellation value
       Specify the OFMD constellation, used to compute the resulting bitrate.
@@ -43,8 +47,9 @@ Options:
   -r name
   --hf-band-region name
       Specify the region for UHF/VHF band frequency layout. The available
-      regions are americas, europe, france, japan, korea, philippines, taiwan,
-      uk, us, usa.
+      regions are abnt, argentina, botswana, brazil, chile, ecuador, europe,
+      france, japan, korea, north-america, paraguay, philippines,
+      south-america, taiwan, uk, us, usa.
 
   -h value
   --high-priority-fec value

@@ -31,8 +31,9 @@ Options:
       cannot report a correct signal strength, making this option useless.
 
   --brazil
-      A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
-      shortcut when working on South American ISDB-Tb transport streams.
+      A synonym for '--default-charset RAW-ISO-8859-15 --hf-band-region
+      brazil'. This is a handy shortcut when working on South American ISDB-Tb
+      transport streams.
 
   -c name
   --channel-transponder name
@@ -121,8 +122,9 @@ Options:
   -r name
   --hf-band-region name
       Specify the region for UHF/VHF band frequency layout. The available
-      regions are americas, europe, france, japan, korea, philippines, taiwan,
-      uk, us, usa.
+      regions are abnt, argentina, botswana, brazil, chile, ecuador, europe,
+      france, japan, korea, north-america, paraguay, philippines,
+      south-america, taiwan, uk, us, usa.
 
   --hierarchy value
       Used for DVB-T/T2 tuners only. The default is "none".
