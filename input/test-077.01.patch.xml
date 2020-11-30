@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <PAT>
+    <!-- Add this service in all PAT's -->
+    <service service_id="123" program_map_PID="7777" x-node="add"/>
+    <!-- Change PMT PID of service 102 in any PAT -->
+    <service service_id="102" x-update-program_map_PID="2121"/>
+    <!-- Delete service 202 in any PAT -->
+    <service service_id="202" x-node="delete"/>
+  </PAT>
+
+  <!-- Add this service in all PAT's with TS id 2 -->
+  <PAT transport_stream_id="2">
+    <service service_id="456" program_map_PID="8888" x-node="add"/>
+  </PAT>
+
+</tsduck>

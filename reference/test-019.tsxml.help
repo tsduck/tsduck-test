@@ -1,0 +1,78 @@
+
+Test tool for TSDuck XML manipulation
+
+Usage: tsxml [options] [input-file ...]
+
+Parameters:
+
+  Specify the list of input files. If any is specified as '-', the standard
+  input is used.
+
+Options:
+
+  -c
+  --channel
+      A shortcut for '--model tsduck.channels.model.xml'. It verifies that the
+      input files are valid channel configuration files.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -h
+  --hf-band
+      A shortcut for '--model tsduck.hfbands.model.xml'. It verifies that the
+      input files are valid HF bands definition files.
+
+  -i value
+  --indent value
+      Specify the indentation size of output files. The default is 2.
+
+  -l
+  --lnb
+      A shortcut for '--model tsduck.lnbs.model.xml'. It verifies that the
+      input files are valid satellite LNB definition files.
+
+  -m filename
+  --model filename
+      Specify an XML model file which is used to validate all input files.
+
+  -o filename
+  --output filename
+      Specify the name of the output file (standard output by default). An
+      output file is produced only if --patch or --reformat are specified.
+
+  -p filename
+  --patch filename
+      Specify an XML patch file. All operations which are specified in this
+      file are applied on each input file. Several --patch options can be
+      specified. Patch files are sequentially applied on each input file.
+
+  -r
+  --reformat
+      Reformat the input XML files according to the default XML layout for
+      TSDuck XML files. This option is useful to generate an expected output
+      file format. If more than one input file is specified, they are all
+      reformatted in the same output file.
+
+  --strict-xml
+      Save XML documents in strictly conformant XML format. By default, do not
+      escape characters when this is not syntactically necessary to make the
+      XML text more human-readable.
+
+  -t
+  --tables
+      A shortcut for '--model tsduck.tables.model.xml'. It verifies that the
+      input files are valid PSI/SI tables files.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

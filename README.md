@@ -171,3 +171,4 @@ repository. But we now limit their size to 20 MB.
 | 074  | `pes` plugin with access unit analysis
 | 075  | Using non-standard time references
 | 076  | `file` plugin with start/stop stuffing
+| 077  | `tsxml`
