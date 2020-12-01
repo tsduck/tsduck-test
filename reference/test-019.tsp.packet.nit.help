@@ -86,6 +86,11 @@ Options:
       Do not modify the NIT Actual. Modify the NIT Other with the specified
       network id.
 
+  --patch-xml filename
+      Specify an XML patch file which is applied to all tables on the fly.
+      Several --patch-xml options can be specified. Patch files are
+      sequentially applied on each table.
+
   --pds value
       With option --remove-descriptor, specify the private data specifier which
       applies to the descriptor tag values above 0x80.

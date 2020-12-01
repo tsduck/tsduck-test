@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PAT x-update-version="30">
+    <service service_id="0x226A" x-update-program_map_PID="0x1ABC"/>
+    <service service_id="0x22C3" x-node="delete"/>
+  </PAT>
+  <PMT>
+    <CA_descriptor>
+      <private_data x-node="delete"/>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234" x-node="add"/>
+    <component elementary_PID="0x019A">
+      <ISO_639_language_descriptor x-node="add">
+        <language code="foo" audio_type="0"/>
+      </ISO_639_language_descriptor>
+    </component>
+  </PMT>
+  <PMT service_id="0x2264" x-update-version="0"/>
+</tsduck>

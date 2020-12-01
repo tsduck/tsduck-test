@@ -138,6 +138,11 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
+  --patch-xml filename
+      Specify an XML patch file which is applied to all tables on the fly.
+      Several --patch-xml options can be specified. Patch files are
+      sequentially applied on each table.
+
   --pcr-pid value
       Change the PCR PID value in the PMT.
 

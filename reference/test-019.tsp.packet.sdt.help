@@ -103,6 +103,11 @@ Options:
       Modify the SDT Other with the specified TS id. By default, modify the SDT
       Actual.
 
+  --patch-xml filename
+      Specify an XML patch file which is applied to all tables on the fly.
+      Several --patch-xml options can be specified. Patch files are
+      sequentially applied on each table.
+
   --philippines
       A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
       when working on Philippines transport streams.

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="0" current="true" service_id="0x2264" PCR_PID="0x019A">
+    <!-- PID 0x0190 (400) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x01D2"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x01DC"/>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x01DD"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x01D7"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E0"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E2"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E7"/>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x019A" stream_type="0x1B">
+      <ISO_639_language_descriptor>
+        <language code="foo" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x01A5" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x01A6" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x01BA" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x01BB" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <PMT version="15" current="true" service_id="0x2262" PCR_PID="0x00D2">
+    <!-- PID 0x00C8 (200) -->
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x00D2" stream_type="0x1B"/>
+    <component elementary_PID="0x00DD" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x00DE" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x00F2" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x00F3" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <PMT version="10" current="true" service_id="0x2261" PCR_PID="0x006E">
+    <!-- PID 0x0064 (100) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x00A6"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x00B0"/>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x00B1"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x00AB"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x00B4"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x00B6"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x00BB"/>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x006E" stream_type="0x1B"/>
+    <component elementary_PID="0x0079" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x44"/>
+    </component>
+    <component elementary_PID="0x007A" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x44"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x007B" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="qad" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x008E" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x008F" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <PMT version="13" current="true" service_id="0x2263" PCR_PID="0x0136">
+    <!-- PID 0x012C (300) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x016E"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x0178"/>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x0179"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x0173"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x017C"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x017E"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x0183"/>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x0136" stream_type="0x1B"/>
+    <component elementary_PID="0x0141" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x44"/>
+    </component>
+    <component elementary_PID="0x0142" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x0156" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x0157" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <PAT version="30" current="true" transport_stream_id="0x0438" network_PID="0x0010">
+    <!-- PID 0x0000 (0) -->
+    <service service_id="0x2261" program_map_PID="0x0064"/>
+    <service service_id="0x2262" program_map_PID="0x00C8"/>
+    <service service_id="0x2263" program_map_PID="0x012C"/>
+    <service service_id="0x2264" program_map_PID="0x0190"/>
+    <service service_id="0x2265" program_map_PID="0x01F4"/>
+    <service service_id="0x2266" program_map_PID="0x0258"/>
+    <service service_id="0x2267" program_map_PID="0x02BC"/>
+    <service service_id="0x2268" program_map_PID="0x0320"/>
+    <service service_id="0x2269" program_map_PID="0x0384"/>
+    <service service_id="0x226A" program_map_PID="0x1ABC"/>
+  </PAT>
+  <PMT version="8" current="true" service_id="0x2266" PCR_PID="0x0262">
+    <!-- PID 0x0258 (600) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x029A"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x02A4"/>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x02A5"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x029F"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x02A8"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x02AA"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x02AF"/>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x0262" stream_type="0x1B"/>
+    <component elementary_PID="0x026D" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x026E" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x0282" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x0283" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <PMT version="30" current="true" service_id="0x2265" PCR_PID="0x01FE">
+    <!-- PID 0x01F4 (500) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x0236"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x0240"/>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x0241"/>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x023B"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x0244"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x0246"/>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x024B"/>
+    <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
+    <component elementary_PID="0x01FE" stream_type="0x1B"/>
+    <component elementary_PID="0x0209" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x020A" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x021E" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x021F" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <CAT version="8" current="true">
+    <!-- PID 0x0001 (1) -->
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1449">
+      <private_data>
+        02 FE 22
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x164E">
+      <private_data>
+        02 33 41
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1647">
+      <private_data>
+        02 33 17
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1646">
+      <private_data>
+        02 33 15
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x1645">
+      <private_data>
+        02 33 11
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x1650">
+      <private_data>
+        06 33 41 33 42 33 43
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168A">
+      <private_data>
+        13 01 20 14 03 04 0F 40
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x1690">
+      <private_data>
+        13 01 20 14 03 03 28 30 14 03 D0 00 C0
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168F">
+      <private_data>
+        13 01 20 14 03 03 29 40
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x1699">
+      <private_data>
+        13 01 20 14 03 03 29 20
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x168C">
+      <private_data>
+        13 01 20 14 03 03 0B 00 14 03 03 28 30
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x165D">
+      <private_data>
+        06 33 41 33 11 33 15
+      </private_data>
+    </CA_descriptor>
+  </CAT>
+</tsduck>
