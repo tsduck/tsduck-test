@@ -95,10 +95,16 @@ Options:
       PID filter: select packets with these PID values (default: all PID's
       containing PES packets). Several -p or --pid options may be specified.
 
+  --save-es filename
+      Save the elementary stream in the specified file. The payloads of all PES
+      packets are saved in a raw binary form without encapsulation. The PES
+      headers are dropped. When the specified file is '-', the standard output
+      is used.
+
   --save-pes filename
-      Save all PES packets in the specified file. All PES packets are saved in
-      a raw binary form without encapsulation. When the specified file is '-',
-      the standard output is used.
+      Save all PES packets, header and payload, in the specified file. All PES
+      packets are saved in a raw binary form without encapsulation. When the
+      specified file is '-', the standard output is used.
 
   --sei-avc
       Dump all SEI (Supplemental Enhancement Information) in AVC (H.264), HEVC

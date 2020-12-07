@@ -31,6 +31,8 @@ for type in mpeg2 avc hevc; do
         -P pes $opt --pid $vpid --avc-access-unit -o $(fpath "$OUTDIR/$SCRIPT.$type.nalunits.txt") \
         -P pes $opt --pid $vpid --sei-avc -o $(fpath "$OUTDIR/$SCRIPT.$type.sei.txt") \
         -P pes $opt --pid $vpid --pid $apid --save-pes $(fpath "$OUTDIR/$SCRIPT.$type.pes") \
+        -P pes $opt --pid $vpid --save-es $(fpath "$OUTDIR/$SCRIPT.$type.video.es") \
+        -P pes $opt --pid $apid --save-es $(fpath "$OUTDIR/$SCRIPT.$type.audio.es") \
         -O drop \
         >"$OUTDIR/$SCRIPT.$type.log" 2>&1
 
