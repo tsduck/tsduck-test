@@ -55,7 +55,8 @@ Options:
       a generic option which is defined in all packet processing plugins.
 
   --patch-xml filename
-      Specify an XML patch file which is applied to all tables on the fly.
+      Specify an XML patch file which is applied to all tables on the fly. If
+      the name starts with "<?xml", it is considered as "inline XML content".
       Several --patch-xml options can be specified. Patch files are
       sequentially applied on each table.
 

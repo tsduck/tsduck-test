@@ -13,6 +13,7 @@ $(tspath tsp) --synchronous-log \
     -P pmt --pmt-pid 400 --patch-xml $(fpath "$INDIR/$SCRIPT.xml") \
     -P pmt --pmt-pid 500 --patch-xml $(fpath "$INDIR/$SCRIPT.xml") \
     -P pmt --pmt-pid 600 --patch-xml $(fpath "$INDIR/$SCRIPT.xml") \
+           --patch-xml '<?xml version="1.0" encoding="UTF-8"?><tsduck><PMT x-update-version="30"/></tsduck>' \
     -P filter --pid 0 --pid 1 --pid 100 --pid 200 --pid 300 --pid 400 --pid 500 --pid 600 \
     -P tables --text $(fpath "$OUTDIR/$SCRIPT.txt") --xml $(fpath "$OUTDIR/$SCRIPT.xml") \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \
@@ -22,3 +23,4 @@ test_text $SCRIPT.txt
 test_text $SCRIPT.xml
 test_text $SCRIPT.log
 test_bin $SCRIPT.ts
+

@@ -9,6 +9,9 @@ Parameters:
   files ending in .xml are compiled and files ending in .bin are decompiled.
   For other files, explicitly specify --compile or --decompile.
 
+  If an input file name starts with "<?xml", it is considered as "inline XML
+  content".
+
 Options:
 
   --atsc
