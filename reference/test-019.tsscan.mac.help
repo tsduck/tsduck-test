@@ -13,10 +13,9 @@ Options:
       This option can be used instead of device name.
 
   --bandwidth value
-      Used for terrestrial tuners only. Bandwidth. The default is "8-MHz" for
-      DVB-T/T2, "6-MHz" for ISDB-T.
-      Must be one of "1.712-MHz", "10-MHz", "5-MHz", "6-MHz", "7-MHz", "8-MHz",
-      "auto".
+      Bandwidth in Hz. For compatibility with old versions, low values (below
+      1000) are interpreted in MHz. The default is 8,000,000 for DVB-T/T2 and
+      6,000,000 for ISDB-T.
 
   --best-quality
       With UHF/VHF-band scanning, for each channel, use the offset with the

@@ -7,8 +7,8 @@ Options:
 
   -w value
   --bandwidth value
-      Specify the OFMD bandwith, used to compute the resulting bitrate.
-      Must be one of "5-MHz", "6-MHz", "7-MHz", "8-MHz".
+      Bandwidth in Hz. For compatibility with old versions, low values (below
+      1000) are interpreted in MHz. The default is 8,000,000 for DVB-T/T2.
 
   -b value
   --bitrate value
