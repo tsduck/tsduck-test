@@ -8,8 +8,14 @@ Options:
   -a 'command'
   --alarm-command 'command'
       Command to run when the bitrate goes either out of range or back to
-      normal. The command receives an additional string parameter containing an
-      informational message.
+      normal. The command receives six additional parameters:
+
+      1. A human-readable alarm message.
+      2. Either "ts" or the decimal integer value of the PID to monitor.
+      3. Bitrate alarm state, one of "lower", "greater", "normal".
+      4. Current bitrate in b/s (decimal integer).
+      5. Minimum bitrate in b/s (decimal integer).
+      6. Maximum bitrate in b/s (decimal integer).
 
   --help
       Display this help text.
