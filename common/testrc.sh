@@ -260,7 +260,7 @@ test_text() {
     if [[ ! -r "$REFDIR/$file" ]]; then
         fail "Reference output $REFDIR/$file missing"
         return 1
-    elif diff --strip-trailing-cr "$REFDIR/$file" "$TMPDIR/$file" >$TMPDIR/$file.diff; then
+    elif diff --strip-trailing-cr "$REFDIR/$file" "$TMPDIR/$file" &>$TMPDIR/$file.diff; then
         rm -f "$TMPDIR/$file.diff"
         $silent || pass "Test $file passed"
         return 0
@@ -285,7 +285,7 @@ test_bin() {
     if [[ ! -r "$REFDIR/$file" ]]; then
         fail "Reference output $REFDIR/$file missing"
         return 1
-    elif cmp "$REFDIR/$file" "$TMPDIR/$file" >$TMPDIR/$file.diff; then
+    elif cmp "$REFDIR/$file" "$TMPDIR/$file" &>$TMPDIR/$file.diff; then
         rm -f "$TMPDIR/$file.diff"
         $silent || pass "Test $file passed"
         return 0
