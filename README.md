@@ -173,3 +173,4 @@ repository. But we now limit their size to 20 MB.
 | 076  | `file` plugin with start/stop stuffing
 | 077  | `tsxml`
 | 078  | `--patch-xml` in various plugins
+| 079  | `reduce` plugin
