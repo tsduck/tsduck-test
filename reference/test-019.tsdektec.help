@@ -33,6 +33,12 @@ Options:
       With --all, list the Dektec devices in JSON format (useful for automatic
       analysis).
 
+  --json-line[='prefix']
+      Same as --json but report the JSON text as one single line in the message
+      logger instead of the output file. The optional string parameter
+      specifies a prefix to prepend on the log line before the JSON text to
+      locate the appropriate line in the logs.
+
   -l state
   --led state
       Set the state of the LED on the rear panel. Useful to identify a Dektec

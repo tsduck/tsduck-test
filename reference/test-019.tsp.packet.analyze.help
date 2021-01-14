@@ -77,6 +77,12 @@ Options:
       Complete report about the transport stream, the services and the PID's in
       JSON format (useful for automatic analysis).
 
+  --json-line[='prefix']
+      Same as --json but report the JSON text as one single line in the message
+      logger instead of the output file. The optional string parameter
+      specifies a prefix to prepend on the log line before the JSON text to
+      locate the appropriate line in the logs.
+
   -m
   --multiple-files
       When used with --interval and --output-file, create a new file for each
