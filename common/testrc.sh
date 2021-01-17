@@ -86,6 +86,10 @@ Usage: $SCRIPT [options]
 
 Common test options:
 
+  --bin directory
+      Use development versions of TSDuck as compiled in the Git repository in
+      the specified directory.
+
   --dev
       Use development versions of TSDuck as compiled in the Git repository in
       $TSDUCKBIN_RELEASE
@@ -121,6 +125,11 @@ EOF
 # Decode command line options.
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --bin)
+            [[ $# -gt 1 ]] || usage; shift
+            DEVEL=true
+            TSDUCKBIN="$1"
+            ;;
         --dev)
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN_RELEASE
