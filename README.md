@@ -175,3 +175,4 @@ repository. But we now limit their size to 20 MB.
 | 078  | `--patch-xml` in various plugins
 | 079  | `reduce` plugin
 | 080  | Python bindings
+| 081  | Java bindings

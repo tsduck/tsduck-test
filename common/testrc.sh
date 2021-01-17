@@ -184,47 +184,66 @@ else
     fpath() { echo "$1"; }
 fi
 
-# Python and Java setup. Define clean paths, from scratch.
+# Define clean paths, from scratch.
 if $DEVEL; then
     case $OS in
         windows)
-            export CLASSPATH=$(fpath "$TSDUCKBIN_ROOT/java/tsduck.jar"):
-            export PYTHONPATH=$(fpath "$TSDUCKDIR/src/libtsduck/python")
+            export PATH=$(fpath "$TSDUCKBIN")";$PATH"
             export TSPLUGINS_PATH=$(fpath "$TSDUCKBIN")
+            export PYTHONPATH=$(fpath "$TSDUCKDIR/src/libtsduck/python")
+            export TSDUCKJAR="$TSDUCKBIN_ROOT/java/tsduck.jar"
+            export CLASSPATH=$(fpath "$TSDUCKJAR")";"
             ;;
         *)
-            export CLASSPATH="$TSDUCKBIN/tsduck.jar:"
-            export PYTHONPATH="$TSDUCKDIR/src/libtsduck/python"
+            export PATH="$TSDUCK:$PATH"
             export TSPLUGINS_PATH="$TSDUCKBIN"
             export LD_LIBRARY_PATH="$TSDUCKBIN"
             export LD_LIBRARY_PATH2="$TSDUCKBIN"
+            export PYTHONPATH="$TSDUCKDIR/src/libtsduck/python"
+            export TSDUCKJAR="$TSDUCKBIN/tsduck.jar"
+            export CLASSPATH="$TSDUCKJAR:"
             ;;
     esac
 else
     case $OS in
         windows)
-            export CLASSPATH=$(fpath "$TSDUCK/java/tsduck.jar")";"
-            export CLASSPATH=$(fpath "$TSDUCK/python")
+            export PYTHONPATH=$(fpath "$TSDUCK/python")
+            export TSDUCKJAR=$(fpath "$TSDUCK/java/tsduck.jar")
+            export CLASSPATH="$TSDUCKJAR;"
             ;;
         mac)
-            export CLASSPATH=/usr/local/share/tsduck/java/tsduck.jar:
             export PYTHONPATH=/usr/local/share/tsduck/python
+            export TSDUCKJAR=/usr/local/share/tsduck/java/tsduck.jar
+            export CLASSPATH="$TSDUCKJAR:"
             ;;
         *)
-            export CLASSPATH=/usr/share/tsduck/java/tsduck.jar:
             export PYTHONPATH=/usr/share/tsduck/python
+            export TSDUCKJAR=/usr/share/tsduck/java/tsduck.jar
+            export CLASSPATH="$TSDUCKJAR:"
             ;;
     esac
 fi
 
-# Python command.
+# Python and Java commands.
 case $OS in
     windows)
         PYTHON=python
+        JAVA=java
+        JAVAC=javac
+        JAVAP=javap
+        JAR=jar
         ;;
     *)
         PYTHON=$(which python3 2>/dev/null)
+        JAVA=$("$TSDUCKDIR/build/java-config.sh" --java)
+        JAVAC=$("$TSDUCKDIR/build/java-config.sh" --javac)
+        JAVAP=$("$TSDUCKDIR/build/java-config.sh" --bin)/javap
+        JAR=$("$TSDUCKDIR/build/java-config.sh" --jar)
         [[ -z "$PYTHON" ]] && PYTHON=python
+        [[ -z "$JAVA" ]] && JAVA=java
+        [[ -z "$JAVAC" ]] && JAVA=javac
+        [[ -z "$JAVAP" ]] && JAVA=javap
+        [[ -z "$JAR" ]] && JAR=jar
         ;;
 esac
 
