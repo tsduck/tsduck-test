@@ -141,6 +141,12 @@ Options:
       of the table payload (the header is not displayed). The default is 8
       bytes.
 
+  --log-xml-line[='prefix']
+      Log each table as one single XML line in the message logger instead of an
+      output file. The optional string parameter specifies a prefix to prepend
+      on the log line before the XML text to locate the appropriate line in the
+      logs.
+
   -x value
   --max-tables value
       Maximum number of tables to dump. Stop logging tables when this limit is
@@ -200,8 +206,8 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
-  -o value
-  --output-file value
+  -o filename
+  --output-file filename
       Save the tables or sections in human-readable text format in the
       specified file. By default, when no output option is specified, text is
       produced on the standard output. If you need text formatting on the
@@ -269,7 +275,7 @@ Options:
       escape characters when this is not syntactically necessary to make the
       XML text more human-readable.
 
-  --text-output value
+  --text-output filename
       A synonym for --output-file.
 
   -t tid1[-tid2]

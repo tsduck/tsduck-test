@@ -156,3 +156,23 @@ $(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.tstables.bin") $STDOPT \
 
 test_text $SCRIPT.tstabdump.txt
 test_text $SCRIPT.tstabdump.log
+
+# ==== psi plugin, XML one-liners
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INFILE") \
+    -P psi --all --log-xml-line='[PSIXML]' $STDOPT \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.psi.xml.line.log" 2>&1
+
+test_text $SCRIPT.psi.xml.line.log
+
+# ==== analyze plugin, JSON one-liners
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INFILE") \
+    -P analyze --json-line='[TSJSON]' --deterministic --title "$SCRIPT JSON" $STDOPT \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.analyze.json.line.log" 2>&1
+
+test_text $SCRIPT.analyze.json.line.log

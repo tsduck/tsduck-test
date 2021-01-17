@@ -120,6 +120,12 @@ Options:
       JST'. This is a handy shortcut when working on Japanese transport
       streams.
 
+  --log-xml-line[='prefix']
+      Log each table as one single XML line in the message logger instead of an
+      output file. The optional string parameter specifies a prefix to prepend
+      on the log line before the XML text to locate the appropriate line in the
+      logs.
+
   --mediaguard
       Equivalent to --default-cas-id 0x0100.
 
@@ -139,9 +145,13 @@ Options:
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
 
-  -o value
-  --output-file value
-      File name for text output.
+  -o filename
+  --output-file filename
+      Save the tables in human-readable text format in the specified file. By
+      default, when no output option is specified, text is produced on the
+      standard output. If you need text formatting on the standard output in
+      addition to other output such as XML, explicitly specify this option with
+      "-" as output file name.
 
   --philippines
       A synonym for '--isdb --default-charset RAW-UTF-8 --time-reference
@@ -154,6 +164,14 @@ Options:
 
   --safeaccess
       Equivalent to --default-cas-id 0x4ADC.
+
+  --strict-xml
+      Save XML documents in strictly conformant XML format. By default, do not
+      escape characters when this is not syntactically necessary to make the
+      XML text more human-readable.
+
+  --text-output filename
+      A synonym for --output-file.
 
   --time-reference name
       Use a non-standard (non-UTC) time reference in TDT/TOT. This is typically
@@ -194,4 +212,10 @@ Options:
 
   --widevine
       Equivalent to --default-cas-id 0x4AD4.
+
+  -x filename
+  --xml-output filename
+      Save the tables in XML format in the specified file. To output the XML
+      text on the standard output, explicitly specify this option with "-" as
+      output file name.
 

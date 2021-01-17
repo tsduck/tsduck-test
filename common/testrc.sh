@@ -70,7 +70,6 @@ if [[ $OS == windows ]]; then
 else
     WINDOWS=false
     ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
-    TSDUCKBIN_ROOT=$TSDUCKDIR/src/tstools
     TSDUCKBIN_RELEASE=$($TSDUCKDIR/build/setenv.sh --display)
     TSDUCKBIN_DEBUG=$($TSDUCKDIR/build/setenv.sh --display --debug)
     TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
@@ -175,6 +174,50 @@ if $WINDOWS; then
 else
     fpath() { echo "$1"; }
 fi
+
+# Python and Java setup. Define clean paths, from scratch.
+if $DEVEL; then
+    case $OS in
+        windows)
+            export CLASSPATH=$(fpath "$TSDUCKBIN_ROOT/java/tsduck.jar"):
+            export PYTHONPATH=$(fpath "$TSDUCKDIR/src/libtsduck/python")
+            export TSPLUGINS_PATH=$(fpath "$TSDUCKBIN")
+            ;;
+        *)
+            export CLASSPATH="$TSDUCKBIN/tsduck.jar:"
+            export PYTHONPATH="$TSDUCKDIR/src/libtsduck/python"
+            export TSPLUGINS_PATH="$TSDUCKBIN"
+            export LD_LIBRARY_PATH="$TSDUCKBIN"
+            export LD_LIBRARY_PATH2="$TSDUCKBIN"
+            ;;
+    esac
+else
+    case $OS in
+        windows)
+            export CLASSPATH=$(fpath "$TSDUCK/java/tsduck.jar")";"
+            export CLASSPATH=$(fpath "$TSDUCK/python")
+            ;;
+        mac)
+            export CLASSPATH=/usr/local/share/tsduck/java/tsduck.jar:
+            export PYTHONPATH=/usr/local/share/tsduck/python
+            ;;
+        *)
+            export CLASSPATH=/usr/share/tsduck/java/tsduck.jar:
+            export PYTHONPATH=/usr/share/tsduck/python
+            ;;
+    esac
+fi
+
+# Python command.
+case $OS in
+    windows)
+        PYTHON=python
+        ;;
+    *)
+        PYTHON=$(which python3 2>/dev/null)
+        [[ -z "$PYTHON" ]] && PYTHON=python
+        ;;
+esac
 
 # Disable loading extensions to avoid locally installed extensions generating different logs.
 export TSLIBEXT_NONE=true
