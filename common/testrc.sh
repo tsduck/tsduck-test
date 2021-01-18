@@ -21,6 +21,7 @@ TSDUCKDIR=$(cd "$ROOTDIR/.."; pwd)/tsduck
 
 # Default values for command line options.
 DEVEL=false
+NATIVE=true
 TESTINIT=false
 VERBOSE=false
 
@@ -44,13 +45,23 @@ prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
 
 # Operating system.
 OS=$(uname -s | tr A-Z a-z)
+SYS64=false
 
 case $OS in
-    cygwin*|msys*|mingw*)
+    cygwin*)
         OS=windows
+        [[ -d '/cygdrive/c/Program Files (x86)' ]] && SYS64=true
+        ;;
+    msys*|mingw*)
+        OS=windows
+        [[ -d '/c/Program Files (x86)' ]] && SYS64=true
         ;;
     darwin)
         OS=mac
+        [[ $(uname -m) == *64 ]] && SYS64=true
+        ;;
+    *)
+        [[ $(uname -m) == *64 ]] && SYS64=true
         ;;
 esac
 
@@ -137,6 +148,7 @@ while [[ $# -gt 0 ]]; do
         --dev32)
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN32_RELEASE
+            $SYS64 && NATIVE=false
             ;;
         --debug)
             DEVEL=true
@@ -145,6 +157,7 @@ while [[ $# -gt 0 ]]; do
         --debug32)
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN32_DEBUG
+            $SYS64 && NATIVE=false
             ;;
         --help)
             showhelp
@@ -299,6 +312,15 @@ test_exit() {
         info "$PRFAIL  $NFAILED tests FAILED, $NPASSED tests passed, review failed tests in $FAILED"
     fi
     exit $NFAILED
+}
+
+# Abort current test if not testing a native binary.
+# Useful to avoid testing a Win32 DLL with a native 64-bit Java or Python executable.
+native_only() {
+    if ! $NATIVE; then
+        info "$PRPASS  $SCRIPT: skipped on non-native binary"
+        exit 0
+    fi
 }
 
 # Cleanup temporary output file matching a wildcard.
