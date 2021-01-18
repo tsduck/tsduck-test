@@ -8,6 +8,12 @@ Usage: tsp [tsp-options] \
 
 Options:
 
+  --abnt
+      Assume that the transport stream is an ISDB one with ABNT-defined
+      variants. ISDB streams are normally automatically detected from their
+      signalization but there is no way to determine if this is an original
+      ARIB-defined ISDB or an ABNT-defined variant.
+
   -a nullpkt/inpkt
   --add-input-stuffing nullpkt/inpkt
       Specify that <nullpkt> null TS packets must be automatically inserted
@@ -45,9 +51,9 @@ Options:
       --bitrate is specified.
 
   --brazil
-      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --hf-band-region
-      brazil --time-reference UTC-3'. This is a handy shortcut when working on
-      South American ISDB-Tb transport streams.
+      A synonym for '--isdb --abnt --default-charset RAW-ISO-8859-15
+      --hf-band-region brazil --time-reference UTC-3'. This is a handy shortcut
+      when working on South American ISDB-Tb transport streams.
 
   --buffer-size-mb value
       Specify the buffer size in mega-bytes. This is the size of the buffer
@@ -212,7 +218,7 @@ Options:
       Equivalent to --default-cas-id 0x0900.
 
   --philippines
-      A synonym for '--isdb --default-charset RAW-UTF-8 --hf-band-region
+      A synonym for '--isdb --abnt --default-charset RAW-UTF-8 --hf-band-region
       philippines --time-reference UTC+8'. This is a handy shortcut when
       working on Philippines transport streams.
 

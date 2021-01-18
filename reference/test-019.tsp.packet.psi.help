@@ -5,6 +5,12 @@ Usage: tsp -P psi [options]
 
 Options:
 
+  --abnt
+      Assume that the transport stream is an ISDB one with ABNT-defined
+      variants. ISDB streams are normally automatically detected from their
+      signalization but there is no way to determine if this is an original
+      ARIB-defined ISDB or an ABNT-defined variant.
+
   -a
   --all-versions
       Display all versions of PSI tables (need to read the complete transport
@@ -19,9 +25,9 @@ Options:
       descriptors is found before the first ATSC MGT or VCT.
 
   --brazil
-      A synonym for '--isdb --default-charset RAW-ISO-8859-15 --time-reference
-      UTC-3'. This is a handy shortcut when working on South American ISDB-Tb
-      transport streams.
+      A synonym for '--isdb --abnt --default-charset RAW-ISO-8859-15
+      --time-reference UTC-3'. This is a handy shortcut when working on South
+      American ISDB-Tb transport streams.
 
   -c
   --c-style
@@ -141,7 +147,7 @@ Options:
       "-" as output file name.
 
   --philippines
-      A synonym for '--isdb --default-charset RAW-UTF-8 --time-reference
+      A synonym for '--isdb --abnt --default-charset RAW-UTF-8 --time-reference
       UTC+8'. This is a handy shortcut when working on Philippines transport
       streams.
 
