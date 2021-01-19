@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <cable_emergency_alert_table sequence_number="1" protocol_version="0" EAS_event_ID="0x1234" EAS_originator_code="CIV" EAS_event_code="EQW" alert_priority="11">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <location state_code="11" county_subdivision="1" county_code="222"/>
   </cable_emergency_alert_table>
   <cable_emergency_alert_table sequence_number="2" protocol_version="0" EAS_event_ID="0x8765" EAS_originator_code="FOO" EAS_event_code="BAR" alert_message_time_remaining="30" event_start_time="2016-09-15 21:12:45" event_duration="15" alert_priority="11" details_OOB_source_ID="0x7413" details_major_channel_number="12" details_minor_channel_number="15" audio_OOB_source_ID="0x9654">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <nature_of_activation_text>
       <string language="eng" text="Warning message"/>
       <string language="foo" text="Glooby boolga"/>

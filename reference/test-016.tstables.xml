@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="8" current="true" service_id="0x000A">
-    <!-- PID 0x07D0 (2000), first TS packet: 1,917, last: 1,917 -->
+    <metadata PID="2,000" first_ts_packet="1,917" last_ts_packet="1,917"/>
     <component elementary_PID="0x07D1" stream_type="0x0D">
       <stream_identifier_descriptor component_tag="0x01"/>
       <data_broadcast_id_descriptor data_broadcast_id="0x0005"/>
@@ -32,7 +32,7 @@
     </component>
   </PMT>
   <PMT version="15" current="true" service_id="0x00B7">
-    <!-- PID 0x0BB8 (3000), first TS packet: 2,308, last: 2,308 -->
+    <metadata PID="3,000" first_ts_packet="2,308" last_ts_packet="2,308"/>
     <component elementary_PID="0x0BB9" stream_type="0x0D">
       <data_broadcast_id_descriptor data_broadcast_id="0x000B">
         <selector_bytes>
@@ -42,15 +42,15 @@
     </component>
   </PMT>
   <CAT version="1" current="true">
-    <!-- PID 0x0001 (1), first TS packet: 5,733, last: 5,733 -->
+    <metadata PID="1" first_ts_packet="5,733" last_ts_packet="5,733"/>
   </CAT>
   <PAT version="4" current="true" transport_stream_id="0xEB8C" network_PID="0x0010">
-    <!-- PID 0x0000 (0), first TS packet: 5,764, last: 5,764 -->
+    <metadata PID="0" first_ts_packet="5,764" last_ts_packet="5,764"/>
     <service service_id="0x000A" program_map_PID="0x07D0"/>
     <service service_id="0x00B7" program_map_PID="0x0BB8"/>
   </PAT>
   <SDT version="12" current="true" transport_stream_id="0xEB8C" original_network_id="0x013E" actual="true">
-    <!-- PID 0x0011 (17), first TS packet: 9,889, last: 9,890 -->
+    <metadata PID="17" first_ts_packet="9,889" last_ts_packet="9,890"/>
     <service service_id="0x000A" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="running">
       <data_broadcast_descriptor data_broadcast_id="0x0005" component_tag="0x01" language_code="ENG">
         <selector_bytes>
@@ -107,7 +107,7 @@
     </service>
   </SDT>
   <NIT version="9" current="true" network_id="0x007E" actual="true">
-    <!-- PID 0x0010 (16), first TS packet: 11,805, last: 11,805 -->
+    <metadata PID="16" first_ts_packet="11,805" last_ts_packet="11,805"/>
     <linkage_descriptor transport_stream_id="0xEB8C" original_network_id="0x007E" service_id="0x00B7" linkage_type="0x0B">
       <private_data>
         11 00 00 04 0D 45 4E 47 09 43 41 4E 41 4C 45 54

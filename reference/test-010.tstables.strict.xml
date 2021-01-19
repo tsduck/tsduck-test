@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="15" current="true" service_id="0x11FB" PCR_PID="0x01C9">
-    <!-- PID 0x01C8 (456), first TS packet: 7,002, last: 7,002 -->
+    <metadata PID="456" first_ts_packet="7,002" last_ts_packet="7,002"/>
     <component elementary_PID="0x01C9" stream_type="0x24">
       <HEVC_video_descriptor profile_space="0x00" tier_flag="false" profile_idc="0x02" profile_compatibility_indication="0x20000000" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="true" copied_44bits="0x0000000000000000" level_idc="0x99" HEVC_still_present_flag="false" HEVC_24hr_picture_present_flag="false" sub_pic_hrd_params_not_present="true" HDR_WCG_idc="3" temporal_id_min="0" temporal_id_max="0"/>
     </component>
@@ -13,7 +13,7 @@
     </component>
   </PMT>
   <PMT version="16" current="true" service_id="0x11FA" PCR_PID="0x0165">
-    <!-- PID 0x0164 (356), first TS packet: 7,968, last: 7,968 -->
+    <metadata PID="356" first_ts_packet="7,968" last_ts_packet="7,968"/>
     <component elementary_PID="0x0165" stream_type="0x24">
       <HEVC_video_descriptor profile_space="0x00" tier_flag="false" profile_idc="0x02" profile_compatibility_indication="0x20000000" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="true" copied_44bits="0x0000000000000000" level_idc="0x99" HEVC_still_present_flag="false" HEVC_24hr_picture_present_flag="false" sub_pic_hrd_params_not_present="true" HDR_WCG_idc="3" temporal_id_min="0" temporal_id_max="0"/>
     </component>
@@ -25,7 +25,7 @@
     </component>
   </PMT>
   <PMT version="27" current="true" service_id="0x11F9" PCR_PID="0x0101">
-    <!-- PID 0x0100 (256), first TS packet: 10,847, last: 10,847 -->
+    <metadata PID="256" first_ts_packet="10,847" last_ts_packet="10,847"/>
     <CA_descriptor CA_system_id="0x0500" CA_PID="0x0104">
       <private_data>
         10 01 00 13 01 20 14 03 05 1A 30
@@ -48,13 +48,13 @@
     </component>
   </PMT>
   <PAT version="13" current="true" transport_stream_id="0x2B5C" network_PID="0x0010">
-    <!-- PID 0x0000 (0), first TS packet: 13,727, last: 13,727 -->
+    <metadata PID="0" first_ts_packet="13,727" last_ts_packet="13,727"/>
     <service service_id="0x11F9" program_map_PID="0x0100"/>
     <service service_id="0x11FA" program_map_PID="0x0164"/>
     <service service_id="0x11FB" program_map_PID="0x01C8"/>
   </PAT>
   <CAT version="16" current="true">
-    <!-- PID 0x0001 (1), first TS packet: 13,806, last: 13,806 -->
+    <metadata PID="1" first_ts_packet="13,806" last_ts_packet="13,806"/>
     <CA_descriptor CA_system_id="0x0500" CA_PID="0x0400">
       <private_data>
         10 01 00 13 01 20 14 03 05 1A 30
@@ -72,7 +72,7 @@
     </CA_descriptor>
   </CAT>
   <SDT version="24" current="true" transport_stream_id="0x2B5C" original_network_id="0x013E" actual="true">
-    <!-- PID 0x0011 (17), first TS packet: 45,355, last: 45,355 -->
+    <metadata PID="17" first_ts_packet="45,355" last_ts_packet="45,355"/>
     <service service_id="0x11F9" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SPI" service_name="Funbox UHD"/>
     </service>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PAT version="8" current="true" transport_stream_id="0x0012" network_PID="0x0010">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <service service_id="0x0001" program_map_PID="0x1234"/>
     <service service_id="0x0002" program_map_PID="0x0678"/>
   </PAT>
   <CAT version="29" current="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <CA_descriptor CA_system_id="0x6789" CA_PID="0x0123">
       <private_data>
         01 02 03 04
@@ -23,7 +23,7 @@
     </generic_descriptor>
   </CAT>
   <PMT version="4" current="true" service_id="0x0456" PCR_PID="0x1234">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <CA_descriptor CA_system_id="0x0777" CA_PID="0x0251"/>
     <component elementary_PID="0x0567" stream_type="0x12">
       <ISO_639_language_descriptor>
@@ -38,7 +38,7 @@
     </component>
   </PMT>
   <NIT version="0" current="true" network_id="0x4589" actual="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <network_name_descriptor network_name="net 1"/>
     <transport_stream transport_stream_id="0x0014" original_network_id="0x0282" preferred_section="0">
       <bouquet_name_descriptor bouquet_name="nit 11"/>
@@ -50,7 +50,7 @@
     </transport_stream>
   </NIT>
   <NIT version="0" current="true" network_id="0x4589" actual="false">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <network_name_descriptor network_name="net 21"/>
     <DVB_AC3_descriptor component_type="0x2D" bsid="0x07" mainid="0x4E" asvc="0x04">
       <additional_info>
@@ -169,13 +169,13 @@
     </transport_stream>
   </NIT>
   <RST>
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <event transport_stream_id="0x1238" original_network_id="0x5493" service_id="0x5634" event_id="0xA673" running_status="starting"/>
     <event transport_stream_id="0x1658" original_network_id="0x4663" service_id="0x8634" event_id="0xA273" running_status="not-running"/>
     <event transport_stream_id="0x1269" original_network_id="0x3543" service_id="0x5656" event_id="0x4573" running_status="running"/>
   </RST>
   <SDT version="2" current="true" transport_stream_id="0x7896" original_network_id="0x46AC" actual="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <service service_id="0x4659" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="undefined">
       <country_availability_descriptor country_availability="true">
         <country country_code="abc"/>
@@ -192,17 +192,17 @@
     </service>
   </SDT>
   <TDT UTC_time="2017-09-12 14:27:12">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </TDT>
   <TOT UTC_time="2017-09-12 14:28:10">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <local_time_offset_descriptor>
       <region country_code="abc" country_region_id="1" local_time_offset="-120" time_of_change="2018-03-07 02:00:00" next_time_offset="-60"/>
       <region country_code="erg" country_region_id="17" local_time_offset="120" time_of_change="2018-03-07 04:00:00" next_time_offset="90"/>
     </local_time_offset_descriptor>
   </TOT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x0234" transport_stream_id="0x4661" original_network_id="0x621A" last_table_id="0x4E">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <event event_id="0x7684" start_time="2017-09-21 14:28:30" duration="01:47:44" running_status="starting" CA_mode="true">
       <short_event_descriptor language_code="egt">
         <event_name>Event name</event_name>
@@ -211,7 +211,7 @@
     </event>
   </EIT>
   <EIT type="8" version="4" current="true" actual="false" service_id="0x0666" transport_stream_id="0x4693" original_network_id="0x1268" last_table_id="0x69">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <event event_id="0x7684" start_time="2017-09-21 14:28:30" duration="01:47:44" running_status="starting" CA_mode="true">
       <short_event_descriptor language_code="egt">
         <event_name>Event name</event_name>
@@ -220,11 +220,11 @@
     </event>
   </EIT>
   <generic_short_table table_id="0xDE" private="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     01 02 03 14 15 16 17 18 19 1A
   </generic_short_table>
   <generic_long_table table_id="0xC3" table_id_ext="0x1234" version="23" current="true" private="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <section>
       14 15 16 17 18 19 1A
     </section>

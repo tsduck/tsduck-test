@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="0" current="true" service_id="0x2264" PCR_PID="0x019A">
-    <!-- PID 0x0190 (400) -->
+    <metadata PID="400"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x01D2"/>
     <CA_descriptor CA_system_id="0x1863" CA_PID="0x01DC"/>
     <CA_descriptor CA_system_id="0x1883" CA_PID="0x01DD"/>
@@ -39,7 +39,7 @@
     </component>
   </PMT>
   <PMT version="15" current="true" service_id="0x2262" PCR_PID="0x00D2">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <CA_descriptor CA_system_id="0xABCD" CA_PID="0x1234"/>
     <component elementary_PID="0x00D2" stream_type="0x1B"/>
     <component elementary_PID="0x00DD" stream_type="0x06">
@@ -66,7 +66,7 @@
     </component>
   </PMT>
   <PMT version="10" current="true" service_id="0x2261" PCR_PID="0x006E">
-    <!-- PID 0x0064 (100) -->
+    <metadata PID="100"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x00A6"/>
     <CA_descriptor CA_system_id="0x1863" CA_PID="0x00B0"/>
     <CA_descriptor CA_system_id="0x1883" CA_PID="0x00B1"/>
@@ -106,7 +106,7 @@
     </component>
   </PMT>
   <PMT version="13" current="true" service_id="0x2263" PCR_PID="0x0136">
-    <!-- PID 0x012C (300) -->
+    <metadata PID="300"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x016E"/>
     <CA_descriptor CA_system_id="0x1863" CA_PID="0x0178"/>
     <CA_descriptor CA_system_id="0x1883" CA_PID="0x0179"/>
@@ -140,7 +140,7 @@
     </component>
   </PMT>
   <PAT version="30" current="true" transport_stream_id="0x0438" network_PID="0x0010">
-    <!-- PID 0x0000 (0) -->
+    <metadata PID="0"/>
     <service service_id="0x2261" program_map_PID="0x0064"/>
     <service service_id="0x2262" program_map_PID="0x00C8"/>
     <service service_id="0x2263" program_map_PID="0x012C"/>
@@ -153,7 +153,7 @@
     <service service_id="0x226A" program_map_PID="0x1ABC"/>
   </PAT>
   <PMT version="30" current="true" service_id="0x2266" PCR_PID="0x0262">
-    <!-- PID 0x0258 (600) -->
+    <metadata PID="600"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x029A"/>
     <CA_descriptor CA_system_id="0x1863" CA_PID="0x02A4"/>
     <CA_descriptor CA_system_id="0x1883" CA_PID="0x02A5"/>
@@ -187,7 +187,7 @@
     </component>
   </PMT>
   <PMT version="30" current="true" service_id="0x2265" PCR_PID="0x01FE">
-    <!-- PID 0x01F4 (500) -->
+    <metadata PID="500"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x0236"/>
     <CA_descriptor CA_system_id="0x1863" CA_PID="0x0240"/>
     <CA_descriptor CA_system_id="0x1883" CA_PID="0x0241"/>
@@ -221,7 +221,7 @@
     </component>
   </PMT>
   <CAT version="8" current="true">
-    <!-- PID 0x0001 (1) -->
+    <metadata PID="1"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x1449">
       <private_data>
         02 FE 22

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <MGT version="12" protocol_version="0">
-    <!-- PID 0x1FFB (8187), first TS packet: 104, last: 104 -->
+    <metadata PID="8,187" first_ts_packet="104" last_ts_packet="104"/>
     <table type="TVCT-current" PID="0x1FFB" version_number="11" number_bytes="218"/>
     <table type="ETT" PID="0x1E80" version_number="10" number_bytes="68"/>
     <table type="EIT-0" PID="0x1D00" version_number="10" number_bytes="1,423"/>
@@ -15,10 +15,10 @@
     <table type="RRT-1" PID="0x1FFB" version_number="0" number_bytes="979"/>
   </MGT>
   <STT protocol_version="0" system_time="1,236,854,919" GPS_UTC_offset="18" DS_status="true">
-    <!-- PID 0x1FFB (8187), first TS packet: 360, last: 360 -->
+    <metadata PID="8,187" first_ts_packet="360" last_ts_packet="360"/>
   </STT>
   <TVCT version="11" current="true" transport_stream_id="0x1FE1" protocol_version="0">
-    <!-- PID 0x1FFB (8187), first TS packet: 1,149, last: 1,150 -->
+    <metadata PID="8,187" first_ts_packet="1,149" last_ts_packet="1,150"/>
     <channel short_name="KULX   " major_channel_number="10" minor_channel_number="1" modulation_mode="8-VSB" carrier_frequency="0" channel_TSID="0x1FE1" program_number="0x0003" ETM_location="1" access_controlled="false" hidden="false" hide_guide="false" service_type="dtv" source_id="0x0001">
       <service_location_descriptor PCR_PID="0x0031">
         <component stream_type="0x02" elementary_PID="0x0031"/>
@@ -46,14 +46,14 @@
     </channel>
   </TVCT>
   <PAT version="2" current="true" transport_stream_id="0x1FE1">
-    <!-- PID 0x0000 (0), first TS packet: 1,182, last: 1,182 -->
+    <metadata PID="0" first_ts_packet="1,182" last_ts_packet="1,182"/>
     <service service_id="0x0003" program_map_PID="0x0030"/>
     <service service_id="0x0004" program_map_PID="0x0040"/>
     <service service_id="0x0005" program_map_PID="0x0050"/>
     <service service_id="0x0006" program_map_PID="0x0060"/>
   </PAT>
   <PMT version="7" current="true" service_id="0x0004" PCR_PID="0x0041">
-    <!-- PID 0x0040 (64), first TS packet: 1,973, last: 1,973 -->
+    <metadata PID="64" first_ts_packet="1,973" last_ts_packet="1,973"/>
     <component_name_descriptor>
       <component_name_string>
         <string language="eng" text="enc"/>
@@ -77,7 +77,7 @@
     </component>
   </PMT>
   <PMT version="2" current="true" service_id="0x0003" PCR_PID="0x0031">
-    <!-- PID 0x0030 (48), first TS packet: 4,088, last: 4,088 -->
+    <metadata PID="48" first_ts_packet="4,088" last_ts_packet="4,088"/>
     <component_name_descriptor>
       <component_name_string>
         <string language="eng" text="enc"/>
@@ -101,7 +101,7 @@
     </component>
   </PMT>
   <PMT version="1" current="true" service_id="0x0006" PCR_PID="0x0061">
-    <!-- PID 0x0060 (96), first TS packet: 4,089, last: 4,089 -->
+    <metadata PID="96" first_ts_packet="4,089" last_ts_packet="4,089"/>
     <registration_descriptor format_identifier="0x47413934"/>
     <smoothing_buffer_descriptor sb_leak_rate="0x0000BD5B" sb_size="0x00000800"/>
     <component_name_descriptor>
@@ -137,7 +137,7 @@
     </component>
   </PMT>
   <PMT version="6" current="true" service_id="0x0005" PCR_PID="0x0051">
-    <!-- PID 0x0050 (80), first TS packet: 4,395, last: 4,395 -->
+    <metadata PID="80" first_ts_packet="4,395" last_ts_packet="4,395"/>
     <component_name_descriptor>
       <component_name_string>
         <string language="eng" text="enc"/>

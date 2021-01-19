@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="14" current="true" service_id="0x2264" PCR_PID="0x019A">
-    <!-- PID 0x0190 (400), first TS packet: 137, last: 137 -->
+    <metadata PID="400" first_ts_packet="137" last_ts_packet="137"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x01D2">
       <private_data>
         02 33 15
@@ -62,7 +62,7 @@
     </component>
   </PMT>
   <PMT version="15" current="true" service_id="0x2262" PCR_PID="0x00D2">
-    <!-- PID 0x00C8 (200), first TS packet: 200, last: 200 -->
+    <metadata PID="200" first_ts_packet="200" last_ts_packet="200"/>
     <component elementary_PID="0x00D2" stream_type="0x1B"/>
     <component elementary_PID="0x00DD" stream_type="0x06">
       <ISO_639_language_descriptor>
@@ -88,7 +88,7 @@
     </component>
   </PMT>
   <PMT version="10" current="true" service_id="0x2261" PCR_PID="0x006E">
-    <!-- PID 0x0064 (100), first TS packet: 257, last: 257 -->
+    <metadata PID="100" first_ts_packet="257" last_ts_packet="257"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x00A6">
       <private_data>
         02 33 15
@@ -155,7 +155,7 @@
     </component>
   </PMT>
   <PMT version="7" current="true" service_id="0x2269" PCR_PID="0x038E">
-    <!-- PID 0x0384 (900), first TS packet: 706, last: 706 -->
+    <metadata PID="900" first_ts_packet="706" last_ts_packet="706"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x03C5">
       <private_data>
         02 33 11
@@ -216,7 +216,7 @@
     </component>
   </PMT>
   <PMT version="7" current="true" service_id="0x2268" PCR_PID="0x032A">
-    <!-- PID 0x0320 (800), first TS packet: 753, last: 753 -->
+    <metadata PID="800" first_ts_packet="753" last_ts_packet="753"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x0361">
       <private_data>
         02 33 11
@@ -277,7 +277,7 @@
     </component>
   </PMT>
   <PMT version="1" current="true" service_id="0x226A" PCR_PID="0x03F2">
-    <!-- PID 0x03E8 (1000), first TS packet: 799, last: 799 -->
+    <metadata PID="1,000" first_ts_packet="799" last_ts_packet="799"/>
     <component elementary_PID="0x03F2" stream_type="0x1B"/>
     <component elementary_PID="0x03FD" stream_type="0x06">
       <ISO_639_language_descriptor>
@@ -292,7 +292,7 @@
     </component>
   </PMT>
   <PMT version="13" current="true" service_id="0x2263" PCR_PID="0x0136">
-    <!-- PID 0x012C (300), first TS packet: 1,612, last: 1,612 -->
+    <metadata PID="300" first_ts_packet="1,612" last_ts_packet="1,612"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x016E">
       <private_data>
         02 33 15
@@ -353,7 +353,7 @@
     </component>
   </PMT>
   <PMT version="0" current="true" service_id="0x22C3">
-    <!-- PID 0x1003 (4099), first TS packet: 1,649, last: 1,649 -->
+    <metadata PID="4,099" first_ts_packet="1,649" last_ts_packet="1,649"/>
     <component elementary_PID="0x0FA5" stream_type="0x05">
       <data_broadcast_id_descriptor data_broadcast_id="0x0140">
         <selector_bytes>
@@ -363,7 +363,7 @@
     </component>
   </PMT>
   <PAT version="12" current="true" transport_stream_id="0x0438" network_PID="0x0010">
-    <!-- PID 0x0000 (0), first TS packet: 2,466, last: 2,466 -->
+    <metadata PID="0" first_ts_packet="2,466" last_ts_packet="2,466"/>
     <service service_id="0x2261" program_map_PID="0x0064"/>
     <service service_id="0x2262" program_map_PID="0x00C8"/>
     <service service_id="0x2263" program_map_PID="0x012C"/>
@@ -377,7 +377,7 @@
     <service service_id="0x22C3" program_map_PID="0x1003"/>
   </PAT>
   <PMT version="8" current="true" service_id="0x2266" PCR_PID="0x0262">
-    <!-- PID 0x0258 (600), first TS packet: 2,529, last: 2,529 -->
+    <metadata PID="600" first_ts_packet="2,529" last_ts_packet="2,529"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x029A">
       <private_data>
         02 33 15
@@ -438,7 +438,7 @@
     </component>
   </PMT>
   <PMT version="30" current="true" service_id="0x2265" PCR_PID="0x01FE">
-    <!-- PID 0x01F4 (500), first TS packet: 2,591, last: 2,591 -->
+    <metadata PID="500" first_ts_packet="2,591" last_ts_packet="2,591"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x0236">
       <private_data>
         02 33 15
@@ -499,7 +499,7 @@
     </component>
   </PMT>
   <CAT version="8" current="true">
-    <!-- PID 0x0001 (1), first TS packet: 2,651, last: 2,651 -->
+    <metadata PID="1" first_ts_packet="2,651" last_ts_packet="2,651"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x1449">
       <private_data>
         02 FE 22
@@ -562,7 +562,7 @@
     </CA_descriptor>
   </CAT>
   <PMT version="5" current="true" service_id="0x2267" PCR_PID="0x02C6">
-    <!-- PID 0x02BC (700), first TS packet: 5,053, last: 5,053 -->
+    <metadata PID="700" first_ts_packet="5,053" last_ts_packet="5,053"/>
     <CA_descriptor CA_system_id="0x1811" CA_PID="0x02FD">
       <private_data>
         02 33 11
@@ -623,7 +623,7 @@
     </component>
   </PMT>
   <NIT version="26" current="true" network_id="0x0001" actual="true">
-    <!-- PID 0x0010 (16), first TS packet: 1,707, last: 10,632 -->
+    <metadata PID="16" first_ts_packet="1,707" last_ts_packet="10,632"/>
     <network_name_descriptor network_name="ASTRA 1"/>
     <linkage_descriptor transport_stream_id="0x0454" original_network_id="0x0001" service_id="0x000C" linkage_type="0x01"/>
     <linkage_descriptor transport_stream_id="0x0457" original_network_id="0x0001" service_id="0x000D" linkage_type="0x01"/>
@@ -970,7 +970,7 @@
     </transport_stream>
   </NIT>
   <EIT type="pf" version="6" current="true" actual="true" service_id="0x226A" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 3,845, last: 24,100 -->
+    <metadata PID="18" first_ts_packet="3,845" last_ts_packet="24,100"/>
     <event event_id="0x7531" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>LA NEWSROOM</event_name>
@@ -1017,7 +1017,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x2264" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 3,845, last: 24,286 -->
+    <metadata PID="18" first_ts_packet="3,845" last_ts_packet="24,286"/>
     <event event_id="0xB6E5" start_time="2017-08-23 11:22:00" duration="01:17:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>GANT D'OR 2017</event_name>
@@ -1063,7 +1063,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="true" service_id="0x2265" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 4,122, last: 24,544 -->
+    <metadata PID="18" first_ts_packet="4,122" last_ts_packet="24,544"/>
     <event event_id="0x089E" start_time="2017-08-23 11:17:00" duration="01:18:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>GARFIELD LE FILM</event_name>
@@ -1138,7 +1138,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="true" service_id="0x2261" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 7,818, last: 28,153 -->
+    <metadata PID="18" first_ts_packet="7,818" last_ts_packet="28,153"/>
     <event event_id="0x8E7F" start_time="2017-08-23 11:45:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PETER ET ELLIOTT LE DRAGON</event_name>
@@ -1207,7 +1207,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="16" current="true" actual="true" service_id="0x2268" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 8,217, last: 28,595 -->
+    <metadata PID="18" first_ts_packet="8,217" last_ts_packet="28,595"/>
     <event event_id="0x7808" start_time="2017-08-23 11:30:00" duration="01:38:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>ARTHUR 3 : LA GUERRE DES DEUX MONDES</event_name>
@@ -1292,7 +1292,7 @@
     </event>
   </EIT>
   <SDT version="10" current="true" transport_stream_id="0x0438" original_network_id="0x0001" actual="true">
-    <!-- PID 0x0011 (17), first TS packet: 29,627, last: 29,677 -->
+    <metadata PID="17" first_ts_packet="29,627" last_ts_packet="29,677"/>
     <service service_id="0x2261" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+"/>
     </service>
@@ -1328,7 +1328,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="22" current="true" actual="true" service_id="0x2262" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 11,749, last: 31,651 -->
+    <metadata PID="18" first_ts_packet="11,749" last_ts_packet="31,651"/>
     <event event_id="0x7891" start_time="2017-08-23 11:51:00" duration="00:13:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>LE GROS JOURNAL</event_name>
@@ -1392,7 +1392,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x2266" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 12,195, last: 32,195 -->
+    <metadata PID="18" first_ts_packet="12,195" last_ts_packet="32,195"/>
     <event event_id="0x1516" start_time="2017-08-23 11:41:00" duration="00:21:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BROOKLYN NINE-NINE</event_name>
@@ -1473,7 +1473,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x2263" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 16,670, last: 36,541 -->
+    <metadata PID="18" first_ts_packet="16,670" last_ts_packet="36,541"/>
     <event event_id="0xAC37" start_time="2017-08-23 11:30:00" duration="01:35:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE FILS DE JEAN</event_name>
@@ -1568,7 +1568,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="19" current="true" actual="true" service_id="0x2267" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 17,069, last: 37,154 -->
+    <metadata PID="18" first_ts_packet="17,069" last_ts_packet="37,154"/>
     <event event_id="0x7A3E" start_time="2017-08-23 11:30:00" duration="01:19:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>JONAH HEX</event_name>
@@ -1651,7 +1651,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="19" current="true" actual="true" service_id="0x2269" transport_stream_id="0x0438" original_network_id="0x0001" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 20,431, last: 40,342 -->
+    <metadata PID="18" first_ts_packet="20,431" last_ts_packet="40,342"/>
     <event event_id="0x7142" start_time="2017-08-23 11:30:00" duration="01:39:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>L'IMPOSSIBLE MONSIEUR BEBE</event_name>
@@ -1738,7 +1738,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="4" current="true" actual="false" service_id="0x1B00" transport_stream_id="0x03FE" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 163, last: 58,838 -->
+    <metadata PID="18" first_ts_packet="163" last_ts_packet="58,838"/>
     <event event_id="0x3A2C" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CHAINE CHINOISE DE DOCUMENTAIRES EN ANGLAIS</event_name>
@@ -1777,7 +1777,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x2203" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 291, last: 59,296 -->
+    <metadata PID="18" first_ts_packet="291" last_ts_packet="59,296"/>
     <event event_id="0x4CA1" start_time="2017-08-23 11:51:00" duration="00:24:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LITTLEST PETSHOP, DES ANIMAUX TROP MIGNONS</event_name>
@@ -1840,7 +1840,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x2329" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 766, last: 59,694 -->
+    <metadata PID="18" first_ts_packet="766" last_ts_packet="59,694"/>
     <event event_id="0x4F53" start_time="2017-08-23 11:55:00" duration="01:45:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>WILLIAM &amp; KATE : ROMANCE ROYALE</event_name>
@@ -1905,7 +1905,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x1F4C" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 1,144, last: 59,834 -->
+    <metadata PID="18" first_ts_packet="1,144" last_ts_packet="59,834"/>
     <event event_id="0x0BAA" start_time="2017-08-23 07:45:00" duration="07:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PLAYLIST</event_name>
@@ -1994,7 +1994,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="13" current="true" actual="false" service_id="0x275F" transport_stream_id="0x0402" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 1,481, last: 60,595 -->
+    <metadata PID="18" first_ts_packet="1,481" last_ts_packet="60,595"/>
     <event event_id="0xA5DA" start_time="2017-08-23 11:50:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PECHE XXL</event_name>
@@ -2059,7 +2059,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x2071" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 1,678, last: 60,702 -->
+    <metadata PID="18" first_ts_packet="1,678" last_ts_packet="60,702"/>
     <event event_id="0x2E73" start_time="2017-08-23 07:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -2098,7 +2098,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x427F" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 1,828, last: 60,987 -->
+    <metadata PID="18" first_ts_packet="1,828" last_ts_packet="60,987"/>
     <event event_id="0x2BD0" start_time="2017-08-23 11:25:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE GLUTEN, FAUT-IL EN AVOIR PEUR ?</event_name>
@@ -2174,7 +2174,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="9" current="true" actual="false" service_id="0x26B8" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 2,420, last: 61,400 -->
+    <metadata PID="18" first_ts_packet="2,420" last_ts_packet="61,400"/>
     <event event_id="0x50EF" start_time="2017-08-23 11:42:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CHASSEURS D'OVNIS</event_name>
@@ -2237,7 +2237,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="23" current="true" actual="false" service_id="0x22C8" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 2,701, last: 61,566 -->
+    <metadata PID="18" first_ts_packet="2,701" last_ts_packet="61,566"/>
     <event event_id="0xB10A" start_time="2017-08-23 11:45:00" duration="00:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>QUIZZ ACADEMY</event_name>
@@ -2285,7 +2285,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x19CB" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 3,299, last: 61,971 -->
+    <metadata PID="18" first_ts_packet="3,299" last_ts_packet="61,971"/>
     <event event_id="0xBBEF" start_time="2017-08-23 11:50:00" duration="00:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>REVELATIONS</event_name>
@@ -2374,7 +2374,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="13" current="true" actual="false" service_id="0x1AFA" transport_stream_id="0x03FE" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 3,718, last: 61,971 -->
+    <metadata PID="18" first_ts_packet="3,718" last_ts_packet="61,971"/>
     <event event_id="0x995C" start_time="2017-08-23 11:51:00" duration="00:07:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SPORTS</event_name>
@@ -2413,7 +2413,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x2206" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 4,524, last: 62,930 -->
+    <metadata PID="18" first_ts_packet="4,524" last_ts_packet="62,930"/>
     <event event_id="0x8234" start_time="2017-08-23 11:55:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MELODY CHIC AFTERNOON</event_name>
@@ -2485,7 +2485,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="21" current="true" actual="false" service_id="0x2520" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 4,870, last: 63,068 -->
+    <metadata PID="18" first_ts_packet="4,870" last_ts_packet="63,068"/>
     <event event_id="0x4702" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -2524,7 +2524,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x232D" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 4,870, last: 63,211 -->
+    <metadata PID="18" first_ts_packet="4,870" last_ts_packet="63,211"/>
     <event event_id="0x162A" start_time="2017-08-23 10:00:00" duration="02:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>UNIVERSIADE D'ETE 2017</event_name>
@@ -2567,7 +2567,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="8" current="true" actual="false" service_id="0x2532" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 4,976, last: 63,651 -->
+    <metadata PID="18" first_ts_packet="4,976" last_ts_packet="63,651"/>
     <event event_id="0xB5FF" start_time="2017-08-23 11:35:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>VIPERE AU POING</event_name>
@@ -2635,7 +2635,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x245D" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 5,401, last: 64,079 -->
+    <metadata PID="18" first_ts_packet="5,401" last_ts_packet="64,079"/>
     <event event_id="0x1B9B" start_time="2017-08-23 11:45:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MICK BRISGAU</event_name>
@@ -2702,7 +2702,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="6" current="true" actual="false" service_id="0x2073" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 5,957, last: 64,201 -->
+    <metadata PID="18" first_ts_packet="5,957" last_ts_packet="64,201"/>
     <event event_id="0x2D7A" start_time="2017-08-23 07:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -2741,7 +2741,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="27" current="true" actual="false" service_id="0x2081" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 6,078, last: 64,669 -->
+    <metadata PID="18" first_ts_packet="6,078" last_ts_packet="64,669"/>
     <event event_id="0x320D" start_time="2017-08-23 11:35:00" duration="02:00:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>COUP DE FOUDRE A NOTTING HILL</event_name>
@@ -2814,7 +2814,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="20" current="true" actual="false" service_id="0x24BB" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 6,538, last: 64,803 -->
+    <metadata PID="18" first_ts_packet="6,538" last_ts_packet="64,803"/>
     <event event_id="0x5926" start_time="2017-08-23 03:00:00" duration="19:01:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -2853,7 +2853,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="23" current="true" actual="false" service_id="0x26C1" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 6,690, last: 64,943 -->
+    <metadata PID="18" first_ts_packet="6,690" last_ts_packet="64,943"/>
     <event event_id="0x48AB" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -2892,7 +2892,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="14" current="true" actual="false" service_id="0x24C4" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 6,940, last: 65,395 -->
+    <metadata PID="18" first_ts_packet="6,940" last_ts_packet="65,395"/>
     <event event_id="0xBF9B" start_time="2017-08-23 11:50:00" duration="00:10:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES CRUMPETS</event_name>
@@ -2959,7 +2959,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="4" current="true" actual="false" service_id="0x19D0" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 7,217, last: 65,497 -->
+    <metadata PID="18" first_ts_packet="7,217" last_ts_packet="65,497"/>
     <event event_id="0x0403" start_time="2017-08-23 03:00:00" duration="19:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>INTERRUPTION DES PROGRAMMES</event_name>
@@ -3003,7 +3003,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="20" current="true" actual="false" service_id="0x19DD" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 7,330, last: 65,615 -->
+    <metadata PID="18" first_ts_packet="7,330" last_ts_packet="65,615"/>
     <event event_id="0x4783" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -3042,7 +3042,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="23" current="true" actual="false" service_id="0x21FE" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 7,539, last: 65,946 -->
+    <metadata PID="18" first_ts_packet="7,539" last_ts_packet="65,946"/>
     <event event_id="0x325A" start_time="2017-08-23 11:45:00" duration="01:25:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>CONFESSIONS INTIMES</event_name>
@@ -3096,7 +3096,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="27" current="true" actual="false" service_id="0x251D" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 8,773, last: 67,176 -->
+    <metadata PID="18" first_ts_packet="8,773" last_ts_packet="67,176"/>
     <event event_id="0xE609" start_time="2017-08-23 11:29:00" duration="02:03:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>POLICE PYTHON 357</event_name>
@@ -3157,7 +3157,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x232F" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 8,943, last: 67,486 -->
+    <metadata PID="18" first_ts_packet="8,943" last_ts_packet="67,486"/>
     <event event_id="0x3419" start_time="2017-08-23 11:54:00" duration="00:04:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>A TABLE LES ENFANTS</event_name>
@@ -3208,7 +3208,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x1F44" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 9,070, last: 67,750 -->
+    <metadata PID="18" first_ts_packet="9,070" last_ts_packet="67,750"/>
     <event event_id="0x8F7D" start_time="2017-08-23 11:15:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>17 ANS ET MAMAN</event_name>
@@ -3263,7 +3263,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x245B" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 9,481, last: 68,146 -->
+    <metadata PID="18" first_ts_packet="9,481" last_ts_packet="68,146"/>
     <event event_id="0x7294" start_time="2017-08-23 11:30:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>JE VOUS SOUHAITE D'ETRE FOLLEMENT AIMEE</event_name>
@@ -3342,7 +3342,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x427C" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 9,905, last: 68,415 -->
+    <metadata PID="18" first_ts_packet="9,905" last_ts_packet="68,415"/>
     <event event_id="0x2439" start_time="2017-08-23 11:00:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>EUROSHOPPING</event_name>
@@ -3411,7 +3411,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x26AD" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 10,368, last: 68,554 -->
+    <metadata PID="18" first_ts_packet="10,368" last_ts_packet="68,554"/>
     <event event_id="0x4A19" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SKETCHBOOK : L'OEIL</event_name>
@@ -3459,7 +3459,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="7" current="true" actual="false" service_id="0x24C3" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 10,757, last: 69,276 -->
+    <metadata PID="18" first_ts_packet="10,757" last_ts_packet="69,276"/>
     <event event_id="0xA26C" start_time="2017-08-23 11:31:00" duration="00:29:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE GRAND DEFITOON</event_name>
@@ -3521,7 +3521,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="20" current="true" actual="false" service_id="0x22CF" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 11,017, last: 69,431 -->
+    <metadata PID="18" first_ts_packet="11,017" last_ts_packet="69,431"/>
     <event event_id="0xA2BB" start_time="2017-08-23 11:35:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>QUOI DE NEUF, SCOOBY-DOO ?</event_name>
@@ -3592,7 +3592,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="20" current="true" actual="false" service_id="0x21FF" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 11,287, last: 69,855 -->
+    <metadata PID="18" first_ts_packet="11,287" last_ts_packet="69,855"/>
     <event event_id="0x1BD9" start_time="2017-08-23 11:25:00" duration="01:50:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>UNE FEMME D'HONNEUR</event_name>
@@ -3657,7 +3657,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x2009" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 12,583, last: 70,987 -->
+    <metadata PID="18" first_ts_packet="12,583" last_ts_packet="70,987"/>
     <event event_id="0x36E0" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -3696,7 +3696,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x2521" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 12,706, last: 71,140 -->
+    <metadata PID="18" first_ts_packet="12,706" last_ts_packet="71,140"/>
     <event event_id="0x470C" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -3735,7 +3735,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x232E" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 12,876, last: 71,557 -->
+    <metadata PID="18" first_ts_packet="12,876" last_ts_packet="71,557"/>
     <event event_id="0x0641" start_time="2017-08-23 11:43:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>VERY FOOD TRIP</event_name>
@@ -3810,7 +3810,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="24" current="true" actual="false" service_id="0x2455" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 13,310, last: 71,712 -->
+    <metadata PID="18" first_ts_packet="13,310" last_ts_packet="71,712"/>
     <event event_id="0x96EE" start_time="2017-08-23 11:45:00" duration="01:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>WORLD SERIES 2017</event_name>
@@ -3849,7 +3849,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="23" current="true" actual="false" service_id="0x245E" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 13,444, last: 72,112 -->
+    <metadata PID="18" first_ts_packet="13,444" last_ts_packet="72,112"/>
     <event event_id="0x5EA9" start_time="2017-08-23 11:00:00" duration="01:00:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>LA FRANCE QUI REUSSIT</event_name>
@@ -3905,7 +3905,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x196B" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 13,709, last: 72,112 -->
+    <metadata PID="18" first_ts_packet="13,709" last_ts_packet="72,112"/>
     <event event_id="0x06B1" start_time="2017-08-23 03:00:00" duration="19:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -3948,7 +3948,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="21" current="true" actual="false" service_id="0x196F" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 13,865, last: 72,521 -->
+    <metadata PID="18" first_ts_packet="13,865" last_ts_packet="72,521"/>
     <event event_id="0xA2B6" start_time="2017-08-23 11:48:00" duration="00:12:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA BOUCLE INFERNALE</event_name>
@@ -4003,7 +4003,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x4286" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 14,110, last: 72,926 -->
+    <metadata PID="18" first_ts_packet="14,110" last_ts_packet="72,926"/>
     <event event_id="0x7A22" start_time="2017-08-23 10:40:00" duration="02:18:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES BERETS VERTS</event_name>
@@ -4086,7 +4086,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x24BD" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 14,573, last: 73,246 -->
+    <metadata PID="18" first_ts_packet="14,573" last_ts_packet="73,246"/>
     <event event_id="0x192C" start_time="2017-08-23 11:15:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LIFESTYLE</event_name>
@@ -4129,7 +4129,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="18" current="true" actual="false" service_id="0x22C9" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 14,837, last: 73,549 -->
+    <metadata PID="18" first_ts_packet="14,837" last_ts_packet="73,549"/>
     <event event_id="0xB3A0" start_time="2017-08-23 11:55:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>HERO CORP</event_name>
@@ -4190,7 +4190,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x19D3" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 16,116, last: 73,950 -->
+    <metadata PID="18" first_ts_packet="16,116" last_ts_packet="73,950"/>
     <event event_id="0x9C8E" start_time="2017-08-23 06:40:00" duration="06:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CHAMPIONNATS D'EUROPE 2017</event_name>
@@ -4244,7 +4244,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="18" current="true" actual="false" service_id="0x200D" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 17,497, last: 75,363 -->
+    <metadata PID="18" first_ts_packet="17,497" last_ts_packet="75,363"/>
     <event event_id="0x2787" start_time="2017-08-23 11:00:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MY LEFT FOOT</event_name>
@@ -4309,7 +4309,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="21" current="true" actual="false" service_id="0x1F45" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 17,909, last: 75,530 -->
+    <metadata PID="18" first_ts_packet="17,909" last_ts_packet="75,530"/>
     <event event_id="0x1144" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FRANCEINFO: DEUX POINTS OUVREZ L'INFO</event_name>
@@ -4356,14 +4356,14 @@
     </event>
   </EIT>
   <BAT version="15" current="true" bouquet_id="0xC001">
-    <!-- PID 0x0011 (17), first TS packet: 75,740, last: 75,740 -->
+    <metadata PID="17" first_ts_packet="75,740" last_ts_packet="75,740"/>
     <bouquet_name_descriptor bouquet_name="CanalSatellite"/>
     <private_data_specifier_descriptor private_data_specifier="CanalPlus"/>
     <linkage_descriptor transport_stream_id="0x044A" original_network_id="0x0001" service_id="0x0000" linkage_type="0x81"/>
     <linkage_descriptor transport_stream_id="0x044A" original_network_id="0x0001" service_id="0x0000" linkage_type="0x8B"/>
   </BAT>
   <EIT type="pf" version="7" current="true" actual="false" service_id="0x1F4B" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 18,050, last: 76,099 -->
+    <metadata PID="18" first_ts_packet="18,050" last_ts_packet="76,099"/>
     <event event_id="0x9BEE" start_time="2017-08-23 11:45:00" duration="01:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA PETITE MAISON DANS LA PRAIRIE</event_name>
@@ -4452,7 +4452,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="25" current="true" actual="false" service_id="0x196C" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 18,597, last: 76,493 -->
+    <metadata PID="18" first_ts_packet="18,597" last_ts_packet="76,493"/>
     <event event_id="0x2B4D" start_time="2017-08-23 11:42:00" duration="01:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PASCAL LEGITIMUS : ALONE MAN SHOW</event_name>
@@ -4509,7 +4509,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x2083" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 18,900, last: 76,875 -->
+    <metadata PID="18" first_ts_packet="18,900" last_ts_packet="76,875"/>
     <event event_id="0x2CA8" start_time="2017-08-23 11:55:00" duration="00:11:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>REKKIT</event_name>
@@ -4585,7 +4585,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="26" current="true" actual="false" service_id="0x26B4" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 19,197, last: 77,209 -->
+    <metadata PID="18" first_ts_packet="19,197" last_ts_packet="77,209"/>
     <event event_id="0x917C" start_time="2017-08-23 11:00:00" duration="01:10:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>REGULAR SHOW XXL</event_name>
@@ -4675,7 +4675,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x22CA" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 19,571, last: 77,466 -->
+    <metadata PID="18" first_ts_packet="19,571" last_ts_packet="77,466"/>
     <event event_id="0x139D" start_time="2017-08-23 11:29:00" duration="00:31:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PRINCESSE SOFIA</event_name>
@@ -4732,7 +4732,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x19D1" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 19,921, last: 77,869 -->
+    <metadata PID="18" first_ts_packet="19,921" last_ts_packet="77,869"/>
     <event event_id="0x5F53" start_time="2017-08-23 11:20:00" duration="01:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FESTIVAL DE RADIO FRANCE ET MONTPELLIER 2013</event_name>
@@ -4799,7 +4799,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="23" current="true" actual="false" service_id="0x2200" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 20,845, last: 78,738 -->
+    <metadata PID="18" first_ts_packet="20,845" last_ts_packet="78,738"/>
     <event event_id="0xA1EF" start_time="2017-08-23 11:20:00" duration="01:40:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>TELLEMENT VRAI</event_name>
@@ -4838,7 +4838,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="15" current="true" actual="false" service_id="0x2204" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,144, last: 78,738 -->
+    <metadata PID="18" first_ts_packet="21,144" last_ts_packet="78,738"/>
     <event event_id="0x1E22" start_time="2017-08-23 04:34:00" duration="16:57:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -4877,7 +4877,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="26" current="true" actual="false" service_id="0x2208" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,144, last: 78,863 -->
+    <metadata PID="18" first_ts_packet="21,144" last_ts_packet="78,863"/>
     <event event_id="0x6823" start_time="2017-08-23 11:30:00" duration="01:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>NANCY (L2) / ORLEANS (L2)</event_name>
@@ -4916,7 +4916,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x2013" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,452, last: 79,298 -->
+    <metadata PID="18" first_ts_packet="21,452" last_ts_packet="79,298"/>
     <event event_id="0x518B" start_time="2017-08-23 11:00:00" duration="02:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>NEW YORK GIANTS / CLEVELAND BROWNS</event_name>
@@ -4969,7 +4969,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="14" current="true" actual="false" service_id="0x2332" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,591, last: 79,412 -->
+    <metadata PID="18" first_ts_packet="21,591" last_ts_packet="79,412"/>
     <event event_id="0x034A" start_time="2017-08-23 08:00:00" duration="06:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE JT</event_name>
@@ -5008,7 +5008,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="26" current="true" actual="false" service_id="0x1F42" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,728, last: 79,536 -->
+    <metadata PID="18" first_ts_packet="21,728" last_ts_packet="79,536"/>
     <event event_id="0xB9EE" start_time="2017-08-23 11:55:00" duration="00:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>EH LES HOMMES EH LES FEMMES</event_name>
@@ -5064,7 +5064,7 @@
     </event>
   </EIT>
   <BAT version="9" current="true" bouquet_id="0xC01D">
-    <!-- PID 0x0011 (17), first TS packet: 854, last: 79,702 -->
+    <metadata PID="17" first_ts_packet="854" last_ts_packet="79,702"/>
     <bouquet_name_descriptor bouquet_name="CANAL PRO Phase 2"/>
     <linkage_descriptor transport_stream_id="0x044A" original_network_id="0x0001" service_id="0x23AE" linkage_type="0x09">
       <private_data>
@@ -5666,7 +5666,7 @@
     </transport_stream>
   </BAT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x1F4A" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 21,851, last: 80,000 -->
+    <metadata PID="18" first_ts_packet="21,851" last_ts_packet="80,000"/>
     <event event_id="0x86AC" start_time="2017-08-23 11:20:00" duration="01:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FESTIVAL DE RADIO FRANCE ET MONTPELLIER 2013</event_name>
@@ -5733,7 +5733,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x1969" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 22,256, last: 80,551 -->
+    <metadata PID="18" first_ts_packet="22,256" last_ts_packet="80,551"/>
     <event event_id="0xA6D0" start_time="2017-08-23 10:35:00" duration="01:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>JULIE LESCAUT</event_name>
@@ -5812,7 +5812,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="25" current="true" actual="false" service_id="0x4287" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 22,654, last: 80,800 -->
+    <metadata PID="18" first_ts_packet="22,654" last_ts_packet="80,800"/>
     <event event_id="0x28A1" start_time="2017-08-23 11:35:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>L'ECOLE DES CHAMPIONS</event_name>
@@ -5880,7 +5880,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x26B6" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 23,128, last: 81,275 -->
+    <metadata PID="18" first_ts_packet="23,128" last_ts_packet="81,275"/>
     <event event_id="0x5E18" start_time="2017-08-23 11:30:00" duration="00:34:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>JOURNAL (RTBF)</event_name>
@@ -5930,7 +5930,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x24C2" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 23,286, last: 81,402 -->
+    <metadata PID="18" first_ts_packet="23,286" last_ts_packet="81,402"/>
     <event event_id="0x1F8D" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>RESTONS NATURE</event_name>
@@ -5973,7 +5973,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="31" current="true" actual="false" service_id="0x22CB" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 23,424, last: 81,671 -->
+    <metadata PID="18" first_ts_packet="23,424" last_ts_packet="81,671"/>
     <event event_id="0xB444" start_time="2017-08-23 04:00:00" duration="11:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PLAYLIST</event_name>
@@ -6012,7 +6012,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x19CD" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 23,534, last: 81,950 -->
+    <metadata PID="18" first_ts_packet="23,534" last_ts_packet="81,950"/>
     <event event_id="0x2D00" start_time="2017-08-23 11:35:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>DECOUVRIR LE MONDE</event_name>
@@ -6075,7 +6075,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="12" current="true" actual="false" service_id="0x1AF9" transport_stream_id="0x03FE" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 23,836, last: 82,090 -->
+    <metadata PID="18" first_ts_packet="23,836" last_ts_packet="82,090"/>
     <event event_id="0x5919" start_time="2017-08-23 11:51:00" duration="00:07:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>EXTRAIT MAGAZINE</event_name>
@@ -6114,7 +6114,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="27" current="true" actual="false" service_id="0x2202" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 24,544, last: 83,100 -->
+    <metadata PID="18" first_ts_packet="24,544" last_ts_packet="83,100"/>
     <event event_id="0x3F3E" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CLIPS</event_name>
@@ -6153,7 +6153,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x2205" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 24,807, last: 83,100 -->
+    <metadata PID="18" first_ts_packet="24,807" last_ts_packet="83,100"/>
     <event event_id="0x3F91" start_time="2017-08-23 03:00:00" duration="18:02:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>INTERRUPTION DES PROGRAMMES</event_name>
@@ -6192,7 +6192,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="6" current="true" actual="false" service_id="0x200C" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 24,942, last: 83,242 -->
+    <metadata PID="18" first_ts_packet="24,942" last_ts_packet="83,242"/>
     <event event_id="0x417F" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>HIT MUSIC ONLY</event_name>
@@ -6231,7 +6231,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="14" current="true" actual="false" service_id="0x2012" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 24,942, last: 83,359 -->
+    <metadata PID="18" first_ts_packet="24,942" last_ts_packet="83,359"/>
     <event event_id="0x997E" start_time="2017-08-23 10:00:00" duration="02:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PARIS-SG / TOULOUSE</event_name>
@@ -6279,7 +6279,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x1F41" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 25,205, last: 83,499 -->
+    <metadata PID="18" first_ts_packet="25,205" last_ts_packet="83,499"/>
     <event event_id="0x8788" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LET'S STAY TOGETHER</event_name>
@@ -6358,7 +6358,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="16" current="true" actual="false" service_id="0x1966" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 25,810, last: 84,035 -->
+    <metadata PID="18" first_ts_packet="25,810" last_ts_packet="84,035"/>
     <event event_id="0x835F" start_time="2017-08-23 11:00:00" duration="02:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>ORATORIO DE NOEL DE BACH</event_name>
@@ -6442,7 +6442,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x427D" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 26,210, last: 84,510 -->
+    <metadata PID="18" first_ts_packet="26,210" last_ts_packet="84,510"/>
     <event event_id="0x6806" start_time="2017-08-23 11:50:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES NOUVELLES FILLES D'A COTE</event_name>
@@ -6515,7 +6515,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="29" current="true" actual="false" service_id="0x26B5" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 26,614, last: 84,603 -->
+    <metadata PID="18" first_ts_packet="26,614" last_ts_packet="84,603"/>
     <event event_id="0x5344" start_time="2017-08-23 11:45:00" duration="00:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MAG ASCO</event_name>
@@ -6579,7 +6579,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="25" current="true" actual="false" service_id="0x24C1" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 26,869, last: 85,159 -->
+    <metadata PID="18" first_ts_packet="26,869" last_ts_packet="85,159"/>
     <event event_id="0x035C" start_time="2017-08-23 11:11:00" duration="00:51:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES GRANDES ESCROQUERIES</event_name>
@@ -6644,7 +6644,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x19CE" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 27,217, last: 85,616 -->
+    <metadata PID="18" first_ts_packet="27,217" last_ts_packet="85,616"/>
     <event event_id="0x506F" start_time="2017-08-23 11:08:00" duration="01:27:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CENDRILLON AUX GRANDS PIEDS</event_name>
@@ -6729,7 +6729,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="20" current="true" actual="false" service_id="0x200B" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 28,595, last: 86,736 -->
+    <metadata PID="18" first_ts_packet="28,595" last_ts_packet="86,736"/>
     <event event_id="0x2FE2" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -6768,7 +6768,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="15" current="true" actual="false" service_id="0x2525" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 28,733, last: 86,841 -->
+    <metadata PID="18" first_ts_packet="28,733" last_ts_packet="86,841"/>
     <event event_id="0xB79E" start_time="2017-08-23 11:45:00" duration="01:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SUR LA ROUTE</event_name>
@@ -6812,7 +6812,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x232A" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 28,733, last: 87,271 -->
+    <metadata PID="18" first_ts_packet="28,733" last_ts_packet="87,271"/>
     <event event_id="0x295F" start_time="2017-08-23 11:55:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>COSMOS : UNE ODYSSEE A TRAVERS L'UNIVERS</event_name>
@@ -6879,7 +6879,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x2654" transport_stream_id="0x0460" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 29,259, last: 87,675 -->
+    <metadata PID="18" first_ts_packet="29,259" last_ts_packet="87,675"/>
     <event event_id="0x48E1" start_time="2017-08-23 11:55:00" duration="00:10:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CORSICA PRIMA</event_name>
@@ -6925,7 +6925,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="7" current="true" actual="false" service_id="0x2459" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 29,259, last: 87,956 -->
+    <metadata PID="18" first_ts_packet="29,259" last_ts_packet="87,956"/>
     <event event_id="0x295E" start_time="2017-08-23 11:45:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FREEDOM, L'ENVOL D'UN AIGLE</event_name>
@@ -6989,7 +6989,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x206F" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 29,676, last: 88,271 -->
+    <metadata PID="18" first_ts_packet="29,676" last_ts_packet="88,271"/>
     <event event_id="0x892C" start_time="2017-08-23 11:00:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES EXPERTS</event_name>
@@ -7036,7 +7036,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x4280" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 29,980, last: 88,271 -->
+    <metadata PID="18" first_ts_packet="29,980" last_ts_packet="88,271"/>
     <event event_id="0x359A" start_time="2017-08-23 04:00:00" duration="16:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -7075,7 +7075,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="31" current="true" actual="false" service_id="0x428C" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 30,139, last: 88,559 -->
+    <metadata PID="18" first_ts_packet="30,139" last_ts_packet="88,559"/>
     <event event_id="0x2FE5" start_time="2017-08-23 11:31:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FRANCK ET JULIEN PECHENT A LA TIRETTE</event_name>
@@ -7160,7 +7160,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="18" current="true" actual="false" service_id="0x26AF" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 30,254, last: 88,692 -->
+    <metadata PID="18" first_ts_packet="30,254" last_ts_packet="88,692"/>
     <event event_id="0x489B" start_time="2017-08-23 08:30:00" duration="04:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PAUL LAWRIE MATCH PLAY</event_name>
@@ -7208,7 +7208,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x24BA" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 30,383, last: 89,227 -->
+    <metadata PID="18" first_ts_packet="30,383" last_ts_packet="89,227"/>
     <event event_id="0x0223" start_time="2017-08-23 11:51:00" duration="01:27:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MON MARTIEN FAVORI</event_name>
@@ -7276,7 +7276,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x19CC" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 30,787, last: 89,796 -->
+    <metadata PID="18" first_ts_packet="30,787" last_ts_packet="89,796"/>
     <event event_id="0x8EB7" start_time="2017-08-23 11:00:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>INGENUES ET FEMMES FATALES D'HIER ET D'AUJOURD'HUI</event_name>
@@ -7353,7 +7353,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x2010" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 32,195, last: 90,644 -->
+    <metadata PID="18" first_ts_packet="32,195" last_ts_packet="90,644"/>
     <event event_id="0x3FAA" start_time="2017-08-23 11:35:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LES THUNDERMAN</event_name>
@@ -7402,7 +7402,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x2526" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 32,324, last: 90,870 -->
+    <metadata PID="18" first_ts_packet="32,324" last_ts_packet="90,870"/>
     <event event_id="0xAE94" start_time="2017-08-23 10:00:00" duration="02:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>OMTV</event_name>
@@ -7441,7 +7441,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="29" current="true" actual="false" service_id="0x2334" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 32,514, last: 91,341 -->
+    <metadata PID="18" first_ts_packet="32,514" last_ts_packet="91,341"/>
     <event event_id="0x9271" start_time="2017-08-23 11:25:00" duration="01:40:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>MEURTRES A L'ANGLAISE</event_name>
@@ -7511,7 +7511,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="12" current="true" actual="false" service_id="0x245C" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 32,910, last: 91,469 -->
+    <metadata PID="18" first_ts_packet="32,910" last_ts_packet="91,469"/>
     <event event_id="0x90D6" start_time="2017-08-23 10:15:00" duration="02:55:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>TOP CLIP</event_name>
@@ -7550,7 +7550,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x1965" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 33,056, last: 91,996 -->
+    <metadata PID="18" first_ts_packet="33,056" last_ts_packet="91,996"/>
     <event event_id="0x260C" start_time="2017-08-23 11:35:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MA VIE EST UN ZOO !</event_name>
@@ -7611,7 +7611,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="8" current="true" actual="false" service_id="0x2075" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 33,314, last: 92,332 -->
+    <metadata PID="18" first_ts_packet="33,314" last_ts_packet="92,332"/>
     <event event_id="0xB0E6" start_time="2017-08-23 11:05:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>GROS PLAN SUR</event_name>
@@ -7664,7 +7664,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="15" current="true" actual="false" service_id="0x2082" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 33,582, last: 92,727 -->
+    <metadata PID="18" first_ts_packet="33,582" last_ts_packet="92,727"/>
     <event event_id="0x0547" start_time="2017-08-23 11:35:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FAMILLE D'ACCUEIL</event_name>
@@ -7734,7 +7734,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x24BC" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 35,132, last: 93,148 -->
+    <metadata PID="18" first_ts_packet="35,132" last_ts_packet="93,148"/>
     <event event_id="0xB0DA" start_time="2017-08-23 11:20:00" duration="01:35:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE TRANSPORTEUR : HERITAGE</event_name>
@@ -7817,7 +7817,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x19CF" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 35,593, last: 93,265 -->
+    <metadata PID="18" first_ts_packet="35,593" last_ts_packet="93,265"/>
     <event event_id="0x53D3" start_time="2017-08-23 03:00:00" duration="19:01:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -7856,7 +7856,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x19D2" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 35,738, last: 93,657 -->
+    <metadata PID="18" first_ts_packet="35,738" last_ts_packet="93,657"/>
     <event event_id="0x8099" start_time="2017-08-23 11:35:00" duration="00:53:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>ITINERANCE PYRENEENNE</event_name>
@@ -7943,7 +7943,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x251F" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 37,154, last: 94,678 -->
+    <metadata PID="18" first_ts_packet="37,154" last_ts_packet="94,678"/>
     <event event_id="0x497C" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -7982,7 +7982,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="14" current="true" actual="false" service_id="0x232C" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 37,154, last: 95,258 -->
+    <metadata PID="18" first_ts_packet="37,154" last_ts_packet="95,258"/>
     <event event_id="0x9DA7" start_time="2017-08-23 11:55:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PERCEPTION</event_name>
@@ -8057,7 +8057,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x2456" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 37,689, last: 95,670 -->
+    <metadata PID="18" first_ts_packet="37,689" last_ts_packet="95,670"/>
     <event event_id="0x790F" start_time="2017-08-23 11:30:00" duration="01:36:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SOLARIS</event_name>
@@ -8136,7 +8136,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x196D" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 38,127, last: 95,809 -->
+    <metadata PID="18" first_ts_packet="38,127" last_ts_packet="95,809"/>
     <event event_id="0x6E5B" start_time="2017-08-23 11:40:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SPORTS ADVENTURE</event_name>
@@ -8225,7 +8225,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="false" service_id="0x427E" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 38,295, last: 96,222 -->
+    <metadata PID="18" first_ts_packet="38,295" last_ts_packet="96,222"/>
     <event event_id="0x3AF3" start_time="2017-08-23 11:55:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>AU SECOURS DES ANIMAUX</event_name>
@@ -8318,7 +8318,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="4" current="true" actual="false" service_id="0x26B3" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 38,690, last: 96,357 -->
+    <metadata PID="18" first_ts_packet="38,690" last_ts_packet="96,357"/>
     <event event_id="0x2E22" start_time="2017-08-23 03:00:00" duration="19:01:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>INTERRUPTION DES PROGRAMMES</event_name>
@@ -8362,7 +8362,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="4" current="true" actual="false" service_id="0x24BE" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 38,818, last: 96,487 -->
+    <metadata PID="18" first_ts_packet="38,818" last_ts_packet="96,487"/>
     <event event_id="0x0B06" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>UNIVERSIADE D'ETE 2017</event_name>
@@ -8418,7 +8418,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="18" current="true" actual="false" service_id="0x22C7" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 39,208, last: 96,962 -->
+    <metadata PID="18" first_ts_packet="39,208" last_ts_packet="96,962"/>
     <event event_id="0x875A" start_time="2017-08-23 11:50:00" duration="00:35:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FOUDRE</event_name>
@@ -8501,7 +8501,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="25" current="true" actual="false" service_id="0x19D4" transport_stream_id="0x0444" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 39,673, last: 97,235 -->
+    <metadata PID="18" first_ts_packet="39,673" last_ts_packet="97,235"/>
     <event event_id="0x977C" start_time="2017-08-23 11:00:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>UN JOUR AUX COURSES</event_name>
@@ -8540,7 +8540,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="24" current="true" actual="false" service_id="0x2201" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 40,342, last: 98,111 -->
+    <metadata PID="18" first_ts_packet="40,342" last_ts_packet="98,111"/>
     <event event_id="0xA451" start_time="2017-08-23 11:50:00" duration="01:20:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>UNE FAMILLE FORMIDABLE</event_name>
@@ -8605,7 +8605,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="19" current="true" actual="false" service_id="0x2011" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 40,752, last: 98,374 -->
+    <metadata PID="18" first_ts_packet="40,752" last_ts_packet="98,374"/>
     <event event_id="0xBE67" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CLUB EUROPE - TUTTA SERIE A</event_name>
@@ -8658,7 +8658,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x1131" transport_stream_id="0x0404" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 40,910, last: 98,374 -->
+    <metadata PID="18" first_ts_packet="40,910" last_ts_packet="98,374"/>
     <event event_id="0x013C" start_time="2017-08-23 11:55:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>AQUI LA TIERRA</event_name>
@@ -8697,7 +8697,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x1132" transport_stream_id="0x0404" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 41,082, last: 98,520 -->
+    <metadata PID="18" first_ts_packet="41,082" last_ts_packet="98,520"/>
     <event event_id="0x27C3" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA PREMIERE CHAINE D'INFORMATION EN CONTINUE ESPAGNOLE</event_name>
@@ -8736,7 +8736,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x1F47" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 41,221, last: 98,928 -->
+    <metadata PID="18" first_ts_packet="41,221" last_ts_packet="98,928"/>
     <event event_id="0xB4C1" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LARRY ET SON NOMBRIL</event_name>
@@ -8808,7 +8808,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="0" current="true" actual="false" service_id="0x1B61" transport_stream_id="0x03FC" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 41,633, last: 99,050 -->
+    <metadata PID="18" first_ts_packet="41,633" last_ts_packet="99,050"/>
     <event event_id="0x3A2C" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA CHAINE D'INFORMATION DE LANGUE ARABE DIFFUSEE 24H/24</event_name>
@@ -8847,7 +8847,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="22" current="true" actual="false" service_id="0x2F6C" transport_stream_id="0x0454" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 41,753, last: 99,506 -->
+    <metadata PID="18" first_ts_packet="41,753" last_ts_packet="99,506"/>
     <event event_id="0x8F7F" start_time="2017-08-23 11:55:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE JOUR OU TOUT A BASCULE</event_name>
@@ -8914,7 +8914,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x428B" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 42,179, last: 99,904 -->
+    <metadata PID="18" first_ts_packet="42,179" last_ts_packet="99,904"/>
     <event event_id="0x102A" start_time="2017-08-23 11:55:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA CRIM'</event_name>
@@ -8975,7 +8975,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="19" current="true" actual="false" service_id="0x24C0" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 42,764, last: 100,339 -->
+    <metadata PID="18" first_ts_packet="42,764" last_ts_packet="100,339"/>
     <event event_id="0x43BE" start_time="2017-08-23 11:44:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>JESSIE</event_name>
@@ -9040,7 +9040,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="4" current="true" actual="false" service_id="0x22CD" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 43,070, last: 100,738 -->
+    <metadata PID="18" first_ts_packet="43,070" last_ts_packet="100,738"/>
     <event event_id="0x5930" start_time="2017-08-23 11:45:00" duration="01:40:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PETER ET ELLIOTT LE DRAGON</event_name>
@@ -9109,7 +9109,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="27" current="true" actual="false" service_id="0x2207" transport_stream_id="0x044C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 44,292, last: 101,601 -->
+    <metadata PID="18" first_ts_packet="44,292" last_ts_packet="101,601"/>
     <event event_id="0x4E30" start_time="2017-08-23 11:30:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE JOURNAL DE JENIFA</event_name>
@@ -9156,7 +9156,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x2331" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 44,688, last: 101,807 -->
+    <metadata PID="18" first_ts_packet="44,688" last_ts_packet="101,807"/>
     <event event_id="0xAD1F" start_time="2017-08-23 11:55:00" duration="01:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>AU COEUR DES REGIONS</event_name>
@@ -9203,7 +9203,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x1F43" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 44,841, last: 101,807 -->
+    <metadata PID="18" first_ts_packet="44,841" last_ts_packet="101,807"/>
     <event event_id="0x22CD" start_time="2017-08-23 11:05:00" duration="01:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEATS &amp; LYRICS</event_name>
@@ -9242,7 +9242,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="9" current="true" actual="false" service_id="0x1F46" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 44,841, last: 102,344 -->
+    <metadata PID="18" first_ts_packet="44,841" last_ts_packet="102,344"/>
     <event event_id="0x2450" start_time="2017-08-23 11:55:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LE MYSTERE DES «DESENCHANTEES»</event_name>
@@ -9319,7 +9319,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x2760" transport_stream_id="0x0402" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 45,307, last: 102,463 -->
+    <metadata PID="18" first_ts_packet="45,307" last_ts_packet="102,463"/>
     <event event_id="0x312E" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CHAINE RELIGIEUSE AMERICAINE</event_name>
@@ -9358,7 +9358,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="17" current="true" actual="false" service_id="0x1967" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 45,432, last: 102,463 -->
+    <metadata PID="18" first_ts_packet="45,432" last_ts_packet="102,463"/>
     <event event_id="0x794E" start_time="2017-08-23 11:55:00" duration="00:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>COUP DE SOLEIL</event_name>
@@ -9397,7 +9397,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="24" current="true" actual="false" service_id="0x206D" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 45,559, last: 102,619 -->
+    <metadata PID="18" first_ts_packet="45,559" last_ts_packet="102,619"/>
     <event event_id="0x59E7" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>MIDI-15H</event_name>
@@ -9436,7 +9436,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="8" current="true" actual="false" service_id="0x2074" transport_stream_id="0x0432" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 45,707, last: 102,739 -->
+    <metadata PID="18" first_ts_packet="45,707" last_ts_packet="102,739"/>
     <event event_id="0x2CF4" start_time="2017-08-23 07:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -9475,7 +9475,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="25" current="true" actual="false" service_id="0x4282" transport_stream_id="0x0446" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 45,828, last: 103,146 -->
+    <metadata PID="18" first_ts_packet="45,828" last_ts_packet="103,146"/>
     <event event_id="0xAE1E" start_time="2017-08-23 11:46:00" duration="00:53:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PROVENCE, AOUT 1944, L'AUTRE DEBARQUEMENT</event_name>
@@ -9566,7 +9566,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="10" current="true" actual="false" service_id="0x24BF" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 46,269, last: 103,423 -->
+    <metadata PID="18" first_ts_packet="46,269" last_ts_packet="103,423"/>
     <event event_id="0x15E0" start_time="2017-08-23 11:50:00" duration="00:10:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MY ZEN NUTRITION</event_name>
@@ -9605,7 +9605,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="26" current="true" actual="false" service_id="0x26C2" transport_stream_id="0x043E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 46,393, last: 103,744 -->
+    <metadata PID="18" first_ts_packet="46,393" last_ts_packet="103,744"/>
     <event event_id="0x3D83" start_time="2017-08-23 11:45:00" duration="00:20:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>GREEN LANTERN</event_name>
@@ -9666,7 +9666,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="31" current="true" actual="false" service_id="0x22CE" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 46,692, last: 103,881 -->
+    <metadata PID="18" first_ts_packet="46,692" last_ts_packet="103,881"/>
     <event event_id="0x0837" start_time="2017-08-23 11:35:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>CHAMPIONNAT D'EUROPE 2017</event_name>
@@ -9743,7 +9743,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="7" current="true" actual="false" service_id="0x79F4" transport_stream_id="0x0443" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 46,967, last: 104,026 -->
+    <metadata PID="18" first_ts_packet="46,967" last_ts_packet="104,026"/>
     <event event_id="0x112D" start_time="2017-08-23 11:29:00" duration="00:31:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>NEWS OF THE DAY</event_name>
@@ -9782,7 +9782,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="false" service_id="0x251E" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 48,100, last: 105,021 -->
+    <metadata PID="18" first_ts_packet="48,100" last_ts_packet="105,021"/>
     <event event_id="0x4C3B" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MATCH A VENIR</event_name>
@@ -9821,7 +9821,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="29" current="true" actual="false" service_id="0x232B" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 48,231, last: 105,185 -->
+    <metadata PID="18" first_ts_packet="48,231" last_ts_packet="105,185"/>
     <event event_id="0xB179" start_time="2017-08-23 11:35:00" duration="00:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>PETITS SECRETS ENTRE VOISINS</event_name>
@@ -9891,7 +9891,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="8" current="true" actual="false" service_id="0x2458" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 48,762, last: 105,711 -->
+    <metadata PID="18" first_ts_packet="48,762" last_ts_packet="105,711"/>
     <event event_id="0x0B7D" start_time="2017-08-23 11:35:00" duration="00:25:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>MA FAMILLE D'ABORD</event_name>
@@ -9956,7 +9956,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="26" current="true" actual="false" service_id="0x196E" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 49,225, last: 106,112 -->
+    <metadata PID="18" first_ts_packet="49,225" last_ts_packet="106,112"/>
     <event event_id="0x36C2" start_time="2017-08-23 11:54:00" duration="00:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>MIRU MIRU</event_name>
@@ -10033,7 +10033,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x219A" transport_stream_id="0x0448" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 49,489, last: 106,232 -->
+    <metadata PID="18" first_ts_packet="49,489" last_ts_packet="106,232"/>
     <event event_id="0x5948" start_time="2017-08-23 11:55:00" duration="00:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>THE LATE LATE SHOW WITH JAMES CORDEN</event_name>
@@ -10081,7 +10081,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="7" current="true" actual="false" service_id="0x24B9" transport_stream_id="0x043C" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 49,889, last: 106,701 -->
+    <metadata PID="18" first_ts_packet="49,889" last_ts_packet="106,701"/>
     <event event_id="0x9EEA" start_time="2017-08-23 11:44:00" duration="00:23:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>SOUVENIRS DE GRAVITY FALLS</event_name>
@@ -10151,7 +10151,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x22CC" transport_stream_id="0x0434" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 50,164, last: 107,117 -->
+    <metadata PID="18" first_ts_packet="50,164" last_ts_packet="107,117"/>
     <event event_id="0x2593" start_time="2017-08-23 11:50:00" duration="00:10:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FRANKIE ET LES ZHUZHUS PETS</event_name>
@@ -10240,7 +10240,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="30" current="true" actual="false" service_id="0x200A" transport_stream_id="0x0430" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 51,627, last: 108,245 -->
+    <metadata PID="18" first_ts_packet="51,627" last_ts_packet="108,245"/>
     <event event_id="0x3255" start_time="2017-08-23 10:00:00" duration="06:15:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>BEIN SPORTS, LE PLUS GRAND DES SPECTACLES</event_name>
@@ -10279,7 +10279,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="24" current="true" actual="false" service_id="0x2524" transport_stream_id="0x045E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 51,713, last: 108,444 -->
+    <metadata PID="18" first_ts_packet="51,713" last_ts_packet="108,444"/>
     <event event_id="0xC26B" start_time="2017-08-23 03:00:00" duration="17:30:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>FIN DES PROGRAMMES</event_name>
@@ -10318,7 +10318,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="31" current="true" actual="false" service_id="0x2330" transport_stream_id="0x0442" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 51,821, last: 108,651 -->
+    <metadata PID="18" first_ts_packet="51,821" last_ts_packet="108,651"/>
     <event event_id="0xBBBB" start_time="2017-08-23 11:40:00" duration="01:05:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>LES DOCS DU MAG DE LA SANTE</event_name>
@@ -10376,7 +10376,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="8" current="true" actual="false" service_id="0x1F49" transport_stream_id="0x042E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 52,160, last: 108,825 -->
+    <metadata PID="18" first_ts_packet="52,160" last_ts_packet="108,825"/>
     <event event_id="0x2565" start_time="2017-08-23 02:55:00" duration="19:05:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>RENDEZ-VOUS A 0H</event_name>
@@ -10423,7 +10423,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="1" current="true" actual="false" service_id="0x2753" transport_stream_id="0x0402" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 52,282, last: 108,984 -->
+    <metadata PID="18" first_ts_packet="52,282" last_ts_packet="108,984"/>
     <event event_id="0x3AC1" start_time="2017-08-23 10:00:00" duration="03:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>LA CHAINE DE L'ECONOMIE ET DE LA FINANCE</event_name>
@@ -10462,7 +10462,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="3" current="true" actual="false" service_id="0x245A" transport_stream_id="0x0440" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 52,435, last: 109,389 -->
+    <metadata PID="18" first_ts_packet="52,435" last_ts_packet="109,389"/>
     <event event_id="0x9671" start_time="2017-08-23 11:55:00" duration="00:50:00" running_status="running" CA_mode="false">
       <short_event_descriptor language_code="fre">
         <event_name>CASTLE</event_name>
@@ -10529,7 +10529,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="false" service_id="0x1970" transport_stream_id="0x044E" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 52,840, last: 109,787 -->
+    <metadata PID="18" first_ts_packet="52,840" last_ts_packet="109,787"/>
     <event event_id="0xBF4A" start_time="2017-08-23 11:45:00" duration="00:25:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>TRUE JACKSON</event_name>
@@ -10587,7 +10587,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="28" current="true" actual="false" service_id="0x2199" transport_stream_id="0x0448" original_network_id="0x0001" last_table_id="0x4F">
-    <!-- PID 0x0012 (18), first TS packet: 53,096, last: 109,787 -->
+    <metadata PID="18" first_ts_packet="53,096" last_ts_packet="109,787"/>
     <event event_id="0x2105" start_time="2017-08-23 04:00:00" duration="15:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="fre">
         <event_name>TOP MIX</event_name>

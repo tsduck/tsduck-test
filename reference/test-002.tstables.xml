@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="7" current="true" service_id="0x2DAA">
-    <!-- PID 0x0057 (87), first TS packet: 1,223, last: 1,330 -->
+    <metadata PID="87" first_ts_packet="1,223" last_ts_packet="1,330"/>
     <component elementary_PID="0x0062" stream_type="0xE0">
       <data_broadcast_id_descriptor data_broadcast_id="0x000A">
         <selector_bytes>
@@ -70,7 +70,7 @@
     </component>
   </PMT>
   <PAT version="0" current="true" transport_stream_id="0x2774" network_PID="0x0010">
-    <!-- PID 0x0000 (0), first TS packet: 1,835, last: 1,835 -->
+    <metadata PID="0" first_ts_packet="1,835" last_ts_packet="1,835"/>
     <service service_id="0x0585" program_map_PID="0x045B"/>
     <service service_id="0x05BD" program_map_PID="0x045A"/>
     <service service_id="0x2D46" program_map_PID="0x0057"/>
@@ -91,7 +91,7 @@
     <service service_id="0x2D68" program_map_PID="0x045E"/>
   </PAT>
   <PMT version="6" current="true" service_id="0x2D63" PCR_PID="0x00AB">
-    <!-- PID 0x0458 (1112), first TS packet: 383, last: 1,872 -->
+    <metadata PID="1,112" first_ts_packet="383" last_ts_packet="1,872"/>
     <component elementary_PID="0x00AB" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064B"/>
@@ -161,7 +161,7 @@
     </component>
   </PMT>
   <PMT version="0" current="true" service_id="0x2D62" PCR_PID="0x00AA">
-    <!-- PID 0x0457 (1111), first TS packet: 397, last: 1,887 -->
+    <metadata PID="1,111" first_ts_packet="397" last_ts_packet="1,887"/>
     <component elementary_PID="0x00AA" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064A"/>
@@ -231,7 +231,7 @@
     </component>
   </PMT>
   <PMT version="0" current="true" service_id="0x2D5D" PCR_PID="0x00A7">
-    <!-- PID 0x0454 (1108), first TS packet: 434, last: 1,931 -->
+    <metadata PID="1,108" first_ts_packet="434" last_ts_packet="1,931"/>
     <component elementary_PID="0x00A7" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0647"/>
@@ -301,7 +301,7 @@
     </component>
   </PMT>
   <PMT version="1" current="true" service_id="0x2D5F" PCR_PID="0x00A8">
-    <!-- PID 0x0455 (1109), first TS packet: 492, last: 1,989 -->
+    <metadata PID="1,109" first_ts_packet="492" last_ts_packet="1,989"/>
     <component elementary_PID="0x00A8" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0648"/>
@@ -371,7 +371,7 @@
     </component>
   </PMT>
   <PMT version="4" current="true" service_id="0x2D5B" PCR_PID="0x00AE">
-    <!-- PID 0x0459 (1113), first TS packet: 2,024, last: 2,024 -->
+    <metadata PID="1,113" first_ts_packet="2,024" last_ts_packet="2,024"/>
     <component elementary_PID="0x00AE" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064E"/>
@@ -396,7 +396,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D55" PCR_PID="0x00A4">
-    <!-- PID 0x0451 (1105), first TS packet: 2,074, last: 2,074 -->
+    <metadata PID="1,105" first_ts_packet="2,074" last_ts_packet="2,074"/>
     <component elementary_PID="0x00A4" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0644"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A8"/>
@@ -436,7 +436,7 @@
     </component>
   </PMT>
   <PMT version="11" current="true" service_id="0x2D54" PCR_PID="0x00A1">
-    <!-- PID 0x044E (1102), first TS packet: 2,110, last: 2,110 -->
+    <metadata PID="1,102" first_ts_packet="2,110" last_ts_packet="2,110"/>
     <component elementary_PID="0x00A1" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0641"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A5"/>
@@ -476,7 +476,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D57" PCR_PID="0x00A0">
-    <!-- PID 0x044D (1101), first TS packet: 2,124, last: 2,124 -->
+    <metadata PID="1,101" first_ts_packet="2,124" last_ts_packet="2,124"/>
     <component elementary_PID="0x00A0" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0640"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A4"/>
@@ -516,7 +516,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D56" PCR_PID="0x00A6">
-    <!-- PID 0x0453 (1107), first TS packet: 2,165, last: 2,165 -->
+    <metadata PID="1,107" first_ts_packet="2,165" last_ts_packet="2,165"/>
     <component elementary_PID="0x00A6" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0646"/>
@@ -541,7 +541,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D51" PCR_PID="0x00A2">
-    <!-- PID 0x044F (1103), first TS packet: 2,179, last: 2,179 -->
+    <metadata PID="1,103" first_ts_packet="2,179" last_ts_packet="2,179"/>
     <component elementary_PID="0x00A2" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0642"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A6"/>
@@ -581,7 +581,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D53" PCR_PID="0x00A3">
-    <!-- PID 0x0450 (1104), first TS packet: 2,225, last: 2,225 -->
+    <metadata PID="1,104" first_ts_packet="2,225" last_ts_packet="2,225"/>
     <component elementary_PID="0x00A3" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0643"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A7"/>
@@ -621,7 +621,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x0585" PCR_PID="0x00AC">
-    <!-- PID 0x045B (1115), first TS packet: 2,238, last: 2,238 -->
+    <metadata PID="1,115" first_ts_packet="2,238" last_ts_packet="2,238"/>
     <component elementary_PID="0x00AC" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064C"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06B0"/>
@@ -645,7 +645,7 @@
     </component>
   </PMT>
   <PMT version="0" current="true" service_id="0x2D68" PCR_PID="0x00AF">
-    <!-- PID 0x045E (1118), first TS packet: 2,279, last: 2,279 -->
+    <metadata PID="1,118" first_ts_packet="2,279" last_ts_packet="2,279"/>
     <component elementary_PID="0x00AF" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064F"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06B3"/>
@@ -678,7 +678,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x2D65" PCR_PID="0x00A5">
-    <!-- PID 0x0452 (1106), first TS packet: 2,293, last: 2,293 -->
+    <metadata PID="1,106" first_ts_packet="2,293" last_ts_packet="2,293"/>
     <component elementary_PID="0x00A5" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0645"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06A9"/>
@@ -718,7 +718,7 @@
     </component>
   </PMT>
   <PMT version="8" current="true" service_id="0x05BD" PCR_PID="0x00AD">
-    <!-- PID 0x045A (1114), first TS packet: 2,335, last: 2,335 -->
+    <metadata PID="1,114" first_ts_packet="2,335" last_ts_packet="2,335"/>
     <component elementary_PID="0x00AD" stream_type="0x02">
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x064D"/>
       <CA_descriptor CA_system_id="0x093B" CA_PID="0x06B1"/>
@@ -742,7 +742,7 @@
     </component>
   </PMT>
   <PMT version="0" current="true" service_id="0x2D61" PCR_PID="0x00A9">
-    <!-- PID 0x0456 (1110), first TS packet: 853, last: 2,349 -->
+    <metadata PID="1,110" first_ts_packet="853" last_ts_packet="2,349"/>
     <component elementary_PID="0x00A9" stream_type="0x02">
       <stream_identifier_descriptor component_tag="0x01"/>
       <CA_descriptor CA_system_id="0x0919" CA_PID="0x0649"/>
@@ -812,13 +812,13 @@
     </component>
   </PMT>
   <CAT version="0" current="true">
-    <!-- PID 0x0001 (1), first TS packet: 2,490, last: 2,490 -->
+    <metadata PID="1" first_ts_packet="2,490" last_ts_packet="2,490"/>
     <CA_descriptor CA_system_id="0x0919" CA_PID="0x012D"/>
     <CA_descriptor CA_system_id="0x093B" CA_PID="0x012D"/>
     <CA_descriptor CA_system_id="0x09CD" CA_PID="0x012D"/>
   </CAT>
   <PMT version="16" current="true" service_id="0x2D4F">
-    <!-- PID 0x0056 (86), first TS packet: 2,599, last: 2,599 -->
+    <metadata PID="86" first_ts_packet="2,599" last_ts_packet="2,599"/>
     <component elementary_PID="0x0034" stream_type="0x05">
       <private_data_specifier_descriptor private_data_specifier="BskyB"/>
       <generic_descriptor tag="0xB0">
@@ -864,7 +864,7 @@
     </component>
   </PMT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D5B" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 1,627, last: 4,680 -->
+    <metadata PID="18" first_ts_packet="1,627" last_ts_packet="4,680"/>
     <event event_id="0x00E3" start_time="2017-08-23 10:15:00" duration="01:45:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Basket: Francia - Italia</event_name>
@@ -903,7 +903,7 @@
     </event>
   </EIT>
   <SDT version="29" current="true" transport_stream_id="0x1B58" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 1,325, last: 5,866 -->
+    <metadata PID="17" first_ts_packet="1,325" last_ts_packet="5,866"/>
     <service service_id="0x02C0" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="TEST"/>
       <country_availability_descriptor country_availability="true">
@@ -1104,7 +1104,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x2B5C" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 5,991, last: 6,287 -->
+    <metadata PID="17" first_ts_packet="5,991" last_ts_packet="6,287"/>
     <service service_id="0x11FC" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="MTA INTL"/>
       <country_availability_descriptor country_availability="true">
@@ -1207,7 +1207,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="20" current="true" actual="true" service_id="0x2D68" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 5,018, last: 7,790 -->
+    <metadata PID="18" first_ts_packet="5,018" last_ts_packet="7,790"/>
     <event event_id="0x01C8" start_time="2017-08-23 11:00:38" duration="00:05:00" running_status="running" CA_mode="true">
       <time_shifted_event_descriptor reference_service_id="0x0BB8" reference_event_id="0x9AB0"/>
       <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x01" component_tag="0xFF" language_code="   " text=""/>
@@ -1242,7 +1242,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D5D" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 7,116, last: 8,484 -->
+    <metadata PID="18" first_ts_packet="7,116" last_ts_packet="8,484"/>
     <event event_id="0x0016" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
@@ -1281,7 +1281,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="9" current="true" actual="true" service_id="0x2D53" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 8,144, last: 8,843 -->
+    <metadata PID="18" first_ts_packet="8,144" last_ts_packet="8,843"/>
     <event event_id="0x01EB" start_time="2017-08-23 11:00:00" duration="02:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Primafila</event_name>
@@ -1320,7 +1320,7 @@
     </event>
   </EIT>
   <SDT version="29" current="true" transport_stream_id="0x2CEC" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 9,256, last: 9,414 -->
+    <metadata PID="17" first_ts_packet="9,256" last_ts_packet="9,414"/>
     <service service_id="0x0BEA" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3050"/>
       <country_availability_descriptor country_availability="true">
@@ -1397,7 +1397,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x1C20" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 7,684, last: 11,440 -->
+    <metadata PID="17" first_ts_packet="7,684" last_ts_packet="11,440"/>
     <service service_id="0x0BEF" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3055"/>
       <country_availability_descriptor country_availability="true">
@@ -1648,7 +1648,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="13" current="true" actual="true" service_id="0x2D5F" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 9,171, last: 12,280 -->
+    <metadata PID="18" first_ts_packet="9,171" last_ts_packet="12,280"/>
     <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
@@ -1687,7 +1687,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="true" service_id="0x0585" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 9,517, last: 12,949 -->
+    <metadata PID="18" first_ts_packet="9,517" last_ts_packet="12,949"/>
     <event event_id="0x0359" start_time="2017-08-23 10:15:00" duration="01:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>La seconda casa non si scorda mai</event_name>
@@ -1729,7 +1729,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="2" current="true" actual="true" service_id="0x2D54" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 10,554, last: 13,973 -->
+    <metadata PID="18" first_ts_packet="10,554" last_ts_packet="13,973"/>
     <event event_id="0x0132" start_time="2017-08-23 11:00:00" duration="01:34:41" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sopravvissuti</event_name>
@@ -1807,7 +1807,7 @@
     </event>
   </EIT>
   <SDT version="29" current="true" transport_stream_id="0x2DB4" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 12,090, last: 17,138 -->
+    <metadata PID="17" first_ts_packet="12,090" last_ts_packet="17,138"/>
     <service service_id="0x1005" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Rolsat"/>
       <country_availability_descriptor country_availability="true">
@@ -2064,7 +2064,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="14" current="true" actual="true" service_id="0x2D61" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 14,327, last: 17,425 -->
+    <metadata PID="18" first_ts_packet="14,327" last_ts_packet="17,425"/>
     <event event_id="0x0015" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
@@ -2103,7 +2103,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x1388" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 9,570, last: 18,036 -->
+    <metadata PID="17" first_ts_packet="9,570" last_ts_packet="18,036"/>
     <service service_id="0x0BE0" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3040"/>
       <country_availability_descriptor country_availability="true">
@@ -2531,7 +2531,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="0" current="true" actual="true" service_id="0x05BD" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 14,680, last: 18,122 -->
+    <metadata PID="18" first_ts_packet="14,680" last_ts_packet="18,122"/>
     <event event_id="0x00F9" start_time="2017-08-23 10:40:00" duration="00:55:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Cucine da incubo USA</event_name>
@@ -2581,7 +2581,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x1D4C" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 15,207, last: 18,975 -->
+    <metadata PID="17" first_ts_packet="15,207" last_ts_packet="18,975"/>
     <service service_id="0x1015" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SkyItalia" service_name="Discovery HD"/>
       <country_availability_descriptor country_availability="true">
@@ -2802,7 +2802,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="30" current="true" actual="true" service_id="0x2D55" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 15,715, last: 19,139 -->
+    <metadata PID="18" first_ts_packet="15,715" last_ts_packet="19,139"/>
     <event event_id="0x01E5" start_time="2017-08-23 09:00:00" duration="02:21:15" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>La cura dal benessere</event_name>
@@ -2880,7 +2880,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x2E18" original_network_id="0x00B0" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 20,832, last: 20,876 -->
+    <metadata PID="17" first_ts_packet="20,832" last_ts_packet="20,876"/>
     <service service_id="0x0001" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="ALMAGHRIBIA"/>
       <country_availability_descriptor country_availability="true">
@@ -2953,7 +2953,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="20" current="true" actual="true" service_id="0x0BB8" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 21,207, last: 21,881 -->
+    <metadata PID="18" first_ts_packet="21,207" last_ts_packet="21,881"/>
     <event event_id="0x9AB0" start_time="1970-01-01 00:00:00" duration="00:05:00" running_status="undefined" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Push VOD Buffer Slot</event_name>
@@ -2974,7 +2974,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x13EF" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 22,242, last: 22,305 -->
+    <metadata PID="17" first_ts_packet="22,242" last_ts_packet="22,305"/>
     <service service_id="0x0BEF" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3055"/>
       <country_availability_descriptor country_availability="true">
@@ -3074,7 +3074,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x1D4D" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 22,342, last: 22,708 -->
+    <metadata PID="17" first_ts_packet="22,342" last_ts_packet="22,708"/>
     <service service_id="0x0032" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="VTV/MRTV"/>
       <country_availability_descriptor country_availability="true">
@@ -3217,7 +3217,7 @@
     </service>
   </SDT>
   <SDT version="30" current="true" transport_stream_id="0x2F44" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 23,525, last: 23,531 -->
+    <metadata PID="17" first_ts_packet="23,525" last_ts_packet="23,531"/>
     <service service_id="0x0021" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Telemarket 2"/>
       <country_availability_descriptor country_availability="true">
@@ -3260,7 +3260,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="7" current="true" actual="true" service_id="0x2D62" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 19,465, last: 23,607 -->
+    <metadata PID="18" first_ts_packet="19,465" last_ts_packet="23,607"/>
     <event event_id="0x0012" start_time="2017-08-23 08:00:00" duration="05:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>WWE - SummerSlam</event_name>
@@ -3377,7 +3377,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D56" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 22,249, last: 24,333 -->
+    <metadata PID="18" first_ts_packet="22,249" last_ts_packet="24,333"/>
     <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
@@ -3416,7 +3416,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x1450" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 24,449, last: 24,449 -->
+    <metadata PID="17" first_ts_packet="24,449" last_ts_packet="24,449"/>
     <service service_id="0x0D52" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="RAI 4"/>
       <country_availability_descriptor country_availability="true">
@@ -3429,7 +3429,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D48" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 23,954, last: 25,011 -->
+    <metadata PID="18" first_ts_packet="23,954" last_ts_packet="25,011"/>
     <event event_id="0x000D" start_time="2017-08-23 10:00:00" duration="06:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>test</event_name>
@@ -3468,7 +3468,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x2FA8" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 26,866, last: 26,871 -->
+    <metadata PID="17" first_ts_packet="26,866" last_ts_packet="26,871"/>
     <service service_id="0x0BEA" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3050"/>
       <country_availability_descriptor country_availability="true">
@@ -3587,7 +3587,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D63" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 24,659, last: 27,054 -->
+    <metadata PID="18" first_ts_packet="24,659" last_ts_packet="27,054"/>
     <event event_id="0x0013" start_time="2017-08-23 04:00:00" duration="12:00:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Sky Calcio</event_name>
@@ -3626,7 +3626,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="5" current="true" actual="true" service_id="0x2D4D" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 583, last: 28,105 -->
+    <metadata PID="18" first_ts_packet="583" last_ts_packet="28,105"/>
     <event event_id="0x0030" start_time="2017-08-23 10:35:00" duration="00:50:00" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>The Shield</event_name>
@@ -3685,7 +3685,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="29" current="true" actual="true" service_id="0x2D57" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 25,341, last: 29,147 -->
+    <metadata PID="18" first_ts_packet="25,341" last_ts_packet="29,147"/>
     <event event_id="0x00BA" start_time="2017-08-23 09:30:00" duration="01:41:34" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>17 anni (E come uscirne vivi)</event_name>
@@ -3763,7 +3763,7 @@
     </event>
   </EIT>
   <EIT type="pf" version="11" current="true" actual="true" service_id="0x2D65" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 2,298, last: 30,898 -->
+    <metadata PID="18" first_ts_packet="2,298" last_ts_packet="30,898"/>
     <event event_id="0x01B0" start_time="2017-08-23 09:00:00" duration="02:10:56" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Fast &amp; Furious 8</event_name>
@@ -3841,7 +3841,7 @@
     </event>
   </EIT>
   <SDT version="28" current="true" transport_stream_id="0x300C" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 31,087, last: 31,092 -->
+    <metadata PID="17" first_ts_packet="31,087" last_ts_packet="31,092"/>
     <service service_id="0x0014" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x02" service_provider_name="SkyItalia" service_name="TSR TURKCE"/>
       <country_availability_descriptor country_availability="true">
@@ -3884,7 +3884,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x1E14" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 24,640, last: 32,260 -->
+    <metadata PID="17" first_ts_packet="24,640" last_ts_packet="32,260"/>
     <service service_id="0x0FBD" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Fox +1"/>
       <country_availability_descriptor country_availability="true">
@@ -4251,7 +4251,7 @@
     </service>
   </SDT>
   <EIT type="pf" version="27" current="true" actual="true" service_id="0x2D51" transport_stream_id="0x2774" original_network_id="0xFBFF" last_table_id="0x4E">
-    <!-- PID 0x0012 (18), first TS packet: 5,362, last: 34,665 -->
+    <metadata PID="18" first_ts_packet="5,362" last_ts_packet="34,665"/>
     <event event_id="0x0172" start_time="2017-08-23 11:02:03" duration="00:27:57" running_status="running" CA_mode="true">
       <short_event_descriptor language_code="ita">
         <event_name>Alle 13:30 Sleepless - Il giustiziere</event_name>
@@ -4329,7 +4329,7 @@
     </event>
   </EIT>
   <SDT version="29" current="true" transport_stream_id="0x1FA4" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 35,558, last: 35,887 -->
+    <metadata PID="17" first_ts_packet="35,558" last_ts_packet="35,887"/>
     <service service_id="0x1D88" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x02" service_provider_name="SkyItalia" service_name="RADIO DIJLA"/>
       <country_availability_descriptor country_availability="true">
@@ -4432,7 +4432,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x1518" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 33,864, last: 38,870 -->
+    <metadata PID="17" first_ts_packet="33,864" last_ts_packet="38,870"/>
     <service service_id="0x0BCC" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3020"/>
       <country_availability_descriptor country_availability="true">
@@ -4649,7 +4649,7 @@
     </service>
   </SDT>
   <SDT version="2" current="true" transport_stream_id="0x3070" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 32,420, last: 40,753 -->
+    <metadata PID="17" first_ts_packet="32,420" last_ts_packet="40,753"/>
     <service service_id="0x213F" EIT_schedule="true" EIT_present_following="false" CA_mode="false" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Rai 1"/>
       <country_availability_descriptor country_availability="true">
@@ -4951,7 +4951,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3138" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 46,601, last: 47,776 -->
+    <metadata PID="17" first_ts_packet="46,601" last_ts_packet="47,776"/>
     <service service_id="0x06A5" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="TV CORAN"/>
       <country_availability_descriptor country_availability="true">
@@ -5081,7 +5081,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x206C" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 45,642, last: 50,484 -->
+    <metadata PID="17" first_ts_packet="45,642" last_ts_packet="50,484"/>
     <service service_id="0x1C29" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SkyItalia" service_name="Sky Supercalcio HD"/>
       <country_availability_descriptor country_availability="true">
@@ -5282,7 +5282,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x2774" original_network_id="0xFBFF" actual="true">
-    <!-- PID 0x0011 (17), first TS packet: 19,827, last: 53,799 -->
+    <metadata PID="17" first_ts_packet="19,827" last_ts_packet="53,799"/>
     <service service_id="0x0585" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="LEI +1"/>
       <country_availability_descriptor country_availability="true">
@@ -5563,10 +5563,10 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3200" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 57,044, last: 57,044 -->
+    <metadata PID="17" first_ts_packet="57,044" last_ts_packet="57,044"/>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x32C8" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 57,478, last: 57,478 -->
+    <metadata PID="17" first_ts_packet="57,478" last_ts_packet="57,478"/>
     <service service_id="0x390F" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="R1"/>
       <country_availability_descriptor country_availability="true">
@@ -5579,7 +5579,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x16A8" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 58,435, last: 59,199 -->
+    <metadata PID="17" first_ts_packet="58,435" last_ts_packet="59,199"/>
     <service service_id="0x0E39" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="NationalGeo"/>
       <country_availability_descriptor country_availability="true">
@@ -5770,7 +5770,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x332C" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 61,865, last: 62,178 -->
+    <metadata PID="17" first_ts_packet="61,865" last_ts_packet="62,178"/>
     <service service_id="0x1C85" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Motors TV"/>
       <country_availability_descriptor country_availability="true">
@@ -5873,7 +5873,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x33F4" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 65,697, last: 66,015 -->
+    <metadata PID="17" first_ts_packet="65,697" last_ts_packet="66,015"/>
     <service service_id="0x0BEF" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3055"/>
       <country_availability_descriptor country_availability="true">
@@ -5963,7 +5963,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x21FC" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 67,122, last: 67,745 -->
+    <metadata PID="17" first_ts_packet="67,122" last_ts_packet="67,745"/>
     <service service_id="0x1EDD" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="IRIB1 PER"/>
       <country_availability_descriptor country_availability="true">
@@ -6146,7 +6146,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3458" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 68,373, last: 68,972 -->
+    <metadata PID="17" first_ts_packet="68,373" last_ts_packet="68,972"/>
     <service service_id="0x126C" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x02" service_provider_name="SkyItalia" service_name="R. INTESA SANPAOLO"/>
       <country_availability_descriptor country_availability="true">
@@ -6319,7 +6319,7 @@
     </service>
   </SDT>
   <SDT version="30" current="true" transport_stream_id="0x1770" original_network_id="0x0110" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 69,759, last: 69,908 -->
+    <metadata PID="17" first_ts_packet="69,759" last_ts_packet="69,908"/>
     <service service_id="0x0008" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="TgCom24"/>
       <country_availability_descriptor country_availability="true">
@@ -6364,7 +6364,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x2260" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 70,863, last: 71,495 -->
+    <metadata PID="17" first_ts_packet="70,863" last_ts_packet="71,495"/>
     <service service_id="0x2D69" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <country_availability_descriptor country_availability="true">
         <country country_code="ITA"/>
@@ -6481,7 +6481,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3BC4" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 72,588, last: 73,219 -->
+    <metadata PID="17" first_ts_packet="72,588" last_ts_packet="73,219"/>
     <service service_id="0x0321" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SkyItalia" service_name="Euronews English HD"/>
       <country_availability_descriptor country_availability="true">
@@ -6634,7 +6634,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x22C4" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 75,275, last: 75,749 -->
+    <metadata PID="17" first_ts_packet="75,275" last_ts_packet="75,749"/>
     <service service_id="0x07D2" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SkyItalia" service_name="RT Doc HD"/>
       <country_availability_descriptor country_availability="true">
@@ -6779,7 +6779,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3C28" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 77,310, last: 77,356 -->
+    <metadata PID="17" first_ts_packet="77,310" last_ts_packet="77,356"/>
     <service service_id="0x34BD" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="RTS"/>
       <country_availability_descriptor country_availability="true">
@@ -6902,7 +6902,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x2328" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 79,345, last: 80,517 -->
+    <metadata PID="17" first_ts_packet="79,345" last_ts_packet="80,517"/>
     <service service_id="0x0C84" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x02" service_provider_name="SkyItalia" service_name="SLO-RA1-INF"/>
       <country_availability_descriptor country_availability="true">
@@ -7085,7 +7085,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x238C" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 85,121, last: 85,598 -->
+    <metadata PID="17" first_ts_packet="85,121" last_ts_packet="85,598"/>
     <service service_id="0x226B" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="A3"/>
       <country_availability_descriptor country_availability="true">
@@ -7198,7 +7198,7 @@
     </service>
   </SDT>
   <SDT version="31" current="true" transport_stream_id="0x1838" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 73,368, last: 86,828 -->
+    <metadata PID="17" first_ts_packet="73,368" last_ts_packet="86,828"/>
     <service service_id="0x2A96" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Sky Sport24"/>
       <country_availability_descriptor country_availability="true">
@@ -7587,7 +7587,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x23F0" original_network_id="0x013F" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 86,983, last: 87,137 -->
+    <metadata PID="17" first_ts_packet="86,983" last_ts_packet="87,137"/>
     <service service_id="0x245B" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Canale Italia"/>
       <country_availability_descriptor country_availability="true">
@@ -7640,7 +7640,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x3CF0" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 87,293, last: 87,912 -->
+    <metadata PID="17" first_ts_packet="87,293" last_ts_packet="87,912"/>
     <service service_id="0x0BEF" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3055"/>
       <country_availability_descriptor country_availability="true">
@@ -7800,7 +7800,7 @@
     </service>
   </SDT>
   <BAT version="2" current="true" bouquet_id="0x6252">
-    <!-- PID 0x0011 (17), first TS packet: 85,732, last: 90,596 -->
+    <metadata PID="17" first_ts_packet="85,732" last_ts_packet="90,596"/>
     <bouquet_name_descriptor bouquet_name="Multivision Kids"/>
     <private_data_specifier_descriptor private_data_specifier="BskyB"/>
     <linkage_descriptor transport_stream_id="0x16A8" original_network_id="0xFBFF" service_id="0x0E70" linkage_type="0x90"/>
@@ -8241,7 +8241,7 @@
     </transport_stream>
   </BAT>
   <BAT version="3" current="true" bouquet_id="0x6258">
-    <!-- PID 0x0011 (17), first TS packet: 88,063, last: 92,478 -->
+    <metadata PID="17" first_ts_packet="88,063" last_ts_packet="92,478"/>
     <bouquet_name_descriptor bouquet_name=""/>
     <private_data_specifier_descriptor private_data_specifier="BskyB"/>
     <linkage_descriptor transport_stream_id="0x16A8" original_network_id="0xFBFF" service_id="0x0E70" linkage_type="0x90"/>
@@ -8771,7 +8771,7 @@
     </transport_stream>
   </BAT>
   <SDT version="31" current="true" transport_stream_id="0x3D54" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 92,632, last: 98,154 -->
+    <metadata PID="17" first_ts_packet="92,632" last_ts_packet="98,154"/>
     <service service_id="0x0519" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x19" service_provider_name="SkyItalia" service_name="QVC HD"/>
       <country_availability_descriptor country_availability="true">
@@ -9009,7 +9009,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x189C" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 89,038, last: 98,457 -->
+    <metadata PID="17" first_ts_packet="89,038" last_ts_packet="98,457"/>
     <service service_id="0x1FA7" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Fox News"/>
       <country_availability_descriptor country_availability="true">
@@ -9325,7 +9325,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x24B8" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 90,757, last: 98,602 -->
+    <metadata PID="17" first_ts_packet="90,757" last_ts_packet="98,602"/>
     <service service_id="0x0BEF" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3055"/>
       <country_availability_descriptor country_availability="true">
@@ -9757,7 +9757,7 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3DB8" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 98,773, last: 99,389 -->
+    <metadata PID="17" first_ts_packet="98,773" last_ts_packet="99,389"/>
     <service service_id="0x0BCC" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="undefined">
       <service_descriptor service_type="0x04" service_provider_name="SkyItalia" service_name="REF 3020"/>
       <country_availability_descriptor country_availability="true">
@@ -9924,10 +9924,10 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x3E1C" original_network_id="0x013F" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 104,256, last: 104,256 -->
+    <metadata PID="17" first_ts_packet="104,256" last_ts_packet="104,256"/>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x00C8" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 107,459, last: 107,707 -->
+    <metadata PID="17" first_ts_packet="107,459" last_ts_packet="107,707"/>
     <service service_id="0x360E" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="PROD ESP"/>
       <country_availability_descriptor country_availability="true">
@@ -9985,7 +9985,7 @@
     </service>
   </SDT>
   <SDT version="29" current="true" transport_stream_id="0x251C" original_network_id="0xFBFF" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 101,886, last: 109,250 -->
+    <metadata PID="17" first_ts_packet="101,886" last_ts_packet="109,250"/>
     <service service_id="0x2C26" EIT_schedule="true" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="Documentari HD"/>
       <country_availability_descriptor country_availability="true">
@@ -10393,10 +10393,10 @@
     </service>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x0190" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 109,570, last: 109,570 -->
+    <metadata PID="17" first_ts_packet="109,570" last_ts_packet="109,570"/>
   </SDT>
   <SDT version="28" current="true" transport_stream_id="0x1964" original_network_id="0x013E" actual="false">
-    <!-- PID 0x0011 (17), first TS packet: 110,548, last: 110,548 -->
+    <metadata PID="17" first_ts_packet="110,548" last_ts_packet="110,548"/>
     <service service_id="0x01E7" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
       <service_descriptor service_type="0x01" service_provider_name="SkyItalia" service_name="RT Doc"/>
       <country_availability_descriptor country_availability="true">

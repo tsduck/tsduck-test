@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <component_descriptor stream_content="0x01" stream_content_ext="0x0F" component_type="0x02" component_tag="0x00" language_code="fre" text=""/>
     <component_descriptor stream_content="0x09" stream_content_ext="0x01" component_type="0x02" component_tag="0x0F" language_code="eng" text="A string description"/>
     <AAC_descriptor profile_and_level="0x45" SAOC_DE="false"/>
@@ -192,13 +192,13 @@
     </deferred_association_tags_descriptor>
   </PMT>
   <discontinuity_information_table transition="false">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </discontinuity_information_table>
   <discontinuity_information_table transition="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </discontinuity_information_table>
   <selection_information_table version="12" current="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <partial_transport_stream_descriptor peak_rate="0x00012345"/>
     <service service_id="0x4567" running_status="not-running"/>
     <service service_id="0x7418" running_status="running">
@@ -206,7 +206,7 @@
     </service>
   </selection_information_table>
   <TSDT version="0" current="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <transport_stream_descriptor compliance="DVB"/>
     <CI_ancillary_data_descriptor/>
     <CI_ancillary_data_descriptor>
@@ -567,11 +567,11 @@
     </MPEGH_3D_audio_multi_stream_descriptor>
   </TSDT>
   <CIT version="0" current="true" service_id="0x1234" transport_stream_id="0x5678" original_network_id="0xABCD">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <prepend_string value=""/>
   </CIT>
   <CIT version="2" current="true" service_id="0xFEDC" transport_stream_id="0x8765" original_network_id="0x4321">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <prepend_string value="foo://bar"/>
     <prepend_string value="scoo"/>
     <prepend_string value="bidoo"/>
@@ -580,10 +580,10 @@
     <crid crid_ref="0xABCD" prepend_string_index="255" unique_string="xyzt"/>
   </CIT>
   <RNT version="0" current="true" context_id="0x1234" context_id_type="0x02">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </RNT>
   <RNT version="11" current="true" context_id="0xABCD" context_id_type="0x00">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <stream_identifier_descriptor component_tag="0x00"/>
     <stream_identifier_descriptor component_tag="0x01"/>
     <stream_identifier_descriptor component_tag="0x02"/>
@@ -606,7 +606,7 @@
     </resolution_provider>
   </RNT>
   <TSDT version="2" current="true">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <TVA_id_descriptor/>
     <TVA_id_descriptor>
       <TVA id="0x1234" running_status="2"/>

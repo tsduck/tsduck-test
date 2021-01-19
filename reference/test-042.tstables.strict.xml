@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <MGT version="12" protocol_version="0">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <table type="TVCT-current" PID="0x1FFB" version_number="11" number_bytes="218"/>
     <table type="ETT" PID="0x1E80" version_number="10" number_bytes="68"/>
     <table type="EIT-0" PID="0x1D00" version_number="10" number_bytes="1,423"/>
@@ -15,10 +15,10 @@
     <table type="RRT-1" PID="0x1FFB" version_number="0" number_bytes="979"/>
   </MGT>
   <STT protocol_version="0" system_time="1,236,854,921" GPS_UTC_offset="12" DS_status="false" DS_day_of_month="3" DS_hour="15">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </STT>
   <TVCT version="11" current="true" transport_stream_id="0x1FE1" protocol_version="0">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <component_name_descriptor>
       <component_name_string>
         <string language="eng" text="Component name"/>
@@ -52,7 +52,7 @@
     </channel>
   </TVCT>
   <MGT version="0" protocol_version="0">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <component_name_descriptor/>
     <component_name_descriptor>
       <component_name_string>
@@ -149,20 +149,20 @@
     </dcc_departing_request_descriptor>
   </MGT>
   <ETT version="0" protocol_version="0" ETT_table_id_extension="0x1234" ETM_id="0x56789ABC">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </ETT>
   <ETT version="2" protocol_version="1" ETT_table_id_extension="0xCDEF" ETM_id="0x01234567">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <extended_text_message>
       <string language="eng" text="Extended English Text"/>
       <string language="foo" text="Foo Bar Extension"/>
     </extended_text_message>
   </ETT>
   <ATSC_EIT version="0" source_id="0x1234" protocol_version="0">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </ATSC_EIT>
   <ATSC_EIT version="3" source_id="0x5678" protocol_version="2">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <event event_id="0x3BCD" start_time="2019-09-28 00:41:12" ETM_location="0x01" length_in_seconds="3,600"/>
     <event event_id="0x1698" start_time="2019-09-28 12:42:54" ETM_location="0x02" length_in_seconds="1,800">
       <title_text>
@@ -175,10 +175,10 @@
     </event>
   </ATSC_EIT>
   <RRT version="0" protocol_version="0" rating_region="0x07">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </RRT>
   <RRT version="21" protocol_version="12" rating_region="0xAC">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <rating_region_name>
       <string language="eng" text="english region"/>
       <string language="foo" text="bar region"/>
@@ -223,10 +223,10 @@
     <caption_service_descriptor/>
   </RRT>
   <DCCSCT version="0" protocol_version="0" dccsct_type="0x0000">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </DCCSCT>
   <DCCSCT version="23" protocol_version="2" dccsct_type="0x1234">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <ATSC_time_shifted_service_descriptor/>
     <caption_service_descriptor/>
     <content_advisory_descriptor/>
@@ -250,10 +250,10 @@
     </update>
   </DCCSCT>
   <DCCT version="0" protocol_version="0" dcc_subtype="0x00" dcc_id="0x89">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
   </DCCT>
   <DCCT version="28" protocol_version="23" dcc_subtype="0x78" dcc_id="0x9A">
-    <!-- PID 0x00C8 (200) -->
+    <metadata PID="200"/>
     <ATSC_time_shifted_service_descriptor/>
     <caption_service_descriptor/>
     <content_advisory_descriptor/>

@@ -10,6 +10,7 @@ STDOPT=$2
 # With tspacketize, we need the charset options but not the standard options.
 PACKOPT=${STDOPT/--atsc/}
 PACKOPT=${PACKOPT/--isdb/}
+PACKOPT=${PACKOPT/--abnt/}
 
 # ==== tstabcomp (compile)
 

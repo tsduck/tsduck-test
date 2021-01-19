@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PAT version="0" current="true" transport_stream_id="0x0001">
-    <!-- PID 0x0000 (0), first TS packet: 0, last: 0 -->
+    <metadata PID="0" first_ts_packet="0" last_ts_packet="0"/>
     <service service_id="0x0001" program_map_PID="0x0063"/>
   </PAT>
   <PMT version="0" current="true" service_id="0x0001">
-    <!-- PID 0x0063 (99), first TS packet: 1, last: 1 -->
+    <metadata PID="99" first_ts_packet="1" last_ts_packet="1"/>
     <component elementary_PID="0x0064" stream_type="0x04"/>
     <component elementary_PID="0x0065" stream_type="0x1B"/>
   </PMT>
