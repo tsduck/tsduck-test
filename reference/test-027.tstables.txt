@@ -4,7 +4,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x00 (SpliceNull), size: 0 bytes
     CRC32: 0x7A4FBFFF (OK)
@@ -14,7 +14,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x07 (BandwidthReservation), size: 0 bytes
     CRC32: 0x7F44F86A (OK)
@@ -24,10 +24,10 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x06 (TimeSignal), size: 5 bytes
-    Time: 0x0075BCD15
+    Time: 0x0075BCD15 (123,456,789, 1,371,742 ms)
     CRC32: 0x1AC7D4EA (OK)
 
 * SCTE 35 Splice Information, TID 252 (0xFC), PID 200 (0x00C8)
@@ -35,7 +35,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x06 (TimeSignal), size: 1 bytes
     Time: unset
@@ -46,7 +46,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0xFF (PrivateCommand), size: 4 bytes
     Command identifier: 0xDEADBEEF (3,735,928,559)
@@ -57,7 +57,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0xFF (PrivateCommand), size: 9 bytes
     Command identifier: 0x12345678 (305,419,896)
@@ -69,7 +69,7 @@
   - Section 0:
     Protocol version: 4
     Encryption: none
-    PTS adjustment: 0x00006F855 (456789)
+    PTS adjustment: 0x00006F855 (456,789, 5,075 ms)
     CW index: 0x00 (0), tier: 0x147 (327)
     Command type: 0x00 (SpliceNull), size: 0 bytes
     CRC32: 0x1873D3E7 (OK)
@@ -79,10 +79,10 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x05 (SpliceInsert), size: 5 bytes
-    Splice event id: 0x12345678, cancel: 1
+    Splice event id: 0x12345678 (305419896), cancel: 1
     CRC32: 0xA1086A07 (OK)
 
 * SCTE 35 Splice Information, TID 252 (0xFC), PID 200 (0x00C8)
@@ -90,10 +90,10 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x05 (SpliceInsert), size: 10 bytes
-    Splice event id: 0x12345678, cancel: 0
+    Splice event id: 0x12345678 (305419896), cancel: 0
     Out of network: yes, program splice: yes, duration set: no, immediate: yes
     Unique program id: 0x6789 (26505), avail: 0x00 (0), avails expected: 0
     CRC32: 0xD99E073C (OK)
@@ -103,12 +103,12 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x05 (SpliceInsert), size: 15 bytes
-    Splice event id: 0x12345678, cancel: 0
+    Splice event id: 0x12345678 (305419896), cancel: 0
     Out of network: yes, program splice: yes, duration set: no, immediate: no
-    Time PTS: 0x0000C0BD0
+    Time PTS: 0x0000C0BD0 (789,456, 8,771 ms)
     Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
     CRC32: 0x710342A5 (OK)
 
@@ -117,16 +117,16 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x05 (SpliceInsert), size: 34 bytes
-    Splice event id: 0x12345678, cancel: 0
+    Splice event id: 0x12345678 (305419896), cancel: 0
     Out of network: yes, program splice: no, duration set: yes, immediate: no
     Number of components: 3
-      Component tag: 0x01 (1), time PTS: 0x00001E38D
-      Component tag: 0x02 (2), time PTS: 0x00001E367
-      Component tag: 0x03 (3), time PTS: 0x00001E399
-    Duration PTS: 0x0000001C8 (456), auto return: no
+      Component tag: 0x01 (1), time PTS: 0x00001E38D (123,789, 1,375 ms)
+      Component tag: 0x02 (2), time PTS: 0x00001E367 (123,751, 1,375 ms)
+      Component tag: 0x03 (3), time PTS: 0x00001E399 (123,801, 1,375 ms)
+    Duration PTS: 0x0000001C8 (456, 5 ms), auto return: no
     Unique program id: 0x6754 (26452), avail: 0x01 (1), avails expected: 3
     CRC32: 0x98BF35BA (OK)
 
@@ -135,7 +135,7 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x04 (SpliceSchedule), size: 1 bytes
     CRC32: 0xD6A82198 (OK)
@@ -145,16 +145,16 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x04 (SpliceSchedule), size: 46 bytes
-    - Splice event id: 0x78912305, cancel: 1
-    - Splice event id: 0x78914861, cancel: 0
+    - Splice event id: 0x78912305 (2022777605), cancel: 1
+    - Splice event id: 0x78914861 (2022787169), cancel: 0
       Out of network: yes, program splice: yes, duration set: yes
       UTC: 2018/04/29 20:14:58
-      Duration PTS: 0x00000FC35 (64565), auto return: yes
+      Duration PTS: 0x00000FC35 (64,565, 717 ms), auto return: yes
       Unique program id: 0x4562 (17762), avail: 0x00 (0), avails expected: 0
-    - Splice event id: 0x78914861, cancel: 0
+    - Splice event id: 0x78914861 (2022787169), cancel: 0
       Out of network: no, program splice: no, duration set: no
       Number of components: 2
         Component tag: 0x01 (1), UTC: 2018/04/29 20:14:51
@@ -203,12 +203,12 @@
   - Section 0:
     Protocol version: 0
     Encryption: none
-    PTS adjustment: 0x000000000 (0)
+    PTS adjustment: 0x000000000
     CW index: 0x00 (0), tier: 0xFFF (4095)
     Command type: 0x05 (SpliceInsert), size: 15 bytes
-    Splice event id: 0x00000001, cancel: 0
+    Splice event id: 0x00000001 (1), cancel: 0
     Out of network: yes, program splice: yes, duration set: yes, immediate: yes
-    Duration PTS: 0x00066FF30 (6750000), auto return: no
+    Duration PTS: 0x00066FF30 (6,750,000, 75,000 ms), auto return: no
     Unique program id: 0x0001 (1), avail: 0x00 (0), avails expected: 0
     - Descriptor 0: SCTE 35 Avail (0x00, 0), 8 bytes
       Identifier: 0x43554549 ("CUEI")
