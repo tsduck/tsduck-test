@@ -1,0 +1,449 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "pid": "0"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x0064",
+        "service_id": "0x2261"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x00C8",
+        "service_id": "0x2262"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x012C",
+        "service_id": "0x2263"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x0190",
+        "service_id": "0x2264"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x01F4",
+        "service_id": "0x2265"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x0258",
+        "service_id": "0x2266"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x02BC",
+        "service_id": "0x2267"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x0320",
+        "service_id": "0x2268"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x0384",
+        "service_id": "0x2269"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x03E8",
+        "service_id": "0x226A"
+      },
+      {
+        "#name": "service",
+        "program_map_pid": "0x1003",
+        "service_id": "0x22C3"
+      }
+    ],
+    "current": "true",
+    "network_pid": "0x0010",
+    "transport_stream_id": "0x0438",
+    "version": "12"
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "pid": "400"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        02 33 15\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01D2",
+        "ca_system_id": "0x1811"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        02 33 42\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01DC",
+        "ca_system_id": "0x1863"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        02 33 11\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01DD",
+        "ca_system_id": "0x1883"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        02 33 43\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01D7",
+        "ca_system_id": "0x1863"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        10 01 01 13 01 20 14 03 03 28 30\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01E0",
+        "ca_system_id": "0x0500"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        10 01 01 13 01 20 14 03 03 29 40\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01E2",
+        "ca_system_id": "0x0500"
+      },
+      {
+        "#name": "CA_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "\n        10 01 01 13 01 20 14 03 04 0F 40\n      "
+            ]
+          }
+        ],
+        "ca_pid": "0x01E7",
+        "ca_system_id": "0x0500"
+      },
+      {
+        "#name": "component",
+        "elementary_pid": "0x019A",
+        "stream_type": "0x1B"
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": "0x00",
+                "code": "fra"
+              }
+            ]
+          },
+          {
+            "#name": "DVB_AC3_descriptor",
+            "component_type": "0x42"
+          }
+        ],
+        "elementary_pid": "0x01A5",
+        "stream_type": "0x06"
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "DVB_AC3_descriptor",
+            "component_type": "0x42"
+          },
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": "0x00",
+                "code": "eng"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": "0x01A6",
+        "stream_type": "0x06"
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "subtitling_descriptor",
+            "#nodes": [
+              {
+                "#name": "subtitling",
+                "ancillary_page_id": "0x0002",
+                "composition_page_id": "0x0001",
+                "language_code": "fra",
+                "subtitling_type": "0x10"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": "0x01BA",
+        "stream_type": "0x06"
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "subtitling_descriptor",
+            "#nodes": [
+              {
+                "#name": "subtitling",
+                "ancillary_page_id": "0x0004",
+                "composition_page_id": "0x0003",
+                "language_code": "fra",
+                "subtitling_type": "0x20"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": "0x01BB",
+        "stream_type": "0x06"
+      }
+    ],
+    "current": "true",
+    "pcr_pid": "0x019A",
+    "service_id": "0x2264",
+    "version": "14"
+  },
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "pid": "17"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2261"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+ DECALE",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2262"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+ CINEMA",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2263"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+ SPORT",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2264"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+ FAMILY",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2265"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CANAL+ SERIES",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2266"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CINE+ FRISSON",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2267"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CINE+ FAMIZ",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2268"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CINE+ CLASSIC",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x2269"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "CNEWS",
+            "service_provider_name": "CSAT",
+            "service_type": "0x19"
+          }
+        ],
+        "ca_mode": "false",
+        "eit_present_following": "true",
+        "eit_schedule": "true",
+        "running_status": "running",
+        "service_id": "0x226A"
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "DATASYSTEM",
+            "service_provider_name": "CSAT",
+            "service_type": "0x0C"
+          }
+        ],
+        "ca_mode": "true",
+        "eit_present_following": "false",
+        "eit_schedule": "false",
+        "running_status": "running",
+        "service_id": "0x22C3"
+      }
+    ],
+    "actual": "true",
+    "current": "true",
+    "original_network_id": "0x0001",
+    "transport_stream_id": "0x0438",
+    "version": "10"
+  }
+]

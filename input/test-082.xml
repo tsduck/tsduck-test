@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PAT version="12" current="true" transport_stream_id="0x0438" network_PID="0x0010">
+    <metadata PID="0"/>
+    <service service_id="0x2261" program_map_PID="0x0064"/>
+    <service service_id="0x2262" program_map_PID="0x00C8"/>
+    <service service_id="0x2263" program_map_PID="0x012C"/>
+    <service service_id="0x2264" program_map_PID="0x0190"/>
+    <service service_id="0x2265" program_map_PID="0x01F4"/>
+    <service service_id="0x2266" program_map_PID="0x0258"/>
+    <service service_id="0x2267" program_map_PID="0x02BC"/>
+    <service service_id="0x2268" program_map_PID="0x0320"/>
+    <service service_id="0x2269" program_map_PID="0x0384"/>
+    <service service_id="0x226A" program_map_PID="0x03E8"/>
+    <service service_id="0x22C3" program_map_PID="0x1003"/>
+  </PAT>
+  <PMT version="14" current="true" service_id="0x2264" PCR_PID="0x019A">
+    <metadata PID="400"/>
+    <CA_descriptor CA_system_id="0x1811" CA_PID="0x01D2">
+      <private_data>
+        02 33 15
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x01DC">
+      <private_data>
+        02 33 42
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1883" CA_PID="0x01DD">
+      <private_data>
+        02 33 11
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x1863" CA_PID="0x01D7">
+      <private_data>
+        02 33 43
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E0">
+      <private_data>
+        10 01 01 13 01 20 14 03 03 28 30
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E2">
+      <private_data>
+        10 01 01 13 01 20 14 03 03 29 40
+      </private_data>
+    </CA_descriptor>
+    <CA_descriptor CA_system_id="0x0500" CA_PID="0x01E7">
+      <private_data>
+        10 01 01 13 01 20 14 03 04 0F 40
+      </private_data>
+    </CA_descriptor>
+    <component elementary_PID="0x019A" stream_type="0x1B"/>
+    <component elementary_PID="0x01A5" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="fra" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x01A6" stream_type="0x06">
+      <DVB_AC3_descriptor component_type="0x42"/>
+      <ISO_639_language_descriptor>
+        <language code="eng" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x01BA" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x10" composition_page_id="0x0001" ancillary_page_id="0x0002"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x01BB" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="fra" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+  </PMT>
+  <SDT version="10" current="true" transport_stream_id="0x0438" original_network_id="0x0001" actual="true">
+    <metadata PID="17"/>
+    <service service_id="0x2261" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+"/>
+    </service>
+    <service service_id="0x2262" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+ DECALE"/>
+    </service>
+    <service service_id="0x2263" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+ CINEMA"/>
+    </service>
+    <service service_id="0x2264" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+ SPORT"/>
+    </service>
+    <service service_id="0x2265" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+ FAMILY"/>
+    </service>
+    <service service_id="0x2266" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CANAL+ SERIES"/>
+    </service>
+    <service service_id="0x2267" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CINE+ FRISSON"/>
+    </service>
+    <service service_id="0x2268" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CINE+ FAMIZ"/>
+    </service>
+    <service service_id="0x2269" EIT_schedule="true" EIT_present_following="true" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CINE+ CLASSIC"/>
+    </service>
+    <service service_id="0x226A" EIT_schedule="true" EIT_present_following="true" CA_mode="false" running_status="running">
+      <service_descriptor service_type="0x19" service_provider_name="CSAT" service_name="CNEWS"/>
+    </service>
+    <service service_id="0x22C3" EIT_schedule="false" EIT_present_following="false" CA_mode="true" running_status="running">
+      <service_descriptor service_type="0x0C" service_provider_name="CSAT" service_name="DATASYSTEM"/>
+    </service>
+  </SDT>
+</tsduck>

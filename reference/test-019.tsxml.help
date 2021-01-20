@@ -35,6 +35,17 @@ Options:
   --indent value
       Specify the indentation size of output files. The default is 2.
 
+  -j
+  --json
+      Perform an automated XML-to-JSON conversion. The output file is in JSON
+      format instead of XML.
+
+  --json-line[='prefix']
+      Same as --json but report the JSON text as one single line in the message
+      logger instead of the output file. The optional string parameter
+      specifies a prefix to prepend on the log line before the JSON text to
+      locate the appropriate line in the logs.
+
   -l
   --lnb
       A shortcut for '--model tsduck.lnbs.model.xml'. It verifies that the
@@ -47,7 +58,8 @@ Options:
   -o filename
   --output filename
       Specify the name of the output file (standard output by default). An
-      output file is produced only if --patch or --reformat are specified.
+      output file is produced only if --patch, --reformat or --json are
+      specified.
 
   -p filename
   --patch filename
@@ -78,4 +90,39 @@ Options:
 
   --version
       Display the TSDuck version number.
+
+  --x2j-collapse-text
+      In the XML-to-JSON conversion, remove leading and trailing spaces and
+      replace all other sequences of space characters by one single space in
+      all text nodes. By default, text nodes are collapsed only when there is
+      an XML model which identifies the text node as containing hexadecimal
+      content.
+
+  --x2j-enforce-boolean
+      In the XML-to-JSON conversion, when an element attribute contains a
+      boolean value but there is no XML model file to tell if this is really a
+      boolean, force the creation of a JSON boolean. By default, when there is
+      no XML model, all element attributes are converted as JSON strings.
+
+  --x2j-enforce-integer
+      In the XML-to-JSON conversion, when an element attribute contains an
+      integer value but there is no XML model file to tell if this is really an
+      integer, force the creation of a JSON number. By default, when there is
+      no XML model, all element attributes are converted as JSON strings.
+
+  --x2j-include-root
+      In the XML-to-JSON conversion, keep the root of the XML document as a
+      JSON object. By default, the JSON document is made of an array of all XML
+      elements under the root.
+
+  --x2j-trim-text
+      In the XML-to-JSON conversion, remove leading and trailing spaces in all
+      text nodes. By default, text nodes are trimmed only when there is an XML
+      model which identifies the text node as containing hexadecimal content.
+
+  --xml-line[='prefix']
+      Log each table as one single XML line in the message logger instead of an
+      output file. The optional string parameter specifies a prefix to prepend
+      on the log line before the XML text to locate the appropriate line in the
+      logs.
 
