@@ -103,6 +103,11 @@ Options:
       JST'. This is a handy shortcut when working on Japanese transport
       streams.
 
+  -j
+  --json
+      When decompiling, perform an automated XML-to-JSON conversion. The output
+      file is in JSON format instead of XML.
+
   -o filepath
   --output filepath
       Specify the output file name. By default, the output file has the same
@@ -143,6 +148,35 @@ Options:
 
   --version
       Display the TSDuck version number.
+
+  --x2j-collapse-text
+      In the XML-to-JSON conversion, remove leading and trailing spaces and
+      replace all other sequences of space characters by one single space in
+      all text nodes. By default, text nodes are collapsed only when there is
+      an XML model which identifies the text node as containing hexadecimal
+      content.
+
+  --x2j-enforce-boolean
+      In the XML-to-JSON conversion, when an element attribute contains a
+      boolean value but there is no XML model file to tell if this is really a
+      boolean, force the creation of a JSON boolean. By default, when there is
+      no XML model, all element attributes are converted as JSON strings.
+
+  --x2j-enforce-integer
+      In the XML-to-JSON conversion, when an element attribute contains an
+      integer value but there is no XML model file to tell if this is really an
+      integer, force the creation of a JSON number. By default, when there is
+      no XML model, all element attributes are converted as JSON strings.
+
+  --x2j-include-root
+      In the XML-to-JSON conversion, keep the root of the XML document as a
+      JSON object. By default, the JSON document is made of an array of all XML
+      elements under the root.
+
+  --x2j-trim-text
+      In the XML-to-JSON conversion, remove leading and trailing spaces in all
+      text nodes. By default, text nodes are trimmed only when there is an XML
+      model which identifies the text node as containing hexadecimal content.
 
   -x
   --xml-model
