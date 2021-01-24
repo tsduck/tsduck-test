@@ -9,6 +9,9 @@ Parameters:
   files ending in .xml are compiled and files ending in .bin are decompiled.
   For other files, explicitly specify --compile or --decompile.
 
+  If an input file name is "-", the standard input is used. In that case,
+  --compile or --decompile must be specified.
+
   If an input file name starts with "<?xml", it is considered as "inline XML
   content".
 
@@ -113,8 +116,12 @@ Options:
       Specify the output file name. By default, the output file has the same
       name as the input and extension .bin (compile) or .xml (decompile). If
       the specified path is a directory, the output file is built from this
-      directory and default file name. If more than one input file is
-      specified, the output path, if present, must be a directory name.
+      directory and default file name. If the specified name is "-", the
+      standard output is used.
+
+      The default output file for the standard input ("-") is the standard
+      output ("-"). If more than one input file is specified, the output path,
+      if present, must be either a directory name or "-".
 
   --pack-and-flush
       When loading a binary section file, pack incomplete tables and flush
