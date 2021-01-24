@@ -139,6 +139,23 @@ $(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index $STDOPT \
 test_text $SCRIPT.tstables.strict.xml
 test_text $SCRIPT.tstables.strict.xml.log
 
+# ==== tstables, JSON files
+
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index $STDOPT \
+    --json $(fpath "$OUTDIR/$SCRIPT.tstables.json") \
+    >"$OUTDIR/$SCRIPT.tstables.json.log" 2>&1
+
+test_text $SCRIPT.tstables.json
+test_text $SCRIPT.tstables.json.log
+
+# ==== tstables, XML and JSON one-liners
+
+$(tspath tstables) $(fpath "$INFILE") $PIDS --packet-index $STDOPT \
+    --log-xml-line=XML: --log-json-line=JSON: \
+    >"$OUTDIR/$SCRIPT.tstables.oneliner.log" 2>&1
+
+test_text $SCRIPT.tstables.oneliner.log
+
 # ==== tstables, binary sections
 
 $(tspath tstables) $(fpath "$INFILE") $PIDS $STDOPT \

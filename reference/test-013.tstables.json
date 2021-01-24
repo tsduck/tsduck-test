@@ -1,0 +1,96 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 0,
+        "last_ts_packet": 0,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 1060,
+        "service_id": 1060
+      }
+    ],
+    "current": true,
+    "transport_stream_id": 1,
+    "version": 18
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 1,
+        "last_ts_packet": 1,
+        "pid": 1060
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1061,
+        "stream_type": 27
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1062,
+        "stream_type": 3
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "teletext_descriptor",
+            "#nodes": [
+              {
+                "#name": "teletext",
+                "language_code": "rus",
+                "page_number": 100,
+                "teletext_type": 5
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1064,
+        "stream_type": 6
+      }
+    ],
+    "current": true,
+    "pcr_pid": 1061,
+    "service_id": 1060,
+    "version": 31
+  },
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 16,
+        "last_ts_packet": 16,
+        "pid": 17
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "06 \u0420\u041E\u0421\u0421\u0418\u042F-\u041A",
+            "service_provider_name": "\u0420\u0422\u0420\u0421",
+            "service_type": 22
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": true,
+        "running_status": "running",
+        "service_id": 1060
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "original_network_id": 8835,
+    "transport_stream_id": 1,
+    "version": 13
+  }
+]

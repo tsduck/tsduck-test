@@ -1,0 +1,184 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 2,
+        "last_ts_packet": 2,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 160,
+        "service_id": 4006
+      }
+    ],
+    "current": true,
+    "transport_stream_id": 4006,
+    "version": 2
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 16,
+        "last_ts_packet": 16,
+        "pid": 160
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1060,
+        "stream_type": 27
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 0,
+                "code": "fra"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1061,
+        "stream_type": 4
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 0,
+                "code": "eng"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1062,
+        "stream_type": 4
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 0,
+                "code": "deu"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1063,
+        "stream_type": 4
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 3,
+                "code": "qad"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1067,
+        "stream_type": 4
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "teletext_descriptor",
+            "#nodes": [
+              {
+                "#name": "teletext",
+                "language_code": "fra",
+                "page_number": 888,
+                "teletext_type": 5
+              },
+              {
+                "#name": "teletext",
+                "language_code": "fra",
+                "page_number": 889,
+                "teletext_type": 2
+              }
+            ]
+          },
+          {
+            "#name": "VBI_data_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "#nodes": [
+                  {
+                    "#name": "field",
+                    "field_parity": true,
+                    "line_offset": 7
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": false,
+                    "line_offset": 7
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": true,
+                    "line_offset": 8
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": false,
+                    "line_offset": 8
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": true,
+                    "line_offset": 9
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": false,
+                    "line_offset": 9
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": true,
+                    "line_offset": 10
+                  },
+                  {
+                    "#name": "field",
+                    "field_parity": false,
+                    "line_offset": 10
+                  }
+                ],
+                "data_service_id": 1
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1068,
+        "stream_type": 6
+      }
+    ],
+    "current": true,
+    "pcr_pid": 1060,
+    "service_id": 4006,
+    "version": 2
+  }
+]

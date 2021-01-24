@@ -1,0 +1,78 @@
+[
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 57,
+        "last_ts_packet": 57,
+        "pid": 17
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "P1.1",
+            "service_provider_name": "DVB",
+            "service_type": 1
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": false,
+        "eit_schedule": false,
+        "running_status": "running",
+        "service_id": 2064
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "original_network_id": 1,
+    "transport_stream_id": 1,
+    "version": 1
+  },
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 226,
+        "last_ts_packet": 226,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 2064,
+        "service_id": 2064
+      }
+    ],
+    "current": true,
+    "transport_stream_id": 1,
+    "version": 1
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 259,
+        "last_ts_packet": 259,
+        "pid": 2064
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 4096,
+        "stream_type": 2
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 4097,
+        "stream_type": 3
+      }
+    ],
+    "current": true,
+    "pcr_pid": 256,
+    "service_id": 2064,
+    "version": 1
+  }
+]

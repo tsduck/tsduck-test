@@ -1,0 +1,48 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 515,
+        "last_ts_packet": 515,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 33,
+        "service_id": 800
+      }
+    ],
+    "current": true,
+    "transport_stream_id": 930,
+    "version": 11
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 517,
+        "last_ts_packet": 517,
+        "pid": 33
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "T2MI_descriptor",
+            "num_t2mi_streams_minus_one": 0,
+            "pcr_iscr_common_clock_flag": false,
+            "t2mi_stream_id": 0
+          }
+        ],
+        "elementary_pid": 64,
+        "stream_type": 6
+      }
+    ],
+    "current": true,
+    "service_id": 800,
+    "version": 11
+  }
+]
