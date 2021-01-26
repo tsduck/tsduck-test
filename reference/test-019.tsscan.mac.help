@@ -63,6 +63,15 @@ Options:
       RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
+  --default-pds value
+      Default private data specifier. This option is meaningful only when the
+      signalization is incorrect, when private descriptors appear in tables
+      without a preceding private_data_specifier_descriptor. The specified
+      value is used as private data specifier to interpret private descriptors.
+      The PDS value can be an integer or one of (not case-sensitive) names.
+      Must be one of "BskyB", "CanalPlus", "EACEM", "EICTA", "Eutelsat",
+      "Logiways", "Nagra", "NorDig", "OFCOM", "TPS".
+
   --delivery-system value
       Specify which delivery system to use. By default, use the default system
       for the tuner.
