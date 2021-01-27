@@ -23,6 +23,12 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
+  -f
+  --from-json
+      Each input file must be a JSON file, typically from a previous automated
+      XML-to-JSON conversion or in a similar format. A reverse conversion is
+      first performed and the resulting XML document is processed as input.
+
   --help
       Display this help text.
 
