@@ -40,6 +40,29 @@ $(tspath tstabcomp) --strict-xml $STDOPT \
 test_text $SCRIPT.decompile.strict.xml
 test_text $SCRIPT.decompile.strict.log
 
+# ==== tstabcomp (JSON)
+
+$(tspath tstabcomp) $STDOPT \
+    --decompile $(fpath "$OUTDIR/$SCRIPT.compile.bin") \
+    --output $(fpath "$OUTDIR/$SCRIPT.decompile.json") \
+    >"$OUTDIR/$SCRIPT.decompile.json.log" 2>&1
+
+test_text $SCRIPT.decompile.json
+test_text $SCRIPT.decompile.json.log
+
+$(tspath tstabcomp) $STDOPT \
+    --compile $(fpath "$OUTDIR/$SCRIPT.decompile.json") \
+    --output $(fpath "$OUTDIR/$SCRIPT.compile.json.bin") \
+    >"$OUTDIR/$SCRIPT.compile.json.log" 2>&1
+
+test_bin $SCRIPT.compile.json.bin
+test_text $SCRIPT.compile.json.log
+
+cmp "$OUTDIR/$SCRIPT.compile.bin" "$OUTDIR/$SCRIPT.compile.json.bin" \
+    >"$OUTDIR/$SCRIPT.cmp.json.log" 2>&1
+
+test_text $SCRIPT.cmp.json.log
+
 # ==== tspacketize
 
 $(tspath tspacketize) $PACKOPT \

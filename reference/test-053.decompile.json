@@ -1,0 +1,87 @@
+[
+  {
+    "#name": "NIT",
+    "#nodes": [
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "NorDig"
+      },
+      {
+        "#name": "nordig_logical_channel_descriptor_v1"
+      },
+      {
+        "#name": "nordig_logical_channel_descriptor_v2"
+      },
+      {
+        "#name": "nordig_logical_channel_descriptor_v1",
+        "#nodes": [
+          {
+            "#name": "service",
+            "logical_channel_number": 1,
+            "service_id": 4660,
+            "visible_service": true
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 200,
+            "service_id": 9029,
+            "visible_service": false
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 16383,
+            "service_id": 13398,
+            "visible_service": true
+          }
+        ]
+      },
+      {
+        "#name": "nordig_logical_channel_descriptor_v2",
+        "#nodes": [
+          {
+            "#name": "channel_list",
+            "country_code": "foo",
+            "id": 1,
+            "name": "list1"
+          },
+          {
+            "#name": "channel_list",
+            "#nodes": [
+              {
+                "#name": "service",
+                "logical_channel_number": 1,
+                "service_id": 4660,
+                "visible_service": true
+              },
+              {
+                "#name": "service",
+                "logical_channel_number": 200,
+                "service_id": 9029,
+                "visible_service": false
+              },
+              {
+                "#name": "service",
+                "logical_channel_number": 1023,
+                "service_id": 13398,
+                "visible_service": true
+              }
+            ],
+            "country_code": "bar",
+            "id": 171,
+            "name": "list2"
+          },
+          {
+            "#name": "channel_list",
+            "country_code": "abc",
+            "id": 5,
+            "name": ""
+          }
+        ]
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "network_id": 0,
+    "version": 0
+  }
+]

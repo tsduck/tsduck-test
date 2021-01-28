@@ -1,0 +1,2467 @@
+[
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "component_descriptor",
+        "component_tag": 0,
+        "component_type": 2,
+        "language_code": "fre",
+        "stream_content": 1,
+        "stream_content_ext": 15,
+        "text": ""
+      },
+      {
+        "#name": "component_descriptor",
+        "component_tag": 15,
+        "component_type": 2,
+        "language_code": "eng",
+        "stream_content": 9,
+        "stream_content_ext": 1,
+        "text": "A string description"
+      },
+      {
+        "#name": "AAC_descriptor",
+        "profile_and_level": 69,
+        "saoc_de": false
+      },
+      {
+        "#name": "AAC_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "aac_type": 64,
+        "profile_and_level": 33,
+        "saoc_de": true
+      },
+      {
+        "#name": "DTS_descriptor",
+        "bit_rate_code": 8,
+        "extended_surround": 0,
+        "fsize": 4660,
+        "lfe": false,
+        "nblks": 16,
+        "sample_rate_code": 13,
+        "surround_mode": 9
+      },
+      {
+        "#name": "DTS_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "78 96 54 12"
+            ]
+          }
+        ],
+        "bit_rate_code": 8,
+        "extended_surround": 2,
+        "fsize": 4660,
+        "lfe": true,
+        "nblks": 16,
+        "sample_rate_code": 13,
+        "surround_mode": 9
+      },
+      {
+        "#name": "cable_delivery_system_descriptor",
+        "fec_inner": "3/5",
+        "fec_outer": "RS",
+        "frequency": "312,000,000",
+        "modulation": "16-QAM",
+        "symbol_rate": "27,450,000"
+      },
+      {
+        "#name": "cable_delivery_system_descriptor",
+        "fec_inner": "3/4",
+        "fec_outer": "none",
+        "frequency": "220,123,700",
+        "modulation": "64-QAM",
+        "symbol_rate": "18,000,000"
+      },
+      {
+        "#name": "application_signalling_descriptor"
+      },
+      {
+        "#name": "application_signalling_descriptor",
+        "#nodes": [
+          {
+            "#name": "application",
+            "ait_version_number": 12,
+            "application_type": 4660
+          },
+          {
+            "#name": "application",
+            "ait_version_number": 31,
+            "application_type": 22136
+          }
+        ]
+      },
+      {
+        "#name": "teletext_descriptor",
+        "#nodes": [
+          {
+            "#name": "teletext",
+            "language_code": "fra",
+            "page_number": 888,
+            "teletext_type": 5
+          },
+          {
+            "#name": "teletext",
+            "language_code": "fra",
+            "page_number": 889,
+            "teletext_type": 2
+          }
+        ]
+      },
+      {
+        "#name": "teletext_descriptor"
+      },
+      {
+        "#name": "VBI_teletext_descriptor",
+        "#nodes": [
+          {
+            "#name": "teletext",
+            "language_code": "fra",
+            "page_number": 888,
+            "teletext_type": 5
+          },
+          {
+            "#name": "teletext",
+            "language_code": "fra",
+            "page_number": 889,
+            "teletext_type": 2
+          }
+        ]
+      },
+      {
+        "#name": "VBI_teletext_descriptor"
+      },
+      {
+        "#name": "VBI_data_descriptor"
+      },
+      {
+        "#name": "VBI_data_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "#nodes": [
+              {
+                "#name": "field",
+                "field_parity": false,
+                "line_offset": 0
+              },
+              {
+                "#name": "field",
+                "field_parity": false,
+                "line_offset": 10
+              },
+              {
+                "#name": "field",
+                "field_parity": true,
+                "line_offset": 20
+              }
+            ],
+            "data_service_id": 1
+          },
+          {
+            "#name": "service",
+            "#nodes": [
+              {
+                "#name": "reserved",
+                "#nodes": [
+                  "01 23 45 67 89 AB CD EF"
+                ]
+              }
+            ],
+            "data_service_id": 3
+          }
+        ]
+      },
+      {
+        "#name": "maximum_bitrate_descriptor",
+        "maximum_bitrate": 6800000
+      },
+      {
+        "#name": "time_shifted_event_descriptor",
+        "reference_event_id": 22136,
+        "reference_service_id": 4660
+      },
+      {
+        "#name": "DVB_time_shifted_service_descriptor",
+        "reference_service_id": 39612
+      },
+      {
+        "#name": "NVOD_reference_descriptor"
+      },
+      {
+        "#name": "NVOD_reference_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "original_network_id": 22136,
+            "service_id": 39612,
+            "transport_stream_id": 4660
+          },
+          {
+            "#name": "service",
+            "original_network_id": 47768,
+            "service_id": 30292,
+            "transport_stream_id": 65244
+          }
+        ]
+      },
+      {
+        "#name": "scrambling_descriptor",
+        "scrambling_mode": 2
+      },
+      {
+        "#name": "scrambling_descriptor",
+        "scrambling_mode": 112
+      },
+      {
+        "#name": "CP_descriptor",
+        "cp_pid": 512,
+        "cp_system_id": 1
+      },
+      {
+        "#name": "CP_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "cp_pid": 7117,
+        "cp_system_id": 22136
+      },
+      {
+        "#name": "CP_identifier_descriptor"
+      },
+      {
+        "#name": "CP_identifier_descriptor",
+        "#nodes": [
+          {
+            "#name": "CP_system_id",
+            "value": 0
+          },
+          {
+            "#name": "CP_system_id",
+            "value": 1
+          },
+          {
+            "#name": "CP_system_id",
+            "value": 2
+          },
+          {
+            "#name": "CP_system_id",
+            "value": 256
+          },
+          {
+            "#name": "CP_system_id",
+            "value": 257
+          },
+          {
+            "#name": "CP_system_id",
+            "value": 4660
+          }
+        ]
+      },
+      {
+        "#name": "service_identifier_descriptor",
+        "service_identifier": "Foo service"
+      },
+      {
+        "#name": "multilingual_bouquet_name_descriptor"
+      },
+      {
+        "#name": "multilingual_bouquet_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "bouquet_name": "Foo bouquet",
+            "code": "foo"
+          },
+          {
+            "#name": "language",
+            "bouquet_name": "Bar maid",
+            "code": "bar"
+          }
+        ]
+      },
+      {
+        "#name": "multilingual_network_name_descriptor"
+      },
+      {
+        "#name": "multilingual_network_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "code": "foo",
+            "network_name": "Foo network"
+          },
+          {
+            "#name": "language",
+            "code": "bar",
+            "network_name": "Bar maid"
+          }
+        ]
+      },
+      {
+        "#name": "multilingual_component_descriptor",
+        "component_tag": 7
+      },
+      {
+        "#name": "multilingual_component_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "code": "foo",
+            "description": "Foo component"
+          },
+          {
+            "#name": "language",
+            "code": "bar",
+            "description": "Bar component"
+          }
+        ],
+        "component_tag": 10
+      },
+      {
+        "#name": "multilingual_service_name_descriptor"
+      },
+      {
+        "#name": "multilingual_service_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "code": "foo",
+            "service_name": "Foo service",
+            "service_provider_name": "Foo provider"
+          },
+          {
+            "#name": "language",
+            "code": "bar",
+            "service_name": "Bar maid",
+            "service_provider_name": "Bar provider"
+          }
+        ]
+      },
+      {
+        "#name": "DVB_AC4_descriptor"
+      },
+      {
+        "#name": "DVB_AC4_descriptor",
+        "#nodes": [
+          {
+            "#name": "ac4_dsi_toc",
+            "#nodes": [
+              "12 35 65 32 23"
+            ]
+          }
+        ],
+        "ac4_channel_mode": 1,
+        "ac4_dialog_enhancement_enabled": false
+      },
+      {
+        "#name": "DVB_AC4_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "78 96 23 12 45 46"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "DVB_AC4_descriptor",
+        "#nodes": [
+          {
+            "#name": "ac4_dsi_toc",
+            "#nodes": [
+              "12 35 65 32 23"
+            ]
+          },
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "78 96 23 12 45 46"
+            ]
+          }
+        ],
+        "ac4_channel_mode": 2,
+        "ac4_dialog_enhancement_enabled": true
+      },
+      {
+        "#name": "service_move_descriptor",
+        "new_original_network_id": 4660,
+        "new_service_id": 43981,
+        "new_transport_stream_id": 22136
+      },
+      {
+        "#name": "service_availability_descriptor",
+        "availability": true
+      },
+      {
+        "#name": "service_availability_descriptor",
+        "#nodes": [
+          {
+            "#name": "cell",
+            "id": 4660
+          },
+          {
+            "#name": "cell",
+            "id": 22136
+          },
+          {
+            "#name": "cell",
+            "id": 39612
+          }
+        ],
+        "availability": false
+      },
+      {
+        "#name": "DVB_stuffing_descriptor"
+      },
+      {
+        "#name": "DVB_stuffing_descriptor",
+        "#nodes": [
+          "01 23 45 67 89"
+        ]
+      },
+      {
+        "#name": "AVC_video_descriptor",
+        "avc_24_hour_picture": false,
+        "avc_compatible_flags": 2,
+        "avc_still_present": true,
+        "constraint_set0": true,
+        "constraint_set1": false,
+        "constraint_set2": true,
+        "constraint_set3": false,
+        "constraint_set4": true,
+        "constraint_set5": false,
+        "frame_packing_sei_not_present": true,
+        "level_idc": 78,
+        "profile_idc": 45
+      },
+      {
+        "#name": "AVC_timing_and_HRD_descriptor",
+        "fixed_frame_rate": false,
+        "hrd_management_valid": true,
+        "picture_to_display_conversion": false,
+        "temporal_poc": true
+      },
+      {
+        "#name": "AVC_timing_and_HRD_descriptor",
+        "fixed_frame_rate": true,
+        "hrd_management_valid": false,
+        "num_units_in_tick": 1234567,
+        "picture_to_display_conversion": true,
+        "temporal_poc": false
+      },
+      {
+        "#name": "AVC_timing_and_HRD_descriptor",
+        "fixed_frame_rate": true,
+        "hrd_management_valid": true,
+        "k_90khz": 365214,
+        "n_90khz": 789654,
+        "num_units_in_tick": 741369,
+        "picture_to_display_conversion": false,
+        "temporal_poc": false
+      },
+      {
+        "#name": "HEVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": true
+      },
+      {
+        "#name": "HEVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": false,
+        "num_units_in_tick": 1234567,
+        "target_schedule_idx": 31
+      },
+      {
+        "#name": "HEVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": true,
+        "k_90khz": 365214,
+        "n_90khz": 789654,
+        "num_units_in_tick": 741369,
+        "target_schedule_idx": 5
+      },
+      {
+        "#name": "HEVC_video_descriptor",
+        "copied_44bits": 0,
+        "frame_only_constraint_flag": false,
+        "hdr_wcg_idc": 3,
+        "hevc_24hr_picture_present_flag": false,
+        "hevc_still_present_flag": true,
+        "interlaced_source_flag": false,
+        "level_idc": 171,
+        "non_packed_constraint_flag": true,
+        "profile_compatibility_indication": 2271560481,
+        "profile_idc": 31,
+        "profile_space": 1,
+        "progressive_source_flag": true,
+        "sub_pic_hrd_params_not_present": true,
+        "tier_flag": true
+      },
+      {
+        "#name": "HEVC_video_descriptor",
+        "copied_44bits": 11806310474565,
+        "frame_only_constraint_flag": true,
+        "hdr_wcg_idc": 2,
+        "hevc_24hr_picture_present_flag": true,
+        "hevc_still_present_flag": false,
+        "interlaced_source_flag": true,
+        "level_idc": 86,
+        "non_packed_constraint_flag": false,
+        "profile_compatibility_indication": 305419896,
+        "profile_idc": 4,
+        "profile_space": 2,
+        "progressive_source_flag": false,
+        "sub_pic_hrd_params_not_present": false,
+        "temporal_id_max": 4,
+        "temporal_id_min": 1,
+        "tier_flag": false
+      },
+      {
+        "#name": "external_ES_ID_descriptor",
+        "external_es_id": 17767
+      },
+      {
+        "#name": "MPEG4_audio_descriptor",
+        "mpeg4_audio_profile_and_level": 18
+      },
+      {
+        "#name": "MPEG4_video_descriptor",
+        "mpeg4_visual_profile_and_level": 52
+      },
+      {
+        "#name": "data_stream_alignment_descriptor",
+        "alignment_type": 3
+      },
+      {
+        "#name": "hierarchy_descriptor",
+        "hierarchy_channel": 12,
+        "hierarchy_embedded_layer_index": 11,
+        "hierarchy_layer_index": 10,
+        "hierarchy_type": 9,
+        "no_quality_scalability": true,
+        "no_spatial_scalability": false,
+        "no_temporal_scalability": true,
+        "no_view_scalability_flag": true,
+        "tref_present": false
+      },
+      {
+        "#name": "audio_stream_descriptor",
+        "free_format": true,
+        "id": 0,
+        "layer": 2,
+        "variable_rate_audio": false
+      },
+      {
+        "#name": "video_stream_descriptor",
+        "constrained_parameter": false,
+        "frame_rate_code": 2,
+        "mpeg_1_only": true,
+        "multiple_frame_rate": true,
+        "still_picture": true
+      },
+      {
+        "#name": "video_stream_descriptor",
+        "chroma_format": 2,
+        "constrained_parameter": true,
+        "frame_rate_code": 3,
+        "frame_rate_extension": false,
+        "mpeg_1_only": false,
+        "multiple_frame_rate": false,
+        "profile_and_level_indication": 48,
+        "still_picture": false
+      },
+      {
+        "#name": "target_background_grid_descriptor",
+        "aspect_ratio_information": 3,
+        "horizontal_size": 100,
+        "vertical_size": 200
+      },
+      {
+        "#name": "video_window_descriptor",
+        "horizontal_offset": 50,
+        "vertical_offset": 70,
+        "window_priority": 1
+      },
+      {
+        "#name": "smoothing_buffer_descriptor",
+        "sb_leak_rate": 1193046,
+        "sb_size": 2460003
+      },
+      {
+        "#name": "time_slice_fec_identifier_descriptor",
+        "frame_size": 2,
+        "max_average_rate": 8,
+        "max_burst_duration": 69,
+        "mpe_fec": 1,
+        "time_slice_fec_id": 0,
+        "time_slicing": true
+      },
+      {
+        "#name": "time_slice_fec_identifier_descriptor",
+        "#nodes": [
+          {
+            "#name": "id_selector_bytes",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "frame_size": 3,
+        "max_average_rate": 3,
+        "max_burst_duration": 103,
+        "mpe_fec": 0,
+        "time_slice_fec_id": 9,
+        "time_slicing": false
+      },
+      {
+        "#name": "ECM_repetition_rate_descriptor",
+        "ca_system_id": 4660,
+        "ecm_repetition_rate": 100
+      },
+      {
+        "#name": "ECM_repetition_rate_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "78 96 32 14"
+            ]
+          }
+        ],
+        "ca_system_id": 22136,
+        "ecm_repetition_rate": 200
+      },
+      {
+        "#name": "service_relocated_descriptor",
+        "old_original_network_id": 4660,
+        "old_service_id": 43981,
+        "old_transport_stream_id": 22136
+      },
+      {
+        "#name": "system_clock_descriptor",
+        "clock_accuracy_exponent": 3,
+        "clock_accuracy_integer": 47,
+        "external_clock_reference": false
+      },
+      {
+        "#name": "multiplex_buffer_utilization_descriptor"
+      },
+      {
+        "#name": "multiplex_buffer_utilization_descriptor",
+        "ltw_offset_lower_bound": 12345,
+        "ltw_offset_upper_bound": 23895
+      },
+      {
+        "#name": "copyright_descriptor",
+        "copyright_identifier": 4660
+      },
+      {
+        "#name": "copyright_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_copyright_info",
+            "#nodes": [
+              "78 96 32 14 52"
+            ]
+          }
+        ],
+        "copyright_identifier": 26505
+      },
+      {
+        "#name": "IBP_descriptor",
+        "closed_gop": false,
+        "identical_gop": true,
+        "max_gop_length": 24
+      },
+      {
+        "#name": "SL_descriptor",
+        "es_id": 39030
+      },
+      {
+        "#name": "carousel_identifier_descriptor",
+        "carousel_id": 305419896
+      },
+      {
+        "#name": "carousel_identifier_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "45 69 87"
+            ]
+          }
+        ],
+        "carousel_id": 2519881844
+      },
+      {
+        "#name": "association_tag_descriptor",
+        "association_tag": 22563,
+        "use": 30804
+      },
+      {
+        "#name": "association_tag_descriptor",
+        "#nodes": [
+          {
+            "#name": "selector_bytes",
+            "#nodes": [
+              "85 23 69"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "12 25 74 89 63"
+            ]
+          }
+        ],
+        "association_tag": 34083,
+        "use": 38484
+      },
+      {
+        "#name": "deferred_association_tags_descriptor",
+        "program_number": 22136,
+        "transport_stream_id": 4660
+      },
+      {
+        "#name": "deferred_association_tags_descriptor",
+        "#nodes": [
+          {
+            "#name": "association",
+            "tag": 38484
+          },
+          {
+            "#name": "association",
+            "tag": 4662
+          },
+          {
+            "#name": "association",
+            "tag": 34118
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "78 96 54 12 36"
+            ]
+          }
+        ],
+        "program_number": 29720,
+        "transport_stream_id": 30870
+      }
+    ],
+    "current": true,
+    "service_id": 0,
+    "version": 0
+  },
+  {
+    "#name": "discontinuity_information_table",
+    "transition": false
+  },
+  {
+    "#name": "discontinuity_information_table",
+    "transition": true
+  },
+  {
+    "#name": "selection_information_table",
+    "#nodes": [
+      {
+        "#name": "partial_transport_stream_descriptor",
+        "peak_rate": 74565
+      },
+      {
+        "#name": "service",
+        "running_status": "not-running",
+        "service_id": 17767
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "partial_transport_stream_descriptor",
+            "maximum_overall_smoothing_buffer": 4660,
+            "minimum_overall_smoothing_rate": 615205,
+            "peak_rate": 493924
+          }
+        ],
+        "running_status": "running",
+        "service_id": 29720
+      }
+    ],
+    "current": true,
+    "version": 12
+  },
+  {
+    "#name": "TSDT",
+    "#nodes": [
+      {
+        "#name": "transport_stream_descriptor",
+        "compliance": "DVB"
+      },
+      {
+        "#name": "CI_ancillary_data_descriptor"
+      },
+      {
+        "#name": "CI_ancillary_data_descriptor",
+        "#nodes": [
+          {
+            "#name": "ancillary_data",
+            "#nodes": [
+              "12 34 56 78 9A"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "DTS_neural_descriptor",
+        "config_id": 2
+      },
+      {
+        "#name": "DTS_neural_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "01 89 45"
+            ]
+          }
+        ],
+        "config_id": 5
+      },
+      {
+        "#name": "audio_preselection_descriptor"
+      },
+      {
+        "#name": "audio_preselection_descriptor",
+        "#nodes": [
+          {
+            "#name": "preselection",
+            "audio_description": false,
+            "audio_rendering_indication": 2,
+            "dialogue_enhancement": false,
+            "interactivity_enabled": true,
+            "preselection_id": 1,
+            "spoken_subtitles": true
+          },
+          {
+            "#name": "preselection",
+            "#nodes": [
+              {
+                "#name": "multi_stream_info",
+                "#nodes": [
+                  {
+                    "#name": "component",
+                    "tag": 1
+                  },
+                  {
+                    "#name": "component",
+                    "tag": 2
+                  }
+                ]
+              },
+              {
+                "#name": "future_extension",
+                "#nodes": [
+                  "25 89 63 21 47"
+                ]
+              }
+            ],
+            "audio_description": true,
+            "audio_rendering_indication": 3,
+            "dialogue_enhancement": true,
+            "interactivity_enabled": false,
+            "iso_639_language_code": "foo",
+            "message_id": 171,
+            "preselection_id": 2,
+            "spoken_subtitles": false
+          }
+        ]
+      },
+      {
+        "#name": "protection_message_descriptor"
+      },
+      {
+        "#name": "protection_message_descriptor",
+        "#nodes": [
+          {
+            "#name": "component",
+            "tag": 7
+          },
+          {
+            "#name": "component",
+            "tag": 234
+          },
+          {
+            "#name": "component",
+            "tag": 47
+          }
+        ]
+      },
+      {
+        "#name": "C2_delivery_system_descriptor",
+        "active_ofdm_symbol_duration": 1,
+        "c2_system_tuning_frequency": "123,456,789",
+        "c2_system_tuning_frequency_type": 0,
+        "data_slice_id": 7,
+        "guard_interval": "1/64",
+        "plp_id": 4
+      },
+      {
+        "#name": "C2_delivery_system_descriptor",
+        "active_ofdm_symbol_duration": 2,
+        "c2_system_tuning_frequency": "3,698,741,258",
+        "c2_system_tuning_frequency_type": 1,
+        "data_slice_id": 250,
+        "guard_interval": "0x06",
+        "plp_id": 205
+      },
+      {
+        "#name": "C2_bundle_delivery_system_descriptor"
+      },
+      {
+        "#name": "C2_bundle_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "plp",
+            "active_ofdm_symbol_duration": 1,
+            "c2_system_tuning_frequency": "123,456,789",
+            "c2_system_tuning_frequency_type": 0,
+            "data_slice_id": 7,
+            "guard_interval": "1/64",
+            "master_channel": true,
+            "plp_id": 4
+          },
+          {
+            "#name": "plp",
+            "active_ofdm_symbol_duration": 2,
+            "c2_system_tuning_frequency": "3,698,741,258",
+            "c2_system_tuning_frequency_type": 1,
+            "data_slice_id": 250,
+            "guard_interval": "0x06",
+            "master_channel": false,
+            "plp_id": 205
+          }
+        ]
+      },
+      {
+        "#name": "T2_delivery_system_descriptor",
+        "plp_id": 171,
+        "t2_system_id": 52719
+      },
+      {
+        "#name": "T2_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "extension",
+            "#nodes": [
+              {
+                "#name": "cell",
+                "#nodes": [
+                  {
+                    "#name": "centre_frequency",
+                    "value": "3,456,789,120"
+                  }
+                ],
+                "cell_id": 26505
+              }
+            ],
+            "bandwidth": "1.712MHz",
+            "guard_interval": "19/128",
+            "other_frequency": true,
+            "siso_miso": "MISO",
+            "tfs": false,
+            "transmission_mode": "32k"
+          }
+        ],
+        "plp_id": 18,
+        "t2_system_id": 13398
+      },
+      {
+        "#name": "T2_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "extension",
+            "#nodes": [
+              {
+                "#name": "cell",
+                "cell_id": 4660
+              },
+              {
+                "#name": "cell",
+                "#nodes": [
+                  {
+                    "#name": "centre_frequency",
+                    "value": "1,234,567,890"
+                  },
+                  {
+                    "#name": "centre_frequency",
+                    "value": "987,654,320"
+                  },
+                  {
+                    "#name": "centre_frequency",
+                    "value": "2,654,321,140"
+                  },
+                  {
+                    "#name": "subcell",
+                    "cell_id_extension": 18,
+                    "transposer_frequency": "4,012,369,980"
+                  },
+                  {
+                    "#name": "subcell",
+                    "cell_id_extension": 250,
+                    "transposer_frequency": "1,789,123,450"
+                  }
+                ],
+                "cell_id": 26506
+              }
+            ],
+            "bandwidth": "10MHz",
+            "guard_interval": "19/256",
+            "other_frequency": false,
+            "siso_miso": "SISO",
+            "tfs": true,
+            "transmission_mode": "1k"
+          }
+        ],
+        "plp_id": 86,
+        "t2_system_id": 30874
+      },
+      {
+        "#name": "SH_delivery_system_descriptor",
+        "diversity_mode": 5
+      },
+      {
+        "#name": "SH_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "modulation",
+            "#nodes": [
+              {
+                "#name": "OFDM",
+                "bandwidth": "1.7MHz",
+                "code_rate": 5,
+                "common_frequency": false,
+                "constellation_and_hierarchy": 2,
+                "guard_interval": "1/16",
+                "priority": 1,
+                "transmission_mode": "4k"
+              },
+              {
+                "#name": "interleaver",
+                "common_multiplier": 5
+              }
+            ]
+          },
+          {
+            "#name": "modulation",
+            "#nodes": [
+              {
+                "#name": "TDM",
+                "code_rate": 2,
+                "modulation_mode": "16APSK",
+                "polarization": "vertical",
+                "roll_off": "0.15",
+                "symbol_rate": 1
+              },
+              {
+                "#name": "interleaver",
+                "common_multiplier": 7,
+                "nof_late_taps": 24,
+                "nof_slices": 54,
+                "non_late_increments": 45,
+                "slice_distance": 102
+              }
+            ]
+          }
+        ],
+        "diversity_mode": 10
+      },
+      {
+        "#name": "S2X_satellite_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "master_channel",
+            "frequency": "34,567,890,000",
+            "orbital_position": "19.2",
+            "polarization": "horizontal",
+            "roll_off": "0.15",
+            "symbol_rate": "123,456,700",
+            "west_east_flag": "east"
+          },
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "receiver_profiles": 21,
+        "s2x_mode": 2,
+        "timeslice_number": 188,
+        "ts_gs_s2x_mode": 1
+      },
+      {
+        "#name": "S2X_satellite_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "master_channel",
+            "frequency": "876,543,210,000",
+            "orbital_position": "3.7",
+            "polarization": "vertical",
+            "roll_off": "0.10",
+            "symbol_rate": "456,789,600",
+            "west_east_flag": "west"
+          },
+          {
+            "#name": "channel_bond",
+            "frequency": "65,432,180,000",
+            "input_stream_identifier": 189,
+            "orbital_position": "34.0",
+            "polarization": "right",
+            "roll_off": "0.05",
+            "symbol_rate": "24,675,400",
+            "west_east_flag": "east"
+          },
+          {
+            "#name": "channel_bond",
+            "frequency": "6,543,670,000",
+            "input_stream_identifier": 46,
+            "orbital_position": "123.4",
+            "polarization": "left",
+            "roll_off": "0.25",
+            "symbol_rate": "876,400",
+            "west_east_flag": "west"
+          }
+        ],
+        "receiver_profiles": 10,
+        "s2x_mode": 3,
+        "scrambling_sequence_index": 144470,
+        "ts_gs_s2x_mode": 3
+      },
+      {
+        "#name": "frequency_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "centre_frequency",
+            "value": "123,456,780,000"
+          },
+          {
+            "#name": "centre_frequency",
+            "value": "3,876,430,000"
+          },
+          {
+            "#name": "centre_frequency",
+            "value": "120,000"
+          }
+        ],
+        "coding_type": "satellite"
+      },
+      {
+        "#name": "frequency_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "centre_frequency",
+            "value": "9,876,543,200"
+          }
+        ],
+        "coding_type": "cable"
+      },
+      {
+        "#name": "frequency_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "centre_frequency",
+            "value": "825,000,000"
+          },
+          {
+            "#name": "centre_frequency",
+            "value": "39,123,456,780"
+          }
+        ],
+        "coding_type": "terrestrial"
+      },
+      {
+        "#name": "cell_frequency_link_descriptor"
+      },
+      {
+        "#name": "cell_frequency_link_descriptor",
+        "#nodes": [
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "subcell",
+                "cell_id_extension": 171,
+                "transposer_frequency": "12,345,678,910"
+              }
+            ],
+            "cell_id": 4660,
+            "frequency": "1,234,456,780"
+          },
+          {
+            "#name": "cell",
+            "cell_id": 22136,
+            "frequency": "9,876,543,210"
+          },
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "subcell",
+                "cell_id_extension": 205,
+                "transposer_frequency": "876,650"
+              },
+              {
+                "#name": "subcell",
+                "cell_id_extension": 239,
+                "transposer_frequency": "654,654,120"
+              }
+            ],
+            "cell_id": 39612,
+            "frequency": "234,567,890"
+          }
+        ]
+      },
+      {
+        "#name": "cell_list_descriptor"
+      },
+      {
+        "#name": "cell_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "cell",
+            "cell_extent_of_latitude": 0,
+            "cell_extent_of_longitude": 4095,
+            "cell_id": 4660,
+            "cell_latitude": 0,
+            "cell_longitude": 32767
+          },
+          {
+            "#name": "cell",
+            "cell_extent_of_latitude": 4095,
+            "cell_extent_of_longitude": 0,
+            "cell_id": 22136,
+            "cell_latitude": -32768,
+            "cell_longitude": 0
+          },
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "subcell",
+                "cell_id_extension": 18,
+                "subcell_extent_of_latitude": 2048,
+                "subcell_extent_of_longitude": 1024,
+                "subcell_latitude": 16384,
+                "subcell_longitude": -16384
+              },
+              {
+                "#name": "subcell",
+                "cell_id_extension": 52,
+                "subcell_extent_of_latitude": 512,
+                "subcell_extent_of_longitude": 256,
+                "subcell_latitude": 8192,
+                "subcell_longitude": -8192
+              },
+              {
+                "#name": "subcell",
+                "cell_id_extension": 86,
+                "subcell_extent_of_latitude": 128,
+                "subcell_extent_of_longitude": 64,
+                "subcell_latitude": -4096,
+                "subcell_longitude": 4096
+              }
+            ],
+            "cell_extent_of_latitude": 50,
+            "cell_extent_of_longitude": 100,
+            "cell_id": 39612,
+            "cell_latitude": 0,
+            "cell_longitude": 16384
+          }
+        ]
+      },
+      {
+        "#name": "DTS_HD_descriptor"
+      },
+      {
+        "#name": "DTS_HD_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "DTS_HD_descriptor",
+        "#nodes": [
+          {
+            "#name": "substream_core",
+            "#nodes": [
+              {
+                "#name": "asset_info",
+                "asset_construction": 2,
+                "bit_rate": 45,
+                "component_type": 82,
+                "iso_639_language_code": "foo",
+                "post_encode_br_scaling": false,
+                "vbr": false
+              },
+              {
+                "#name": "asset_info",
+                "asset_construction": 13,
+                "bit_rate": 300,
+                "component_type": 36,
+                "post_encode_br_scaling": true,
+                "vbr": true
+              }
+            ],
+            "channel_count": 7,
+            "lfe": true,
+            "sample_resolution": false,
+            "sampling_frequency": 5
+          },
+          {
+            "#name": "substream_2",
+            "#nodes": [
+              {
+                "#name": "asset_info",
+                "asset_construction": 11,
+                "bit_rate": 127,
+                "post_encode_br_scaling": false,
+                "vbr": true
+              }
+            ],
+            "channel_count": 3,
+            "lfe": false,
+            "sample_resolution": true,
+            "sampling_frequency": 14
+          },
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "78 94"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "URI_linkage_descriptor",
+        "min_polling_interval": 400,
+        "uri": "foo://bar/",
+        "uri_linkage_type": 1
+      },
+      {
+        "#name": "URI_linkage_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "12 34 56 78"
+            ]
+          }
+        ],
+        "uri": "http://foo/bar/",
+        "uri_linkage_type": 171
+      },
+      {
+        "#name": "network_change_notify_descriptor"
+      },
+      {
+        "#name": "network_change_notify_descriptor",
+        "#nodes": [
+          {
+            "#name": "cell",
+            "cell_id": 4660
+          },
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "change",
+                "change_duration": "08:52:03",
+                "change_type": 2,
+                "message_id": 129,
+                "network_change_id": 171,
+                "network_change_version": 205,
+                "receiver_category": 0,
+                "start_time_of_change": "2019-12-11 23:12:34"
+              },
+              {
+                "#name": "change",
+                "change_duration": "11:32:45",
+                "change_type": 11,
+                "invariant_ts_onid": 48879,
+                "invariant_ts_tsid": 57005,
+                "message_id": 131,
+                "network_change_id": 239,
+                "network_change_version": 103,
+                "receiver_category": 1,
+                "start_time_of_change": "2020-01-02 02:34:56"
+              }
+            ],
+            "cell_id": 22136
+          }
+        ]
+      },
+      {
+        "#name": "DSNG_descriptor",
+        "station_identification": "Foo, bar"
+      },
+      {
+        "#name": "FTA_content_management_descriptor",
+        "control_remote_access_over_internet": 2,
+        "do_not_apply_revocation": true,
+        "do_not_scramble": false,
+        "user_defined": true
+      },
+      {
+        "#name": "FTA_content_management_descriptor",
+        "control_remote_access_over_internet": 0,
+        "do_not_apply_revocation": false,
+        "do_not_scramble": true,
+        "user_defined": false
+      },
+      {
+        "#name": "PDC_descriptor",
+        "programme_identification_label": "11-30 23:45"
+      },
+      {
+        "#name": "short_smoothing_buffer_descriptor",
+        "sb_leak_rate": 20,
+        "sb_size": 1
+      },
+      {
+        "#name": "short_smoothing_buffer_descriptor",
+        "#nodes": [
+          "01 23 45 67 89"
+        ],
+        "sb_leak_rate": 41,
+        "sb_size": 2
+      },
+      {
+        "#name": "video_depth_range_descriptor"
+      },
+      {
+        "#name": "video_depth_range_descriptor",
+        "#nodes": [
+          {
+            "#name": "range",
+            "range_type": 0,
+            "video_max_disparity_hint": -2048,
+            "video_min_disparity_hint": 2047
+          },
+          {
+            "#name": "range",
+            "range_type": 0,
+            "video_max_disparity_hint": 123,
+            "video_min_disparity_hint": -123
+          },
+          {
+            "#name": "range",
+            "range_type": 1
+          },
+          {
+            "#name": "range",
+            "#nodes": [
+              {
+                "#name": "range_selector",
+                "#nodes": [
+                  "01 23 45"
+                ]
+              }
+            ],
+            "range_type": 2
+          }
+        ]
+      },
+      {
+        "#name": "target_region_descriptor",
+        "country_code": "foo"
+      },
+      {
+        "#name": "target_region_descriptor",
+        "#nodes": [
+          {
+            "#name": "region"
+          },
+          {
+            "#name": "region",
+            "country_code": "foo",
+            "primary_region_code": 18
+          },
+          {
+            "#name": "region",
+            "primary_region_code": 52,
+            "secondary_region_code": 86
+          },
+          {
+            "#name": "region",
+            "country_code": "abc",
+            "primary_region_code": 120,
+            "secondary_region_code": 154,
+            "tertiary_region_code": 48350
+          }
+        ],
+        "country_code": "bar"
+      },
+      {
+        "#name": "target_region_name_descriptor",
+        "country_code": "foo",
+        "iso_639_language_code": "bar"
+      },
+      {
+        "#name": "target_region_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "region",
+            "primary_region_code": 18,
+            "region_name": "region foo 1"
+          },
+          {
+            "#name": "region",
+            "primary_region_code": 52,
+            "region_name": "region bar 2",
+            "secondary_region_code": 86,
+            "tertiary_region_code": 30874
+          }
+        ],
+        "country_code": "ABC",
+        "iso_639_language_code": "DEF"
+      },
+      {
+        "#name": "image_icon_descriptor",
+        "#nodes": [
+          {
+            "#name": "icon_data",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF"
+            ]
+          }
+        ],
+        "coordinate_system": 2,
+        "descriptor_number": 0,
+        "icon_horizontal_origin": 999,
+        "icon_id": 4,
+        "icon_transport_mode": 0,
+        "icon_type": "image/png",
+        "icon_vertical_origin": 456,
+        "last_descriptor_number": 12
+      },
+      {
+        "#name": "image_icon_descriptor",
+        "descriptor_number": 0,
+        "icon_id": 6,
+        "icon_transport_mode": 1,
+        "icon_type": "image/jpeg",
+        "last_descriptor_number": 7,
+        "url": "http://foo/bar.jpg"
+      },
+      {
+        "#name": "image_icon_descriptor",
+        "#nodes": [
+          {
+            "#name": "icon_data",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "descriptor_number": 3,
+        "icon_id": 6,
+        "last_descriptor_number": 3
+      },
+      {
+        "#name": "announcement_support_descriptor"
+      },
+      {
+        "#name": "announcement_support_descriptor",
+        "#nodes": [
+          {
+            "#name": "announcement",
+            "announcement_type": 1,
+            "reference_type": 0
+          },
+          {
+            "#name": "announcement",
+            "announcement_type": 4,
+            "component_tag": 222,
+            "original_network_id": 4660,
+            "reference_type": 2,
+            "service_id": 39612,
+            "transport_stream_id": 22136
+          }
+        ]
+      },
+      {
+        "#name": "telephone_descriptor",
+        "connection_type": 2,
+        "foreign_availability": true
+      },
+      {
+        "#name": "telephone_descriptor",
+        "connection_type": 30,
+        "core_number": "567 789 0123",
+        "country_prefix": "12",
+        "foreign_availability": false,
+        "international_area_code": "456-789",
+        "national_area_code": "234",
+        "operator_code": "1"
+      },
+      {
+        "#name": "mosaic_descriptor",
+        "mosaic_entry_point": true,
+        "number_of_horizontal_elementary_cells": 0,
+        "number_of_vertical_elementary_cells": 7
+      },
+      {
+        "#name": "mosaic_descriptor",
+        "#nodes": [
+          {
+            "#name": "cell",
+            "bouquet_id": 4660,
+            "cell_linkage_info": 1,
+            "logical_cell_id": 52,
+            "logical_cell_presentation_info": 2
+          },
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "elementary_cell",
+                "id": 2
+              },
+              {
+                "#name": "elementary_cell",
+                "id": 3
+              },
+              {
+                "#name": "elementary_cell",
+                "id": 52
+              }
+            ],
+            "cell_linkage_info": 2,
+            "logical_cell_id": 22,
+            "logical_cell_presentation_info": 1,
+            "original_network_id": 30874,
+            "service_id": 61458,
+            "transport_stream_id": 48350
+          },
+          {
+            "#name": "cell",
+            "#nodes": [
+              {
+                "#name": "elementary_cell",
+                "id": 31
+              },
+              {
+                "#name": "elementary_cell",
+                "id": 46
+              }
+            ],
+            "cell_linkage_info": 4,
+            "event_id": 12816,
+            "logical_cell_id": 26,
+            "logical_cell_presentation_info": 3,
+            "original_network_id": 65244,
+            "service_id": 30292,
+            "transport_stream_id": 47768
+          }
+        ],
+        "mosaic_entry_point": false,
+        "number_of_horizontal_elementary_cells": 1,
+        "number_of_vertical_elementary_cells": 5
+      },
+      {
+        "#name": "af_extensions_descriptor"
+      },
+      {
+        "#name": "MPEG2_AAC_audio_descriptor",
+        "mpeg2_aac_additional_information": 138,
+        "mpeg2_aac_channel_configuration": 2,
+        "mpeg2_aac_profile": 1
+      },
+      {
+        "#name": "MVC_extension_descriptor",
+        "average_bitrate": 1500,
+        "base_view_is_left_eyeview": false,
+        "maximum_bitrate": 1700,
+        "no_prefix_nal_unit_present": false,
+        "no_sei_nal_unit_present": true,
+        "temporal_id_end": 5,
+        "temporal_id_start": 1,
+        "view_association_not_present": true,
+        "view_order_index_max": 845,
+        "view_order_index_min": 457
+      },
+      {
+        "#name": "SVC_extension_descriptor",
+        "average_bitrate": 4566,
+        "dependency_id": 4,
+        "frame_rate": 456,
+        "height": 5236,
+        "maximum_bitrate": 5000,
+        "no_sei_nal_unit_present": false,
+        "quality_id_end": 12,
+        "quality_id_start": 10,
+        "temporal_id_end": 6,
+        "temporal_id_start": 4,
+        "width": 1236
+      },
+      {
+        "#name": "metadata_STD_descriptor",
+        "metadata_buffer_size": 789012,
+        "metadata_input_leak_rate": 123456,
+        "metadata_output_leak_rate": 4194303
+      },
+      {
+        "#name": "FMC_descriptor"
+      },
+      {
+        "#name": "FMC_descriptor",
+        "#nodes": [
+          {
+            "#name": "stream",
+            "es_id": 4660,
+            "flexmuxchannel": 171
+          },
+          {
+            "#name": "stream",
+            "es_id": 22136,
+            "flexmuxchannel": 205
+          },
+          {
+            "#name": "stream",
+            "es_id": 39612,
+            "flexmuxchannel": 239
+          }
+        ]
+      },
+      {
+        "#name": "flexmux_timing_descriptor",
+        "fcr_es_id": 4660,
+        "fcrlength": 222,
+        "fcrresolution": 1450744508,
+        "fmxratelength": 171
+      },
+      {
+        "#name": "multiplex_buffer_descriptor",
+        "mb_buffer_size": 123456,
+        "tb_leak_rate": 789012
+      },
+      {
+        "#name": "MPEG2_stereoscopic_video_format_descriptor"
+      },
+      {
+        "#name": "MPEG2_stereoscopic_video_format_descriptor",
+        "arrangement_type": 103
+      },
+      {
+        "#name": "stereoscopic_program_info_descriptor",
+        "stereoscopic_service_type": 2
+      },
+      {
+        "#name": "stereoscopic_video_info_descriptor",
+        "base_video": true,
+        "leftview": false
+      },
+      {
+        "#name": "stereoscopic_video_info_descriptor",
+        "base_video": false,
+        "horizontal_upsampling_factor": 3,
+        "usable_as_2d": true,
+        "vertical_upsampling_factor": 4
+      },
+      {
+        "#name": "transport_profile_descriptor",
+        "transport_profile": 1
+      },
+      {
+        "#name": "transport_profile_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "01 02 03 04 05"
+            ]
+          }
+        ],
+        "transport_profile": 2
+      },
+      {
+        "#name": "J2K_video_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "98 74 56"
+            ]
+          }
+        ],
+        "color_specification": 171,
+        "den_frame_rate": 1,
+        "horizontal_size": 2048,
+        "interlaced_video": true,
+        "max_bit_rate": 9000000,
+        "max_buffer_size": 123456,
+        "num_frame_rate": 60,
+        "profile_and_level": 837,
+        "still_mode": false,
+        "vertical_size": 1069
+      },
+      {
+        "#name": "cue_identifier_descriptor",
+        "cue_stream_type": "insert_null_schedule"
+      },
+      {
+        "#name": "cue_identifier_descriptor",
+        "cue_stream_type": "all"
+      },
+      {
+        "#name": "DVB_AC3_descriptor"
+      },
+      {
+        "#name": "DVB_AC3_descriptor",
+        "asvc": 120,
+        "bsid": 52,
+        "component_type": 18,
+        "mainid": 86
+      },
+      {
+        "#name": "DVB_AC3_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "98 76 54"
+            ]
+          }
+        ],
+        "component_type": 154,
+        "mainid": 188
+      },
+      {
+        "#name": "DVB_enhanced_AC3_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_info",
+            "#nodes": [
+              "14 78 52 36"
+            ]
+          }
+        ],
+        "asvc": 120,
+        "bsid": 52,
+        "component_type": 18,
+        "mainid": 86,
+        "mixinfoexists": true,
+        "substream1": 154,
+        "substream2": 188,
+        "substream3": 222
+      },
+      {
+        "#name": "private_data_indicator_descriptor",
+        "private_data_indicator": 305419896
+      },
+      {
+        "#name": "private_data_indicator_descriptor",
+        "private_data_indicator": 0
+      },
+      {
+        "#name": "registration_descriptor",
+        "format_identifier": 2557891634
+      },
+      {
+        "#name": "registration_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_identification_info",
+            "#nodes": [
+              "98 76 54"
+            ]
+          }
+        ],
+        "format_identifier": 305419896
+      },
+      {
+        "#name": "MVC_operation_point_descriptor",
+        "#nodes": [
+          {
+            "#name": "level",
+            "level_idc": 205
+          },
+          {
+            "#name": "level",
+            "#nodes": [
+              {
+                "#name": "operation_point",
+                "applicable_temporal_id": 1,
+                "num_target_output_views": 85
+              },
+              {
+                "#name": "operation_point",
+                "#nodes": [
+                  {
+                    "#name": "ES",
+                    "reference": 1
+                  },
+                  {
+                    "#name": "ES",
+                    "reference": 53
+                  },
+                  {
+                    "#name": "ES",
+                    "reference": 36
+                  },
+                  {
+                    "#name": "ES",
+                    "reference": 15
+                  }
+                ],
+                "applicable_temporal_id": 2,
+                "num_target_output_views": 12
+              }
+            ],
+            "level_idc": 239
+          }
+        ],
+        "avc_compatible_flags": 1,
+        "constraint_set0": false,
+        "constraint_set1": true,
+        "constraint_set2": false,
+        "constraint_set3": true,
+        "constraint_set4": false,
+        "constraint_set5": true,
+        "profile_idc": 171
+      },
+      {
+        "#name": "HEVC_hierarchy_extension_descriptor",
+        "#nodes": [
+          {
+            "#name": "embedded_layer",
+            "hierarchy_layer_index": 1
+          },
+          {
+            "#name": "embedded_layer",
+            "hierarchy_layer_index": 18
+          },
+          {
+            "#name": "embedded_layer",
+            "hierarchy_layer_index": 35
+          },
+          {
+            "#name": "embedded_layer",
+            "hierarchy_layer_index": 49
+          }
+        ],
+        "extension_dimension_bits": 43009,
+        "hierarchy_channel": 27,
+        "hierarchy_layer_index": 50,
+        "nuh_layer_id": 35,
+        "temporal_id": 5,
+        "tref_present": false
+      },
+      {
+        "#name": "green_extension_descriptor"
+      },
+      {
+        "#name": "green_extension_descriptor",
+        "#nodes": [
+          {
+            "#name": "constant_backlight_voltage_time_interval",
+            "value": 200
+          },
+          {
+            "#name": "constant_backlight_voltage_time_interval",
+            "value": 3456
+          },
+          {
+            "#name": "constant_backlight_voltage_time_interval",
+            "value": 45678
+          },
+          {
+            "#name": "max_variation",
+            "value": 852
+          },
+          {
+            "#name": "max_variation",
+            "value": 36980
+          }
+        ]
+      },
+      {
+        "#name": "virtual_segmentation_descriptor"
+      },
+      {
+        "#name": "virtual_segmentation_descriptor",
+        "#nodes": [
+          {
+            "#name": "partition",
+            "boundary_pid": 4660,
+            "partition_id": 0,
+            "sap_type_max": 5
+          },
+          {
+            "#name": "partition",
+            "maximum_duration": 0,
+            "partition_id": 2,
+            "sap_type_max": 1
+          },
+          {
+            "#name": "partition",
+            "maximum_duration": 10,
+            "partition_id": 3,
+            "sap_type_max": 3
+          }
+        ],
+        "ticks_per_second": 12345
+      },
+      {
+        "#name": "virtual_segmentation_descriptor",
+        "#nodes": [
+          {
+            "#name": "partition",
+            "maximum_duration": 3,
+            "partition_id": 4,
+            "sap_type_max": 7
+          },
+          {
+            "#name": "partition",
+            "maximum_duration": 100000000,
+            "partition_id": 5,
+            "sap_type_max": 2
+          }
+        ],
+        "ticks_per_second": 12345
+      },
+      {
+        "#name": "content_labelling_descriptor",
+        "#nodes": [
+          {
+            "#name": "content_reference_id",
+            "#nodes": [
+              "01 23 45 67"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "96 85 27 41"
+            ]
+          }
+        ],
+        "content_id": 52,
+        "content_time_base_indicator": 2,
+        "content_time_base_value": 5123456789,
+        "metadata_application_format": 16,
+        "metadata_time_base_value": 4987654321
+      },
+      {
+        "#name": "content_labelling_descriptor",
+        "#nodes": [
+          {
+            "#name": "time_base_association_data",
+            "#nodes": [
+              "74 18 52"
+            ]
+          }
+        ],
+        "content_time_base_indicator": 5,
+        "metadata_application_format": 65535,
+        "metadata_application_format_identifier": 305419896
+      },
+      {
+        "#name": "metadata_pointer_descriptor",
+        "#nodes": [
+          {
+            "#name": "metadata_locator",
+            "#nodes": [
+              "96 38 52"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "14 72 58"
+            ]
+          }
+        ],
+        "metadata_application_format": 65535,
+        "metadata_application_format_identifier": 305419896,
+        "metadata_format": 255,
+        "metadata_format_identifier": 2271560481,
+        "metadata_service_id": 171,
+        "mpeg_carriage_flags": 3
+      },
+      {
+        "#name": "metadata_pointer_descriptor",
+        "metadata_application_format": 17,
+        "metadata_format": 16,
+        "metadata_service_id": 239,
+        "mpeg_carriage_flags": 1,
+        "program_number": 4660,
+        "transport_stream_id": 43981,
+        "transport_stream_location": 22136
+      },
+      {
+        "#name": "metadata_descriptor",
+        "#nodes": [
+          {
+            "#name": "service_identification",
+            "#nodes": [
+              "01 23 45"
+            ]
+          },
+          {
+            "#name": "decoder_config",
+            "#nodes": [
+              "45 69 87"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "45 63 21"
+            ]
+          }
+        ],
+        "decoder_config_flags": 1,
+        "metadata_application_format": 65535,
+        "metadata_application_format_identifier": 305419896,
+        "metadata_format": 255,
+        "metadata_format_identifier": 2271560481,
+        "metadata_service_id": 205
+      },
+      {
+        "#name": "metadata_descriptor",
+        "#nodes": [
+          {
+            "#name": "dec_config_identification",
+            "#nodes": [
+              "14 78 52 36 90"
+            ]
+          }
+        ],
+        "decoder_config_flags": 3,
+        "metadata_application_format": 16,
+        "metadata_format": 17,
+        "metadata_service_id": 120
+      },
+      {
+        "#name": "metadata_descriptor",
+        "decoder_config_flags": 4,
+        "decoder_config_metadata_service_id": 222,
+        "metadata_application_format": 17,
+        "metadata_format": 18,
+        "metadata_service_id": 35
+      },
+      {
+        "#name": "metadata_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_data",
+            "#nodes": [
+              "78 96 54"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "AB"
+            ]
+          }
+        ],
+        "decoder_config_flags": 6,
+        "metadata_application_format": 291,
+        "metadata_format": 32,
+        "metadata_service_id": 120
+      },
+      {
+        "#name": "MPEGH_3D_audio_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "interactivity_enabled": false,
+        "mpegh_3da_profile_level_indication": 171,
+        "reference_channel_layout": 52
+      },
+      {
+        "#name": "MPEGH_3D_audio_descriptor",
+        "interactivity_enabled": true,
+        "mpegh_3da_profile_level_indication": 1,
+        "reference_channel_layout": 2
+      },
+      {
+        "#name": "MPEGH_3D_audio_multi_stream_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "01 23 45"
+            ]
+          }
+        ],
+        "this_is_main_stream": false,
+        "this_stream_id": 113
+      },
+      {
+        "#name": "MPEGH_3D_audio_multi_stream_descriptor",
+        "#nodes": [
+          {
+            "#name": "mae_group",
+            "is_in_main_stream": true,
+            "mae_group_id": 18
+          },
+          {
+            "#name": "mae_group",
+            "auxiliary_stream_id": 90,
+            "is_in_main_stream": false,
+            "is_in_ts": true,
+            "mae_group_id": 19
+          },
+          {
+            "#name": "mae_group",
+            "auxiliary_stream_id": 91,
+            "is_in_main_stream": false,
+            "is_in_ts": false,
+            "mae_group_id": 20
+          }
+        ],
+        "num_auxiliary_streams": 11,
+        "this_is_main_stream": true,
+        "this_stream_id": 15
+      }
+    ],
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "CIT",
+    "#nodes": [
+      {
+        "#name": "prepend_string",
+        "value": ""
+      }
+    ],
+    "current": true,
+    "original_network_id": 43981,
+    "service_id": 4660,
+    "transport_stream_id": 22136,
+    "version": 0
+  },
+  {
+    "#name": "CIT",
+    "#nodes": [
+      {
+        "#name": "prepend_string",
+        "value": "foo://bar"
+      },
+      {
+        "#name": "prepend_string",
+        "value": "scoo"
+      },
+      {
+        "#name": "prepend_string",
+        "value": "bidoo"
+      },
+      {
+        "#name": "crid",
+        "crid_ref": 4660,
+        "prepend_string_index": 0,
+        "unique_string": "abcdef"
+      },
+      {
+        "#name": "crid",
+        "crid_ref": 22136,
+        "prepend_string_index": 2,
+        "unique_string": "ghijk"
+      },
+      {
+        "#name": "crid",
+        "crid_ref": 43981,
+        "prepend_string_index": 255,
+        "unique_string": "xyzt"
+      }
+    ],
+    "current": true,
+    "original_network_id": 17185,
+    "service_id": 65244,
+    "transport_stream_id": 34661,
+    "version": 2
+  },
+  {
+    "#name": "RNT",
+    "context_id": 4660,
+    "context_id_type": 2,
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "RNT",
+    "#nodes": [
+      {
+        "#name": "stream_identifier_descriptor",
+        "component_tag": 0
+      },
+      {
+        "#name": "stream_identifier_descriptor",
+        "component_tag": 1
+      },
+      {
+        "#name": "stream_identifier_descriptor",
+        "component_tag": 2
+      },
+      {
+        "#name": "resolution_provider",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 3
+          },
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 4
+          },
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 5
+          },
+          {
+            "#name": "CRID_authority",
+            "#nodes": [
+              {
+                "#name": "stream_identifier_descriptor",
+                "component_tag": 6
+              }
+            ],
+            "name": "Authority 1.1",
+            "policy": 0
+          },
+          {
+            "#name": "CRID_authority",
+            "name": "Authority 1.2",
+            "policy": 1
+          }
+        ],
+        "name": "Provider 1"
+      },
+      {
+        "#name": "resolution_provider",
+        "name": "Provider 2"
+      },
+      {
+        "#name": "resolution_provider",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 7
+          },
+          {
+            "#name": "CRID_authority",
+            "name": "Authority 3.1",
+            "policy": 2
+          },
+          {
+            "#name": "CRID_authority",
+            "#nodes": [
+              {
+                "#name": "stream_identifier_descriptor",
+                "component_tag": 8
+              }
+            ],
+            "name": "Authority 3.2",
+            "policy": 3
+          }
+        ],
+        "name": "Provider 3"
+      }
+    ],
+    "context_id": 43981,
+    "context_id_type": 0,
+    "current": true,
+    "version": 11
+  },
+  {
+    "#name": "TSDT",
+    "#nodes": [
+      {
+        "#name": "TVA_id_descriptor"
+      },
+      {
+        "#name": "TVA_id_descriptor",
+        "#nodes": [
+          {
+            "#name": "TVA",
+            "id": 4660,
+            "running_status": 2
+          },
+          {
+            "#name": "TVA",
+            "id": 43981,
+            "running_status": 6
+          }
+        ]
+      },
+      {
+        "#name": "content_identifier_descriptor"
+      },
+      {
+        "#name": "content_identifier_descriptor",
+        "#nodes": [
+          {
+            "#name": "crid",
+            "crid": "foo/bar",
+            "crid_location": 0,
+            "crid_type": 1
+          },
+          {
+            "#name": "crid",
+            "crid_location": 1,
+            "crid_ref": 4660,
+            "crid_type": 2
+          },
+          {
+            "#name": "crid",
+            "crid_location": 2,
+            "crid_type": 3
+          }
+        ]
+      },
+      {
+        "#name": "related_content_descriptor"
+      },
+      {
+        "#name": "S2_satellite_delivery_system_descriptor"
+      },
+      {
+        "#name": "S2_satellite_delivery_system_descriptor",
+        "backwards_compatibility": true,
+        "input_stream_identifier": 171,
+        "scrambling_sequence_index": 144470,
+        "timeslice_number": 205,
+        "ts_gs_mode": 1
+      }
+    ],
+    "current": true,
+    "version": 2
+  }
+]

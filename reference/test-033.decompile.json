@@ -1,0 +1,68 @@
+[
+  {
+    "#name": "DSMCC_stream_descriptors_table",
+    "#nodes": [
+      {
+        "#name": "NPT_reference_descriptor",
+        "content_id": 127,
+        "npt_reference": 4660,
+        "post_discontinuity": false,
+        "scale_denominator": 0,
+        "scale_numerator": 0,
+        "stc_reference": 22136
+      },
+      {
+        "#name": "NPT_reference_descriptor",
+        "content_id": 3,
+        "npt_reference": 6852858930,
+        "post_discontinuity": false,
+        "scale_denominator": 13,
+        "scale_numerator": 10,
+        "stc_reference": 4886718345
+      },
+      {
+        "#name": "NPT_endpoint_descriptor",
+        "start_npt": 4886718345,
+        "stop_npt": 4886735821
+      },
+      {
+        "#name": "stream_mode_descriptor",
+        "stream_mode": 1
+      },
+      {
+        "#name": "stream_event_descriptor",
+        "event_id": 1,
+        "event_npt": 4886718345
+      },
+      {
+        "#name": "stream_event_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "01 02 03"
+            ]
+          }
+        ],
+        "event_id": 2,
+        "event_npt": 4886735821
+      },
+      {
+        "#name": "stream_event_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_text",
+            "#nodes": [
+              "Test"
+            ]
+          }
+        ],
+        "event_id": 3,
+        "event_npt": 4886718446
+      }
+    ],
+    "current": true,
+    "table_id_extension": 65535,
+    "version": 0
+  }
+]

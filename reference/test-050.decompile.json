@@ -1,0 +1,169 @@
+[
+  {
+    "#name": "cable_emergency_alert_table",
+    "#nodes": [
+      {
+        "#name": "location",
+        "county_code": 222,
+        "county_subdivision": 1,
+        "state_code": 11
+      }
+    ],
+    "alert_priority": 11,
+    "eas_event_code": "EQW",
+    "eas_event_id": 4660,
+    "eas_originator_code": "CIV",
+    "protocol_version": 0,
+    "sequence_number": 1
+  },
+  {
+    "#name": "cable_emergency_alert_table",
+    "#nodes": [
+      {
+        "#name": "nature_of_activation_text",
+        "#nodes": [
+          {
+            "#name": "string",
+            "language": "eng",
+            "text": "Warning message"
+          },
+          {
+            "#name": "string",
+            "language": "foo",
+            "text": "Glooby boolga"
+          }
+        ]
+      },
+      {
+        "#name": "alert_text",
+        "#nodes": [
+          {
+            "#name": "string",
+            "language": "eng",
+            "text": "This is a long message text without real meaning."
+          },
+          {
+            "#name": "string",
+            "language": "fre",
+            "text": "Tout \u00E7a ne veut pas dire grand chose."
+          }
+        ]
+      },
+      {
+        "#name": "location",
+        "county_code": 841,
+        "county_subdivision": 0,
+        "state_code": 1
+      },
+      {
+        "#name": "location",
+        "county_code": 123,
+        "county_subdivision": 5,
+        "state_code": 2
+      },
+      {
+        "#name": "location",
+        "county_code": 431,
+        "county_subdivision": 4,
+        "state_code": 3
+      },
+      {
+        "#name": "exception",
+        "major_channel_number": 1,
+        "minor_channel_number": 2
+      },
+      {
+        "#name": "exception",
+        "major_channel_number": 3,
+        "minor_channel_number": 123
+      },
+      {
+        "#name": "exception",
+        "oob_source_id": 1875
+      },
+      {
+        "#name": "exception",
+        "oob_source_id": 5527
+      },
+      {
+        "#name": "EAS_inband_details_channel_descriptor",
+        "details_program_number": 4660,
+        "details_rf_channel": 11
+      },
+      {
+        "#name": "EAS_inband_exception_channels_descriptor"
+      },
+      {
+        "#name": "EAS_inband_exception_channels_descriptor",
+        "#nodes": [
+          {
+            "#name": "exception",
+            "program_number": 4660,
+            "rf_channel": 10
+          },
+          {
+            "#name": "exception",
+            "program_number": 21045,
+            "rf_channel": 22
+          }
+        ]
+      },
+      {
+        "#name": "EAS_metadata_descriptor",
+        "fragment_number": 1
+      },
+      {
+        "#name": "EAS_metadata_descriptor",
+        "#nodes": [
+          "<AlertText><Foo/></AlertText>"
+        ],
+        "fragment_number": 2
+      },
+      {
+        "#name": "EAS_audio_file_descriptor"
+      },
+      {
+        "#name": "EAS_audio_file_descriptor",
+        "#nodes": [
+          {
+            "#name": "file",
+            "audio_format": 2,
+            "audio_source": 0
+          },
+          {
+            "#name": "file",
+            "application_id": 39030,
+            "audio_format": 2,
+            "audio_source": 1,
+            "carousel_id": 305419896,
+            "file_name": "FOO-AUDIO.WAV",
+            "program_number": 22136
+          },
+          {
+            "#name": "file",
+            "application_id": 4696,
+            "audio_format": 3,
+            "audio_source": 2,
+            "download_id": 362238741,
+            "file_name": "bar.wav",
+            "module_id": 2233751185,
+            "program_number": 17769
+          }
+        ]
+      }
+    ],
+    "alert_message_time_remaining": 30,
+    "alert_priority": 11,
+    "audio_oob_source_id": 38484,
+    "details_major_channel_number": 12,
+    "details_minor_channel_number": 15,
+    "details_oob_source_id": 29715,
+    "eas_event_code": "BAR",
+    "eas_event_id": 34661,
+    "eas_originator_code": "FOO",
+    "event_duration": 15,
+    "event_start_time": "2016-09-15 21:12:45",
+    "protocol_version": 0,
+    "sequence_number": 2
+  }
+]

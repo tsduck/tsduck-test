@@ -1,0 +1,349 @@
+[
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_null"
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "bandwidth_reservation"
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "time_signal",
+        "pts_time": 123456789
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "time_signal"
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "private_command",
+        "identifier": 3735928559
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "private_command",
+        "#nodes": [
+          "98 76 54 32 10"
+        ],
+        "identifier": 305419896
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_null"
+      }
+    ],
+    "protocol_version": 4,
+    "pts_adjustment": 456789,
+    "tier": 327
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_insert",
+        "splice_event_cancel": true,
+        "splice_event_id": 305419896
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_insert",
+        "avail_num": 0,
+        "avails_expected": 0,
+        "out_of_network": true,
+        "splice_event_cancel": false,
+        "splice_event_id": 305419896,
+        "splice_immediate": true,
+        "unique_program_id": 26505
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_insert",
+        "avail_num": 1,
+        "avails_expected": 3,
+        "out_of_network": true,
+        "pts_time": 789456,
+        "splice_event_cancel": false,
+        "splice_event_id": 305419896,
+        "splice_immediate": false,
+        "unique_program_id": 26452
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_insert",
+        "#nodes": [
+          {
+            "#name": "break_duration",
+            "auto_return": false,
+            "duration": 456
+          },
+          {
+            "#name": "component",
+            "component_tag": 1,
+            "pts_time": 123789
+          },
+          {
+            "#name": "component",
+            "component_tag": 2,
+            "pts_time": 123751
+          },
+          {
+            "#name": "component",
+            "component_tag": 3,
+            "pts_time": 123801
+          }
+        ],
+        "avail_num": 1,
+        "avails_expected": 3,
+        "out_of_network": true,
+        "splice_event_cancel": false,
+        "splice_event_id": 305419896,
+        "splice_immediate": false,
+        "unique_program_id": 26452
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_schedule"
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_schedule",
+        "#nodes": [
+          {
+            "#name": "splice_event",
+            "splice_event_cancel": true,
+            "splice_event_id": 2022777605
+          },
+          {
+            "#name": "splice_event",
+            "#nodes": [
+              {
+                "#name": "break_duration",
+                "auto_return": true,
+                "duration": 64565
+              }
+            ],
+            "avail_num": 0,
+            "avails_expected": 0,
+            "out_of_network": true,
+            "splice_event_cancel": false,
+            "splice_event_id": 2022787169,
+            "unique_program_id": 17762,
+            "utc_splice_time": 1525032898
+          },
+          {
+            "#name": "splice_event",
+            "#nodes": [
+              {
+                "#name": "component",
+                "component_tag": 1,
+                "utc_splice_time": 1525032891
+              },
+              {
+                "#name": "component",
+                "component_tag": 2,
+                "utc_splice_time": 1525032910
+              }
+            ],
+            "avail_num": 0,
+            "avails_expected": 0,
+            "out_of_network": false,
+            "splice_event_cancel": false,
+            "splice_event_id": 2022787169,
+            "unique_program_id": 17762
+          }
+        ]
+      },
+      {
+        "#name": "splice_avail_descriptor",
+        "identifier": 1129661769,
+        "provider_avail_id": 2557891634
+      },
+      {
+        "#name": "splice_DTMF_descriptor",
+        "dtmf": "*1234#",
+        "identifier": 1129661769,
+        "preroll": 8
+      },
+      {
+        "#name": "splice_time_descriptor",
+        "identifier": 1129661769,
+        "tai_ns": 1234,
+        "tai_seconds": 1525032891,
+        "utc_offset": 21
+      },
+      {
+        "#name": "splice_segmentation_descriptor",
+        "identifier": 1129661769,
+        "segmentation_event_cancel": true,
+        "segmentation_event_id": 3735928559
+      },
+      {
+        "#name": "splice_segmentation_descriptor",
+        "#nodes": [
+          {
+            "#name": "segmentation_upid",
+            "#nodes": [
+              "01 02 03 04"
+            ],
+            "type": 3
+          }
+        ],
+        "identifier": 1129661769,
+        "segment_num": 0,
+        "segmentation_event_cancel": false,
+        "segmentation_event_id": 3203383023,
+        "segmentation_type_id": 16,
+        "segments_expected": 1
+      },
+      {
+        "#name": "splice_segmentation_descriptor",
+        "#nodes": [
+          {
+            "#name": "segmentation_upid",
+            "#nodes": [
+              "78 96 54 12 30"
+            ],
+            "type": 11
+          },
+          {
+            "#name": "component",
+            "component_tag": 1,
+            "pts_offset": 123
+          },
+          {
+            "#name": "component",
+            "component_tag": 2,
+            "pts_offset": 456
+          }
+        ],
+        "archive_allowed": false,
+        "device_restrictions": 1,
+        "identifier": 1129661769,
+        "no_regional_blackout": false,
+        "segment_num": 1,
+        "segmentation_duration": 987654,
+        "segmentation_event_cancel": false,
+        "segmentation_event_id": 915952148,
+        "segmentation_type_id": 52,
+        "segments_expected": 7,
+        "sub_segment_num": 2,
+        "sub_segments_expected": 4,
+        "web_delivery_allowed": true
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_insert",
+        "#nodes": [
+          {
+            "#name": "break_duration",
+            "auto_return": false,
+            "duration": 6750000
+          }
+        ],
+        "avail_num": 0,
+        "avails_expected": 0,
+        "out_of_network": true,
+        "splice_event_cancel": false,
+        "splice_event_id": 1,
+        "splice_immediate": true,
+        "unique_program_id": 1
+      },
+      {
+        "#name": "splice_avail_descriptor",
+        "identifier": 1129661769,
+        "provider_avail_id": 18
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
+  }
+]

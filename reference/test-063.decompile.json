@@ -1,0 +1,1232 @@
+[
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "ISDB_access_control_descriptor",
+        "ca_system_id": 4,
+        "pid": 100,
+        "transmission_type": 7
+      },
+      {
+        "#name": "ISDB_access_control_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "ca_system_id": 10,
+        "pid": 200,
+        "transmission_type": 2
+      },
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 10
+      },
+      {
+        "#name": "data_component_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_data_component_info",
+            "#nodes": [
+              "23 45 67"
+            ]
+          }
+        ],
+        "data_component_id": 12
+      },
+      {
+        "#name": "digital_copy_control_descriptor",
+        "digital_recording_control_data": 3,
+        "user_defined": 0
+      },
+      {
+        "#name": "digital_copy_control_descriptor",
+        "#nodes": [
+          {
+            "#name": "component_control",
+            "component_tag": 100,
+            "digital_recording_control_data": 0,
+            "user_defined": 10
+          },
+          {
+            "#name": "component_control",
+            "component_tag": 101,
+            "digital_recording_control_data": 1,
+            "maximum_bitrate": 40,
+            "user_defined": 12
+          }
+        ],
+        "digital_recording_control_data": 1,
+        "maximum_bitrate": 5,
+        "user_defined": 2
+      },
+      {
+        "#name": "ISDB_terrestrial_delivery_system_descriptor",
+        "area_code": 291,
+        "guard_interval": "1/32",
+        "transmission_mode": "8k"
+      },
+      {
+        "#name": "ISDB_terrestrial_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "frequency",
+            "value": "600,000,000"
+          },
+          {
+            "#name": "frequency",
+            "value": "650,000,000"
+          },
+          {
+            "#name": "frequency",
+            "value": "700,000,000"
+          },
+          {
+            "#name": "frequency",
+            "value": "750,000,000"
+          }
+        ],
+        "area_code": 4077,
+        "guard_interval": "1/16",
+        "transmission_mode": "2k"
+      },
+      {
+        "#name": "partial_reception_descriptor"
+      },
+      {
+        "#name": "partial_reception_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "id": 4660
+          },
+          {
+            "#name": "service",
+            "id": 22136
+          },
+          {
+            "#name": "service",
+            "id": 39612
+          }
+        ]
+      },
+      {
+        "#name": "TS_information_descriptor",
+        "remote_control_key_id": 171,
+        "ts_name": "foo"
+      },
+      {
+        "#name": "TS_information_descriptor",
+        "#nodes": [
+          {
+            "#name": "transmission_type",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 4660
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ],
+            "transmission_type_info": 239
+          },
+          {
+            "#name": "transmission_type",
+            "transmission_type_info": 35
+          },
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "CD EF 12 56"
+            ]
+          }
+        ],
+        "remote_control_key_id": 18,
+        "ts_name": "bar"
+      },
+      {
+        "#name": "logo_transmission_descriptor",
+        "download_data_id": 4660,
+        "logo_id": 2,
+        "logo_transmission_type": 1,
+        "logo_version": 2748
+      },
+      {
+        "#name": "logo_transmission_descriptor",
+        "logo_id": 291,
+        "logo_transmission_type": 2
+      },
+      {
+        "#name": "logo_transmission_descriptor",
+        "logo_char": "log text",
+        "logo_transmission_type": 3
+      },
+      {
+        "#name": "logo_transmission_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "12 34 56 78"
+            ]
+          }
+        ],
+        "logo_transmission_type": 222
+      },
+      {
+        "#name": "video_decode_control_descriptor",
+        "sequence_end_code": false,
+        "still_picture": true,
+        "video_encode_format": 2
+      },
+      {
+        "#name": "video_decode_control_descriptor",
+        "reserved_future_use": 2,
+        "sequence_end_code": true,
+        "still_picture": false,
+        "video_encode_format": 3
+      },
+      {
+        "#name": "system_management_descriptor",
+        "additional_broadcasting_identification": 35,
+        "broadcasting_flag": 0,
+        "broadcasting_identifier": 1
+      },
+      {
+        "#name": "system_management_descriptor",
+        "#nodes": [
+          {
+            "#name": "additional_identification_info",
+            "#nodes": [
+              "98 76 54"
+            ]
+          }
+        ],
+        "additional_broadcasting_identification": 171,
+        "broadcasting_flag": 1,
+        "broadcasting_identifier": 2
+      },
+      {
+        "#name": "broadcaster_name_descriptor",
+        "name": "test name"
+      },
+      {
+        "#name": "content_availability_descriptor",
+        "copy_restriction_mode": true,
+        "encryption_mode": false,
+        "image_constraint_token": false,
+        "retention_mode": true,
+        "retention_state": 1
+      },
+      {
+        "#name": "content_availability_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "01 23 56 78"
+            ]
+          }
+        ],
+        "copy_restriction_mode": false,
+        "encryption_mode": true,
+        "image_constraint_token": true,
+        "retention_mode": false,
+        "retention_state": 2
+      }
+    ],
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "BIT",
+    "broadcast_view_propriety": false,
+    "current": true,
+    "original_network_id": 291,
+    "version": 0
+  },
+  {
+    "#name": "BIT",
+    "#nodes": [
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 4660
+      },
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 22136
+      },
+      {
+        "#name": "broadcaster",
+        "broadcaster_id": 171
+      },
+      {
+        "#name": "broadcaster",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 39612
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 57073
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 9029
+          }
+        ],
+        "broadcaster_id": 205
+      }
+    ],
+    "broadcast_view_propriety": true,
+    "current": true,
+    "original_network_id": 34661,
+    "version": 23
+  },
+  {
+    "#name": "NBIT",
+    "body": true,
+    "current": true,
+    "original_network_id": 4660,
+    "version": 0
+  },
+  {
+    "#name": "NBIT",
+    "#nodes": [
+      {
+        "#name": "information",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 39612
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 57073
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 9029
+          }
+        ],
+        "description_body_location": 1,
+        "information_id": 4660,
+        "information_type": 2,
+        "user_defined": 35
+      },
+      {
+        "#name": "information",
+        "#nodes": [
+          {
+            "#name": "key",
+            "id": 43981
+          },
+          {
+            "#name": "key",
+            "id": 22136
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 30292
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 21554
+          }
+        ],
+        "description_body_location": 2,
+        "information_id": 22136,
+        "information_type": 3
+      }
+    ],
+    "body": false,
+    "current": true,
+    "original_network_id": 21554,
+    "version": 29
+  },
+  {
+    "#name": "LDT",
+    "#nodes": [
+      {
+        "#name": "description",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 61202
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 13398
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 30874
+          }
+        ],
+        "description_id": 43981
+      },
+      {
+        "#name": "description",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 9029
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 26505
+          }
+        ],
+        "description_id": 57073
+      }
+    ],
+    "current": true,
+    "original_network_id": 39612,
+    "original_service_id": 4660,
+    "transport_stream_id": 22136,
+    "version": 1
+  },
+  {
+    "#name": "PCAT",
+    "content_id": 2271560481,
+    "current": true,
+    "original_network_id": 39612,
+    "service_id": 4660,
+    "transport_stream_id": 22136,
+    "version": 0
+  },
+  {
+    "#name": "PCAT",
+    "#nodes": [
+      {
+        "#name": "version",
+        "content_minor_version": 34661,
+        "content_version": 17185,
+        "version_indicator": 1
+      },
+      {
+        "#name": "version",
+        "#nodes": [
+          {
+            "#name": "schedule",
+            "duration": "01:23:45",
+            "start_time": "2020-05-08 12:34:56"
+          },
+          {
+            "#name": "schedule",
+            "duration": "22:52:15",
+            "start_time": "2020-06-12 23:45:09"
+          },
+          {
+            "#name": "schedule",
+            "duration": "00:45:54",
+            "start_time": "2020-07-16 01:12:47"
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 61202
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 13398
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 30874
+          }
+        ],
+        "content_minor_version": 26505,
+        "content_version": 30292,
+        "version_indicator": 2
+      },
+      {
+        "#name": "version",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 9029
+          }
+        ],
+        "content_minor_version": 52719,
+        "content_version": 35243,
+        "version_indicator": 3
+      }
+    ],
+    "content_id": 2023406814,
+    "current": true,
+    "original_network_id": 13398,
+    "service_id": 43981,
+    "transport_stream_id": 61202,
+    "version": 7
+  },
+  {
+    "#name": "ITT",
+    "current": true,
+    "event_id": 4660,
+    "version": 0
+  },
+  {
+    "#name": "ITT",
+    "#nodes": [
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 61202
+      },
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 13398
+      },
+      {
+        "#name": "data_component_descriptor",
+        "data_component_id": 30874
+      }
+    ],
+    "current": true,
+    "event_id": 39030,
+    "version": 7
+  },
+  {
+    "#name": "LIT",
+    "current": true,
+    "event_id": 4660,
+    "original_network_id": 57073,
+    "service_id": 22136,
+    "transport_stream_id": 39612,
+    "version": 0
+  },
+  {
+    "#name": "LIT",
+    "#nodes": [
+      {
+        "#name": "event",
+        "local_event_id": 4745
+      },
+      {
+        "#name": "event",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 61202
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 13398
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 30874
+          }
+        ],
+        "local_event_id": 13398
+      },
+      {
+        "#name": "event",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 30874
+          }
+        ],
+        "local_event_id": 22136
+      }
+    ],
+    "current": true,
+    "event_id": 65244,
+    "original_network_id": 12816,
+    "service_id": 47768,
+    "transport_stream_id": 30292,
+    "version": 6
+  },
+  {
+    "#name": "ERT",
+    "current": true,
+    "event_relation_id": 4660,
+    "information_provider_id": 22136,
+    "relation_type": 1,
+    "version": 0
+  },
+  {
+    "#name": "ERT",
+    "#nodes": [
+      {
+        "#name": "relation",
+        "collection_mode": 1,
+        "node_id": 4660,
+        "parent_node_id": 30868,
+        "reference_number": 50
+      },
+      {
+        "#name": "relation",
+        "#nodes": [
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 61202
+          },
+          {
+            "#name": "data_component_descriptor",
+            "data_component_id": 13398
+          }
+        ],
+        "collection_mode": 2,
+        "node_id": 5240,
+        "parent_node_id": 13970,
+        "reference_number": 69
+      }
+    ],
+    "current": true,
+    "event_relation_id": 39030,
+    "information_provider_id": 21554,
+    "relation_type": 2,
+    "version": 27
+  },
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "audio_component_descriptor",
+        "component_tag": 18,
+        "component_type": 8,
+        "iso_639_language_code": "jpn",
+        "main_component": true,
+        "quality_indicator": 1,
+        "sampling_rate": 2,
+        "stream_content": 2,
+        "stream_type": 4
+      },
+      {
+        "#name": "audio_component_descriptor",
+        "component_tag": 52,
+        "component_type": 64,
+        "iso_639_language_code": "foo",
+        "iso_639_language_code_2": "bar",
+        "main_component": false,
+        "quality_indicator": 3,
+        "sampling_rate": 6,
+        "simulcast_group_tag": 69,
+        "stream_content": 14,
+        "stream_type": 17,
+        "text": "sample text"
+      },
+      {
+        "#name": "SI_parameter_descriptor",
+        "parameter_version": 35,
+        "update_time": "2020-05-01"
+      },
+      {
+        "#name": "SI_parameter_descriptor",
+        "#nodes": [
+          {
+            "#name": "table",
+            "id": 0
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "01"
+            ],
+            "id": 2
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "23 45"
+            ],
+            "id": 66
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "67 89 AB CD"
+            ],
+            "id": 196
+          }
+        ],
+        "parameter_version": 250,
+        "update_time": "2023-12-07"
+      },
+      {
+        "#name": "SI_prime_TS_descriptor",
+        "parameter_version": 35,
+        "si_prime_transport_stream_id": 35243,
+        "si_prime_ts_network_id": 17767,
+        "update_time": "2020-05-01"
+      },
+      {
+        "#name": "SI_prime_TS_descriptor",
+        "#nodes": [
+          {
+            "#name": "table",
+            "id": 0
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "01"
+            ],
+            "id": 2
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "23 45"
+            ],
+            "id": 66
+          },
+          {
+            "#name": "table",
+            "#nodes": [
+              "67 89 AB CD"
+            ],
+            "id": 196
+          }
+        ],
+        "parameter_version": 250,
+        "si_prime_transport_stream_id": 17185,
+        "si_prime_ts_network_id": 34661,
+        "update_time": "2023-12-07"
+      },
+      {
+        "#name": "extended_broadcaster_descriptor",
+        "broadcaster_type": 9
+      },
+      {
+        "#name": "extended_broadcaster_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "01 47"
+            ]
+          }
+        ],
+        "broadcaster_type": 12
+      },
+      {
+        "#name": "extended_broadcaster_descriptor",
+        "#nodes": [
+          {
+            "#name": "affiliation",
+            "id": 18
+          },
+          {
+            "#name": "affiliation",
+            "id": 52
+          },
+          {
+            "#name": "affiliation",
+            "id": 86
+          },
+          {
+            "#name": "broadcaster",
+            "broadcaster_id": 188,
+            "original_network_id": 30874
+          },
+          {
+            "#name": "broadcaster",
+            "broadcaster_id": 35,
+            "original_network_id": 57073
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "78 96 54 12"
+            ]
+          }
+        ],
+        "broadcaster_type": 1,
+        "terrestrial_broadcaster_id": 22136
+      },
+      {
+        "#name": "extended_broadcaster_descriptor",
+        "#nodes": [
+          {
+            "#name": "affiliation",
+            "id": 120
+          },
+          {
+            "#name": "affiliation",
+            "id": 154
+          },
+          {
+            "#name": "broadcaster",
+            "broadcaster_id": 240,
+            "original_network_id": 48350
+          }
+        ],
+        "broadcaster_type": 2,
+        "terrestrial_broadcaster_id": 13398
+      },
+      {
+        "#name": "CA_EMM_TS_descriptor",
+        "ca_system_id": 4660,
+        "original_network_id": 39612,
+        "power_supply_period": 222,
+        "transport_stream_id": 22136
+      },
+      {
+        "#name": "conditional_playback_descriptor",
+        "ca_pid": 4660,
+        "ca_system_id": 43981
+      },
+      {
+        "#name": "conditional_playback_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "74 12 58"
+            ]
+          }
+        ],
+        "ca_pid": 2439,
+        "ca_system_id": 22136
+      },
+      {
+        "#name": "CA_service_descriptor",
+        "ca_broadcaster_group_id": 137,
+        "ca_system_id": 65244,
+        "message_control": 20
+      },
+      {
+        "#name": "CA_service_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "id": 39030
+          },
+          {
+            "#name": "service",
+            "id": 25923
+          },
+          {
+            "#name": "service",
+            "id": 8702
+          }
+        ],
+        "ca_broadcaster_group_id": 220,
+        "ca_system_id": 4660,
+        "message_control": 15
+      },
+      {
+        "#name": "CA_contract_info_descriptor",
+        "ca_system_id": 22136,
+        "ca_unit_id": 12
+      },
+      {
+        "#name": "CA_contract_info_descriptor",
+        "#nodes": [
+          {
+            "#name": "component",
+            "tag": 18
+          },
+          {
+            "#name": "component",
+            "tag": 52
+          },
+          {
+            "#name": "component",
+            "tag": 86
+          },
+          {
+            "#name": "contract_verification_info",
+            "#nodes": [
+              "75 39 51"
+            ]
+          }
+        ],
+        "ca_system_id": 13398,
+        "ca_unit_id": 7,
+        "fee_name": "Test fee"
+      },
+      {
+        "#name": "hierarchical_transmission_descriptor",
+        "high_quality": true,
+        "reference_pid": 2
+      },
+      {
+        "#name": "hierarchical_transmission_descriptor",
+        "high_quality": false,
+        "reference_pid": 4660
+      },
+      {
+        "#name": "board_information_descriptor",
+        "text": "Foo bar",
+        "title": "Sample title"
+      },
+      {
+        "#name": "event_group_descriptor",
+        "group_type": 1
+      },
+      {
+        "#name": "event_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "actual",
+            "event_id": 22136,
+            "service_id": 4660
+          },
+          {
+            "#name": "actual",
+            "event_id": 57073,
+            "service_id": 39612
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "96 32 58"
+            ]
+          }
+        ],
+        "group_type": 2
+      },
+      {
+        "#name": "event_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "actual",
+            "event_id": 22136,
+            "service_id": 4660
+          },
+          {
+            "#name": "actual",
+            "event_id": 57073,
+            "service_id": 39612
+          },
+          {
+            "#name": "actual",
+            "event_id": 26505,
+            "service_id": 9029
+          },
+          {
+            "#name": "other",
+            "event_id": 47768,
+            "original_network_id": 17185,
+            "service_id": 65244,
+            "transport_stream_id": 34661
+          },
+          {
+            "#name": "other",
+            "event_id": 34087,
+            "original_network_id": 5234,
+            "service_id": 13969,
+            "transport_stream_id": 9603
+          }
+        ],
+        "group_type": 5
+      },
+      {
+        "#name": "data_content_descriptor",
+        "data_component_id": 8,
+        "entry_component": 234,
+        "iso_639_language_code": "foo",
+        "text": "Description text"
+      },
+      {
+        "#name": "data_content_descriptor",
+        "#nodes": [
+          {
+            "#name": "selector_bytes",
+            "#nodes": [
+              "12 34 56"
+            ]
+          },
+          {
+            "#name": "component",
+            "ref": 18
+          },
+          {
+            "#name": "component",
+            "ref": 52
+          },
+          {
+            "#name": "component",
+            "ref": 86
+          },
+          {
+            "#name": "component",
+            "ref": 120
+          }
+        ],
+        "data_component_id": 12,
+        "entry_component": 2,
+        "iso_639_language_code": "bar",
+        "text": "Barbatruc"
+      },
+      {
+        "#name": "service_group_descriptor",
+        "service_group_type": 0
+      },
+      {
+        "#name": "service_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "primary_service_id": 4660,
+            "secondary_service_id": 39612
+          },
+          {
+            "#name": "service",
+            "primary_service_id": 22136,
+            "secondary_service_id": 57072
+          }
+        ],
+        "service_group_type": 1
+      },
+      {
+        "#name": "service_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "74 12 58 96"
+            ]
+          }
+        ],
+        "service_group_type": 2
+      },
+      {
+        "#name": "area_broadcasting_information_descriptor"
+      },
+      {
+        "#name": "area_broadcasting_information_descriptor",
+        "#nodes": [
+          {
+            "#name": "station",
+            "#nodes": [
+              {
+                "#name": "additional_station_info",
+                "#nodes": [
+                  "98 76 54 32 10"
+                ]
+              }
+            ],
+            "broadcast_signal_format": 2,
+            "location_code": 43981,
+            "station_id": 6636321
+          },
+          {
+            "#name": "station",
+            "broadcast_signal_format": 5,
+            "location_code": 4660,
+            "station_id": 7608402
+          }
+        ]
+      },
+      {
+        "#name": "emergency_information_descriptor"
+      },
+      {
+        "#name": "emergency_information_descriptor",
+        "#nodes": [
+          {
+            "#name": "event",
+            "service_id": 4660,
+            "signal_level": 0,
+            "started": true
+          },
+          {
+            "#name": "event",
+            "#nodes": [
+              {
+                "#name": "area",
+                "code": 291
+              },
+              {
+                "#name": "area",
+                "code": 1110
+              },
+              {
+                "#name": "area",
+                "code": 1929
+              },
+              {
+                "#name": "area",
+                "code": 2748
+              },
+              {
+                "#name": "area",
+                "code": 3567
+              }
+            ],
+            "service_id": 22136,
+            "signal_level": 1,
+            "started": false
+          },
+          {
+            "#name": "event",
+            "service_id": 43981,
+            "signal_level": 0,
+            "started": false
+          }
+        ]
+      },
+      {
+        "#name": "series_descriptor",
+        "episode_number": 23,
+        "last_episode_number": 47,
+        "program_pattern": 1,
+        "repeat_label": 1,
+        "series_id": 4660
+      },
+      {
+        "#name": "series_descriptor",
+        "episode_number": 289,
+        "expire_date": "2020-05-30",
+        "last_episode_number": 302,
+        "program_pattern": 5,
+        "repeat_label": 0,
+        "series_id": 22136,
+        "series_name": "Test series"
+      },
+      {
+        "#name": "short_node_information_descriptor",
+        "iso_639_language_code": "foo"
+      },
+      {
+        "#name": "short_node_information_descriptor",
+        "iso_639_language_code": "bar",
+        "node_name": "Test node name",
+        "text": "And its description"
+      },
+      {
+        "#name": "reference_descriptor",
+        "event_relation_id": 22136,
+        "information_provider_id": 4660
+      },
+      {
+        "#name": "reference_descriptor",
+        "#nodes": [
+          {
+            "#name": "reference",
+            "last_reference_number": 120,
+            "reference_node_id": 4660,
+            "reference_number": 86
+          },
+          {
+            "#name": "reference",
+            "last_reference_number": 103,
+            "reference_node_id": 37155,
+            "reference_number": 69
+          }
+        ],
+        "event_relation_id": 21554,
+        "information_provider_id": 39030
+      },
+      {
+        "#name": "node_relation_descriptor",
+        "reference_node_id": 4660,
+        "reference_number": 86,
+        "reference_type": 0
+      },
+      {
+        "#name": "node_relation_descriptor",
+        "event_relation_id": 21554,
+        "information_provider_id": 39030,
+        "reference_node_id": 6535,
+        "reference_number": 101,
+        "reference_type": 7
+      },
+      {
+        "#name": "basic_local_event_descriptor",
+        "#nodes": [
+          {
+            "#name": "component",
+            "tag": 171
+          },
+          {
+            "#name": "component",
+            "tag": 205
+          },
+          {
+            "#name": "component",
+            "tag": 239
+          }
+        ],
+        "end_time_npt": 6852858930,
+        "segmentation_mode": 1,
+        "start_time_npt": 4886718345
+      },
+      {
+        "#name": "basic_local_event_descriptor",
+        "duration": "00:23:45",
+        "segmentation_mode": 2,
+        "start_time": "12:34:56"
+      },
+      {
+        "#name": "basic_local_event_descriptor",
+        "#nodes": [
+          {
+            "#name": "component",
+            "tag": 239
+          }
+        ],
+        "duration": "23:45:12",
+        "duration_extension": "456",
+        "segmentation_mode": 3,
+        "start_time": "02:34:56",
+        "start_time_extension": "123"
+      },
+      {
+        "#name": "basic_local_event_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_data",
+            "#nodes": [
+              "12 34 56"
+            ]
+          },
+          {
+            "#name": "component",
+            "tag": 171
+          },
+          {
+            "#name": "component",
+            "tag": 205
+          }
+        ],
+        "segmentation_mode": 8
+      },
+      {
+        "#name": "STC_reference_descriptor",
+        "external_event_id": 4660,
+        "external_network_id": 39612,
+        "external_service_id": 22136,
+        "npt_reference": 4886718345,
+        "stc_reference": 6852858930,
+        "stc_reference_mode": 1
+      },
+      {
+        "#name": "STC_reference_descriptor",
+        "stc_reference": 4886718345,
+        "stc_reference_mode": 5,
+        "time_reference": "12:34:56",
+        "time_reference_extension": "789"
+      },
+      {
+        "#name": "STC_reference_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_data",
+            "#nodes": [
+              "12 34 56 78"
+            ]
+          }
+        ],
+        "stc_reference_mode": 9
+      }
+    ],
+    "current": true,
+    "version": 2
+  }
+]

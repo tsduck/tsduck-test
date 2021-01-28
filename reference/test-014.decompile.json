@@ -1,0 +1,113 @@
+[
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "EACEM"
+      },
+      {
+        "#name": "eacem_stream_identifier_descriptor",
+        "version_byte": 4
+      },
+      {
+        "#name": "eacem_preferred_name_identifier_descriptor",
+        "name_id": 39
+      },
+      {
+        "#name": "eacem_preferred_name_list_descriptor"
+      },
+      {
+        "#name": "eacem_preferred_name_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "#nodes": [
+              {
+                "#name": "name",
+                "name": "f\u00FCr uns",
+                "name_id": 1
+              },
+              {
+                "#name": "name",
+                "name": "Gro\u00DFe Kanal",
+                "name_id": 2
+              }
+            ],
+            "code": "deu"
+          },
+          {
+            "#name": "language",
+            "#nodes": [
+              {
+                "#name": "name",
+                "name": "Ma\u00F1ana",
+                "name_id": 189
+              }
+            ],
+            "code": "esp"
+          },
+          {
+            "#name": "language",
+            "code": "fre"
+          }
+        ]
+      },
+      {
+        "#name": "eacem_logical_channel_number_descriptor"
+      },
+      {
+        "#name": "eacem_logical_channel_number_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "logical_channel_number": 11,
+            "service_id": 4660,
+            "visible_service": true
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 22,
+            "service_id": 22136,
+            "visible_service": false
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 33,
+            "service_id": 39612,
+            "visible_service": true
+          }
+        ]
+      },
+      {
+        "#name": "eacem_HD_simulcast_logical_channel_descriptor"
+      },
+      {
+        "#name": "eacem_HD_simulcast_logical_channel_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "logical_channel_number": 101,
+            "service_id": 4660,
+            "visible_service": true
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 202,
+            "service_id": 22136,
+            "visible_service": false
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 303,
+            "service_id": 39612,
+            "visible_service": true
+          }
+        ]
+      }
+    ],
+    "current": true,
+    "service_id": 0,
+    "version": 0
+  }
+]

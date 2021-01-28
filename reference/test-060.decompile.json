@@ -1,0 +1,311 @@
+[
+  {
+    "#name": "UNT",
+    "action_type": 1,
+    "current": true,
+    "oui": 9177588,
+    "processing_order": 0,
+    "version": 0
+  },
+  {
+    "#name": "UNT",
+    "#nodes": [
+      {
+        "#name": "target_IP_address_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv4_addr": "1.2.3.4"
+          },
+          {
+            "#name": "address",
+            "ipv4_addr": "5.6.7.8"
+          }
+        ],
+        "ipv4_addr_mask": "255.255.255.0"
+      },
+      {
+        "#name": "target_MAC_address_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "mac_addr": "01:23:45:67:89:AB"
+          },
+          {
+            "#name": "address",
+            "mac_addr": "CD:EF:98:76:54:32"
+          }
+        ],
+        "mac_addr_mask": "FF:FF:FF:00:00:00"
+      },
+      {
+        "#name": "SSU_subgroup_association_descriptor",
+        "subgroup_tag": 654820258320
+      },
+      {
+        "#name": "SSU_uri_descriptor",
+        "max_holdoff_time": 10,
+        "min_polling_interval": 7,
+        "uri": "http://foo/bar"
+      },
+      {
+        "#name": "update_descriptor",
+        "update_flag": 0,
+        "update_method": 1,
+        "update_priority": 2
+      },
+      {
+        "#name": "update_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "25 69 47 12"
+            ]
+          }
+        ],
+        "update_flag": 2,
+        "update_method": 3,
+        "update_priority": 1
+      },
+      {
+        "#name": "scheduling_descriptor",
+        "duration": 12,
+        "duration_unit": "minute",
+        "end_date_time": "2022-01-12 01:45:47",
+        "estimated_cycle_time": 210,
+        "estimated_cycle_time_unit": "second",
+        "final_availability": true,
+        "period": 3,
+        "period_unit": "hour",
+        "periodicity": false,
+        "start_date_time": "2021-12-04 10:45:23"
+      },
+      {
+        "#name": "scheduling_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "45 89 63 12 47"
+            ]
+          }
+        ],
+        "duration": 58,
+        "duration_unit": "hour",
+        "end_date_time": "2018-07-14 13:21:43",
+        "estimated_cycle_time": 65,
+        "estimated_cycle_time_unit": "minute",
+        "final_availability": false,
+        "period": 45,
+        "period_unit": "second",
+        "periodicity": true,
+        "start_date_time": "2018-05-29 01:12:34"
+      },
+      {
+        "#name": "SSU_event_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "name",
+            "#nodes": [
+              "Foo event"
+            ]
+          },
+          {
+            "#name": "text",
+            "#nodes": [
+              "Some foo description."
+            ]
+          }
+        ],
+        "iso_639_language_code": "eng"
+      },
+      {
+        "#name": "SSU_location_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "85 23 69"
+            ]
+          }
+        ],
+        "data_broadcast_id": 4660
+      },
+      {
+        "#name": "SSU_location_descriptor",
+        "association_tag": 39030,
+        "data_broadcast_id": 10
+      },
+      {
+        "#name": "SSU_message_descriptor",
+        "#nodes": [
+          {
+            "#name": "text",
+            "#nodes": [
+              "Some message."
+            ]
+          }
+        ],
+        "descriptor_number": 2,
+        "iso_639_language_code": "eng",
+        "last_descriptor_number": 5
+      },
+      {
+        "#name": "SSU_enhanced_message_descriptor",
+        "#nodes": [
+          {
+            "#name": "text",
+            "#nodes": [
+              "Some foo message."
+            ]
+          }
+        ],
+        "descriptor_number": 1,
+        "iso_639_language_code": "eng",
+        "last_descriptor_number": 13,
+        "message_index": 27
+      },
+      {
+        "#name": "devices",
+        "#nodes": [
+          {
+            "#name": "compatibilityDescriptor",
+            "#nodes": [
+              {
+                "#name": "subDescriptor",
+                "#nodes": [
+                  "01 23 45"
+                ],
+                "subdescriptortype": 18
+              },
+              {
+                "#name": "subDescriptor",
+                "#nodes": [
+                  "98 76 54 AB CD"
+                ],
+                "subdescriptortype": 146
+              }
+            ],
+            "descriptortype": 0,
+            "model": 39030,
+            "specifierdata": 1193046,
+            "specifiertype": 1,
+            "version": 21554
+          },
+          {
+            "#name": "compatibilityDescriptor",
+            "descriptortype": 1,
+            "model": 26505,
+            "specifierdata": 7903932,
+            "specifiertype": 2,
+            "version": 9029
+          },
+          {
+            "#name": "platform",
+            "#nodes": [
+              {
+                "#name": "target",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 1
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 2
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 3
+                  }
+                ]
+              },
+              {
+                "#name": "operational",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 4
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "#name": "platform",
+            "#nodes": [
+              {
+                "#name": "target",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 6
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 7
+                  }
+                ]
+              },
+              {
+                "#name": "operational",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 8
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 9
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "devices",
+        "#nodes": [
+          {
+            "#name": "platform",
+            "#nodes": [
+              {
+                "#name": "target",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 10
+                  },
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 11
+                  }
+                ]
+              },
+              {
+                "#name": "operational",
+                "#nodes": [
+                  {
+                    "#name": "SSU_subgroup_association_descriptor",
+                    "subgroup_tag": 12
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "action_type": 2,
+    "current": true,
+    "oui": 13684193,
+    "processing_order": 130,
+    "version": 23
+  }
+]

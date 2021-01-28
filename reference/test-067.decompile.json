@@ -1,0 +1,140 @@
+[
+  {
+    "#name": "NIT",
+    "#nodes": [
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "OFCOM"
+      },
+      {
+        "#name": "dtg_logical_channel_descriptor"
+      },
+      {
+        "#name": "dtg_HD_simulcast_logical_channel_descriptor"
+      },
+      {
+        "#name": "dtg_preferred_name_list_descriptor"
+      },
+      {
+        "#name": "dtg_service_attribute_descriptor"
+      },
+      {
+        "#name": "dtg_logical_channel_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "logical_channel_number": 1021,
+            "service_id": 4660,
+            "visible_service": true
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 10,
+            "service_id": 22136,
+            "visible_service": false
+          },
+          {
+            "#name": "service",
+            "logical_channel_number": 85,
+            "service_id": 39612,
+            "visible_service": true
+          }
+        ]
+      },
+      {
+        "#name": "dtg_HD_simulcast_logical_channel_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "logical_channel_number": 987,
+            "service_id": 4660,
+            "visible_service": false
+          }
+        ]
+      },
+      {
+        "#name": "dtg_preferred_name_identifier_descriptor",
+        "name_id": 139
+      },
+      {
+        "#name": "dtg_preferred_name_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "#nodes": [
+              {
+                "#name": "name",
+                "name": "Name 23",
+                "name_id": 35
+              },
+              {
+                "#name": "name",
+                "name": "Name AE",
+                "name_id": 174
+              }
+            ],
+            "code": "eng"
+          },
+          {
+            "#name": "language",
+            "code": "fre"
+          }
+        ]
+      },
+      {
+        "#name": "dtg_short_service_name_descriptor",
+        "name": "Foo Bar"
+      },
+      {
+        "#name": "dtg_service_attribute_descriptor",
+        "#nodes": [
+          {
+            "#name": "service",
+            "numeric_selection": true,
+            "service_id": 4660,
+            "visible_service": false
+          },
+          {
+            "#name": "service",
+            "numeric_selection": false,
+            "service_id": 22136,
+            "visible_service": true
+          }
+        ]
+      },
+      {
+        "#name": "dtg_guidance_descriptor",
+        "guidance_type": 0,
+        "iso_639_language_code": "foo",
+        "text": "Some foo text"
+      },
+      {
+        "#name": "dtg_guidance_descriptor",
+        "guidance_mode": false,
+        "guidance_type": 1,
+        "iso_639_language_code": "bar",
+        "text": "Some bar text"
+      },
+      {
+        "#name": "dtg_guidance_descriptor",
+        "guidance_type": 2
+      },
+      {
+        "#name": "dtg_guidance_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "12 34 56 78"
+            ]
+          }
+        ],
+        "guidance_type": 3
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "network_id": 0,
+    "version": 0
+  }
+]

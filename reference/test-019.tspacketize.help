@@ -5,11 +5,15 @@ Usage: tspacketize [options] [input-file[=rate] ...]
 
 Parameters:
 
-  Input binary or XML files containing one or more sections or tables. By
-  default, files ending in .xml are XML and files ending in .bin are binary.
-  For other file names, explicitly specify --binary or --xml. If the file name
-  is omitted, the standard input is used (binary by default, specify --xml
-  otherwise).
+  Input binary, XML or JSON files containing one or more sections or tables. By
+  default, files ending in .bin, .xml or .json are automatically recognized.
+  For other file names, explicitly specify --binary, --xml or --json. If the
+  file name is omitted, the standard input is used (binary by default, specify
+  --xml or --json otherwise).
+
+  The reference source format is XML. JSON files are first translated to XML
+  using the "automated XML-to-JSON conversion" rules of TSDuck and then
+  compiled to binary.
 
   If different repetition rates are required for different files, a parameter
   can be "filename=value" where value is the repetition rate in milliseconds
@@ -91,6 +95,10 @@ Options:
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
       when working on Japanese transport streams.
 
+  -j
+  --json
+      Specify that all input files are JSON, regardless of their file name.
+
   -o value
   --output value
       Output file name for TS packets. By default, use standard output.
@@ -123,6 +131,7 @@ Options:
   --version
       Display the TSDuck version number.
 
+  -x
   --xml
       Specify that all input files are XML, regardless of their file name.
 

@@ -1,0 +1,769 @@
+[
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "adaptation_field_data_descriptor",
+        "adaptation_field_data_identifier": 0
+      },
+      {
+        "#name": "adaptation_field_data_descriptor",
+        "adaptation_field_data_identifier": 255
+      },
+      {
+        "#name": "ancillary_data_descriptor",
+        "ancillary_data_identifier": 0
+      },
+      {
+        "#name": "ancillary_data_descriptor",
+        "ancillary_data_identifier": 255
+      }
+    ],
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "AIT",
+    "application_type": 4660,
+    "current": true,
+    "test_application_flag": true,
+    "version": 21
+  },
+  {
+    "#name": "AIT",
+    "#nodes": [
+      {
+        "#name": "application_usage_descriptor",
+        "usage_type": 1
+      },
+      {
+        "#name": "application_usage_descriptor",
+        "usage_type": 2
+      },
+      {
+        "#name": "application_usage_descriptor",
+        "usage_type": 3
+      },
+      {
+        "#name": "application",
+        "#nodes": [
+          {
+            "#name": "application_identifier",
+            "application_id": 39612,
+            "organization_id": 305419896
+          }
+        ],
+        "control_code": 7
+      },
+      {
+        "#name": "application",
+        "#nodes": [
+          {
+            "#name": "application_identifier",
+            "application_id": 52137,
+            "organization_id": 2271560481
+          },
+          {
+            "#name": "application_usage_descriptor",
+            "usage_type": 129
+          },
+          {
+            "#name": "application_usage_descriptor",
+            "usage_type": 130
+          },
+          {
+            "#name": "application_usage_descriptor",
+            "usage_type": 131
+          }
+        ],
+        "control_code": 171
+      }
+    ],
+    "application_type": 30874,
+    "current": true,
+    "test_application_flag": false,
+    "version": 10
+  },
+  {
+    "#name": "INT",
+    "#nodes": [
+      {
+        "#name": "target_IP_address_descriptor",
+        "ipv4_addr_mask": "12.34.56.78"
+      },
+      {
+        "#name": "target_IP_address_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv4_addr": "1.2.3.4"
+          },
+          {
+            "#name": "address",
+            "ipv4_addr": "54.124.12.78"
+          }
+        ],
+        "ipv4_addr_mask": "12.34.56.78"
+      },
+      {
+        "#name": "target_IP_slash_descriptor"
+      },
+      {
+        "#name": "target_IP_slash_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv4_addr": "1.2.3.4",
+            "ipv4_slash_mask": 16
+          },
+          {
+            "#name": "address",
+            "ipv4_addr": "5.6.7.8",
+            "ipv4_slash_mask": 24
+          }
+        ]
+      },
+      {
+        "#name": "target_IP_source_slash_descriptor"
+      },
+      {
+        "#name": "target_IP_source_slash_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv4_dest_addr": "5.6.7.8",
+            "ipv4_dest_slash_mask": 16,
+            "ipv4_source_addr": "1.2.3.4",
+            "ipv4_source_slash_mask": 8
+          },
+          {
+            "#name": "address",
+            "ipv4_dest_addr": "123.124.178.1",
+            "ipv4_dest_slash_mask": 25,
+            "ipv4_source_addr": "45.85.35.14",
+            "ipv4_source_slash_mask": 24
+          }
+        ]
+      },
+      {
+        "#name": "target_IPv6_address_descriptor",
+        "ipv6_addr_mask": "ffff:ffff:ff00::"
+      },
+      {
+        "#name": "target_IPv6_address_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv6_addr": "fe80::93a3:dea0:2108:b81e"
+          },
+          {
+            "#name": "address",
+            "ipv6_addr": "fe80::ba3:a0:8:be"
+          }
+        ],
+        "ipv6_addr_mask": "ffff:f0::"
+      },
+      {
+        "#name": "target_IPv6_slash_descriptor"
+      },
+      {
+        "#name": "target_IPv6_slash_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv6_addr": "1:2:3:4:5:6:7:8",
+            "ipv6_slash_mask": 72
+          },
+          {
+            "#name": "address",
+            "ipv6_addr": "fe80::93a3:dea0:2108:b81e",
+            "ipv6_slash_mask": 128
+          }
+        ]
+      },
+      {
+        "#name": "target_IPv6_source_slash_descriptor"
+      },
+      {
+        "#name": "target_IPv6_source_slash_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "ipv6_dest_addr": "fe80::93a3:dea0:2108:b81e",
+            "ipv6_dest_slash_mask": 16,
+            "ipv6_source_addr": "41:252:53:48:95:996:a7:ced8",
+            "ipv6_source_slash_mask": 8
+          },
+          {
+            "#name": "address",
+            "ipv6_dest_addr": "::1",
+            "ipv6_dest_slash_mask": 64,
+            "ipv6_source_addr": "fe80::ba3:a0:8:be",
+            "ipv6_source_slash_mask": 128
+          }
+        ]
+      },
+      {
+        "#name": "target_MAC_address_descriptor",
+        "#nodes": [
+          {
+            "#name": "address",
+            "mac_addr": "AB:CD:EF:01:23:45"
+          }
+        ],
+        "mac_addr_mask": "01:A3:E4:BA:45:74"
+      },
+      {
+        "#name": "target_MAC_address_range_descriptor",
+        "#nodes": [
+          {
+            "#name": "range",
+            "mac_addr_high": "78:44:54:54:98:87",
+            "mac_addr_low": "12:78:65:32:59:32"
+          }
+        ]
+      },
+      {
+        "#name": "target_serial_number_descriptor"
+      },
+      {
+        "#name": "target_serial_number_descriptor",
+        "#nodes": [
+          "12 34 56 78"
+        ]
+      },
+      {
+        "#name": "target_smartcard_descriptor",
+        "super_ca_system_id": 2557891634
+      },
+      {
+        "#name": "target_smartcard_descriptor",
+        "#nodes": [
+          "45 89 32 84 21 54"
+        ],
+        "super_ca_system_id": 305419896
+      },
+      {
+        "#name": "IPMAC_generic_stream_location_descriptor",
+        "interactive_network_id": 4660,
+        "modulation_system_id": 0,
+        "modulation_system_type": "DVB-T2",
+        "phy_stream_id": 0
+      },
+      {
+        "#name": "IPMAC_generic_stream_location_descriptor",
+        "#nodes": [
+          {
+            "#name": "selector_bytes",
+            "#nodes": [
+              "12 34 56 78"
+            ]
+          }
+        ],
+        "interactive_network_id": 4660,
+        "modulation_system_id": 30868,
+        "modulation_system_type": "0xAB",
+        "phy_stream_id": 17768
+      },
+      {
+        "#name": "IPMAC_platform_name_descriptor",
+        "language_code": "foo",
+        "text": "Bar Text"
+      },
+      {
+        "#name": "IPMAC_platform_provider_name_descriptor",
+        "language_code": "bar",
+        "text": "Provider Name"
+      },
+      {
+        "#name": "IPMAC_stream_location_descriptor",
+        "component_tag": 33,
+        "network_id": 4660,
+        "original_network_id": 22136,
+        "service_id": 25923,
+        "transport_stream_id": 39612
+      },
+      {
+        "#name": "ISP_access_mode_descriptor",
+        "access_mode": "dialup"
+      },
+      {
+        "#name": "ISP_access_mode_descriptor",
+        "access_mode": "0xBC"
+      }
+    ],
+    "action_type": 1,
+    "current": true,
+    "platform_id": 1193046,
+    "processing_order": 0,
+    "version": 0
+  },
+  {
+    "#name": "AIT",
+    "#nodes": [
+      {
+        "#name": "application_name_descriptor"
+      },
+      {
+        "#name": "application_name_descriptor",
+        "#nodes": [
+          {
+            "#name": "language",
+            "application_name": "Foo app",
+            "code": "foo"
+          },
+          {
+            "#name": "language",
+            "application_name": "Bar app",
+            "code": "bar"
+          }
+        ]
+      },
+      {
+        "#name": "application_signalling_descriptor"
+      },
+      {
+        "#name": "application_signalling_descriptor",
+        "#nodes": [
+          {
+            "#name": "application",
+            "ait_version_number": 2,
+            "application_type": 1
+          },
+          {
+            "#name": "application",
+            "ait_version_number": 4,
+            "application_type": 3
+          }
+        ]
+      },
+      {
+        "#name": "application_usage_descriptor",
+        "usage_type": 1
+      },
+      {
+        "#name": "dvb_j_application_descriptor"
+      },
+      {
+        "#name": "dvb_j_application_descriptor",
+        "#nodes": [
+          {
+            "#name": "parameter",
+            "value": "sample"
+          },
+          {
+            "#name": "parameter",
+            "value": "parameter"
+          },
+          {
+            "#name": "parameter",
+            "value": "test"
+          }
+        ]
+      },
+      {
+        "#name": "dvb_j_application_location_descriptor",
+        "base_directory": "/base/dir",
+        "classpath_extension": "ext/dir;other/dir2",
+        "initial_class": "entryPoint"
+      },
+      {
+        "#name": "dvb_html_application_descriptor",
+        "parameter": ""
+      },
+      {
+        "#name": "dvb_html_application_descriptor",
+        "#nodes": [
+          {
+            "#name": "application",
+            "id": 1
+          },
+          {
+            "#name": "application",
+            "id": 10
+          },
+          {
+            "#name": "application",
+            "id": 100
+          }
+        ],
+        "parameter": "sample param"
+      },
+      {
+        "#name": "dvb_html_application_boundary_descriptor",
+        "label": "sample label",
+        "regular_expression": "regexp[.*]"
+      },
+      {
+        "#name": "dvb_html_application_location_descriptor",
+        "initial_path": "and/sample/path",
+        "physical_root": "sample/root"
+      },
+      {
+        "#name": "ip_signalling_descriptor",
+        "platform_id": 74565
+      },
+      {
+        "#name": "prefetch_descriptor",
+        "transport_protocol_label": 1
+      },
+      {
+        "#name": "prefetch_descriptor",
+        "#nodes": [
+          {
+            "#name": "module",
+            "label": "mod1",
+            "prefetch_priority": 20
+          },
+          {
+            "#name": "module",
+            "label": "Module 2",
+            "prefetch_priority": 75
+          }
+        ],
+        "transport_protocol_label": 2
+      },
+      {
+        "#name": "DII_location_descriptor",
+        "transport_protocol_label": 3
+      },
+      {
+        "#name": "DII_location_descriptor",
+        "#nodes": [
+          {
+            "#name": "module",
+            "association_tag": 2,
+            "dii_identification": 1
+          },
+          {
+            "#name": "module",
+            "association_tag": 4,
+            "dii_identification": 3
+          },
+          {
+            "#name": "module",
+            "association_tag": 6,
+            "dii_identification": 5
+          },
+          {
+            "#name": "module",
+            "association_tag": 8,
+            "dii_identification": 7
+          }
+        ],
+        "transport_protocol_label": 4
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "object_carousel",
+            "component_tag": 34,
+            "original_network_id": 1,
+            "service_id": 3,
+            "transport_stream_id": 2
+          }
+        ],
+        "transport_protocol_label": 5
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "object_carousel",
+            "component_tag": 35
+          }
+        ],
+        "transport_protocol_label": 6
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "ip_mpe",
+            "alignment_indicator": true
+          }
+        ],
+        "transport_protocol_label": 7
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "ip_mpe",
+            "#nodes": [
+              {
+                "#name": "url",
+                "value": "foo://bar/"
+              },
+              {
+                "#name": "url",
+                "value": "foo2://bar3/"
+              }
+            ],
+            "alignment_indicator": false,
+            "original_network_id": 10,
+            "service_id": 12,
+            "transport_stream_id": 11
+          }
+        ],
+        "transport_protocol_label": 8
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "http",
+            "#nodes": [
+              {
+                "#name": "url",
+                "#nodes": [
+                  {
+                    "#name": "extension",
+                    "value": "a/b"
+                  },
+                  {
+                    "#name": "extension",
+                    "value": "c/d/e"
+                  },
+                  {
+                    "#name": "extension",
+                    "value": "f"
+                  }
+                ],
+                "base": "http://a/"
+              },
+              {
+                "#name": "url",
+                "base": "http://cd/"
+              },
+              {
+                "#name": "url",
+                "#nodes": [
+                  {
+                    "#name": "extension",
+                    "value": "u/v"
+                  }
+                ],
+                "base": "http://xyz/"
+              }
+            ]
+          }
+        ],
+        "transport_protocol_label": 9
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "protocol",
+            "#nodes": [
+              "45 63 21 47 89 52 01"
+            ],
+            "id": 4660
+          }
+        ],
+        "transport_protocol_label": 10
+      },
+      {
+        "#name": "transport_protocol_descriptor",
+        "#nodes": [
+          {
+            "#name": "protocol",
+            "id": 22136
+          }
+        ],
+        "transport_protocol_label": 11
+      },
+      {
+        "#name": "application_descriptor",
+        "application_priority": 20,
+        "service_bound": true,
+        "visibility": 1
+      },
+      {
+        "#name": "application_descriptor",
+        "#nodes": [
+          {
+            "#name": "profile",
+            "application_profile": 1,
+            "version": "2.3.4"
+          },
+          {
+            "#name": "profile",
+            "application_profile": 8,
+            "version": "11.12.13"
+          },
+          {
+            "#name": "transport_protocol",
+            "label": 5
+          },
+          {
+            "#name": "transport_protocol",
+            "label": 6
+          },
+          {
+            "#name": "transport_protocol",
+            "label": 7
+          },
+          {
+            "#name": "transport_protocol",
+            "label": 8
+          }
+        ],
+        "application_priority": 75,
+        "service_bound": false,
+        "visibility": 3
+      },
+      {
+        "#name": "application_storage_descriptor",
+        "is_launchable_with_older_version": false,
+        "launchable_completely_from_cache": true,
+        "not_launchable_from_broadcast": false,
+        "priority": 17,
+        "storage_property": 1,
+        "version": 305419896
+      },
+      {
+        "#name": "external_application_authorization_descriptor"
+      },
+      {
+        "#name": "external_application_authorization_descriptor",
+        "#nodes": [
+          {
+            "#name": "application",
+            "application_id": 43981,
+            "application_priority": 8,
+            "organization_id": 305419896
+          },
+          {
+            "#name": "application",
+            "application_id": 57005,
+            "application_priority": 89,
+            "organization_id": 2557891634
+          }
+        ]
+      },
+      {
+        "#name": "simple_application_location_descriptor",
+        "initial_path": "http://foo/bar/"
+      },
+      {
+        "#name": "simple_application_boundary_descriptor"
+      },
+      {
+        "#name": "simple_application_boundary_descriptor",
+        "#nodes": [
+          {
+            "#name": "prefix",
+            "boundary_extension": "http://x/y/z"
+          },
+          {
+            "#name": "prefix",
+            "boundary_extension": "proto://root/"
+          }
+        ]
+      },
+      {
+        "#name": "application_icons_descriptor",
+        "icon_flags": 128,
+        "icon_locator": "dir/foo.ico"
+      },
+      {
+        "#name": "application_icons_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "12 36 54 78 96 32"
+            ]
+          }
+        ],
+        "icon_flags": 71,
+        "icon_locator": "a/b/c.ico"
+      },
+      {
+        "#name": "graphics_constraints_descriptor",
+        "can_run_without_visible_ui": true,
+        "handles_configuration_changed": false,
+        "handles_externally_controlled_video": true
+      },
+      {
+        "#name": "graphics_constraints_descriptor",
+        "#nodes": [
+          {
+            "#name": "graphics_configuration",
+            "#nodes": [
+              "01 23 45 67"
+            ]
+          }
+        ],
+        "can_run_without_visible_ui": false,
+        "handles_configuration_changed": true,
+        "handles_externally_controlled_video": false
+      },
+      {
+        "#name": "application_recording_descriptor",
+        "av_synced": true,
+        "dynamic": false,
+        "initiating_replay": false,
+        "scheduled_recording": true,
+        "time_shift": true,
+        "trick_mode_aware": false
+      },
+      {
+        "#name": "application_recording_descriptor",
+        "#nodes": [
+          {
+            "#name": "label",
+            "label": "Foo",
+            "storage_properties": 1
+          },
+          {
+            "#name": "label",
+            "label": "BarDone",
+            "storage_properties": 2
+          },
+          {
+            "#name": "component",
+            "tag": 17
+          },
+          {
+            "#name": "component",
+            "tag": 130
+          },
+          {
+            "#name": "component",
+            "tag": 170
+          },
+          {
+            "#name": "component",
+            "tag": 254
+          },
+          {
+            "#name": "private",
+            "#nodes": [
+              "05 69 87 41 56 32"
+            ]
+          },
+          {
+            "#name": "reserved_future_use",
+            "#nodes": [
+              "78 96 32 14 56"
+            ]
+          }
+        ],
+        "av_synced": false,
+        "dynamic": true,
+        "initiating_replay": true,
+        "scheduled_recording": false,
+        "time_shift": false,
+        "trick_mode_aware": true
+      }
+    ],
+    "application_type": 1,
+    "current": true,
+    "test_application_flag": true,
+    "version": 0
+  }
+]
