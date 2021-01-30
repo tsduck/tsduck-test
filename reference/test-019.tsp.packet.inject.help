@@ -5,9 +5,13 @@ Usage: tsp -P inject [options] input-file[=rate] ...
 
 Parameters:
 
-  Binary or XML files containing one or more sections or tables. By default,
-  files ending in .xml are XML and files ending in .bin are binary. For other
-  file names, explicitly specify --binary or --xml.
+  Input binary, XML or JSON files containing one or more sections or tables. By
+  default, files ending in .bin, .xml or .json are automatically recognized.
+  For other file names, explicitly specify --binary, --xml or --json.
+
+  The reference source format is XML. JSON files are first translated to XML
+  using the "automated XML-to-JSON conversion" rules of TSDuck and then
+  compiled to binary.
 
   If different repetition rates are required for different files, a parameter
   can be "filename=value" where value is the repetition rate in milliseconds
@@ -99,6 +103,9 @@ Options:
       Perform a "joint termination" when section insersion is complete.
       Meaningful only when --repeat is specified. See "tsp --help" for more
       details on "joint termination".
+
+  --json
+      Specify that all input files are JSON, regardless of their file name.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.

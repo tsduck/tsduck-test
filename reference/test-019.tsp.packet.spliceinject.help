@@ -6,16 +6,16 @@ Usage: tsp -P spliceinject [options]
 The splice commands are injected as splice information sections, as defined by
 the SCTE 35 standard. All forms of splice information sections can be injected.
 The sections shall be provided by some external equipment, in real time. The
-format of the section can be binary or XML. There are two possible mechanisms
-to provide the sections: files or UDP.
+format of the section can be binary, XML or JSON. There are two possible
+mechanisms to provide the sections: files or UDP.
 
 Files shall be specified as one single specification with optional wildcards.
 Example: --files '/path/to/dir/*'. All files which are copied or updated into
 this directory are automatically loaded and injected. It is possible to
 automatically delete all files after being loaded.
 
-UDP datagrams shall contain exactly one XML document or binary sections. The
-sections are injected upon reception.
+UDP datagrams shall contain exactly one XML or JSON document or binary
+sections. The sections are injected upon reception.
 
 Options:
 
@@ -58,8 +58,8 @@ Options:
   --files 'file-wildcard'
       A file specification with optional wildcards indicating which files
       should be polled. When such a file is created or updated, it is loaded
-      and its content is interpreted as binary or XML tables. All tables shall
-      be splice information tables.
+      and its content is interpreted as binary, XML or JSON tables. All tables
+      shall be splice information tables.
 
   --help
       Display this help text.
