@@ -1,0 +1,46 @@
+
+Monitor SCTE 35 splice information
+
+Usage: tsp -P splicemonitor [options]
+
+Options:
+
+  -a
+  --all-commands
+      Same as --display-commands but display all SCTE-35 splice information
+      commands. By default, only display splice insert commands.
+
+  -d
+  --display-commands
+      Display the content of SCTE-35 splice insert commands. By default, only
+      log a short event description.
+
+  --help
+      Display this help text.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  -o file-name
+  --output-file file-name
+      Specify an output text file. By default, use the message logging system
+      (or standard output with --display-commands).
+
+  -i
+  --packet-index
+      Display the current TS packet index for each message or event.
+
+  -s value
+  --splice-pid value
+      Specify one PID carrying SCTE-35 sections to monitor. By default, all
+      SCTE-35 PID's are monitored.
+
+  -t value
+  --time-pid value
+      Specify one video or audio PID containing PTS time stamps to link with
+      SCTE-35 sections to monitor. By default, the PMT's are used to link
+      between PTS PID's and SCTE-35 PID's.
+
