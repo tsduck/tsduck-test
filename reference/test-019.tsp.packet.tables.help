@@ -32,7 +32,8 @@ Options:
 
   -b filename
   --binary-output filename
-      Save sections in the specified binary output file. See also option -m,
+      Save sections in the specified binary output file. If empty or '-', the
+      binary sections are written to the standard output. See also option -m,
       --multiple-files.
 
   --brazil
@@ -147,6 +148,13 @@ Options:
 
   --log
       Display a short one-line log of each table instead of full table display.
+
+  --log-hexa-line[='prefix']
+      Log each binary table or section (with --all-sections) as one single
+      hexadecimal line in the message logger instead of an output binary file.
+      The optional string parameter specifies a prefix to prepend on the log
+      line before the hexadecimal text to locate the appropriate line in the
+      logs.
 
   --log-json-line[='prefix']
       Log each table as one single JSON line in the message logger instead of
