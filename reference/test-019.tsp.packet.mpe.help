@@ -15,14 +15,15 @@ Options:
       Filter MPE UDP datagrams based on the specified destination IP address.
 
   --dump-datagram
-      With --log, dump each complete network datagram.
+      With --log or --log-hexa-line, dump each complete network datagram.
 
   --dump-max value
-      With --dump-datagram or --dump-udp, specify the maximum number of bytes
-      to dump. By default, dump everything.
+      With --dump-datagram, --dump-udp or --log-hexa-line, specify the maximum
+      number of bytes to dump. By default, dump everything.
 
   --dump-udp
-      With --log, dump the UDP payload of each network datagram.
+      With --log or --log-hexa-line, dump the UDP payload of each network
+      datagram.
 
   --help
       Display this help text.
@@ -39,6 +40,13 @@ Options:
   -l
   --log
       Log all MPE datagrams using a short summary for each of them.
+
+  --log-hexa-line[='prefix']
+      Same as --log but log the full content of each datagram as one single
+      hexadecimal line in the message logger. Dump either the full datagram
+      (the default) or the UDP payload (with --dump-udp). The optional string
+      parameter specifies a prefix to prepend on the log line before the
+      hexadecimal text to locate the appropriate line in the logs.
 
   -m value
   --max-datagram value
@@ -87,8 +95,9 @@ Options:
       is not specified, the original port is used.
 
   --skip value
-      With --output-file, --dump-datagram or --dump-udp, specify the initial
-      number of bytes to skip. By default, save or dump from the beginning.
+      With --output-file, --dump-datagram, --dump-udp or --log-hexa-line,
+      specify the initial number of bytes to skip. By default, save or dump
+      from the beginning.
 
   -s address[:port]
   --source address[:port]
