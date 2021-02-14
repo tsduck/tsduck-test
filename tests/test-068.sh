@@ -11,7 +11,7 @@ DATE=${DATE:-date}
 # The input XML file is built from an initial file plus a lot of generated EIT.
 XMLFILE="$TMPDIR/$SCRIPT.xml"
 (
-    grep -v '^</tsduck>$' "$INDIR/$SCRIPT.xml"
+    grep -v '</tsduck>' "$INDIR/$SCRIPT.xml"
 
     # Events to generate
     EVENT_ID=3000
