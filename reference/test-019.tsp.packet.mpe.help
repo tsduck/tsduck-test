@@ -25,6 +25,13 @@ Options:
       With --log or --log-hexa-line, dump the UDP payload of each network
       datagram.
 
+  --event-code value
+      This option is for C++, Java or Python developers only.
+
+      Signal a plugin event with the specified code for each MPE packet. The
+      event data is an instance of PluginEventData pointing to the network
+      datagram (default) or UDP payload (with --dump-udp).
+
   --help
       Display this help text.
 
