@@ -94,6 +94,14 @@ Options:
       all DVB strings without explicit table code are assumed to use
       ISO-8859-15 instead of the standard ISO-6937 encoding.
 
+  --event-code value
+      This option is for C++, Java or Python developers only.
+
+      Signal a plugin event with the specified code for each section. The event
+      data is an instance of PluginEventData pointing to the section content.
+      Without --all-sections, an event is signaled for each section of complete
+      new tables.
+
   --exclude-current
       Exclude short sections and long sections with "current" indicator. This
       is rarely necessary. See also --include-next.
