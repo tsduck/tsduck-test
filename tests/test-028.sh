@@ -12,7 +12,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/5 \
            --set-stream-identifier 0x03F2/1 \
            --set-stream-identifier 0x03FD/2 \
            --set-stream-identifier 0x0413/3 \
-    -P spliceinject --service 0x226A --files $(fpath "$INDIR/$SCRIPT.xml") --wait-first-batch \
+    -P spliceinject --service 0x226A --files $(fpath "$INDIR/$SCRIPT.xml") --min-bitrate 1500 --wait-first-batch \
     -P filter --negate --pid 0x1FFF \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.analyze.txt") \
     -P psi -a -o $(fpath "$OUTDIR/$SCRIPT.psi.txt") \
