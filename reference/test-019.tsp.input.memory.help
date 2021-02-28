@@ -1,0 +1,20 @@
+
+Direct memory input from an application
+
+Usage: tsp -I memory [options]
+
+Developer plugin: This plugin is useful only to C++, Java or Python developers
+who run a TSProcessor pipeline inside their applications and want this
+application to directly interact with the input of the pipeline.
+
+Options:
+
+  --help
+      Display this help text.
+
+  -p value
+  --port value
+      A 'port number' for the memory communication with the application. If
+      there is only one instance of TSProcessor running in the application, the
+      default value (zero) is just fine.
+

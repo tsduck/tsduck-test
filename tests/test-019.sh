@@ -15,11 +15,11 @@ TOOLS=(
 )
 
 INPUT_PLUGINS=(
-    craft =dektec =dvb file fork hls http ip null srt
+    craft =dektec =dvb file fork hls http ip memory null srt
 )
 
 OUTPUT_PLUGINS=(
-    =dektec drop file fork hides hls ip =play srt
+    =dektec drop file fork hides hls ip memory =play srt
 )
 
 PACKET_PLUGINS=(
