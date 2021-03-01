@@ -179,3 +179,4 @@ repository. But we now limit their size to 20 MB.
 | 082  | Automated XML-to-JSON conversions
 | 083  | `tsscan` with tuner emulator
 | 084  | `splicemonitor` plugin
+| 085  | `http` plugin
