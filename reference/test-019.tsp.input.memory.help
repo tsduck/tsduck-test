@@ -9,12 +9,14 @@ application to directly interact with the input of the pipeline.
 
 Options:
 
+  -e value
+  --event-code value
+      Signal a plugin event with the specified code each time the plugin needs
+      input packets. The event data is an instance of PluginEventData pointing
+      to the input buffer. The application shall handle the event, waiting for
+      input packets as long as necessary. Returning zero packet (or not
+      handling the event) means end if input.
+
   --help
       Display this help text.
-
-  -p value
-  --port value
-      A 'port number' for the memory communication with the application. If
-      there is only one instance of TSProcessor running in the application, the
-      default value (zero) is just fine.
 

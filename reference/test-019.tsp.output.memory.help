@@ -9,12 +9,13 @@ application to directly interact with the output of the pipeline.
 
 Options:
 
+  -e value
+  --event-code value
+      Signal a plugin event with the specified code each time the plugin output
+      packets. The event data is an instance of PluginEventData pointing to the
+      output packets. If an event handler sets the error indicator in the event
+      data, the transmission is aborted.
+
   --help
       Display this help text.
-
-  -p value
-  --port value
-      A 'port number' for the memory communication with the application. If
-      there is only one instance of TSProcessor running in the application, the
-      default value (zero) is just fine.
 
