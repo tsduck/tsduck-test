@@ -180,3 +180,5 @@ repository. But we now limit their size to 20 MB.
 | 083  | `tsscan` with tuner emulator
 | 084  | `splicemonitor` plugin
 | 085  | `http` plugin
+| 086  | `memory` plugins from Python
+| 087  | `memory` plugins from Java
