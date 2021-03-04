@@ -5,6 +5,19 @@ Usage: tsp -P splicemonitor [options]
 
 Options:
 
+  --alarm-command 'command'
+      Command to run when a splice event is outside the nominal range as
+      specified by other --min and --max options. The command receives seven
+      additional parameters:
+
+      1. A human-readable message, the same as logged by the plugin.
+      2. The PID of the splice command.
+      3. The event id.
+      4. The string "in" or "out" for splice in / splice out command.
+      5. The adjusted PTS value in the splice command.
+      6. Pre-roll time in milliseconds.
+      7. Number of occurences of the command before the event.
+
   -a
   --all-commands
       Same as --display-commands but display all SCTE-35 splice information
@@ -17,6 +30,22 @@ Options:
 
   --help
       Display this help text.
+
+  --max-pre-roll-time value
+      Specify a maximum pre-roll time in milliseconds for splice commands. See
+      option --alarm-command for non-nominal cases.
+
+  --max-repetition value
+      Specify a maximum number of repetitions for each splice command. See
+      option --alarm-command for non-nominal cases.
+
+  --min-pre-roll-time value
+      Specify a minimum pre-roll time in milliseconds for splice commands. See
+      option --alarm-command for non-nominal cases.
+
+  --min-repetition value
+      Specify a minimum number of repetitions for each splice command. See
+      option --alarm-command for non-nominal cases.
 
   -n
   --no-adjustment
