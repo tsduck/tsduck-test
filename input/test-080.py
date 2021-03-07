@@ -1,6 +1,6 @@
 # test-080.py
 
-import ts
+import tsduck
 import sys
 import json
 import xml.etree.ElementTree as xmlet
@@ -35,7 +35,7 @@ def process_sdt_xml(root):
             print('Service id: %d, name: "%s", provider: "%s"' % (id, name, provider))
 
 # A Python class which handles TSDuck log messages.
-class Logger(ts.AbstractAsyncReport):
+class Logger(tsduck.AbstractAsyncReport):
     # This method is invoked each time a message is logged by TSDuck.
     def log(self, severity, message):
         # Filter, locate, extract and parse the JSON output from plugin "analyze".
@@ -49,7 +49,7 @@ class Logger(ts.AbstractAsyncReport):
 
 # Main program:
 rep = Logger()
-tsp = ts.TSProcessor(rep)
+tsp = tsduck.TSProcessor(rep)
 tsp.input = ['file', input_file]
 tsp.plugins = [
     ['analyze', '--json-line=' + ts_json_marker],

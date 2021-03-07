@@ -1,15 +1,15 @@
 # test-086.py
 
-import ts, sys
+import tsduck, sys
 
 # A Python class which handles TSDuck log messages.
-class Logger(ts.AbstractAsyncReport):
+class Logger(tsduck.AbstractAsyncReport):
     # This method is invoked each time a message is logged by TSDuck.
     def log(self, severity, message):
-        print(ts.Report.header(severity) + message)
+        print(tsduck.Report.header(severity) + message)
 
 # A Python class which handles input streaam.
-class InputHandler(ts.AbstractPluginEventHandler):
+class InputHandler(tsduck.AbstractPluginEventHandler):
     # Constructor.
     def __init__(self, file_name):
         super().__init__()
@@ -25,7 +25,7 @@ class InputHandler(ts.AbstractPluginEventHandler):
         super().delete()
 
 # A Python class which handles input streaam.
-class OutputHandler(ts.AbstractPluginEventHandler):
+class OutputHandler(tsduck.AbstractPluginEventHandler):
     # Constructor.
     def __init__(self, file_name):
         super().__init__()
@@ -46,7 +46,7 @@ report = Logger()
 input = InputHandler(sys.argv[1])
 output = OutputHandler(sys.argv[2])
 
-tsp = ts.TSProcessor(report)
+tsp = tsduck.TSProcessor(report)
 tsp.registerInputEventHandler(input)
 tsp.registerOutputEventHandler(output)
 
