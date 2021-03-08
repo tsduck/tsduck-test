@@ -1,0 +1,30 @@
+
+Read TS packets from a pcap or pcap-ng file
+
+Usage: tsp -I pcap [options] [file-name]
+
+Parameter:
+
+  The name of a '.pcap' or '.pcapng' capture file as produced by Wireshark for
+  instance. This input plugin extracts IPv4 UDP datagrams which contain
+  transport stream packets. Use the standard input by default, when no file
+  name is specified.
+
+Options:
+
+  --help
+      Display this help text.
+
+  --timestamp-priority name
+      Specify how the input time-stamp of each packet is computed. The name
+      specifies an ordered list. The first available time-stamp value is used
+      as input time-stamp. The possible time-stamp sources are:
+      - rtp : The RTP time stamp, when the UDP packet is an RTP packet.
+      - pcap : pcap capture time stamp.
+      - tsp : A software time-stamp, provided by tsp when the input plugin
+      returns a chunk of packets.
+      The tsp-provided time-stamp is always available, always comes last and is
+      less precise. The default is rtp-pcap-tsp.
+      Must be one of "pcap-rtp-tsp", "pcap-tsp", "rtp-pcap-tsp", "rtp-tsp",
+      "tsp".
+

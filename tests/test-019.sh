@@ -15,7 +15,7 @@ TOOLS=(
 )
 
 INPUT_PLUGINS=(
-    craft =dektec =dvb file fork hls http ip memory null srt
+    craft =dektec =dvb file fork hls http ip memory null pcap srt
 )
 
 OUTPUT_PLUGINS=(
