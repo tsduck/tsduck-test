@@ -12,8 +12,26 @@ Parameter:
 
 Options:
 
+  -d [address][:port]
+  --destination [address][:port]
+      Filter UDP datagrams based on the specified destination socket address.
+      By default or if either the IP address or UDP port is missing, use the
+      destination of the first matching UDP datagram containing TS packets.
+      Then, select only UDP datagrams with this socket address.
+
   --help
       Display this help text.
+
+  -m
+  --multicast-only
+      When there is no --destination option, select the first multicast address
+      which is found in a UDP datagram. By default, use the destination address
+      of the first UDP datagram containing TS packets, unicast or multicast.
+
+  -s [address][:port]
+  --source [address][:port]
+      Filter UDP datagrams based on the specified source socket address. By
+      default, do not filter on source address.
 
   --timestamp-priority name
       Specify how the input time-stamp of each packet is computed. The name
