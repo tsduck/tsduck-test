@@ -36,6 +36,33 @@ Options:
       packets are now fetched from the second plugin. Finally, after the
       switch, the first plugin is stopped.
 
+  --event-command 'command'
+      When a switch event occurs, run this external shell command. This can be
+      used to notify some external system of the event. The command receives
+      additional parameters:
+
+      1. Event name, currently only "newinput" is defined.
+      2. The input index before the event.
+      3. The input index after the event.
+
+  --event-local-address address
+      With --event-udp, when the destination is a multicast address, specify
+      the IP address of the outgoing local interface. It can be also a host
+      name that translates to a local address.
+
+  --event-ttl value
+      With --event-udp, specifies the TTL (Time-To-Live) socket option. The
+      actual option is either "Unicast TTL" or "Multicast TTL", depending on
+      the destination address. Remember that the default Multicast TTL is 1 on
+      most systems.
+
+  --event-udp address:port
+      When a switch event occurs, send a short JSON description over UDP/IP to
+      the specified destination. This can be used to notify some external
+      system of the event. The 'address' specifies an IP address which can be
+      either unicast or multicast. It can be also a host name that translates
+      to an IP address. The 'port' specifies the destination UDP port.
+
   -f
   --fast-switch
       Perform fast input switching. All input plugins are started at once and
