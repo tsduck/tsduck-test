@@ -205,11 +205,12 @@ Options:
   --mediaguard
       Equivalent to --default-cas-id 0x0100.
 
-  -m
-  --monitor
+  -m[filename]
+  --monitor[=filename]
       Continuously monitor the system resources which are used by tsp. This
       includes CPU load, virtual memory usage. Useful to verify the stability
-      of the application.
+      of the application. The optional file is an XML monitoring configuration
+      file.
 
   --nagravision
       Equivalent to --default-cas-id 0x1800.

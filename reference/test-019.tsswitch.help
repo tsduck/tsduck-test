@@ -103,11 +103,12 @@ Options:
       Specify the maximum number of TS packets to write at a time. The default
       is 128 packets.
 
-  -m
-  --monitor
+  -m[filename]
+  --monitor[=filename]
       Continuously monitor the system resources which are used by tsswitch.
       This includes CPU load, virtual memory usage. Useful to verify the
-      stability of the application.
+      stability of the application. The optional file is an XML monitoring
+      configuration file.
 
   --no-reuse-port
       Disable the reuse port socket option for the remote control. Do not use
