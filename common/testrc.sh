@@ -5,8 +5,10 @@
 # ------------------------------------------------------------------------------
 
 # Build script name from caller's name.
-SCRIPT=$(basename ${BASH_SOURCE[1]} .sh)
-SCRIPTDIR=$(cd $(dirname ${BASH_SOURCE[1]}); pwd)
+if [ ${#BASH_SOURCE[*]} -gt 1 ]; then
+    SCRIPT=$(basename ${BASH_SOURCE[1]} .sh)
+    SCRIPTDIR=$(cd $(dirname ${BASH_SOURCE[1]}); pwd)
+fi
 
 # Root directory of test repository and subdirs.
 COMMONDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
@@ -37,6 +39,7 @@ trace() { $VERBOSE && info "$PRVOID  $*"; }
 usage() { echo >&2 "invalid command, try \"$SCRIPT --help\""; exit 1; }
 
 # Use GNU variants of sed and grep when available.
+unalias sed grep 2>/dev/null
 [[ -n "$(which gsed 2>/dev/null)" ]] && sed() { gsed "$@"; }
 [[ -n "$(which ggrep 2>/dev/null)" ]] && grep() { ggrep "$@"; }
 
