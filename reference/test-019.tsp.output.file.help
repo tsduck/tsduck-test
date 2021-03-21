@@ -36,9 +36,34 @@ Options:
       Keep existing file (abort if the specified file already exists). By
       default, existing files are overwritten.
 
+  --max-duration value
+      Specify a maximum duration in seconds during which an output file is
+      written. After the specified duration, the output file is closed and
+      another one is created. A timestamp is automatically added to the name
+      part so that successive output files receive distinct names. Example: if
+      the specified file name is foo.ts, the various files are named
+      foo-YYYYMMDD-hhmmss.ts.
+
+      The options --max-duration and --max-size are mutually exclusive.
+
   --max-retry value
       With --reopen-on-error, specify the maximum number of times the file is
       reopened on error. By default, the file is indefinitely reopened.
+
+  --max-size value
+      Specify a maximum size in bytes for the output files. When an output file
+      grows beyond the specified limit, it is closed and another one is
+      created. A number is automatically added to the name part so that
+      successive output files receive distinct names. Example: if the specified
+      file name is foo.ts, the various files are named foo-000000.ts,
+      foo-000001.ts, etc.
+
+      If the specified template already contains trailing digits, this
+      unmodified name is used for the first file. Then, the integer part is
+      incremented. Example: if the specified file name is foo-027.ts, the
+      various files are named foo-027.ts, foo-028.ts, etc.
+
+      The options --max-duration and --max-size are mutually exclusive.
 
   -r
   --reopen-on-error
