@@ -183,3 +183,4 @@ repository. But we now limit their size to 20 MB.
 | 086  | `memory` plugins from Python
 | 087  | `memory` plugins from Java
 | 088  | `pcap` plugin
+| 089  | `hls` output plugin
