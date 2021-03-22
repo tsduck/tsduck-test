@@ -26,7 +26,7 @@ public class Test081 {
         tsp.input = new String[] {"file", args[0]};
         tsp.plugins = new String[][] {
             {"analyze", "--deterministic", "--json-line=" + tsJsonMarker},
-            {"tables", "--pid", "0x11", "--tid", "0x42", "--max-tables", "1", "--log-xml-line=" + sdtXmlMarker}
+            {"tables", "--pid", "0x11", "--tid", "0x42", "--log-xml-line=" + sdtXmlMarker}
         };
         tsp.output = new String[] {"drop"};
         tsp.start();

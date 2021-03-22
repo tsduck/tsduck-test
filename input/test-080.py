@@ -53,7 +53,7 @@ tsp = tsduck.TSProcessor(rep)
 tsp.input = ['file', input_file]
 tsp.plugins = [
     ['analyze', '--json-line=' + ts_json_marker],
-    ['tables', '--pid', '0x11', '--tid', '0x42', '--max-tables', '1', '--log-xml-line=' + sdt_xml_marker]
+    ['tables', '--pid', '0x11', '--tid', '0x42', '--log-xml-line=' + sdt_xml_marker]
 ]
 tsp.output = ['drop']
 tsp.start()
