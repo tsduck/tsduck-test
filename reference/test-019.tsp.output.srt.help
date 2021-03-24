@@ -5,7 +5,7 @@ Usage: tsp -O srt [options] address:port
 
 Parameter:
 
-  Specify listening IPv4 and port.
+  Specify listening IPv4 address and UDP port.
 
 Options:
 
@@ -109,6 +109,10 @@ Options:
       to be mistaken with the size of the UDP payload or SRT payload - this
       size is the size of the IP packet, including the UDP and SRT headers.
 
+  -m
+  --multiple
+      When the receiver peer disconnects, wait for another one and continue.
+
   --nakreport
       When this option is specified, the receiver will send UMSG_LOSSREPORT
       messages periodically until the lost packet is retransmitted or
@@ -158,7 +162,11 @@ Options:
       Receive Buffer Size.
 
   --rendezvous address:port
-      Specify remote address and port for rendez-vous mode.
+      Specify remote IP address and UDP port for rendez-vous mode.
+
+  --restart-delay milliseconds
+      With --multiple, wait the specified number of milliseconds before
+      restarting.
 
   --sndbuf value
       Send Buffer Size. Warning: configured in bytes, converted in packets,
