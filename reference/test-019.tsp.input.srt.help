@@ -1,22 +1,26 @@
 
 Receive TS packets from Secure Reliable Transport (SRT)
 
-Usage: tsp -I srt [options] [address:]port
+Usage: tsp -I srt [options] [[address:]port]
 
 Parameter:
 
-  The parameter address:port describes the destination for SRT packets. The
-  'address' specifies a unicast IP address. It can be also a host name that
-  translates to an IP address. The 'port' specifies the destination SRT port.
+  Remote address:port. This is a legacy parameter, now use --caller.
 
 Options:
+
+  -c address:port
+  --caller address:port
+      Use SRT in caller (or rendezvous) mode. The parameter specifies the IPv4
+      remote address (or host name) and UDP port. If --listener is also
+      specified, the SRT socket works in rendezvous mode.
 
   --conn-timeout value
       Connect timeout. SRT cannot connect for RTT > 1500 msec (2 handshake
       exchanges) with the default connect timeout of 3 seconds. This option
       applies to the caller and rendezvous connection modes. The connect
       timeout is 10 times the value set for the rendezvous mode (which can be
-      used as a workaround for this connection problem with earlier versions.
+      used as a workaround for this connection problem with earlier versions).
 
   -d value
   --display-interval value
@@ -89,6 +93,13 @@ Options:
 
   --linger value
       Linger time on close, recommended value: 0
+
+  -l [address:]port
+  --listener [address:]port
+      Use SRT in listener (or rendezvous) mode. The parameter specifies the
+      IPv4 local address and UDP port on which the SRT socket listens. The
+      address is optional, the port is mandatory. If --caller is also
+      specified, the SRT socket works in rendezvous mode.
 
   --lossmaxttl value
       The value up to which the Reorder Tolerance may grow. When Reorder
@@ -172,8 +183,8 @@ Options:
   --rcvbuf value
       Receive Buffer Size.
 
-  --rendezvous address:port
-      Specify local address and port for rendez-vous mode.
+  --rendezvous [address:]port
+      Local address and port. This is a legacy option, now use --listener.
 
   --sndbuf value
       Send Buffer Size. Warning: configured in bytes, converted in packets,

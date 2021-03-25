@@ -1,20 +1,26 @@
 
 Send TS packets using Secure Reliable Transport (SRT)
 
-Usage: tsp -O srt [options] address:port
+Usage: tsp -O srt [options] [address:port]
 
 Parameter:
 
-  Specify listening IPv4 address and UDP port.
+  Local [address:]port. This is a legacy parameter, now use --listener.
 
 Options:
+
+  -c address:port
+  --caller address:port
+      Use SRT in caller (or rendezvous) mode. The parameter specifies the IPv4
+      remote address (or host name) and UDP port. If --listener is also
+      specified, the SRT socket works in rendezvous mode.
 
   --conn-timeout value
       Connect timeout. SRT cannot connect for RTT > 1500 msec (2 handshake
       exchanges) with the default connect timeout of 3 seconds. This option
       applies to the caller and rendezvous connection modes. The connect
       timeout is 10 times the value set for the rendezvous mode (which can be
-      used as a workaround for this connection problem with earlier versions.
+      used as a workaround for this connection problem with earlier versions).
 
   --enforce-encryption
       This option enforces that both connection parties have the same
@@ -74,6 +80,13 @@ Options:
 
   --linger value
       Linger time on close, recommended value: 0
+
+  -l [address:]port
+  --listener [address:]port
+      Use SRT in listener (or rendezvous) mode. The parameter specifies the
+      IPv4 local address and UDP port on which the SRT socket listens. The
+      address is optional, the port is mandatory. If --caller is also
+      specified, the SRT socket works in rendezvous mode.
 
   --lossmaxttl value
       The value up to which the Reorder Tolerance may grow. When Reorder
@@ -162,7 +175,7 @@ Options:
       Receive Buffer Size.
 
   --rendezvous address:port
-      Specify remote IP address and UDP port for rendez-vous mode.
+      Remote address and port. This is a legacy option, now use --caller.
 
   --restart-delay milliseconds
       With --multiple, wait the specified number of milliseconds before
