@@ -269,6 +269,9 @@ export TSLIBEXT_NONE=true
 # Do not check new versions.
 export TSDUCK_NO_VERSION_CHECK=true
 
+# Prevent using the user's configuration file to avoid non-standard defaults.
+export TSDUCK_NO_USER_CONFIG=true
+
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }
 
