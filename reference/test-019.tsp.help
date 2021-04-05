@@ -150,6 +150,10 @@ Options:
       The option --ignore-joint-termination disables the termination of tsp
       when all plugins have reached their joint termination condition.
 
+  --ignore-leap-seconds
+      Do not include explicit leap seconds in some UTC computations. Currently,
+      this applies to SCTE 35 splice_schedule() commands only.
+
   --initial-input-packets value
       Specify the number of packets to initially read in the buffer before
       starting the processing. The initial load is used to evaluate the bitrate

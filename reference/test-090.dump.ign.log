@@ -1,0 +1,20 @@
+
+* SCTE 35 Splice Information, TID 252 (0xFC)
+  Short section, size: 56 bytes
+  Protocol version: 0
+  Encryption: none
+  PTS adjustment: 0x000000000
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x04 (SpliceSchedule), size: 36 bytes
+  - Splice event id: 0x78914861 (2022787169), cancel: 0
+    Out of network: yes, program splice: yes, duration set: no
+    UTC: 0x4D95A4C0 (2021/04/05 10:11:12, leap seconds ignored)
+    Unique program id: 0x4562 (17762), avail: 0x00 (0), avails expected: 0
+  - Splice event id: 0x12345678 (305419896), cancel: 0
+    Out of network: no, program splice: no, duration set: no
+    Number of components: 2
+      Component tag: 0x01 (1), UTC: 0x4D95A4CA (2021/04/05 10:11:22, leap seconds ignored)
+      Component tag: 0x02 (2), UTC: 0x4D95A4D4 (2021/04/05 10:11:32, leap seconds ignored)
+    Unique program id: 0xABCD (43981), avail: 0x00 (0), avails expected: 0
+  CRC32: 0x4040A7E7 (OK)
+

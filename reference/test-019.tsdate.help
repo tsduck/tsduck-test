@@ -47,6 +47,10 @@ Options:
   --help
       Display this help text.
 
+  --ignore-leap-seconds
+      Do not include explicit leap seconds in some UTC computations. Currently,
+      this applies to SCTE 35 splice_schedule() commands only.
+
   --isdb
       Assume that the transport stream is an ISDB one. ISDB streams are
       normally automatically detected from their signalization. This option is

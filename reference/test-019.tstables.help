@@ -125,6 +125,10 @@ Options:
   --help
       Display this help text.
 
+  --ignore-leap-seconds
+      Do not include explicit leap seconds in some UTC computations. Currently,
+      this applies to SCTE 35 splice_schedule() commands only.
+
   --include-next
       Include long sections with "next" indicator. By default, they are
       excluded.

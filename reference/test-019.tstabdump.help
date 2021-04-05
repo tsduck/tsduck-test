@@ -103,6 +103,10 @@ Options:
   --help
       Display this help text.
 
+  --ignore-leap-seconds
+      Do not include explicit leap seconds in some UTC computations. Currently,
+      this applies to SCTE 35 splice_schedule() commands only.
+
   --ip-udp [address:]port
       The [address:]port describes the destination of UDP packets to receive.
       The 'port' part is mandatory and specifies the UDP port to listen on. The

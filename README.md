@@ -184,3 +184,4 @@ repository. But we now limit their size to 20 MB.
 | 087  | `memory` plugins from Java
 | 088  | `pcap` plugin
 | 089  | `hls` output plugin
+| 090  | Option `--ignore-leap-seconds`
