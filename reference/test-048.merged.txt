@@ -11,7 +11,7 @@
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: ................................... None             None  |
-|  Estimated based on PCR's: ............... 92,578,879 b/s  100,457,933 b/s  |
+|  Estimated based on PCR's: ............... 92,578,880 b/s  100,457,933 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ..................................... 3 sec (0 min 3 sec)  |
 |-----------------------------------------------------------------------------|
@@ -29,7 +29,7 @@
 |  0x2268  CINE+ FAMIZ .................................. S    5,008,570 b/s  |
 |  0x2269  CINE+ CLASSIC ................................ S    6,039,746 b/s  |
 |  0x226A  CNEWS ........................................ C    3,858,300 b/s  |
-|  0x22C3  DATASYSTEM ................................... C       62,658 b/s  |
+|  0x22C3  DATASYSTEM ................................... C       62,659 b/s  |
 |  0x2D46  Fusion BGDL 11590 ............................ C       29,462 b/s  |
 |  0x2D48  TEST 156 ..................................... C          Unknown  |
 |  0x2D49  Dl671 ........................................ C          Unknown  |
@@ -119,7 +119,7 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Digital television service ................... S    3,426,741 b/s  |
-|  0x00AD  MPEG-2 Video ................................. S    3,007,631 b/s  |
+|  0x00AD  MPEG-2 Video ................................. S    3,007,632 b/s  |
 |  0x01C4  MPEG-2 Audio (ita) ........................... S      196,276 b/s  |
 |  0x01C5  MPEG-2 Audio (und) ........................... S      164,739 b/s  |
 |  0x045A  PMT .......................................... C       14,523 b/s  |
@@ -360,7 +360,7 @@
 |  PMT PID: 0x1003 (4099), PCR PID: None                                      |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Data broadcast service ....................... C       62,658 b/s  |
+|   Total  Data broadcast service ....................... C       62,659 b/s  |
 |  0x0FA5  MPEG-2 Private sections (Canal+) ............. C       48,135 b/s  |
 |  0x1003  PMT .......................................... C       14,523 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
@@ -419,7 +419,7 @@
 |  0x0052  MPEG-2 Private sections ...................... C       24,482 b/s  |
 |  0x0053  MPEG-2 Private sections ...................... C            0 b/s  |
 |  0x0054  MPEG-2 Private sections ...................... C            0 b/s  |
-|  0x0055  MPEG-2 Private sections ...................... C      313,294 b/s  |
+|  0x0055  MPEG-2 Private sections ...................... C      313,295 b/s  |
 |  0x0056  PMT .......................................... C       14,938 b/s  |
 |  0x0058  MPEG-2 Private sections (NDS France SSU) ..... C       10,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
@@ -793,7 +793,7 @@
 |  Service: 0x2D4F (11599) IEPG Data                                          |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 313,294 b/s  Packets: ........... 755  Expected: ......... 0  |
+|  Bitrate: ... 313,295 b/s  Packets: ........... 755  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ........ 25  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 94  |
@@ -989,7 +989,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 187  Unexpect: ........ 55  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 105  Packets: ......... 93  |
-|                            TSrate: . 90,017,006 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 90,017,007 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00A4 (164)                                            MPEG-2 Video  |
 |  Service: 0x2D55 (11605) Primafila 19                                       |
@@ -1040,7 +1040,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 191  Unexpect: ........ 54  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 103  Packets: ......... 93  |
-|                            TSrate: . 90,053,022 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 90,053,023 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00A9 (169)                                            MPEG-2 Video  |
 |  Service: 0x2D61 (11617) Sky Calcio 11                                      |
@@ -1087,11 +1087,11 @@
 |  Service: 0x05BD (1469) Real Time +1                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,007,631 b/s  Packets: ......... 7,248  Expected: ......... 0  |
+|  Bitrate: . 3,007,632 b/s  Packets: ......... 7,248  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: .......... 191  Unexpect: ....... 167  |
 |  Crypto-Per: ...... 0 sec  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 103  Packets: ......... 95  |
-|                            TSrate: . 90,065,700 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 90,065,701 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00AE (174)                                            MPEG-2 Video  |
 |  Service: 0x2D5B (11611) Sky Sport Plus                                     |
@@ -1111,7 +1111,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 186  Unexpect: ........ 65  |
 |  Crypto-Per: ...... 0 sec  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 102  Packets: ......... 90  |
-|                            TSrate: . 90,072,931 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 90,072,932 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00B0 (176)                                         Nagravision ECM  |
 |  Service: 0x2261 (8801) CANAL+                                              |
@@ -1177,7 +1177,7 @@
 |  Access: .......... Clear  Adapt.F.: .......... 189  Unexpect: ......... 2  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 100  Packets: ......... 85  |
-|                            TSrate: . 95,578,374 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 95,578,375 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00DD (221)                                        AC-3 Audio (fra)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
@@ -1240,7 +1240,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 194  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 101  Packets: ......... 92  |
-|                            TSrate: . 95,574,530 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 95,574,531 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x0141 (321)                                        AC-3 Audio (fra)  |
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
@@ -1927,7 +1927,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 181  Unexpect: ......... 2  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 101  Packets: ......... 77  |
-|                            TSrate: . 95,584,632 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 95,584,633 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x026D (621)                                        AC-3 Audio (fra)  |
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
@@ -2101,7 +2101,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 200  Unexpect: ......... 2  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 100  Packets: ......... 97  |
-|                            TSrate: . 95,576,906 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 95,576,907 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x02D1 (721)                                        AC-3 Audio (fra)  |
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
@@ -2228,7 +2228,7 @@
 |  Access: ...... Scrambled  Adapt.F.: .......... 196  Unexpect: ......... 2  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ............... 101  Packets: ......... 92  |
-|                            TSrate: . 95,579,729 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 95,579,730 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x0335 (821)                                        AC-3 Audio (fra)  |
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |

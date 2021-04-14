@@ -26,6 +26,7 @@ Options:
   --input-bitrate value
       Specify the input bitrate in bits/second. By default, the input bitrate
       is permanently evaluated by previous plugins.
+      The value may include up to 1 meaningful decimal digits.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
@@ -61,6 +62,7 @@ Options:
 
       Using the target bitrate method introduces an uncompressable latency in
       the stream, see options --time-window and --packet-window.
+      The value may include up to 1 meaningful decimal digits.
 
   --time-window milli-seconds
       With --target-bitrate, define the latency period over which packets are
