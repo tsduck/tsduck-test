@@ -185,3 +185,4 @@ repository. But we now limit their size to 20 MB.
 | 088  | `pcap` plugin
 | 089  | `hls` output plugin
 | 090  | Option `--ignore-leap-seconds`
+| 091  | Non-regression on SCTE 35 tables with unspecified command length (issue #764)
