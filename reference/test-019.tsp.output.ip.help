@@ -18,6 +18,18 @@ Options:
       specified in option --packet-burst. By default, this is only a maximum
       value.
 
+  -f
+  --force-local-multicast-outgoing
+      When the destination is a multicast address and --local-address is
+      specified, force multicast outgoing traffic on this local interface
+      (socket option IP_MULTICAST_IF). Use this option with care. Its usage
+      depends on the operating system. If no route is declared for this
+      destination address, this option may be necessary to force the multicast
+      to the specified local interface. On the other hand, if a route is
+      declared, this option may transport multicast IP packets in unicast
+      Ethernet frames to the gateway, preventing multicast reception on the
+      local network (seen on Linux).
+
   --help
       Display this help text.
 
