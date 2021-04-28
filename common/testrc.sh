@@ -18,6 +18,9 @@ INDIR="$ROOTDIR/input"
 REFDIR="$ROOTDIR/reference"
 TMPDIR="$ROOTDIR/tmp"
 
+# Additional command line arguments for the test script.
+ARGS=""
+
 # Root directory of TSDuck repository, supposed to be cloned at same level.
 TSDUCKDIR=$(cd "$ROOTDIR/.."; pwd)/tsduck
 
@@ -100,6 +103,9 @@ Usage: $SCRIPT [options]
 
 Common test options:
 
+  --args "..."
+      Pass additional test-specific arguments to the test script.
+
   --bin directory
       Use development versions of TSDuck as compiled in the Git repository in
       the specified directory.
@@ -139,6 +145,10 @@ EOF
 # Decode command line options.
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --args)
+            [[ $# -gt 1 ]] || usage; shift
+            ARGS="$1"
+            ;;
         --bin)
             [[ $# -gt 1 ]] || usage; shift
             DEVEL=true
@@ -177,6 +187,9 @@ while [[ $# -gt 0 ]]; do
     esac
     shift
 done
+
+# Replace command line arguments for the test script.
+set -- $ARGS
 
 # Make sure the temporary directory (for test output) exists.
 mkdir -p "$TMPDIR"
