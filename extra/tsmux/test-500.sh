@@ -19,12 +19,18 @@ case "$1" in
         ;;
     "")
         # Main command
-        $(tspath tsmux) --bitrate 12,000,000 --max-input-packets 16 --terminate --ts-id 10 --original-network-id 11 \
+        $(tspath tsmux) -v --bitrate 12,000,000 --max-input-packets 16 --terminate --ts-id 10 --original-network-id 11 \
             -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0101'" \
             -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0104'" \
             -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0106'" \
             -O file $SCRIPT.ts \
-            >"./$SCRIPT.log" 2>&1
+            >"./$SCRIPT.mux.log" 2>&1
+        $(tspath tsp) -v \
+            -I file $SCRIPT.ts \
+            -P analyze -o $SCRIPT.out.analysis.txt \
+            -P stats -o $SCRIPT.out.stats.txt \
+            -O drop \
+            >"./$SCRIPT.out.log" 2>&1
         ;;
     *)
         error "unknown parameter $1"
