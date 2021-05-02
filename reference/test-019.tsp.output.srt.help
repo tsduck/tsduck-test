@@ -22,6 +22,12 @@ Options:
       timeout is 10 times the value set for the rendezvous mode (which can be
       used as a workaround for this connection problem with earlier versions).
 
+  -e
+  --enforce-burst
+      Enforce that the number of TS packets per UDP packet is exactly what is
+      specified in option --packet-burst. By default, this is only a maximum
+      value.
+
   --enforce-encryption
       This option enforces that both connection parties have the same
       passphrase set (including empty, that is, with no encryption), or
@@ -134,6 +140,11 @@ Options:
   --ohead-bw value
       Recovery bandwidth overhead above input rate (see SRTO_INPUTBW). It is
       effective only if SRTO_MAXBW is set to 0.
+
+  -p value
+  --packet-burst value
+      Specifies the maximum number of TS packets per UDP packet. The default is
+      7, the maximum is 128.
 
   --packet-filter value
       Set up the packet filter. The string must match appropriate syntax for
