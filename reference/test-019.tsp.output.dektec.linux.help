@@ -162,6 +162,16 @@ Options:
       DVB-T modulators: indicate the guard interval. The default is 1/32.
       Must be one of "1/16", "1/32", "1/4", "1/8".
 
+  --gw4 ipv4-address
+      TS-over-IP: Specify a non-default IPv4 gateway address. With SMPTE 2022-7
+      network redundancy, this parameter can be specified twice, main and
+      redundant link.
+
+  --gw6 ipv6-address
+      TS-over-IP: Specify a non-default IPv6 gateway address. With SMPTE 2022-7
+      network redundancy, this parameter can be specified twice, main and
+      redundant link.
+
   --help
       Display this help text.
 
@@ -207,6 +217,17 @@ Options:
       "IF-AD-converter", "IP", "RS422", "SDI-525i/59.94", "SDI-625i/50",
       "SDI-receiver", "SPI", "SPI-SDI-525i/59.94", "SPI-SDI-625i/50",
       "dektec-streaming", "demodulator", "encoder", "modulator", "phase-noise".
+
+  --ip4 ipv4-address:port
+      TS-over-IP: Destination IPv4 address and port. Either --ip4 or --ip6 must
+      be specified. With SMPTE 2022-7 network redundancy, this parameter can be
+      specified twice, main and redundant link.
+
+  --ip6 [ipv6-address]:port
+      TS-over-IP: Destination IPv6 address and port. Either --ip4 or --ip6 must
+      be specified. The square brackets are literal, as in any IPv6 URL, not an
+      indication of an optional field. With SMPTE 2022-7 network redundancy,
+      this parameter can be specified twice, main and redundant link.
 
   --j83 value
       QAM modulators: indicate the ITU-T J.83 annex to use. Must be one of "A"
@@ -384,6 +405,10 @@ Options:
       "I128-J5", "I128-J6", "I128-J7", "I128-J8", "I16-J8", "I32-J4", "I64-J2",
       "I8-J16".
 
+  --rtp
+      TS-over-IP: Use RTP protocol. By default, TS packets are sent in UDP
+      datagrams without header.
+
   --s2-gold-code value
       DVB-S2 modulators: indicate the physical layer scrambling initialization
       sequence, aka "gold code".
@@ -399,6 +424,24 @@ Options:
       characteristics of the LNB (see option --lnb). This option is useful when
       the satellite frequency is better known than the intermediate frequency.
       The options --frequency and --satellite-frequency are mutually exclusive.
+
+  --smpte-2022-d value
+      TS-over-IP with SMPTE-2022 error correction: Specify the number of rows
+      in the FEC matrix, aka 'D' parameter.
+
+  --smpte-2022-fec value
+      TS-over-IP: Specify the SMPTE-2022 error correction mode. The default is
+      none.
+      Must be one of "2d-m1", "2d-m1-b", "2d-m2", "2d-m2-b", "none".
+
+  --smpte-2022-l value
+      TS-over-IP with SMPTE-2022 error correction: Specify the number of
+      columns in the FEC matrix, aka 'L' parameter.
+
+  --source-port value
+      TS-over-IP: Optional UDP source port for outgoing packets. By default,
+      use a random port. With SMPTE 2022-7 network redundancy, this parameter
+      can be specified twice, main and redundant link.
 
   -s
   --stuffing
@@ -439,10 +482,20 @@ Options:
       DVB-T/H modulators: indicate that at least one elementary stream uses
       time slicing (DVB-H signalling).
 
+  --tos value
+      TS-over-IP: Type-of-service (TOS) or differentiated services value of
+      outgoing IP datagrams.
+
   -t value
   --transmission-mode value
       DVB-T modulators: indicate the transmission mode. The default is 8K.
       Must be one of "2K", "4K", "8K".
+
+  --ts-per-ip value
+      TS-over-IP: Number of TS packets per IP datagram. The default is 7.
+
+  --ttl value
+      TS-over-IP: Time-to-live (TTL) value of outgoing IP datagrams.
 
   -u value
   --uhf-channel value
@@ -457,6 +510,16 @@ Options:
       Can be used in replacement to --frequency. Can be combined with an
       --offset-count option. The VHF frequency layout depends on the region,
       see --hf-band-region option.
+
+  --vlan-id value
+      TS-over-IP: Optional VLAN identifier as specified in IEEE 802.1Q. With
+      SMPTE 2022-7 network redundancy, this parameter can be specified twice,
+      main and redundant link.
+
+  --vlan-priority value
+      TS-over-IP: Optional VLAN priority code point as specified in IEEE 802.
+      1Q. With SMPTE 2022-7 network redundancy, this parameter can be specified
+      twice, main and redundant link.
 
   --vsb value
       ATSC modulators: indicate the VSB constellation. The default is 8.

@@ -79,6 +79,19 @@ Options:
       "SDI-receiver", "SPI", "SPI-SDI-525i/59.94", "SPI-SDI-625i/50",
       "dektec-streaming", "demodulator", "encoder", "modulator", "phase-noise".
 
+  --ip4 ipv4-address:port
+      TS-over-IP: Destination IPv4 address and port. Either --ip4 or --ip6 must
+      be specified. The address part is mandatory for multicast, optional for
+      unicast. With SMPTE 2022-7 network redundancy, this parameter can be
+      specified twice, main and redundant link.
+
+  --ip6 [ipv6-address]:port
+      TS-over-IP: Destination IPv6 address and port. Either --ip4 or --ip6 must
+      be specified. The address part is mandatory for multicast, optional for
+      unicast. The square brackets are literal, as in any IPv6 URL, not an
+      indication of an optional field. With SMPTE 2022-7 network redundancy,
+      this parameter can be specified twice, main and redundant link.
+
   --isdbt-bandwidth value
       ISDB-T demodulators: indicate the bandwidth in MHz. The default is 8 MHz.
       Must be one of "5", "6", "7", "8".
@@ -145,6 +158,22 @@ Options:
       with DiSEqC switches and 0 to 1 for non-DiSEqC switches. The default is
       0.
 
+  --smpte-2022-fec
+      TS-over-IP: Use SMPTE-2022 error correction.
+
+  --ssm4-filter ipv4-address:port
+      TS-over-IP: Specify IPv4 source-specific multicast (SSM) filter. The port
+      number is optional. This option may be repeated to filter on multiple
+      sources. With SMPTE 2022-7 network redundancy, the same list of filters
+      is used in both links.
+
+  --ssm6-filter [ipv6-address]:port
+      TS-over-IP: Specify IPv6 source-specific multicast (SSM) filter. The port
+      number is optional. The square brackets are literal, as in any IPv6 URL,
+      not an indication of an optional field. This option may be repeated to
+      filter on multiple sources. With SMPTE 2022-7 network redundancy, the
+      same list of filters is used in both links.
+
   --symbol-rate value
       DVB-C/S/S2 demodulators: Specify the symbol rate in symbols/second. By
       default, automatically detect the symbol rate.
@@ -156,6 +185,11 @@ Options:
   --transmission-mode value
       DVB-T demodulators: indicate the transmission mode. The default is auto.
       Must be one of "2K", "8K", "auto".
+
+  --vlan-id value
+      TS-over-IP: Optional VLAN identifier as specified in IEEE 802.1Q. With
+      SMPTE 2022-7 network redundancy, this parameter can be specified twice,
+      main and redundant link.
 
   --vsb value
       ATSC demodulators: indicate the VSB constellation. The default is 8.
