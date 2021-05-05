@@ -43,6 +43,10 @@ Options:
       MHz. The bandwidth values 1.7, 5 and 10 MHz are valid for DVB-T2 only.
       Must be one of "1.7", "10", "5", "6", "7", "8".
 
+  --fifo-size value
+      Set the FIFO size in bytes of the input channel in the Dektec device. The
+      default value depends on the device type.
+
   -f value
   --frequency value
       All demodulators: indicate the frequency, in Hz, of the input carrier.
@@ -130,6 +134,10 @@ Options:
   --polarity value
       DVB-S/S2 receivers: indicate the polarity. The default is "vertical".
       Must be one of "auto", "horizontal", "left", "none", "right", "vertical".
+
+  --preload-fifo
+      Wait for the reception FIFO (hardware buffer) to be half-full before
+      starting reception.
 
   --qam-b value
       QAM demodulators: with --j83 B, indicate the QAM-B interleaver mode. The
