@@ -1,0 +1,1636 @@
+
+* PMT, TID 2 (0x02), PID 610 (0x0262)
+  Version: 10, sections: 1, total size: 60 bytes
+  - Section 0:
+    Program: 262 (0x0106), PCR PID: 620 (0x026C)
+    Elementary stream: type 0x1B (AVC video), PID: 620 (0x026C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 630 (0x0276)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 640 (0x0280)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 26, sections: 1, total size: 40 bytes
+  - Section 0:
+    TS id:       1 (0x0001)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:   257 (0x0101)  PID:  110 (0x006E)
+    Program:   260 (0x0104)  PID:  310 (0x0136)
+    Program:   261 (0x0105)  PID:  510 (0x01FE)
+    Program:   262 (0x0106)  PID:  610 (0x0262)
+    Program:   273 (0x0111)  PID:  210 (0x00D2)
+    Program:   368 (0x0170)  PID:  710 (0x02C6)
+
+* PMT, TID 2 (0x02), PID 710 (0x02C6)
+  Version: 16, sections: 1, total size: 36 bytes
+  - Section 0:
+    Program: 368 (0x0170), PCR PID: 720 (0x02D0)
+    Elementary stream: type 0x1B (AVC video), PID: 720 (0x02D0)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 730 (0x02DA)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+
+* PMT, TID 2 (0x02), PID 310 (0x0136)
+  Version: 10, sections: 1, total size: 121 bytes
+  - Section 0:
+    Program: 260 (0x0104), PCR PID: 320 (0x0140)
+    Elementary stream: type 0x1B (AVC video), PID: 320 (0x0140)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 330 (0x014A)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 331 (0x014B)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 332 (0x014C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 4 (0x04)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 340 (0x0154)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* CAT, TID 1 (0x01), PID 1 (0x0001)
+  Version: 1, sections: 1, total size: 12 bytes
+  - Section 0:
+
+* PMT, TID 2 (0x02), PID 110 (0x006E)
+  Version: 12, sections: 1, total size: 121 bytes
+  - Section 0:
+    Program: 257 (0x0101), PCR PID: 120 (0x0078)
+    Elementary stream: type 0x1B (AVC video), PID: 120 (0x0078)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 130 (0x0082)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 131 (0x0083)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 132 (0x0084)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 4 (0x04)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 140 (0x008C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PMT, TID 2 (0x02), PID 510 (0x01FE)
+  Version: 9, sections: 1, total size: 85 bytes
+  - Section 0:
+    Program: 261 (0x0105), PCR PID: 520 (0x0208)
+    Elementary stream: type 0x1B (AVC video), PID: 520 (0x0208)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 530 (0x0212)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 531 (0x0213)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 540 (0x021C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PMT, TID 2 (0x02), PID 210 (0x00D2)
+  Version: 1, sections: 1, total size: 94 bytes
+  - Section 0:
+    Program: 273 (0x0111), PCR PID: 220 (0x00DC)
+    Elementary stream: type 0x1B (AVC video), PID: 220 (0x00DC)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 230 (0x00E6)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 231 (0x00E7)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 1: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 240 (0x00F0)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 232 (0x00E8)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 242 (0x00F2)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+  Version: 2, sections: 1, total size: 171 bytes
+  - Section 0:
+    Transport Stream Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Service Id: 257 (0x0101), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 16 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France 2", Provider: "GR1 A"
+    Service Id: 260 (0x0104), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 16 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France 4", Provider: "GR1 A"
+    Service Id: 261 (0x0105), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 17 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France Ô", Provider: "GR1 A"
+    Service Id: 262 (0x0106), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 19 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "franceinfo:", Provider: "GR1 A"
+    Service Id: 273 (0x0111), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 28 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "F3 Paris Ile-de-France", Provider: "GR1"
+    Service Id: 368 (0x0170), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 18 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "BFM Paris", Provider: "R1 TFL"
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 5, sections: 2, total size: 652 bytes
+  - Section 0:
+    Service Id: 261 (0x0105)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 22 (0x0016)
+      Start UTC: 2019/01/22 12:15:00
+      Duration: 00:50:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 62 bytes
+        Language: fre
+        Event name: "Le prix du désir"
+        Description: "Feuilleton sentimental. 2017. Saison 1."
+      - Descriptor 1: Extended Event (0x4E, 78), 168 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Les luttes personnelles et romantiques de trois femmes qui ont en commun leur ténacité et leur aptitude à dépasser les limites pour obtenir ce qu'elles désirent."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x15 (soap/melodrama/folkloric) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+  - Section 1:
+    Service Id: 261 (0x0105)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 23 (0x0017)
+      Start UTC: 2019/01/22 13:05:00
+      Duration: 00:50:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 62 bytes
+        Language: fre
+        Event name: "Le prix du désir"
+        Description: "Feuilleton sentimental. 2017. Saison 1."
+      - Descriptor 1: Extended Event (0x4E, 78), 168 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Les luttes personnelles et romantiques de trois femmes qui ont en commun leur ténacité et leur aptitude à dépasser les limites pour obtenir ce qu'elles désirent."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x15 (soap/melodrama/folkloric) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 4, sections: 2, total size: 708 bytes
+  - Section 0:
+    Service Id: 273 (0x0111)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 30 (0x001E)
+      Start UTC: 2019/01/22 12:00:00
+      Duration: 00:55:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 91 bytes
+        Language: fre
+        Event name: "Météo à la carte"
+        Description: "Magazine de découvertes présenté par Laurent Romejko, Marine Vignes."
+      - Descriptor 1: Extended Event (0x4E, 78), 169 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Reportages en régions et rubriques en plateau permettent de mieux comprendre l'impact de la météo sur la santé, la nature, l'histoire et la vie de tous les jours."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x94 (foreign countries/expeditions) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+  - Section 1:
+    Service Id: 273 (0x0111)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 31 (0x001F)
+      Start UTC: 2019/01/22 12:55:00
+      Duration: 00:45:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 59 bytes
+        Language: fre
+        Event name: "Rex"
+        Description: "Le Tigre. Série policière. 2012. Saison 15. 1/12."
+      - Descriptor 1: Extended Event (0x4E, 78), 197 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Dans un cirque familial, un dresseur de lions alcoolique est attaqué et tué par un tigre. Lorsque le détective Rivera visionne les enregistrements vidéo de l'attaque, Rex réagit fortement..."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x11 (detective/thriller) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 25, sections: 2, total size: 382 bytes
+  - Section 0:
+    Service Id: 368 (0x0170)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 3 (0x0003)
+      Start UTC: 2019/01/22 11:00:00
+      Duration: 03:00:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 43 bytes
+        Language: fre
+        Event name: "Paris Express"
+        Description: "Magazine d'information."
+      - Descriptor 1: Extended Event (0x4E, 78), 77 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "L'info francilienne en images et en continu, actualisée en permanence."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x22 (news magazine) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 17 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "AudioTrack"
+      - Descriptor 5: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+  - Section 1:
+    Service Id: 368 (0x0170)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 4 (0x0004)
+      Start UTC: 2019/01/22 14:00:00
+      Duration: 03:00:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 43 bytes
+        Language: fre
+        Event name: "Paris Express"
+        Description: "Magazine d'information."
+      - Descriptor 1: Extended Event (0x4E, 78), 77 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "L'info francilienne en images et en continu, actualisée en permanence."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x22 (news magazine) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 17 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "AudioTrack"
+      - Descriptor 5: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 9, sections: 2, total size: 602 bytes
+  - Section 0:
+    Service Id: 260 (0x0104)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 36 (0x0024)
+      Start UTC: 2019/01/22 12:35:00
+      Duration: 00:30:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 199 bytes
+        Language: fre
+        Event name: "Une saison au zoo"
+        Description: "Documentaire. 2017. Saison 7. 27. Le quotidien des soigneurs, vétérinaires, responsables, commerciaux ou jardiniers du parc zoologique de La Flèche, situé à proximité du Mans."
+      - Descriptor 1: Extended Event (0x4E, 78), 6 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: ""
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x91 (nature/animals/environment) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+  - Section 1:
+    Service Id: 260 (0x0104)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 37 (0x0025)
+      Start UTC: 2019/01/22 13:05:00
+      Duration: 00:30:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 199 bytes
+        Language: fre
+        Event name: "Une saison au zoo"
+        Description: "Documentaire. 2017. Saison 7. 28. Le quotidien des soigneurs, vétérinaires, responsables, commerciaux ou jardiniers du parc zoologique de La Flèche, situé à proximité du Mans."
+      - Descriptor 1: Extended Event (0x4E, 78), 6 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: ""
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x91 (nature/animals/environment) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 4, sections: 2, total size: 486 bytes
+  - Section 0:
+    Service Id: 257 (0x0101)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 25 (0x0019)
+      Start UTC: 2019/01/22 12:42:00
+      Duration: 00:13:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 20 bytes
+        Language: fre
+        Event name: "Météo 2"
+        Description: "Météo."
+      - Descriptor 1: Extended Event (0x4E, 78), 6 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: ""
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x21 (news/weather report) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+  - Section 1:
+    Service Id: 257 (0x0101)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 26 (0x001A)
+      Start UTC: 2019/01/22 12:55:00
+      Duration: 01:10:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 130 bytes
+        Language: fre
+        Event name: "Ça commence aujourd'hui"
+        Description: "Elles ont tout plaqué pour un homme plus jeune ! Magazine de société présenté par Faustine Bollaert."
+      - Descriptor 1: Extended Event (0x4E, 78), 138 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Quadra, quinqua : elles ont succombé au charme d'un homme beaucoup plus jeune qu'elles. Elles ont tout quitté sur un coup de folie."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x82 (economics/social advisory) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+      - Descriptor 6: Component (0x50, 80), 19 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Malentendant"
+
+* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+  Version: 25, sections: 2, total size: 678 bytes
+  - Section 0:
+    Service Id: 262 (0x0106)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 6 (0x0006)
+      Start UTC: 2019/01/22 12:00:00
+      Duration: 04:00:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 67 bytes
+        Language: fre
+        Event name: "franceinfo: deux points ouvrez l'info"
+        Description: "Magazine d'information."
+      - Descriptor 1: Extended Event (0x4E, 78), 195 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "L'offre d'information en continu de France Télévisions qui combine directs et décryptages des événements : des JT à l'heure et des rappels de titres 4 fois par heure, des développements..."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x22 (news magazine) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+  - Section 1:
+    Service Id: 262 (0x0106)
+    TS Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 78 (0x4E), EIT p/f Actual
+    - Event Id: 7 (0x0007)
+      Start UTC: 2019/01/22 16:00:00
+      Duration: 03:00:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 87 bytes
+        Language: fre
+        Event name: "Le 17h/20h"
+        Description: "Magazine d'information présenté par Louis Laforge, Marianne Théoleyre."
+      - Descriptor 1: Extended Event (0x4E, 78), 179 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Au sommaire : A 17h50 : L'interview éco. Présenté par Jean Leymarie. A 19h20 : Politique. Présenté par Gilles Bornstein et Jean-Jérôme Bertolus. A 19h30 : L'instant module."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x22 (news magazine) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+
+* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+  Version: 30, sections: 1, total size: 635 bytes
+  - Section 0:
+    Network Id: 8442 (0x20FA)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 1 bytes
+      Name: "F"
+    Transport Stream Id: 1 (0x0001), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 104 bytes
+      Service Id:   257 (0x0101), Visible: 1, Channel number:   2
+      Service Id:   260 (0x0104), Visible: 1, Channel number:  14
+      Service Id:   261 (0x0105), Visible: 1, Channel number:  19
+      Service Id:   262 (0x0106), Visible: 1, Channel number:  27
+      Service Id:   275 (0x0113), Visible: 1, Channel number:   3
+      Service Id:   277 (0x0115), Visible: 1, Channel number:   3
+      Service Id:   281 (0x0119), Visible: 1, Channel number:   3
+      Service Id:   282 (0x011A), Visible: 1, Channel number:   3
+      Service Id:   273 (0x0111), Visible: 1, Channel number:   3
+      Service Id:   274 (0x0112), Visible: 1, Channel number:   3
+      Service Id:   287 (0x011F), Visible: 1, Channel number:   3
+      Service Id:   288 (0x0120), Visible: 1, Channel number:   3
+      Service Id:   292 (0x0124), Visible: 1, Channel number:   3
+      Service Id:   323 (0x0143), Visible: 1, Channel number:  33
+      Service Id:   324 (0x0144), Visible: 1, Channel number:  33
+      Service Id:   368 (0x0170), Visible: 1, Channel number:  30
+      Service Id:   369 (0x0171), Visible: 1, Channel number:  31
+      Service Id:   370 (0x0172), Visible: 1, Channel number:  32
+      Service Id:   371 (0x0173), Visible: 1, Channel number:  33
+      Service Id:   372 (0x0174), Visible: 1, Channel number:  34
+      Service Id:   373 (0x0175), Visible: 1, Channel number:  35
+      Service Id:   374 (0x0176), Visible: 1, Channel number:  36
+      Service Id:   375 (0x0177), Visible: 1, Channel number:  37
+      Service Id:   376 (0x0178), Visible: 1, Channel number:  38
+      Service Id:   325 (0x0145), Visible: 1, Channel number:  32
+      Service Id:   326 (0x0146), Visible: 1, Channel number:  32
+    - Descriptor 3: Service List (0x41, 65), 78 bytes
+      Service id: 257 (0x0101), Type: 0x01 (Digital television service)
+      Service id: 260 (0x0104), Type: 0x01 (Digital television service)
+      Service id: 261 (0x0105), Type: 0x01 (Digital television service)
+      Service id: 262 (0x0106), Type: 0x01 (Digital television service)
+      Service id: 275 (0x0113), Type: 0x01 (Digital television service)
+      Service id: 277 (0x0115), Type: 0x01 (Digital television service)
+      Service id: 281 (0x0119), Type: 0x01 (Digital television service)
+      Service id: 282 (0x011A), Type: 0x01 (Digital television service)
+      Service id: 273 (0x0111), Type: 0x01 (Digital television service)
+      Service id: 274 (0x0112), Type: 0x01 (Digital television service)
+      Service id: 287 (0x011F), Type: 0x01 (Digital television service)
+      Service id: 288 (0x0120), Type: 0x01 (Digital television service)
+      Service id: 292 (0x0124), Type: 0x01 (Digital television service)
+      Service id: 323 (0x0143), Type: 0x01 (Digital television service)
+      Service id: 324 (0x0144), Type: 0x01 (Digital television service)
+      Service id: 368 (0x0170), Type: 0x01 (Digital television service)
+      Service id: 369 (0x0171), Type: 0x01 (Digital television service)
+      Service id: 370 (0x0172), Type: 0x01 (Digital television service)
+      Service id: 371 (0x0173), Type: 0x01 (Digital television service)
+      Service id: 372 (0x0174), Type: 0x01 (Digital television service)
+      Service id: 373 (0x0175), Type: 0x01 (Digital television service)
+      Service id: 374 (0x0176), Type: 0x01 (Digital television service)
+      Service id: 375 (0x0177), Type: 0x01 (Digital television service)
+      Service id: 376 (0x0178), Type: 0x01 (Digital television service)
+      Service id: 325 (0x0145), Type: 0x01 (Digital television service)
+      Service id: 326 (0x0146), Type: 0x01 (Digital television service)
+    Transport Stream Id: 2 (0x0002), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:   513 (0x0201), Visible: 1, Channel number:   8
+      Service Id:   515 (0x0203), Visible: 1, Channel number:  15
+      Service Id:   516 (0x0204), Visible: 1, Channel number:  16
+      Service Id:   517 (0x0205), Visible: 1, Channel number:  17
+      Service Id:   518 (0x0206), Visible: 1, Channel number:  18
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 513 (0x0201), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 515 (0x0203), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 516 (0x0204), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 517 (0x0205), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 518 (0x0206), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 3 (0x0003), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 24 bytes
+      Service Id:   769 (0x0301), Visible: 1, Channel number:   4
+      Service Id:   770 (0x0302), Visible: 1, Channel number:  43
+      Service Id:   771 (0x0303), Visible: 1, Channel number:  42
+      Service Id:   772 (0x0304), Visible: 1, Channel number:  45
+      Service Id:   776 (0x0308), Visible: 1, Channel number:  26
+      Service Id:   777 (0x0309), Visible: 1, Channel number:  41
+    - Descriptor 3: Service List (0x41, 65), 18 bytes
+      Service id: 769 (0x0301), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 770 (0x0302), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 771 (0x0303), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 772 (0x0304), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 776 (0x0308), Type: 0x16 (Advanced codec SD digital television service)
+      Service id: 777 (0x0309), Type: 0x16 (Advanced codec SD digital television service)
+    Transport Stream Id: 4 (0x0004), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  1025 (0x0401), Visible: 1, Channel number:   6
+      Service Id:  1026 (0x0402), Visible: 1, Channel number:   9
+      Service Id:  1031 (0x0407), Visible: 1, Channel number:   7
+      Service Id:  1045 (0x0415), Visible: 1, Channel number:   5
+      Service Id:  1046 (0x0416), Visible: 1, Channel number:  22
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 1025 (0x0401), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1026 (0x0402), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1031 (0x0407), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1045 (0x0415), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1046 (0x0416), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 6 (0x0006), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  1537 (0x0601), Visible: 1, Channel number:   1
+      Service Id:  1538 (0x0602), Visible: 1, Channel number:  12
+      Service Id:  1542 (0x0606), Visible: 1, Channel number:  10
+      Service Id:  1544 (0x0608), Visible: 1, Channel number:  11
+      Service Id:  1545 (0x0609), Visible: 1, Channel number:  13
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 1537 (0x0601), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1538 (0x0602), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1542 (0x0606), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1544 (0x0608), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1545 (0x0609), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 8 (0x0008), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/32
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 28 bytes
+      Service Id:  2053 (0x0805), Visible: 1, Channel number:  34
+      Service Id:  2055 (0x0807), Visible: 1, Channel number:  36
+      Service Id:  2049 (0x0801), Visible: 1, Channel number:  30
+      Service Id:  2050 (0x0802), Visible: 1, Channel number:  31
+      Service Id:  2051 (0x0803), Visible: 1, Channel number:  32
+      Service Id:  2052 (0x0804), Visible: 1, Channel number:  33
+      Service Id:  2179 (0x0883), Visible: 1, Channel number:  32
+    - Descriptor 3: Service List (0x41, 65), 21 bytes
+      Service id: 2053 (0x0805), Type: 0x01 (Digital television service)
+      Service id: 2055 (0x0807), Type: 0x01 (Digital television service)
+      Service id: 2049 (0x0801), Type: 0x01 (Digital television service)
+      Service id: 2050 (0x0802), Type: 0x01 (Digital television service)
+      Service id: 2051 (0x0803), Type: 0x01 (Digital television service)
+      Service id: 2052 (0x0804), Type: 0x01 (Digital television service)
+      Service id: 2179 (0x0883), Type: 0x01 (Digital television service)
+    Transport Stream Id: 10 (0x000A), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  2561 (0x0A01), Visible: 1, Channel number:  20
+      Service Id:  2563 (0x0A03), Visible: 1, Channel number:  25
+      Service Id:  2562 (0x0A02), Visible: 1, Channel number:  21
+      Service Id:  2564 (0x0A04), Visible: 1, Channel number:  24
+      Service Id:  2565 (0x0A05), Visible: 1, Channel number:  23
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 2561 (0x0A01), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2563 (0x0A03), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2562 (0x0A02), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2564 (0x0A04), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2565 (0x0A05), Type: 0x19 (Advanced codec HD digital television service)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 9, sections: 2, total size: 773 bytes
+  - Section 0:
+    Service Id: 1046 (0x0416)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 32 (0x0020)
+      Start UTC: 2019/01/22 12:15:00
+      Duration: 00:55:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 38 bytes
+        Language: fre
+        Event name: "La petite maison dans la prairie"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 183 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Pour empêcher le divorce de ses parents, le jeune Jordan Herzog fait semblant d'être devenu aveugle. Laura est au courant de la supercherie et elle hésite à garder le secret..."
+      - Descriptor 2: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 3: Content (0x54, 84), 4 bytes
+        Content: 0x12 (adventure/western/war) / User: 0x00
+        Content: 0x10 (movie/drama (general)) / User: 0x00
+      - Descriptor 4: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 5: Component (0x50, 80), 24 bytes
+        Content/type: 0xC5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "multi-channel 5.1"
+  - Section 1:
+    Service Id: 1046 (0x0416)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 33 (0x0021)
+      Start UTC: 2019/01/22 13:10:00
+      Duration: 00:55:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 38 bytes
+        Language: fre
+        Event name: "La petite maison dans la prairie"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 251 bytes
+        Descriptor number: 0, last: 1
+        Language: fre
+        Text: "Toby Noe, un homme que la famille Ingalls a rencontré à Winoka, arrive à Walnut Grove. Charles propose de l'héberger provisoirement mais le nouveau pensionnaire prend ses aises. Pour s'en débarrasser, les Ingalls décident de lui faire rencontre"
+      - Descriptor 2: Extended Event (0x4E, 78), 27 bytes
+        Descriptor number: 1, last: 1
+        Language: fre
+        Text: "r la veuve Cooper..."
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Content (0x54, 84), 4 bytes
+        Content: 0x12 (adventure/western/war) / User: 0x00
+        Content: 0x10 (movie/drama (general)) / User: 0x00
+      - Descriptor 5: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 6: Component (0x50, 80), 24 bytes
+        Content/type: 0xC5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "multi-channel 5.1"
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 15, sections: 2, total size: 818 bytes
+  - Section 0:
+    Service Id: 1045 (0x0415)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 71 (0x0047)
+      Start UTC: 2019/01/22 12:45:00
+      Duration: 00:55:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 104 bytes
+        Language: fre
+        Event name: "Le magazine de la santé"
+        Description: "Magazine de la santé présenté par Marina Carrère d'Encausse, Régis Boxelé."
+      - Descriptor 1: Extended Event (0x4E, 78), 87 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Les animateurs abordent les nombreux sujets qui préoccupent les téléspectateurs."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0xA7 (gardening) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 5: Component (0x50, 80), 87 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
+      - Descriptor 6: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "stereo"
+  - Section 1:
+    Service Id: 1045 (0x0415)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 72 (0x0048)
+      Start UTC: 2019/01/22 13:40:00
+      Duration: 00:35:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 102 bytes
+        Language: fre
+        Event name: "Allô, docteurs !"
+        Description: "Magazine de la santé présenté par Marina Carrère d'Encausse, Philippe Charlier."
+      - Descriptor 1: Extended Event (0x4E, 78), 139 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Entourés de spécialistes et de témoins, les animateurs répondent aux questions des téléspectateurs concernant la thématique du jour."
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0xA7 (gardening) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 5: Component (0x50, 80), 87 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
+      - Descriptor 6: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "stereo"
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 28, sections: 2, total size: 164 bytes
+  - Section 0:
+    Service Id: 776 (0x0308)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 37998 (0x946E)
+      Start UTC: 2019/01/22 12:40:00
+      Duration: 00:20:00
+      Running status: running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 27 bytes
+        Language: fre
+        Event name: "Au coeur de la course"
+        Description: ""
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 3: Content (0x54, 84), 6 bytes
+        Content: 0x42 (sports magazines) / User: 0x2D
+        Content: 0xBF (unknown) / User: 0x00
+        Content: 0xBF (unknown) / User: 0x20
+      - Descriptor 4: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+  - Section 1:
+    Service Id: 776 (0x0308)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 37999 (0x946F)
+      Start UTC: 2019/01/22 13:00:00
+      Duration: 00:10:00
+      Running status: not running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 13 bytes
+        Language: fre
+        Event name: "Journal"
+        Description: ""
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 3: Content (0x54, 84), 6 bytes
+        Content: 0x21 (news/weather report) / User: 0x90
+        Content: 0xBF (unknown) / User: 0x00
+        Content: 0xBF (unknown) / User: 0x20
+      - Descriptor 4: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 2, sections: 2, total size: 478 bytes
+  - Section 0:
+    Service Id: 770 (0x0302)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 7840 (0x1EA0)
+      Start UTC: 2019/01/22 12:32:00
+      Duration: 01:50:00
+      Running status: running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 135 bytes
+        Language: fre
+        Event name: "The Foreigner"
+        Description: "Réalisé par Martin Campbell en 2017. Avec Jackie Chan, Pierce Brosnan, Charlie Murphy. Thriller britannico-chinois."
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x44 (AC-3, full, complete main, multichannel > 2)
+        Component tag: 3 (0x03)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x44 (AC-3, full, complete main, multichannel > 2)
+        Component tag: 3 (0x03)
+        Language: eng
+      - Descriptor 3: Component (0x50, 80), 6 bytes
+        Content/type: 0x010B (MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 4: Content (0x54, 84), 6 bytes
+        Content: 0x11 (detective/thriller) / User: 0x15
+        Content: 0xBF (unknown) / User: 0x01
+        Content: 0xBF (unknown) / User: 0x11
+      - Descriptor 5: Component (0x50, 80), 6 bytes
+        Content/type: 0x01 (EBU Teletext subtitles)
+        Component tag: 12 (0x0C)
+        Language: fre
+      - Descriptor 6: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x07 (min. 10 years)
+  - Section 1:
+    Service Id: 770 (0x0302)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 7841 (0x1EA1)
+      Start UTC: 2019/01/22 14:22:00
+      Duration: 00:14:00
+      Running status: not running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 132 bytes
+        Language: fre
+        Event name: "L'hebd'Hollywood"
+        Description: "Présenté par Didier Allouch. Toute l'actualité d'Hollywood, des stars et des derniers films à ne pas manquer."
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x010B (MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 3: Content (0x54, 84), 4 bytes
+        Content: 0x76 (film/cinema) / User: 0x6C
+        Content: 0xBF (unknown) / User: 0x00
+      - Descriptor 4: Extended Event (0x4E, 78), 71 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "
+REDIFFUSION : le 23 Jan à 20:35
+REDIFFUSION : le 24 Jan à 00:00"
+      - Descriptor 5: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 29, sections: 2, total size: 370 bytes
+  - Section 0:
+    Service Id: 2561 (0x0A01)
+    TS Id: 10 (0x000A)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 206 (0x00CE)
+      Start UTC: 2019/01/22 12:40:00
+      Duration: 00:40:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 119 bytes
+        Language: fre
+        Event name: "Petits secrets entre..."
+        Description: "Petits secrets entre voisins. "La fetarde" Fiction. Avec Jessica Perrin, Sébastien Barat."
+      - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+  - Section 1:
+    Service Id: 2561 (0x0A01)
+    TS Id: 10 (0x000A)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 207 (0x00CF)
+      Start UTC: 2019/01/22 13:20:00
+      Duration: 00:25:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 175 bytes
+        Language: fre
+        Event name: "Une nounou d'enfer. "Un..."
+        Description: "Une nounou d'enfer. "Un étranger dans la maison" Série (USA). Avec Fran Drescher. Maxwell engage un précepteur pour aider Brighton en italien."
+      - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 13, sections: 2, total size: 455 bytes
+  - Section 0:
+    Service Id: 777 (0x0309)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 46074 (0xB3FA)
+      Start UTC: 2019/01/22 12:15:00
+      Duration: 00:50:00
+      Running status: running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 123 bytes
+        Language: fre
+        Event name: "Body of Proof"
+        Description: "Série policière américaine avec Dana Delany, Mary Mouser, Jeri Ryan. Saison 1. (4/9). "Puzzle macabre"."
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: eng
+      - Descriptor 3: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 4: Content (0x54, 84), 6 bytes
+        Content: 0x11 (detective/thriller) / User: 0x54
+        Content: 0xBF (unknown) / User: 0x01
+        Content: 0xBF (unknown) / User: 0x11
+      - Descriptor 5: Component (0x50, 80), 6 bytes
+        Content/type: 0x01 (EBU Teletext subtitles)
+        Component tag: 12 (0x0C)
+        Language: fre
+      - Descriptor 6: Extended Event (0x4E, 78), 23 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "
+Episode : 4 / 9"
+      - Descriptor 7: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x07 (min. 10 years)
+  - Section 1:
+    Service Id: 777 (0x0309)
+    TS Id: 3 (0x0003)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 46075 (0xB3FB)
+      Start UTC: 2019/01/22 13:05:00
+      Duration: 00:45:00
+      Running status: not running
+      CA mode: controlled
+      - Descriptor 0: Short Event (0x4D, 77), 125 bytes
+        Language: fre
+        Event name: "Body of Proof"
+        Description: "Série policière américaine avec Dana Delany, Jeri Ryan, Jay Karnes. Saison 2. (2/20). "Partie de chasse"."
+      - Descriptor 1: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: fre
+      - Descriptor 2: Component (0x50, 80), 6 bytes
+        Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
+        Component tag: 1 (0x01)
+        Language: eng
+      - Descriptor 3: Component (0x50, 80), 6 bytes
+        Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
+        Component tag: 5 (0x05)
+        Language: fre
+      - Descriptor 4: Content (0x54, 84), 6 bytes
+        Content: 0x11 (detective/thriller) / User: 0x54
+        Content: 0xBF (unknown) / User: 0x01
+        Content: 0xBF (unknown) / User: 0x11
+      - Descriptor 5: Component (0x50, 80), 6 bytes
+        Content/type: 0x01 (EBU Teletext subtitles)
+        Component tag: 12 (0x0C)
+        Language: fre
+      - Descriptor 6: Extended Event (0x4E, 78), 24 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "
+Episode : 2 / 20"
+      - Descriptor 7: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x07 (min. 10 years)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 21, sections: 2, total size: 809 bytes
+  - Section 0:
+    Service Id: 1025 (0x0401)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 48 (0x0030)
+      Start UTC: 2019/01/22 12:30:00
+      Duration: 00:25:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 23 bytes
+        Language: fre
+        Event name: "Scènes de ménages"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 116 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: "Votre couple vous désole ? Vous vous lamentez de vivre seul ? Scènes de Ménages va vous aider à relativiser !"
+      - Descriptor 2: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 3: Content (0x54, 84), 2 bytes
+        Content: 0x10 (movie/drama (general)) / User: 0x00
+      - Descriptor 4: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 5: Component (0x50, 80), 24 bytes
+        Content/type: 0xC5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "multi-channel 5.1"
+  - Section 1:
+    Service Id: 1025 (0x0401)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 49 (0x0031)
+      Start UTC: 2019/01/22 12:55:00
+      Duration: 02:00:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 25 bytes
+        Language: fre
+        Event name: "La perle de l'amour"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 251 bytes
+        Descriptor number: 0, last: 1
+        Language: fre
+        Text: "Alex, photographe pour un magazine de voyage, et Colin, auteur d´un roman à succès, font équipe à la recherche d´une perle bleue légendaire aux îles Fidji. Alors que leurs deux carrières sont en jeu, cette chasse au trésor pourrait bien les ame"
+      - Descriptor 2: Extended Event (0x4E, 78), 56 bytes
+        Descriptor number: 1, last: 1
+        Language: fre
+        Text: "ner à trouver le seul trésor qui compte vraiment."
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Content (0x54, 84), 4 bytes
+        Content: 0x10 (movie/drama (general)) / User: 0x00
+        Content: 0x12 (adventure/western/war) / User: 0x00
+      - Descriptor 5: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 6: Component (0x50, 80), 24 bytes
+        Content/type: 0xC5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "multi-channel 5.1"
+      - Descriptor 7: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 4 (0x04)
+        Language: qaa
+        Description: "stereo"
+      - Descriptor 8: Component (0x50, 80), 87 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 9, sections: 2, total size: 669 bytes
+  - Section 0:
+    Service Id: 518 (0x0206)
+    TS Id: 2 (0x0002)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 51 (0x0033)
+      Start UTC: 2019/01/22 12:30:00
+      Duration: 00:30:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 254 bytes
+        Language: fre
+        Event name: "Il était une fois... l'Homme"
+        Description: "Pierre le Grand et son époque. Dessin animé. 1978. Saison 1. En 1695, le Tsar Pierre Le Grand prend en main l'avenir de la Russie et décide d'ériger une nouvelle capitale sur les rives de la Baltique, Saint-Pétersbourg."
+      - Descriptor 1: Extended Event (0x4E, 78), 6 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: ""
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x55 (cartoons/puppets) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+  - Section 1:
+    Service Id: 518 (0x0206)
+    TS Id: 2 (0x0002)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 52 (0x0034)
+      Start UTC: 2019/01/22 13:00:00
+      Duration: 00:30:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 253 bytes
+        Language: fre
+        Event name: "Il était une fois... l'Homme"
+        Description: "Le siècle des Lumières. Dessin animé. 1978. Saison 1. Au XVIIIe siècle, sous l'influence des philosophes, l'opinion s'éveille. Royauté, religion, hiérarchie, tradition, toutes les bases de la société sont remises en..."
+      - Descriptor 1: Extended Event (0x4E, 78), 6 bytes
+        Descriptor number: 0, last: 0
+        Language: fre
+        Text: ""
+      - Descriptor 2: Content (0x54, 84), 2 bytes
+        Content: 0x55 (cartoons/puppets) / User: 0x00
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Component (0x50, 80), 14 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "MPEG4HD"
+      - Descriptor 5: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "DD+ VF"
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 13, sections: 2, total size: 485 bytes
+  - Section 0:
+    Service Id: 1542 (0x0606)
+    TS Id: 6 (0x0006)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 24834 (0x6102)
+      Start UTC: 2019/01/22 12:25:00
+      Duration: 00:30:00
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 248 bytes
+        Language: fre
+        Event name: "Friends. "Celui qui passait..."
+        Description: "Friends. "Celui qui passait une soirée avec Rachel" Série (USA). Avec Jennifer Aniston. Joey propose à Rachel d'aller au restaurant pour lui changer les idées. Les deux amis comparent leurs techniques de drague."
+      - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
+        Country code: FRA, rating: 0x00 (undefined)
+  - Section 1:
+    Service Id: 1542 (0x0606)
+    TS Id: 6 (0x0006)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 24835 (0x6103)
+      Start UTC: 2019/01/22 12:55:00
+      Duration: 00:55:00
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 161 bytes
+        Language: fre
+        Event name: "Les experts. "Tout feu,..."
+        Description: "Les experts. "Tout feu, tout flamme" Série (USA). Un homme accusé de meurtre implore Grissom de l'aider à prouver son innocence."
+      - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
+        Country code: FRA, rating: 0x00 (undefined)
+
+* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+  Version: 4, sections: 2, total size: 1423 bytes
+  - Section 0:
+    Service Id: 1031 (0x0407)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 48 (0x0030)
+      Start UTC: 2019/01/22 12:37:41
+      Duration: 01:59:43
+      Running status: running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 17 bytes
+        Language: fre
+        Event name: "Conte d'été"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 251 bytes
+        Descriptor number: 0, last: 1
+        Language: fre
+        Text: "Film d'Eric Rohmer (France, 1996, 1h50mn) En vacances à Dinard, Gaspard (à qui il n'arrive jamais rien) se retrouve obligé de choisir entre trois filles : Léna, qu'il dit aimer, Solène, prête à tout pour le séduire, et Margot, qui lui plaît de "
+      - Descriptor 2: Extended Event (0x4E, 78), 244 bytes
+        Descriptor number: 1, last: 1
+        Language: fre
+        Text: "plus en plus... Éric Rohmer réalise un délicieux marivaudage breton, avec le ténébreux Melvil Poupaud.
+AUDIO 1 : FRANÇAIS / AUDIO 2 : ALLEMAND / AUDIO 4 : AUDIOVISION
+Sous-titres pour sourds et malentendants disponibles pour ce programme"
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Content (0x54, 84), 2 bytes
+        Content: 0x10 (movie/drama (general)) / User: 0x00
+      - Descriptor 5: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 6: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "stereo"
+      - Descriptor 7: Component (0x50, 80), 13 bytes
+        Content/type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+        Component tag: 3 (0x03)
+        Language: qad
+        Description: "stereo"
+      - Descriptor 8: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 7 (0x07)
+        Language: deu
+        Description: "stereo"
+      - Descriptor 9: Component (0x50, 80), 41 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Sous-titrage malentendant français"
+      - Descriptor 10: Component (0x50, 80), 36 bytes
+        Content/type: 0x14 (DVB subtitles, high definition)
+        Component tag: 8 (0x08)
+        Language: deu
+        Description: "Sous-titrage partiel allemand"
+  - Section 1:
+    Service Id: 1031 (0x0407)
+    TS Id: 4 (0x0004)
+    Original Network Id: 8442 (0x20FA)
+    Segment last section: 1 (0x01)
+    Last Table Id: 79 (0x4F), EIT p/f Other
+    - Event Id: 49 (0x0031)
+      Start UTC: 2019/01/22 14:37:24
+      Duration: 00:52:16
+      Running status: not running
+      CA mode: free
+      - Descriptor 0: Short Event (0x4D, 77), 36 bytes
+        Language: fre
+        Event name: "Bhoutan, le royaume du bonheur"
+        Description: ""
+      - Descriptor 1: Extended Event (0x4E, 78), 251 bytes
+        Descriptor number: 0, last: 1
+        Language: fre
+        Text: "Documentaire de Min Yong-Eung (Corée du Sud, 2011, 52mn) Depuis 1972, le Bhoutan s'efforce d'améliorer son indice BNB (bonheur national brut). À travers le témoignage de plusieurs familles, portrait d'un pays pauvre mais riche sur le plan spiri"
+      - Descriptor 2: Extended Event (0x4E, 78), 205 bytes
+        Descriptor number: 1, last: 1
+        Language: fre
+        Text: "tuel, qui préfère la lenteur à la croissance et compte plus de moines que de policiers.
+AUDIO 1 : FRANÇAIS / AUDIO 2 : ALLEMAND
+Sous-titres pour sourds et malentendants disponibles pour ce programme"
+      - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+        Country code: fra, rating: 0x00 (undefined)
+      - Descriptor 4: Content (0x54, 84), 2 bytes
+        Content: 0x82 (economics/social advisory) / User: 0x00
+      - Descriptor 5: Component (0x50, 80), 43 bytes
+        Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+        Component tag: 1 (0x01)
+        Language: fre
+        Description: "video, 16:9 without pan vector, 25Hz"
+      - Descriptor 6: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 2 (0x02)
+        Language: fre
+        Description: "stereo"
+      - Descriptor 7: Component (0x50, 80), 13 bytes
+        Content/type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+        Component tag: 7 (0x07)
+        Language: deu
+        Description: "stereo"
+      - Descriptor 8: Component (0x50, 80), 41 bytes
+        Content/type: 0x24 (DVB subtitles for hard of hearing, high definition)
+        Component tag: 5 (0x05)
+        Language: fre
+        Description: "Sous-titrage malentendant français"
+      - Descriptor 9: Component (0x50, 80), 36 bytes
+        Content/type: 0x14 (DVB subtitles, high definition)
+        Component tag: 8 (0x08)
+        Language: deu
+        Description: "Sous-titrage partiel allemand"
+

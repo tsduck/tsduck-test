@@ -1,0 +1,57 @@
+
+Copy and synchronize PCR's from one PID to another
+
+Usage: tsp -P pcrcopy [options]
+
+Options:
+
+  -e packet-count
+  --every packet-count
+      Insert a PCR every N packets in the target PID. By default, insert a PCR
+      in packets with a payload unit start only.
+
+  --help
+      Display this help text.
+
+  --max-shift bytes
+      Maximum number of target packet payload bytes which can be shifted, due
+      to PCR insertion. When this value is reached, usually because of a lack
+      of null packets, the current PES packet is truncated. By default, allow
+      the buffering of up to 16 packet payloads.
+
+  -n
+  --no-pusi
+      Do not insert a PCR in packets with a payload unit start indicator
+      (PUSI). By default, a PCR is inserted in all PUSI packets, even if
+      --every is also specified.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --reference-label value
+      Packet label indicating the PID containing the reference PCR to copy.
+      Each time a packet with that label is encountered, the reference PID
+      switches to the PID of this packet, if different from the previous
+      reference PID. Exactly one of --reference-pid and --reference-label shall
+      be specified.
+
+  -r value
+  --reference-pid value
+      PID containing the reference PCR to copy. Exactly one of --reference-pid
+      and --reference-label shall be specified.
+
+  --target-label value
+      Packet label indicating the PID containing the target PID into which PCR
+      shall be created and copied. Each time a packet with that label is
+      encountered, the target PID switches to the PID of this packet, if
+      different from the previous target PID. Exactly one of --target-pid and
+      --target-label shall be specified.
+
+  -t value
+  --target-pid value
+      PID into which PCR shall be created and copied. Exactly one of
+      --target-pid and --target-label shall be specified.
+

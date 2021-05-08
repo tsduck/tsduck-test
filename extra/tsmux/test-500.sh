@@ -3,6 +3,7 @@
 
 cd $(dirname $0)
 source ../../common/testrc.sh
+INFILE=test-092.ts
 
 # This script is invoked recursively.
 case "$1" in
@@ -20,9 +21,9 @@ case "$1" in
     "")
         # Main command
         $(tspath tsmux) -v --bitrate 12,000,000 --max-input-packets 16 --terminate --ts-id 10 --original-network-id 11 \
-            -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0101'" \
-            -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0104'" \
-            -I fork "./$SCRIPT.sh --args '--play $SCRIPT.ts 0x0106'" \
+            -I fork "./$SCRIPT.sh --args '--play $INFILE 0x0101'" \
+            -I fork "./$SCRIPT.sh --args '--play $INFILE 0x0104'" \
+            -I fork "./$SCRIPT.sh --args '--play $INFILE 0x0106'" \
             -O file $SCRIPT.ts \
             >"./$SCRIPT.mux.log" 2>&1
         $(tspath tsp) -v \

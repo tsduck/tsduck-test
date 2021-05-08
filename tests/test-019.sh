@@ -26,9 +26,9 @@ PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject descrambler duplicate eit file filter fork
     history inject limit merge mpe mpeinject mux nit nitscan pat pattern
-    pcradjust pcrbitrate pcrextract pcrverify pes pmt psi psimerge reduce
-    regulate remap rmorphan rmsplice scrambler sdt sections sifilter skip
-    slice spliceinject splicemonitor stats stuffanalyze svremove svrename
+    pcradjust pcrbitrate pcrcopy pcrextract pcrverify pes pmt psi psimerge
+    reduce regulate remap rmorphan rmsplice scrambler sdt sections sifilter
+    skip slice spliceinject splicemonitor stats stuffanalyze svremove svrename
     t2mi tables teletext time timeref timeshift trigger tsrename until zap
 )
 

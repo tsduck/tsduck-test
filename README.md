@@ -182,7 +182,9 @@ repository. But we now limit their size to 20 MB.
 | 085  | `http` plugin
 | 086  | `memory` plugins from Python
 | 087  | `memory` plugins from Java
-| 088  | `pcap` plugin
+| 088  | `pcap` input plugin
 | 089  | `hls` output plugin
 | 090  | Option `--ignore-leap-seconds`
 | 091  | Non-regression on SCTE 35 tables with unspecified command length (issue #764)
+| 092  | Analyze a French DTTV live stream
+| 093  | `pcrcopy` plugin

@@ -1,0 +1,465 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 26, sections: 1, total size: 40 bytes
+  - Section 0:
+    TS id:       1 (0x0001)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:   257 (0x0101)  PID:  110 (0x006E)
+    Program:   260 (0x0104)  PID:  310 (0x0136)
+    Program:   261 (0x0105)  PID:  510 (0x01FE)
+    Program:   262 (0x0106)  PID:  610 (0x0262)
+    Program:   273 (0x0111)  PID:  210 (0x00D2)
+    Program:   368 (0x0170)  PID:  710 (0x02C6)
+
+* PMT, TID 2 (0x02), PID 710 (0x02C6)
+  Version: 16, sections: 1, total size: 36 bytes
+  - Section 0:
+    Program: 368 (0x0170), PCR PID: 720 (0x02D0)
+    Elementary stream: type 0x1B (AVC video), PID: 720 (0x02D0)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 730 (0x02DA)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+
+* PMT, TID 2 (0x02), PID 310 (0x0136)
+  Version: 10, sections: 1, total size: 121 bytes
+  - Section 0:
+    Program: 260 (0x0104), PCR PID: 320 (0x0140)
+    Elementary stream: type 0x1B (AVC video), PID: 320 (0x0140)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 330 (0x014A)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 331 (0x014B)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 332 (0x014C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 4 (0x04)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 340 (0x0154)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* CAT, TID 1 (0x01), PID 1 (0x0001)
+  Version: 1, sections: 1, total size: 12 bytes
+  - Section 0:
+
+* PMT, TID 2 (0x02), PID 110 (0x006E)
+  Version: 12, sections: 1, total size: 121 bytes
+  - Section 0:
+    Program: 257 (0x0101), PCR PID: 120 (0x0078)
+    Elementary stream: type 0x1B (AVC video), PID: 120 (0x0078)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 130 (0x0082)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 131 (0x0083)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 132 (0x0084)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 4 (0x04)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 140 (0x008C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PMT, TID 2 (0x02), PID 510 (0x01FE)
+  Version: 9, sections: 1, total size: 85 bytes
+  - Section 0:
+    Program: 261 (0x0105), PCR PID: 520 (0x0208)
+    Elementary stream: type 0x1B (AVC video), PID: 520 (0x0208)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 530 (0x0212)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 531 (0x0213)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 3 (0x03)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 540 (0x021C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PMT, TID 2 (0x02), PID 210 (0x00D2)
+  Version: 1, sections: 1, total size: 94 bytes
+  - Section 0:
+    Program: 273 (0x0111), PCR PID: 220 (0x00DC)
+    Elementary stream: type 0x1B (AVC video), PID: 220 (0x00DC)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 230 (0x00E6)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 231 (0x00E7)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qad, Type: 0x00 (undefined)
+    - Descriptor 1: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: Supplementary Audio (0x06, 6)
+      Mix type: complete and independent stream
+      Editorial classification: audio description for the visually impaired
+      Language: fra
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 240 (0x00F0)
+    - Descriptor 0: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 36 (0x24)
+      Type: DVB subtitles for hard of hearing, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 232 (0x00E8)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: qaa, Type: 0x00 (undefined)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 242 (0x00F2)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 6 (0x06)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 20 (0x14)
+      Type: DVB subtitles, high definition
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* PMT, TID 2 (0x02), PID 610 (0x0262)
+  Version: 10, sections: 1, total size: 60 bytes
+  - Section 0:
+    Program: 262 (0x0106), PCR PID: 620 (0x026C)
+    Elementary stream: type 0x1B (AVC video), PID: 620 (0x026C)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 1 (0x01)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 630 (0x0276)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 2 (0x02)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fre, Type: 0x00 (undefined)
+    - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
+      Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 640 (0x0280)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 5 (0x05)
+    - Descriptor 1: Subtitling (0x59, 89), 8 bytes
+      Language: fra, Type: 32 (0x20)
+      Type: DVB subtitles for hard of hearing, no aspect ratio
+      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+
+* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+  Version: 2, sections: 1, total size: 171 bytes
+  - Section 0:
+    Transport Stream Id: 1 (0x0001)
+    Original Network Id: 8442 (0x20FA)
+    Service Id: 257 (0x0101), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 16 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France 2", Provider: "GR1 A"
+    Service Id: 260 (0x0104), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 16 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France 4", Provider: "GR1 A"
+    Service Id: 261 (0x0105), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 17 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "France Ô", Provider: "GR1 A"
+    Service Id: 262 (0x0106), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 19 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "franceinfo:", Provider: "GR1 A"
+    Service Id: 273 (0x0111), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 28 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "F3 Paris Ile-de-France", Provider: "GR1"
+    Service Id: 368 (0x0170), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 18 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "BFM Paris", Provider: "R1 TFL"
+
+* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+  Version: 30, sections: 1, total size: 635 bytes
+  - Section 0:
+    Network Id: 8442 (0x20FA)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 1 bytes
+      Name: "F"
+    Transport Stream Id: 1 (0x0001), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 104 bytes
+      Service Id:   257 (0x0101), Visible: 1, Channel number:   2
+      Service Id:   260 (0x0104), Visible: 1, Channel number:  14
+      Service Id:   261 (0x0105), Visible: 1, Channel number:  19
+      Service Id:   262 (0x0106), Visible: 1, Channel number:  27
+      Service Id:   275 (0x0113), Visible: 1, Channel number:   3
+      Service Id:   277 (0x0115), Visible: 1, Channel number:   3
+      Service Id:   281 (0x0119), Visible: 1, Channel number:   3
+      Service Id:   282 (0x011A), Visible: 1, Channel number:   3
+      Service Id:   273 (0x0111), Visible: 1, Channel number:   3
+      Service Id:   274 (0x0112), Visible: 1, Channel number:   3
+      Service Id:   287 (0x011F), Visible: 1, Channel number:   3
+      Service Id:   288 (0x0120), Visible: 1, Channel number:   3
+      Service Id:   292 (0x0124), Visible: 1, Channel number:   3
+      Service Id:   323 (0x0143), Visible: 1, Channel number:  33
+      Service Id:   324 (0x0144), Visible: 1, Channel number:  33
+      Service Id:   368 (0x0170), Visible: 1, Channel number:  30
+      Service Id:   369 (0x0171), Visible: 1, Channel number:  31
+      Service Id:   370 (0x0172), Visible: 1, Channel number:  32
+      Service Id:   371 (0x0173), Visible: 1, Channel number:  33
+      Service Id:   372 (0x0174), Visible: 1, Channel number:  34
+      Service Id:   373 (0x0175), Visible: 1, Channel number:  35
+      Service Id:   374 (0x0176), Visible: 1, Channel number:  36
+      Service Id:   375 (0x0177), Visible: 1, Channel number:  37
+      Service Id:   376 (0x0178), Visible: 1, Channel number:  38
+      Service Id:   325 (0x0145), Visible: 1, Channel number:  32
+      Service Id:   326 (0x0146), Visible: 1, Channel number:  32
+    - Descriptor 3: Service List (0x41, 65), 78 bytes
+      Service id: 257 (0x0101), Type: 0x01 (Digital television service)
+      Service id: 260 (0x0104), Type: 0x01 (Digital television service)
+      Service id: 261 (0x0105), Type: 0x01 (Digital television service)
+      Service id: 262 (0x0106), Type: 0x01 (Digital television service)
+      Service id: 275 (0x0113), Type: 0x01 (Digital television service)
+      Service id: 277 (0x0115), Type: 0x01 (Digital television service)
+      Service id: 281 (0x0119), Type: 0x01 (Digital television service)
+      Service id: 282 (0x011A), Type: 0x01 (Digital television service)
+      Service id: 273 (0x0111), Type: 0x01 (Digital television service)
+      Service id: 274 (0x0112), Type: 0x01 (Digital television service)
+      Service id: 287 (0x011F), Type: 0x01 (Digital television service)
+      Service id: 288 (0x0120), Type: 0x01 (Digital television service)
+      Service id: 292 (0x0124), Type: 0x01 (Digital television service)
+      Service id: 323 (0x0143), Type: 0x01 (Digital television service)
+      Service id: 324 (0x0144), Type: 0x01 (Digital television service)
+      Service id: 368 (0x0170), Type: 0x01 (Digital television service)
+      Service id: 369 (0x0171), Type: 0x01 (Digital television service)
+      Service id: 370 (0x0172), Type: 0x01 (Digital television service)
+      Service id: 371 (0x0173), Type: 0x01 (Digital television service)
+      Service id: 372 (0x0174), Type: 0x01 (Digital television service)
+      Service id: 373 (0x0175), Type: 0x01 (Digital television service)
+      Service id: 374 (0x0176), Type: 0x01 (Digital television service)
+      Service id: 375 (0x0177), Type: 0x01 (Digital television service)
+      Service id: 376 (0x0178), Type: 0x01 (Digital television service)
+      Service id: 325 (0x0145), Type: 0x01 (Digital television service)
+      Service id: 326 (0x0146), Type: 0x01 (Digital television service)
+    Transport Stream Id: 2 (0x0002), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:   513 (0x0201), Visible: 1, Channel number:   8
+      Service Id:   515 (0x0203), Visible: 1, Channel number:  15
+      Service Id:   516 (0x0204), Visible: 1, Channel number:  16
+      Service Id:   517 (0x0205), Visible: 1, Channel number:  17
+      Service Id:   518 (0x0206), Visible: 1, Channel number:  18
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 513 (0x0201), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 515 (0x0203), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 516 (0x0204), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 517 (0x0205), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 518 (0x0206), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 3 (0x0003), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 24 bytes
+      Service Id:   769 (0x0301), Visible: 1, Channel number:   4
+      Service Id:   770 (0x0302), Visible: 1, Channel number:  43
+      Service Id:   771 (0x0303), Visible: 1, Channel number:  42
+      Service Id:   772 (0x0304), Visible: 1, Channel number:  45
+      Service Id:   776 (0x0308), Visible: 1, Channel number:  26
+      Service Id:   777 (0x0309), Visible: 1, Channel number:  41
+    - Descriptor 3: Service List (0x41, 65), 18 bytes
+      Service id: 769 (0x0301), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 770 (0x0302), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 771 (0x0303), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 772 (0x0304), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 776 (0x0308), Type: 0x16 (Advanced codec SD digital television service)
+      Service id: 777 (0x0309), Type: 0x16 (Advanced codec SD digital television service)
+    Transport Stream Id: 4 (0x0004), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  1025 (0x0401), Visible: 1, Channel number:   6
+      Service Id:  1026 (0x0402), Visible: 1, Channel number:   9
+      Service Id:  1031 (0x0407), Visible: 1, Channel number:   7
+      Service Id:  1045 (0x0415), Visible: 1, Channel number:   5
+      Service Id:  1046 (0x0416), Visible: 1, Channel number:  22
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 1025 (0x0401), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1026 (0x0402), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1031 (0x0407), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1045 (0x0415), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1046 (0x0416), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 6 (0x0006), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  1537 (0x0601), Visible: 1, Channel number:   1
+      Service Id:  1538 (0x0602), Visible: 1, Channel number:  12
+      Service Id:  1542 (0x0606), Visible: 1, Channel number:  10
+      Service Id:  1544 (0x0608), Visible: 1, Channel number:  11
+      Service Id:  1545 (0x0609), Visible: 1, Channel number:  13
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 1537 (0x0601), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1538 (0x0602), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1542 (0x0606), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1544 (0x0608), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 1545 (0x0609), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 8 (0x0008), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/32
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 28 bytes
+      Service Id:  2053 (0x0805), Visible: 1, Channel number:  34
+      Service Id:  2055 (0x0807), Visible: 1, Channel number:  36
+      Service Id:  2049 (0x0801), Visible: 1, Channel number:  30
+      Service Id:  2050 (0x0802), Visible: 1, Channel number:  31
+      Service Id:  2051 (0x0803), Visible: 1, Channel number:  32
+      Service Id:  2052 (0x0804), Visible: 1, Channel number:  33
+      Service Id:  2179 (0x0883), Visible: 1, Channel number:  32
+    - Descriptor 3: Service List (0x41, 65), 21 bytes
+      Service id: 2053 (0x0805), Type: 0x01 (Digital television service)
+      Service id: 2055 (0x0807), Type: 0x01 (Digital television service)
+      Service id: 2049 (0x0801), Type: 0x01 (Digital television service)
+      Service id: 2050 (0x0802), Type: 0x01 (Digital television service)
+      Service id: 2051 (0x0803), Type: 0x01 (Digital television service)
+      Service id: 2052 (0x0804), Type: 0x01 (Digital television service)
+      Service id: 2179 (0x0883), Type: 0x01 (Digital television service)
+    Transport Stream Id: 10 (0x000A), Original Network Id: 8442 (0x20FA)
+    - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
+      Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
+      Priority: high, Time slicing: unused, MPE-FEC: unused
+      Constellation pattern: 64-QAM
+      Hierarchy: non-hierarchical, native interleaver
+      Code rate: high prio: code 5 (reserved), low prio: 3/4
+      Guard interval: 1/8
+      OFDM transmission mode: 8k, other frequencies: no
+    - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 2: Logical Channel Number (0x83, 131), 20 bytes
+      Service Id:  2561 (0x0A01), Visible: 1, Channel number:  20
+      Service Id:  2563 (0x0A03), Visible: 1, Channel number:  25
+      Service Id:  2562 (0x0A02), Visible: 1, Channel number:  21
+      Service Id:  2564 (0x0A04), Visible: 1, Channel number:  24
+      Service Id:  2565 (0x0A05), Visible: 1, Channel number:  23
+    - Descriptor 3: Service List (0x41, 65), 15 bytes
+      Service id: 2561 (0x0A01), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2563 (0x0A03), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2562 (0x0A02), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2564 (0x0A04), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 2565 (0x0A05), Type: 0x19 (Advanced codec HD digital television service)
+

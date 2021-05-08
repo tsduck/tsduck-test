@@ -1,0 +1,874 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                            test-092 full  |
+|=============================================================================|
+|  Transport Stream Id: .......... 1 (0x0001)  |  Services: .............. 6  |
+|  Bytes: ........................ 20,000,004  |  PID's: Total: ......... 40  |
+|  TS packets: ...................... 106,383  |         Clear: ......... 40  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 6  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ......................... 24,047,795 b/s   26,094,416 b/s  |
+|  Estimated based on PCR's: ............... 24,017,297 b/s   26,061,322 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ..................................... 6 sec (0 min 6 sec)  |
+|  First TDT UTC time stamp: ........................... 2019/01/22 12:54:30  |
+|  Last TDT UTC time stamp: ............................ 2019/01/22 12:54:30  |
+|  First TOT local time stamp: ......................... 2019/01/22 13:54:30  |
+|  Last TOT local time stamp: .......................... 2019/01/22 13:54:30  |
+|  TOT country code: ................................................... FRA  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x0101  France 2 ..................................... C    6,381,821 b/s  |
+|  0x0104  France 4 ..................................... C    4,491,372 b/s  |
+|  0x0105  France Ô ..................................... C    1,786,467 b/s  |
+|  0x0106  franceinfo: .................................. C    1,676,607 b/s  |
+|  0x0111  F3 Paris Ile-de-France ....................... C    5,784,373 b/s  |
+|  0x0170  BFM Paris .................................... C    3,831,760 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                    test-092 full  |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 422, PID's: 7 (clear: 7, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C       95,392 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       95,392 b/s  |
+|  0x0000  PAT .......................................... C       15,145 b/s  |
+|  0x0001  CAT .......................................... C        3,842 b/s  |
+|  0x0010  NIT .......................................... C        2,712 b/s  |
+|  0x0011  SDT/BAT ...................................... C          904 b/s  |
+|  0x0012  EIT .......................................... C       69,623 b/s  |
+|  0x0014  TDT/TOT ...................................... C          452 b/s  |
+|  0x0015  Network Synchronization ...................... C        2,712 b/s  |
+|=============================================================================|
+|  Service: 0x0101 (257), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: France 2, provider: GR1 A                                    |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 28,232, PID's: 7 (clear: 7, scrambled: 0)                      |
+|  PMT PID: 0x006E (110), PCR PID: 0x0078 (120)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    6,381,821 b/s  |
+|  0x006E  PMT .......................................... C       14,919 b/s  |
+|  0x0078  AVC video (1920x1080, high profile, level 4.0  C    5,944,868 b/s  |
+|  0x0082  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      133,595 b/s  |
+|  0x0083  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      134,273 b/s  |
+|  0x0084  E-AC-3 Audio (qaa, E-AC-3, stereo (L,R), @48,  C      133,821 b/s  |
+|  0x008C  Subtitles (fra, DVB subtitles for hard of hea  C       16,953 b/s  |
+|  0x008E  Subtitles (fra, DVB subtitles, high definitio  C        3,390 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0104 (260), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: France 4, provider: GR1 A                                    |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 19,869, PID's: 7 (clear: 7, scrambled: 0)                      |
+|  PMT PID: 0x0136 (310), PCR PID: 0x0140 (320)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    4,491,372 b/s  |
+|  0x0136  PMT .......................................... C       14,693 b/s  |
+|  0x0140  AVC video (1440x1080, high profile, level 4.0  C    4,063,008 b/s  |
+|  0x014A  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      132,690 b/s  |
+|  0x014B  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      132,916 b/s  |
+|  0x014C  E-AC-3 Audio (qaa, E-AC-3, stereo (L,R), @48,  C      132,690 b/s  |
+|  0x0154  Subtitles (fra, DVB subtitles for hard of hea  C       12,206 b/s  |
+|  0x0156  Subtitles (fra, DVB subtitles, high definitio  C        3,164 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0105 (261), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: France Ô, provider: GR1 A                                    |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 7,903, PID's: 5 (clear: 5, scrambled: 0)                       |
+|  PMT PID: 0x01FE (510), PCR PID: 0x0208 (520)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    1,786,467 b/s  |
+|  0x01FE  PMT .......................................... C       15,371 b/s  |
+|  0x0208  AVC video (720x576, main profile, level 3.0,   C    1,492,829 b/s  |
+|  0x0212  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      132,464 b/s  |
+|  0x0213  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      132,690 b/s  |
+|  0x021C  Subtitles (fra, DVB subtitles for hard of hea  C       13,110 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0106 (262), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: franceinfo:, provider: GR1 A                                 |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 7,417, PID's: 4 (clear: 4, scrambled: 0)                       |
+|  PMT PID: 0x0262 (610), PCR PID: 0x026C (620)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    1,676,607 b/s  |
+|  0x0262  PMT .......................................... C       15,371 b/s  |
+|  0x026C  AVC video (720x576, main profile, level 3.0,   C    1,525,380 b/s  |
+|  0x0276  E-AC-3 Audio (fre, E-AC-3, stereo (L,R), @48,  C      132,916 b/s  |
+|  0x0280  Subtitles (fra, DVB subtitles for hard of hea  C        2,938 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0111 (273), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: F3 Paris Ile-de-France, provider: GR1                        |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 25,589, PID's: 7 (clear: 7, scrambled: 0)                      |
+|  PMT PID: 0x00D2 (210), PCR PID: 0x00DC (220)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    5,784,373 b/s  |
+|  0x00D2  PMT .......................................... C       14,919 b/s  |
+|  0x00DC  AVC video (1920x1080, high profile, level 4.0  C    5,166,807 b/s  |
+|  0x00E6  MPEG-1 Audio (fre, Audio layer II, 192 kb/s,   C      198,697 b/s  |
+|  0x00E7  MPEG-1 Audio (qad, Audio layer II, 192 kb/s,   C      198,697 b/s  |
+|  0x00E8  MPEG-1 Audio (qaa, Audio layer II, 192 kb/s,   C      198,923 b/s  |
+|  0x00F0  Subtitles (fra, DVB subtitles for hard of hea  C        2,938 b/s  |
+|  0x00F2  Subtitles (fra, DVB subtitles, high definitio  C        3,390 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0170 (368), TS: 0x0001 (1), Original Netw: 0x20FA (8442)        |
+|  Service name: BFM Paris, provider: R1 TFL                                  |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 16,951, PID's: 3 (clear: 3, scrambled: 0)                      |
+|  PMT PID: 0x02C6 (710), PCR PID: 0x02D0 (720)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    3,831,760 b/s  |
+|  0x02C6  PMT .......................................... C       15,145 b/s  |
+|  0x02D0  AVC video (1920x1080, high profile, level 4.0  C    3,683,472 b/s  |
+|  0x02DA  E-AC-3 Audio (fra, E-AC-3, stereo (L,R), @48,  C      133,142 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                        test-092 full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 15,145 b/s  Packets: ............ 67  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 67  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,842 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                      NIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,712 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 904 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 4  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 69,623 b/s  Packets: ........... 308  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 95  |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 452 b/s  Packets: ............. 2  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 2  |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,712 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 12  |
+|=============================================================================|
+|  PID: 0x006E (110)                                                     PMT  |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,919 b/s  Packets: ............ 66  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 66  |
+|=============================================================================|
+|  PID: 0x0078 (120)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 5,944,868 b/s  Packets: ........ 26,299  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 362  Unexpect: ........ 14  |
+|                            Duplicated: .......... 1  PES:                   |
+|                            PCR: ............... 191  Packets: ........ 167  |
+|                            TSrate: . 23,957,047 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0082 (130)                                      E-AC-3 Audio (fre)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 133,595 b/s  Packets: ........... 591  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 591  Unexpect: ........ 10  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 33  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0083 (131)                                      E-AC-3 Audio (qad)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, visually impaired, bsid 16               |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 134,273 b/s  Packets: ........... 594  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 594  Unexpect: ......... 6  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 35  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0084 (132)                                      E-AC-3 Audio (qaa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 133,821 b/s  Packets: ........... 592  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 592  Unexpect: ......... 8  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 34  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x008C (140)                                         Subtitles (fra)  |
+|  DVB subtitles for hard of hearing, high definition                         |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 16,953 b/s  Packets: ............ 75  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 16  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 16  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x008E (142)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles, high definition                                             |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,390 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 15  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 15  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00D2 (210)                                                     PMT  |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,919 b/s  Packets: ............ 66  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 66  |
+|=============================================================================|
+|  PID: 0x00DC (220)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 5,166,807 b/s  Packets: ........ 22,857  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 364  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............... 191  Packets: ........ 167  |
+|                            TSrate: . 24,035,990 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00E6 (230)                                      MPEG-1 Audio (fre)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, subbands 4-31 in intensity stereo    |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 198,697 b/s  Packets: ........... 879  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 93  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 46  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00E7 (231)                                      MPEG-1 Audio (qad)  |
+|  PES stream id: 0xC1 (Audio 1)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, subbands 4-31 in intensity stereo    |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 198,697 b/s  Packets: ........... 879  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 93  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 47  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00E8 (232)                                      MPEG-1 Audio (qaa)  |
+|  PES stream id: 0xC2 (Audio 2)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, subbands 4-31 in intensity stereo    |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 198,923 b/s  Packets: ........... 880  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 92  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 46  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00F0 (240)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles for hard of hearing, high definition                         |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,938 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 13  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 13  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x00F2 (242)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles, high definition                                             |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,390 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 15  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 15  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0136 (310)                                                     PMT  |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,693 b/s  Packets: ............ 65  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 3  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 65  |
+|=============================================================================|
+|  PID: 0x0140 (320)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1440x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,063,008 b/s  Packets: ........ 17,974  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 360  Unexpect: ........ 16  |
+|                            Duplicated: .......... 1  PES:                   |
+|                            PCR: ............... 189  Packets: ........ 171  |
+|                            TSrate: . 24,002,296 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x014A (330)                                      E-AC-3 Audio (fre)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,690 b/s  Packets: ........... 587  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 587  Unexpect: ........ 13  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 34  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x014B (331)                                      E-AC-3 Audio (qad)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, visually impaired, bsid 16               |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,916 b/s  Packets: ........... 588  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 588  Unexpect: ........ 13  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 34  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x014C (332)                                      E-AC-3 Audio (qaa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,690 b/s  Packets: ........... 587  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 587  Unexpect: ........ 14  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 34  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0154 (340)                                         Subtitles (fra)  |
+|  DVB subtitles for hard of hearing, high definition                         |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 12,206 b/s  Packets: ............ 54  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 15  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 15  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0156 (342)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles, high definition                                             |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,164 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 14  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 14  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x01FE (510)                                                     PMT  |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,371 b/s  Packets: ............ 68  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 68  |
+|=============================================================================|
+|  PID: 0x0208 (520)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576, main profile, level 3.0, 4:2:0                                    |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 1,492,829 b/s  Packets: ......... 6,604  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 357  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............... 191  Packets: ........ 166  |
+|                            TSrate: . 24,036,445 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0212 (530)                                      E-AC-3 Audio (fre)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,464 b/s  Packets: ........... 586  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 586  Unexpect: ........ 15  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 35  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0213 (531)                                      E-AC-3 Audio (qad)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, visually impaired, bsid 16               |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,690 b/s  Packets: ........... 587  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 587  Unexpect: ........ 14  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 35  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x021C (540)                                         Subtitles (fra)  |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 13,110 b/s  Packets: ............ 58  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 16  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 16  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0262 (610)                                                     PMT  |
+|  Service: 0x0106 (262) franceinfo:                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,371 b/s  Packets: ............ 68  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 68  |
+|=============================================================================|
+|  PID: 0x026C (620)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576, main profile, level 3.0, 4:2:0                                    |
+|  Service: 0x0106 (262) franceinfo:                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 1,525,380 b/s  Packets: ......... 6,748  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 353  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............... 192  Packets: ........ 164  |
+|                            TSrate: . 24,036,835 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0276 (630)                                      E-AC-3 Audio (fre)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0106 (262) franceinfo:                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 132,916 b/s  Packets: ........... 588  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 588  Unexpect: ........ 14  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 36  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x0280 (640)                                         Subtitles (fra)  |
+|  PES stream id: 0xBE (Padding stream)                                       |
+|  DVB subtitles for hard of hearing, no aspect ratio                         |
+|  Service: 0x0106 (262) franceinfo:                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,938 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 13  Unexpect: ......... 2  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 13  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02C6 (710)                                                     PMT  |
+|  Service: 0x0170 (368) BFM Paris                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,145 b/s  Packets: ............ 67  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 67  |
+|=============================================================================|
+|  PID: 0x02D0 (720)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0170 (368) BFM Paris                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,683,472 b/s  Packets: ........ 16,295  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 356  Unexpect: ........ 17  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............... 191  Packets: ........ 164  |
+|                            TSrate: . 24,036,096 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x02DA (730)                                      E-AC-3 Audio (fra)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x0170 (368) BFM Paris                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 133,142 b/s  Packets: ........... 589  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 589  Unexpect: ........ 12  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ......... 35  |
+|                                                      Inv.Start: ........ 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                           test-092 full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x0001 (1)                                         |
+|      Repetition: ...... 99  ms  Section cnt: ....... 67                     |
+|      Min repet.: ...... 82  ms  Table cnt: ......... 67                     |
+|      Max repet.: ..... 193  ms  Version: ........... 26                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 391  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 382  ms  Table cnt: ......... 17                     |
+|      Max repet.: ..... 406  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                      NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x20FA (8442)                              |
+|      Repetition: .... 1954  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1950  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1958  ms  Version: ........... 30                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x0001 (1)                                 |
+|      Repetition: .... 1956  ms  Section cnt: ........ 4                     |
+|      Min repet.: .... 1948  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1966  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0101 (257)                           |
+|      Repetition: .... 1958  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 1947  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1966  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0104 (260)                           |
+|      Repetition: .... 1955  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 1950  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1959  ms  Version: ............ 9                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0105 (261)                           |
+|      Repetition: .... 1951  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 1943  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1959  ms  Version: ............ 5                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0106 (262)                           |
+|      Repetition: .... 1954  ms  Section cnt: ........ 6                     |
+|      Min repet.: .... 1950  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1959  ms  Version: ........... 25                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0111 (273)                           |
+|      Repetition: .... 1954  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 1951  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1958  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0170 (368)                           |
+|      Repetition: .... 1959  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 1951  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1965  ms  Version: ........... 25                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0201 (513)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0203 (515)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0204 (516)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0205 (517)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0206 (518)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 9                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0301 (769)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0302 (770)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 2                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0303 (771)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0304 (772)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0308 (776)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0309 (777)                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 13                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0401 (1025)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 21                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0402 (1026)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0407 (1031)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0415 (1045)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 15                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0416 (1046)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 9                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0601 (1537)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 12                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0602 (1538)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0606 (1542)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 13                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0608 (1544)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0609 (1545)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0A01 (2561)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 29                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0A02 (2562)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0A04 (2564)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x0A05 (2565)                           |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0101 (257)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 3                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0104 (260)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 4                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0105 (261)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0106 (262)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 3                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 29                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0111 (273)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 4                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0170 (368)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  0x70 (112, TDT)                                                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x73 (115, TOT)                                                            |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms                                              |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  0x13 (19, unknown)                                                         |
+|      Repetition: ..... 983  ms  Section cnt: ........ 7                     |
+|      Min repet.: ..... 531  ms                                              |
+|      Max repet.: .... 3199  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, ECM (even))                                                     |
+|      Repetition: ..... 983  ms  Section cnt: ........ 7                     |
+|      Min repet.: ..... 531  ms                                              |
+|      Max repet.: .... 3199  ms                                              |
+|=============================================================================|
+|  PID: 0x006E (110)                                                     PMT  |
+|  Service: 0x0101 (257) France 2                                             |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0101 (257)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 66                     |
+|      Min repet.: ...... 86  ms  Table cnt: ......... 66                     |
+|      Max repet.: ..... 188  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x00D2 (210)                                                     PMT  |
+|  Service: 0x0111 (273) F3 Paris Ile-de-France                               |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0111 (273)                                       |
+|      Repetition: ..... 101  ms  Section cnt: ....... 66                     |
+|      Min repet.: ...... 82  ms  Table cnt: ......... 66                     |
+|      Max repet.: ..... 197  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0136 (310)                                                     PMT  |
+|  Service: 0x0104 (260) France 4                                             |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0104 (260)                                       |
+|      Repetition: ..... 102  ms  Section cnt: ....... 65                     |
+|      Min repet.: ...... 76  ms  Table cnt: ......... 65                     |
+|      Max repet.: ..... 196  ms  Version: ........... 10                     |
+|=============================================================================|
+|  PID: 0x01FE (510)                                                     PMT  |
+|  Service: 0x0105 (261) France Ô                                             |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0105 (261)                                       |
+|      Repetition: ...... 97  ms  Section cnt: ....... 68                     |
+|      Min repet.: ...... 84  ms  Table cnt: ......... 68                     |
+|      Max repet.: ..... 104  ms  Version: ............ 9                     |
+|=============================================================================|
+|  PID: 0x0262 (610)                                                     PMT  |
+|  Service: 0x0106 (262) franceinfo:                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0106 (262)                                       |
+|      Repetition: ...... 97  ms  Section cnt: ....... 67                     |
+|      Min repet.: ...... 80  ms  Table cnt: ......... 67                     |
+|      Max repet.: ..... 104  ms  Version: ........... 10                     |
+|=============================================================================|
+|  PID: 0x02C6 (710)                                                     PMT  |
+|  Service: 0x0170 (368) BFM Paris                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0170 (368)                                       |
+|      Repetition: ...... 99  ms  Section cnt: ....... 67                     |
+|      Min repet.: ...... 79  ms  Table cnt: ......... 67                     |
+|      Max repet.: ..... 195  ms  Version: ........... 16                     |
+===============================================================================
+
