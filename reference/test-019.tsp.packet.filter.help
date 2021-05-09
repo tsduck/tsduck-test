@@ -16,6 +16,15 @@ Options:
   --clear
       Select clear (unscrambled) packets. Equivalent to --scrambling-control 0.
 
+  --codec-default name
+      With --intra-frame, specify the default codec type if it cannot be
+      automatically detected.
+      Must be one of "AAC", "AC3", "AC4", "AV1", "AVC", "DTS", "DTSHD",
+      "DVBSubtitles", "EAC3", "EVC", "H264", "H265", "H266", "HEAAC", "HEVC",
+      "JPEG2000", "LCEVC", "MP1Audio", "MP1Video", "MP2Audio", "MP2Video",
+      "MP3", "MP4Video", "MPEG-1-Audio", "MPEG-1-Video", "MPEG-2-Audio",
+      "MPEG-2-Video", "MPEG-4-Video", "Teletext", "VP9", "VVC", "undefined".
+
   --every count
       Select one packet every that number of packets.
 
@@ -42,6 +51,11 @@ Options:
       inclusive, are selected. In the form 'index1-', all packets starting at
       the specified index are selected, up to the end of the stream. Several
       options --interval can be specified.
+
+  --intra-frame
+      Select packets which contain the start of a video intra-frame. The
+      accurate detection of intra-frame depends on the codec. There is also a
+      minimal risk of false positive on non-video PID's.
 
   -l label1[-label2]
   --label label1[-label2]
