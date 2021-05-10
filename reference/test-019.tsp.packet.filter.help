@@ -12,18 +12,27 @@ Options:
       Let the first 'count' packets pass transparently without filtering. Start
       to apply the filtering criteria after that number of packets.
 
+  --audio
+      Select packets from an audio PID.
+
   -c
   --clear
       Select clear (unscrambled) packets. Equivalent to --scrambling-control 0.
 
-  --codec-default name
-      With --intra-frame, specify the default codec type if it cannot be
-      automatically detected.
+  --codec name
+      Select packets from PID's which were encoded with the specified codec
+      format.
       Must be one of "AAC", "AC3", "AC4", "AV1", "AVC", "DTS", "DTSHD",
       "DVBSubtitles", "EAC3", "EVC", "H264", "H265", "H266", "HEAAC", "HEVC",
       "JPEG2000", "LCEVC", "MP1Audio", "MP1Video", "MP2Audio", "MP2Video",
       "MP3", "MP4Video", "MPEG-1-Audio", "MPEG-1-Video", "MPEG-2-Audio",
       "MPEG-2-Video", "MPEG-4-Video", "Teletext", "VP9", "VVC", "undefined".
+
+  --ecm
+      Select packets from any ECM PID.
+
+  --emm
+      Select packets from any EMM PID.
 
   --every count
       Select one packet every that number of packets.
@@ -134,6 +143,9 @@ Options:
       PID filter: select packets with these PID values. Several -p or --pid
       options may be specified.
 
+  --psi-si
+      Select packets from any PSI/SI PID.
+
   --reset-label label1[-label2]
       Clear the specified labels on the selected packets. Do not drop
       unselected packets, simply clear labels on selected ones. Several
@@ -156,6 +168,12 @@ Options:
   --search-payload
       With --pattern, only search the set of bytes in the payload of the
       packet. Do not search the pattern in the header or adaptation field.
+
+  --service id-or-name
+      Select packets belonging to any of the specified services as PMT,
+      component or ECM. If the argument is an integer, it is considered as a
+      service id. Otherwise, this is a service name. Several --service options
+      may be specified.
 
   --set-label label1[-label2]
       Set the specified labels on the selected packets. Do not drop unselected
@@ -183,6 +201,9 @@ Options:
       Replace excluded packets with stuffing (null packets) instead of removing
       them. Useful to preserve bitrate.
 
+  --subtitles
+      Select packets from a subtitles PID.
+
   --unit-start
       Select packets with payload unit start indicator.
 
@@ -190,4 +211,7 @@ Options:
   --valid
       Select valid packets. A valid packet starts with 0x47 and has its
       transport_error_indicator cleared.
+
+  --video
+      Select packets from a video PID.
 
