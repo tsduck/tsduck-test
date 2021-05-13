@@ -188,3 +188,4 @@ repository. But we now limit their size to 20 MB.
 | 091  | Non-regression on SCTE 35 tables with unspecified command length (issue #764)
 | 092  | Analyze a French DTTV live stream
 | 093  | `pcrcopy` plugin
+| 094  | `svresync` plugin

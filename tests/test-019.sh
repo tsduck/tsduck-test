@@ -29,7 +29,8 @@ PACKET_PLUGINS=(
     pcradjust pcrbitrate pcrcopy pcrextract pcrverify pes pmt psi psimerge
     reduce regulate remap rmorphan rmsplice scrambler sdt sections sifilter
     skip slice spliceinject splicemonitor stats stuffanalyze svremove svrename
-    t2mi tables teletext time timeref timeshift trigger tsrename until zap
+    svresync t2mi tables teletext time timeref timeshift trigger tsrename
+    until zap
 )
 
 helpfile() { [[ "$1" == =* ]] && echo ${1/=/}.$OS.help || echo $1.help; }
