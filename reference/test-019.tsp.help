@@ -207,6 +207,12 @@ Options:
       it can, depending on the free space in the buffer. In real-time mode, the
       default is 1,000 packets.
 
+  --max-output-packets value
+      Specify the maximum number of packets to be sent at a time by the output
+      plugin. By default, tsp sends as many packets as available. This option
+      is useful only when an output plugin or device has problems with large
+      output requests. This option forces multiple smaller send operations.
+
   --mediaguard
       Equivalent to --default-cas-id 0x0100.
 
