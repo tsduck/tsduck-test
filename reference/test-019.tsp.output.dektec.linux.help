@@ -191,9 +191,10 @@ Options:
 
   --instant-detach
       At end of stream, perform an "instant detach" of the output channel. The
-      default is to wait until all bytes are sent. The default is fine for ASI
-      devices. With modulators, the "wait until sent" mode may hang at end of
-      stream and --instant-detach avoids this.
+      transmit FIFO is immediately cleared without waiting for all data to be
+      transmitted. With some Dektec devices, the default mode may hang at end
+      of stream and --instant-detach avoids this. The options --instant-detach
+      and --wait-detach are mutually exclusive.
 
   --inversion
       All modulators devices: enable spectral inversion.
@@ -533,4 +534,9 @@ Options:
       improves the spectrum, but increases processor overhead. The recommend
       (and default) number of taps is 64 taps. If insufficient CPU power is
       available, 32 taps produces acceptable results, too.
+
+  --wait-detach
+      At end of stream, the plugin waits until all bytes in the transmit FIFO
+      are sent. The options --instant-detach and --wait-detach are mutually
+      exclusive.
 
