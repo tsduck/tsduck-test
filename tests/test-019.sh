@@ -9,8 +9,8 @@ test_cleanup "$SCRIPT.*"
 # file per operating system.
 
 TOOLS=(
-    tsanalyze tsbitrate tscharset tscmp tsdate tsdektec tsdump tsecmg tsemmg tsfixcc
-    tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspcontrol tspsi tsresync
+    tsanalyze tsbitrate tscharset tscmp tsdate tsdektec tsdump tsecmg tsemmg tsfclean
+    tsfixcc tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspcontrol tspsi tsresync
     =tsscan tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo tsxml
 )
 

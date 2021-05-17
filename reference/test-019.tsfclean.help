@@ -1,0 +1,34 @@
+
+Cleanup the structure and boundaries of a transport stream file
+
+Usage: tsfclean [options] filename ...
+
+Parameters:
+
+  MPEG transport stream input files to cleanup. All input files must be regular
+  files (no pipe) since the processing is done on two passes. If more than one
+  file is specified, the output name shall specify a directory.
+
+Options:
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -o path
+  --output path
+      Output file or directory. This is a mandatory parameter, there is no
+      default. If more than one input file is specified, the output name shall
+      specify a directory.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+
