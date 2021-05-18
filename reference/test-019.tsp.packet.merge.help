@@ -33,6 +33,7 @@ Options:
       passed. This can be modified using options --drop and --pass. Several
       options --drop can be specified.
 
+  -f name
   --format name
       Specify the format of the input stream. By default, the format is
       automatically detected. But the auto-detection may fail in some cases
@@ -43,6 +44,7 @@ Options:
   --help
       Display this help text.
 
+  -i
   --ignore-conflicts
       Ignore PID conflicts. By default, when packets with the same PID are
       present in the two streams, the PID is dropped from the merged stream.
@@ -62,6 +64,7 @@ Options:
       Perform a "joint termination" when the merged stream is terminated. See
       "tsp --help" for more details on "joint termination".
 
+  -m value
   --max-queue value
       Specify the maximum number of queued TS packets before their insertion
       into the stream. The default is 1,000.
@@ -120,6 +123,18 @@ Options:
       packets from the merged stream only, not to updated PSI. Several
       --reset-label options may be specified.
 
+  -r
+  --restart
+      Restart the merge command whenever it terminates or fails. By default,
+      when packet insertion is complete, the transmission continues and the
+      stuffing is no longer modified. The options --restart and --terminate are
+      mutually exclusive.
+
+  --restart-interval milliseconds
+      With --restart, specify the number of milliseconds to wait before
+      restarting the merge command. By default, with --restart, the merge
+      command is restarted immediately after termination.
+
   --set-label label1[-label2]
       Set the specified labels on the merged packets. Apply to original packets
       from the merged stream only, not to updated PSI. Several --set-label
@@ -128,7 +143,8 @@ Options:
   --terminate
       Terminate packet processing when the merged stream is terminated. By
       default, when packet insertion is complete, the transmission continues
-      and the stuffing is no longer modified.
+      and the stuffing is no longer modified. The options --restart and
+      --terminate are mutually exclusive.
 
   -t
   --transparent
