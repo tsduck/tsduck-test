@@ -189,3 +189,4 @@ repository. But we now limit their size to 20 MB.
 | 092  | Analyze a French DTTV live stream
 | 093  | `pcrcopy` plugin
 | 094  | `svresync` plugin
+| 095  | `zap` plugin with multiple services

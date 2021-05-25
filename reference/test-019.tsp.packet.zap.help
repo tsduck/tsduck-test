@@ -1,28 +1,27 @@
 
-Zap on one service: Produce an SPTS containing only the specified service
+Zap on one or more services, remove all other services
 
-Usage: tsp -P zap [options] service
+Usage: tsp -P zap [options] service ...
 
-Parameter:
+Parameters:
 
-  Specifies the service to keep. If the argument is an integer value (either
+  Specifies the services to keep. If an argument is an integer value (either
   decimal or hexadecimal), it is interpreted as a service id. Otherwise, it is
-  interpreted as a service name, as specified in the SDT. The name is not case
-  sensitive and blanks are ignored. If the input TS does not contain an SDT,
-  use a service id.
+  interpreted as a service name, as specified in the SDT. Names are not case
+  sensitive and blanks are ignored.
 
 Options:
 
   -a value
   --audio value
-      Remove all audio components except the specified one. The name is a
-      three-letters language code. By default, keep all audio components. This
-      option and the --audio-pid option are mutually exclusive.
+      Specify a 3-letter audio language code to keep. Several --audio options
+      can be specified. All other audio components are removed (unless
+      specified in --audio-pid). By default, keep all audio components.
 
   --audio-pid value
-      Remove all audio components except the specified audio PID. By default,
-      keep all audio components. This option and the --audio option are
-      mutually exclusive.
+      Specify an audio PID to keep. Several --audio-pid options can be
+      specified. All other audio components are removed (unless specified in
+      --audio). By default, keep all audio components.
 
   --brazil
       A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
@@ -31,7 +30,7 @@ Options:
   -c
   --cas
       Keep Conditional Access System sections (CAT and EMM's). Remove them by
-      default. Note that the ECM's for the specified service are always kept.
+      default. Note that the ECM's for the specified services are always kept.
 
   --default-charset name
       Default character set to use when interpreting strings from tables and
@@ -46,7 +45,7 @@ Options:
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
   --eit
-      Keep EIT sections for the specified service. EIT sections for other
+      Keep EIT sections for the specified services. EIT sections for other
       services are removed. By default, all EIT's are removed.
 
   --europe
@@ -64,8 +63,9 @@ Options:
 
   -i
   --ignore-absent
-      Do not stop if the service does not exist or disappears. Continue to pass
-      an empty stream until the service appears or re-appears.
+      Do not stop if a specified service does not exist or disappears. Continue
+      to pass an empty stream until the service appears or re-appears. By
+      default, stop when a service is missing.
 
   --japan
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
@@ -97,14 +97,17 @@ Options:
   -s
   --stuffing
       Replace excluded packets with stuffing (null packets) instead of removing
-      them. Useful to preserve bitrate.
+      them. Useful to preserve the global TS bitrate.
 
   -t value
   --subtitles value
-      Remove all subtitles except the specified one. The name is a
-      three-letters language code. By default, keep all subtitles.
+      Specify a 3-letter subtitles language code to keep. Several --subtitles
+      options can be specified. All other subtitles components are removed
+      (unless specified in --subtitles-pid). By default, keep all subtitles
+      components.
 
   --subtitles-pid value
-      Remove all subtitles except the specified PID. By default, keep all
-      subtitles. This option and the --subtitles option are mutually exclusive.
+      Specify a subtitles PID to keep. Several --subtitles-pid options can be
+      specified. All other subtitles components are removed (unless specified
+      in --subtitles). By default, keep all subtitles components.
 

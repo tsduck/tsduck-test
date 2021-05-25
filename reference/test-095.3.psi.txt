@@ -1,0 +1,76 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 1, sections: 1, total size: 20 bytes
+  - Section 0:
+    TS id:    1080 (0x0438)
+    Program:  8803 (0x2263)  PID:  300 (0x012C)
+    Program:  8810 (0x226A)  PID: 1000 (0x03E8)
+
+* PMT, TID 2 (0x02), PID 1000 (0x03E8)
+  Version: 1, sections: 1, total size: 36 bytes
+  - Section 0:
+    Program: 8810 (0x226A), PCR PID: 1010 (0x03F2)
+    Elementary stream: type 0x1B (AVC video), PID: 1010 (0x03F2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1021 (0x03FD)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+
+* PMT, TID 2 (0x02), PID 300 (0x012C)
+  Version: 13, sections: 1, total size: 138 bytes
+  - Section 0:
+    Program: 8803 (0x2263), PCR PID: 310 (0x0136)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 7 bytes
+      CA System Id: 0x1811 (Nagravision), ECM PID: 366 (0x016E)
+      Private CA data (3 bytes): 02 33 15
+    - Descriptor 1: CA (0x09, 9), 7 bytes
+      CA System Id: 0x1863 (Nagravision), ECM PID: 376 (0x0178)
+      Private CA data (3 bytes): 02 33 42
+    - Descriptor 2: CA (0x09, 9), 7 bytes
+      CA System Id: 0x1883 (Nagravision), ECM PID: 377 (0x0179)
+      Private CA data (3 bytes): 02 33 11
+    - Descriptor 3: CA (0x09, 9), 7 bytes
+      CA System Id: 0x1863 (Nagravision), ECM PID: 371 (0x0173)
+      Private CA data (3 bytes): 02 33 43
+    - Descriptor 4: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), ECM PID: 380 (0x017C)
+      Private CA data (11 bytes):
+        0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
+    - Descriptor 5: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), ECM PID: 382 (0x017E)
+      Private CA data (11 bytes):
+        0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
+    - Descriptor 6: CA (0x09, 9), 15 bytes
+      CA System Id: 0x0500 (Viaccess), ECM PID: 387 (0x0183)
+      Private CA data (11 bytes):
+        0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
+    Elementary stream: type 0x1B (AVC video), PID: 310 (0x0136)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 321 (0x0141)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 322 (0x0142)
+    - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: eng, Type: 0x00 (undefined)
+
+* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+  Version: 1, sections: 1, total size: 61 bytes
+  - Section 0:
+    Transport Stream Id: 1080 (0x0438)
+    Original Network Id: 1 (0x0001)
+    Service Id: 8803 (0x2263), EITs: yes, EITp/f: yes, CA mode: controlled
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 20 bytes
+      Service type: 0x19 (Advanced codec HD digital television service)
+      Service: "CANAL+ CINEMA", Provider: "CSAT"
+    Service Id: 8810 (0x226A), EITs: yes, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 12 bytes
+      Service type: 0x19 (Advanced codec HD digital television service)
+      Service: "CNEWS", Provider: "CSAT"
+
