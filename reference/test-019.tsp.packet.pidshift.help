@@ -1,0 +1,68 @@
+
+Shift one or more PID's forward in the transport stream
+
+Usage: tsp -P pidshift [options]
+
+Options:
+
+  -b
+  --backward
+      Revert the list of PID's, meaning shift forward all PID's except those in
+      -p or --pid options. In practice, this can be seen as shifting backward
+      the selected PID's from the rest of the transport stream.
+
+  --directory path
+      Specify a directory where the temporary buffer file is created (if one is
+      needed). By default, the system-specific area for temporary files is
+      used. The temporary file is hidden and automatically deleted on
+      termination. Specifying another location can be useful to redirect very
+      large buffers to another disk. If the reserved memory area is large
+      enough to hold the buffer, no file is created.
+
+  --help
+      Display this help text.
+
+  --ignore-errors
+      Ignore shift buffer size evaluation errors or shift buffer write errors,
+      pass packets without shifting.
+
+  -i milliseconds
+  --initial-evaluation milliseconds
+      With --time, specify the duration of the initial evaluation phase in
+      milliseconds. This is a transport stream playout duration, not a
+      wall-clock duration. The default is 1,000 milliseconds.
+
+  -m value
+  --memory-packets value
+      Specify the number of packets which are cached in memory. Having a larger
+      memory cache improves the performances. By default, the size of the
+      memory cache is 128 packets.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  --packets count
+      Specify the size of the shift buffer in packets. There is no default, the
+      size of the buffer shall be specified either using --packets or --time.
+      Using --packets is less intuitive than --time but allows starting the
+      shift from the beginning.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Specify a PID or range of PID's to shift forward. Several -p or --pid
+      options may be specified. At least one of them is required.
+
+  -t milliseconds
+  --time milliseconds
+      Specify the size of the shift buffer in milliseconds. During an initial
+      evaluation phase (see option --initial-evaluation), the global bitrate of
+      all PID's to shift forward is evaluated. This global bitrate is then used
+      to convert the specified --time duration in a number of packets and this
+      value is used as fixed-size for the shift buffer. Actual shifting the
+      PID's starts at the end of this evaluation phase. There is no default,
+      the size of the buffer shall be specified either using --packets or
+      --time.
+

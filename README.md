@@ -190,3 +190,4 @@ repository. But we now limit their size to 20 MB.
 | 093  | `pcrcopy` plugin
 | 094  | `svresync` plugin
 | 095  | `zap` plugin with multiple services
+| 096  | `pidshift` plugin

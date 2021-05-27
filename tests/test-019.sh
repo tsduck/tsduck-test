@@ -26,11 +26,11 @@ PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject descrambler duplicate eit file filter fork
     history inject limit merge mpe mpeinject mux nit nitscan pat pattern
-    pcradjust pcrbitrate pcrcopy pcrextract pcrverify pes pmt psi psimerge
-    reduce regulate remap rmorphan rmsplice scrambler sdt sections sifilter
-    skip slice spliceinject splicemonitor stats stuffanalyze svremove svrename
-    svresync t2mi tables teletext time timeref timeshift trigger tsrename
-    until zap
+    pcradjust pcrbitrate pcrcopy pcrextract pcrverify pes pidshift pmt psi
+    psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
+    sifilter skip slice spliceinject splicemonitor stats stuffanalyze
+    svremove svrename svresync t2mi tables teletext time timeref timeshift
+    trigger tsrename until zap
 )
 
 helpfile() { [[ "$1" == =* ]] && echo ${1/=/}.$OS.help || echo $1.help; }
