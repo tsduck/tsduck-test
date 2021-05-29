@@ -5,8 +5,8 @@ Usage: tsp -P timeref [options]
 
 Options:
 
-  -a value
-  --add value
+  -a seconds
+  --add seconds
       Add the specified number of seconds to all UTC time. Specify a negative
       value to make the time reference go backward.
 
@@ -70,4 +70,13 @@ Options:
       packets and the bitrate. The time value can be in the format
       "year/month/day:hour:minute:second", or use the predefined name "system"
       for getting current time from the system clock.
+
+  --system-synchronous
+      Keep the TDT and TOT time synchronous with the system clock. Each time a
+      TDT or TOT is updated, the system clock value is used. It implicitely
+      uses '--start system'. If --start is specified with a specific date, the
+      difference between that date and the initial UTC system clock is stored.
+      This offset is then consistently applied to the current system clock in
+      all TDT and TOT. Note: this option is meaningful on live streams only. It
+      is useless on offline file processing.
 
