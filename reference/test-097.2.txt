@@ -1,0 +1,21 @@
+* PID 0x0078, stream_id 0xE0 (Video 0), size: 36 bytes (header: 19, payload: 17)
+  PES header:
+    0000:  00 00 01 E0 00 00 8F C0 0A 3B 88 13 9F A3 1B 88
+    0010:  13 13 03
+* PID 0x0078, AVC H.264 access unit type 0x09 (Access unit delimiter)
+  Offset in PES payload: 4, size: 2 bytes
+  AVC H.264 access unit:
+    0000:  09 50
+  forbidden_zero_bit = 0
+  nal_ref_idc = 0
+  nal_unit_type = 9
+  primary_pic_type = 2
+  rbsp_trailing_bits_valid = 1
+  rbsp_trailing_bits_count = 0
+* PID 0x0078, AVC H.264 access unit type 0x06 (Supplemental enhancement information (SEI))
+  Offset in PES payload: 9, size: 5 bytes
+  AVC H.264 access unit:
+    0000:  06 01 01 32 80
+* PID 0x0078, AVC H.264 access unit type 0xFF (unknown)
+  Offset in PES payload: 17, size: 0 bytes
+  AVC H.264 access unit:
