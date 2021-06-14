@@ -7,29 +7,29 @@
   Program:     3 (0x0003)  PID:  300 (0x012C)
 
 * EIT p/f Actual, TID 78 (0x4E)
-  Section: 0 (last: 1), version: 0, size: 57 bytes
+  Section: 0 (last: 1), version: 0, size: 18 bytes
   Service Id: 1 (0x0001)
   TS Id: 10 (0x000A)
   Original Network Id: 20 (0x0014)
   Segment last section: 1 (0x01)
   Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 1000 (0x03E8)
-    Start UTC: 2020/06/10 20:00:00
+
+* EIT p/f Actual, TID 78 (0x4E)
+  Section: 1 (last: 1), version: 0, size: 67 bytes
+  Service Id: 1 (0x0001)
+  TS Id: 10 (0x000A)
+  Original Network Id: 20 (0x0014)
+  Segment last section: 1 (0x01)
+  Last Table Id: 78 (0x4E), EIT p/f Actual
+  - Event Id: 2000 (0x07D0)
+    Start UTC: 2020/06/10 18:30:00
     Duration: 00:10:00
     Running status: undefined
     CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 25 bytes
+    - Descriptor 0: Short Event (0x4D, 77), 35 bytes
       Language: foo
-      Event name: "Event name"
-      Description: "Event text"
-
-* EIT p/f Actual, TID 78 (0x4E)
-  Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 1 (0x0001)
-  TS Id: 10 (0x000A)
-  Original Network Id: 20 (0x0014)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+      Event name: "Event 2000 name"
+      Description: "Event 2000 text"
 
 * EIT p/f Other, TID 79 (0x4F)
   Section: 0 (last: 1), version: 0, size: 61 bytes
@@ -38,15 +38,15 @@
   Original Network Id: 20 (0x0014)
   Segment last section: 1 (0x01)
   Last Table Id: 79 (0x4F), EIT p/f Other
-  - Event Id: 1003 (0x03EB)
-    Start UTC: 2020/06/10 10:00:00
+  - Event Id: 1001 (0x03E9)
+    Start UTC: 2020/06/10 05:00:00
     Duration: 00:10:00
     Running status: undefined
     CA mode: free
     - Descriptor 0: Short Event (0x4D, 77), 29 bytes
       Language: foo
-      Event name: "Event name 3"
-      Description: "Event text 3"
+      Event name: "Event name 1"
+      Description: "Event text 1"
 
 * EIT p/f Other, TID 79 (0x4F)
   Section: 1 (last: 1), version: 0, size: 61 bytes
@@ -55,15 +55,15 @@
   Original Network Id: 20 (0x0014)
   Segment last section: 1 (0x01)
   Last Table Id: 79 (0x4F), EIT p/f Other
-  - Event Id: 1004 (0x03EC)
-    Start UTC: 2020/06/10 21:00:00
+  - Event Id: 1002 (0x03EA)
+    Start UTC: 2020/06/10 08:00:00
     Duration: 00:10:00
     Running status: undefined
     CA mode: free
     - Descriptor 0: Short Event (0x4D, 77), 29 bytes
       Language: foo
-      Event name: "Event name 4"
-      Description: "Event text 4"
+      Event name: "Event name 2"
+      Description: "Event text 2"
 
 * EIT schedule Actual, TID 80 (0x50)
   Section: 0 (last: 248), version: 0, size: 18 bytes
@@ -114,7 +114,7 @@
   Last Table Id: 82 (0x52), EIT schedule Actual
 
 * EIT schedule Actual, TID 80 (0x50)
-  Section: 48 (last: 248), version: 0, size: 67 bytes
+  Section: 48 (last: 248), version: 0, size: 106 bytes
   Service Id: 1 (0x0001)
   TS Id: 10 (0x000A)
   Original Network Id: 20 (0x0014)
@@ -129,6 +129,15 @@
       Language: foo
       Event name: "Event 2000 name"
       Description: "Event 2000 text"
+  - Event Id: 1000 (0x03E8)
+    Start UTC: 2020/06/10 20:00:00
+    Duration: 00:10:00
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 25 bytes
+      Language: foo
+      Event name: "Event name"
+      Description: "Event text"
 
 * EIT schedule Actual, TID 80 (0x50)
   Section: 56 (last: 248), version: 0, size: 18 bytes
@@ -846,28 +855,55 @@
   Last Table Id: 96 (0x60), EIT schedule Other
 
 * EIT schedule Other, TID 96 (0x60)
-  Section: 8 (last: 216), version: 0, size: 18 bytes
+  Section: 8 (last: 216), version: 0, size: 61 bytes
   Service Id: 2 (0x0002)
   TS Id: 20 (0x0014)
   Original Network Id: 20 (0x0014)
   Segment last section: 8 (0x08)
   Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1001 (0x03E9)
+    Start UTC: 2020/06/10 05:00:00
+    Duration: 00:10:00
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 29 bytes
+      Language: foo
+      Event name: "Event name 1"
+      Description: "Event text 1"
 
 * EIT schedule Other, TID 96 (0x60)
-  Section: 16 (last: 216), version: 0, size: 18 bytes
+  Section: 16 (last: 216), version: 0, size: 61 bytes
   Service Id: 2 (0x0002)
   TS Id: 20 (0x0014)
   Original Network Id: 20 (0x0014)
   Segment last section: 16 (0x10)
   Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1002 (0x03EA)
+    Start UTC: 2020/06/10 08:00:00
+    Duration: 00:10:00
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 29 bytes
+      Language: foo
+      Event name: "Event name 2"
+      Description: "Event text 2"
 
 * EIT schedule Other, TID 96 (0x60)
-  Section: 24 (last: 216), version: 0, size: 18 bytes
+  Section: 24 (last: 216), version: 0, size: 61 bytes
   Service Id: 2 (0x0002)
   TS Id: 20 (0x0014)
   Original Network Id: 20 (0x0014)
   Segment last section: 24 (0x18)
   Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1003 (0x03EB)
+    Start UTC: 2020/06/10 10:00:00
+    Duration: 00:10:00
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 29 bytes
+      Language: foo
+      Event name: "Event name 3"
+      Description: "Event text 3"
 
 * EIT schedule Other, TID 96 (0x60)
   Section: 32 (last: 216), version: 0, size: 18 bytes
@@ -894,12 +930,21 @@
   Last Table Id: 96 (0x60), EIT schedule Other
 
 * EIT schedule Other, TID 96 (0x60)
-  Section: 56 (last: 216), version: 0, size: 18 bytes
+  Section: 56 (last: 216), version: 0, size: 61 bytes
   Service Id: 2 (0x0002)
   TS Id: 20 (0x0014)
   Original Network Id: 20 (0x0014)
   Segment last section: 56 (0x38)
   Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1004 (0x03EC)
+    Start UTC: 2020/06/10 21:00:00
+    Duration: 00:10:00
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 29 bytes
+      Language: foo
+      Event name: "Event name 4"
+      Description: "Event text 4"
 
 * EIT schedule Other, TID 96 (0x60)
   Section: 64 (last: 216), version: 0, size: 18 bytes
