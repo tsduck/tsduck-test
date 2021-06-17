@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <!--
+      Actual TS: 7, service 2, events 200x:  2020-07-01 08:56:58 - 2020-07-01 08:57:23
+                               events 300x:  2020-07-01 23:59:52 - 2020-07-02 00:00:17
+                    service 3, events 400x:  2020-07-03 11:56:57 - 2020-07-03 11:57:22
+      Other TS: 1, service 30, events 100x:  2020-07-01 08:57:00 - 2020-07-01 08:57:20
+
+      Prime days: 1, cycles:
+      p/f:         act:  2  other:  5
+      sched prime: act:  5  other: 10
+      sched later: act: 10  other: 15
+  -->
+
+  <!-- EIT Other -->
+  <EIT service_id="30" transport_stream_id="1" original_network_id="1">
+    <event event_id="1000" start_time="2020-07-01 08:57:00" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 1000</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="1001" start_time="2020-07-01 08:57:05" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 1001</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="1002" start_time="2020-07-01 08:57:10" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 1002</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="1003" start_time="2020-07-01 08:57:15" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 1003</event_name>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT Actual, service 2 -->
+  <EIT service_id="2" transport_stream_id="7" original_network_id="1">
+    <event event_id="2000" start_time="2020-07-01 08:56:58" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2000</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="2001" start_time="2020-07-01 08:57:03" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2001</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="2002" start_time="2020-07-01 08:57:08" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2002</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="2003" start_time="2020-07-01 08:57:13" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2003</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="2004" start_time="2020-07-01 08:57:18" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 2004</event_name>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT Actual, service 2, around midnight -->
+  <EIT service_id="2" transport_stream_id="7" original_network_id="1">
+    <event event_id="3000" start_time="2020-07-01 23:59:52" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3000</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="3001" start_time="2020-07-01 23:59:57" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3001</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="3002" start_time="2020-07-02 00:00:02" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3002</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="3003" start_time="2020-07-02 00:00:07" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3003</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="3004" start_time="2020-07-02 00:00:12" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 3004</event_name>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+  <!-- EIT Actual, service 3, 2 days later -->
+  <EIT service_id="3" transport_stream_id="7" original_network_id="1">
+    <event event_id="4000" start_time="2020-07-03 11:56:57" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 4000</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="4001" start_time="2020-07-03 11:57:02" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 4001</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="4002" start_time="2020-07-03 11:57:07" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 4002</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="4003" start_time="2020-07-03 11:57:12" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 4003</event_name>
+      </short_event_descriptor>
+    </event>
+    <event event_id="4004" start_time="2020-07-03 11:57:17" duration="00:00:05">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 4004</event_name>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+
+</tsduck>

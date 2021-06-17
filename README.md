@@ -192,3 +192,4 @@ repository. But we now limit their size to 20 MB.
 | 095  | `zap` plugin with multiple services
 | 096  | `pidshift` plugin
 | 097  | Non-regression on `tsanalyze`, `pes` and other plugins (assertion failure, issue #797)
+| 098  | `eitinject` plugin

@@ -24,8 +24,8 @@ OUTPUT_PLUGINS=(
 
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
-    craft cutoff datainject descrambler duplicate eit file filter fork
-    history inject limit merge mpe mpeinject mux nit nitscan pat pattern
+    craft cutoff datainject descrambler duplicate eit eitinject file filter
+    fork history inject limit merge mpe mpeinject mux nit nitscan pat pattern
     pcradjust pcrbitrate pcrcopy pcrextract pcrverify pes pidshift pmt psi
     psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
     sifilter skip slice spliceinject splicemonitor stats stuffanalyze
