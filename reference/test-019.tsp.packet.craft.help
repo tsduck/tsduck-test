@@ -59,6 +59,11 @@ Options:
   --no-private-data
       Remove the private data from adaptation field.
 
+  --no-repeat
+      Do not repeat payload pattern operations as specified by options
+      --payload-pattern, --payload-and, --payload-or, --payload-xor. The
+      operation is performed once only.
+
   --no-splice-countdown
       Remove the splicing point from the packets.
 
@@ -83,10 +88,23 @@ Options:
       possible stuffing from the PES header. Create TS stuffing in the
       adaptation field to compensate.
 
-  --payload-pattern value
-      Overwrite the payload and specify the binary pattern to apply. The value
-      must be a string of hexadecimal digits specifying any number of bytes.
-      The pattern is repeated to fill the payload.
+  --payload-and hexa-data
+      Apply a binary "and" operation on the payload using the specified binary
+      pattern. The value must be a string of hexadecimal digits specifying any
+      number of bytes. The "and" operation is repeated up to the end of the
+      payload (unless --no-repeat is specified).
+
+  --payload-or hexa-data
+      Apply a binary "or" operation on the payload using the specified binary
+      pattern. The value must be a string of hexadecimal digits specifying any
+      number of bytes. The "or" operation is repeated up to the end of the
+      payload (unless --no-repeat is specified).
+
+  --payload-pattern hexa-data
+      Overwrite the payload with the specified binary pattern. The value must
+      be a string of hexadecimal digits specifying any number of bytes. The
+      pattern is repeated to fill the payload (unless --no-repeat is
+      specified).
 
   --payload-size size
       Resize the packet payload to the specified value in bytes. When
@@ -97,6 +115,12 @@ Options:
       Note that --payload-size 0 specifies that a payload exists with a zero
       size. This is different from --no-payload which also specifies that the
       payload does not exist.
+
+  --payload-xor hexa-data
+      Apply a binary "exclusive or" operation on the payload using the
+      specified binary pattern. The value must be a string of hexadecimal
+      digits specifying any number of bytes. The "exclusive or" operation is
+      repeated up to the end of the payload (unless --no-repeat is specified).
 
   --pcr value
       Set this PCR value in the packets. Space is required in the adaptation

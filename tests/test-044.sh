@@ -52,3 +52,32 @@ $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.3.ts") \
 
 test_text $SCRIPT.tsdump.3.txt
 test_text $SCRIPT.tsdump.3.log
+
+# Test payload modification options.
+pl_options=(
+    "--offset-pattern 4 --payload-pattern DEADBEEF"
+    "--offset-pattern 2 --payload-pattern DEADBEEF --no-repeat"
+    "--offset-pattern 6 --payload-and A55AA5 --no-repeat"
+    "--offset-pattern 6 --payload-or  A55AA5 --no-repeat"
+    "--offset-pattern 6 --payload-xor A55AA5 --no-repeat"
+)
+
+for ((i=0; $i<${#pl_options[@]}; i++)); do
+    outindex=$((4+$i))
+
+    $(tspath tsp) --synchronous-log \
+        -I file $(fpath "$INDIR/$SCRIPT.aa.ts") \
+        -P craft ${pl_options[$i]} \
+        -O file $(fpath "$OUTDIR/$SCRIPT.$outindex.ts") \
+        >"$OUTDIR/$SCRIPT.tsp.$outindex.log" 2>&1
+
+    test_bin $SCRIPT.$outindex.ts
+    test_text $SCRIPT.tsp.$outindex.log
+
+    $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.$outindex.ts") \
+        >"$OUTDIR/$SCRIPT.tsdump.$outindex.txt" \
+        2>"$OUTDIR/$SCRIPT.tsdump.$outindex.log"
+
+    test_text $SCRIPT.tsdump.$outindex.txt
+    test_text $SCRIPT.tsdump.$outindex.log
+done
