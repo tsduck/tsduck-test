@@ -57,6 +57,18 @@ Options:
       Display PES packets with a payload the size (in bytes) of which is equal
       to or greater than the specified value.
 
+  --multiple-files
+      With options --save-pes and --save-es, save each PES packet in a distinct
+      file. The specified file name in --save-pes or --save-es is considered as
+      a template and a unique number is automatically added to the name part so
+      that successive files receive distinct names. Example: if the specified
+      file name is base.pes, the various files are named base-000000.pes,
+      base-000001.pes, etc. If the specified template already contains trailing
+      digits, this unmodified name is used for the first file. Then, the
+      integer part is incremented. Example: if the specified file name is
+      base-027.pes, the various files are named base-027.pes, base-028.pes,
+      etc.
+
   --nal-unit-type value
       AVC (H.264), HEVC (H.265) or VVC (H.266) NALunit filter: with
       --avc-access-unit, select access units with this type (default: all

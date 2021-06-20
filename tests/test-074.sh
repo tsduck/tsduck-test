@@ -47,3 +47,25 @@ for type in mpeg2 avc hevc; do
     test_text $SCRIPT.$type.log
 
 done
+
+# Test --multiple-files
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.avc.ts") \
+    -P until --packet 700 \
+    -P pes --pid 0x0140 --multiple-files \
+        --save-pes $(fpath "$OUTDIR/$SCRIPT.mult.pes") \
+        --save-es $(fpath "$OUTDIR/$SCRIPT.mult.es") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.mult.log" 2>&1
+
+test_bin  $SCRIPT.mult-000000.pes
+test_bin  $SCRIPT.mult-000001.pes
+test_bin  $SCRIPT.mult-000002.pes
+test_bin  $SCRIPT.mult-000003.pes
+test_bin  $SCRIPT.mult-000004.pes
+test_bin  $SCRIPT.mult-000000.es
+test_bin  $SCRIPT.mult-000001.es
+test_bin  $SCRIPT.mult-000002.es
+test_bin  $SCRIPT.mult-000003.es
+test_bin  $SCRIPT.mult-000004.es
+test_text $SCRIPT.mult.log
