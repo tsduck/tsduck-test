@@ -11,9 +11,20 @@ Parameter:
 
 Options:
 
+  -a hex-data
+  --apdu hex-data
+      Send an APDU to the smartcard. The APDU shall be specified using an even
+      number of hexadecimal digits. In verbose mode, the APDU, the status word
+      and the response are displayed. Several --apdu options can be specified.
+      All APDU's are sent in sequence.
+
   -c
   --cold-reset
       Perfom a cold reset on the smartcard.
+
+  --continue-on-error
+      With --apdu, continue sending next APDU's after a PC/SC error. By
+      default, stop when an APDU triggered an error.
 
   -d[level]
   --debug[=level]
