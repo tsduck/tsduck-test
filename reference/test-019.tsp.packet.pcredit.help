@@ -1,0 +1,57 @@
+
+Edit PCR, PTS and DTS values in various ways
+
+Usage: tsp -P pcredit [options]
+
+Options:
+
+  --add-dts value
+      Add the specified quantity to all DTS values (can be negative). See
+      option --unit for the interpretation of the value.
+
+  --add-pcr value
+      Add the specified quantity to all PCR values (can be negative). See
+      option --unit for the interpretation of the value.
+
+  --add-pts value
+      Add the specified quantity to all PTS values (can be negative). See
+      option --unit for the interpretation of the value.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-scrambled
+      Do not modify PCR values on PID's containing scrambled packets. On
+      scrambled PID's, only the PCR's can be modified. The PTS and DTS are
+      scrambled and cannot be edited.
+
+  -n
+  --negate-pids
+      Negate the selection of --pid options. All PID's except the specified
+      ones will have their time-stamps edited.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. This is
+      a generic option which is defined in all packet processing plugins.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Specifies PID's where PCR, DTS and PTS values shall be edited. By
+      default, all PID's are modified. Several --pid options may be specified.
+
+  -u name
+  --unit name
+      Specify the unit of numeric values for options such as --add-pcr,
+      --add-pts or --add-dts. The default unit is "default", meaning that each
+      value is a raw number to be applied (--add-pcr value is in PCR units,
+      --add-pts value is in PTS units, etc.) Otherwise, it is possible to
+      provide uniform values for all options in PCR units, PTS/DTS units (the
+      same), nanoseconds or milliseconds. The specified values will be
+      converted into the appropriate PCR or PTS/DTS units for each edited
+      field.
+      Must be one of "default", "dts", "millisecond", "nanosecond", "pcr",
+      "pts".
+
