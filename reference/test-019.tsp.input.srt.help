@@ -101,6 +101,10 @@ Options:
       address is optional, the port is mandatory. If --caller is also
       specified, the SRT socket works in rendezvous mode.
 
+  --local-interface address
+      In caller mode, use the specified local IP interface for outgoing
+      connections. This option is incompatible with --listener.
+
   --lossmaxttl value
       The value up to which the Reorder Tolerance may grow. When Reorder
       Tolerance is > 0, then packet loss report is delayed until that number of
