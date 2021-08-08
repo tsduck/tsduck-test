@@ -1,0 +1,557 @@
+
+* PAT, TID 0 (0x00), PID 0 (0x0000)
+  Version: 3, sections: 1, total size: 40 bytes
+  - Section 0:
+    TS id:   16592 (0x40D0)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program:   141 (0x008D)  PID:  257 (0x0101)
+    Program:   142 (0x008E)  PID:  513 (0x0201)
+    Program:   143 (0x008F)  PID:  515 (0x0203)
+    Program:   744 (0x02E8)  PID: 1025 (0x0401)
+    Program:   745 (0x02E9)  PID: 1026 (0x0402)
+    Program:   746 (0x02EA)  PID: 1027 (0x0403)
+
+* PMT, TID 2 (0x02), PID 257 (0x0101)
+  Version: 9, sections: 1, total size: 146 bytes
+  - Section 0:
+    Program: 141 (0x008D), PCR PID: 256 (0x0100)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 289 (0x0121)
+    - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+      Recording control: 2 (Copy can be made for only one generation)
+      User-defined: 0x4 (4)
+    - Descriptor 2: ISDB Content Availability (0xDE, 222), 1 bytes
+      Copy restriction mode: true
+      Image constraint toke: true
+      Retention mode: false
+      Retention state: 7 (1 hour and half)
+      Encryption mode: true
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 320 (0x0140)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0 (0x00)
+    - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
+      Still picture: false
+      Sequence end code: true
+      Video encode format: 1 (1080i)
+      Reserve future use: 3
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 321 (0x0141)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 16 (0x10)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 325 (0x0145)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 48 (0x30)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 326 (0x0146)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 56 (0x38)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3C
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 328 (0x0148)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 64 (0x40)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 6 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (4 bytes): 33 5F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 329 (0x0149)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 82 (0x52)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 330 (0x014A)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 83 (0x53)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 334 (0x014E)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 102 (0x66)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+
+* PMT, TID 2 (0x02), PID 513 (0x0201)
+  Version: 16, sections: 1, total size: 146 bytes
+  - Section 0:
+    Program: 142 (0x008E), PCR PID: 256 (0x0100)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 289 (0x0121)
+    - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+      Recording control: 2 (Copy can be made for only one generation)
+      User-defined: 0x4 (4)
+    - Descriptor 2: ISDB Content Availability (0xDE, 222), 1 bytes
+      Copy restriction mode: true
+      Image constraint toke: true
+      Retention mode: false
+      Retention state: 7 (1 hour and half)
+      Encryption mode: true
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 320 (0x0140)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0 (0x00)
+    - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
+      Still picture: false
+      Sequence end code: true
+      Video encode format: 1 (1080i)
+      Reserve future use: 3
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 321 (0x0141)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 16 (0x10)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 325 (0x0145)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 48 (0x30)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 326 (0x0146)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 56 (0x38)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3C
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 328 (0x0148)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 64 (0x40)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 6 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (4 bytes): 33 5F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 329 (0x0149)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 82 (0x52)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 330 (0x014A)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 83 (0x53)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 334 (0x014E)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 102 (0x66)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+
+* PMT, TID 2 (0x02), PID 515 (0x0203)
+  Version: 6, sections: 1, total size: 146 bytes
+  - Section 0:
+    Program: 143 (0x008F), PCR PID: 256 (0x0100)
+    Program information:
+    - Descriptor 0: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 289 (0x0121)
+    - Descriptor 1: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+      Recording control: 2 (Copy can be made for only one generation)
+      User-defined: 0x4 (4)
+    - Descriptor 2: ISDB Content Availability (0xDE, 222), 1 bytes
+      Copy restriction mode: true
+      Image constraint toke: true
+      Retention mode: false
+      Retention state: 7 (1 hour and half)
+      Encryption mode: true
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 320 (0x0140)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0 (0x00)
+    - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
+      Still picture: false
+      Sequence end code: true
+      Video encode format: 1 (1080i)
+      Reserve future use: 3
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 321 (0x0141)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 16 (0x10)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 325 (0x0145)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 48 (0x30)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 326 (0x0146)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 56 (0x38)
+    - Descriptor 1: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+    - Descriptor 2: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3C
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 328 (0x0148)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 64 (0x40)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 6 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (4 bytes): 33 5F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 329 (0x0149)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 82 (0x52)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 330 (0x014A)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 83 (0x53)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 334 (0x014E)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 102 (0x66)
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
+      Data component id: 0x0007 (ARIB XML-base multimedia coding)
+      Additional data component info (3 bytes): 1F FF BF
+
+* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+  Version: 10, sections: 1, total size: 784 bytes
+  - Section 0:
+    Network Id: 4 (0x0004)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 12 bytes
+      Name: "BS Digital"
+    - Descriptor 1: ISDB System Management (0xFE, 254), 2 bytes
+      Broadcasting flag: 0 (Broadcasting)
+      Broadcasting identifier: 2 (Satellite using 34.5 MHz bandwidth in 11.7 to 12.2 GHz band)
+      Additional broadcasting id: 0x01 (1)
+    Transport Stream Id: 16400 (0x4010), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 21 bytes
+      Service id: 151 (0x0097), Type: 0x01 (Digital television service)
+      Service id: 152 (0x0098), Type: 0x01 (Digital television service)
+      Service id: 153 (0x0099), Type: 0x01 (Digital television service)
+      Service id: 753 (0x02F1), Type: 0xC0 (Data service)
+      Service id: 755 (0x02F3), Type: 0xC0 (Data service)
+      Service id: 756 (0x02F4), Type: 0xC0 (Data service)
+      Service id: 757 (0x02F5), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.72748 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16401 (0x4011), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 18 bytes
+      Service id: 161 (0x00A1), Type: 0x01 (Digital television service)
+      Service id: 162 (0x00A2), Type: 0x01 (Digital television service)
+      Service id: 163 (0x00A3), Type: 0x01 (Digital television service)
+      Service id: 169 (0x00A9), Type: 0xA1 (Special video service)
+      Service id: 766 (0x02FE), Type: 0xC0 (Data service)
+      Service id: 768 (0x0300), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.72748 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16402 (0x4012), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 18 bytes
+      Service id: 171 (0x00AB), Type: 0x01 (Digital television service)
+      Service id: 172 (0x00AC), Type: 0x01 (Digital television service)
+      Service id: 173 (0x00AD), Type: 0x01 (Digital television service)
+      Service id: 179 (0x00B3), Type: 0xA1 (Special video service)
+      Service id: 777 (0x0309), Type: 0xC0 (Data service)
+      Service id: 778 (0x030A), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.72748 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16432 (0x4030), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 9 bytes
+      Service id: 191 (0x00BF), Type: 0x01 (Digital television service)
+      Service id: 791 (0x0317), Type: 0xC0 (Data service)
+      Service id: 792 (0x0318), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.76584 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16433 (0x4031), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 6 bytes
+      Service id: 103 (0x0067), Type: 0x01 (Digital television service)
+      Service id: 104 (0x0068), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.76584 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16528 (0x4090), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 211 (0x00D3), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.88092 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16529 (0x4091), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 6 bytes
+      Service id: 200 (0x00C8), Type: 0x01 (Digital television service)
+      Service id: 800 (0x0320), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.88092 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16530 (0x4092), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 222 (0x00DE), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.88092 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16592 (0x40D0), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 21 bytes
+      Service id: 141 (0x008D), Type: 0x01 (Digital television service)
+      Service id: 142 (0x008E), Type: 0x01 (Digital television service)
+      Service id: 143 (0x008F), Type: 0x01 (Digital television service)
+      Service id: 144 (0x0090), Type: 0xA1 (Special video service)
+      Service id: 744 (0x02E8), Type: 0xC0 (Data service)
+      Service id: 745 (0x02E9), Type: 0xC0 (Data service)
+      Service id: 746 (0x02EA), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.95764 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16593 (0x40D1), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 21 bytes
+      Service id: 181 (0x00B5), Type: 0x01 (Digital television service)
+      Service id: 182 (0x00B6), Type: 0x01 (Digital television service)
+      Service id: 183 (0x00B7), Type: 0x01 (Digital television service)
+      Service id: 188 (0x00BC), Type: 0xA1 (Special video service)
+      Service id: 189 (0x00BD), Type: 0xA1 (Special video service)
+      Service id: 780 (0x030C), Type: 0xC0 (Data service)
+      Service id: 781 (0x030D), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.95764 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16625 (0x40F1), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 18 bytes
+      Service id: 101 (0x0065), Type: 0x01 (Digital television service)
+      Service id: 102 (0x0066), Type: 0x01 (Digital television service)
+      Service id: 700 (0x02BC), Type: 0xC0 (Data service)
+      Service id: 701 (0x02BD), Type: 0xC0 (Data service)
+      Service id: 707 (0x02C3), Type: 0xC0 (Data service)
+      Service id: 929 (0x03A1), Type: 0xA4 (Engineering service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.99600 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 17488 (0x4450), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 192 (0x00C0), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.80420 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 16626 (0x40F2), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 6 bytes
+      Service id: 201 (0x00C9), Type: 0x01 (Digital television service)
+      Service id: 202 (0x00CA), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.99600 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 17489 (0x4451), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 193 (0x00C1), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.80420 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18130 (0x46D2), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 236 (0x00EC), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.95764 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 17970 (0x4632), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 256 (0x0100), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.76584 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18097 (0x46B1), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 9 bytes
+      Service id: 241 (0x00F1), Type: 0x01 (Digital television service)
+      Service id: 840 (0x0348), Type: 0xC0 (Data service)
+      Service id: 841 (0x0349), Type: 0xC0 (Data service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.91928 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18098 (0x46B2), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 9 bytes
+      Service id: 231 (0x00E7), Type: 0x01 (Digital television service)
+      Service id: 232 (0x00E8), Type: 0x01 (Digital television service)
+      Service id: 531 (0x0213), Type: 0x02 (Digital radio sound service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.91928 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18224 (0x4730), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 234 (0x00EA), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.07272 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18225 (0x4731), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 242 (0x00F2), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.07272 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18226 (0x4732), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 243 (0x00F3), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.07272 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18256 (0x4750), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 252 (0x00FC), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.11108 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18257 (0x4751), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 244 (0x00F4), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.11108 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18258 (0x4752), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 245 (0x00F5), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.11108 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18288 (0x4770), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 251 (0x00FB), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.14944 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+    Transport Stream Id: 18289 (0x4771), Original Network Id: 4 (0x0004)
+    - Descriptor 0: Service List (0x41, 65), 3 bytes
+      Service id: 255 (0x00FF), Type: 0x01 (Digital television service)
+    - Descriptor 1: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 12.14944 GHz
+      Orbital position: 110.0 degree, east
+      Polarization: circular - right (3)
+      Delivery system: ISDB-S
+      Modulation: ISDB-S/TC8PSK (8)
+      Symbol rate: 28.8600 Msymbol/s
+      Inner FEC: ISDB-S/TC8PSK (8)
+
