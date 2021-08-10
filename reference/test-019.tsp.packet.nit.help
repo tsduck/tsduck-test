@@ -9,7 +9,8 @@ Options:
   --bitrate value
       Specifies the bitrate in bits / second of the NIT PID if a new one is
       created. The default is 3,000 b/s.
-      The value may include up to 1 meaningful decimal digits.
+      The value must be a fixed-point value with up to 1 meaningful decimal
+      digits.
 
   --build-service-list-descriptors
       Build service_list_descriptors in the NIT according to the information

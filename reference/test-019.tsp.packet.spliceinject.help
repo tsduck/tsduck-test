@@ -88,7 +88,8 @@ Options:
       information tables. By default, the PID remains inactive when there is no
       splice information. If this is a problem for monitoring tools, an
       artificial bitrate can be maintained using null splice commands.
-      The value may include up to 1 meaningful decimal digits.
+      The value must be a fixed-point value with up to 1 meaningful decimal
+      digits.
 
   --min-inter-packet value
       This option can be used instead of --min-bitrate when the bitrate of the

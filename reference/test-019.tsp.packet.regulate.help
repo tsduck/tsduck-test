@@ -10,7 +10,8 @@ Options:
       Specify a bitrate in b/s and regulate (slow down only) the TS packets
       flow according to this bitrate. By default, use the "input" bitrate,
       typically resulting from the PCR analysis of the input file.
-      The value may include up to 1 meaningful decimal digits.
+      The value must be a fixed-point value with up to 1 meaningful decimal
+      digits.
 
   --help
       Display this help text.

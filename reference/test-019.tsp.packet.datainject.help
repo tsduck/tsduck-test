@@ -10,7 +10,8 @@ Options:
       Specifies the maximum bitrate for the data PID in bits / second. By
       default, the data PID bitrate is limited by the stuffing bitrate (data
       insertion is performed by replacing stuffing packets).
-      The value may include up to 1 meaningful decimal digits.
+      The value must be a fixed-point value with up to 1 meaningful decimal
+      digits.
 
   --buffer-size value
       Specify the TCP and UDP socket receive buffer size (socket option).

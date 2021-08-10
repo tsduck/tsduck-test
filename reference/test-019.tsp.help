@@ -42,7 +42,8 @@ Options:
   --bitrate value
       Specify the input bitrate, in bits/seconds. By default, the input bitrate
       is provided by the input plugin or by analysis of the PCR.
-      The value may include up to 1 meaningful decimal digits.
+      The value must be a fixed-point value with up to 1 meaningful decimal
+      digits.
 
   --bitrate-adjust-interval value
       Specify the interval in seconds between bitrate adjustments, ie. when the
