@@ -10,8 +10,7 @@ Options:
       Specify a constant bitrate for the transport stream. The PCR values will
       be adjusted according to this bitrate. By default, use the input bitrate
       as reported by the input device or a previous plugin.
-      The value must be a fixed-point value with up to 1 meaningful decimal
-      digits.
+      The value must be a 64-bit fixed-point value with up to 1 decimals.
 
   --help
       Display this help text.

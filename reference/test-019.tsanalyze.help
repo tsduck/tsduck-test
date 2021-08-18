@@ -27,8 +27,7 @@ Options:
       Specifies the bitrate of the transport stream in bits/second (based on
       188-byte packets). By default, the bitrate is evaluated using the PCR in
       the transport stream.
-      The value must be a fixed-point value with up to 1 meaningful decimal
-      digits.
+      The value must be a 64-bit fixed-point value with up to 1 decimals.
 
   --brazil
       A synonym for '--isdb --abnt --default-charset RAW-ISO-8859-15

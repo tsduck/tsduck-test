@@ -24,8 +24,7 @@ Options:
       default, the bitrate of the merged stream is computed from its PCR. The
       bitrate of the merged stream is used to smoothen packet insertion in the
       main stream.
-      The value must be a fixed-point value with up to 1 meaningful decimal
-      digits.
+      The value must be a 64-bit fixed-point value with up to 1 decimals.
 
   -d pid[-pid]
   --drop pid[-pid]
