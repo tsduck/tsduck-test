@@ -196,3 +196,4 @@ repository. But we now limit their size to 20 MB.
 | 099  | `pcredit` plugin
 | 100  | Non-regression on HEVC access unit formatting (issue #830)
 | 101  | Non-regression on DuckContext not correctly passed from `tsp` to plugins `tables` and `psi`
+| 102  | `tspcap` command
