@@ -19,20 +19,45 @@ Options:
       Filter IPv4 packets based on the specified destination socket address.
       The optional port number is used for TCP and UDP packets only.
 
-  -f value
+  --first-date date-time
+      Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
+      mm:ss.mmm.
+
   --first-packet value
       Filter packets starting at the specified number. The packet numbering
       counts all captured packets from the beginning of the file, starting at
       1. This is the same value as seen on Wireshark in the leftmost column.
 
+  --first-timestamp micro-seconds
+      Filter packets starting at the specified timestamp in micro-seconds from
+      the beginning of the capture. This is the same value as seen on Wireshark
+      in the "Time" column (in seconds).
+
   --help
       Display this help text.
 
-  -l value
+  -i micro-seconds
+  --interval micro-seconds
+      Print a summary of exchanged data by intervals of times in micro-seconds.
+
+  --last-date date-time
+      Filter packets up to the specified date. Use format YYYY/MM/DD:hh:mm:ss.
+      mmm.
+
   --last-packet value
       Filter packets up to the specified number. The packet numbering counts
       all captured packets from the beginning of the file, starting at 1. This
       is the same value as seen on Wireshark in the leftmost column.
+
+  --last-timestamp micro-seconds
+      Filter packets up to the specified timestamp in micro-seconds from the
+      beginning of the capture. This is the same value as seen on Wireshark in
+      the "Time" column (in seconds).
+
+  -l
+  --list-streams
+      List all data streams. A data streams is made of all packets from one
+      source to one destination using one protocol.
 
   -o
   --others
