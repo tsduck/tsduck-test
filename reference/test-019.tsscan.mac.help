@@ -31,16 +31,13 @@ Options:
       6,000,000 for ISDB-T.
 
   --best-quality
-      With UHF/VHF-band scanning, for each channel, use the offset with the
-      best signal quality. By default, use the average of lowest and highest
-      offsets with required minimum quality and strength. Note that some tuners
-      cannot report a correct signal quality, making this option useless.
+      Obsolete option, do not use.
 
   --best-strength
       With UHF/VHF-band scanning, for each channel, use the offset with the
       best signal strength. By default, use the average of lowest and highest
-      offsets with required minimum quality and strength. Note that some tuners
-      cannot report a correct signal strength, making this option useless.
+      offsets with required minimum strength. Note that some tuners cannot
+      report a correct signal strength, making this option useless.
 
   --brazil
       A synonym for '--isdb --abnt --default-charset RAW-ISO-8859-15
@@ -268,12 +265,11 @@ Options:
       "5/11", "5/6", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --min-quality value
-      Minimum signal quality percentage. Frequencies with lower signal quality
-      are ignored (default: 10%).
+      Obsolete option, do not use.
 
   --min-strength value
-      Minimum signal strength percentage. Frequencies with lower signal
-      strength are ignored (default: 10%).
+      Minimum signal strength. Frequencies with lower signal strength are
+      ignored (default: 10%).
 
   -m value
   --modulation value
