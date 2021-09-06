@@ -5,22 +5,24 @@ source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
 # Some tools and plugins have output texts which depend on the operating system.
-# Their name is preceded by an equal sign, meaning that there is one reference
-# file per operating system.
+# Some others are not implemented at all (eg. dektec plugins on macOS).
 
 TOOLS=(
-    tsanalyze tsbitrate tscharset tscmp tsdate tsdektec tsdump tsecmg tsemmg tsfclean
-    tsfixcc tsftrunc tsgenecm tshides =tslsdvb tsp tspacketize tspcap tspcontrol tspsi
-    tsresync =tsscan tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    tsxml
+    tsanalyze tsbitrate tscharset tscmp tsdate tsdektec.linux tsdektec.windows tsdump
+    tsecmg tsemmg tsfclean tsfixcc tsftrunc tsgenecm tshides.linux tshides.windows
+    tslsdvb.linux tslsdvb.mac tslsdvb.windows tsp tspacketize tspcap tspcontrol
+    tspsi tsresync tsscan.linux tsscan.mac tsscan.windows tssmartcard tsstuff
+    tsswitch tstabcomp tstabdump tstables tsterinfo tsxml
 )
 
 INPUT_PLUGINS=(
-    craft =dektec =dvb file fork hls http ip memory null pcap srt
+    craft dektec.linux dektec.windows dvb.linux dvb.mac dvb.windows file fork
+    hls http ip memory null pcap srt
 )
 
 OUTPUT_PLUGINS=(
-    =dektec drop file fork hides hls ip memory =play srt
+    dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
+    ip memory play.linux play.mac play.windows srt
 )
 
 PACKET_PLUGINS=(
@@ -34,24 +36,30 @@ PACKET_PLUGINS=(
     trigger tsrename until zap
 )
 
-helpfile() { [[ "$1" == =* ]] && echo ${1/=/}.$OS.help || echo $1.help; }
-
 for name in ${TOOLS[@]}; do
-    $(tspath ${name/=/}) --help >"$OUTDIR/$SCRIPT.$(helpfile $name)" 2>&1
-    test_text $SCRIPT.$(helpfile $name)
+    if [[ $name != *.* || $name == *.$OS ]]; then
+        $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help" 2>&1
+        test_text $SCRIPT.$name.help
+    fi
 done
 
 for name in ${INPUT_PLUGINS[@]}; do
-    $(tspath tsp) -I ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.input.$(helpfile $name)" 2>&1
-    test_text $SCRIPT.tsp.input.$(helpfile $name)
+    if [[ $name != *.* || $name == *.$OS ]]; then
+        $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help" 2>&1
+        test_text $SCRIPT.tsp.input.$name.help
+    fi
 done
 
 for name in ${OUTPUT_PLUGINS[@]}; do
-    $(tspath tsp) -O ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.output.$(helpfile $name)" 2>&1
-    test_text $SCRIPT.tsp.output.$(helpfile $name)
+    if [[ $name != *.* || $name == *.$OS ]]; then
+        $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help" 2>&1
+        test_text $SCRIPT.tsp.output.$name.help
+    fi
 done
 
 for name in ${PACKET_PLUGINS[@]}; do
-    $(tspath tsp) -P ${name/=/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$(helpfile $name)" 2>&1
-    test_text $SCRIPT.tsp.packet.$(helpfile $name)
+    if [[ $name != *.* || $name == *.$OS ]]; then
+        $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help" 2>&1
+        test_text $SCRIPT.tsp.packet.$name.help
+    fi
 done
