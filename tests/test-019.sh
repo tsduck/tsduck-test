@@ -17,12 +17,12 @@ TOOLS=(
 
 INPUT_PLUGINS=(
     craft dektec.linux dektec.windows dvb.linux dvb.mac dvb.windows file fork
-    hls http ip memory null pcap srt
+    hls http ip memory null pcap rist.windows srt
 )
 
 OUTPUT_PLUGINS=(
     dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
-    ip memory play.linux play.mac play.windows srt
+    ip memory play.linux play.mac play.windows rist.windows srt
 )
 
 PACKET_PLUGINS=(

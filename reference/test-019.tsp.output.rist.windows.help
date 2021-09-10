@@ -1,0 +1,45 @@
+
+Send TS packets using Reliable Internet Stream Transport (RIST)
+
+Usage: tsp -O rist [options]
+
+Parameters:
+
+  One or more RIST URL's. A RIST URL may include tuning parameters in addition
+  to the address and port. See https://code.videolan.
+  org/rist/librist/-/wikis/LibRIST%20Documentation for more details.
+
+Options:
+
+  -b value
+  --buffer-size value
+      Default buffer size in bytes for packet retransmissions.
+
+  -e
+  --enforce-burst
+      Enforce that the number of TS packets per UDP packet is exactly what is
+      specified in option --packet-burst. By default, this is only a maximum
+      value.
+
+  --help
+      Display this help text.
+
+  -n
+  --null-packet-deletion
+      Enable null packet deletion. The receiver needs to support this.
+
+  --packet-burst value
+      Specifies the maximum number of TS packets per UDP packet. The default is
+      7, the maximum is 128.
+
+  -p name
+  --profile name
+      Specify the RIST profile (main profile by default).
+      Must be one of "advanced", "main", "simple".
+
+  --version[=value]
+      Display the TSDuck and RIST library version numbers and immediately
+      exits.
+      Must be one of "all", "bitrate", "compiler", "date", "dektec", "http",
+      "integer", "long", "nsis", "short", "srt", "system".
+

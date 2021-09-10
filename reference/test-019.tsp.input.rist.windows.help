@@ -1,0 +1,31 @@
+
+Receive TS packets from Reliable Internet Stream Transport (RIST)
+
+Usage: tsp -I rist [options]
+
+Parameters:
+
+  One or more RIST URL's. A RIST URL may include tuning parameters in addition
+  to the address and port. See https://code.videolan.
+  org/rist/librist/-/wikis/LibRIST%20Documentation for more details.
+
+Options:
+
+  -b value
+  --buffer-size value
+      Default buffer size in bytes for packet retransmissions.
+
+  --help
+      Display this help text.
+
+  -p name
+  --profile name
+      Specify the RIST profile (main profile by default).
+      Must be one of "advanced", "main", "simple".
+
+  --version[=value]
+      Display the TSDuck and RIST library version numbers and immediately
+      exits.
+      Must be one of "all", "bitrate", "compiler", "date", "dektec", "http",
+      "integer", "long", "nsis", "short", "srt", "system".
+
