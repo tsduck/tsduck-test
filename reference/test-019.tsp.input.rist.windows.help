@@ -5,15 +5,22 @@ Usage: tsp -I rist [options] url [url...]
 
 Parameters:
 
-  One or more RIST URL's. A RIST URL may include tuning parameters in addition
-  to the address and port. See https://code.videolan.
+  One or more RIST URL's. A RIST URL (rist://...) may include tuning parameters
+  in addition to the address and port. See https://code.videolan.
   org/rist/librist/-/wikis/LibRIST%20Documentation for more details.
 
 Options:
 
-  -b value
-  --buffer-size value
-      Default buffer size in bytes for packet retransmissions.
+  -b milliseconds
+  --buffer-size milliseconds
+      Default buffer size in milliseconds for packet retransmissions. This
+      value overrides the 'buffer=' parameter in the URL.
+
+  -e name
+  --encryption-type name
+      Specify the encryption type (none by default). This value is used when
+      the 'aes-type=' parameter is not present in the URL.
+      Must be one of "AES-128", "AES-256".
 
   --help
       Display this help text.
@@ -22,6 +29,20 @@ Options:
   --profile name
       Specify the RIST profile (main profile by default).
       Must be one of "advanced", "main", "simple".
+
+  -s string
+  --secret string
+      Default pre-shared encryption secret. If a pre-shared secret is specified
+      without --encryption-type, AES-128 is used by default. This value is used
+      when the 'secret=' parameter is not present in the URL.
+
+  --stats-interval milliseconds
+      Periodically report a line of statistics. The interval is in
+      milliseconds. The statistics are in JSON format.
+
+  --stats-prefix 'prefix'
+      With --stats-interval, specify a prefix to prepend on the statistics line
+      before the JSON text to locate the appropriate line in the logs.
 
   --version[=value]
       Display the TSDuck and RIST library version numbers and immediately
