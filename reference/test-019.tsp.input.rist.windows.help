@@ -11,10 +11,23 @@ Parameters:
 
 Options:
 
+  -a ip-address[:port]
+  --allow ip-address[:port]
+      In listener mode (rist://@...), allow the specified IP address (and
+      optional port) to connect. More than one --allow option can be used to
+      specify several allowed addresses. If at least one --allow option is
+      specified, any client which is not explicitly allowed is denied.
+
   -b milliseconds
   --buffer-size milliseconds
       Default buffer size in milliseconds for packet retransmissions. This
       value overrides the 'buffer=' parameter in the URL.
+
+  -d ip-address[:port]
+  --deny ip-address[:port]
+      In listener mode (rist://@...), deny the specified IP address (and
+      optional port) to connect. More than one --deny option can be used to
+      specify several denied addresses.
 
   -e name
   --encryption-type name
