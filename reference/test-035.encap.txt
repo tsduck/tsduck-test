@@ -10,8 +10,8 @@
 |     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
-|  User-specified: ......................... 14,800,405 b/s   16,060,014 b/s  |
-|  Estimated based on PCR's: ............... 12,603,105 b/s   13,675,710 b/s  |
+|  User-specified: ......................... 14,800,406 b/s   16,060,015 b/s  |
+|  Estimated based on PCR's: ............... 12,603,106 b/s   13,675,710 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ..................................... 2 sec (0 min 2 sec)  |
 |-----------------------------------------------------------------------------|
@@ -44,9 +44,9 @@
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Advanced codec HD digital television service . C   14,760,580 b/s  |
 |  0x00C8  PMT .......................................... C       18,166 b/s  |
-|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    3,826,040 b/s  |
-|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      231,965 b/s  |
-|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      231,965 b/s  |
+|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    3,826,041 b/s  |
+|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      231,966 b/s  |
+|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      231,966 b/s  |
 |  0x00F2  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
 |  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       21,659 b/s  |
 |  0x1000  unknown (0x99) ............................... C   10,430,782 b/s  |
@@ -88,11 +88,11 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,826,040 b/s  Packets: ......... 5,476  Expected: ......... 0  |
+|  Bitrate: . 3,826,041 b/s  Packets: ......... 5,476  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 135  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................ 72  Packets: ......... 60  |
-|                            TSrate: . 12,603,095 b/s  Inv.Start: ........ 0  |
+|                            TSrate: . 12,603,096 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x00DD (221)                                        AC-3 Audio (fra)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
@@ -100,7 +100,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 231,965 b/s  Packets: ........... 332  Expected: ......... 0  |
+|  Bitrate: ... 231,966 b/s  Packets: ........... 332  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 16  |
@@ -112,7 +112,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 231,965 b/s  Packets: ........... 332  Expected: ......... 0  |
+|  Bitrate: ... 231,966 b/s  Packets: ........... 332  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 16  |
@@ -148,15 +148,15 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0438 (1080)                                      |
-|      Repetition: ...... 84  ms  Section cnt: ....... 26                     |
-|      Min repet.: ...... 63  ms  Table cnt: ......... 26                     |
-|      Max repet.: ..... 100  ms  Version: ........... 13                     |
+|      Repetition: ...... 85  ms  Section cnt: ....... 26                     |
+|      Min repet.: ...... 64  ms  Table cnt: ......... 26                     |
+|      Max repet.: ..... 101  ms  Version: ........... 13                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0438 (1080)                              |
-|      Repetition: ...... 58  ms  Section cnt: ....... 31                     |
-|      Min repet.: ....... 0  ms  Table cnt: ......... 31                     |
+|      Repetition: ...... 59  ms  Section cnt: ....... 31                     |
+|      Min repet.: ....... 1  ms  Table cnt: ......... 31                     |
 |      Max repet.: ..... 349  ms  Version: ........... 11                     |
 |=============================================================================|
 |  PID: 0x00C8 (200)                                                     PMT  |
@@ -164,7 +164,7 @@
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x2262 (8802)                                      |
 |      Repetition: ...... 85  ms  Section cnt: ....... 26                     |
-|      Min repet.: ...... 63  ms  Table cnt: ......... 26                     |
-|      Max repet.: ..... 107  ms  Version: ........... 16                     |
+|      Min repet.: ...... 64  ms  Table cnt: ......... 26                     |
+|      Max repet.: ..... 108  ms  Version: ........... 16                     |
 ===============================================================================
 

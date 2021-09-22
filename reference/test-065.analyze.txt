@@ -10,8 +10,8 @@
 |     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
-|  User-specified: .......................... 2,053,130 b/s    2,227,864 b/s  |
-|  Estimated based on PCR's: ................ 2,053,355 b/s    2,228,109 b/s  |
+|  User-specified: .......................... 2,053,130 b/s    2,227,865 b/s  |
+|  Estimated based on PCR's: ................ 2,053,356 b/s    2,228,109 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ................................... 38 sec (0 min 38 sec)  |
 |-----------------------------------------------------------------------------|
@@ -31,9 +31,9 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Global PID's ................................. C        7,332 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C        7,134 b/s  |
-|  0x0000  PAT .......................................... C        3,192 b/s  |
-|  0x0001  CAT .......................................... C        3,153 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C        7,135 b/s  |
+|  0x0000  PAT .......................................... C        3,193 b/s  |
+|  0x0001  CAT .......................................... C        3,154 b/s  |
 |  0x0011  SDT/BAT ...................................... C          788 b/s  |
 |  0x1FFF  Stuffing ..................................... C          197 b/s  |
 |=============================================================================|
@@ -45,13 +45,13 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Digital television service ................... C    2,045,798 b/s  |
-|  0x00A0  PMT .......................................... C        3,192 b/s  |
+|  0x00A0  PMT .......................................... C        3,193 b/s  |
 |  0x0424  AVC video (720x576, main profile, level 3.0,   C    1,549,781 b/s  |
 |  0x0425  MPEG-2 Audio (fra, Audio layer II, 128 kb/s,   C      135,761 b/s  |
 |  0x0426  MPEG-2 Audio (eng, Audio layer II, 128 kb/s,   C      135,761 b/s  |
-|  0x0427  MPEG-2 Audio (deu, Audio layer II, 64 kb/s, @  C       73,083 b/s  |
-|  0x042B  MPEG-2 Audio (qad, visual impaired commentary  C       73,083 b/s  |
-|  0x042C  Teletext (fra, Teletext subtitles for hearing  C       75,133 b/s  |
+|  0x0427  MPEG-2 Audio (deu, Audio layer II, 64 kb/s, @  C       73,084 b/s  |
+|  0x042B  MPEG-2 Audio (qad, visual impaired commentary  C       73,084 b/s  |
+|  0x042C  Teletext (fra, Teletext subtitles for hearing  C       75,134 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -62,7 +62,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 3,192 b/s  Packets: ............ 81  Expected: ......... 0  |
+|  Bitrate: ..... 3,193 b/s  Packets: ............ 81  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 81  |
@@ -70,7 +70,7 @@
 |  PID: 0x0001 (1)                                                       CAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 3,153 b/s  Packets: ............ 80  Expected: ......... 0  |
+|  Bitrate: ..... 3,154 b/s  Packets: ............ 80  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 80  |
@@ -87,7 +87,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 3,192 b/s  Packets: ............ 81  Expected: ......... 0  |
+|  Bitrate: ..... 3,193 b/s  Packets: ............ 81  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 81  |
@@ -102,7 +102,7 @@
 |  Access: .......... Clear  Adapt.F.: ........ 2,800  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............. 1,045  Packets: ...... 1,907  |
-|                            TSrate: .. 2,053,355 b/s  Inv.Start: ........ 0  |
+|                            TSrate: .. 2,053,356 b/s  Inv.Start: ........ 0  |
 |=============================================================================|
 |  PID: 0x0425 (1061)                                     MPEG-2 Audio (fra)  |
 |  PES stream id: 0xC0 (Audio 0)                                              |
@@ -134,7 +134,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 73,083 b/s  Packets: ......... 1,854  Expected: ......... 0  |
+|  Bitrate: .... 73,084 b/s  Packets: ......... 1,854  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -146,7 +146,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 73,083 b/s  Packets: ......... 1,854  Expected: ......... 0  |
+|  Bitrate: .... 73,084 b/s  Packets: ......... 1,854  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -158,7 +158,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 75,133 b/s  Packets: ......... 1,906  Expected: ......... 0  |
+|  Bitrate: .... 75,134 b/s  Packets: ......... 1,906  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 953  |
@@ -180,30 +180,30 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0FA6 (4006)                                      |
-|      Repetition: ..... 474  ms  Section cnt: ....... 81                     |
-|      Min repet.: ..... 451  ms  Table cnt: ......... 81                     |
-|      Max repet.: ..... 476  ms  Version: ............ 4                     |
+|      Repetition: ..... 475  ms  Section cnt: ....... 81                     |
+|      Min repet.: ..... 452  ms  Table cnt: ......... 81                     |
+|      Max repet.: ..... 477  ms  Version: ............ 4                     |
 |=============================================================================|
 |  PID: 0x0001 (1)                                                       CAT  |
 |-----------------------------------------------------------------------------|
 |  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
-|      Repetition: ..... 474  ms  Section cnt: ....... 80                     |
+|      Repetition: ..... 475  ms  Section cnt: ....... 80                     |
 |      Min repet.: ..... 472  ms  Table cnt: ......... 80                     |
 |      Max repet.: ..... 478  ms  Version: ............ 1                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0FA6 (4006)                              |
-|      Repetition: .... 1974  ms  Section cnt: ....... 20                     |
-|      Min repet.: .... 1972  ms  Table cnt: ......... 20                     |
-|      Max repet.: .... 1977  ms  Version: ............ 4                     |
+|      Repetition: .... 1975  ms  Section cnt: ....... 20                     |
+|      Min repet.: .... 1973  ms  Table cnt: ......... 20                     |
+|      Max repet.: .... 1978  ms  Version: ............ 4                     |
 |=============================================================================|
 |  PID: 0x00A0 (160)                                                     PMT  |
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x0FA6 (4006)                                      |
-|      Repetition: ..... 474  ms  Section cnt: ....... 81                     |
-|      Min repet.: ..... 471  ms  Table cnt: ......... 81                     |
+|      Repetition: ..... 475  ms  Section cnt: ....... 81                     |
+|      Min repet.: ..... 472  ms  Table cnt: ......... 81                     |
 |      Max repet.: ..... 479  ms  Version: ........... 10                     |
 ===============================================================================
 

@@ -23,11 +23,11 @@ Options:
   --max value
       Set maximum allowed value for bitrate (bits/s). Default: 4,294,967,295
       b/s.
-      The value must be a 64-bit fixed-point value with up to 1 decimals.
+      The value must be a 64-bit floating-point value.
 
   --min value
       Set minimum allowed value for bitrate (bits/s). Default: 10 b/s.
-      The value must be a 64-bit fixed-point value with up to 1 decimals.
+      The value must be a 64-bit floating-point value.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.

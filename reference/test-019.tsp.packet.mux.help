@@ -14,7 +14,7 @@ Options:
       Specifies the bitrate for the inserted packets, in bits/second. By
       default, all stuffing packets are replaced which means that the bitrate
       is neither constant nor guaranteed.
-      The value must be a 64-bit fixed-point value with up to 1 decimals.
+      The value must be a 64-bit floating-point value.
 
   --byte-offset value
       Start reading the file at the specified byte offset (default: 0). This

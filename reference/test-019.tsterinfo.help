@@ -14,7 +14,7 @@ Options:
   --bitrate value
       Transport stream bitrate in b/s, based on 188-byte packets. Given this
       bitrate, tsterinfo will try to guess the OFDM modulation parameters.
-      The value must be a 64-bit fixed-point value with up to 1 decimals.
+      The value must be a 64-bit floating-point value.
 
   --brazil
       A synonym for '--hf-band-region brazil'. This is a handy shortcut when
