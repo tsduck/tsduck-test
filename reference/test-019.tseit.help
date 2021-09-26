@@ -1,0 +1,186 @@
+
+Manipulate EIT's through commands
+
+Usage: tseit [options]
+
+Options:
+
+  -c 'string'
+  --command 'string'
+      Specify an EIT manipulation command. Several --command options can be
+      specified. All commands are executed in sequence.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  -f filename
+  --file filename
+      Specify a text file containing EIT manipulation commands to execute.
+      Several --file options can be specified. All files are executed in
+      sequence. The commands from --file are executed first, then the
+      --command.
+
+  --help
+      Display this help text.
+
+  -i path
+  --input-directory path
+      Default directory of input files in EIT manipulation commands.
+
+  -o path
+  --output-directory path
+      Default directory of output files in EIT manipulation commands.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+
+EIT manipulation commands:
+
+  ==== Dump the content of the EIT database
+
+  Usage: dump 
+
+
+  ==== Generate TS packets
+
+  Usage: generate [options] filename
+
+  Parameter:
+
+    Name of the output TS file to generate.
+
+  Options:
+
+    -b value
+    --bytes value
+        Size of the TS file in bytes.
+
+    -p value
+    --packets value
+        Number of TS packets to generate.
+
+    -s value
+    --seconds value
+        Duration in seconds of the file to generate.
+
+    -u year/month/day:hour:minute:second.millisecond
+    --until year/month/day:hour:minute:second.millisecond
+        Process up to the specified date in the stream.
+
+  ==== Load events from a file
+
+  Usage: load filename
+
+  Parameter:
+
+    A binary, XML or JSON file containing EIT sections.
+
+  ==== Process a TS file with EIT generation
+
+  Usage: process [options] infile outfile
+
+  Parameters:
+
+    Name of the input and output TS files.
+
+  Options:
+
+    -b value
+    --bytes value
+        Size of the TS file in bytes.
+
+    -i
+    --infinite
+        Repeat the input file infinitely.
+
+    -p value
+    --packets value
+        Number of TS packets to generate.
+
+    -r value
+    --repeat value
+        Repeat the input file the specified number of times.
+
+    -s value
+    --seconds value
+        Duration in seconds of the file to generate.
+
+    -o value
+    --start-offset value
+        Start offset in bytes in the input file.
+
+    -u year/month/day:hour:minute:second.millisecond
+    --until year/month/day:hour:minute:second.millisecond
+        Process up to the specified date in the stream.
+
+  ==== Reset the content of the EIT database
+
+  Usage: reset 
+
+
+  ==== Save all current EIT sections in a file
+
+  Usage: save filename
+
+  Parameter:
+
+    Name of the output file receiving EIT sections in binary format.
+
+  ==== Set EIT generation options
+
+  Usage: set [options]
+
+  Options:
+
+    --actual
+        Enable the generation of EIT actual.
+
+    --eit-bitrate value
+        Set the EIT maximum bitrate in bits/second.
+        The value must be a 64-bit floating-point value.
+
+    --no-actual
+        Disable the generation of EIT actual.
+
+    --no-other
+        Disable the generation of EIT other.
+
+    --no-pf
+        Disable the generation of EIT p/f.
+
+    --no-schedule
+        Disable the generation of EIT schedule.
+
+    --other
+        Enable the generation of EIT other.
+
+    --pf
+        Enable the generation of EIT p/f.
+
+    --satellite
+        Use the EIT cycle profile for satellite and cable networks as specified
+        in ETSI TS 101 211.
+
+    --schedule
+        Enable the generation of EIT schedule.
+
+    --terrestrial
+        Use the EIT cycle profile for terrestrial networks as specified in ETSI
+        TS 101 211.
+
+    --time year/month/day:hour:minute:second.millisecond
+        Set the current time.
+
+    --ts-bitrate value
+        Set the transport stream bitrate in bits/second.
+        The value must be a 64-bit floating-point value.
+
+    --ts-id value
+        Set the actual transport stream id.
+

@@ -222,6 +222,9 @@ Options:
       a dangerous option on complete transport streams since PID's not
       containing sections can be accidentally selected.
 
+  --negate-section-number
+      Negate the section number filter: specified sections are excluded.
+
   -n
   --negate-tid
       Negate the TID filter: specified TID's are excluded.
@@ -317,6 +320,11 @@ Options:
 
   --safeaccess
       Equivalent to --default-cas-id 0x4ADC.
+
+  --section-number num1[-num2]
+      Section number filter: when sections are filtered individually instead of
+      complete tables, select sections with this section number or range of
+      section numbers. Several --section-number options may be specified.
 
   --strict-xml
       Save XML documents in strictly conformant XML format. By default, do not
