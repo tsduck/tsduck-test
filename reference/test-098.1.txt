@@ -625,6 +625,51 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 1,996, UTC: 2020-07-01 08:57:03.00
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 1, size: 134 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+  - Event Id: 2001 (0x07D1)
+    Start UTC: 2020/07/01 08:57:03
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2001"
+      Description: ""
+  - Event Id: 2002 (0x07D2)
+    Start UTC: 2020/07/01 08:57:08
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2002"
+      Description: ""
+  - Event Id: 2003 (0x07D3)
+    Start UTC: 2020/07/01 08:57:13
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2003"
+      Description: ""
+  - Event Id: 2004 (0x07D4)
+    Start UTC: 2020/07/01 08:57:18
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2004"
+      Description: ""
+
 * First TS packet: 2,662, UTC: 2020-07-01 08:57:04.00
 * EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
   Section: 0 (last: 1), version: 1, size: 47 bytes
@@ -688,6 +733,42 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 3,326, UTC: 2020-07-01 08:57:05.00
+* EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
+  Section: 16 (last: 16), version: 1, size: 105 bytes
+  Service Id: 30 (0x001E)
+  TS Id: 1 (0x0001)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1001 (0x03E9)
+    Start UTC: 2020/07/01 08:57:05
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1001"
+      Description: ""
+  - Event Id: 1002 (0x03EA)
+    Start UTC: 2020/07/01 08:57:10
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1002"
+      Description: ""
+  - Event Id: 1003 (0x03EB)
+    Start UTC: 2020/07/01 08:57:15
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1003"
+      Description: ""
+
 * First TS packet: 3,331, UTC: 2020-07-01 08:57:05.00
 * EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
   Section: 0 (last: 1), version: 1, size: 47 bytes
@@ -742,97 +823,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,335, UTC: 2020-07-01 08:57:05.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 279 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 3,337, UTC: 2020-07-01 08:57:05.01
+* First TS packet: 3,336, UTC: 2020-07-01 08:57:05.01
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -841,7 +832,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,338, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,337, UTC: 2020-07-01 08:57:05.01
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -850,7 +841,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,339, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,338, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -859,7 +850,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,340, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,339, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -868,7 +859,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,341, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,340, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -895,7 +886,7 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 3,342, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,341, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -904,7 +895,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,343, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,342, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -913,7 +904,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,344, UTC: 2020-07-01 08:57:05.02
+* First TS packet: 3,343, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -922,7 +913,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,345, UTC: 2020-07-01 08:57:05.03
+* First TS packet: 3,344, UTC: 2020-07-01 08:57:05.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -931,7 +922,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,346, UTC: 2020-07-01 08:57:05.03
+* First TS packet: 3,345, UTC: 2020-07-01 08:57:05.03
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -940,7 +931,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,347, UTC: 2020-07-01 08:57:05.03
+* First TS packet: 3,346, UTC: 2020-07-01 08:57:05.03
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -949,7 +940,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,348, UTC: 2020-07-01 08:57:05.03
+* First TS packet: 3,347, UTC: 2020-07-01 08:57:05.03
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -958,7 +949,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 3,349, UTC: 2020-07-01 08:57:05.03
+* First TS packet: 3,348, UTC: 2020-07-01 08:57:05.03
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1030,6 +1021,42 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 5,320, UTC: 2020-07-01 08:57:08.00
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 2, size: 105 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+  - Event Id: 2002 (0x07D2)
+    Start UTC: 2020/07/01 08:57:08
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2002"
+      Description: ""
+  - Event Id: 2003 (0x07D3)
+    Start UTC: 2020/07/01 08:57:13
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2003"
+      Description: ""
+  - Event Id: 2004 (0x07D4)
+    Start UTC: 2020/07/01 08:57:18
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2004"
+      Description: ""
+
 * First TS packet: 5,322, UTC: 2020-07-01 08:57:08.00
 * EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
   Section: 0 (last: 1), version: 2, size: 47 bytes
@@ -1091,6 +1118,33 @@
     - Descriptor 0: Short Event (0x4D, 77), 15 bytes
       Language: foo
       Event name: "Event 4000"
+      Description: ""
+
+* First TS packet: 6,650, UTC: 2020-07-01 08:57:10.00
+* EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
+  Section: 16 (last: 16), version: 2, size: 76 bytes
+  Service Id: 30 (0x001E)
+  TS Id: 1 (0x0001)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1002 (0x03EA)
+    Start UTC: 2020/07/01 08:57:10
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1002"
+      Description: ""
+  - Event Id: 1003 (0x03EB)
+    Start UTC: 2020/07/01 08:57:15
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1003"
       Description: ""
 
 * First TS packet: 6,652, UTC: 2020-07-01 08:57:10.00
@@ -1212,123 +1266,6 @@
 
 * First TS packet: 6,662, UTC: 2020-07-01 08:57:10.01
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 366 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 6,664, UTC: 2020-07-01 08:57:10.02
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
   TS Id: 7 (0x0007)
@@ -1336,7 +1273,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,665, UTC: 2020-07-01 08:57:10.02
+* First TS packet: 6,663, UTC: 2020-07-01 08:57:10.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -1345,12 +1282,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,666, UTC: 2020-07-01 08:57:10.02
-* TDT, TID 112 (0x70), PID 20 (0x0014)
-  Short section, size: 8 bytes
-  UTC time: 2020/07/01 08:57:10
-
-* First TS packet: 6,679, UTC: 2020-07-01 08:57:10.04
+* First TS packet: 6,664, UTC: 2020-07-01 08:57:10.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -1359,7 +1291,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,681, UTC: 2020-07-01 08:57:10.04
+* First TS packet: 6,665, UTC: 2020-07-01 08:57:10.02
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -1368,7 +1300,12 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,682, UTC: 2020-07-01 08:57:10.04
+* First TS packet: 6,666, UTC: 2020-07-01 08:57:10.02
+* TDT, TID 112 (0x70), PID 20 (0x0014)
+  Short section, size: 8 bytes
+  UTC time: 2020/07/01 08:57:10
+
+* First TS packet: 6,681, UTC: 2020-07-01 08:57:10.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -1395,7 +1332,7 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 6,683, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,682, UTC: 2020-07-01 08:57:10.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1404,7 +1341,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,684, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,683, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1413,7 +1350,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,685, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,684, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1422,7 +1359,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,686, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,685, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1431,7 +1368,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,687, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,686, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1440,7 +1377,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,688, UTC: 2020-07-01 08:57:10.05
+* First TS packet: 6,687, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1449,7 +1386,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,689, UTC: 2020-07-01 08:57:10.06
+* First TS packet: 6,688, UTC: 2020-07-01 08:57:10.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1458,7 +1395,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,690, UTC: 2020-07-01 08:57:10.06
+* First TS packet: 6,689, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1467,7 +1404,7 @@
   Segment last section: 56 (0x38)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,691, UTC: 2020-07-01 08:57:10.06
+* First TS packet: 6,690, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
   Section: 0 (last: 16), version: 0, size: 18 bytes
   Service Id: 30 (0x001E)
@@ -1476,7 +1413,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 96 (0x60), EIT schedule Other
 
-* First TS packet: 6,692, UTC: 2020-07-01 08:57:10.06
+* First TS packet: 6,691, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
   Section: 8 (last: 16), version: 0, size: 18 bytes
   Service Id: 30 (0x001E)
@@ -1485,97 +1422,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 96 (0x60), EIT schedule Other
 
-* First TS packet: 6,693, UTC: 2020-07-01 08:57:10.06
-* EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
-  Section: 16 (last: 16), version: 0, size: 279 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 96 (0x60), EIT schedule Other
-  - Event Id: 1000 (0x03E8)
-    Start UTC: 2020/07/01 08:57:00
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1000"
-      Description: ""
-  - Event Id: 1001 (0x03E9)
-    Start UTC: 2020/07/01 08:57:05
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1001"
-      Description: ""
-  - Event Id: 1002 (0x03EA)
-    Start UTC: 2020/07/01 08:57:10
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1002"
-      Description: ""
-  - Event Id: 1003 (0x03EB)
-    Start UTC: 2020/07/01 08:57:15
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1003"
-      Description: ""
-  - Event Id: 1001 (0x03E9)
-    Start UTC: 2020/07/01 08:57:05
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1001"
-      Description: ""
-  - Event Id: 1002 (0x03EA)
-    Start UTC: 2020/07/01 08:57:10
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1002"
-      Description: ""
-  - Event Id: 1003 (0x03EB)
-    Start UTC: 2020/07/01 08:57:15
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1003"
-      Description: ""
-  - Event Id: 1002 (0x03EA)
-    Start UTC: 2020/07/01 08:57:10
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1002"
-      Description: ""
-  - Event Id: 1003 (0x03EB)
-    Start UTC: 2020/07/01 08:57:15
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 1003"
-      Description: ""
-
-* First TS packet: 6,695, UTC: 2020-07-01 08:57:10.06
+* First TS packet: 6,692, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 64), version: 0, size: 105 bytes
   Service Id: 2 (0x0002)
@@ -1611,7 +1458,7 @@
       Event name: "Event 3004"
       Description: ""
 
-* First TS packet: 6,696, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,693, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1620,7 +1467,7 @@
   Segment last section: 64 (0x40)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,697, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,694, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 72 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1629,7 +1476,7 @@
   Segment last section: 72 (0x48)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,698, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,695, UTC: 2020-07-01 08:57:10.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 80 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1638,7 +1485,7 @@
   Segment last section: 80 (0x50)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,699, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,696, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 88 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1647,7 +1494,7 @@
   Segment last section: 88 (0x58)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,700, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,697, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 96 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1656,7 +1503,7 @@
   Segment last section: 96 (0x60)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,701, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,698, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 104 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1665,7 +1512,7 @@
   Segment last section: 104 (0x68)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,702, UTC: 2020-07-01 08:57:10.07
+* First TS packet: 6,699, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 112 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1674,7 +1521,7 @@
   Segment last section: 112 (0x70)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,703, UTC: 2020-07-01 08:57:10.08
+* First TS packet: 6,700, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 120 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1683,7 +1530,7 @@
   Segment last section: 120 (0x78)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,704, UTC: 2020-07-01 08:57:10.08
+* First TS packet: 6,701, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 128 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1692,7 +1539,7 @@
   Segment last section: 128 (0x80)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,705, UTC: 2020-07-01 08:57:10.08
+* First TS packet: 6,702, UTC: 2020-07-01 08:57:10.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 136 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1701,7 +1548,7 @@
   Segment last section: 136 (0x88)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,706, UTC: 2020-07-01 08:57:10.08
+* First TS packet: 6,703, UTC: 2020-07-01 08:57:10.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 144 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -1710,7 +1557,7 @@
   Segment last section: 144 (0x90)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 6,707, UTC: 2020-07-01 08:57:10.08
+* First TS packet: 6,704, UTC: 2020-07-01 08:57:10.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 152 (last: 152), version: 0, size: 163 bytes
   Service Id: 3 (0x0003)
@@ -1827,6 +1674,33 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 8,661, UTC: 2020-07-01 08:57:13.02
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 3, size: 76 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+  - Event Id: 2003 (0x07D3)
+    Start UTC: 2020/07/01 08:57:13
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2003"
+      Description: ""
+  - Event Id: 2004 (0x07D4)
+    Start UTC: 2020/07/01 08:57:18
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2004"
+      Description: ""
+
 * First TS packet: 9,328, UTC: 2020-07-01 08:57:14.02
 * EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
   Section: 0 (last: 1), version: 3, size: 47 bytes
@@ -1890,6 +1764,24 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 9,991, UTC: 2020-07-01 08:57:15.02
+* EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
+  Section: 16 (last: 16), version: 3, size: 47 bytes
+  Service Id: 30 (0x001E)
+  TS Id: 1 (0x0001)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 96 (0x60), EIT schedule Other
+  - Event Id: 1003 (0x03EB)
+    Start UTC: 2020/07/01 08:57:15
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 1003"
+      Description: ""
+
 * First TS packet: 9,996, UTC: 2020-07-01 08:57:15.03
 * EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
   Section: 0 (last: 1), version: 3, size: 47 bytes
@@ -1937,150 +1829,6 @@
 
 * First TS packet: 10,003, UTC: 2020-07-01 08:57:15.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 424 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 10,006, UTC: 2020-07-01 08:57:15.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-
-* First TS packet: 10,007, UTC: 2020-07-01 08:57:15.05
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
   TS Id: 7 (0x0007)
@@ -2088,7 +1836,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,008, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,004, UTC: 2020-07-01 08:57:15.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -2097,7 +1845,16 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,009, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,005, UTC: 2020-07-01 08:57:15.04
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 40 (last: 64), version: 0, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 40 (0x28)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+
+* First TS packet: 10,006, UTC: 2020-07-01 08:57:15.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -2106,7 +1863,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,010, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,007, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -2133,7 +1890,7 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 10,011, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,008, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2142,7 +1899,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,012, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,009, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2151,7 +1908,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,013, UTC: 2020-07-01 08:57:15.05
+* First TS packet: 10,010, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2160,7 +1917,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,014, UTC: 2020-07-01 08:57:15.06
+* First TS packet: 10,011, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2169,7 +1926,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,015, UTC: 2020-07-01 08:57:15.06
+* First TS packet: 10,012, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2178,7 +1935,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,016, UTC: 2020-07-01 08:57:15.06
+* First TS packet: 10,013, UTC: 2020-07-01 08:57:15.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2187,7 +1944,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,017, UTC: 2020-07-01 08:57:15.06
+* First TS packet: 10,014, UTC: 2020-07-01 08:57:15.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2196,7 +1953,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 10,018, UTC: 2020-07-01 08:57:15.06
+* First TS packet: 10,015, UTC: 2020-07-01 08:57:15.06
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2266,6 +2023,24 @@
     - Descriptor 0: Short Event (0x4D, 77), 15 bytes
       Language: foo
       Event name: "Event 4000"
+      Description: ""
+
+* First TS packet: 11,985, UTC: 2020-07-01 08:57:18.02
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 4, size: 47 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+  - Event Id: 2004 (0x07D4)
+    Start UTC: 2020/07/01 08:57:18
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 2004"
       Description: ""
 
 * First TS packet: 11,988, UTC: 2020-07-01 08:57:18.02
@@ -2432,159 +2207,6 @@
 
 * First TS packet: 13,328, UTC: 2020-07-01 08:57:20.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 453 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 13,331, UTC: 2020-07-01 08:57:20.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-
-* First TS packet: 13,332, UTC: 2020-07-01 08:57:20.05
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
   TS Id: 7 (0x0007)
@@ -2592,12 +2214,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,333, UTC: 2020-07-01 08:57:20.05
-* TDT, TID 112 (0x70), PID 20 (0x0014)
-  Short section, size: 8 bytes
-  UTC time: 2020/07/01 08:57:20
-
-* First TS packet: 13,350, UTC: 2020-07-01 08:57:20.07
+* First TS packet: 13,329, UTC: 2020-07-01 08:57:20.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -2606,7 +2223,16 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,352, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,330, UTC: 2020-07-01 08:57:20.04
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 40 (last: 64), version: 0, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 40 (0x28)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+
+* First TS packet: 13,331, UTC: 2020-07-01 08:57:20.04
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -2615,7 +2241,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,353, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,332, UTC: 2020-07-01 08:57:20.05
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -2642,7 +2268,12 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 13,354, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,333, UTC: 2020-07-01 08:57:20.05
+* TDT, TID 112 (0x70), PID 20 (0x0014)
+  Short section, size: 8 bytes
+  UTC time: 2020/07/01 08:57:20
+
+* First TS packet: 13,350, UTC: 2020-07-01 08:57:20.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2651,7 +2282,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,355, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,352, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2660,7 +2291,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,356, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,353, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2669,7 +2300,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,357, UTC: 2020-07-01 08:57:20.08
+* First TS packet: 13,354, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2678,7 +2309,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,358, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,355, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2687,7 +2318,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,359, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,356, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2696,7 +2327,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,360, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,357, UTC: 2020-07-01 08:57:20.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2705,7 +2336,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,361, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,358, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2714,7 +2345,7 @@
   Segment last section: 56 (0x38)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,362, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,359, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
   Section: 0 (last: 0), version: 0, size: 18 bytes
   Service Id: 30 (0x001E)
@@ -2723,7 +2354,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 96 (0x60), EIT schedule Other
 
-* First TS packet: 13,363, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,360, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 64), version: 0, size: 105 bytes
   Service Id: 2 (0x0002)
@@ -2759,7 +2390,7 @@
       Event name: "Event 3004"
       Description: ""
 
-* First TS packet: 13,364, UTC: 2020-07-01 08:57:20.09
+* First TS packet: 13,361, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2768,7 +2399,7 @@
   Segment last section: 64 (0x40)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,365, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,362, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 72 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2777,7 +2408,7 @@
   Segment last section: 72 (0x48)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,366, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,363, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 80 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2786,7 +2417,7 @@
   Segment last section: 80 (0x50)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,367, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,364, UTC: 2020-07-01 08:57:20.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 88 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2795,7 +2426,7 @@
   Segment last section: 88 (0x58)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,368, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,365, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 96 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2804,7 +2435,7 @@
   Segment last section: 96 (0x60)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,369, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,366, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 104 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2813,7 +2444,7 @@
   Segment last section: 104 (0x68)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,370, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,367, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 112 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2822,7 +2453,7 @@
   Segment last section: 112 (0x70)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,371, UTC: 2020-07-01 08:57:20.10
+* First TS packet: 13,368, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 120 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2831,7 +2462,7 @@
   Segment last section: 120 (0x78)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,372, UTC: 2020-07-01 08:57:20.11
+* First TS packet: 13,369, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 128 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2840,7 +2471,7 @@
   Segment last section: 128 (0x80)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,373, UTC: 2020-07-01 08:57:20.11
+* First TS packet: 13,370, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 136 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2849,7 +2480,7 @@
   Segment last section: 136 (0x88)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,374, UTC: 2020-07-01 08:57:20.11
+* First TS packet: 13,371, UTC: 2020-07-01 08:57:20.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 144 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -2858,7 +2489,7 @@
   Segment last section: 144 (0x90)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 13,375, UTC: 2020-07-01 08:57:20.11
+* First TS packet: 13,372, UTC: 2020-07-01 08:57:20.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 152 (last: 152), version: 0, size: 163 bytes
   Service Id: 3 (0x0003)
@@ -2975,6 +2606,15 @@
       Event name: "Event 4000"
       Description: ""
 
+* First TS packet: 15,328, UTC: 2020-07-01 08:57:23.05
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 5, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+
 * First TS packet: 15,996, UTC: 2020-07-01 08:57:24.05
 * EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
   Section: 0 (last: 1), version: 5, size: 18 bytes
@@ -3067,159 +2707,6 @@
 
 * First TS packet: 16,671, UTC: 2020-07-01 08:57:25.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 453 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 16,674, UTC: 2020-07-01 08:57:25.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-
-* First TS packet: 16,675, UTC: 2020-07-01 08:57:25.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
   TS Id: 7 (0x0007)
@@ -3227,7 +2714,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,676, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,672, UTC: 2020-07-01 08:57:25.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -3236,7 +2723,16 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,677, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,673, UTC: 2020-07-01 08:57:25.07
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 40 (last: 64), version: 0, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 40 (0x28)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+
+* First TS packet: 16,674, UTC: 2020-07-01 08:57:25.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -3245,7 +2741,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,678, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,675, UTC: 2020-07-01 08:57:25.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -3272,7 +2768,7 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 16,679, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,676, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3281,7 +2777,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,680, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,677, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3290,7 +2786,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,681, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,678, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3299,7 +2795,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,682, UTC: 2020-07-01 08:57:25.08
+* First TS packet: 16,679, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3308,7 +2804,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,683, UTC: 2020-07-01 08:57:25.09
+* First TS packet: 16,680, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3317,7 +2813,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,684, UTC: 2020-07-01 08:57:25.09
+* First TS packet: 16,681, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3326,7 +2822,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,685, UTC: 2020-07-01 08:57:25.09
+* First TS packet: 16,682, UTC: 2020-07-01 08:57:25.08
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3335,7 +2831,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 16,686, UTC: 2020-07-01 08:57:25.09
+* First TS packet: 16,683, UTC: 2020-07-01 08:57:25.09
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3397,6 +2893,15 @@
       Language: foo
       Event name: "Event 4000"
       Description: ""
+
+* First TS packet: 18,652, UTC: 2020-07-01 08:57:28.05
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 16 (last: 64), version: 5, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 16 (0x10)
+  Last Table Id: 80 (0x50), EIT schedule Actual
 
 * First TS packet: 18,656, UTC: 2020-07-01 08:57:28.05
 * EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
@@ -3544,164 +3049,6 @@
 
 * First TS packet: 19,996, UTC: 2020-07-01 08:57:30.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 16 (last: 64), version: 0, size: 453 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 2000 (0x07D0)
-    Start UTC: 2020/07/01 08:56:58
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2000"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2001 (0x07D1)
-    Start UTC: 2020/07/01 08:57:03
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2001"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2002 (0x07D2)
-    Start UTC: 2020/07/01 08:57:08
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2002"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2003 (0x07D3)
-    Start UTC: 2020/07/01 08:57:13
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2003"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-  - Event Id: 2004 (0x07D4)
-    Start UTC: 2020/07/01 08:57:18
-    Duration: 00:00:05
-    Running status: undefined
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
-      Language: foo
-      Event name: "Event 2004"
-      Description: ""
-
-* First TS packet: 19,999, UTC: 2020-07-01 08:57:30.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
-  Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-
-* First TS packet: 20,000, UTC: 2020-07-01 08:57:30.08
-* TDT, TID 112 (0x70), PID 20 (0x0014)
-  Short section, size: 8 bytes
-  UTC time: 2020/07/01 08:57:30
-
-* First TS packet: 20,017, UTC: 2020-07-01 08:57:30.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
   TS Id: 7 (0x0007)
@@ -3709,7 +3056,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,019, UTC: 2020-07-01 08:57:30.10
+* First TS packet: 19,997, UTC: 2020-07-01 08:57:30.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -3718,7 +3065,16 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,020, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 19,998, UTC: 2020-07-01 08:57:30.07
+* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+  Section: 40 (last: 64), version: 0, size: 18 bytes
+  Service Id: 2 (0x0002)
+  TS Id: 7 (0x0007)
+  Original Network Id: 1 (0x0001)
+  Segment last section: 40 (0x28)
+  Last Table Id: 80 (0x50), EIT schedule Actual
+
+* First TS packet: 19,999, UTC: 2020-07-01 08:57:30.07
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 64), version: 0, size: 18 bytes
   Service Id: 2 (0x0002)
@@ -3727,7 +3083,12 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,021, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,000, UTC: 2020-07-01 08:57:30.08
+* TDT, TID 112 (0x70), PID 20 (0x0014)
+  Short section, size: 8 bytes
+  UTC time: 2020/07/01 08:57:30
+
+* First TS packet: 20,017, UTC: 2020-07-01 08:57:30.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 64), version: 0, size: 76 bytes
   Service Id: 2 (0x0002)
@@ -3754,7 +3115,7 @@
       Event name: "Event 3001"
       Description: ""
 
-* First TS packet: 20,022, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,019, UTC: 2020-07-01 08:57:30.10
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 0 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3763,7 +3124,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,023, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,020, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 8 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3772,7 +3133,7 @@
   Segment last section: 8 (0x08)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,024, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,021, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 16 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3781,7 +3142,7 @@
   Segment last section: 16 (0x10)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,025, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,022, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 24 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3790,7 +3151,7 @@
   Segment last section: 24 (0x18)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,026, UTC: 2020-07-01 08:57:30.11
+* First TS packet: 20,023, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 32 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3799,7 +3160,7 @@
   Segment last section: 32 (0x20)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,027, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,024, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 40 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3808,7 +3169,7 @@
   Segment last section: 40 (0x28)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,028, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,025, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 48 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3817,7 +3178,7 @@
   Segment last section: 48 (0x30)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,029, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,026, UTC: 2020-07-01 08:57:30.11
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 56 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3826,7 +3187,7 @@
   Segment last section: 56 (0x38)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,030, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,027, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Other, TID 96 (0x60), PID 18 (0x0012)
   Section: 0 (last: 0), version: 0, size: 18 bytes
   Service Id: 30 (0x001E)
@@ -3835,7 +3196,7 @@
   Segment last section: 0 (0x00)
   Last Table Id: 96 (0x60), EIT schedule Other
 
-* First TS packet: 20,031, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,028, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 64), version: 0, size: 105 bytes
   Service Id: 2 (0x0002)
@@ -3871,7 +3232,7 @@
       Event name: "Event 3004"
       Description: ""
 
-* First TS packet: 20,032, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,029, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 64 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3880,7 +3241,7 @@
   Segment last section: 64 (0x40)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,033, UTC: 2020-07-01 08:57:30.12
+* First TS packet: 20,030, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 72 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3889,7 +3250,7 @@
   Segment last section: 72 (0x48)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,034, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,031, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 80 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3898,7 +3259,7 @@
   Segment last section: 80 (0x50)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,035, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,032, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 88 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3907,7 +3268,7 @@
   Segment last section: 88 (0x58)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,036, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,033, UTC: 2020-07-01 08:57:30.12
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 96 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3916,7 +3277,7 @@
   Segment last section: 96 (0x60)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,037, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,034, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 104 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3925,7 +3286,7 @@
   Segment last section: 104 (0x68)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,038, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,035, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 112 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3934,7 +3295,7 @@
   Segment last section: 112 (0x70)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,039, UTC: 2020-07-01 08:57:30.13
+* First TS packet: 20,036, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 120 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3943,7 +3304,7 @@
   Segment last section: 120 (0x78)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,040, UTC: 2020-07-01 08:57:30.14
+* First TS packet: 20,037, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 128 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3952,7 +3313,7 @@
   Segment last section: 128 (0x80)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,041, UTC: 2020-07-01 08:57:30.14
+* First TS packet: 20,038, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 136 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3961,7 +3322,7 @@
   Segment last section: 136 (0x88)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,042, UTC: 2020-07-01 08:57:30.14
+* First TS packet: 20,039, UTC: 2020-07-01 08:57:30.13
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 144 (last: 152), version: 0, size: 18 bytes
   Service Id: 3 (0x0003)
@@ -3970,7 +3331,7 @@
   Segment last section: 144 (0x90)
   Last Table Id: 80 (0x50), EIT schedule Actual
 
-* First TS packet: 20,043, UTC: 2020-07-01 08:57:30.14
+* First TS packet: 20,040, UTC: 2020-07-01 08:57:30.14
 * EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
   Section: 152 (last: 152), version: 0, size: 163 bytes
   Service Id: 3 (0x0003)
