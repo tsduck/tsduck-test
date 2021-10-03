@@ -15,12 +15,19 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
+  -e
+  --exit-on-error
+      Stop executing commands when an error is encountered. By default,
+      continue execution on error.
+
   -f filename
   --file filename
-      Specify a text file containing EIT manipulation commands to execute.
-      Several --file options can be specified. All files are executed in
-      sequence. The commands from --file are executed first, then the
-      --command.
+      Specify a text file containing EIT manipulation commands to execute. If
+      the file name is empty or "-", the standard input is used. Several --file
+      options can be specified. All files are executed in sequence. The
+      commands from --file are executed first, then the --command. By default,
+      if there no --file and no --command, commands are read from the standard
+      input.
 
   --help
       Display this help text.
@@ -44,8 +51,21 @@ EIT manipulation commands:
 
   ==== Dump the content of the EIT database
 
-  Usage: dump 
+  Usage: dump
 
+  Options:
+
+    --help
+        Display this help text.
+
+  ==== Exit command session
+
+  Usage: exit
+
+  Options:
+
+    --help
+        Display this help text.
 
   ==== Generate TS packets
 
@@ -61,6 +81,9 @@ EIT manipulation commands:
     --bytes value
         Size of the TS file in bytes.
 
+    --help
+        Display this help text.
+
     -p value
     --packets value
         Number of TS packets to generate.
@@ -73,6 +96,15 @@ EIT manipulation commands:
     --until year/month/day:hour:minute:second.millisecond
         Process up to the specified date in the stream.
 
+  ==== List all internal commands
+
+  Usage: help
+
+  Options:
+
+    --help
+        Display this help text.
+
   ==== Load events from a file
 
   Usage: load filename
@@ -80,6 +112,11 @@ EIT manipulation commands:
   Parameter:
 
     A binary, XML or JSON file containing EIT sections.
+
+  Options:
+
+    --help
+        Display this help text.
 
   ==== Process a TS file with EIT generation
 
@@ -94,6 +131,9 @@ EIT manipulation commands:
     -b value
     --bytes value
         Size of the TS file in bytes.
+
+    --help
+        Display this help text.
 
     -i
     --infinite
@@ -119,10 +159,23 @@ EIT manipulation commands:
     --until year/month/day:hour:minute:second.millisecond
         Process up to the specified date in the stream.
 
+  ==== Exit command session
+
+  Usage: quit
+
+  Options:
+
+    --help
+        Display this help text.
+
   ==== Reset the content of the EIT database
 
-  Usage: reset 
+  Usage: reset
 
+  Options:
+
+    --help
+        Display this help text.
 
   ==== Save all current EIT sections in a file
 
@@ -131,6 +184,11 @@ EIT manipulation commands:
   Parameter:
 
     Name of the output file receiving EIT sections in binary format.
+
+  Options:
+
+    --help
+        Display this help text.
 
   ==== Set EIT generation options
 
@@ -144,6 +202,9 @@ EIT manipulation commands:
     --eit-bitrate value
         Set the EIT maximum bitrate in bits/second.
         The value must be a 64-bit floating-point value.
+
+    --help
+        Display this help text.
 
     --no-actual
         Disable the generation of EIT actual.
