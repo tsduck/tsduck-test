@@ -87,8 +87,8 @@ if [[ $OS == windows ]]; then
 else
     WINDOWS=false
     ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
-    TSDUCKBIN_RELEASE=$($TSDUCKDIR/build/setenv.sh --display)
-    TSDUCKBIN_DEBUG=$($TSDUCKDIR/build/setenv.sh --display --debug)
+    TSDUCKBIN_RELEASE=$($TSDUCKDIR/scripts/setenv.sh --display)
+    TSDUCKBIN_DEBUG=$($TSDUCKDIR/scripts/setenv.sh --display --debug)
     TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
     TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
     EXE=
@@ -264,10 +264,10 @@ case $OS in
         ;;
     *)
         PYTHON=$(which python3 2>/dev/null)
-        JAVA=$("$TSDUCKDIR/build/java-config.sh" --java)
-        JAVAC=$("$TSDUCKDIR/build/java-config.sh" --javac)
-        JAVAP=$("$TSDUCKDIR/build/java-config.sh" --bin)/javap
-        JAR=$("$TSDUCKDIR/build/java-config.sh" --jar)
+        JAVA=$("$TSDUCKDIR/scripts/java-config.sh" --java)
+        JAVAC=$("$TSDUCKDIR/scripts/java-config.sh" --javac)
+        JAVAP=$("$TSDUCKDIR/scripts/java-config.sh" --bin)/javap
+        JAR=$("$TSDUCKDIR/scripts/java-config.sh" --jar)
         [[ -z "$PYTHON" ]] && PYTHON=python
         [[ -z "$JAVA" ]] && JAVA=java
         [[ -z "$JAVAC" ]] && JAVA=javac
