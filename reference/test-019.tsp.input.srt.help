@@ -9,6 +9,9 @@ Parameter:
 
 Options:
 
+  --bufferapi
+      When set, this socket uses the Buffer API. The default is Message API.
+
   -c address:port
   --caller address:port
       Use SRT in caller (or rendezvous) mode. The parameter specifies the IPv4
@@ -127,7 +130,8 @@ Options:
       SRTO_INPUTBW and SRTO_OHEADBW options.
 
   --messageapi
-      When set, this socket uses the Message API, otherwise it uses Buffer API.
+      Use the Message API. This is now the default, use --bufferapi to disable
+      it.
 
   --min-version value
       The minimum SRT version that is required from the peer. A connection to a
