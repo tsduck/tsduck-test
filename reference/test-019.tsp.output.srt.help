@@ -37,6 +37,10 @@ Options:
       Flight Flag Size (maximum number of bytes that can be sent without being
       acknowledged).
 
+  --final-statistics
+      Report SRT usage statistics when the SRT socket is closed. This option is
+      implicit with --statistics-interval.
+
   --help
       Display this help text.
 
@@ -199,6 +203,11 @@ Options:
   --sndbuf value
       Send Buffer Size. Warning: configured in bytes, converted in packets,
       when set, based on MSS value. For desired result, configure MSS first.
+
+  --statistics-interval milliseconds
+      Report SRT usage statistics at regular intervals, in milliseconds. The
+      specified interval is a minimum value, actual reporting can occur only
+      when data are exchanged over the SRT socket.
 
   --streamid value
       A string limited to 512 characters that can be set on the socket prior to
