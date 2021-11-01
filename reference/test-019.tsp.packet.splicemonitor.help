@@ -31,6 +31,17 @@ Options:
   --help
       Display this help text.
 
+  -j
+  --json
+      Build a JSON report into the specified file. Using '-' means standard
+      output.
+
+  --json-line[='prefix']
+      Same as --json but report the JSON text as one single line in the message
+      logger instead of the output file. The optional string parameter
+      specifies a prefix to prepend on the log line before the JSON text to
+      locate the appropriate line in the logs.
+
   --max-pre-roll-time value
       Specify a maximum pre-roll time in milliseconds for splice commands. See
       option --alarm-command for non-nominal cases.
@@ -62,8 +73,9 @@ Options:
 
   -o file-name
   --output-file file-name
-      Specify an output text file. By default, use the message logging system
-      (or standard output with --display-commands).
+      Specify an output text file. With --json, this will be a JSON file. By
+      default, use the message logging system (or standard output with
+      --display-commands).
 
   -i
   --packet-index
