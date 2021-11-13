@@ -44,6 +44,7 @@ Options:
       1. Event name, currently only "newinput" is defined.
       2. The input index before the event.
       3. The input index after the event.
+      4. Optional: the user data string from --event-user-data option.
 
   --event-local-address address
       With --event-udp, when the destination is a multicast address, specify
@@ -62,6 +63,10 @@ Options:
       system of the event. The 'address' specifies an IP address which can be
       either unicast or multicast. It can be also a host name that translates
       to an IP address. The 'port' specifies the destination UDP port.
+
+  --event-user-data 'string'
+      A user-defined string which is passed to the --event-command as last
+      parameter and to the --event-udp message as "user-data" JSON value.
 
   -f
   --fast-switch
