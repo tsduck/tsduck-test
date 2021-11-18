@@ -133,6 +133,12 @@ Options:
       Include long sections with "next" indicator. By default, they are
       excluded.
 
+  --invalid-sections
+      Display and dump invalid sections. These sections are normally dropped
+      because they are truncated, incomplete, corrupted, have an invalid CRC32,
+      etc. Because these sections are invalid, they cannot be formatted as
+      normal sections. Instead, a binary and text dump is displayed.
+
   -i address:port
   --ip-udp address:port
       Send binary tables over UDP/IP to the specified destination. The
@@ -252,6 +258,9 @@ Options:
   --no-pager
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
+
+  --only-invalid-sections
+      Same as --invalid-sections but do not display valid tables and sections.
 
   -o filename
   --output-file filename

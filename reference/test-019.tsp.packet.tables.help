@@ -126,6 +126,12 @@ Options:
       Include long sections with "next" indicator. By default, they are
       excluded.
 
+  --invalid-sections
+      Display and dump invalid sections. These sections are normally dropped
+      because they are truncated, incomplete, corrupted, have an invalid CRC32,
+      etc. Because these sections are invalid, they cannot be formatted as
+      normal sections. Instead, a binary and text dump is displayed.
+
   -i address:port
   --ip-udp address:port
       Send binary tables over UDP/IP to the specified destination. The
@@ -241,6 +247,9 @@ Options:
   --no-encapsulation
       With --ip-udp, send the tables as raw binary messages in UDP packets. By
       default, the tables are formatted into TLV messages.
+
+  --only-invalid-sections
+      Same as --invalid-sections but do not display valid tables and sections.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
