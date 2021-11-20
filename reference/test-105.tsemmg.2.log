@@ -1,0 +1,108 @@
+sending message to 127.0.0.1:31567
+    channel_setup (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0011
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    section_TSpkt_flag = 0
+
+received message from 127.0.0.1:31567
+    channel_status (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0013
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    section_TSpkt_flag = 0
+
+sending message to 127.0.0.1:31567
+    stream_setup (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0111
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+    data_id = 0x0000
+    data_type = 0x00
+
+received message from 127.0.0.1:31567
+    stream_status (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0113
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+    data_id = 0x0000
+    data_type = 0x00
+
+sending message to 127.0.0.1:31567
+    stream_BW_request (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0117
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+    bandwidth = 100
+
+received message from 127.0.0.1:31567
+    stream_BW_allocation (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0118
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+    bandwidth = 100
+
+Target data bitrate: 97,340 b/s
+Send interval: 82 milliseconds
+sending message to 127.0.0.1:31567
+    data_provision (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0211
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+    data_id = 0x0000
+    datagram (103 bytes) = 
+        85 70 64 B9 D7 38 99 6C D1 59 CE E2 44 A7 C9 A4 94 0F C9 AD 51 6C
+        3F 1F 60 05 FD 54 42 DE 37 13 12 2A A3 B1 1E FE 05 6F 54 B3 D5 D2
+        9A A3 FE 8B BD C5 AB B1 69 A1 8B 9B 08 35 75 AB 0F C9 90 93 02 FB
+        A0 1A 31 A2 0D 85 8D F3 74 6C 8A 8E 61 DD C4 E2 BF E3 5B 36 DB B2
+        AA 09 6D E5 D0 8E 1A A7 65 0A 2E 1E A8 18 22
+    datagram (203 bytes) = 
+        86 70 C8 C8 D4 B7 F6 81 19 74 F2 03 1A EE 69 7A 1A 41 5D DE 7C 16
+        91 72 24 5F 3B 5C B9 D4 B8 F7 6D CC 61 B2 4D 15 0B 5F D9 C1 F7 BF
+        97 3A CC 61 4D 87 35 79 9A 13 FA 7E 0C F3 E4 C2 5F 05 10 90 8D 9F
+        78 E3 D8 EC 69 3F DA C6 07 F6 AE 3B 6A 5D 9A 95 C0 33 8C 1E 55 52
+        78 A3 C0 6B E7 AE 52 E9 E8 87 7A 47 DB C9 EB 3E 3C 29 DB B3 2A 3C
+        7D 28 DA D8 98 39 05 28 F0 29 9F 79 0B CF 4C DC 55 1D 06 1D 44 A3
+        3B 39 F5 AC 53 10 5E B7 CE CE 35 D9 4F 94 F5 D9 4C C9 F9 7A A3 D1
+        7C BA BB 6D FC 51 F0 4E 32 BF EE 88 88 6F 4A 3C ED BD 10 5F C1 2D
+        30 E4 08 94 0E BD 72 07 11 6B 34 F6 F4 F8 6F 60 68 2B EE 31 77 B6
+        AA 29 43 F4 96
+    datagram (27 bytes) = 
+        87 70 18 14 3E EA 9C EE BF 99 89 B7 E8 EE 94 80 75 C0 D7 27 94 20
+        6B DE AD BE EF
+
+sending message to 127.0.0.1:31567
+    stream_close_request (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0114
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+
+received message from 127.0.0.1:31567
+    stream_close_response (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0115
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+    data_stream_id = 0x0001
+
+sending message to 127.0.0.1:31567
+    channel_close (EMMG/PDG<=>MUX)
+    protocol_version = 0x02
+    message_type = 0x0014
+    client_id = 0x00000000
+    data_channel_id = 0x0001
+

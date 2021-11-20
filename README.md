@@ -198,3 +198,6 @@ repository. But we now limit their size to 20 MB.
 | 101  | Non-regression on DuckContext not correctly passed from `tsp` to plugins `tables` and `psi`
 | 102  | `tspcap` command
 | 103  | `tspsi` with duplicated PMT after PAT change (issue #865)
+| 104  | Non-regression test on EIT Schedule generation
+| 105  | `tsemmg` and `datainject` plugin
+| 106  | Pcap file with EMMG <=> MUX DVB SimulCrypt protocol
