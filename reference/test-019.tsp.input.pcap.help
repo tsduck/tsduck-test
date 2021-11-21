@@ -19,8 +19,44 @@ Options:
       destination of the first matching UDP datagram containing TS packets.
       Then, select only UDP datagrams with this socket address.
 
+  --emmg-client-id value
+      With --tcp-emmg-mux or --udp-emmg-mux, select the EMMG<=>MUX client_id to
+      extract. By default, use all client ids.
+
+  --emmg-data-id value
+      With --tcp-emmg-mux or --udp-emmg-mux, select the EMMG<=>MUX data_id to
+      extract. By default, use all data ids.
+
+  --first-date date-time
+      Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
+      mm:ss.mmm.
+
+  --first-packet value
+      Filter packets starting at the specified number. The packet numbering
+      counts all captured packets from the beginning of the file, starting at
+      1. This is the same value as seen on Wireshark in the leftmost column.
+
+  --first-timestamp micro-seconds
+      Filter packets starting at the specified timestamp in micro-seconds from
+      the beginning of the capture. This is the same value as seen on Wireshark
+      in the "Time" column (in seconds).
+
   --help
       Display this help text.
+
+  --last-date date-time
+      Filter packets up to the specified date. Use format YYYY/MM/DD:hh:mm:ss.
+      mmm.
+
+  --last-packet value
+      Filter packets up to the specified number. The packet numbering counts
+      all captured packets from the beginning of the file, starting at 1. This
+      is the same value as seen on Wireshark in the leftmost column.
+
+  --last-timestamp micro-seconds
+      Filter packets up to the specified timestamp in micro-seconds from the
+      beginning of the capture. This is the same value as seen on Wireshark in
+      the "Time" column (in seconds).
 
   -m
   --multicast-only
@@ -32,6 +68,16 @@ Options:
   --source [address][:port]
       Filter UDP datagrams based on the specified source socket address. By
       default, do not filter on source address.
+
+  --tcp-emmg-mux
+      Select a TCP stream in the pcap file using the DVB SimulCrypt EMMG/PDG
+      <=> MUX protocol. The transport stream is made of the TS packets from the
+      'data_provision' messages (the session must have been set in packet mode,
+      not in section mode). This option is typically used to extract EMM PID's
+      as produced by a standard EMMG which feeds a MUX. The --source and
+      --destination options define the TCP stream. If some address or port are
+      undefined in these two options, the first TCP stream matching the
+      specified portions is selected.
 
   --timestamp-priority name
       Specify how the input time-stamp of each packet is computed. The name
@@ -45,4 +91,13 @@ Options:
       less precise. The default is rtp-pcap-tsp.
       Must be one of "pcap-rtp-tsp", "pcap-tsp", "rtp-pcap-tsp", "rtp-tsp",
       "tsp".
+
+  --udp-emmg-mux
+      Consider each selected UDP datagram as containing a 'data_provision'
+      message as defined by the DVB SimulCrypt EMMG/PDG <=> MUX protocol. The
+      transport stream is made of the TS packets from these 'data_provision'
+      messages (the session must have been set in packet mode, not in section
+      mode). This option is typically used to extract EMM PID's as produced by
+      a standard EMMG which feeds a MUX. By default, the UDP datagrams contain
+      raw TS packets, with or without RTP headers.
 

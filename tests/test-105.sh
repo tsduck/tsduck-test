@@ -8,7 +8,7 @@ test_cleanup "$SCRIPT.*"
 PORT=31567
 
 # Start MUX session 1.
-$(tspath tsp) --bitrate 1,000,000 \
+$(tspath tsp) --synchronous-log --bitrate 1,000,000 \
     -I null \
     -P regulate \
     -P datainject --pid 100 --server $PORT \
@@ -33,7 +33,7 @@ test_text $SCRIPT.tsp.1.log
 test_text $SCRIPT.tsemmg.1.log
 
 # Start MUX session 2.
-$(tspath tsp) --bitrate 1,000,000 \
+$(tspath tsp) --synchronous-log --bitrate 1,000,000 \
     -I null \
     -P regulate \
     -P datainject --pid 100 --server $PORT \
@@ -58,7 +58,7 @@ test_text $SCRIPT.tsp.2.log
 test_text $SCRIPT.tsemmg.2.log
 
 # Start MUX session 3.
-$(tspath tsp) --bitrate 1,000,000 \
+$(tspath tsp) --synchronous-log --bitrate 1,000,000 \
     -I null \
     -P regulate \
     -P datainject --pid 100 --server $PORT \
