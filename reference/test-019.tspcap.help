@@ -19,6 +19,16 @@ Options:
       Filter IPv4 packets based on the specified destination socket address.
       The optional port number is used for TCP and UDP packets only.
 
+  --dvb-simulcrypt
+      Dump the content of a session as DVB SimulCrypt protocol.
+      Without --udp, the first TCP session matching the --source and
+      --destination options is selected. The content of the session is
+      interpreted as one of the TLV-based DVB SimulCrypt protocols and all
+      messages are formatted.
+      With --udp, all packets matching the --source and --destination options
+      are interpreted as EMMG/PDG <=> MUX protocol (this is the only DVB
+      SimulCrypt protocol which is based on UDP).
+
   --first-date date-time
       Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
       mm:ss.mmm.
@@ -58,6 +68,10 @@ Options:
   --list-streams
       List all data streams. A data streams is made of all packets from one
       source to one destination using one protocol.
+
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
 
   -o
   --others
