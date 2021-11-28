@@ -53,3 +53,35 @@ $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.out.ts") >"$OUTDIR/$SCRIPT.tsdump.out.
 
 test_text $SCRIPT.tsdump.out.txt
 test_text $SCRIPT.tsdump.out.log
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
+    -P continuity --fix \
+    -O file $(fpath "$OUTDIR/$SCRIPT.tsp.rep.ts") \
+    >"$OUTDIR/$SCRIPT.tsp.rep.log" 2>&1
+
+test_bin $SCRIPT.tsp.rep.ts
+test_text $SCRIPT.tsp.rep.log
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
+    -P continuity --fix --no-replicate-duplicated \
+    -O file $(fpath "$OUTDIR/$SCRIPT.tsp.norep.ts") \
+    >"$OUTDIR/$SCRIPT.tsp.norep.log" 2>&1
+
+test_bin $SCRIPT.tsp.norep.ts
+test_text $SCRIPT.tsp.norep.log
+
+cp "$INDIR/$SCRIPT.ts" "$OUTDIR/$SCRIPT.tsfixcc.rep.ts"
+$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.rep.ts" \
+    >"$OUTDIR/$SCRIPT.tsfixcc.rep.log" 2>&1
+
+test_bin $SCRIPT.tsfixcc.rep.ts
+test_text $SCRIPT.tsfixcc.rep.log
+
+cp "$INDIR/$SCRIPT.ts" "$OUTDIR/$SCRIPT.tsfixcc.norep.ts"
+$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.norep.ts" --no-replicate-duplicated \
+    >"$OUTDIR/$SCRIPT.tsfixcc.norep.log" 2>&1
+
+test_bin $SCRIPT.tsfixcc.norep.ts
+test_text $SCRIPT.tsfixcc.norep.log
