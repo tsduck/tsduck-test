@@ -1,7 +1,9 @@
 
 TS input source switch using remote control
 
-Usage: tsswitch [tsswitch-options] -I input-name [input-options] ... [-O output-name [output-options]]
+Usage: tsswitch [tsswitch-options] \
+    [-I input-name [input-options]] ... \
+    [-O output-name [output-options]]
 
 Options:
 
@@ -89,6 +91,11 @@ Options:
   -i
   --infinite
       Infinitely repeat the cycle through all input plugins in sequence.
+
+  -l[value]
+  --list-plugins[=value]
+      List all available plugins.
+      Must be one of "all", "input", "output", "packet".
 
   --log-message-count value
       Specify the maximum number of buffered log messages. Log messages are
