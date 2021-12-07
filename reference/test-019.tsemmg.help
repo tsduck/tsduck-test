@@ -57,9 +57,8 @@ Options:
       The default is 0x82.
 
   --emm-size value
-      Specify the maximum table id of the automatically generated fake EMM's.
-      When generating fake EMM's, the table ids are cycled from the minimum to
-      the maximum value. The default is 0x8F.
+      Specify the size in bytes of the automatically generated fake EMM's. The
+      default is 100 bytes.
 
   --emmg-mux-version value
       Specify the version of the EMMG/PDG <=> MUX DVB SimulCrypt protocol.

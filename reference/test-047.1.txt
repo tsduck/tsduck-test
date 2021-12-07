@@ -12,21 +12,22 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: ......................... 47,802,490 b/s   51,870,787 b/s  |
 |  Estimated based on PCR's: ............... 47,764,799 b/s   51,829,889 b/s  |
+|  Selected reference bitrate: ............. 47,764,799 b/s   51,829,889 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ..................................... 1 sec (0 min 1 sec)  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x2261  CANAL+ ....................................... S    5,644,518 b/s  |
-|  0x2262  CANAL+ DECALE ................................ C    3,076,568 b/s  |
-|  0x2263  CANAL+ CINEMA ................................ S    2,708,489 b/s  |
-|  0x2264  CANAL+ SPORT ................................. S    5,432,275 b/s  |
-|  0x2265  CANAL+ FAMILY ................................ S    3,669,319 b/s  |
-|  0x2266  CANAL+ SERIES ................................ S    3,347,130 b/s  |
-|  0x2267  CINE+ FRISSON ................................ S    6,046,059 b/s  |
-|  0x2268  CINE+ FAMIZ .................................. S    5,072,800 b/s  |
-|  0x2269  CINE+ CLASSIC ................................ S    5,853,893 b/s  |
-|  0x226A  CNEWS ........................................ C    3,302,196 b/s  |
-|  0x22C3  DATASYSTEM ................................... C       62,143 b/s  |
+|  0x2261  CANAL+ ....................................... S    5,640,068 b/s  |
+|  0x2262  CANAL+ DECALE ................................ C    3,074,142 b/s  |
+|  0x2263  CANAL+ CINEMA ................................ S    2,706,354 b/s  |
+|  0x2264  CANAL+ SPORT ................................. S    5,427,992 b/s  |
+|  0x2265  CANAL+ FAMILY ................................ S    3,666,426 b/s  |
+|  0x2266  CANAL+ SERIES ................................ S    3,344,491 b/s  |
+|  0x2267  CINE+ FRISSON ................................ S    6,041,292 b/s  |
+|  0x2268  CINE+ FAMIZ .................................. S    5,068,801 b/s  |
+|  0x2269  CINE+ CLASSIC ................................ S    5,849,277 b/s  |
+|  0x226A  CNEWS ........................................ C    3,299,592 b/s  |
+|  0x22C3  DATASYSTEM ................................... C       62,094 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -40,33 +41,33 @@
 |  TS packets: 3,564, PID's: 18 (clear: 18, scrambled: 0)                     |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C    3,407,362 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      390,068 b/s  |
-|  0x0000  PAT .......................................... C       14,341 b/s  |
-|  0x0001  CAT .......................................... C       14,341 b/s  |
-|  0x0010  NIT .......................................... C       37,286 b/s  |
-|  0x0011  SDT/BAT ...................................... C       19,121 b/s  |
-|  0x0012  EIT .......................................... C      304,980 b/s  |
-|  0x1449  Nagravision EMM .............................. C      256,221 b/s  |
-|  0x1645  Nagravision EMM .............................. C        5,736 b/s  |
-|  0x1646  Nagravision EMM .............................. C       65,011 b/s  |
-|  0x1647  Nagravision EMM .............................. C        4,780 b/s  |
-|  0x164E  Nagravision EMM .............................. C      109,946 b/s  |
-|  0x1650  Nagravision EMM .............................. C        6,692 b/s  |
-|  0x165D  Nagravision EMM .............................. C        6,692 b/s  |
-|  0x168A  Viaccess EMM for SOID 266048 (0x040F40) ...... C        9,560 b/s  |
-|  0x168C  Viaccess EMM for SOID 199424 (0x030B00), 2068  C        8,604 b/s  |
-|  0x168F  Viaccess EMM for SOID 207168 (0x032940) ...... C      143,407 b/s  |
-|  0x1690  Viaccess EMM for SOID 206896 (0x032830), 1363  C       38,242 b/s  |
-|  0x1699  Viaccess EMM for SOID 207136 (0x032920) ...... C        4,780 b/s  |
-|  0x1FFF  Stuffing ..................................... C    2,357,619 b/s  |
+|   Total  Global PID's ................................. C    3,404,675 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      389,761 b/s  |
+|  0x0000  PAT .......................................... C       14,329 b/s  |
+|  0x0001  CAT .......................................... C       14,329 b/s  |
+|  0x0010  NIT .......................................... C       37,257 b/s  |
+|  0x0011  SDT/BAT ...................................... C       19,106 b/s  |
+|  0x0012  EIT .......................................... C      304,739 b/s  |
+|  0x1449  Nagravision EMM .............................. C      256,019 b/s  |
+|  0x1645  Nagravision EMM .............................. C        5,732 b/s  |
+|  0x1646  Nagravision EMM .............................. C       64,960 b/s  |
+|  0x1647  Nagravision EMM .............................. C        4,776 b/s  |
+|  0x164E  Nagravision EMM .............................. C      109,859 b/s  |
+|  0x1650  Nagravision EMM .............................. C        6,687 b/s  |
+|  0x165D  Nagravision EMM .............................. C        6,687 b/s  |
+|  0x168A  Viaccess EMM for SOID 266048 (0x040F40) ...... C        9,553 b/s  |
+|  0x168C  Viaccess EMM for SOID 199424 (0x030B00), 2068  C        8,598 b/s  |
+|  0x168F  Viaccess EMM for SOID 207168 (0x032940) ...... C      143,294 b/s  |
+|  0x1690  Viaccess EMM for SOID 206896 (0x032830), 1363  C       38,212 b/s  |
+|  0x1699  Viaccess EMM for SOID 207136 (0x032920) ...... C        4,776 b/s  |
+|  0x1FFF  Stuffing ..................................... C    2,355,760 b/s  |
 |=============================================================================|
 |  Unreferenced PID's                                                         |
 |  TS packets: 188, PID's: 1 (clear: 1, scrambled: 0)                         |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Unreferenced PID's ........................... C      179,737 b/s  |
-|  0x0BC9  Unreferenced ................................. C      179,737 b/s  |
+|   Total  Unreferenced PID's ........................... C      179,596 b/s  |
+|  0x0BC9  Unreferenced ................................. C      179,596 b/s  |
 |=============================================================================|
 |  Service: 0x2261 (8801), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
 |  Service name: CANAL+, provider: CSAT                                       |
@@ -75,21 +76,21 @@
 |  PMT PID: 0x1E64 (7780), PCR PID: 0x1E6E (7790)                             |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    5,644,518 b/s  |
+|   Total  Advanced codec HD digital television service . S    5,640,068 b/s  |
 |  0x008E  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
 |  0x008F  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
-|  0x00A6  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x00AB  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x00B0  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x00B1  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x00B4  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,385 b/s  |
-|  0x00B6  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,692 b/s  |
-|  0x00BB  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,297 b/s  |
-|  0x1E64  PMT .......................................... C       14,341 b/s  |
-|  0x1E6E  AVC video .................................... S    4,533,588 b/s  |
-|  0x1E79  AC-3 Audio (fra) ............................. S      403,453 b/s  |
-|  0x1E7A  AC-3 Audio (eng) ............................. S      403,453 b/s  |
-|  0x1E7B  AC-3 Audio (qad) ............................. S      223,716 b/s  |
+|  0x00A6  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x00AB  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x00B0  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x00B1  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x00B4  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,374 b/s  |
+|  0x00B6  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,687 b/s  |
+|  0x00BB  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,285 b/s  |
+|  0x1E64  PMT .......................................... C       14,329 b/s  |
+|  0x1E6E  AVC video .................................... S    4,530,014 b/s  |
+|  0x1E79  AC-3 Audio (fra) ............................. S      403,135 b/s  |
+|  0x1E7A  AC-3 Audio (eng) ............................. S      403,135 b/s  |
+|  0x1E7B  AC-3 Audio (qad) ............................. S      223,539 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2262 (8802), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -99,13 +100,13 @@
 |  PMT PID: 0x00C8 (200), PCR PID: 0x00D2 (210)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    3,076,568 b/s  |
-|  0x00C8  PMT .......................................... C       14,341 b/s  |
-|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    2,658,775 b/s  |
-|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      187,386 b/s  |
-|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      187,386 b/s  |
+|   Total  Advanced codec HD digital television service . C    3,074,142 b/s  |
+|  0x00C8  PMT .......................................... C       14,329 b/s  |
+|  0x00D2  AVC video (1920x1080, high profile, level 4.0  C    2,656,678 b/s  |
+|  0x00DD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      187,238 b/s  |
+|  0x00DE  AC-3 Audio (eng, AC-3, stereo (L,R), @48,000   C      187,238 b/s  |
 |  0x00F2  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
-|  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       28,681 b/s  |
+|  0x00F3  Subtitles (fra, DVB subtitles for hard of hea  C       28,659 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2263 (8803), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -115,20 +116,20 @@
 |  PMT PID: 0x012C (300), PCR PID: 0x0136 (310)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    2,708,489 b/s  |
-|  0x012C  PMT .......................................... C       14,341 b/s  |
-|  0x0136  AVC video .................................... S    2,001,012 b/s  |
-|  0x0141  AC-3 Audio (fra) ............................. S      402,497 b/s  |
-|  0x0142  AC-3 Audio (eng) ............................. S      223,716 b/s  |
+|   Total  Advanced codec HD digital television service . S    2,706,354 b/s  |
+|  0x012C  PMT .......................................... C       14,329 b/s  |
+|  0x0136  AVC video .................................... S    1,999,435 b/s  |
+|  0x0141  AC-3 Audio (fra) ............................. S      402,180 b/s  |
+|  0x0142  AC-3 Audio (eng) ............................. S      223,539 b/s  |
 |  0x0156  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
-|  0x0157  Subtitles (fra, DVB subtitles for hard of hea  C          956 b/s  |
-|  0x016E  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x0173  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0178  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x0179  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x017C  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,297 b/s  |
-|  0x017E  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,692 b/s  |
-|  0x0183  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,297 b/s  |
+|  0x0157  Subtitles (fra, DVB subtitles for hard of hea  C          955 b/s  |
+|  0x016E  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x0173  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0178  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x0179  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x017C  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,285 b/s  |
+|  0x017E  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,687 b/s  |
+|  0x0183  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,285 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2264 (8804), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -138,20 +139,20 @@
 |  PMT PID: 0x0190 (400), PCR PID: 0x019A (410)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    5,432,275 b/s  |
-|  0x0190  PMT .......................................... C       14,341 b/s  |
-|  0x019A  AVC video .................................... S    4,979,107 b/s  |
-|  0x01A5  AC-3 Audio (fra) ............................. S      187,386 b/s  |
-|  0x01A6  AC-3 Audio (eng) ............................. S      186,430 b/s  |
+|   Total  Advanced codec HD digital television service . S    5,427,992 b/s  |
+|  0x0190  PMT .......................................... C       14,329 b/s  |
+|  0x019A  AVC video .................................... S    4,975,182 b/s  |
+|  0x01A5  AC-3 Audio (fra) ............................. S      187,238 b/s  |
+|  0x01A6  AC-3 Audio (eng) ............................. S      186,283 b/s  |
 |  0x01BA  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
 |  0x01BB  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
-|  0x01D2  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x01D7  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x01DC  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x01DD  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x01E0  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,297 b/s  |
-|  0x01E2  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,692 b/s  |
-|  0x01E7  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,297 b/s  |
+|  0x01D2  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x01D7  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x01DC  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x01DD  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x01E0  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,285 b/s  |
+|  0x01E2  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,687 b/s  |
+|  0x01E7  Viaccess ECM for SOID 266048 (0x040F40) ...... C       15,285 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2265 (8805), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -161,20 +162,20 @@
 |  PMT PID: 0x01F4 (500), PCR PID: 0x01FE (510)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    3,669,319 b/s  |
-|  0x01F4  PMT .......................................... C       14,341 b/s  |
-|  0x01FE  AVC video .................................... S    3,197,031 b/s  |
-|  0x0209  AC-3 Audio (fra) ............................. S      188,342 b/s  |
-|  0x020A  AC-3 Audio (eng) ............................. S      187,386 b/s  |
-|  0x021E  Subtitles (fra, DVB subtitles, no aspect rati  C       18,165 b/s  |
+|   Total  Advanced codec HD digital television service . S    3,666,426 b/s  |
+|  0x01F4  PMT .......................................... C       14,329 b/s  |
+|  0x01FE  AVC video .................................... S    3,194,510 b/s  |
+|  0x0209  AC-3 Audio (fra) ............................. S      188,193 b/s  |
+|  0x020A  AC-3 Audio (eng) ............................. S      187,238 b/s  |
+|  0x021E  Subtitles (fra, DVB subtitles, no aspect rati  C       18,151 b/s  |
 |  0x021F  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
-|  0x0236  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x023B  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0240  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x0241  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0244  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,385 b/s  |
-|  0x0246  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,648 b/s  |
-|  0x024B  Viaccess ECM for SOID 266048 (0x040F40) ...... C       13,385 b/s  |
+|  0x0236  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x023B  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0240  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x0241  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0244  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,374 b/s  |
+|  0x0246  Viaccess ECM for SOID 207168 (0x032940) ...... C        7,642 b/s  |
+|  0x024B  Viaccess ECM for SOID 266048 (0x040F40) ...... C       13,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2266 (8806), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -184,20 +185,20 @@
 |  PMT PID: 0x0258 (600), PCR PID: 0x0262 (610)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    3,347,130 b/s  |
-|  0x0258  PMT .......................................... C       14,341 b/s  |
-|  0x0262  AVC video .................................... S    2,849,028 b/s  |
-|  0x026D  AC-3 Audio (fra) ............................. S      186,430 b/s  |
-|  0x026E  AC-3 Audio (eng) ............................. S      187,386 b/s  |
-|  0x0282  Subtitles (fra, DVB subtitles, no aspect rati  C       16,253 b/s  |
-|  0x0283  Subtitles (fra, DVB subtitles for hard of hea  C       28,681 b/s  |
-|  0x029A  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x029F  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x02A4  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x02A5  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x02A8  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,297 b/s  |
-|  0x02AA  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,692 b/s  |
-|  0x02AF  Viaccess ECM for SOID 266048 (0x040F40) ...... C       13,385 b/s  |
+|   Total  Advanced codec HD digital television service . S    3,344,491 b/s  |
+|  0x0258  PMT .......................................... C       14,329 b/s  |
+|  0x0262  AVC video .................................... S    2,846,782 b/s  |
+|  0x026D  AC-3 Audio (fra) ............................. S      186,283 b/s  |
+|  0x026E  AC-3 Audio (eng) ............................. S      187,238 b/s  |
+|  0x0282  Subtitles (fra, DVB subtitles, no aspect rati  C       16,240 b/s  |
+|  0x0283  Subtitles (fra, DVB subtitles for hard of hea  C       28,659 b/s  |
+|  0x029A  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x029F  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x02A4  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x02A5  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x02A8  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,285 b/s  |
+|  0x02AA  Viaccess ECM for SOID 207168 (0x032940) ...... C        6,687 b/s  |
+|  0x02AF  Viaccess ECM for SOID 266048 (0x040F40) ...... C       13,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2267 (8807), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -207,20 +208,20 @@
 |  PMT PID: 0x02BC (700), PCR PID: 0x02C6 (710)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    6,046,059 b/s  |
-|  0x02BC  PMT .......................................... C       14,341 b/s  |
-|  0x02C6  AVC video .................................... S    5,594,803 b/s  |
-|  0x02D1  AC-3 Audio (fra) ............................. S      187,386 b/s  |
-|  0x02D2  AC-3 Audio (eng) ............................. S      187,386 b/s  |
+|   Total  Advanced codec HD digital television service . S    6,041,292 b/s  |
+|  0x02BC  PMT .......................................... C       14,329 b/s  |
+|  0x02C6  AVC video .................................... S    5,590,392 b/s  |
+|  0x02D1  AC-3 Audio (fra) ............................. S      187,238 b/s  |
+|  0x02D2  AC-3 Audio (eng) ............................. S      187,238 b/s  |
 |  0x02E6  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
 |  0x02E7  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
-|  0x02FD  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x0303  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0308  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0309  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x030C  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,385 b/s  |
-|  0x030D  Viaccess ECM for SOID 207136 (0x032920) ...... C        6,692 b/s  |
-|  0x030E  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,385 b/s  |
+|  0x02FD  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x0303  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0308  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0309  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x030C  Viaccess ECM for SOID 206896 (0x032830) ...... C       13,374 b/s  |
+|  0x030D  Viaccess ECM for SOID 207136 (0x032920) ...... C        6,687 b/s  |
+|  0x030E  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2268 (8808), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -230,20 +231,20 @@
 |  PMT PID: 0x0320 (800), PCR PID: 0x032A (810)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    5,072,800 b/s  |
-|  0x0320  PMT .......................................... C       14,341 b/s  |
-|  0x032A  AVC video .................................... S    4,613,896 b/s  |
-|  0x0335  AC-3 Audio (fra) ............................. S      187,386 b/s  |
-|  0x0336  AC-3 Audio (eng) ............................. S      187,386 b/s  |
+|   Total  Advanced codec HD digital television service . S    5,068,801 b/s  |
+|  0x0320  PMT .......................................... C       14,329 b/s  |
+|  0x032A  AVC video .................................... S    4,610,258 b/s  |
+|  0x0335  AC-3 Audio (fra) ............................. S      187,238 b/s  |
+|  0x0336  AC-3 Audio (eng) ............................. S      187,238 b/s  |
 |  0x034A  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
-|  0x034B  Subtitles (fra, DVB subtitles for hard of hea  C        3,824 b/s  |
-|  0x0361  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x0367  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x036C  Nagravision ECM .............................. C        7,648 b/s  |
-|  0x036D  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x0370  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,297 b/s  |
-|  0x0371  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,648 b/s  |
-|  0x0372  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,385 b/s  |
+|  0x034B  Subtitles (fra, DVB subtitles for hard of hea  C        3,821 b/s  |
+|  0x0361  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x0367  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x036C  Nagravision ECM .............................. C        7,642 b/s  |
+|  0x036D  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x0370  Viaccess ECM for SOID 206896 (0x032830) ...... C       15,285 b/s  |
+|  0x0371  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,642 b/s  |
+|  0x0372  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x2269 (8809), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -253,20 +254,20 @@
 |  PMT PID: 0x0384 (900), PCR PID: 0x038E (910)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . S    5,853,893 b/s  |
-|  0x0384  PMT .......................................... C       14,341 b/s  |
-|  0x038E  AVC video .................................... S    5,373,000 b/s  |
-|  0x0399  AC-3 Audio (fra) ............................. S      188,342 b/s  |
-|  0x039A  AC-3 Audio (eng) ............................. S      188,342 b/s  |
+|   Total  Advanced codec HD digital television service . S    5,849,277 b/s  |
+|  0x0384  PMT .......................................... C       14,329 b/s  |
+|  0x038E  AVC video .................................... S    5,368,763 b/s  |
+|  0x0399  AC-3 Audio (fra) ............................. S      188,193 b/s  |
+|  0x039A  AC-3 Audio (eng) ............................. S      188,193 b/s  |
 |  0x03AE  Subtitles (fra, DVB subtitles, no aspect rati  C            0 b/s  |
-|  0x03AF  Subtitles (fra, DVB subtitles for hard of hea  C       21,989 b/s  |
-|  0x03C5  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x03CB  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x03D0  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x03D1  Nagravision ECM .............................. C        6,692 b/s  |
-|  0x03D4  Viaccess ECM for SOID 206896 (0x032830) ...... C       20,077 b/s  |
-|  0x03D5  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,648 b/s  |
-|  0x03D6  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,385 b/s  |
+|  0x03AF  Subtitles (fra, DVB subtitles for hard of hea  C       21,972 b/s  |
+|  0x03C5  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x03CB  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x03D0  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x03D1  Nagravision ECM .............................. C        6,687 b/s  |
+|  0x03D4  Viaccess ECM for SOID 206896 (0x032830) ...... C       20,061 b/s  |
+|  0x03D5  Viaccess ECM for SOID 207136 (0x032920) ...... C        7,642 b/s  |
+|  0x03D6  Viaccess ECM for SOID 207168 (0x032940) ...... C       13,374 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x226A (8810), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
@@ -276,10 +277,10 @@
 |  PMT PID: 0x03E8 (1000), PCR PID: 0x03F2 (1010)                             |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    3,302,196 b/s  |
-|  0x03E8  PMT .......................................... C       14,341 b/s  |
-|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    3,100,470 b/s  |
-|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      187,386 b/s  |
+|   Total  Advanced codec HD digital television service . C    3,299,592 b/s  |
+|  0x03E8  PMT .......................................... C       14,329 b/s  |
+|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    3,098,025 b/s  |
+|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      187,238 b/s  |
 |  0x0413  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
@@ -290,9 +291,9 @@
 |  PMT PID: 0x1003 (4099), PCR PID: None                                      |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Data broadcast service ....................... C       62,143 b/s  |
-|  0x0FA5  MPEG-2 Private sections (Canal+) ............. C       47,802 b/s  |
-|  0x1003  PMT .......................................... C       14,341 b/s  |
+|   Total  Data broadcast service ....................... C       62,094 b/s  |
+|  0x0FA5  MPEG-2 Private sections (Canal+) ............. C       47,765 b/s  |
+|  0x1003  PMT .......................................... C       14,329 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -303,7 +304,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -311,7 +312,7 @@
 |  PID: 0x0001 (1)                                                       CAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -319,7 +320,7 @@
 |  PID: 0x0010 (16)                                                      NIT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 37,286 b/s  Packets: ............ 39  Expected: ......... 0  |
+|  Bitrate: .... 37,257 b/s  Packets: ............ 39  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 9  |
@@ -327,7 +328,7 @@
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 19,121 b/s  Packets: ............ 20  Expected: ......... 0  |
+|  Bitrate: .... 19,106 b/s  Packets: ............ 20  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 5  |
@@ -335,7 +336,7 @@
 |  PID: 0x0012 (18)                                                      EIT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 304,980 b/s  Packets: ........... 319  Expected: ......... 0  |
+|  Bitrate: ... 304,739 b/s  Packets: ........... 319  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 144  |
@@ -344,7 +345,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -353,7 +354,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -362,7 +363,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -371,7 +372,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -380,7 +381,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -389,7 +390,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -398,7 +399,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -407,7 +408,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -418,7 +419,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,658,775 b/s  Packets: ......... 2,781  Expected: ......... 0  |
+|  Bitrate: . 2,656,678 b/s  Packets: ......... 2,781  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 84  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................ 43  Packets: ......... 40  |
@@ -430,7 +431,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 20  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 10  |
@@ -442,7 +443,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 20  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 10  |
@@ -454,7 +455,7 @@
 |  Service: 0x2262 (8802) CANAL+ DECALE                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 28,681 b/s  Packets: ............ 30  Expected: ......... 0  |
+|  Bitrate: .... 28,659 b/s  Packets: ............ 30  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 1  |
@@ -464,7 +465,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -473,7 +474,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,001,012 b/s  Packets: ......... 2,093  Expected: ......... 0  |
+|  Bitrate: . 1,999,435 b/s  Packets: ......... 2,093  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 84  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 43  Packets: ......... 40  |
@@ -483,7 +484,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 402,497 b/s  Packets: ........... 421  Expected: ......... 0  |
+|  Bitrate: ... 402,180 b/s  Packets: ........... 421  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 94  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 47  |
@@ -493,7 +494,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 223,716 b/s  Packets: ........... 234  Expected: ......... 0  |
+|  Bitrate: ... 223,539 b/s  Packets: ........... 234  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 94  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 47  |
@@ -505,7 +506,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ....... 956 b/s  Packets: ............. 1  Expected: ......... 0  |
+|  Bitrate: ....... 955 b/s  Packets: ............. 1  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 1  |
@@ -515,7 +516,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -524,7 +525,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -533,7 +534,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -542,7 +543,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -551,7 +552,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -560,7 +561,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -569,7 +570,7 @@
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -578,7 +579,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -587,7 +588,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,979,107 b/s  Packets: ......... 5,208  Expected: ......... 0  |
+|  Bitrate: . 4,975,182 b/s  Packets: ......... 5,208  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 74  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 43  Packets: ......... 32  |
@@ -597,7 +598,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 20  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 10  |
@@ -607,7 +608,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 186,430 b/s  Packets: ........... 195  Expected: ......... 0  |
+|  Bitrate: ... 186,283 b/s  Packets: ........... 195  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 19  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 10  |
@@ -617,7 +618,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -626,7 +627,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -635,7 +636,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -644,7 +645,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -653,7 +654,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -662,7 +663,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -671,7 +672,7 @@
 |  Service: 0x2264 (8804) CANAL+ SPORT                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -680,7 +681,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -689,7 +690,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,197,031 b/s  Packets: ......... 3,344  Expected: ......... 0  |
+|  Bitrate: . 3,194,510 b/s  Packets: ......... 3,344  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 82  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 43  Packets: ......... 38  |
@@ -699,7 +700,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 188,342 b/s  Packets: ........... 197  Expected: ......... 0  |
+|  Bitrate: ... 188,193 b/s  Packets: ........... 197  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -709,7 +710,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -720,7 +721,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 18,165 b/s  Packets: ............ 19  Expected: ......... 0  |
+|  Bitrate: .... 18,151 b/s  Packets: ............ 19  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 0  |
@@ -730,7 +731,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -739,7 +740,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -748,7 +749,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -757,7 +758,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -766,7 +767,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -775,7 +776,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -784,7 +785,7 @@
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -793,7 +794,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -802,7 +803,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,849,028 b/s  Packets: ......... 2,980  Expected: ......... 0  |
+|  Bitrate: . 2,846,782 b/s  Packets: ......... 2,980  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 79  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 42  Packets: ......... 36  |
@@ -812,7 +813,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 186,430 b/s  Packets: ........... 195  Expected: ......... 0  |
+|  Bitrate: ... 186,283 b/s  Packets: ........... 195  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 20  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 10  |
@@ -822,7 +823,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 20  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 10  |
@@ -833,7 +834,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 16,253 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Bitrate: .... 16,240 b/s  Packets: ............ 17  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 0  |
@@ -844,7 +845,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 28,681 b/s  Packets: ............ 30  Expected: ......... 0  |
+|  Bitrate: .... 28,659 b/s  Packets: ............ 30  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 0  |
@@ -854,7 +855,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -863,7 +864,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -872,7 +873,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -881,7 +882,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -890,7 +891,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -899,7 +900,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -908,7 +909,7 @@
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -917,7 +918,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -926,7 +927,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 5,594,803 b/s  Packets: ......... 5,852  Expected: ......... 0  |
+|  Bitrate: . 5,590,392 b/s  Packets: ......... 5,852  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 97  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 43  Packets: ......... 53  |
@@ -936,7 +937,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -946,7 +947,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -956,7 +957,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -965,7 +966,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -974,7 +975,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -983,7 +984,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -992,7 +993,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1001,7 +1002,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1010,7 +1011,7 @@
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1019,7 +1020,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -1028,7 +1029,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,613,896 b/s  Packets: ......... 4,826  Expected: ......... 0  |
+|  Bitrate: . 4,610,258 b/s  Packets: ......... 4,826  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 82  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 42  Packets: ......... 38  |
@@ -1038,7 +1039,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 19  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -1048,7 +1049,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 19  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -1059,7 +1060,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 3,824 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Bitrate: ..... 3,821 b/s  Packets: ............. 4  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 0  |
@@ -1069,7 +1070,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1078,7 +1079,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1087,7 +1088,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1096,7 +1097,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1105,7 +1106,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 15,297 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: .... 15,285 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1114,7 +1115,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1123,7 +1124,7 @@
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1132,7 +1133,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -1141,7 +1142,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 5,373,000 b/s  Packets: ......... 5,620  Expected: ......... 0  |
+|  Bitrate: . 5,368,763 b/s  Packets: ......... 5,620  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 81  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 43  Packets: ......... 37  |
@@ -1151,7 +1152,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 188,342 b/s  Packets: ........... 197  Expected: ......... 0  |
+|  Bitrate: ... 188,193 b/s  Packets: ........... 197  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -1161,7 +1162,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 188,342 b/s  Packets: ........... 197  Expected: ......... 0  |
+|  Bitrate: ... 188,193 b/s  Packets: ........... 197  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 18  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: .......... 9  |
@@ -1172,7 +1173,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 21,989 b/s  Packets: ............ 23  Expected: ......... 0  |
+|  Bitrate: .... 21,972 b/s  Packets: ............ 23  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 0  |
@@ -1182,7 +1183,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1191,7 +1192,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1200,7 +1201,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1209,7 +1210,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1218,7 +1219,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 20,077 b/s  Packets: ............ 21  Expected: ......... 0  |
+|  Bitrate: .... 20,061 b/s  Packets: ............ 21  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1227,7 +1228,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 7,648 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Bitrate: ..... 7,642 b/s  Packets: ............. 8  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 8  |
@@ -1236,7 +1237,7 @@
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,385 b/s  Packets: ............ 14  Expected: ......... 0  |
+|  Bitrate: .... 13,374 b/s  Packets: ............ 14  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 7  |
@@ -1245,7 +1246,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -1256,7 +1257,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 3,100,470 b/s  Packets: ......... 3,243  Expected: ......... 0  |
+|  Bitrate: . 3,098,025 b/s  Packets: ......... 3,243  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 75  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................ 42  Packets: ......... 32  |
@@ -1268,7 +1269,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 187,386 b/s  Packets: ........... 196  Expected: ......... 0  |
+|  Bitrate: ... 187,238 b/s  Packets: ........... 196  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 18  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 9  |
@@ -1277,7 +1278,7 @@
 |  PID: 0x0BC9 (3017)                                           Unreferenced  |
 |-----------------------------------------------------------------------------|
 |  Unreferenced PID          Transport:                Discontinuities:       |
-|  Bitrate: ... 179,737 b/s  Packets: ........... 188  Expected: ......... 0  |
+|  Bitrate: ... 179,596 b/s  Packets: ........... 188  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 33  |
@@ -1286,7 +1287,7 @@
 |  Service: 0x22C3 (8899) DATASYSTEM                                          |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 47,802 b/s  Packets: ............ 50  Expected: ......... 0  |
+|  Bitrate: .... 47,765 b/s  Packets: ............ 50  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 50  |
@@ -1295,7 +1296,7 @@
 |  Service: 0x22C3 (8899) DATASYSTEM                                          |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -1303,7 +1304,7 @@
 |  PID: 0x1449 (5193)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 256,221 b/s  Packets: ........... 268  Expected: ......... 0  |
+|  Bitrate: ... 256,019 b/s  Packets: ........... 268  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 266  |
@@ -1311,7 +1312,7 @@
 |  PID: 0x1645 (5701)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 5,736 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Bitrate: ..... 5,732 b/s  Packets: ............. 6  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |
@@ -1319,7 +1320,7 @@
 |  PID: 0x1646 (5702)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 65,011 b/s  Packets: ............ 68  Expected: ......... 0  |
+|  Bitrate: .... 64,960 b/s  Packets: ............ 68  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 68  |
@@ -1327,7 +1328,7 @@
 |  PID: 0x1647 (5703)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 4,780 b/s  Packets: ............. 5  Expected: ......... 0  |
+|  Bitrate: ..... 4,776 b/s  Packets: ............. 5  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |
@@ -1335,7 +1336,7 @@
 |  PID: 0x164E (5710)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 109,946 b/s  Packets: ........... 115  Expected: ......... 0  |
+|  Bitrate: ... 109,859 b/s  Packets: ........... 115  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 115  |
@@ -1343,7 +1344,7 @@
 |  PID: 0x1650 (5712)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |
@@ -1351,7 +1352,7 @@
 |  PID: 0x165D (5725)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 6,692 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 6,687 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |
@@ -1359,7 +1360,7 @@
 |  PID: 0x168A (5770)                Viaccess EMM for SOID 266048 (0x040F40)  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 9,560 b/s  Packets: ............ 10  Expected: ......... 0  |
+|  Bitrate: ..... 9,553 b/s  Packets: ............ 10  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 10  |
@@ -1368,7 +1369,7 @@
 |                 Viaccess EMM for SOID 199424 (0x030B00), 206896 (0x032830)  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 8,604 b/s  Packets: ............. 9  Expected: ......... 0  |
+|  Bitrate: ..... 8,598 b/s  Packets: ............. 9  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 9  |
@@ -1376,7 +1377,7 @@
 |  PID: 0x168F (5775)                Viaccess EMM for SOID 207168 (0x032940)  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 143,407 b/s  Packets: ........... 150  Expected: ......... 0  |
+|  Bitrate: ... 143,294 b/s  Packets: ........... 150  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 150  |
@@ -1385,7 +1386,7 @@
 |               Viaccess EMM for SOID 206896 (0x032830), 13631680 (0xD000C0)  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 38,242 b/s  Packets: ............ 40  Expected: ......... 0  |
+|  Bitrate: .... 38,212 b/s  Packets: ............ 40  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 40  |
@@ -1393,7 +1394,7 @@
 |  PID: 0x1699 (5785)                Viaccess EMM for SOID 207136 (0x032920)  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 4,780 b/s  Packets: ............. 5  Expected: ......... 0  |
+|  Bitrate: ..... 4,776 b/s  Packets: ............. 5  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 5  |
@@ -1402,7 +1403,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 14,341 b/s  Packets: ............ 15  Expected: ......... 0  |
+|  Bitrate: .... 14,329 b/s  Packets: ............ 15  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 15  |
@@ -1411,7 +1412,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,533,588 b/s  Packets: ......... 4,742  Expected: ......... 0  |
+|  Bitrate: . 4,530,014 b/s  Packets: ......... 4,742  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 79  Unexpect: ......... 1  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................ 42  Packets: ......... 35  |
@@ -1421,7 +1422,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 403,453 b/s  Packets: ........... 422  Expected: ......... 0  |
+|  Bitrate: ... 403,135 b/s  Packets: ........... 422  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 93  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 46  |
@@ -1431,7 +1432,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 403,453 b/s  Packets: ........... 422  Expected: ......... 0  |
+|  Bitrate: ... 403,135 b/s  Packets: ........... 422  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 93  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 46  |
@@ -1441,7 +1442,7 @@
 |  Service: 0x2261 (8801) CANAL+                                              |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 223,716 b/s  Packets: ........... 234  Expected: ......... 0  |
+|  Bitrate: ... 223,539 b/s  Packets: ........... 234  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 93  Unexpect: ......... 0  |
 |  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 46  |
@@ -1450,7 +1451,7 @@
 |  PID: 0x1FFF (8191)                                               Stuffing  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: . 2,357,619 b/s  Packets: ......... 2,466  Expected: ......... 0  |
+|  Bitrate: . 2,355,760 b/s  Packets: ......... 2,466  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |
@@ -1477,9 +1478,9 @@
 |  PID: 0x0010 (16)                                                      NIT  |
 |-----------------------------------------------------------------------------|
 |  0x40 (64, NIT Actual), TID ext: 0x0001 (1)                                 |
-|      Repetition: ..... 496  ms  Section cnt: ........ 9                     |
-|      Min repet.: ..... 494  ms  Table cnt: .......... 3                     |
-|      Max repet.: ..... 498  ms  Version: ........... 26                     |
+|      Repetition: ..... 497  ms  Section cnt: ........ 9                     |
+|      Min repet.: ..... 495  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 499  ms  Version: ........... 26                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
@@ -1496,9 +1497,9 @@
 |  PID: 0x0012 (18)                                                      EIT  |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2261 (8801)                          |
-|      Repetition: .... 1236  ms  Section cnt: ........ 3                     |
-|      Min repet.: .... 1236  ms  Table cnt: .......... 2                     |
-|      Max repet.: .... 1236  ms  Version: ........... 22                     |
+|      Repetition: .... 1237  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1237  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1237  ms  Version: ........... 22                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2262 (8802)                          |
 |      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
@@ -1511,14 +1512,14 @@
 |      Max repet.: ....... 0  ms  Version: ............ 2                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2264 (8804)                          |
-|      Repetition: .... 1251  ms  Section cnt: ........ 3                     |
-|      Min repet.: .... 1251  ms  Table cnt: .......... 2                     |
-|      Max repet.: .... 1251  ms  Version: ............ 2                     |
+|      Repetition: .... 1252  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1252  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1252  ms  Version: ............ 2                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2265 (8805)                          |
-|      Repetition: .... 1251  ms  Section cnt: ........ 3                     |
-|      Min repet.: .... 1251  ms  Table cnt: .......... 2                     |
-|      Max repet.: .... 1251  ms  Version: ........... 28                     |
+|      Repetition: .... 1252  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1252  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1252  ms  Version: ........... 28                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2266 (8806)                          |
 |      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
@@ -1531,9 +1532,9 @@
 |      Max repet.: ....... 0  ms  Version: ........... 19                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2268 (8808)                          |
-|      Repetition: .... 1237  ms  Section cnt: ........ 3                     |
-|      Min repet.: .... 1237  ms  Table cnt: .......... 2                     |
-|      Max repet.: .... 1237  ms  Version: ........... 16                     |
+|      Repetition: .... 1238  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1238  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1238  ms  Version: ........... 16                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x2269 (8809)                          |
 |      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
@@ -1541,9 +1542,9 @@
 |      Max repet.: ....... 0  ms  Version: ........... 19                     |
 |-----------------------------------------------------------------------------|
 |  0x4E (78, EIT p/f Actual), TID ext: 0x226A (8810)                          |
-|      Repetition: .... 1250  ms  Section cnt: ........ 3                     |
-|      Min repet.: .... 1250  ms  Table cnt: .......... 2                     |
-|      Max repet.: .... 1250  ms  Version: ............ 6                     |
+|      Repetition: .... 1251  ms  Section cnt: ........ 3                     |
+|      Min repet.: .... 1251  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1251  ms  Version: ............ 6                     |
 |-----------------------------------------------------------------------------|
 |  0x4F (79, EIT p/f Other), TID ext: 0x1131 (4401)                           |
 |      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
@@ -2180,7 +2181,7 @@
 |-----------------------------------------------------------------------------|
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
-|      Min repet.: ..... 197  ms                                              |
+|      Min repet.: ..... 198  ms                                              |
 |      Max repet.: ..... 203  ms                                              |
 |=============================================================================|
 |  PID: 0x00AB (171)                                         Nagravision ECM  |
@@ -2189,7 +2190,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 198  ms                                              |
-|      Max repet.: ..... 202  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
 |=============================================================================|
 |  PID: 0x00B0 (176)                                         Nagravision ECM  |
 |  Service: 0x2261 (8801) CANAL+                                              |
@@ -2197,7 +2198,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
 |      Min repet.: ..... 197  ms                                              |
-|      Max repet.: ..... 202  ms                                              |
+|      Max repet.: ..... 203  ms                                              |
 |=============================================================================|
 |  PID: 0x00B1 (177)                                         Nagravision ECM  |
 |  Service: 0x2261 (8801) CANAL+                                              |
@@ -2261,7 +2262,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0178 (376)                                         Nagravision ECM  |
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
@@ -2285,7 +2286,7 @@
 |  0x80 (128, Viaccess ECM (even))                                            |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x017E (382)                 Viaccess ECM for SOID 207168 (0x032940)  |
 |  Service: 0x2263 (8803) CANAL+ CINEMA                                       |
@@ -2300,7 +2301,7 @@
 |-----------------------------------------------------------------------------|
 |  0x80 (128, Viaccess ECM (even))                                            |
 |      Repetition: ..... 201  ms  Section cnt: ........ 7                     |
-|      Min repet.: ..... 194  ms                                              |
+|      Min repet.: ..... 195  ms                                              |
 |      Max repet.: ..... 205  ms                                              |
 |=============================================================================|
 |  PID: 0x0190 (400)                                                     PMT  |
@@ -2332,7 +2333,7 @@
 |-----------------------------------------------------------------------------|
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
-|      Min repet.: ..... 197  ms                                              |
+|      Min repet.: ..... 198  ms                                              |
 |      Max repet.: ..... 202  ms                                              |
 |=============================================================================|
 |  PID: 0x01DD (477)                                         Nagravision ECM  |
@@ -2348,7 +2349,7 @@
 |-----------------------------------------------------------------------------|
 |  0x80 (128, Viaccess ECM (even))                                            |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
-|      Min repet.: ..... 198  ms                                              |
+|      Min repet.: ..... 199  ms                                              |
 |      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x01E2 (482)                 Viaccess ECM for SOID 207168 (0x032940)  |
@@ -2389,7 +2390,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 196  ms                                              |
-|      Max repet.: ..... 203  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
 |=============================================================================|
 |  PID: 0x0240 (576)                                         Nagravision ECM  |
 |  Service: 0x2265 (8805) CANAL+ FAMILY                                       |
@@ -2461,7 +2462,7 @@
 |  0x80 (128, Nagravision ECM (even))                                         |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x02A5 (677)                                         Nagravision ECM  |
 |  Service: 0x2266 (8806) CANAL+ SERIES                                       |
@@ -2492,7 +2493,7 @@
 |-----------------------------------------------------------------------------|
 |  0x81 (129, Viaccess ECM (odd))                                             |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
-|      Min repet.: ..... 198  ms                                              |
+|      Min repet.: ..... 199  ms                                              |
 |      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x02BC (700)                                                     PMT  |
@@ -2517,7 +2518,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0308 (776)                                         Nagravision ECM  |
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
@@ -2525,7 +2526,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0309 (777)                                         Nagravision ECM  |
 |  Service: 0x2267 (8807) CINE+ FRISSON                                       |
@@ -2573,7 +2574,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0367 (871)                                         Nagravision ECM  |
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
@@ -2581,7 +2582,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
 |      Min repet.: ..... 199  ms                                              |
-|      Max repet.: ..... 200  ms                                              |
+|      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x036C (876)                                         Nagravision ECM  |
 |  Service: 0x2268 (8808) CINE+ FAMIZ                                         |
@@ -2604,7 +2605,7 @@
 |-----------------------------------------------------------------------------|
 |  0x80 (128, Viaccess ECM (even))                                            |
 |      Repetition: ..... 200  ms  Section cnt: ........ 8                     |
-|      Min repet.: ..... 197  ms                                              |
+|      Min repet.: ..... 198  ms                                              |
 |      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0371 (881)                 Viaccess ECM for SOID 207136 (0x032920)  |
@@ -2612,7 +2613,7 @@
 |-----------------------------------------------------------------------------|
 |  0x80 (128, Viaccess ECM (even))                                            |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
-|      Min repet.: ..... 198  ms                                              |
+|      Min repet.: ..... 199  ms                                              |
 |      Max repet.: ..... 201  ms                                              |
 |=============================================================================|
 |  PID: 0x0372 (882)                 Viaccess ECM for SOID 207168 (0x032940)  |
@@ -2645,7 +2646,7 @@
 |  0x81 (129, Nagravision ECM (odd))                                          |
 |      Repetition: ..... 200  ms  Section cnt: ........ 7                     |
 |      Min repet.: ..... 195  ms                                              |
-|      Max repet.: ..... 203  ms                                              |
+|      Max repet.: ..... 204  ms                                              |
 |=============================================================================|
 |  PID: 0x03D0 (976)                                         Nagravision ECM  |
 |  Service: 0x2269 (8809) CINE+ CLASSIC                                       |
@@ -2715,7 +2716,7 @@
 |  0x84 (132, Nagravision EMM)                                                |
 |      Repetition: ...... 22  ms  Section cnt: ....... 67                     |
 |      Min repet.: ...... 20  ms                                              |
-|      Max repet.: ...... 43  ms                                              |
+|      Max repet.: ...... 44  ms                                              |
 |=============================================================================|
 |  PID: 0x164E (5710)                                        Nagravision EMM  |
 |-----------------------------------------------------------------------------|
@@ -2732,7 +2733,7 @@
 |      Max repet.: ..... 302  ms                                              |
 |-----------------------------------------------------------------------------|
 |  0x8C (140, Viaccess EMM-GH (even))                                         |
-|      Repetition: ..... 300  ms  Section cnt: ........ 5                     |
+|      Repetition: ..... 301  ms  Section cnt: ........ 5                     |
 |      Min repet.: ..... 150  ms                                              |
 |      Max repet.: ..... 451  ms                                              |
 |-----------------------------------------------------------------------------|
@@ -2774,7 +2775,7 @@
 |  0x8E (142, Viaccess EMM-S)                                                 |
 |      Repetition: ...... 14  ms  Section cnt: ....... 69                     |
 |      Min repet.: ....... 0  ms                                              |
-|      Max repet.: ..... 593  ms                                              |
+|      Max repet.: ..... 594  ms                                              |
 |=============================================================================|
 |  PID: 0x1690 (5776)                                                         |
 |               Viaccess EMM for SOID 206896 (0x032830), 13631680 (0xD000C0)  |
@@ -2799,7 +2800,7 @@
 |  0x88 (136, Viaccess EMM-U)                                                 |
 |      Repetition: ..... 451  ms  Section cnt: ........ 3                     |
 |      Min repet.: ..... 301  ms                                              |
-|      Max repet.: ..... 600  ms                                              |
+|      Max repet.: ..... 601  ms                                              |
 |-----------------------------------------------------------------------------|
 |  0x8A (138, Viaccess EMM-GA (even))                                         |
 |      Repetition: ....... 0  ms  Section cnt: ........ 1                     |

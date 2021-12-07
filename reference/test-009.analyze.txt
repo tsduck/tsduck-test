@@ -12,11 +12,12 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: .......................... 4,578,110 b/s    4,967,737 b/s  |
 |  Estimated based on PCR's: ................ 4,069,930 b/s    4,416,307 b/s  |
+|  Selected reference bitrate: .............. 4,069,930 b/s    4,416,307 b/s  |
 |-----------------------------------------------------------------------------|
-|  Broadcast time: ..................................... 2 sec (0 min 2 sec)  |
+|  Broadcast time: ..................................... 3 sec (0 min 3 sec)  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x226A  (unknown) .................................... C    4,560,533 b/s  |
+|  0x226A  (unknown) .................................... C    4,054,304 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -30,9 +31,9 @@
 |  TS packets: 35, PID's: 1 (clear: 1, scrambled: 0)                          |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C       17,577 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       17,577 b/s  |
-|  0x0000  PAT .......................................... C       17,577 b/s  |
+|   Total  Global PID's ................................. C       15,626 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       15,626 b/s  |
+|  0x0000  PAT .......................................... C       15,626 b/s  |
 |=============================================================================|
 |  Service: 0x226A (8810), TS: 0x0438 (1080), Original Netw: 0x0000 (0)       |
 |  Service name: (unknown), provider: (unknown)                               |
@@ -41,10 +42,10 @@
 |  PMT PID: 0x03E8 (1000), PCR PID: 0x03F2 (1010)                             |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Undefined .................................... C    4,560,533 b/s  |
-|  0x03E8  PMT .......................................... C       17,075 b/s  |
-|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    4,320,981 b/s  |
-|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      222,477 b/s  |
+|   Total  Undefined .................................... C    4,054,304 b/s  |
+|  0x03E8  PMT .......................................... C       15,180 b/s  |
+|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    3,841,342 b/s  |
+|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      197,782 b/s  |
 |  0x0413  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
@@ -56,7 +57,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 17,577 b/s  Packets: ............ 35  Expected: ......... 0  |
+|  Bitrate: .... 15,626 b/s  Packets: ............ 35  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 35  |
@@ -65,7 +66,7 @@
 |  Service: 0x226A (8810) (unknown)                                           |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 17,075 b/s  Packets: ............ 34  Expected: ......... 0  |
+|  Bitrate: .... 15,180 b/s  Packets: ............ 34  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 34  |
@@ -76,7 +77,7 @@
 |  Service: 0x226A (8810) (unknown)                                           |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,320,981 b/s  Packets: ......... 8,604  Expected: ......... 0  |
+|  Bitrate: . 3,841,342 b/s  Packets: ......... 8,604  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 174  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................ 97  Packets: ......... 75  |
@@ -88,7 +89,7 @@
 |  Service: 0x226A (8810) (unknown)                                           |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 222,477 b/s  Packets: ........... 443  Expected: ......... 0  |
+|  Bitrate: ... 197,782 b/s  Packets: ........... 443  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 42  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 21  |
@@ -102,16 +103,16 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0438 (1080)                                      |
-|      Repetition: ...... 87  ms  Section cnt: ....... 35                     |
-|      Min repet.: ...... 25  ms  Table cnt: ......... 35                     |
-|      Max repet.: ..... 134  ms  Version: ........... 13                     |
+|      Repetition: ...... 98  ms  Section cnt: ....... 35                     |
+|      Min repet.: ...... 28  ms  Table cnt: ......... 35                     |
+|      Max repet.: ..... 151  ms  Version: ........... 13                     |
 |=============================================================================|
 |  PID: 0x03E8 (1000)                                                    PMT  |
 |  Service: 0x226A (8810) (unknown)                                           |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x226A (8810)                                      |
-|      Repetition: ...... 87  ms  Section cnt: ....... 34                     |
-|      Min repet.: ...... 53  ms  Table cnt: ......... 34                     |
-|      Max repet.: ..... 136  ms  Version: ............ 1                     |
+|      Repetition: ...... 98  ms  Section cnt: ....... 34                     |
+|      Min repet.: ...... 59  ms  Table cnt: ......... 34                     |
+|      Max repet.: ..... 153  ms  Version: ............ 1                     |
 ===============================================================================
 

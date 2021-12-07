@@ -12,6 +12,7 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: .......................... 3,407,931 b/s    3,697,968 b/s  |
 |  Estimated based on PCR's: ................ 3,443,197 b/s    3,736,235 b/s  |
+|  Selected reference bitrate: .............. 3,443,197 b/s    3,736,235 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ..................................... 3 sec (0 min 3 sec)  |
 |  First TDT UTC time stamp: ....................................... Unknown  |
@@ -21,7 +22,7 @@
 |  TOT country code: ................................................... FRA  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x0415  France 5 ..................................... C    3,344,220 b/s  |
+|  0x0415  France 5 ..................................... C    3,378,826 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -35,11 +36,11 @@
 |  TS packets: 149, PID's: 3 (clear: 3, scrambled: 0)                         |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C       63,712 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       63,712 b/s  |
-|  0x0000  PAT .......................................... C       28,649 b/s  |
-|  0x0011  SDT/BAT ...................................... C       33,780 b/s  |
-|  0x0014  TDT/TOT ...................................... C        1,283 b/s  |
+|   Total  Global PID's ................................. C       64,371 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       64,371 b/s  |
+|  0x0000  PAT .......................................... C       28,945 b/s  |
+|  0x0011  SDT/BAT ...................................... C       34,130 b/s  |
+|  0x0014  TDT/TOT ...................................... C        1,296 b/s  |
 |=============================================================================|
 |  Service: 0x0415 (1045), TS: 0x0004 (4), Original Netw: 0x20FA (8442)       |
 |  Service name: France 5, provider: Multi4                                   |
@@ -48,14 +49,14 @@
 |  PMT PID: 0x0190 (400), PCR PID: 0x01A4 (420)                               |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    3,344,220 b/s  |
-|  0x0190  PMT .......................................... C       13,683 b/s  |
-|  0x01A4  AVC video (1920x1080, high profile, level 4.0  C    2,913,204 b/s  |
-|  0x01AE  E-AC-3 Audio (fra, E-AC-3, stereo (L,R), @48,  C      126,996 b/s  |
-|  0x01AF  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      128,278 b/s  |
-|  0x01B0  E-AC-3 Audio (qaa, E-AC-3, stereo (L,R), @48,  C      127,423 b/s  |
-|  0x01B8  Subtitles (fra, DVB subtitles for hard of hea  C       31,642 b/s  |
-|  0x01B9  Subtitles (fra, DVB subtitles, high definitio  C        2,993 b/s  |
+|   Total  Advanced codec HD digital television service . C    3,378,826 b/s  |
+|  0x0190  PMT .......................................... C       13,825 b/s  |
+|  0x01A4  AVC video (1920x1080, high profile, level 4.0  C    2,943,350 b/s  |
+|  0x01AE  E-AC-3 Audio (fra, E-AC-3, stereo (L,R), @48,  C      128,310 b/s  |
+|  0x01AF  E-AC-3 Audio (qad, E-AC-3, stereo (L,R), @48,  C      129,606 b/s  |
+|  0x01B0  E-AC-3 Audio (qaa, E-AC-3, stereo (L,R), @48,  C      128,742 b/s  |
+|  0x01B8  Subtitles (fra, DVB subtitles for hard of hea  C       31,969 b/s  |
+|  0x01B9  Subtitles (fra, DVB subtitles, high definitio  C        3,024 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -66,7 +67,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 28,649 b/s  Packets: ............ 67  Expected: ......... 0  |
+|  Bitrate: .... 28,945 b/s  Packets: ............ 67  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 67  |
@@ -74,7 +75,7 @@
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 33,780 b/s  Packets: ............ 79  Expected: ......... 0  |
+|  Bitrate: .... 34,130 b/s  Packets: ............ 79  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 79  |
@@ -82,7 +83,7 @@
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 1,283 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Bitrate: ..... 1,296 b/s  Packets: ............. 3  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 3  |
@@ -91,7 +92,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 13,683 b/s  Packets: ............ 32  Expected: ......... 0  |
+|  Bitrate: .... 13,825 b/s  Packets: ............ 32  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 32  |
@@ -102,7 +103,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,913,204 b/s  Packets: ......... 6,813  Expected: ......... 0  |
+|  Bitrate: . 2,943,350 b/s  Packets: ......... 6,813  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 185  Unexpect: ......... 8  |
 |                            Duplicated: .......... 3  PES:                   |
 |                            PCR: ................ 96  Packets: ......... 85  |
@@ -114,7 +115,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 126,996 b/s  Packets: ........... 297  Expected: ......... 0  |
+|  Bitrate: ... 128,310 b/s  Packets: ........... 297  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 297  Unexpect: ......... 9  |
 |                            Duplicated: .......... 1  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 18  |
@@ -126,7 +127,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 128,278 b/s  Packets: ........... 300  Expected: ......... 0  |
+|  Bitrate: ... 129,606 b/s  Packets: ........... 300  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 300  Unexpect: ......... 8  |
 |                            Duplicated: .......... 1  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 19  |
@@ -138,7 +139,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 127,423 b/s  Packets: ........... 298  Expected: ......... 0  |
+|  Bitrate: ... 128,742 b/s  Packets: ........... 298  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 298  Unexpect: ......... 8  |
 |                            Duplicated: .......... 1  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 18  |
@@ -149,7 +150,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 31,642 b/s  Packets: ............ 74  Expected: ......... 0  |
+|  Bitrate: .... 31,969 b/s  Packets: ............ 74  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 8  Unexpect: ......... 3  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 8  |
@@ -161,7 +162,7 @@
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 2,993 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Bitrate: ..... 3,024 b/s  Packets: ............. 7  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 7  Unexpect: ......... 1  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: .......... 7  |
@@ -180,30 +181,30 @@
 |      Max repet.: ....... 2  ms  Version: ............ 1                     |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0004 (4)                                         |
-|      Repetition: ...... 68  ms  Section cnt: ....... 51  First version:  2  |
+|      Repetition: ...... 67  ms  Section cnt: ....... 51  First version:  2  |
 |      Min repet.: ....... 1  ms  Table cnt: ......... 51  Last version: . 5  |
-|      Max repet.: ..... 199  ms  Versions: ..................... 2, 3, 4, 5  |
+|      Max repet.: ..... 197  ms  Versions: ..................... 2, 3, 4, 5  |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0004 (4)                                 |
 |      Repetition: ...... 44  ms  Section cnt: ....... 79  First version:  1  |
 |      Min repet.: ....... 0  ms  Table cnt: ......... 79  Last version: . 4  |
-|      Max repet.: ..... 312  ms  Versions: ..................... 1, 2, 3, 4  |
+|      Max repet.: ..... 308  ms  Versions: ..................... 1, 2, 3, 4  |
 |=============================================================================|
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
 |  0x73 (115, TOT)                                                            |
-|      Repetition: ..... 826  ms  Section cnt: ........ 3                     |
-|      Min repet.: ..... 228  ms                                              |
-|      Max repet.: .... 1424  ms                                              |
+|      Repetition: ..... 818  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 226  ms                                              |
+|      Max repet.: .... 1409  ms                                              |
 |=============================================================================|
 |  PID: 0x0190 (400)                                                     PMT  |
 |  Service: 0x0415 (1045) France 5                                            |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x0415 (1045)                                      |
-|      Repetition: ..... 111  ms  Section cnt: ....... 32                     |
+|      Repetition: ..... 110  ms  Section cnt: ....... 32                     |
 |      Min repet.: ...... 86  ms  Table cnt: ......... 32                     |
-|      Max repet.: ..... 440  ms  Version: ............ 1                     |
+|      Max repet.: ..... 436  ms  Version: ............ 1                     |
 ===============================================================================
 

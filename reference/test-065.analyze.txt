@@ -12,11 +12,12 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: .......................... 2,053,130 b/s    2,227,865 b/s  |
 |  Estimated based on PCR's: ................ 2,053,356 b/s    2,228,109 b/s  |
+|  Selected reference bitrate: .............. 2,053,356 b/s    2,228,109 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ................................... 38 sec (0 min 38 sec)  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x0FA6  ARTE ......................................... C    2,045,798 b/s  |
+|  0x0FA6  ARTE ......................................... C    2,046,023 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -30,8 +31,8 @@
 |  TS packets: 186, PID's: 4 (clear: 4, scrambled: 0)                         |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C        7,332 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C        7,135 b/s  |
+|   Total  Global PID's ................................. C        7,333 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C        7,136 b/s  |
 |  0x0000  PAT .......................................... C        3,193 b/s  |
 |  0x0001  CAT .......................................... C        3,154 b/s  |
 |  0x0011  SDT/BAT ...................................... C          788 b/s  |
@@ -44,14 +45,14 @@
 |  PMT PID: 0x00A0 (160), PCR PID: 0x0424 (1060)                              |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Digital television service ................... C    2,045,798 b/s  |
+|   Total  Digital television service ................... C    2,046,023 b/s  |
 |  0x00A0  PMT .......................................... C        3,193 b/s  |
-|  0x0424  AVC video (720x576, main profile, level 3.0,   C    1,549,781 b/s  |
-|  0x0425  MPEG-2 Audio (fra, Audio layer II, 128 kb/s,   C      135,761 b/s  |
-|  0x0426  MPEG-2 Audio (eng, Audio layer II, 128 kb/s,   C      135,761 b/s  |
-|  0x0427  MPEG-2 Audio (deu, Audio layer II, 64 kb/s, @  C       73,084 b/s  |
-|  0x042B  MPEG-2 Audio (qad, visual impaired commentary  C       73,084 b/s  |
-|  0x042C  Teletext (fra, Teletext subtitles for hearing  C       75,134 b/s  |
+|  0x0424  AVC video (720x576, main profile, level 3.0,   C    1,549,952 b/s  |
+|  0x0425  MPEG-2 Audio (fra, Audio layer II, 128 kb/s,   C      135,776 b/s  |
+|  0x0426  MPEG-2 Audio (eng, Audio layer II, 128 kb/s,   C      135,776 b/s  |
+|  0x0427  MPEG-2 Audio (deu, Audio layer II, 64 kb/s, @  C       73,092 b/s  |
+|  0x042B  MPEG-2 Audio (qad, visual impaired commentary  C       73,092 b/s  |
+|  0x042C  Teletext (fra, Teletext subtitles for hearing  C       75,142 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -98,7 +99,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 1,549,781 b/s  Packets: ........ 39,315  Expected: ......... 0  |
+|  Bitrate: . 1,549,952 b/s  Packets: ........ 39,315  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........ 2,800  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............. 1,045  Packets: ...... 1,907  |
@@ -110,7 +111,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 135,761 b/s  Packets: ......... 3,444  Expected: ......... 0  |
+|  Bitrate: ... 135,776 b/s  Packets: ......... 3,444  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -122,7 +123,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 135,761 b/s  Packets: ......... 3,444  Expected: ......... 0  |
+|  Bitrate: ... 135,776 b/s  Packets: ......... 3,444  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -134,7 +135,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 73,084 b/s  Packets: ......... 1,854  Expected: ......... 0  |
+|  Bitrate: .... 73,092 b/s  Packets: ......... 1,854  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -146,7 +147,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 73,084 b/s  Packets: ......... 1,854  Expected: ......... 0  |
+|  Bitrate: .... 73,092 b/s  Packets: ......... 1,854  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 265  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 265  |
@@ -158,7 +159,7 @@
 |  Service: 0x0FA6 (4006) ARTE                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 75,134 b/s  Packets: ......... 1,906  Expected: ......... 0  |
+|  Bitrate: .... 75,142 b/s  Packets: ......... 1,906  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ........ 953  |

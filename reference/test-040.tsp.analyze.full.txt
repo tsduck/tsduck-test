@@ -12,16 +12,17 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: ......................... 19,392,946 b/s   21,043,409 b/s  |
 |  Estimated based on PCR's: ............... 19,393,289 b/s   21,043,781 b/s  |
+|  Selected reference bitrate: ............. 19,393,289 b/s   21,043,781 b/s  |
 |-----------------------------------------------------------------------------|
 |  Broadcast time: ..................................... 8 sec (0 min 8 sec)  |
 |  First STT UTC time stamp: ........................... 2019/03/17 10:48:21  |
 |  Last STT UTC time stamp: ............................ 2019/03/17 10:48:29  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x0003  KULX ......................................... C   10,904,259 b/s  |
-|  0x0004  TelXito ...................................... C    2,500,157 b/s  |
-|  0x0005  LightTV ...................................... C    2,498,152 b/s  |
-|  0x0006  Quest ........................................ C    2,500,157 b/s  |
+|  0x0003  KULX ......................................... C   10,904,452 b/s  |
+|  0x0004  TelXito ...................................... C    2,500,202 b/s  |
+|  0x0005  LightTV ...................................... C    2,498,196 b/s  |
+|  0x0006  Quest ........................................ C    2,500,202 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -35,20 +36,20 @@
 |  TS packets: 5,432, PID's: 12 (clear: 12, scrambled: 0)                     |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C      990,219 b/s  |
+|   Total  Global PID's ................................. C      990,237 b/s  |
 |   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       14,766 b/s  |
 |  0x0000  PAT .......................................... C       14,766 b/s  |
-|  0x1D00  ATSC EIT-0 ................................... C       30,625 b/s  |
+|  0x1D00  ATSC EIT-0 ................................... C       30,626 b/s  |
 |  0x1D01  ATSC EIT-1 ................................... C       11,485 b/s  |
 |  0x1D02  ATSC EIT-2 ................................... C        5,469 b/s  |
 |  0x1D03  ATSC EIT-3 ................................... C        2,917 b/s  |
-|  0x1E00  ATSC ETT-0 ................................... C       68,178 b/s  |
-|  0x1E01  ATSC ETT-1 ................................... C       22,422 b/s  |
+|  0x1E00  ATSC ETT-0 ................................... C       68,179 b/s  |
+|  0x1E01  ATSC ETT-1 ................................... C       22,423 b/s  |
 |  0x1E02  ATSC ETT-2 ................................... C       13,125 b/s  |
 |  0x1E03  ATSC ETT-3 ................................... C        8,386 b/s  |
 |  0x1E80  ATSC ETT ..................................... C        6,198 b/s  |
-|  0x1FFB  ATSC PSIP (ATSC TVCT-current, ATSC RRT-1) .... C       20,599 b/s  |
-|  0x1FFF  Stuffing ..................................... C      786,050 b/s  |
+|  0x1FFB  ATSC PSIP (ATSC TVCT-current, ATSC RRT-1) .... C       20,600 b/s  |
+|  0x1FFF  Stuffing ..................................... C      786,064 b/s  |
 |=============================================================================|
 |  Service: 0x0003 (3), TS: 0x1FE1 (8161), Original Netw: 0x0000 (0)          |
 |  Service name: KULX, provider: ATSC 10.1                                    |
@@ -57,10 +58,10 @@
 |  PMT PID: 0x0030 (48), PCR PID: 0x0031 (49)                                 |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Undefined .................................... C   10,904,259 b/s  |
+|   Total  Undefined .................................... C   10,904,452 b/s  |
 |  0x0030  PMT .......................................... C        4,375 b/s  |
-|  0x0031  MPEG-2 Video (1280x720p, @25 Hz, 16:9, 4:2:0)  C   10,506,312 b/s  |
-|  0x0034  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      393,572 b/s  |
+|  0x0031  MPEG-2 Video (1280x720p, @25 Hz, 16:9, 4:2:0)  C   10,506,498 b/s  |
+|  0x0034  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      393,579 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x0004 (4), TS: 0x1FE1 (8161), Original Netw: 0x0000 (0)          |
@@ -70,10 +71,10 @@
 |  PMT PID: 0x0040 (64), PCR PID: 0x0041 (65)                                 |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Undefined .................................... C    2,500,157 b/s  |
+|   Total  Undefined .................................... C    2,500,202 b/s  |
 |  0x0040  PMT .......................................... C        4,375 b/s  |
-|  0x0041  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,298,541 b/s  |
-|  0x0044  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,242 b/s  |
+|  0x0041  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,298,581 b/s  |
+|  0x0044  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,245 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x0005 (5), TS: 0x1FE1 (8161), Original Netw: 0x0000 (0)          |
@@ -83,10 +84,10 @@
 |  PMT PID: 0x0050 (80), PCR PID: 0x0051 (81)                                 |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Undefined .................................... C    2,498,152 b/s  |
+|   Total  Undefined .................................... C    2,498,196 b/s  |
 |  0x0050  PMT .......................................... C        4,375 b/s  |
-|  0x0051  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,296,353 b/s  |
-|  0x0054  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,424 b/s  |
+|  0x0051  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,296,394 b/s  |
+|  0x0054  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,428 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x0006 (6), TS: 0x1FE1 (8161), Original Netw: 0x0000 (0)          |
@@ -96,10 +97,10 @@
 |  PMT PID: 0x0060 (96), PCR PID: 0x0061 (97)                                 |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Undefined .................................... C    2,500,157 b/s  |
+|   Total  Undefined .................................... C    2,500,202 b/s  |
 |  0x0060  PMT .......................................... C        4,375 b/s  |
-|  0x0061  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,298,176 b/s  |
-|  0x0064  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,606 b/s  |
+|  0x0061  MPEG-2 Video (704x480i, @24 Hz, 4:3, 4:2:0) .. C    2,298,217 b/s  |
+|  0x0064  ATSC AC-3 Audio (eng, AC-3, stereo (L,R), @48  C      197,610 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -130,7 +131,7 @@
 |  Service: 0x0003 (3) KULX                                                   |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate:  10,506,312 b/s  Packets: ........ 57,634  Expected: ......... 0  |
+|  Bitrate:  10,506,498 b/s  Packets: ........ 57,634  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 740  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 245  Packets: ........ 499  |
@@ -142,7 +143,7 @@
 |  Service: 0x0003 (3) KULX                                                   |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 393,572 b/s  Packets: ......... 2,159  Expected: ......... 0  |
+|  Bitrate: ... 393,579 b/s  Packets: ......... 2,159  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 32  |
@@ -163,7 +164,7 @@
 |  Service: 0x0004 (4) TelXito                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,298,541 b/s  Packets: ........ 12,609  Expected: ......... 0  |
+|  Bitrate: . 2,298,581 b/s  Packets: ........ 12,609  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 474  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 242  Packets: ........ 239  |
@@ -175,7 +176,7 @@
 |  Service: 0x0004 (4) TelXito                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 197,242 b/s  Packets: ......... 1,082  Expected: ......... 0  |
+|  Bitrate: ... 197,245 b/s  Packets: ......... 1,082  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 51  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 52  |
@@ -196,7 +197,7 @@
 |  Service: 0x0005 (5) LightTV                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,296,353 b/s  Packets: ........ 12,597  Expected: ......... 0  |
+|  Bitrate: . 2,296,394 b/s  Packets: ........ 12,597  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 486  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 242  Packets: ........ 249  |
@@ -208,7 +209,7 @@
 |  Service: 0x0005 (5) LightTV                                                |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 197,424 b/s  Packets: ......... 1,083  Expected: ......... 0  |
+|  Bitrate: ... 197,428 b/s  Packets: ......... 1,083  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 51  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 52  |
@@ -229,7 +230,7 @@
 |  Service: 0x0006 (6) Quest                                                  |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 2,298,176 b/s  Packets: ........ 12,607  Expected: ......... 0  |
+|  Bitrate: . 2,298,217 b/s  Packets: ........ 12,607  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 489  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 243  Packets: ........ 248  |
@@ -241,7 +242,7 @@
 |  Service: 0x0006 (6) Quest                                                  |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 197,606 b/s  Packets: ......... 1,084  Expected: ......... 0  |
+|  Bitrate: ... 197,610 b/s  Packets: ......... 1,084  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 52  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 51  |
@@ -250,7 +251,7 @@
 |  PID: 0x1D00 (7424)                                             ATSC EIT-0  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 30,625 b/s  Packets: ........... 168  Expected: ......... 0  |
+|  Bitrate: .... 30,626 b/s  Packets: ........... 168  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 67  |
@@ -282,7 +283,7 @@
 |  PID: 0x1E00 (7680)                                             ATSC ETT-0  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 68,178 b/s  Packets: ........... 374  Expected: ......... 0  |
+|  Bitrate: .... 68,179 b/s  Packets: ........... 374  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 289  |
@@ -290,7 +291,7 @@
 |  PID: 0x1E01 (7681)                                             ATSC ETT-1  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 22,422 b/s  Packets: ........... 123  Expected: ......... 0  |
+|  Bitrate: .... 22,423 b/s  Packets: ........... 123  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 113  |
@@ -324,7 +325,7 @@
 |  ATSC RRT-1                                                                 |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 20,599 b/s  Packets: ........... 113  Expected: ......... 0  |
+|  Bitrate: .... 20,600 b/s  Packets: ........... 113  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 91  |
@@ -332,7 +333,7 @@
 |  PID: 0x1FFF (8191)                                               Stuffing  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ... 786,050 b/s  Packets: ......... 4,312  Expected: ......... 0  |
+|  Bitrate: ... 786,064 b/s  Packets: ......... 4,312  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ....... 0  |

@@ -12,8 +12,9 @@
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: .......................... 4,975,838 b/s    5,399,314 b/s  |
 |  Estimated based on PCR's: ................ 4,265,319 b/s    4,628,325 b/s  |
+|  Selected reference bitrate: .............. 4,265,319 b/s    4,628,325 b/s  |
 |-----------------------------------------------------------------------------|
-|  Broadcast time: ................................... 12 sec (0 min 12 sec)  |
+|  Broadcast time: ................................... 15 sec (0 min 15 sec)  |
 |  First TDT UTC time stamp: ....................................... Unknown  |
 |  Last TDT UTC time stamp: ........................................ Unknown  |
 |  First TOT local time stamp: ......................... 2018/05/02 17:33:00  |
@@ -21,7 +22,7 @@
 |  TOT country code: ................................................... FRA  |
 |-----------------------------------------------------------------------------|
 |  Srv Id  Service Name                              Access          Bitrate  |
-|  0x226A  CNEWS ........................................ C    4,930,488 b/s  |
+|  0x226A  CNEWS ........................................ C    4,226,445 b/s  |
 |                                                                             |
 |  Note 1: C=Clear, S=Scrambled                                               |
 |  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
@@ -35,11 +36,11 @@
 |  TS packets: 388, PID's: 3 (clear: 3, scrambled: 0)                         |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C       45,351 b/s  |
-|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       45,351 b/s  |
-|  0x0000  PAT .......................................... C       17,649 b/s  |
-|  0x0011  SDT/BAT ...................................... C       25,831 b/s  |
-|  0x0014  TDT/TOT ...................................... C        1,870 b/s  |
+|   Total  Global PID's ................................. C       38,875 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       38,875 b/s  |
+|  0x0000  PAT .......................................... C       15,129 b/s  |
+|  0x0011  SDT/BAT ...................................... C       22,143 b/s  |
+|  0x0014  TDT/TOT ...................................... C        1,603 b/s  |
 |=============================================================================|
 |  Service: 0x226A (8810), TS: 0x0438 (1080), Original Netw: 0x0001 (1)       |
 |  Service name: CNEWS, provider: CSAT                                        |
@@ -48,12 +49,12 @@
 |  PMT PID: 0x03E8 (1000), PCR PID: 0x03F2 (1010)                             |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Advanced codec HD digital television service . C    4,930,488 b/s  |
-|  0x03E8  PMT .......................................... C       17,649 b/s  |
-|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    4,680,708 b/s  |
-|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      230,143 b/s  |
+|   Total  Advanced codec HD digital television service . C    4,226,445 b/s  |
+|  0x03E8  PMT .......................................... C       15,129 b/s  |
+|  0x03F2  AVC video (1920x1080, high profile, level 4.0  C    4,012,332 b/s  |
+|  0x03FD  AC-3 Audio (fra, AC-3, stereo (L,R), @48,000   C      197,280 b/s  |
 |  0x0413  Subtitles (fra, DVB subtitles for hard of hea  C            0 b/s  |
-|  0x0500  SCTE 35 Splice Info .......................... C        1,987 b/s  |
+|  0x0500  SCTE 35 Splice Info .......................... C        1,703 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 ===============================================================================
 
@@ -64,7 +65,7 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 17,649 b/s  Packets: ........... 151  Expected: ......... 0  |
+|  Bitrate: .... 15,129 b/s  Packets: ........... 151  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 151  |
@@ -72,7 +73,7 @@
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: .... 25,831 b/s  Packets: ........... 221  Expected: ......... 0  |
+|  Bitrate: .... 22,143 b/s  Packets: ........... 221  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 221  |
@@ -80,7 +81,7 @@
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
 |  Global PID                Transport:                Discontinuities:       |
-|  Bitrate: ..... 1,870 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Bitrate: ..... 1,603 b/s  Packets: ............ 16  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 16  |
@@ -89,7 +90,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: .... 17,649 b/s  Packets: ........... 151  Expected: ......... 0  |
+|  Bitrate: .... 15,129 b/s  Packets: ........... 151  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ..... 151  |
@@ -100,7 +101,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: . 4,680,708 b/s  Packets: ........ 40,046  Expected: ......... 0  |
+|  Bitrate: . 4,012,332 b/s  Packets: ........ 40,046  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 819  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ............... 429  Packets: ........ 380  |
@@ -112,7 +113,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ... 230,143 b/s  Packets: ......... 1,969  Expected: ......... 0  |
+|  Bitrate: ... 197,280 b/s  Packets: ......... 1,969  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 188  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  PES:                   |
 |                            PCR: ................. 0  Packets: ......... 94  |
@@ -122,7 +123,7 @@
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
-|  Bitrate: ..... 1,987 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Bitrate: ..... 1,703 b/s  Packets: ............ 17  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                            PCR: ................. 0  Unit start: ...... 17  |
@@ -135,38 +136,38 @@
 |  PID: 0x0000 (0)                                                       PAT  |
 |-----------------------------------------------------------------------------|
 |  0x00 (0, PAT), TID ext: 0x0438 (1080)                                      |
-|      Repetition: ...... 86  ms  Section cnt: ...... 151                     |
-|      Min repet.: ...... 36  ms  Table cnt: ........ 151                     |
-|      Max repet.: ..... 127  ms  Version: ........... 12                     |
+|      Repetition: ..... 100  ms  Section cnt: ...... 151                     |
+|      Min repet.: ...... 42  ms  Table cnt: ........ 151                     |
+|      Max repet.: ..... 148  ms  Version: ........... 12                     |
 |=============================================================================|
 |  PID: 0x0011 (17)                                                  SDT/BAT  |
 |-----------------------------------------------------------------------------|
 |  0x42 (66, SDT Actual), TID ext: 0x0438 (1080)                              |
-|      Repetition: ...... 58  ms  Section cnt: ...... 221                     |
+|      Repetition: ...... 68  ms  Section cnt: ...... 221                     |
 |      Min repet.: ....... 1  ms  Table cnt: ........ 221                     |
-|      Max repet.: ..... 609  ms  Version: ........... 13                     |
+|      Max repet.: ..... 711  ms  Version: ........... 13                     |
 |=============================================================================|
 |  PID: 0x0014 (20)                                                  TDT/TOT  |
 |-----------------------------------------------------------------------------|
 |  0x73 (115, TOT)                                                            |
-|      Repetition: ..... 845  ms  Section cnt: ....... 16                     |
-|      Min repet.: ..... 626  ms                                              |
-|      Max repet.: .... 1115  ms                                              |
+|      Repetition: ..... 985  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 731  ms                                              |
+|      Max repet.: .... 1301  ms                                              |
 |=============================================================================|
 |  PID: 0x03E8 (1000)                                                    PMT  |
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  0x02 (2, PMT), TID ext: 0x226A (8810)                                      |
-|      Repetition: ...... 86  ms  Section cnt: ...... 151                     |
-|      Min repet.: ...... 62  ms  Table cnt: ........ 151                     |
-|      Max repet.: ..... 126  ms  Version: ............ 1                     |
+|      Repetition: ..... 100  ms  Section cnt: ...... 151                     |
+|      Min repet.: ...... 73  ms  Table cnt: ........ 151                     |
+|      Max repet.: ..... 147  ms  Version: ............ 1                     |
 |=============================================================================|
 |  PID: 0x0500 (1280)                                    SCTE 35 Splice Info  |
 |  Service: 0x226A (8810) CNEWS                                               |
 |-----------------------------------------------------------------------------|
 |  0xFC (252, SCTE 35 Splice Information)                                     |
-|      Repetition: ..... 759  ms  Section cnt: ....... 17                     |
-|      Min repet.: ..... 236  ms                                              |
-|      Max repet.: ..... 836  ms                                              |
+|      Repetition: ..... 885  ms  Section cnt: ....... 17                     |
+|      Min repet.: ..... 275  ms                                              |
+|      Max repet.: ..... 975  ms                                              |
 ===============================================================================
 
