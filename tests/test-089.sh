@@ -15,3 +15,25 @@ test_bin $SCRIPT-000000.ts
 test_bin $SCRIPT-000001.ts
 test_bin $SCRIPT-000002.ts
 test_bin $SCRIPT-000003.ts
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
+    -O hls $(fpath "$OUTDIR/$SCRIPT.event-.ts") --duration 4 --intra-close --event --playlist $(fpath "$OUTDIR/$SCRIPT.event.m3u8") \
+    >"$OUTDIR/$SCRIPT.event.log" 2>&1
+
+test_text $SCRIPT.event.log
+test_text $SCRIPT.event.m3u8
+test_bin $SCRIPT.event-000000.ts
+test_bin $SCRIPT.event-000001.ts
+test_bin $SCRIPT.event-000002.ts
+test_bin $SCRIPT.event-000003.ts
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
+    -O hls $(fpath "$OUTDIR/$SCRIPT.live-.ts") --duration 4 --intra-close --live 2 --playlist $(fpath "$OUTDIR/$SCRIPT.live.m3u8") \
+    >"$OUTDIR/$SCRIPT.live.log" 2>&1
+
+test_text $SCRIPT.live.log
+test_text $SCRIPT.live.m3u8
+test_bin $SCRIPT.live-000002.ts
+test_bin $SCRIPT.live-000003.ts

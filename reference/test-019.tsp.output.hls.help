@@ -22,6 +22,11 @@ Options:
       Specify the target duration in seconds of media segments. The default is
       10 seconds per segment for VoD streams and 5 seconds for live streams.
 
+  -e
+  --event
+      Specify that the output is a event playlist. By default, the output
+      stream is considered as VoD.
+
   -f value
   --fixed-segment-size value
       Specify the size in bytes of all media segments. By default, the segment
