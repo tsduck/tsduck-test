@@ -29,6 +29,11 @@ Options:
       are interpreted as EMMG/PDG <=> MUX protocol (this is the only DVB
       SimulCrypt protocol which is based on UDP).
 
+  -e
+  --extract-tcp-stream
+      Extract the content of a TCP session as hexadecimal dump. The first TCP
+      session matching the --source and --destination options is selected.
+
   --first-date date-time
       Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
       mm:ss.mmm.

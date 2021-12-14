@@ -201,3 +201,4 @@ repository. But we now limit their size to 20 MB.
 | 104  | Non-regression test on EIT Schedule generation
 | 105  | `tsemmg` and `datainject` plugin
 | 106  | Pcap file with EMMG <=> MUX DVB SimulCrypt protocol
+| 107  | Pcap file with ECMG <=> SCS DVB SimulCrypt protocol
