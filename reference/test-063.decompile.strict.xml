@@ -310,4 +310,14 @@
       </reserved_data>
     </STC_reference_descriptor>
   </CAT>
+  <CDT version="0" current="true" download_data_id="0x1234" original_network_id="0x5678" data_type="0x9A"/>
+  <CDT version="0" current="true" download_data_id="0xDEAD" original_network_id="0xBEEF" data_type="0xF0">
+    <scrambling_descriptor scrambling_mode="0x01"/>
+    <scrambling_descriptor scrambling_mode="0x02"/>
+    <scrambling_descriptor scrambling_mode="0x03"/>
+    <data_module>
+      01 23 45 67 89 AB CD EF A0 A1 A2 A3 A4 A5 A6 A7
+      B8 B9 BA BB BC BD BE BF
+    </data_module>
+  </CDT>
 </tsduck>

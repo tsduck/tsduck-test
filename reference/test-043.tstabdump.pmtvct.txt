@@ -3,9 +3,8 @@
   Section: 0 (last: 0), version: 2, size: 88 bytes
   Program: 3 (0x0003), PCR PID: 49 (0x0031)
   Program information:
-  - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
-    Component name: Number of strings: 1
-      Language: "eng", text: "enc"
+  - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
+    0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
   Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
@@ -18,67 +17,27 @@
   Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
-  - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
-    Component name: Number of strings: 1
-      Language: "eng", text: "audio-1"
-  - Descriptor 2: ATSC AC-3 Audio (0x81, 129), 10 bytes
-    Sample rate: 48 kHz (0x0)
-    AC-3 coding version: 0x08 (8)
-    Bit rate: 384 kb/s (0x0E)
-    Surround mode: Not indicated (0x0)
-    Bitstream mode: main audio service: complete main (CM) (0x0)
-    Num. channels: 2/0 (0x2)
-    Full service: true
-    Main audio service id: 0
-    Priority: 1
-    Text: ""
-    Language: "eng"
+  - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes
+    0000:  01 65 6E 67 01 00 00 07 61 75 64 69 6F 2D 31     .eng....audio-1
+  - Descriptor 2: unknown (0x81, 129), 10 bytes
+    0000:  08 38 05 FF 0F 01 BF 65 6E 67                    .8.....eng
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
-* TVCT (ATSC), TID 200 (0xC8)
+* TVCT (ATSC) or CDT (ISDB), TID 200 (0xC8)
   Section: 0 (last: 0), version: 11, size: 218 bytes
-  Transport stream id: 0x1FE1 (8161)
-  Protocol version: 0, number of channels: 4
-  - Channel 10.1, short name: "KULX   "
-    Modulation: ATSC 8-VSB, frequency: 0
-    TS id: 0x1FE1 (8161), program number: 0x0003 (3)
-    ETM location: 1, access controlled: no
-    Hidden: no, hide guide: no
-    Service type: ATSC Digital Television, source id: 0x0001 (1)
-    - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
-      PCR PID: 0x0031 (49), number of elements: 3
-      - PID: 0x0031 (49), language: "", type: 0x02 (Digital radio sound service)
-      - PID: 0x0034 (52), language: "eng", type: 0x81 (unknown)
-      - PID: 0x0035 (53), language: "eng", type: 0x81 (unknown)
-  - Channel 10.2, short name: "TelXito"
-    Modulation: ATSC 8-VSB, frequency: 0
-    TS id: 0x1FE1 (8161), program number: 0x0004 (4)
-    ETM location: 1, access controlled: no
-    Hidden: no, hide guide: no
-    Service type: ATSC Digital Television, source id: 0x0002 (2)
-    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-      PCR PID: 0x0041 (65), number of elements: 2
-      - PID: 0x0041 (65), language: "", type: 0x02 (Digital radio sound service)
-      - PID: 0x0044 (68), language: "eng", type: 0x81 (unknown)
-  - Channel 10.3, short name: "LightTV"
-    Modulation: ATSC 8-VSB, frequency: 0
-    TS id: 0x1FE1 (8161), program number: 0x0005 (5)
-    ETM location: 0, access controlled: no
-    Hidden: no, hide guide: no
-    Service type: ATSC Digital Television, source id: 0x0003 (3)
-    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-      PCR PID: 0x0051 (81), number of elements: 2
-      - PID: 0x0051 (81), language: "", type: 0x02 (Digital radio sound service)
-      - PID: 0x0054 (84), language: "eng", type: 0x81 (unknown)
-  - Channel 10.4, short name: "Quest  "
-    Modulation: ATSC 8-VSB, frequency: 0
-    TS id: 0x1FE1 (8161), program number: 0x0006 (6)
-    ETM location: 0, access controlled: no
-    Hidden: no, hide guide: no
-    Service type: ATSC Digital Television, source id: 0x0004 (4)
-    - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
-      PCR PID: 0x0061 (97), number of elements: 2
-      - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
-      - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
+  TIDext: 8161 (0x1FE1)
+  0000:  00 04 00 4B 00 55 00 4C 00 58 00 20 00 20 00 20  ...K.U.L.X. . .
+  0010:  F0 28 01 04 00 00 00 00 1F E1 00 03 4D C2 00 01  .(..........M...
+  0020:  FC 17 A1 15 E0 31 03 02 E0 31 00 00 00 81 E0 34  .....1...1.....4
+  0030:  65 6E 67 81 E0 35 65 6E 67 00 54 00 65 00 6C 00  eng..5eng.T.e.l.
+  0040:  58 00 69 00 74 00 6F F0 28 02 04 00 00 00 00 1F  X.i.t.o.(.......
+  0050:  E1 00 04 4D C2 00 02 FC 11 A1 0F E0 41 02 02 E0  ...M........A...
+  0060:  41 00 00 00 81 E0 44 65 6E 67 00 4C 00 69 00 67  A.....Deng.L.i.g
+  0070:  00 68 00 74 00 54 00 56 F0 28 03 04 00 00 00 00  .h.t.T.V.(......
+  0080:  1F E1 00 05 0D C2 00 03 FC 11 A1 0F E0 51 02 02  .............Q..
+  0090:  E0 51 00 00 00 81 E0 54 65 6E 67 00 51 00 75 00  .Q.....Teng.Q.u.
+  00A0:  65 00 73 00 74 00 20 00 20 F0 28 04 04 00 00 00  e.s.t. . .(.....
+  00B0:  00 1F E1 00 06 0D C2 00 04 FC 11 A1 0F E0 61 02  ..............a.
+  00C0:  02 E0 61 00 00 00 81 E0 64 65 6E 67 FC 00        ..a.....deng..
 

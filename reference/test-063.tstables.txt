@@ -573,3 +573,27 @@
       Segmentation mode: 9 (Reserved)
       Reserved data (4 bytes): 12 34 56 78
 
+* CDT (ISDB), TID 200 (0xC8), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 17 bytes
+  - Section 0:
+    Download data id: 0x1234 (4660)
+    Original network id: 0x5678 (22136)
+    Data type: 0x9A (154)
+
+* CDT (ISDB), TID 200 (0xC8), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 50 bytes
+  - Section 0:
+    Download data id: 0xDEAD (57005)
+    Original network id: 0xBEEF (48879)
+    Data type: 0xF0 (240)
+    Common descriptors:
+    - Descriptor 0: Scrambling (0x65, 101), 1 bytes
+      Scrambling mode: 0x01 (DVB-CSA1)
+    - Descriptor 1: Scrambling (0x65, 101), 1 bytes
+      Scrambling mode: 0x02 (DVB-CSA2)
+    - Descriptor 2: Scrambling (0x65, 101), 1 bytes
+      Scrambling mode: 0x03 (DVB-CSA3)
+    Data module (24 bytes):
+      0000:  01 23 45 67 89 AB CD EF A0 A1 A2 A3 A4 A5 A6 A7  .#Eg............
+      0010:  B8 B9 BA BB BC BD BE BF                          ........
+
