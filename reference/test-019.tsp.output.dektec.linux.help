@@ -406,6 +406,11 @@ Options:
       "I128-J5", "I128-J6", "I128-J7", "I128-J8", "I16-J8", "I32-J4", "I64-J2",
       "I8-J16".
 
+  --roll-off value
+      DVB-S2/S2X modulators: indicate the roll-off factor. The default is auto.
+      Must be one of "0.03", "0.05", "0.10", "0.15", "0.20", "0.25", "0.35",
+      "auto", "none".
+
   --rtp
       TS-over-IP: Use RTP protocol. By default, TS packets are sent in UDP
       datagrams without header.
