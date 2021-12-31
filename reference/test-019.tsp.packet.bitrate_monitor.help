@@ -37,8 +37,13 @@ Options:
 
   -p value
   --periodic-bitrate value
-      Always report bitrate at the specific interval in seconds, even if the
+      Always report bitrate at the specific intervals in seconds, even if the
       bitrate is in range.
+
+  --periodic-command value
+      Run the --alarm-command at the specific intervals in seconds, even if the
+      bitrate is in range. With this option, the alarm command is run on state
+      change and at periodic intervals.
 
   --pid value
       Specifies the PID to monitor. By default, when no --pid is specified,
