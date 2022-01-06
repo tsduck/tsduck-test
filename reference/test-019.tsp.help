@@ -130,6 +130,10 @@ Options:
       all DVB strings without explicit table code are assumed to use
       ISO-8859-15 instead of the standard ISO-6937 encoding.
 
+  --final-wait milliseconds
+      Wait the specified number of milliseconds after the last input packet.
+      Zero means wait forever.
+
   --help
       Display this help text.
 

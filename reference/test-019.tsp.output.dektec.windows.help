@@ -29,6 +29,9 @@ Options:
 
   --carrier-only
       Modulators: output the carrier only, without modulated transport stream.
+      All output packets are dropped. To generate an empty carrier and wait
+      forever, use the following sample command:
+      tsp --final-wait 0 -I null 1 -O dektec --carrier-only --frequency ...
 
   --cell-id value
       DVB-T and DVB-T2 modulators: indicate the cell identifier to set in the
