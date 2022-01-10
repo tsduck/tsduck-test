@@ -276,7 +276,9 @@ Options:
 
   --min-strength value
       Minimum signal strength. Frequencies with lower signal strength are
-      ignored (default: 10%).
+      ignored. The value can be in milli-dB or percentage. It depends on the
+      tuner and its driver. Check the displayed unit. The default is 10,
+      whatever unit it is.
 
   -m value
   --modulation value
