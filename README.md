@@ -202,3 +202,4 @@ repository. But we now limit their size to 20 MB.
 | 105  | `tsemmg` and `datainject` plugin
 | 106  | Pcap file with EMMG <=> MUX DVB SimulCrypt protocol
 | 107  | Pcap file with ECMG <=> SCS DVB SimulCrypt protocol
+| 108  | Non-regression test for a crash after using demuxed sections
