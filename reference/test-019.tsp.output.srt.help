@@ -67,6 +67,12 @@ Options:
       IPV6_UNICAST_HOPS for IPV6) depending on socket address family. Applies
       to sender only, default: 64.
 
+  --json-line[='prefix']
+      With --statistics-interval or --final-statistics, report the statistics
+      as one single line in JSON format. The optional string parameter
+      specifies a prefix to prepend on the log line before the JSON text to
+      locate the appropriate line in the logs.
+
   --kmpreannounce value
       The interval (defined in packets) between when a new Stream Encrypting
       Key (SEK) is sent and when switchover occurs. This value also applies to
