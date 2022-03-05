@@ -203,3 +203,4 @@ repository. But we now limit their size to 20 MB.
 | 106  | Pcap file with EMMG <=> MUX DVB SimulCrypt protocol
 | 107  | Pcap file with ECMG <=> SCS DVB SimulCrypt protocol
 | 108  | Non-regression test for a crash after using demuxed sections
+| 109  | Non-regression test for packets without payload in `t2mi` plugin (issue #950)
