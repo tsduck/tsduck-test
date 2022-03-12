@@ -21,7 +21,8 @@ Options:
   -a
   --all-commands
       Same as --display-commands but display all SCTE-35 splice information
-      commands. By default, only display splice insert commands.
+      commands. This is equivalent to --select-commands 0-255. By default, only
+      display splice insert commands.
 
   -d
   --display-commands
@@ -80,6 +81,11 @@ Options:
   -i
   --packet-index
       Display the current TS packet index for each message or event.
+
+  --select-commands value1[–value2]
+      Same as --display-commands but display the specified SCTE-35 command
+      types only. By default, only display splice insert commands. Several
+      --select-commands can be specified.
 
   -s value
   --splice-pid value

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <splice_information_table>
+    <splice_null/>
+  </splice_information_table>
+
+  <splice_information_table>
+    <bandwidth_reservation/>
+  </splice_information_table>
+
+  <splice_information_table>
+    <time_signal pts_time="123456789"/>
+  </splice_information_table>
+
+  <splice_information_table>
+    <splice_insert
+        splice_event_id="0x12345678"
+        out_of_network="true"
+        splice_immediate="true"
+        unique_program_id="0x6789"/>
+  </splice_information_table>
+
+  <splice_information_table>
+    <splice_schedule>
+      <splice_event
+          splice_event_id="0x78912305"
+          splice_event_cancel="true"/>
+    </splice_schedule>
+  </splice_information_table>
+
+</tsduck>
