@@ -52,3 +52,33 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 
 test_text $SCRIPT.4.splice.txt
 test_text $SCRIPT.4.log
+
+$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+    -I file $(fpath "$INFILE") \
+    -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
+    -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
+    -P splicemonitor --packet-index --display-commands --json-line=JSON: \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.5.log" 2>&1
+
+test_text $SCRIPT.5.log
+
+$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+    -I file $(fpath "$INFILE") \
+    -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
+    -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
+    -P splicemonitor --packet-index --all-commands --json-line=JSON: \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.6.log" 2>&1
+
+test_text $SCRIPT.6.log
+
+$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+    -I file $(fpath "$INFILE") \
+    -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
+    -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
+    -P splicemonitor --packet-index --select-commands 4-6 --json-line=JSON: \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.7.log" 2>&1
+
+test_text $SCRIPT.7.log
