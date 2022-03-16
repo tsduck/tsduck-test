@@ -80,9 +80,9 @@ Options:
 
   --no-psi-merge
       Do not merge PSI/SI from the merged TS into the main TS. By default, the
-      PAT, CAT and SDT are merged so that the services from the merged stream
-      are properly referenced and PID's 0x00 to 0x1F are dropped from the
-      merged stream.
+      PAT, CAT, SDT and EIT are merged so that the services from the merged
+      stream are properly referenced and PID's 0x00 to 0x1F are dropped from
+      the merged stream.
 
   --no-smoothing
       Do not attempt to smoothen the insertion of the merged stream. Incoming
