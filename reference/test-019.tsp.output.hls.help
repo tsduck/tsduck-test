@@ -71,6 +71,10 @@ Options:
       no intra-coded image is found. The default is to wait a maximum of 2
       additional seconds for an intra-coded image.
 
+  --no-bitrate
+      With --playlist, do not specify EXT-X-BITRATE tags for each segment in
+      the playlist. This optional tag is present by default.
+
   -p filename
   --playlist filename
       Specify the name of the playlist file. The playlist file is rewritten
