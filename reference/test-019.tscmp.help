@@ -57,6 +57,24 @@ Options:
       specifies a prefix to prepend on the log line before the JSON text to
       locate the appropriate line in the logs.
 
+  --json-udp address:port
+      Same as --json but report the JSON text as one single line in a UDP
+      datagram instead of the output file. The 'address' specifies an IP
+      address which can be either unicast or multicast. It can be also a host
+      name that translates to an IP address. The 'port' specifies the
+      destination UDP port.
+
+  --json-udp-local address
+      With --json-udp, when the destination is a multicast address, specify the
+      IP address of the outgoing local interface. It can be also a host name
+      that translates to a local address.
+
+  --json-udp-ttl value
+      With --json-udp, specifies the TTL (Time-To-Live) socket option. The
+      actual option is either "Unicast TTL" or "Multicast TTL", depending on
+      the destination address. Remember that the default Multicast TTL is 1 on
+      most systems.
+
   -n
   --normalized
       Report in a normalized output format (useful for automatic analysis).

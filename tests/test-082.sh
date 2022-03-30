@@ -21,7 +21,7 @@ for ((i=0; $i<${#OPTS[@]}; i++)); do
         --output $(fpath "$OUTDIR/$SCRIPT.$i.json") \
         >"$OUTDIR/$SCRIPT.$i.log" 2>&1
 
-    test_text $SCRIPT.$i.json
+    [[ ${OPTS[$i]} == *json-line* ]] || test_text $SCRIPT.$i.json
     test_text $SCRIPT.$i.log
 
 done
