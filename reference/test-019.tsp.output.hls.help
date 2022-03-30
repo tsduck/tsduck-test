@@ -17,6 +17,16 @@ Parameter:
 
 Options:
 
+  -a
+  --align-first-segment
+      Force the first output segment to start with a PAT and PMT. Also force
+      the reference video PID to start on a PES packet boundary. With
+      --intra-close, also force this video PID to start on an intra-coded image
+      (I-Frame). By default, the first output segment starts with the first
+      packets in the TS. Using this option, all packets before all starting
+      conditions are dropped. Note that subsequent output segments always start
+      with a copy of the last PAT and PMT.
+
   -d value
   --duration value
       Specify the target duration in seconds of media segments. The default is

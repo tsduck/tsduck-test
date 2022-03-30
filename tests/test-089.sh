@@ -37,3 +37,13 @@ test_text $SCRIPT.live.log
 test_text $SCRIPT.live.m3u8
 test_bin $SCRIPT.live-000002.ts
 test_bin $SCRIPT.live-000003.ts
+
+$(tspath tsp) --synchronous-log \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") --packet-offset 20,000 \
+    -O hls $(fpath "$OUTDIR/$SCRIPT.align-.ts") --duration 4 --intra-close --align-first-segment --playlist $(fpath "$OUTDIR/$SCRIPT.align.m3u8") \
+    >"$OUTDIR/$SCRIPT.align.log" 2>&1
+
+test_text $SCRIPT.align.log
+test_text $SCRIPT.align.m3u8
+test_bin $SCRIPT.align-000000.ts
+test_bin $SCRIPT.align-000001.ts
