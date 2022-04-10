@@ -193,8 +193,8 @@ Options:
       All modulators devices: try to guess modulation parameters from input
       stream. If the input plugin is "dvb", use its modulation parameters.
       Warning: not always accurate on Windows systems. Otherwise, if the
-      specified modulation is DVB-T, try to guess some modulation parameters
-      from the bitrate.
+      specified modulation is DVB-T or DVB-T2, try to guess some modulation
+      parameters from the bitrate.
 
   --instant-detach
       At end of stream, perform an "instant detach" of the output channel. The
