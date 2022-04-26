@@ -39,7 +39,7 @@ for ((i=0; $i<${#OPTIONS[@]}; i++)); do
         -P until --packets 1150 \
         -P sections --pid 100 ${OPTIONS[$i]} \
         -P tables --all-sections --packet-index --text $(fpath "$OUTDIR/$SCRIPT.1$i.txt") \
-        -O file $HOME/tmp/foo.ts \
+        -O drop \
         >"$OUTDIR/$SCRIPT.1$i.log" 2>&1
 
     test_text $SCRIPT.1$i.txt
