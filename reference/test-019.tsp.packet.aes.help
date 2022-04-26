@@ -77,8 +77,8 @@ Options:
   --help
       Display this help text.
 
-  -i value
-  --iv value
+  -i hexa-data
+  --iv hexa-data
       Specifies the initialization vector. Must be a string of 32 hexadecimal
       digits. Must not be used in ECB mode. The default IV is all zeroes.
 
@@ -86,8 +86,8 @@ Options:
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
       when working on Japanese transport streams.
 
-  -k value
-  --key value
+  -k hexa-data
+  --key hexa-data
       Specifies a fixed and constant AES key for all TS packets. The value must
       be a string of 32 or 64 hexadecimal digits. This is a mandatory
       parameter.

@@ -205,3 +205,4 @@ repository. But we now limit their size to 20 MB.
 | 108  | Non-regression test for a crash after using demuxed sections
 | 109  | Non-regression test for packets without payload in `t2mi` plugin (issue #950)
 | 110  | Plugin `splicemonitor` with option `--select-commands`
+| 111  | Section filtering using binary pattern

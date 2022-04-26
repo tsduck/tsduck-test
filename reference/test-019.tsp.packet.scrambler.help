@@ -20,8 +20,8 @@ Parameter:
 
 Options:
 
-  -a value
-  --access-criteria value
+  -a hexa-data
+  --access-criteria hexa-data
       Specifies the access criteria for the service as sent to the ECMG. The
       value must be a suite of hexadecimal digits.
 
@@ -79,8 +79,8 @@ Options:
       and the counter part uses the last N bits. By default, the counter part
       uses the second half of the IV (64 bits).
 
-  -c value
-  --cw value
+  -c hexa-data
+  --cw hexa-data
       Specifies a fixed and constant control word for all TS packets. The value
       must be a string of 16 hexadecimal digits (32 digits with --atis-idsa).
 
@@ -142,7 +142,7 @@ Options:
       likely scrambled with a different control word, descrambling will not be
       possible the usual way.
 
-  --iv value
+  --iv hexa-data
       With --aes-cbc or --aes-ctr, specifies a fixed initialization vector for
       all TS packets. The value must be a string of 32 hexadecimal digits. The
       default IV is all zeroes.
@@ -212,7 +212,7 @@ Options:
       a risk to later discover that this PID is already used. In that case,
       specify --pid-ecm with a notoriously unused PID value.
 
-  --private-data value
+  --private-data hexa-data
       Specifies the private data to insert in the CA_descriptor in the PMT. The
       value must be a suite of hexadecimal digits.
 

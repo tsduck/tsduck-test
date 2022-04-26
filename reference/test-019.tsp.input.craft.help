@@ -44,7 +44,7 @@ Options:
   --opcr value
       Set this OPCR value in the packets. An adaptation field is created.
 
-  --payload-pattern value
+  --payload-pattern hexa-data
       Specify the binary pattern to apply on packets payload. The value must be
       a string of hexadecimal digits specifying any number of bytes. The
       pattern is repeated to fill the payload. The default is FF.
@@ -66,7 +66,7 @@ Options:
   --priority
       Set the transport_priority flag in the packets.
 
-  --private-data value
+  --private-data hexa-data
       Specify the binary content of the transport_private_data in the
       adaptation field. The value must be a string of hexadecimal digits
       specifying any number of bytes.

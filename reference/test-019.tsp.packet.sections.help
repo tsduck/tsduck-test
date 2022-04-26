@@ -1,5 +1,5 @@
 
-Remove or merge sections from various PID's
+Remove, keep or merge sections from various PID's
 
 Usage: tsp -P sections [options]
 
@@ -7,18 +7,25 @@ Options:
 
   -a
   --and
-      Remove a section when all remove conditions are true. By default, a
-      section is removed as soon as one remove condition is true.
+      Remove/keep a section when all conditions are true. By default, a section
+      is removed/kept as soon as one condition is true.
 
-  --etid-remove id1[-id2]
-      Remove all sections with the corresponding "extended table id" values.
-      The value is a combination of the table id and the table id extension.
-      For example, the option -e 0x4A1234 removes all BAT sections (table id
-      0x4A) for bouquet id 0x1234 (table id extension). Several options
-      --etid-remove can be specified. See also option --reverse-etid.
+  --etid id1[-id2]
+      Remove/keep all sections with the corresponding "extended table id"
+      values. The value is a combination of the table id and the table id
+      extension. For example, the option -e 0x4A1234 removes/keeps all BAT
+      sections (table id 0x4A) for bouquet id 0x1234 (table id extension).
+      Several options --etid can be specified. See also option --reverse-etid.
 
   --help
       Display this help text.
+
+  -k
+  --keep
+      Keep selected sections and remove others. The selection options are
+      --tid, --etid, --version, etc. By default, when selection options are
+      present, the selected sections are removed. If no selection option is
+      present, the sections are simply merged from the various input PID's.
 
   -n
   --null-pid-reuse
@@ -49,15 +56,32 @@ Options:
 
   -r
   --reverse-etid
-      With option --etid-remove, reverse the table id and the table id
-      extension parts in the "extended table id" values. With this option, the
-      values in --etid-remove are 0xEEEETT instead of 0xTTEEEE where 'TT' is
-      the table id part and 'EEEE' the table id extension part. This option can
-      be useful when specifying ranges of values. For instance, the option
-      '--etid-remove 0x4A1234-0x4A1250' removes BAT sections (table id 0x4A)
-      for all service ids in the range 0x1234 to 0x1250. On the other hand, the
-      options '--etid-remove 0x12344E-0x12346F --reverse-etid' remove all EIT
-      sections (table ids 0x4E to 0x6F) for the service id 0x1234.
+      With option --etid, reverse the table id and the table id extension parts
+      in the "extended table id" values. With this option, the values in --etid
+      are 0xEEEETT instead of 0xTTEEEE where 'TT' is the table id part and
+      'EEEE' the table id extension part. This option can be useful when
+      specifying ranges of values. For instance, the option '--etid
+      0x4A1234-0x4A1250' removes/keeps BAT sections (table id 0x4A) for all
+      service ids in the range 0x1234 to 0x1250. On the other hand, the options
+      '--etid 0x12344E-0x12346F --reverse-etid' remove/keep all EIT sections
+      (table ids 0x4E to 0x6F) for the service id 0x1234.
+
+  --section-content hexa-data
+      Remove/keep all sections the binary content of which starts with the
+      specified binary data. The value must be a string of hexadecimal digits
+      specifying any number of bytes. See also option --section-mask to specify
+      selected bits or bytes only. Several options --section-content can be
+      specified.
+
+  --section-mask hexa-data
+      With --section-content, specify a mask of meaningful bits in the binary
+      data that must match the beginning of the section. The value must be a
+      string of hexadecimal digits specifying any number of bytes. If omitted
+      or shorter than the --section-content parameter, the mask is implicitely
+      padded with FF bytes. If several options --section-content are specified,
+      several options --section-mask can be specified. The first mask applies
+      to the first content, the second mask to the second content, etc. If
+      there are less masks than contents, the last mask is implicitly repeated.
 
   -s
   --stuffing
@@ -66,18 +90,18 @@ Options:
       packet, after the previous section. Note, however, that section headers
       are never scattered over a packet boundary.
 
-  -e id1[-id2]
-  --tid-ext-remove id1[-id2]
-      Remove all sections with the corresponding table id extension. Several
-      options --tid-ext-remove can be specified.
-
   -t id1[-id2]
-  --tid-remove id1[-id2]
-      Remove all sections with the corresponding table id. Several options
-      --tid-remove can be specified.
+  --tid id1[-id2]
+      Remove/keep all sections with the corresponding table id. Several options
+      --tid can be specified.
+
+  -e id1[-id2]
+  --tid-ext id1[-id2]
+      Remove/keep all sections with the corresponding table id extension.
+      Several options --tid-ext can be specified.
 
   -v v1[-v2]
-  --version-remove v1[-v2]
-      Remove all sections with the corresponding versions. Several options
-      --version-remove can be specified.
+  --version v1[-v2]
+      Remove/keep all sections with the corresponding versions. Several options
+      --version can be specified.
 

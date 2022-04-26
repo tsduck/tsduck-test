@@ -330,6 +330,19 @@ Options:
   --safeaccess
       Equivalent to --default-cas-id 0x4ADC.
 
+  --section-content hexa-data
+      Binary content filter: Specify binary data that must match the beginning
+      of the section. The value must be a string of hexadecimal digits
+      specifying any number of bytes. See also option --section-mask to specify
+      selected bits or bytes only.
+
+  --section-mask hexa-data
+      With --section-content, specify a mask of meaningful bits in the binary
+      data that must match the beginning of the section. The value must be a
+      string of hexadecimal digits specifying any number of bytes. If omitted
+      or shorter than the --section-content parameter, the mask is implicitely
+      padded with FF bytes.
+
   --section-number num1[-num2]
       Section number filter: when sections are filtered individually instead of
       complete tables, select sections with this section number or range of
