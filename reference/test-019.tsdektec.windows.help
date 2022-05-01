@@ -33,18 +33,38 @@ Options:
       With --all, list the Dektec devices in JSON format (useful for automatic
       analysis).
 
+  --json-buffer-size value
+      With --json-tcp or --json-udp, specify the network socket send buffer
+      size.
+
   --json-line[='prefix']
       Same as --json but report the JSON text as one single line in the message
       logger instead of the output file. The optional string parameter
       specifies a prefix to prepend on the log line before the JSON text to
       locate the appropriate line in the logs.
 
+  --json-tcp address:port
+      Same as --json but report the JSON text as one single line in a TCP
+      connection instead of the output file. The 'address' specifies an IP
+      address or a host name that translates to an IP address. The 'port'
+      specifies the destination TCP port. By default, a new TCP connection is
+      established each time a JSON message is produced. Be aware that a
+      complete TCP connection cycle may introduce some latency in the
+      processing. If latency is an issue, consider using --json-udp.
+
+  --json-tcp-keep
+      With --json-tcp, keep the TCP connection open for all JSON messages. By
+      default, a new TCP connection is established each time a JSON message is
+      produced.
+
   --json-udp address:port
       Same as --json but report the JSON text as one single line in a UDP
       datagram instead of the output file. The 'address' specifies an IP
       address which can be either unicast or multicast. It can be also a host
       name that translates to an IP address. The 'port' specifies the
-      destination UDP port.
+      destination UDP port. Be aware that the size of UDP datagrams is limited
+      by design to 64 kB. If larger JSON contents are expected, consider using
+      --json-tcp.
 
   --json-udp-local address
       With --json-udp, when the destination is a multicast address, specify the
