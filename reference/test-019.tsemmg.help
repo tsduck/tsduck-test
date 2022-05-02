@@ -128,6 +128,14 @@ Options:
       name) is not specified, use the same IP address as the --mux option. The
       port number is required, even if it is the same as the TCP port.
 
+  -w milliseconds
+  --udp-end-wait milliseconds
+      With --udp, specify the number of milliseconds to wait after the last
+      data_provision message (UDP) and before the stream_close_request message
+      (TCP). This can be necesssary to ensure that the stream_close_request is
+      processed after the processing of the last data_provision. Default: 100
+      ms.
+
   -v
   --verbose
       Produce verbose output.
