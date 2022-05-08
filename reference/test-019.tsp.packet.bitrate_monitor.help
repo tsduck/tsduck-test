@@ -1,5 +1,5 @@
 
-Monitor bitrate for TS or a given PID
+Monitor bitrate for TS or a given set of PID's
 
 Usage: tsp -P bitrate_monitor [options]
 
@@ -8,14 +8,15 @@ Options:
   -a 'command'
   --alarm-command 'command'
       Command to run when the bitrate goes either out of range or back to
-      normal. The command receives six additional parameters:
+      normal. The command receives the following additional parameters:
 
       1. A human-readable alarm message.
-      2. Either "ts" or the decimal integer value of the PID to monitor.
+      2. Either "ts" or the decimal integer value of the first PID to monitor.
       3. Bitrate alarm state, one of "lower", "greater", "normal".
       4. Current bitrate in b/s (decimal integer).
       5. Minimum bitrate in b/s (decimal integer).
       6. Maximum bitrate in b/s (decimal integer).
+      7. Net bitrate, without null packets, in b/s (decimal integer).
 
   --help
       Display this help text.
@@ -45,9 +46,11 @@ Options:
       bitrate is in range. With this option, the alarm command is run on state
       change and at periodic intervals.
 
-  --pid value
-      Specifies the PID to monitor. By default, when no --pid is specified,
-      monitor the bitrate of the full TS.
+  --pid pid1[-pid2]
+      Specifies the PID or set of PID's to monitor. By default, when no --pid
+      is specified, monitor the bitrate of the full TS. Several --pid options
+      may be specified. When several PID's are specified, the tested bitrate is
+      the global bitrate of all the selected PID's.
 
   --set-label-above label1[-label2]
       Set the specified labels on all packets while the bitrate is above
