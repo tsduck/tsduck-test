@@ -191,7 +191,7 @@
 |  0x0198  MPEG-2 Audio (ita) ........................... S      160,679 b/s  |
 |  0x0199  MPEG-2 Audio (und) ........................... S      160,679 b/s  |
 |  0x019A  AC-3 Audio (ita) ............................. S      379,897 b/s  |
-|  0x02BF  Teletext (ita, Initial Teletext page) ........ C            0 b/s  |
+|  0x02BF  Teletext (ita, eng, Initial Teletext page, Te  C            0 b/s  |
 |  0x044F  PMT .......................................... C       14,534 b/s  |
 |  0x0642  NDS ECM ...................................... C       14,534 b/s  |
 |  0x06A6  NDS ECM ...................................... C       14,938 b/s  |
@@ -210,7 +210,7 @@
 |  0x019C  MPEG-2 Audio (ita) ........................... S      161,890 b/s  |
 |  0x019D  MPEG-2 Audio (und) ........................... S      162,294 b/s  |
 |  0x019E  AC-3 Audio (ita) ............................. S      379,897 b/s  |
-|  0x02C0  Teletext (ita, Initial Teletext page) ........ C            0 b/s  |
+|  0x02C0  Teletext (ita, eng, Initial Teletext page, Te  C            0 b/s  |
 |  0x0450  PMT .......................................... C       14,534 b/s  |
 |  0x0643  NDS ECM ...................................... C       14,130 b/s  |
 |  0x06A7  NDS ECM ...................................... C       14,534 b/s  |
@@ -229,7 +229,7 @@
 |  0x0194  MPEG-2 Audio (ita) ........................... S      161,083 b/s  |
 |  0x0195  MPEG-2 Audio (und) ........................... S      161,890 b/s  |
 |  0x0196  AC-3 Audio (ita) ............................. S      380,301 b/s  |
-|  0x02BE  Teletext (ita, Initial Teletext page) ........ C       35,527 b/s  |
+|  0x02BE  Teletext (ita, eng, Initial Teletext page, Te  C       35,527 b/s  |
 |  0x044E  PMT .......................................... C       14,534 b/s  |
 |  0x0641  NDS ECM ...................................... C       14,534 b/s  |
 |  0x06A5  NDS ECM ...................................... C       14,534 b/s  |
@@ -248,7 +248,7 @@
 |  0x01A0  MPEG-2 Audio (ita) ........................... S      159,064 b/s  |
 |  0x01A1  MPEG-2 Audio (und) ........................... S      162,294 b/s  |
 |  0x01A2  AC-3 Audio (ita) ............................. S      381,916 b/s  |
-|  0x02C1  Teletext (ita, Initial Teletext page) ........ C       36,738 b/s  |
+|  0x02C1  Teletext (ita, eng, Initial Teletext page, Te  C       36,738 b/s  |
 |  0x0451  PMT .......................................... C       14,938 b/s  |
 |  0x0644  NDS ECM ...................................... C       14,130 b/s  |
 |  0x06A8  NDS ECM ...................................... C       14,130 b/s  |
@@ -284,7 +284,7 @@
 |  0x0190  MPEG-2 Audio (ita) ........................... S      160,275 b/s  |
 |  0x0191  MPEG-2 Audio (und) ........................... S      159,872 b/s  |
 |  0x0192  AC-3 Audio (ita) ............................. S      381,512 b/s  |
-|  0x02BD  Teletext (ita, Initial Teletext page) ........ C       36,738 b/s  |
+|  0x02BD  Teletext (ita, eng, Initial Teletext page, Te  C       36,738 b/s  |
 |  0x044D  PMT .......................................... C       14,534 b/s  |
 |  0x0640  NDS ECM ...................................... C       14,534 b/s  |
 |  0x06A4  NDS ECM ...................................... C       14,938 b/s  |
@@ -430,7 +430,7 @@
 |  0x01A4  MPEG-2 Audio (ita) ........................... S      163,101 b/s  |
 |  0x01A5  MPEG-2 Audio (und) ........................... S      163,505 b/s  |
 |  0x01A6  AC-3 Audio (ita) ............................. S      380,704 b/s  |
-|  0x02C2  Teletext (ita, Initial Teletext page) ........ C       37,142 b/s  |
+|  0x02C2  Teletext (ita, eng, Initial Teletext page, Te  C       37,142 b/s  |
 |  0x0452  PMT .......................................... C       14,938 b/s  |
 |  0x0645  NDS ECM ...................................... C       14,534 b/s  |
 |  0x06A9  NDS ECM ...................................... C       14,534 b/s  |
@@ -448,7 +448,7 @@
 |  0x00AF  MPEG-2 Video ................................. S      962,056 b/s  |
 |  0x01CC  AC-3 Audio (ita) ............................. S      381,916 b/s  |
 |  0x01CD  MPEG-2 Audio (und) ........................... S      161,487 b/s  |
-|  0x02C3  Teletext (ita, Initial Teletext page) ........ C            0 b/s  |
+|  0x02C3  Teletext (ita, eng, Initial Teletext page, Te  C            0 b/s  |
 |  0x045E  PMT .......................................... C       14,938 b/s  |
 |  0x064F  NDS ECM ...................................... C       14,534 b/s  |
 |  0x06B3  NDS ECM ...................................... C       14,130 b/s  |
@@ -1213,9 +1213,10 @@
 |  Inv.scramb.: ......... 0  PCR: ................. 0  Packets: ......... 25  |
 |                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x02BD (701)                                          Teletext (ita)  |
+|  PID: 0x02BD (701)                                     Teletext (ita, eng)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  Initial Teletext page                                                      |
+|  Teletext subtitles                                                         |
 |  Service: 0x2D57 (11607) Primafila 15                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
@@ -1225,9 +1226,10 @@
 |                            PCR: ................. 0  Packets: ......... 91  |
 |                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x02BE (702)                                          Teletext (ita)  |
+|  PID: 0x02BE (702)                                     Teletext (ita, eng)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  Initial Teletext page                                                      |
+|  Teletext subtitles                                                         |
 |  Service: 0x2D54 (11604) Primafila 18                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
@@ -1237,9 +1239,10 @@
 |                            PCR: ................. 0  Packets: ......... 88  |
 |                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x02C1 (705)                                          Teletext (ita)  |
+|  PID: 0x02C1 (705)                                     Teletext (ita, eng)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  Initial Teletext page                                                      |
+|  Teletext subtitles                                                         |
 |  Service: 0x2D55 (11605) Primafila 19                                       |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
@@ -1249,9 +1252,10 @@
 |                            PCR: ................. 0  Packets: ......... 91  |
 |                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x02C2 (706)                                          Teletext (ita)  |
+|  PID: 0x02C2 (706)                                     Teletext (ita, eng)  |
 |  PES stream id: 0xBD (Private stream 1)                                     |
 |  Initial Teletext page                                                      |
+|  Teletext subtitles                                                         |
 |  Service: 0x2D65 (11621) Primafila 1                                        |
 |-----------------------------------------------------------------------------|
 |  Single Service PID        Transport:                Discontinuities:       |
