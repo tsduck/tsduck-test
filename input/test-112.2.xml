@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <PAT version="1" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="2" program_map_PID="200"/>
+  </PAT>
+  <PAT version="1" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="2" program_map_PID="200"/>
+  </PAT>
+  <PAT version="1" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="2" program_map_PID="200"/>
+  </PAT>
+
+  <!-- Invalid version -->
+  <PAT version="1" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="3" program_map_PID="300"/>
+  </PAT>
+  <PAT version="1" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="3" program_map_PID="300"/>
+  </PAT>
+
+  <PAT version="2" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="4" program_map_PID="400"/>
+  </PAT>
+  <PAT version="2" transport_stream_id="1" network_PID="16">
+    <service service_id="1" program_map_PID="100"/>
+    <service service_id="4" program_map_PID="400"/>
+  </PAT>
+
+</tsduck>

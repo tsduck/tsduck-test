@@ -132,6 +132,13 @@ Options:
       etc. Because these sections are invalid, they cannot be formatted as
       normal sections. Instead, a binary and text dump is displayed.
 
+  --invalid-versions
+      Track invalid version numbers in sections. Per MPEG rules, the version
+      number of a section with long header shall be updated each time the
+      content of the section is updated. With this option, the content of the
+      sections is tracked to detect modified sections without version updates.
+      These events are considered as errors.
+
   -i address:port
   --ip-udp address:port
       Send binary tables over UDP/IP to the specified destination. The
