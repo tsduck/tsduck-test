@@ -36,29 +36,35 @@ PACKET_PLUGINS=(
     trigger tsrename until zap
 )
 
+# Check if a tool or plugin name shall be tested.
+valid-test()
+{
+    [[ ( $1 != *.* || $1 == *.$OS ) && ( -z "$TS_NO_DEKTEC" || $1 != *dektec* ) ]]
+}
+
 for name in ${TOOLS[@]}; do
-    if [[ $name != *.* || $name == *.$OS ]]; then
+    if valid-test $name; then
         $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help" 2>&1
         test_text $SCRIPT.$name.help
     fi
 done
 
 for name in ${INPUT_PLUGINS[@]}; do
-    if [[ $name != *.* || $name == *.$OS ]]; then
+    if valid-test $name; then
         $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help" 2>&1
         test_text $SCRIPT.tsp.input.$name.help
     fi
 done
 
 for name in ${OUTPUT_PLUGINS[@]}; do
-    if [[ $name != *.* || $name == *.$OS ]]; then
+    if valid-test $name; then
         $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help" 2>&1
         test_text $SCRIPT.tsp.output.$name.help
     fi
 done
 
 for name in ${PACKET_PLUGINS[@]}; do
-    if [[ $name != *.* || $name == *.$OS ]]; then
+    if valid-test $name; then
         $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help" 2>&1
         test_text $SCRIPT.tsp.packet.$name.help
     fi
