@@ -17,6 +17,10 @@ Options:
   --binary
       Include binary dump in addition to hexadecimal.
 
+  --byte-offset value
+      Start reading each file at the specified byte offset (default: 0). This
+      option is allowed only if all input files are regular files.
+
   -c
   --c-style
       Same as --raw-dump (no interpretation of packet) but dump the bytes in
@@ -71,6 +75,10 @@ Options:
   -o
   --offset
       Include offset from start of packet with hexadecimal dump.
+
+  --packet-offset value
+      Start reading each file at the specified TS packet (default: 0). This
+      option is allowed only if all input files are regular files.
 
   --payload
       Hexadecimal dump of TS payload only, skip TS header.
