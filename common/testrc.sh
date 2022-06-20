@@ -360,10 +360,11 @@ test_text() {
     local file=$1
     local silent=$(test_arg -s "$@")
 
-    # Remove all reference to $INDIR and $OUTDIR in case this is a log file.
-    in=$(fpath "$INDIR" | sed -e 's|\\|\\\\|g' )
-    out=$(fpath "$OUTDIR" | sed -e 's|\\|\\\\|g' )
-    sed -i -e "s|$in[/\\\\]*||g" -e "s|$out[/\\\\]*||g" "$OUTDIR/$file"
+    # Remove all reference to $INDIR, $OUTDIR and $TMPDIR in case this is a log file.
+    local in=$(fpath "$INDIR" | sed -e 's|\\|\\\\|g' )
+    local out=$(fpath "$OUTDIR" | sed -e 's|\\|\\\\|g' )
+    local tmp=$(fpath "$TMPDIR" | sed -e 's|\\|\\\\|g' )
+    sed -i -e "s|$in[/\\\\]*||g" -e "s|$out[/\\\\]*||g" -e "s|$tmp[/\\\\]*||g" "$OUTDIR/$file"
 
     # Do not compare if this is test initialization.
     $TESTINIT && return 0

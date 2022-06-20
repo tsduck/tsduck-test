@@ -207,3 +207,4 @@ repository. But we now limit their size to 20 MB.
 | 110  | Plugin `splicemonitor` with option `--select-commands`
 | 111  | Section filtering using binary pattern
 | 112  | `tstables` with options `--no-duplicate` and `--invalid-version`
+| 113  | `tscmp`
