@@ -57,6 +57,10 @@ Options:
       reference for RTP timestamps. By default, use the first PID containing
       PCR's.
 
+  --rs204
+      Use 204-byte format for TS packets in UDP datagrams. Each TS packet is
+      followed by a zeroed placeholder for a 16-byte Reed-Solomon trailer.
+
   -r
   --rtp
       Use the Real-time Transport Protocol (RTP) in output UDP datagrams. By

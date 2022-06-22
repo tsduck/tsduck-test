@@ -46,7 +46,7 @@ Options:
       segment, between the first two time stamps.
 
   --input-format name
-      Specify the format of the input file. By default, the format is
+      Specify the format of the input TS file. By default, the format is
       automatically detected. But the auto-detection may fail in some cases
       (for instance when the first time-stamp of an M2TS file starts with
       0x47). Using this option forces a specific format.
@@ -70,9 +70,9 @@ Options:
       packets and a constant bitrate.
 
   --output-format name
-      Specify the format of the created output file. By default, the format is
-      a standard TS file.
-      Must be one of "M2TS", "RS204", "TS", "autodetect", "duck".
+      Specify the format of the output TS file. By default, the format is a
+      standard TS file.
+      Must be one of "M2TS", "RS204", "TS", "duck".
 
   -r value
   --reference-pid value
