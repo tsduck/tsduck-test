@@ -1,0 +1,86 @@
+* Packet 100 differ at offset 4, 4 bytes differ, PID 822, packet 0 in PID
+  Packet from test-113.1a.ts:
+      ---- TS Header ----
+      PID: 822 (0x0336), header size: 4, sync: 0x47
+      Error: 0, unit start: 0, priority: 0
+      Scrambling: 2, continuity counter: 5
+      Adaptation field: no (0 bytes), payload: yes (184 bytes)
+      ---- Full TS Packet Content ----
+      47 03 36 95 DE AD BE EF CD 65 E3 F1 80 A9 3E B2  G.6......e....>.
+      01 97 E5 22 83 59 B2 4A C2 11 5B 43 9D 45 2A E0  ...".Y.J..[C.E*.
+      EF 4C 3C 69 8B F0 C9 02 51 19 49 F0 99 6D 2B 0D  .L<i....Q.I..m+.
+      20 4D 89 1B 29 88 AF 25 F7 D8 6E 28 F8 4C 56 8F   M..)..%..n(.LV.
+      82 8B A5 D8 0C 55 52 8F F4 C3 41 AC 24 4C AF 75  .....UR...A.$L.u
+      E8 64 4C 07 21 6B 43 B3 8E E5 58 C1 AD 82 44 23  .dL.!kC...X...D#
+      F9 D2 0D B4 6D 81 B8 FA 9A B4 5C B1 CF 8B 22 9F  ....m.....\...".
+      2B EE CE C7 3B 79 35 7F 1B A6 FF 01 6A 76 9E 73  +...;y5.....jv.s
+      99 D5 48 35 1F 90 8A C8 E3 7C 61 6A CE 15 C8 C5  ..H5.....|aj....
+      8E 26 D8 32 D4 2D 0B 80 9A AA 67 D7 45 EB 0B 55  .&.2.-....g.E..U
+      1E DD E2 76 66 EB CA 92 0A 0F 90 0C 5C 5E 0B 6C  ...vf.......\^.l
+      BA D4 09 8D D1 78 8D 25 50 7D C6 62              .....x.%P}.b
+  Packet from test-113.1b.ts:
+      ---- TS Header ----
+      PID: 822 (0x0336), header size: 4, sync: 0x47
+      Error: 0, unit start: 0, priority: 0
+      Scrambling: 2, continuity counter: 5
+      Adaptation field: no (0 bytes), payload: yes (184 bytes)
+      ---- Full TS Packet Content ----
+      47 03 36 95 4F A1 93 A7 CD 65 E3 F1 80 A9 3E B2  G.6.O....e....>.
+      01 97 E5 22 83 59 B2 4A C2 11 5B 43 9D 45 2A E0  ...".Y.J..[C.E*.
+      EF 4C 3C 69 8B F0 C9 02 51 19 49 F0 99 6D 2B 0D  .L<i....Q.I..m+.
+      20 4D 89 1B 29 88 AF 25 F7 D8 6E 28 F8 4C 56 8F   M..)..%..n(.LV.
+      82 8B A5 D8 0C 55 52 8F F4 C3 41 AC 24 4C AF 75  .....UR...A.$L.u
+      E8 64 4C 07 21 6B 43 B3 8E E5 58 C1 AD 82 44 23  .dL.!kC...X...D#
+      F9 D2 0D B4 6D 81 B8 FA 9A B4 5C B1 CF 8B 22 9F  ....m.....\...".
+      2B EE CE C7 3B 79 35 7F 1B A6 FF 01 6A 76 9E 73  +...;y5.....jv.s
+      99 D5 48 35 1F 90 8A C8 E3 7C 61 6A CE 15 C8 C5  ..H5.....|aj....
+      8E 26 D8 32 D4 2D 0B 80 9A AA 67 D7 45 EB 0B 55  .&.2.-....g.E..U
+      1E DD E2 76 66 EB CA 92 0A 0F 90 0C 5C 5E 0B 6C  ...vf.......\^.l
+      BA D4 09 8D D1 78 8D 25 50 7D C6 62              .....x.%P}.b
+  Differing area from test-113.1a.ts:
+      DE AD BE EF                                      ....
+  Differing area from test-113.1b.ts:
+      4F A1 93 A7                                      O...
+* Packet 200 differ at offset 4, 3 bytes differ, PID 200, packet 0 in PID
+  Packet from test-113.1a.ts:
+      ---- TS Header ----
+      PID: 200 (0x00C8), header size: 4, sync: 0x47
+      Error: 0, unit start: 1, priority: 0
+      Scrambling: 0, continuity counter: 14
+      Adaptation field: no (0 bytes), payload: yes (184 bytes)
+      ---- Full TS Packet Content ----
+      47 40 C8 1E F0 0B AC 4E 22 62 DF 00 00 E0 D2 F0  G@.....N"b......
+      00 1B E0 D2 F0 00 06 E0 DD F0 0A 0A 04 66 72 61  .............fra
+      00 6A 02 80 42 06 E0 DE F0 0A 6A 02 8F 42 0A 04  .j..B.....j..B..
+      65 6E 67 00 06 E0 F2 F0 0A 59 08 66 72 61 10 00  eng......Y.fra..
+      01 00 02 06 E0 F3 F0 0A 59 08 66 72 61 20 00 03  ........Y.fra ..
+      00 04 01 BE C9 53 FF FF FF FF FF FF FF FF FF FF  .....S..........
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF              ............
+  Packet from test-113.1b.ts:
+      ---- TS Header ----
+      PID: 200 (0x00C8), header size: 4, sync: 0x47
+      Error: 0, unit start: 1, priority: 0
+      Scrambling: 0, continuity counter: 14
+      Adaptation field: no (0 bytes), payload: yes (184 bytes)
+      ---- Full TS Packet Content ----
+      47 40 C8 1E 00 02 B0 4E 22 62 DF 00 00 E0 D2 F0  G@.....N"b......
+      00 1B E0 D2 F0 00 06 E0 DD F0 0A 0A 04 66 72 61  .............fra
+      00 6A 02 80 42 06 E0 DE F0 0A 6A 02 8F 42 0A 04  .j..B.....j..B..
+      65 6E 67 00 06 E0 F2 F0 0A 59 08 66 72 61 10 00  eng......Y.fra..
+      01 00 02 06 E0 F3 F0 0A 59 08 66 72 61 20 00 03  ........Y.fra ..
+      00 04 01 BE C9 53 FF FF FF FF FF FF FF FF FF FF  .....S..........
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      FF FF FF FF FF FF FF FF FF FF FF FF              ............
+  Differing area from test-113.1a.ts:
+      F0 0B AC                                         ...
+  Differing area from test-113.1b.ts:
+      00 02 B0                                         ...

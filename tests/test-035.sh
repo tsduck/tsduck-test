@@ -67,7 +67,7 @@ test-encap()
     $(tspath tsp) --synchronous-log \
         -I file $(fpath "$INFILE") \
         -P filter -p 0x03E8 -p 0x03F2 -p 0x03FD -p 0x0413 \
-        -O file $(fpath "$TMPDIR/$SCRIPT.srv.orig.ts") \
+        -O file $(fpath "$TMPDIR/$SCRIPT.srv.orig${suffix}.ts") \
         >"$OUTDIR/$SCRIPT.srv.orig.log" 2>&1
 
     $(tspath tsp) --synchronous-log \
@@ -79,10 +79,10 @@ test-encap()
     test_text $SCRIPT.srv.orig.log
     test_text $SCRIPT.srv.decap${suffix}.log
 
-    pushd "$TMPDIR" >/dev/null
-    $(tspath tscmp) --continue --subset "$SCRIPT.srv.orig.ts" "$SCRIPT.srv.decap${suffix}.ts" \
+    $(tspath tscmp) --continue --search-reorder \
+        $(fpath "$TMPDIR/$SCRIPT.srv.orig${suffix}.ts") \
+        $(fpath "$TMPDIR/$SCRIPT.srv.decap${suffix}.ts") \
         >"$OUTDIR/$SCRIPT.cmp${suffix}.log" 2>&1
-    popd >/dev/null
 
     test_text $SCRIPT.cmp${suffix}.log
 }

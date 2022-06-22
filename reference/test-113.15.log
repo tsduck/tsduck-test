@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "count": 14,
+      "packet0": 100,
+      "packet1": 107,
+      "type": "out-of-order"
+    },
+    {
+      "count": 7,
+      "packet0": 114,
+      "packet1": 100,
+      "type": "out-of-order"
+    },
+    {
+      "count": 7,
+      "packet0": 200,
+      "packet1": 214,
+      "type": "out-of-order"
+    },
+    {
+      "count": 14,
+      "packet0": 207,
+      "packet1": 200,
+      "type": "out-of-order"
+    },
+    {
+      "miss-file-index": 1,
+      "packet": 221,
+      "ref-file-index": 0,
+      "skipped": 7,
+      "type": "skipped"
+    }
+  ],
+  "files": [
+    {
+      "holes": 1,
+      "missing": 7,
+      "name": "test-113.3a.ts",
+      "packets": 300
+    },
+    {
+      "holes": 0,
+      "missing": 0,
+      "name": "test-113.3b.ts",
+      "packets": 300
+    }
+  ],
+  "summary": {
+    "differences": 5
+  }
+}
