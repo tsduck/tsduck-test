@@ -366,6 +366,13 @@ test_text() {
     local tmp=$(fpath "$TMPDIR" | sed -e 's|\\|\\\\|g' )
     sed -i -e "s|$in[/\\\\]*||g" -e "s|$out[/\\\\]*||g" -e "s|$tmp[/\\\\]*||g" "$OUTDIR/$file"
 
+    if [[ $OS == windows ]]; then
+        in=$(fpath "$INDIR" | sed -e 's|\\|\\\\\\\\|g' )
+        out=$(fpath "$OUTDIR" | sed -e 's|\\|\\\\\\\\|g' )
+        tmp=$(fpath "$TMPDIR" | sed -e 's|\\|\\\\\\\\|g' )
+        sed -i -e "s|$in[/\\\\]*||g" -e "s|$out[/\\\\]*||g" -e "s|$tmp[/\\\\]*||g" "$OUTDIR/$file"
+    fi
+
     # Do not compare if this is test initialization.
     $TESTINIT && return 0
 
