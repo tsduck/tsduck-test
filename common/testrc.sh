@@ -35,11 +35,15 @@ PRPASS="----"
 PRFAIL="XXXX"
 PRVOID="    "
 
+# Exit codes
+EXIT_SUCCESS=0
+EXIT_FAILURE=1
+
 # Functions to report messages.
-error() { echo >&2 "$SCRIPT: $*"; exit 1; }
+error() { echo >&2 "$SCRIPT: $*"; exit $EXIT_FAILURE; }
 info()  { echo >&2 "$*"; }
 trace() { $VERBOSE && info "$PRVOID  $*"; }
-usage() { echo >&2 "invalid command, try \"$SCRIPT --help\""; exit 1; }
+usage() { echo >&2 "invalid command, try \"$SCRIPT --help\""; exit $EXIT_FAILURE; }
 
 # Use GNU variants of sed and grep when available.
 unalias sed grep 2>/dev/null
@@ -74,6 +78,15 @@ esac
 # All operating systems and "other" operating systems.
 ALLOS="linux mac windows"
 OTHEROS=${ALLOS/$OS/}
+
+# Alternative operating system name.
+if [[ $OS != windows ]]; then
+    OS2=$OS
+elif $SYS64; then
+    OS2=$OS-64
+else
+    OS2=$OS-32
+fi
 
 # Detect various types of UNIX-like environments on UNIX.
 if [[ $OS == windows ]]; then
@@ -139,7 +152,7 @@ Common test options:
       Display verbose information.
 
 EOF
-    exit 1
+    exit $EXIT_FAILURE
 }
 
 # Decode command line options.
@@ -162,6 +175,7 @@ while [[ $# -gt 0 ]]; do
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN32_RELEASE
             $SYS64 && NATIVE=false
+            OS2=$OS-32
             ;;
         --debug)
             DEVEL=true
@@ -171,6 +185,7 @@ while [[ $# -gt 0 ]]; do
             DEVEL=true
             TSDUCKBIN=$TSDUCKBIN32_DEBUG
             $SYS64 && NATIVE=false
+            OS2=$OS-32
             ;;
         --help)
             showhelp
@@ -338,7 +353,7 @@ test_exit() {
 native_only() {
     if ! $NATIVE; then
         info "$PRPASS  $SCRIPT: skipped on non-native binary"
-        exit 0
+        exit $EXIT_SUCCESS
     fi
 }
 
