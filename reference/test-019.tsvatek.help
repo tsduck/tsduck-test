@@ -1,0 +1,32 @@
+
+Control Vatek devices
+
+Usage: tsvatek [options] [device]
+
+Parameter:
+
+  Device index, from 0 to N-1 (with N being the number of Vatek devices in the
+  system). The default is 0. Use option --all to have a complete list of
+  devices in the system.
+
+Options:
+
+  -a
+  --all
+      List all Vatek devices available on the system.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

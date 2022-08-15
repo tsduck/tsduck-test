@@ -12,7 +12,7 @@ TOOLS=(
     tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsgenecm tshides.linux tshides.windows
     tslsdvb.linux tslsdvb.mac tslsdvb.windows tsp tspacketize tspcap tspcontrol
     tspsi tsresync tsscan.linux tsscan.mac tsscan.windows tssmartcard tsstuff
-    tsswitch tstabcomp tstabdump tstables tsterinfo tsxml
+    tsswitch tstabcomp tstabdump tstables tsterinfo tsvatek tsxml
 )
 
 INPUT_PLUGINS=(
@@ -22,7 +22,7 @@ INPUT_PLUGINS=(
 
 OUTPUT_PLUGINS=(
     dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
-    ip memory play.linux play.mac play.windows rist.mac rist.windows srt
+    ip memory play.linux play.mac play.windows rist.mac rist.windows srt vatek
 )
 
 PACKET_PLUGINS=(
