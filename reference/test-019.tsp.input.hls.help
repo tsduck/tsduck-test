@@ -13,6 +13,30 @@ Parameter:
 
 Options:
 
+  --alt-group-id 'string'
+      When the URL is a master playlist, use the 'alternative rendition
+      content' with the specified group id. If several --alt-* options are
+      specified, the selected 'alternative rendition content' must match all of
+      them.
+
+  --alt-language 'string'
+      When the URL is a master playlist, use the first 'alternative rendition
+      content' with the specified language. If several --alt-* options are
+      specified, the selected 'alternative rendition content' must match all of
+      them.
+
+  --alt-name 'string'
+      When the URL is a master playlist, use the 'alternative rendition
+      content' with the specified name. If several --alt-* options are
+      specified, the selected 'alternative rendition content' must match all of
+      them.
+
+  --alt-type 'string'
+      When the URL is a master playlist, use the first 'alternative rendition
+      content' with the specified type. If several --alt-* options are
+      specified, the selected 'alternative rendition content' must match all of
+      them.
+
   --connection-timeout value
       Specify the connection timeout in milliseconds. By default, let the
       operating system decide.
