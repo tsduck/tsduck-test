@@ -13,6 +13,12 @@ Parameters:
 
 Options:
 
+  --attributes-merge name
+      With --merge, specify how attributes are processed in merged node. The
+      default is "add", meaning that new attributes are added, others are
+      ignored.
+      Must be one of "add", "none", "replace".
+
   -c
   --channel
       A shortcut for '--model tsduck.channels.model.xml'. It verifies that the
@@ -95,6 +101,11 @@ Options:
       A shortcut for '--model tsduck.lnbs.model.xml'. It verifies that the
       input files are valid satellite LNB definition files.
 
+  --merge
+      Merge all input files as one, instead of processing all input files one
+      by one. With this option, all input XML files must have the same root
+      tag.
+
   -m filename
   --model filename
       Specify an XML model file which is used to validate all input files.
@@ -122,6 +133,12 @@ Options:
       file format. If more than one input file is specified, they are all
       reformatted in the same output file.
 
+  -s name
+  --sort name
+      Specify that the sub-elements of all XML structures with the specified
+      tag name will be sorted in alphanumerical order. Several --sort options
+      can be specified.
+
   --strict-xml
       Save XML documents in strictly conformant XML format. By default, do not
       escape characters when this is not syntactically necessary to make the
@@ -132,6 +149,9 @@ Options:
       A shortcut for '--model tsduck.tables.model.xml'. Table definitions for
       installed TSDuck extensions are also merged in the main model. It
       verifies that the input files are valid PSI/SI tables files.
+
+  --uncomment
+      Remove comments from the XML documents.
 
   -v
   --verbose
