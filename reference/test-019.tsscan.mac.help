@@ -25,6 +25,10 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
+  --avs
+      Assume that the transport stream is an AVS one with AVS-specific
+      descriptors.
+
   --bandwidth value
       Bandwidth in Hz. For compatibility with old versions, low values (below
       1000) are interpreted in MHz. The default is 8,000,000 for DVB-T/T2 and
