@@ -1,0 +1,174 @@
+[
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "AVS3_video_descriptor",
+        "chroma_format": 2,
+        "colour_primaries": 27,
+        "frame_rate_code": 3,
+        "level_id": 2,
+        "library_picture_enable_flag": true,
+        "library_stream_flag": false,
+        "matrix_coefficients": 239,
+        "multiple_frame_rate_flag": true,
+        "profile_id": 1,
+        "sample_precision": 4,
+        "td_mode_flag": true,
+        "temporal_id_flag": false,
+        "transfer_characteristics": 205
+      },
+      {
+        "#name": "dvb_vvc_subpictures_descriptor",
+        "default_service_mode": true,
+        "processing_mode": 2,
+        "service_description": "Foo bar"
+      },
+      {
+        "#name": "dvb_vvc_subpictures_descriptor",
+        "#nodes": [
+          {
+            "#name": "subpicture",
+            "component_tag": 129,
+            "subpicture_id": 171
+          },
+          {
+            "#name": "subpicture",
+            "component_tag": 149,
+            "subpicture_id": 205
+          }
+        ],
+        "default_service_mode": false,
+        "processing_mode": 5,
+        "service_description": "Scoobidoo"
+      },
+      {
+        "#name": "EVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": true,
+        "k_90khz": 3735928559,
+        "n_90khz": 305419896,
+        "num_units_in_tick": 2271560481
+      },
+      {
+        "#name": "EVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": false
+      },
+      {
+        "#name": "EVC_video_descriptor",
+        "evc_24hr_picture_present_flag": true,
+        "evc_still_present_flag": false,
+        "frame_only_constraint_flag": false,
+        "hdr_wcg_idc": 3,
+        "interlaced_source_flag": false,
+        "level_idc": 197,
+        "non_packed_constraint_flag": true,
+        "profile_idc": 254,
+        "progressive_source_flag": true,
+        "toolset_idc_h": 2557891634,
+        "toolset_idc_l": 1164543267,
+        "video_properties_tag": 0
+      },
+      {
+        "#name": "EVC_video_descriptor",
+        "evc_24hr_picture_present_flag": false,
+        "evc_still_present_flag": true,
+        "frame_only_constraint_flag": true,
+        "hdr_wcg_idc": 2,
+        "interlaced_source_flag": true,
+        "level_idc": 118,
+        "non_packed_constraint_flag": false,
+        "profile_idc": 24,
+        "progressive_source_flag": false,
+        "temporal_id_max": 5,
+        "temporal_id_min": 2,
+        "toolset_idc_h": 1166500409,
+        "toolset_idc_l": 629220248,
+        "video_properties_tag": 9
+      },
+      {
+        "#name": "LCEVC_linkage_descriptor"
+      },
+      {
+        "#name": "LCEVC_linkage_descriptor",
+        "#nodes": [
+          {
+            "#name": "lcevc_stream_tag",
+            "#nodes": [
+              "01 23 45"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "LCEVC_video_descriptor",
+        "field_type_bit_flag": true,
+        "hdr_wcg_idc": 2,
+        "lcevc_stream_tag": 86,
+        "level_idc": 9,
+        "picture_type_bit_flag": false,
+        "processed_planes_type_flag": true,
+        "profile_idc": 5,
+        "sublevel_idc": 1,
+        "video_properties_tag": 6
+      },
+      {
+        "#name": "VVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": false
+      },
+      {
+        "#name": "VVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": true,
+        "k_90khz": 343429686,
+        "n_90khz": 305760086,
+        "num_units_in_tick": 2519881793
+      },
+      {
+        "#name": "VVC_video_descriptor",
+        "frame_only_constraint_flag": true,
+        "hdr_wcg_idc": 3,
+        "interlaced_source_flag": true,
+        "level_idc": 235,
+        "non_packed_constraint_flag": false,
+        "profile_idc": 116,
+        "progressive_source_flag": false,
+        "tier_flag": true,
+        "video_properties_tag": 0,
+        "vvc_24hr_picture_present_flag": false,
+        "vvc_still_present_flag": true
+      },
+      {
+        "#name": "VVC_video_descriptor",
+        "#nodes": [
+          {
+            "#name": "sub_profile_idc",
+            "value": 305567860
+          },
+          {
+            "#name": "sub_profile_idc",
+            "value": 19097989
+          },
+          {
+            "#name": "sub_profile_idc",
+            "value": 1096124195
+          }
+        ],
+        "frame_only_constraint_flag": false,
+        "hdr_wcg_idc": 2,
+        "interlaced_source_flag": false,
+        "level_idc": 21,
+        "non_packed_constraint_flag": true,
+        "profile_idc": 79,
+        "progressive_source_flag": true,
+        "temporal_id_max": 6,
+        "temporal_id_min": 3,
+        "tier_flag": false,
+        "video_properties_tag": 9,
+        "vvc_24hr_picture_present_flag": true,
+        "vvc_still_present_flag": false
+      }
+    ],
+    "current": true,
+    "service_id": 0,
+    "version": 0
+  }
+]

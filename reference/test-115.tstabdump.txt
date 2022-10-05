@@ -1,0 +1,75 @@
+
+* PMT, TID 2 (0x02)
+  Section: 0 (last: 0), version: 0, size: 178 bytes
+  Program: 0 (0x0000), PCR PID: none
+  Program information:
+  - Descriptor 0: AVS3 Video (T/AI 109.6) (0xD1, 209), 8 bytes
+    Profile ID: unknown (0x01), Level ID: unknown (0x02), Multiple frame rate: true
+    Frame rate code: 25 (3), Sample precision: unknown (4), Chroma format: 4:2:2 (2)
+    Temporal ID: false, TD mode: true
+    Library stream: false, Library picture enable: true
+    Colour primaries: 27, Transfer characteristics: 205, Matrix coefficients: 239
+  - Descriptor 1: Extension Descriptor (0x7F, 127), 11 bytes
+    Extended descriptor: VVC Subpictures (0x23, 35)
+    Default service mode: true, service description present: true
+    Processing mode: 2
+    Service description: "Foo bar"
+  - Descriptor 2: Extension Descriptor (0x7F, 127), 17 bytes
+    Extended descriptor: VVC Subpictures (0x23, 35)
+    Default service mode: false, service description present: true
+    subpicture[0] component_tag: 129, vvc_subpicture_id: 171
+    subpicture[1] component_tag: 149, vvc_subpicture_id: 205
+    Processing mode: 5
+    Service description: "Scoobidoo"
+  - Descriptor 3: MPEG-2 Extension (0x3F, 63), 15 bytes
+    MPEG extended descriptor: EVC timing and HRD (0x16, 22)
+    HRD management valid: true
+    90 kHz: N = 305,419,896, K = 3,735,928,559
+    Num. units in tick: 2,271,560,481
+  - Descriptor 4: MPEG-2 Extension (0x3F, 63), 2 bytes
+    MPEG extended descriptor: EVC timing and HRD (0x16, 22)
+    HRD management valid: false
+  - Descriptor 5: EVC Video (H.222.0) (0x3A, 58), 12 bytes
+    Profile IDC: 0xFE, level IDC: 0xC5
+    Toolset h: 0x98765432, l: 0x45698523
+    Progressive source: true, interlaced source: false, non packed: true, frame only: false
+    Still pictures: false, 24-hour pictures: true
+    HDR WCG idc: 3, video properties: 0
+  - Descriptor 6: EVC Video (H.222.0) (0x3A, 58), 14 bytes
+    Profile IDC: 0x18, level IDC: 0x76
+    Toolset h: 0x45876239, l: 0x25812398
+    Progressive source: false, interlaced source: true, non packed: false, frame only: true
+    Still pictures: true, 24-hour pictures: false
+    HDR WCG idc: 2, video properties: 9
+    Temporal id min: 2, max: 5
+  - Descriptor 7: MPEG-2 Extension (0x3F, 63), 2 bytes
+    MPEG extended descriptor: LCEVC linkage (0x18, 24)
+  - Descriptor 8: MPEG-2 Extension (0x3F, 63), 5 bytes
+    MPEG extended descriptor: LCEVC linkage (0x18, 24)
+    LCEVC stream tag (3 bytes): 01 23 45
+  - Descriptor 9: MPEG-2 Extension (0x3F, 63), 5 bytes
+    MPEG extended descriptor: LCEVC video descriptor (0x17, 23)
+    LCEVC stream tag: 0x56, profile IDC: 5, level IDC: 9, sublevel: 1
+    Processed planes: true, picture type: false, field type: true
+    HDR WCG idc: 2, video properties: 6
+  - Descriptor 10: MPEG-2 Extension (0x3F, 63), 2 bytes
+    MPEG extended descriptor: VVC timing and HRD (0x15, 21)
+    HRD management valid: false
+  - Descriptor 11: MPEG-2 Extension (0x3F, 63), 15 bytes
+    MPEG extended descriptor: VVC timing and HRD (0x15, 21)
+    HRD management valid: true
+    90 kHz: N = 305,760,086, K = 343,429,686
+    Num. units in tick: 2,519,881,793
+  - Descriptor 12: VVC Video (H.222.0) (0x39, 57), 6 bytes
+    Profile IDC: unknown (0x74), tier: High
+    Progressive source: false, interlaced source: true, non packed: false, frame only: true
+    Level IDC: unknown (0xEB), still pictures: true, 24-hour pictures: false
+    HDR WCG idc: no indication (3), video properties: not known (0)
+  - Descriptor 13: VVC Video (H.222.0) (0x39, 57), 20 bytes
+    Profile IDC: unknown (0x4F), tier: Main
+    Sub profile IDC: 0x12369874 0x01236985 0x41558723
+    Progressive source: true, interlaced source: false, non packed: true, frame only: false
+    Level IDC: unknown (0x15), still pictures: false, 24-hour pictures: true
+    HDR WCG idc: HDR and WCG (2), video properties: unknown (9)
+    Temporal id min: 3, max: 6
+
