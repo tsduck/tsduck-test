@@ -34,6 +34,10 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
+  --avs
+      Assume that the transport stream is an AVS one with AVS-specific
+      descriptors.
+
   -b filename
   --binary-output filename
       Save sections in the specified binary output file. If empty or '-', the
