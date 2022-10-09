@@ -6,22 +6,22 @@
     <AVS3_video_descriptor
         profile_id="50"
         level_id="85"
-        multiple_frame_rate_flag="tfalse"
+        multiple_frame_rate_flag="false"
         frame_rate_code="8"
         sample_precision="2"
         chroma_format="1"
         temporal_id_flag="false"
-        td_mode_flag="false"
+        td_mode_flag="true"
         library_stream_flag="false"
-        library_picture_enable_flag="false"
+        library_picture_enable_flag="true"
         colour_primaries="9"
         transfer_characteristics="14"
         matrix_coefficients="8"/>
 
     <vvc_subpictures_descriptor
-      default_service_mode="true"
-      processing_mode="1"
-      service_description="whole mosaic">
+        default_service_mode="true"
+        processing_mode="1"
+        service_description="whole mosaic">
       <subpicture component_tag="1" subpicture_id="0"/>
       <subpicture component_tag="1" subpicture_id="1"/>
       <subpicture component_tag="1" subpicture_id="2"/>
@@ -29,15 +29,13 @@
     </vvc_subpictures_descriptor>
 
     <vvc_subpictures_descriptor
-      default_service_mode="false"
-      processing_mode="2">
-      <subpicture component_tag="1" subpicture_id="1"/>
-    </vvc_subpictures_descriptor>
+        default_service_mode="false"
+        processing_mode="2"/>
 
     <vvc_subpictures_descriptor
-      default_service_mode="false"
-      processing_mode="6"
-      service_description="picture-in-picture">
+        default_service_mode="false"
+        processing_mode="6"
+        service_description="picture-in-picture">
       <subpicture component_tag="1" subpicture_id="1"/>
       <subpicture component_tag="1" subpicture_id="2"/>
       <subpicture component_tag="1" subpicture_id="0"/>
@@ -119,17 +117,17 @@
         frame_only_constraint_flag="false"
         level_idc="0x50"
         VVC_still_present_flag="false"
-        VVC_24hr_picture_present_flag="false"/>
+        VVC_24hr_picture_present_flag="true"/>
 
     <VVC_video_descriptor
         profile_idc="0x01"
         tier_flag="false"
-        progressive_source_flag="true"
-        interlaced_source_flag="false"
-        non_packed_constraint_flag="true"
-        frame_only_constraint_flag="false"
+        progressive_source_flag="false"
+        interlaced_source_flag="true"
+        non_packed_constraint_flag="false"
+        frame_only_constraint_flag="true"
         level_idc="0x66"
-        VVC_still_present_flag="false"
+        VVC_still_present_flag="true"
         VVC_24hr_picture_present_flag="false"
         HDR_WCG_idc="0"
         video_properties_tag="0"

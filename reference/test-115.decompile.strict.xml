@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
-    <AVS3_video_descriptor profile_id="0x01" level_id="0x02" multiple_frame_rate_flag="true" frame_rate_code="0x03" sample_precision="0x04" chroma_format="0x02" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="0x1B" transfer_characteristics="0xCD" matrix_coefficients="0xEF"/>
-    <dvb_vvc_subpictures_descriptor default_service_mode="true" processing_mode="2" service_description="Foo bar"/>
-    <dvb_vvc_subpictures_descriptor default_service_mode="false" processing_mode="5" service_description="Scoobidoo">
-      <subpicture component_tag="0x81" subpicture_id="0xAB"/>
-      <subpicture component_tag="0x95" subpicture_id="0xCD"/>
-    </dvb_vvc_subpictures_descriptor>
+    <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="0x08" sample_precision="0x02" chroma_format="0x01" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="0x09" transfer_characteristics="0x0E" matrix_coefficients="0x08"/>
+    <vvc_subpictures_descriptor default_service_mode="true" processing_mode="1" service_description="whole mosaic">
+      <subpicture component_tag="0x01" subpicture_id="0x00"/>
+      <subpicture component_tag="0x01" subpicture_id="0x01"/>
+      <subpicture component_tag="0x01" subpicture_id="0x02"/>
+      <subpicture component_tag="0x01" subpicture_id="0x03"/>
+    </vvc_subpictures_descriptor>
+    <vvc_subpictures_descriptor default_service_mode="false" processing_mode="2"/>
+    <vvc_subpictures_descriptor default_service_mode="false" processing_mode="6" service_description="picture-in-picture">
+      <subpicture component_tag="0x01" subpicture_id="0x01"/>
+      <subpicture component_tag="0x01" subpicture_id="0x02"/>
+      <subpicture component_tag="0x01" subpicture_id="0x00"/>
+      <subpicture component_tag="0x01" subpicture_id="0x03"/>
+      <subpicture component_tag="0x01" subpicture_id="0x04"/>
+    </vvc_subpictures_descriptor>
     <EVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,419,896" K_90khz="3,735,928,559" num_units_in_tick="2,271,560,481"/>
     <EVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
     <EVC_video_descriptor profile_idc="0xFE" level_idc="0xC5" toolset_idc_h="0x98765432" toolset_idc_l="0x45698523" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" EVC_still_present_flag="false" EVC_24hr_picture_present_flag="true" HDR_WCG_idc="3" video_properties_tag="0"/>
@@ -20,8 +29,8 @@
     <LCEVC_video_descriptor lcevc_stream_tag="0x56" profile_idc="0x05" level_idc="0x09" sublevel_idc="0x01" processed_planes_type_flag="true" picture_type_bit_flag="false" field_type_bit_flag="true" HDR_WCG_idc="2" video_properties_tag="6"/>
     <VVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
     <VVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,760,086" K_90khz="343,429,686" num_units_in_tick="2,519,881,793"/>
-    <VVC_video_descriptor profile_idc="0x74" tier_flag="true" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" level_idc="0xEB" VVC_still_present_flag="true" VVC_24hr_picture_present_flag="false" HDR_WCG_idc="3" video_properties_tag="0"/>
-    <VVC_video_descriptor profile_idc="0x4F" tier_flag="false" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" level_idc="0x15" VVC_still_present_flag="false" VVC_24hr_picture_present_flag="true" HDR_WCG_idc="2" video_properties_tag="9" temporal_id_min="3" temporal_id_max="6">
+    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" level_idc="0x50" VVC_still_present_flag="false" VVC_24hr_picture_present_flag="true" HDR_WCG_idc="3" video_properties_tag="0"/>
+    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" level_idc="0x66" VVC_still_present_flag="true" VVC_24hr_picture_present_flag="false" HDR_WCG_idc="0" video_properties_tag="0" temporal_id_min="3" temporal_id_max="5">
       <sub_profile_idc value="0x12369874"/>
       <sub_profile_idc value="0x01236985"/>
       <sub_profile_idc value="0x41558723"/>
