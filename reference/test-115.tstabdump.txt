@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 211 bytes
+  Section: 0 (last: 0), version: 0, size: 247 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: AVS3 Video (T/AI 109.6) (0xD1, 209), 8 bytes
@@ -75,7 +75,7 @@
     Profile IDC: Main 10 (0x01), tier: Main
     Progressive source: true, interlaced source: false, non packed: true, frame only: false
     Level IDC: 5.0 (0x50), still pictures: false, 24-hour pictures: true
-    HDR WCG idc: no indication (3), video properties: not known (0)
+    HDR WCG idc: HDR and WCG (2), video properties: BT2100_PQ_RGB (4)
   - Descriptor 14: VVC Video (H.222.0) (0x39, 57), 20 bytes
     Profile IDC: Main 10 (0x01), tier: Main
     Sub profile IDC: 0x12369874 0x01236985 0x41558723
@@ -83,4 +83,29 @@
     Level IDC: 6.2 (0x66), still pictures: true, 24-hour pictures: false
     HDR WCG idc: SDR (0), video properties: not known (0)
     Temporal id min: 3, max: 5
+  - Descriptor 15: MPEG-2 Extension (0x3F, 63), 9 bytes
+    MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
+    3D-audio profile level indication: reserved (0xAB)
+    Interactivity enabled: false
+    Reference channel layout: 0x34 (52)
+    Reserved data (5 bytes): 01 23 45 67 89
+  - Descriptor 16: MPEG-2 Extension (0x3F, 63), 11 bytes
+    MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
+    3D-audio profile level indication: reserved (0xCD)
+    Interactivity enabled: true
+    Reference channel layout: 0x12 (18)
+    Compatible Set Indication: Main profile L1 (0x01)
+    Compatible Set Indication: Main profile L2 (0x02)
+    Compatible Set Indication: Main profile L3 (0x03)
+    Compatible Set Indication: Main profile L4 (0x04)
+    Compatible Set Indication: Main profile L5 (0x05)
+    Compatible Set Indication: Baseline profile L2 (0x11)
+  - Descriptor 17: MPEG-2 Extension (0x3F, 63), 10 bytes
+    MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
+    3D-audio profile level indication: reserved (0xEF)
+    Interactivity enabled: false
+    Reference channel layout: 0x23 (35)
+    Compatible Set Indication: Main profile L1 (0x01)
+    Compatible Set Indication: Baseline profile L3 (0x12)
+    Reserved data (3 bytes): 45 67 89
 

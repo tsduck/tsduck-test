@@ -29,11 +29,29 @@
     <LCEVC_video_descriptor lcevc_stream_tag="0x56" profile_idc="0x05" level_idc="0x09" sublevel_idc="0x01" processed_planes_type_flag="true" picture_type_bit_flag="false" field_type_bit_flag="true" HDR_WCG_idc="2" video_properties_tag="6"/>
     <VVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
     <VVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,760,086" K_90khz="343,429,686" num_units_in_tick="2,519,881,793"/>
-    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" level_idc="0x50" VVC_still_present_flag="false" VVC_24hr_picture_present_flag="true" HDR_WCG_idc="3" video_properties_tag="0"/>
+    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" level_idc="0x50" VVC_still_present_flag="false" VVC_24hr_picture_present_flag="true" HDR_WCG_idc="2" video_properties_tag="4"/>
     <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" level_idc="0x66" VVC_still_present_flag="true" VVC_24hr_picture_present_flag="false" HDR_WCG_idc="0" video_properties_tag="0" temporal_id_min="3" temporal_id_max="5">
       <sub_profile_idc value="0x12369874"/>
       <sub_profile_idc value="0x01236985"/>
       <sub_profile_idc value="0x41558723"/>
     </VVC_video_descriptor>
+    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xAB" interactivity_enabled="false" reference_channel_layout="0x34">
+      <reserved>
+        01 23 45 67 89
+      </reserved>
+    </MPEGH_3D_audio_descriptor>
+    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xCD" interactivity_enabled="true" reference_channel_layout="0x12">
+      <CompatibleSetIndication>
+        01 02 03 04 05 11
+      </CompatibleSetIndication>
+    </MPEGH_3D_audio_descriptor>
+    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xEF" interactivity_enabled="false" reference_channel_layout="0x23">
+      <CompatibleSetIndication>
+        01 12
+      </CompatibleSetIndication>
+      <reserved>
+        45 67 89
+      </reserved>
+    </MPEGH_3D_audio_descriptor>
   </PMT>
 </tsduck>

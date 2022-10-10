@@ -167,14 +167,14 @@
       {
         "#name": "VVC_video_descriptor",
         "frame_only_constraint_flag": false,
-        "hdr_wcg_idc": 3,
+        "hdr_wcg_idc": 2,
         "interlaced_source_flag": false,
         "level_idc": 80,
         "non_packed_constraint_flag": true,
         "profile_idc": 1,
         "progressive_source_flag": true,
         "tier_flag": false,
-        "video_properties_tag": 0,
+        "video_properties_tag": 4,
         "vvc_24hr_picture_present_flag": true,
         "vvc_still_present_flag": false
       },
@@ -207,6 +207,54 @@
         "video_properties_tag": 0,
         "vvc_24hr_picture_present_flag": false,
         "vvc_still_present_flag": true
+      },
+      {
+        "#name": "MPEGH_3D_audio_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ],
+        "interactivity_enabled": false,
+        "mpegh_3da_profile_level_indication": 171,
+        "reference_channel_layout": 52
+      },
+      {
+        "#name": "MPEGH_3D_audio_descriptor",
+        "#nodes": [
+          {
+            "#name": "CompatibleSetIndication",
+            "#nodes": [
+              "01 02 03 04 05 11"
+            ]
+          }
+        ],
+        "interactivity_enabled": true,
+        "mpegh_3da_profile_level_indication": 205,
+        "reference_channel_layout": 18
+      },
+      {
+        "#name": "MPEGH_3D_audio_descriptor",
+        "#nodes": [
+          {
+            "#name": "CompatibleSetIndication",
+            "#nodes": [
+              "01 12"
+            ]
+          },
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "45 67 89"
+            ]
+          }
+        ],
+        "interactivity_enabled": false,
+        "mpegh_3da_profile_level_indication": 239,
+        "reference_channel_layout": 35
       }
     ],
     "current": true,

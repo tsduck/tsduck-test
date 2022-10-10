@@ -140,6 +140,36 @@
       <sub_profile_idc value="0x41558723"/>
     </VVC_video_descriptor>
 
+    <MPEGH_3D_audio_descriptor
+        mpegh_3da_profile_level_indication="0xAB"
+        interactivity_enabled="false"
+        reference_channel_layout="0x34">
+      <reserved>
+        0123456789
+      </reserved>
+    </MPEGH_3D_audio_descriptor>
+
+    <MPEGH_3D_audio_descriptor
+        mpegh_3da_profile_level_indication="0xCD"
+        interactivity_enabled="true"
+        reference_channel_layout="0x12">
+      <CompatibleSetIndication>
+        010203040511
+      </CompatibleSetIndication>
+    </MPEGH_3D_audio_descriptor>
+
+    <MPEGH_3D_audio_descriptor
+        mpegh_3da_profile_level_indication="0xEF"
+        interactivity_enabled="false"
+        reference_channel_layout="0x23">
+      <CompatibleSetIndication>
+        0112
+      </CompatibleSetIndication>
+      <reserved>
+        456789
+      </reserved>
+    </MPEGH_3D_audio_descriptor>
+
   </PMT>
 
 </tsduck>
