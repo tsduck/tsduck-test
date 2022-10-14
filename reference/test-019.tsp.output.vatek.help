@@ -18,6 +18,7 @@ Options:
       DVB-T, ISDB-T: indicate the constellation type. The default is 64-QAM.
       Must be one of "16-QAM", "64-QAM", "QPSK".
 
+  -r value
   --convolutional-rate value
       Indicate the convolutional rate. The specified value depends on the
       modulation type. DVB-T,ISDB-T: 1/2, 2/3, 3/4, 5/6, 7/8. The default is
@@ -89,6 +90,10 @@ Options:
       Must be one of "ATSC-VSB", "DMB-T", "DTMB", "DVB-T", "DVB-T2", "ISDB-T",
       "J83A", "J83B", "J83C".
 
+  --pcradjust value
+      Adjust the buffer transmission speed according to different application.
+      Must be one of "adjust", "disable".
+
   -p value
   --pilot-pattern value
       DVB-T2: indicate the pilot pattern to use, a value in the range 1 to 8.
@@ -129,10 +134,11 @@ Options:
       DVB-T2: indicate that constellation rotation is used for PLP #0.
       Otherwise not.
 
-  -r value
   --remux value
-      Either remux PCR values or transparently pass the TS. The default is
-      remux.
+      remux: Lock the first PCR to keep USB transfer TS stable, TS must contain
+      some PCR to operate.
+      passthrough: Bypass TS without padding null packets (input bitrate =
+      output bitrate).
       Must be one of "passthrough", "remux".
 
   --symbol-rate value
