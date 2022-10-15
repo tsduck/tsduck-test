@@ -3,6 +3,9 @@
 
   <PMT service_id="0">
 
+    <!-- Required for AVS3_video_descriptor -->
+    <private_data_specifier_descriptor private_data_specifier="avs"/>
+
     <AVS3_video_descriptor
         profile_id="50"
         level_id="85"
@@ -170,6 +173,55 @@
       </reserved>
     </MPEGH_3D_audio_descriptor>
 
+    <TTML_subtitling_descriptor
+      ISO_639_language_code="foo" 
+      subtitle_purpose="2"
+      TTS_suitability="1"/>
+
+    <TTML_subtitling_descriptor
+      ISO_639_language_code="bar" 
+      subtitle_purpose="16"
+      TTS_suitability="2"
+      qualifier="0x12345678"
+      service_name="Dummy service"
+      reserved_zero_future_count="5">
+      <dvb_ttml_profile value="1"/>
+      <dvb_ttml_profile value="2"/>
+      <font_id value="3"/>
+      <font_id value="4"/>
+      <font_id value="5"/>
+    </TTML_subtitling_descriptor>
+
+    <MPEG4_text_descriptor
+        textFormat="1"
+        ThreeGPPBaseFormat="16"
+        profileLevel="16"
+        durationClock="5"
+        sampleDescriptionFlags="2"
+        layer="6"
+        text_track_width="7"
+        text_track_height="8"/>
+
+    <MPEG4_text_descriptor
+        textFormat="10"
+        ThreeGPPBaseFormat="16"
+        profileLevel="16"
+        durationClock="14"
+        sampleDescriptionFlags="1"
+        layer="15"
+        text_track_width="16"
+        text_track_height="17">
+
+      <Compatible_3GPPFormat value="16"/>
+      <Compatible_3GPPFormat value="16"/>
+      <Compatible_3GPPFormat value="16"/>
+
+      <Sample_index_and_description sample_index="4" textFormat="0xF1"/>
+      <Sample_index_and_description sample_index="6" textFormat="0xF2">
+        DEAD BEEF
+      </Sample_index_and_description>
+
+    </MPEG4_text_descriptor>
   </PMT>
 
 </tsduck>

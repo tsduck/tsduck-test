@@ -24,10 +24,6 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
-  --avs
-      Assume that the transport stream is an AVS one with AVS-specific
-      descriptors.
-
   --brazil
       A synonym for '--isdb --abnt --default-charset RAW-ISO-8859-15
       --time-reference UTC-3'. This is a handy shortcut when working on South
@@ -74,7 +70,7 @@ Options:
       without a preceding private_data_specifier_descriptor. The specified
       value is used as private data specifier to interpret private descriptors.
       The PDS value can be an integer or one of (not case-sensitive) names.
-      Must be one of "BskyB", "CanalPlus", "EACEM", "EICTA", "Eutelsat",
+      Must be one of "AVS", "BskyB", "CanalPlus", "EACEM", "EICTA", "Eutelsat",
       "Logiways", "Nagra", "NorDig", "OFCOM", "TPS".
 
   -d

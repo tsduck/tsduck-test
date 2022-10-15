@@ -3,6 +3,10 @@
     "#name": "PMT",
     "#nodes": [
       {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "AVS"
+      },
+      {
         "#name": "AVS3_video_descriptor",
         "chroma_format": 1,
         "colour_primaries": 9,
@@ -255,6 +259,93 @@
         "interactivity_enabled": false,
         "mpegh_3da_profile_level_indication": 239,
         "reference_channel_layout": 35
+      },
+      {
+        "#name": "TTML_subtitling_descriptor",
+        "iso_639_language_code": "foo",
+        "reserved_zero_future_count": 0,
+        "subtitle_purpose": 2,
+        "tts_suitability": 1
+      },
+      {
+        "#name": "TTML_subtitling_descriptor",
+        "#nodes": [
+          {
+            "#name": "dvb_ttml_profile",
+            "value": 1
+          },
+          {
+            "#name": "dvb_ttml_profile",
+            "value": 2
+          },
+          {
+            "#name": "font_id",
+            "value": 3
+          },
+          {
+            "#name": "font_id",
+            "value": 4
+          },
+          {
+            "#name": "font_id",
+            "value": 5
+          }
+        ],
+        "iso_639_language_code": "bar",
+        "qualifier": 305419896,
+        "reserved_zero_future_count": 5,
+        "service_name": "Dummy service",
+        "subtitle_purpose": 16,
+        "tts_suitability": 2
+      },
+      {
+        "#name": "MPEG4_text_descriptor",
+        "durationclock": 5,
+        "layer": 6,
+        "profilelevel": 16,
+        "sampledescriptionflags": 2,
+        "text_track_height": 8,
+        "text_track_width": 7,
+        "textformat": 1,
+        "threegppbaseformat": 16
+      },
+      {
+        "#name": "MPEG4_text_descriptor",
+        "#nodes": [
+          {
+            "#name": "Compatible_3GPPFormat",
+            "value": 16
+          },
+          {
+            "#name": "Compatible_3GPPFormat",
+            "value": 16
+          },
+          {
+            "#name": "Compatible_3GPPFormat",
+            "value": 16
+          },
+          {
+            "#name": "Sample_index_and_description",
+            "sample_index": 4,
+            "textformat": 241
+          },
+          {
+            "#name": "Sample_index_and_description",
+            "#nodes": [
+              "DE AD BE EF"
+            ],
+            "sample_index": 6,
+            "textformat": 242
+          }
+        ],
+        "durationclock": 14,
+        "layer": 15,
+        "profilelevel": 16,
+        "sampledescriptionflags": 1,
+        "text_track_height": 17,
+        "text_track_width": 16,
+        "textformat": 10,
+        "threegppbaseformat": 16
       }
     ],
     "current": true,
