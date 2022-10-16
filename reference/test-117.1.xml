@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT version="0" current="true" service_id="0x0000">
+    <metadata PID="100"/>
+    <component elementary_PID="0x0101" stream_type="0x06">
+      <subtitling_descriptor>
+        <subtitling language_code="l01" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+        <subtitling language_code="l02" subtitling_type="0x20" composition_page_id="0x0003" ancillary_page_id="0x0004"/>
+      </subtitling_descriptor>
+    </component>
+    <component elementary_PID="0x0100" stream_type="0x06">
+      <ISO_639_language_descriptor>
+        <language code="l03" audio_type="0x00"/>
+        <language code="l04" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+      <DVB_AC3_descriptor component_type="0x42"/>
+    </component>
+    <component elementary_PID="0x0130" stream_type="0x0F"/>
+    <component elementary_PID="0x0120" stream_type="0x0F">
+      <ISO_639_language_descriptor>
+        <language code="l05" audio_type="0x00"/>
+        <language code="l06" audio_type="0x00"/>
+      </ISO_639_language_descriptor>
+    </component>
+    <component elementary_PID="0x0115" stream_type="0x02"/>
+    <component elementary_PID="0x0140" stream_type="0x24"/>
+    <component elementary_PID="0x0102" stream_type="0x05"/>
+    <component elementary_PID="0x0111" stream_type="0x06">
+      <ISO_639_language_descriptor/>
+    </component>
+  </PMT>
+</tsduck>

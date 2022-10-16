@@ -203,3 +203,11 @@ Options:
       stream_identifier_descriptor with the specified id. Several
       --set-stream-identifier options may be specified.
 
+  --sort-languages lang1,lang2,...
+      Sort the elementary streams carrying audio and subtitles in the specified
+      order of languages. The languages must be 3-letter ISO-639 codes.
+
+  --sort-pids pid1,pid2,...
+      Sort the elementary streams in the specified order of PID's. Non-existent
+      PID's are ignored. Unlisted PID's, if any, are placed after the others.
+
