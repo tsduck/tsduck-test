@@ -222,6 +222,54 @@
       </Sample_index_and_description>
 
     </MPEG4_text_descriptor>
+	
+	<MuxCode_descriptor>
+	  <MuxCodeEntry MuxCode="4" version="1">
+		<substructure repetitionCount="7">
+		  <slot m4MuxChannel="240" numberOfBytes="16"/>
+		  <slot m4MuxChannel="1" numberOfBytes="253"/>
+		</substructure>
+	  </MuxCodeEntry>
+	</MuxCode_descriptor>
+		
+	<MuxCode_descriptor>
+ 	  <MuxCodeEntry MuxCode="15" version="12"/>
+	</MuxCode_descriptor>
+	
+	<MuxCode_descriptor>
+	  <MuxCodeEntry MuxCode="6" version="6">
+	    <substructure repetitionCount="4"/>
+		<substructure repetitionCount="0"/>
+	  </MuxCodeEntry>
+	</MuxCode_descriptor>
+
+	<MuxCode_descriptor>
+	  <MuxCodeEntry MuxCode="6" version="6">
+	    <substructure repetitionCount="4"/>
+	  </MuxCodeEntry>
+	  <MuxCodeEntry MuxCode="5" version="6">
+		<substructure repetitionCount="7">
+		  <slot m4MuxChannel="240" numberOfBytes="16"/>
+		  <slot m4MuxChannel="1" numberOfBytes="253"/>
+		</substructure>
+	  </MuxCodeEntry>
+	</MuxCode_descriptor>
+
+	<FmxBufferSize_descriptor>
+		<DefaultFlexMuxBufferDescriptor flexMuxChannel="156" FB_BufferSize="15549729"/>
+	</FmxBufferSize_descriptor>
+	
+	<FmxBufferSize_descriptor>
+		<DefaultFlexMuxBufferDescriptor flexMuxChannel="201" FB_BufferSize="8208677"/>
+		<FlexMuxBufferDescriptor flexMuxChannel="17" FB_BufferSize="901127"/>
+	</FmxBufferSize_descriptor>
+	
+	<FmxBufferSize_descriptor>
+		<DefaultFlexMuxBufferDescriptor flexMuxChannel="42" FB_BufferSize="1234567"/>
+		<FlexMuxBufferDescriptor flexMuxChannel="177" FB_BufferSize="901127"/>
+		<FlexMuxBufferDescriptor flexMuxChannel="178" FB_BufferSize="901127"/>
+	</FmxBufferSize_descriptor>
+	
   </PMT>
 
 </tsduck>

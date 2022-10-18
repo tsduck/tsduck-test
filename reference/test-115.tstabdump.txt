@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 348 bytes
+  Section: 0 (last: 0), version: 0, size: 414 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
@@ -128,14 +128,41 @@
     Text format: Timed Text as specified in 3GPP TS 26.245 (0x01), config length: 11
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 5 Hz
     Sample description: In-band only (0x2)
-    Layer: 6, text track width=7, height=8
+    Layer: 6, text track width=8, height=7
   - Descriptor 22: MPEG-4 Text (0x2D, 45), 31 bytes
     Text format: unknown (0x0A), config length: 28
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 14 Hz
     Sample description: Out-of-band only (0x1)
-    Layer: 15, text track width=16, height=17
+    Layer: 15, text track width=17, height=16
     Compatible 3GPP formats: 16 16 16
     Sample description[0]: index=0x04, format: User-private (0xF1), length: 0
     Sample description[1]: index=0x06, format: User-private (0xF2), length: 4
     DE AD BE EF
+  - Descriptor 23: MuxCode (0x21, 33), 8 bytes
+    index[0] MuxCode: 4, version: 1
+     substructure[0], repetition count: 7
+      M4 mux channel: 240, byte count: 16
+      M4 mux channel: 1, byte count: 253
+  - Descriptor 24: MuxCode (0x21, 33), 3 bytes
+    index[0] MuxCode: 15, version: 12
+  - Descriptor 25: MuxCode (0x21, 33), 5 bytes
+    index[0] MuxCode: 6, version: 6
+     substructure[0], repetition count: 4
+     substructure[1], repetition count: 0
+  - Descriptor 26: MuxCode (0x21, 33), 12 bytes
+    index[0] MuxCode: 6, version: 6
+     substructure[0], repetition count: 4
+    index[1] MuxCode: 5, version: 6
+     substructure[0], repetition count: 7
+      M4 mux channel: 240, byte count: 16
+      M4 mux channel: 1, byte count: 253
+  - Descriptor 27: FmxBufferSize (0x22, 34), 4 bytes
+     FlexMuxBuffer(default) channel: 156, size: 15549729
+  - Descriptor 28: FmxBufferSize (0x22, 34), 8 bytes
+     FlexMuxBuffer(default) channel: 201, size: 8208677
+     FlexMuxBuffer(0) channel: 17, size: 901127
+  - Descriptor 29: FmxBufferSize (0x22, 34), 12 bytes
+     FlexMuxBuffer(default) channel: 42, size: 1234567
+     FlexMuxBuffer(0) channel: 177, size: 901127
+     FlexMuxBuffer(1) channel: 178, size: 901127
 
