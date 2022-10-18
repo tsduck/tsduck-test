@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 348 bytes
+  Version: 0, sections: 1, total size: 401 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -129,14 +129,443 @@
       Text format: Timed Text as specified in 3GPP TS 26.245 (0x01), config length: 11
       3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 5 Hz
       Sample description: In-band only (0x2)
-      Layer: 6, text track width=7, height=8
+      Layer: 6, text track width=8, height=7
     - Descriptor 22: MPEG-4 Text (0x2D, 45), 31 bytes
       Text format: unknown (0x0A), config length: 28
       3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 14 Hz
       Sample description: Out-of-band only (0x1)
-      Layer: 15, text track width=16, height=17
+      Layer: 15, text track width=17, height=16
       Compatible 3GPP formats: 16 16 16
       Sample description[0]: index=0x04, format: User-private (0xF1), length: 0
       Sample description[1]: index=0x06, format: User-private (0xF2), length: 4
       DE AD BE EF
+    - Descriptor 23: MuxCode (0x21, 33), 3 bytes
+      index[0] MuxCode: 1, version: 0
+       substructure[0], repetition count: 0
+       substructure[1], repetition count: 0
+       substructure[2], repetition count: 0
+       substructure[3], repetition count: 0
+       substructure[4], repetition count: 0
+       substructure[5], repetition count: 0
+       substructure[6], repetition count: 0
+       substructure[7], repetition count: 0
+       substructure[8], repetition count: 0
+       substructure[9], repetition count: 0
+       substructure[10], repetition count: 0
+       substructure[11], repetition count: 0
+       substructure[12], repetition count: 0
+       substructure[13], repetition count: 0
+       substructure[14], repetition count: 0
+       substructure[15], repetition count: 0
+      Extraneous 1 bytes:
+      0000:  00                                         .
+    - Descriptor 24: MuxCode (0x21, 33), 3 bytes
+      index[0] MuxCode: 3, version: 3
+       substructure[0], repetition count: 0
+       substructure[1], repetition count: 0
+       substructure[2], repetition count: 0
+       substructure[3], repetition count: 0
+       substructure[4], repetition count: 0
+       substructure[5], repetition count: 0
+       substructure[6], repetition count: 0
+       substructure[7], repetition count: 0
+       substructure[8], repetition count: 0
+       substructure[9], repetition count: 0
+       substructure[10], repetition count: 0
+       substructure[11], repetition count: 0
+       substructure[12], repetition count: 0
+       substructure[13], repetition count: 0
+       substructure[14], repetition count: 0
+       substructure[15], repetition count: 0
+       substructure[16], repetition count: 0
+       substructure[17], repetition count: 0
+       substructure[18], repetition count: 0
+       substructure[19], repetition count: 0
+       substructure[20], repetition count: 0
+       substructure[21], repetition count: 0
+       substructure[22], repetition count: 0
+       substructure[23], repetition count: 0
+       substructure[24], repetition count: 0
+       substructure[25], repetition count: 0
+       substructure[26], repetition count: 0
+       substructure[27], repetition count: 0
+       substructure[28], repetition count: 0
+       substructure[29], repetition count: 0
+       substructure[30], repetition count: 0
+       substructure[31], repetition count: 0
+       substructure[32], repetition count: 0
+       substructure[33], repetition count: 0
+       substructure[34], repetition count: 0
+       substructure[35], repetition count: 0
+       substructure[36], repetition count: 0
+       substructure[37], repetition count: 0
+       substructure[38], repetition count: 0
+       substructure[39], repetition count: 0
+       substructure[40], repetition count: 0
+       substructure[41], repetition count: 0
+       substructure[42], repetition count: 0
+       substructure[43], repetition count: 0
+       substructure[44], repetition count: 0
+       substructure[45], repetition count: 0
+       substructure[46], repetition count: 0
+       substructure[47], repetition count: 0
+       substructure[48], repetition count: 0
+       substructure[49], repetition count: 0
+       substructure[50], repetition count: 0
+       substructure[51], repetition count: 0
+       substructure[52], repetition count: 0
+       substructure[53], repetition count: 0
+       substructure[54], repetition count: 0
+       substructure[55], repetition count: 0
+       substructure[56], repetition count: 0
+       substructure[57], repetition count: 0
+       substructure[58], repetition count: 0
+       substructure[59], repetition count: 0
+       substructure[60], repetition count: 0
+       substructure[61], repetition count: 0
+       substructure[62], repetition count: 0
+       substructure[63], repetition count: 0
+       substructure[64], repetition count: 0
+       substructure[65], repetition count: 0
+       substructure[66], repetition count: 0
+       substructure[67], repetition count: 0
+       substructure[68], repetition count: 0
+       substructure[69], repetition count: 0
+       substructure[70], repetition count: 0
+       substructure[71], repetition count: 0
+       substructure[72], repetition count: 0
+       substructure[73], repetition count: 0
+       substructure[74], repetition count: 0
+       substructure[75], repetition count: 0
+       substructure[76], repetition count: 0
+       substructure[77], repetition count: 0
+       substructure[78], repetition count: 0
+       substructure[79], repetition count: 0
+       substructure[80], repetition count: 0
+       substructure[81], repetition count: 0
+       substructure[82], repetition count: 0
+       substructure[83], repetition count: 0
+       substructure[84], repetition count: 0
+       substructure[85], repetition count: 0
+       substructure[86], repetition count: 0
+       substructure[87], repetition count: 0
+       substructure[88], repetition count: 0
+       substructure[89], repetition count: 0
+       substructure[90], repetition count: 0
+       substructure[91], repetition count: 0
+       substructure[92], repetition count: 0
+       substructure[93], repetition count: 0
+       substructure[94], repetition count: 0
+       substructure[95], repetition count: 0
+       substructure[96], repetition count: 0
+       substructure[97], repetition count: 0
+       substructure[98], repetition count: 0
+       substructure[99], repetition count: 0
+       substructure[100], repetition count: 0
+       substructure[101], repetition count: 0
+       substructure[102], repetition count: 0
+       substructure[103], repetition count: 0
+       substructure[104], repetition count: 0
+       substructure[105], repetition count: 0
+       substructure[106], repetition count: 0
+       substructure[107], repetition count: 0
+       substructure[108], repetition count: 0
+       substructure[109], repetition count: 0
+       substructure[110], repetition count: 0
+       substructure[111], repetition count: 0
+       substructure[112], repetition count: 0
+       substructure[113], repetition count: 0
+       substructure[114], repetition count: 0
+       substructure[115], repetition count: 0
+       substructure[116], repetition count: 0
+       substructure[117], repetition count: 0
+       substructure[118], repetition count: 0
+       substructure[119], repetition count: 0
+       substructure[120], repetition count: 0
+       substructure[121], repetition count: 0
+       substructure[122], repetition count: 0
+       substructure[123], repetition count: 0
+       substructure[124], repetition count: 0
+       substructure[125], repetition count: 0
+       substructure[126], repetition count: 0
+       substructure[127], repetition count: 0
+       substructure[128], repetition count: 0
+       substructure[129], repetition count: 0
+       substructure[130], repetition count: 0
+       substructure[131], repetition count: 0
+       substructure[132], repetition count: 0
+       substructure[133], repetition count: 0
+       substructure[134], repetition count: 0
+       substructure[135], repetition count: 0
+       substructure[136], repetition count: 0
+       substructure[137], repetition count: 0
+       substructure[138], repetition count: 0
+       substructure[139], repetition count: 0
+       substructure[140], repetition count: 0
+       substructure[141], repetition count: 0
+       substructure[142], repetition count: 0
+       substructure[143], repetition count: 0
+       substructure[144], repetition count: 0
+       substructure[145], repetition count: 0
+       substructure[146], repetition count: 0
+       substructure[147], repetition count: 0
+       substructure[148], repetition count: 0
+       substructure[149], repetition count: 0
+       substructure[150], repetition count: 0
+       substructure[151], repetition count: 0
+       substructure[152], repetition count: 0
+       substructure[153], repetition count: 0
+       substructure[154], repetition count: 0
+       substructure[155], repetition count: 0
+       substructure[156], repetition count: 0
+       substructure[157], repetition count: 0
+       substructure[158], repetition count: 0
+       substructure[159], repetition count: 0
+       substructure[160], repetition count: 0
+       substructure[161], repetition count: 0
+       substructure[162], repetition count: 0
+       substructure[163], repetition count: 0
+       substructure[164], repetition count: 0
+       substructure[165], repetition count: 0
+       substructure[166], repetition count: 0
+       substructure[167], repetition count: 0
+       substructure[168], repetition count: 0
+       substructure[169], repetition count: 0
+       substructure[170], repetition count: 0
+       substructure[171], repetition count: 0
+       substructure[172], repetition count: 0
+       substructure[173], repetition count: 0
+       substructure[174], repetition count: 0
+       substructure[175], repetition count: 0
+       substructure[176], repetition count: 0
+       substructure[177], repetition count: 0
+       substructure[178], repetition count: 0
+       substructure[179], repetition count: 0
+       substructure[180], repetition count: 0
+       substructure[181], repetition count: 0
+       substructure[182], repetition count: 0
+       substructure[183], repetition count: 0
+       substructure[184], repetition count: 0
+       substructure[185], repetition count: 0
+       substructure[186], repetition count: 0
+       substructure[187], repetition count: 0
+       substructure[188], repetition count: 0
+       substructure[189], repetition count: 0
+       substructure[190], repetition count: 0
+       substructure[191], repetition count: 0
+      Extraneous 1 bytes:
+      0000:  00                                         .
+    - Descriptor 25: MuxCode (0x21, 33), 3 bytes
+      index[0] MuxCode: 1, version: 2
+       substructure[0], repetition count: 0
+       substructure[1], repetition count: 0
+       substructure[2], repetition count: 0
+       substructure[3], repetition count: 0
+       substructure[4], repetition count: 0
+       substructure[5], repetition count: 0
+       substructure[6], repetition count: 0
+       substructure[7], repetition count: 0
+       substructure[8], repetition count: 0
+       substructure[9], repetition count: 0
+       substructure[10], repetition count: 0
+       substructure[11], repetition count: 0
+       substructure[12], repetition count: 0
+       substructure[13], repetition count: 0
+       substructure[14], repetition count: 0
+       substructure[15], repetition count: 0
+       substructure[16], repetition count: 0
+       substructure[17], repetition count: 0
+       substructure[18], repetition count: 0
+       substructure[19], repetition count: 0
+       substructure[20], repetition count: 0
+       substructure[21], repetition count: 0
+       substructure[22], repetition count: 0
+       substructure[23], repetition count: 0
+       substructure[24], repetition count: 0
+       substructure[25], repetition count: 0
+       substructure[26], repetition count: 0
+       substructure[27], repetition count: 0
+       substructure[28], repetition count: 0
+       substructure[29], repetition count: 0
+       substructure[30], repetition count: 0
+       substructure[31], repetition count: 0
+       substructure[32], repetition count: 0
+       substructure[33], repetition count: 0
+       substructure[34], repetition count: 0
+       substructure[35], repetition count: 0
+       substructure[36], repetition count: 0
+       substructure[37], repetition count: 0
+       substructure[38], repetition count: 0
+       substructure[39], repetition count: 0
+       substructure[40], repetition count: 0
+       substructure[41], repetition count: 0
+       substructure[42], repetition count: 0
+       substructure[43], repetition count: 0
+       substructure[44], repetition count: 0
+       substructure[45], repetition count: 0
+       substructure[46], repetition count: 0
+       substructure[47], repetition count: 0
+       substructure[48], repetition count: 0
+       substructure[49], repetition count: 0
+       substructure[50], repetition count: 0
+       substructure[51], repetition count: 0
+       substructure[52], repetition count: 0
+       substructure[53], repetition count: 0
+       substructure[54], repetition count: 0
+       substructure[55], repetition count: 0
+       substructure[56], repetition count: 0
+       substructure[57], repetition count: 0
+       substructure[58], repetition count: 0
+       substructure[59], repetition count: 0
+       substructure[60], repetition count: 0
+       substructure[61], repetition count: 0
+       substructure[62], repetition count: 0
+       substructure[63], repetition count: 0
+       substructure[64], repetition count: 0
+       substructure[65], repetition count: 0
+       substructure[66], repetition count: 0
+       substructure[67], repetition count: 0
+       substructure[68], repetition count: 0
+       substructure[69], repetition count: 0
+       substructure[70], repetition count: 0
+       substructure[71], repetition count: 0
+       substructure[72], repetition count: 0
+       substructure[73], repetition count: 0
+       substructure[74], repetition count: 0
+       substructure[75], repetition count: 0
+       substructure[76], repetition count: 0
+       substructure[77], repetition count: 0
+       substructure[78], repetition count: 0
+       substructure[79], repetition count: 0
+       substructure[80], repetition count: 0
+       substructure[81], repetition count: 0
+       substructure[82], repetition count: 0
+       substructure[83], repetition count: 0
+       substructure[84], repetition count: 0
+       substructure[85], repetition count: 0
+       substructure[86], repetition count: 0
+       substructure[87], repetition count: 0
+       substructure[88], repetition count: 0
+       substructure[89], repetition count: 0
+       substructure[90], repetition count: 0
+       substructure[91], repetition count: 0
+       substructure[92], repetition count: 0
+       substructure[93], repetition count: 0
+       substructure[94], repetition count: 0
+       substructure[95], repetition count: 0
+      Extraneous 1 bytes:
+      0000:  00                                         .
+    - Descriptor 26: MuxCode (0x21, 33), 6 bytes
+      index[0] MuxCode: 1, version: 2
+       substructure[0], repetition count: 0
+       substructure[1], repetition count: 5
+        M4 mux channel: 96, byte count: 255
+        M4 mux channel: 255, byte count: 255
+        M4 mux channel: 255, byte count: 255
+        M4 mux channel: 255, byte count: 255
+       substructure[2], repetition count: 0
+       substructure[3], repetition count: 0
+       substructure[4], repetition count: 0
+       substructure[5], repetition count: 0
+       substructure[6], repetition count: 0
+       substructure[7], repetition count: 0
+       substructure[8], repetition count: 0
+       substructure[9], repetition count: 0
+       substructure[10], repetition count: 0
+       substructure[11], repetition count: 0
+       substructure[12], repetition count: 0
+       substructure[13], repetition count: 0
+       substructure[14], repetition count: 0
+       substructure[15], repetition count: 0
+       substructure[16], repetition count: 0
+       substructure[17], repetition count: 0
+       substructure[18], repetition count: 0
+       substructure[19], repetition count: 0
+       substructure[20], repetition count: 0
+       substructure[21], repetition count: 0
+       substructure[22], repetition count: 0
+       substructure[23], repetition count: 0
+       substructure[24], repetition count: 0
+       substructure[25], repetition count: 0
+       substructure[26], repetition count: 0
+       substructure[27], repetition count: 0
+       substructure[28], repetition count: 0
+       substructure[29], repetition count: 0
+       substructure[30], repetition count: 0
+       substructure[31], repetition count: 0
+       substructure[32], repetition count: 0
+       substructure[33], repetition count: 0
+       substructure[34], repetition count: 0
+       substructure[35], repetition count: 0
+       substructure[36], repetition count: 0
+       substructure[37], repetition count: 0
+       substructure[38], repetition count: 0
+       substructure[39], repetition count: 0
+       substructure[40], repetition count: 0
+       substructure[41], repetition count: 0
+       substructure[42], repetition count: 0
+       substructure[43], repetition count: 0
+       substructure[44], repetition count: 0
+       substructure[45], repetition count: 0
+       substructure[46], repetition count: 0
+       substructure[47], repetition count: 0
+       substructure[48], repetition count: 0
+       substructure[49], repetition count: 0
+       substructure[50], repetition count: 0
+       substructure[51], repetition count: 0
+       substructure[52], repetition count: 0
+       substructure[53], repetition count: 0
+       substructure[54], repetition count: 0
+       substructure[55], repetition count: 0
+       substructure[56], repetition count: 0
+       substructure[57], repetition count: 0
+       substructure[58], repetition count: 0
+       substructure[59], repetition count: 0
+       substructure[60], repetition count: 0
+       substructure[61], repetition count: 0
+       substructure[62], repetition count: 0
+       substructure[63], repetition count: 0
+       substructure[64], repetition count: 0
+       substructure[65], repetition count: 0
+       substructure[66], repetition count: 0
+       substructure[67], repetition count: 0
+       substructure[68], repetition count: 0
+       substructure[69], repetition count: 0
+       substructure[70], repetition count: 0
+       substructure[71], repetition count: 0
+       substructure[72], repetition count: 0
+       substructure[73], repetition count: 0
+       substructure[74], repetition count: 0
+       substructure[75], repetition count: 0
+       substructure[76], repetition count: 0
+       substructure[77], repetition count: 0
+       substructure[78], repetition count: 0
+       substructure[79], repetition count: 0
+       substructure[80], repetition count: 0
+       substructure[81], repetition count: 0
+       substructure[82], repetition count: 0
+       substructure[83], repetition count: 0
+       substructure[84], repetition count: 0
+       substructure[85], repetition count: 0
+       substructure[86], repetition count: 0
+       substructure[87], repetition count: 0
+       substructure[88], repetition count: 0
+       substructure[89], repetition count: 0
+       substructure[90], repetition count: 0
+       substructure[91], repetition count: 0
+       substructure[92], repetition count: 0
+       substructure[93], repetition count: 0
+       substructure[94], repetition count: 0
+       substructure[95], repetition count: 0
+      Extraneous 1 bytes:
+      0000:  00                                         .
+    - Descriptor 27: FmxBufferSize (0x22, 34), 4 bytes
+       FlexMuxBuffer(default) channel: 156, size: 15549729
+    - Descriptor 28: FmxBufferSize (0x22, 34), 8 bytes
+       FlexMuxBuffer(default) channel: 201, size: 8208677
+       FlexMuxBuffer(0) channel: 17, size: 901127
+    - Descriptor 29: FmxBufferSize (0x22, 34), 12 bytes
+       FlexMuxBuffer(default) channel: 42, size: 1234567
+       FlexMuxBuffer(0) channel: 177, size: 901127
+       FlexMuxBuffer(1) channel: 178, size: 901127
 

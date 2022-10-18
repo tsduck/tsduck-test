@@ -73,5 +73,30 @@
         DE AD BE EF
       </Sample_index_and_description>
     </MPEG4_text_descriptor>
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="0x04" version="0x01"/>
+    </MuxCode_descriptor>
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="0x0F" version="0x0C"/>
+    </MuxCode_descriptor>
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="0x06" version="0x06"/>
+    </MuxCode_descriptor>
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="0x06" version="0x06"/>
+      <MuxCodeEntry MuxCode="0x05" version="0x06"/>
+    </MuxCode_descriptor>
+    <FmxBufferSize_descriptor>
+      <DefaultFlexMuxBufferDescriptor flexMuxChannel="0x9C" FB_BufferSize="0x00ED4521"/>
+    </FmxBufferSize_descriptor>
+    <FmxBufferSize_descriptor>
+      <DefaultFlexMuxBufferDescriptor flexMuxChannel="0xC9" FB_BufferSize="0x007D4125"/>
+      <FlexMuxBufferDescriptor flexMuxChannel="0x11" FB_BufferSize="0x000DC007"/>
+    </FmxBufferSize_descriptor>
+    <FmxBufferSize_descriptor>
+      <DefaultFlexMuxBufferDescriptor flexMuxChannel="0x2A" FB_BufferSize="0x0012D687"/>
+      <FlexMuxBufferDescriptor flexMuxChannel="0xB1" FB_BufferSize="0x000DC007"/>
+      <FlexMuxBufferDescriptor flexMuxChannel="0xB2" FB_BufferSize="0x000DC007"/>
+    </FmxBufferSize_descriptor>
   </PMT>
 </tsduck>
