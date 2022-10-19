@@ -3,8 +3,8 @@
 
   <PMT service_id="0">
 
-    <!-- Required for AVS3_video_descriptor -->
-    <private_data_specifier_descriptor private_data_specifier="avs"/>
+    <!-- Required for AVS3_video_descriptor --> <!--
+   <private_data_specifier_descriptor private_data_specifier="avs"/>
 
     <AVS3_video_descriptor
         profile_id="50"
@@ -269,7 +269,35 @@
 		<FlexMuxBufferDescriptor flexMuxChannel="177" FB_BufferSize="901127"/>
 		<FlexMuxBufferDescriptor flexMuxChannel="178" FB_BufferSize="901127"/>
 	</FmxBufferSize_descriptor>
+-->	
+	<HEVC_operation_point_descriptor>
+		<operation_point 
+			target_ols="156" constant_frame_rate_info_idc="0" applicable_temporal_id="6"/>
+	</HEVC_operation_point_descriptor>
 	
+	<HEVC_operation_point_descriptor>
+		<profile_tier_level_info>
+			DEAD BEEF DEAD BEEF DEAD BEEF
+		</profile_tier_level_info>
+		<operation_point 
+			target_ols="156" constant_frame_rate_info_idc="1" applicable_temporal_id="6" frame_rate_indicator="2048"/>
+	</HEVC_operation_point_descriptor>
+	
+	<HEVC_operation_point_descriptor>
+		<operation_point 
+			target_ols="16" constant_frame_rate_info_idc="0" applicable_temporal_id="5">
+			<ES prepend_dependencies="false" ES_reference="62"/>
+			<ES prepend_dependencies="true" ES_reference="0"/>
+			<ESinOP necessary_layer="true" output_layer="false" ptl_ref_idx="56"/>
+		</operation_point>
+	</HEVC_operation_point_descriptor>
+	
+	<HEVC_operation_point_descriptor>
+		<operation_point 
+			target_ols="1" constant_frame_rate_info_idc="2" applicable_temporal_id="2"
+			frame_rate_indicator="4095" avg_bit_rate="12233445" max_bit_rate="4332211"/>
+	</HEVC_operation_point_descriptor>
+
   </PMT>
 
 </tsduck>

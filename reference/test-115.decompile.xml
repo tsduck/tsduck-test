@@ -1,116 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
-    <private_data_specifier_descriptor private_data_specifier="AVS"/>
-    <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="0x08" sample_precision="0x02" chroma_format="0x01" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="0x09" transfer_characteristics="0x0E" matrix_coefficients="0x08"/>
-    <vvc_subpictures_descriptor default_service_mode="true" processing_mode="1" service_description="whole mosaic">
-      <subpicture component_tag="0x01" subpicture_id="0x00"/>
-      <subpicture component_tag="0x01" subpicture_id="0x01"/>
-      <subpicture component_tag="0x01" subpicture_id="0x02"/>
-      <subpicture component_tag="0x01" subpicture_id="0x03"/>
-    </vvc_subpictures_descriptor>
-    <vvc_subpictures_descriptor default_service_mode="false" processing_mode="2"/>
-    <vvc_subpictures_descriptor default_service_mode="false" processing_mode="6" service_description="picture-in-picture">
-      <subpicture component_tag="0x01" subpicture_id="0x01"/>
-      <subpicture component_tag="0x01" subpicture_id="0x02"/>
-      <subpicture component_tag="0x01" subpicture_id="0x00"/>
-      <subpicture component_tag="0x01" subpicture_id="0x03"/>
-      <subpicture component_tag="0x01" subpicture_id="0x04"/>
-    </vvc_subpictures_descriptor>
-    <EVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,419,896" K_90khz="3,735,928,559" num_units_in_tick="2,271,560,481"/>
-    <EVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
-    <EVC_video_descriptor profile_idc="0xFE" level_idc="0xC5" toolset_idc_h="0x98765432" toolset_idc_l="0x45698523" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" EVC_still_present_flag="false" EVC_24hr_picture_present_flag="true" HDR_WCG_idc="3" video_properties_tag="0"/>
-    <EVC_video_descriptor profile_idc="0x18" level_idc="0x76" toolset_idc_h="0x45876239" toolset_idc_l="0x25812398" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" EVC_still_present_flag="true" EVC_24hr_picture_present_flag="false" HDR_WCG_idc="2" video_properties_tag="9" temporal_id_min="2" temporal_id_max="5"/>
-    <LCEVC_linkage_descriptor/>
-    <LCEVC_linkage_descriptor>
-      <lcevc_stream_tag>
-        01 23 45
-      </lcevc_stream_tag>
-    </LCEVC_linkage_descriptor>
-    <LCEVC_video_descriptor lcevc_stream_tag="0x56" profile_idc="0x05" level_idc="0x09" sublevel_idc="0x01" processed_planes_type_flag="true" picture_type_bit_flag="false" field_type_bit_flag="true" HDR_WCG_idc="2" video_properties_tag="6"/>
-    <VVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
-    <VVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,760,086" K_90khz="343,429,686" num_units_in_tick="2,519,881,793"/>
-    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" level_idc="0x50" VVC_still_present_flag="false" VVC_24hr_picture_present_flag="true" HDR_WCG_idc="2" video_properties_tag="4"/>
-    <VVC_video_descriptor profile_idc="0x01" tier_flag="false" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" level_idc="0x66" VVC_still_present_flag="true" VVC_24hr_picture_present_flag="false" HDR_WCG_idc="0" video_properties_tag="0" temporal_id_min="3" temporal_id_max="5">
-      <sub_profile_idc value="0x12369874"/>
-      <sub_profile_idc value="0x01236985"/>
-      <sub_profile_idc value="0x41558723"/>
-    </VVC_video_descriptor>
-    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xAB" interactivity_enabled="false" reference_channel_layout="0x34">
-      <reserved>
-        01 23 45 67 89
-      </reserved>
-    </MPEGH_3D_audio_descriptor>
-    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xCD" interactivity_enabled="true" reference_channel_layout="0x12">
-      <CompatibleSetIndication>
-        01 02 03 04 05 11
-      </CompatibleSetIndication>
-    </MPEGH_3D_audio_descriptor>
-    <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0xEF" interactivity_enabled="false" reference_channel_layout="0x23">
-      <CompatibleSetIndication>
-        01 12
-      </CompatibleSetIndication>
-      <reserved>
-        45 67 89
-      </reserved>
-    </MPEGH_3D_audio_descriptor>
-    <TTML_subtitling_descriptor ISO_639_language_code="foo" subtitle_purpose="2" TTS_suitability="1" reserved_zero_future_count="0"/>
-    <TTML_subtitling_descriptor ISO_639_language_code="bar" subtitle_purpose="16" TTS_suitability="2" qualifier="0x12345678" service_name="Dummy service" reserved_zero_future_count="5">
-      <dvb_ttml_profile value="0x01"/>
-      <dvb_ttml_profile value="0x02"/>
-      <font_id value="0x03"/>
-      <font_id value="0x04"/>
-      <font_id value="0x05"/>
-    </TTML_subtitling_descriptor>
-    <MPEG4_text_descriptor textFormat="1" ThreeGPPBaseFormat="0x10" profileLevel="0x10" durationClock="5" sampleDescriptionFlags="2" layer="0x06" text_track_width="7" text_track_height="8"/>
-    <MPEG4_text_descriptor textFormat="10" ThreeGPPBaseFormat="0x10" profileLevel="0x10" durationClock="14" sampleDescriptionFlags="1" layer="0x0F" text_track_width="16" text_track_height="17">
-      <Compatible_3GPPFormat value="16"/>
-      <Compatible_3GPPFormat value="16"/>
-      <Compatible_3GPPFormat value="16"/>
-      <Sample_index_and_description sample_index="4" textFormat="241"/>
-      <Sample_index_and_description sample_index="6" textFormat="242">
-        DE AD BE EF
-      </Sample_index_and_description>
-    </MPEG4_text_descriptor>
-    <MuxCode_descriptor>
-      <MuxCodeEntry MuxCode="4" version="1">
-        <substructure repetitionCount="7">
-          <slot m4MuxChannel="240" numberOfBytes="16"/>
-          <slot m4MuxChannel="1" numberOfBytes="253"/>
-        </substructure>
-      </MuxCodeEntry>
-    </MuxCode_descriptor>
-    <MuxCode_descriptor>
-      <MuxCodeEntry MuxCode="15" version="12"/>
-    </MuxCode_descriptor>
-    <MuxCode_descriptor>
-      <MuxCodeEntry MuxCode="6" version="6">
-        <substructure repetitionCount="4"/>
-        <substructure repetitionCount="0"/>
-      </MuxCodeEntry>
-    </MuxCode_descriptor>
-    <MuxCode_descriptor>
-      <MuxCodeEntry MuxCode="6" version="6">
-        <substructure repetitionCount="4"/>
-      </MuxCodeEntry>
-      <MuxCodeEntry MuxCode="5" version="6">
-        <substructure repetitionCount="7">
-          <slot m4MuxChannel="240" numberOfBytes="16"/>
-          <slot m4MuxChannel="1" numberOfBytes="253"/>
-        </substructure>
-      </MuxCodeEntry>
-    </MuxCode_descriptor>
-    <FmxBufferSize_descriptor>
-      <DefaultFlexMuxBufferDescriptor flexMuxChannel="156" FB_BufferSize="15,549,729"/>
-    </FmxBufferSize_descriptor>
-    <FmxBufferSize_descriptor>
-      <DefaultFlexMuxBufferDescriptor flexMuxChannel="201" FB_BufferSize="8,208,677"/>
-      <FlexMuxBufferDescriptor flexMuxChannel="17" FB_BufferSize="901,127"/>
-    </FmxBufferSize_descriptor>
-    <FmxBufferSize_descriptor>
-      <DefaultFlexMuxBufferDescriptor flexMuxChannel="42" FB_BufferSize="1,234,567"/>
-      <FlexMuxBufferDescriptor flexMuxChannel="177" FB_BufferSize="901,127"/>
-      <FlexMuxBufferDescriptor flexMuxChannel="178" FB_BufferSize="901,127"/>
-    </FmxBufferSize_descriptor>
+    <HEVC_operation_point_descriptor>
+      <operation_point target_ols="156" constant_frame_rate_info_idc="0" applicable_temporal_id="6"/>
+    </HEVC_operation_point_descriptor>
+    <HEVC_operation_point_descriptor>
+      <profile_tier_level_info>
+        DE AD BE EF DE AD BE EF DE AD BE EF
+      </profile_tier_level_info>
+      <operation_point target_ols="156" constant_frame_rate_info_idc="1" applicable_temporal_id="6" frame_rate_indicator="2,048"/>
+    </HEVC_operation_point_descriptor>
+    <HEVC_operation_point_descriptor>
+      <operation_point target_ols="16" constant_frame_rate_info_idc="0" applicable_temporal_id="5">
+        <ES prepend_dependencies="false" ES_reference="62"/>
+        <ES prepend_dependencies="true" ES_reference="0"/>
+        <ESinOP necessary_layer="true" output_layer="false" ptl_ref_idx="56"/>
+      </operation_point>
+    </HEVC_operation_point_descriptor>
+    <HEVC_operation_point_descriptor>
+      <operation_point target_ols="1" constant_frame_rate_info_idc="2" applicable_temporal_id="2" frame_rate_indicator="4,095" avg_bit_rate="12,233,445" max_bit_rate="4,332,211"/>
+    </HEVC_operation_point_descriptor>
   </PMT>
 </tsduck>
