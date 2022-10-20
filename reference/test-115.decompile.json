@@ -560,6 +560,104 @@
             "target_ols": 1
           }
         ]
+      },
+      {
+        "#name": "cpcm_delivery_signalling_descriptor",
+        "#nodes": [
+          {
+            "#name": "cpcm_v1_delivery_signalling",
+            "copy_control": 1,
+            "disable_analogue_hd_consumption": false,
+            "disable_analogue_hd_export": false,
+            "disable_analogue_sd_consumption": false,
+            "disable_analogue_sd_export": false,
+            "do_not_cpcm_scramble": true,
+            "export_beyond_trust": true,
+            "image_constraint": false,
+            "move_and_copy_propagation_information": 2,
+            "move_local": false,
+            "remote_access_record_flag": true,
+            "view_propagation_information": 3,
+            "viewable": true
+          }
+        ],
+        "cpcm_version": 1
+      },
+      {
+        "#name": "cpcm_delivery_signalling_descriptor",
+        "#nodes": [
+          {
+            "#name": "cpcm_v1_delivery_signalling",
+            "copy_control": 2,
+            "disable_analogue_hd_consumption": false,
+            "disable_analogue_hd_export": true,
+            "disable_analogue_sd_consumption": false,
+            "disable_analogue_sd_export": true,
+            "do_not_cpcm_scramble": false,
+            "export_beyond_trust": true,
+            "image_constraint": true,
+            "move_and_copy_propagation_information": 1,
+            "move_local": false,
+            "remote_access_date": "2020-01-01 00:00:00",
+            "remote_access_delay": 14,
+            "remote_access_record_flag": true,
+            "simultaneous_view_count": 174,
+            "view_period_from_first_playback": 23,
+            "view_propagation_information": 0,
+            "view_window_end": "2025-10-01 03:23:14",
+            "view_window_start": "2022-10-01 03:23:15",
+            "viewable": false
+          }
+        ],
+        "cpcm_version": 1
+      },
+      {
+        "#name": "cpcm_delivery_signalling_descriptor",
+        "#nodes": [
+          {
+            "#name": "cpcm_v1_delivery_signalling",
+            "#nodes": [
+              {
+                "#name": "cps",
+                "#nodes": [
+                  "AA 00 BB CC 11"
+                ],
+                "c_and_r_regime_mask": 147
+              },
+              {
+                "#name": "cps",
+                "#nodes": [
+                  "DE AD BE EF"
+                ],
+                "c_and_r_regime_mask": 212
+              },
+              {
+                "#name": "cps",
+                "#nodes": [
+                  "01 23 45 67 89 AB CD EF"
+                ],
+                "c_and_r_regime_mask": 255
+              }
+            ],
+            "copy_control": 0,
+            "disable_analogue_hd_consumption": true,
+            "disable_analogue_hd_export": false,
+            "disable_analogue_sd_consumption": true,
+            "disable_analogue_sd_export": false,
+            "do_not_cpcm_scramble": true,
+            "export_beyond_trust": false,
+            "image_constraint": true,
+            "move_and_copy_propagation_information": 1,
+            "move_local": false,
+            "remote_access_record_flag": false,
+            "view_period_from_first_playback": 231,
+            "view_propagation_information": 0,
+            "view_window_end": "2025-10-01 03:23:14",
+            "view_window_start": "2022-10-01 03:23:15",
+            "viewable": false
+          }
+        ],
+        "cpcm_version": 1
       }
     ],
     "current": true,

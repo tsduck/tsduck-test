@@ -131,5 +131,24 @@
     <HEVC_operation_point_descriptor>
       <operation_point target_ols="1" constant_frame_rate_info_idc="2" applicable_temporal_id="2" frame_rate_indicator="4,095" avg_bit_rate="12,233,445" max_bit_rate="4,332,211"/>
     </HEVC_operation_point_descriptor>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling copy_control="1" do_not_cpcm_scramble="true" viewable="true" move_local="false" move_and_copy_propagation_information="2" view_propagation_information="3" remote_access_record_flag="true" export_beyond_trust="true" disable_analogue_sd_export="false" disable_analogue_sd_consumption="false" disable_analogue_hd_export="false" disable_analogue_hd_consumption="false" image_constraint="false"/>
+    </cpcm_delivery_signalling_descriptor>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling copy_control="2" do_not_cpcm_scramble="false" viewable="false" move_local="false" move_and_copy_propagation_information="1" view_propagation_information="0" remote_access_record_flag="true" export_beyond_trust="true" disable_analogue_sd_export="true" disable_analogue_sd_consumption="false" disable_analogue_hd_export="true" disable_analogue_hd_consumption="false" image_constraint="true" view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14" view_period_from_first_playback="23" simultaneous_view_count="174" remote_access_delay="14" remote_access_date="2020-01-01 00:00:00"/>
+    </cpcm_delivery_signalling_descriptor>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling copy_control="0" do_not_cpcm_scramble="true" viewable="false" move_local="false" move_and_copy_propagation_information="1" view_propagation_information="0" remote_access_record_flag="false" export_beyond_trust="false" disable_analogue_sd_export="false" disable_analogue_sd_consumption="true" disable_analogue_hd_export="false" disable_analogue_hd_consumption="true" image_constraint="true" view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14" view_period_from_first_playback="231">
+        <cps C_and_R_regime_mask="147">
+          AA 00 BB CC 11
+        </cps>
+        <cps C_and_R_regime_mask="212">
+          DE AD BE EF
+        </cps>
+        <cps C_and_R_regime_mask="255">
+          01 23 45 67 89 AB CD EF
+        </cps>
+      </cpcm_v1_delivery_signalling>
+    </cpcm_delivery_signalling_descriptor>
   </PMT>
 </tsduck>

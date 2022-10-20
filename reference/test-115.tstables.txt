@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 475 bytes
+  Version: 0, sections: 1, total size: 555 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -188,4 +188,50 @@
       operation point[ 0]  target OLS: 1
         Constant Frame Rate Info: 2, applicable temporal id: 2
         Frame rate indicator: 4095, Avg. bit rate: 12233445, Max. bit rate: 4332211
+    - Descriptor 34: Extension Descriptor (0x7F, 127), 5 bytes
+      Extended descriptor: CPCM Delivery Signalling (0x01, 1)
+      CPCM version: 1
+      Copy control: Copy Once (1)
+      Do not CPCM scramble: true, viewable: true
+      Move local: false, copy local: false
+      Move and copy propagation: MAD - Copying and/or Movement within the same Authorized Domain is allowed. (2)
+      View propagation: VCPCM - Viewing, i.e. Consumption, using any CPCM-compliant Storage Entity is allowed. (3)
+      Remote access record: true, export beyond trust: true, image constraint : false
+      Disable Analogue SD  export: false, consumption: false
+      Disable Analogue HD  export: false, consumption: false
+    - Descriptor 35: Extension Descriptor (0x7F, 127), 25 bytes
+      Extended descriptor: CPCM Delivery Signalling (0x01, 1)
+      CPCM version: 1
+      Copy control: Copy No More (2)
+      Do not CPCM scramble: false, viewable: false
+      Move local: false, copy local: false
+      Move and copy propagation: MGAD - Copying and/or Movement within the same Geographically-constrained AD is allowed. (1)
+      View propagation: VLAD - Viewing, i.e. Consumption, within the same Localized AD is allowed. (0)
+      Remote access record: true, export beyond trust: true, image constraint : true
+      Disable Analogue SD  export: true, consumption: false
+      Disable Analogue HD  export: true, consumption: false
+      View window start: 2022/10/01 03:23:15, end: 2025/10/01 03:23:14
+      View period: 23 (15 minute periods)
+      Simultaneous view count 174
+      Remote access delay: 14 (15 minute periods)
+      Remote access date: 2020/01/01 00:00:00
+    - Descriptor 36: Extension Descriptor (0x7F, 127), 44 bytes
+      Extended descriptor: CPCM Delivery Signalling (0x01, 1)
+      CPCM version: 1
+      Copy control: Not Asserted (0)
+      Do not CPCM scramble: true, viewable: false
+      Move local: false, copy local: false
+      Move and copy propagation: MGAD - Copying and/or Movement within the same Geographically-constrained AD is allowed. (1)
+      View propagation: VLAD - Viewing, i.e. Consumption, within the same Localized AD is allowed. (0)
+      Remote access record: false, export beyond trust: false, image constraint : true
+      Disable Analogue SD  export: false, consumption: true
+      Disable Analogue HD  export: false, consumption: true
+      View window start: 2022/10/01 03:23:15, end: 2025/10/01 03:23:14
+      View period: 231 (15 minute periods)
+      cps[000] - C and R regime mask: 10010011
+            AA 00 BB CC 11
+      cps[001] - C and R regime mask: 11010100
+            DE AD BE EF
+      cps[002] - C and R regime mask: 11111111
+            01 23 45 67 89 AB CD EF
 
