@@ -212,3 +212,4 @@ repository. But we now limit their size to 20 MB.
 | 115  | SI analysis and conversions: VVC, EVC, LCEVC, AVS3 descriptors
 | 116  | Preserve order of streams in a PMT
 | 117  | Reorder streams in a PMT
+| 118  | `tstabcomp` with `--eit-normalization`
