@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 555 bytes
+  Section: 0 (last: 0), version: 0, size: 602 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
@@ -233,4 +233,21 @@
         DE AD BE EF
     cps[002] - C and R regime mask: 11111111
         01 23 45 67 89 AB CD EF
+  - Descriptor 37: MPEG-2 Extension (0x3F, 63), 27 bytes
+    MPEG extended descriptor: Quality Extension (0x0F, 15)
+    Field size bytes: 1
+    Metric code [1]: 0x7373696D (SSIM, Structural Similarity Index)
+    Metric code [2]: 0x6D73696D (MS-SSIM, Multi-Scale Structural Similarity Index)
+    Metric code [3]: 0x6A313434 (VQM,Video Quality Metric)
+    Metric code [4]: 0x6A323437 (PEVQ, Perceptual Evaluation of Video Quality)
+    Metric code [5]: 0x6D6F7073 (MOS, Mean Opinion Score)
+    Metric code [6]: 0x66736967 (FSIG, Frame Significance)
+  - Descriptor 38: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: Quality Extension (0x0F, 15)
+    Field size bytes: 2
+    Metric code [1]: 0x70736E72 (PSRN, Peak Signal Noise Ratio)
+  - Descriptor 39: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: Quality Extension (0x0F, 15)
+    Field size bytes: 0
+    Metric code [1]: 0xDEADB00B (unknown)
 

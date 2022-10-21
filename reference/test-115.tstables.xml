@@ -151,5 +151,19 @@
         </cps>
       </cpcm_v1_delivery_signalling>
     </cpcm_delivery_signalling_descriptor>
+    <quality_extension_descriptor field_size_bytes="1">
+      <metric code="0x7373696D"/>
+      <metric code="0x6D73696D"/>
+      <metric code="0x6A313434"/>
+      <metric code="0x6A323437"/>
+      <metric code="0x6D6F7073"/>
+      <metric code="0x66736967"/>
+    </quality_extension_descriptor>
+    <quality_extension_descriptor field_size_bytes="2">
+      <metric code="0x70736E72"/>
+    </quality_extension_descriptor>
+    <quality_extension_descriptor field_size_bytes="0">
+      <metric code="0xDEADB00B"/>
+    </quality_extension_descriptor>
   </PMT>
 </tsduck>
