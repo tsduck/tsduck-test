@@ -57,11 +57,18 @@ Options:
       RAW-ISO-8859-5, RAW-ISO-8859-6, RAW-ISO-8859-7, RAW-ISO-8859-8,
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
+  --eit-actual
+      With --eit-normalization, generate EIT actual. If neither --eit-actual
+      nor --eit-other are specified, both are generated.
+
   --eit-base-date date
-      With --eit-normalization, use the specified date as "last midnight"
-      reference for the allocation of the various EIT events in sections and
-      segments. The date must be in the format "year/month/day". By default,
-      use the oldest date in all EIT sections as base date.
+      With --eit-normalization, use the specified date as reference for the
+      allocation of the various EIT events in sections and segments. The date
+      must be in the format "year/month/day [hh:mm:ss]". If only the date is
+      present, it is used as base for the allocation of EIT schedule. If the
+      time is also specified, it is the current time for the snapshot of EIT
+      present/following. By default, use the oldest date in all EIT sections as
+      base date.
 
   --eit-normalization
       Reorganize all EIT sections according to ETSI TS 101 211 rules. One
@@ -73,6 +80,18 @@ Options:
       inside each file independently. This is fine as long as all EIT's for a
       given service are in the same input file. See also option
       --eit-base-date.
+
+  --eit-other
+      With --eit-normalization, generate EIT other. If neither --eit-actual nor
+      --eit-other are specified, both are generated.
+
+  --eit-pf
+      With --eit-normalization, generate EIT p/f. If neither --eit-pf nor
+      --eit-schedule are specified, both are generated.
+
+  --eit-schedule
+      With --eit-normalization, generate EIT schedule. If neither --eit-pf nor
+      --eit-schedule are specified, both are generated.
 
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
