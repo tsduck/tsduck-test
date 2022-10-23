@@ -349,6 +349,70 @@
 		<quality_extension_descriptor field_size_bytes="0">
 		<metric code="0xdeadb00b"/>
 	</quality_extension_descriptor>
+	
+	<DTS_UHD_descriptor 
+		DecoderProfileCode="0" FrameDurationCode="2" 
+		MaxPayloadCode="6" StreamIndex="0">
+	</DTS_UHD_descriptor>
+	
+	<DTS_UHD_descriptor 
+		DecoderProfileCode="2" FrameDurationCode="3" 
+		MaxPayloadCode="1" StreamIndex="4">
+		<codec_selector>
+			DEAD BEEF
+		</codec_selector>
+	</DTS_UHD_descriptor>
+
   </PMT>
 
+  <NIT network_id="0">
+ 
+	<service_prominence_descriptor>
+  		<private_data>
+			00112233 44556677
+		</private_data>
+	</service_prominence_descriptor>
+
+  	<service_prominence_descriptor>
+		<sogi SOGI_flag="false" SOGI_priority="12" service_id="1234"/>
+		<sogi SOGI_flag="true" SOGI_priority="0" service_id="2345">
+			<target_region country_code="FRA"/>
+			<target_region country_code="GBR" primary_region_code="17"/>
+			<target_region primary_region_code="1" secondary_region_code="2"/>
+			<target_region primary_region_code="11" secondary_region_code="12" tertiary_region_code="13"/>
+		</sogi>
+		<private_data>
+			dead beef
+		</private_data>
+	</service_prominence_descriptor>
+
+  </NIT>
+
+  <BAT version="9" current="true" bouquet_id="0xC01D">
+ 
+    <service_prominence_descriptor>
+		<sogi SOGI_flag="false" SOGI_priority="14" service_id="2345">
+			<target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
+		</sogi>
+	</service_prominence_descriptor>
+
+  </BAT>
+<!--  
+  <SDT version="10" current="true" transport_stream_id="0x0438" original_network_id="0x0001" actual="true">
+
+	<service_descriptor service_type="0x22" service_provider_name="Paul Higgs" service_name="test-115">
+
+		<service_prominence_descriptor>
+			<sogi SOGI_flag="true"/>
+		</service_prominence_descriptor>
+
+		<service_prominence_descriptor>
+			<sogi SOGI_flag="false" SOGI_priority="14" service_id="2345">
+				<target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
+			</sogi>
+		</service_prominence_descriptor>
+	</service_descriptor>
+
+  </SDT>
+-->
 </tsduck>

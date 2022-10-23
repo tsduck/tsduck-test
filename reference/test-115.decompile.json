@@ -708,10 +708,132 @@
           }
         ],
         "field_size_bytes": 0
+      },
+      {
+        "#name": "DTS_UHD_descriptor",
+        "#nodes": [
+          {
+            "#name": "codec_selector",
+            "#nodes": [
+              ""
+            ]
+          }
+        ],
+        "decoderprofilecode": 0,
+        "framedurationcode": 2,
+        "maxpayloadcode": 6,
+        "streamindex": 0
+      },
+      {
+        "#name": "DTS_UHD_descriptor",
+        "#nodes": [
+          {
+            "#name": "codec_selector",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ],
+        "decoderprofilecode": 2,
+        "framedurationcode": 3,
+        "maxpayloadcode": 1,
+        "streamindex": 4
       }
     ],
     "current": true,
     "service_id": 0,
     "version": 0
+  },
+  {
+    "#name": "NIT",
+    "#nodes": [
+      {
+        "#name": "service_prominence_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "00 11 22 33 44 55 66 77"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "service_prominence_descriptor",
+        "#nodes": [
+          {
+            "#name": "sogi",
+            "service_id": 1234,
+            "sogi_flag": false,
+            "sogi_priority": 12
+          },
+          {
+            "#name": "sogi",
+            "#nodes": [
+              {
+                "#name": "target_region",
+                "country_code": "FRA"
+              },
+              {
+                "#name": "target_region",
+                "country_code": "GBR",
+                "primary_region_code": 17
+              },
+              {
+                "#name": "target_region",
+                "primary_region_code": 1,
+                "secondary_region_code": 2
+              },
+              {
+                "#name": "target_region",
+                "primary_region_code": 11,
+                "secondary_region_code": 12,
+                "tertiary_region_code": 13
+              }
+            ],
+            "service_id": 2345,
+            "sogi_flag": true,
+            "sogi_priority": 0
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ]
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "network_id": 0,
+    "version": 0
+  },
+  {
+    "#name": "BAT",
+    "#nodes": [
+      {
+        "#name": "service_prominence_descriptor",
+        "#nodes": [
+          {
+            "#name": "sogi",
+            "#nodes": [
+              {
+                "#name": "target_region",
+                "country_code": "GBR",
+                "primary_region_code": 1,
+                "secondary_region_code": 2
+              }
+            ],
+            "service_id": 2345,
+            "sogi_flag": false,
+            "sogi_priority": 14
+          }
+        ]
+      }
+    ],
+    "bouquet_id": 49181,
+    "current": true,
+    "version": 9
   }
 ]

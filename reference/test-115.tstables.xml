@@ -165,5 +165,42 @@
     <quality_extension_descriptor field_size_bytes="0">
       <metric code="0xDEADB00B"/>
     </quality_extension_descriptor>
+    <DTS_UHD_descriptor DecoderProfileCode="0" FrameDurationCode="2" MaxPayloadCode="6" StreamIndex="0">
+      <codec_selector>
+      </codec_selector>
+    </DTS_UHD_descriptor>
+    <DTS_UHD_descriptor DecoderProfileCode="2" FrameDurationCode="3" MaxPayloadCode="1" StreamIndex="4">
+      <codec_selector>
+        DE AD BE EF
+      </codec_selector>
+    </DTS_UHD_descriptor>
   </PMT>
+  <NIT version="0" current="true" network_id="0x0000" actual="true">
+    <metadata PID="200"/>
+    <service_prominence_descriptor>
+      <private_data>
+        00 11 22 33 44 55 66 77
+      </private_data>
+    </service_prominence_descriptor>
+    <service_prominence_descriptor>
+      <sogi SOGI_flag="false" SOGI_priority="12" service_id="1,234"/>
+      <sogi SOGI_flag="true" SOGI_priority="0" service_id="2,345">
+        <target_region country_code="FRA"/>
+        <target_region country_code="GBR" primary_region_code="17"/>
+        <target_region primary_region_code="1" secondary_region_code="2"/>
+        <target_region primary_region_code="11" secondary_region_code="12" tertiary_region_code="13"/>
+      </sogi>
+      <private_data>
+        DE AD BE EF
+      </private_data>
+    </service_prominence_descriptor>
+  </NIT>
+  <BAT version="9" current="true" bouquet_id="0xC01D">
+    <metadata PID="200"/>
+    <service_prominence_descriptor>
+      <sogi SOGI_flag="false" SOGI_priority="14" service_id="2,345">
+        <target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
+      </sogi>
+    </service_prominence_descriptor>
+  </BAT>
 </tsduck>

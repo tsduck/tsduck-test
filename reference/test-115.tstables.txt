@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 602 bytes
+  Version: 0, sections: 1, total size: 616 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -251,4 +251,42 @@
       MPEG extended descriptor: Quality Extension (0x0F, 15)
       Field size bytes: 0
       Metric code [1]: 0xDEADB00B (unknown)
+    - Descriptor 40: Extension Descriptor (0x7F, 127), 3 bytes
+      Extended descriptor: DTS UHD (0x21, 33)
+      Decoder profile code: 0, decoder profile: 2
+      Frame duration: 2048 samples (2), max payload: 131072 bytes (6), stream index: 0
+      Codec Selector: 
+    - Descriptor 41: Extension Descriptor (0x7F, 127), 7 bytes
+      Extended descriptor: DTS UHD (0x21, 33)
+      Decoder profile code: 2, decoder profile: 4
+      Frame duration: 4096 samples (3), max payload: 4096 bytes (1), stream index: 4
+      Codec Selector: DE AD BE EF
+
+* NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
+  Version: 0, sections: 1, total size: 62 bytes
+  - Section 0:
+    Network Id: 0 (0x0000)
+    Network information:
+    - Descriptor 0: Extension Descriptor (0x7F, 127), 10 bytes
+      Extended descriptor: DVB Service Prominence (0x22, 34)
+      private_data: 00 11 22 33 44 55 66 77
+    - Descriptor 1: Extension Descriptor (0x7F, 127), 32 bytes
+      Extended descriptor: DVB Service Prominence (0x22, 34)
+      flag: false, priority: 12, service id:1234
+      flag: true, priority: 0, service id:2345
+      Country: FRA
+      Country: GBR, primary region: 17
+      Primary region: 1, s,econdary region: 2
+      Primary region: 11, s,econdary region: 12, t,ertiary region: 13
+      private_data: DE AD BE EF
+
+* BAT, TID 74 (0x4A), PID 200 (0x00C8)
+  Version: 9, sections: 1, total size: 31 bytes
+  - Section 0:
+    Bouquet Id: 49181 (0xC01D)
+    Bouquet information:
+    - Descriptor 0: Extension Descriptor (0x7F, 127), 13 bytes
+      Extended descriptor: DVB Service Prominence (0x22, 34)
+      flag: false, priority: 14, service id:2345
+      Country: GBR, primary region: 1, s,econdary region: 2
 
