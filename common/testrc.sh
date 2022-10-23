@@ -430,3 +430,8 @@ test_bin() {
         return 1
     fi
 }
+
+# Get the size of a file in bytes.
+file_size() {
+    [[ $OS == mac ]] && stat -f %z "$@" || stat -c %s "$@"
+}
