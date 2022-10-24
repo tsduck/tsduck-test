@@ -756,11 +756,48 @@
         "numreservedbytes": 0
       },
       {
-        "#name": "generic_descriptor",
+        "#name": "MPEGH_3D_audio_text_label_descriptor",
         "#nodes": [
-          "0B 71 F2 65 6E 67 82 8A 08 67 72 6F 75 70 2D 31 30 8B 08 67 72 6F 75 70 2D 31 31 E1 EC 0F 73 77 69 74 63 68 5F 67 72 6F 75 70 2D 31 32 E1 ED 0F 67 72 6F 75 70 5F 70 72 65 73 65 74 5F 31 33 63 68 69 80 E1 F6 0F 73 77 69 74 63 68 5F 67 72 6F 75 70 2D 32 32 E0"
+          {
+            "#name": "DescriptionLanguage",
+            "#nodes": [
+              {
+                "#name": "GroupDescription",
+                "groupdescription": "group-10",
+                "mae_descriptiongroupid": 10
+              },
+              {
+                "#name": "GroupDescription",
+                "groupdescription": "group-11",
+                "mae_descriptiongroupid": 11
+              },
+              {
+                "#name": "SwitchGroupDescription",
+                "mae_descriptionswitchgroupid": 12,
+                "switchgroupdescription": "switch_group-12"
+              },
+              {
+                "#name": "GroupPresetDescription",
+                "grouppresetdescription": "group_preset_13",
+                "mae_descriptiongrouppresetid": 13
+              }
+            ],
+            "descriptionlanguage": "eng"
+          },
+          {
+            "#name": "DescriptionLanguage",
+            "#nodes": [
+              {
+                "#name": "SwitchGroupDescription",
+                "mae_descriptionswitchgroupid": 22,
+                "switchgroupdescription": "switch_group-22"
+              }
+            ],
+            "descriptionlanguage": "chi"
+          }
         ],
-        "tag": 63
+        "_3daudiosceneinfoid": 113,
+        "numreservedbytes": 0
       }
     ],
     "current": true,
