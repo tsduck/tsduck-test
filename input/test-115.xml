@@ -362,7 +362,30 @@
 			DEAD BEEF
 		</codec_selector>
 	</DTS_UHD_descriptor>
+	
+	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="1"/>
 
+	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="13">
+		<DescriptionLanguage descriptionLanguage="fre"/>
+	</MPEGH_3D_audio_text_label_descriptor>
+	
+	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="113">
+		<DescriptionLanguage descriptionLanguage="eng">
+			<GroupDescription 
+				mae_descriptionGroupID="10" groupDescription="group-10"/>
+			<GroupDescription 
+				mae_descriptionGroupID="11" groupDescription="group-11"/>
+			<SwitchGroupDescription 
+				mae_descriptionSwitchGroupID="12" switchGroupDescription="switch_group-12"/>
+			<GroupPresetDescription
+				mae_descriptionGroupPresetID="13" groupPresetDescription="group_preset_13"/>
+		</DescriptionLanguage>
+		<DescriptionLanguage descriptionLanguage="chi">
+			<SwitchGroupDescription 
+				mae_descriptionSwitchGroupID="22" switchGroupDescription="switch_group-22"/>
+		</DescriptionLanguage>
+	</MPEGH_3D_audio_text_label_descriptor>
+	
   </PMT>
 
   <NIT network_id="0">
@@ -397,22 +420,5 @@
 	</service_prominence_descriptor>
 
   </BAT>
-<!--  
-  <SDT version="10" current="true" transport_stream_id="0x0438" original_network_id="0x0001" actual="true">
 
-	<service_descriptor service_type="0x22" service_provider_name="Paul Higgs" service_name="test-115">
-
-		<service_prominence_descriptor>
-			<sogi SOGI_flag="true"/>
-		</service_prominence_descriptor>
-
-		<service_prominence_descriptor>
-			<sogi SOGI_flag="false" SOGI_priority="14" service_id="2345">
-				<target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
-			</sogi>
-		</service_prominence_descriptor>
-	</service_descriptor>
-
-  </SDT>
--->
 </tsduck>
