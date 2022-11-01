@@ -862,6 +862,68 @@
             ]
           }
         ]
+      },
+      {
+        "#name": "S2Xv2_satellite_delivery_system_descriptor",
+        "channel_bond": 0,
+        "delivery_system_id": 1193046,
+        "frequency": "12,746,252",
+        "ncr_version": 0,
+        "polarization": "horizontal",
+        "receiver_profiles": 9,
+        "roll_off": "0.20",
+        "s2xv2_mode": "1",
+        "satellite_id": 414770,
+        "symbol_rate": "15,678",
+        "ts_gs_s2x_mode": 1
+      },
+      {
+        "#name": "S2Xv2_satellite_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "secondary_delivery_system",
+            "id": 7824981
+          }
+        ],
+        "channel_bond": 1,
+        "delivery_system_id": 2311527,
+        "frequency": "3,256,638",
+        "ncr_version": 1,
+        "polarization": "left",
+        "receiver_profiles": 2,
+        "roll_off": "0.05",
+        "s2xv2_mode": "2",
+        "satellite_id": 7754802,
+        "scrambling_sequence_index": 65539,
+        "symbol_rate": "37,477",
+        "timeslice_number": 247,
+        "ts_gs_s2x_mode": 2
+      },
+      {
+        "#name": "S2Xv2_satellite_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "superframe",
+            "beamhopping_time_plan_id": 4294967294,
+            "payload_scrambling_index": 13398,
+            "reference_scrambling_index": 32768,
+            "sffi": 7,
+            "sosf_wh_sequence_number": 17,
+            "superframe_pilots_wh_sequence_number": 30
+          }
+        ],
+        "channel_bond": 2,
+        "delivery_system_id": 287454020,
+        "frequency": "3,256,638",
+        "ncr_version": 0,
+        "polarization": "left",
+        "receiver_profiles": 2,
+        "roll_off": "0.35",
+        "s2xv2_mode": "5",
+        "satellite_id": 7754802,
+        "symbol_rate": "37,477",
+        "timeslice_number": 247,
+        "ts_gs_s2x_mode": 2
       }
     ],
     "actual": true,
