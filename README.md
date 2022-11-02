@@ -213,3 +213,5 @@ repository. But we now limit their size to 20 MB.
 | 116  | Preserve order of streams in a PMT
 | 117  | Reorder streams in a PMT
 | 118  | `tstabcomp` with `--eit-normalization`
+| 119  | Non-regression on `scrambler` plugin (issue #1070)
+| 120  | Non-regression on `tstables` with large truncated sections.

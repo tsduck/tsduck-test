@@ -75,7 +75,7 @@ test_text $SCRIPT.pack.log
 
 # ==== tstables, packetized file
 
-$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") $STDOPT \
+$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") --invalid-sections $STDOPT \
     --text $(fpath "$OUTDIR/$SCRIPT.tstables.txt") \
     --xml $(fpath "$OUTDIR/$SCRIPT.tstables.xml") \
     >"$OUTDIR/$SCRIPT.tstables.log" 2>&1

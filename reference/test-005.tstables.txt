@@ -38,6 +38,11 @@
       Extraneous 3 bytes:
       0000:  01 02 03                                   ...
 
+* Invalid section, invalid CRC32, corrupted section
+  TSDT, TID 3 (0x03), PID 200 (0x00C8), 28 bytes:
+    0000:  03 B0 19 FF FF C2 00 00 47 06 74 73 64 74 20 31  ........G.tsdt 1
+    0010:  47 06 74 73 64 74 20 32 77 A6 8F AF              G.tsdt 2w...
+
 * NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
   Version: 0, sections: 1, total size: 65 bytes
   - Section 0:
@@ -210,6 +215,13 @@
       Name: "nit 21"
     - Descriptor 1: Bouquet Name (0x47, 71), 6 bytes
       Name: "nit 22"
+
+* Invalid section, invalid CRC32, corrupted section
+  BAT, TID 74 (0x4A), PID 200 (0x00C8), 52 bytes:
+    0000:  4A F0 31 92 1A E6 00 00 F0 08 47 06 62 61 74 20  J.1.......G.bat
+    0010:  33 31 F0 1C 98 23 00 18 F0 08 47 06 62 61 74 20  31...#....G.bat
+    0020:  34 31 98 93 98 18 F0 08 47 06 62 61 74 20 35 31  41......G.bat 51
+    0030:  71 69 2A FE                                      qi*.
 
 * RST, TID 113 (0x71), PID 200 (0x00C8)
   Short section, total size: 30 bytes
