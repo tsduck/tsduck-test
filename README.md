@@ -215,3 +215,4 @@ repository. But we now limit their size to 20 MB.
 | 118  | `tstabcomp` with `--eit-normalization`
 | 119  | Non-regression on `scrambler` plugin (issue #1070)
 | 120  | Non-regression on `tstables` with large truncated sections.
+| 121  | `tscrc32`

@@ -1,0 +1,29 @@
+
+Compute MPEG-style CRC32 values
+
+Usage: tscrc32 [options] [filename ...]
+
+Parameters:
+
+  Any number of binary input files (standard input if omitted).
+
+Options:
+
+  -d hexa-data
+  --data hexa-data
+      Raw input data instead of input files. Use hexadecimal digits.
+
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

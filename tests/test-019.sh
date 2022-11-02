@@ -11,11 +11,15 @@ test_cleanup "$SCRIPT.*"
 # and are executed elsewhere using name NAME.
 
 TOOLS=(
-    tsanalyze tsbitrate tscharset tscmp tsdate tsdektec.linux tsdektec.windows tsdump
-    tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsgenecm tshides.linux tshides.windows
-    tslsdvb.linux tslsdvb.mac tslsdvb.windows tsp tspacketize tspcap tspcontrol
-    tspsi tsresync tsscan.linux tsscan.mac tsscan.windows tssmartcard tsstuff
-    tsswitch tstabcomp tstabdump tstables tsterinfo tsvatek/windows-32 tsxml
+    tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate
+    tsdektec.linux tsdektec.windows
+    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsgenecm
+    tshides.linux tshides.windows
+    tslsdvb.linux tslsdvb.mac tslsdvb.windows
+    tsp tspacketize tspcap tspcontrol tspsi tsresync
+    tsscan.linux tsscan.mac tsscan.windows
+    tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
+    tsvatek/windows-32 tsxml
 )
 
 INPUT_PLUGINS=(
