@@ -280,22 +280,64 @@
        Switch Group Description [0] id: 22 - "switch_group-22"
 
 * NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 62 bytes
+  Version: 0, sections: 1, total size: 147 bytes
   - Section 0:
     Network Id: 0 (0x0000)
     Network information:
     - Descriptor 0: Extension Descriptor (0x7F, 127), 10 bytes
-      Extended descriptor: DVB Service Prominence (0x22, 34)
+      Extended descriptor: Service Prominence (0x22, 34)
       private_data: 00 11 22 33 44 55 66 77
     - Descriptor 1: Extension Descriptor (0x7F, 127), 32 bytes
-      Extended descriptor: DVB Service Prominence (0x22, 34)
+      Extended descriptor: Service Prominence (0x22, 34)
       flag: false, priority: 12, service id:1234
       flag: true, priority: 0, service id:2345
       Country: FRA
       Country: GBR, primary region: 17
-      Primary region: 1, s,econdary region: 2
-      Primary region: 11, s,econdary region: 12, t,ertiary region: 13
+      Primary region: 1, secondary region: 2
+      Primary region: 11, secondary region: 12, tertiary region: 13
       private_data: DE AD BE EF
+    - Descriptor 2: Extension Descriptor (0x7F, 127), 19 bytes
+      Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
+      Delivery sytsem id: 0x00123456, S2Xv2 mode: S2X (0x1), Roll-off factor: 0.20
+      NCR version: NCR (0x0), channel bond: Not part of a channel bond (0x0), polarization: linear - horizontal (0x0)
+      TS/GS S2X mode: 1 (unknown)
+      Receiver profiles: 0x04, DSNG
+      Satellite id : 0x001950C8, frequency: 30.90000 GHz, symbol rate: 0.00000
+      Multiple input stream: no, scrambling_sequence_index: 0
+      Reserved for future use (6 bytes): 7E 0C 00 00 3D 3E
+      Extraneous 6 bytes:
+      0000:  7E 0C 00 00 3D 3E                          ~...=>
+    - Descriptor 3: Extension Descriptor (0x7F, 127), 28 bytes
+      Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
+      Delivery sytsem id: 0x00234567, S2Xv2 mode: S2X + time slicing (0x2), Roll-off factor: 0.05
+      NCR version: NCR_v2 (0x1), channel bond: Channel bond secondary (0x2), polarization: circular - right (0x3)
+      TS/GS S2X mode: 0 (unknown)
+      Receiver profiles: 0x09, broadcast services, professional services
+      Satellite id : 0x00D950C8, frequency: 0.00000 GHz, symbol rate: 0.00000
+      Multiple input stream: no
+      Timeslice number: 255
+      Reserved for future use (16 bytes):
+        0000:  31 B1 3E 00 00 92 65 01 00 03 F7 00 00 77 66 55  1.>...e......wfU
+      Extraneous 16 bytes:
+      0000:  31 B1 3E 00 00 92 65 01 00 03 F7 00 00 77  1.>...e......w
+      000E:  66 55                                      fU
+    - Descriptor 4: Extension Descriptor (0x7F, 127), 32 bytes
+      Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
+      Delivery sytsem id: 0x11223344, S2Xv2 mode: S2X superframe (Annex E) + timeslicing (Annex M) (0x5), Roll-off factor: 0.35
+      NCR version: NCR (0x0), channel bond: Channel bond secondary (0x2), polarization: linear - vertical (0x1)
+      TS/GS S2X mode: 0 (unknown)
+      Receiver profiles: 0x09, broadcast services, professional services
+      Satellite id : 0x00D950C8, frequency: 0.00000 GHz, symbol rate: 0.00000
+      Multiple input stream: no
+      Timeslice number: 255
+      SOSF WH sequence: 255, reference scrambling index: 0
+      Payload scrambling index: 0, superframe pilots WH sequence number: 0
+      Reserved for future use (20 bytes):
+        0000:  31 B1 3E 00 00 92 65 F7 11 C0 80 00 70 34 56 FF  1.>...e.....p4V.
+        0010:  FF FF FE F0                                      ....
+      Extraneous 20 bytes:
+      0000:  31 B1 3E 00 00 92 65 F7 11 C0 80 00 70 34  1.>...e.....p4
+      000E:  56 FF FF FF FE F0                          V.....
 
 * BAT, TID 74 (0x4A), PID 200 (0x00C8)
   Version: 9, sections: 1, total size: 31 bytes
@@ -303,7 +345,7 @@
     Bouquet Id: 49181 (0xC01D)
     Bouquet information:
     - Descriptor 0: Extension Descriptor (0x7F, 127), 13 bytes
-      Extended descriptor: DVB Service Prominence (0x22, 34)
+      Extended descriptor: Service Prominence (0x22, 34)
       flag: false, priority: 14, service id:2345
-      Country: GBR, primary region: 1, s,econdary region: 2
+      Country: GBR, primary region: 1, secondary region: 2
 
