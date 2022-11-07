@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 720 bytes
+  Section: 0 (last: 0), version: 0, size: 721 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
@@ -59,7 +59,7 @@
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
   - Descriptor 10: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
-    LCEVC stream tag (3 bytes): 01 23 45
+    LCEVC stream tag:  01 23 45
   - Descriptor 11: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC video descriptor (0x17, 23)
     LCEVC stream tag: 0x56, profile IDC: unknown (0x5), level IDC: 9, sublevel: 1
@@ -87,28 +87,29 @@
     Temporal id min: 3, max: 5
   - Descriptor 16: MPEG-2 Extension (0x3F, 63), 9 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
-    3D-audio profile level indication: unknown (0xAB)
+    3D-audio profile level indication: Baseline profile L5 (0x14)
     Interactivity enabled: false
-    Reference channel layout: unknown (52)
+    Reference channel layout: 7/6.1 (20)
     Reserved data (5 bytes): 01 23 45 67 89
   - Descriptor 17: MPEG-2 Extension (0x3F, 63), 11 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
-    3D-audio profile level indication: unknown (0xCD)
+    3D-audio profile level indication: Low Complexity profile L5 (0x0F)
     Interactivity enabled: true
-    Reference channel layout: 6/7.1 (18)
+    Reference channel layout: 5/2.1 (7)
     Compatible Set Indication: Main profile L1 (0x01)
     Compatible Set Indication: Main profile L2 (0x02)
     Compatible Set Indication: Main profile L3 (0x03)
     Compatible Set Indication: Main profile L4 (0x04)
     Compatible Set Indication: Main profile L5 (0x05)
     Compatible Set Indication: Baseline profile L2 (0x11)
-  - Descriptor 18: MPEG-2 Extension (0x3F, 63), 10 bytes
+  - Descriptor 18: MPEG-2 Extension (0x3F, 63), 11 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
-    3D-audio profile level indication: unknown (0xEF)
+    3D-audio profile level indication: Main profile L5 (0x05)
     Interactivity enabled: false
-    Reference channel layout: unknown (35)
+    Reference channel layout: 2/2.0 (10)
     Compatible Set Indication: Main profile L1 (0x01)
     Compatible Set Indication: Baseline profile L3 (0x12)
+    Compatible Set Indication: Baseline profile L5 (0x14)
     Reserved data (3 bytes): 45 67 89
   - Descriptor 19: Extension Descriptor (0x7F, 127), 7 bytes
     Extended descriptor: TTML Subtitling (0x20, 32)
@@ -118,12 +119,11 @@
     Extended descriptor: TTML Subtitling (0x20, 32)
     ISO 639 language code: bar
     Subtitle purpose: 0x10 (hard-of-hearing), TTS suitability: 0x02 (not suitable)
-    DVB TTML profile: 0x01 0x02
+    DVB TTML profile: 01 02
     Qualifier: (0x12345678) size=small, cadence=medium, coloured, position=reserved
-    Essential font IDs: 0x03 0x04 0x05
+    Essential font IDs: 03 04 05
     Service Name: Dummy service
-    Extraneous 5 bytes:
-    0000:  00 00 00 00 00                                   .....
+    reserved_zero_future_use: 00 00 00 00 00
   - Descriptor 21: MPEG-4 Text (0x2D, 45), 14 bytes
     Text format: Timed Text as specified in 3GPP TS 26.245 (0x01), config length: 11
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 5 Hz
@@ -134,7 +134,7 @@
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 14 Hz
     Sample description: Out-of-band only (0x1)
     Layer: 15, text track width=16, height=17
-    Compatible 3GPP formats: 16 16 16
+    Compatible 3GPP formats: 10 10 10
     Sample description[0]: index=0x04, format: User-private (0xF1), length: 0
     Sample description[1]: index=0x06, format: User-private (0xF2), length: 4
     DE AD BE EF
@@ -287,8 +287,8 @@
     private_data: 00 11 22 33 44 55 66 77
   - Descriptor 1: Extension Descriptor (0x7F, 127), 32 bytes
     Extended descriptor: Service Prominence (0x22, 34)
-    flag: false, priority: 12, service id:1234
-    flag: true, priority: 0, service id:2345
+    SOGI flag: false, priority: 12, service id: 1234
+    SOGI flag: true, priority: 0, service id: 2345
     Country: FRA
     Country: GBR, primary region: 17
     Primary region: 1, secondary region: 2
@@ -298,43 +298,29 @@
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x00123456, S2Xv2 mode: S2X (0x1), Roll-off factor: 0.20
     NCR version: NCR (0x0), channel bond: Not part of a channel bond (0x0), polarization: linear - horizontal (0x0)
-    TS/GS S2X mode: 1 (unknown)
-    Receiver profiles: 0x04, DSNG
-    Satellite id : 0x001950C8, frequency: 30.90000 GHz, symbol rate: 0.00000
-    Multiple input stream: no, scrambling_sequence_index: 0
-    Reserved for future use (6 bytes): 7E 0C 00 00 3D 3E
-    Extraneous 6 bytes:
-    0000:  7E 0C 00 00 3D 3E                                ~...=>
+    TS/GS S2X mode: 1 (GSE)
+    Receiver profiles: 0x09, broadcast services, professional services
+    Satellite id : 0x00065432, frequency: 34.56789 GHz, symbol rate: 123.4567 Msymbol/s
+    Multiple input stream: no
   - Descriptor 3: Extension Descriptor (0x7F, 127), 28 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x00234567, S2Xv2 mode: S2X + time slicing (0x2), Roll-off factor: 0.05
-    NCR version: NCR_v2 (0x1), channel bond: Channel bond secondary (0x2), polarization: circular - right (0x3)
-    TS/GS S2X mode: 0 (unknown)
-    Receiver profiles: 0x09, broadcast services, professional services
-    Satellite id : 0x00D950C8, frequency: 0.00000 GHz, symbol rate: 0.00000
-    Multiple input stream: no
-    Timeslice number: 255
-    Reserved for future use (16 bytes):
-      0000:  31 B1 3E 00 00 92 65 01 00 03 F7 00 00 77 66 55  1.>...e......wfU
-    Extraneous 16 bytes:
-    0000:  31 B1 3E 00 00 92 65 01 00 03 F7 00 00 77 66 55  1.>...e......wfU
+    NCR version: NCR_v2 (0x1), channel bond: Channel bond master (0x1), polarization: circular - left (0x2)
+    TS/GS S2X mode: 2 (GSE high efficiency mode)
+    Receiver profiles: 0x02, interactive services
+    Satellite id : 0x00765432, frequency: 876.54321 GHz, symbol rate: 456.7896 Msymbol/s
+    Multiple input stream: no, scrambling_sequence_index: 65539, timeslice number: 247
+    Secondary delivery system id: 0x0800776655 
   - Descriptor 4: Extension Descriptor (0x7F, 127), 32 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x11223344, S2Xv2 mode: S2X superframe (Annex E) + timeslicing (Annex M) (0x5), Roll-off factor: 0.35
-    NCR version: NCR (0x0), channel bond: Channel bond secondary (0x2), polarization: linear - vertical (0x1)
-    TS/GS S2X mode: 0 (unknown)
-    Receiver profiles: 0x09, broadcast services, professional services
-    Satellite id : 0x00D950C8, frequency: 0.00000 GHz, symbol rate: 0.00000
-    Multiple input stream: no
-    Timeslice number: 255
-    SOSF WH sequence: 255, reference scrambling index: 0
-    Payload scrambling index: 0, superframe pilots WH sequence number: 0
-    Reserved for future use (20 bytes):
-      0000:  31 B1 3E 00 00 92 65 F7 11 C0 80 00 70 34 56 FF  1.>...e.....p4V.
-      0010:  FF FF FE F0                                      ....
-    Extraneous 20 bytes:
-    0000:  31 B1 3E 00 00 92 65 F7 11 C0 80 00 70 34 56 FF  1.>...e.....p4V.
-    0010:  FF FF FE F0                                      ....
+    NCR version: NCR (0x0), channel bond: Channel bond secondary (0x2), polarization: circular - left (0x2)
+    TS/GS S2X mode: 2 (GSE high efficiency mode)
+    Receiver profiles: 0x02, interactive services
+    Satellite id : 0x00765432, frequency: 65.43218 GHz, symbol rate: 24.6754 Msymbol/s
+    Multiple input stream: no, timeslice number: 248
+    SOSF WH sequence: 17, reference scrambling index: 32768, SFFI: 7
+    Payload scrambling index: 13398, beamhopping time plan selector: 4294967294, superframe pilots WH sequence number: 30
 
 * BAT, TID 74 (0x4A)
   Section: 0 (last: 0), version: 9, size: 31 bytes
@@ -342,6 +328,6 @@
   Bouquet information:
   - Descriptor 0: Extension Descriptor (0x7F, 127), 13 bytes
     Extended descriptor: Service Prominence (0x22, 34)
-    flag: false, priority: 14, service id:2345
+    SOGI flag: false, priority: 14, service id: 2345
     Country: GBR, primary region: 1, secondary region: 2
 
