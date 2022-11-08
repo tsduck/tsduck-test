@@ -136,6 +136,8 @@
 * NIT Actual, TID 64 (0x40), PID 16 (0x0010)
   Version: 9, sections: 1, total size: 62 bytes
   - Section 0:
+    Reserved bits incorrectly set in section header:
+      Byte 1, bit #1 should be '1'
     Network Id: 126 (0x007E)
     Network information:
     - Descriptor 0: Linkage (0x4A, 74), 25 bytes

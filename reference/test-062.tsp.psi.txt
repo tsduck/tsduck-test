@@ -437,6 +437,13 @@
     - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 10 bytes
       Logo transmission type: 0x03 (Simple logo system)
       Logo characters: "NHK－G"
+    Reserved bits incorrectly set:
+      Byte 13, bit #5 should be '1'
+      Byte 13, bit #6 should be '1'
+      Byte 52, bit #5 should be '1'
+      Byte 52, bit #6 should be '1'
+      Byte 87, bit #4 should be '1'
+      Byte 87, bit #5 should be '1'
 
 * CAT, TID 1 (0x01), PID 1 (0x0001)
   Version: 0, sections: 1, total size: 19 bytes
