@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on fork packet processor plugin (issue #633)
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # eitinject plugin
 
 source $(dirname $0)/../common/testrc.sh
@@ -25,7 +25,7 @@ addutc() {
     local start=$($DATE -d "$2" +%s)
     local bitrate=$3
     local line pkt utc
-    dos2unix -q "$file"
+    dos_to_unix "$file"
     while IFS= read -r line; do
         if [[ $line == *First\ TS\ packet:* ]]; then
             line=${line/, last:*/}

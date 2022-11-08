@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Sections plugin
 
 source $(dirname $0)/../common/testrc.sh

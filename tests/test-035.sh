@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test encap and decap plugins
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test timeref plugin with --system-synchronous
 
 cd $(dirname $0)

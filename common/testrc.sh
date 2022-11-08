@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ------------------------------------------------------------------------------
 # This file shall be source'd by all test scripts.
 # It parses the common command line options and defines variables and functions.
@@ -76,7 +76,7 @@ case $OS in
 esac
 
 # All operating systems and "other" operating systems.
-ALLOS="linux mac windows"
+ALLOS="linux mac freebsd windows"
 OTHEROS=${ALLOS/$OS/}
 
 # Alternative operating system name.
@@ -255,7 +255,7 @@ else
             export TSDUCKJAR=$(fpath "$TSDUCK/java/tsduck.jar")
             export CLASSPATH="$TSDUCKJAR;"
             ;;
-        mac)
+        mac|freebsd)
             export PYTHONPATH=/usr/local/share/tsduck/python
             export TSDUCKJAR=/usr/local/share/tsduck/java/tsduck.jar
             export CLASSPATH="$TSDUCKJAR:"
@@ -433,5 +433,10 @@ test_bin() {
 
 # Get the size of a file in bytes.
 file_size() {
-    [[ $OS == mac ]] && stat -f %z "$@" || stat -c %s "$@"
+    [[ $OS == mac || $OS == freebsd ]] && stat -f %z "$@" || stat -c %s "$@"
+}
+
+# The syntax of dos2unix depends on the system.
+dos_to_unix() {
+    [[ $OS == freebsd ]] && dos2unix "$@" || dos2unix -q "$@"
 }

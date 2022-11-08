@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Scrambling test
 
 source $(dirname $0)/../common/testrc.sh

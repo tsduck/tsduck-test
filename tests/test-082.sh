@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Automated XML-to-JSON conversions.
 
 source $(dirname $0)/../common/testrc.sh

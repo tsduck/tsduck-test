@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test timeshift plugin.
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Check the integrity of help texts.
 
 source $(dirname $0)/../common/testrc.sh
@@ -19,7 +19,7 @@ TOOLS=(
     tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    tsvatek/windows-32 tsxml
+    tsvatek/windows-32/freebsd tsxml
 )
 
 INPUT_PLUGINS=(
@@ -30,7 +30,7 @@ INPUT_PLUGINS=(
 OUTPUT_PLUGINS=(
     dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
     ip memory play.linux play.mac play.windows rist.mac rist.windows srt
-    vatek/windows-32
+    vatek/windows-32/freebsd
 )
 
 PACKET_PLUGINS=(

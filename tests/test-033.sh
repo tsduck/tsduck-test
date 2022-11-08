@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test some DSM-CC descriptors
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # SCTE 35 splice information table injection
 
 source $(dirname $0)/../common/testrc.sh

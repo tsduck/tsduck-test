@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on HEVC access unit formatting (issue #830)
 
 source $(dirname $0)/../common/testrc.sh

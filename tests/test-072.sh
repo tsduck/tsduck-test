@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on pes plugin (issue #646)
 
 source $(dirname $0)/../common/testrc.sh

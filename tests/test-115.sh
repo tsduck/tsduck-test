@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test VVC, EVC, LCEVC, AVS3 descriptors
 
 source $(dirname $0)/../common/testrc.sh

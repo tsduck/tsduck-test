@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test zap plugin with option --ignore-absent
 
 source $(dirname $0)/../common/testrc.sh

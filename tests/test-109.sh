@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression test for packets without payload in t2mi plugin (issue #950)
 
 source $(dirname $0)/../common/testrc.sh

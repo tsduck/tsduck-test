@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Analyze and convert the RRT from an ATSC live stream.
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test remap plugin
 
 source $(dirname $0)/../common/testrc.sh

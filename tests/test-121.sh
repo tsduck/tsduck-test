@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Basic usage of ``tscrc32
 
 source $(dirname $0)/../common/testrc.sh

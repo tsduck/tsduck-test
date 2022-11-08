@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test "pes" plugin with access unit analysis.
 
 source $(dirname $0)/../common/testrc.sh

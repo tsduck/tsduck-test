@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test multiple CW in text file for scrambler plugin.
 
 source $(dirname $0)/../common/testrc.sh

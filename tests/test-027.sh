@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test SCTE 35 Splice Information Table
 
 source $(dirname $0)/../common/testrc.sh

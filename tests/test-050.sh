@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test SCTE 18 (Emergency Alert System) signalization
 
 source $(dirname $0)/../common/testrc.sh

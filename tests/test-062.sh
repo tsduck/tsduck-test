@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test various analyses on an ISDB live stream.
 
 source $(dirname $0)/../common/testrc.sh

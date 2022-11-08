@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Analyze and convert EIT's from an ATSC live stream.
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tsp -O file --append
 
 source $(dirname $0)/../common/testrc.sh

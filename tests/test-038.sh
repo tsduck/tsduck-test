@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tables with lots of diacritics (Czech EIT's).
 
 source $(dirname $0)/../common/testrc.sh

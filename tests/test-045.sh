@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test timeref plugin
 
 source $(dirname $0)/../common/testrc.sh
