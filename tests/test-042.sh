@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test various ATSC tables
 
 source $(dirname $0)/../common/testrc.sh

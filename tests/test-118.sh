@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tstabcomp with --eit-normalization
 
 source $(dirname $0)/../common/testrc.sh

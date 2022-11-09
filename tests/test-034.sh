@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Basic tests on tsswitch.
 
 source $(dirname $0)/../common/testrc.sh

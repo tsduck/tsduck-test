@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Order of sections in plugin inject
 
 source $(dirname $0)/../common/testrc.sh

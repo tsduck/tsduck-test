@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # -----------------------------------------------------------------------------------
 # Perform the "standard" set of tests on a PSI/SI XML file.
 # Syntax: source "$COMMONDIR"/standard-si-test.sh input.xml [std-and-charset-options]

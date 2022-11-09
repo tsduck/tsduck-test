@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on SCTE 35 tables with unspecified command length (issue #764)
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Preserve packet metadata in fork and timeshift
 
 source $(dirname $0)/../common/testrc.sh

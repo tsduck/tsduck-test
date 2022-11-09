@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression test for a crash after using demuxed sections
 
 source $(dirname $0)/../common/testrc.sh

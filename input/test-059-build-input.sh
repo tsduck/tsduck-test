@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # A script to build the input TS of this test.
 # Executed once and archived for reference.
 

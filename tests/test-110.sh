@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Plugin splicemonitor with option --select-commands
 
 source $(dirname $0)/../common/testrc.sh

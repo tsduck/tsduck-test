@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test -P nit --build-service-list-descriptors
 
 source $(dirname $0)/../common/testrc.sh

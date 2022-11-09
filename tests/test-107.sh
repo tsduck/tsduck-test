@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Pcap file with ECMG <=> SCS DVB SimulCrypt protocol
 
 source $(dirname $0)/../common/testrc.sh

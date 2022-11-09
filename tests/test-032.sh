@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test DSM-CC stream events from http://tv-html.irt.de/hbbtv/tests/streamevent/
 
 source $(dirname $0)/../common/testrc.sh

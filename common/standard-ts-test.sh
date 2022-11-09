@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ------------------------------------------------------------------------------
 # Perform the "standard" set of tests on a transport stream file.
 # Syntax: source "$COMMONDIR"/standard-ts-test.sh input.ts [--atsc|--isdb]

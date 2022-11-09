@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Generic muxing test.
 
 cd $(dirname $0)

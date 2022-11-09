@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test various analyses on live stream containing T2-MI encapsulation.
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on tsecmg (issue #619)
 
 source $(dirname $0)/../common/testrc.sh

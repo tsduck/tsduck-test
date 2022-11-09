@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on DuckContext not correctly passed from `tsp` to plugins tables and psi
 
 source $(dirname $0)/../common/testrc.sh

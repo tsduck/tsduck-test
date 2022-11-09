@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test M2TS files.
 
 source $(dirname $0)/../common/testrc.sh

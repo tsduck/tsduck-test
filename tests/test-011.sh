@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test adding CA descriptors in PAT and PMT.
 
 source $(dirname $0)/../common/testrc.sh

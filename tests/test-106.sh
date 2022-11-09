@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Pcap file with EMMG <=> MUX DVB SimulCrypt protocol
 
 source $(dirname $0)/../common/testrc.sh

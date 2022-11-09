@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Tests for "tsxml" utility with options --merge and --sort.
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tstables with options --no-duplicate and --invalid-version
 
 source $(dirname $0)/../common/testrc.sh

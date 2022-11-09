@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tables with preferred_section attributes
 # Note: the preferred_section is now ignored with EIT's.
 

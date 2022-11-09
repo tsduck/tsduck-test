@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # tspsi with duplicated PMT after PAT change (issue #865)
 
 source $(dirname $0)/../common/testrc.sh

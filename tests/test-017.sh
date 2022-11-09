@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test the IP/MAC Notification Table (INT)
 
 source $(dirname $0)/../common/testrc.sh

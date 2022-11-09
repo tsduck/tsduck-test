@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # "file" plugin with start/stop stuffing
 
 source $(dirname $0)/../common/testrc.sh

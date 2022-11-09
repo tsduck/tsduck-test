@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on scrambler plugin (issue #1070)
 
 source $(dirname $0)/../common/testrc.sh

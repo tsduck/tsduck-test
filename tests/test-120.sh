@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Non-regression on tstables with large truncated sections.
 
 source $(dirname $0)/../common/testrc.sh

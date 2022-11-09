@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test tsdump in raw mode
 
 source $(dirname $0)/../common/testrc.sh

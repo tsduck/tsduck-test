@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Inject plugin with repetition rates.
 
 source $(dirname $0)/../common/testrc.sh

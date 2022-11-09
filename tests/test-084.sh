@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Options --patch-xml
 
 source $(dirname $0)/../common/testrc.sh

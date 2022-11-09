@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test --atsc option
 
 source $(dirname $0)/../common/testrc.sh

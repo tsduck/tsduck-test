@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # DVB-T information
 
 source $(dirname $0)/../common/testrc.sh

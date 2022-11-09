@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test file input plugin with more than one file.
 
 source $(dirname $0)/../common/testrc.sh

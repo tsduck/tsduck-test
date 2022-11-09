@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # tsscan with tuner emulator
 
 source $(dirname $0)/../common/testrc.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test merge plugin and restart option.
 #
 # The main stream contains services "France 2" and "France 4", and a lot of stuffing.

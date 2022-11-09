@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Test pmt plugin
 # Output TS contains only PAT and PMT's to reduce its size
 

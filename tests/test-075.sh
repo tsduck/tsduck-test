@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Using non-standard time references.
 
 source $(dirname $0)/../common/testrc.sh
