@@ -59,7 +59,7 @@
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
   - Descriptor 10: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
-    LCEVC stream tag:  01 23 45
+    LCEVC stream tag: 01 23 45
   - Descriptor 11: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC video descriptor (0x17, 23)
     LCEVC stream tag: 0x56, profile IDC: unknown (0x5), level IDC: 9, sublevel: 1
@@ -123,7 +123,7 @@
     Qualifier: (0x12345678) size=small, cadence=medium, coloured, position=reserved
     Essential font IDs: 03 04 05
     Service Name: Dummy service
-    reserved_zero_future_use: 00 00 00 00 00
+    reserved_zero_future_use (5 bytes): 00 00 00 00 00
   - Descriptor 21: MPEG-4 Text (0x2D, 45), 14 bytes
     Text format: Timed Text as specified in 3GPP TS 26.245 (0x01), config length: 11
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 5 Hz
