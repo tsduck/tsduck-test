@@ -15,7 +15,7 @@ COMMONDIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 ROOTDIR=$(cd "$COMMONDIR/.."; pwd)
 TESTSDIR="$ROOTDIR/tests"
 INDIR="$ROOTDIR/input"
-REFDIR="$ROOTDIR/reference"
+REFDIR="$ROOTDIR/reference/$SCRIPT"
 TMPDIR="$ROOTDIR/tmp"
 
 # Additional command line arguments for the test script.
@@ -302,6 +302,9 @@ export TSDUCK_NO_USER_CONFIG=true
 
 # Number of lines in a file.
 linecount() { wc -l "$1" | awk '{print $1}'; }
+
+# The reference directory must be created at first --init.
+$TESTINIT && mkdir -p "$REFDIR"
 
 # The output files are created in the reference area with --init.
 $TESTINIT && OUTDIR="$REFDIR" || OUTDIR="$TMPDIR"
