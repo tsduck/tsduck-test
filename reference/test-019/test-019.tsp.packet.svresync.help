@@ -69,3 +69,8 @@ Options:
       case sensitive and blanks are ignored. Exactly one of --service-reference
       and --pid-reference must be specified.
 
+  --set-label label1[-label2]
+      Set the specified labels on the modified PID's. On each PID, the label is
+      first set on the first modified packet, and then on all packets of the
+      PID. Several --set-label options may be specified.
+

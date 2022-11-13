@@ -63,11 +63,12 @@ $(tspath tsp) --synchronous-log \
     -P pcrextract --only-label 0 --pcr -o $(fpath "$OUTDIR/$SCRIPT.3a.pcr.csv") \
     -P pcrextract --only-label 0 --pts -o $(fpath "$OUTDIR/$SCRIPT.3a.pts.csv") \
     -P pcrextract --only-label 0 --dts -o $(fpath "$OUTDIR/$SCRIPT.3a.dts.csv") \
-    -P svresync france4 -p 320 \
+    -P svresync france4 -p 320 --set-label 5 \
     -P pcrextract --only-label 0 -e -o $(fpath "$OUTDIR/$SCRIPT.3b.csv") \
     -P pcrextract --only-label 0 --pcr -o $(fpath "$OUTDIR/$SCRIPT.3b.pcr.csv") \
     -P pcrextract --only-label 0 --pts -o $(fpath "$OUTDIR/$SCRIPT.3b.pts.csv") \
     -P pcrextract --only-label 0 --dts -o $(fpath "$OUTDIR/$SCRIPT.3b.dts.csv") \
+    -P file --only-label 5  $(fpath "$OUTDIR/$SCRIPT.3.ts") \
     -O drop \
     >"$OUTDIR/$SCRIPT.3.log" 2>&1
 
@@ -80,3 +81,4 @@ test_text $SCRIPT.3b.pcr.csv
 test_text $SCRIPT.3b.pts.csv
 test_text $SCRIPT.3b.dts.csv
 test_text $SCRIPT.3.log
+test_bin $SCRIPT.3.ts
