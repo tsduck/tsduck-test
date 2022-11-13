@@ -2,23 +2,23 @@
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
     <private_data_specifier_descriptor private_data_specifier="AVS"/>
-    <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="0x08" sample_precision="0x02" chroma_format="0x01" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="0x09" transfer_characteristics="0x0E" matrix_coefficients="0x08"/>
+    <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="8" sample_precision="2" chroma_format="1" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="9" transfer_characteristics="14" matrix_coefficients="8"/>
     <private_data_specifier_descriptor private_data_specifier="AOM"/>
     <AV1_video_descriptor version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1" high_bitdepth="false" twelve_bit="false" monochrome="false" chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated" HDR_WCG_idc="0"/>
     <AV1_video_descriptor version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0" high_bitdepth="true" twelve_bit="true" monochrome="true" chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical" HDR_WCG_idc="2" initial_presentation_delay_minus_one="11"/>
     <vvc_subpictures_descriptor default_service_mode="true" processing_mode="1" service_description="whole mosaic">
-      <subpicture component_tag="0x01" subpicture_id="0x00"/>
-      <subpicture component_tag="0x01" subpicture_id="0x01"/>
-      <subpicture component_tag="0x01" subpicture_id="0x02"/>
-      <subpicture component_tag="0x01" subpicture_id="0x03"/>
+      <subpicture component_tag="1" subpicture_id="0"/>
+      <subpicture component_tag="1" subpicture_id="1"/>
+      <subpicture component_tag="1" subpicture_id="2"/>
+      <subpicture component_tag="1" subpicture_id="3"/>
     </vvc_subpictures_descriptor>
     <vvc_subpictures_descriptor default_service_mode="false" processing_mode="2"/>
     <vvc_subpictures_descriptor default_service_mode="false" processing_mode="6" service_description="picture-in-picture">
-      <subpicture component_tag="0x01" subpicture_id="0x01"/>
-      <subpicture component_tag="0x01" subpicture_id="0x02"/>
-      <subpicture component_tag="0x01" subpicture_id="0x00"/>
-      <subpicture component_tag="0x01" subpicture_id="0x03"/>
-      <subpicture component_tag="0x01" subpicture_id="0x04"/>
+      <subpicture component_tag="1" subpicture_id="1"/>
+      <subpicture component_tag="1" subpicture_id="2"/>
+      <subpicture component_tag="1" subpicture_id="0"/>
+      <subpicture component_tag="1" subpicture_id="3"/>
+      <subpicture component_tag="1" subpicture_id="4"/>
     </vvc_subpictures_descriptor>
     <EVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="305,419,896" K_90khz="3,735,928,559" num_units_in_tick="2,271,560,481"/>
     <EVC_timing_and_HRD_descriptor hrd_management_valid="false"/>
