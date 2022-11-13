@@ -21,6 +21,22 @@
         transfer_characteristics="14"
         matrix_coefficients="8"/>
 
+	<!-- Required for AV1_video_descriptor --> 
+    <private_data_specifier_descriptor private_data_specifier="aom"/>
+
+    <AV1_video_descriptor
+		version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1"
+		high_bitdepth="false" twelve_bit="false" monochrome="false" 
+		chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated"
+		HDR_WCG_idc="0"/>
+
+    <AV1_video_descriptor
+		version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0"
+		high_bitdepth="true" twelve_bit="true" monochrome="true" 
+		chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical"
+		HDR_WCG_idc="2"
+		initial_presentation_delay_minus_one="11"/>
+
     <vvc_subpictures_descriptor
         default_service_mode="true"
         processing_mode="1"
@@ -386,6 +402,30 @@
 		</DescriptionLanguage>
 	</MPEGH_3D_audio_text_label_descriptor>
 	
+	<Media_service_kind_descriptor>
+		<media_service_kind 
+			media_description="self" media_type="video"/>
+		<media_service_kind
+			media_description="self" media_type="unknown"
+			ID_length_code="2" ID_type="0x0200" media_ID="Paul">
+			<language_media_pair configuration_type="0" lang_len_idc="2" BCP47_language_code="eng">
+				<media_service_type purpose="0x01"/>
+				<media_service_type purpose="0x07"/>
+				<media_service_type purpose="0x11"/>
+				<media_service_type purpose="0x08"/>
+				<media_service_type purpose="0x17"/>
+			</language_media_pair>
+		</media_service_kind>
+	</Media_service_kind_descriptor>
+	
+	<Media_service_kind_descriptor>
+		<media_service_kind
+			media_description="associate" media_type="audio"
+			ID_length_code="7" ID_type="0x0200" ID_len="6" media_ID="TSDuck">
+			<language_media_pair configuration_type="0" lang_len_idc="0" lang_len="6" BCP47_language_code="french"/>
+		</media_service_kind>
+	</Media_service_kind_descriptor>
+
   </PMT>
 
   <NIT network_id="0">

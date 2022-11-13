@@ -3,6 +3,9 @@
   <PMT version="0" current="true" service_id="0x0000">
     <private_data_specifier_descriptor private_data_specifier="AVS"/>
     <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="0x08" sample_precision="0x02" chroma_format="0x01" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="0x09" transfer_characteristics="0x0E" matrix_coefficients="0x08"/>
+    <private_data_specifier_descriptor private_data_specifier="AOM"/>
+    <AV1_video_descriptor version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1" high_bitdepth="false" twelve_bit="false" monochrome="false" chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated" HDR_WCG_idc="0"/>
+    <AV1_video_descriptor version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0" high_bitdepth="true" twelve_bit="true" monochrome="true" chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical" HDR_WCG_idc="2" initial_presentation_delay_minus_one="11"/>
     <vvc_subpictures_descriptor default_service_mode="true" processing_mode="1" service_description="whole mosaic">
       <subpicture component_tag="0x01" subpicture_id="0x00"/>
       <subpicture component_tag="0x01" subpicture_id="0x01"/>
@@ -188,6 +191,23 @@
         <SwitchGroupDescription mae_descriptionSwitchGroupID="22" switchGroupDescription="switch_group-22"/>
       </DescriptionLanguage>
     </MPEGH_3D_audio_text_label_descriptor>
+    <Media_service_kind_descriptor>
+      <media_service_kind media_description="self" media_type="video"/>
+      <media_service_kind media_description="self" media_type="unknown" ID_length_code="2" ID_type="0x0200" media_ID="Paul">
+        <language_media_pair configuration_type="0" lang_len_idc="2" BCP47_language_code="eng">
+          <media_service_type purpose="0x01"/>
+          <media_service_type purpose="0x07"/>
+          <media_service_type purpose="0x11"/>
+          <media_service_type purpose="0x08"/>
+          <media_service_type purpose="0x17"/>
+        </language_media_pair>
+      </media_service_kind>
+    </Media_service_kind_descriptor>
+    <Media_service_kind_descriptor>
+      <media_service_kind media_description="associate" media_type="audio" ID_length_code="7" ID_type="0x0200" ID_len="6" media_ID="TSDuck">
+        <language_media_pair configuration_type="0" lang_len_idc="0" lang_len="6" BCP47_language_code="french"/>
+      </media_service_kind>
+    </Media_service_kind_descriptor>
   </PMT>
   <NIT version="0" current="true" network_id="0x0000" actual="true">
     <service_prominence_descriptor>

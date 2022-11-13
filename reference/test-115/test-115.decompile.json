@@ -23,6 +23,39 @@
         "transfer_characteristics": 14
       },
       {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "AOM"
+      },
+      {
+        "#name": "AV1_video_descriptor",
+        "chroma_sample_position": "colocated",
+        "chroma_subsampling_x": false,
+        "chroma_subsampling_y": false,
+        "hdr_wcg_idc": 0,
+        "high_bitdepth": false,
+        "monochrome": false,
+        "seq_level_idx_0": 9,
+        "seq_profile": 4,
+        "seq_tier_0": 1,
+        "twelve_bit": false,
+        "version": 1
+      },
+      {
+        "#name": "AV1_video_descriptor",
+        "chroma_sample_position": "vertical",
+        "chroma_subsampling_x": true,
+        "chroma_subsampling_y": true,
+        "hdr_wcg_idc": 2,
+        "high_bitdepth": true,
+        "initial_presentation_delay_minus_one": 11,
+        "monochrome": true,
+        "seq_level_idx_0": 23,
+        "seq_profile": 6,
+        "seq_tier_0": 0,
+        "twelve_bit": true,
+        "version": 1
+      },
+      {
         "#name": "vvc_subpictures_descriptor",
         "#nodes": [
           {
@@ -798,6 +831,77 @@
         ],
         "_3daudiosceneinfoid": 113,
         "numreservedbytes": 0
+      },
+      {
+        "#name": "Media_service_kind_descriptor",
+        "#nodes": [
+          {
+            "#name": "media_service_kind",
+            "media_description": "self",
+            "media_type": "video"
+          },
+          {
+            "#name": "media_service_kind",
+            "#nodes": [
+              {
+                "#name": "language_media_pair",
+                "#nodes": [
+                  {
+                    "#name": "media_service_type",
+                    "purpose": 1
+                  },
+                  {
+                    "#name": "media_service_type",
+                    "purpose": 7
+                  },
+                  {
+                    "#name": "media_service_type",
+                    "purpose": 17
+                  },
+                  {
+                    "#name": "media_service_type",
+                    "purpose": 8
+                  },
+                  {
+                    "#name": "media_service_type",
+                    "purpose": 23
+                  }
+                ],
+                "bcp47_language_code": "eng",
+                "configuration_type": 0,
+                "lang_len_idc": 2
+              }
+            ],
+            "id_length_code": 2,
+            "id_type": 512,
+            "media_description": "self",
+            "media_id": "Paul",
+            "media_type": "unknown"
+          }
+        ]
+      },
+      {
+        "#name": "Media_service_kind_descriptor",
+        "#nodes": [
+          {
+            "#name": "media_service_kind",
+            "#nodes": [
+              {
+                "#name": "language_media_pair",
+                "bcp47_language_code": "french",
+                "configuration_type": 0,
+                "lang_len": 6,
+                "lang_len_idc": 0
+              }
+            ],
+            "id_len": 6,
+            "id_length_code": 7,
+            "id_type": 512,
+            "media_description": "associate",
+            "media_id": "TSDuck",
+            "media_type": "audio"
+          }
+        ]
       }
     ],
     "current": true,
