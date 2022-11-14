@@ -902,6 +902,221 @@
             "media_type": "audio"
           }
         ]
+      },
+      {
+        "#name": "HEVC_tile_substream_descriptor",
+        "substreamid": 19
+      },
+      {
+        "#name": "HEVC_tile_substream_descriptor",
+        "#nodes": [
+          {
+            "#name": "Reference",
+            "patternreference": 99,
+            "preambleflag": 1
+          }
+        ],
+        "substreamid": 67
+      },
+      {
+        "#name": "HEVC_tile_substream_descriptor",
+        "#nodes": [
+          {
+            "#name": "Substream",
+            "additionalsubstreamid": 14,
+            "flag": 1
+          },
+          {
+            "#name": "Substream",
+            "additionalsubstreamid": 19,
+            "flag": 0
+          },
+          {
+            "#name": "Substream",
+            "additionalsubstreamid": 119,
+            "flag": 0
+          },
+          {
+            "#name": "Substream",
+            "additionalsubstreamid": 86,
+            "flag": 1
+          },
+          {
+            "#name": "Substream",
+            "additionalsubstreamid": 125,
+            "flag": 1
+          }
+        ],
+        "substreamid": 68
+      },
+      {
+        "#name": "HEVC_subregion_descriptor",
+        "levelfullpanorama": 55,
+        "substreamidsperline": 125,
+        "totalsubstreamids": 255
+      },
+      {
+        "#name": "HEVC_subregion_descriptor",
+        "#nodes": [
+          {
+            "#name": "SubregionLayout",
+            "#nodes": [
+              {
+                "#name": "Pattern",
+                "#nodes": [
+                  {
+                    "#name": "Substream",
+                    "offset": -127
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 127
+                  }
+                ]
+              }
+            ],
+            "level": 255,
+            "picturesizehor": 1920,
+            "picturesizever": 1080,
+            "preamblesubstreamid": 1
+          },
+          {
+            "#name": "SubregionLayout",
+            "#nodes": [
+              {
+                "#name": "Pattern",
+                "#nodes": [
+                  {
+                    "#name": "Substream",
+                    "offset": -30
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": -20
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": -10
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 10
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 20
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 30
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 40
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 50
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 60
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 70
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 80
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 90
+                  }
+                ]
+              },
+              {
+                "#name": "Pattern",
+                "#nodes": [
+                  {
+                    "#name": "Substream",
+                    "offset": -31
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": -21
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": -11
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 9
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 19
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 29
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 39
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 49
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 59
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 69
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 79
+                  },
+                  {
+                    "#name": "Substream",
+                    "offset": 89
+                  }
+                ]
+              }
+            ],
+            "level": 254,
+            "picturesizehor": 3840,
+            "picturesizever": 1920,
+            "preamblesubstreamid": 2
+          },
+          {
+            "#name": "SubregionLayout",
+            "#nodes": [
+              {
+                "#name": "Pattern",
+                "#nodes": [
+                  {
+                    "#name": "Substream",
+                    "offset": -1
+                  }
+                ]
+              }
+            ],
+            "level": 10,
+            "picturesizehor": 1280,
+            "picturesizever": 720,
+            "preamblesubstreamid": 126
+          }
+        ],
+        "levelfullpanorama": 54,
+        "substreamidsperline": 15,
+        "totalsubstreamids": 254
       }
     ],
     "current": true,
