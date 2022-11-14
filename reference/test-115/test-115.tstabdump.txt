@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02)
-  Section: 0 (last: 0), version: 0, size: 780 bytes
+  Section: 0 (last: 0), version: 0, size: 861 bytes
   Program: 0 (0x0000), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
@@ -302,6 +302,31 @@
     [0] associate (1), media type: audio (2)
      ID type: According to ANSI SCTE/35 Table 22 (0x0200), media ID: TSDuck
       language [0] configuration: complete (0), language: french
+  - Descriptor 50: MPEG-2 Extension (0x3F, 63), 2 bytes
+    MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+    Substream id : 19
+  - Descriptor 51: MPEG-2 Extension (0x3F, 63), 3 bytes
+    MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+    Reference flag: 1, substream id : 67, preamble flag: 1, pattern reference: 99
+  - Descriptor 52: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+    Reference flag: 0, substream id : 68
+    Additional Stream IDs: 1-14  0-19  0-119 1-86  1-125
+  - Descriptor 53: MPEG-2 Extension (0x3F, 63), 4 bytes
+    MPEG extended descriptor: HEVC Subregion Descriptor (0x13, 19)
+    Substream IDs per line: 125, total substream IDs: 255, level full panorama: 55
+  - Descriptor 54: MPEG-2 Extension (0x3F, 63), 55 bytes
+    MPEG extended descriptor: HEVC Subregion Descriptor (0x13, 19)
+    Substream IDs per line: 15, total substream IDs: 254, level full panorama: 54
+    Layout [0]: Preamble substream: 1, level: 255, picture size hor=1920 ver=1080
+     Pattern [0]: -127  127
+    Layout [1]: Preamble substream: 2, level: 254, picture size hor=3840 ver=1920
+     Pattern [0]:  -30  -20  -10   10   20   30   40   50
+                    60   70   80   90
+     Pattern [1]:  -31  -21  -11    9   19   29   39   49
+                    59   69   79   89
+    Layout [2]: Preamble substream: 126, level: 10, picture size hor=1280 ver=720
+     Pattern [0]:   -1
 
 * NIT Actual, TID 64 (0x40)
   Section: 0 (last: 0), version: 0, size: 147 bytes

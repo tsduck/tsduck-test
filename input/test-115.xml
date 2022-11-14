@@ -426,6 +426,69 @@
 		</media_service_kind>
 	</Media_service_kind_descriptor>
 
+	<HEVC_tile_substream_descriptor SubstreamID="19"/>
+	
+	<HEVC_tile_substream_descriptor SubstreamID="67">
+		<Reference PreambleFlag="1" PatternReference="99"/>
+	</HEVC_tile_substream_descriptor>
+
+	<HEVC_tile_substream_descriptor SubstreamID="68">
+		<Substream Flag="1" AdditionalSubstreamID="14"/>
+		<Substream Flag="0" AdditionalSubstreamID="19"/>
+		<Substream Flag="0" AdditionalSubstreamID="119"/>
+		<Substream Flag="1" AdditionalSubstreamID="86"/>
+		<Substream Flag="1" AdditionalSubstreamID="125"/>
+	</HEVC_tile_substream_descriptor>
+
+	<HEVC_subregion_descriptor 
+		SubstreamIDsPerLine="125" TotalSubstreamIDs="255" LevelFullPanorama="55"/>
+
+	<HEVC_subregion_descriptor 
+		SubstreamIDsPerLine="15" TotalSubstreamIDs="254" LevelFullPanorama="54">
+		<SubregionLayout PreambleSubstreamID="1" Level="255" PictureSizeHor="1920" PictureSizeVer="1080">
+			<Pattern>
+				<Substream offset="-127"/>
+				<Substream offset="127"/>
+			</Pattern>
+		</SubregionLayout>
+		<SubregionLayout PreambleSubstreamID="2" Level="254" PictureSizeHor="3840" PictureSizeVer="1920">
+			<Pattern>
+				<Substream offset="-30"/>
+				<Substream offset="-20"/>
+				<Substream offset="-10"/>
+				<Substream offset="10"/>
+				<Substream offset="20"/>
+				<Substream offset="30"/>
+				<Substream offset="40"/>
+				<Substream offset="50"/>
+				<Substream offset="60"/>
+				<Substream offset="70"/>
+				<Substream offset="80"/>
+				<Substream offset="90"/>
+			</Pattern>
+			<Pattern>
+				<Substream offset="-31"/>
+				<Substream offset="-21"/>
+				<Substream offset="-11"/>
+				<Substream offset="9"/>
+				<Substream offset="19"/>
+				<Substream offset="29"/>
+				<Substream offset="39"/>
+				<Substream offset="49"/>
+				<Substream offset="59"/>
+				<Substream offset="69"/>
+				<Substream offset="79"/>
+				<Substream offset="89"/>
+			</Pattern>
+		</SubRegionLayout>
+		<SubregionLayout PreambleSubstreamID="126" Level="10" PictureSizeHor="1280" PictureSizeVer="720">
+			<Pattern>
+				<Substream offset="-1"/>
+			</Pattern>
+		</SubRegionLayout>
+		
+	</HEVC_subregion_descriptor>
+	
   </PMT>
 
   <NIT network_id="0">
