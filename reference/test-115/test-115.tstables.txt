@@ -73,7 +73,7 @@
       MPEG extended descriptor: LCEVC linkage (0x18, 24)
       LCEVC stream tag: 01 23 45
     - Descriptor 14: MPEG-2 Extension (0x3F, 63), 5 bytes
-      MPEG extended descriptor: LCEVC video descriptor (0x17, 23)
+      MPEG extended descriptor: LCEVC video (0x17, 23)
       LCEVC stream tag: 0x56, profile IDC: unknown (0x5), level IDC: 9, sublevel: 1
       Processed planes: true, picture type: false, field type: true
       HDR WCG idc: HDR and WCG (2), video properties: unknown (0x0206) (6)
@@ -304,20 +304,20 @@
        ID type: According to ANSI SCTE/35 Table 22 (0x0200), media ID: TSDuck
         language [0] configuration: complete (0), language: french
     - Descriptor 50: MPEG-2 Extension (0x3F, 63), 2 bytes
-      MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+      MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
       Substream id : 19
     - Descriptor 51: MPEG-2 Extension (0x3F, 63), 3 bytes
-      MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+      MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
       Reference flag: 1, substream id : 67, preamble flag: 1, pattern reference: 99
     - Descriptor 52: MPEG-2 Extension (0x3F, 63), 7 bytes
-      MPEG extended descriptor: HEVC Tile Substream Descriptor (0x12, 18)
+      MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
       Reference flag: 0, substream id : 68
       Additional Stream IDs: 1-14  0-19  0-119 1-86  1-125
     - Descriptor 53: MPEG-2 Extension (0x3F, 63), 4 bytes
-      MPEG extended descriptor: HEVC Subregion Descriptor (0x13, 19)
+      MPEG extended descriptor: HEVC Subregion (0x13, 19)
       Substream IDs per line: 125, total substream IDs: 255, level full panorama: 55
     - Descriptor 54: MPEG-2 Extension (0x3F, 63), 55 bytes
-      MPEG extended descriptor: HEVC Subregion Descriptor (0x13, 19)
+      MPEG extended descriptor: HEVC Subregion (0x13, 19)
       Substream IDs per line: 15, total substream IDs: 254, level full panorama: 54
       Layout [0]: Preamble substream: 1, level: 255, picture size hor=1920 ver=1080
        Pattern [0]: -127  127
