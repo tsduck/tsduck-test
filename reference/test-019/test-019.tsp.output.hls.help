@@ -27,6 +27,13 @@ Options:
       conditions are dropped. Note that subsequent output segments always start
       with a copy of the last PAT and PMT.
 
+  -c 'string'
+  --custom-tag 'string'
+      Specify a custom tag to add in the playlist files. The specified string
+      shall start with '#'. If omitted, the leading '#' is automatically added.
+      Several --custom-tag can be specified. Each tag is added as an
+      independent tag line.
+
   -d value
   --duration value
       Specify the target duration in seconds of media segments. The default is
