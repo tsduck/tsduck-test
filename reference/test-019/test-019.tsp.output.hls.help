@@ -74,6 +74,12 @@ Options:
       segment files are automatically deleted. By default, the output stream is
       considered as VoD and all created media segments are preserved.
 
+  --live-extra-segments value
+      In a live stream, specify the number of unreferenced segments to keep on
+      disk before deleting them. The extra segments were recently referenced in
+      the playlist and can be downloaded by clients after their removal from
+      the playlist. The default is 1 segments.
+
   -m value
   --max-extra-duration value
       With --intra-close, specify the maximum additional duration in seconds
@@ -93,6 +99,10 @@ Options:
       but, in all cases, the URI of the segment files in the playlist are
       always relative to the playlist location. By default, no playlist file is
       created (media segments only).
+
+  --slice-only
+      Disable the insertion of the PAT and PMT at start of each segment. Note
+      that this generates a non-standard HLS output.
 
   -s value
   --start-media-sequence value
