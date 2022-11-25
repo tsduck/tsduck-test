@@ -46,6 +46,11 @@ Options:
 
       The options --max-duration and --max-size are mutually exclusive.
 
+  --max-files value
+      With --max-duration or --max-size, specify a maximum number of files.
+      When the number of created files exceeds the specified number, the oldest
+      files are deleted. By default, all created files are kept.
+
   --max-retry value
       With --reopen-on-error, specify the maximum number of times the file is
       reopened on error. By default, the file is indefinitely reopened.

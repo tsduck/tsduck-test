@@ -36,9 +36,55 @@ Options:
       Keep existing file (abort if the specified file already exists). By
       default, existing files are overwritten.
 
+  --max-duration value
+      Specify a maximum duration in seconds during which an output file is
+      written. After the specified duration, the output file is closed and
+      another one is created. A timestamp is automatically added to the name
+      part so that successive output files receive distinct names. Example: if
+      the specified file name is foo.ts, the various files are named
+      foo-YYYYMMDD-hhmmss.ts.
+
+      The options --max-duration and --max-size are mutually exclusive.
+
+  --max-files value
+      With --max-duration or --max-size, specify a maximum number of files.
+      When the number of created files exceeds the specified number, the oldest
+      files are deleted. By default, all created files are kept.
+
+  --max-retry value
+      With --reopen-on-error, specify the maximum number of times the file is
+      reopened on error. By default, the file is indefinitely reopened.
+
+  --max-size value
+      Specify a maximum size in bytes for the output files. When an output file
+      grows beyond the specified limit, it is closed and another one is
+      created. A number is automatically added to the name part so that
+      successive output files receive distinct names. Example: if the specified
+      file name is foo.ts, the various files are named foo-000000.ts,
+      foo-000001.ts, etc.
+
+      If the specified template already contains trailing digits, this
+      unmodified name is used for the first file. Then, the integer part is
+      incremented. Example: if the specified file name is foo-027.ts, the
+      various files are named foo-027.ts, foo-028.ts, etc.
+
+      The options --max-duration and --max-size are mutually exclusive.
+
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
+
+  -r
+  --reopen-on-error
+      In case of write error, close the file and try to reopen it several
+      times. After a write error, attempt to reopen or recreate the file
+      immediately. Then, in case of open error, periodically retry to open the
+      file. See also options --retry-interval and --max-retry.
+
+  --retry-interval milliseconds
+      With --reopen-on-error, specify the number of milliseconds to wait before
+      attempting to reopen the file after a failure. The default is 2,000
+      milliseconds.
 
