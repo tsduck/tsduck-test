@@ -75,18 +75,18 @@ Options:
       Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
       "warning".
 
-  --max-ecm value
-      countStop the test after generating the specified number of ECM's. By
-      default, the test endlessly runs.
-
-  --max-seconds value
-      secondsStop the test after the specified number of seconds. By default,
+  --max-ecm count
+      Stop the test after generating the specified number of ECM's. By default,
       the test endlessly runs.
 
+  --max-seconds seconds
+      Stop the test after the specified number of seconds. By default, the test
+      endlessly runs.
+
   --statistics-interval seconds
-      Specify the interval in seconds between two statistics line display. When
-      set to zero, disable periodic statistics, only display final statistics.
-      The default is 10 seconds.
+      Specify the interval in seconds between the display of two statistics
+      lines. When set to zero, disable periodic statistics, only display final
+      statistics. The default is 10 seconds.
 
   -s value
   --streams-per-channel value
