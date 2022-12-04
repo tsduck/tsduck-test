@@ -1,0 +1,117 @@
+
+Test a DVB SimulCrypt compliant ECMG with an artificial load
+
+Usage: tstestecmg [options] host:port
+
+Parameter:
+
+  Specify the host name and port of the ECM Generator to test.
+
+Options:
+
+  -a hexa-data
+  --access-criteria hexa-data
+      Specify the access criteria as sent to the ECMG. The value must be a
+      suite of hexadecimal digits. All ECM's are generated using these access
+      criteria. Empty by default.
+
+  -c value
+  --channels value
+      Specify the number of channels to open. There is one TCP connection to
+      the ECMG per channel. The default is 10.
+
+  --cp-duration seconds
+      Specify the crypto-period duration in seconds. The default is 10 seconds.
+
+  --cw-size bytes
+      Specify the size in bytes of control words. The default is 8 bytes.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --ecmg-scs-version value
+      Specify the version of the ECMG <=> SCS DVB SimulCrypt protocol. Valid
+      values are 2 and 3. The default is 2.
+
+  --first-channel-id value
+      Specify the first ECM_channel_id value for the ECMG. Subsequent
+      connections use sequential values. The default is 0.
+
+  --first-ecm-id value
+      Specify the first ECM_id value to use in the first stream. Subsequent
+      streams use sequential values. The default is --first-channel-id times
+      --streams-per-channel.
+
+  --first-stream-id value
+      Specify the first ECM_stream_id to use in each channel. Subsequent
+      streams use sequential values. The default is 0.
+
+  --help
+      Display this help text.
+
+  --log-data[=level]
+      Same as --log-protocol but applies to CW_provision and ECM_response
+      messages only. To debug the session management without being flooded by
+      data messages, use --log-protocol=info --log-data=debug.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
+
+  --log-message-count value
+      Specify the maximum number of buffered log messages. Log messages are
+      displayed asynchronously in a low priority thread. This value specifies
+      the maximum number of buffered log messages in memory, before being
+      displayed. When too many messages are logged in a short period of time,
+      while plugins use all CPU power, extra messages are dropped. Increase
+      this value if you think that too many messages are dropped. The default
+      is 512 messages.
+
+  --log-protocol[=level]
+      Log all ECMG <=> SCS protocol messages using the specified level. If the
+      option is not present, the messages are logged at debug level only. If
+      the option is present without value, the messages are logged at info
+      level. A level can be a numerical debug level or a name.
+      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
+      "warning".
+
+  --max-ecm value
+      countStop the test after generating the specified number of ECM's. By
+      default, the test endlessly runs.
+
+  --max-seconds value
+      secondsStop the test after the specified number of seconds. By default,
+      the test endlessly runs.
+
+  --statistics-interval seconds
+      Specify the interval in seconds between two statistics line display. When
+      set to zero, disable periodic statistics, only display final statistics.
+      The default is 10 seconds.
+
+  -s value
+  --streams-per-channel value
+      Specify the number of streams to open in each channel. The default is 10.
+
+  --super-cas-id value
+      Specify the DVB SimulCrypt Super_CAS_Id. This is a required parameter.
+
+  --synchronous-log
+      Each logged message is guaranteed to be displayed, synchronously, without
+      any loss of message. The downside is that a plugin thread may be blocked
+      for a short while when too many messages are logged. This option shall be
+      used when all log messages are needed and the source and destination are
+      not live streams (files for instance). This option is not recommended for
+      live streams, when the responsiveness of the application is more
+      important than the logged messages.
+
+  -t
+  --timed-log
+      Each logged message contains a time stamp.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

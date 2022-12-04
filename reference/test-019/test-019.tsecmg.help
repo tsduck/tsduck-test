@@ -53,6 +53,15 @@ Options:
       Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
       "warning".
 
+  --log-message-count value
+      Specify the maximum number of buffered log messages. Log messages are
+      displayed asynchronously in a low priority thread. This value specifies
+      the maximum number of buffered log messages in memory, before being
+      displayed. When too many messages are logged in a short period of time,
+      while plugins use all CPU power, extra messages are dropped. Increase
+      this value if you think that too many messages are dropped. The default
+      is 512 messages.
+
   --log-protocol[=level]
       Log all ECMG <=> SCS protocol messages using the specified level. If the
       option is not present, the messages are logged at debug level only. If
@@ -88,6 +97,19 @@ Options:
       Return ECM's in section format. This option sets the DVB SimulCrypt
       parameter 'section_TSpkt_flag' to zero. By default, ECM's are returned in
       TS packet format.
+
+  --synchronous-log
+      Each logged message is guaranteed to be displayed, synchronously, without
+      any loss of message. The downside is that a plugin thread may be blocked
+      for a short while when too many messages are logged. This option shall be
+      used when all log messages are needed and the source and destination are
+      not live streams (files for instance). This option is not recommended for
+      live streams, when the responsiveness of the application is more
+      important than the logged messages.
+
+  -t
+  --timed-log
+      Each logged message contains a time stamp.
 
   --transition-delay-start value
       This option sets the DVB SimulCrypt option 'transition_delay_start', in
