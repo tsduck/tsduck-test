@@ -14,15 +14,15 @@
       Colour primaries: 9, Transfer characteristics: 14, Matrix coefficients: 8
     - Descriptor 2: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x414F4D53 (AOM)
-    - Descriptor 3: AV1 Video (0xD2, 210), 4 bytes
+    - Descriptor 3: AV1 Video (0x80, 128), 4 bytes
       Version: 1, profile:4, level: 4.1 (9), tier: 1
       High Bitdepth: no, 12 bit: no, monochrome: no, chroma subsampling x=no y=no
       Chroma sample position: Co-located (2), HDR WCG idc: SDR (0)
-    - Descriptor 4: AV1 Video (0xD2, 210), 4 bytes
+    - Descriptor 4: AV1 Video (0x80, 128), 4 bytes
       Version: 1, profile:6, level: 7.2 (23), tier: 0
       High Bitdepth: yes, 12 bit: yes, monochrome: yes, chroma subsampling x=yes y=yes
       Chroma sample position: Vertical (1), HDR WCG idc: HDR and WCG (2)
-      Initial presentation delay 12 (0x0B)
+      Initial presentation delay 12 (minus1=11)
     - Descriptor 5: Extension Descriptor (0x7F, 127), 24 bytes
       Extended descriptor: VVC Subpictures (0x23, 35)
       Default service mode: true, service description present: true
