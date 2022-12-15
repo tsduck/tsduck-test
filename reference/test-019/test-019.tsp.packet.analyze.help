@@ -23,6 +23,12 @@ Options:
       --time-reference UTC-3'. This is a handy shortcut when working on South
       American ISDB-Tb transport streams.
 
+  -c
+  --cumulative
+      With --interval, accumulate analysis data of all intervals. With this
+      option, each new report is an analysis from the beginning of the stream.
+      By default, the analyzed data are reset after each report.
+
   --default-charset name
       Default character set to use when interpreting strings from tables and
       descriptors. By default, DVB encoding using ISO-6937 as default table is
