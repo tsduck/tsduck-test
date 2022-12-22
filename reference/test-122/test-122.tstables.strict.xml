@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <SAT version="1" current="true" satellite_table_id="0" table_count="0">
+    <metadata PID="200"/>
+    <satellite_position_v2_info>
+      <satellite_position satellite_id="0x00000192">
+        <geostationary orbital_position="19.2" west_east_flag="east"/>
+      </satellite_position>
+      <satellite_position satellite_id="0x00123456">
+        <earth_orbiting epoch_year="22" day_of_the_year="176" day_fraction="14.750000" mean_motion_first_derivative="23456.779297" mean_motion_second_derivative="123.456703" drag_term="1.000000e-05" inclination="35.791000" right_ascension_of_the_ascending_node="65.120003" eccentricity="0.340000" argument_of_perigree="17.889999" mean_anomaly="0.034000" mean_motion="12.345000"/>
+      </satellite_position>
+    </satellite_position_v2_info>
+  </SAT>
+  <SAT version="1" current="true" satellite_table_id="1" table_count="0">
+    <metadata PID="200"/>
+    <cell_fragment_info>
+      <cell_fragment cell_fragment_id="0x00000001" first_occurence="true" last_occurence="false" center_latitude="45,234" center_longitude="-19,200" max_distance="10,000">
+        <delivery_system id="0xBEEFBEEF"/>
+        <new_delivery_system id="0xDEAD0001" time_of_application_base="1,238,472,730" time_of_application_ext="456"/>
+        <new_delivery_system id="0xDEAD0002" time_of_application_base="22,222,730" time_of_application_ext="501"/>
+        <obsolescent_delivery_system id="0x00000001" time_of_obsolescence_base="123,456,789" time_of_obsolescence_ext="1"/>
+      </cell_fragment>
+    </cell_fragment_info>
+  </SAT>
+  <SAT version="1" current="true" satellite_table_id="2" table_count="0">
+    <metadata PID="200"/>
+    <time_association_info association_type="0" ncr_base="98,765" ncr_ext="432" association_timestamp_seconds="12,345,678,901,234" association_timestamp_nanoseconds="567,890,123"/>
+  </SAT>
+  <SAT version="1" current="true" satellite_table_id="3" table_count="0">
+    <metadata PID="200"/>
+    <beamhopping_timeplan_info>
+      <beamhopping_timeplan id="0xDEAD0000" time_of_application_base="4,294,967,296" time_of_application_ext="256" cycle_duration_base="256" cycle_duration_ext="256">
+        <time_plan_mode_0 dwell_duration_base="2,000" dwell_duration_ext="200" on_time_base="1,000" on_time_ext="100"/>
+      </beamhopping_timeplan>
+      <beamhopping_timeplan id="0xDEAD1000" time_of_application_base="4,294,967,297" time_of_application_ext="257" cycle_duration_base="257" cycle_duration_ext="257">
+        <time_plan_mode_1 current_slot="5">
+          <slot id="1" transmission_on="true"/>
+          <slot id="2" transmission_on="false"/>
+          <slot id="3" transmission_on="true"/>
+          <slot id="4" transmission_on="true"/>
+          <slot id="5" transmission_on="false"/>
+          <slot id="6" transmission_on="false"/>
+        </time_plan_mode_1>
+      </beamhopping_timeplan>
+      <beamhopping_timeplan id="0xDEAD2000" time_of_application_base="4,294,967,298" time_of_application_ext="258" cycle_duration_base="258" cycle_duration_ext="258">
+        <time_plan_mode_2 grid_size_base="4,369" grid_size_ext="17" revisit_duration_base="8,738" revisit_duration_ext="34" sleep_time_base="13,107" sleep_time_ext="51" sleep_duration_base="17,476" sleep_duration_ext="68"/>
+      </beamhopping_timeplan>
+    </beamhopping_timeplan_info>
+  </SAT>
+</tsduck>

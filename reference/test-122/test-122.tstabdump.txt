@@ -1,0 +1,44 @@
+
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 66 bytes
+  [1] Satellite id: 000192, position: 019.2 east
+  [2] Satellite id: 123456, Year: 22, day: 176, frac: 14.750000 
+  Mean motion first derivative: 23456.8, mean motion second derivative: 123.457
+  Drag term: 1e-05, inclination: 35.791, right ascention in ascending node: 65.12
+  Eccentricity: 0.34, argument of perigree: 17.89, mean anomaly:0.034, mean motion: 12.345
+
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 19 bytes
+  [1] Satellite id: 111111, position: 021.7 west
+
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 65 bytes
+  [1] Cell fragment id: 00000001, first: true, last: false
+    Center latitude: 45.234 longitude: -19.2, max distance: 10000
+    Delivery system IDs: BEEFBEEF
+    [1] New delivery system id: 3735879681, time of application: base=1238472730 ext=456 NCR(371541819456)
+    [2] New delivery system id: 3735879682, time of application: base=22222730 ext=501 NCR(6666819501)
+    [1] Obsolescent delivery system id: 1, time of obsolescence: base=123456789 ext=1 NCR(37037036701)
+
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 31 bytes
+  Time association: without leap second signalling (0)
+  NCR time: base=98765 ext=432 NCR(29629932), association timestamp  seconds=12345678901234 nanoseconds=567890123
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 31 bytes
+  Time association: with leap second signalling (1)
+  Leap 59:true, leap 61: false, past leap 59: false, past leap 61: true
+  NCR time: base=65535 ext=255 NCR(19660755), association timestamp  seconds=200000002 nanoseconds=200000002
+* SAT (Satellite Access), TID 77 (0x4D)
+  Section: 0 (last: 0), version: 1, size: 110 bytes
+  [1] Beamhopping Time Plan id: dead0000, mode: one transmission each cycle (0)
+    Time of application: base=4294967296 ext=256 NCR(1288490189056), cycle duration: base=256 ext=256 NCR(77056)
+    Dwell duration: base=2000 ext=200 NCR(600200), on time: base=1000 ext=100 NCR(300100)
+  [2] Beamhopping Time Plan id: dead1000, mode: multiple transmission each cycle (1)
+    Time of application: base=4294967297 ext=257 NCR(1288490189357), cycle duration: base=257 ext=257 NCR(77357)
+    Slot transmission: X-XX--
+  [3] Beamhopping Time Plan id: dead2000, mode: only grid size is siganlled, not illuminance (2)
+    Time of application: base=4294967298 ext=258 NCR(1288490189658), cycle duration: base=258 ext=258 NCR(77658)
+    Grid size: base=4369 ext=17 NCR(1310717), revisit duration: base=8738 ext=34 NCR(2621434)
+    Sleep time: base=13107 ext=51 NCR(3932151), sleep duration: base=17476 ext=68 NCR(5242868)
+
