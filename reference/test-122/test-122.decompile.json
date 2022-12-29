@@ -85,21 +85,36 @@
               },
               {
                 "#name": "new_delivery_system",
-                "id": 3735879681,
-                "time_of_application_base": 1238472730,
-                "time_of_application_ext": 456
+                "#nodes": [
+                  {
+                    "#name": "time_of_application",
+                    "base": 1238472730,
+                    "ext": 456
+                  }
+                ],
+                "id": 3735879681
               },
               {
                 "#name": "new_delivery_system",
-                "id": 3735879682,
-                "time_of_application_base": 22222730,
-                "time_of_application_ext": 501
+                "#nodes": [
+                  {
+                    "#name": "time_of_application",
+                    "base": 22222730,
+                    "ext": 501
+                  }
+                ],
+                "id": 3735879682
               },
               {
                 "#name": "obsolescent_delivery_system",
-                "id": 1,
-                "time_of_obsolescence_base": 123456789,
-                "time_of_obsolescence_ext": 1
+                "#nodes": [
+                  {
+                    "#name": "time_of_obsolescence",
+                    "base": 123456789,
+                    "ext": 1
+                  }
+                ],
+                "id": 1
               }
             ],
             "cell_fragment_id": 1,
@@ -122,11 +137,16 @@
     "#nodes": [
       {
         "#name": "time_association_info",
+        "#nodes": [
+          {
+            "#name": "ncr",
+            "base": 98765,
+            "ext": 432
+          }
+        ],
         "association_timestamp_nanoseconds": 567890123,
         "association_timestamp_seconds": 12345678901234,
-        "association_type": 0,
-        "ncr_base": 98765,
-        "ncr_ext": 432
+        "association_type": 0
       }
     ],
     "current": true,
@@ -139,13 +159,18 @@
     "#nodes": [
       {
         "#name": "time_association_info",
+        "#nodes": [
+          {
+            "#name": "ncr",
+            "base": 65535,
+            "ext": 255
+          }
+        ],
         "association_timestamp_nanoseconds": 200000002,
         "association_timestamp_seconds": 200000002,
         "association_type": 1,
         "leap59": true,
         "leap61": false,
-        "ncr_base": 65535,
-        "ncr_ext": 255,
         "past_leap59": false,
         "past_leap61": true
       }
@@ -165,22 +190,46 @@
             "#name": "beamhopping_timeplan",
             "#nodes": [
               {
+                "#name": "time_of_application",
+                "base": 4294967296,
+                "ext": 256
+              },
+              {
+                "#name": "cycle_duration",
+                "base": 256,
+                "ext": 256
+              },
+              {
                 "#name": "time_plan_mode_0",
-                "dwell_duration_base": 2000,
-                "dwell_duration_ext": 200,
-                "on_time_base": 1000,
-                "on_time_ext": 100
+                "#nodes": [
+                  {
+                    "#name": "dwell_duration",
+                    "base": 2000,
+                    "ext": 200
+                  },
+                  {
+                    "#name": "on_time",
+                    "base": 1000,
+                    "ext": 100
+                  }
+                ]
               }
             ],
-            "cycle_duration_base": 256,
-            "cycle_duration_ext": 256,
-            "id": 3735879680,
-            "time_of_application_base": 4294967296,
-            "time_of_application_ext": 256
+            "id": 3735879680
           },
           {
             "#name": "beamhopping_timeplan",
             "#nodes": [
+              {
+                "#name": "time_of_application",
+                "base": 4294967297,
+                "ext": 257
+              },
+              {
+                "#name": "cycle_duration",
+                "base": 257,
+                "ext": 257
+              },
               {
                 "#name": "time_plan_mode_1",
                 "#nodes": [
@@ -218,32 +267,48 @@
                 "current_slot": 5
               }
             ],
-            "cycle_duration_base": 257,
-            "cycle_duration_ext": 257,
-            "id": 3735883776,
-            "time_of_application_base": 4294967297,
-            "time_of_application_ext": 257
+            "id": 3735883776
           },
           {
             "#name": "beamhopping_timeplan",
             "#nodes": [
               {
+                "#name": "time_of_application",
+                "base": 4294967298,
+                "ext": 258
+              },
+              {
+                "#name": "cycle_duration",
+                "base": 258,
+                "ext": 258
+              },
+              {
                 "#name": "time_plan_mode_2",
-                "grid_size_base": 4369,
-                "grid_size_ext": 17,
-                "revisit_duration_base": 8738,
-                "revisit_duration_ext": 34,
-                "sleep_duration_base": 17476,
-                "sleep_duration_ext": 68,
-                "sleep_time_base": 13107,
-                "sleep_time_ext": 51
+                "#nodes": [
+                  {
+                    "#name": "grid_size",
+                    "base": 4369,
+                    "ext": 17
+                  },
+                  {
+                    "#name": "revisit_duration",
+                    "base": 8738,
+                    "ext": 34
+                  },
+                  {
+                    "#name": "sleep_time",
+                    "base": 13107,
+                    "ext": 51
+                  },
+                  {
+                    "#name": "sleep_duration",
+                    "base": 17476,
+                    "ext": 68
+                  }
+                ]
               }
             ],
-            "cycle_duration_base": 258,
-            "cycle_duration_ext": 258,
-            "id": 3735887872,
-            "time_of_application_base": 4294967298,
-            "time_of_application_ext": 258
+            "id": 3735887872
           }
         ]
       }

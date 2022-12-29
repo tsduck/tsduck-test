@@ -16,23 +16,38 @@
     <cell_fragment_info>
       <cell_fragment cell_fragment_id="0x00000001" first_occurence="true" last_occurence="false" center_latitude="45,234" center_longitude="-19,200" max_distance="10,000">
         <delivery_system id="0xBEEFBEEF"/>
-        <new_delivery_system id="0xDEAD0001" time_of_application_base="1,238,472,730" time_of_application_ext="456"/>
-        <new_delivery_system id="0xDEAD0002" time_of_application_base="22,222,730" time_of_application_ext="501"/>
-        <obsolescent_delivery_system id="0x00000001" time_of_obsolescence_base="123,456,789" time_of_obsolescence_ext="1"/>
+        <new_delivery_system id="0xDEAD0001">
+          <time_of_application base="1,238,472,730" ext="456"/>
+        </new_delivery_system>
+        <new_delivery_system id="0xDEAD0002">
+          <time_of_application base="22,222,730" ext="501"/>
+        </new_delivery_system>
+        <obsolescent_delivery_system id="0x00000001">
+          <time_of_obsolescence base="123,456,789" ext="1"/>
+        </obsolescent_delivery_system>
       </cell_fragment>
     </cell_fragment_info>
   </SAT>
   <SAT version="1" current="true" satellite_table_id="2" table_count="0">
     <metadata PID="200"/>
-    <time_association_info association_type="0" ncr_base="98,765" ncr_ext="432" association_timestamp_seconds="12,345,678,901,234" association_timestamp_nanoseconds="567,890,123"/>
+    <time_association_info association_type="0" association_timestamp_seconds="12,345,678,901,234" association_timestamp_nanoseconds="567,890,123">
+      <ncr base="98,765" ext="432"/>
+    </time_association_info>
   </SAT>
   <SAT version="1" current="true" satellite_table_id="3" table_count="0">
     <metadata PID="200"/>
     <beamhopping_timeplan_info>
-      <beamhopping_timeplan id="0xDEAD0000" time_of_application_base="4,294,967,296" time_of_application_ext="256" cycle_duration_base="256" cycle_duration_ext="256">
-        <time_plan_mode_0 dwell_duration_base="2,000" dwell_duration_ext="200" on_time_base="1,000" on_time_ext="100"/>
+      <beamhopping_timeplan id="0xDEAD0000">
+        <time_of_application base="4,294,967,296" ext="256"/>
+        <cycle_duration base="256" ext="256"/>
+        <time_plan_mode_0>
+          <dwell_duration base="2,000" ext="200"/>
+          <on_time base="1,000" ext="100"/>
+        </time_plan_mode_0>
       </beamhopping_timeplan>
-      <beamhopping_timeplan id="0xDEAD1000" time_of_application_base="4,294,967,297" time_of_application_ext="257" cycle_duration_base="257" cycle_duration_ext="257">
+      <beamhopping_timeplan id="0xDEAD1000">
+        <time_of_application base="4,294,967,297" ext="257"/>
+        <cycle_duration base="257" ext="257"/>
         <time_plan_mode_1 current_slot="5">
           <slot id="1" transmission_on="true"/>
           <slot id="2" transmission_on="false"/>
@@ -42,8 +57,15 @@
           <slot id="6" transmission_on="false"/>
         </time_plan_mode_1>
       </beamhopping_timeplan>
-      <beamhopping_timeplan id="0xDEAD2000" time_of_application_base="4,294,967,298" time_of_application_ext="258" cycle_duration_base="258" cycle_duration_ext="258">
-        <time_plan_mode_2 grid_size_base="4,369" grid_size_ext="17" revisit_duration_base="8,738" revisit_duration_ext="34" sleep_time_base="13,107" sleep_time_ext="51" sleep_duration_base="17,476" sleep_duration_ext="68"/>
+      <beamhopping_timeplan id="0xDEAD2000">
+        <time_of_application base="4,294,967,298" ext="258"/>
+        <cycle_duration base="258" ext="258"/>
+        <time_plan_mode_2>
+          <grid_size base="4,369" ext="17"/>
+          <revisit_duration base="8,738" ext="34"/>
+          <sleep_time base="13,107" ext="51"/>
+          <sleep_duration base="17,476" ext="68"/>
+        </time_plan_mode_2>
       </beamhopping_timeplan>
     </beamhopping_timeplan_info>
   </SAT>

@@ -46,13 +46,18 @@
 		<cell_fragment cell_fragment_id="1" first_occurence="true" last_occurence="false"
 			center_latitude="45234" center_longitude="-19200" max_distance="10000">
 			<delivery_system id="0xBEEFBEEF"/>
-			<new_delivery_system id="0xDEAD0001" 
-				time_of_application_base="1238472730" time_of_application_ext="456"/>
-			<new_delivery_system id="0xDEAD0002" 
-				time_of_application_base="22222730" time_of_application_ext="501"/>
+      <new_delivery_system id="0xDEAD0001">
+        <time_of_application base ="1238472730" ext="456"/>
+      </new_delivery_system>
+
+      <new_delivery_system id="0xDEAD0002">
+        <time_of_application base="22222730" ext="501"/>
+      </new_delivery_system>
+
+      <obsolescent_delivery_system id="0x00000001">
+        <time_of_obsolescence base="123456789" ext="1"/>
+      </obsolescent_delivery_system>
 				
-			<obsolescent_delivery_system id="0x00000001"
-				time_of_obsolescence_base="123456789" time_of_obsolescence_ext="1"/>
 		</cell_fragment>
 		
 	</cell_fragment_info>
@@ -63,9 +68,10 @@
   <SAT version="1" current="true" satellite_table_id="2" table_count="0">
  
 	<!-- satellite_table_id=2 -> time_association_info -->
-	<time_association_info association_type="0"
-		ncr_base="98765" ncr_ext="432"
-		association_timestamp_seconds="12345678901234" association_timestamp_nanoseconds="567890123"/>
+    <time_association_info association_type="0"
+      association_timestamp_seconds="12345678901234" association_timestamp_nanoseconds="567890123">
+      <ncr base="98765" ext="432"/>
+    </time_association_info>
 		
   </SAT>
 
@@ -73,10 +79,11 @@
   <SAT version="1" current="true" satellite_table_id="2" table_count="0">
  
 	<!-- satellite_table_id=2 -> time_association_info -->
-	<time_association_info association_type="1"
-		leap59="true" leap61="false" past_leap59="false" past_leap61="true"
-		ncr_base="65535" ncr_ext="255"
-		association_timestamp_seconds="200000002" association_timestamp_nanoseconds="200000002"/>
+    <time_association_info association_type="1"
+      leap59="true" leap61="false" past_leap59="false" past_leap61="true"
+      association_timestamp_seconds="200000002" association_timestamp_nanoseconds="200000002">
+      <ncr base="65535" ext="255"/>
+    </time_association_info>
 		
   </SAT>
 
@@ -87,20 +94,19 @@
 	<beamhopping_timeplan_info>
 	
 		<beamhopping_timeplan
-			id="0xDEAD0000"
-			time_of_application_base="0x100000000" time_of_application_ext="0x100"
-			cycle_duration_base="0x100" cycle_duration_ext="0x100">
-			<time_plan_mode_0
-				dwell_duration_base="2000"
-				dwell_duration_ext="200"
-				on_time_base="1000"
-				on_time_ext="100"/>
+			id="0xDEAD0000">
+      <time_of_application base="0x100000000" ext="0x100"/>
+      <cycle_duration base="0x100" ext="0x100"/>
+      <time_plan_mode_0>
+        <dwell_duration base="2000" ext="200"/>
+        <on_time base="1000" ext="100"/>
+      </time_plan_mode_0>
 		</beamhopping_timeplan>
 
 		<beamhopping_timeplan
-			id="0xDEAD1000"
-			time_of_application_base="0x100000001" time_of_application_ext="0x101"
-			cycle_duration_base="0x101" cycle_duration_ext="0x101">
+			id="0xDEAD1000">
+      <time_of_application base="0x100000001" ext="0x101"/>
+      <cycle_duration base="0x101" ext="0x101"/>     
 			<time_plan_mode_1 current_slot="5">
 				<slot id="1" transmission_on="true"/>
 				<slot id="2" transmission_on="false"/>
@@ -110,17 +116,18 @@
 				<slot id="6" transmission_on="false"/>
 			</time_plan_mode_1>
 		</beamhopping_timeplan>
-		
-		<beamhopping_timeplan
-			id="0xDEAD2000"
-			time_of_application_base="0x100000002" time_of_application_ext="0x102"
-			cycle_duration_base="0x102" cycle_duration_ext="0x102">
-			<time_plan_mode_2
-				grid_size_base="0x1111" grid_size_ext="0x11"
-				revisit_duration_base="0x2222" revisit_duration_ext="0x22"
-				sleep_time_base="0x3333" sleep_time_ext="0x33"
-				sleep_duration_base="0x4444" sleep_duration_ext="0x44"/>
-		</beamhopping_timeplan>
+
+    <beamhopping_timeplan
+			id="0xDEAD2000">
+      <time_of_application base="0x100000002" ext="0x102"/>
+      <cycle_duration base="0x102" ext="0x102"/>
+      <time_plan_mode_2>
+        <grid_size base="0x1111" ext="0x11"/>
+        <revisit_duration base="0x2222" ext="0x22"/>
+        <sleep_time base="0x3333" ext="0x33"/>
+        <sleep_duration base="0x4444" ext="0x44"/>
+      </time_plan_mode_2>
+    </beamhopping_timeplan>
 		
 	</beamhopping_timeplan_info>
 	
