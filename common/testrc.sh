@@ -76,7 +76,7 @@ case $OS in
 esac
 
 # All operating systems and "other" operating systems.
-ALLOS="linux mac freebsd windows"
+ALLOS="linux mac freebsd openbsd windows"
 OTHEROS=${ALLOS/$OS/}
 
 # Alternative operating system name.
@@ -255,7 +255,7 @@ else
             export TSDUCKJAR=$(fpath "$TSDUCK/java/tsduck.jar")
             export CLASSPATH="$TSDUCKJAR;"
             ;;
-        mac|freebsd)
+        mac|freebsd|openbsd)
             export PYTHONPATH=/usr/local/share/tsduck/python
             export TSDUCKJAR=/usr/local/share/tsduck/java/tsduck.jar
             export CLASSPATH="$TSDUCKJAR:"
@@ -394,11 +394,15 @@ test_text() {
     # Do not compare if this is test initialization.
     $TESTINIT && return 0
 
+    # The diff options are limited on OpenBSD, the comparison is less strict.
+    local opt="--strip-trailing-cr"
+    [[ $OS == openbsd ]] && opt="-b"
+
     # Compare the files.
     if [[ ! -r "$REFDIR/$file" ]]; then
         fail "Reference output $REFDIR/$file missing"
         return 1
-    elif diff --strip-trailing-cr "$REFDIR/$file" "$TMPDIR/$file" &>$TMPDIR/$file.diff; then
+    elif diff $opt "$REFDIR/$file" "$TMPDIR/$file" &>$TMPDIR/$file.diff; then
         rm -f "$TMPDIR/$file.diff"
         $silent || pass "Test $file passed"
         return 0
@@ -436,7 +440,7 @@ test_bin() {
 
 # Get the size of a file in bytes.
 file_size() {
-    [[ $OS == mac || $OS == freebsd ]] && stat -f %z "$@" || stat -c %s "$@"
+    [[ $OS == mac || $OS == freebsd || $OS == openbsd ]] && stat -f %z "$@" || stat -c %s "$@"
 }
 
 # The syntax of dos2unix depends on the system.
