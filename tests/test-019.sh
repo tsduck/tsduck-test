@@ -19,7 +19,7 @@ TOOLS=(
     tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    tstestecmg tsvatek/windows-32/freebsd/netbsd/openbsd tsxml
+    tstestecmg tsvatek/windows-32/freebsd/netbsd/openbsd/dragonfly tsxml
 )
 
 INPUT_PLUGINS=(
@@ -30,7 +30,7 @@ INPUT_PLUGINS=(
 OUTPUT_PLUGINS=(
     dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
     ip memory play.linux play.mac play.windows rist.mac rist.windows
-    srt/openbsd/netbsd vatek/windows-32/freebsd/netbsd/openbsd
+    srt/openbsd/netbsd vatek/windows-32/freebsd/netbsd/openbsd/dragonfly
 )
 
 PACKET_PLUGINS=(

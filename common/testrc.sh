@@ -76,7 +76,7 @@ case $OS in
 esac
 
 # All operating systems and "other" operating systems.
-ALLOS="linux mac freebsd netbsd openbsd windows"
+ALLOS="linux mac freebsd netbsd dragonfly openbsd windows"
 OTHEROS=${ALLOS/$OS/}
 
 # Alternative operating system name.
@@ -261,7 +261,7 @@ else
             export TSDUCKJAR=$BPREFIX/share/tsduck/java/tsduck.jar
             export CLASSPATH="$TSDUCKJAR:"
             ;;
-        freebsd|openbsd)
+        freebsd|openbsd|dragonfly)
             export PYTHONPATH=/usr/local/share/tsduck/python
             export TSDUCKJAR=/usr/local/share/tsduck/java/tsduck.jar
             export CLASSPATH="$TSDUCKJAR:"
@@ -451,10 +451,10 @@ test_bin() {
 
 # Get the size of a file in bytes.
 file_size() {
-    [[ $OS == mac || $OS == freebsd || $OS == netbsd || $OS == openbsd ]] && stat -f %z "$@" || stat -c %s "$@"
+    [[ $OS == mac || $OS == freebsd || $OS == netbsd || $OS == openbsd || $OS == dragonfly ]] && stat -f %z "$@" || stat -c %s "$@"
 }
 
 # The syntax of dos2unix depends on the system.
 dos_to_unix() {
-    [[ $OS == freebsd ]] && dos2unix "$@" || dos2unix -q "$@"
+    [[ $OS == freebsd || $OS == dragonfly ]] && dos2unix "$@" || dos2unix -q "$@"
 }
