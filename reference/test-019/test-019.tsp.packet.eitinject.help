@@ -95,6 +95,12 @@ Options:
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
       when working on Japanese transport streams.
 
+  --lazy-schedule-update
+      When an event completes, do not remove it from the current EIT schedule
+      segment. Obsolete events are removed from the EPG only when their 3-hour
+      segment is completed. With this option, EIT schedule update is less
+      frequent and the load on the plugin and the receiver is lower.
+
   --min-stable-delay milliseconds
       An input file size needs to be stable during that duration, in
       milliseconds, for the file to be reported as added or modified. This
@@ -135,6 +141,11 @@ Options:
   --stuffing
       Insert stuffing inside TS packets at end of EIT sections. Do not pack EIT
       sections. By default, EIT sections are packed.
+
+  --synchronous-versions
+      Keep version numbers synchronous on all sections of an EIT subtable. By
+      default, since EIT's are sparse sections and not full tables, the version
+      number of an EIT section is updated only when the section is modified.
 
   --terrestrial
       Use the EIT cycle profile for terrestrial networks as specified in ETSI

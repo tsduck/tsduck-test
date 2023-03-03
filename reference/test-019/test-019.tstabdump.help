@@ -103,6 +103,10 @@ Options:
   --help
       Display this help text.
 
+  --ignore-crc32
+      Do not check CRC32 of input sections. This can be used to analyze
+      sections with incorrect CRC32 but otherwise correct.
+
   --ignore-leap-seconds
       Do not include explicit leap seconds in some UTC computations. Currently,
       this applies to SCTE 35 splice_schedule() commands only.

@@ -217,3 +217,4 @@ repository. But we now limit their size to 20 MB.
 | 120  | Non-regression on `tstables` with large truncated sections
 | 121  | `tscrc32`
 | 122  | SI analysis and conversions: SAT (DVB Satellite Access Table)
+| 123  | Plugin `eitinject` with options `--synchronous-versions` and `--lazy-schedule-update`

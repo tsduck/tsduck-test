@@ -251,6 +251,14 @@ Options:
       interpretation is performed only on value fields larger than this size.
       The syntax of the nested TLV is the same as the enclosing TLV.
 
+  --no-deep-duplicate
+      Do not report identical sections in the same PID, even when
+      non-consecutive. A hash of each section is kept for each PID and later
+      identical sections are not reported.
+      Warning: This option accumulates memory for hash values of all sections
+      since the beginning. Do not use that option for commands running too long
+      or the process may crash with insufficient memory.
+
   --no-duplicate
       Do not report consecutive identical tables with a short section in the
       same PID. This can be useful for ECM's. This is the way to display new
