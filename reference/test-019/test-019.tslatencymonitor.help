@@ -1,0 +1,65 @@
+
+Monitor latency between two TS input sources
+
+Usage: tslatencymonitor [options] \
+    [-I input-name [input-options]] ...
+
+Options:
+
+  -b value
+  --buffer-time value
+      Specify the buffer time of timing data list in seconds. By default, the
+      buffer time is 1 seconds.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -l[value]
+  --list-plugins[=value]
+      List all available plugins.
+      Must be one of "all", "input", "names-input", "names-output",
+      "names-packet", "output", "packet".
+
+  --log-message-count value
+      Specify the maximum number of buffered log messages. Log messages are
+      displayed asynchronously in a low priority thread. This value specifies
+      the maximum number of buffered log messages in memory, before being
+      displayed. When too many messages are logged in a short period of time,
+      while plugins use all CPU power, extra messages are dropped. Increase
+      this value if you think that too many messages are dropped. The default
+      is 512 messages.
+
+  -o filename
+  --output-file filename
+      Output file name for CSV reporting (standard error by default).
+
+  --output-interval value
+      Specify the time interval between each output in seconds. The default is
+      1 second.
+
+  -s
+  --synchronous-log
+      Each logged message is guaranteed to be displayed, synchronously, without
+      any loss of message. The downside is that a plugin thread may be blocked
+      for a short while when too many messages are logged. This option shall be
+      used when all log messages are needed and the source and destination are
+      not live streams (files for instance). This option is not recommended for
+      live streams, when the responsiveness of the application is more
+      important than the logged messages.
+
+  -t
+  --timed-log
+      Each logged message contains a time stamp.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

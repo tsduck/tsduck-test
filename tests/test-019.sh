@@ -15,6 +15,7 @@ TOOLS=(
     tsdektec.linux tsdektec.windows
     tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsgenecm
     tshides.linux tshides.windows
+    tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
     tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
