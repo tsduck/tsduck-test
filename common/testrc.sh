@@ -55,6 +55,7 @@ prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
 
 # Operating system.
 OS=$(uname -s | tr A-Z a-z)
+CPU=$(uname -m | tr A-Z a-z)
 SYS64=false
 
 case $OS in
@@ -68,10 +69,10 @@ case $OS in
         ;;
     darwin)
         OS=mac
-        [[ $(uname -m) == *64 ]] && SYS64=true
+        [[ $CPU == *64 || $CPU == *64e ]] && SYS64=true
         ;;
     *)
-        [[ $(uname -m) == *64 ]] && SYS64=true
+        [[ $CPU == *64 ]] && SYS64=true
         ;;
 esac
 
@@ -99,13 +100,17 @@ if [[ $OS == windows ]]; then
     EXE=.exe
 else
     WINDOWS=false
-    ARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/^arm.*$/arm/')
+    ARCH=${CPU/i?86/i386}
+    ARCH=${ARCH/arm*/arm}
     TSDUCKBIN_RELEASE=$($TSDUCKDIR/scripts/setenv.sh --display)
     TSDUCKBIN_DEBUG=$($TSDUCKDIR/scripts/setenv.sh --display --debug)
     TSDUCKBIN32_RELEASE=${TSDUCKBIN_RELEASE/x86_64/i386}
     TSDUCKBIN32_DEBUG=${TSDUCKBIN_DEBUG/x86_64/i386}
     EXE=
 fi
+
+# No Dektec support on Arm processors.
+[[ $CPU == arm* || $CPU == aarch* ]] && TS_NO_DEKTEC=1
 
 # Display help text
 showhelp()
