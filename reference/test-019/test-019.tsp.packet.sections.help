@@ -48,6 +48,18 @@ Options:
       this output PID already exists in the transport stream, an error is
       generated.
 
+  --patch-xml file-name
+      Specify an XML patch file which is applied to all sections on the fly.
+      Here, the behavior of --patch-xml is slightly different, compared to
+      other commands or plugins. While XML representation and patch normally
+      apply to a complete table, they process one single section here. This
+      means that the result of the patch must fit into one single section.
+      Otherwise, only the first section of the result is kept (with the
+      original section number of the input section). If the name starts with
+      "<?xml", it is considered as "inline XML content". Several --patch-xml
+      options can be specified. Patch files are sequentially applied on each
+      section.
+
   -p pid1[-pid2]
   --pid pid1[-pid2]
       Specify input PID's. More than one input PID can be specified. All
@@ -82,6 +94,10 @@ Options:
       several options --section-mask can be specified. The first mask applies
       to the first content, the second mask to the second content, etc. If
       there are less masks than contents, the last mask is implicitly repeated.
+
+  --section-number num1[-num2]
+      Remove/keep all sections with the corresponding section number. Several
+      options --section-number can be specified.
 
   -s
   --stuffing

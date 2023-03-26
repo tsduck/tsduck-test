@@ -218,3 +218,4 @@ repository. But we now limit their size to 20 MB.
 | 121  | `tscrc32`
 | 122  | SI analysis and conversions: SAT (DVB Satellite Access Table)
 | 123  | Plugin `eitinject` with options `--synchronous-versions` and `--lazy-schedule-update`
+| 124  | Plugin `sections` with option `--patch-xml`

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <NIT actual="true">
+    <transport_stream transport_stream_id="0x0004"> 
+      <terrestrial_delivery_system_descriptor x-update-centre_frequency="789,123,000"/>
+    </transport_stream>
+  </NIT>
+
+  <EIT service_id="0x0101" transport_stream_id="0x0001" original_network_id="0x20FA"
+       x-update-service_id="0xABCD"
+       x-update-transport_stream_id="0x1234"
+       x-update-original_network_id="0x5678"/>
+
+</tsduck>
