@@ -219,3 +219,4 @@ repository. But we now limit their size to 20 MB.
 | 122  | SI analysis and conversions: SAT (DVB Satellite Access Table)
 | 123  | Plugin `eitinject` with options `--synchronous-versions` and `--lazy-schedule-update`
 | 124  | Plugin `sections` with option `--patch-xml`
+| 125  | Non-regression on HEVC sequence parameter set analysis (issue #1191)
