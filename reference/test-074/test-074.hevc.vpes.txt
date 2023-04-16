@@ -233,7 +233,8 @@
     0000:  00 00 01 E0 49 92 85 C0 0A 31 0C 1D C6 71 11 0C
   PES payload (truncated):
     0000:  00 00 00 01 46 01 10 00 00 00 01 40 01 0C 01 FF  ....F......@....
-* PID 0x00DC, TS packets 493-505, stream_id 0xE0 (Video 0), size: 2129 bytes (header: 19, payload: 2110), 60 spurious trailing bytes
+* PID 0x00DC, TS packets 442-492, invalid PES packet, data size: 8644 bytes, PES packet size: 14532 bytes, truncated, missing 5888 bytes
+* PID 0x00DC, TS packets 493-505, stream_id 0xE0 (Video 0), size: 2129 bytes (header: 19, payload: 2110), raw data: 2189 bytes, 60 spurious trailing bytes
   PES header (truncated):
     0000:  00 00 01 E0 08 4B 85 C0 0A 31 0C 1D D4 81 11 0C
   PES payload (truncated):
@@ -333,7 +334,7 @@
     0000:  00 00 01 E0 36 9F 85 C0 0A 31 0C 1F D1 A1 11 0C
   PES payload (truncated):
     0000:  00 00 00 01 46 01 50 00 00 00 01 4E 01 01 01 05  ....F.P....N....
-* PID 0x00DC, TS packets 1,734-1,814, stream_id 0xE0 (Video 0), size: 13989 bytes (header: 19, payload: 13970), 160 spurious trailing bytes
+* PID 0x00DC, TS packets 1,734-1,814, stream_id 0xE0 (Video 0), size: 13989 bytes (header: 19, payload: 13970), raw data: 14149 bytes, 160 spurious trailing bytes
   PES header (truncated):
     0000:  00 00 01 E0 36 9F 85 C0 0A 31 0C 1F FB D1 11 0C
   PES payload (truncated):
@@ -2373,6 +2374,7 @@
     0000:  00 00 01 E0 00 D9 85 C0 0A 31 0C 51 A5 E1 11 0C
   PES payload (truncated):
     0000:  00 00 00 01 46 01 50 00 00 00 01 4E 01 01 01 05  ....F.P....N....
+* PID 0x00DC, TS packets 18,790-18,791, invalid PES packet, data size: 225 bytes, PES packet size: 226 bytes, truncated, missing 1 bytes
 * PID 0x00DC, TS packets 18,792-18,793, stream_id 0xE0 (Video 0), size: 224 bytes (header: 19, payload: 205)
   PES header (truncated):
     0000:  00 00 01 E0 00 DA 85 C0 0A 31 0C 53 16 61 11 0C
@@ -3553,6 +3555,7 @@
     0000:  00 00 01 E0 04 A3 85 C0 0A 31 0C 6F 42 81 11 0C
   PES payload (truncated):
     0000:  00 00 00 01 46 01 50 00 00 00 01 44 01 C1 72 4D  ....F.P....D..rM
+* PID 0x00DC, TS packets 69,193-69,250, invalid PES packet, data size: 10017 bytes, PES packet size: 18849 bytes, truncated, missing 8832 bytes
 * PID 0x00DC, TS packets 69,357-69,441, stream_id 0xE0 (Video 0), size: 15351 bytes (header: 19, payload: 15332)
   PES header (truncated):
     0000:  00 00 01 E0 3B F1 85 C0 0A 31 0C 6F A4 F1 11 0C
@@ -3768,6 +3771,7 @@
     0000:  00 00 01 E0 03 67 85 C0 0A 31 0C 75 1D C1 11 0C
   PES payload (truncated):
     0000:  00 00 00 01 46 01 50 00 00 00 01 44 01 C1 72 4D  ....F.P....D..rM
+* PID 0x00DC, TS packets 75,193-75,286, invalid PES packet, data size: 16566 bytes, PES packet size: 25390 bytes, truncated, missing 8824 bytes
 * PID 0x00DC, TS packets 75,287-75,364, stream_id 0xE0 (Video 0), size: 13865 bytes (header: 19, payload: 13846)
   PES header (truncated):
     0000:  00 00 01 E0 36 23 85 C0 0A 31 0C 75 47 F1 11 0C
