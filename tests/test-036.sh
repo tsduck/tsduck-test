@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log --add-stop-stuffing 1000 \
+test_tsp --add-stop-stuffing 1000 \
     -I file $(fpath "$INFILE") \
     -P zap cnews --cas --stuffing \
     -P duplicate 0x1600-0x16FF=0x1700 \
@@ -21,13 +21,13 @@ test_text $SCRIPT.log
 
 # Extract one sample PID in temporary directory (not saved in repository).
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$OUTDIR/$SCRIPT.out.ts") \
     -P filter -p 0x164E \
     -O file $(fpath "$TMPDIR/$SCRIPT.pid1.ts") \
     >"$OUTDIR/$SCRIPT.pid1.log" 2>&1
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$OUTDIR/$SCRIPT.out.ts") \
     -P filter -p 0x174E \
     -O file $(fpath "$TMPDIR/$SCRIPT.pid2.ts") \

@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P scrambler 0x0204 --atis-idsa --cw-file $(fpath "$INDIR/$SCRIPT.cw.txt") --cp-duration 3 \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.atis.txt") \
@@ -20,13 +20,13 @@ test_text $SCRIPT.atis.txt
 test_text $SCRIPT.clear.txt
 test_text $SCRIPT.tsp.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P filter --pid 0x01A4 --pid 0x01AE \
     -O file $(fpath "$TMPDIR/$SCRIPT.in.ts") \
     >"$OUTDIR/$SCRIPT.tsp.in.log" 2>&1
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$OUTDIR/$SCRIPT.clear.ts") \
     -P filter --pid 0x01A4 --pid 0x01AE \
     -O file $(fpath "$TMPDIR/$SCRIPT.out.ts") \

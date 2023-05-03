@@ -33,7 +33,7 @@ OPTIONS=(
 )
 for ((i=0; $i<${#OPTIONS[@]}; i++)); do
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I null \
         -P inject --pid 100 --inter-packet 100 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
         -P until --packets 1150 \

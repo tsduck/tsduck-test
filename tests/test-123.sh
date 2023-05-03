@@ -19,7 +19,7 @@ hours-to-bytes() { echo $(( ($1 * 3600 * $BITRATE) / 8)); }
 # Test 1: default options, from 20:10 to 22:10.
 # EITp/f update every 30 mn.
 # Current EITs section update every 30 mn (one section at 20:30, 21:00, 21:30, 22:00).
-$(tspath tsp) --synchronous-log --bitrate $BITRATE \
+test_tsp --bitrate $BITRATE \
     -I null \
     -P until --bytes $(hours-to-bytes 2) \
     -P inject -s -b 15,000 -p 0 "$PAT" \
@@ -35,7 +35,7 @@ test_text $SCRIPT.1.log
 # Test 2: --lazy-schedule-update, from 20:10 to 22:10.
 # EITp/f update every 30 mn.
 # Current EITs section update at segment boundary only (one section at 21:00).
-$(tspath tsp) --synchronous-log --bitrate $BITRATE \
+test_tsp --bitrate $BITRATE \
     -I null \
     -P until --bytes $(hours-to-bytes 2) \
     -P inject -s -b 15,000 -p 0 "$PAT" \
@@ -51,7 +51,7 @@ test_text $SCRIPT.2.log
 # Test 3: --lazy-schedule-update --synchronous-versions, from 20:10 to 22:10.
 # EITp/f update every 30 mn.
 # Current EITs sub-table update at segment boundary only (all sections at 21:00).
-$(tspath tsp) --synchronous-log --bitrate $BITRATE \
+test_tsp --bitrate $BITRATE \
     -I null \
     -P until --bytes $(hours-to-bytes 2) \
     -P inject -s -b 15,000 -p 0 "$PAT" \

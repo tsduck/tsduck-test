@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-018.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P tables --pid 0x1ec5 \
               --text $(fpath "$OUTDIR/$SCRIPT.ait.1ec5.txt") \

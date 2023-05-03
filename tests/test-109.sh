@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P t2mi --pid 0x1000 \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \

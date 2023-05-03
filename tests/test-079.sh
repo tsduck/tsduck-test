@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P zap 0x2263 --stuffing \
     -P stats -o $(fpath "$OUTDIR/$SCRIPT.stats.1.txt") \

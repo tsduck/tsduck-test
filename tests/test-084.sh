@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P splicemonitor --packet-index \
     -O drop \
@@ -12,7 +12,7 @@ $(tspath tsp) --synchronous-log \
 
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P splicemonitor --packet-index --display-commands -o $(fpath "$OUTDIR/$SCRIPT.2.txt") \
     -P splicemonitor --all-commands --splice-pid 1055 -o $(fpath "$OUTDIR/$SCRIPT.3.txt") \
@@ -27,7 +27,7 @@ test_text $SCRIPT.3.txt
 test_text $SCRIPT.4.json
 test_text $SCRIPT.5.json
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P splicemonitor --json-line=FOO: \
     -O drop \

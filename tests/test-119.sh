@@ -16,7 +16,7 @@ $(tspath tsecmg) \
 ecmg_pid=$!
 sleep 0.5
 
-$(tspath tsp) --synchronous-log --control-port $TSP_CMD_PORT --control-reuse-port --add-input-stuffing 1/10 \
+test_tsp --control-port $TSP_CMD_PORT --control-reuse-port --add-input-stuffing 1/10 \
     -I file $(fpath "$INFILE") \
     -P regulate \
     -P filter --pid 0x0140 --set-label 1 \
@@ -26,7 +26,7 @@ $(tspath tsp) --synchronous-log --control-port $TSP_CMD_PORT --control-reuse-por
 
 sender_pid=$!
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I ip $TSP_SEND_PORT --receive-timeout 2000 \
     -P until --packet 40,000 \
     -P scrambler 0x0407 --atis-idsa --ecmg localhost:$ECMG_PORT --super-cas-id 0x12345678 \

@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P pmt -p 100 --remove-descriptor 9 --add-ca-descriptor 0x100/123/01234567 \
     -P pmt -p 200 --remove-descriptor 9 --add-pid 0x1111/0x0D --set-data-broadcast-id 0x1111/11/0600000401E3 \

@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/$SCRIPT.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P pcrverify --jitter-max 100,000 \
     -P pcrextract --pcr -o $(fpath "$OUTDIR/$SCRIPT.pcr.csv") \

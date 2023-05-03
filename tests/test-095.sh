@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P zap canal+cinema cnews \
     -P pcrbitrate --min-pcr 4 \
@@ -20,7 +20,7 @@ test_text $SCRIPT.1.psi.txt
 test_text $SCRIPT.1.log
 test_bin $SCRIPT.1.ts
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P zap 0x2263 cnews --eit --no-ecm --audio eng \
     -P pcrbitrate --min-pcr 4 \
@@ -34,7 +34,7 @@ test_text $SCRIPT.2.psi.txt
 test_text $SCRIPT.2.log
 test_bin $SCRIPT.2.ts
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P zap 0x2263 0x226A --no-subtitles \
     -P pcrbitrate --min-pcr 4 \

@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I craft --pid 100 --payload-pattern DEADBEEF \
     -P until --packets 30 \
     -P timeshift --packets 10 \
@@ -19,7 +19,7 @@ $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.1.ts") >"$OUTDIR/$SCRIPT.tsdump.1.txt"
 test_text $SCRIPT.tsdump.1.txt
 test_text $SCRIPT.tsdump.1.log
 
-$(tspath tsp) --bitrate 20,000 --synchronous-log \
+test_tsp --bitrate 20,000 \
     -I craft --pid 100 --payload-pattern DEADBEEF \
     -P until --packets 30 \
     -P timeshift --time 1000 --drop-initial \

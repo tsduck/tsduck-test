@@ -11,7 +11,7 @@ REFPID1=131
 REFPID2=132
 
 # Shift forward, fixed packet count.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packet 40,000 \
     -P continuity --fix \
@@ -31,7 +31,7 @@ test_text $SCRIPT.1.log
 test_bin $SCRIPT.1.ts
 
 # Shift backward, fixed packet count.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packet 40,000 \
     -P continuity --fix \
@@ -51,7 +51,7 @@ test_text $SCRIPT.2.log
 test_bin $SCRIPT.2.ts
 
 # Shift forward, 500 ms.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packet 40,000 \
     -P continuity --fix \
@@ -71,7 +71,7 @@ test_text $SCRIPT.3.log
 test_bin $SCRIPT.3.ts
 
 # Shift backward, 500 ms.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packet 40,000 \
     -P continuity --fix \

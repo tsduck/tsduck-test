@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I http https://tsduck.io/streams/usa-atsc/473.ts \
     -P until --packets 1000 \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \

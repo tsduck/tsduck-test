@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 INFILE="$INDIR/test-013.ts"
 source "$COMMONDIR"/standard-ts-test.sh test-013.ts
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P teletext -o $(fpath "$OUTDIR/$SCRIPT.srt") \
     -O drop \

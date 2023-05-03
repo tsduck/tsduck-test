@@ -463,3 +463,8 @@ file_size() {
 dos_to_unix() {
     [[ $OS == freebsd || $OS == dragonfly ]] && dos2unix "$@" || dos2unix -q "$@"
 }
+
+# A tsp command with all standard options to get a deterministic output.
+test_tsp() {
+    $(tspath tsp) --synchronous-log --bitrate-adjust-interval 10,000 "$@"
+}

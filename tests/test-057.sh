@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I hls https://tsduck.io/download/test/hls/channel/Animals.m3u8 \
     -P until --packets 12 \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \

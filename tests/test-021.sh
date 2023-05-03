@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/$SCRIPT.ts"
 
-$(tspath tsp) --synchronous-log --add-start-stuffing 3 --add-stop-stuffing 4 \
+test_tsp --add-start-stuffing 3 --add-stop-stuffing 4 \
     -I file $(fpath "$INFILE") \
     -O file $(fpath "$OUTDIR/$SCRIPT.start.ts") \
     >"$OUTDIR/$SCRIPT.tsp.start.log" 2>&1
@@ -14,7 +14,7 @@ $(tspath tsp) --synchronous-log --add-start-stuffing 3 --add-stop-stuffing 4 \
 test_bin $SCRIPT.start.ts
 test_text $SCRIPT.tsp.start.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/3 \
+test_tsp --add-input-stuffing 1/3 \
     -I file $(fpath "$INFILE") \
     -O file $(fpath "$OUTDIR/$SCRIPT.middle.ts") \
     >"$OUTDIR/$SCRIPT.tsp.middle.log" 2>&1

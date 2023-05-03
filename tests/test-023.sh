@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/$SCRIPT"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "${INFILE}a.ts") $(fpath "${INFILE}b.ts") $(fpath "${INFILE}c.ts") \
     -O file $(fpath "$OUTDIR/$SCRIPT.1.ts") \
     >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1
@@ -19,7 +19,7 @@ $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.1.ts") >"$OUTDIR/$SCRIPT.tsdump.1.txt"
 test_text $SCRIPT.tsdump.1.txt
 test_text $SCRIPT.tsdump.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file --repeat 2 $(fpath "${INFILE}a.ts") $(fpath "${INFILE}b.ts") $(fpath "${INFILE}c.ts") \
     -O file $(fpath "$OUTDIR/$SCRIPT.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1

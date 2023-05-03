@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.analyze.in.txt") \
     -P sections -p 0x00 -p 0x12 -p 0x112 -o 0x444 --tid 0x4F \
@@ -36,7 +36,7 @@ PIDSOPT="--pid ${PIDS// / --pid }"
 
 for ((i=0; $i<${#OPTIONS[@]}; i++)); do
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$INDIR/test-001.ts") \
         -P sections ${OPTIONS[$i]} $PIDSOPT --output-pid 0x1F00 \
         -P tables --pid 0x1F00 --log --text $(fpath "$OUTDIR/$SCRIPT.$i.txt") \

@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-092.ts"
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -20,7 +20,7 @@ test_text $SCRIPT.1.analyze.txt
 test_text $SCRIPT.1.tables.txt
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -31,7 +31,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 test_text $SCRIPT.2.splice.txt
 test_text $SCRIPT.2.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -42,7 +42,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 test_text $SCRIPT.3.splice.txt
 test_text $SCRIPT.3.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -53,7 +53,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 test_text $SCRIPT.4.splice.txt
 test_text $SCRIPT.4.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -63,7 +63,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 
 test_text $SCRIPT.5.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \
@@ -73,7 +73,7 @@ $(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
 
 test_text $SCRIPT.6.log
 
-$(tspath tsp) --synchronous-log --add-input-stuffing 1/2000 \
+test_tsp --add-input-stuffing 1/2000 \
     -I file $(fpath "$INFILE") \
     -P pmt --pmt-pid 0x006E --add-registration 0x43554549 --add-pid 0x0500/0x86 \
     -P inject $(fpath "$INDIR/$SCRIPT.xml") --pid 0x0500 --inter-packet 2000 --stuffing \

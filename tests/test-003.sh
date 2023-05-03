@@ -8,7 +8,7 @@ test_cleanup "$SCRIPT.*"
 source "$COMMONDIR"/standard-ts-test.sh test-003.ts
 
 # T2-MI extraction.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/test-003.ts") \
     -P t2mi --pid 0x40 --extract --log \
     -O file $(fpath "$OUTDIR/$SCRIPT.t2mi.extracted.ts") \

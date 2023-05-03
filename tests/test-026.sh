@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 INFILE="$INDIR/$SCRIPT.ts"
 
 # DVB-CSA scrambling / descrambling by service.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P scrambler 0x0101 -c 0123456789ABCDEF \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.csa.analyze.txt") \
@@ -28,7 +28,7 @@ test_text $SCRIPT.decsa.psi.txt
 test_text $SCRIPT.tsp.csa.log
 
 # DVB-CSA scrambling / descrambling by PID.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P scrambler -c 0123456789ABCDEF --pid 0x0078 --pid 0x0084 \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.csa.bypid.analyze.txt") \
@@ -49,7 +49,7 @@ test_text $SCRIPT.decsa.bypid.psi.txt
 test_text $SCRIPT.tsp.csa.bypid.log
 
 # ATIS-IDSA scrambling / descrambling.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P scrambler 0x0101 -c 0123456789ABCDEFFEDCBA9876543210 --atis-idsa \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.atis.analyze.txt") \
@@ -70,7 +70,7 @@ test_text $SCRIPT.deatis.psi.txt
 test_text $SCRIPT.tsp.atis.log
 
 # DVB-CISSA scrambling / descrambling.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P scrambler 0x0101 -c 0123456789ABCDEFFEDCBA9876543210 --dvb-cissa \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.cissa.analyze.txt") \

@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/$SCRIPT.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P continuity \
     -O drop \
@@ -14,7 +14,7 @@ $(tspath tsp) --synchronous-log \
 
 test_text $SCRIPT.tsp.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P continuity --fix \
     -P continuity \

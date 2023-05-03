@@ -8,7 +8,7 @@ $(tspath tsanalyze) $(fpath "$INDIR/$SCRIPT.ts") >"$OUTDIR/$SCRIPT.1.log" 2>&1
 
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P pes --pid 120 --h26x-default-format avc --avc-access-unit --header -o $(fpath "$OUTDIR/$SCRIPT.2.txt") \
     -O drop \

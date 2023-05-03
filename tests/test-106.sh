@@ -23,7 +23,7 @@ $(tspath tspcap) $(fpath "$INDIR/$SCRIPT.1.pcapng") --dvb-simulcrypt \
 
 test_text $SCRIPT.4.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I pcap --udp-emmg-mux $(fpath "$INDIR/$SCRIPT.2.pcapng") \
     -O file $(fpath "$OUTDIR/$SCRIPT.5.ts") \
     >"$OUTDIR/$SCRIPT.5.log" 2>&1
@@ -31,7 +31,7 @@ $(tspath tsp) --synchronous-log \
 test_bin $SCRIPT.5.ts
 test_text $SCRIPT.5.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I pcap --tcp-emmg-mux $(fpath "$INDIR/$SCRIPT.1.pcapng") \
     -O file $(fpath "$OUTDIR/$SCRIPT.6.ts") \
     >"$OUTDIR/$SCRIPT.6.log" 2>&1

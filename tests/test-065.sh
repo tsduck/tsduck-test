@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 INFILE="$INDIR/$SCRIPT.m2ts"
 OUTFILE="$TMPDIR/$SCRIPT.m2ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.analyze.txt") \
     -P psi -a -o $(fpath "$OUTDIR/$SCRIPT.psi.txt") \

@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packets 50,000 \
     -P remap 0x0060-0x007F=0x1E60 --set-label 30 \
@@ -19,7 +19,7 @@ test_bin $SCRIPT.1.ts
 test_text $SCRIPT.1.txt
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P until --packets 50,000 \
     -P remap 0x0060-0x007F=0x1E60 --set-label 30 --unchecked --no-psi --single \

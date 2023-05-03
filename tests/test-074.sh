@@ -21,7 +21,7 @@ for type in mpeg2 avc hevc; do
     # Common "pes" options.
     opt="--packet-index --max-dump-size 16"
     
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$INDIR/$SCRIPT.$type.ts") \
         -P pes $opt --pid $apid --audio-attributes -o $(fpath "$OUTDIR/$SCRIPT.$type.aattr.txt") \
         -P pes $opt --pid $apid --header --payload -o $(fpath "$OUTDIR/$SCRIPT.$type.apes.txt") \
@@ -49,7 +49,7 @@ for type in mpeg2 avc hevc; do
 done
 
 # Test --multiple-files
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.avc.ts") \
     -P until --packet 700 \
     -P pes --pid 0x0140 --multiple-files \

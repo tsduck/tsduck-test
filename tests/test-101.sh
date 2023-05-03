@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --japan --synchronous-log \
+test_tsp --japan \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P tables -t 0x40 -o $(fpath "$OUTDIR/$SCRIPT.tables.txt") \
     -P psi -a -o $(fpath "$OUTDIR/$SCRIPT.psi.txt") \

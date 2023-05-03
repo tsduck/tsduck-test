@@ -23,7 +23,7 @@ test-encap()
     local encapopt="$1"
     local suffix="$2"
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$INFILE") \
         -P svremove 0x2261 --stuffing \
         -P svremove 0x2263 \
@@ -64,13 +64,13 @@ test-encap()
 
     # Extract the 4 PID's in temporary directory (not saved in repository).
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$INFILE") \
         -P filter -p 0x03E8 -p 0x03F2 -p 0x03FD -p 0x0413 \
         -O file $(fpath "$TMPDIR/$SCRIPT.srv.orig${suffix}.ts") \
         >"$OUTDIR/$SCRIPT.srv.orig.log" 2>&1
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$OUTDIR/$SCRIPT.decap${suffix}.ts") \
         -P filter -p 0x03E8 -p 0x03F2 -p 0x03FD -p 0x0413 \
         -O file $(fpath "$TMPDIR/$SCRIPT.srv.decap${suffix}.ts") \

@@ -5,7 +5,7 @@ source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
 # Create some packets, test 1
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I craft --count 2 --cc 3 --pusi --scrambling 2 --error --payload-size 100 --payload-pattern 785412 --pcr 0x456123 \
     -O file $(fpath "$OUTDIR/$SCRIPT.1.ts") \
     >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1
@@ -21,7 +21,7 @@ test_text $SCRIPT.tsdump.1.txt
 test_text $SCRIPT.tsdump.1.log
 
 # Create some packets, test 2
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I craft --count 2 --cc 7 --no-payload --private-data 96321478 --es-priority --discontinuity --splice-countdown 0x8A \
     -O file $(fpath "$OUTDIR/$SCRIPT.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1
@@ -37,7 +37,7 @@ test_text $SCRIPT.tsdump.2.txt
 test_text $SCRIPT.tsdump.2.log
 
 # Test option --pack-pes-header.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.pes.ts") \
     -P craft --pack-pes-header \
     -O file $(fpath "$OUTDIR/$SCRIPT.3.ts") \
@@ -65,7 +65,7 @@ pl_options=(
 for ((i=0; $i<${#pl_options[@]}; i++)); do
     outindex=$((4+$i))
 
-    $(tspath tsp) --synchronous-log \
+    test_tsp \
         -I file $(fpath "$INDIR/$SCRIPT.aa.ts") \
         -P craft ${pl_options[$i]} \
         -O file $(fpath "$OUTDIR/$SCRIPT.$outindex.ts") \

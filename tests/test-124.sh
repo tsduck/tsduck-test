@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-092.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P inject --pid 16 --replace  $(fpath "$INDIR/$SCRIPT.nit.xml") \
     -P sections --pid 16 --patch-xml $(fpath "$INDIR/$SCRIPT.patch.xml") \

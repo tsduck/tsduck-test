@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-092.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P filter --service france2 --service france4 --set-label 0 \
     -P pcrextract --only-label 0 -e -o $(fpath "$OUTDIR/$SCRIPT.1a.csv") \
@@ -31,7 +31,7 @@ test_text $SCRIPT.1b.pts.csv
 test_text $SCRIPT.1b.dts.csv
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P filter --service france2 --service france4 --set-label 0 \
     -P pcrextract --only-label 0 -e -o $(fpath "$OUTDIR/$SCRIPT.2a.csv") \
@@ -56,7 +56,7 @@ test_text $SCRIPT.2b.pts.csv
 test_text $SCRIPT.2b.dts.csv
 test_text $SCRIPT.2.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P filter --service france2 --service france4 --set-label 0 \
     -P pcrextract --only-label 0 -e -o $(fpath "$OUTDIR/$SCRIPT.3a.csv") \

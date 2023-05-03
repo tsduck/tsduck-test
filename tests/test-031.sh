@@ -11,7 +11,7 @@ TABLE3="$INDIR/$SCRIPT.3.xml"
 TABLE4="$INDIR/$SCRIPT.4.xml"
 TABLE5="$INDIR/$SCRIPT.5.xml"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P svremove 0x2261 --stuffing \
     -P pmt --pmt-pid 0x1003 --add-pid 0x1800/0x05 --add-pid 0x1801/0x05 --add-pid 0x1802/0x05 \

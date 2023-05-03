@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/test-001.ts") \
     -P pat --patch-xml $(fpath "$INDIR/$SCRIPT.xml") \
     -P pmt --pmt-pid 100 --patch-xml $(fpath "$INDIR/$SCRIPT.xml") \

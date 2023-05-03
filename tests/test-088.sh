@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I pcap $(fpath "$INDIR/$SCRIPT.pcapng") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.pcapng.txt") \
     -O file $(fpath "$OUTDIR/$SCRIPT.pcapng.ts") \
@@ -14,7 +14,7 @@ test_bin $SCRIPT.pcapng.ts
 test_text $SCRIPT.pcapng.txt
 test_text $SCRIPT.pcapng.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I pcap $(fpath "$INDIR/$SCRIPT.pcap") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.pcap.txt") \
     -O file $(fpath "$OUTDIR/$SCRIPT.pcap.ts") \
@@ -24,7 +24,7 @@ test_bin $SCRIPT.pcap.ts
 test_text $SCRIPT.pcap.txt
 test_text $SCRIPT.pcap.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I pcap $(fpath "$INDIR/$SCRIPT.ns.pcap") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.pcap.ns.txt") \
     -O file $(fpath "$OUTDIR/$SCRIPT.pcap.ns.ts") \

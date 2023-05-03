@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 INFILE="$INDIR/test-001.ts"
 
 # Modify an existing NIT.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P nit --remove-desc 0x41 --remove-desc 0x4A --remove-desc 0x43 --build-service-list-descriptors \
     -P tables --pid 16 --text $(fpath "$OUTDIR/$SCRIPT.nit.1.txt") \
@@ -22,7 +22,7 @@ test_text $SCRIPT.nit.1.xml
 test_text $SCRIPT.tsp.1.log
 
 # Create a NIT.
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P filter --pid 16 --negate --stuffing \
     -P nit --create --build-service-list-descriptors \

@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log --bitrate-adjust-interval 3600 \
+test_tsp \
     -I file $(fpath "$INFILE") --repeat 10 \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.analyze.in.txt") \
     -P inject $(fpath "$INDIR/$SCRIPT.xml")=1000 --pid 16 --replace --stuffing \

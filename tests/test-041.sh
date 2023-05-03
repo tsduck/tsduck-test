@@ -40,7 +40,7 @@ $(tspath tsdump) "$OUTDIR/$SCRIPT.tsfixcc.2.ts" \
 test_text $SCRIPT.tsfixcc.2.tsdump.txt
 test_text $SCRIPT.tsfixcc.2.tsdump.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P continuity --tag first \
     -P file $(fpath "$OUTDIR/$SCRIPT.tsp.1.ts") \

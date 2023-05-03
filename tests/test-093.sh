@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-092.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P svremove 0x0105 --stuffing \
     -P count --pid 630 --summary -o $(fpath "$OUTDIR/$SCRIPT.count.1a.txt") \

@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 INFILE="$INDIR/test-001.ts"
 PMTPID=0x03E8
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P cat --add-ca 0x1234/7000/0123456789 --add-ca 0x5678/7001/456789 \
     -P pmt --pmt-pid $PMTPID --add-ca 0xCAFE/7002/DEADBEEF --add-ca 0xF000/7003/BADCAFEE \

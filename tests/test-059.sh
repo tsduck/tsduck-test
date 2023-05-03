@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P zap France5 \
     -P pcrbitrate --min-pcr 32 \
@@ -16,7 +16,7 @@ test_bin $SCRIPT.1.ts
 test_text $SCRIPT.tsp.1.log
 test_text $SCRIPT.analyze.1.txt
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P zap France5 --ignore-absent \
     -P pcrbitrate --min-pcr 32 \
@@ -28,7 +28,7 @@ test_bin $SCRIPT.2.ts
 test_text $SCRIPT.tsp.2.log
 test_text $SCRIPT.analyze.2.txt
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P zap 0x0415 --ignore-absent \
     -P pcrbitrate --min-pcr 32 \

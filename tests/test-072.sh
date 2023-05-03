@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P pes --packet-index --header \
     -O drop \

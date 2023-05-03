@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-092.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P pcrextract -o $(fpath "$OUTDIR/$SCRIPT.1a.txt") \
     -P pcredit --add-pcr -2 --add-pts 2 --add-dts 1 \

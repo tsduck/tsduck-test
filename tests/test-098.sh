@@ -41,7 +41,7 @@ addutc() {
 
 # Create TS at 1 Mb/s, total duration: 32 seconds, TDT insertion every 10 seconds.
 
-$(tspath tsp) --synchronous-log --bitrate $BITRATE \
+test_tsp --bitrate $BITRATE \
     -I null \
     -P until --bytes 4,000,000 \
     -P inject "$PATXML" --pid 0 --bitrate 3000 --stuffing \
@@ -61,7 +61,7 @@ test_bin $SCRIPT.1.ts
 
 # Test the midnight effect.
 
-$(tspath tsp) --synchronous-log --bitrate $BITRATE \
+test_tsp --bitrate $BITRATE \
     -I null \
     -P until --bytes 4,000,000 \
     -P inject "$PATXML" --pid 0 --bitrate 3000 --stuffing \

@@ -34,6 +34,15 @@ $(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze norm" --normal
 test_text $SCRIPT.tsanalyze.norm.txt
 test_text $SCRIPT.tsanalyze.norm.log
 
+# ==== tsanalyze, error report
+
+$(tspath tsanalyze) $(fpath "$INFILE") --title "$SCRIPT tsanalyze errors" --error-analysis --deterministic $STDOPT \
+    >"$OUTDIR/$SCRIPT.tsanalyze.errors.txt" \
+    2>"$OUTDIR/$SCRIPT.tsanalyze.errors.log"
+
+test_text $SCRIPT.tsanalyze.errors.txt
+test_text $SCRIPT.tsanalyze.errors.log
+
 # ==== tspsi, as a command
 
 $(tspath tspsi) $(fpath "$INFILE") $STDOPT \
@@ -45,11 +54,12 @@ test_text $SCRIPT.tspsi.log
 
 # ==== analyze and psi, as plugins
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P analyze -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.full.txt") --title "$SCRIPT full" $STDOPT \
     -P analyze --normalized --deterministic -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.norm.txt") --title "$SCRIPT normalized" $STDOPT \
     -P analyze --json --deterministic -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.json") --title "$SCRIPT JSON" $STDOPT \
+    -P analyze --error-analysis --deterministic -o $(fpath "$OUTDIR/$SCRIPT.tsp.analyze.errors.txt") --title "$SCRIPT errors" $STDOPT \
     -P psi --all -o $(fpath "$OUTDIR/$SCRIPT.tsp.psi.txt") $STDOPT \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
@@ -57,6 +67,7 @@ $(tspath tsp) --synchronous-log \
 test_text $SCRIPT.tsp.analyze.full.txt
 test_text $SCRIPT.tsp.analyze.norm.txt
 test_text $SCRIPT.tsp.analyze.json
+test_text $SCRIPT.tsp.analyze.errors.txt
 test_text $SCRIPT.tsp.psi.txt
 test_text $SCRIPT.tsp.log
 
@@ -97,14 +108,14 @@ test_text $SCRIPT.tsdate.log
 
 # ==== tsdump, first 10 packets.
 
-($(tspath tsp) --synchronous-log -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump)) \
+(test_tsp -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump)) \
     >"$OUTDIR/$SCRIPT.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsdump.log"
 
 test_text $SCRIPT.tsdump.txt
 test_text $SCRIPT.tsdump.log
 
-($(tspath tsp) --synchronous-log -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump) --header) \
+(test_tsp -I file $(fpath "$INFILE") -P until --packet 10 | $(tspath tsdump) --header) \
     >"$OUTDIR/$SCRIPT.tsdump.header.txt" \
     2>"$OUTDIR/$SCRIPT.tsdump.header.log"
 
@@ -176,7 +187,7 @@ test_text $SCRIPT.tstabdump.log
 
 # ==== psi plugin, XML one-liners
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P psi --all --log-xml-line='[PSIXML]' $STDOPT \
     -O drop \
@@ -186,7 +197,7 @@ test_text $SCRIPT.psi.xml.line.log
 
 # ==== analyze plugin, JSON one-liners
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P analyze --json-line='[TSJSON]' --deterministic --title "$SCRIPT JSON" $STDOPT \
     -O drop \

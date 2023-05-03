@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/test-001.ts") \
     -P until --packets 200 \
     -O file $(fpath "$OUTDIR/$SCRIPT.1.ts") --format rs204 \
@@ -13,7 +13,7 @@ $(tspath tsp) --synchronous-log \
 test_text $SCRIPT.tsp.1.log
 test_bin $SCRIPT.1.ts
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$OUTDIR/$SCRIPT.1.ts") \
     -O file $(fpath "$OUTDIR/$SCRIPT.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1

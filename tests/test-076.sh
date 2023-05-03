@@ -4,7 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.1.ts") $(fpath "$INDIR/$SCRIPT.2.ts") $(fpath "$INDIR/$SCRIPT.3.ts") \
             --add-start-stuffing 1 --add-start-stuffing 2 \
             --add-stop-stuffing 3 \
@@ -15,7 +15,7 @@ $(tspath tsp) --synchronous-log \
 test_bin $SCRIPT.1.ts
 test_text $SCRIPT.1.log
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.1.ts") \
     -P file $(fpath "$OUTDIR/$SCRIPT.2.ts") --add-start-stuffing 1 --add-stop-stuffing 2 \
     -O file $(fpath "$OUTDIR/$SCRIPT.3.ts") --add-start-stuffing 3 --add-stop-stuffing 4 \

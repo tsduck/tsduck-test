@@ -9,7 +9,7 @@ test_cleanup "$SCRIPT.*"
 
 INFILE="$INDIR/test-001.ts"
 
-$(tspath tsp) --synchronous-log \
+test_tsp \
     -I file $(fpath "$INFILE") \
     -P fork "$(fpath $(tspath tsp)) -O file \""$(fpath "$TMPDIR/$SCRIPT.1.ts")"\"" \
     -O file $(fpath "$TMPDIR/$SCRIPT.2.ts") \
