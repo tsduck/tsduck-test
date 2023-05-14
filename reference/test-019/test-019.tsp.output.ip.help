@@ -12,6 +12,12 @@ Parameter:
 
 Options:
 
+  -d
+  --disable-multicast-loop
+      Disable multicast loopback. By default, outgoing multicast packets are
+      looped back on local interfaces, if an application added membership on
+      the same multicast group. This option disables this.
+
   -e
   --enforce-burst
       Enforce that the number of TS packets per UDP packet is exactly what is
