@@ -17,6 +17,9 @@ Options:
       Disable multicast loopback. By default, outgoing multicast packets are
       looped back on local interfaces, if an application added membership on
       the same multicast group. This option disables this.
+      Warning: On output sockets, this option is effective only on Unix systems
+      (Linux, macOS, BSD). On Windows systems, this option applies only to
+      input sockets.
 
   -e
   --enforce-burst

@@ -28,6 +28,14 @@ Options:
       Let the system find the appropriate local interface on which to listen.
       By default, listen on all local interfaces.
 
+  --disable-multicast-loop
+      Disable multicast loopback. By default, incoming multicast packets are
+      looped back on local interfaces, if an application sends packets to the
+      same group from the same system. This option disables this.
+      Warning: On input sockets, this option is effective only on Windows
+      systems. On Unix systems (Linux, macOS, BSD), this option applies only to
+      output sockets.
+
   -f
   --first-source
       Filter UDP packets based on the source address. Use the sender address of

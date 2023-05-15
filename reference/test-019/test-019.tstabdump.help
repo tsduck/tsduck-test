@@ -81,6 +81,14 @@ Options:
       Must be one of "AOM", "AVS", "BskyB", "CanalPlus", "EACEM", "EICTA",
       "Eutelsat", "Logiways", "Nagra", "NorDig", "OFCOM", "TPS".
 
+  --disable-multicast-loop
+      Disable multicast loopback. By default, incoming multicast packets are
+      looped back on local interfaces, if an application sends packets to the
+      same group from the same system. This option disables this.
+      Warning: On input sockets, this option is effective only on Windows
+      systems. On Unix systems (Linux, macOS, BSD), this option applies only to
+      output sockets.
+
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
       for commonly incorrect signalization on some European satellites. In that
