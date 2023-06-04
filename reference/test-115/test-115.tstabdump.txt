@@ -334,7 +334,7 @@
   Network information:
   - Descriptor 0: Extension Descriptor (0x7F, 127), 10 bytes
     Extended descriptor: Service Prominence (0x22, 34)
-    private_data: 00 11 22 33 44 55 66 77
+    private data (8 bytes): 00 11 22 33 44 55 66 77
   - Descriptor 1: Extension Descriptor (0x7F, 127), 32 bytes
     Extended descriptor: Service Prominence (0x22, 34)
     SOGI flag: false, priority: 12, service id: 1234
@@ -343,7 +343,7 @@
     Country: GBR, primary region: 17
     Primary region: 1, secondary region: 2
     Primary region: 11, secondary region: 12, tertiary region: 13
-    private_data: DE AD BE EF
+    private data (4 bytes): DE AD BE EF
   - Descriptor 2: Extension Descriptor (0x7F, 127), 19 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x00123456, S2Xv2 mode: S2X (0x1), Roll-off factor: 0.20
