@@ -73,14 +73,14 @@ test_bin $SCRIPT.tsp.norep.ts
 test_text $SCRIPT.tsp.norep.log
 
 cp "$INDIR/$SCRIPT.ts" "$OUTDIR/$SCRIPT.tsfixcc.rep.ts"
-$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.rep.ts" \
+$(tspath tsfixcc) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.rep.ts") \
     >"$OUTDIR/$SCRIPT.tsfixcc.rep.log" 2>&1
 
 test_bin $SCRIPT.tsfixcc.rep.ts
 test_text $SCRIPT.tsfixcc.rep.log
 
 cp "$INDIR/$SCRIPT.ts" "$OUTDIR/$SCRIPT.tsfixcc.norep.ts"
-$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.norep.ts" --no-replicate-duplicated \
+$(tspath tsfixcc) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.norep.ts") --no-replicate-duplicated \
     >"$OUTDIR/$SCRIPT.tsfixcc.norep.log" 2>&1
 
 test_bin $SCRIPT.tsfixcc.norep.ts

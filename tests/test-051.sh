@@ -8,9 +8,9 @@ INFILE="$INDIR/test-040.ts"
 
 # Extract tables in various forms.
 $(tspath tstables) $(fpath "$INFILE") --tid 0xCB \
-    --text "$OUTDIR/$SCRIPT.tstables.txt" \
-    --xml "$OUTDIR/$SCRIPT.tstables.xml" \
-    --bin "$OUTDIR/$SCRIPT.tstables.bin" \
+    --text $(fpath "$OUTDIR/$SCRIPT.tstables.txt") \
+    --xml $(fpath "$OUTDIR/$SCRIPT.tstables.xml") \
+    --bin $(fpath "$OUTDIR/$SCRIPT.tstables.bin") \
     &>"$OUTDIR/$SCRIPT.tstables.log"
 
 test_bin $SCRIPT.tstables.bin

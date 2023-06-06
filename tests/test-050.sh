@@ -13,9 +13,9 @@ testeas()
     local file=$SCRIPT.$1
 
     $(tspath tstables) $(fpath "$INDIR/$file.ts") \
-        --text "$OUTDIR/$file.tstables.txt" \
-        --xml "$OUTDIR/$file.tstables.xml" \
-        --bin "$OUTDIR/$file.tstables.bin" \
+        --text $(fpath "$OUTDIR/$file.tstables.txt") \
+        --xml $(fpath "$OUTDIR/$file.tstables.xml") \
+        --bin $(fpath "$OUTDIR/$file.tstables.bin") \
         &>"$OUTDIR/$file.tstables.log"
 
     test_bin $file.tstables.bin

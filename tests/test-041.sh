@@ -13,13 +13,13 @@ INFILE="$INDIR/$SCRIPT.ts"
 #   16:5 17:6 18:6 (no pl) 19:6 (no pl) 20:7 (no pl)
 
 cp "$INFILE" "$OUTDIR/$SCRIPT.tsfixcc.1.ts"
-$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.1.ts" \
+$(tspath tsfixcc) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.1.ts") \
     --verbose --noaction >"$OUTDIR/$SCRIPT.tsfixcc.1.log" 2>&1
 
 test_bin $SCRIPT.tsfixcc.1.ts
 test_text $SCRIPT.tsfixcc.1.log
 
-$(tspath tsdump) "$OUTDIR/$SCRIPT.tsfixcc.1.ts" \
+$(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.1.ts") \
     >"$OUTDIR/$SCRIPT.tsfixcc.1.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsfixcc.1.tsdump.log"
 
@@ -27,13 +27,13 @@ test_text $SCRIPT.tsfixcc.1.tsdump.txt
 test_text $SCRIPT.tsfixcc.1.tsdump.log
 
 cp "$INFILE" "$OUTDIR/$SCRIPT.tsfixcc.2.ts"
-$(tspath tsfixcc) "$OUTDIR/$SCRIPT.tsfixcc.2.ts" \
+$(tspath tsfixcc) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.2.ts") \
     --verbose >"$OUTDIR/$SCRIPT.tsfixcc.2.log" 2>&1
 
 test_bin $SCRIPT.tsfixcc.2.ts
 test_text $SCRIPT.tsfixcc.2.log
 
-$(tspath tsdump) "$OUTDIR/$SCRIPT.tsfixcc.2.ts" \
+$(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.tsfixcc.2.ts") \
     >"$OUTDIR/$SCRIPT.tsfixcc.2.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsfixcc.2.tsdump.log"
 
@@ -52,14 +52,14 @@ test_bin $SCRIPT.tsp.1.ts
 test_bin $SCRIPT.tsp.2.ts
 test_text $SCRIPT.tsp.log
 
-$(tspath tsdump) "$OUTDIR/$SCRIPT.tsp.1.ts" \
+$(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.tsp.1.ts") \
     >"$OUTDIR/$SCRIPT.tsp.1.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsp.1.tsdump.log"
 
 test_text $SCRIPT.tsp.1.tsdump.txt
 test_text $SCRIPT.tsp.1.tsdump.log
 
-$(tspath tsdump) "$OUTDIR/$SCRIPT.tsp.2.ts" \
+$(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.tsp.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.2.tsdump.txt" \
     2>"$OUTDIR/$SCRIPT.tsp.2.tsdump.log"
 
