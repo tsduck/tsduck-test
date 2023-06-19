@@ -105,7 +105,8 @@ Options:
       sending in version 1.2.0is not supported.
 
   --linger value
-      Linger time on close, recommended value: 0
+      Linger time on close. Define how long, in seconds, to enable queued data
+      to be sent after end of stream. Default: no linger.
 
   -l [address:]port
   --listener [address:]port
