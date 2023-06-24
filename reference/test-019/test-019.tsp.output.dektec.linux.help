@@ -43,22 +43,6 @@ Options:
       Channel index on the output Dektec device. By default, use the first
       output channel on the device.
 
-  --cmmb-area-id value
-      CMMB modulators: indicate the area id. The valid range is 0 to 127. The
-      default is zero.
-
-  --cmmb-bandwidth value
-      CMMB modulators: indicate bandwidth in MHz. The default is 8 MHz.
-      Must be one of "2", "8".
-
-  --cmmb-pid value
-      CMMB modulators: indicate the PID of the CMMB stream in the transport
-      stream. This is a required parameter for CMMB modulation.
-
-  --cmmb-transmitter-id value
-      CMMB modulators: indicate the transmitter id. The valid range is 0 to
-      127. The default is zero.
-
   --constellation value
       DVB-T modulators: indicate the constellation type. The default is 64-QAM.
       Must be one of "16-QAM", "64-QAM", "QPSK".
@@ -208,22 +192,8 @@ Options:
   --io-standard value
       I/O standard to use on the device port. Which modes are supported depends
       on the device model. See the Dektec documentation for more details.
-      Must be one of "12G-SDI-2160p/50", "12G-SDI-2160p/50B",
-      "12G-SDI-2160p/59.94", "12G-SDI-2160p/59.94B", "12G-SDI-2160p/60",
-      "12G-SDI-2160p/60B", "3G-SDI-1080p/50", "3G-SDI-1080p/50B",
-      "3G-SDI-1080p/59.94", "3G-SDI-1080p/59.94B", "3G-SDI-1080p/60",
-      "3G-SDI-1080p/60B", "6G-SDI-2160p/23.98", "6G-SDI-2160p/24",
-      "6G-SDI-2160p/25", "6G-SDI-2160p/29.97", "6G-SDI-2160p/30", "ASI",
-      "GPS-clock", "HD-SDI-1080i/50", "HD-SDI-1080i/59.94", "HD-SDI-1080i/60",
-      "HD-SDI-1080p/23.98", "HD-SDI-1080p/24", "HD-SDI-1080p/25",
-      "HD-SDI-1080p/29.97", "HD-SDI-1080p/30", "HD-SDI-1080psf/23.98",
-      "HD-SDI-1080psf/24", "HD-SDI-1080psf/25", "HD-SDI-1080psf/29.97",
-      "HD-SDI-1080psf/30", "HD-SDI-720p/23.98", "HD-SDI-720p/24",
-      "HD-SDI-720p/25", "HD-SDI-720p/29.97", "HD-SDI-720p/30",
-      "HD-SDI-720p/50", "HD-SDI-720p/59.94", "HD-SDI-720p/60", "HDMI",
-      "IF-AD-converter", "IP", "RS422", "SDI-525i/59.94", "SDI-625i/50",
-      "SDI-receiver", "SPI", "SPI-SDI-525i/59.94", "SPI-SDI-625i/50",
-      "dektec-streaming", "demodulator", "encoder", "modulator", "phase-noise".
+      Must be one of "ASI", "IF-AD-converter", "IP", "SPI", "dektec-streaming",
+      "demodulator", "modulator".
 
   --ip4 ipv4-address:port
       TS-over-IP: Destination IPv4 address and port. Either --ip4 or --ip6 must
@@ -281,7 +251,7 @@ Options:
       DTA-110T:  DVB-T
       DTA-115:   DVB-T
       Must be one of "128-QAM", "16-QAM", "256-QAM", "32-QAM", "4-QAM",
-      "64-QAM", "ADTB-T", "ATSC-VSB", "CMMB", "DMB-T", "DVB-S", "DVB-S-BPSK",
+      "64-QAM", "ADTB-T", "ATSC-VSB", "DMB-T", "DVB-S", "DVB-S-BPSK",
       "DVB-S-QPSK", "DVB-S2", "DVB-S2-16APSK", "DVB-S2-32APSK", "DVB-S2-8PSK",
       "DVB-S2-QPSK", "DVB-T", "DVB-T2", "ISDB-T".
 
