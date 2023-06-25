@@ -1,0 +1,1035 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ......... 14 (0x000E)  |  Services: .............. 8  |
+|  Bytes: ......................... 9,589,128  |  PID's: Total: ......... 47  |
+|  TS packets: ....................... 51,006  |         Clear: ......... 47  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 1  |         With PCR's: ..... 8  |
+|     Suspect and ignored: ................ 1  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ......................... 41,511,190 b/s   45,044,057 b/s  |
+|  Estimated based on PCR's: ............... 19,905,986 b/s   21,600,112 b/s  |
+|  Selected reference bitrate: ............. 19,905,986 b/s   21,600,112 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ..................................... 3 sec (0 min 3 sec)  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x00C9  Disney Channel ............................... C    4,659,404 b/s  |
+|  0x00CA  PARAMOUNT NETWORK ............................ C    4,577,058 b/s  |
+|  0x0115  DMAX ......................................... C    4,133,323 b/s  |
+|  0x0116  GOL PLAY ..................................... C    4,660,185 b/s  |
+|  0x0118  RADIO MARCA .................................. C      117,861 b/s  |
+|  0x011A  CADENA 100 ................................... C      206,842 b/s  |
+|  0x011B  RADIO MARIA .................................. C      212,306 b/s  |
+|  0x0132  BOM RADIO .................................... C      149,082 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 3,047, PID's: 6 (clear: 6, scrambled: 0)                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C    1,189,145 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      187,328 b/s  |
+|  0x0000  PAT .......................................... C        3,122 b/s  |
+|  0x0001  CAT .......................................... C        3,122 b/s  |
+|  0x0011  SDT/BAT ...................................... C        1,561 b/s  |
+|  0x0012  EIT .......................................... C      177,181 b/s  |
+|  0x0015  Network Synchronization ...................... C        2,342 b/s  |
+|  0x1FFF  Stuffing ..................................... C    1,001,817 b/s  |
+|=============================================================================|
+|  Service: 0x00C9 (201), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: Disney Channel, provider: Disney Channel                     |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 11,939, PID's: 7 (clear: 7, scrambled: 0)                      |
+|  PMT PID: 0x0064 (100), PCR PID: 0x0065 (101)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    4,659,404 b/s  |
+|  0x0064  PMT .......................................... C        3,122 b/s  |
+|  0x0065  MPEG-2 Video (704x576i, @25 Hz, 16:9, 4:2:0) . C    4,099,760 b/s  |
+|  0x0066  Teletext (spa, Teletext subtitles) ........... C       75,322 b/s  |
+|  0x0067  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      200,598 b/s  |
+|  0x0068  MPEG-1 Audio (eng, Audio layer II, 192 kb/s,   C      200,598 b/s  |
+|  0x0069  MPEG-1 Audio (spa, visual impaired commentary  C       74,931 b/s  |
+|  0x07E5  MPEG-2 Private sections (AIT) ................ C        5,073 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00CA (202), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: PARAMOUNT NETWORK, provider: PARAMOUNT NETWORK               |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 11,728, PID's: 9 (clear: 9, scrambled: 0)                      |
+|  PMT PID: 0x05DC (1500), PCR PID: 0x05DD (1501)                             |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    4,577,058 b/s  |
+|  0x05DC  PMT .......................................... C        3,122 b/s  |
+|  0x05DD  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    4,033,025 b/s  |
+|  0x05DE  Teletext (spa, Teletext subtitles) ........... C       37,856 b/s  |
+|  0x05DF  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      203,329 b/s  |
+|  0x05E0  MPEG-1 Audio (qaa, Audio layer II, 192 kb/s,   C      203,720 b/s  |
+|  0x05E1  MPEG-1 Audio (spa, visual impaired commentary  C       70,638 b/s  |
+|  0x05E7  Subtitles (spa, DVB subtitles, no aspect rati  C       20,294 b/s  |
+|  0x05F5  DSM-CC Stream Descriptors .................... C            0 b/s  |
+|  0x0603  MPEG-2 Private sections (AIT) ................ C        5,073 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0115 (277), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: DMAX, provider: VEO                                          |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 10,591, PID's: 8 (clear: 8, scrambled: 0)                      |
+|  PMT PID: 0x012C (300), PCR PID: 0x012D (301)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    4,133,323 b/s  |
+|  0x012C  PMT .......................................... C        3,122 b/s  |
+|  0x012D  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    3,699,346 b/s  |
+|  0x012F  MPEG-1 Audio (spa, Audio layer II, 128 kb/s,   C      137,764 b/s  |
+|  0x0130  MPEG-1 Audio (eng, Audio layer II, 128 kb/s,   C      137,764 b/s  |
+|  0x0131  MPEG-1 Audio (spa, visual impaired commentary  C       75,322 b/s  |
+|  0x0137  Teletext (spa, Teletext subtitles) ........... C       75,322 b/s  |
+|  0x0200  DSM-CC Stream Descriptors .................... C            0 b/s  |
+|  0x0457  MPEG-2 Private sections (AIT) ................ C        4,683 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0116 (278), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: GOL PLAY, provider: Mediapro                                 |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 11,941, PID's: 10 (clear: 10, scrambled: 0)                    |
+|  PMT PID: 0x0190 (400), PCR PID: 0x0191 (401)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C    4,660,185 b/s  |
+|  0x0190  PMT .......................................... C        3,122 b/s  |
+|  0x0191  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    4,049,026 b/s  |
+|  0x0192  Teletext (spa, Teletext subtitles) ........... C            0 b/s  |
+|  0x0193  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      200,598 b/s  |
+|  0x0194  MPEG-1 Audio (VO2, Audio layer II, 96 kb/s, @  C      100,299 b/s  |
+|  0x0196  MPEG-1 Audio (VO3, Audio layer II, 96 kb/s, @  C      100,299 b/s  |
+|  0x0197  MPEG-1 Audio (spa, visual impaired commentary  C      100,299 b/s  |
+|  0x0198  MPEG-1 Audio (VO4, Audio layer II, 96 kb/s, @  C      100,299 b/s  |
+|  0x019B  Subtitles (spa, DVB subtitles, no aspect rati  C            0 b/s  |
+|  0x019F  MPEG-2 Private sections (AIT) ................ C        6,244 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0118 (280), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: RADIO MARCA, provider: RADIO MARCA                           |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 302, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0258 (600), PCR PID: 0x025B (603)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C      117,861 b/s  |
+|  0x0258  PMT .......................................... C        3,122 b/s  |
+|  0x025B  MPEG-1 Audio (spa, Audio layer II, 96 kb/s, @  C      109,665 b/s  |
+|  0x07A7  MPEG-2 Private sections (AIT) ................ C        5,073 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x011A (282), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: CADENA 100, provider: CADENA 100                             |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 530, PID's: 2 (clear: 2, scrambled: 0)                         |
+|  PMT PID: 0x0320 (800), PCR PID: 0x0323 (803)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C      206,842 b/s  |
+|  0x0320  PMT .......................................... C        3,122 b/s  |
+|  0x0323  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      203,720 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x011B (283), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: RADIO MARIA, provider: RADIO MARIA                           |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 544, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0384 (900), PCR PID: 0x0387 (903)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C      212,306 b/s  |
+|  0x0384  PMT .......................................... C        3,512 b/s  |
+|  0x0387  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      203,720 b/s  |
+|  0x064F  MPEG-2 Private sections (AIT) ................ C        5,073 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0132 (306), TS: 0x000E (14), Original Netw: 0x22D4 (8916)       |
+|  Service name: BOM RADIO, provider: BOM RADIO                               |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 382, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x02BC (700), PCR PID: 0x02BF (703)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C      149,082 b/s  |
+|  0x02BC  PMT .......................................... C        3,122 b/s  |
+|  0x02BF  MPEG-1 Audio (spa, Audio layer II, 128 kb/s,   C      141,277 b/s  |
+|  0x145F  MPEG-2 Private sections (AIT) ................ C        4,683 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,561 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 2  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 177,181 b/s  Packets: ........... 454  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 98  |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,342 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 6  |
+|=============================================================================|
+|  PID: 0x0064 (100)                                                     PMT  |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0065 (101)                                            MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  704x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,099,760 b/s  Packets: ........ 10,505  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 210  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,905,905 b/s  Packets: ......... 98  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 113  PTS: ................ 98  DTS: ............. 32  |
+|  from . 1,220,393,262,285  from ..... 4,068,011,433  from .. 4,068,018,633  |
+|  to ... 1,220,496,163,853  to ....... 4,068,360,633  to .... 4,068,353,433  |
+|  Leaps: ............... 0  Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0066 (102)                                          Teletext (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 75,322 b/s  Packets: ........... 193  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ........ 193  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ............... 193                         |
+|                            from ..... 4,067,980,833                         |
+|                            to ....... 4,068,326,433                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0067 (103)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 200,598 b/s  Packets: ........... 514  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,067,985,311                         |
+|                            to ....... 4,068,320,111                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0068 (104)                                      MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 200,598 b/s  Packets: ........... 514  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,067,985,311                         |
+|                            to ....... 4,068,320,111                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0069 (105)          MPEG-1 Audio (spa, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 64 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 74,931 b/s  Packets: ........... 192  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,068,006,911                         |
+|                            to ....... 4,068,341,711                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x012D (301)                                            MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,699,346 b/s  Packets: ......... 9,479  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 206  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,905,923 b/s  Packets: ......... 96  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 114  PTS: ................ 96  DTS: ............. 24  |
+|  from . 1,287,571,641,932  from ..... 4,291,934,119  from .. 4,291,944,919  |
+|  to ... 1,287,674,961,542  to ....... 4,292,290,519  to .... 4,292,276,119  |
+|  Leaps: ............... 0  Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x012F (303)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 137,764 b/s  Packets: ........... 353  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 33  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,291,915,197                         |
+|                            to ....... 4,292,249,997                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0130 (304)                                      MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 137,764 b/s  Packets: ........... 353  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 33  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,291,915,197                         |
+|                            to ....... 4,292,249,997                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0131 (305)          MPEG-1 Audio (spa, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 64 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 75,322 b/s  Packets: ........... 193  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 33  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,291,925,997                         |
+|                            to ....... 4,292,260,797                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0137 (311)                                          Teletext (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 75,322 b/s  Packets: ........... 193  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ........ 193  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ............... 193                         |
+|                            from ..... 4,291,908,919                         |
+|                            to ....... 4,292,254,519                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0191 (401)                                            MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,049,026 b/s  Packets: ........ 10,375  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 207  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,905,897 b/s  Packets: ......... 96  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 112  PTS: ................ 96  DTS: ............. 24  |
+|  from . 1,282,433,526,585  from ..... 4,274,812,872  from .. 4,274,823,672  |
+|  to ... 1,282,536,130,340  to ....... 4,275,169,272  to .... 4,275,154,872  |
+|  Leaps: ............... 0  Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0193 (403)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 200,598 b/s  Packets: ........... 514  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 4,274,790,350                         |
+|                            to ....... 4,275,125,150                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0194 (404)                                      MPEG-1 Audio (VO2)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 96 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 100,299 b/s  Packets: ........... 257  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 33  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 33                         |
+|                            from ..... 4,274,790,350                         |
+|                            to ....... 4,275,135,950                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0196 (406)                                      MPEG-1 Audio (VO3)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 96 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 100,299 b/s  Packets: ........... 257  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 33  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 33                         |
+|                            from ..... 4,274,790,350                         |
+|                            to ....... 4,275,135,950                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0197 (407)          MPEG-1 Audio (spa, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 96 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 100,299 b/s  Packets: ........... 257  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 33  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 33                         |
+|                            from ..... 4,274,790,350                         |
+|                            to ....... 4,275,135,950                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0198 (408)                                      MPEG-1 Audio (VO4)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 96 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 100,299 b/s  Packets: ........... 257  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 32  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 33  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 33                         |
+|                            from ..... 4,274,790,350                         |
+|                            to ....... 4,275,135,950                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x019F (415)                           MPEG-2 Private sections (AIT)  |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,244 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0258 (600)                                                     PMT  |
+|  Service: 0x0118 (280) RADIO MARCA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x025B (603)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 96 kb/s, @48,000 Hz, stereo                                |
+|  Service: 0x0118 (280) RADIO MARCA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 109,665 b/s  Packets: ........... 281  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 160  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,906,082 b/s  Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 160  PTS: ................ 40                         |
+|  from ... 587,957,811,700  from ..... 1,959,868,652                         |
+|  to ..... 588,060,742,932  to ....... 1,960,205,612                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x02BC (700)                                                     PMT  |
+|  Service: 0x0132 (306) BOM RADIO                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x02BF (703)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0132 (306) BOM RADIO                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 141,277 b/s  Packets: ........... 362  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 160  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,906,078 b/s  Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 120  PTS: ................ 40                         |
+|  from ... 587,958,080,686  from ..... 1,959,868,654                         |
+|  to ..... 588,060,905,879  to ....... 1,960,205,614                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0320 (800)                                                     PMT  |
+|  Service: 0x011A (282) CADENA 100                                           |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x0323 (803)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x011A (282) CADENA 100                                           |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 203,720 b/s  Packets: ........... 522  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 161  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,906,077 b/s  Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 161  PTS: ................ 40                         |
+|  from ... 587,957,613,693  from ..... 1,959,870,313                         |
+|  to ..... 588,061,336,465  to ....... 1,960,207,273                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0384 (900)                                                     PMT  |
+|  Service: 0x011B (283) RADIO MARIA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,512 b/s  Packets: ............. 9  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 9  |
+|=============================================================================|
+|  PID: 0x0387 (903)                                      MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x011B (283) RADIO MARIA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 203,720 b/s  Packets: ........... 522  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 161  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,906,084 b/s  Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 161  PTS: ................ 40                         |
+|  from ... 587,957,663,415  from ..... 1,959,870,313                         |
+|  to ..... 588,061,312,737  to ....... 1,960,207,273                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0457 (1111)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 4,683 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 6  |
+|=============================================================================|
+|  PID: 0x05DC (1500)                                                    PMT  |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,122 b/s  Packets: ............. 8  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 8  |
+|=============================================================================|
+|  PID: 0x05DD (1501)                                           MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,033,025 b/s  Packets: ........ 10,334  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 154  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 19,905,787 b/s  Packets: ......... 96  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ............... 154  PTS: ................ 96  DTS: ............. 32  |
+|  from .... 26,037,913,839  from ........ 86,826,982  from ..... 86,834,182  |
+|  to ...... 26,141,201,576  to .......... 87,179,782  to ....... 87,168,982  |
+|  Leaps: ............... 0  Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x05DE (1502)                                         Teletext (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 37,856 b/s  Packets: ............ 97  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 97  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 97                         |
+|                            from ........ 44,232,054                         |
+|                            to .......... 44,577,654                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x05DF (1503)                                     MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 203,329 b/s  Packets: ........... 521  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 20  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 20  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 20                         |
+|                            from ........ 86,812,332                         |
+|                            to .......... 87,140,652                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x05E0 (1504)                                     MPEG-1 Audio (qaa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 203,720 b/s  Packets: ........... 522  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 20  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 20  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 20                         |
+|                            from ........ 86,812,336                         |
+|                            to .......... 87,140,656                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x05E1 (1505)         MPEG-1 Audio (spa, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 64 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 70,638 b/s  Packets: ........... 181  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 20  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 20  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 20                         |
+|                            from ........ 86,820,982                         |
+|                            to .......... 87,149,302                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x05E7 (1511)                                        Subtitles (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  DVB subtitles, no aspect ratio                                             |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 20,294 b/s  Packets: ............ 52  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 14  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: .......... 2  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................. 2                         |
+|                            from ........ 86,965,057                         |
+|                            to .......... 87,061,317                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0603 (1539)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,073 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 7  |
+|=============================================================================|
+|  PID: 0x064F (1615)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x011B (283) RADIO MARIA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,073 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 13  |
+|=============================================================================|
+|  PID: 0x07A7 (1959)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0118 (280) RADIO MARCA                                          |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,073 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 13  |
+|=============================================================================|
+|  PID: 0x07E5 (2021)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 5,073 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 13  |
+|=============================================================================|
+|  PID: 0x145F (5215)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0132 (306) BOM RADIO                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 4,683 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 12  |
+|=============================================================================|
+|  PID: 0x1FFF (8191)                                               Stuffing  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: . 1,001,817 b/s  Packets: ......... 2,567  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x000E (14)                                        |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ........... 15                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x000E (14)                                |
+|      Repetition: .... 1975  ms  Section cnt: ........ 2                     |
+|      Min repet.: .... 1975  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1975  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00C9 (201)                           |
+|      Repetition: .... 1797  ms  Section cnt: ........ 4                     |
+|      Min repet.: .... 1797  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1797  ms  Version: ........... 30                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00CA (202)                           |
+|      Repetition: .... 1750  ms  Section cnt: ........ 4                     |
+|      Min repet.: .... 1750  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1750  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0115 (277)                           |
+|      Repetition: .... 1630  ms  Section cnt: ........ 5                     |
+|      Min repet.: .... 1630  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1630  ms  Version: ........... 26                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0116 (278)                           |
+|      Repetition: .... 1784  ms  Section cnt: ........ 4                     |
+|      Min repet.: .... 1784  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1784  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0118 (280)                           |
+|      Repetition: .... 1799  ms  Section cnt: ........ 5                     |
+|      Min repet.: .... 1728  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1871  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x011A (282)                           |
+|      Repetition: .... 1810  ms  Section cnt: ........ 5                     |
+|      Min repet.: .... 1750  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1870  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x011B (283)                           |
+|      Repetition: .... 1812  ms  Section cnt: ........ 5                     |
+|      Min repet.: .... 1725  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1898  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0132 (306)                           |
+|      Repetition: .... 1813  ms  Section cnt: ........ 5                     |
+|      Min repet.: .... 1728  ms  Table cnt: .......... 3                     |
+|      Max repet.: .... 1898  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00C9 (201)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 16                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00CA (202)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 10                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0115 (277)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 8                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0116 (278)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 14                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x00C9 (201)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 3                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0116 (278)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 9                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  0x13 (19, unknown)                                                         |
+|      Repetition: ..... 609  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 609  ms                                              |
+|      Max repet.: ..... 609  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, ECM (even))                                                     |
+|      Repetition: ..... 609  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 609  ms                                              |
+|      Max repet.: ..... 609  ms                                              |
+|=============================================================================|
+|  PID: 0x0064 (100)                                                     PMT  |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x00C9 (201)                                       |
+|      Repetition: ..... 473  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 463  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ............ 3                     |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0115 (277)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ........... 10                     |
+|=============================================================================|
+|  PID: 0x0190 (400)                                                     PMT  |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0116 (278)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 463  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 487  ms  Version: ........... 27                     |
+|=============================================================================|
+|  PID: 0x019F (415)                           MPEG-2 Private sections (AIT)  |
+|  Service: 0x0116 (278) GOL PLAY                                             |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 501  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 625  ms  Version: ........... 16                     |
+|=============================================================================|
+|  PID: 0x0258 (600)                                                     PMT  |
+|  Service: 0x0118 (280) RADIO MARCA                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0118 (280)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 476  ms  Version: ............ 3                     |
+|=============================================================================|
+|  PID: 0x02BC (700)                                                     PMT  |
+|  Service: 0x0132 (306) BOM RADIO                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0132 (306)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ............ 3                     |
+|=============================================================================|
+|  PID: 0x0320 (800)                                                     PMT  |
+|  Service: 0x011A (282) CADENA 100                                           |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x011A (282)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0384 (900)                                                     PMT  |
+|  Service: 0x011B (283) RADIO MARIA                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x011B (283)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ............ 3                     |
+|=============================================================================|
+|  PID: 0x0457 (1111)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0115 (277) DMAX                                                 |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 625  ms  Section cnt: ........ 5                     |
+|      Min repet.: ..... 491  ms  Table cnt: .......... 5                     |
+|      Max repet.: .... 1000  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x05DC (1500)                                                    PMT  |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x00CA (202)                                       |
+|      Repetition: ..... 475  ms  Section cnt: ........ 8                     |
+|      Min repet.: ..... 475  ms  Table cnt: .......... 8                     |
+|      Max repet.: ..... 475  ms  Version: ........... 11                     |
+|=============================================================================|
+|  PID: 0x0603 (1539)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x00CA (202) PARAMOUNT NETWORK                                    |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 600  ms  Section cnt: ........ 6                     |
+|      Min repet.: ..... 497  ms  Table cnt: .......... 6                     |
+|      Max repet.: .... 1000  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x064F (1615)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x011B (283) RADIO MARIA                                          |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 296  ms  Section cnt: ....... 12                     |
+|      Min repet.: ..... 239  ms  Table cnt: ......... 12                     |
+|      Max repet.: ..... 504  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07A7 (1959)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0118 (280) RADIO MARCA                                          |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 296  ms  Section cnt: ....... 12                     |
+|      Min repet.: ..... 240  ms  Table cnt: ......... 12                     |
+|      Max repet.: ..... 504  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x07E5 (2021)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x00C9 (201) Disney Channel                                       |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 292  ms  Section cnt: ....... 13                     |
+|      Min repet.: ..... 244  ms  Table cnt: ......... 13                     |
+|      Max repet.: ..... 504  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x145F (5215)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0132 (306) BOM RADIO                                            |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 300  ms  Section cnt: ....... 11                     |
+|      Min repet.: ..... 238  ms  Table cnt: ......... 11                     |
+|      Max repet.: ..... 505  ms  Version: ............ 0                     |
+===============================================================================
+

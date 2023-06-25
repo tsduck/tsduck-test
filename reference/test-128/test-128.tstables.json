@@ -1,0 +1,150 @@
+[
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 1891,
+        "last_ts_packet": 1891,
+        "pid": 1
+      },
+      {
+        "#name": "CA_descriptor",
+        "ca_pid": 91,
+        "ca_system_id": 3585
+      },
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "0x53415053"
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "0E 01 00 5B 04 04 03 2C 00 01"
+        ],
+        "tag": 252
+      },
+      {
+        "#name": "CA_descriptor",
+        "ca_pid": 92,
+        "ca_system_id": 3585
+      },
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "0x53415053"
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "0E 01 00 5C 04 04 03 2C 00 02"
+        ],
+        "tag": 252
+      }
+    ],
+    "current": true,
+    "version": 18
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 3448,
+        "last_ts_packet": 3448,
+        "pid": 5702
+      },
+      {
+        "#name": "CA_descriptor",
+        "ca_pid": 8191,
+        "ca_system_id": 9728
+      },
+      {
+        "#name": "service_descriptor",
+        "service_name": "HSA-65U2",
+        "service_provider_name": "HSA-65U",
+        "service_type": 128
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 09 00 00 00 00"
+            ],
+            "tag": 251
+          }
+        ],
+        "elementary_pid": 702,
+        "stream_type": 144
+      }
+    ],
+    "current": true,
+    "service_id": 1702,
+    "version": 2
+  },
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 5517,
+        "last_ts_packet": 5517,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 5701,
+        "service_id": 1701
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 5702,
+        "service_id": 1702
+      }
+    ],
+    "current": true,
+    "network_pid": 16,
+    "transport_stream_id": 60007,
+    "version": 7
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 11036,
+        "last_ts_packet": 11036,
+        "pid": 5701
+      },
+      {
+        "#name": "CA_descriptor",
+        "ca_pid": 8191,
+        "ca_system_id": 9728
+      },
+      {
+        "#name": "service_descriptor",
+        "service_name": "HSA-65U1",
+        "service_provider_name": "HSA-65U",
+        "service_type": 128
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 09 00 00 00 00"
+            ],
+            "tag": 251
+          }
+        ],
+        "elementary_pid": 701,
+        "stream_type": 144
+      }
+    ],
+    "current": true,
+    "service_id": 1701,
+    "version": 2
+  }
+]

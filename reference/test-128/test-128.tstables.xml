@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <CAT version="18" current="true">
+    <metadata PID="1" first_ts_packet="1,891" last_ts_packet="1,891"/>
+    <CA_descriptor CA_system_id="0x0E01" CA_PID="0x005B"/>
+    <private_data_specifier_descriptor private_data_specifier="0x53415053"/>
+    <generic_descriptor tag="0xFC">
+      0E 01 00 5B 04 04 03 2C 00 01
+    </generic_descriptor>
+    <CA_descriptor CA_system_id="0x0E01" CA_PID="0x005C"/>
+    <private_data_specifier_descriptor private_data_specifier="0x53415053"/>
+    <generic_descriptor tag="0xFC">
+      0E 01 00 5C 04 04 03 2C 00 02
+    </generic_descriptor>
+  </CAT>
+  <PMT version="2" current="true" service_id="0x06A6">
+    <metadata PID="5,702" first_ts_packet="3,448" last_ts_packet="3,448"/>
+    <CA_descriptor CA_system_id="0x2600" CA_PID="0x1FFF"/>
+    <service_descriptor service_type="0x80" service_provider_name="HSA-65U" service_name="HSA-65U2"/>
+    <component elementary_PID="0x02BE" stream_type="0x90">
+      <generic_descriptor tag="0xFB">
+        00 09 00 00 00 00
+      </generic_descriptor>
+    </component>
+  </PMT>
+  <PAT version="7" current="true" transport_stream_id="0xEA67" network_PID="0x0010">
+    <metadata PID="0" first_ts_packet="5,517" last_ts_packet="5,517"/>
+    <service service_id="0x06A5" program_map_PID="0x1645"/>
+    <service service_id="0x06A6" program_map_PID="0x1646"/>
+  </PAT>
+  <PMT version="2" current="true" service_id="0x06A5">
+    <metadata PID="5,701" first_ts_packet="11,036" last_ts_packet="11,036"/>
+    <CA_descriptor CA_system_id="0x2600" CA_PID="0x1FFF"/>
+    <service_descriptor service_type="0x80" service_provider_name="HSA-65U" service_name="HSA-65U1"/>
+    <component elementary_PID="0x02BD" stream_type="0x90">
+      <generic_descriptor tag="0xFB">
+        00 09 00 00 00 00
+      </generic_descriptor>
+    </component>
+  </PMT>
+</tsduck>
