@@ -98,8 +98,9 @@ Options:
   --device-name name
       Specify the DVB receiver device name, /dev/dvb/adapterA[:F[:M[:V]]] where
       A = adapter number, F = frontend number (default: 0), M = demux number
-      (default: 0), V = dvr number (default: 0). By default, the first receiver
-      device is used. Use the tslsdvb utility to list all DVB devices.
+      (default: same as frontend), V = dvr number (default: same as frontend).
+      By default, the first receiver device is used. Use the tslsdvb utility to
+      list all DVB devices.
 
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
