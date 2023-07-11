@@ -11,7 +11,8 @@ UDP_PORT_2=$(( $BASE_PORT + 2 ))
 
 test_tsp -b 1,000,000 --control-port $TSP_PORT \
     -I null \
-    -P inject --pid 0 --bitrate 15,000 $(fpath "$INDIR/$SCRIPT.xml") \
+    -P regulate \
+    -P inject --pid 0 --bitrate 15,000 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
     -P ip 127.0.0.1:$UDP_PORT_1 --local-address 127.0.0.1 \
     -O ip 127.0.0.1:$UDP_PORT_2 --enforce-burst --local-address 127.0.0.1 \
     >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1 &
@@ -31,7 +32,6 @@ test_tsp \
     >"$OUTDIR/$SCRIPT.tsp.3.log" 2>&1
 
 $(tspath tspcontrol) --tsp $TSP_PORT exit
-
 wait $outpid
 
 test_text $SCRIPT.tsp.1.log
