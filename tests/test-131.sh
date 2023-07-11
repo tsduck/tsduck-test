@@ -29,8 +29,11 @@ if $(tspath tsversion) --support rist; then
     $(tspath tspcontrol) --tsp $TSP_PORT exit
     wait $outpid
 
-    # Remove RIST error messages about scheduler.
-    sed -i -e '/rist:.*Failed to set .* scheduler/d' "$OUTDIR/$SCRIPT.tsp.1.log" "$OUTDIR/$SCRIPT.tsp.2.log"
+    # Remove RIST error messages about performances and response tile.
+    sed -i \
+        -e '/rist:.*Failed to set .* scheduler/d' \
+        -e '/rist:.*RIST receive queue /d' \
+        "$OUTDIR/$SCRIPT.tsp.1.log" "$OUTDIR/$SCRIPT.tsp.2.log"
 
     test_text $SCRIPT.tsp.1.log
     test_bin $SCRIPT.2.bin
