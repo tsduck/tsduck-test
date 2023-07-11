@@ -223,3 +223,4 @@ repository. But we now limit their size to 20 MB.
 | 126  | Delete nodes and parents using XML patch file
 | 127  | Non-regression on display of DVB service prominence descriptor (issue #1227)
 | 128  | Plugin `feed`
+| 128  | Plugin `ip`
