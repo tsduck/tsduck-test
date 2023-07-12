@@ -4,6 +4,9 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
+# There is a bug in RIST on Windows.
+[[ $OS == windows ]] && exit 0
+
 # Run the test only if rist is supported on this platform
 if $(tspath tsversion) --support rist; then
 
