@@ -9,8 +9,9 @@ Parameter:
   specified, ECM's from the service are used to extract control words.
 
   If the argument is an integer value (either decimal or hexadecimal), it is
-  interpreted as a service id. Otherwise, it is interpreted as a service name,
-  as specified in the SDT. The name is not case sensitive and blanks are
+  interpreted as a service id. If it is an empty string or "-", the first
+  service in the PAT is descrambled. Otherwise, it is interpreted as a service
+  name, as specified in the SDT. The name is not case sensitive and blanks are
   ignored. If the input TS does not contain an SDT, use service ids only.
 
   If the argument is omitted, --pid options shall be specified to list explicit
