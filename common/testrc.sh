@@ -382,7 +382,7 @@ test_cleanup() {
     if [[ -n "$1" ]]; then
         local grepopts=
         for os in $OTHEROS; do grepopts="$grepopts -e .$os."; done
-        rm -rf $(ls -d 2>/dev/null "$OUTDIR"/$1 | fgrep -v $grepopts)
+        rm -rf $(ls -d 2>/dev/null "$OUTDIR"/$1 | grep -F -v $grepopts)
     fi
 }
 
