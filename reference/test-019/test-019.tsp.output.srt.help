@@ -9,6 +9,10 @@ Parameter:
 
 Options:
 
+  --backlog value
+      With --listener, specify the number of allowed waiting incoming clients.
+      The default is one.
+
   --bufferapi
       When set, this socket uses the Buffer API. The default is Message API.
 
@@ -156,6 +160,10 @@ Options:
       messages periodically until the lost packet is retransmitted or
       intentionally dropped.
 
+  --no-reuse-port
+      With --listener, disable the reuse port socket option. Do not use unless
+      completely necessary.
+
   --ohead-bw value
       Recovery bandwidth overhead above input rate (see SRTO_INPUTBW). It is
       effective only if SRTO_MAXBW is set to 0.
@@ -243,8 +251,8 @@ Options:
       for a particular transmission type.
 
   --udp-rcvbuf value
-      UDP Socket Receive Buffer Size.
+      UDP socket receive buffer size in bytes.
 
   --udp-sndbuf value
-      UDP Socket Send Buffer Size.
+      UDP socket send buffer size in bytes.
 
