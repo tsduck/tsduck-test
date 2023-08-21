@@ -8,7 +8,7 @@ Options:
   --bandwidth value
       DVB-T, DVB-T2, DMB-T (DTMB): indicate bandwidth in MHz. The default is 8
       MHz. The bandwidth values 1.7 and 10 MHz are valid for DVB-T2 only.
-      Must be one of "1.7", "10", "5", "6", "7", "8".
+      Must be one of "1.7", "5", "6", "7", "8", "10".
 
   --bandwidth-extension
       DVB-T2: indicate that the extended carrier mode is used. By default, use
@@ -37,7 +37,7 @@ Options:
 
   --dmb-constellation value
       DMB-T (DTMB): indicate the constellation type. The default is 64-QAM.
-      Must be one of "16-QAM", "32-QAM", "4-QAM", "4-QAM-NR", "64-QAM".
+      Must be one of "4-QAM", "4-QAM-NR", "16-QAM", "32-QAM", "64-QAM".
 
   --dmb-fec value
       DMB-T (DTMB): indicate the FEC code rate. The default is 0.8. 4-QAM-NR
@@ -54,24 +54,24 @@ Options:
       Must be one of "PN420", "PN595", "PN945".
 
   --dmb-interleaver value
-      DMB-T (DTMB): indicate the interleaver mode. Must be one 1 (B=54, M=240)
-      or 2 (B=54, M=720). The default is 1.
+      DMB-T (DTMB): indicate the interleaver mode. Must be 1 (B=54, M=240) or 2
+      (B=54, M=720). The default is 1.
       Must be one of "1", "2".
 
   --fft-mode value
       DVB-T2: indicate the FFT mode. The default is 8K.
-      Must be one of "16K", "1K", "2K", "4K", "8K".
+      Must be one of "1K", "2K", "4K", "8K", "16K".
 
   -f value
   --frequency value
       Indicate the frequency, in Hz, of the output carrier. The valid range is
-      50,000,000 Hz to 1,000,000,000 Hz.The default is 473,000,000 Hz.
+      50,000,000 Hz to 1,000,000,000 Hz. The default is 473,000,000 Hz.
 
   -g value
   --guard-interval value
       DVB-T and ISDB-T modulators: indicate the guard interval. The default is
       1/16.
-      Must be one of "1/16", "1/32", "1/4", "1/8".
+      Must be one of "1/4", "1/8", "1/16", "1/32".
 
   --help
       Display this help text.
@@ -81,7 +81,7 @@ Options:
       J83A : 16-QAM, 32-QAM, 64-QAM, 128-QAM, 256-QAM. default 64-QAM.
       J83B : 64-QAM, 256-QAM. default 256-QAM.
       J83C : 64-QAM, 256-QAM. default 256-QAM.
-      Must be one of "128-QAM", "16-QAM", "256-QAM", "32-QAM", "64-QAM".
+      Must be one of "16-QAM", "32-QAM", "64-QAM", "128-QAM", "256-QAM".
 
   -m value
   --modulation value
@@ -124,7 +124,7 @@ Options:
 
   --plp0-modulation value
       DVB-T2: indicate the modulation used by PLP #0. The default is 256-QAM.
-      Must be one of "16-QAM", "256-QAM", "64-QAM", "QPSK".
+      Must be one of "16-QAM", "64-QAM", "256-QAM", "QPSK".
 
   --plp0-null-packet-deletion
       DVB-T2: indicate that null-packet deletion is active in PLP #0. Otherwise
@@ -147,7 +147,7 @@ Options:
 
   --t2-guard-interval value
       DVB-T2: indicates the guard interval. The default is 1/128.
-      Must be one of "1/128", "1/16", "1/32", "1/4", "1/8", "19/128", "19/256".
+      Must be one of "1/4", "1/8", "1/16", "1/32", "1/128", "19/128", "19/256".
 
   --t2-l1-modulation value
       DVB-T2: indicate the modulation type used for the L1-post signalling

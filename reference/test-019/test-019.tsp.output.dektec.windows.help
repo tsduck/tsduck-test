@@ -13,7 +13,7 @@ Options:
       DVB-T/H, DVB-T2, ADTB-T and DMB-T/H modulators: indicate bandwidth in
       MHz. The default is 8 MHz. The bandwidth values 1.7 and 10 MHz are valid
       for DVB-T2 only.
-      Must be one of "1.7", "10", "5", "6", "7", "8".
+      Must be one of "1.7", "5", "6", "7", "8", "10".
 
   --bandwidth-extension
       DVB-T2 modulators: indicate that the extended carrier mode is used. By
@@ -67,7 +67,7 @@ Options:
   --dmb-constellation value
       DMB-T/H, ADTB-T modulators: indicate the constellation type. The default
       is 64-QAM. 4-QAM-NR and 32-QAM can be used only with --dmb-fec 0.8.
-      Must be one of "16-QAM", "32-QAM", "4-QAM", "4-QAM-NR", "64-QAM".
+      Must be one of "4-QAM", "4-QAM-NR", "16-QAM", "32-QAM", "64-QAM".
 
   --dmb-fec value
       DMB-T/H, ADTB-T modulators: indicate the FEC code rate. The default is 0.
@@ -129,7 +129,7 @@ Options:
 
   --fft-mode value
       DVB-T2 modulators: indicate the FFT mode. The default is 32K.
-      Must be one of "16K", "1K", "2K", "32K", "4K", "8K".
+      Must be one of "1K", "2K", "4K", "8K", "16K", "32K".
 
   --fifo-size value
       Set the FIFO size in bytes of the output channel in the Dektec device.
@@ -150,7 +150,7 @@ Options:
   -g value
   --guard-interval value
       DVB-T modulators: indicate the guard interval. The default is 1/32.
-      Must be one of "1/16", "1/32", "1/4", "1/8".
+      Must be one of "1/4", "1/8", "1/16", "1/32".
 
   --gw4 ipv4-address
       TS-over-IP: Specify a non-default IPv4 gateway address. With SMPTE 2022-7
@@ -193,8 +193,8 @@ Options:
   --io-standard value
       I/O standard to use on the device port. Which modes are supported depends
       on the device model. See the Dektec documentation for more details.
-      Must be one of "ASI", "IF-AD-converter", "IP", "SPI", "dektec-streaming",
-      "demodulator", "modulator".
+      Must be one of "ASI", "dektec-streaming", "demodulator",
+      "IF-AD-converter", "IP", "modulator", "SPI".
 
   --ip4 ipv4-address:port
       TS-over-IP: Destination IPv4 address and port. Either --ip4 or --ip6 must
@@ -251,9 +251,9 @@ Options:
       DTA-110:   64-QAM
       DTA-110T:  DVB-T
       DTA-115:   DVB-T
-      Must be one of "128-QAM", "16-QAM", "256-QAM", "32-QAM", "4-QAM",
-      "64-QAM", "ADTB-T", "ATSC-VSB", "DMB-T", "DVB-S", "DVB-S-BPSK",
-      "DVB-S-QPSK", "DVB-S2", "DVB-S2-16APSK", "DVB-S2-32APSK", "DVB-S2-8PSK",
+      Must be one of "4-QAM", "16-QAM", "32-QAM", "64-QAM", "128-QAM",
+      "256-QAM", "ADTB-T", "ATSC-VSB", "DMB-T", "DVB-S", "DVB-S-BPSK",
+      "DVB-S-QPSK", "DVB-S2", "DVB-S2-8PSK", "DVB-S2-16APSK", "DVB-S2-32APSK",
       "DVB-S2-QPSK", "DVB-T", "DVB-T2", "ISDB-T".
 
   --mpe-fec
@@ -331,7 +331,7 @@ Options:
   --plp0-modulation value
       DVB-T2 modulators: indicate the modulation used by PLP #0. The default is
       256-QAM.
-      Must be one of "16-QAM", "256-QAM", "64-QAM", "BPSK", "QPSK".
+      Must be one of "16-QAM", "64-QAM", "256-QAM", "BPSK", "QPSK".
 
   --plp0-null-packet-deletion
       DVB-T2 modulators: indicate that null-packet deletion is active in PLP
@@ -379,9 +379,9 @@ Options:
   --qam-b value
       QAM modulators: with --j83 B, indicate the QAM-B interleaver mode. The
       default is I128-J1D.
-      Must be one of "I128-J1", "I128-J1D", "I128-J2", "I128-J3", "I128-J4",
-      "I128-J5", "I128-J6", "I128-J7", "I128-J8", "I16-J8", "I32-J4", "I64-J2",
-      "I8-J16".
+      Must be one of "I8-J16", "I16-J8", "I32-J4", "I64-J2", "I128-J1",
+      "I128-J1D", "I128-J2", "I128-J3", "I128-J4", "I128-J5", "I128-J6",
+      "I128-J7", "I128-J8".
 
   --roll-off value
       DVB-S2/S2X modulators: indicate the roll-off factor. The default is auto.
@@ -446,7 +446,7 @@ Options:
 
   --t2-guard-interval value
       DVB-T2 modulators: indicates the guard interval. The default is 1/128.
-      Must be one of "1/128", "1/16", "1/32", "1/4", "1/8", "19/128", "19/256".
+      Must be one of "1/4", "1/8", "1/16", "1/32", "1/128", "19/128", "19/256".
 
   --t2-l1-modulation value
       DVB-T2 modulators: indicate the modulation type used for the L1-post
@@ -506,7 +506,7 @@ Options:
 
   --vsb value
       ATSC modulators: indicate the VSB constellation. The default is 8.
-      Must be one of "16", "8".
+      Must be one of "8", "16".
 
   --vsb-taps value
       ATSC modulators: indicate the number of taps of each phase of the
