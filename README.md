@@ -226,3 +226,4 @@ repository. But we now limit their size to 20 MB.
 | 129  | Plugin `ip`
 | 130  | Plugin `srt`
 | 131  | Plugin `rist`
+| 132  | Non-regression on plugin `zap` and options `--audio-pid` and `--subtitles-pid`.
