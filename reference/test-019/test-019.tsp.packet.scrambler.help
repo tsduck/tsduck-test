@@ -213,6 +213,14 @@ Options:
       a risk to later discover that this PID is already used. In that case,
       specify --pid-ecm with a notoriously unused PID value.
 
+  --pre-reduce-cw
+      With DVB-CSA2, when entropy reduction is on (the default), make sure that
+      control words are reduced from the beginning, including when transmitted
+      to an ECMG. By default, entropy reduction is applied just before
+      encryption only, and the ECMG receives a full random CW, without entropy
+      reduction. The default behavior is suitable to test if the CAS correctly
+      handles entropy reduction without implicitly reduced control words.
+
   --private-data hexa-data
       Specifies the private data to insert in the CA_descriptor in the PMT. The
       value must be a suite of hexadecimal digits.
