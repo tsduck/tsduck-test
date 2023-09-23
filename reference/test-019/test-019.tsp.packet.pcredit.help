@@ -7,15 +7,15 @@ Options:
 
   --add-dts value
       Add the specified quantity to all DTS values (can be negative). See
-      option --unit for the interpretation of the value.
+      options --unit and --random for the interpretation of the value.
 
   --add-pcr value
       Add the specified quantity to all PCR values (can be negative). See
-      option --unit for the interpretation of the value.
+      options --unit and --random for the interpretation of the value.
 
   --add-pts value
       Add the specified quantity to all PTS values (can be negative). See
-      option --unit for the interpretation of the value.
+      options --unit and --random for the interpretation of the value.
 
   --help
       Display this help text.
@@ -41,6 +41,13 @@ Options:
   --pid pid1[-pid2]
       Specifies PID's where PCR, DTS and PTS values shall be edited. By
       default, all PID's are modified. Several --pid options may be specified.
+
+  -r
+  --random
+      The absolute values of --add-pcr, --add-dts, --add-pts are used as
+      maximum values. The added value is a random number in the range -n to +n
+      where n is the absolute value of the corresponding parameter. This option
+      is typically used to intentionally corrupt time stamps.
 
   -u name
   --unit name
