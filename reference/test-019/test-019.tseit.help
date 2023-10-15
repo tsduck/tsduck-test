@@ -199,6 +199,12 @@ EIT manipulation commands:
     --actual
         Enable the generation of EIT actual.
 
+    --actual-pf
+        Enable the generation of actual EIT p/f.
+
+    --actual-schedule
+        Enable the generation of actual EIT schedule.
+
     --eit-bitrate value
         Set the EIT maximum bitrate in bits/second.
         The value must be a 64-bit floating-point value.
@@ -209,8 +215,20 @@ EIT manipulation commands:
     --no-actual
         Disable the generation of EIT actual.
 
+    --no-actual-pf
+        Disable the generation of actual EIT p/f.
+
+    --no-actual-schedule
+        Disable the generation of actual EIT schedule.
+
     --no-other
         Disable the generation of EIT other.
+
+    --no-other-pf
+        Disable the generation of other EIT p/f.
+
+    --no-other-schedule
+        Disable the generation of other EIT schedule.
 
     --no-pf
         Disable the generation of EIT p/f.
@@ -220,6 +238,12 @@ EIT manipulation commands:
 
     --other
         Enable the generation of EIT other.
+
+    --other-pf
+        Enable the generation of other EIT p/f.
+
+    --other-schedule
+        Enable the generation of other EIT schedule.
 
     --pf
         Enable the generation of EIT p/f.

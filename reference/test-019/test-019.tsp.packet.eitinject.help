@@ -6,7 +6,14 @@ Usage: tsp -P eitinject [options]
 Options:
 
   --actual
-      Generate EIT actual. If neither --actual nor --other are specified, both
+      Generate EIT actual. Same as --actual-pf --actual-schedule.
+
+  --actual-pf
+      Generate EIT actual p/f. If no option is specified, all EIT sections are
+      generated.
+
+  --actual-schedule
+      Generate EIT actual schedule. If no option is specified, all EIT sections
       are generated.
 
   -b value
@@ -114,12 +121,18 @@ Options:
       a generic option which is defined in all packet processing plugins.
 
   --other
-      Generate EIT other. If neither --actual nor --other are specified, both
+      Generate EIT other. Same as --other-pf --other-schedule.
+
+  --other-pf
+      Generate EIT other p/f. If no option is specified, all EIT sections are
+      generated.
+
+  --other-schedule
+      Generate EIT actual schedule. If no option is specified, all EIT sections
       are generated.
 
   --pf
-      Generate EIT p/f. If neither --pf nor --schedule are specified, both are
-      generated.
+      Generate EIT p/f. Same as --actual-pf --other-pf.
 
   --philippines
       A synonym for '--default-charset RAW-UTF-8'. This is a handy shortcut
@@ -135,8 +148,7 @@ Options:
       frequently than EIT schedule for later events. The default is 8 days.
 
   --schedule
-      Generate EIT schedule. If neither --pf nor --schedule are specified, both
-      are generated.
+      Generate EIT schedule. Same as --actual-schedule --other-schedule.
 
   --stuffing
       Insert stuffing inside TS packets at end of EIT sections. Do not pack EIT

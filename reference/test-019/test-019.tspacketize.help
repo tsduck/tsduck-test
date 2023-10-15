@@ -58,8 +58,16 @@ Options:
       RAW-ISO-8859-9, RAW-UNICODE, RAW-UTF-8, UNICODE, UTF-8.
 
   --eit-actual
-      With --eit-normalization, generate EIT actual. If neither --eit-actual
-      nor --eit-other are specified, both are generated.
+      With --eit-normalization, generate EIT actual. Same as --eit-actual-pf
+      --eit-actual-schedule.
+
+  --eit-actual-pf
+      With --eit-normalization, generate EIT actual p/f. If no option is
+      specified, all EIT sections are generated.
+
+  --eit-actual-schedule
+      With --eit-normalization, generate EIT actual schedule. If no option is
+      specified, all EIT sections are generated.
 
   --eit-base-date date
       With --eit-normalization, use the specified date as reference for the
@@ -82,16 +90,24 @@ Options:
       --eit-base-date.
 
   --eit-other
-      With --eit-normalization, generate EIT other. If neither --eit-actual nor
-      --eit-other are specified, both are generated.
+      With --eit-normalization, generate EIT other. Same as --eit-other-pf
+      --eit-other-schedule.
+
+  --eit-other-pf
+      With --eit-normalization, generate EIT other p/f. If no option is
+      specified, all EIT sections are generated.
+
+  --eit-other-schedule
+      With --eit-normalization, generate EIT other schedule. If no option is
+      specified, all EIT sections are generated.
 
   --eit-pf
-      With --eit-normalization, generate EIT p/f. If neither --eit-pf nor
-      --eit-schedule are specified, both are generated.
+      With --eit-normalization, generate EIT p/f. Same as --eit-actual-pf
+      --eit-other-pf.
 
   --eit-schedule
-      With --eit-normalization, generate EIT schedule. If neither --eit-pf nor
-      --eit-schedule are specified, both are generated.
+      With --eit-normalization, generate EIT schedule. Same as
+      --eit-actual-schedule --eit-other-schedule.
 
   --europe
       A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
