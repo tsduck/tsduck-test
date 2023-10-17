@@ -17,6 +17,12 @@ Options:
   --binary
       Include binary dump in addition to hexadecimal.
 
+  -f
+  --flush-last-unbounded-pes
+      At end of stream, consider the last unbounded PES packet as complete in
+      each PID. By default, there is no guarantee that the unbounded buffered
+      data at end of stream form a valid PES packet and they are discarded.
+
   --h26x-default-format name
       The video formats AVC (H.264), HEVC (H.265) and VVC (H.266) use the same
       binary bitstream format. But the formats of their NALunits are different.
