@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="10" current="true" network_id="0x321D" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="Nine Network Australia"/>
+    <transport_stream transport_stream_id="0x0430" original_network_id="0x1012" preferred_section="0">
+      <terrestrial_delivery_system_descriptor centre_frequency="191,625,000" bandwidth="7MHz" priority="HP" no_time_slicing="true" no_MPE_FEC="true" constellation="64-QAM" hierarchy_information="0" code_rate_HP_stream="3/4" code_rate_LP_stream="3/4" guard_interval="1/16" transmission_mode="8k" other_frequency="false"/>
+      <service_list_descriptor>
+        <service service_id="0x0430" service_type="0x01"/>
+        <service service_id="0x0431" service_type="0x19"/>
+        <service service_id="0x0432" service_type="0x01"/>
+        <service service_id="0x0433" service_type="0x01"/>
+        <service service_id="0x0434" service_type="0x19"/>
+        <service service_id="0x0435" service_type="0x01"/>
+        <service service_id="0x0436" service_type="0x01"/>
+        <service service_id="0x0437" service_type="0x01"/>
+        <service service_id="0x0438" service_type="0x01"/>
+        <service service_id="0x0439" service_type="0x01"/>
+      </service_list_descriptor>
+      <private_data_specifier_descriptor private_data_specifier="Australia"/>
+      <australia_logical_channel_descriptor>
+        <service service_id="0x0430" logical_channel_number="9" visible_service="true"/>
+        <service service_id="0x0431" logical_channel_number="90" visible_service="true"/>
+        <service service_id="0x0435" logical_channel_number="91" visible_service="true"/>
+        <service service_id="0x0436" logical_channel_number="92" visible_service="true"/>
+        <service service_id="0x0432" logical_channel_number="93" visible_service="true"/>
+        <service service_id="0x0433" logical_channel_number="94" visible_service="true"/>
+        <service service_id="0x0434" logical_channel_number="95" visible_service="true"/>
+        <service service_id="0x0438" logical_channel_number="96" visible_service="true"/>
+        <service service_id="0x0439" logical_channel_number="97" visible_service="true"/>
+        <service service_id="0x0437" logical_channel_number="99" visible_service="true"/>
+      </australia_logical_channel_descriptor>
+    </transport_stream>
+  </NIT>
+  <NIT version="15" current="true" network_id="0x321B" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="ABC Melbourne"/>
+    <transport_stream transport_stream_id="0x0231" original_network_id="0x1010" preferred_section="0">
+      <terrestrial_delivery_system_descriptor centre_frequency="226,500,000" bandwidth="7MHz" priority="HP" no_time_slicing="true" no_MPE_FEC="true" constellation="64-QAM" hierarchy_information="0" code_rate_HP_stream="3/4" code_rate_LP_stream="1/2" guard_interval="1/16" transmission_mode="8k" other_frequency="false"/>
+      <service_list_descriptor>
+        <service service_id="0x0230" service_type="0x01"/>
+        <service service_id="0x0231" service_type="0x01"/>
+        <service service_id="0x0232" service_type="0x01"/>
+        <service service_id="0x0233" service_type="0x01"/>
+        <service service_id="0x0234" service_type="0x01"/>
+        <service service_id="0x0235" service_type="0x19"/>
+        <service service_id="0x0236" service_type="0x02"/>
+        <service service_id="0x0237" service_type="0x02"/>
+        <service service_id="0x0238" service_type="0x02"/>
+        <service service_id="0x0239" service_type="0x02"/>
+        <service service_id="0x023A" service_type="0x02"/>
+        <service service_id="0x023B" service_type="0x02"/>
+        <service service_id="0x023C" service_type="0x02"/>
+        <service service_id="0x023D" service_type="0x02"/>
+        <service service_id="0x023E" service_type="0x02"/>
+        <service service_id="0x023F" service_type="0x0A"/>
+      </service_list_descriptor>
+      <private_data_specifier_descriptor private_data_specifier="0x00003201"/>
+      <australia_logical_channel_descriptor>
+        <service service_id="0x0230" logical_channel_number="24" visible_service="true"/>
+        <service service_id="0x0231" logical_channel_number="2" visible_service="true"/>
+        <service service_id="0x0232" logical_channel_number="22" visible_service="true"/>
+        <service service_id="0x0233" logical_channel_number="21" visible_service="true"/>
+        <service service_id="0x0234" logical_channel_number="23" visible_service="true"/>
+        <service service_id="0x0235" logical_channel_number="20" visible_service="true"/>
+        <service service_id="0x0236" logical_channel_number="200" visible_service="true"/>
+        <service service_id="0x0237" logical_channel_number="201" visible_service="true"/>
+        <service service_id="0x0238" logical_channel_number="202" visible_service="true"/>
+        <service service_id="0x0239" logical_channel_number="28" visible_service="true"/>
+        <service service_id="0x023A" logical_channel_number="29" visible_service="true"/>
+        <service service_id="0x023B" logical_channel_number="27" visible_service="true"/>
+        <service service_id="0x023C" logical_channel_number="203" visible_service="true"/>
+        <service service_id="0x023D" logical_channel_number="25" visible_service="true"/>
+        <service service_id="0x023E" logical_channel_number="26" visible_service="true"/>
+        <service service_id="0x023F" logical_channel_number="204" visible_service="true"/>
+      </australia_logical_channel_descriptor>
+    </transport_stream>
+  </NIT>
+</tsduck>
