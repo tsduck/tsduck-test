@@ -1,0 +1,1519 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ........ 561 (0x0231)  |  Services: ............. 16  |
+|  Bytes: ......................... 4,738,916  |  PID's: Total: ......... 58  |
+|  TS packets: ....................... 25,207  |         Clear: ......... 58  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: .... 15  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ......................... 23,052,772 b/s   25,014,710 b/s  |
+|  Estimated based on PCR's: ............... 23,052,772 b/s   25,014,710 b/s  |
+|  Selected reference bitrate: ............. 23,052,772 b/s   25,014,710 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ..................................... 1 sec (0 min 1 sec)  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x0230  (unknown) .................................... C    5,531,129 b/s  |
+|  0x0231  (unknown) .................................... C    3,785,275 b/s  |
+|  0x0232  (unknown) .................................... C    4,205,048 b/s  |
+|  0x0233  (unknown) .................................... C    3,784,360 b/s  |
+|  0x0234  (unknown) .................................... C    2,425,356 b/s  |
+|  0x0235  (unknown) .................................... C    3,186,252 b/s  |
+|  0x0236  (unknown) .................................... C      311,858 b/s  |
+|  0x0237  (unknown) .................................... C      311,858 b/s  |
+|  0x0238  (unknown) .................................... C      311,858 b/s  |
+|  0x0239  (unknown) .................................... C      312,772 b/s  |
+|  0x023A  (unknown) .................................... C      312,772 b/s  |
+|  0x023B  (unknown) .................................... C      311,858 b/s  |
+|  0x023C  (unknown) .................................... C      310,943 b/s  |
+|  0x023D  (unknown) .................................... C      174,677 b/s  |
+|  0x023E  (unknown) .................................... C      175,591 b/s  |
+|  0x023F  (unknown) .................................... C      111,574 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 1,545, PID's: 6 (clear: 6, scrambled: 0)                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C    1,412,962 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      695,049 b/s  |
+|  0x0000  PAT .......................................... C       14,633 b/s  |
+|  0x0001  CAT .......................................... C       14,633 b/s  |
+|  0x0011  SDT/BAT ...................................... C        3,658 b/s  |
+|  0x0012  EIT .......................................... C      659,382 b/s  |
+|  0x0015  Network Synchronization ...................... C        2,744 b/s  |
+|  0x1FFF  Stuffing ..................................... C      717,913 b/s  |
+|=============================================================================|
+|  Service: 0x0230 (560), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 6,048, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0102 (258), PCR PID: 0x0905 (2309)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    5,531,129 b/s  |
+|  0x0102  PMT .......................................... C       15,547 b/s  |
+|  0x0905  PCR (not otherwise referenced) ............... C       40,240 b/s  |
+|  0x090A  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    4,998,867 b/s  |
+|  0x090B  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      272,532 b/s  |
+|  0x090C  Teletext (eng, Teletext subtitles) ........... C       75,907 b/s  |
+|  0x096F  MPEG-4 AAC Audio (aus, visual impaired commen  C      117,061 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0231 (561), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 4,139, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0100 (256), PCR PID: 0x0080 (128)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    3,785,275 b/s  |
+|  0x0080  PCR (not otherwise referenced) ............... C+      41,154 b/s  |
+|  0x0100  PMT .......................................... C       15,547 b/s  |
+|  0x0200  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C+   3,092,969 b/s  |
+|  0x0240  Teletext (eng, Teletext subtitles) ........... C+      79,565 b/s  |
+|  0x028A  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C+     272,532 b/s  |
+|  0x02EE  MPEG-1 Audio (aus, visual impaired commentary  C+     272,532 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0232 (562), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 4,598, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0101 (257), PCR PID: 0x0902 (2306)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    4,205,048 b/s  |
+|  0x0101  PMT .......................................... C       14,633 b/s  |
+|  0x0902  PCR (not otherwise referenced) ............... C       41,154 b/s  |
+|  0x0903  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    3,668,214 b/s  |
+|  0x0904  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      272,532 b/s  |
+|  0x0906  Teletext (eng, Teletext subtitles) ........... C       80,479 b/s  |
+|  0x0968  MPEG-4 AAC Audio (aus, visual impaired commen  C      117,061 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0233 (563), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 4,138, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0103 (259), PCR PID: 0x0080 (128)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    3,784,360 b/s  |
+|  0x0080  PCR (not otherwise referenced) ............... C+      41,154 b/s  |
+|  0x0103  PMT .......................................... C       14,633 b/s  |
+|  0x0200  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C+   3,092,969 b/s  |
+|  0x0240  Teletext (eng, Teletext subtitles) ........... C+      79,565 b/s  |
+|  0x028A  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C+     272,532 b/s  |
+|  0x02EE  MPEG-1 Audio (aus, visual impaired commentary  C+     272,532 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0234 (564), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 2,652, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0106 (262), PCR PID: 0x090F (2319)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    2,425,356 b/s  |
+|  0x0106  PMT .......................................... C       15,547 b/s  |
+|  0x0907  MPEG-2 Video (720x576i, @25 Hz, 16:9, 4:2:0) . C    1,890,351 b/s  |
+|  0x0908  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      271,618 b/s  |
+|  0x0909  Teletext (eng, Teletext subtitles) ........... C       79,565 b/s  |
+|  0x090F  PCR (not otherwise referenced) ............... C       40,240 b/s  |
+|  0x096C  MPEG-4 AAC Audio (aus, visual impaired commen  C      117,061 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0235 (565), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 3,484, PID's: 7 (clear: 7, scrambled: 0)                       |
+|  PMT PID: 0x0107 (263), PCR PID: 0x0915 (2325)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    3,186,252 b/s  |
+|  0x0107  PMT .......................................... C       15,547 b/s  |
+|  0x0910  AVC video (1920x1080, high profile, level 4.0  C    2,650,333 b/s  |
+|  0x0911  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      271,618 b/s  |
+|  0x0912  Teletext (eng, Teletext subtitles) ........... C       79,565 b/s  |
+|  0x0915  PCR (not otherwise referenced) ............... C       41,154 b/s  |
+|  0x0975  MPEG-4 AAC Audio (aus, visual impaired commen  C      117,061 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0236 (566), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 341, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0104 (260), PCR PID: 0x090D (2317)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      311,858 b/s  |
+|  0x0104  PMT .......................................... C       15,547 b/s  |
+|  0x090D  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      285,336 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0237 (567), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 341, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0105 (261), PCR PID: 0x090E (2318)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      311,858 b/s  |
+|  0x0105  PMT .......................................... C       15,547 b/s  |
+|  0x090E  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      285,336 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0238 (568), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 341, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0108 (264), PCR PID: 0x0916 (2326)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      311,858 b/s  |
+|  0x0108  PMT .......................................... C       15,547 b/s  |
+|  0x0916  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      285,336 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x0239 (569), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 342, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x0109 (265), PCR PID: 0x0917 (2327)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      312,772 b/s  |
+|  0x0109  PMT .......................................... C       15,547 b/s  |
+|  0x0917  MPEG-1 Audio (eng) ........................... C      286,251 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023A (570), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 342, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010A (266), PCR PID: 0x0918 (2328)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      312,772 b/s  |
+|  0x010A  PMT .......................................... C       15,547 b/s  |
+|  0x0918  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      286,251 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023B (571), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 341, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010B (267), PCR PID: 0x0919 (2329)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      311,858 b/s  |
+|  0x010B  PMT .......................................... C       15,547 b/s  |
+|  0x0919  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      285,336 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023C (572), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 340, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010C (268), PCR PID: 0x091A (2330)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      310,943 b/s  |
+|  0x010C  PMT .......................................... C       14,633 b/s  |
+|  0x091A  MPEG-1 Audio (eng, Audio layer II, 256 kb/s,   C      285,336 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023D (573), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 191, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010D (269), PCR PID: 0x091B (2331)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      174,677 b/s  |
+|  0x010D  PMT .......................................... C       14,633 b/s  |
+|  0x091B  MPEG-1 Audio (eng, Audio layer II, 128 kb/s,   C      149,070 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023E (574), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 192, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010E (270), PCR PID: 0x091C (2332)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      175,591 b/s  |
+|  0x010E  PMT .......................................... C       15,547 b/s  |
+|  0x091C  MPEG-1 Audio (eng, Audio layer II, 128 kb/s,   C      149,070 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x023F (575), TS: 0x0231 (561), Original Netw: 0x0000 (0)         |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 122, PID's: 3 (clear: 3, scrambled: 0)                         |
+|  PMT PID: 0x010F (271), PCR PID: 0x091D (2333)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C      111,574 b/s  |
+|  0x010F  PMT .......................................... C       14,633 b/s  |
+|  0x091D  MPEG-4 AAC Audio (eng) ....................... C       85,967 b/s  |
+|  0x157C  MPEG-2 Private sections (AIT) ................ C+      10,974 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,658 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 1  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 659,382 b/s  Packets: ........... 721  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ..... 237  |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,744 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0080 (128)                          PCR (not otherwise referenced)  |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 41,154 b/s  Packets: ............ 45  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 45  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 23,052,770 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 45                                                   |
+|  from ... 412,019,170,884                                                   |
+|  to ..... 412,063,166,699                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0100 (256)                                                     PMT  |
+|  Service: 0x0231 (561) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0101 (257)                                                     PMT  |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x0102 (258)                                                     PMT  |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0103 (259)                                                     PMT  |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x0104 (260)                                                     PMT  |
+|  Service: 0x0236 (566) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0105 (261)                                                     PMT  |
+|  Service: 0x0237 (567) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0106 (262)                                                     PMT  |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0107 (263)                                                     PMT  |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0108 (264)                                                     PMT  |
+|  Service: 0x0238 (568) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x0109 (265)                                                     PMT  |
+|  Service: 0x0239 (569) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x010A (266)                                                     PMT  |
+|  Service: 0x023A (570) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x010B (267)                                                     PMT  |
+|  Service: 0x023B (571) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x010C (268)                                                     PMT  |
+|  Service: 0x023C (572) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x010D (269)                                                     PMT  |
+|  Service: 0x023D (573) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x010E (270)                                                     PMT  |
+|  Service: 0x023E (574) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 15,547 b/s  Packets: ............ 17  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 17  |
+|=============================================================================|
+|  PID: 0x010F (271)                                                     PMT  |
+|  Service: 0x023F (575) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 14,633 b/s  Packets: ............ 16  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 16  |
+|=============================================================================|
+|  PID: 0x0200 (512)                                            MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: . 3,092,969 b/s  Packets: ......... 3,382  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 330  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 40  DTS: ............. 13  |
+|                            from ..... 1,373,419,997  from .. 1,373,427,197  |
+|                            to ....... 1,373,560,397  to .... 1,373,556,797  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0240 (576)                                          Teletext (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 79,565 b/s  Packets: ............ 87  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 82  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 82                         |
+|                            from ..... 1,373,414,597                         |
+|                            to ....... 1,373,560,397                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x028A (650)                                      MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 272,532 b/s  Packets: ........... 298  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 69                         |
+|                            from ..... 1,373,399,645                         |
+|                            to ....... 1,373,546,525                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x02EE (750)          MPEG-1 Audio (aus, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 272,532 b/s  Packets: ........... 298  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 69                         |
+|                            from ..... 1,373,399,645                         |
+|                            to ....... 1,373,546,525                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0902 (2306)                         PCR (not otherwise referenced)  |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 41,154 b/s  Packets: ............ 45  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 45  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 23,052,770 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 45                                                   |
+|  from ... 412,002,070,997                                                   |
+|  to ..... 412,046,045,674                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0903 (2307)                                           MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,668,214 b/s  Packets: ......... 4,011  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 156  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 43  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 43  DTS: ............. 15  |
+|                            from ..... 1,373,378,734  from .. 1,373,367,934  |
+|                            to ....... 1,373,529,934  to .... 1,373,519,134  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0904 (2308)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 272,532 b/s  Packets: ........... 298  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 69                         |
+|                            from ..... 1,373,343,334                         |
+|                            to ....... 1,373,490,214                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0905 (2309)                         PCR (not otherwise referenced)  |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 40,240 b/s  Packets: ............ 44  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 44  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 23,052,769 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 44                                                   |
+|  from ... 411,973,883,062                                                   |
+|  to ..... 412,016,881,857                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0906 (2310)                                         Teletext (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 80,479 b/s  Packets: ............ 88  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 83  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 83                         |
+|                            from ..... 1,373,357,134                         |
+|                            to ....... 1,373,504,734                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0907 (2311)                                           MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 1,890,351 b/s  Packets: ......... 2,067  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........ 1,538  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 37  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 37  DTS: ............. 13  |
+|                            from ..... 1,373,353,534  from .. 1,373,342,734  |
+|                            to ....... 1,373,483,134  to .... 1,373,472,334  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0908 (2312)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 271,618 b/s  Packets: ........... 297  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 68                         |
+|                            from ..... 1,373,310,919                         |
+|                            to ....... 1,373,455,639                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0909 (2313)                                         Teletext (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 79,565 b/s  Packets: ............ 87  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 82  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 82                         |
+|                            from ..... 1,373,324,734                         |
+|                            to ....... 1,373,470,534                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x090A (2314)                                           MPEG-2 Video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  720x576i, @25 Hz, 16:9, 4:2:0                                              |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 4,998,867 b/s  Packets: ......... 5,466  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 983  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 41  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 41  DTS: ............. 15  |
+|                            from ..... 1,373,272,405  from .. 1,373,279,605  |
+|                            to ....... 1,373,427,205  to .... 1,373,416,405  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x090B (2315)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 272,532 b/s  Packets: ........... 298  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 5  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 68                         |
+|                            from ..... 1,373,249,185                         |
+|                            to ....... 1,373,393,905                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x090C (2316)                                         Teletext (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 75,907 b/s  Packets: ............ 83  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 1  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 82  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 82                         |
+|                            from ..... 1,373,263,405                         |
+|                            to ....... 1,373,409,205                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x090D (2317)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0236 (566) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 285,336 b/s  Packets: ........... 312  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 112  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,772 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 47  PTS: ................ 68                         |
+|  from ... 411,939,580,074  from ..... 1,373,134,840                         |
+|  to ..... 411,982,275,881  to ....... 1,373,279,560                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x090E (2318)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0237 (567) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 285,336 b/s  Packets: ........... 312  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 111  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,771 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 48  PTS: ................ 68                         |
+|  from ... 411,939,302,331  from ..... 1,373,135,530                         |
+|  to ..... 411,983,060,339  to ....... 1,373,280,250                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x090F (2319)                         PCR (not otherwise referenced)  |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 40,240 b/s  Packets: ............ 44  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 44  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 23,052,771 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 44                                                   |
+|  from ... 411,992,430,714                                                   |
+|  to ..... 412,035,431,267                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0910 (2320)                                              AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 2,650,333 b/s  Packets: ......... 2,898  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 115  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 40  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 40  DTS: ............. 30  |
+|                            from ..... 1,373,385,222  from .. 1,373,378,022  |
+|                            to ....... 1,373,536,422  to .... 1,373,518,422  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0911 (2321)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 271,618 b/s  Packets: ........... 297  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 6  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 68                         |
+|                            from ..... 1,373,213,719                         |
+|                            to ....... 1,373,358,439                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0912 (2322)                                         Teletext (eng)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Teletext subtitles                                                         |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 79,565 b/s  Packets: ............ 87  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 6  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 81  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 81                         |
+|                            from ..... 1,373,228,622                         |
+|                            to ....... 1,373,372,622                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0915 (2325)                         PCR (not otherwise referenced)  |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 41,154 b/s  Packets: ............ 45  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 45  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 23,052,771 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 45                                                   |
+|  from ... 411,962,754,011                                                   |
+|  to ..... 412,006,751,586                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0916 (2326)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x0238 (568) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 285,336 b/s  Packets: ........... 312  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 109  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,770 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 48  PTS: ................ 68                         |
+|  from ... 411,938,976,941  from ..... 1,373,134,930                         |
+|  to ..... 411,982,622,212  to ....... 1,373,279,650                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0917 (2327)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x0239 (569) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 286,251 b/s  Packets: ........... 313  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 112  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,771 b/s  Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 48  PTS: ................ 69                         |
+|  from ... 411,779,861,627  from ..... 1,372,603,502                         |
+|  to ..... 411,823,764,080  to ....... 1,372,750,382                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0918 (2328)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x023A (570) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 286,251 b/s  Packets: ........... 313  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 115  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,771 b/s  Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 48  PTS: ................ 69                         |
+|  from ... 411,939,204,639  from ..... 1,373,134,150                         |
+|  to ..... 411,982,846,386  to ....... 1,373,281,030                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0919 (2329)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x023B (571) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 285,336 b/s  Packets: ........... 312  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 111  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,771 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 48  PTS: ................ 68                         |
+|  from ... 411,948,886,702  from ..... 1,373,166,520                         |
+|  to ..... 411,992,674,656  to ....... 1,373,311,240                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x091A (2330)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 256 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x023C (572) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 285,336 b/s  Packets: ........... 312  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 109  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,772 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 47  PTS: ................ 68                         |
+|  from ... 411,939,691,613  from ..... 1,373,135,620                         |
+|  to ..... 411,982,556,527  to ....... 1,373,280,340                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x091B (2331)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, single channel                       |
+|  Service: 0x023D (573) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 149,070 b/s  Packets: ........... 163  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 105  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,772 b/s  Packets: ......... 68  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 54  PTS: ................ 68                         |
+|  from ... 411,929,711,755  from ..... 1,373,103,137                         |
+|  to ..... 411,973,112,171  to ....... 1,373,247,857                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x091C (2332)                                     MPEG-1 Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, single channel                       |
+|  Service: 0x023E (574) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 149,070 b/s  Packets: ........... 163  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 105  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,775 b/s  Packets: ......... 69  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 54  PTS: ................ 69                         |
+|  from ... 411,948,887,963  from ..... 1,373,168,035                         |
+|  to ..... 411,992,202,059  to ....... 1,373,314,915                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x091D (2333)                                 MPEG-4 AAC Audio (eng)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x023F (575) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 85,967 b/s  Packets: ............ 94  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 82  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            TSrate: . 23,052,779 b/s  Packets: ......... 39  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|  PCR: ................ 58  PTS: ................ 39                         |
+|  from ... 411,914,475,705  from ..... 1,373,065,735                         |
+|  to ..... 411,958,550,770  to ....... 1,373,211,655                         |
+|  Leaps: ............... 0  Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0968 (2408)     MPEG-4 AAC Audio (aus, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 117,061 b/s  Packets: ........... 128  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 73  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 38  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 38                         |
+|                            from ..... 1,373,358,442                         |
+|                            to ....... 1,373,500,522                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x096C (2412)     MPEG-4 AAC Audio (aus, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 117,061 b/s  Packets: ........... 128  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 71  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 38  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 38                         |
+|                            from ..... 1,373,325,307                         |
+|                            to ....... 1,373,467,387                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x096F (2415)     MPEG-4 AAC Audio (aus, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 117,061 b/s  Packets: ........... 128  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 77  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 39  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 39                         |
+|                            from ..... 1,373,262,613                         |
+|                            to ....... 1,373,408,533                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0975 (2421)     MPEG-4 AAC Audio (aus, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 117,061 b/s  Packets: ........... 128  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 73  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 38  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 38                         |
+|                            from ..... 1,373,227,868                         |
+|                            to ....... 1,373,369,948                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x157C (5500)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0230 (560) (unknown)                                            |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0232 (562) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|  Service: 0x0234 (564) (unknown)                                            |
+|  Service: 0x0235 (565) (unknown)                                            |
+|  Service: 0x0236 (566) (unknown)                                            |
+|  Service: 0x0237 (567) (unknown)                                            |
+|  Service: 0x0238 (568) (unknown)                                            |
+|  Service: 0x0239 (569) (unknown)                                            |
+|  Service: 0x023A (570) (unknown)                                            |
+|  Service: 0x023B (571) (unknown)                                            |
+|  Service: 0x023C (572) (unknown)                                            |
+|  Service: 0x023D (573) (unknown)                                            |
+|  Service: 0x023E (574) (unknown)                                            |
+|  Service: 0x023F (575) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  Shared PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 10,974 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 4  |
+|=============================================================================|
+|  PID: 0x1FFF (8191)                                               Stuffing  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 717,913 b/s  Packets: ........... 785  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x0231 (561)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0230 (560)                           |
+|      Repetition: ..... 809  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 809  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 809  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0231 (561)                           |
+|      Repetition: ..... 874  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 874  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 874  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0232 (562)                           |
+|      Repetition: ..... 836  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 836  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 836  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0233 (563)                           |
+|      Repetition: ..... 830  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 830  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 830  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0234 (564)                           |
+|      Repetition: ..... 836  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 836  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 836  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0235 (565)                           |
+|      Repetition: ..... 835  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 835  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 835  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0236 (566)                           |
+|      Repetition: ..... 856  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 856  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 856  ms  Version: ............ 5                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0237 (567)                           |
+|      Repetition: ..... 843  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 843  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 843  ms  Version: ........... 26                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0238 (568)                           |
+|      Repetition: ..... 844  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 844  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 844  ms  Version: ........... 23                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x0239 (569)                           |
+|      Repetition: ..... 834  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 834  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 834  ms  Version: ............ 1                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023A (570)                           |
+|      Repetition: ..... 836  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 836  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 836  ms  Version: ........... 14                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023B (571)                           |
+|      Repetition: ..... 849  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 849  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 849  ms  Version: ........... 27                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023C (572)                           |
+|      Repetition: ..... 866  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 866  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 866  ms  Version: ............ 7                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023D (573)                           |
+|      Repetition: ..... 810  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 810  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 810  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023E (574)                           |
+|      Repetition: ..... 810  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 810  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 810  ms  Version: ........... 26                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x023F (575)                           |
+|      Repetition: ..... 837  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 837  ms  Table cnt: .......... 2                     |
+|      Max repet.: ..... 837  ms  Version: ........... 31                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0230 (560)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0231 (561)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0232 (562)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 30                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0233 (563)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0234 (564)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0235 (565)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0236 (566)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0237 (567)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0238 (568)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x0239 (569)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023A (570)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023B (571)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023C (572)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023D (573)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023E (574)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x023F (575)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0230 (560)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0231 (561)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0232 (562)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 30                     |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0233 (563)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0234 (564)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0235 (565)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 5                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0236 (566)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0237 (567)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0238 (568)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x0239 (569)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023A (570)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023B (571)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023C (572)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023D (573)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023E (574)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x023F (575)                      |
+|      Repetition: ....... 0  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|=============================================================================|
+|  PID: 0x0015 (21)                                  Network Synchronization  |
+|-----------------------------------------------------------------------------|
+|  0x13 (19, unknown)                                                         |
+|      Repetition: ..... 592  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 592  ms                                              |
+|      Max repet.: ..... 592  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x80 (128, ECM (even))                                                     |
+|      Repetition: ..... 592  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 592  ms                                              |
+|      Max repet.: ..... 592  ms                                              |
+|=============================================================================|
+|  PID: 0x0100 (256)                                                     PMT  |
+|  Service: 0x0231 (561) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0231 (561)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x0101 (257)                                                     PMT  |
+|  Service: 0x0232 (562) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0232 (562)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ........... 22                     |
+|=============================================================================|
+|  PID: 0x0102 (258)                                                     PMT  |
+|  Service: 0x0230 (560) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0230 (560)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 5                     |
+|=============================================================================|
+|  PID: 0x0103 (259)                                                     PMT  |
+|  Service: 0x0233 (563) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0233 (563)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x0104 (260)                                                     PMT  |
+|  Service: 0x0236 (566) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0236 (566)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0105 (261)                                                     PMT  |
+|  Service: 0x0237 (567) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0237 (567)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0106 (262)                                                     PMT  |
+|  Service: 0x0234 (564) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0234 (564)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x0107 (263)                                                     PMT  |
+|  Service: 0x0235 (565) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0235 (565)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ........... 28                     |
+|=============================================================================|
+|  PID: 0x0108 (264)                                                     PMT  |
+|  Service: 0x0238 (568) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0238 (568)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0109 (265)                                                     PMT  |
+|  Service: 0x0239 (569) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x0239 (569)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x010A (266)                                                     PMT  |
+|  Service: 0x023A (570) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023A (570)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x010B (267)                                                     PMT  |
+|  Service: 0x023B (571) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023B (571)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x010C (268)                                                     PMT  |
+|  Service: 0x023C (572) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023C (572)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x010D (269)                                                     PMT  |
+|  Service: 0x023D (573) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023D (573)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x010E (270)                                                     PMT  |
+|  Service: 0x023E (574) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023E (574)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x010F (271)                                                     PMT  |
+|  Service: 0x023F (575) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x023F (575)                                       |
+|      Repetition: ..... 100  ms  Section cnt: ....... 16                     |
+|      Min repet.: ..... 100  ms  Table cnt: ......... 16                     |
+|      Max repet.: ..... 100  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x157C (5500)                          MPEG-2 Private sections (AIT)  |
+|  Service: 0x0230 (560) (unknown)                                            |
+|  Service: 0x0231 (561) (unknown)                                            |
+|  Service: 0x0232 (562) (unknown)                                            |
+|  Service: 0x0233 (563) (unknown)                                            |
+|  Service: 0x0234 (564) (unknown)                                            |
+|  Service: 0x0235 (565) (unknown)                                            |
+|  Service: 0x0236 (566) (unknown)                                            |
+|  Service: 0x0237 (567) (unknown)                                            |
+|  Service: 0x0238 (568) (unknown)                                            |
+|  Service: 0x0239 (569) (unknown)                                            |
+|  Service: 0x023A (570) (unknown)                                            |
+|  Service: 0x023B (571) (unknown)                                            |
+|  Service: 0x023C (572) (unknown)                                            |
+|  Service: 0x023D (573) (unknown)                                            |
+|  Service: 0x023E (574) (unknown)                                            |
+|  Service: 0x023F (575) (unknown)                                            |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0010 (16)                                      |
+|      Repetition: ..... 399  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 398  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 400  ms  Version: ............ 1                     |
+===============================================================================
+

@@ -44,6 +44,14 @@ Options:
   --help
       Display this help text.
 
+  -h
+  --http
+      Select a TCP stream in the pcap file using the HTTP protocol and extract
+      TS packets from the response. The --source and --destination options
+      define the TCP stream. If some address or port are undefined in these two
+      options, the first TCP stream matching the specified portions is
+      selected.
+
   --last-date date-time
       Filter packets up to the specified date. Use format YYYY/MM/DD:hh:mm:ss.
       mmm.
