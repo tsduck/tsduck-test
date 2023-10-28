@@ -23,3 +23,20 @@ test_tsp \
 test_bin $SCRIPT.partial.ts
 test_text $SCRIPT.partial.txt
 test_text $SCRIPT.partial.log
+
+test_tsp \
+    -I pcap $(fpath "$INDIR/$SCRIPT.rtsp.pcap") --http --source 10.31.51.78:554 \
+    -P analyze -o $(fpath "$OUTDIR/$SCRIPT.rtsp.txt") \
+    -O file $(fpath "$OUTDIR/$SCRIPT.rtsp.ts") \
+    >"$OUTDIR/$SCRIPT.rtsp.log" 2>&1
+
+test_bin $SCRIPT.rtsp.ts
+test_text $SCRIPT.rtsp.txt
+test_text $SCRIPT.rtsp.log
+
+$(tspath tspcap) $(fpath "$INDIR/$SCRIPT.rtsp.pcap") --source 10.31.51.78:554 \
+    --output-tcp-stream $(fpath "$OUTDIR/$SCRIPT.rtsp.tcp.bin") \
+    >"$OUTDIR/$SCRIPT.rtsp.tcp.log" 2>&1
+
+test_bin $SCRIPT.rtsp.tcp.bin
+test_text $SCRIPT.rtsp.tcp.log
