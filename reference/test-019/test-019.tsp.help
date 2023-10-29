@@ -64,7 +64,7 @@ Options:
   --conax
       Equivalent to --default-cas-id 0x0B00.
 
-  --control-local address
+  --control-local ip-address
       Specify the IP address of the local interface on which to listen for
       control commands. It can be also a host name that translates to a local
       address. By default, listen on all local interfaces.
@@ -78,7 +78,7 @@ Options:
       option is not enabled by default to avoid accidentally running two tsp
       commands with the same control port.
 
-  --control-source address
+  --control-source ip-address
       Specify a remote IP address which is allowed to send control commands. By
       default, as a security precaution, only the local host is allowed to
       connect. Several --control-source options are allowed.
