@@ -30,7 +30,7 @@ INPUT_PLUGINS=(
 
 OUTPUT_PLUGINS=(
     dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
-    ip memory play.linux play.mac play.windows rist.mac rist.windows
+    http ip memory play.linux play.mac play.windows rist.mac rist.windows
     srt/openbsd/netbsd vatek/windows-32/freebsd/netbsd/openbsd/dragonfly
 )
 

@@ -1,0 +1,47 @@
+
+Act as an HTTP server and send TS packets to the incoming client
+
+Usage: tsp -O http [options]
+
+The implemented HTTP server is rudimentary. No SSL/TLS is supported, only the
+http: protocol is accepted.
+
+Only one client is accepted at a time. By default, tsp terminates if the client
+disconnects (see option --multiple-clients).
+
+The request "GET /" returns the transport stream content. All other requests
+are considered as invalid (see option --ignore-bad-request). There is no
+Content-Length response header since the size of the returned TS is unknown.
+The server disconnects at the end of the data. There is no Keep-Alive.
+
+Options:
+
+  --buffer-size value
+      Specifies the TCP socket send buffer size to the client connection
+      (socket option).
+
+  --help
+      Display this help text.
+
+  --ignore-bad-request
+      Ignore invalid HTTP requests and unconditionally send the transport
+      stream.
+
+  -m
+  --multiple-clients
+      Specifies that the server handle multiple clients, one after the other.
+      By default, the plugin terminates the tsp session when the first client
+      disconnects.
+
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely
+      necessary.
+
+  -s [ip-address:]port
+  --server [ip-address:]port
+      Specifies the local TCP port on which the plugin listens for incoming
+      HTTP connections. This option is mandatory. This plugin accepts only one
+      HTTP connection at a time. When present, the optional address shall
+      specify a local IP address or host name. By default, the server listens
+      on all local interfaces.
+
