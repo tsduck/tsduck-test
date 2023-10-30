@@ -48,7 +48,7 @@ Options:
       3. The input index after the event.
       4. Optional: the user data string from --event-user-data option.
 
-  --event-local-address address
+  --event-local-address ip-address
       With --event-udp, when the destination is a multicast address, specify
       the IP address of the outgoing local interface. It can be also a host
       name that translates to a local address.
@@ -59,7 +59,7 @@ Options:
       the destination address. Remember that the default Multicast TTL is 1 on
       most systems.
 
-  --event-udp address:port
+  --event-udp ip-address:port
       When a switch event occurs, send a short JSON description over UDP/IP to
       the specified destination. This can be used to notify some external
       system of the event. The 'address' specifies an IP address which can be

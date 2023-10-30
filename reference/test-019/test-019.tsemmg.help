@@ -92,8 +92,8 @@ Options:
       Stop after sending the specified number of bytes. By default, send data
       indefinitely.
 
-  -m address:port
-  --mux address:port
+  -m ip-address:port
+  --mux ip-address:port
       Specify the IP address (or host name) and TCP port of the MUX. This is a
       required parameter, there is no default.
 
@@ -120,8 +120,8 @@ Options:
       (EMM). In addition to integer values, names can be used.
       Must be one of "ecm", "emm", "private-data".
 
-  -u [address:]port
-  --udp [address:]port
+  -u [ip-address:]port
+  --udp [ip-address:]port
       Specify that the 'data_provision' messages shall be sent using UDP. By
       default, the 'data_provision' messages are sent over TCP using the same
       TCP connection as the management commands. If the IP address (or host

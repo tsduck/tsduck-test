@@ -14,8 +14,8 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
-  -d [address][:port]
-  --destination [address][:port]
+  -d [ip-address]:[port]
+  --destination [ip-address]:[port]
       Filter IPv4 packets based on the specified destination socket address.
       The optional port number is used for TCP and UDP packets only.
 
@@ -90,8 +90,8 @@ Options:
       TCP session is saved, from --source to --destination. If the file name is
       "-", the standard output is used.
 
-  -s [address][:port]
-  --source [address][:port]
+  -s [ip-address]:[port]
+  --source [ip-address]:[port]
       Filter IPv4 packets based on the specified source socket address. The
       optional port number is used for TCP and UDP packets only.
 
