@@ -123,7 +123,7 @@ Options:
       specifies a prefix to prepend on the log line before the JSON text to
       locate the appropriate line in the logs.
 
-  --json-tcp address:port
+  --json-tcp ip-address:port
       Same as --json but report the JSON text as one single line in a TCP
       connection instead of the output file. The 'address' specifies an IP
       address or a host name that translates to an IP address. The 'port'
@@ -137,7 +137,7 @@ Options:
       default, a new TCP connection is established each time a JSON message is
       produced.
 
-  --json-udp address:port
+  --json-udp ip-address:port
       Same as --json but report the JSON text as one single line in a UDP
       datagram instead of the output file. The 'address' specifies an IP
       address which can be either unicast or multicast. It can be also a host

@@ -63,8 +63,8 @@ Options:
       Set the reuse port socket option. This is now enabled by default, the
       option is present for legacy only.
 
-  -s [address:]port
-  --server [address:]port
+  -s [ip-address:]port
+  --server [ip-address:]port
       Specifies the local TCP port on which the plugin listens for an incoming
       EMMG/PDG connection. This option is mandatory. When present, the optional
       address shall specify a local IP address or host name (by default, the
@@ -72,8 +72,8 @@ Options:
       behaves as a MUX, ie. a TCP server, and accepts only one EMMG/PDG
       connection at a time.
 
-  -u [address:]port
-  --udp [address:]port
+  -u [ip-address:]port
+  --udp [ip-address:]port
       Specifies the local UDP port on which the plugin listens for data
       provision messages (these messages can be sent using TCP or UDP). By
       default, use the same port and optional local address as specified for

@@ -10,8 +10,8 @@ Options:
       With --output-file, if the file already exists, append to the end of the
       file. By default, existing files are overwritten.
 
-  -d address[:port]
-  --destination address[:port]
+  -d ip-address[:port]
+  --destination ip-address[:port]
       Filter MPE UDP datagrams based on the specified destination IP address.
 
   --dump-datagram
@@ -93,8 +93,8 @@ Options:
       be specified. When no PID is specified, use all PID's carrying MPE which
       are properly declared in the signalization.
 
-  -r address[:port]
-  --redirect address[:port]
+  -r ip-address[:port]
+  --redirect ip-address[:port]
       With --udp-forward, redirect all UDP datagrams to the specified socket
       address. By default, all datagrams are forwarded to their original
       destination address. If you specify a redirected address, it is
@@ -106,8 +106,8 @@ Options:
       specify the initial number of bytes to skip. By default, save or dump
       from the beginning.
 
-  -s address[:port]
-  --source address[:port]
+  -s ip-address[:port]
+  --source ip-address[:port]
       Filter MPE UDP datagrams based on the specified source IP address.
 
   --sync-layout
