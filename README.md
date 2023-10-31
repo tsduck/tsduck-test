@@ -230,3 +230,4 @@ repository. But we now limit their size to 20 MB.
 | 133  | Option `--flush-last-unbounded-pes` in plugin `pes`
 | 134  | Free TV Australia logical channel descriptor
 | 135  | `pcap` input plugin with option `--http`
+| 136  | `http` output plugin
