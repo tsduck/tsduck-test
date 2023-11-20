@@ -993,12 +993,12 @@
     <FMC_descriptor/>
 
     <FMC_descriptor>
-      <stream ES_ID="0x1234" FlexMuxChannel="0xAB"/>
-      <stream ES_ID="0x5678" FlexMuxChannel="0xCD"/>
-      <stream ES_ID="0x9ABC" FlexMuxChannel="0xEF"/>
+      <stream ES_ID="0x1234" M4MuxChannel="0xAB"/>
+      <stream ES_ID="0x5678" M4MuxChannel="0xCD"/>
+      <stream ES_ID="0x9ABC" M4MuxChannel="0xEF"/>
     </FMC_descriptor>
 
-    <flexmux_timing_descriptor
+    <m4mux_timing_descriptor
         FCR_ES_ID="0x1234"
         FCRResolution="0x56789ABC"
         FCRLength="0xDE"

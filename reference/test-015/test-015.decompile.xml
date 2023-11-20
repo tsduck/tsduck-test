@@ -415,11 +415,11 @@
     <metadata_STD_descriptor metadata_input_leak_rate="123,456" metadata_buffer_size="789,012" metadata_output_leak_rate="4,194,303"/>
     <FMC_descriptor/>
     <FMC_descriptor>
-      <stream ES_ID="0x1234" FlexMuxChannel="0xAB"/>
-      <stream ES_ID="0x5678" FlexMuxChannel="0xCD"/>
-      <stream ES_ID="0x9ABC" FlexMuxChannel="0xEF"/>
+      <stream ES_ID="0x1234" M4MuxChannel="0xAB"/>
+      <stream ES_ID="0x5678" M4MuxChannel="0xCD"/>
+      <stream ES_ID="0x9ABC" M4MuxChannel="0xEF"/>
     </FMC_descriptor>
-    <flexmux_timing_descriptor FCR_ES_ID="0x1234" FCRResolution="1,450,744,508" FCRLength="222" FmxRateLength="171"/>
+    <m4mux_timing_descriptor FCR_ES_ID="0x1234" FCRResolution="1,450,744,508" FCRLength="222" FmxRateLength="171"/>
     <multiplex_buffer_descriptor MB_buffer_size="123,456" TB_leak_rate="789,012"/>
     <MPEG2_stereoscopic_video_format_descriptor/>
     <MPEG2_stereoscopic_video_format_descriptor arrangement_type="0x67"/>
