@@ -231,3 +231,4 @@ repository. But we now limit their size to 20 MB.
 | 134  | Free TV Australia logical channel descriptor
 | 135  | `pcap` input plugin with option `--http`
 | 136  | `http` output plugin
+| 137  | Non-regression on HEVC sequence parameter set analysis (issue #1369)
