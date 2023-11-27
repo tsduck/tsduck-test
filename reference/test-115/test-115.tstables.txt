@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 861 bytes
+  Version: 0, sections: 1, total size: 989 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -328,6 +328,38 @@
                       59   69   79   89
       Layout [2]: Preamble substream: 126, level: 10, picture size hor=1280 ver=720
        Pattern [0]:   -1
+    - Descriptor 55: MPEG-2 Extension (0x3F, 63), 30 bytes
+      MPEG extended descriptor: JPEG XS Video (0x14, 20)
+      Descriptor version: 0, horizontal size: 1920, vertical size: 1080
+      Max bitrate: 123, framerate: 17, sample characteristics: 45234
+      Profile: 9, level: 6, max buffer size: 14, buffer model: 2
+      Colour primaries: ITU-R BT.2020-2/2100-2 (9), transfer characteristics: ITU-R BT.2020-2 (12 bit) (15)
+      Matrix coefficients: ITU-R BT.2020-2 NCL (9)
+      Video full range: false, still mode: true
+    - Descriptor 56: MPEG-2 Extension (0x3F, 63), 34 bytes
+      MPEG extended descriptor: JPEG XS Video (0x14, 20)
+      Descriptor version: 0, horizontal size: 1920, vertical size: 1080
+      Max bitrate: 1234, framerate: 17, sample characteristics: 45234
+      Profile: 9, level: 6, max buffer size: 143, buffer model: 2
+      Colour primaries: ITU-R BT.601-7 (6), transfer characteristics: IEC 61966-2-4 (11)
+      Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
+      Video full range: true, still mode: false
+      private data (4 bytes): DE AD BE EF
+    - Descriptor 57: MPEG-2 Extension (0x3F, 63), 58 bytes
+      MPEG extended descriptor: JPEG XS Video (0x14, 20)
+      Descriptor version: 0, horizontal size: 1920, vertical size: 1080
+      Max bitrate: 1234, framerate: 17, sample characteristics: 45234
+      Profile: 9, level: 6, max buffer size: 143, buffer model: 2
+      Colour primaries: ITU-R BT.601-7 (6), transfer characteristics: IEC 61966-2-4 (11)
+      Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
+      Video full range: true, still mode: false
+      Mastering Display Metadata
+        Chromaticity coordinates (green) X: 810, Y: 145
+        Chromaticity coordinates (blue) X: 1810, Y: 1145
+        Chromaticity coordinates (red) X: 970, Y: 1217
+        Chromaticity coordinates (white point) X: 45, Y: 54
+        Luminance max: 145263, min: 0
+        Max Content Light Level: 1000, Max Frame Average Light Level: 999
 
 * NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
   Version: 0, sections: 1, total size: 147 bytes
