@@ -232,3 +232,4 @@ repository. But we now limit their size to 20 MB.
 | 135  | `pcap` input plugin with option `--http`
 | 136  | `http` output plugin
 | 137  | Non-regression on HEVC sequence parameter set analysis (issue #1369)
+| 138  | Plugin `t2mi`
