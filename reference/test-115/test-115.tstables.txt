@@ -1,6 +1,6 @@
 
 * PMT, TID 2 (0x02), PID 200 (0x00C8)
-  Version: 0, sections: 2, total size: 1090 bytes
+  Version: 0, sections: 2, total size: 1122 bytes
   - Section 0:
     Program: 0 (0x0000), PCR PID: none
     Program information:
@@ -130,7 +130,7 @@
       MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
       3D-audio scene info ID: 23
       Reserved data (3 bytes): 45 67 89
-    - Descriptor 24: MPEG-2 Extension (0x3F, 63), 44 bytes
+    - Descriptor 24: MPEG-2 Extension (0x3F, 63), 76 bytes
       MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
       3D-audio scene info ID: 127
       Interactivity Group (0) id: 2, allow OnOff: false, default OnOff: true, content kind: LFE (6)
@@ -145,6 +145,10 @@
         Interactivity gain (min: -63, max: 3)
         Content Language: fra
       Switch Group (0) id: 16, allow OnOff: false, default OnOff: false
+        Group Member IDs:  10 11 12 13 14 15 16 17
+                           18 19 1A 1B 1C 1D 1E 1F
+                           30 31 32 33 34 35 36 47
+                           48 49 4A 4B 4C 4D 4E 4F
         Default Group ID: 101
       Switch Group (1) id: 17, allow OnOff: true, default OnOff: true
         Group Member IDs:  11 22 33 44 71 62 53 7F
@@ -169,7 +173,6 @@
          Preset Gain: -95.500000 dB
          Azimuth Offset: -190.500000 degrees, Elevation Offset: -96.000000 degrees
          Distance Factor: 4.000000
-        Preset Condition (5) id: 0 [off]
     - Descriptor 26: Extension Descriptor (0x7F, 127), 7 bytes
       Extended descriptor: TTML Subtitling (0x20, 32)
       ISO 639 language code: foo
@@ -383,7 +386,10 @@
       Colour primaries: ITU-R BT.2020-2/2100-2 (9), transfer characteristics: ITU-R BT.2020-2 (12 bit) (15)
       Matrix coefficients: ITU-R BT.2020-2 NCL (9)
       Video full range: false, still mode: true
-    - Descriptor 60: MPEG-2 Extension (0x3F, 63), 34 bytes
+  - Section 1:
+    Program: 0 (0x0000), PCR PID: none
+    Program information:
+    - Descriptor 0: MPEG-2 Extension (0x3F, 63), 34 bytes
       MPEG extended descriptor: JPEG XS Video (0x14, 20)
       Descriptor version: 0, horizontal size: 1920, vertical size: 1080
       Max bitrate: 1234, framerate: 17, sample characteristics: 45234
@@ -392,10 +398,7 @@
       Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
       Video full range: true, still mode: false
       private data (4 bytes): DE AD BE EF
-  - Section 1:
-    Program: 0 (0x0000), PCR PID: none
-    Program information:
-    - Descriptor 0: MPEG-2 Extension (0x3F, 63), 58 bytes
+    - Descriptor 1: MPEG-2 Extension (0x3F, 63), 58 bytes
       MPEG extended descriptor: JPEG XS Video (0x14, 20)
       Descriptor version: 0, horizontal size: 1920, vertical size: 1080
       Max bitrate: 1234, framerate: 17, sample characteristics: 45234

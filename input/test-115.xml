@@ -208,7 +208,9 @@
 		<GainInteractivity
 			interactivityGainMin="0" interactivityGainMax="3"/>
 	  </InteractivityGroup>
-	  <SwitchGroup switchGroupID="16" switchGroupAllowOnOff="false" switchGroupDefaultOnOff="false" switchGroupDefaultGroupID="101"/>  
+	  <SwitchGroup switchGroupID="16" switchGroupAllowOnOff="false" switchGroupDefaultOnOff="false" switchGroupDefaultGroupID="101">  
+	  	<SwitchGroupMembers>10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 30 31 32 33 34 35 36 47 48 49 4a 4b 4c 4d 4e 4f</SwitchGroupMembers>
+	  </SwitchGroup>
 	  <SwitchGroup switchGroupID="17" switchGroupAllowOnOff="true"  switchGroupDefaultOnOff="true"  switchGroupDefaultGroupID="119">
 	    <SwitchGroupMembers>11 22 33 44 71 62 53 7f 00</SwitchGroupMembers>
 	  </SwitchGroup>	  
@@ -225,6 +227,7 @@
 			<PresetConditions groupPresetGroupID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true"
 			  groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
 		</PresetGroup>
+		
 	</MPEGH_3D_audio_scene_descriptor>
 	
     <TTML_subtitling_descriptor
