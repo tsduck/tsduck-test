@@ -294,6 +294,150 @@
         "reference_channel_layout": 10
       },
       {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "sceneid": 12
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "45 67 89"
+            ]
+          }
+        ],
+        "sceneid": 23
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "InteractivityGroup",
+            "#nodes": [
+              {
+                "#name": "PositionInteractivity",
+                "azimuthoffsetmax": 5,
+                "azimuthoffsetmin": 0,
+                "distanceoffsetmax": 9,
+                "distanceoffsetmin": 3,
+                "elevationoffsetmax": 12,
+                "elevationoffsetmin": 6
+              }
+            ],
+            "allowonoff": false,
+            "contentkind": 6,
+            "contentlanguage": "eng",
+            "defaultonoff": true,
+            "groupid": 2
+          },
+          {
+            "#name": "InteractivityGroup",
+            "#nodes": [
+              {
+                "#name": "PositionInteractivity",
+                "azimuthoffsetmax": 0,
+                "azimuthoffsetmin": 0,
+                "distanceoffsetmax": 0,
+                "distanceoffsetmin": 0,
+                "elevationoffsetmax": 0,
+                "elevationoffsetmin": 0
+              },
+              {
+                "#name": "GainInteractivity",
+                "interactivitygainmax": 3,
+                "interactivitygainmin": "0"
+              }
+            ],
+            "allowonoff": true,
+            "contentkind": 9,
+            "contentlanguage": "fra",
+            "defaultonoff": true,
+            "groupid": 3
+          },
+          {
+            "#name": "SwitchGroup",
+            "#nodes": [
+              {
+                "#name": "SwitchGroupMembers",
+                "#nodes": [
+                  "\n        "
+                ]
+              }
+            ],
+            "switchgroupallowonoff": false,
+            "switchgroupdefaultgroupid": 101,
+            "switchgroupdefaultonoff": false,
+            "switchgroupid": 16
+          },
+          {
+            "#name": "SwitchGroup",
+            "#nodes": [
+              {
+                "#name": "SwitchGroupMembers",
+                "#nodes": [
+                  "\n          11 22 33 44 71 62 53 7F 00\n        "
+                ]
+              }
+            ],
+            "switchgroupallowonoff": true,
+            "switchgroupdefaultgroupid": 119,
+            "switchgroupdefaultonoff": true,
+            "switchgroupid": 17
+          }
+        ],
+        "sceneid": 127
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "PresetGroup",
+            "#nodes": [
+              {
+                "#name": "PresetConditions",
+                "grouppresetgroupid": 6
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetdisablegaininteractivity": true,
+                "grouppresetdisablepositioninteractivity": false,
+                "grouppresetgroupid": 7
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetdisablegaininteractivity": false,
+                "grouppresetdisablepositioninteractivity": false,
+                "grouppresetgain": 237,
+                "grouppresetgroupid": 8
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetazoffset": 167,
+                "grouppresetdisablegaininteractivity": true,
+                "grouppresetdisablepositioninteractivity": true,
+                "grouppresetdistfactor": 9,
+                "grouppreseteloffset": 56,
+                "grouppresetgroupid": 9
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetazoffset": 0,
+                "grouppresetdisablegaininteractivity": false,
+                "grouppresetdisablepositioninteractivity": true,
+                "grouppresetdistfactor": 14,
+                "grouppreseteloffset": 0,
+                "grouppresetgain": 0,
+                "grouppresetgroupid": 10
+              }
+            ],
+            "grouppresetid": 5,
+            "grouppresetkind": 2
+          }
+        ],
+        "sceneid": 126
+      },
+      {
         "#name": "TTML_subtitling_descriptor",
         "iso_639_language_code": "foo",
         "reserved_zero_future_count": 0,
