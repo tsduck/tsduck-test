@@ -415,7 +415,7 @@
         Max Content Light Level: 1000, Max Frame Average Light Level: 999
 
 * NIT Actual, TID 64 (0x40), PID 200 (0x00C8)
-  Version: 0, sections: 1, total size: 147 bytes
+  Version: 0, sections: 1, total size: 158 bytes
   - Section 0:
     Network Id: 0 (0x0000)
     Network information:
@@ -458,6 +458,9 @@
       Multiple input stream: no, timeslice number: 248
       SOSF WH sequence: 17, reference scrambling index: 32768, SFFI: 7
       Payload scrambling index: 13398, beamhopping time plan selector: 4294967294, superframe pilots WH sequence number: 30
+    - Descriptor 5: Default Authority (0x73, 115), 9 bytes
+      Default authority:  74 73 64 75 63 6B 2E 69 6F
+        fqdn: "tsduck.io"
 
 * BAT, TID 74 (0x4A), PID 200 (0x00C8)
   Version: 9, sections: 1, total size: 31 bytes
@@ -468,4 +471,37 @@
       Extended descriptor: Service Prominence (0x22, 34)
       SOGI flag: false, priority: 14, service id: 2345
       Country: GBR, primary region: 1, secondary region: 2
+
+* Resolution Provider Notification, TID 121 (0x79), PID 200 (0x00C8)
+  Version: 9, sections: 1, total size: 106 bytes
+  - Section 0:
+    Context id: 0xABCD (43981)
+    Context id type: 0x01 (context_id is an original_network_id)
+    RNT top-level descriptors:
+    - Descriptor 0: RNT RAR Over DVB Stream (0x40, 64), 18 bytes
+      First valid date: 2023/01/01 07:12:00
+      Last valid date: 2023/11/30 06:55:17
+      Weighting: 48, complete: true
+      Original network id: 0x1111 (4369)
+      Transport stream id: 0x2222 (8738)
+      Service id: 0x3333 (13107)
+      Component tag: 0x2E (46)
+    - Descriptor 1: RNT RAR Over DVB Stream (0x40, 64), 25 bytes
+      First valid date: 2022/04/01 00:00:00
+      Last valid date: 2022/04/01 23:59:59
+      Weighting: 6, complete: false
+      Original network id: 0xDEAD (57005)
+      Transport stream id: 0xDEAD (57005)
+      Service id: 0xDEAD (57005)
+      Component tag: 0xEE (238)
+      Download start time: 2022/04/01 14:15:16
+      Download period duration: 6 minutes, cycle time: 2 minutes
+    - Descriptor 2: RNT RAR Over IP (0x41, 65), 30 bytes
+      First valid date: 2023/11/30 06:55:17
+      Last valid date: 2023/11/30 07:12:42
+      Weighting: 9, complete: true
+      URL: "https://tsduck.io/"
+    - Descriptor 3: RNT Scan (0x42, 66), 10 bytes
+      Transport stream: 0x2020, original network: 0x2121, weighting: 12
+      Transport stream: 0xDEAD, original network: 0xBEEF, weighting: 4
 

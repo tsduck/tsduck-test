@@ -1466,6 +1466,10 @@
         "symbol_rate": "24,675,400",
         "timeslice_number": 248,
         "ts_gs_s2x_mode": 2
+      },
+      {
+        "#name": "default_authority_descriptor",
+        "fqdn": "tsduck.io"
       }
     ],
     "actual": true,
@@ -1497,6 +1501,65 @@
       }
     ],
     "bouquet_id": 49181,
+    "current": true,
+    "version": 9
+  },
+  {
+    "#name": "RNT",
+    "#nodes": [
+      {
+        "#name": "RAR_over_DVB_stream_descriptor",
+        "complete_flag": true,
+        "component_tag": 46,
+        "first_valid_date": "2023-01-01 07:12:00",
+        "last_valid_date": "2023-11-30 06:55:17",
+        "original_network_id": 8738,
+        "service_id": 13107,
+        "transport_stream_id": 4369,
+        "weighting": 48
+      },
+      {
+        "#name": "RAR_over_DVB_stream_descriptor",
+        "complete_flag": false,
+        "component_tag": 238,
+        "download_cycle_time": 2,
+        "download_period_duration": 1,
+        "download_start_time": "2022-04-01 14:15:16",
+        "first_valid_date": "2022-04-01 00:00:00",
+        "last_valid_date": "2022-04-01 23:59:59",
+        "original_network_id": 57005,
+        "service_id": 57005,
+        "transport_stream_id": 57005,
+        "weighting": 6
+      },
+      {
+        "#name": "RAR_over_IP_descriptor",
+        "complete_flag": true,
+        "first_valid_date": "2023-11-30 06:55:17",
+        "last_valid_date": "2023-11-30 07:12:42",
+        "url": "https://tsduck.io/",
+        "weighting": 9
+      },
+      {
+        "#name": "RNT_scan_descriptor",
+        "#nodes": [
+          {
+            "#name": "RNT_reference",
+            "original_network_id": 8481,
+            "scan_weighting": 12,
+            "transport_stream_id": 8224
+          },
+          {
+            "#name": "RNT_reference",
+            "original_network_id": 48879,
+            "scan_weighting": 4,
+            "transport_stream_id": 57005
+          }
+        ]
+      }
+    ],
+    "context_id": 43981,
+    "context_id_type": 1,
     "current": true,
     "version": 9
   }
