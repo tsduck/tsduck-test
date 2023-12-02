@@ -638,6 +638,109 @@
         "regions_mask": "00000000110011000111100101001000011100110100010001111010"
       },
       {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "AA BB CC DD EE FF"
+            ]
+          }
+        ],
+        "hyper_linkage_type": 170,
+        "link_destination_type": 85
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "Service",
+            "original_network_id": 43707,
+            "service_id": 61183,
+            "transport_stream_id": 52445
+          }
+        ],
+        "hyper_linkage_type": 5,
+        "link_destination_type": 1
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "Event",
+            "event_id": 4660,
+            "original_network_id": 48879,
+            "service_id": 48879,
+            "transport_stream_id": 48879
+          }
+        ],
+        "hyper_linkage_type": 9,
+        "link_destination_type": 2
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "Module",
+            "component_tag": 68,
+            "event_id": 4,
+            "module_id": 39030,
+            "original_network_id": 1,
+            "service_id": 3,
+            "transport_stream_id": 1
+          }
+        ],
+        "hyper_linkage_type": 3,
+        "link_destination_type": 3
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "07 04 AA BB CC DD EE FF 55 55"
+        ],
+        "tag": 197
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "ContentModule",
+            "component_tag": 170,
+            "content_id": 21845,
+            "module_id": 3021,
+            "original_network_id": 43707,
+            "service_id": 61183,
+            "transport_stream_id": 52445
+          }
+        ],
+        "hyper_linkage_type": 136,
+        "link_destination_type": 5
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "ERTNode",
+            "event_relation_id": 52445,
+            "information_provider_id": 43707,
+            "node_id": 61183
+          }
+        ],
+        "hyper_linkage_type": 25,
+        "link_destination_type": 6
+      },
+      {
+        "#name": "ISDB_hyperlink_descriptor",
+        "#nodes": [
+          {
+            "#name": "StoredContent",
+            "uri": "https://tsduck.io/"
+          }
+        ],
+        "hyper_linkage_type": 239,
+        "link_destination_type": 7
+      },
+      {
         "#name": "SI_parameter_descriptor",
         "parameter_version": 35,
         "update_time": "2020-05-01"

@@ -151,6 +151,32 @@
     <ISDB_target_region_descriptor region_spec_type="0x01" regions_mask="00000000000000000000000000000000000000000000000000000000"/>
     <ISDB_target_region_descriptor region_spec_type="0x01" regions_mask="11111111111111111111111111111111111111111111111111111111"/>
     <ISDB_target_region_descriptor region_spec_type="0x01" regions_mask="00000000110011000111100101001000011100110100010001111010"/>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0xAA" link_destination_type="0x55">
+      <private_data>
+        AA BB CC DD EE FF
+      </private_data>
+    </ISDB_hyperlink_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x05" link_destination_type="0x01">
+      <Service original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF"/>
+    </ISDB_hyperlink_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x09" link_destination_type="0x02">
+      <Event original_network_id="0xBEEF" transport_stream_id="0xBEEF" service_id="0xBEEF" event_id="0x1234"/>
+    </ISDB_hyperlink_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x03" link_destination_type="0x03">
+      <Module original_network_id="0x0001" transport_stream_id="0x0001" service_id="0x0003" event_id="0x0004" component_tag="0x44" module_id="0x9876"/>
+    </ISDB_hyperlink_descriptor>
+    <generic_descriptor tag="0xC5">
+      07 04 AA BB CC DD EE FF 55 55
+    </generic_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x88" link_destination_type="0x05">
+      <ContentModule original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF" content_id="0x5555" component_tag="0xAA" module_id="0x0BCD"/>
+    </ISDB_hyperlink_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x19" link_destination_type="0x06">
+      <ERTNode information_provider_id="0xAABB" event_relation_id="0xCCDD" node_id="0xEEFF"/>
+    </ISDB_hyperlink_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0xEF" link_destination_type="0x07">
+      <StoredContent uri="https://tsduck.io/"/>
+    </ISDB_hyperlink_descriptor>
     <SI_parameter_descriptor parameter_version="0x23" update_time="2020-05-01"/>
     <SI_parameter_descriptor parameter_version="0xFA" update_time="2023-12-07">
       <table id="0x00"/>
