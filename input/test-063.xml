@@ -286,6 +286,17 @@
         ISO_639_language_code_2="bar"
         text="sample text"/>
 
+	<ISDB_target_region_descriptor region_spec_type="0x03"/>
+	
+	<ISDB_target_region_descriptor region_spec_type="0x01"
+	  regions_mask="00000000000000000000000000000000000000000000000000000000"/>
+	  
+	<ISDB_target_region_descriptor region_spec_type="0x01"
+	  regions_mask="11111111111111111111111111111111111111111111111111111111"/>
+	  
+	<ISDB_target_region_descriptor region_spec_type="0x01"
+	  regions_mask="00000000110011000111100101001000011100110100010001111010"/>
+
     <SI_parameter_descriptor parameter_version="0x23" update_time="2020-05-01"/>
 
     <SI_parameter_descriptor parameter_version="0xFA" update_time="2023-12-07">
