@@ -294,6 +294,150 @@
         "reference_channel_layout": 10
       },
       {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "sceneid": 12
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "45 67 89"
+            ]
+          }
+        ],
+        "sceneid": 23
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "InteractivityGroup",
+            "#nodes": [
+              {
+                "#name": "PositionInteractivity",
+                "azimuthoffsetmax": 5,
+                "azimuthoffsetmin": 0,
+                "distanceoffsetmax": 9,
+                "distanceoffsetmin": 3,
+                "elevationoffsetmax": 12,
+                "elevationoffsetmin": 6
+              }
+            ],
+            "allowonoff": false,
+            "contentkind": 6,
+            "contentlanguage": "eng",
+            "defaultonoff": true,
+            "groupid": 2
+          },
+          {
+            "#name": "InteractivityGroup",
+            "#nodes": [
+              {
+                "#name": "PositionInteractivity",
+                "azimuthoffsetmax": 0,
+                "azimuthoffsetmin": 0,
+                "distanceoffsetmax": 0,
+                "distanceoffsetmin": 0,
+                "elevationoffsetmax": 0,
+                "elevationoffsetmin": 0
+              },
+              {
+                "#name": "GainInteractivity",
+                "interactivitygainmax": 3,
+                "interactivitygainmin": "0"
+              }
+            ],
+            "allowonoff": true,
+            "contentkind": 9,
+            "contentlanguage": "fra",
+            "defaultonoff": true,
+            "groupid": 3
+          },
+          {
+            "#name": "SwitchGroup",
+            "#nodes": [
+              {
+                "#name": "SwitchGroupMembers",
+                "#nodes": [
+                  "\n          10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F\n          30 31 32 33 34 35 36 47 48 49 4A 4B 4C 4D 4E 4F\n        "
+                ]
+              }
+            ],
+            "switchgroupallowonoff": false,
+            "switchgroupdefaultgroupid": 101,
+            "switchgroupdefaultonoff": false,
+            "switchgroupid": 16
+          },
+          {
+            "#name": "SwitchGroup",
+            "#nodes": [
+              {
+                "#name": "SwitchGroupMembers",
+                "#nodes": [
+                  "\n          11 22 33 44 71 62 53 7F 00\n        "
+                ]
+              }
+            ],
+            "switchgroupallowonoff": true,
+            "switchgroupdefaultgroupid": 119,
+            "switchgroupdefaultonoff": true,
+            "switchgroupid": 17
+          }
+        ],
+        "sceneid": 127
+      },
+      {
+        "#name": "MPEGH_3D_audio_scene_descriptor",
+        "#nodes": [
+          {
+            "#name": "PresetGroup",
+            "#nodes": [
+              {
+                "#name": "PresetConditions",
+                "grouppresetgroupid": 6
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetdisablegaininteractivity": true,
+                "grouppresetdisablepositioninteractivity": false,
+                "grouppresetgroupid": 7
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetdisablegaininteractivity": false,
+                "grouppresetdisablepositioninteractivity": false,
+                "grouppresetgain": 237,
+                "grouppresetgroupid": 8
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetazoffset": 167,
+                "grouppresetdisablegaininteractivity": true,
+                "grouppresetdisablepositioninteractivity": true,
+                "grouppresetdistfactor": 9,
+                "grouppreseteloffset": 56,
+                "grouppresetgroupid": 9
+              },
+              {
+                "#name": "PresetConditions",
+                "grouppresetazoffset": 0,
+                "grouppresetdisablegaininteractivity": false,
+                "grouppresetdisablepositioninteractivity": true,
+                "grouppresetdistfactor": 14,
+                "grouppreseteloffset": 0,
+                "grouppresetgain": 0,
+                "grouppresetgroupid": 10
+              }
+            ],
+            "grouppresetid": 5,
+            "grouppresetkind": 2
+          }
+        ],
+        "sceneid": 126
+      },
+      {
         "#name": "TTML_subtitling_descriptor",
         "iso_639_language_code": "foo",
         "reserved_zero_future_count": 0,
@@ -1322,6 +1466,10 @@
         "symbol_rate": "24,675,400",
         "timeslice_number": 248,
         "ts_gs_s2x_mode": 2
+      },
+      {
+        "#name": "default_authority_descriptor",
+        "fqdn": "tsduck.io"
       }
     ],
     "actual": true,
@@ -1353,6 +1501,65 @@
       }
     ],
     "bouquet_id": 49181,
+    "current": true,
+    "version": 9
+  },
+  {
+    "#name": "RNT",
+    "#nodes": [
+      {
+        "#name": "RAR_over_DVB_stream_descriptor",
+        "complete_flag": true,
+        "component_tag": 46,
+        "first_valid_date": "2023-01-01 07:12:00",
+        "last_valid_date": "2023-11-30 06:55:17",
+        "original_network_id": 8738,
+        "service_id": 13107,
+        "transport_stream_id": 4369,
+        "weighting": 48
+      },
+      {
+        "#name": "RAR_over_DVB_stream_descriptor",
+        "complete_flag": false,
+        "component_tag": 238,
+        "download_cycle_time": 2,
+        "download_period_duration": 1,
+        "download_start_time": "2022-04-01 14:15:16",
+        "first_valid_date": "2022-04-01 00:00:00",
+        "last_valid_date": "2022-04-01 23:59:59",
+        "original_network_id": 57005,
+        "service_id": 57005,
+        "transport_stream_id": 57005,
+        "weighting": 6
+      },
+      {
+        "#name": "RAR_over_IP_descriptor",
+        "complete_flag": true,
+        "first_valid_date": "2023-11-30 06:55:17",
+        "last_valid_date": "2023-11-30 07:12:42",
+        "url": "https://tsduck.io/",
+        "weighting": 9
+      },
+      {
+        "#name": "RNT_scan_descriptor",
+        "#nodes": [
+          {
+            "#name": "RNT_reference",
+            "original_network_id": 8481,
+            "scan_weighting": 12,
+            "transport_stream_id": 8224
+          },
+          {
+            "#name": "RNT_reference",
+            "original_network_id": 48879,
+            "scan_weighting": 4,
+            "transport_stream_id": 57005
+          }
+        ]
+      }
+    ],
+    "context_id": 43981,
+    "context_id_type": 1,
     "current": true,
     "version": 9
   }
