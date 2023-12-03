@@ -57,6 +57,41 @@
         45 67 89
       </reserved>
     </MPEGH_3D_audio_descriptor>
+    <MPEGH_3D_audio_scene_descriptor sceneID="12"/>
+    <MPEGH_3D_audio_scene_descriptor sceneID="23">
+      <reserved>
+        45 67 89
+      </reserved>
+    </MPEGH_3D_audio_scene_descriptor>
+    <MPEGH_3D_audio_scene_descriptor sceneID="127">
+      <InteractivityGroup groupID="2" allowOnOff="false" defaultOnOff="true" contentKind="6" contentLanguage="eng">
+        <PositionInteractivity azimuthOffsetMin="0" azimuthOffsetMax="5" elevationOffsetMin="6" elevationOffsetMax="12" distanceOffsetMin="3" distanceOffsetMax="9"/>
+      </InteractivityGroup>
+      <InteractivityGroup groupID="3" allowOnOff="true" defaultOnOff="true" contentKind="9" contentLanguage="fra">
+        <PositionInteractivity azimuthOffsetMin="0" azimuthOffsetMax="0" elevationOffsetMin="0" elevationOffsetMax="0" distanceOffsetMin="0" distanceOffsetMax="0"/>
+        <GainInteractivity interactivityGainMin="0" interactivityGainMax="3"/>
+      </InteractivityGroup>
+      <SwitchGroup switchGroupID="16" switchGroupAllowOnOff="false" switchGroupDefaultOnOff="false" switchGroupDefaultGroupID="101">
+        <SwitchGroupMembers>
+          10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+          30 31 32 33 34 35 36 47 48 49 4A 4B 4C 4D 4E 4F
+        </SwitchGroupMembers>
+      </SwitchGroup>
+      <SwitchGroup switchGroupID="17" switchGroupAllowOnOff="true" switchGroupDefaultOnOff="true" switchGroupDefaultGroupID="119">
+        <SwitchGroupMembers>
+          11 22 33 44 71 62 53 7F 00
+        </SwitchGroupMembers>
+      </SwitchGroup>
+    </MPEGH_3D_audio_scene_descriptor>
+    <MPEGH_3D_audio_scene_descriptor sceneID="126">
+      <PresetGroup groupPresetID="5" groupPresetKind="2">
+        <PresetConditions groupPresetGroupID="6"/>
+        <PresetConditions groupPresetGroupID="7" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="false"/>
+        <PresetConditions groupPresetGroupID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false" groupPresetGain="237"/>
+        <PresetConditions groupPresetGroupID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true" groupPresetAzOffset="167" groupPresetElOffset="56" groupPresetDistFactor="9"/>
+        <PresetConditions groupPresetGroupID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true" groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
+      </PresetGroup>
+    </MPEGH_3D_audio_scene_descriptor>
     <TTML_subtitling_descriptor ISO_639_language_code="foo" subtitle_purpose="2" TTS_suitability="1" reserved_zero_future_count="0"/>
     <TTML_subtitling_descriptor ISO_639_language_code="bar" subtitle_purpose="16" TTS_suitability="2" qualifier="0x12345678" service_name="Dummy service" reserved_zero_future_count="5">
       <dvb_ttml_profile value="0x01"/>
@@ -298,6 +333,7 @@
     <S2Xv2_satellite_delivery_system_descriptor delivery_system_id="0x11223344" S2Xv2_mode="5" roll_off="0.35" NCR_version="0" channel_bond="2" polarization="left" TS_GS_S2X_mode="2" receiver_profiles="0x02" satellite_id="0x00765432" frequency="65,432,180,000" symbol_rate="24,675,400" timeslice_number="248">
       <superframe SOSF_WH_sequence_number="17" reference_scrambling_index="32,768" SFFI="7" payload_scrambling_index="0x00003456" beamhopping_time_plan_id="0xFFFFFFFE" superframe_pilots_WH_sequence_number="0x1E"/>
     </S2Xv2_satellite_delivery_system_descriptor>
+    <default_authority_descriptor fqdn="tsduck.io"/>
   </NIT>
   <BAT version="9" current="true" bouquet_id="0xC01D">
     <service_prominence_descriptor>
@@ -306,4 +342,13 @@
       </sogi>
     </service_prominence_descriptor>
   </BAT>
+  <RNT version="9" current="true" context_id="0xABCD" context_id_type="0x01">
+    <RAR_over_DVB_stream_descriptor first_valid_date="2023-01-01 07:12:00" last_valid_date="2023-11-30 06:55:17" weighting="48" complete_flag="true" transport_stream_id="0x1111" original_network_id="0x2222" service_id="0x3333" component_tag="0x2E"/>
+    <RAR_over_DVB_stream_descriptor first_valid_date="2022-04-01 00:00:00" last_valid_date="2022-04-01 23:59:59" weighting="6" complete_flag="false" transport_stream_id="0xDEAD" original_network_id="0xDEAD" service_id="0xDEAD" component_tag="0xEE" download_start_time="2022-04-01 14:15:16" download_period_duration="1" download_cycle_time="2"/>
+    <RAR_over_IP_descriptor first_valid_date="2023-11-30 06:55:17" last_valid_date="2023-11-30 07:12:42" weighting="9" complete_flag="true" url="https://tsduck.io/"/>
+    <RNT_scan_descriptor>
+      <RNT_reference transport_stream_id="0x2020" original_network_id="0x2121" scan_weighting="12"/>
+      <RNT_reference transport_stream_id="0xDEAD" original_network_id="0xBEEF" scan_weighting="4"/>
+    </RNT_scan_descriptor>
+  </RNT>
 </tsduck>

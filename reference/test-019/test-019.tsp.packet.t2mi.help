@@ -13,9 +13,9 @@ Options:
   -e
   --extract
       Extract encapsulated TS packets from one PLP of a T2-MI stream. This is
-      the default if neither --extract nor --log nor --identify is specified.
-      By default, the transport stream is completely replaced by the extracted
-      stream. See option --output-file.
+      the default if neither --extract nor --t2mi-file nor --log nor --identify
+      is specified. By default, the transport stream is completely replaced by
+      the extracted stream. See also option --output-file.
 
   --help
       Display this help text.
@@ -41,8 +41,8 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
-  -o filename
-  --output-file filename
+  -o file-name
+  --output-file file-name
       Specify that the extracted stream is saved in this file. In that case,
       the main transport stream is passed unchanged to the next plugin.
 
@@ -55,4 +55,10 @@ Options:
       Specify the PLP (Physical Layer Pipe) to extract from the T2-MI
       encapsulation. By default, use the first PLP which is found. Ignored if
       --extract is not used.
+
+  -t file-name
+  --t2mi-file file-name
+      Save the complete T2-MI packets in the specified binary file. If --plp is
+      specified, only save T2-MI packets for that PLP. Otherwise, save all
+      T2-MI packets from the selected PID.
 
