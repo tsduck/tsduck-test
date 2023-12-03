@@ -274,7 +274,7 @@
       Data component id: 0x3456 (unknown)
 
 * CAT, TID 1 (0x01)
-  Section: 0 (last: 0), version: 2, size: 803 bytes
+  Section: 0 (last: 0), version: 2, size: 821 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x02 (2)
     Component type: 0x08 (3/2 mode)
@@ -386,10 +386,23 @@
      Description id: 48879
       Description type: Described with short_event_descriptor
       User defined: 0xCA (202)
-  - Descriptor 16: ISDB SI Parameter (0xD7, 215), 3 bytes
+  - Descriptor 16: ISDB Connected Transmission (0xDD, 221), 3 bytes
+    Connected transmission group id: 0x7654 (30292)
+    Segment type: 13 segments (2)
+    Modulation type A: Differential modulation (0)
+    Modulation type B: Differential modulation (0)
+    Modulation type C: Reserved for future use (2)
+  - Descriptor 17: ISDB Connected Transmission (0xDD, 221), 11 bytes
+    Connected transmission group id: 0x1357 (4951)
+    Segment type: 2 segments  (2 layers) (1)
+    Modulation type A: Synchronous modulation (1)
+    Modulation type B: Reserved for future use (2)
+    Modulation type C: Refer to TMCC signal (3)
+    Additional connected transmission info (8 bytes): 00 00 DE AD BE EF 00 00
+  - Descriptor 18: ISDB SI Parameter (0xD7, 215), 3 bytes
     Parameter version: 0x23 (35)
     Update time: 2020/05/01
-  - Descriptor 17: ISDB SI Parameter (0xD7, 215), 18 bytes
+  - Descriptor 19: ISDB SI Parameter (0xD7, 215), 18 bytes
     Parameter version: 0xFA (250)
     Update time: 2023/12/07
     - Table id: 0x00 (PAT)
@@ -399,12 +412,12 @@
       Table description (2 bytes): 23 45
     - Table id: 0xC4 (BIT (ISDB))
       Table description (4 bytes): 67 89 AB CD
-  - Descriptor 18: ISDB SI Prime TS (0xDA, 218), 7 bytes
+  - Descriptor 20: ISDB SI Prime TS (0xDA, 218), 7 bytes
     Parameter version: 0x23 (35)
     Update time: 2020/05/01
     SI prime TS network id: 0x4567 (17767)
     SI prime TS id: 0x89AB (35243)
-  - Descriptor 19: ISDB SI Prime TS (0xDA, 218), 22 bytes
+  - Descriptor 21: ISDB SI Prime TS (0xDA, 218), 22 bytes
     Parameter version: 0xFA (250)
     Update time: 2023/12/07
     SI prime TS network id: 0x8765 (34661)
@@ -416,12 +429,12 @@
       Table description (2 bytes): 23 45
     - Table id: 0xC4 (BIT (ISDB))
       Table description (4 bytes): 67 89 AB CD
-  - Descriptor 20: ISDB Extended Broadcaster (0xCE, 206), 1 bytes
+  - Descriptor 22: ISDB Extended Broadcaster (0xCE, 206), 1 bytes
     Broadcaster type: 0x9 (unknown)
-  - Descriptor 21: ISDB Extended Broadcaster (0xCE, 206), 3 bytes
+  - Descriptor 23: ISDB Extended Broadcaster (0xCE, 206), 3 bytes
     Broadcaster type: 0xC (unknown)
     Reserve future use (2 bytes): 01 47
-  - Descriptor 22: ISDB Extended Broadcaster (0xCE, 206), 17 bytes
+  - Descriptor 24: ISDB Extended Broadcaster (0xCE, 206), 17 bytes
     Broadcaster type: 0x1 (Digital terrestrial television broadcast)
     Terrestrial broadcaster id: 0x5678 (22136)
     Number of affiliations: 3, number of broadcaster ids: 2
@@ -433,7 +446,7 @@
     - Original network id: 0xDEF1 (57073)
       Broadcaster id: 0x23 (35)
     Private data (4 bytes): 78 96 54 12
-  - Descriptor 23: ISDB Extended Broadcaster (0xCE, 206), 9 bytes
+  - Descriptor 25: ISDB Extended Broadcaster (0xCE, 206), 9 bytes
     Broadcaster type: 0x2 (Digital terrestrial sound broadcast)
     Terrestrial sound broadcaster id: 0x3456 (13398)
     Number of affiliations: 2, number of broadcaster ids: 1
@@ -441,34 +454,34 @@
     - Sound broadcast affiliation id: 0x9A (154)
     - Original network id: 0xBCDE (48350)
       Broadcaster id: 0xF0 (240)
-  - Descriptor 24: ISDB CA_EMM_TS (0xCA, 202), 7 bytes
+  - Descriptor 26: ISDB CA_EMM_TS (0xCA, 202), 7 bytes
     CA System Id: 0x1234 (unknown)
     Transport stream id: 0x5678 (22136)
     Original network id: 0x9ABC (39612)
     Power-on time: 222 minutes
-  - Descriptor 25: ISDB Conditional Playback (0xF8, 248), 4 bytes
+  - Descriptor 27: ISDB Conditional Playback (0xF8, 248), 4 bytes
     CA System Id: 0xABCD (unknown)
     EMM PID: 0x1234 (4660)
-  - Descriptor 26: ISDB Conditional Playback (0xF8, 248), 7 bytes
+  - Descriptor 28: ISDB Conditional Playback (0xF8, 248), 7 bytes
     CA System Id: 0x5678 (unknown)
     EMM PID: 0x0987 (2439)
     Private CA data (3 bytes): 74 12 58
-  - Descriptor 27: ISDB CA Service (0xCC, 204), 4 bytes
+  - Descriptor 29: ISDB CA Service (0xCC, 204), 4 bytes
     CA System Id: 0xFEDC (unknown)
     CA broadcaster group id: 0x89 (137)
     Delay time: 20 days
-  - Descriptor 28: ISDB CA Service (0xCC, 204), 10 bytes
+  - Descriptor 30: ISDB CA Service (0xCC, 204), 10 bytes
     CA System Id: 0x1234 (unknown)
     CA broadcaster group id: 0xDC (220)
     Delay time: 15 days
     Service id: 0x9876 (39030)
     Service id: 0x6543 (25923)
     Service id: 0x21FE (8702)
-  - Descriptor 29: ISDB CA Contract Information (0xCB, 203), 5 bytes
+  - Descriptor 31: ISDB CA Contract Information (0xCB, 203), 5 bytes
     CA System Id: 0x5678 (unknown)
     CA unit id: 12
     Fee name: ""
-  - Descriptor 30: ISDB CA Contract Information (0xCB, 203), 20 bytes
+  - Descriptor 32: ISDB CA Contract Information (0xCB, 203), 20 bytes
     CA System Id: 0x3456 (unknown)
     CA unit id: 7
     Component tag: 0x12 (18)
@@ -476,19 +489,19 @@
     Component tag: 0x56 (86)
     Contract verification info (3 bytes): 75 39 51
     Fee name: "Test fee"
-  - Descriptor 31: ISDB Hierarchical Transmission (0xC0, 192), 3 bytes
+  - Descriptor 33: ISDB Hierarchical Transmission (0xC0, 192), 3 bytes
     Quality level: high
     Reference PID: 0x0002 (2)
-  - Descriptor 32: ISDB Hierarchical Transmission (0xC0, 192), 3 bytes
+  - Descriptor 34: ISDB Hierarchical Transmission (0xC0, 192), 3 bytes
     Quality level: low
     Reference PID: 0x1234 (4660)
-  - Descriptor 33: ISDB Board Information (0xDB, 219), 23 bytes
+  - Descriptor 35: ISDB Board Information (0xDB, 219), 23 bytes
     Title: "Sample title"
     Text: "Foo bar"
-  - Descriptor 34: ISDB Event Group (0xD6, 214), 1 bytes
+  - Descriptor 36: ISDB Event Group (0xD6, 214), 1 bytes
     Group type: 1 (Event common)
     Actual events: none
-  - Descriptor 35: ISDB Event Group (0xD6, 214), 12 bytes
+  - Descriptor 37: ISDB Event Group (0xD6, 214), 12 bytes
     Group type: 2 (Event relay)
     Actual events:
     - Service id: 0x1234 (4660)
@@ -496,7 +509,7 @@
     - Service id: 0x9ABC (39612)
       Event id:   0xDEF1 (57073)
     Private data (3 bytes): 96 32 58
-  - Descriptor 36: ISDB Event Group (0xD6, 214), 29 bytes
+  - Descriptor 38: ISDB Event Group (0xD6, 214), 29 bytes
     Group type: 5 (Event movement from other networks)
     Actual events:
     - Service id: 0x1234 (4660)
@@ -514,12 +527,12 @@
       Transport stream id: 0x2583 (9603)
       Service id:          0x3691 (13969)
       Event id:            0x8527 (34087)
-  - Descriptor 37: ISDB Data Content (0xC7, 199), 26 bytes
+  - Descriptor 39: ISDB Data Content (0xC7, 199), 26 bytes
     Data component id: 0x0008 (ARIB subtitle & teletext coding)
     Entry component: 0xEA (234)
     Language: "foo"
     Text: "Description text"
-  - Descriptor 38: ISDB Data Content (0xC7, 199), 26 bytes
+  - Descriptor 40: ISDB Data Content (0xC7, 199), 26 bytes
     Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
     Entry component: 0x02 (2)
     Selector bytes (3 bytes): 12 34 56
@@ -529,20 +542,20 @@
     Component ref: 0x78 (120)
     Language: "bar"
     Text: "Barbatruc"
-  - Descriptor 39: ISDB Service Group (0xE0, 224), 1 bytes
+  - Descriptor 41: ISDB Service Group (0xE0, 224), 1 bytes
     Group type: 0 (undefined)
-  - Descriptor 40: ISDB Service Group (0xE0, 224), 9 bytes
+  - Descriptor 42: ISDB Service Group (0xE0, 224), 9 bytes
     Group type: 1 (Server type simultaneous service)
     Simultaneous services:
     - Primary service id:   0x1234 (4660)
       Secondary service id: 0x9ABC (39612)
     - Primary service id:   0x5678 (22136)
       Secondary service id: 0xDEF0 (57072)
-  - Descriptor 41: ISDB Service Group (0xE0, 224), 5 bytes
+  - Descriptor 43: ISDB Service Group (0xE0, 224), 5 bytes
     Group type: 2 (unknown)
     Private data (4 bytes): 74 12 58 96
-  - Descriptor 42: ISDB Area Broadcast Information (0xE1, 225), 1 bytes
-  - Descriptor 43: ISDB Area Broadcast Information (0xE1, 225), 20 bytes
+  - Descriptor 44: ISDB Area Broadcast Information (0xE1, 225), 1 bytes
+  - Descriptor 45: ISDB Area Broadcast Information (0xE1, 225), 20 bytes
     - Station id: 0x00654321 (6636321)
       Location code: 0xABCD (43981)
       Broadcast signal format: 0x02 (One-segment area broadcasting)
@@ -550,8 +563,8 @@
     - Station id: 0x00741852 (7608402)
       Location code: 0x1234 (4660)
       Broadcast signal format: 0x05 (Full segment broadcasting for multimedia transmission)
-  - Descriptor 44: ISDB Emergency Information (0xFC, 252), 0 bytes
-  - Descriptor 45: ISDB Emergency Information (0xFC, 252), 22 bytes
+  - Descriptor 46: ISDB Emergency Information (0xFC, 252), 0 bytes
+  - Descriptor 47: ISDB Emergency Information (0xFC, 252), 22 bytes
     - Event service id: 0x1234 (4660)
       Event is started: true
       Signal level: 0
@@ -566,32 +579,32 @@
     - Event service id: 0xABCD (43981)
       Event is started: false
       Signal level: 0
-  - Descriptor 46: ISDB Series (0xD5, 213), 8 bytes
+  - Descriptor 48: ISDB Series (0xD5, 213), 8 bytes
     Series id: 0x1234 (4660)
     Repeat label: 1
     Program pattern: 1 (Regular program (every day, every day except weekend, only weekends, etc.))
     Expire date: unspecified
     Episode: 23/47
     Series name: ""
-  - Descriptor 47: ISDB Series (0xD5, 213), 20 bytes
+  - Descriptor 49: ISDB Series (0xD5, 213), 20 bytes
     Series id: 0x5678 (22136)
     Repeat label: 0
     Program pattern: 5 (Division of long hour program)
     Expire date: 2020/05/30
     Episode: 289/302
     Series name: "Test series"
-  - Descriptor 48: ISDB Short Node Information (0xD3, 211), 5 bytes
+  - Descriptor 50: ISDB Short Node Information (0xD3, 211), 5 bytes
     Language: "foo"
     Node name: ""
     Text: ""
-  - Descriptor 49: ISDB Short Node Information (0xD3, 211), 40 bytes
+  - Descriptor 51: ISDB Short Node Information (0xD3, 211), 40 bytes
     Language: "bar"
     Node name: "Test node name"
     Text: "And its description"
-  - Descriptor 50: ISDB Reference (0xD1, 209), 4 bytes
+  - Descriptor 52: ISDB Reference (0xD1, 209), 4 bytes
     Information provider id: 0x1234 (4660)
     Event relation id: 0x5678 (22136)
-  - Descriptor 51: ISDB Reference (0xD1, 209), 12 bytes
+  - Descriptor 53: ISDB Reference (0xD1, 209), 12 bytes
     Information provider id: 0x9876 (39030)
     Event relation id: 0x5432 (21554)
     - Reference node id: 0x1234 (4660)
@@ -600,49 +613,49 @@
     - Reference node id: 0x9123 (37155)
       Reference number: 0x45 (69)
       Last reference number: 0x67 (103)
-  - Descriptor 52: ISDB Node Relation (0xD2, 210), 4 bytes
+  - Descriptor 54: ISDB Node Relation (0xD2, 210), 4 bytes
     Reference type: 0
     Reference node id: 0x1234 (4660)
     Reference number: 0x56 (86)
-  - Descriptor 53: ISDB Node Relation (0xD2, 210), 8 bytes
+  - Descriptor 55: ISDB Node Relation (0xD2, 210), 8 bytes
     Reference type: 7
     Information provider id: 0x9876 (39030)
     Event relation id: 0x5432 (21554)
     Reference node id: 0x1987 (6535)
     Reference number: 0x65 (101)
-  - Descriptor 54: ISDB Basic Local Event (0xD0, 208), 15 bytes
+  - Descriptor 56: ISDB Basic Local Event (0xD0, 208), 15 bytes
     Segmentation mode: 1 (NPT)
     Start time NPT: 0x123456789 (4886718345)
     End time NPT: 0x198765432 (6852858930)
     Component tag: 0xAB (171)
     Component tag: 0xCD (205)
     Component tag: 0xEF (239)
-  - Descriptor 55: ISDB Basic Local Event (0xD0, 208), 8 bytes
+  - Descriptor 57: ISDB Basic Local Event (0xD0, 208), 8 bytes
     Segmentation mode: 2 (Relative time)
     Start time: 12:34:56
     Duration: 00:23:45
-  - Descriptor 56: ISDB Basic Local Event (0xD0, 208), 13 bytes
+  - Descriptor 58: ISDB Basic Local Event (0xD0, 208), 13 bytes
     Segmentation mode: 3 (Relative time (STC reference descriptor is used together))
     Start time: 02:34:56.123
     Duration: 23:45:12.456
     Component tag: 0xEF (239)
-  - Descriptor 57: ISDB Basic Local Event (0xD0, 208), 7 bytes
+  - Descriptor 59: ISDB Basic Local Event (0xD0, 208), 7 bytes
     Segmentation mode: 8 (Reserved)
     Reserved data (3 bytes): 12 34 56
     Component tag: 0xAB (171)
     Component tag: 0xCD (205)
-  - Descriptor 58: ISDB STC Reference (0xD4, 212), 17 bytes
+  - Descriptor 60: ISDB STC Reference (0xD4, 212), 17 bytes
     Segmentation mode: 1 (NPT)
     External event id: 0x1234 (4660)
     External service id: 0x5678 (22136)
     External network id: 0x9ABC (39612)
     NPT reference: 0x123456789 (4886718345)
     STC reference: 0x198765432 (6852858930)
-  - Descriptor 59: ISDB STC Reference (0xD4, 212), 11 bytes
+  - Descriptor 61: ISDB STC Reference (0xD4, 212), 11 bytes
     Segmentation mode: 5 (JST time)
     Time reference: 12:34:56.789
     STC reference: 0x123456789 (4886718345)
-  - Descriptor 60: ISDB STC Reference (0xD4, 212), 5 bytes
+  - Descriptor 62: ISDB STC Reference (0xD4, 212), 5 bytes
     Segmentation mode: 9 (Reserved)
     Reserved data (4 bytes): 12 34 56 78
 
