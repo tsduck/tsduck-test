@@ -797,6 +797,104 @@
         "segment_type": 1
       },
       {
+        "#name": "ISDB_component_group_descriptor",
+        "component_group_type": 0
+      },
+      {
+        "#name": "ISDB_component_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "component_group",
+            "#nodes": [
+              {
+                "#name": "CAUnit",
+                "ca_unit_id": 1
+              },
+              {
+                "#name": "CAUnit",
+                "#nodes": [
+                  {
+                    "#name": "component_tags",
+                    "#nodes": [
+                      "\n            01 02 03 04 05 06 07 08\n          "
+                    ]
+                  }
+                ],
+                "ca_unit_id": 2
+              },
+              {
+                "#name": "CAUnit",
+                "#nodes": [
+                  {
+                    "#name": "component_tags",
+                    "#nodes": [
+                      "\n            70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E\n          "
+                    ]
+                  }
+                ],
+                "ca_unit_id": 3
+              }
+            ],
+            "component_group_id": 0,
+            "explanation": "main",
+            "total_bit_rate": 12
+          },
+          {
+            "#name": "component_group",
+            "component_group_id": 1,
+            "explanation": "other",
+            "total_bit_rate": 3
+          }
+        ],
+        "component_group_type": 3
+      },
+      {
+        "#name": "ISDB_component_group_descriptor",
+        "#nodes": [
+          {
+            "#name": "component_group",
+            "#nodes": [
+              {
+                "#name": "CAUnit",
+                "ca_unit_id": 1
+              },
+              {
+                "#name": "CAUnit",
+                "#nodes": [
+                  {
+                    "#name": "component_tags",
+                    "#nodes": [
+                      "\n            0A 09 08 07 06 05 04 03 02 01\n          "
+                    ]
+                  }
+                ],
+                "ca_unit_id": 2
+              },
+              {
+                "#name": "CAUnit",
+                "#nodes": [
+                  {
+                    "#name": "component_tags",
+                    "#nodes": [
+                      "\n            AA BB CC DD EE FF\n          "
+                    ]
+                  }
+                ],
+                "ca_unit_id": 3
+              }
+            ],
+            "component_group_id": 0,
+            "explanation": "main 2"
+          },
+          {
+            "#name": "component_group",
+            "component_group_id": 1,
+            "explanation": "other 2"
+          }
+        ],
+        "component_group_type": 4
+      },
+      {
         "#name": "SI_parameter_descriptor",
         "parameter_version": 35,
         "update_time": "2020-05-01"

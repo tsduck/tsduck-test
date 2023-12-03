@@ -345,6 +345,42 @@
 		<addtional_connected_transmission_info> 00 00 de ad be ef 00 00 </addtional_connected_transmission_info>
 	</ISDB_connected_transmission_descriptor>
 	
+	<ISDB_component_group_descriptor component_group_type="0x0"/>
+	
+	<ISDB_component_group_descriptor component_group_type="0x3">
+		<component_group component_group_id="0x0" total_bit_rate="12" explanation="main">
+			<CAUnit CA_unit_id="0x1"/>
+			<CAUnit CA_unit_id="0x2">
+				<component_tags>
+					01 02 03 04 05 06 07 08
+				</component_tags>
+			</CAUnit>
+			<CAUnit CA_unit_id="0x3">
+				<component_tags>
+					70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e
+				</component_tags>
+			</CAUnit>
+		</component_group> 
+		<component_group component_group_id="0x1" total_bit_rate="3" explanation="other"/>
+	</ISDB_component_group_descriptor>
+	
+	<ISDB_component_group_descriptor component_group_type="0x4">
+		<component_group component_group_id="0x0" explanation="main 2">
+			<CAUnit CA_unit_id="0x1"/>
+			<CAUnit CA_unit_id="0x2">
+				<component_tags>
+					0a 09 08 07 06 05 04 03 02 01
+				</component_tags>
+			</CAUnit>
+			<CAUnit CA_unit_id="0x3">
+				<component_tags>
+					aa bb cc dd ee ff
+				</component_tags>
+			</CAUnit>
+		</component_group> 
+		<component_group component_group_id="0x1" explanation="other 2"/>
+	</ISDB_component_group_descriptor>
+
     <SI_parameter_descriptor parameter_version="0x23" update_time="2020-05-01"/>
 
     <SI_parameter_descriptor parameter_version="0xFA" update_time="2023-12-07">
