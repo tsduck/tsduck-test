@@ -381,8 +381,11 @@
     - Descriptor 59: MPEG-2 Extension (0x3F, 63), 30 bytes
       MPEG extended descriptor: JPEG XS Video (0x14, 20)
       Descriptor version: 0, horizontal size: 1920, vertical size: 1080
-      Max bitrate: 123, framerate: 17, sample characteristics: 45234
-      Profile: 9, level: 6, max buffer size: 14, buffer model: 2
+      Max bitrate: 123Mbit/s
+      Interlace: Progressive frame (frame contains one full-height picture) (0)
+      Framerate: 100/1, bitdepth: 10bits, structure: 4:2:2 (YCbCr) (0)
+      Profile: Light 4:2:0 (0x1500), level: 1k-1 (0x04), sublevel: Sublev9pp (0x0C)
+      Max buffer size: 14, buffer model: 2
       Colour primaries: ITU-R BT.2020-2/2100-2 (9), transfer characteristics: ITU-R BT.2020-2 (12 bit) (15)
       Matrix coefficients: ITU-R BT.2020-2 NCL (9)
       Video full range: false, still mode: true
@@ -392,8 +395,11 @@
     - Descriptor 0: MPEG-2 Extension (0x3F, 63), 34 bytes
       MPEG extended descriptor: JPEG XS Video (0x14, 20)
       Descriptor version: 0, horizontal size: 1920, vertical size: 1080
-      Max bitrate: 1234, framerate: 17, sample characteristics: 45234
-      Profile: 9, level: 6, max buffer size: 143, buffer model: 2
+      Max bitrate: 1234Mbit/s
+      Interlace: Interlaced frame, first picture is top video field (top field first) (1)
+      Framerate: 30/1.001
+      Profile: High 4444.12 (0x4E40), level: 4k-2 (0x24), sublevel: Unrestricted (0x00)
+      Max buffer size: 143, buffer model: 2
       Colour primaries: ITU-R BT.601-7 (6), transfer characteristics: IEC 61966-2-4 (11)
       Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
       Video full range: true, still mode: false
@@ -401,8 +407,11 @@
     - Descriptor 1: MPEG-2 Extension (0x3F, 63), 58 bytes
       MPEG extended descriptor: JPEG XS Video (0x14, 20)
       Descriptor version: 0, horizontal size: 1920, vertical size: 1080
-      Max bitrate: 1234, framerate: 17, sample characteristics: 45234
-      Profile: 9, level: 6, max buffer size: 143, buffer model: 2
+      Max bitrate: 1234Mbit/s
+      Interlace: Interlaced frame, first picture is bottom video field (bottom field first) (2)
+      Framerate: 120/1, bitdepth: 12bits, structure: 4:4:4:4 (RGBAux) (6)
+      Profile: High Bayer (0xC340), level: 8k-3 (0x38), sublevel: Full (0x80)
+      Max buffer size: 143, buffer model: 2
       Colour primaries: ITU-R BT.601-7 (6), transfer characteristics: IEC 61966-2-4 (11)
       Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
       Video full range: true, still mode: false

@@ -533,7 +533,10 @@
 	<JPEG_XS_video_descriptor 
 		descriptor_version="0"
 		horizontal_size="1920" vertical_size="1080"
-		brat="123" frat="17" schar="45234" Ppih="9" Plev="6"
+		brat="123" 
+		interlace_mode="0" framerate_DEN="1" framerate_NUM="100"
+		sample_bitdepth="9" sampling_structure="0" 
+		Ppih="0x1500" level="0x04" sublevel="0x0C"
 		max_buffer_size="14" buffer_model_type="2"
 		colour_primaries="9" transfer_characteristics="15" matrix_coefficients="9"
 		video_full_range_flag="false" still_mode="true">
@@ -542,7 +545,9 @@
 	<JPEG_XS_video_descriptor 
 		descriptor_version="0"
 		horizontal_size="1920" vertical_size="1080"
-		brat="1234" frat="17" schar="45234" Ppih="9" Plev="6"
+		brat="1234" 
+		interlace_mode="1" framerate_DEN="1.001" framerate_NUM="30"
+		Ppih="0x4E40" level="0x24" sublevel="0x00"
 		max_buffer_size="143" buffer_model_type="2"
 		colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
 		video_full_range_flag="true" still_mode="false">
@@ -553,8 +558,10 @@
 	
 	<JPEG_XS_video_descriptor 
 		descriptor_version="0"
-		horizontal_size="1920" vertical_size="1080"
-		brat="1234" frat="17" schar="45234" Ppih="9" Plev="6"
+		horizontal_size="1920" vertical_size="1080" brat="1234" 
+		interlace_mode="2" framerate_DEN="1" framerate_NUM="120"		
+		sample_bitdepth="11" sampling_structure="6"
+		Ppih="0xC340" level="0x38" sublevel="0x80"
 		max_buffer_size="143" buffer_model_type="2"
 		colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
 		video_full_range_flag="true" still_mode="false">
