@@ -34,8 +34,8 @@ Options:
       ATSC-specific table. For instance, when a PMT with ATSC-specific
       descriptors is found before the first ATSC MGT or VCT.
 
-  -b filename
-  --binary-output filename
+  -b file-name
+  --binary-output file-name
       Save sections in the specified binary output file. If empty or '-', the
       binary sections are written to the standard output. See also option -m,
       --multiple-files.
@@ -167,7 +167,7 @@ Options:
       JST'. This is a handy shortcut when working on Japanese transport
       streams.
 
-  --json-output filename
+  --json-output file-name
       Save the tables in JSON format in the specified file. The tables are
       initially formatted as XML and automated XML-to-JSON conversion is
       applied. To output the JSON text on the standard output, explicitly
@@ -277,8 +277,8 @@ Options:
   --only-invalid-sections
       Same as --invalid-sections but do not display valid tables and sections.
 
-  -o filename
-  --output-file filename
+  -o file-name
+  --output-file file-name
       Save the tables or sections in human-readable text format in the
       specified file. By default, when no output option is specified, text is
       produced on the standard output. If you need text formatting on the
@@ -368,7 +368,7 @@ Options:
       escape characters when this is not syntactically necessary to make the
       XML text more human-readable.
 
-  --text-output filename
+  --text-output file-name
       A synonym for --output-file.
 
   -t tid1[-tid2]
@@ -462,7 +462,7 @@ Options:
       text nodes. By default, text nodes are trimmed only when there is an XML
       model which identifies the text node as containing hexadecimal content.
 
-  --xml-output filename
+  --xml-output file-name
       Save the tables in XML format in the specified file. To output the XML
       text on the standard output, explicitly specify this option with "-" as
       output file name.
