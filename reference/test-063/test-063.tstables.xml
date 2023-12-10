@@ -243,6 +243,13 @@
       </component_group>
       <component_group component_group_id="0x01" explanation="other 2"/>
     </ISDB_component_group_descriptor>
+    <ISDB_network_identifier_descriptor country_code="JPN" media_type="TB" network_id="0x7654"/>
+    <ISDB_network_identifier_descriptor country_code="JPN" media_type="BS" network_id="0x11FF"/>
+    <ISDB_network_identifier_descriptor country_code="JPN" media_type="AC" network_id="0xEEEE">
+      <private>
+        00 11 22 33 44
+      </private>
+    </ISDB_network_identifier_descriptor>
     <SI_parameter_descriptor parameter_version="0x23" update_time="2020-05-01"/>
     <SI_parameter_descriptor parameter_version="0xFA" update_time="2023-12-07">
       <table id="0x00"/>
