@@ -13,6 +13,11 @@ Options:
   --help
       Display this help text.
 
+  --json-line[='prefix']
+      Report the continuity information as one single line in JSON format. The
+      optional string parameter specifies a prefix to prepend on the log line
+      before the JSON text to locate the appropriate line in the logs.
+
   --no-replicate-duplicated
       Two successive packets in the same PID are considered as duplicated if
       they have the same continuity counter and same content (except PCR, if
