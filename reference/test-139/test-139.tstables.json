@@ -1,0 +1,87 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 0,
+        "last_ts_packet": 0,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 256,
+        "service_id": 1
+      }
+    ],
+    "current": true,
+    "network_pid": 31,
+    "transport_stream_id": 1,
+    "version": 0
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 1,
+        "last_ts_packet": 1,
+        "pid": 256
+      },
+      {
+        "#name": "registration_descriptor",
+        "format_identifier": 1212435798
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "0F FF FC FC"
+        ],
+        "tag": 136
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 4113,
+        "stream_type": 2
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 0,
+                "code": "eng"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 4352,
+        "stream_type": 134
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "ISO_639_language_descriptor",
+            "#nodes": [
+              {
+                "#name": "language",
+                "audio_type": 0,
+                "code": "eng"
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 4353,
+        "stream_type": 4
+      }
+    ],
+    "current": true,
+    "pcr_pid": 4097,
+    "service_id": 1,
+    "version": 0
+  }
+]

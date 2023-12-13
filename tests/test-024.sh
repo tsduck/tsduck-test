@@ -28,3 +28,11 @@ $(tspath tsdump) $(fpath "$OUTDIR/$SCRIPT.out.ts") >"$OUTDIR/$SCRIPT.tsdump.txt"
 
 test_text $SCRIPT.tsdump.txt
 test_text $SCRIPT.tsdump.log
+
+test_tsp \
+    -I file $(fpath "$INFILE") \
+    -P continuity --json-line=TEST: \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.tsp.3.log" 2>&1
+
+test_text $SCRIPT.tsp.3.log

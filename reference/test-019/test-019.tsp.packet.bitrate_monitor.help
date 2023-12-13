@@ -21,6 +21,11 @@ Options:
   --help
       Display this help text.
 
+  --json-line[='prefix']
+      Report the bitrate information as one single line in JSON format. The
+      optional string parameter specifies a prefix to prepend on the log line
+      before the JSON text to locate the appropriate line in the logs.
+
   --max value
       Set maximum allowed value for bitrate (bits/s). Default: 4,294,967,295
       b/s.
