@@ -234,3 +234,4 @@ repository. But we now limit their size to 20 MB.
 | 137  | Non-regression on HEVC sequence parameter set analysis (issue #1369)
 | 138  | Plugin `t2mi
 | 139  | Analyze a stream with HDMV registration and DTS-HD Master Audio
+| 140  | Non-regression on incorrect command line argument declaration (issue #1389)
