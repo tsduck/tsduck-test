@@ -95,11 +95,11 @@ Options:
       transport stream is unknown or unreliable. The specified value is the
       number of TS packets between two splice commands.
 
-  --min-stable-delay value
-      A file size needs to be stable during that duration, in milliseconds, for
-      the file to be reported as added or modified. This prevents too frequent
-      poll notifications when a file is being written and his size modified at
-      each poll. The default is 500 ms.
+  --min-stable-delay milliseconds
+      A file size needs to be stable during that duration for the file to be
+      reported as added or modified. This prevents too frequent poll
+      notifications when a file is being written and his size modified at each
+      poll. The default is 500 ms.
 
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely
@@ -126,9 +126,9 @@ Options:
       service with a stream type equal to 0x86 in the PMT, as specified by SCTE
       35 standard.
 
-  --poll-interval value
-      Specifies the interval in milliseconds between two poll operations. The
-      default is 500 ms.
+  --poll-interval milliseconds
+      Specifies the interval between two poll operations. The default is 500
+      ms.
 
   --pts-pid value
       Specifies the PID carrying PTS reference clock. By default, use the video

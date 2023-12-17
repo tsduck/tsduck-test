@@ -109,10 +109,10 @@ Options:
       frequent and the load on the plugin and the receiver is lower.
 
   --min-stable-delay milliseconds
-      An input file size needs to be stable during that duration, in
-      milliseconds, for the file to be reported as added or modified. This
-      prevents too frequent poll notifications when a file is being written and
-      his size modified at each poll. The default is 500 ms.
+      An input file size needs to be stable during that duration for the file
+      to be reported as added or modified. This prevents too frequent poll
+      notifications when a file is being written and his size modified at each
+      poll. The default is 500 ms.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
@@ -139,8 +139,8 @@ Options:
       when working on Philippines transport streams.
 
   --poll-interval milliseconds
-      Interval, in milliseconds, between two poll operations to detect new or
-      modified input files. The default is 500 ms.
+      Interval between two poll operations to detect new or modified input
+      files. The default is 500 ms.
 
   --prime-days value
       Duration, in days, of the "prime" period for EIT schedule. EIT schedule
