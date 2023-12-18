@@ -84,8 +84,8 @@ Options:
       connect. Several --control-source options are allowed.
 
   --control-timeout milliseconds
-      Specify the reception timeout in milliseconds for control commands. The
-      default timeout is 5,000 ms.
+      Specify the reception timeout for control commands. The default timeout
+      is 5,000 ms.
 
   -d[level]
   --debug[=level]
@@ -250,9 +250,9 @@ Options:
       'on' are used to enforce the real-time defaults.
 
   --receive-timeout milliseconds
-      Specify a timeout in milliseconds for all input operations. Equivalent to
-      the same --receive-timeout options in some plugins. By default, there is
-      no input timeout.
+      Specify a timeout for all input operations. Equivalent to the same
+      --receive-timeout options in some plugins. By default, there is no input
+      timeout.
 
   --safeaccess
       Equivalent to --default-cas-id 0x4ADC.

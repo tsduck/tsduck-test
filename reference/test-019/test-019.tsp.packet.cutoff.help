@@ -69,7 +69,7 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
-  --receive-timeout value
+  --receive-timeout milliseconds
       Specify the UDP reception timeout in milliseconds. This timeout applies
       to each receive operation, individually. By default, receive operations
       wait for data, possibly forever.

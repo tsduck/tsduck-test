@@ -136,7 +136,7 @@ Options:
       primary input, the reception is immediately switched back to it. By
       default, there is no primary input, all input plugins are equal.
 
-  --receive-timeout value
+  --receive-timeout milliseconds
       Specify a receive timeout in milliseconds. When the current input plugin
       has received no packet within this timeout, automatically switch to the
       next plugin. By default, without --primary-input, there is no automatic

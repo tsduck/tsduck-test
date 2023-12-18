@@ -84,7 +84,6 @@ Options:
       file. See also options --retry-interval and --max-retry.
 
   --retry-interval milliseconds
-      With --reopen-on-error, specify the number of milliseconds to wait before
-      attempting to reopen the file after a failure. The default is 2,000
-      milliseconds.
+      With --reopen-on-error, specify the delay to wait before attempting to
+      reopen the file after a failure. The default is 2,000 ms.
 

@@ -41,9 +41,9 @@ Options:
       Accept compressed HTTP responses. By default, compressed responses are
       not accepted.
 
-  --connection-timeout value
-      Specify the connection timeout in milliseconds. By default, let the
-      operating system decide.
+  --connection-timeout milliseconds
+      Specify the connection timeout. By default, let the operating system
+      decide.
 
   --headers 'string'
       Custom header, e.g. 'x-header-name: value'. Can be set multiple times.
@@ -115,10 +115,9 @@ Options:
   --proxy-user name
       Optional proxy user name for Internet access.
 
-  --receive-timeout value
-      Specify the data reception timeout in milliseconds. This timeout applies
-      to each receive operation, individually. By default, let the operating
-      system decide.
+  --receive-timeout milliseconds
+      Specify the data reception timeout. This timeout applies to each receive
+      operation, individually. By default, let the operating system decide.
 
   --save-files directory-name
       Specify a directory where all downloaded files, media segments and
