@@ -341,7 +341,7 @@
       Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03), PID 200 (0x00C8)
-  Version: 0, sections: 2, total size: 1416 bytes
+  Version: 0, sections: 2, total size: 1606 bytes
   - Section 0:
     - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
       Compliance: "DVB"
@@ -612,9 +612,32 @@
       URI linkage type: 0xAB (user defined)
       URI: http://foo/bar/
       Private data (4 bytes): 12 34 56 78
-    - Descriptor 32: Extension Descriptor (0x7F, 127), 1 bytes
+    - Descriptor 32: Extension Descriptor (0x7F, 127), 23 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0x03 (DVB-I)
+      URI: https://dvb-i.tv/
+      End point type: 0x01 (DVB-I Service List)
+    - Descriptor 33: Extension Descriptor (0x7F, 127), 49 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0x03 (DVB-I)
+      URI: https://registry.dvb-i.tv/query?country=GBR
+      End point type: 0x02 (DVB-I Service List Registry query)
+    - Descriptor 34: Extension Descriptor (0x7F, 127), 54 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0x03 (DVB-I)
+      URI: https://dvb-i.tv/uk/
+      End point type: 0x03 (DVB-I Service List with list name and provider name)
+      Service list name: UK Television
+      Service list provider name: UK TV Regulator
+    - Descriptor 35: Extension Descriptor (0x7F, 127), 56 bytes
+      Extended descriptor: URI Linkage (0x13, 19)
+      URI linkage type: 0x03 (DVB-I)
+      URI: https://dvb-i.nz/national_tv
+      End point type: 0x03 (DVB-I Service List with list name and provider name)
+      Service list name: New Zealand Television
+    - Descriptor 36: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: Network Change Notify (0x07, 7)
-    - Descriptor 33: Extension Descriptor (0x7F, 127), 35 bytes
+    - Descriptor 37: Extension Descriptor (0x7F, 127), 35 bytes
       Extended descriptor: Network Change Notify (0x07, 7)
       - Cell id: 0x1234
       - Cell id: 0x5678
@@ -629,30 +652,30 @@
           Change type: 0xB (Major - multiplex added)
           Message id: 0x83
           Invariant TS id: 0xDEAD, orig. net. id: 0xBEEF
-    - Descriptor 34: DSNG (0x68, 104), 8 bytes
+    - Descriptor 38: DSNG (0x68, 104), 8 bytes
       Station identification: "Foo, bar"
-    - Descriptor 35: FTA Content Management (0x7E, 126), 1 bytes
+    - Descriptor 39: FTA Content Management (0x7E, 126), 1 bytes
       User-defined: true
       Do not scramble: false
       Access over Internet: 2 (Enabled but only within a managed domain and after a certain short period of time)
       Do not apply revocation: true
-    - Descriptor 36: FTA Content Management (0x7E, 126), 1 bytes
+    - Descriptor 40: FTA Content Management (0x7E, 126), 1 bytes
       User-defined: false
       Do not scramble: true
       Access over Internet: 0 (Enabled)
       Do not apply revocation: false
-    - Descriptor 37: PDC (0x69, 105), 3 bytes
+    - Descriptor 41: PDC (0x69, 105), 3 bytes
       Programme Identification Label: 11-30 23:45 (MM-DD hh:mm)
-    - Descriptor 38: Short Smoothing Buffer (0x61, 97), 1 bytes
+    - Descriptor 42: Short Smoothing Buffer (0x61, 97), 1 bytes
       Smoothing buffer size: 0x1 (1536)
       Smoothing buffer leak rate: 0x14 (3.0 Mbit/s)
-    - Descriptor 39: Short Smoothing Buffer (0x61, 97), 6 bytes
+    - Descriptor 43: Short Smoothing Buffer (0x61, 97), 6 bytes
       Smoothing buffer size: 0x2 (DVB-reserved)
       Smoothing buffer leak rate: 0x29 (17 Mbit/s)
       DVB-reserved data (5 bytes): 01 23 45 67 89
-    - Descriptor 40: Extension Descriptor (0x7F, 127), 1 bytes
+    - Descriptor 44: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: Video Depth Range (0x10, 16)
-    - Descriptor 41: Extension Descriptor (0x7F, 127), 18 bytes
+    - Descriptor 45: Extension Descriptor (0x7F, 127), 18 bytes
       Extended descriptor: Video Depth Range (0x10, 16)
       - Range type: 0x00 (0)
         Video max disparity hint: -2048, min: 2047
@@ -661,10 +684,10 @@
       - Range type: 0x01 (1)
       - Range type: 0x02 (2)
         Range selector bytes (3 bytes): 01 23 45
-    - Descriptor 42: Extension Descriptor (0x7F, 127), 4 bytes
+    - Descriptor 46: Extension Descriptor (0x7F, 127), 4 bytes
       Extended descriptor: Target Region (0x09, 9)
       Country code: "foo"
-    - Descriptor 43: Extension Descriptor (0x7F, 127), 21 bytes
+    - Descriptor 47: Extension Descriptor (0x7F, 127), 21 bytes
       Extended descriptor: Target Region (0x09, 9)
       Country code: "bar"
       - Region #0
@@ -679,11 +702,11 @@
         Primary region code: 0x78 (120)
         Secondary region code: 0x9A (154)
         Tertiary region code: 0xBCDE (48350)
-    - Descriptor 44: Extension Descriptor (0x7F, 127), 7 bytes
+    - Descriptor 48: Extension Descriptor (0x7F, 127), 7 bytes
       Extended descriptor: Target Region Name (0x0A, 10)
       Country code: "foo"
       Language code: "bar"
-    - Descriptor 45: Extension Descriptor (0x7F, 127), 38 bytes
+    - Descriptor 49: Extension Descriptor (0x7F, 127), 38 bytes
       Extended descriptor: Target Region Name (0x0A, 10)
       Country code: "ABC"
       Language code: "DEF"
@@ -695,7 +718,7 @@
         Primary region code: 0x34 (52)
         Secondary region code: 0x56 (86)
         Tertiary region code: 0x789A (30874)
-    - Descriptor 46: Extension Descriptor (0x7F, 127), 26 bytes
+    - Descriptor 50: Extension Descriptor (0x7F, 127), 26 bytes
       Extended descriptor: Image Icon (0x00, 0)
       Descriptor number: 0, last: 12
       Icon id: 4
@@ -705,7 +728,7 @@
       Horizontal origin: 999, vertical: 456
       Icon type: "image/png"
       Icon data (8 bytes): 01 23 45 67 89 AB CD EF
-    - Descriptor 47: Extension Descriptor (0x7F, 127), 34 bytes
+    - Descriptor 51: Extension Descriptor (0x7F, 127), 34 bytes
       Extended descriptor: Image Icon (0x00, 0)
       Descriptor number: 0, last: 7
       Icon id: 6
@@ -713,14 +736,14 @@
       Position specified: no
       Icon type: "image/jpeg"
       URL: "http://foo/bar.jpg"
-    - Descriptor 48: Extension Descriptor (0x7F, 127), 9 bytes
+    - Descriptor 52: Extension Descriptor (0x7F, 127), 9 bytes
       Extended descriptor: Image Icon (0x00, 0)
       Descriptor number: 3, last: 3
       Icon id: 6
       Icon data (5 bytes): 01 23 45 67 89
-    - Descriptor 49: Announcement Support (0x6E, 110), 2 bytes
+    - Descriptor 53: Announcement Support (0x6E, 110), 2 bytes
       Annoucement support indicator: 0x0000
-    - Descriptor 50: Announcement Support (0x6E, 110), 11 bytes
+    - Descriptor 54: Announcement Support (0x6E, 110), 11 bytes
       Annoucement support indicator: 0x0012
       - Announcement type: 1 (Road Traffic flash)
         Reference type: 0 (In usual audio stream of the service)
@@ -730,7 +753,7 @@
         Transport stream id: 0x5678 (22136)
         Service id: 0x9ABC (39612)
         Component tag: 0xDE (222)
-    - Descriptor 51: Telephone (0x57, 87), 3 bytes
+    - Descriptor 55: Telephone (0x57, 87), 3 bytes
       Foreign availability: true
       Connection type: 0x02 (2)
       Country prefix: ""
@@ -738,7 +761,7 @@
       Operator code: ""
       National area code: ""
       Core number: ""
-    - Descriptor 52: Telephone (0x57, 87), 28 bytes
+    - Descriptor 56: Telephone (0x57, 87), 28 bytes
       Foreign availability: false
       Connection type: 0x1E (30)
       Country prefix: "12"
@@ -746,11 +769,11 @@
       Operator code: "1"
       National area code: "234"
       Core number: "567 789 0123"
-    - Descriptor 53: Mosaic (0x51, 81), 1 bytes
+    - Descriptor 57: Mosaic (0x51, 81), 1 bytes
       Mosaic entry point: true
       Horizontal elementary cells: 0 (actual number: 1)
       Vertical elementary cells: 7 (actual number: 8)
-    - Descriptor 54: Mosaic (0x51, 81), 34 bytes
+    - Descriptor 58: Mosaic (0x51, 81), 34 bytes
       Mosaic entry point: false
       Horizontal elementary cells: 1 (actual number: 2)
       Vertical elementary cells: 5 (actual number: 6)
@@ -776,13 +799,13 @@
         Transport stream id: 0xBA98 (47768)
         Service id: 0x7654 (30292)
         Event id: 0x3210 (12816)
-    - Descriptor 55: MPEG-2 Extension (0x3F, 63), 1 bytes
+    - Descriptor 59: MPEG-2 Extension (0x3F, 63), 1 bytes
       MPEG extended descriptor: AF Extensions (0x04, 4)
-    - Descriptor 56: MPEG-2 AAC Audio (0x2B, 43), 3 bytes
+    - Descriptor 60: MPEG-2 AAC Audio (0x2B, 43), 3 bytes
       MPEG-2 AAC profile: 0x01 (1)
       MPEG-2 AAC channel configuration: 0x02 (2)
       MPEG-2 AAC additional information: 0x8A (138)
-    - Descriptor 57: MVC Extension (0x31, 49), 8 bytes
+    - Descriptor 61: MVC Extension (0x31, 49), 8 bytes
       Average bitrate: 1500 kb/s, maximum: 1700 kb/s
       View association not present: true
       Base view is left eyeview: false
@@ -790,7 +813,8 @@
       Temporal id start: 1, end: 5
       No SEI NALunit present: true
       No prefix NALunit present: false
-    - Descriptor 58: SVC Extension (0x30, 48), 13 bytes
+  - Section 1:
+    - Descriptor 0: SVC Extension (0x30, 48), 13 bytes
       Frame size: 1236x5236
       Frame rate: 456 frames / 256 seconds
       Average bitrate: 4566 kb/s, maximum: 5000 kb/s
@@ -798,42 +822,42 @@
       Quality id start: 10, end: 12
       Temporal id start: 4, end: 6
       No SEI NALunit present: false
-    - Descriptor 59: Metadata STD (0x27, 39), 9 bytes
+    - Descriptor 1: Metadata STD (0x27, 39), 9 bytes
       Metadata input leak rate: 123,456 (49,382,400 bits/s)
       Metadata buffer size: 789,012 (807,948,288 bytes)
       Metadata output leak rate: 4,194,303 (1,677,721,200 bits/s)
-    - Descriptor 60: FMC (0x1F, 31), 0 bytes
-    - Descriptor 61: FMC (0x1F, 31), 9 bytes
+    - Descriptor 2: FMC (0x1F, 31), 0 bytes
+    - Descriptor 3: FMC (0x1F, 31), 9 bytes
       ES id: 0x1234 (4660), M4Mux channel: 0xAB (171)
       ES id: 0x5678 (22136), M4Mux channel: 0xCD (205)
       ES id: 0x9ABC (39612), M4Mux channel: 0xEF (239)
-    - Descriptor 62: M4Mux Timing (0x2C, 44), 8 bytes
+    - Descriptor 4: M4Mux Timing (0x2C, 44), 8 bytes
       FCR ES ID: 0x1234 (4660)
       FCR resolution: 1,450,744,508 cycles/second
       FCR length: 222
       FMX rate length: 171
-    - Descriptor 63: MultiplexBuffer (0x23, 35), 6 bytes
+    - Descriptor 5: MultiplexBuffer (0x23, 35), 6 bytes
       MB buffer size: 123,456 bytes
       TB leak rate: 789,012 (315,604,800 bits/s)
-    - Descriptor 64: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
-    - Descriptor 65: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
+    - Descriptor 6: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
+    - Descriptor 7: MPEG-2 Stereoscopic Video Format (0x34, 52), 1 bytes
       Arrangement type: 0x67 (103)
-    - Descriptor 66: Stereoscopic Program Info (0x35, 53), 1 bytes
+    - Descriptor 8: Stereoscopic Program Info (0x35, 53), 1 bytes
       Stereoscopic service type: 2 (Frame-compatible stereoscopic 3D service)
-    - Descriptor 67: Stereoscopic Video Info (0x36, 54), 2 bytes
+    - Descriptor 9: Stereoscopic Video Info (0x36, 54), 2 bytes
       Base video: true
       Left view: false
-    - Descriptor 68: Stereoscopic Video Info (0x36, 54), 3 bytes
+    - Descriptor 10: Stereoscopic Video Info (0x36, 54), 3 bytes
       Base video: false
       Usable as 2D: true
       Horizontal upsampling factor: 3 (3/4 coded resolution of base view)
       Vertical upsampling factor: 4 (2/3 coded resolution of base view)
-    - Descriptor 69: Transport Profile (0x37, 55), 1 bytes
+    - Descriptor 11: Transport Profile (0x37, 55), 1 bytes
       Transport profile: 0x01 (Complete profile)
-    - Descriptor 70: Transport Profile (0x37, 55), 6 bytes
+    - Descriptor 12: Transport Profile (0x37, 55), 6 bytes
       Transport profile: 0x02 (Adaptive profile)
       Private data (5 bytes): 01 02 03 04 05
-    - Descriptor 71: JPEG-2000 Video (0x32, 50), 27 bytes
+    - Descriptor 13: JPEG-2000 Video (0x32, 50), 27 bytes
       Profile and level: 0x0345 (837)
       Horizontal size: 0x00000800 (2048)
       Vertical size: 0x0000042D (1069)
@@ -844,7 +868,7 @@
       Still mode: false
       Interlaced video: true
       Private data (3 bytes): 98 74 56
-    - Descriptor 72: JPEG-2000 Video (0x32, 50), 60 bytes
+    - Descriptor 14: JPEG-2000 Video (0x32, 50), 60 bytes
       Profile and level: 0x0346 (838)  [extended]
       Horizontal size: 0x00000780 (1920)
       Vertical size: 0x00000438 (1080)
@@ -865,8 +889,7 @@
         Luminance max: 145263, min: 0
         Max Content Light Level: 1000, Max Frame Average Light Level: 999
       Private data (4 bytes): 98 76 54 32
-  - Section 1:
-    - Descriptor 0: JPEG-2000 Video (0x32, 50), 47 bytes
+    - Descriptor 15: JPEG-2000 Video (0x32, 50), 47 bytes
       Profile and level: 0x0567 (1383)  [extended]
       Horizontal size: 0x00000F00 (3840)
       Vertical size: 0x00000870 (2160)
@@ -884,7 +907,7 @@
       Block witdh: 40, height: 40
       Max block index horizontal: 95, vertical: 53
       Current block index horizontal: 12, vertical: 13
-    - Descriptor 1: JPEG-2000 Video (0x32, 50), 28 bytes
+    - Descriptor 16: JPEG-2000 Video (0x32, 50), 28 bytes
       Profile and level: 0x0789 (1929)  [extended]
       Horizontal size: 0x00000F00 (3840)
       Vertical size: 0x00000870 (2160)
@@ -897,21 +920,21 @@
       Colour primaries: SMPTE ST 431-1 (12), transfer characteristics: ARIB STD-B67 (18)
       Matrix coefficients: ITU-R BT.2100-2 (14)
       Video full range: true
-    - Descriptor 2: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+    - Descriptor 17: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
       Cue stream type: 0x00 (splice_insert, splice_null, splice_schedule)
-    - Descriptor 3: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+    - Descriptor 18: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
       Cue stream type: 0x01 (All commands)
-    - Descriptor 4: AC-3 (0x6A, 106), 1 bytes
-    - Descriptor 5: AC-3 (0x6A, 106), 5 bytes
+    - Descriptor 19: AC-3 (0x6A, 106), 1 bytes
+    - Descriptor 20: AC-3 (0x6A, 106), 5 bytes
       Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
       AC-3 coding version: 52 (0x34)
       Main audio service id: 86 (0x56)
       Associated to: 0x78
-    - Descriptor 6: AC-3 (0x6A, 106), 6 bytes
+    - Descriptor 21: AC-3 (0x6A, 106), 6 bytes
       Component type: 0x9A (Enhanced AC-3, combined, hearing impaired, 2 channels)
       Main audio service id: 188 (0xBC)
       Additional information (3 bytes): 98 76 54
-    - Descriptor 7: Enhanced AC-3 (0x7A, 122), 12 bytes
+    - Descriptor 22: Enhanced AC-3 (0x7A, 122), 12 bytes
       Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
       AC-3 coding version: 52 (0x34)
       Main audio service id: 86 (0x56)
@@ -921,16 +944,16 @@
       Substream 2: 0xBC (Enhanced AC-3, combined, voiceover, multichannel > 2)
       Substream 3: 0xDE (Enhanced AC-3, full, hearing impaired, multiple substreams)
       Additional information (4 bytes): 14 78 52 36
-    - Descriptor 8: Private Data Indicator (0x0F, 15), 4 bytes
+    - Descriptor 23: Private Data Indicator (0x0F, 15), 4 bytes
       Private data indicator: 0x12345678
-    - Descriptor 9: Private Data Indicator (0x0F, 15), 4 bytes
+    - Descriptor 24: Private Data Indicator (0x0F, 15), 4 bytes
       Private data indicator: 0x00000000
-    - Descriptor 10: Registration (0x05, 5), 4 bytes
+    - Descriptor 25: Registration (0x05, 5), 4 bytes
       Format identifier: 0x98765432
-    - Descriptor 11: Registration (0x05, 5), 7 bytes
+    - Descriptor 26: Registration (0x05, 5), 7 bytes
       Format identifier: 0x12345678
       Additional identification info (3 bytes): 98 76 54
-    - Descriptor 12: MVC Operation Point (0x33, 51), 17 bytes
+    - Descriptor 27: MVC Operation Point (0x33, 51), 17 bytes
       Profile IDC: 0xAB (171)
       Constraint set: 0:false, 1:true, 2:false, 3:true, 4:false, 5:true
       AVC compatible flags: 1
@@ -949,7 +972,7 @@
           ES reference: 0x35 (53)
           ES reference: 0x24 (36)
           ES reference: 0x0F (15)
-    - Descriptor 13: MPEG-2 Extension (0x3F, 63), 11 bytes
+    - Descriptor 28: MPEG-2 Extension (0x3F, 63), 11 bytes
       MPEG extended descriptor: HEVC Hierarchy Extension (0x06, 6)
       Extension dimension bits: 0xA801
         Bit 0: Multi-view enhancement
@@ -966,11 +989,11 @@
       Hierarchy embeddedlayer index[1]: 0x12 (18)
       Hierarchy embeddedlayer index[2]: 0x23 (35)
       Hierarchy embeddedlayer index[3]: 0x31 (49)
-    - Descriptor 14: MPEG-2 Extension (0x3F, 63), 3 bytes
+    - Descriptor 29: MPEG-2 Extension (0x3F, 63), 3 bytes
       MPEG extended descriptor: Green Extension (0x07, 7)
       Number of backlight voltage time intervals: 0
       Number of variations: 0
-    - Descriptor 15: MPEG-2 Extension (0x3F, 63), 13 bytes
+    - Descriptor 30: MPEG-2 Extension (0x3F, 63), 13 bytes
       MPEG extended descriptor: Green Extension (0x07, 7)
       Number of backlight voltage time intervals: 3
         Constant backlight voltage time intervals [0]: 0x00C8 (200)
@@ -979,9 +1002,9 @@
       Number of variations: 2
         Max variation [0]: 0x0354 (852)
         Max variation [1]: 0x9074 (36980)
-    - Descriptor 16: MPEG-2 Extension (0x3F, 63), 1 bytes
+    - Descriptor 31: MPEG-2 Extension (0x3F, 63), 1 bytes
       MPEG extended descriptor: Virtual Segmentation (0x10, 16)
-    - Descriptor 17: MPEG-2 Extension (0x3F, 63), 13 bytes
+    - Descriptor 32: MPEG-2 Extension (0x3F, 63), 13 bytes
       MPEG extended descriptor: Virtual Segmentation (0x10, 16)
       Ticks per seconds: 12,345
       Maximum duration length: 0 bytes + 5 bits
@@ -991,7 +1014,7 @@
         Maximum duration: 0 ticks
       - Partition id: 3, SAP type max: 3
         Maximum duration: 10 ticks
-    - Descriptor 18: MPEG-2 Extension (0x3F, 63), 15 bytes
+    - Descriptor 33: MPEG-2 Extension (0x3F, 63), 15 bytes
       MPEG extended descriptor: Virtual Segmentation (0x10, 16)
       Ticks per seconds: 12,345
       Maximum duration length: 3 bytes + 5 bits
@@ -999,7 +1022,7 @@
         Maximum duration: 3 ticks
       - Partition id: 5, SAP type max: 2
         Maximum duration: 100,000,000 ticks
-    - Descriptor 19: Content Labelling (0x24, 36), 23 bytes
+    - Descriptor 34: Content Labelling (0x24, 36), 23 bytes
       Metadata application format: 0x0010 (ISO 15706 (ISAN) encoded in its binary form)
       Content time base indicator: 0x2 (Use of NPT)
       Content reference id (4 bytes): 01 23 45 67
@@ -1007,12 +1030,12 @@
       Metadata time base: 0x1294990B1 (4,987,654,321)
       Content id: 0x34 (52)
       Private data (4 bytes): 96 85 27 41
-    - Descriptor 20: Content Labelling (0x24, 36), 11 bytes
+    - Descriptor 35: Content Labelling (0x24, 36), 11 bytes
       Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
       Metadata application format identifier: 0x12345678 (305419896)
       Content time base indicator: 0x5 (Reserved)
       Time base association data (3 bytes): 74 18 52
-    - Descriptor 21: Metadata Pointer (0x25, 37), 20 bytes
+    - Descriptor 36: Metadata Pointer (0x25, 37), 20 bytes
       Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
       Metadata application format identifier: 0x12345678 (305419896)
       Metadata format: 0xFF (Defined by metadata_format_identifier field)
@@ -1021,7 +1044,7 @@
       MPEG carriage flags: 3 (Undefined)
       Metadata location record (3 bytes): 96 38 52
       Private data (3 bytes): 14 72 58
-    - Descriptor 22: Metadata Pointer (0x25, 37), 11 bytes
+    - Descriptor 37: Metadata Pointer (0x25, 37), 11 bytes
       Metadata application format: 0x0011 (ISO 15706-2 (V-ISAN) encoded in its binary form)
       Metadata format: 0x10 (ISO/IEC 15938-1 TeM)
       Metadata service id: 0xEF (239)
@@ -1029,7 +1052,7 @@
       Program number: 0x1234 (4660)
       Transport stream location: 0x5678 (22136)
       Transport stream id: 0xABCD (43981)
-    - Descriptor 23: Metadata (0x26, 38), 24 bytes
+    - Descriptor 38: Metadata (0x26, 38), 24 bytes
       Metadata application format: 0xFFFF (Defined by the metadata_application_format_identifier field)
       Metadata application format identifier: 0x12345678 (305419896)
       Metadata format: 0xFF (Defined by metadata_format_identifier field)
@@ -1039,42 +1062,42 @@
       Service identification record (3 bytes): 01 23 45
       Decoder config (3 bytes): 45 69 87
       Private data (3 bytes): 45 63 21
-    - Descriptor 24: Metadata (0x26, 38), 11 bytes
+    - Descriptor 39: Metadata (0x26, 38), 11 bytes
       Metadata application format: 0x0010 (ISO 15706 (ISAN) encoded in its binary form)
       Metadata format: 0x11 (ISO/IEC 15938-1 BiM)
       Metadata service id: 0x78 (120)
       Decoder config flags: 3 (Configuration is in a DSM-CC carousel)
       Decoder config identification record (5 bytes): 14 78 52 36 90
-    - Descriptor 25: Metadata (0x26, 38), 6 bytes
+    - Descriptor 40: Metadata (0x26, 38), 6 bytes
       Metadata application format: 0x0011 (ISO 15706-2 (V-ISAN) encoded in its binary form)
       Metadata format: 0x12 (Reserved)
       Metadata service id: 0x23 (35)
       Decoder config flags: 4 (Configuration is in another metadata service)
       Decoder config metadata service id: 0xDE (222)
-    - Descriptor 26: Metadata (0x26, 38), 10 bytes
+    - Descriptor 41: Metadata (0x26, 38), 10 bytes
       Metadata application format: 0x0123 (User defined)
       Metadata format: 0x20 (Reserved)
       Metadata service id: 0x78 (120)
       Decoder config flags: 6 (Reserved)
       Reserved data (3 bytes): 78 96 54
       Private data (1 bytes): AB
-    - Descriptor 27: MPEG-2 Extension (0x3F, 63), 9 bytes
+    - Descriptor 42: MPEG-2 Extension (0x3F, 63), 9 bytes
       MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
       3D-audio profile level indication: unknown (0xAB)
       Interactivity enabled: false
       Reference channel layout: unknown (52)
       Reserved data (5 bytes): 01 23 45 67 89
-    - Descriptor 28: MPEG-2 Extension (0x3F, 63), 4 bytes
+    - Descriptor 43: MPEG-2 Extension (0x3F, 63), 4 bytes
       MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
       3D-audio profile level indication: Main profile L1 (0x01)
       Interactivity enabled: true
       Reference channel layout: 2/0.0 (2)
-    - Descriptor 29: MPEG-2 Extension (0x3F, 63), 5 bytes
+    - Descriptor 44: MPEG-2 Extension (0x3F, 63), 5 bytes
       MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
       This is main stream: false
       This stream id: 0x71 (113)
       Reserved data (3 bytes): 01 23 45
-    - Descriptor 30: MPEG-2 Extension (0x3F, 63), 9 bytes
+    - Descriptor 45: MPEG-2 Extension (0x3F, 63), 9 bytes
       MPEG extended descriptor: MPEG-H 3D Audio Multi-Stream (0x0C, 12)
       This is main stream: true
       This stream id: 0x0F (15)

@@ -338,6 +338,18 @@
         12 34 56 78
       </private_data>
     </URI_linkage_descriptor>
+    <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://dvb-i.tv/">
+      <DVB_I_linkage end_point_type="0x01"/>
+    </URI_linkage_descriptor>
+    <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://registry.dvb-i.tv/query?country=GBR">
+      <DVB_I_linkage end_point_type="0x02"/>
+    </URI_linkage_descriptor>
+    <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://dvb-i.tv/uk/">
+      <DVB_I_linkage end_point_type="0x03" service_list_name="UK Television" service_list_provider_name="UK TV Regulator"/>
+    </URI_linkage_descriptor>
+    <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://dvb-i.nz/national_tv">
+      <DVB_I_linkage end_point_type="0x03" service_list_name="New Zealand Television"/>
+    </URI_linkage_descriptor>
     <network_change_notify_descriptor/>
     <network_change_notify_descriptor>
       <cell cell_id="0x1234"/>
