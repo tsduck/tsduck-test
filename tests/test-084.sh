@@ -18,6 +18,7 @@ test_tsp \
     -P splicemonitor --all-commands --splice-pid 1055 -o $(fpath "$OUTDIR/$SCRIPT.3.txt") \
     -P splicemonitor --all-commands --json -o $(fpath "$OUTDIR/$SCRIPT.4.json") \
     -P splicemonitor --json -o $(fpath "$OUTDIR/$SCRIPT.5.json") \
+    -P splicemonitor --all-commands --json --meta-sections -o $(fpath "$OUTDIR/$SCRIPT.6.json") \
     -O drop \
     >"$OUTDIR/$SCRIPT.2.log" 2>&1
 
