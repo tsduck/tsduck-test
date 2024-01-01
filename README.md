@@ -237,3 +237,4 @@ repository. But we now limit their size to 20 MB.
 | 140  | Non-regression on incorrect command line argument declaration (issue #1389)
 | 141  | Option `--meta-sections` in `tstables`
 | 142  | Non-regression on tsp looping on corrupted TS packet (issue #1398)
+| 143  | Non-regression on a crash in plugin `teletext` (issue #1400)
