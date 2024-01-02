@@ -468,6 +468,7 @@ dos_to_unix() {
 }
 
 # A tsp command with all standard options to get a deterministic output.
+# We also set a 3mn timeout, in case of hang or infinite loop.
 test_tsp() {
-    $(tspath tsp) --synchronous-log --bitrate-adjust-interval 10,000 "$@"
+    timeout -s9 180s $(tspath tsp) --synchronous-log --bitrate-adjust-interval 10,000 "$@"
 }
