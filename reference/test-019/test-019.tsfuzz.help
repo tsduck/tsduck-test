@@ -1,0 +1,57 @@
+
+Introduce random errors in a transport stream file
+
+Usage: tsfuzz [options] filename ...
+
+Parameters:
+
+  MPEG transport stream input files to corrupt. If more than one file is
+  specified, the output name shall specify a directory.
+
+Options:
+
+  -c value
+  --corrupt-probability value
+      Probability to corrupt a byte in the transport stream. The default is
+      zero, meaning no corruption.
+      The value must be a fraction of two 32-bit integers.
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --help
+      Display this help text.
+
+  -o file-name
+  --output file-name
+      Output file or directory. This is a mandatory parameter, there is no
+      default. If more than one input file is specified, the output name shall
+      specify a directory.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Corrupt only packets with these PID values. Several --pid options may be
+      specified. By default, all packets can be corrupted.
+
+  -s hexa-data
+  --seed hexa-data
+      Initial seed for the pseudo-random number generator. Specify hexadecimal
+      data. The size is not limited but at least 32 bytes are recommended.
+      Using the same seed on the same TS file will result in exactly the same
+      corruptions. Without this parameter, a random seed is used and the
+      corruptions cannot be identically reproduced.
+
+  --sync-byte
+      May corrupt the 0x47 sync byte in TS packets. This may invalidate the
+      synchronization of the transport stream. By default, sync bytes are
+      preserved.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version
+      Display the TSDuck version number.
+

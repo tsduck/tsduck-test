@@ -13,7 +13,7 @@ test_cleanup "$SCRIPT.*"
 TOOLS=(
     tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate
     tsdektec.linux tsdektec.windows
-    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsgenecm
+    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsfuzz tsgenecm
     tshides.linux tshides.windows
     tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
@@ -37,7 +37,7 @@ OUTPUT_PLUGINS=(
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject descrambler dump duplicate eit eitinject feed file filter
-    fork history inject ip limit merge mpe mpeinject mux nit nitscan pat pattern
+    fork fuzz history inject ip limit merge mpe mpeinject mux nit nitscan pat pattern
     pcradjust pcrbitrate pcrcopy pcredit pcrextract pcrverify pes pidshift pmt
     psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
     sifilter skip slice spliceinject splicemonitor stats stuffanalyze
