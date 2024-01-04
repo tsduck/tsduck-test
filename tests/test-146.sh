@@ -3,7 +3,6 @@
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
-INFILE=
 
 $(tspath tsanalyze) $(fpath "$INDIR/$SCRIPT.ts") \
     >"$OUTDIR/$SCRIPT.1.log" 2>&1

@@ -241,3 +241,4 @@ repository. But we now limit their size to 20 MB.
 | 144  | Non-regression on a crash in plugin `pes` (issue #1401)
 | 145  | Non-regression on corrupted HEVC sequence parameter set (issue #1405)
 | 146  | Non-regression on corrupted HEVC stream (issue #1407)
+| 147  | `tsfuzz` and plugin `fuzz`
