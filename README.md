@@ -243,3 +243,4 @@ repository. But we now limit their size to 20 MB.
 | 146  | Non-regression on corrupted HEVC stream (issue #1407)
 | 147  | `tsfuzz` and plugin `fuzz`
 | 148  | Non-regression on undetected VVC header (issue #1408)
+| 149  | `rmsplice` plugin
