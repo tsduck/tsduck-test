@@ -1,0 +1,105 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 22,
+        "last_ts_packet": 22,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 1030,
+        "service_id": 1030
+      }
+    ],
+    "current": true,
+    "transport_stream_id": 1,
+    "version": 1
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 233,
+        "last_ts_packet": 233,
+        "pid": 1030
+      },
+      {
+        "#name": "registration_descriptor",
+        "format_identifier": 1129661769
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1031,
+        "stream_type": 27
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1032,
+        "stream_type": 3
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "teletext_descriptor",
+            "#nodes": [
+              {
+                "#name": "teletext",
+                "language_code": "rus",
+                "page_number": 100,
+                "teletext_type": 1
+              }
+            ]
+          }
+        ],
+        "elementary_pid": 1034,
+        "stream_type": 6
+      },
+      {
+        "#name": "component",
+        "elementary_pid": 1035,
+        "stream_type": 134
+      }
+    ],
+    "current": true,
+    "pcr_pid": 1031,
+    "service_id": 1030,
+    "version": 26
+  },
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 591,
+        "last_ts_packet": 591,
+        "pid": 17
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "03 \u041C\u0410\u0422\u0427!",
+            "service_provider_name": "\u0420\u0422\u0420\u0421",
+            "service_type": 22
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": true,
+        "running_status": "running",
+        "service_id": 1030
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "original_network_id": 8835,
+    "transport_stream_id": 1,
+    "version": 1
+  }
+]

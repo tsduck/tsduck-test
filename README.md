@@ -244,3 +244,4 @@ repository. But we now limit their size to 20 MB.
 | 147  | `tsfuzz` and plugin `fuzz`
 | 148  | Non-regression on undetected VVC header (issue #1408)
 | 149  | `rmsplice` plugin
+| 150  | Teletext, text colors
