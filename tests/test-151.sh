@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Test Teletext, Colors.
-
-# input file preparation steps were:
+# ATSC to DVB AC-3/E-AC-3 transformation in a PMT
+#
+# Input file preparation steps were:
 #
 # E-AC-3:
 # download sample from https://sourceforge.net/p/mediainfo/bugs/1111/ (ffmpeg_eac3_bsmode_hi_2.ts)
