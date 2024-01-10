@@ -379,6 +379,15 @@ native_only() {
     fi
 }
 
+# Abort current test if testing on asan build
+# Useful to skip java/python tests and tests use libraries with memory leaks and other issues.
+exclude_on_asan() {
+    if [[ $ASAN_RUN ]]; then
+        info "$PRPASS  $SCRIPT: skipped on asan build"
+        exit $EXIT_SUCCESS
+    fi
+}
+
 # Cleanup temporary output file matching a wildcard.
 # Syntax: test_cleanup test-file-wildcard
 test_cleanup() {

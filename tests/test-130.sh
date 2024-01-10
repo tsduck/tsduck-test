@@ -4,6 +4,10 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
+# disabled on asan build due to openssl 1.1 well-known memleak
+# this test should be enabled when CI ubuntu-latest becomes 24.04
+exclude_on_asan
+
 # Run the test only if srt is supported on this platform
 if $(tspath tsversion) --support srt; then
 

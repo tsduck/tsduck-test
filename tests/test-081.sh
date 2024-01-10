@@ -4,6 +4,7 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 native_only
+exclude_on_asan
 
 WORKDIR="$TMPDIR/$SCRIPT.d"
 mkdir -p "$WORKDIR"
