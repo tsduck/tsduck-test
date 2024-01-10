@@ -337,7 +337,7 @@
     Max smoothing buffer: 0x1234 (4660) bytes
 
 * TSDT, TID 3 (0x03)
-  Section: 0 (last: 1), version: 0, size: 1019 bytes
+  Section: 0 (last: 1), version: 0, size: 1023 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
   - Descriptor 1: Extension Descriptor (0x7F, 127), 1 bytes
@@ -607,11 +607,12 @@
     URI linkage type: 0xAB (user defined)
     URI: http://foo/bar/
     Private data (4 bytes): 12 34 56 78
-  - Descriptor 32: Extension Descriptor (0x7F, 127), 23 bytes
+  - Descriptor 32: Extension Descriptor (0x7F, 127), 27 bytes
     Extended descriptor: URI Linkage (0x13, 19)
     URI linkage type: 0x03 (DVB-I)
     URI: https://dvb-i.tv/
     End point type: 0x01 (DVB-I Service List)
+    Private data (4 bytes): 00 FF 11 EE
   - Descriptor 33: Extension Descriptor (0x7F, 127), 49 bytes
     Extended descriptor: URI Linkage (0x13, 19)
     URI linkage type: 0x03 (DVB-I)
