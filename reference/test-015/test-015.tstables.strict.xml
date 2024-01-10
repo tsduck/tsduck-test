@@ -346,7 +346,11 @@
       </private_data>
     </URI_linkage_descriptor>
     <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://dvb-i.tv/">
-      <DVB_I_linkage end_point_type="0x01"/>
+      <DVB_I_linkage end_point_type="0x01">
+        <private_data>
+          00 FF 11 EE
+        </private_data>
+      </DVB_I_linkage>
     </URI_linkage_descriptor>
     <URI_linkage_descriptor uri_linkage_type="0x03" uri="https://registry.dvb-i.tv/query?country=GBR">
       <DVB_I_linkage end_point_type="0x02"/>
