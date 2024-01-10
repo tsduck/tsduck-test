@@ -7,7 +7,6 @@ test_cleanup "$SCRIPT.*"
 test_tsp \
     -I null 1 \
     -P craft --pid 100 --pcr 0 --no-payload \
-    -P dump --headers-only \
     -P pcredit --add-pcr -1 -u pts \
     -P dump --headers-only \
     -O drop \
