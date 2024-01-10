@@ -246,3 +246,4 @@ repository. But we now limit their size to 20 MB.
 | 149  | `rmsplice` plugin
 | 150  | Teletext, text colors
 | 151  | ATSC to DVB AC-3/E-AC-3 transformation in a PMT
+| 152  | Non-regression on PCR computation in plugin `pcredit` (issue #1411)
