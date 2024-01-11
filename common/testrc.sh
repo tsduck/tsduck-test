@@ -374,16 +374,16 @@ test_exit() {
 # Useful to avoid testing a Win32 DLL with a native 64-bit Java or Python executable.
 native_only() {
     if ! $NATIVE; then
-        info "$PRPASS  $SCRIPT: skipped on non-native binary"
+        pass "skipped on non-native binary"
         exit $EXIT_SUCCESS
     fi
 }
 
-# Abort current test if testing on asan build
-# Useful to skip java/python tests and tests use libraries with memory leaks and other issues.
+# Abort current test if testing on asan (address sanitizer) build.
+# Useful to skip java/python tests and tests which use libraries with memory leaks and other issues.
 exclude_on_asan() {
-    if [[ $ASAN_RUN ]]; then
-        info "$PRPASS  $SCRIPT: skipped on asan build"
+    if [[ -n "$ASAN_RUN" ]]; then
+        pass "skipped on address sanitizer build"
         exit $EXIT_SUCCESS
     fi
 }
