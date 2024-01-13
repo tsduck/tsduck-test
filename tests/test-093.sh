@@ -29,3 +29,31 @@ cmp $(fpath "$TMPDIR/$SCRIPT.1a.pes") $(fpath "$TMPDIR/$SCRIPT.1b.pes") \
     >"$OUTDIR/$SCRIPT.cmp.1.log" 2>&1
 
 test_text $SCRIPT.cmp.1.log
+
+# verify pcrcopy with labels
+test_tsp --verbose \
+    -I file $(fpath "$INFILE") \
+    -P filter -p 0x140 --set-label 0 \
+    -P pcrcopy --reference-pid 0x78 --target-pid 0x82 \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.2.log" 2>&1
+
+test_text $SCRIPT.2.log
+
+test_tsp --verbose \
+    -I file $(fpath "$INFILE") \
+    -P filter -p 0x140 --set-label 0 \
+    -P pcrcopy --reference-label 0 --target-pid 0x82 \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.3.log" 2>&1
+
+test_text $SCRIPT.3.log
+
+test_tsp --verbose \
+    -I file $(fpath "$INFILE") \
+    -P filter -p 0x140 --set-label 1 \
+    -P pcrcopy --reference-label 1 --target-pid 0x82 \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.4.log" 2>&1
+
+test_text $SCRIPT.4.log
