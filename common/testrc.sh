@@ -109,8 +109,8 @@ else
     EXE=
 fi
 
-# No Dektec support on Arm processors.
-[[ $CPU == arm* || $CPU == aarch* ]] && TS_NO_DEKTEC=1
+# No Dektec support on non-Intel processors.
+[[ $CPU != x86_64 && $CPU != i*86 ]] && TS_NO_DEKTEC=1
 
 # Display help text
 showhelp()

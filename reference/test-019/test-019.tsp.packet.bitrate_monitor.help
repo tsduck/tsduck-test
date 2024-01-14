@@ -41,12 +41,12 @@ Options:
       through this one. Several --only-label options may be specified. This is
       a generic option which is defined in all packet processing plugins.
 
-  -p value
-  --periodic-bitrate value
+  -p seconds
+  --periodic-bitrate seconds
       Always report bitrate at the specific intervals in seconds, even if the
       bitrate is in range.
 
-  --periodic-command value
+  --periodic-command seconds
       Run the --alarm-command at the specific intervals in seconds, even if the
       bitrate is in range. With this option, the alarm command is run on state
       change and at periodic intervals.
