@@ -112,6 +112,15 @@ fi
 # No Dektec support on non-Intel processors.
 [[ $CPU != x86_64 && $CPU != i*86 ]] && TS_NO_DEKTEC=1
 
+# "Unusual" CPU architectures may indicate a Qemu emulated environment.
+# Use a 10 times longer timeout for tests since the emulation is very slow.
+# The concept of "unusual" CPU architecture is completely arbitrary.
+# If you have a better way to detect Qemu, please submit a PR.
+[[ $CPU != x86_64 && $CPU != i*86 && $CPU != arm* ]] && TS_MAYBE_QEMU=1
+
+# Timeout for tsp commands in tests.
+[[ -z $TS_MAYBE_QEMU ]] && export TSP_TIMEOUT=180s || export TSP_TIMEOUT=1800s
+
 # Display help text
 showhelp()
 {
@@ -479,5 +488,5 @@ dos_to_unix() {
 # A tsp command with all standard options to get a deterministic output.
 # We also set a 3mn timeout, in case of hang or infinite loop.
 test_tsp() {
-    timeout -s9 180s $(tspath tsp) --synchronous-log --bitrate-adjust-interval 10,000 "$@"
+    timeout -s9 $TSP_TIMEOUT $(tspath tsp) --synchronous-log --bitrate-adjust-interval 10,000 "$@"
 }
