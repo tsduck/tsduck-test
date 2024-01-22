@@ -6,8 +6,8 @@ Usage: tslatencymonitor [options] \
 
 Options:
 
-  -b value
-  --buffer-time value
+  -b seconds
+  --buffer-time seconds
       Specify the buffer time of timing data list in seconds. By default, the
       buffer time is 1 seconds.
 
@@ -38,7 +38,7 @@ Options:
   --output-file filename
       Output file name for CSV reporting (standard error by default).
 
-  --output-interval value
+  --output-interval seconds
       Specify the time interval between each output in seconds. The default is
       1 second.
 

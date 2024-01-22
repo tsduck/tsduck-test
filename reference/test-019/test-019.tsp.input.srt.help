@@ -29,8 +29,8 @@ Options:
       timeout is 10 times the value set for the rendezvous mode (which can be
       used as a workaround for this connection problem with earlier versions).
 
-  -d value
-  --display-interval value
+  -d seconds
+  --display-interval seconds
       Specify the interval in seconds between two displays of the evaluated
       real-time input bitrate. The default is to never display the bitrate.
       This option is ignored if --evaluation-interval is not specified.
@@ -40,8 +40,8 @@ Options:
       passphrase set (including empty, that is, with no encryption), or
       otherwise the connection is rejected.
 
-  -e value
-  --evaluation-interval value
+  -e seconds
+  --evaluation-interval seconds
       Specify that the real-time input bitrate shall be evaluated on a regular
       basis. The value specifies the number of seconds between two evaluations.
       By default, the real-time input bitrate is never evaluated and the input
