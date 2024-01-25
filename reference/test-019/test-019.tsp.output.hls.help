@@ -34,8 +34,8 @@ Options:
       Several --custom-tag can be specified. Each tag is added as an
       independent tag line.
 
-  -d value
-  --duration value
+  -d seconds
+  --duration seconds
       Specify the target duration in seconds of media segments. The default is
       10 seconds per segment for VoD streams and 5 seconds for live streams.
 
@@ -87,12 +87,12 @@ Options:
       the playlist and can be downloaded by clients after their removal from
       the playlist. The default is 1 segments.
 
-  -m value
-  --max-extra-duration value
+  -m seconds
+  --max-extra-duration seconds
       With --intra-close, specify the maximum additional duration in seconds
       after which the segment is closed on the next video PES packet, even if
-      no intra-coded image is found. The default is to wait a maximum of 2
-      additional seconds for an intra-coded image.
+      no intra-coded image is found. The default is to wait a maximum of an
+      additional 2 seconds for an intra-coded image.
 
   --no-bitrate
       With --playlist, do not specify EXT-X-BITRATE tags for each segment in

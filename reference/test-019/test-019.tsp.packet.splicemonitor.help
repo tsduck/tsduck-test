@@ -81,7 +81,7 @@ Options:
       the destination address. Remember that the default Multicast TTL is 1 on
       most systems.
 
-  --max-pre-roll-time value
+  --max-pre-roll-time milliseconds
       Specify a maximum pre-roll time in milliseconds for splice commands. See
       option --alarm-command for non-nominal cases.
 
@@ -92,7 +92,7 @@ Options:
   --meta-sections
       Add hexadecimal dump of each section in XML and JSON metadata.
 
-  --min-pre-roll-time value
+  --min-pre-roll-time milliseconds
       Specify a minimum pre-roll time in milliseconds for splice commands. See
       option --alarm-command for non-nominal cases.
 

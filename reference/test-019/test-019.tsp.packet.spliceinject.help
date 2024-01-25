@@ -69,10 +69,10 @@ Options:
       the number of times the same splice information section is injected. The
       default is 2. Other splice commands are injected once only.
 
-  --inject-interval value
+  --inject-interval milliseconds
       For non-immediate splice_insert() and time_signal() commands, specifies
       the interval in milliseconds between two insertions of the same splice
-      information section. The default is 800 ms.
+      information section. The default is 800 milliseconds.
 
   --japan
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
@@ -155,10 +155,10 @@ Options:
       ids only. If no service is specified, the options --pid and --pts-pid
       must be specified (--pcr-pid is optional).
 
-  --start-delay value
+  --start-delay milliseconds
       For non-immediate splice_insert() commands, start to insert the first
       section this number of milliseconds before the specified splice PTS
-      value. The default is 2,000 ms.
+      value. The default is 2,000 milliseconds.
 
   -u [ip-address:]port
   --udp [ip-address:]port

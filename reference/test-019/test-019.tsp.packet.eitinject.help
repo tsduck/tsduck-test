@@ -27,25 +27,25 @@ Options:
       A synonym for '--default-charset RAW-ISO-8859-15'. This is a handy
       shortcut when working on South American ISDB-Tb transport streams.
 
-  --cycle-pf-actual value
+  --cycle-pf-actual seconds
       Repetition cycle in seconds for EIT p/f actual. The default is 2 seconds.
 
-  --cycle-pf-other value
+  --cycle-pf-other seconds
       Repetition cycle in seconds for EIT p/f other. The default is 10 seconds.
 
-  --cycle-schedule-actual-later value
+  --cycle-schedule-actual-later seconds
       Repetition cycle in seconds for EIT schedule actual after the "prime"
       period. The default is 30 seconds. See options --prime-days.
 
-  --cycle-schedule-actual-prime value
+  --cycle-schedule-actual-prime seconds
       Repetition cycle in seconds for EIT schedule actual in the "prime"
       period. The default is 10 seconds. See options --prime-days.
 
-  --cycle-schedule-other-later value
+  --cycle-schedule-other-later seconds
       Repetition cycle in seconds for EIT schedule other after the "prime"
       period. The default is 30 seconds. See options --prime-days.
 
-  --cycle-schedule-other-prime value
+  --cycle-schedule-other-prime seconds
       Repetition cycle in seconds for EIT schedule other in the "prime" period.
       The default is 10 seconds. See options --prime-days.
 
@@ -142,7 +142,7 @@ Options:
       Interval between two poll operations to detect new or modified input
       files. The default is 500 ms.
 
-  --prime-days value
+  --prime-days days
       Duration, in days, of the "prime" period for EIT schedule. EIT schedule
       for events in the prime period (i.e. the next few days) are repeated more
       frequently than EIT schedule for later events. The default is 8 days.
