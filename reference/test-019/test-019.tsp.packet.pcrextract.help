@@ -31,6 +31,12 @@ Options:
   --help
       Display this help text.
 
+  -i
+  --input-timestamp
+      Add an input timestamp of the corresponging TS packet, if available. This
+      can be an RTP, SRT, kernel timestamp. It is always converted in PCR
+      units.
+
   -l
   --log
       Report data in "log" format through the standard tsp logging system. All
