@@ -38,6 +38,10 @@ Options:
   --help
       Display this help text.
 
+  --ignore-rist-timestamps
+      Ignore source timestamps, use reception time as packet timestamps. By
+      default, use the source timestamps from the sender as packet timestamp.
+
   -p name
   --profile name
       Specify the RIST profile (main profile by default).
