@@ -44,13 +44,16 @@ Options:
   --test name
       Run a specific DirectShow test. Very verbose output, for debug only. The
       default is none.
-      Must be one of "bda-tuners", "enumerate-devices", "list-devices", "none",
-      "tuning-spaces".
+      The 'name' must be one of "bda-tuners", "enumerate-devices",
+      "list-devices", "none", "tuning-spaces".
 
   -v
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 

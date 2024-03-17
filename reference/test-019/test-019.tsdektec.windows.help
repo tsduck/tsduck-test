@@ -82,7 +82,8 @@ Options:
       Set the state of the LED on the rear panel. Useful to identify a Dektec
       device when more than one is present. See also option --wait (the led
       state is automatically returned to "hardware" after exit).
-      Must be one of "blue", "green", "hardware", "off", "red", "yellow".
+      The 'state' must be one of "blue", "green", "hardware", "off", "red",
+      "yellow".
 
   -n
   --normalized
@@ -97,7 +98,7 @@ Options:
   -p value
   --power-mode value
       On DTU-315 USB modulators, set the power mode to the specified value.
-      Must be one of "high-quality", "low-power".
+      The 'value' must be one of "high-quality", "low-power".
 
   -r
   --reset
@@ -107,8 +108,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
   -w seconds
   --wait seconds

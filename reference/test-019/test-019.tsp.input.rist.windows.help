@@ -33,7 +33,7 @@ Options:
   --encryption-type name
       Specify the encryption type (none by default). This value is used when
       the 'aes-type=' parameter is not present in the URL.
-      Must be one of "AES-128", "AES-256".
+      The 'name' must be one of "AES-128", "AES-256".
 
   --help
       Display this help text.
@@ -45,7 +45,7 @@ Options:
   -p name
   --profile name
       Specify the RIST profile (main profile by default).
-      Must be one of "advanced", "main", "simple".
+      The 'name' must be one of "advanced", "main", "simple".
 
   -s string
   --secret string

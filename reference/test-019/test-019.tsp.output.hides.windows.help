@@ -18,7 +18,7 @@ Options:
   -c value
   --constellation value
       Constellation type. The default is 64-QAM.
-      Must be one of "16-QAM", "64-QAM", "QPSK".
+      The 'value' must be one of "16-QAM", "64-QAM", "QPSK".
 
   --dc-compensation i-value/q-value
       Specify the DC offset compensation values for I and Q. Each offset value
@@ -41,7 +41,7 @@ Options:
   -g value
   --guard-interval value
       Guard interval. The default is 1/32.
-      Must be one of "1/4", "1/8", "1/16", "1/32".
+      The 'value' must be one of "1/4", "1/8", "1/16", "1/32".
 
   --help
       Display this help text.
@@ -49,15 +49,15 @@ Options:
   -h value
   --high-priority-fec value
       Error correction for high priority streams. The default is 2/3.
-      Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
+      The 'value' must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
 
   -s value
   --spectral-inversion value
       Spectral inversion. The default is auto.
-      Must be one of "auto", "off", "on".
+      The 'value' must be one of "auto", "off", "on".
 
   -t value
   --transmission-mode value
       Transmission mode. The default is 8K.
-      Must be one of "2K", "4K", "8K".
+      The 'value' must be one of "2K", "4K", "8K".
 
