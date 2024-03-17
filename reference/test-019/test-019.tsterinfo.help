@@ -23,7 +23,7 @@ Options:
   -c value
   --constellation value
       Specify the OFMD constellation, used to compute the resulting bitrate.
-      Must be one of "16-QAM", "64-QAM", "QPSK".
+      The 'value' must be one of "16-QAM", "64-QAM", "QPSK".
 
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
@@ -40,7 +40,7 @@ Options:
   -g value
   --guard-interval value
       Specify the OFMD guard interval, used to compute the resulting bitrate.
-      Must be one of "1/4", "1/8", "1/16", "1/32".
+      The 'value' must be one of "1/4", "1/8", "1/16", "1/32".
 
   --help
       Display this help text.
@@ -56,7 +56,7 @@ Options:
   --high-priority-fec value
       Specify the OFMD error correction for high priority streams, used to
       compute the resulting bitrate.
-      Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
+      The 'value' must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
 
   --japan
       A synonym for '--hf-band-region japan'. This is a handy shortcut when
@@ -94,8 +94,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
   -v value
   --vhf-channel value

@@ -27,16 +27,16 @@ Options:
       Same as --log-protocol but applies to data_provision messages only. To
       debug the session management without being flooded by data messages, use
       --log-protocol=info --log-data=debug.
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'level' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --log-protocol[=level]
       Log all EMMG/PDG <=> MUX protocol messages using the specified level. If
       the option is not present, the messages are logged at debug level only.
       If the option is present without value, the messages are logged at info
       level. A level can be a numerical debug level or a name.
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'level' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely

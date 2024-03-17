@@ -22,7 +22,7 @@ Options:
   -l[value]
   --list-plugins[=value]
       List all available plugins.
-      Must be one of "all", "input", "names-input", "names-output",
+      The 'value' must be one of "all", "input", "names-input", "names-output",
       "names-packet", "output", "packet".
 
   --log-message-count value
@@ -60,6 +60,9 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 

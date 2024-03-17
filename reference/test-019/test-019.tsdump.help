@@ -40,7 +40,7 @@ Options:
       automatically detected. But the auto-detection may fail in some cases
       (for instance when the first time-stamp of an M2TS file starts with
       0x47). Using this option forces a specific format.
-      Must be one of "autodetect", "duck", "M2TS", "RS204", "TS".
+      The 'name' must be one of "autodetect", "duck", "M2TS", "RS204", "TS".
 
   -h
   --headers-only
@@ -96,6 +96,9 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 

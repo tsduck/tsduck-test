@@ -97,8 +97,8 @@ Options:
       returns a chunk of packets.
       The tsp-provided time-stamp is always available, always comes last and is
       less precise. The default is rtp-pcap-tsp.
-      Must be one of "pcap-rtp-tsp", "pcap-tsp", "rtp-pcap-tsp", "rtp-tsp",
-      "tsp".
+      The 'name' must be one of "pcap-rtp-tsp", "pcap-tsp", "rtp-pcap-tsp",
+      "rtp-tsp", "tsp".
 
   --udp-emmg-mux
       Consider each selected UDP datagram as containing a 'data_provision'

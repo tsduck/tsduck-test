@@ -80,16 +80,17 @@ Options:
       without a preceding private_data_specifier_descriptor. The specified
       value is used as private data specifier to interpret private descriptors.
       The PDS value can be an integer or one of (not case-sensitive) names.
-      Must be one of "AOM", "Australia", "AVS", "BskyB", "CanalPlus", "EACEM",
-      "EICTA", "Eutelsat", "Logiways", "Nagra", "NorDig", "OFCOM", "TPS".
+      The 'value' must be one of "AOM", "Australia", "AVS", "BskyB",
+      "CanalPlus", "EACEM", "EICTA", "Eutelsat", "Logiways", "Nagra", "NorDig",
+      "OFCOM", "TPS".
 
   --delivery-system value
       Specify which delivery system to use. By default, use the default system
       for the tuner.
-      Must be one of "ATSC", "ATSC-MH", "CMMB", "DAB", "DSS", "DTMB", "DVB-C",
-      "DVB-C/A", "DVB-C/B", "DVB-C/C", "DVB-C2", "DVB-H", "DVB-S",
-      "DVB-S-Turbo", "DVB-S2", "DVB-T", "DVB-T2", "ISDB-C", "ISDB-S", "ISDB-T",
-      "undefined".
+      The 'value' must be one of "ATSC", "ATSC-MH", "CMMB", "DAB", "DSS",
+      "DTMB", "DVB-C", "DVB-C/A", "DVB-C/B", "DVB-C/C", "DVB-C2", "DVB-H",
+      "DVB-S", "DVB-S-Turbo", "DVB-S2", "DVB-T", "DVB-T2", "ISDB-C", "ISDB-S",
+      "ISDB-T", "undefined".
 
   --demux-buffer-size value
       Default buffer size, in bytes, of the demux device. The default is 1 MB.
@@ -115,8 +116,8 @@ Options:
   --fec-inner value
       Used for satellite and cable tuners only. Inner Forward Error Correction.
       The default is "auto".
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --first-channel value
       For UHF/VHF-band scanning, specify the first channel to scan (default:
@@ -138,8 +139,8 @@ Options:
   --guard-interval value
       Used for terrestrial tuners only. Guard interval. The default is "1/32"
       for DVB-T/T2, "1/32" for ISDB-T.
-      Must be one of "1/4", "1/8", "1/16", "1/32", "1/128", "19/128", "19/256",
-      "auto", "PN-420", "PN-595", "PN-945".
+      The 'value' must be one of "1/4", "1/8", "1/16", "1/32", "1/128",
+      "19/128", "19/256", "auto", "PN-420", "PN-595", "PN-945".
 
   --help
       Display this help text.
@@ -153,13 +154,13 @@ Options:
 
   --hierarchy value
       Used for DVB-T/T2 tuners only. The default is "none".
-      Must be one of "1", "2", "4", "auto", "none".
+      The 'value' must be one of "1", "2", "4", "auto", "none".
 
   --high-priority-fec value
       Used for DVB-T/T2 tuners only. Error correction for high priority
       streams. The default is "auto".
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --ignore-leap-seconds
       Do not include explicit leap seconds in some UTC computations. Currently,
@@ -174,15 +175,15 @@ Options:
   --isdbt-layer-a-fec value
       Used for ISDB-T tuners only. Error correction for layer A. The default is
       automatically detected.
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --isdbt-layer-a-modulation value
       Used for ISDB-T tuners only. Modulation for layer A. The default is
       automatically detected.
-      Must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK", "16-QAM",
-      "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM", "DQPSK",
-      "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
+      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
+      "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-a-segment-count value
       Used for ISDB-T tuners only. Number of segments for layer A. Possible
@@ -194,14 +195,14 @@ Options:
 
   --isdbt-layer-b-fec value
       Same as --isdbt-layer-a-fec for layer B.
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --isdbt-layer-b-modulation value
       Same as --isdbt-layer-a-modulation for layer B.
-      Must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK", "16-QAM",
-      "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM", "DQPSK",
-      "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
+      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
+      "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-b-segment-count value
       Same as --isdbt-layer-a-segment-count for layer B.
@@ -211,14 +212,14 @@ Options:
 
   --isdbt-layer-c-fec value
       Same as --isdbt-layer-a-fec for layer C.
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --isdbt-layer-c-modulation value
       Same as --isdbt-layer-a-modulation for layer C.
-      Must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK", "16-QAM",
-      "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM", "DQPSK",
-      "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
+      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
+      "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-c-segment-count value
       Same as --isdbt-layer-a-segment-count for layer C.
@@ -268,8 +269,8 @@ Options:
   --low-priority-fec value
       Used for DVB-T/T2 tuners only. Error correction for low priority streams.
       The default is "auto".
-      Must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4", "3/5", "4/5",
-      "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
+      The 'value' must be one of "1/2", "1/3", "1/4", "2/3", "2/5", "3/4",
+      "3/5", "4/5", "5/6", "5/11", "6/7", "7/8", "8/9", "9/10", "auto", "none".
 
   --min-quality value
       Obsolete option, do not use.
@@ -285,9 +286,9 @@ Options:
       Used for DVB-C, DVB-T, DVB-S2 and ATSC tuners. Modulation type. The
       default is "64-QAM" for DVB-T/T2, "64-QAM" for DVB-C, "QPSK" for DVB-S2,
       "8-VSB" for ATSC.
-      Must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK", "16-QAM",
-      "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM", "DQPSK",
-      "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
+      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
+      "DQPSK", "QAM", "QPSK".
 
   -n
   --nit-scan
@@ -313,7 +314,7 @@ Options:
   --pilots value
       Used for DVB-S2 tuners only. Presence of pilots frames. The default is
       "off".
-      Must be one of "auto", "off", "on".
+      The 'value' must be one of "auto", "off", "on".
 
   --plp value
       Used for DVB-T2 tuners only. Physical Layer Pipe (PLP) number to select,
@@ -328,11 +329,12 @@ Options:
       Used for DVB-S2 tuners only. Physical Layer Scrambling (PLS) mode. With
       multistream only. The default is ROOT. Warning: this option is supported
       on Linux only.
-      Must be one of "COMBO", "GOLD", "ROOT".
+      The 'mode' must be one of "COMBO", "GOLD", "ROOT".
 
   --polarity value
       Used for satellite tuners only. Polarity. The default is "vertical".
-      Must be one of "auto", "horizontal", "left", "none", "right", "vertical".
+      The 'value' must be one of "auto", "horizontal", "left", "none", "right",
+      "vertical".
 
   --psi-timeout milliseconds
       Specifies the timeout, in milli-seconds, for PSI/SI table collection.
@@ -346,7 +348,7 @@ Options:
   --roll-off value
       Used for DVB-S2 tuners only. Roll-off factor. The default is "0.35"
       (implied for DVB-S, default for DVB-S2).
-      Must be one of "0.20", "0.25", "0.35", "auto".
+      The 'value' must be one of "0.20", "0.25", "0.35", "auto".
 
   --satellite-number value
       Used for satellite tuners only. Satellite/dish number. Must be 0 to 3
@@ -393,7 +395,7 @@ Options:
 
   --spectral-inversion value
       Spectral inversion. The default is "auto".
-      Must be one of "auto", "off", "on".
+      The 'value' must be one of "auto", "off", "on".
 
   --stream-id value
       Used for ISDB-S tuners only. In the case of multi-stream broadcasting,
@@ -410,8 +412,8 @@ Options:
   --transmission-mode value
       Used for terrestrial tuners only. Transmission mode. The default is "8K"
       for DVB-T/T2, "8K" for ISDB-T.
-      Must be one of "1K", "2K", "2K-interleaved", "4K", "4K-interleaved",
-      "8K", "16K", "32K", "auto", "C=1", "C=3780".
+      The 'value' must be one of "1K", "2K", "2K-interleaved", "4K",
+      "4K-interleaved", "8K", "16K", "32K", "auto", "C=1", "C=3780".
 
   --tuning-file file-name
       Tuning configuration file to use for option -c or --channel-transponder.
@@ -459,8 +461,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
   -v
   --vhf-band

@@ -17,7 +17,7 @@ Options:
       With --merge, specify how attributes are processed in merged node. The
       default is "add", meaning that new attributes are added, others are
       ignored.
-      Must be one of "add", "none", "replace".
+      The 'name' must be one of "add", "none", "replace".
 
   -c
   --channel
@@ -157,8 +157,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
   --x2j-collapse-text
       In the XML-to-JSON conversion, remove leading and trailing spaces and

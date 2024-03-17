@@ -28,8 +28,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
 Control commands: 
 
@@ -96,8 +99,8 @@ Control commands:
 
     Specify a new logging level for the tsp process. It can be either a name or
     a positive value for higher debug levels.
-    Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-    "warning".
+    The 'value' must be one of "debug", "error", "fatal", "info", "severe",
+    "verbose", "warning".
 
   ==== Suspend a plugin
 

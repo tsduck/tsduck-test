@@ -77,16 +77,16 @@ Options:
       Same as --log-protocol but applies to data_provision messages only. To
       debug the session management without being flooded by data messages, use
       --log-protocol=info --log-data=debug.
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'value' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --log-protocol[=value]
       Log all EMMG/PDG <=> MUX protocol messages using the specified level. If
       the option is not present, the messages are logged at debug level only.
       If the option is present without value, the messages are logged at info
       level. A level can be a numerical debug level or a name.
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'value' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --max-bytes value
       Stop after sending the specified number of bytes. By default, send data
@@ -118,7 +118,7 @@ Options:
   --type value
       This option sets the DVB SimulCrypt parameter 'data_type'. Default: 0
       (EMM). In addition to integer values, names can be used.
-      Must be one of "ecm", "emm", "private-data".
+      The 'value' must be one of "ecm", "emm", "private-data".
 
   -u [ip-address:]port
   --udp [ip-address:]port
@@ -140,6 +140,9 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 

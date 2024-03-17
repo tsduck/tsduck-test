@@ -50,8 +50,8 @@ Options:
       Same as --log-protocol but applies to CW_provision and ECM_response
       messages only. To debug the session management without being flooded by
       data messages, use --log-protocol=info --log-data=debug
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'level' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --log-message-count value
       Specify the maximum number of buffered log messages. Log messages are
@@ -67,8 +67,8 @@ Options:
       option is not present, the messages are logged at debug level only. If
       the option is present without value, the messages are logged at info
       level.
-      Must be one of "debug", "error", "fatal", "info", "severe", "verbose",
-      "warning".
+      The 'level' must be one of "debug", "error", "fatal", "info", "severe",
+      "verbose", "warning".
 
   --max-comp-time value
       Specify the maximum ECM computation time in milliseconds. This option
@@ -123,6 +123,9 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 

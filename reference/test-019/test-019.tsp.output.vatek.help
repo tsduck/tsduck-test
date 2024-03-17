@@ -8,7 +8,7 @@ Options:
   --bandwidth value
       DVB-T, DVB-T2, DMB-T (DTMB): indicate bandwidth in MHz. The default is 8
       MHz. The bandwidth values 1.7 and 10 MHz are valid for DVB-T2 only.
-      Must be one of "1.7", "5", "6", "7", "8", "10".
+      The 'value' must be one of "1.7", "5", "6", "7", "8", "10".
 
   --bandwidth-extension
       DVB-T2: indicate that the extended carrier mode is used. By default, use
@@ -16,14 +16,14 @@ Options:
 
   --constellation value
       DVB-T, ISDB-T: indicate the constellation type. The default is 64-QAM.
-      Must be one of "16-QAM", "64-QAM", "QPSK".
+      The 'value' must be one of "16-QAM", "64-QAM", "QPSK".
 
   -r value
   --convolutional-rate value
       Indicate the convolutional rate. The specified value depends on the
       modulation type. DVB-T,ISDB-T: 1/2, 2/3, 3/4, 5/6, 7/8. The default is
       5/6.
-      Must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
+      The 'value' must be one of "1/2", "2/3", "3/4", "5/6", "7/8".
 
   -d value
   --device value
@@ -33,16 +33,17 @@ Options:
 
   --dmb-carrier value
       DMB-T (DTMB): indicate the carrier mode. The default is 3780.
-      Must be one of "1", "3780".
+      The 'value' must be one of "1", "3780".
 
   --dmb-constellation value
       DMB-T (DTMB): indicate the constellation type. The default is 64-QAM.
-      Must be one of "4-QAM", "4-QAM-NR", "16-QAM", "32-QAM", "64-QAM".
+      The 'value' must be one of "4-QAM", "4-QAM-NR", "16-QAM", "32-QAM",
+      "64-QAM".
 
   --dmb-fec value
       DMB-T (DTMB): indicate the FEC code rate. The default is 0.8. 4-QAM-NR
       and 32-QAM can be used only with --dmb-fec 0.8.
-      Must be one of "0.4", "0.6", "0.8".
+      The 'value' must be one of "0.4", "0.6", "0.8".
 
   --dmb-frame-numbering
       DMB-T/H, ADTB-T: indicate to use frame numbering. The default is to use
@@ -51,16 +52,16 @@ Options:
   --dmb-header value
       DMB-T/H, ADTB-T: indicate the FEC frame header mode. The default is
       PN945.
-      Must be one of "PN420", "PN595", "PN945".
+      The 'value' must be one of "PN420", "PN595", "PN945".
 
   --dmb-interleaver value
       DMB-T (DTMB): indicate the interleaver mode. Must be 1 (B=54, M=240) or 2
       (B=54, M=720). The default is 1.
-      Must be one of "1", "2".
+      The 'value' must be one of "1", "2".
 
   --fft-mode value
       DVB-T2: indicate the FFT mode. The default is 8K.
-      Must be one of "1K", "2K", "4K", "8K", "16K".
+      The 'value' must be one of "1K", "2K", "4K", "8K", "16K".
 
   -f value
   --frequency value
@@ -71,7 +72,7 @@ Options:
   --guard-interval value
       DVB-T and ISDB-T modulators: indicate the guard interval. The default is
       1/16.
-      Must be one of "1/4", "1/8", "1/16", "1/32".
+      The 'value' must be one of "1/4", "1/8", "1/16", "1/32".
 
   --help
       Display this help text.
@@ -81,24 +82,25 @@ Options:
       J83A : 16-QAM, 32-QAM, 64-QAM, 128-QAM, 256-QAM. default 64-QAM.
       J83B : 64-QAM, 256-QAM. default 256-QAM.
       J83C : 64-QAM, 256-QAM. default 256-QAM.
-      Must be one of "16-QAM", "32-QAM", "64-QAM", "128-QAM", "256-QAM".
+      The 'value' must be one of "16-QAM", "32-QAM", "64-QAM", "128-QAM",
+      "256-QAM".
 
   -m value
   --modulation value
       Indicate the modulation type. The supported modulation types depend on
       the device model. The default modulation type is DVB-T.
-      Must be one of "ATSC-VSB", "DMB-T", "DTMB", "DVB-T", "DVB-T2", "ISDB-T",
-      "J83A", "J83B", "J83C".
+      The 'value' must be one of "ATSC-VSB", "DMB-T", "DTMB", "DVB-T",
+      "DVB-T2", "ISDB-T", "J83A", "J83B", "J83C".
 
   --pcradjust value
       Adjust the buffer transmission speed according to different application.
-      Must be one of "adjust", "disable".
+      The 'value' must be one of "adjust", "disable".
 
   -p value
   --pilot-pattern value
       DVB-T2: indicate the pilot pattern to use, a value in the range 1 to 8.
       The default is 7.
-      Must be one of "1", "2", "3", "4", "5", "6", "7", "8".
+      The 'value' must be one of "1", "2", "3", "4", "5", "6", "7", "8".
 
   --pilots
       DVB-S2 and ADTB-T: enable pilots (default: no pilot).
@@ -106,12 +108,12 @@ Options:
   --plp0-code-rate value
       DVB-T2: indicate the convolutional coding rate used by the PLP #0. The
       default is 2/3.
-      Must be one of "1/2", "2/3", "3/4", "3/5", "4/5", "5/6".
+      The 'value' must be one of "1/2", "2/3", "3/4", "3/5", "4/5", "5/6".
 
   --plp0-fec-type value
       DVB-T2: indicate the FEC type used by the PLP #0. The default is 64K
       LPDC.
-      Must be one of "16K", "64K".
+      The 'value' must be one of "16K", "64K".
 
   --plp0-high-efficiency
       DVB-T2: indicate that the PLP #0 uses High Efficiency Mode (HEM).
@@ -120,11 +122,11 @@ Options:
   --plp0-issy value
       DVB-T2: type of ISSY field to compute and insert in PLP #0. The default
       is NONE.
-      Must be one of "LONG", "NONE", "SHORT".
+      The 'value' must be one of "LONG", "NONE", "SHORT".
 
   --plp0-modulation value
       DVB-T2: indicate the modulation used by PLP #0. The default is 256-QAM.
-      Must be one of "16-QAM", "64-QAM", "256-QAM", "QPSK".
+      The 'value' must be one of "16-QAM", "64-QAM", "256-QAM", "QPSK".
 
   --plp0-null-packet-deletion
       DVB-T2: indicate that null-packet deletion is active in PLP #0. Otherwise
@@ -139,7 +141,7 @@ Options:
       some PCR to operate.
       passthrough: Bypass TS without padding null packets (input bitrate =
       output bitrate).
-      Must be one of "passthrough", "remux".
+      The 'value' must be one of "passthrough", "remux".
 
   --symbol-rate value
       J83a: Specify the symbol rate in symbols/second. The default is 5,120,000
@@ -147,12 +149,13 @@ Options:
 
   --t2-guard-interval value
       DVB-T2: indicates the guard interval. The default is 1/128.
-      Must be one of "1/4", "1/8", "1/16", "1/32", "1/128", "19/128", "19/256".
+      The 'value' must be one of "1/4", "1/8", "1/16", "1/32", "1/128",
+      "19/128", "19/256".
 
   --t2-l1-modulation value
       DVB-T2: indicate the modulation type used for the L1-post signalling
       block. The default is 16-QAM.
-      Must be one of "16-QAM", "64-QAM", "BPSK", "QPSK".
+      The 'value' must be one of "16-QAM", "64-QAM", "BPSK", "QPSK".
 
   --t2-network-id value
       DVB-T2: indicate the DVB-T2 network identification. The default is 0.
@@ -162,10 +165,10 @@ Options:
 
   --t2-version value
       DVB-T2: version tag. The default is ver131.
-      Must be one of "ver131", "ver131_lite".
+      The 'value' must be one of "ver131", "ver131_lite".
 
   -t value
   --transmission-mode value
       DVB-T, ISDB-T: indicate the transmission mode. The default is 8K.
-      Must be one of "2K", "4K", "8K".
+      The 'value' must be one of "2K", "4K", "8K".
 

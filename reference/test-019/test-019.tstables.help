@@ -82,8 +82,9 @@ Options:
       without a preceding private_data_specifier_descriptor. The specified
       value is used as private data specifier to interpret private descriptors.
       The PDS value can be an integer or one of (not case-sensitive) names.
-      Must be one of "AOM", "Australia", "AVS", "BskyB", "CanalPlus", "EACEM",
-      "EICTA", "Eutelsat", "Logiways", "Nagra", "NorDig", "OFCOM", "TPS".
+      The 'value' must be one of "AOM", "Australia", "AVS", "BskyB",
+      "CanalPlus", "EACEM", "EICTA", "Eutelsat", "Logiways", "Nagra", "NorDig",
+      "OFCOM", "TPS".
 
   -d
   --diversified-payload
@@ -120,7 +121,7 @@ Options:
       automatically detected. But the auto-detection may fail in some cases
       (for instance when the first time-stamp of an M2TS file starts with
       0x47). Using this option forces a specific format.
-      Must be one of "autodetect", "duck", "M2TS", "RS204", "TS".
+      The 'name' must be one of "autodetect", "duck", "M2TS", "RS204", "TS".
 
   --help
       Display this help text.
@@ -427,8 +428,11 @@ Options:
   --verbose
       Produce verbose output.
 
-  --version
+  --version[=name]
       Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
+      "short", "srt", "system", "vatek".
 
   --viaccess
       Equivalent to --default-cas-id 0x0500.

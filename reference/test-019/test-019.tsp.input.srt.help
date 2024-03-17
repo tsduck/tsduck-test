@@ -241,7 +241,8 @@ Options:
       returns a chunk of packets.
       The tsp-provided time-stamp is always available, always comes last and is
       less precise. The default is rtp-srt-tsp.
-      Must be one of "rtp-srt-tsp", "rtp-tsp", "srt-rtp-tsp", "srt-tsp", "tsp".
+      The 'name' must be one of "rtp-srt-tsp", "rtp-tsp", "srt-rtp-tsp",
+      "srt-tsp", "tsp".
 
   --tlpktdrop value
       Too-late Packet Drop. When enabled on receiver, it skips missing packets
