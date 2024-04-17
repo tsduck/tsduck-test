@@ -1,5 +1,5 @@
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 1, sections: 1, total size: 32 bytes
   - Section 0:
     TS id:   32464 (0x7ED0)
@@ -9,13 +9,13 @@
     Program: 18816 (0x4980)  PID: 8136 (0x1FC8)
     Program: 65520 (0xFFF0)  PID: 7408 (0x1CF0)
 
-* PMT, TID 2 (0x02), PID 496 (0x01F0)
+* PMT, TID 0x02 (2), PID 0x01F0 (496)
   Version: 26, sections: 1, total size: 210 bytes
   - Section 0:
-    Program: 18432 (0x4800), PCR PID: 511 (0x01FF)
+    Program: 0x4800 (18432), PCR PID: 0x01FF (511)
     Program information:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 2305 (0x0901)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x0901 (2305)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
@@ -23,91 +23,91 @@
     - Descriptor 2: ISDB Digital Copy Control (0xC1, 193), 1 bytes
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 256 (0x0100)
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0100 (256)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 0 (0x00)
+      Component tag: 0x00 (0)
     - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
       Still picture: false
       Sequence end code: true
       Video encode format: 1 (1080i)
       Reserve future use: 3
-    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 0x0110 (272)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 16 (0x10)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 304 (0x0130)
+      Component tag: 0x10 (16)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0130 (304)
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x1FFF (8191)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
       ECM PID: 0x1FFF (8191)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 48 (0x30)
+      Component tag: 0x30 (48)
     - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
       Data component id: 0x0008 (ARIB subtitle & teletext coding)
       Additional data component info (1 bytes): 3D
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 312 (0x0138)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0138 (312)
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x1FFF (8191)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
       ECM PID: 0x1FFF (8191)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 56 (0x38)
+      Component tag: 0x38 (56)
     - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
       Data component id: 0x0008 (ARIB subtitle & teletext coding)
       Additional data component info (1 bytes): 3C
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 320 (0x0140)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0140 (320)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 64 (0x40)
+      Component tag: 0x40 (64)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (8 bytes): 33 3F 00 03 00 00 FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 352 (0x0160)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0160 (352)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 96 (0x60)
+      Component tag: 0x60 (96)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 353 (0x0161)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0161 (353)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 97 (0x61)
+      Component tag: 0x61 (97)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 354 (0x0162)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0162 (354)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 98 (0x62)
+      Component tag: 0x62 (98)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 368 (0x0170)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0170 (368)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 112 (0x70)
+      Component tag: 0x70 (112)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 369 (0x0171)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0171 (369)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 113 (0x71)
+      Component tag: 0x71 (113)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 370 (0x0172)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0172 (370)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 114 (0x72)
+      Component tag: 0x72 (114)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
 
-* PMT, TID 2 (0x02), PID 1008 (0x03F0)
+* PMT, TID 0x02 (2), PID 0x03F0 (1008)
   Version: 29, sections: 1, total size: 210 bytes
   - Section 0:
-    Program: 18433 (0x4801), PCR PID: 511 (0x01FF)
+    Program: 0x4801 (18433), PCR PID: 0x01FF (511)
     Program information:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 2305 (0x0901)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x0901 (2305)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
@@ -115,127 +115,127 @@
     - Descriptor 2: ISDB Digital Copy Control (0xC1, 193), 1 bytes
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x4 (4)
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 256 (0x0100)
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0100 (256)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 0 (0x00)
+      Component tag: 0x00 (0)
     - Descriptor 1: ISDB Video Decode Control (0xC8, 200), 1 bytes
       Still picture: false
       Sequence end code: true
       Video encode format: 1 (1080i)
       Reserve future use: 3
-    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 272 (0x0110)
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 0x0110 (272)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 16 (0x10)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 304 (0x0130)
+      Component tag: 0x10 (16)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0130 (304)
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x1FFF (8191)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
       ECM PID: 0x1FFF (8191)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 48 (0x30)
+      Component tag: 0x30 (48)
     - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
       Data component id: 0x0008 (ARIB subtitle & teletext coding)
       Additional data component info (1 bytes): 3D
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 312 (0x0138)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0138 (312)
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0005 (ARIB CAS), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x0005 (ARIB CAS), ECM PID: 0x1FFF (8191)
     - Descriptor 1: ISDB Access Control (0xF6, 246), 4 bytes
       CA System Id: 0x000E (ARIB Content Protection)
       Transmission type: 7 (Broadcast route)
       ECM PID: 0x1FFF (8191)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 56 (0x38)
+      Component tag: 0x38 (56)
     - Descriptor 3: ISDB Data Component (0xFD, 253), 3 bytes
       Data component id: 0x0008 (ARIB subtitle & teletext coding)
       Additional data component info (1 bytes): 3C
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 320 (0x0140)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0140 (320)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 64 (0x40)
+      Component tag: 0x40 (64)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (8 bytes): 33 3F 00 03 00 00 FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 352 (0x0160)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0160 (352)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 96 (0x60)
+      Component tag: 0x60 (96)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 353 (0x0161)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0161 (353)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 97 (0x61)
+      Component tag: 0x61 (97)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 354 (0x0162)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0162 (354)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 98 (0x62)
+      Component tag: 0x62 (98)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 368 (0x0170)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0170 (368)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 112 (0x70)
+      Component tag: 0x70 (112)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 369 (0x0171)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0171 (369)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 113 (0x71)
+      Component tag: 0x71 (113)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 370 (0x0172)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0172 (370)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 114 (0x72)
+      Component tag: 0x72 (114)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000C (Multimedia coding for digital terrestrial broadcasting (A profile))
       Additional data component info (3 bytes): 1F FF BF
 
-* PMT, TID 2 (0x02), PID 8136 (0x1FC8)
+* PMT, TID 0x02 (2), PID 0x1FC8 (8136)
   Version: 29, sections: 1, total size: 99 bytes
   - Section 0:
-    Program: 18816 (0x4980), PCR PID: 1535 (0x05FF)
+    Program: 0x4980 (18816), PCR PID: 0x05FF (1535)
     Program information:
     - Descriptor 0: ISDB Digital Copy Control (0xC1, 193), 1 bytes
       Recording control: 2 (Copy can be made for only one generation)
       User-defined: 0x8 (8)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 1408 (0x0580)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0580 (1408)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 128 (0x80)
+      Component tag: 0x80 (128)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 10 bytes
       Data component id: 0x000D (Multimedia coding for digital terrestrial broadcasting (C profile))
       Additional data component info (8 bytes): 3F 2F 00 0C 00 00 FF BF
-    Elementary stream: type 0x1B (AVC video), PID: 1409 (0x0581)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0581 (1409)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 129 (0x81)
-    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 1411 (0x0583)
+      Component tag: 0x81 (129)
+    Elementary stream: type 0x0F (MPEG-2 AAC Audio), PID: 0x0583 (1411)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 131 (0x83)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1415 (0x0587)
+      Component tag: 0x83 (131)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0587 (1415)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 135 (0x87)
+      Component tag: 0x87 (135)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
       Data component id: 0x0012 (Subtitle coding for digital terrestrial broadcasting (C profile))
       Additional data component info (1 bytes): AD
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 1417 (0x0589)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0589 (1417)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 137 (0x89)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 1418 (0x058A)
+      Component tag: 0x89 (137)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x058A (1418)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 138 (0x8A)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 1419 (0x058B)
+      Component tag: 0x8A (138)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x058B (1419)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 139 (0x8B)
+      Component tag: 0x8B (139)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 5 bytes
       Data component id: 0x000D (Multimedia coding for digital terrestrial broadcasting (C profile))
       Additional data component info (3 bytes): 1F FF BF
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 13, sections: 1, total size: 138 bytes
   - Section 0:
-    Network Id: 32464 (0x7ED0)
+    Network Id: 0x7ED0 (32464)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 6 bytes
       Name: "秋田０"
@@ -243,12 +243,12 @@
       Broadcasting flag: 0 (Broadcasting)
       Broadcasting identifier: 3 (Terrestrial television)
       Additional broadcasting id: 0x01 (1)
-    Transport Stream Id: 32464 (0x7ED0), Original Network Id: 32464 (0x7ED0)
+    Transport Stream Id: 0x7ED0 (32464), Original Network Id: 0x7ED0 (32464)
     - Descriptor 0: Service List (0x41, 65), 12 bytes
-      Service id: 18432 (0x4800), Type: 0x01 (Digital television service)
-      Service id: 18433 (0x4801), Type: 0x01 (Digital television service)
-      Service id: 18816 (0x4980), Type: 0xC0 (Data service)
-      Service id: 65520 (0xFFF0), Type: 0xA4 (Engineering service)
+      Service id: 0x4800 (18432), Type: 0x01 (Digital television service)
+      Service id: 0x4801 (18433), Type: 0x01 (Digital television service)
+      Service id: 0x4980 (18816), Type: 0xC0 (Data service)
+      Service id: 0xFFF0 (65520), Type: 0xA4 (Engineering service)
     - Descriptor 1: ISDB Terrestrial Delivery System (0xFA, 250), 52 bytes
       Area code: 0xAC6 (2758)
       Guard interval: 2 (1/8)
@@ -290,7 +290,7 @@
       - Transmission type info: 0xAF (175)
         Service id: 0x4980 (18816)
 
-* BIT (ISDB), TID 196 (0xC4), PID 36 (0x0024)
+* BIT (ISDB), TID 0xC4 (196), PID 0x0024 (36)
   Version: 3, sections: 1, total size: 97 bytes
   - Section 0:
     Original network id: 0x7ED0 (32464)
@@ -332,77 +332,77 @@
       - Table id: 0xC3 (SDTT (ISDB))
         Table description (2 bytes): 01 80
 
-* PMT, TID 2 (0x02), PID 7408 (0x1CF0)
+* PMT, TID 0x02 (2), PID 0x1CF0 (7408)
   Version: 0, sections: 1, total size: 160 bytes
   - Section 0:
-    Program: 65520 (0xFFF0), PCR PID: none
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7281 (0x1C71)
+    Program: 0xFFF0 (65520), PCR PID: none
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C71 (7281)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 113 (0x71)
+      Component tag: 0x71 (113)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7282 (0x1C72)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C72 (7282)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 114 (0x72)
+      Component tag: 0x72 (114)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7283 (0x1C73)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C73 (7283)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 115 (0x73)
+      Component tag: 0x73 (115)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7284 (0x1C74)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C74 (7284)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 116 (0x74)
+      Component tag: 0x74 (116)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7285 (0x1C75)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C75 (7285)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 117 (0x75)
+      Component tag: 0x75 (117)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7286 (0x1C76)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C76 (7286)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 118 (0x76)
+      Component tag: 0x76 (118)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7287 (0x1C77)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C77 (7287)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 119 (0x77)
+      Component tag: 0x77 (119)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7288 (0x1C78)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C78 (7288)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 120 (0x78)
+      Component tag: 0x78 (120)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7264 (0x1C60)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C60 (7264)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 96 (0x60)
+      Component tag: 0x60 (96)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7265 (0x1C61)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C61 (7265)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 97 (0x61)
+      Component tag: 0x61 (97)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7266 (0x1C62)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C62 (7266)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 98 (0x62)
+      Component tag: 0x62 (98)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 7267 (0x1C63)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x1C63 (7267)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 99 (0x63)
+      Component tag: 0x63 (99)
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x0009 (ARIB data download)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 3, sections: 1, total size: 131 bytes
   - Section 0:
-    Transport Stream Id: 32464 (0x7ED0)
-    Original Network Id: 32464 (0x7ED0)
-    Service Id: 18432 (0x4800), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x7ED0 (32464)
+    Original Network Id: 0x7ED0 (32464)
+    Service Id: 0x4800 (18432), EITs: yes, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x01 (Digital television service)
@@ -415,7 +415,7 @@
       Logo id: 0x000 (0)
       Logo version: 0x001 (1)
       Download data id: 0x4800 (18432)
-    Service Id: 18433 (0x4801), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x4801 (18433), EITs: yes, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x01 (Digital television service)
@@ -426,7 +426,7 @@
     - Descriptor 2: ISDB Logo Transmission (0xCF, 207), 3 bytes
       Logo transmission type: 0x02 (CDT transmission scheme 2: indirectly with download data identification)
       Logo id: 0x000 (0)
-    Service Id: 18816 (0x4980), EITs: no, EITp/f: yes, CA mode: free
+    Service Id: 0x4980 (18816), EITs: no, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0xC0 (Data service)
@@ -445,7 +445,7 @@
       Byte 87, bit #4 should be '1'
       Byte 87, bit #5 should be '1'
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 0, sections: 1, total size: 19 bytes
   - Section 0:
     - Descriptor 0: ISDB Access Control (0xF6, 246), 5 bytes

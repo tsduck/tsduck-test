@@ -1,5 +1,5 @@
 
-* MGT (ATSC), TID 199 (0xC7)
+* MGT (ATSC), TID 0xC7 (199)
   Section: 0 (last: 0), version: 12, size: 138 bytes
   Protocol version: 0, number of table types: 11
   - Table type: TVCT-current (0x0000)
@@ -25,14 +25,14 @@
   - Table type: RRT-1 (0x0301)
     PID: 0x1FFB (8187), version: 0, size: 979 bytes
 
-* STT (ATSC), TID 205 (0xCD)
+* STT (ATSC), TID 0xCD (205)
   Section: 0 (last: 0), version: 0, size: 20 bytes
   Protocol version: 0
   System time: 0x49B8E887 (1236854919), GPS-UTC offset: 0x12 (18)
   Corresponding UTC time: 2019/03/17 10:48:21
   Daylight saving time: yes, next switch day: 0, hour: 0
 
-* TVCT (ATSC), TID 200 (0xC8)
+* TVCT (ATSC), TID 0xC8 (200)
   Section: 0 (last: 0), version: 11, size: 218 bytes
   Transport stream id: 0x1FE1 (8161)
   Protocol version: 0, number of channels: 4
@@ -78,7 +78,7 @@
       - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
       - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
 
-* PAT, TID 0 (0x00)
+* PAT, TID 0x00 (0)
   Section: 0 (last: 0), version: 2, size: 28 bytes
   TS id:    8161 (0x1FE1)
   Program:     3 (0x0003)  PID:   48 (0x0030)
@@ -86,14 +86,14 @@
   Program:     5 (0x0005)  PID:   80 (0x0050)
   Program:     6 (0x0006)  PID:   96 (0x0060)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 7, size: 88 bytes
-  Program: 4 (0x0004), PCR PID: 65 (0x0041)
+  Program: 0x0004 (4), PCR PID: 0x0041 (65)
   Program information:
   - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
     Component name: Number of strings: 1
       Language: "eng", text: "enc"
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 65 (0x0041)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0041 (65)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
     MPEG-1 only: false, constained parameter: true, still picture: false
@@ -102,7 +102,7 @@
     Frame rate extension: false
   - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
     Alignment type: 0x02 (2, Video access unit)
-  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 68 (0x0044)
+  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0044 (68)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
   - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
@@ -123,14 +123,14 @@
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 2, size: 88 bytes
-  Program: 3 (0x0003), PCR PID: 49 (0x0031)
+  Program: 0x0003 (3), PCR PID: 0x0031 (49)
   Program information:
   - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
     Component name: Number of strings: 1
       Language: "eng", text: "enc"
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0031 (49)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
     MPEG-1 only: false, constained parameter: true, still picture: false
@@ -139,7 +139,7 @@
     Frame rate extension: false
   - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
     Alignment type: 0x02 (2, Video access unit)
-  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
+  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0034 (52)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
   - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
@@ -160,9 +160,9 @@
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 1, size: 126 bytes
-  Program: 6 (0x0006), PCR PID: 97 (0x0061)
+  Program: 0x0006 (6), PCR PID: 0x0061 (97)
   Program information:
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x47413934 ("GA94")
@@ -174,7 +174,7 @@
       Language: "eng", text: "enc"
   - Descriptor 3: ATSC Redistribution Control (0xAA, 170), 1 bytes
     RC information (1 bytes): FF
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 97 (0x0061)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0061 (97)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
     MPEG-1 only: false, constained parameter: true, still picture: false
@@ -188,7 +188,7 @@
     - Language: "eng", digital: false, line 21: false, easy reader: false, wide: false
     - Language: "eng", digital: false, line 21: true, easy reader: false, wide: false
     - Language: "eng", digital: true, service: 0x01 (1), easy reader: false, wide: false
-  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 100 (0x0064)
+  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0064 (100)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
   - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
@@ -209,14 +209,14 @@
   - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 6, size: 88 bytes
-  Program: 5 (0x0005), PCR PID: 81 (0x0051)
+  Program: 0x0005 (5), PCR PID: 0x0051 (81)
   Program information:
   - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
     Component name: Number of strings: 1
       Language: "eng", text: "enc"
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 81 (0x0051)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0051 (81)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x04 (29.97 fps (30000/1001))
     MPEG-1 only: false, constained parameter: true, still picture: false
@@ -225,7 +225,7 @@
     Frame rate extension: false
   - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
     Alignment type: 0x02 (2, Video access unit)
-  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 84 (0x0054)
+  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0054 (84)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
   - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes

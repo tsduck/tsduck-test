@@ -1,5 +1,5 @@
 
-* MGT (ATSC), TID 199 (0xC7)
+* MGT (ATSC), TID 0xC7 (199)
   Section: 0 (last: 0), version: 12, size: 138 bytes
   Protocol version: 0, number of table types: 11
   - Table type: TVCT-current (0x0000)
@@ -25,14 +25,14 @@
   - Table type: RRT-1 (0x0301)
     PID: 0x1FFB (8187), version: 0, size: 979 bytes
 
-* STT (ATSC), TID 205 (0xCD)
+* STT (ATSC), TID 0xCD (205)
   Section: 0 (last: 0), version: 0, size: 20 bytes
   Protocol version: 0
   System time: 0x49B8E889 (1236854921), GPS-UTC offset: 0x0C (12)
   Corresponding UTC time: 2019/03/17 10:48:29
   Daylight saving time: no, next switch day: 3, hour: 15
 
-* TVCT (ATSC), TID 200 (0xC8)
+* TVCT (ATSC), TID 0xC8 (200)
   Section: 0 (last: 0), version: 11, size: 257 bytes
   Transport stream id: 0x1FE1 (8161)
   Protocol version: 0, number of channels: 4
@@ -83,7 +83,7 @@
       Language: "eng", text: "Component name"
       Language: "foo", text: "Bar name"
 
-* MGT (ATSC), TID 199 (0xC7)
+* MGT (ATSC), TID 0xC7 (199)
   Section: 0 (last: 0), version: 0, size: 403 bytes
   Protocol version: 0, number of table types: 0
   Global descriptors:
@@ -211,13 +211,13 @@
     DCC departing request text: Number of strings: 1
       Language: "foo", text: "Bar text"
 
-* ETT (ATSC), TID 204 (0xCC)
+* ETT (ATSC), TID 0xCC (204)
   Section: 0 (last: 0), version: 0, size: 18 bytes
   ETT table id extension: 0x1234 (4660)
   Protocol version: 0, ETM id: 0x56789ABC (1450744508)
   Extended text message: Number of strings: 0
 
-* ETT (ATSC), TID 204 (0xCC)
+* ETT (ATSC), TID 0xCC (204)
   Section: 0 (last: 0), version: 2, size: 70 bytes
   ETT table id extension: 0xCDEF (52719)
   Protocol version: 1, ETM id: 0x01234567 (19088743)
@@ -225,12 +225,12 @@
     Language: "eng", text: "Extended English Text"
     Language: "foo", text: "Foo Bar Extension"
 
-* EIT (ATSC), TID 203 (0xCB)
+* EIT (ATSC), TID 0xCB (203)
   Section: 0 (last: 0), version: 0, size: 14 bytes
   Source Id: 0x1234 (4660)
   Protocol version: 0, number of events: 0
 
-* EIT (ATSC), TID 203 (0xCB)
+* EIT (ATSC), TID 0xCB (203)
   Section: 0 (last: 0), version: 3, size: 84 bytes
   Source Id: 0x5678 (22136)
   Protocol version: 2, number of events: 2
@@ -252,13 +252,13 @@
     - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
       Number of regions: 0
 
-* RRT (ATSC), TID 202 (0xCA)
+* RRT (ATSC), TID 0xCA (202)
   Section: 0 (last: 0), version: 0, size: 17 bytes
   Rating region: 0x07 (7)
   Protocol version: 0
   Number of dimensions: 0
 
-* RRT (ATSC), TID 202 (0xCA)
+* RRT (ATSC), TID 0xCA (202)
   Section: 0 (last: 0), version: 21, size: 205 bytes
   Rating region: 0xAC (172)
   Protocol version: 12
@@ -295,11 +295,11 @@
   - Descriptor 2: ATSC Caption Service (0x86, 134), 1 bytes
     Number of services: 0
 
-* DCCSCT (ATSC), TID 212 (0xD4)
+* DCCSCT (ATSC), TID 0xD4 (212)
   Section: 0 (last: 0), version: 0, size: 16 bytes
   Protocol version: 0, DCCSCT type: 0x0000, number of updates: 0
 
-* DCCSCT (ATSC), TID 212 (0xD4)
+* DCCSCT (ATSC), TID 0xD4 (212)
   Section: 0 (last: 0), version: 23, size: 113 bytes
   Protocol version: 2, DCCSCT type: 0x1234, number of updates: 3
   - Update type: 0x01 (new_genre_category)
@@ -331,12 +331,12 @@
   - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
     Number of regions: 0
 
-* DCCT (ATSC), TID 211 (0xD3)
+* DCCT (ATSC), TID 0xD3 (211)
   Section: 0 (last: 0), version: 0, size: 16 bytes
   DCC subtype: 0x00 (0), DCC id: 0x89 (137)
   Protocol version: 0, number of DCC tests: 0
 
-* DCCT (ATSC), TID 211 (0xD3)
+* DCCT (ATSC), TID 0xD3 (211)
   Section: 0 (last: 0), version: 28, size: 87 bytes
   DCC subtype: 0x78 (120), DCC id: 0x9A (154)
   Protocol version: 23, number of DCC tests: 2

@@ -1,5 +1,5 @@
 
-* MGT (ATSC), TID 199 (0xC7), PID 200 (0x00C8)
+* MGT (ATSC), TID 0xC7 (199), PID 0x00C8 (200)
   Version: 12, sections: 1, total size: 138 bytes
   - Section 0:
     Protocol version: 0, number of table types: 11
@@ -26,7 +26,7 @@
     - Table type: RRT-1 (0x0301)
       PID: 0x1FFB (8187), version: 0, size: 979 bytes
 
-* STT (ATSC), TID 205 (0xCD), PID 200 (0x00C8)
+* STT (ATSC), TID 0xCD (205), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 20 bytes
   - Section 0:
     Protocol version: 0
@@ -34,7 +34,7 @@
     Corresponding UTC time: 2019/03/17 10:48:29
     Daylight saving time: no, next switch day: 3, hour: 15
 
-* TVCT (ATSC), TID 200 (0xC8), PID 200 (0x00C8)
+* TVCT (ATSC), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 11, sections: 1, total size: 257 bytes
   - Section 0:
     Transport stream id: 0x1FE1 (8161)
@@ -86,7 +86,7 @@
         Language: "eng", text: "Component name"
         Language: "foo", text: "Bar name"
 
-* MGT (ATSC), TID 199 (0xC7), PID 200 (0x00C8)
+* MGT (ATSC), TID 0xC7 (199), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 403 bytes
   - Section 0:
     Protocol version: 0, number of table types: 0
@@ -215,14 +215,14 @@
       DCC departing request text: Number of strings: 1
         Language: "foo", text: "Bar text"
 
-* ETT (ATSC), TID 204 (0xCC), PID 200 (0x00C8)
+* ETT (ATSC), TID 0xCC (204), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 18 bytes
   - Section 0:
     ETT table id extension: 0x1234 (4660)
     Protocol version: 0, ETM id: 0x56789ABC (1450744508)
     Extended text message: Number of strings: 0
 
-* ETT (ATSC), TID 204 (0xCC), PID 200 (0x00C8)
+* ETT (ATSC), TID 0xCC (204), PID 0x00C8 (200)
   Version: 2, sections: 1, total size: 70 bytes
   - Section 0:
     ETT table id extension: 0xCDEF (52719)
@@ -231,13 +231,13 @@
       Language: "eng", text: "Extended English Text"
       Language: "foo", text: "Foo Bar Extension"
 
-* EIT (ATSC), TID 203 (0xCB), PID 200 (0x00C8)
+* EIT (ATSC), TID 0xCB (203), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 14 bytes
   - Section 0:
     Source Id: 0x1234 (4660)
     Protocol version: 0, number of events: 0
 
-* EIT (ATSC), TID 203 (0xCB), PID 200 (0x00C8)
+* EIT (ATSC), TID 0xCB (203), PID 0x00C8 (200)
   Version: 3, sections: 1, total size: 84 bytes
   - Section 0:
     Source Id: 0x5678 (22136)
@@ -260,14 +260,14 @@
       - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
         Number of regions: 0
 
-* RRT (ATSC), TID 202 (0xCA), PID 200 (0x00C8)
+* RRT (ATSC), TID 0xCA (202), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 17 bytes
   - Section 0:
     Rating region: 0x07 (7)
     Protocol version: 0
     Number of dimensions: 0
 
-* RRT (ATSC), TID 202 (0xCA), PID 200 (0x00C8)
+* RRT (ATSC), TID 0xCA (202), PID 0x00C8 (200)
   Version: 21, sections: 1, total size: 205 bytes
   - Section 0:
     Rating region: 0xAC (172)
@@ -305,12 +305,12 @@
     - Descriptor 2: ATSC Caption Service (0x86, 134), 1 bytes
       Number of services: 0
 
-* DCCSCT (ATSC), TID 212 (0xD4), PID 200 (0x00C8)
+* DCCSCT (ATSC), TID 0xD4 (212), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 16 bytes
   - Section 0:
     Protocol version: 0, DCCSCT type: 0x0000, number of updates: 0
 
-* DCCSCT (ATSC), TID 212 (0xD4), PID 200 (0x00C8)
+* DCCSCT (ATSC), TID 0xD4 (212), PID 0x00C8 (200)
   Version: 23, sections: 1, total size: 113 bytes
   - Section 0:
     Protocol version: 2, DCCSCT type: 0x1234, number of updates: 3
@@ -343,13 +343,13 @@
     - Descriptor 2: ATSC Content Advisory (0x87, 135), 1 bytes
       Number of regions: 0
 
-* DCCT (ATSC), TID 211 (0xD3), PID 200 (0x00C8)
+* DCCT (ATSC), TID 0xD3 (211), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 16 bytes
   - Section 0:
     DCC subtype: 0x00 (0), DCC id: 0x89 (137)
     Protocol version: 0, number of DCC tests: 0
 
-* DCCT (ATSC), TID 211 (0xD3), PID 200 (0x00C8)
+* DCCT (ATSC), TID 0xD3 (211), PID 0x00C8 (200)
   Version: 28, sections: 1, total size: 87 bytes
   - Section 0:
     DCC subtype: 0x78 (120), DCC id: 0x9A (154)

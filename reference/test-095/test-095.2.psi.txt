@@ -1,56 +1,56 @@
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 1, sections: 1, total size: 61 bytes
   - Section 0:
-    Transport Stream Id: 1080 (0x0438)
-    Original Network Id: 1 (0x0001)
-    Service Id: 8803 (0x2263), EITs: yes, EITp/f: yes, CA mode: controlled
+    Transport Stream Id: 0x0438 (1080)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x2263 (8803), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ CINEMA", Provider: "CSAT"
-    Service Id: 8810 (0x226A), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x226A (8810), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 12 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CNEWS", Provider: "CSAT"
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 1, sections: 1, total size: 20 bytes
   - Section 0:
     TS id:    1080 (0x0438)
     Program:  8803 (0x2263)  PID:  300 (0x012C)
     Program:  8810 (0x226A)  PID: 1000 (0x03E8)
 
-* PMT, TID 2 (0x02), PID 1000 (0x03E8)
+* PMT, TID 0x02 (2), PID 0x03E8 (1000)
   Version: 1, sections: 1, total size: 36 bytes
   - Section 0:
-    Program: 8810 (0x226A), PCR PID: 1010 (0x03F2)
-    Elementary stream: type 0x1B (AVC video), PID: 1010 (0x03F2)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1043 (0x0413)
+    Program: 0x226A (8810), PCR PID: 0x03F2 (1010)
+    Elementary stream: type 0x1B (AVC video), PID: 0x03F2 (1010)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0413 (1043)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 300 (0x012C)
+* PMT, TID 0x02 (2), PID 0x012C (300)
   Version: 13, sections: 1, total size: 66 bytes
   - Section 0:
-    Program: 8803 (0x2263), PCR PID: 310 (0x0136)
-    Elementary stream: type 0x1B (AVC video), PID: 310 (0x0136)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 322 (0x0142)
+    Program: 0x2263 (8803), PCR PID: 0x0136 (310)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0136 (310)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0142 (322)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0156 (342)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 343 (0x0157)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0157 (343)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 

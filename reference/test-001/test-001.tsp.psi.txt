@@ -1,5 +1,5 @@
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 12, sections: 1, total size: 60 bytes
   - Section 0:
     TS id:    1080 (0x0438)
@@ -16,589 +16,589 @@
     Program:  8810 (0x226A)  PID: 1000 (0x03E8)
     Program:  8899 (0x22C3)  PID: 4099 (0x1003)
 
-* PMT, TID 2 (0x02), PID 600 (0x0258)
+* PMT, TID 0x02 (2), PID 0x0258 (600)
   Version: 8, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8806 (0x2266), PCR PID: 610 (0x0262)
+    Program: 0x2266 (8806), PCR PID: 0x0262 (610)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 666 (0x029A)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x029A (666)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 676 (0x02A4)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x02A4 (676)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 677 (0x02A5)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x02A5 (677)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 671 (0x029F)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x029F (671)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 680 (0x02A8)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x02A8 (680)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 682 (0x02AA)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x02AA (682)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 687 (0x02AF)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x02AF (687)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
-    Elementary stream: type 0x1B (AVC video), PID: 610 (0x0262)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 621 (0x026D)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0262 (610)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x026D (621)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 622 (0x026E)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x026E (622)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 642 (0x0282)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0282 (642)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 643 (0x0283)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0283 (643)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 500 (0x01F4)
+* PMT, TID 0x02 (2), PID 0x01F4 (500)
   Version: 30, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8805 (0x2265), PCR PID: 510 (0x01FE)
+    Program: 0x2265 (8805), PCR PID: 0x01FE (510)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 566 (0x0236)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x0236 (566)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 576 (0x0240)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0240 (576)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 577 (0x0241)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x0241 (577)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 571 (0x023B)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x023B (571)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 580 (0x0244)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0244 (580)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 582 (0x0246)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0246 (582)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 587 (0x024B)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x024B (587)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
-    Elementary stream: type 0x1B (AVC video), PID: 510 (0x01FE)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 521 (0x0209)
+    Elementary stream: type 0x1B (AVC video), PID: 0x01FE (510)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0209 (521)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 522 (0x020A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x020A (522)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 542 (0x021E)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x021E (542)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 543 (0x021F)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x021F (543)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 8, sections: 1, total size: 163 bytes
   - Section 0:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), EMM PID: 5193 (0x1449)
+      CA System Id: 0x1811 (Nagravision), EMM PID: 0x1449 (5193)
       Private CA data (3 bytes): 02 FE 22
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), EMM PID: 5710 (0x164E)
+      CA System Id: 0x1811 (Nagravision), EMM PID: 0x164E (5710)
       Private CA data (3 bytes): 02 33 41
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), EMM PID: 5703 (0x1647)
+      CA System Id: 0x1811 (Nagravision), EMM PID: 0x1647 (5703)
       Private CA data (3 bytes): 02 33 17
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), EMM PID: 5702 (0x1646)
+      CA System Id: 0x1811 (Nagravision), EMM PID: 0x1646 (5702)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 4: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), EMM PID: 5701 (0x1645)
+      CA System Id: 0x1811 (Nagravision), EMM PID: 0x1645 (5701)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 5: CA (0x09, 9), 11 bytes
-      CA System Id: 0x1863 (Nagravision), EMM PID: 5712 (0x1650)
+      CA System Id: 0x1863 (Nagravision), EMM PID: 0x1650 (5712)
       Private CA data (7 bytes): 06 33 41 33 42 33 43
     - Descriptor 6: CA (0x09, 9), 12 bytes
-      CA System Id: 0x0500 (Viaccess), EMM PID: 5770 (0x168A)
+      CA System Id: 0x0500 (Viaccess), EMM PID: 0x168A (5770)
       Private CA data (8 bytes): 13 01 20 14 03 04 0F 40
     - Descriptor 7: CA (0x09, 9), 17 bytes
-      CA System Id: 0x0500 (Viaccess), EMM PID: 5776 (0x1690)
+      CA System Id: 0x0500 (Viaccess), EMM PID: 0x1690 (5776)
       Private CA data (13 bytes):
         0000:  13 01 20 14 03 03 28 30 14 03 D0 00 C0           .. ...(0.....
     - Descriptor 8: CA (0x09, 9), 12 bytes
-      CA System Id: 0x0500 (Viaccess), EMM PID: 5775 (0x168F)
+      CA System Id: 0x0500 (Viaccess), EMM PID: 0x168F (5775)
       Private CA data (8 bytes): 13 01 20 14 03 03 29 40
     - Descriptor 9: CA (0x09, 9), 12 bytes
-      CA System Id: 0x0500 (Viaccess), EMM PID: 5785 (0x1699)
+      CA System Id: 0x0500 (Viaccess), EMM PID: 0x1699 (5785)
       Private CA data (8 bytes): 13 01 20 14 03 03 29 20
     - Descriptor 10: CA (0x09, 9), 17 bytes
-      CA System Id: 0x0500 (Viaccess), EMM PID: 5772 (0x168C)
+      CA System Id: 0x0500 (Viaccess), EMM PID: 0x168C (5772)
       Private CA data (13 bytes):
         0000:  13 01 20 14 03 03 0B 00 14 03 03 28 30           .. ........(0
     - Descriptor 11: CA (0x09, 9), 11 bytes
-      CA System Id: 0x1883 (Nagravision), EMM PID: 5725 (0x165D)
+      CA System Id: 0x1883 (Nagravision), EMM PID: 0x165D (5725)
       Private CA data (7 bytes): 06 33 41 33 11 33 15
 
-* PMT, TID 2 (0x02), PID 400 (0x0190)
+* PMT, TID 0x02 (2), PID 0x0190 (400)
   Version: 14, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8804 (0x2264), PCR PID: 410 (0x019A)
+    Program: 0x2264 (8804), PCR PID: 0x019A (410)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 466 (0x01D2)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x01D2 (466)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 476 (0x01DC)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x01DC (476)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 477 (0x01DD)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x01DD (477)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 471 (0x01D7)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x01D7 (471)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 480 (0x01E0)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x01E0 (480)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 482 (0x01E2)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x01E2 (482)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 487 (0x01E7)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x01E7 (487)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
-    Elementary stream: type 0x1B (AVC video), PID: 410 (0x019A)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 421 (0x01A5)
+    Elementary stream: type 0x1B (AVC video), PID: 0x019A (410)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x01A5 (421)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 422 (0x01A6)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x01A6 (422)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 442 (0x01BA)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x01BA (442)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 443 (0x01BB)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x01BB (443)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 200 (0x00C8)
+* PMT, TID 0x02 (2), PID 0x00C8 (200)
   Version: 15, sections: 1, total size: 81 bytes
   - Section 0:
-    Program: 8802 (0x2262), PCR PID: 210 (0x00D2)
-    Elementary stream: type 0x1B (AVC video), PID: 210 (0x00D2)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 221 (0x00DD)
+    Program: 0x2262 (8802), PCR PID: 0x00D2 (210)
+    Elementary stream: type 0x1B (AVC video), PID: 0x00D2 (210)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00DD (221)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 222 (0x00DE)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00DE (222)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 242 (0x00F2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00F2 (242)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 243 (0x00F3)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00F3 (243)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 100 (0x0064)
+* PMT, TID 0x02 (2), PID 0x0064 (100)
   Version: 10, sections: 1, total size: 183 bytes
   - Section 0:
-    Program: 8801 (0x2261), PCR PID: 110 (0x006E)
+    Program: 0x2261 (8801), PCR PID: 0x006E (110)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 166 (0x00A6)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x00A6 (166)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 176 (0x00B0)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x00B0 (176)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 177 (0x00B1)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x00B1 (177)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 171 (0x00AB)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x00AB (171)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 180 (0x00B4)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x00B4 (180)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 182 (0x00B6)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x00B6 (182)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 187 (0x00BB)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x00BB (187)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
-    Elementary stream: type 0x1B (AVC video), PID: 110 (0x006E)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 121 (0x0079)
+    Elementary stream: type 0x1B (AVC video), PID: 0x006E (110)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0079 (121)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 122 (0x007A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x007A (122)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 123 (0x007B)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x007B (123)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008E (142)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 143 (0x008F)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008F (143)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 900 (0x0384)
+* PMT, TID 0x02 (2), PID 0x0384 (900)
   Version: 7, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+    Program: 0x2269 (8809), PCR PID: 0x038E (910)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 965 (0x03C5)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x03C5 (965)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 976 (0x03D0)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x03D0 (976)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 977 (0x03D1)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x03D1 (977)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 971 (0x03CB)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x03CB (971)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 980 (0x03D4)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D4 (980)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 981 (0x03D5)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D5 (981)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 20                 ..... ...)
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-    Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+    Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 800 (0x0320)
+* PMT, TID 0x02 (2), PID 0x0320 (800)
   Version: 7, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8808 (0x2268), PCR PID: 810 (0x032A)
+    Program: 0x2268 (8808), PCR PID: 0x032A (810)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 865 (0x0361)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x0361 (865)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 876 (0x036C)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x036C (876)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 877 (0x036D)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x036D (877)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 871 (0x0367)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0367 (871)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 880 (0x0370)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0370 (880)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 881 (0x0371)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0371 (881)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 20                 ..... ...)
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 882 (0x0372)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0372 (882)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-    Elementary stream: type 0x1B (AVC video), PID: 810 (0x032A)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 821 (0x0335)
+    Elementary stream: type 0x1B (AVC video), PID: 0x032A (810)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0335 (821)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 822 (0x0336)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0336 (822)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 842 (0x034A)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x034A (842)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 843 (0x034B)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x034B (843)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 1000 (0x03E8)
+* PMT, TID 0x02 (2), PID 0x03E8 (1000)
   Version: 1, sections: 1, total size: 51 bytes
   - Section 0:
-    Program: 8810 (0x226A), PCR PID: 1010 (0x03F2)
-    Elementary stream: type 0x1B (AVC video), PID: 1010 (0x03F2)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1021 (0x03FD)
+    Program: 0x226A (8810), PCR PID: 0x03F2 (1010)
+    Elementary stream: type 0x1B (AVC video), PID: 0x03F2 (1010)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03FD (1021)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1043 (0x0413)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0413 (1043)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 300 (0x012C)
+* PMT, TID 0x02 (2), PID 0x012C (300)
   Version: 13, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8803 (0x2263), PCR PID: 310 (0x0136)
+    Program: 0x2263 (8803), PCR PID: 0x0136 (310)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 366 (0x016E)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x016E (366)
       Private CA data (3 bytes): 02 33 15
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 376 (0x0178)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0178 (376)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 377 (0x0179)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x0179 (377)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 371 (0x0173)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0173 (371)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 380 (0x017C)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x017C (380)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 382 (0x017E)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x017E (382)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 387 (0x0183)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x0183 (387)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 04 0F 40                 ..... ....@
-    Elementary stream: type 0x1B (AVC video), PID: 310 (0x0136)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 321 (0x0141)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0136 (310)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0141 (321)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x44 (AC-3, full, complete main, multichannel > 2)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 322 (0x0142)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0142 (322)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0156 (342)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 343 (0x0157)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0157 (343)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 4099 (0x1003)
+* PMT, TID 0x02 (2), PID 0x1003 (4099)
   Version: 0, sections: 1, total size: 39 bytes
   - Section 0:
-    Program: 8899 (0x22C3), PCR PID: none
-    Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 4005 (0x0FA5)
+    Program: 0x22C3 (8899), PCR PID: none
+    Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 0x0FA5 (4005)
     - Descriptor 0: Data Broadcast Id (0x66, 102), 16 bytes
       Data broadcast id: 0x0140 (320, Canal+)
       Data Broadcast selector (14 bytes):
         0000:  07 1B 05 01 04 6E 61 6D 65 04 6D 65 73 73        .....name.mess
 
-* PMT, TID 2 (0x02), PID 700 (0x02BC)
+* PMT, TID 0x02 (2), PID 0x02BC (700)
   Version: 5, sections: 1, total size: 168 bytes
   - Section 0:
-    Program: 8807 (0x2267), PCR PID: 710 (0x02C6)
+    Program: 0x2267 (8807), PCR PID: 0x02C6 (710)
     Program information:
     - Descriptor 0: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1811 (Nagravision), ECM PID: 765 (0x02FD)
+      CA System Id: 0x1811 (Nagravision), ECM PID: 0x02FD (765)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 1: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 776 (0x0308)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0308 (776)
       Private CA data (3 bytes): 02 33 42
     - Descriptor 2: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1883 (Nagravision), ECM PID: 777 (0x0309)
+      CA System Id: 0x1883 (Nagravision), ECM PID: 0x0309 (777)
       Private CA data (3 bytes): 02 33 11
     - Descriptor 3: CA (0x09, 9), 7 bytes
-      CA System Id: 0x1863 (Nagravision), ECM PID: 771 (0x0303)
+      CA System Id: 0x1863 (Nagravision), ECM PID: 0x0303 (771)
       Private CA data (3 bytes): 02 33 43
     - Descriptor 4: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 780 (0x030C)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x030C (780)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 28 30                 ..... ...(0
     - Descriptor 5: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 781 (0x030D)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x030D (781)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 20                 ..... ...)
     - Descriptor 6: CA (0x09, 9), 15 bytes
-      CA System Id: 0x0500 (Viaccess), ECM PID: 782 (0x030E)
+      CA System Id: 0x0500 (Viaccess), ECM PID: 0x030E (782)
       Private CA data (11 bytes):
         0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-    Elementary stream: type 0x1B (AVC video), PID: 710 (0x02C6)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 721 (0x02D1)
+    Elementary stream: type 0x1B (AVC video), PID: 0x02C6 (710)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x02D1 (721)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 722 (0x02D2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x02D2 (722)
     - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 742 (0x02E6)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x02E6 (742)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 16 (0x10)
+      Language: fra, Type: 0x10 (16)
       Type: DVB subtitles, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 743 (0x02E7)
+      Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x02E7 (743)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 26, sections: 3, total size: 2185 bytes
   - Section 0:
-    Network Id: 1 (0x0001)
+    Network Id: 0x0001 (1)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 8 bytes
       Name: "ASTRA 1"
     - Descriptor 1: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1108 (0x0454)
-      Original network Id: 1 (0x0001)
-      Service id: 12 (0x000C)
+      Transport stream id: 0x0454 (1108)
+      Original network Id: 0x0001 (1)
+      Service id: 0x000C (12)
       Linkage type: 0x01 (information service)
     - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1111 (0x0457)
-      Original network Id: 1 (0x0001)
-      Service id: 13 (0x000D)
+      Transport stream id: 0x0457 (1111)
+      Original network Id: 0x0001 (1)
+      Service id: 0x000D (13)
       Linkage type: 0x01 (information service)
     - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1111 (0x0457)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0457 (1111)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
     - Descriptor 4: Linkage (0x4A, 74), 9 bytes
-      Transport stream id: 1108 (0x0454)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0454 (1108)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
       Private data (2 bytes): 4E 4F
     - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-      Transport stream id: 1111 (0x0457)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0457 (1111)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x0A (TS containing SSU BAT or NIT)
       SSU table type: BAT
     - Descriptor 6: Linkage (0x4A, 74), 10 bytes
-      Transport stream id: 1120 (0x0460)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0460 (1120)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x0C (TS containing INT BAT or NIT)
       INT linkage table type: BAT
       Bouquet id: 0xFFFF (65535)
     - Descriptor 7: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1120 (0x0460)
-      Original network Id: 1 (0x0001)
-      Service id: 6006 (0x1776)
+      Transport stream id: 0x0460 (1120)
+      Original network Id: 0x0001 (1)
+      Service id: 0x1776 (6006)
       Linkage type: 0x07 (RCS map)
     - Descriptor 8: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000001 (SES)
     - Descriptor 9: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1111 (0x0457)
-      Original network Id: 1 (0x0001)
-      Service id: 7910 (0x1EE6)
+      Transport stream id: 0x0457 (1111)
+      Original network Id: 0x0001 (1)
+      Service id: 0x1EE6 (7910)
       Linkage type: 0x90 (unknown)
     - Descriptor 10: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1007 (0x03EF)
-      Original network Id: 1 (0x0001)
-      Service id: 4919 (0x1337)
+      Transport stream id: 0x03EF (1007)
+      Original network Id: 0x0001 (1)
+      Service id: 0x1337 (4919)
       Linkage type: 0x91 (unknown)
     - Descriptor 11: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1111 (0x0457)
-      Original network Id: 1 (0x0001)
-      Service id: 7911 (0x1EE7)
+      Transport stream id: 0x0457 (1111)
+      Original network Id: 0x0001 (1)
+      Service id: 0x1EE7 (7911)
       Linkage type: 0x93 (unknown)
     - Descriptor 12: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1030 (0x0406)
-      Original network Id: 1 (0x0001)
-      Service id: 4599 (0x11F7)
+      Transport stream id: 0x0406 (1030)
+      Original network Id: 0x0001 (1)
+      Service id: 0x11F7 (4599)
       Linkage type: 0xA2 (unknown)
     - Descriptor 13: Linkage (0x4A, 74), 18 bytes
-      Transport stream id: 1030 (0x0406)
-      Original network Id: 1 (0x0001)
-      Service id: 4590 (0x11EE)
+      Transport stream id: 0x0406 (1030)
+      Original network Id: 0x0001 (1)
+      Service id: 0x11EE (4590)
       Linkage type: 0x09 (system software update service)
       OUI: 0x00070B (Novabase SGPS)
       Selector data (6 bytes): 00 26 00 01 80 1D
-    Transport Stream Id: 10 (0x000A), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000A (10), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.33225 GHz
       Orbital position: 19.2 degree, east
@@ -607,7 +607,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1003 (0x03EB), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EB (1003), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.24375 GHz
       Orbital position: 19.2 degree, east
@@ -616,7 +616,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1004 (0x03EC), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EC (1004), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.25850 GHz
       Orbital position: 19.2 degree, east
@@ -625,7 +625,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1005 (0x03ED), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03ED (1005), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.27325 GHz
       Orbital position: 19.2 degree, east
@@ -634,7 +634,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1006 (0x03EE), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EE (1006), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.28800 GHz
       Orbital position: 19.2 degree, east
@@ -643,7 +643,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.20 (2)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1007 (0x03EF), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EF (1007), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.30275 GHz
       Orbital position: 19.2 degree, east
@@ -652,7 +652,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1008 (0x03F0), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F0 (1008), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.31750 GHz
       Orbital position: 19.2 degree, east
@@ -661,7 +661,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1010 (0x03F2), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F2 (1010), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.34700 GHz
       Orbital position: 19.2 degree, east
@@ -670,7 +670,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1011 (0x03F3), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F3 (1011), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.36175 GHz
       Orbital position: 19.2 degree, east
@@ -679,7 +679,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1012 (0x03F4), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F4 (1012), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.37650 GHz
       Orbital position: 19.2 degree, east
@@ -688,7 +688,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1013 (0x03F5), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F5 (1013), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.39125 GHz
       Orbital position: 19.2 degree, east
@@ -697,7 +697,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1015 (0x03F7), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F7 (1015), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.42075 GHz
       Orbital position: 19.2 degree, east
@@ -706,7 +706,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1016 (0x03F8), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F8 (1016), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.43550 GHz
       Orbital position: 19.2 degree, east
@@ -715,7 +715,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1017 (0x03F9), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F9 (1017), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.46425 GHz
       Orbital position: 19.2 degree, east
@@ -724,7 +724,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1019 (0x03FB), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FB (1019), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.49375 GHz
       Orbital position: 19.2 degree, east
@@ -733,7 +733,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1020 (0x03FC), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FC (1020), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.50850 GHz
       Orbital position: 19.2 degree, east
@@ -742,7 +742,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1021 (0x03FD), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FD (1021), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.52325 GHz
       Orbital position: 19.2 degree, east
@@ -751,7 +751,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1022 (0x03FE), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FE (1022), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.53800 GHz
       Orbital position: 19.2 degree, east
@@ -760,7 +760,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1025 (0x0401), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0401 (1025), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.58225 GHz
       Orbital position: 19.2 degree, east
@@ -769,7 +769,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1026 (0x0402), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0402 (1026), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.59700 GHz
       Orbital position: 19.2 degree, east
@@ -778,7 +778,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1027 (0x0403), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0403 (1027), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.61175 GHz
       Orbital position: 19.2 degree, east
@@ -787,7 +787,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1028 (0x0404), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0404 (1028), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.62650 GHz
       Orbital position: 19.2 degree, east
@@ -796,7 +796,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1031 (0x0407), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0407 (1031), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.67075 GHz
       Orbital position: 19.2 degree, east
@@ -805,7 +805,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1032 (0x0408), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0408 (1032), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.68550 GHz
       Orbital position: 19.2 degree, east
@@ -814,7 +814,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1033 (0x0409), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0409 (1033), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.96425 GHz
       Orbital position: 19.2 degree, east
@@ -823,7 +823,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1034 (0x040A), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x040A (1034), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.97900 GHz
       Orbital position: 19.2 degree, east
@@ -832,7 +832,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1038 (0x040E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x040E (1038), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.03800 GHz
       Orbital position: 19.2 degree, east
@@ -841,7 +841,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1039 (0x040F), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x040F (1039), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.05275 GHz
       Orbital position: 19.2 degree, east
@@ -850,7 +850,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1040 (0x0410), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0410 (1040), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.06750 GHz
       Orbital position: 19.2 degree, east
@@ -859,7 +859,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1041 (0x0411), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0411 (1041), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.08225 GHz
       Orbital position: 19.2 degree, east
@@ -868,7 +868,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.20 (2)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1042 (0x0412), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0412 (1042), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.09700 GHz
       Orbital position: 19.2 degree, east
@@ -877,7 +877,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1044 (0x0414), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0414 (1044), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.12650 GHz
       Orbital position: 19.2 degree, east
@@ -886,7 +886,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1046 (0x0416), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0416 (1046), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.15600 GHz
       Orbital position: 19.2 degree, east
@@ -895,7 +895,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1048 (0x0418), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0418 (1048), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.18550 GHz
       Orbital position: 19.2 degree, east
@@ -904,7 +904,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1050 (0x041A), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041A (1050), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.72900 GHz
       Orbital position: 19.2 degree, east
@@ -913,7 +913,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1051 (0x041B), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041B (1051), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.74375 GHz
       Orbital position: 19.2 degree, east
@@ -922,7 +922,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1052 (0x041C), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041C (1052), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.75850 GHz
       Orbital position: 19.2 degree, east
@@ -931,7 +931,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1053 (0x041D), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041D (1053), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.77325 GHz
       Orbital position: 19.2 degree, east
@@ -940,7 +940,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.20 (2)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1054 (0x041E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041E (1054), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.78800 GHz
       Orbital position: 19.2 degree, east
@@ -949,7 +949,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1055 (0x041F), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x041F (1055), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.80275 GHz
       Orbital position: 19.2 degree, east
@@ -958,7 +958,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1056 (0x0420), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0420 (1056), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.81750 GHz
       Orbital position: 19.2 degree, east
@@ -967,7 +967,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1057 (0x0421), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0421 (1057), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.83225 GHz
       Orbital position: 19.2 degree, east
@@ -976,7 +976,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1058 (0x0422), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0422 (1058), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.84700 GHz
       Orbital position: 19.2 degree, east
@@ -985,7 +985,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1060 (0x0424), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0424 (1060), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.87650 GHz
       Orbital position: 19.2 degree, east
@@ -994,7 +994,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1061 (0x0425), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0425 (1061), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.89125 GHz
       Orbital position: 19.2 degree, east
@@ -1004,11 +1004,11 @@
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
   - Section 1:
-    Network Id: 1 (0x0001)
+    Network Id: 0x0001 (1)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 8 bytes
       Name: "ASTRA 1"
-    Transport Stream Id: 1064 (0x0428), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0428 (1064), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.93550 GHz
       Orbital position: 19.2 degree, east
@@ -1017,7 +1017,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1066 (0x042A), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x042A (1066), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.73900 GHz
       Orbital position: 19.2 degree, east
@@ -1026,7 +1026,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1070 (0x042E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x042E (1070), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.81700 GHz
       Orbital position: 19.2 degree, east
@@ -1035,7 +1035,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1072 (0x0430), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0430 (1072), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.85600 GHz
       Orbital position: 19.2 degree, east
@@ -1044,7 +1044,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1073 (0x0431), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0431 (1073), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.10950 GHz
       Orbital position: 19.2 degree, east
@@ -1053,7 +1053,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1074 (0x0432), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0432 (1074), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.89500 GHz
       Orbital position: 19.2 degree, east
@@ -1062,7 +1062,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1076 (0x0434), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0434 (1076), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.93400 GHz
       Orbital position: 19.2 degree, east
@@ -1071,7 +1071,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1078 (0x0436), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0436 (1078), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.97300 GHz
       Orbital position: 19.2 degree, east
@@ -1080,7 +1080,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1079 (0x0437), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0437 (1079), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.95350 GHz
       Orbital position: 19.2 degree, east
@@ -1089,7 +1089,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1080 (0x0438), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0438 (1080), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.01200 GHz
       Orbital position: 19.2 degree, east
@@ -1098,7 +1098,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1082 (0x043A), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x043A (1082), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.05100 GHz
       Orbital position: 19.2 degree, east
@@ -1107,7 +1107,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1084 (0x043C), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x043C (1084), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.09000 GHz
       Orbital position: 19.2 degree, east
@@ -1116,7 +1116,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1086 (0x043E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x043E (1086), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.12900 GHz
       Orbital position: 19.2 degree, east
@@ -1125,7 +1125,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1088 (0x0440), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0440 (1088), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.16800 GHz
       Orbital position: 19.2 degree, east
@@ -1134,7 +1134,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1089 (0x0441), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0441 (1089), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.18750 GHz
       Orbital position: 19.2 degree, east
@@ -1143,7 +1143,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1090 (0x0442), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0442 (1090), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.20700 GHz
       Orbital position: 19.2 degree, east
@@ -1152,7 +1152,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1091 (0x0443), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0443 (1091), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.22650 GHz
       Orbital position: 19.2 degree, east
@@ -1161,7 +1161,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1092 (0x0444), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0444 (1092), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.24600 GHz
       Orbital position: 19.2 degree, east
@@ -1170,7 +1170,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1093 (0x0445), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0445 (1093), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.26550 GHz
       Orbital position: 19.2 degree, east
@@ -1179,7 +1179,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1094 (0x0446), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0446 (1094), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.28500 GHz
       Orbital position: 19.2 degree, east
@@ -1188,7 +1188,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1096 (0x0448), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0448 (1096), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.32400 GHz
       Orbital position: 19.2 degree, east
@@ -1197,7 +1197,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1098 (0x044A), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x044A (1098), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.36300 GHz
       Orbital position: 19.2 degree, east
@@ -1206,7 +1206,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 11 (0x000B), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000B (11), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.38250 GHz
       Orbital position: 19.2 degree, east
@@ -1215,7 +1215,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 1100 (0x044C), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x044C (1100), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.40200 GHz
       Orbital position: 19.2 degree, east
@@ -1224,7 +1224,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1101 (0x044D), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x044D (1101), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.83650 GHz
       Orbital position: 19.2 degree, east
@@ -1233,7 +1233,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1102 (0x044E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x044E (1102), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.44100 GHz
       Orbital position: 19.2 degree, east
@@ -1242,7 +1242,7 @@
       Modulation: QPSK (1), roll off: alpha=0.25 (1)
       Symbol rate: 29.7000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1105 (0x0451), Original Network Id: 53 (0x0035)
+    Transport Stream Id: 0x0451 (1105), Original Network Id: 0x0035 (53)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.51525 GHz
       Orbital position: 19.2 degree, east
@@ -1251,7 +1251,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1107 (0x0453), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0453 (1107), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.54475 GHz
       Orbital position: 19.2 degree, east
@@ -1260,7 +1260,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1108 (0x0454), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0454 (1108), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.55150 GHz
       Orbital position: 19.2 degree, east
@@ -1269,7 +1269,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1109 (0x0455), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0455 (1109), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.57425 GHz
       Orbital position: 19.2 degree, east
@@ -1278,7 +1278,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1110 (0x0456), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0456 (1110), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.58100 GHz
       Orbital position: 19.2 degree, east
@@ -1287,7 +1287,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1111 (0x0457), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0457 (1111), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.60375 GHz
       Orbital position: 19.2 degree, east
@@ -1296,7 +1296,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1113 (0x0459), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0459 (1113), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.63325 GHz
       Orbital position: 19.2 degree, east
@@ -1305,7 +1305,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1115 (0x045B), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x045B (1115), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.66275 GHz
       Orbital position: 19.2 degree, east
@@ -1314,7 +1314,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1117 (0x045D), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x045D (1117), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.69225 GHz
       Orbital position: 19.2 degree, east
@@ -1323,7 +1323,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1118 (0x045E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x045E (1118), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.69900 GHz
       Orbital position: 19.2 degree, east
@@ -1332,7 +1332,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1119 (0x045F), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x045F (1119), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.72175 GHz
       Orbital position: 19.2 degree, east
@@ -1341,7 +1341,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1120 (0x0460), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0460 (1120), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.72850 GHz
       Orbital position: 19.2 degree, east
@@ -1350,7 +1350,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 12 (0x000C), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000C (12), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.30450 GHz
       Orbital position: 19.2 degree, east
@@ -1359,7 +1359,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 1201 (0x04B1), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x04B1 (1201), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.42150 GHz
       Orbital position: 19.2 degree, east
@@ -1368,7 +1368,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 13 (0x000D), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000D (13), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.99250 GHz
       Orbital position: 19.2 degree, east
@@ -1377,7 +1377,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 14 (0x000E), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000E (14), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.87550 GHz
       Orbital position: 19.2 degree, east
@@ -1386,7 +1386,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 15 (0x000F), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x000F (15), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.92075 GHz
       Orbital position: 19.2 degree, east
@@ -1395,7 +1395,7 @@
       Modulation: QPSK (1)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 7/8 (5)
-    Transport Stream Id: 3 (0x0003), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0003 (3), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.71950 GHz
       Orbital position: 19.2 degree, east
@@ -1404,7 +1404,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 33 (0x0021), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0021 (33), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.48000 GHz
       Orbital position: 19.2 degree, east
@@ -1413,7 +1413,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 4 (0x0004), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0004 (4), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.03150 GHz
       Orbital position: 19.2 degree, east
@@ -1422,7 +1422,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 5 (0x0005), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0005 (5), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.46050 GHz
       Orbital position: 19.2 degree, east
@@ -1431,7 +1431,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 6 (0x0006), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0006 (6), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.91450 GHz
       Orbital position: 19.2 degree, east
@@ -1440,7 +1440,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 7 (0x0007), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0007 (7), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.14850 GHz
       Orbital position: 19.2 degree, east
@@ -1449,7 +1449,7 @@
       Modulation: QPSK (1)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 9 (0x0009), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0009 (9), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.17075 GHz
       Orbital position: 19.2 degree, east
@@ -1458,7 +1458,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 3/4 (3)
-    Transport Stream Id: 1043 (0x0413), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0413 (1043), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.11175 GHz
       Orbital position: 19.2 degree, east
@@ -1467,7 +1467,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.22900 GHz
       Orbital position: 19.2 degree, east
@@ -1477,11 +1477,11 @@
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
   - Section 2:
-    Network Id: 1 (0x0001)
+    Network Id: 0x0001 (1)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 8 bytes
       Name: "ASTRA 1"
-    Transport Stream Id: 1062 (0x0426), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0426 (1062), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.90600 GHz
       Orbital position: 19.2 degree, east
@@ -1490,7 +1490,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 1035 (0x040B), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x040B (1035), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.99375 GHz
       Orbital position: 19.2 degree, east
@@ -1499,7 +1499,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 5/6 (4)
-    Transport Stream Id: 1097 (0x0449), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0449 (1097), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.34350 GHz
       Orbital position: 19.2 degree, east
@@ -1508,7 +1508,7 @@
       Modulation: 8-PSK (2), roll off: alpha=0.20 (2)
       Symbol rate: 30.0000 Msymbol/s
       Inner FEC: 2/3 (2)
-    Transport Stream Id: 2 (0x0002), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0002 (2), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.75850 GHz
       Orbital position: 19.2 degree, east
@@ -1517,7 +1517,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 16 (0x0010), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0010 (16), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.79750 GHz
       Orbital position: 19.2 degree, east
@@ -1526,7 +1526,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 8 (0x0008), Original Network Id: 133 (0x0085)
+    Transport Stream Id: 0x0008 (8), Original Network Id: 0x0085 (133)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.07050 GHz
       Orbital position: 19.2 degree, east
@@ -1535,7 +1535,7 @@
       Modulation: QPSK (1), roll off: alpha=0.35 (0)
       Symbol rate: 27.5000 Msymbol/s
       Inner FEC: 9/10 (9)
-    Transport Stream Id: 1030 (0x0406), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0406 (1030), Original Network Id: 0x0001 (1)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.65600 GHz
       Orbital position: 19.2 degree, east
@@ -1545,130 +1545,130 @@
       Symbol rate: 22.0000 Msymbol/s
       Inner FEC: 2/3 (2)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 10, sections: 1, total size: 291 bytes
   - Section 0:
-    Transport Stream Id: 1080 (0x0438)
-    Original Network Id: 1 (0x0001)
-    Service Id: 8801 (0x2261), EITs: yes, EITp/f: yes, CA mode: controlled
+    Transport Stream Id: 0x0438 (1080)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x2261 (8801), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 13 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+", Provider: "CSAT"
-    Service Id: 8802 (0x2262), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2262 (8802), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ DECALE", Provider: "CSAT"
-    Service Id: 8803 (0x2263), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2263 (8803), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ CINEMA", Provider: "CSAT"
-    Service Id: 8804 (0x2264), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2264 (8804), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 19 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ SPORT", Provider: "CSAT"
-    Service Id: 8805 (0x2265), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2265 (8805), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ FAMILY", Provider: "CSAT"
-    Service Id: 8806 (0x2266), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2266 (8806), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CANAL+ SERIES", Provider: "CSAT"
-    Service Id: 8807 (0x2267), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2267 (8807), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CINE+ FRISSON", Provider: "CSAT"
-    Service Id: 8808 (0x2268), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2268 (8808), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 18 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CINE+ FAMIZ", Provider: "CSAT"
-    Service Id: 8809 (0x2269), EITs: yes, EITp/f: yes, CA mode: controlled
+    Service Id: 0x2269 (8809), EITs: yes, EITp/f: yes, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CINE+ CLASSIC", Provider: "CSAT"
-    Service Id: 8810 (0x226A), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x226A (8810), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 12 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CNEWS", Provider: "CSAT"
-    Service Id: 8899 (0x22C3), EITs: no, EITp/f: no, CA mode: controlled
+    Service Id: 0x22C3 (8899), EITs: no, EITp/f: no, CA mode: controlled
     Running status: running
     - Descriptor 0: Service (0x48, 72), 17 bytes
       Service type: 0x0C (Data broadcast service)
       Service: "DATASYSTEM", Provider: "CSAT"
 
-* BAT, TID 74 (0x4A), PID 17 (0x0011)
+* BAT, TID 0x4A (74), PID 0x0011 (17)
   Version: 15, sections: 1, total size: 56 bytes
   - Section 0:
-    Bouquet Id: 49153 (0xC001)
+    Bouquet Id: 0xC001 (49153)
     Bouquet information:
     - Descriptor 0: Bouquet Name (0x47, 71), 14 bytes
       Name: "CanalSatellite"
     - Descriptor 1: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x000000C0 (Canal+ / NDS France (MediaHighway))
     - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1098 (0x044A)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x044A (1098)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x81 (unknown)
     - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1098 (0x044A)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x044A (1098)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x8B (unknown)
 
-* BAT, TID 74 (0x4A), PID 17 (0x0011)
+* BAT, TID 0x4A (74), PID 0x0011 (17)
   Version: 9, sections: 7, total size: 5972 bytes
   - Section 0:
-    Bouquet Id: 49181 (0xC01D)
+    Bouquet Id: 0xC01D (49181)
     Bouquet information:
     - Descriptor 0: Bouquet Name (0x47, 71), 17 bytes
       Name: "CANAL PRO Phase 2"
     - Descriptor 1: Linkage (0x4A, 74), 16 bytes
-      Transport stream id: 1098 (0x044A)
-      Original network Id: 1 (0x0001)
-      Service id: 9134 (0x23AE)
+      Transport stream id: 0x044A (1098)
+      Original network Id: 0x0001 (1)
+      Service id: 0x23AE (9134)
       Linkage type: 0x09 (system software update service)
       OUI: 0x000117 (Canal+)
       Selector data (4 bytes): 00 16 00 1B
     - Descriptor 2: Linkage (0x4A, 74), 8 bytes
-      Transport stream id: 1072 (0x0430)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0430 (1072)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x0A (TS containing SSU BAT or NIT)
       SSU table type: BAT
     - Descriptor 3: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 4: Linkage (0x4A, 74), 12 bytes
-      Transport stream id: 0 (0x0000)
-      Original network Id: 0 (0x0000)
-      Service id: 1 (0x0001)
+      Transport stream id: 0x0000 (0)
+      Original network Id: 0x0000 (0)
+      Service id: 0x0001 (1)
       Linkage type: 0x91 (unknown)
       Private data (5 bytes): 03 03 00 16 FF
     - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-      Transport stream id: 1098 (0x044A)
-      Original network Id: 1 (0x0001)
-      Service id: 9135 (0x23AF)
+      Transport stream id: 0x044A (1098)
+      Original network Id: 0x0001 (1)
+      Service id: 0x23AF (9135)
       Linkage type: 0x91 (unknown)
       Private data (1 bytes): 06
     - Descriptor 6: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1072 (0x0430)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0430 (1072)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x92 (unknown)
     - Descriptor 7: Linkage (0x4A, 74), 7 bytes
-      Transport stream id: 1080 (0x0438)
-      Original network Id: 1 (0x0001)
-      Service id: 0 (0x0000)
+      Transport stream id: 0x0438 (1080)
+      Original network Id: 0x0001 (1)
+      Service id: 0x0000 (0)
       Linkage type: 0x92 (unknown)
     - Descriptor 8: unknown (0x94, 148), 14 bytes
       0000:  00 15 00 06 FF FF 00 00 00 01 00 00 00 02  ..............
@@ -1677,7 +1677,7 @@
       000E:  00 09 FF FF 00 02 00 01 00 00 15 06 00 09  ..............
       001C:  FF FF 00 03 00 01 00 00 01 DB 00 1B FF FF  ..............
       002A:  01 15 31 11 51 81 15 10                    ..1.Q...
-    Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 62 bytes
@@ -1686,25 +1686,25 @@
       001C:  00 01 10 45 4E 47 05 03 02 8E 3F 13 A7 01  ...ENG....?...
       002A:  13 04 0C 03 CE 00 02 10 45 4E 47 11 45 4E  ........ENG.EN
       0038:  47 05 03 02 A3 3F                          G....?
-    Transport Stream Id: 1010 (0x03F2), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F2 (1010), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 25 bytes
       0000:  02 2B A2 01 14 04 08 03 CE 00 01 01 47 45  .+..........GE
       000E:  52 05 08 2B A2 FF FD C0 01 1E E7           R..+.......
-    Transport Stream Id: 1012 (0x03F4), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03F4 (1012), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 20 bytes
       0000:  02 18 ED 01 0F 04 08 03 CE 00 01 11 45 4E  ............EN
       000E:  47 05 03 01 DF 3F                          G....?
-    Transport Stream Id: 1019 (0x03FB), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FB (1019), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 20 bytes
       0000:  02 28 3D 01 0F 04 08 03 CE 00 01 01 47 45  .(=.........GE
       000E:  52 05 03 28 3D 3F                          R..(=?
-    Transport Stream Id: 1020 (0x03FC), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FC (1020), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 58 bytes
@@ -1713,7 +1713,7 @@
       001C:  00 01 01 46 52 41 05 03 00 FC 3F 1B 66 01  ...FRA....?.f.
       002A:  0F 04 08 01 C7 00 01 01 45 4E 47 05 03 1B  ........ENG...
       0038:  66 3F                                      f?
-    Transport Stream Id: 1022 (0x03FE), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x03FE (1022), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 153 bytes
@@ -1728,14 +1728,14 @@
       0070:  1B 01 3F 1B 02 01 0F 04 08 01 C7 00 01 00  ..?...........
       007E:  45 4E 47 05 03 03 C8 3F 1B 06 01 0F 04 08  ENG....?......
       008C:  03 C7 00 01 01 45 4E 47 05 03 02 AC 3F     .....ENG....?
-    Transport Stream Id: 1025 (0x0401), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0401 (1025), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 39 bytes
       0000:  02 28 57 01 0F 04 08 03 CE 00 01 01 47 45  .(W.........GE
       000E:  52 05 03 28 57 3F 28 5B 01 0F 04 08 03 CE  R..(W?([......
       001C:  00 01 01 47 45 52 05 03 28 5B 3F           ...GER..([?
-    Transport Stream Id: 1026 (0x0402), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0402 (1026), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 130 bytes
@@ -1749,13 +1749,13 @@
       0062:  00 41 52 41 05 03 01 FB 3F 27 63 01 13 04  .ARA....?'c...
       0070:  0C 01 C7 00 02 00 46 52 45 00 41 52 41 05  ......FRE.ARA.
       007E:  03 01 FD 3F                                ...?
-    Transport Stream Id: 1027 (0x0403), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0403 (1027), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 20 bytes
       0000:  02 13 F9 01 0F 04 08 01 C7 00 01 01 54 55  ............TU
       000E:  52 05 03 01 BF 3F                          R....?
-    Transport Stream Id: 1028 (0x0404), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0404 (1028), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 100 bytes
@@ -1767,7 +1767,7 @@
       0046:  00 01 02 47 45 52 05 03 00 3E 3F 11 58 01  ...GER...>?.X.
       0054:  0F 04 08 01 C7 00 01 02 45 4E 47 05 03 01  ........ENG...
       0062:  34 3F                                      4?
-    Transport Stream Id: 1039 (0x040F), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x040F (1039), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 39 bytes
@@ -1775,21 +1775,21 @@
       000E:  52 05 03 02 95 3F 28 8A 01 0F 04 08 03 CE  R....?(.......
       001C:  00 01 01 47 45 52 05 03 02 98 3F           ...GER....?
   - Section 1:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 1040 (0x0410), Original Network Id: 1 (0x0001)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x0410 (1040), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 39 bytes
       0000:  02 7A 48 01 0F 04 08 01 C7 00 01 00 53 50  .zH.........SP
       000E:  41 05 03 1B 00 3F 7A 4A 01 0F 04 08 01 C7  A....?zJ......
       001C:  00 01 00 53 50 41 05 03 7D 7A 3F           ...SPA..}z?
-    Transport Stream Id: 1048 (0x0418), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0418 (1048), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 20 bytes
       0000:  02 10 E0 01 0F 04 08 01 C7 00 01 01 44 55  ............DU
       000E:  54 05 03 00 7A 3F                          T...z?
-    Transport Stream Id: 1061 (0x0425), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0425 (1061), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 58 bytes
@@ -1798,7 +1798,7 @@
       001C:  00 01 01 47 45 52 05 03 02 9A 3F 28 73 01  ...GER....?(s.
       002A:  0F 04 08 03 CE 00 01 01 47 45 52 05 03 02  ........GER...
       0038:  97 3F                                      .?
-    Transport Stream Id: 1070 (0x042E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x042E (1070), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 243 bytes
@@ -1820,7 +1820,7 @@
       00D2:  7F 01 00 12 1F 4B 02 19 04 10 03 CE 00 03  .....K........
       00E0:  11 46 52 41 10 45 4E 47 10 51 41 44 05 05  .FRA.ENG.QAD..
       00EE:  02 09 BF FC 16                             .....
-    Transport Stream Id: 1072 (0x0430), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0430 (1072), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 209 bytes
@@ -1839,7 +1839,7 @@
       00A8:  20 12 02 12 04 08 03 CA 00 01 01 46 52 41   ..........FRA
       00B6:  05 06 01 80 7F 01 01 7F 20 13 02 0F 04 08  ........ .....
       00C4:  03 CA 00 01 01 46 52 41 05 03 02 04 3F     .....FRA....?
-    Transport Stream Id: 1074 (0x0432), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0432 (1074), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 230 bytes
@@ -1861,8 +1861,8 @@
       00D2:  83 02 11 04 08 03 CE 00 01 10 46 52 41 05  ..........FRA.
       00E0:  05 02 25 BF FC 12                          ..%...
   - Section 2:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 1076 (0x0434), Original Network Id: 1 (0x0001)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x0434 (1076), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 230 bytes
@@ -1883,7 +1883,7 @@
       00C4:  10 45 4E 47 05 06 02 11 7F 01 01 1F 22 D0  .ENG........".
       00D2:  02 12 04 08 03 CE 00 01 10 46 52 41 05 06  .........FRA..
       00E0:  02 51 7F 01 00 AD                          .Q....
-    Transport Stream Id: 1080 (0x0438), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0438 (1080), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 242 bytes
@@ -1908,7 +1908,7 @@
     - Descriptor 2: unknown (0x8E, 142), 22 bytes
       0000:  02 22 6A 01 11 04 08 03 CE 00 01 10 46 52  ."j.........FR
       000E:  41 05 05 01 E0 BF FC 10                    A.......
-    Transport Stream Id: 1084 (0x043C), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x043C (1084), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 251 bytes
@@ -1934,8 +1934,8 @@
       0000:  02 24 C4 02 12 04 08 03 CE 00 01 10 46 52  .$..........FR
       000E:  41 05 06 02 46 7F 01 01 3D                 A...F...=
   - Section 3:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 1086 (0x043E), Original Network Id: 1 (0x0001)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x043E (1086), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 251 bytes
@@ -1960,7 +1960,7 @@
     - Descriptor 2: unknown (0x8E, 142), 24 bytes
       0000:  02 26 C2 02 13 04 0C 03 CE 00 02 10 46 52  .&..........FR
       000E:  41 10 45 4E 47 05 03 02 AB 3F              A.ENG....?
-    Transport Stream Id: 1088 (0x0440), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0440 (1088), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 236 bytes
@@ -1986,13 +1986,13 @@
       000E:  41 05 05 02 2A BF FC 0D 24 5F 02 12 04 08  A...*...$_....
       001C:  01 CE 00 01 01 46 52 41 05 06 02 92 7F 01  .....FRA......
       002A:  02 4E                                      .N
-    Transport Stream Id: 1089 (0x0441), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0441 (1089), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 20 bytes
       0000:  02 2E E3 01 0F 04 08 02 C7 00 01 01 46 52  ............FR
       000E:  41 05 03 00 7B 3F                          A...{?
-    Transport Stream Id: 1090 (0x0442), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0442 (1090), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 253 bytes
@@ -2019,7 +2019,7 @@
       0000:  02 23 34 02 19 04 10 03 CE 00 03 10 46 52  .#4.........FR
       000E:  41 10 45 4E 47 10 51 41 44 05 05 01 C2 BF  A.ENG.QAD.....
       001C:  FC 08                                      ..
-    Transport Stream Id: 1091 (0x0443), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0443 (1091), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 36 bytes
@@ -2027,8 +2027,8 @@
       000E:  52 00 45 4E 47 00 46 52 41 00 49 54 41 00  R.ENG.FRA.ITA.
       001C:  53 50 41 05 03 01 44 3F                    SPA...D?
   - Section 4:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 1092 (0x0444), Original Network Id: 1 (0x0001)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x0444 (1092), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 251 bytes
@@ -2053,7 +2053,7 @@
     - Descriptor 2: unknown (0x8E, 142), 20 bytes
       0000:  02 19 DD 02 0F 04 08 03 CE 00 01 10 46 52  ............FR
       000E:  41 05 03 02 37 3F                          A...7?
-    Transport Stream Id: 1094 (0x0446), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0446 (1094), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 244 bytes
@@ -2075,14 +2075,14 @@
       00D2:  46 52 41 10 45 4E 47 05 06 01 F9 7F 01 00  FRA.ENG.......
       00E0:  D4 42 8C 02 0F 04 08 03 CE 00 01 10 46 52  .B..........FR
       00EE:  41 05 03 02 A9 3F                          A....?
-    Transport Stream Id: 1096 (0x0448), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0448 (1096), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 42 bytes
       0000:  02 21 99 02 0F 04 08 03 CE 00 01 10 46 52  .!..........FR
       000E:  41 05 03 02 2E 3F 21 9A 02 12 04 08 03 CE  A....?!.......
       001C:  00 01 10 46 52 41 05 06 02 2C 7F 01 00 0B  ...FRA...,....
-    Transport Stream Id: 1100 (0x044C), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x044C (1100), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 237 bytes
@@ -2107,8 +2107,8 @@
       0000:  02 22 08 02 0F 04 08 03 CE 00 01 10 46 52  ."..........FR
       000E:  41 05 03 02 1E 3F                          A....?
   - Section 5:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 1102 (0x044E), Original Network Id: 1 (0x0001)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x044E (1102), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 217 bytes
@@ -2128,19 +2128,19 @@
       00B6:  03 CE 00 01 10 46 52 41 05 06 02 0D 7F 01  .....FRA......
       00C4:  00 0D 19 70 02 0F 04 08 03 CE 00 01 10 46  ...p.........F
       00D2:  52 41 05 03 02 06 3F                       RA....?
-    Transport Stream Id: 1107 (0x0453), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0453 (1107), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 24 bytes
       0000:  02 44 5C 01 13 04 0C 01 C7 00 02 01 47 45  .D\.........GE
       000E:  52 11 47 45 52 05 03 00 7C 3F              R.GER...|?
-    Transport Stream Id: 1108 (0x0454), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0454 (1108), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 26 bytes
       0000:  02 2F 6C 02 15 04 0C 03 CE 00 02 11 46 52  ./l.........FR
       000E:  41 11 45 4E 47 05 05 01 B8 BF FC 19        A.ENG.......
-    Transport Stream Id: 1118 (0x045E), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x045E (1118), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 208 bytes
@@ -2159,7 +2159,7 @@
       00A8:  02 0F 04 08 03 CE 00 01 11 46 52 41 05 03  .........FRA..
       00B6:  00 A5 3F 25 32 06 13 04 0C 03 CE 00 02 11  ..?%2.........
       00C4:  46 52 41 11 45 4E 47 05 03 01 74 3F        FRA.ENG...t?
-    Transport Stream Id: 1120 (0x0460), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0460 (1120), Original Network Id: 0x0001 (1)
     - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
       Specifier: 0x00000036 (Canal+)
     - Descriptor 1: unknown (0x8E, 142), 248 bytes
@@ -2198,8 +2198,8 @@
       00B6:  10 46 52 41 05 03 03 A1 3F 26 60 02 0F 04  .FRA....?&`...
       00C4:  08 02 C4 00 01 10 46 52 41 05 03 03 99 3F  ......FRA....?
   - Section 6:
-    Bouquet Id: 49181 (0xC01D)
-    Transport Stream Id: 12400 (0x3070), Original Network Id: 318 (0x013E)
+    Bouquet Id: 0xC01D (49181)
+    Transport Stream Id: 0x3070 (12400), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 10.99216 GHz
       Orbital position: 13.0 degree, east
@@ -2213,7 +2213,7 @@
     - Descriptor 2: unknown (0x8E, 142), 15 bytes
       0000:  02 21 3F 02 0A 04 08 02 C4 00 01 01 49 54  .!?.........IT
       000E:  41                                         A
-    Transport Stream Id: 12600 (0x3138), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x3138 (12600), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.03400 GHz
       Orbital position: 13.0 degree, east
@@ -2228,7 +2228,7 @@
       0000:  02 06 A9 01 0E 04 0C 01 C7 00 02 01 46 52  ............FR
       000E:  41 01 41 52 41 06 AC 01 0A 04 08 01 C7 00  A.ARA.........
       001C:  01 01 52 55 53                             ..RUS
-    Transport Stream Id: 15300 (0x3BC4), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x3BC4 (15300), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.56600 GHz
       Orbital position: 13.0 degree, east
@@ -2242,7 +2242,7 @@
     - Descriptor 2: unknown (0x8E, 142), 20 bytes
       0000:  02 03 21 02 0F 04 08 03 C0 00 01 30 45 4E  ..!........0EN
       000E:  47 05 03 FF F8 3F                          G....?
-    Transport Stream Id: 200 (0x00C8), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x00C8 (200), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.24000 GHz
       Orbital position: 13.0 degree, east
@@ -2256,7 +2256,7 @@
     - Descriptor 2: unknown (0x8E, 142), 15 bytes
       0000:  02 36 7E 01 0A 04 08 01 C7 00 01 00 41 52  .6~.........AR
       000E:  41                                         A
-    Transport Stream Id: 5400 (0x1518), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x1518 (5400), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.80400 GHz
       Orbital position: 13.0 degree, east
@@ -2270,7 +2270,7 @@
     - Descriptor 2: unknown (0x8E, 142), 15 bytes
       0000:  02 0C EC 01 0A 04 08 01 C7 00 01 01 49 54  ............IT
       000E:  41                                         A
-    Transport Stream Id: 700 (0x02BC), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x02BC (700), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 11.33400 GHz
       Orbital position: 13.0 degree, east
@@ -2284,7 +2284,7 @@
     - Descriptor 2: unknown (0x8E, 142), 15 bytes
       0000:  02 00 0A 01 0A 04 08 01 C7 00 01 01 50 4F  ............PO
       000E:  52                                         R
-    Transport Stream Id: 7200 (0x1C20), Original Network Id: 318 (0x013E)
+    Transport Stream Id: 0x1C20 (7200), Original Network Id: 0x013E (318)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.14900 GHz
       Orbital position: 13.0 degree, east

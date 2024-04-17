@@ -1,7 +1,7 @@
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 1), version: 0, size: 1010 bytes
-  Program: 0 (0x0000), PCR PID: none
+  Program: 0x0000 (0), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
     Specifier: 0x41565356 (AVS)
@@ -389,9 +389,9 @@
     Matrix coefficients: ITU-R BT.2020-2 NCL (9)
     Video full range: false, still mode: true
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 1 (last: 1), version: 0, size: 112 bytes
-  Program: 0 (0x0000), PCR PID: none
+  Program: 0x0000 (0), PCR PID: none
   Program information:
   - Descriptor 0: MPEG-2 Extension (0x3F, 63), 34 bytes
     MPEG extended descriptor: JPEG XS Video (0x14, 20)
@@ -424,9 +424,9 @@
       Luminance max: 145263, min: 0
       Max Content Light Level: 1000, Max Frame Average Light Level: 999
 
-* NIT Actual, TID 64 (0x40)
+* NIT Actual, TID 0x40 (64)
   Section: 0 (last: 0), version: 0, size: 158 bytes
-  Network Id: 0 (0x0000)
+  Network Id: 0x0000 (0)
   Network information:
   - Descriptor 0: Extension Descriptor (0x7F, 127), 10 bytes
     Extended descriptor: Service Prominence (0x22, 34)
@@ -471,16 +471,16 @@
     Default authority:  74 73 64 75 63 6B 2E 69 6F
       fqdn: "tsduck.io"
 
-* BAT, TID 74 (0x4A)
+* BAT, TID 0x4A (74)
   Section: 0 (last: 0), version: 9, size: 31 bytes
-  Bouquet Id: 49181 (0xC01D)
+  Bouquet Id: 0xC01D (49181)
   Bouquet information:
   - Descriptor 0: Extension Descriptor (0x7F, 127), 13 bytes
     Extended descriptor: Service Prominence (0x22, 34)
     SOGI flag: false, priority: 14, service id: 2345
     Country: GBR, primary region: 1, secondary region: 2
 
-* Resolution Provider Notification, TID 121 (0x79)
+* Resolution Provider Notification, TID 0x79 (121)
   Section: 0 (last: 0), version: 9, size: 106 bytes
   Context id: 0xABCD (43981)
   Context id type: 0x01 (context_id is an original_network_id)

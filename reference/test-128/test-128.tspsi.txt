@@ -1,9 +1,9 @@
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 18, sections: 1, total size: 60 bytes
   - Section 0:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0E01 (Scientific Atlanta), EMM PID: 91 (0x005B)
+      CA System Id: 0x0E01 (Scientific Atlanta), EMM PID: 0x005B (91)
       Reserved bits incorrectly set:
         Byte 4, bit #1 should be '1'
         Byte 4, bit #2 should be '1'
@@ -13,7 +13,7 @@
     - Descriptor 2: unknown (0xFC, 252), 10 bytes
       0000:  0E 01 00 5B 04 04 03 2C 00 01              ...[...,..
     - Descriptor 3: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0E01 (Scientific Atlanta), EMM PID: 92 (0x005C)
+      CA System Id: 0x0E01 (Scientific Atlanta), EMM PID: 0x005C (92)
       Reserved bits incorrectly set:
         Byte 4, bit #1 should be '1'
         Byte 4, bit #2 should be '1'
@@ -23,7 +23,7 @@
     - Descriptor 5: unknown (0xFC, 252), 10 bytes
       0000:  0E 01 00 5C 04 04 03 2C 00 02              ...\...,..
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 7, sections: 1, total size: 24 bytes
   - Section 0:
     TS id:   60007 (0xEA67)
@@ -31,31 +31,31 @@
     Program:  1701 (0x06A5)  PID: 5701 (0x1645)
     Program:  1702 (0x06A6)  PID: 5702 (0x1646)
 
-* PMT, TID 2 (0x02), PID 5701 (0x1645)
+* PMT, TID 0x02 (2), PID 0x1645 (5701)
   Version: 2, sections: 1, total size: 55 bytes
   - Section 0:
-    Program: 1701 (0x06A5), PCR PID: none
+    Program: 0x06A5 (1701), PCR PID: none
     Program information:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x2600 (European Broadcasting Union), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x2600 (European Broadcasting Union), ECM PID: 0x1FFF (8191)
     - Descriptor 1: Service (0x48, 72), 18 bytes
       Service type: 0x80 (unknown)
       Service: "HSA-65U1", Provider: "HSA-65U"
-    Elementary stream: type 0x90 (unknown), PID: 701 (0x02BD)
+    Elementary stream: type 0x90 (unknown), PID: 0x02BD (701)
     - Descriptor 0: unknown (0xFB, 251), 6 bytes
       0000:  00 09 00 00 00 00                          ......
 
-* PMT, TID 2 (0x02), PID 5702 (0x1646)
+* PMT, TID 0x02 (2), PID 0x1646 (5702)
   Version: 2, sections: 1, total size: 55 bytes
   - Section 0:
-    Program: 1702 (0x06A6), PCR PID: none
+    Program: 0x06A6 (1702), PCR PID: none
     Program information:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x2600 (European Broadcasting Union), ECM PID: 8191 (0x1FFF)
+      CA System Id: 0x2600 (European Broadcasting Union), ECM PID: 0x1FFF (8191)
     - Descriptor 1: Service (0x48, 72), 18 bytes
       Service type: 0x80 (unknown)
       Service: "HSA-65U2", Provider: "HSA-65U"
-    Elementary stream: type 0x90 (unknown), PID: 702 (0x02BE)
+    Elementary stream: type 0x90 (unknown), PID: 0x02BE (702)
     - Descriptor 0: unknown (0xFB, 251), 6 bytes
       0000:  00 09 00 00 00 00                          ......
 

@@ -1,27 +1,27 @@
 
-* PMT, TID 2 (0x02), PID 610 (0x0262)
+* PMT, TID 0x02 (2), PID 0x0262 (610)
   Version: 10, sections: 1, total size: 60 bytes
   - Section 0:
-    Program: 262 (0x0106), PCR PID: 620 (0x026C)
-    Elementary stream: type 0x1B (AVC video), PID: 620 (0x026C)
+    Program: 0x0106 (262), PCR PID: 0x026C (620)
+    Elementary stream: type 0x1B (AVC video), PID: 0x026C (620)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 630 (0x0276)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0276 (630)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 640 (0x0280)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0280 (640)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 26, sections: 1, total size: 40 bytes
   - Section 0:
     TS id:       1 (0x0001)
@@ -33,34 +33,34 @@
     Program:   273 (0x0111)  PID:  210 (0x00D2)
     Program:   368 (0x0170)  PID:  710 (0x02C6)
 
-* PMT, TID 2 (0x02), PID 710 (0x02C6)
+* PMT, TID 0x02 (2), PID 0x02C6 (710)
   Version: 16, sections: 1, total size: 36 bytes
   - Section 0:
-    Program: 368 (0x0170), PCR PID: 720 (0x02D0)
-    Elementary stream: type 0x1B (AVC video), PID: 720 (0x02D0)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 730 (0x02DA)
+    Program: 0x0170 (368), PCR PID: 0x02D0 (720)
+    Elementary stream: type 0x1B (AVC video), PID: 0x02D0 (720)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x02DA (730)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
 
-* PMT, TID 2 (0x02), PID 310 (0x0136)
+* PMT, TID 0x02 (2), PID 0x0136 (310)
   Version: 10, sections: 1, total size: 121 bytes
   - Section 0:
-    Program: 260 (0x0104), PCR PID: 320 (0x0140)
-    Elementary stream: type 0x1B (AVC video), PID: 320 (0x0140)
+    Program: 0x0104 (260), PCR PID: 0x0140 (320)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0140 (320)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 330 (0x014A)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x014A (330)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 331 (0x014B)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x014B (331)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
@@ -70,49 +70,49 @@
       Language: fra
     - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 332 (0x014C)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x014C (332)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 4 (0x04)
+      Component tag: 0x04 (4)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qaa, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 340 (0x0154)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0154 (340)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 36 (0x24)
+      Language: fra, Type: 0x24 (36)
       Type: DVB subtitles for hard of hearing, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 342 (0x0156)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0156 (342)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 6 (0x06)
+      Component tag: 0x06 (6)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 20 (0x14)
+      Language: fra, Type: 0x14 (20)
       Type: DVB subtitles, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 1, sections: 1, total size: 12 bytes
   - Section 0:
 
-* PMT, TID 2 (0x02), PID 110 (0x006E)
+* PMT, TID 0x02 (2), PID 0x006E (110)
   Version: 12, sections: 1, total size: 121 bytes
   - Section 0:
-    Program: 257 (0x0101), PCR PID: 120 (0x0078)
-    Elementary stream: type 0x1B (AVC video), PID: 120 (0x0078)
+    Program: 0x0101 (257), PCR PID: 0x0078 (120)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0078 (120)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 130 (0x0082)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0082 (130)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 131 (0x0083)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0083 (131)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
@@ -122,45 +122,45 @@
       Language: fra
     - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 132 (0x0084)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0084 (132)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 4 (0x04)
+      Component tag: 0x04 (4)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qaa, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 140 (0x008C)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008C (140)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 36 (0x24)
+      Language: fra, Type: 0x24 (36)
       Type: DVB subtitles for hard of hearing, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008E (142)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 6 (0x06)
+      Component tag: 0x06 (6)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 20 (0x14)
+      Language: fra, Type: 0x14 (20)
       Type: DVB subtitles, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 
-* PMT, TID 2 (0x02), PID 510 (0x01FE)
+* PMT, TID 0x02 (2), PID 0x01FE (510)
   Version: 9, sections: 1, total size: 85 bytes
   - Section 0:
-    Program: 261 (0x0105), PCR PID: 520 (0x0208)
-    Elementary stream: type 0x1B (AVC video), PID: 520 (0x0208)
+    Program: 0x0105 (261), PCR PID: 0x0208 (520)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0208 (520)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 530 (0x0212)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0212 (530)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 531 (0x0213)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0213 (531)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
@@ -170,23 +170,23 @@
       Language: fra
     - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 540 (0x021C)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x021C (540)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 
-* PMT, TID 2 (0x02), PID 210 (0x00D2)
+* PMT, TID 0x02 (2), PID 0x00D2 (210)
   Version: 1, sections: 1, total size: 94 bytes
   - Section 0:
-    Program: 273 (0x0111), PCR PID: 220 (0x00DC)
-    Elementary stream: type 0x1B (AVC video), PID: 220 (0x00DC)
-    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 230 (0x00E6)
+    Program: 0x0111 (273), PCR PID: 0x00DC (220)
+    Elementary stream: type 0x1B (AVC video), PID: 0x00DC (220)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x00E6 (230)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
-    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 231 (0x00E7)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x00E7 (231)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 1: Extension Descriptor (0x7F, 127), 5 bytes
@@ -194,67 +194,67 @@
       Mix type: complete and independent stream
       Editorial classification: audio description for the visually impaired
       Language: fra
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 240 (0x00F0)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00F0 (240)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 36 (0x24)
+      Language: fra, Type: 0x24 (36)
       Type: DVB subtitles for hard of hearing, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
-    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 232 (0x00E8)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x00E8 (232)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qaa, Type: 0x00 (undefined)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 242 (0x00F2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00F2 (242)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 6 (0x06)
+      Component tag: 0x06 (6)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 20 (0x14)
+      Language: fra, Type: 0x14 (20)
       Type: DVB subtitles, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 2, sections: 1, total size: 171 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Service Id: 257 (0x0101), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Service Id: 0x0101 (257), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 16 bytes
       Service type: 0x01 (Digital television service)
       Service: "France 2", Provider: "GR1 A"
-    Service Id: 260 (0x0104), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x0104 (260), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 16 bytes
       Service type: 0x01 (Digital television service)
       Service: "France 4", Provider: "GR1 A"
-    Service Id: 261 (0x0105), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x0105 (261), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 17 bytes
       Service type: 0x01 (Digital television service)
       Service: "France Ô", Provider: "GR1 A"
-    Service Id: 262 (0x0106), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x0106 (262), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 19 bytes
       Service type: 0x01 (Digital television service)
       Service: "franceinfo:", Provider: "GR1 A"
-    Service Id: 273 (0x0111), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x0111 (273), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 28 bytes
       Service type: 0x01 (Digital television service)
       Service: "F3 Paris Ile-de-France", Provider: "GR1"
-    Service Id: 368 (0x0170), EITs: yes, EITp/f: yes, CA mode: free
+    Service Id: 0x0170 (368), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 18 bytes
       Service type: 0x01 (Digital television service)
       Service: "BFM Paris", Provider: "R1 TFL"
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 5, sections: 2, total size: 652 bytes
   - Section 0:
-    Service Id: 261 (0x0105)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 22 (0x0016)
+    Service Id: 0x0105 (261)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0016 (22)
       Start UTC: 2019/01/22 12:15:00
       Duration: 00:50:00
       Running status: running
@@ -273,26 +273,26 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
   - Section 1:
-    Service Id: 261 (0x0105)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 23 (0x0017)
+    Service Id: 0x0105 (261)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0017 (23)
       Start UTC: 2019/01/22 13:05:00
       Duration: 00:50:00
       Running status: not running
@@ -311,29 +311,29 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 4, sections: 2, total size: 708 bytes
   - Section 0:
-    Service Id: 273 (0x0111)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 30 (0x001E)
+    Service Id: 0x0111 (273)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x001E (30)
       Start UTC: 2019/01/22 12:00:00
       Duration: 00:55:00
       Running status: running
@@ -352,26 +352,26 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
   - Section 1:
-    Service Id: 273 (0x0111)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 31 (0x001F)
+    Service Id: 0x0111 (273)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x001F (31)
       Start UTC: 2019/01/22 12:55:00
       Duration: 00:45:00
       Running status: not running
@@ -390,29 +390,29 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 25, sections: 2, total size: 382 bytes
   - Section 0:
-    Service Id: 368 (0x0170)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 3 (0x0003)
+    Service Id: 0x0170 (368)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0003 (3)
       Start UTC: 2019/01/22 11:00:00
       Duration: 03:00:00
       Running status: running
@@ -431,20 +431,20 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 17 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "AudioTrack"
       - Descriptor 5: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
   - Section 1:
-    Service Id: 368 (0x0170)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 4 (0x0004)
+    Service Id: 0x0170 (368)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0004 (4)
       Start UTC: 2019/01/22 14:00:00
       Duration: 03:00:00
       Running status: not running
@@ -463,23 +463,23 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 17 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "AudioTrack"
       - Descriptor 5: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 9, sections: 2, total size: 602 bytes
   - Section 0:
-    Service Id: 260 (0x0104)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 36 (0x0024)
+    Service Id: 0x0104 (260)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0024 (36)
       Start UTC: 2019/01/22 12:35:00
       Duration: 00:30:00
       Running status: running
@@ -498,26 +498,26 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
   - Section 1:
-    Service Id: 260 (0x0104)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 37 (0x0025)
+    Service Id: 0x0104 (260)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0025 (37)
       Start UTC: 2019/01/22 13:05:00
       Duration: 00:30:00
       Running status: not running
@@ -536,29 +536,29 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 4, sections: 2, total size: 486 bytes
   - Section 0:
-    Service Id: 257 (0x0101)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 25 (0x0019)
+    Service Id: 0x0101 (257)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0019 (25)
       Start UTC: 2019/01/22 12:42:00
       Duration: 00:13:00
       Running status: running
@@ -577,26 +577,26 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
   - Section 1:
-    Service Id: 257 (0x0101)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 26 (0x001A)
+    Service Id: 0x0101 (257)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x001A (26)
       Start UTC: 2019/01/22 12:55:00
       Duration: 01:10:00
       Running status: not running
@@ -615,29 +615,29 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
       - Descriptor 6: Component (0x50, 80), 19 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Malentendant"
 
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Version: 25, sections: 2, total size: 678 bytes
   - Section 0:
-    Service Id: 262 (0x0106)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 6 (0x0006)
+    Service Id: 0x0106 (262)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0006 (6)
       Start UTC: 2019/01/22 12:00:00
       Duration: 04:00:00
       Running status: running
@@ -656,21 +656,21 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
   - Section 1:
-    Service Id: 262 (0x0106)
-    TS Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 78 (0x4E), EIT p/f Actual
-    - Event Id: 7 (0x0007)
+    Service Id: 0x0106 (262)
+    TS Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+    - Event Id: 0x0007 (7)
       Start UTC: 2019/01/22 16:00:00
       Duration: 03:00:00
       Running status: not running
@@ -689,23 +689,23 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 30, sections: 1, total size: 635 bytes
   - Section 0:
-    Network Id: 8442 (0x20FA)
+    Network Id: 0x20FA (8442)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 1 bytes
       Name: "F"
-    Transport Stream Id: 1 (0x0001), Original Network Id: 8442 (0x20FA)
+    Transport Stream Id: 0x0001 (1), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -744,33 +744,33 @@
       Service Id:   325 (0x0145), Visible: 1, Channel number:  32
       Service Id:   326 (0x0146), Visible: 1, Channel number:  32
     - Descriptor 3: Service List (0x41, 65), 78 bytes
-      Service id: 257 (0x0101), Type: 0x01 (Digital television service)
-      Service id: 260 (0x0104), Type: 0x01 (Digital television service)
-      Service id: 261 (0x0105), Type: 0x01 (Digital television service)
-      Service id: 262 (0x0106), Type: 0x01 (Digital television service)
-      Service id: 275 (0x0113), Type: 0x01 (Digital television service)
-      Service id: 277 (0x0115), Type: 0x01 (Digital television service)
-      Service id: 281 (0x0119), Type: 0x01 (Digital television service)
-      Service id: 282 (0x011A), Type: 0x01 (Digital television service)
-      Service id: 273 (0x0111), Type: 0x01 (Digital television service)
-      Service id: 274 (0x0112), Type: 0x01 (Digital television service)
-      Service id: 287 (0x011F), Type: 0x01 (Digital television service)
-      Service id: 288 (0x0120), Type: 0x01 (Digital television service)
-      Service id: 292 (0x0124), Type: 0x01 (Digital television service)
-      Service id: 323 (0x0143), Type: 0x01 (Digital television service)
-      Service id: 324 (0x0144), Type: 0x01 (Digital television service)
-      Service id: 368 (0x0170), Type: 0x01 (Digital television service)
-      Service id: 369 (0x0171), Type: 0x01 (Digital television service)
-      Service id: 370 (0x0172), Type: 0x01 (Digital television service)
-      Service id: 371 (0x0173), Type: 0x01 (Digital television service)
-      Service id: 372 (0x0174), Type: 0x01 (Digital television service)
-      Service id: 373 (0x0175), Type: 0x01 (Digital television service)
-      Service id: 374 (0x0176), Type: 0x01 (Digital television service)
-      Service id: 375 (0x0177), Type: 0x01 (Digital television service)
-      Service id: 376 (0x0178), Type: 0x01 (Digital television service)
-      Service id: 325 (0x0145), Type: 0x01 (Digital television service)
-      Service id: 326 (0x0146), Type: 0x01 (Digital television service)
-    Transport Stream Id: 2 (0x0002), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0101 (257), Type: 0x01 (Digital television service)
+      Service id: 0x0104 (260), Type: 0x01 (Digital television service)
+      Service id: 0x0105 (261), Type: 0x01 (Digital television service)
+      Service id: 0x0106 (262), Type: 0x01 (Digital television service)
+      Service id: 0x0113 (275), Type: 0x01 (Digital television service)
+      Service id: 0x0115 (277), Type: 0x01 (Digital television service)
+      Service id: 0x0119 (281), Type: 0x01 (Digital television service)
+      Service id: 0x011A (282), Type: 0x01 (Digital television service)
+      Service id: 0x0111 (273), Type: 0x01 (Digital television service)
+      Service id: 0x0112 (274), Type: 0x01 (Digital television service)
+      Service id: 0x011F (287), Type: 0x01 (Digital television service)
+      Service id: 0x0120 (288), Type: 0x01 (Digital television service)
+      Service id: 0x0124 (292), Type: 0x01 (Digital television service)
+      Service id: 0x0143 (323), Type: 0x01 (Digital television service)
+      Service id: 0x0144 (324), Type: 0x01 (Digital television service)
+      Service id: 0x0170 (368), Type: 0x01 (Digital television service)
+      Service id: 0x0171 (369), Type: 0x01 (Digital television service)
+      Service id: 0x0172 (370), Type: 0x01 (Digital television service)
+      Service id: 0x0173 (371), Type: 0x01 (Digital television service)
+      Service id: 0x0174 (372), Type: 0x01 (Digital television service)
+      Service id: 0x0175 (373), Type: 0x01 (Digital television service)
+      Service id: 0x0176 (374), Type: 0x01 (Digital television service)
+      Service id: 0x0177 (375), Type: 0x01 (Digital television service)
+      Service id: 0x0178 (376), Type: 0x01 (Digital television service)
+      Service id: 0x0145 (325), Type: 0x01 (Digital television service)
+      Service id: 0x0146 (326), Type: 0x01 (Digital television service)
+    Transport Stream Id: 0x0002 (2), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -788,12 +788,12 @@
       Service Id:   517 (0x0205), Visible: 1, Channel number:  17
       Service Id:   518 (0x0206), Visible: 1, Channel number:  18
     - Descriptor 3: Service List (0x41, 65), 15 bytes
-      Service id: 513 (0x0201), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 515 (0x0203), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 516 (0x0204), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 517 (0x0205), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 518 (0x0206), Type: 0x19 (Advanced codec HD digital television service)
-    Transport Stream Id: 3 (0x0003), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0201 (513), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0203 (515), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0204 (516), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0205 (517), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0206 (518), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 0x0003 (3), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -812,13 +812,13 @@
       Service Id:   776 (0x0308), Visible: 1, Channel number:  26
       Service Id:   777 (0x0309), Visible: 1, Channel number:  41
     - Descriptor 3: Service List (0x41, 65), 18 bytes
-      Service id: 769 (0x0301), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 770 (0x0302), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 771 (0x0303), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 772 (0x0304), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 776 (0x0308), Type: 0x16 (Advanced codec SD digital television service)
-      Service id: 777 (0x0309), Type: 0x16 (Advanced codec SD digital television service)
-    Transport Stream Id: 4 (0x0004), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0301 (769), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0302 (770), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0303 (771), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0304 (772), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0308 (776), Type: 0x16 (Advanced codec SD digital television service)
+      Service id: 0x0309 (777), Type: 0x16 (Advanced codec SD digital television service)
+    Transport Stream Id: 0x0004 (4), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -836,12 +836,12 @@
       Service Id:  1045 (0x0415), Visible: 1, Channel number:   5
       Service Id:  1046 (0x0416), Visible: 1, Channel number:  22
     - Descriptor 3: Service List (0x41, 65), 15 bytes
-      Service id: 1025 (0x0401), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1026 (0x0402), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1031 (0x0407), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1045 (0x0415), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1046 (0x0416), Type: 0x19 (Advanced codec HD digital television service)
-    Transport Stream Id: 6 (0x0006), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0401 (1025), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0402 (1026), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0407 (1031), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0415 (1045), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0416 (1046), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 0x0006 (6), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -859,12 +859,12 @@
       Service Id:  1544 (0x0608), Visible: 1, Channel number:  11
       Service Id:  1545 (0x0609), Visible: 1, Channel number:  13
     - Descriptor 3: Service List (0x41, 65), 15 bytes
-      Service id: 1537 (0x0601), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1538 (0x0602), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1542 (0x0606), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1544 (0x0608), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 1545 (0x0609), Type: 0x19 (Advanced codec HD digital television service)
-    Transport Stream Id: 8 (0x0008), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0601 (1537), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0602 (1538), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0606 (1542), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0608 (1544), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0609 (1545), Type: 0x19 (Advanced codec HD digital television service)
+    Transport Stream Id: 0x0008 (8), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -884,14 +884,14 @@
       Service Id:  2052 (0x0804), Visible: 1, Channel number:  33
       Service Id:  2179 (0x0883), Visible: 1, Channel number:  32
     - Descriptor 3: Service List (0x41, 65), 21 bytes
-      Service id: 2053 (0x0805), Type: 0x01 (Digital television service)
-      Service id: 2055 (0x0807), Type: 0x01 (Digital television service)
-      Service id: 2049 (0x0801), Type: 0x01 (Digital television service)
-      Service id: 2050 (0x0802), Type: 0x01 (Digital television service)
-      Service id: 2051 (0x0803), Type: 0x01 (Digital television service)
-      Service id: 2052 (0x0804), Type: 0x01 (Digital television service)
-      Service id: 2179 (0x0883), Type: 0x01 (Digital television service)
-    Transport Stream Id: 10 (0x000A), Original Network Id: 8442 (0x20FA)
+      Service id: 0x0805 (2053), Type: 0x01 (Digital television service)
+      Service id: 0x0807 (2055), Type: 0x01 (Digital television service)
+      Service id: 0x0801 (2049), Type: 0x01 (Digital television service)
+      Service id: 0x0802 (2050), Type: 0x01 (Digital television service)
+      Service id: 0x0803 (2051), Type: 0x01 (Digital television service)
+      Service id: 0x0804 (2052), Type: 0x01 (Digital television service)
+      Service id: 0x0883 (2179), Type: 0x01 (Digital television service)
+    Transport Stream Id: 0x000A (10), Original Network Id: 0x20FA (8442)
     - Descriptor 0: Terrestrial Delivery System (0x5A, 90), 11 bytes
       Centre frequency: 42,949,672,950 Hz, Bandwidth: 8 MHz
       Priority: high, Time slicing: unused, MPE-FEC: unused
@@ -909,21 +909,21 @@
       Service Id:  2564 (0x0A04), Visible: 1, Channel number:  24
       Service Id:  2565 (0x0A05), Visible: 1, Channel number:  23
     - Descriptor 3: Service List (0x41, 65), 15 bytes
-      Service id: 2561 (0x0A01), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 2563 (0x0A03), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 2562 (0x0A02), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 2564 (0x0A04), Type: 0x19 (Advanced codec HD digital television service)
-      Service id: 2565 (0x0A05), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0A01 (2561), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0A03 (2563), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0A02 (2562), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0A04 (2564), Type: 0x19 (Advanced codec HD digital television service)
+      Service id: 0x0A05 (2565), Type: 0x19 (Advanced codec HD digital television service)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 9, sections: 2, total size: 773 bytes
   - Section 0:
-    Service Id: 1046 (0x0416)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 32 (0x0020)
+    Service Id: 0x0416 (1046)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0020 (32)
       Start UTC: 2019/01/22 12:15:00
       Duration: 00:55:00
       Running status: running
@@ -943,21 +943,21 @@
         Content: 0x10 (movie/drama (general)) / User: 0x00
       - Descriptor 4: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 5: Component (0x50, 80), 24 bytes
         Content/type: 0x04C5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "multi-channel 5.1"
   - Section 1:
-    Service Id: 1046 (0x0416)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 33 (0x0021)
+    Service Id: 0x0416 (1046)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0021 (33)
       Start UTC: 2019/01/22 13:10:00
       Duration: 00:55:00
       Running status: not running
@@ -981,24 +981,24 @@
         Content: 0x10 (movie/drama (general)) / User: 0x00
       - Descriptor 5: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 6: Component (0x50, 80), 24 bytes
         Content/type: 0x04C5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "multi-channel 5.1"
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 15, sections: 2, total size: 818 bytes
   - Section 0:
-    Service Id: 1045 (0x0415)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 71 (0x0047)
+    Service Id: 0x0415 (1045)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0047 (71)
       Start UTC: 2019/01/22 12:45:00
       Duration: 00:55:00
       Running status: running
@@ -1017,26 +1017,26 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 5: Component (0x50, 80), 87 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
       - Descriptor 6: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "stereo"
   - Section 1:
-    Service Id: 1045 (0x0415)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 72 (0x0048)
+    Service Id: 0x0415 (1045)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0048 (72)
       Start UTC: 2019/01/22 13:40:00
       Duration: 00:35:00
       Running status: not running
@@ -1055,29 +1055,29 @@
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 5: Component (0x50, 80), 87 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
       - Descriptor 6: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "stereo"
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 28, sections: 2, total size: 164 bytes
   - Section 0:
-    Service Id: 776 (0x0308)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 37998 (0x946E)
+    Service Id: 0x0308 (776)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x946E (37998)
       Start UTC: 2019/01/22 12:40:00
       Duration: 00:20:00
       Running status: running
@@ -1088,11 +1088,11 @@
         Description: ""
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 3: Content (0x54, 84), 6 bytes
         Content: 0x42 (sports magazines) / User: 0x2D
@@ -1101,12 +1101,12 @@
       - Descriptor 4: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x00 (undefined)
   - Section 1:
-    Service Id: 776 (0x0308)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 37999 (0x946F)
+    Service Id: 0x0308 (776)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x946F (37999)
       Start UTC: 2019/01/22 13:00:00
       Duration: 00:10:00
       Running status: not running
@@ -1117,11 +1117,11 @@
         Description: ""
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 3: Content (0x54, 84), 6 bytes
         Content: 0x21 (news/weather report) / User: 0x90
@@ -1130,15 +1130,15 @@
       - Descriptor 4: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x00 (undefined)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 2, sections: 2, total size: 478 bytes
   - Section 0:
-    Service Id: 770 (0x0302)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 7840 (0x1EA0)
+    Service Id: 0x0302 (770)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x1EA0 (7840)
       Start UTC: 2019/01/22 12:32:00
       Duration: 01:50:00
       Running status: running
@@ -1149,15 +1149,15 @@
         Description: "Réalisé par Martin Campbell en 2017. Avec Jackie Chan, Pierce Brosnan, Charlie Murphy. Thriller britannico-chinois."
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0444 (AC-3, full, complete main, multichannel > 2)
-        Component tag: 3 (0x03)
+        Component tag: 0x03 (3)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x0444 (AC-3, full, complete main, multichannel > 2)
-        Component tag: 3 (0x03)
+        Component tag: 0x03 (3)
         Language: eng
       - Descriptor 3: Component (0x50, 80), 6 bytes
         Content/type: 0x010B (MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 4: Content (0x54, 84), 6 bytes
         Content: 0x11 (detective/thriller) / User: 0x15
@@ -1165,17 +1165,17 @@
         Content: 0xBF (unknown) / User: 0x11
       - Descriptor 5: Component (0x50, 80), 6 bytes
         Content/type: 0x0301 (EBU Teletext subtitles)
-        Component tag: 12 (0x0C)
+        Component tag: 0x0C (12)
         Language: fre
       - Descriptor 6: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x07 (min. 10 years)
   - Section 1:
-    Service Id: 770 (0x0302)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 7841 (0x1EA1)
+    Service Id: 0x0302 (770)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x1EA1 (7841)
       Start UTC: 2019/01/22 14:22:00
       Duration: 00:14:00
       Running status: not running
@@ -1186,11 +1186,11 @@
         Description: "Présenté par Didier Allouch. Toute l'actualité d'Hollywood, des stars et des derniers films à ne pas manquer."
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x010B (MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 3: Content (0x54, 84), 4 bytes
         Content: 0x76 (film/cinema) / User: 0x6C
@@ -1204,15 +1204,15 @@ REDIFFUSION : le 24 Jan à 00:00"
       - Descriptor 5: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x00 (undefined)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 29, sections: 2, total size: 370 bytes
   - Section 0:
-    Service Id: 2561 (0x0A01)
-    TS Id: 10 (0x000A)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 206 (0x00CE)
+    Service Id: 0x0A01 (2561)
+    TS Id: 0x000A (10)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x00CE (206)
       Start UTC: 2019/01/22 12:40:00
       Duration: 00:40:00
       Running status: running
@@ -1224,12 +1224,12 @@ REDIFFUSION : le 24 Jan à 00:00"
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x00 (undefined)
   - Section 1:
-    Service Id: 2561 (0x0A01)
-    TS Id: 10 (0x000A)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 207 (0x00CF)
+    Service Id: 0x0A01 (2561)
+    TS Id: 0x000A (10)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x00CF (207)
       Start UTC: 2019/01/22 13:20:00
       Duration: 00:25:00
       Running status: not running
@@ -1241,15 +1241,15 @@ REDIFFUSION : le 24 Jan à 00:00"
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x00 (undefined)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 13, sections: 2, total size: 455 bytes
   - Section 0:
-    Service Id: 777 (0x0309)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 46074 (0xB3FA)
+    Service Id: 0x0309 (777)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0xB3FA (46074)
       Start UTC: 2019/01/22 12:15:00
       Duration: 00:50:00
       Running status: running
@@ -1260,15 +1260,15 @@ REDIFFUSION : le 24 Jan à 00:00"
         Description: "Série policière américaine avec Dana Delany, Mary Mouser, Jeri Ryan. Saison 1. (4/9). "Puzzle macabre"."
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: eng
       - Descriptor 3: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 4: Content (0x54, 84), 6 bytes
         Content: 0x11 (detective/thriller) / User: 0x54
@@ -1276,7 +1276,7 @@ REDIFFUSION : le 24 Jan à 00:00"
         Content: 0xBF (unknown) / User: 0x11
       - Descriptor 5: Component (0x50, 80), 6 bytes
         Content/type: 0x0301 (EBU Teletext subtitles)
-        Component tag: 12 (0x0C)
+        Component tag: 0x0C (12)
         Language: fre
       - Descriptor 6: Extended Event (0x4E, 78), 23 bytes
         Descriptor number: 0, last: 0
@@ -1286,12 +1286,12 @@ Episode : 4 / 9"
       - Descriptor 7: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x07 (min. 10 years)
   - Section 1:
-    Service Id: 777 (0x0309)
-    TS Id: 3 (0x0003)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 46075 (0xB3FB)
+    Service Id: 0x0309 (777)
+    TS Id: 0x0003 (3)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0xB3FB (46075)
       Start UTC: 2019/01/22 13:05:00
       Duration: 00:45:00
       Running status: not running
@@ -1302,15 +1302,15 @@ Episode : 4 / 9"
         Description: "Série policière américaine avec Dana Delany, Jeri Ryan, Jay Karnes. Saison 2. (2/20). "Partie de chasse"."
       - Descriptor 1: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
       - Descriptor 2: Component (0x50, 80), 6 bytes
         Content/type: 0x0203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: eng
       - Descriptor 3: Component (0x50, 80), 6 bytes
         Content/type: 0x0101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
       - Descriptor 4: Content (0x54, 84), 6 bytes
         Content: 0x11 (detective/thriller) / User: 0x54
@@ -1318,7 +1318,7 @@ Episode : 4 / 9"
         Content: 0xBF (unknown) / User: 0x11
       - Descriptor 5: Component (0x50, 80), 6 bytes
         Content/type: 0x0301 (EBU Teletext subtitles)
-        Component tag: 12 (0x0C)
+        Component tag: 0x0C (12)
         Language: fre
       - Descriptor 6: Extended Event (0x4E, 78), 24 bytes
         Descriptor number: 0, last: 0
@@ -1328,15 +1328,15 @@ Episode : 2 / 20"
       - Descriptor 7: Parental Rating (0x55, 85), 4 bytes
         Country code: fra, rating: 0x07 (min. 10 years)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 21, sections: 2, total size: 809 bytes
   - Section 0:
-    Service Id: 1025 (0x0401)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 48 (0x0030)
+    Service Id: 0x0401 (1025)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0030 (48)
       Start UTC: 2019/01/22 12:30:00
       Duration: 00:25:00
       Running status: running
@@ -1355,21 +1355,21 @@ Episode : 2 / 20"
         Content: 0x10 (movie/drama (general)) / User: 0x00
       - Descriptor 4: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 5: Component (0x50, 80), 24 bytes
         Content/type: 0x04C5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "multi-channel 5.1"
   - Section 1:
-    Service Id: 1025 (0x0401)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 49 (0x0031)
+    Service Id: 0x0401 (1025)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0031 (49)
       Start UTC: 2019/01/22 12:55:00
       Duration: 02:00:00
       Running status: not running
@@ -1393,34 +1393,34 @@ Episode : 2 / 20"
         Content: 0x12 (adventure/western/war) / User: 0x00
       - Descriptor 5: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 6: Component (0x50, 80), 24 bytes
         Content/type: 0x04C5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "multi-channel 5.1"
       - Descriptor 7: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 4 (0x04)
+        Component tag: 0x04 (4)
         Language: qaa
         Description: "stereo"
       - Descriptor 8: Component (0x50, 80), 87 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 9, sections: 2, total size: 669 bytes
   - Section 0:
-    Service Id: 518 (0x0206)
-    TS Id: 2 (0x0002)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 51 (0x0033)
+    Service Id: 0x0206 (518)
+    TS Id: 0x0002 (2)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0033 (51)
       Start UTC: 2019/01/22 12:30:00
       Duration: 00:30:00
       Running status: running
@@ -1439,21 +1439,21 @@ Episode : 2 / 20"
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
   - Section 1:
-    Service Id: 518 (0x0206)
-    TS Id: 2 (0x0002)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 52 (0x0034)
+    Service Id: 0x0206 (518)
+    TS Id: 0x0002 (2)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0034 (52)
       Start UTC: 2019/01/22 13:00:00
       Duration: 00:30:00
       Running status: not running
@@ -1472,24 +1472,24 @@ Episode : 2 / 20"
         Country code: fra, rating: 0x00 (undefined)
       - Descriptor 4: Component (0x50, 80), 14 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "MPEG4HD"
       - Descriptor 5: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "DD+ VF"
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 13, sections: 2, total size: 485 bytes
   - Section 0:
-    Service Id: 1542 (0x0606)
-    TS Id: 6 (0x0006)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 24834 (0x6102)
+    Service Id: 0x0606 (1542)
+    TS Id: 0x0006 (6)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x6102 (24834)
       Start UTC: 2019/01/22 12:25:00
       Duration: 00:30:00
       Running status: running
@@ -1501,12 +1501,12 @@ Episode : 2 / 20"
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: FRA, rating: 0x00 (undefined)
   - Section 1:
-    Service Id: 1542 (0x0606)
-    TS Id: 6 (0x0006)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 24835 (0x6103)
+    Service Id: 0x0606 (1542)
+    TS Id: 0x0006 (6)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x6103 (24835)
       Start UTC: 2019/01/22 12:55:00
       Duration: 00:55:00
       Running status: not running
@@ -1518,15 +1518,15 @@ Episode : 2 / 20"
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: FRA, rating: 0x00 (undefined)
 
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Version: 4, sections: 2, total size: 1423 bytes
   - Section 0:
-    Service Id: 1031 (0x0407)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 48 (0x0030)
+    Service Id: 0x0407 (1031)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0030 (48)
       Start UTC: 2019/01/22 12:37:41
       Duration: 01:59:43
       Running status: running
@@ -1551,41 +1551,41 @@ Sous-titres pour sourds et malentendants disponibles pour ce programme"
         Content: 0x10 (movie/drama (general)) / User: 0x00
       - Descriptor 5: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 6: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "stereo"
       - Descriptor 7: Component (0x50, 80), 13 bytes
         Content/type: 0x04D2 (Enhanced AC-3, full, visually impaired, 2 channels)
-        Component tag: 3 (0x03)
+        Component tag: 0x03 (3)
         Language: qad
         Description: "stereo"
       - Descriptor 8: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 7 (0x07)
+        Component tag: 0x07 (7)
         Language: deu
         Description: "stereo"
       - Descriptor 9: Component (0x50, 80), 41 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Sous-titrage malentendant français"
       - Descriptor 10: Component (0x50, 80), 36 bytes
         Content/type: 0x0314 (DVB subtitles, high definition)
-        Component tag: 8 (0x08)
+        Component tag: 0x08 (8)
         Language: deu
         Description: "Sous-titrage partiel allemand"
   - Section 1:
-    Service Id: 1031 (0x0407)
-    TS Id: 4 (0x0004)
-    Original Network Id: 8442 (0x20FA)
-    Segment last section: 1 (0x01)
-    Last Table Id: 79 (0x4F), EIT p/f Other
-    - Event Id: 49 (0x0031)
+    Service Id: 0x0407 (1031)
+    TS Id: 0x0004 (4)
+    Original Network Id: 0x20FA (8442)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4F (79), EIT p/f Other
+    - Event Id: 0x0031 (49)
       Start UTC: 2019/01/22 14:37:24
       Duration: 00:52:16
       Running status: not running
@@ -1610,27 +1610,27 @@ Sous-titres pour sourds et malentendants disponibles pour ce programme"
         Content: 0x82 (economics/social advisory) / User: 0x00
       - Descriptor 5: Component (0x50, 80), 43 bytes
         Content/type: 0x050B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
-        Component tag: 1 (0x01)
+        Component tag: 0x01 (1)
         Language: fre
         Description: "video, 16:9 without pan vector, 25Hz"
       - Descriptor 6: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 2 (0x02)
+        Component tag: 0x02 (2)
         Language: fre
         Description: "stereo"
       - Descriptor 7: Component (0x50, 80), 13 bytes
         Content/type: 0x04C2 (Enhanced AC-3, full, complete main, 2 channels)
-        Component tag: 7 (0x07)
+        Component tag: 0x07 (7)
         Language: deu
         Description: "stereo"
       - Descriptor 8: Component (0x50, 80), 41 bytes
         Content/type: 0x0324 (DVB subtitles for hard of hearing, high definition)
-        Component tag: 5 (0x05)
+        Component tag: 0x05 (5)
         Language: fre
         Description: "Sous-titrage malentendant français"
       - Descriptor 9: Component (0x50, 80), 36 bytes
         Content/type: 0x0314 (DVB subtitles, high definition)
-        Component tag: 8 (0x08)
+        Component tag: 0x08 (8)
         Language: deu
         Description: "Sous-titrage partiel allemand"
 

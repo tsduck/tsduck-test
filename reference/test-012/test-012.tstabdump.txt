@@ -1,5 +1,5 @@
 
-* PAT, TID 0 (0x00)
+* PAT, TID 0x00 (0)
   Section: 0 (last: 0), version: 2, size: 16 bytes
   TS id:    4006 (0x0FA6)
   Program:  4006 (0x0FA6)  PID:  160 (0x00A0)
@@ -8,28 +8,28 @@
     Byte 10, bit #2 should be '1'
     Byte 10, bit #3 should be '1'
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 2, size: 94 bytes
-  Program: 4006 (0x0FA6), PCR PID: 1060 (0x0424)
-  Elementary stream: type 0x1B (AVC video), PID: 1060 (0x0424)
-  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 1061 (0x0425)
+  Program: 0x0FA6 (4006), PCR PID: 0x0424 (1060)
+  Elementary stream: type 0x1B (AVC video), PID: 0x0424 (1060)
+  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 0x0425 (1061)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
-  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 1062 (0x0426)
+  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 0x0426 (1062)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 1063 (0x0427)
+  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 0x0427 (1063)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: deu, Type: 0x00 (undefined)
-  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 1067 (0x042B)
+  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 0x042B (1067)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: qad, Type: 0x03 (visual impaired commentary)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1068 (0x042C)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x042C (1068)
   - Descriptor 0: Teletext (0x56, 86), 10 bytes
-    Language: fra, Type: 5 (0x05)
+    Language: fra, Type: 0x05 (5)
     Type: Teletext subtitles for hearing impaired
     Magazine: 0, page: 136, full page: 888
-    Language: fra, Type: 2 (0x02)
+    Language: fra, Type: 0x02 (2)
     Type: Teletext subtitles
     Magazine: 0, page: 137, full page: 889
   - Descriptor 1: VBI Data (0x45, 69), 10 bytes

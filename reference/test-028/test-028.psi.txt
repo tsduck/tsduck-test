@@ -1,44 +1,44 @@
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 13, sections: 1, total size: 34 bytes
   - Section 0:
-    Transport Stream Id: 1080 (0x0438)
-    Original Network Id: 1 (0x0001)
-    Service Id: 8810 (0x226A), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x0438 (1080)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x226A (8810), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 12 bytes
       Service type: 0x19 (Advanced codec HD digital television service)
       Service: "CNEWS", Provider: "CSAT"
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 12, sections: 1, total size: 16 bytes
   - Section 0:
     TS id:    1080 (0x0438)
     Program:  8810 (0x226A)  PID: 1000 (0x03E8)
 
-* PMT, TID 2 (0x02), PID 1000 (0x03E8)
+* PMT, TID 0x02 (2), PID 0x03E8 (1000)
   Version: 1, sections: 1, total size: 71 bytes
   - Section 0:
-    Program: 8810 (0x226A), PCR PID: 1010 (0x03F2)
+    Program: 0x226A (8810), PCR PID: 0x03F2 (1010)
     Program information:
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x43554549 ("CUEI")
-    Elementary stream: type 0x1B (AVC video), PID: 1010 (0x03F2)
+    Elementary stream: type 0x1B (AVC video), PID: 0x03F2 (1010)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1021 (0x03FD)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03FD (1021)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1043 (0x0413)
+      Component tag: 0x02 (2)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0413 (1043)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 32 (0x20)
+      Language: fra, Type: 0x20 (32)
       Type: DVB subtitles for hard of hearing, no aspect ratio
-      Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+      Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
     - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
-    Elementary stream: type 0x86 (SCTE 35 Splice Info), PID: 1280 (0x0500)
+      Component tag: 0x03 (3)
+    Elementary stream: type 0x86 (SCTE 35 Splice Info), PID: 0x0500 (1280)
 

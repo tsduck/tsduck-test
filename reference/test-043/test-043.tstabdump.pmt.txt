@@ -1,11 +1,11 @@
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 2, size: 88 bytes
-  Program: 3 (0x0003), PCR PID: 49 (0x0031)
+  Program: 0x0003 (3), PCR PID: 0x0031 (49)
   Program information:
   - Descriptor 0: ACQ assign (ETSI EN 301 790) (0xA3, 163), 11 bytes
     0000:  01 65 6E 67 01 00 00 03 65 6E 63                 .eng....enc
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0031 (49)
   - Descriptor 0: Video Stream (0x02, 2), 3 bytes
     Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
     MPEG-1 only: false, constained parameter: true, still picture: false
@@ -14,7 +14,7 @@
     Frame rate extension: false
   - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
     Alignment type: 0x02 (2, Video access unit)
-  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
+  Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0034 (52)
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x41432D33 ("AC-3")
   - Descriptor 1: ACQ assign (ETSI EN 301 790) (0xA3, 163), 15 bytes

@@ -1,32 +1,32 @@
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 1, sections: 1, total size: 16 bytes
   - Section 0:
     TS id:       1 (0x0001)
     Program:  1030 (0x0406)  PID: 1030 (0x0406)
 
-* PMT, TID 2 (0x02), PID 1030 (0x0406)
+* PMT, TID 0x02 (2), PID 0x0406 (1030)
   Version: 26, sections: 1, total size: 49 bytes
   - Section 0:
-    Program: 1030 (0x0406), PCR PID: 1031 (0x0407)
+    Program: 0x0406 (1030), PCR PID: 0x0407 (1031)
     Program information:
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x43554549 ("CUEI")
-    Elementary stream: type 0x1B (AVC video), PID: 1031 (0x0407)
-    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 1032 (0x0408)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1034 (0x040A)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0407 (1031)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x0408 (1032)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x040A (1034)
     - Descriptor 0: Teletext (0x56, 86), 5 bytes
-      Language: rus, Type: 1 (0x01)
+      Language: rus, Type: 0x01 (1)
       Type: Initial Teletext page
       Magazine: 1, page: 0, full page: 100
-    Elementary stream: type 0x86 (SCTE 35 Splice Info), PID: 1035 (0x040B)
+    Elementary stream: type 0x86 (SCTE 35 Splice Info), PID: 0x040B (1035)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 1, sections: 1, total size: 39 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 8835 (0x2283)
-    Service Id: 1030 (0x0406), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x2283 (8835)
+    Service Id: 0x0406 (1030), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 17 bytes
       Service type: 0x16 (Advanced codec SD digital television service)

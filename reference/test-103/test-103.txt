@@ -1,25 +1,25 @@
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 10, sections: 1, total size: 45 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 1 (0x0001)
-    Service Id: 1 (0x0001), EITs: no, EITp/f: no, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x0001 (1), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_1", Provider: ""
-    Service Id: 2 (0x0002), EITs: no, EITp/f: no, CA mode: free
+    Service Id: 0x0002 (2), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_2", Provider: ""
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 1, sections: 1, total size: 12 bytes
   - Section 0:
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 18, sections: 1, total size: 24 bytes
   - Section 0:
     TS id:       1 (0x0001)
@@ -27,71 +27,71 @@
     Program:     1 (0x0001)  PID:   32 (0x0020)
     Program:     2 (0x0002)  PID:   64 (0x0040)
 
-* PMT, TID 2 (0x02), PID 64 (0x0040)
+* PMT, TID 0x02 (2), PID 0x0040 (64)
   Version: 1, sections: 1, total size: 21 bytes
   - Section 0:
-    Program: 2 (0x0002), PCR PID: none
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 34 (0x0022)
+    Program: 0x0002 (2), PCR PID: none
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0022 (34)
 
-* PMT, TID 2 (0x02), PID 32 (0x0020)
+* PMT, TID 0x02 (2), PID 0x0020 (32)
   Version: 1, sections: 1, total size: 21 bytes
   - Section 0:
-    Program: 1 (0x0001), PCR PID: none
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 33 (0x0021)
+    Program: 0x0001 (1), PCR PID: none
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0021 (33)
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 0, sections: 1, total size: 33 bytes
   - Section 0:
-    Network Id: 2 (0x0002)
+    Network Id: 0x0002 (2)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 1 bytes
       Name: "2"
-    Transport Stream Id: 1 (0x0001), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0001 (1), Original Network Id: 0x0001 (1)
     - Descriptor 0: Service List (0x41, 65), 6 bytes
-      Service id: 1 (0x0001), Type: 0x01 (Digital television service)
-      Service id: 2 (0x0002), Type: 0x01 (Digital television service)
+      Service id: 0x0001 (1), Type: 0x01 (Digital television service)
+      Service id: 0x0002 (2), Type: 0x01 (Digital television service)
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 19, sections: 1, total size: 20 bytes
   - Section 0:
     TS id:       1 (0x0001)
     NIT:         0 (0x0000)  PID:   16 (0x0010)
     Program:     1 (0x0001)  PID:   32 (0x0020)
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 1, sections: 1, total size: 30 bytes
   - Section 0:
-    Network Id: 2 (0x0002)
+    Network Id: 0x0002 (2)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 1 bytes
       Name: "2"
-    Transport Stream Id: 1 (0x0001), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0001 (1), Original Network Id: 0x0001 (1)
     - Descriptor 0: Service List (0x41, 65), 3 bytes
-      Service id: 1 (0x0001), Type: 0x01 (Digital television service)
+      Service id: 0x0001 (1), Type: 0x01 (Digital television service)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 11, sections: 1, total size: 30 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 1 (0x0001)
-    Service Id: 1 (0x0001), EITs: no, EITp/f: no, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x0001 (1), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_1", Provider: ""
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 12, sections: 1, total size: 30 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 1 (0x0001)
-    Service Id: 1 (0x0001), EITs: no, EITp/f: no, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x0001 (1), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_1", Provider: ""
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 20, sections: 1, total size: 24 bytes
   - Section 0:
     TS id:       1 (0x0001)
@@ -99,51 +99,51 @@
     Program:     1 (0x0001)  PID:   32 (0x0020)
     Program:     2 (0x0002)  PID:   64 (0x0040)
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 2, sections: 1, total size: 33 bytes
   - Section 0:
-    Network Id: 2 (0x0002)
+    Network Id: 0x0002 (2)
     Network information:
     - Descriptor 0: Network Name (0x40, 64), 1 bytes
       Name: "2"
-    Transport Stream Id: 1 (0x0001), Original Network Id: 1 (0x0001)
+    Transport Stream Id: 0x0001 (1), Original Network Id: 0x0001 (1)
     - Descriptor 0: Service List (0x41, 65), 6 bytes
-      Service id: 1 (0x0001), Type: 0x01 (Digital television service)
-      Service id: 2 (0x0002), Type: 0x01 (Digital television service)
+      Service id: 0x0001 (1), Type: 0x01 (Digital television service)
+      Service id: 0x0002 (2), Type: 0x01 (Digital television service)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 13, sections: 1, total size: 45 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 1 (0x0001)
-    Service Id: 1 (0x0001), EITs: no, EITp/f: no, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x0001 (1), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_1", Provider: ""
-    Service Id: 2 (0x0002), EITs: no, EITp/f: no, CA mode: free
+    Service Id: 0x0002 (2), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_2", Provider: ""
 
-* PMT, TID 2 (0x02), PID 64 (0x0040)
+* PMT, TID 0x02 (2), PID 0x0040 (64)
   Version: 1, sections: 1, total size: 21 bytes
   - Section 0:
-    Program: 2 (0x0002), PCR PID: none
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 34 (0x0022)
+    Program: 0x0002 (2), PCR PID: none
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0022 (34)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 14, sections: 1, total size: 45 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 1 (0x0001)
-    Service Id: 1 (0x0001), EITs: no, EITp/f: no, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x0001 (1)
+    Service Id: 0x0001 (1), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)
       Service: "Srv_1", Provider: ""
-    Service Id: 2 (0x0002), EITs: no, EITp/f: no, CA mode: free
+    Service Id: 0x0002 (2), EITs: no, EITp/f: no, CA mode: free
     Running status: undefined
     - Descriptor 0: Service (0x48, 72), 8 bytes
       Service type: 0x01 (Digital television service)

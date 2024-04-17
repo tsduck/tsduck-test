@@ -1,59 +1,59 @@
 
-* PMT, TID 2 (0x02), PID 2000 (0x07D0)
+* PMT, TID 0x02 (2), PID 0x07D0 (2000)
   Version: 8, sections: 1, total size: 100 bytes
   - Section 0:
-    Program: 10 (0x000A), PCR PID: none
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2001 (0x07D1)
+    Program: 0x000A (10), PCR PID: none
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D1 (2001)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
+      Component tag: 0x01 (1)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2002 (0x07D2)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D2 (2002)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2003 (0x07D3)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D3 (2003)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2004 (0x07D4)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D4 (2004)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 4 (0x04)
+      Component tag: 0x04 (4)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2005 (0x07D5)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D5 (2005)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2006 (0x07D6)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D6 (2006)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 6 (0x06)
+      Component tag: 0x06 (6)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 2007 (0x07D7)
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x07D7 (2007)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 7 (0x07)
+      Component tag: 0x07 (7)
     - Descriptor 1: Data Broadcast Id (0x66, 102), 2 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
 
-* PMT, TID 2 (0x02), PID 3000 (0x0BB8)
+* PMT, TID 0x02 (2), PID 0x0BB8 (3000)
   Version: 15, sections: 1, total size: 31 bytes
   - Section 0:
-    Program: 183 (0x00B7), PCR PID: none
-    Elementary stream: type 0x0D (DSM-CC Sections), PID: 3001 (0x0BB9)
+    Program: 0x00B7 (183), PCR PID: none
+    Elementary stream: type 0x0D (DSM-CC Sections), PID: 0x0BB9 (3001)
     - Descriptor 0: Data Broadcast Id (0x66, 102), 8 bytes
       Data broadcast id: 0x000B (11, IP/MAC Notification service)
       - Platform id: 0x000004 (TV digitale mobile, Telecom Italia)
         Action type: 0x01, version: 6
 
-* CAT, TID 1 (0x01), PID 1 (0x0001)
+* CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 1, sections: 1, total size: 12 bytes
   - Section 0:
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 4, sections: 1, total size: 24 bytes
   - Section 0:
     TS id:   60300 (0xEB8C)
@@ -61,23 +61,23 @@
     Program:    10 (0x000A)  PID: 2000 (0x07D0)
     Program:   183 (0x00B7)  PID: 3000 (0x0BB8)
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 12, sections: 1, total size: 222 bytes
   - Section 0:
-    Transport Stream Id: 60300 (0xEB8C)
-    Original Network Id: 318 (0x013E)
-    Service Id: 10 (0x000A), EITs: no, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0xEB8C (60300)
+    Original Network Id: 0x013E (318)
+    Service Id: 0x000A (10), EITs: no, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Data Broadcast (0x64, 100), 18 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 1 (0x01), 
+      Component tag: 0x01 (1), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet1"
     - Descriptor 1: Data Broadcast (0x64, 100), 14 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 3 (0x03), 
+      Component tag: 0x03 (3), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
@@ -87,67 +87,67 @@
       Service: "CANALETTO", Provider: "EUTELSAT"
     - Descriptor 3: Data Broadcast (0x64, 100), 18 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 2 (0x02), 
+      Component tag: 0x02 (2), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet2"
     - Descriptor 4: Data Broadcast (0x64, 100), 14 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 3 (0x03), 
+      Component tag: 0x03 (3), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "PUSH"
     - Descriptor 5: Data Broadcast (0x64, 100), 19 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 4 (0x04), 
+      Component tag: 0x04 (4), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet 3"
     - Descriptor 6: Data Broadcast (0x64, 100), 18 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 5 (0x05), 
+      Component tag: 0x05 (5), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet4"
     - Descriptor 7: Data Broadcast (0x64, 100), 18 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 6 (0x06), 
+      Component tag: 0x06 (6), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet5"
     - Descriptor 8: Data Broadcast (0x64, 100), 18 bytes
       Data broadcast id: 0x0005 (5, Multi protocol encapsulation)
-      Component tag: 7 (0x07), 
+      Component tag: 0x07 (7), 
       MAC address range: 6, MAC/IP mapping: 1, alignment: 8 bits
       Max sections per datagram: 1
       Language: ENG
       Description: "bouquet6"
-    Service Id: 183 (0x00B7), EITs: no, EITp/f: yes, CA mode: free
+    Service Id: 0x00B7 (183), EITs: no, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x80 (unknown)
       Service: "Int Table", Provider: "EUTELSAT"
 
-* NIT Actual, TID 64 (0x40), PID 16 (0x0010)
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 9, sections: 1, total size: 62 bytes
   - Section 0:
     Reserved bits incorrectly set in section header:
       Byte 1, bit #1 should be '1'
-    Network Id: 126 (0x007E)
+    Network Id: 0x007E (126)
     Network information:
     - Descriptor 0: Linkage (0x4A, 74), 25 bytes
-      Transport stream id: 60300 (0xEB8C)
-      Original network Id: 126 (0x007E)
-      Service id: 183 (0x00B7)
+      Transport stream id: 0xEB8C (60300)
+      Original network Id: 0x007E (126)
+      Service id: 0x00B7 (183)
       Linkage type: 0x0B (IP/MAC notification service)
       - Platform id: 0x000004 (TV digitale mobile, Telecom Italia)
         Language: ENG, name: "CANALETTO"
-    Transport Stream Id: 60300 (0xEB8C), Original Network Id: 126 (0x007E)
+    Transport Stream Id: 0xEB8C (60300), Original Network Id: 0x007E (126)
     - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
       Frequency: 12.01500 GHz
       Orbital position: 13.0 degree, east

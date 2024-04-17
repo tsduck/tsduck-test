@@ -1,7 +1,7 @@
 * Packet 100 differ at offset 4, 4 bytes differ, PID 822, packet 0 in PID
   Packet from test-113.1a.ts:
       ---- TS Header ----
-      PID: 822 (0x0336), header size: 4, sync: 0x47
+      PID: 0x0336 (822), header size: 4, sync: 0x47
       Error: 0, unit start: 0, priority: 0
       Scrambling: 2, continuity counter: 5
       Adaptation field: no (0 bytes), payload: yes (184 bytes)
@@ -20,7 +20,7 @@
       BA D4 09 8D D1 78 8D 25 50 7D C6 62              .....x.%P}.b
   Packet from test-113.1b.ts:
       ---- TS Header ----
-      PID: 822 (0x0336), header size: 4, sync: 0x47
+      PID: 0x0336 (822), header size: 4, sync: 0x47
       Error: 0, unit start: 0, priority: 0
       Scrambling: 2, continuity counter: 5
       Adaptation field: no (0 bytes), payload: yes (184 bytes)
@@ -44,7 +44,7 @@
 * Packet 200 differ at offset 4, 3 bytes differ, PID 200, packet 0 in PID
   Packet from test-113.1a.ts:
       ---- TS Header ----
-      PID: 200 (0x00C8), header size: 4, sync: 0x47
+      PID: 0x00C8 (200), header size: 4, sync: 0x47
       Error: 0, unit start: 1, priority: 0
       Scrambling: 0, continuity counter: 14
       Adaptation field: no (0 bytes), payload: yes (184 bytes)
@@ -63,7 +63,7 @@
       FF FF FF FF FF FF FF FF FF FF FF FF              ............
   Packet from test-113.1b.ts:
       ---- TS Header ----
-      PID: 200 (0x00C8), header size: 4, sync: 0x47
+      PID: 0x00C8 (200), header size: 4, sync: 0x47
       Error: 0, unit start: 1, priority: 0
       Scrambling: 0, continuity counter: 14
       Adaptation field: no (0 bytes), payload: yes (184 bytes)

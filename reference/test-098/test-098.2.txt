@@ -1,63 +1,63 @@
 
 * First TS packet: 1, UTC: 2020-07-01 23:59:50.00
-* TDT, TID 112 (0x70), PID 20 (0x0014)
+* TDT, TID 0x70 (112), PID 0x0014 (20)
   Short section, size: 8 bytes
   UTC time: 2020/07/01 23:59:50
 
 * First TS packet: 2, UTC: 2020-07-01 23:59:50.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 3, UTC: 2020-07-01 23:59:50.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 4, UTC: 2020-07-01 23:59:50.00
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 5, UTC: 2020-07-01 23:59:50.00
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6, UTC: 2020-07-01 23:59:50.00
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 8, UTC: 2020-07-01 23:59:50.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 64 (last: 64), version: 0, size: 105 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 64 (0x40)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x40 (64)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -66,7 +66,7 @@
       Language: foo
       Event name: "Event 3002"
       Description: ""
-  - Event Id: 3003 (0x0BBB)
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -75,7 +75,7 @@
       Language: foo
       Event name: "Event 3003"
       Description: ""
-  - Event Id: 3004 (0x0BBC)
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -86,23 +86,23 @@
       Description: ""
 
 * First TS packet: 9, UTC: 2020-07-01 23:59:50.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 64 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 64 (0x40)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x40 (64)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 23, UTC: 2020-07-01 23:59:50.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -113,14 +113,14 @@
       Description: ""
 
 * First TS packet: 24, UTC: 2020-07-01 23:59:50.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -131,185 +131,185 @@
       Description: ""
 
 * First TS packet: 25, UTC: 2020-07-01 23:59:50.03
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 26, UTC: 2020-07-01 23:59:50.03
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 27, UTC: 2020-07-01 23:59:50.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 30, UTC: 2020-07-01 23:59:50.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 72 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 72 (0x48)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x48 (72)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 47, UTC: 2020-07-01 23:59:50.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 48, UTC: 2020-07-01 23:59:50.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 51, UTC: 2020-07-01 23:59:50.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 80 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 80 (0x50)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x50 (80)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 68, UTC: 2020-07-01 23:59:50.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 69, UTC: 2020-07-01 23:59:50.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 72, UTC: 2020-07-01 23:59:50.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 88 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 88 (0x58)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x58 (88)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 89, UTC: 2020-07-01 23:59:50.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 90, UTC: 2020-07-01 23:59:50.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 93, UTC: 2020-07-01 23:59:50.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 96 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 96 (0x60)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x60 (96)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 110, UTC: 2020-07-01 23:59:50.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 111, UTC: 2020-07-01 23:59:50.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 114, UTC: 2020-07-01 23:59:50.17
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 104 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 104 (0x68)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x68 (104)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 131, UTC: 2020-07-01 23:59:50.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 132, UTC: 2020-07-01 23:59:50.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 135, UTC: 2020-07-01 23:59:50.20
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 112 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 112 (0x70)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x70 (112)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 152, UTC: 2020-07-01 23:59:50.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 64), version: 0, size: 76 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -318,7 +318,7 @@
       Language: foo
       Event name: "Event 3000"
       Description: ""
-  - Event Id: 3001 (0x0BB9)
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -329,59 +329,59 @@
       Description: ""
 
 * First TS packet: 153, UTC: 2020-07-01 23:59:50.23
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 156, UTC: 2020-07-01 23:59:50.23
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 120 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 120 (0x78)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x78 (120)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 177, UTC: 2020-07-01 23:59:50.26
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 128 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 128 (0x80)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x80 (128)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 198, UTC: 2020-07-01 23:59:50.29
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 136 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 136 (0x88)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x88 (136)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 219, UTC: 2020-07-01 23:59:50.32
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 144 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 144 (0x90)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x90 (144)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 240, UTC: 2020-07-01 23:59:50.36
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 152 (last: 152), version: 0, size: 163 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 152 (0x98)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x98 (152)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -390,7 +390,7 @@
       Language: foo
       Event name: "Event 4000"
       Description: ""
-  - Event Id: 4001 (0x0FA1)
+  - Event Id: 0x0FA1 (4001)
     Start UTC: 2020/07/03 11:57:02
     Duration: 00:00:05
     Running status: undefined
@@ -399,7 +399,7 @@
       Language: foo
       Event name: "Event 4001"
       Description: ""
-  - Event Id: 4002 (0x0FA2)
+  - Event Id: 0x0FA2 (4002)
     Start UTC: 2020/07/03 11:57:07
     Duration: 00:00:05
     Running status: undefined
@@ -408,7 +408,7 @@
       Language: foo
       Event name: "Event 4002"
       Description: ""
-  - Event Id: 4003 (0x0FA3)
+  - Event Id: 0x0FA3 (4003)
     Start UTC: 2020/07/03 11:57:12
     Duration: 00:00:05
     Running status: undefined
@@ -417,7 +417,7 @@
       Language: foo
       Event name: "Event 4003"
       Description: ""
-  - Event Id: 4004 (0x0FA4)
+  - Event Id: 0x0FA4 (4004)
     Start UTC: 2020/07/03 11:57:17
     Duration: 00:00:05
     Running status: undefined
@@ -428,14 +428,14 @@
       Description: ""
 
 * First TS packet: 1,332, UTC: 2020-07-01 23:59:52.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -446,23 +446,23 @@
       Description: ""
 
 * First TS packet: 1,333, UTC: 2020-07-01 23:59:52.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 1,353, UTC: 2020-07-01 23:59:52.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3001 (0x0BB9)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -473,14 +473,14 @@
       Description: ""
 
 * First TS packet: 1,354, UTC: 2020-07-01 23:59:52.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -491,14 +491,14 @@
       Description: ""
 
 * First TS packet: 2,662, UTC: 2020-07-01 23:59:54.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -509,23 +509,23 @@
       Description: ""
 
 * First TS packet: 2,664, UTC: 2020-07-01 23:59:54.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 2,684, UTC: 2020-07-01 23:59:54.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3001 (0x0BB9)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -536,14 +536,14 @@
       Description: ""
 
 * First TS packet: 2,685, UTC: 2020-07-01 23:59:54.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -554,158 +554,158 @@
       Description: ""
 
 * First TS packet: 3,330, UTC: 2020-07-01 23:59:55.00
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 3,331, UTC: 2020-07-01 23:59:55.00
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,332, UTC: 2020-07-01 23:59:55.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,351, UTC: 2020-07-01 23:59:55.03
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 3,352, UTC: 2020-07-01 23:59:55.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,353, UTC: 2020-07-01 23:59:55.04
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,373, UTC: 2020-07-01 23:59:55.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,374, UTC: 2020-07-01 23:59:55.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,394, UTC: 2020-07-01 23:59:55.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,395, UTC: 2020-07-01 23:59:55.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,415, UTC: 2020-07-01 23:59:55.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,416, UTC: 2020-07-01 23:59:55.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,436, UTC: 2020-07-01 23:59:55.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,437, UTC: 2020-07-01 23:59:55.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,457, UTC: 2020-07-01 23:59:55.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 64), version: 0, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,458, UTC: 2020-07-01 23:59:55.20
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,478, UTC: 2020-07-01 23:59:55.23
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 64), version: 0, size: 76 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -714,7 +714,7 @@
       Language: foo
       Event name: "Event 3000"
       Description: ""
-  - Event Id: 3001 (0x0BB9)
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -725,23 +725,23 @@
       Description: ""
 
 * First TS packet: 3,479, UTC: 2020-07-01 23:59:55.23
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 152), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 3,992, UTC: 2020-07-01 23:59:56.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3000 (0x0BB8)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB8 (3000)
     Start UTC: 2020/07/01 23:59:52
     Duration: 00:00:05
     Running status: undefined
@@ -752,23 +752,23 @@
       Description: ""
 
 * First TS packet: 3,994, UTC: 2020-07-01 23:59:56.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 4,014, UTC: 2020-07-01 23:59:56.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3001 (0x0BB9)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -779,14 +779,14 @@
       Description: ""
 
 * First TS packet: 4,016, UTC: 2020-07-01 23:59:56.04
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -797,14 +797,14 @@
       Description: ""
 
 * First TS packet: 4,655, UTC: 2020-07-01 23:59:57.00
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 64), version: 1, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3001 (0x0BB9)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -815,14 +815,14 @@
       Description: ""
 
 * First TS packet: 5,322, UTC: 2020-07-01 23:59:58.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 2, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3001 (0x0BB9)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB9 (3001)
     Start UTC: 2020/07/01 23:59:57
     Duration: 00:00:05
     Running status: undefined
@@ -833,23 +833,23 @@
       Description: ""
 
 * First TS packet: 5,324, UTC: 2020-07-01 23:59:58.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 5,344, UTC: 2020-07-01 23:59:58.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 2, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -860,14 +860,14 @@
       Description: ""
 
 * First TS packet: 5,346, UTC: 2020-07-01 23:59:58.04
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -878,41 +878,41 @@
       Description: ""
 
 * First TS packet: 6,652, UTC: 2020-07-02 00:00:00.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 3, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 6,654, UTC: 2020-07-02 00:00:00.00
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 6,655, UTC: 2020-07-02 00:00:00.00
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 6,657, UTC: 2020-07-02 00:00:00.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 0), version: 1, size: 105 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -921,7 +921,7 @@
       Language: foo
       Event name: "Event 3002"
       Description: ""
-  - Event Id: 3003 (0x0BBB)
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -930,7 +930,7 @@
       Language: foo
       Event name: "Event 3003"
       Description: ""
-  - Event Id: 3004 (0x0BBC)
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -941,28 +941,28 @@
       Description: ""
 
 * First TS packet: 6,658, UTC: 2020-07-02 00:00:00.01
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,666, UTC: 2020-07-02 00:00:00.02
-* TDT, TID 112 (0x70), PID 20 (0x0014)
+* TDT, TID 0x70 (112), PID 0x0014 (20)
   Short section, size: 8 bytes
   UTC time: 2020/07/02 00:00:00
 
 * First TS packet: 6,690, UTC: 2020-07-02 00:00:00.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 2, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -973,14 +973,14 @@
       Description: ""
 
 * First TS packet: 6,692, UTC: 2020-07-02 00:00:00.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -991,113 +991,113 @@
       Description: ""
 
 * First TS packet: 6,693, UTC: 2020-07-02 00:00:00.06
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 6,696, UTC: 2020-07-02 00:00:00.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,717, UTC: 2020-07-02 00:00:00.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,738, UTC: 2020-07-02 00:00:00.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,759, UTC: 2020-07-02 00:00:00.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,780, UTC: 2020-07-02 00:00:00.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,801, UTC: 2020-07-02 00:00:00.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,822, UTC: 2020-07-02 00:00:00.26
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,843, UTC: 2020-07-02 00:00:00.29
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 64 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 64 (0x40)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x40 (64)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,864, UTC: 2020-07-02 00:00:00.32
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 72 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 72 (0x48)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x48 (72)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,885, UTC: 2020-07-02 00:00:00.35
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 80 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 80 (0x50)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x50 (80)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 6,906, UTC: 2020-07-02 00:00:00.38
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 88 (last: 88), version: 1, size: 163 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 88 (0x58)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x58 (88)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1106,7 +1106,7 @@
       Language: foo
       Event name: "Event 4000"
       Description: ""
-  - Event Id: 4001 (0x0FA1)
+  - Event Id: 0x0FA1 (4001)
     Start UTC: 2020/07/03 11:57:02
     Duration: 00:00:05
     Running status: undefined
@@ -1115,7 +1115,7 @@
       Language: foo
       Event name: "Event 4001"
       Description: ""
-  - Event Id: 4002 (0x0FA2)
+  - Event Id: 0x0FA2 (4002)
     Start UTC: 2020/07/03 11:57:07
     Duration: 00:00:05
     Running status: undefined
@@ -1124,7 +1124,7 @@
       Language: foo
       Event name: "Event 4002"
       Description: ""
-  - Event Id: 4003 (0x0FA3)
+  - Event Id: 0x0FA3 (4003)
     Start UTC: 2020/07/03 11:57:12
     Duration: 00:00:05
     Running status: undefined
@@ -1133,7 +1133,7 @@
       Language: foo
       Event name: "Event 4003"
       Description: ""
-  - Event Id: 4004 (0x0FA4)
+  - Event Id: 0x0FA4 (4004)
     Start UTC: 2020/07/03 11:57:17
     Duration: 00:00:05
     Running status: undefined
@@ -1144,14 +1144,14 @@
       Description: ""
 
 * First TS packet: 7,998, UTC: 2020-07-02 00:00:02.02
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 4, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -1162,23 +1162,23 @@
       Description: ""
 
 * First TS packet: 8,000, UTC: 2020-07-02 00:00:02.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 8,020, UTC: 2020-07-02 00:00:02.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 3, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1189,14 +1189,14 @@
       Description: ""
 
 * First TS packet: 8,022, UTC: 2020-07-02 00:00:02.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1207,14 +1207,14 @@
       Description: ""
 
 * First TS packet: 9,328, UTC: 2020-07-02 00:00:04.02
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 4, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -1225,23 +1225,23 @@
       Description: ""
 
 * First TS packet: 9,330, UTC: 2020-07-02 00:00:04.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 9,350, UTC: 2020-07-02 00:00:04.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 3, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1252,14 +1252,14 @@
       Description: ""
 
 * First TS packet: 9,352, UTC: 2020-07-02 00:00:04.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1270,23 +1270,23 @@
       Description: ""
 
 * First TS packet: 9,996, UTC: 2020-07-02 00:00:05.03
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 9,998, UTC: 2020-07-02 00:00:05.03
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 0), version: 1, size: 105 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -1295,7 +1295,7 @@
       Language: foo
       Event name: "Event 3002"
       Description: ""
-  - Event Id: 3003 (0x0BBB)
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1304,7 +1304,7 @@
       Language: foo
       Event name: "Event 3003"
       Description: ""
-  - Event Id: 3004 (0x0BBC)
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1315,95 +1315,95 @@
       Description: ""
 
 * First TS packet: 9,999, UTC: 2020-07-02 00:00:05.03
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,018, UTC: 2020-07-02 00:00:05.06
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 10,021, UTC: 2020-07-02 00:00:05.07
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,042, UTC: 2020-07-02 00:00:05.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,063, UTC: 2020-07-02 00:00:05.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,084, UTC: 2020-07-02 00:00:05.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,105, UTC: 2020-07-02 00:00:05.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,126, UTC: 2020-07-02 00:00:05.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,147, UTC: 2020-07-02 00:00:05.26
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 10,658, UTC: 2020-07-02 00:00:06.02
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 4, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3002 (0x0BBA)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBA (3002)
     Start UTC: 2020/07/02 00:00:02
     Duration: 00:00:05
     Running status: undefined
@@ -1414,23 +1414,23 @@
       Description: ""
 
 * First TS packet: 10,660, UTC: 2020-07-02 00:00:06.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 10,680, UTC: 2020-07-02 00:00:06.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 3, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1441,14 +1441,14 @@
       Description: ""
 
 * First TS packet: 10,682, UTC: 2020-07-02 00:00:06.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1459,14 +1459,14 @@
       Description: ""
 
 * First TS packet: 11,320, UTC: 2020-07-02 00:00:07.02
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 0), version: 2, size: 76 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1475,7 +1475,7 @@
       Language: foo
       Event name: "Event 3003"
       Description: ""
-  - Event Id: 3004 (0x0BBC)
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1486,14 +1486,14 @@
       Description: ""
 
 * First TS packet: 11,988, UTC: 2020-07-02 00:00:08.02
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 5, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1504,23 +1504,23 @@
       Description: ""
 
 * First TS packet: 11,990, UTC: 2020-07-02 00:00:08.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 12,010, UTC: 2020-07-02 00:00:08.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 4, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1531,14 +1531,14 @@
       Description: ""
 
 * First TS packet: 12,012, UTC: 2020-07-02 00:00:08.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1549,14 +1549,14 @@
       Description: ""
 
 * First TS packet: 13,318, UTC: 2020-07-02 00:00:10.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 5, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3003 (0x0BBB)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBB (3003)
     Start UTC: 2020/07/02 00:00:07
     Duration: 00:00:05
     Running status: undefined
@@ -1567,46 +1567,46 @@
       Description: ""
 
 * First TS packet: 13,320, UTC: 2020-07-02 00:00:10.03
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 13,321, UTC: 2020-07-02 00:00:10.03
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 13,324, UTC: 2020-07-02 00:00:10.03
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,333, UTC: 2020-07-02 00:00:10.05
-* TDT, TID 112 (0x70), PID 20 (0x0014)
+* TDT, TID 0x70 (112), PID 0x0014 (20)
   Short section, size: 8 bytes
   UTC time: 2020/07/02 00:00:10
 
 * First TS packet: 13,358, UTC: 2020-07-02 00:00:10.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 4, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1617,14 +1617,14 @@
       Description: ""
 
 * First TS packet: 13,360, UTC: 2020-07-02 00:00:10.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1635,113 +1635,113 @@
       Description: ""
 
 * First TS packet: 13,361, UTC: 2020-07-02 00:00:10.09
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 13,364, UTC: 2020-07-02 00:00:10.09
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,385, UTC: 2020-07-02 00:00:10.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,406, UTC: 2020-07-02 00:00:10.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,427, UTC: 2020-07-02 00:00:10.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,448, UTC: 2020-07-02 00:00:10.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,469, UTC: 2020-07-02 00:00:10.25
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,490, UTC: 2020-07-02 00:00:10.28
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,510, UTC: 2020-07-02 00:00:10.31
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 64 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 64 (0x40)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x40 (64)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,531, UTC: 2020-07-02 00:00:10.35
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 72 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 72 (0x48)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x48 (72)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,552, UTC: 2020-07-02 00:00:10.38
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 80 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 80 (0x50)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x50 (80)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 13,573, UTC: 2020-07-02 00:00:10.41
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 88 (last: 88), version: 1, size: 163 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 88 (0x58)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x58 (88)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1750,7 +1750,7 @@
       Language: foo
       Event name: "Event 4000"
       Description: ""
-  - Event Id: 4001 (0x0FA1)
+  - Event Id: 0x0FA1 (4001)
     Start UTC: 2020/07/03 11:57:02
     Duration: 00:00:05
     Running status: undefined
@@ -1759,7 +1759,7 @@
       Language: foo
       Event name: "Event 4001"
       Description: ""
-  - Event Id: 4002 (0x0FA2)
+  - Event Id: 0x0FA2 (4002)
     Start UTC: 2020/07/03 11:57:07
     Duration: 00:00:05
     Running status: undefined
@@ -1768,7 +1768,7 @@
       Language: foo
       Event name: "Event 4002"
       Description: ""
-  - Event Id: 4003 (0x0FA3)
+  - Event Id: 0x0FA3 (4003)
     Start UTC: 2020/07/03 11:57:12
     Duration: 00:00:05
     Running status: undefined
@@ -1777,7 +1777,7 @@
       Language: foo
       Event name: "Event 4003"
       Description: ""
-  - Event Id: 4004 (0x0FA4)
+  - Event Id: 0x0FA4 (4004)
     Start UTC: 2020/07/03 11:57:17
     Duration: 00:00:05
     Running status: undefined
@@ -1788,14 +1788,14 @@
       Description: ""
 
 * First TS packet: 14,663, UTC: 2020-07-02 00:00:12.05
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 0), version: 3, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1806,14 +1806,14 @@
       Description: ""
 
 * First TS packet: 14,666, UTC: 2020-07-02 00:00:12.05
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 6, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1824,32 +1824,32 @@
       Description: ""
 
 * First TS packet: 14,668, UTC: 2020-07-02 00:00:12.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 14,688, UTC: 2020-07-02 00:00:12.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 5, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 14,690, UTC: 2020-07-02 00:00:12.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1860,14 +1860,14 @@
       Description: ""
 
 * First TS packet: 15,996, UTC: 2020-07-02 00:00:14.05
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 6, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -1878,32 +1878,32 @@
       Description: ""
 
 * First TS packet: 15,998, UTC: 2020-07-02 00:00:14.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 16,018, UTC: 2020-07-02 00:00:14.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 5, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 16,020, UTC: 2020-07-02 00:00:14.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -1914,104 +1914,104 @@
       Description: ""
 
 * First TS packet: 16,664, UTC: 2020-07-02 00:00:15.06
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 16,667, UTC: 2020-07-02 00:00:15.06
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,686, UTC: 2020-07-02 00:00:15.09
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 16,689, UTC: 2020-07-02 00:00:15.10
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,710, UTC: 2020-07-02 00:00:15.13
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,731, UTC: 2020-07-02 00:00:15.16
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,752, UTC: 2020-07-02 00:00:15.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,773, UTC: 2020-07-02 00:00:15.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,794, UTC: 2020-07-02 00:00:15.25
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 16,815, UTC: 2020-07-02 00:00:15.28
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 17,326, UTC: 2020-07-02 00:00:16.05
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 6, size: 47 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 3004 (0x0BBC)
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BBC (3004)
     Start UTC: 2020/07/02 00:00:12
     Duration: 00:00:05
     Running status: undefined
@@ -2022,32 +2022,32 @@
       Description: ""
 
 * First TS packet: 17,328, UTC: 2020-07-02 00:00:16.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 17,348, UTC: 2020-07-02 00:00:16.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 5, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 17,350, UTC: 2020-07-02 00:00:16.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -2058,41 +2058,41 @@
       Description: ""
 
 * First TS packet: 18,656, UTC: 2020-07-02 00:00:18.05
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 7, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 18,658, UTC: 2020-07-02 00:00:18.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 18,678, UTC: 2020-07-02 00:00:18.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 5, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 18,680, UTC: 2020-07-02 00:00:18.09
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -2103,64 +2103,64 @@
       Description: ""
 
 * First TS packet: 19,986, UTC: 2020-07-02 00:00:20.05
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 7, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 19,988, UTC: 2020-07-02 00:00:20.06
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 19,989, UTC: 2020-07-02 00:00:20.06
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 0 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 19,991, UTC: 2020-07-02 00:00:20.06
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 0 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 0 (0x00)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x00 (0)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,000, UTC: 2020-07-02 00:00:20.08
-* TDT, TID 112 (0x70), PID 20 (0x0014)
+* TDT, TID 0x70 (112), PID 0x0014 (20)
   Short section, size: 8 bytes
   UTC time: 2020/07/02 00:00:20
 
 * First TS packet: 20,026, UTC: 2020-07-02 00:00:20.11
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 5, size: 18 bytes
-  Service Id: 2 (0x0002)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
+  Service Id: 0x0002 (2)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
 
 * First TS packet: 20,028, UTC: 2020-07-02 00:00:20.12
-* EIT p/f Actual, TID 78 (0x4E), PID 18 (0x0012)
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 47 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 78 (0x4E), EIT p/f Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -2171,113 +2171,113 @@
       Description: ""
 
 * First TS packet: 20,029, UTC: 2020-07-02 00:00:20.12
-* EIT p/f Other, TID 79 (0x4F), PID 18 (0x0012)
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
   Section: 1 (last: 1), version: 0, size: 18 bytes
-  Service Id: 30 (0x001E)
-  TS Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 1 (0x01)
-  Last Table Id: 79 (0x4F), EIT p/f Other
+  Service Id: 0x001E (30)
+  TS Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
 
 * First TS packet: 20,031, UTC: 2020-07-02 00:00:20.12
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 8 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 8 (0x08)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x08 (8)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,053, UTC: 2020-07-02 00:00:20.15
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 16 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 16 (0x10)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x10 (16)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,074, UTC: 2020-07-02 00:00:20.19
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 24 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 24 (0x18)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x18 (24)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,095, UTC: 2020-07-02 00:00:20.22
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 32 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 32 (0x20)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x20 (32)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,116, UTC: 2020-07-02 00:00:20.25
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 40 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 40 (0x28)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x28 (40)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,137, UTC: 2020-07-02 00:00:20.28
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 48 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 48 (0x30)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x30 (48)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,158, UTC: 2020-07-02 00:00:20.31
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 56 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 56 (0x38)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x38 (56)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,177, UTC: 2020-07-02 00:00:20.34
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 64 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 64 (0x40)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x40 (64)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,198, UTC: 2020-07-02 00:00:20.37
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 72 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 72 (0x48)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x48 (72)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,219, UTC: 2020-07-02 00:00:20.40
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 80 (last: 88), version: 1, size: 18 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 80 (0x50)
-  Last Table Id: 80 (0x50), EIT schedule Actual
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x50 (80)
+  Last Table Id: 0x50 (80), EIT schedule Actual
 
 * First TS packet: 20,240, UTC: 2020-07-02 00:00:20.44
-* EIT schedule Actual, TID 80 (0x50), PID 18 (0x0012)
+* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
   Section: 88 (last: 88), version: 1, size: 163 bytes
-  Service Id: 3 (0x0003)
-  TS Id: 7 (0x0007)
-  Original Network Id: 1 (0x0001)
-  Segment last section: 88 (0x58)
-  Last Table Id: 80 (0x50), EIT schedule Actual
-  - Event Id: 4000 (0x0FA0)
+  Service Id: 0x0003 (3)
+  TS Id: 0x0007 (7)
+  Original Network Id: 0x0001 (1)
+  Segment last section: 0x58 (88)
+  Last Table Id: 0x50 (80), EIT schedule Actual
+  - Event Id: 0x0FA0 (4000)
     Start UTC: 2020/07/03 11:56:57
     Duration: 00:00:05
     Running status: undefined
@@ -2286,7 +2286,7 @@
       Language: foo
       Event name: "Event 4000"
       Description: ""
-  - Event Id: 4001 (0x0FA1)
+  - Event Id: 0x0FA1 (4001)
     Start UTC: 2020/07/03 11:57:02
     Duration: 00:00:05
     Running status: undefined
@@ -2295,7 +2295,7 @@
       Language: foo
       Event name: "Event 4001"
       Description: ""
-  - Event Id: 4002 (0x0FA2)
+  - Event Id: 0x0FA2 (4002)
     Start UTC: 2020/07/03 11:57:07
     Duration: 00:00:05
     Running status: undefined
@@ -2304,7 +2304,7 @@
       Language: foo
       Event name: "Event 4002"
       Description: ""
-  - Event Id: 4003 (0x0FA3)
+  - Event Id: 0x0FA3 (4003)
     Start UTC: 2020/07/03 11:57:12
     Duration: 00:00:05
     Running status: undefined
@@ -2313,7 +2313,7 @@
       Language: foo
       Event name: "Event 4003"
       Description: ""
-  - Event Id: 4004 (0x0FA4)
+  - Event Id: 0x0FA4 (4004)
     Start UTC: 2020/07/03 11:57:17
     Duration: 00:00:05
     Running status: undefined

@@ -1,23 +1,23 @@
 
-* PAT, TID 0 (0x00)
+* PAT, TID 0x00 (0)
   Section: 0 (last: 0), version: 0, size: 20 bytes
   TS id:       1 (0x0001)
   NIT:         0 (0x0000)  PID:   31 (0x001F)
   Program:     1 (0x0001)  PID:  256 (0x0100)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 0, size: 55 bytes
-  Program: 1 (0x0001), PCR PID: 4097 (0x1001)
+  Program: 0x0001 (1), PCR PID: 0x1001 (4097)
   Program information:
   - Descriptor 0: Registration (0x05, 5), 4 bytes
     Format identifier: 0x48444D56 ("HDMV")
   - Descriptor 1: unknown (0x88, 136), 4 bytes
     0000:  0F FF FC FC                                      ....
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 4113 (0x1011)
-  Elementary stream: type 0x86 (DTS-HD Master Audio), PID: 4352 (0x1100)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x1011 (4113)
+  Elementary stream: type 0x86 (DTS-HD Master Audio), PID: 0x1100 (4352)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 4353 (0x1101)
+  Elementary stream: type 0x04 (MPEG-2 Audio), PID: 0x1101 (4353)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
 

@@ -1,5 +1,5 @@
 
-* CAT, TID 1 (0x01), PID 200 (0x00C8)
+* CAT, TID 0x01 (1), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 181 bytes
   - Section 0:
     - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
@@ -108,13 +108,13 @@
       Encryption mode: true
       Reserved future use (4 bytes): 01 23 56 78
 
-* BIT (ISDB), TID 196 (0xC4), PID 200 (0x00C8)
+* BIT (ISDB), TID 0xC4 (196), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 14 bytes
   - Section 0:
     Original network id: 0x0123 (291)
     Broadcast view property: false
 
-* BIT (ISDB), TID 196 (0xC4), PID 200 (0x00C8)
+* BIT (ISDB), TID 0xC4 (196), PID 0x00C8 (200)
   Version: 23, sections: 1, total size: 40 bytes
   - Section 0:
     Original network id: 0x8765 (34661)
@@ -133,12 +133,12 @@
     - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x2345 (unknown)
 
-* NBIT (Network board information body, ISDB), TID 197 (0xC5), PID 200 (0x00C8)
+* NBIT (Network board information body, ISDB), TID 0xC5 (197), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 12 bytes
   - Section 0:
     Original network id: 0x1234 (4660)
 
-* NBIT (Reference to network board information, ISDB), TID 198 (0xC6), PID 200 (0x00C8)
+* NBIT (Reference to network board information, ISDB), TID 0xC6 (198), PID 0x00C8 (200)
   Version: 29, sections: 1, total size: 50 bytes
   - Section 0:
     Original network id: 0x5432 (21554)
@@ -163,7 +163,7 @@
       - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
         Data component id: 0x5432 (unknown)
 
-* LDT (ISDB), TID 199 (0xC7), PID 200 (0x00C8)
+* LDT (ISDB), TID 0xC7 (199), PID 0x00C8 (200)
   Version: 1, sections: 1, total size: 46 bytes
   - Section 0:
     Original service id: 0x1234 (4660)
@@ -182,7 +182,7 @@
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x6789 (unknown)
 
-* PCAT (ISDB), TID 194 (0xC2), PID 200 (0x00C8)
+* PCAT (ISDB), TID 0xC2 (194), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 21 bytes
   - Section 0:
     Service id: 0x1234 (4660)
@@ -190,7 +190,7 @@
     Original network id: 0x9ABC (39612)
     Content id: 0x87654321 (2271560481)
 
-* PCAT (ISDB), TID 194 (0xC2), PID 200 (0x00C8)
+* PCAT (ISDB), TID 0xC2 (194), PID 0x00C8 (200)
   Version: 7, sections: 1, total size: 85 bytes
   - Section 0:
     Service id: 0xABCD (43981)
@@ -218,12 +218,12 @@
       - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
         Data component id: 0x2345 (unknown)
 
-* ITT (ISDB), TID 210 (0xD2), PID 200 (0x00C8)
+* ITT (ISDB), TID 0xD2 (210), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 14 bytes
   - Section 0:
     Event id: 0x1234 (4660)
 
-* ITT (ISDB), TID 210 (0xD2), PID 200 (0x00C8)
+* ITT (ISDB), TID 0xD2 (210), PID 0x00C8 (200)
   Version: 7, sections: 1, total size: 26 bytes
   - Section 0:
     Event id: 0x9876 (39030)
@@ -234,7 +234,7 @@
     - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x789A (unknown)
 
-* LIT (ISDB), TID 208 (0xD0), PID 200 (0x00C8)
+* LIT (ISDB), TID 0xD0 (208), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 18 bytes
   - Section 0:
     Event id: 0x1234 (4660)
@@ -242,7 +242,7 @@
     Transport stream id: 0x9ABC (39612)
     Original network id: 0xDEF1 (57073)
 
-* LIT (ISDB), TID 208 (0xD0), PID 200 (0x00C8)
+* LIT (ISDB), TID 0xD0 (208), PID 0x00C8 (200)
   Version: 6, sections: 1, total size: 46 bytes
   - Section 0:
     Event id: 0xFEDC (65244)
@@ -261,14 +261,14 @@
       - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
         Data component id: 0x789A (unknown)
 
-* ERT (ISDB), TID 209 (0xD1), PID 200 (0x00C8)
+* ERT (ISDB), TID 0xD1 (209), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 15 bytes
   - Section 0:
     Event relation id: 0x1234 (4660)
     Information provider id: 0x5678 (22136)
     Relation type: 1 (Relation for the contents description (indicates tree structure to describe contents))
 
-* ERT (ISDB), TID 209 (0xD1), PID 200 (0x00C8)
+* ERT (ISDB), TID 0xD1 (209), PID 0x00C8 (200)
   Version: 27, sections: 1, total size: 39 bytes
   - Section 0:
     Event relation id: 0x9876 (39030)
@@ -287,7 +287,7 @@
       - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
         Data component id: 0x3456 (unknown)
 
-* CAT, TID 1 (0x01), PID 200 (0x00C8)
+* CAT, TID 0x01 (1), PID 0x00C8 (200)
   Version: 2, sections: 1, total size: 943 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
@@ -712,14 +712,14 @@
       Segmentation mode: 9 (Reserved)
       Reserved data (4 bytes): 12 34 56 78
 
-* CDT (ISDB), TID 200 (0xC8), PID 200 (0x00C8)
+* CDT (ISDB), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 17 bytes
   - Section 0:
     Download data id: 0x1234 (4660)
     Original network id: 0x5678 (22136)
     Data type: 0x9A (154)
 
-* CDT (ISDB), TID 200 (0xC8), PID 200 (0x00C8)
+* CDT (ISDB), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 50 bytes
   - Section 0:
     Download data id: 0xDEAD (57005)

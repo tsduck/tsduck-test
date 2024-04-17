@@ -1,5 +1,5 @@
 
-* CAT, TID 1 (0x01), PID 200 (0x00C8)
+* CAT, TID 0x01 (1), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 24 bytes
   - Section 0:
     - Descriptor 0: Adaptation Field Data (0x70, 112), 1 bytes
@@ -27,32 +27,32 @@
         0x40 (RDS via UECP (ETSI TS 101 154))
         0x80 (reserved_0 for future use)
 
-* AIT, TID 116 (0x74), PID 200 (0x00C8)
+* AIT, TID 0x74 (116), PID 0x00C8 (200)
   Version: 21, sections: 1, total size: 16 bytes
   - Section 0:
     Application type: 4660 (0x1234), Test application: 1
 
-* AIT, TID 116 (0x74), PID 200 (0x00C8)
+* AIT, TID 0x74 (116), PID 0x00C8 (200)
   Version: 10, sections: 1, total size: 52 bytes
   - Section 0:
     Application type: 30874 (0x789A), Test application: 0
     Common descriptor loop:
     - Descriptor 0: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 1 (0x01)
+      Usage type: 0x01 (1)
     - Descriptor 1: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 2 (0x02)
+      Usage type: 0x02 (2)
     - Descriptor 2: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 3 (0x03)
-    Application: Identifier: (Organization id: 305419896 (0x12345678), Application id: 39612 (0x9ABC)), Control code: 7
-    Application: Identifier: (Organization id: 2271560481 (0x87654321), Application id: 52137 (0xCBA9)), Control code: 171
+      Usage type: 0x03 (3)
+    Application: Identifier: (Organization id: 0x12345678 (305419896), Application id: 0x9ABC (39612)), Control code: 7
+    Application: Identifier: (Organization id: 0x87654321 (2271560481), Application id: 0xCBA9 (52137)), Control code: 171
     - Descriptor 0: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 129 (0x81)
+      Usage type: 0x81 (129)
     - Descriptor 1: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 130 (0x82)
+      Usage type: 0x82 (130)
     - Descriptor 2: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 131 (0x83)
+      Usage type: 0x83 (131)
 
-* INT (IP/MAC Notification), TID 76 (0x4C), PID 200 (0x00C8)
+* INT (IP/MAC Notification), TID 0x4C (76), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 378 bytes
   - Section 0:
     Platform id: 0x123456 (unknown)
@@ -131,7 +131,7 @@
     - Descriptor 24: INT ISP Access Mode (0x14, 20), 1 bytes
       Access mode: 0xBC (188)
 
-* AIT, TID 116 (0x74), PID 200 (0x00C8)
+* AIT, TID 0x74 (116), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 575 bytes
   - Section 0:
     Application type: 1 (0x0001), Test application: 1
@@ -142,10 +142,10 @@
       Language: bar, name: "Bar app"
     - Descriptor 2: Application Signalling (0x6F, 111), 0 bytes
     - Descriptor 3: Application Signalling (0x6F, 111), 6 bytes
-      Application type: 1 (0x0001), AIT Version: 2 (0x02)
-      Application type: 3 (0x0003), AIT Version: 4 (0x04)
+      Application type: 0x0001 (1), AIT Version: 0x02 (2)
+      Application type: 0x0003 (3), AIT Version: 0x04 (4)
     - Descriptor 4: AIT Application Usage (0x16, 22), 1 bytes
-      Usage type: 1 (0x01)
+      Usage type: 0x01 (1)
     - Descriptor 5: AIT DVB-J Application (0x03, 3), 0 bytes
     - Descriptor 6: AIT DVB-J Application (0x03, 3), 22 bytes
       Parameter: "sample"

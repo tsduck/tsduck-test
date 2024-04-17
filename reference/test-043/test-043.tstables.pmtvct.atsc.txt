@@ -1,13 +1,13 @@
 
-* PMT, TID 2 (0x02), PID 48 (0x0030)
+* PMT, TID 0x02 (2), PID 0x0030 (48)
   Version: 2, sections: 1, total size: 88 bytes
   - Section 0:
-    Program: 3 (0x0003), PCR PID: 49 (0x0031)
+    Program: 0x0003 (3), PCR PID: 0x0031 (49)
     Program information:
     - Descriptor 0: ATSC Component Name (0xA3, 163), 11 bytes
       Component name: Number of strings: 1
         Language: "eng", text: "enc"
-    Elementary stream: type 0x02 (MPEG-2 Video), PID: 49 (0x0031)
+    Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x0031 (49)
     - Descriptor 0: Video Stream (0x02, 2), 3 bytes
       Multiple frame rate: false, frame rate: 0x07 (59.94 fps (60000/1001))
       MPEG-1 only: false, constained parameter: true, still picture: false
@@ -16,7 +16,7 @@
       Frame rate extension: false
     - Descriptor 1: Data Stream Alignment (0x06, 6), 1 bytes
       Alignment type: 0x02 (2, Video access unit)
-    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 52 (0x0034)
+    Elementary stream: type 0x81 (ATSC AC-3 Audio), PID: 0x0034 (52)
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x41432D33 ("AC-3")
     - Descriptor 1: ATSC Component Name (0xA3, 163), 15 bytes
@@ -37,7 +37,7 @@
     - Descriptor 3: ISO-639 Language (0x0A, 10), 4 bytes
       Language: eng, Type: 0x00 (undefined)
 
-* TVCT (ATSC), TID 200 (0xC8), PID 8187 (0x1FFB)
+* TVCT (ATSC), TID 0xC8 (200), PID 0x1FFB (8187)
   Version: 11, sections: 1, total size: 218 bytes
   - Section 0:
     Transport stream id: 0x1FE1 (8161)

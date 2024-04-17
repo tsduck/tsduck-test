@@ -1,28 +1,28 @@
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 18, sections: 1, total size: 16 bytes
   - Section 0:
     TS id:       1 (0x0001)
     Program:  1060 (0x0424)  PID: 1060 (0x0424)
 
-* PMT, TID 2 (0x02), PID 1060 (0x0424)
+* PMT, TID 0x02 (2), PID 0x0424 (1060)
   Version: 31, sections: 1, total size: 38 bytes
   - Section 0:
-    Program: 1060 (0x0424), PCR PID: 1061 (0x0425)
-    Elementary stream: type 0x1B (AVC video), PID: 1061 (0x0425)
-    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 1062 (0x0426)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 1064 (0x0428)
+    Program: 0x0424 (1060), PCR PID: 0x0425 (1061)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0425 (1061)
+    Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x0426 (1062)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0428 (1064)
     - Descriptor 0: Teletext (0x56, 86), 5 bytes
-      Language: rus, Type: 5 (0x05)
+      Language: rus, Type: 0x05 (5)
       Type: Teletext subtitles for hearing impaired
       Magazine: 1, page: 0, full page: 100
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 13, sections: 1, total size: 42 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 8835 (0x2283)
-    Service Id: 1060 (0x0424), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x2283 (8835)
+    Service Id: 0x0424 (1060), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 20 bytes
       Service type: 0x16 (Advanced codec SD digital television service)

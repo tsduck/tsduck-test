@@ -1,22 +1,22 @@
 
-* SDT Actual, TID 66 (0x42)
+* SDT Actual, TID 0x42 (66)
   Section: 0 (last: 0), version: 1, size: 34 bytes
-  Transport Stream Id: 1 (0x0001)
-  Original Network Id: 1 (0x0001)
-  Service Id: 2064 (0x0810), EITs: no, EITp/f: no, CA mode: free
+  Transport Stream Id: 0x0001 (1)
+  Original Network Id: 0x0001 (1)
+  Service Id: 0x0810 (2064), EITs: no, EITp/f: no, CA mode: free
   Running status: running
   - Descriptor 0: Service (0x48, 72), 12 bytes
     Service type: 0x01 (Digital television service)
     Service: "P1.1", Provider: "DVB"
 
-* PAT, TID 0 (0x00)
+* PAT, TID 0x00 (0)
   Section: 0 (last: 0), version: 1, size: 16 bytes
   TS id:       1 (0x0001)
   Program:  2064 (0x0810)  PID: 2064 (0x0810)
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 1, size: 26 bytes
-  Program: 2064 (0x0810), PCR PID: 256 (0x0100)
-  Elementary stream: type 0x02 (MPEG-2 Video), PID: 4096 (0x1000)
-  Elementary stream: type 0x03 (MPEG-1 Audio), PID: 4097 (0x1001)
+  Program: 0x0810 (2064), PCR PID: 0x0100 (256)
+  Elementary stream: type 0x02 (MPEG-2 Video), PID: 0x1000 (4096)
+  Elementary stream: type 0x03 (MPEG-1 Audio), PID: 0x1001 (4097)
 

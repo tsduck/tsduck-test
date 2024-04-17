@@ -1,47 +1,47 @@
 
-* NIT Actual, TID 64 (0x40), PID 6000 (0x1770)
+* NIT Actual, TID 0x40 (64), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 6, size: 132 bytes
-  Network Id: 4660 (0x1234)
+  Network Id: 0x1234 (4660)
   Network information:
   - Descriptor 0: Network Name (0x40, 64), 7 bytes
     Name: "ASTRA 1"
   - Descriptor 1: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 12 (0x000C)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000C (12)
     Linkage type: 0x01 (information service)
   - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 13 (0x000D)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000D (13)
     Linkage type: 0x01 (information service)
   - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
   - Descriptor 4: Linkage (0x4A, 74), 9 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
     Private data (2 bytes): 4E 4F
   - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0A (TS containing SSU BAT or NIT)
     SSU table type: BAT
   - Descriptor 6: Linkage (0x4A, 74), 10 bytes
-    Transport stream id: 1120 (0x0460)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0460 (1120)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0C (TS containing INT BAT or NIT)
     INT linkage table type: BAT
     Bouquet id: 0xFFFF (65535)
   - Descriptor 7: Network Name (0x40, 64), 7 bytes
     Name: "FOO NET"
-  Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.22900 GHz
     Orbital position: 19.2 degree, east
@@ -50,7 +50,7 @@
     Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 2/3 (2)
-  Transport Stream Id: 1003 (0x03EB), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EB (1003), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.24375 GHz
     Orbital position: 19.2 degree, east
@@ -60,199 +60,199 @@
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 5/6 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* NIT Actual, TID 64 (0x40), PID 6000 (0x1770)
+* NIT Actual, TID 0x40 (64), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 6, size: 132 bytes
-  Network Id: 4660 (0x1234)
+  Network Id: 0x1234 (4660)
   Network information:
   - Descriptor 0: Network Name (0x40, 64), 7 bytes
     Name: "ASTRA 1"
   - Descriptor 1: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 12 (0x000C)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000C (12)
     Linkage type: 0x01 (information service)
   - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 13 (0x000D)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000D (13)
     Linkage type: 0x01 (information service)
   - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
   - Descriptor 4: Linkage (0x4A, 74), 9 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
     Private data (2 bytes): 4E 4F
   - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0A (TS containing SSU BAT or NIT)
     SSU table type: BAT
   - Descriptor 6: Linkage (0x4A, 74), 10 bytes
-    Transport stream id: 1120 (0x0460)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0460 (1120)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0C (TS containing INT BAT or NIT)
     INT linkage table type: BAT
     Bouquet id: 0xFFFF (65535)
   - Descriptor 7: Network Name (0x40, 64), 7 bytes
     Name: "FOO NET"
-  Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.22900 GHz
     Orbital position: 19.2 degree, east
@@ -261,7 +261,7 @@
     Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 2/3 (2)
-  Transport Stream Id: 1003 (0x03EB), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EB (1003), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.24375 GHz
     Orbital position: 19.2 degree, east
@@ -271,169 +271,169 @@
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 5/6 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* NIT Actual, TID 64 (0x40), PID 6000 (0x1770)
+* NIT Actual, TID 0x40 (64), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 6, size: 132 bytes
-  Network Id: 4660 (0x1234)
+  Network Id: 0x1234 (4660)
   Network information:
   - Descriptor 0: Network Name (0x40, 64), 7 bytes
     Name: "ASTRA 1"
   - Descriptor 1: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 12 (0x000C)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000C (12)
     Linkage type: 0x01 (information service)
   - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 13 (0x000D)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000D (13)
     Linkage type: 0x01 (information service)
   - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
   - Descriptor 4: Linkage (0x4A, 74), 9 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
     Private data (2 bytes): 4E 4F
   - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0A (TS containing SSU BAT or NIT)
     SSU table type: BAT
   - Descriptor 6: Linkage (0x4A, 74), 10 bytes
-    Transport stream id: 1120 (0x0460)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0460 (1120)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0C (TS containing INT BAT or NIT)
     INT linkage table type: BAT
     Bouquet id: 0xFFFF (65535)
   - Descriptor 7: Network Name (0x40, 64), 7 bytes
     Name: "FOO NET"
-  Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.22900 GHz
     Orbital position: 19.2 degree, east
@@ -442,7 +442,7 @@
     Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 2/3 (2)
-  Transport Stream Id: 1003 (0x03EB), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EB (1003), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.24375 GHz
     Orbital position: 19.2 degree, east
@@ -452,199 +452,199 @@
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 5/6 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* PMT, TID 2 (0x02), PID 6000 (0x1770)
+* PMT, TID 0x02 (2), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 11, size: 98 bytes
-  Program: 8809 (0x2269), PCR PID: 910 (0x038E)
+  Program: 0x2269 (8809), PCR PID: 0x038E (910)
   Program information:
   - Descriptor 0: CA (0x09, 9), 15 bytes
-    CA System Id: 0x0500 (Viaccess), ECM PID: 982 (0x03D6)
+    CA System Id: 0x0500 (Viaccess), ECM PID: 0x03D6 (982)
     Private CA data (11 bytes):
       0000:  10 01 01 13 01 20 14 03 03 29 40                 ..... ...)@
-  Elementary stream: type 0x1B (AVC video), PID: 910 (0x038E)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 921 (0x0399)
+  Elementary stream: type 0x1B (AVC video), PID: 0x038E (910)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0399 (921)
   - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
     Language: fra, Type: 0x00 (undefined)
   - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 922 (0x039A)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x039A (922)
   - Descriptor 0: AC-3 (0x6A, 106), 2 bytes
     Component type: 0x42 (AC-3, full, complete main, 2 channels)
   - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
     Language: eng, Type: 0x00 (undefined)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 942 (0x03AE)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AE (942)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: foo, Type: 16 (0x10)
+    Language: foo, Type: 0x10 (16)
     Type: DVB subtitles, no aspect ratio
-    Composition page: 1 (0x0001), Ancillary page: 2 (0x0002)
-  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 943 (0x03AF)
+    Composition page: 0x0001 (1), Ancillary page: 0x0002 (2)
+  Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x03AF (943)
   - Descriptor 0: Subtitling (0x59, 89), 8 bytes
-    Language: bar, Type: 32 (0x20)
+    Language: bar, Type: 0x20 (32)
     Type: DVB subtitles for hard of hearing, no aspect ratio
-    Composition page: 3 (0x0003), Ancillary page: 4 (0x0004)
+    Composition page: 0x0003 (3), Ancillary page: 0x0004 (4)
 
-* NIT Actual, TID 64 (0x40), PID 6000 (0x1770)
+* NIT Actual, TID 0x40 (64), PID 0x1770 (6000)
   Section: 0 (last: 0), version: 6, size: 132 bytes
-  Network Id: 4660 (0x1234)
+  Network Id: 0x1234 (4660)
   Network information:
   - Descriptor 0: Network Name (0x40, 64), 7 bytes
     Name: "ASTRA 1"
   - Descriptor 1: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 12 (0x000C)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000C (12)
     Linkage type: 0x01 (information service)
   - Descriptor 2: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 13 (0x000D)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x000D (13)
     Linkage type: 0x01 (information service)
   - Descriptor 3: Linkage (0x4A, 74), 7 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
   - Descriptor 4: Linkage (0x4A, 74), 9 bytes
-    Transport stream id: 1108 (0x0454)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0454 (1108)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x04 (TS containing complete Network/Bouquet SI)
     Private data (2 bytes): 4E 4F
   - Descriptor 5: Linkage (0x4A, 74), 8 bytes
-    Transport stream id: 1111 (0x0457)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0457 (1111)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0A (TS containing SSU BAT or NIT)
     SSU table type: BAT
   - Descriptor 6: Linkage (0x4A, 74), 10 bytes
-    Transport stream id: 1120 (0x0460)
-    Original network Id: 1 (0x0001)
-    Service id: 0 (0x0000)
+    Transport stream id: 0x0460 (1120)
+    Original network Id: 0x0001 (1)
+    Service id: 0x0000 (0)
     Linkage type: 0x0C (TS containing INT BAT or NIT)
     INT linkage table type: BAT
     Bouquet id: 0xFFFF (65535)
   - Descriptor 7: Network Name (0x40, 64), 7 bytes
     Name: "FOO NET"
-  Transport Stream Id: 1002 (0x03EA), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EA (1002), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.22900 GHz
     Orbital position: 19.2 degree, east
@@ -653,7 +653,7 @@
     Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
     Symbol rate: 22.0000 Msymbol/s
     Inner FEC: 2/3 (2)
-  Transport Stream Id: 1003 (0x03EB), Original Network Id: 1 (0x0001)
+  Transport Stream Id: 0x03EB (1003), Original Network Id: 0x0001 (1)
   - Descriptor 0: Satellite Delivery System (0x43, 67), 11 bytes
     Frequency: 11.24375 GHz
     Orbital position: 19.2 degree, east

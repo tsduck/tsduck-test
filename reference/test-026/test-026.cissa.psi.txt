@@ -1,41 +1,41 @@
 
-* SDT Actual, TID 66 (0x42), PID 17 (0x0011)
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
   Version: 19, sections: 1, total size: 38 bytes
   - Section 0:
-    Transport Stream Id: 1 (0x0001)
-    Original Network Id: 8442 (0x20FA)
-    Service Id: 257 (0x0101), EITs: yes, EITp/f: yes, CA mode: free
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x20FA (8442)
+    Service Id: 0x0101 (257), EITs: yes, EITp/f: yes, CA mode: free
     Running status: running
     - Descriptor 0: Service (0x48, 72), 16 bytes
       Service type: 0x01 (Digital television service)
       Service: "France 2", Provider: "GR1 A"
 
-* PAT, TID 0 (0x00), PID 0 (0x0000)
+* PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 6, sections: 1, total size: 16 bytes
   - Section 0:
     TS id:       1 (0x0001)
     Program:   257 (0x0101)  PID:  110 (0x006E)
 
-* PMT, TID 2 (0x02), PID 110 (0x006E)
+* PMT, TID 0x02 (2), PID 0x006E (110)
   Version: 1, sections: 1, total size: 124 bytes
   - Section 0:
-    Program: 257 (0x0101), PCR PID: 120 (0x0078)
+    Program: 0x0101 (257), PCR PID: 0x0078 (120)
     Program information:
     - Descriptor 0: Scrambling (0x65, 101), 1 bytes
       Scrambling mode: 0x10 (DVB-CISSA v1)
-    Elementary stream: type 0x1B (AVC video), PID: 120 (0x0078)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0078 (120)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 1 (0x01)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 130 (0x0082)
+      Component tag: 0x01 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0082 (130)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 2 (0x02)
+      Component tag: 0x02 (2)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fre, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 131 (0x0083)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0083 (131)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qad, Type: 0x00 (undefined)
     - Descriptor 2: Extension Descriptor (0x7F, 127), 5 bytes
@@ -45,25 +45,25 @@
       Language: fra
     - Descriptor 3: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xD2 (Enhanced AC-3, full, visually impaired, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 132 (0x0084)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0084 (132)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 4 (0x04)
+      Component tag: 0x04 (4)
     - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
       Language: qaa, Type: 0x00 (undefined)
     - Descriptor 2: Enhanced AC-3 (0x7A, 122), 2 bytes
       Component type: 0xC2 (Enhanced AC-3, full, complete main, 2 channels)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 140 (0x008C)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008C (140)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 36 (0x24)
+      Language: fra, Type: 0x24 (36)
       Type: DVB subtitles for hard of hearing, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
-    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 142 (0x008E)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x008E (142)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 6 (0x06)
+      Component tag: 0x06 (6)
     - Descriptor 1: Subtitling (0x59, 89), 8 bytes
-      Language: fra, Type: 20 (0x14)
+      Language: fra, Type: 0x14 (20)
       Type: DVB subtitles, high definition
-      Composition page: 1 (0x0001), Ancillary page: 1 (0x0001)
+      Composition page: 0x0001 (1), Ancillary page: 0x0001 (1)
 

@@ -1,15 +1,15 @@
 
-* PMT, TID 2 (0x02)
+* PMT, TID 0x02 (2)
   Section: 0 (last: 0), version: 0, size: 774 bytes
-  Program: 0 (0x0000), PCR PID: none
+  Program: 0x0000 (0), PCR PID: none
   Program information:
   - Descriptor 0: Component (0x50, 80), 6 bytes
     Content/type: 0x0102 (MPEG-2 video, 16:9 aspect ratio with pan vectors, 25 Hz)
-    Component tag: 0 (0x00)
+    Component tag: 0x00 (0)
     Language: fre
   - Descriptor 1: Component (0x50, 80), 26 bytes
     Content/type: 0x1902 (AC-4 main audio, stereo)
-    Component tag: 15 (0x0F)
+    Component tag: 0x0F (15)
     Language: eng
     Description: "A string description"
   - Descriptor 2: AAC (0x7C, 124), 1 bytes
@@ -48,21 +48,21 @@
     Outer FEC: none, Inner FEC: 3/4 conv. code rate
   - Descriptor 8: Application Signalling (0x6F, 111), 0 bytes
   - Descriptor 9: Application Signalling (0x6F, 111), 6 bytes
-    Application type: 4660 (0x1234), AIT Version: 12 (0x0C)
-    Application type: 22136 (0x5678), AIT Version: 31 (0x1F)
+    Application type: 0x1234 (4660), AIT Version: 0x0C (12)
+    Application type: 0x5678 (22136), AIT Version: 0x1F (31)
   - Descriptor 10: Teletext (0x56, 86), 10 bytes
-    Language: fra, Type: 5 (0x05)
+    Language: fra, Type: 0x05 (5)
     Type: Teletext subtitles for hearing impaired
     Magazine: 0, page: 136, full page: 888
-    Language: fra, Type: 2 (0x02)
+    Language: fra, Type: 0x02 (2)
     Type: Teletext subtitles
     Magazine: 0, page: 137, full page: 889
   - Descriptor 11: Teletext (0x56, 86), 0 bytes
   - Descriptor 12: VBI Teletext (0x46, 70), 10 bytes
-    Language: fra, Type: 5 (0x05)
+    Language: fra, Type: 0x05 (5)
     Type: Teletext subtitles for hearing impaired
     Magazine: 0, page: 136, full page: 888
-    Language: fra, Type: 2 (0x02)
+    Language: fra, Type: 0x02 (2)
     Type: Teletext subtitles
     Magazine: 0, page: 137, full page: 889
   - Descriptor 13: VBI Teletext (0x46, 70), 0 bytes
@@ -95,10 +95,10 @@
     Scrambling mode: 0x70 (ATIS IIF IDSA for MPEG-2 TS)
   - Descriptor 23: Extension Descriptor (0x7F, 127), 5 bytes
     Extended descriptor: CP (0x02, 2)
-    CP System Id: 0x0001 (DVB CPCM Auxiliary Data), CP PID: 512 (0x0200)
+    CP System Id: 0x0001 (DVB CPCM Auxiliary Data), CP PID: 0x0200 (512)
   - Descriptor 24: Extension Descriptor (0x7F, 127), 10 bytes
     Extended descriptor: CP (0x02, 2)
-    CP System Id: 0x5678 (unknown), CP PID: 7117 (0x1BCD)
+    CP System Id: 0x5678 (unknown), CP PID: 0x1BCD (7117)
     Private CP data (5 bytes): 01 23 45 67 89
   - Descriptor 25: Extension Descriptor (0x7F, 127), 1 bytes
     Extended descriptor: CP Identifier (0x03, 3)
@@ -314,29 +314,29 @@
     Program number: 0x7418 (29720)
     Private data (5 bytes): 78 96 54 12 36
 
-* DIT (Discontinuity Information), TID 126 (0x7E)
+* DIT (Discontinuity Information), TID 0x7E (126)
   Short section, size: 4 bytes
   Transition: no
 
-* DIT (Discontinuity Information), TID 126 (0x7E)
+* DIT (Discontinuity Information), TID 0x7E (126)
   Short section, size: 4 bytes
   Transition: yes
 
-* SIT (Selection Information), TID 127 (0x7F)
+* SIT (Selection Information), TID 0x7F (127)
   Section: 0 (last: 0), version: 12, size: 42 bytes
   Global information:
   - Descriptor 0: Partial Transport Stream (0x63, 99), 8 bytes
     Peak rate: 0x00012345 (74565) x 400 b/s
     Min smoothing rate: undefined
     Max smoothing buffer: undefined
-  Service id: 17767 (0x4567), Status: not-running
-  Service id: 29720 (0x7418), Status: running
+  Service id: 0x4567 (17767), Status: not-running
+  Service id: 0x7418 (29720), Status: running
   - Descriptor 0: Partial Transport Stream (0x63, 99), 8 bytes
     Peak rate: 0x00078964 (493924) x 400 b/s
     Min smoothing rate: 0x00096325 (615205) x 400 b/s
     Max smoothing buffer: 0x1234 (4660) bytes
 
-* TSDT, TID 3 (0x03)
+* TSDT, TID 0x03 (3)
   Section: 0 (last: 1), version: 0, size: 1023 bytes
   - Descriptor 0: Transport Stream (0x67, 103), 3 bytes
     Compliance: "DVB"
@@ -810,7 +810,7 @@
     No SEI NALunit present: true
     No prefix NALunit present: false
 
-* TSDT, TID 3 (0x03)
+* TSDT, TID 0x03 (3)
   Section: 1 (last: 1), version: 0, size: 587 bytes
   - Descriptor 0: SVC Extension (0x30, 48), 13 bytes
     Frame size: 1236x5236
@@ -925,17 +925,17 @@
   - Descriptor 19: AC-3 (0x6A, 106), 1 bytes
   - Descriptor 20: AC-3 (0x6A, 106), 5 bytes
     Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
-    AC-3 coding version: 52 (0x34)
-    Main audio service id: 86 (0x56)
+    AC-3 coding version: 0x34 (52)
+    Main audio service id: 0x56 (86)
     Associated to: 0x78
   - Descriptor 21: AC-3 (0x6A, 106), 6 bytes
     Component type: 0x9A (Enhanced AC-3, combined, hearing impaired, 2 channels)
-    Main audio service id: 188 (0xBC)
+    Main audio service id: 0xBC (188)
     Additional information (3 bytes): 98 76 54
   - Descriptor 22: Enhanced AC-3 (0x7A, 122), 12 bytes
     Component type: 0x12 (AC-3, combined, visually impaired, 2 channels)
-    AC-3 coding version: 52 (0x34)
-    Main audio service id: 86 (0x56)
+    AC-3 coding version: 0x34 (52)
+    Main audio service id: 0x56 (86)
     Associated to: 0x78
     Substream 0: Mixing control metadata
     Substream 1: 0x9A (Enhanced AC-3, combined, hearing impaired, 2 channels)
@@ -1112,7 +1112,7 @@
       Is in TS: false
       Auxiliary stream id: 0x5B (91)
 
-* Content Identifier, TID 119 (0x77)
+* Content Identifier, TID 0x77 (119)
   Section: 0 (last: 0), version: 0, size: 17 bytes
   Service id: 0x1234 (4660)
   Transport stream id: 0x5678 (22136)
@@ -1120,7 +1120,7 @@
   Number of prepend string: 1
     Prepend[0] = ""
 
-* Content Identifier, TID 119 (0x77)
+* Content Identifier, TID 0x77 (119)
   Section: 0 (last: 0), version: 2, size: 64 bytes
   Service id: 0xFEDC (65244)
   Transport stream id: 0x8765 (34661)
@@ -1139,37 +1139,37 @@
     Prepend string index: 255
     Unique string: "xyzt"
 
-* Resolution Provider Notification, TID 121 (0x79)
+* Resolution Provider Notification, TID 0x79 (121)
   Section: 0 (last: 0), version: 0, size: 15 bytes
   Context id: 0x1234 (4660)
   Context id type: 0x02 (context_id is a network_id)
   RNT top-level descriptors:
   - None
 
-* Resolution Provider Notification, TID 121 (0x79)
+* Resolution Provider Notification, TID 0x79 (121)
   Section: 0 (last: 0), version: 11, size: 151 bytes
   Context id: 0xABCD (43981)
   Context id type: 0x00 (context_id is a bouquet_id)
   RNT top-level descriptors:
   - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-    Component tag: 0 (0x00)
+    Component tag: 0x00 (0)
   - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
-    Component tag: 1 (0x01)
+    Component tag: 0x01 (1)
   - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-    Component tag: 2 (0x02)
+    Component tag: 0x02 (2)
   - Resolution provider name: "Provider 1"
     Provider-level descriptors:
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 3 (0x03)
+      Component tag: 0x03 (3)
     - Descriptor 1: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 4 (0x04)
+      Component tag: 0x04 (4)
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 5 (0x05)
+      Component tag: 0x05 (5)
     - CRID authority name: "Authority 1.1"
       CRID authority policy: 0 (CRID's are permanent)
       CRID authority-level descriptors:
       - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-        Component tag: 6 (0x06)
+        Component tag: 0x06 (6)
     - CRID authority name: "Authority 1.2"
       CRID authority policy: 1 (CRID's are transient)
       CRID authority-level descriptors:
@@ -1180,7 +1180,7 @@
   - Resolution provider name: "Provider 3"
     Provider-level descriptors:
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-      Component tag: 7 (0x07)
+      Component tag: 0x07 (7)
     - CRID authority name: "Authority 3.1"
       CRID authority policy: 2 (CRID's may be either transient or permanent)
       CRID authority-level descriptors:
@@ -1189,9 +1189,9 @@
       CRID authority policy: 3 (Reserved)
       CRID authority-level descriptors:
       - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
-        Component tag: 8 (0x08)
+        Component tag: 0x08 (8)
 
-* TSDT, TID 3 (0x03)
+* TSDT, TID 0x03 (3)
   Section: 0 (last: 0), version: 2, size: 52 bytes
   - Descriptor 0: TVA Id (0x75, 117), 0 bytes
   - Descriptor 1: TVA Id (0x75, 117), 6 bytes

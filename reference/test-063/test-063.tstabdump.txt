@@ -1,5 +1,5 @@
 
-* CAT, TID 1 (0x01)
+* CAT, TID 0x01 (1)
   Section: 0 (last: 0), version: 0, size: 181 bytes
   - Descriptor 0: ISDB Access Control (0xF6, 246), 4 bytes
     CA System Id: 0x0004 (Secure Navi)
@@ -107,12 +107,12 @@
     Encryption mode: true
     Reserved future use (4 bytes): 01 23 56 78
 
-* BIT (ISDB), TID 196 (0xC4)
+* BIT (ISDB), TID 0xC4 (196)
   Section: 0 (last: 0), version: 0, size: 14 bytes
   Original network id: 0x0123 (291)
   Broadcast view property: false
 
-* BIT (ISDB), TID 196 (0xC4)
+* BIT (ISDB), TID 0xC4 (196)
   Section: 0 (last: 0), version: 23, size: 40 bytes
   Original network id: 0x8765 (34661)
   Broadcast view property: true
@@ -130,11 +130,11 @@
   - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
     Data component id: 0x2345 (unknown)
 
-* NBIT (Network board information body, ISDB), TID 197 (0xC5)
+* NBIT (Network board information body, ISDB), TID 0xC5 (197)
   Section: 0 (last: 0), version: 0, size: 12 bytes
   Original network id: 0x1234 (4660)
 
-* NBIT (Reference to network board information, ISDB), TID 198 (0xC6)
+* NBIT (Reference to network board information, ISDB), TID 0xC6 (198)
   Section: 0 (last: 0), version: 29, size: 50 bytes
   Original network id: 0x5432 (21554)
   - Information id: 0x1234 (4660)
@@ -158,7 +158,7 @@
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x5432 (unknown)
 
-* LDT (ISDB), TID 199 (0xC7)
+* LDT (ISDB), TID 0xC7 (199)
   Section: 0 (last: 0), version: 1, size: 46 bytes
   Original service id: 0x1234 (4660)
   Transport stream id: 0x5678 (22136)
@@ -176,14 +176,14 @@
   - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
     Data component id: 0x6789 (unknown)
 
-* PCAT (ISDB), TID 194 (0xC2)
+* PCAT (ISDB), TID 0xC2 (194)
   Section: 0 (last: 0), version: 0, size: 21 bytes
   Service id: 0x1234 (4660)
   Transport stream id: 0x5678 (22136)
   Original network id: 0x9ABC (39612)
   Content id: 0x87654321 (2271560481)
 
-* PCAT (ISDB), TID 194 (0xC2)
+* PCAT (ISDB), TID 0xC2 (194)
   Section: 0 (last: 0), version: 7, size: 85 bytes
   Service id: 0xABCD (43981)
   Transport stream id: 0xEF12 (61202)
@@ -210,11 +210,11 @@
     - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x2345 (unknown)
 
-* ITT (ISDB), TID 210 (0xD2)
+* ITT (ISDB), TID 0xD2 (210)
   Section: 0 (last: 0), version: 0, size: 14 bytes
   Event id: 0x1234 (4660)
 
-* ITT (ISDB), TID 210 (0xD2)
+* ITT (ISDB), TID 0xD2 (210)
   Section: 0 (last: 0), version: 7, size: 26 bytes
   Event id: 0x9876 (39030)
   - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
@@ -224,14 +224,14 @@
   - Descriptor 2: ISDB Data Component (0xFD, 253), 2 bytes
     Data component id: 0x789A (unknown)
 
-* LIT (ISDB), TID 208 (0xD0)
+* LIT (ISDB), TID 0xD0 (208)
   Section: 0 (last: 0), version: 0, size: 18 bytes
   Event id: 0x1234 (4660)
   Service id: 0x5678 (22136)
   Transport stream id: 0x9ABC (39612)
   Original network id: 0xDEF1 (57073)
 
-* LIT (ISDB), TID 208 (0xD0)
+* LIT (ISDB), TID 0xD0 (208)
   Section: 0 (last: 0), version: 6, size: 46 bytes
   Event id: 0xFEDC (65244)
   Service id: 0xBA98 (47768)
@@ -249,13 +249,13 @@
     - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x789A (unknown)
 
-* ERT (ISDB), TID 209 (0xD1)
+* ERT (ISDB), TID 0xD1 (209)
   Section: 0 (last: 0), version: 0, size: 15 bytes
   Event relation id: 0x1234 (4660)
   Information provider id: 0x5678 (22136)
   Relation type: 1 (Relation for the contents description (indicates tree structure to describe contents))
 
-* ERT (ISDB), TID 209 (0xD1)
+* ERT (ISDB), TID 0xD1 (209)
   Section: 0 (last: 0), version: 27, size: 39 bytes
   Event relation id: 0x9876 (39030)
   Information provider id: 0x5432 (21554)
@@ -273,7 +273,7 @@
     - Descriptor 1: ISDB Data Component (0xFD, 253), 2 bytes
       Data component id: 0x3456 (unknown)
 
-* CAT, TID 1 (0x01)
+* CAT, TID 0x01 (1)
   Section: 0 (last: 0), version: 2, size: 943 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x02 (2)
@@ -697,13 +697,13 @@
     Segmentation mode: 9 (Reserved)
     Reserved data (4 bytes): 12 34 56 78
 
-* CDT (ISDB), TID 200 (0xC8)
+* CDT (ISDB), TID 0xC8 (200)
   Section: 0 (last: 0), version: 0, size: 17 bytes
   Download data id: 0x1234 (4660)
   Original network id: 0x5678 (22136)
   Data type: 0x9A (154)
 
-* CDT (ISDB), TID 200 (0xC8)
+* CDT (ISDB), TID 0xC8 (200)
   Section: 0 (last: 0), version: 0, size: 50 bytes
   Download data id: 0xDEAD (57005)
   Original network id: 0xBEEF (48879)
