@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <!-- Modified events -->
+  <EIT service_id="3" transport_stream_id="7" original_network_id="1">
+    <!-- Same content, moved later in another EITs section -->
+    <event event_id="10" start_time="2020-07-01 09:10:00" duration="00:05:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 10</event_name>
+      </short_event_descriptor>
+    </event>
+    <!-- Same content, modified time in same section -->
+    <event event_id="11" start_time="2020-07-01 08:40:00" duration="00:05:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 11</event_name>
+      </short_event_descriptor>
+    </event>
+    <!-- Same time, updated content -->
+    <event event_id="12" start_time="2020-07-01 08:20:00" duration="00:05:00">
+      <short_event_descriptor language_code="foo">
+        <event_name>Event 12 (updated)</event_name>
+      </short_event_descriptor>
+    </event>
+  </EIT>
+</tsduck>
