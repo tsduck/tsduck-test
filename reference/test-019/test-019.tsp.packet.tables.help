@@ -161,6 +161,12 @@ Options:
       JST'. This is a handy shortcut when working on Japanese transport
       streams.
 
+  -j
+  --joint-termination
+      With --max-tables, when the final table is collected, perform a "joint
+      termination" instead of unconditional termination. See "tsp --help" for
+      more details on "joint termination".
+
   --json-output file-name
       Save the tables in JSON format in the specified file. The tables are
       initially formatted as XML and automated XML-to-JSON conversion is
