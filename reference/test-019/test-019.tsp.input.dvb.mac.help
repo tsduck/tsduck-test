@@ -155,6 +155,54 @@ Options:
       A synonym for '--hf-band-region japan'. This is a handy shortcut when
       working on Japanese transport streams.
 
+  --json-buffer-size value
+      With --json-tcp or --json-udp, specify the network socket send buffer
+      size in bytes.
+
+  --json-interval seconds
+      With --json-line, --json-tcp, --json-udp, specify the interval between
+      two status reports. The default is 60 seconds.
+
+  --json-line[='prefix']
+      Produce a status report in JSON format at regular intervals. Report the
+      JSON text as one single line in the message logger. The optional string
+      parameter specifies a prefix to prepend on the log line before the JSON
+      text to locate the appropriate line in the logs.
+
+  --json-tcp ip-address:port
+      Produce a status report in JSON format at regular intervals. Report the
+      JSON text as one single line in a TCP connection. The address specifies
+      an IP address or a host name that translates to an IP address. The port
+      specifies the destination TCP port. By default, a new TCP connection is
+      established each time a JSON message is produced. Be aware that a
+      complete TCP connection cycle may introduce some latency in the
+      processing. If latency is an issue, consider using --json-udp.
+
+  --json-tcp-keep
+      With --json-tcp, keep the TCP connection open for all JSON messages. By
+      default, a new TCP connection is established each time a JSON message is
+      produced.
+
+  --json-udp ip-address:port
+      Produce a status report in JSON format at regular intervals. Report the
+      JSON text as one single line in a UDP datagram. The address specifies an
+      IP address which can be either unicast or multicast. It can be also a
+      host name that translates to an IP address. The port specifies the
+      destination UDP port. Be aware that the size of UDP datagrams is limited
+      by design to 64 kB. If larger JSON contents are expected, consider using
+      --json-tcp.
+
+  --json-udp-local ip-address
+      With --json-udp, when the destination is a multicast address, specify the
+      IP address of the outgoing local interface. It can be also a host name
+      that translates to a local address.
+
+  --json-udp-ttl value
+      With --json-udp, specifies the TTL (Time-To-Live) socket option. The
+      actual option is either "Unicast TTL" or "Multicast TTL", depending on
+      the destination address. Remember that the default Multicast TTL is 1 on
+      most systems.
+
   --lnb name
       Used for satellite tuners only. Description of the LNB. The specified
       string is the name (or an alias for that name) of a preconfigured LNB in
