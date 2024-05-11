@@ -288,7 +288,7 @@
         Data component id: 0x3456 (unknown)
 
 * CAT, TID 0x01 (1), PID 0x00C8 (200)
-  Version: 2, sections: 1, total size: 943 bytes
+  Version: 2, sections: 1, total size: 993 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
       Content type: 0x02 (2)
@@ -711,6 +711,25 @@
     - Descriptor 68: ISDB STC Reference (0xD4, 212), 5 bytes
       Segmentation mode: 9 (Reserved)
       Reserved data (4 bytes): 12 34 56 78
+    - Descriptor 69: ISDB Partial Transport Stream Time (0xC3, 195), 13 bytes
+      Event version number: 17
+      Event start time: unspecified
+      Duration: unspecified
+      Offset: unspecified
+      Other descriptor status: false
+    - Descriptor 70: ISDB Partial Transport Stream Time (0xC3, 195), 18 bytes
+      Event version number: 145
+      Event start time: 2024/05/11 12:45:53
+      Duration: 06:45:12
+      Offset: 01:02:03 (substract)
+      Other descriptor status: true
+      JST time: 2024/05/11 13:14:36
+    - Descriptor 71: ISDB Partial Transport Stream Time (0xC3, 195), 13 bytes
+      Event version number: 201
+      Event start time: unspecified
+      Duration: unspecified
+      Offset: 03:01:07
+      Other descriptor status: false
 
 * CDT (ISDB), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 17 bytes
