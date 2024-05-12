@@ -274,7 +274,7 @@
       Data component id: 0x3456 (unknown)
 
 * CAT, TID 0x01 (1)
-  Section: 0 (last: 0), version: 2, size: 993 bytes
+  Section: 0 (last: 1), version: 2, size: 1013 bytes
   - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
     Content type: 0x02 (2)
     Component type: 0x08 (3/2 mode)
@@ -715,6 +715,59 @@
     Duration: unspecified
     Offset: 03:01:07
     Other descriptor status: false
+  - Descriptor 72: ISDB Download Content (0xC9, 201), 18 bytes
+    Reboot: true
+    Add-on: false
+    Component size: 12345 bytes
+    Download id: 0x00000456 (1110)
+    Timeout DII: 789
+    Leak rate: 963 bytes
+    Component tag: 0x11 (17)
+
+* CAT, TID 0x01 (1)
+  Section: 1 (last: 1), version: 2, size: 126 bytes
+  - Descriptor 0: ISDB Download Content (0xC9, 201), 112 bytes
+    Reboot: false
+    Add-on: true
+    Component size: 258147 bytes
+    Download id: 0xDEADBEEF (3735928559)
+    Timeout DII: 147
+    Leak rate: 741 bytes
+    Component tag: 0x32 (50)
+    Compatibility descriptor (3 descriptors)
+    - Descriptor #0
+      Descriptor type: 0x01 (1), size: 24 bytes
+      Specifier type: 0x02 (2), data: 0x00123456 (1193046)
+      Model: 0xABCD (43981), version: 42
+      - Subdescriptor #0
+        Type: 0x04 (4)
+        Additional info (8 bytes): 01 23 45 67 89 AB CD EF
+      - Subdescriptor #1
+        Type: 0x05 (5)
+      - Subdescriptor #2
+        Type: 0x06 (6)
+        Additional info (1 bytes): FE
+    - Descriptor #1
+      Descriptor type: 0x02 (2), size: 9 bytes
+      Specifier type: 0x03 (3), data: 0x00000456 (1110)
+      Model: 0x0B45 (2885), version: 42
+    - Descriptor #2
+      Descriptor type: 0x03 (3), size: 16 bytes
+      Specifier type: 0x04 (4), data: 0x000000AB (171)
+      Model: 0x2587 (9607), version: 42
+      - Subdescriptor #0
+        Type: 0x08 (8)
+        Additional info (5 bytes): 98 76 54 32 10
+    Number of modules: 2
+    - Module #0
+      Module id: 0x0001 (1), size: 100 bytes
+    - Module #1
+      Module id: 0x0002 (2), size: 202 bytes
+      Module info (3 bytes): 12 45 78
+    Private data (3 bytes): 98 76 54
+    Text info:
+      Language: foo
+      Text: "the text"
 
 * CDT (ISDB), TID 0xC8 (200)
   Section: 0 (last: 0), version: 0, size: 17 bytes

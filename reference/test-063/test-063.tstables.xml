@@ -415,6 +415,36 @@
     <partialTS_time_descriptor event_version_number="17" other_descriptor_status="false"/>
     <partialTS_time_descriptor event_version_number="145" event_start_time="2024-05-11 12:45:53" duration="06:45:12" offset="01:02:03" offset_flag="1" other_descriptor_status="true" JST_time="2024-05-11 13:14:36"/>
     <partialTS_time_descriptor event_version_number="201" offset="03:01:07" offset_flag="0" other_descriptor_status="false"/>
+    <download_content_descriptor reboot="true" add_on="false" component_size="12,345" download_id="0x00000456" time_out_value_DII="789" leak_rate="963" component_tag="0x11"/>
+    <download_content_descriptor reboot="false" add_on="true" component_size="258,147" download_id="0xDEADBEEF" time_out_value_DII="147" leak_rate="741" component_tag="0x32">
+      <compatibility_descriptor>
+        <descriptor descriptor_type="0x01" specifier_type="0x02" specifier_data="0x00123456" model="0xABCD" version="42">
+          <subdescriptor type="0x04">
+            01 23 45 67 89 AB CD EF
+          </subdescriptor>
+          <subdescriptor type="0x05"/>
+          <subdescriptor type="0x06">
+            FE
+          </subdescriptor>
+        </descriptor>
+        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000456" model="0x0B45" version="42"/>
+        <descriptor descriptor_type="0x03" specifier_type="0x04" specifier_data="0x000000AB" model="0x2587" version="42">
+          <subdescriptor type="0x08">
+            98 76 54 32 10
+          </subdescriptor>
+        </descriptor>
+      </compatibility_descriptor>
+      <module module_id="0x0001" module_size="100"/>
+      <module module_id="0x0002" module_size="202">
+        <module_info>
+          12 45 78
+        </module_info>
+      </module>
+      <private_data>
+        98 76 54
+      </private_data>
+      <text_info ISO_639_language_code="foo" text="the text"/>
+    </download_content_descriptor>
   </CAT>
   <CDT version="0" current="true" download_data_id="0x1234" original_network_id="0x5678" data_type="0x9A">
     <metadata PID="200"/>

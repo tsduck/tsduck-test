@@ -1548,6 +1548,115 @@
         "offset": "03:01:07",
         "offset_flag": 0,
         "other_descriptor_status": false
+      },
+      {
+        "#name": "download_content_descriptor",
+        "add_on": false,
+        "component_size": 12345,
+        "component_tag": 17,
+        "download_id": 1110,
+        "leak_rate": 963,
+        "reboot": true,
+        "time_out_value_dii": 789
+      },
+      {
+        "#name": "download_content_descriptor",
+        "#nodes": [
+          {
+            "#name": "compatibility_descriptor",
+            "#nodes": [
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subdescriptor",
+                    "#nodes": [
+                      "01 23 45 67 89 AB CD EF"
+                    ],
+                    "type": 4
+                  },
+                  {
+                    "#name": "subdescriptor",
+                    "type": 5
+                  },
+                  {
+                    "#name": "subdescriptor",
+                    "#nodes": [
+                      "FE"
+                    ],
+                    "type": 6
+                  }
+                ],
+                "descriptor_type": 1,
+                "model": 43981,
+                "specifier_data": 1193046,
+                "specifier_type": 2,
+                "version": 42
+              },
+              {
+                "#name": "descriptor",
+                "descriptor_type": 2,
+                "model": 2885,
+                "specifier_data": 1110,
+                "specifier_type": 3,
+                "version": 42
+              },
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subdescriptor",
+                    "#nodes": [
+                      "98 76 54 32 10"
+                    ],
+                    "type": 8
+                  }
+                ],
+                "descriptor_type": 3,
+                "model": 9607,
+                "specifier_data": 171,
+                "specifier_type": 4,
+                "version": 42
+              }
+            ]
+          },
+          {
+            "#name": "module",
+            "module_id": 1,
+            "module_size": 100
+          },
+          {
+            "#name": "module",
+            "#nodes": [
+              {
+                "#name": "module_info",
+                "#nodes": [
+                  "12 45 78"
+                ]
+              }
+            ],
+            "module_id": 2,
+            "module_size": 202
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "98 76 54"
+            ]
+          },
+          {
+            "#name": "text_info",
+            "iso_639_language_code": "foo",
+            "text": "the text"
+          }
+        ],
+        "add_on": true,
+        "component_size": 258147,
+        "component_tag": 50,
+        "download_id": 3735928559,
+        "leak_rate": 741,
+        "reboot": false,
+        "time_out_value_dii": 147
       }
     ],
     "current": true,
