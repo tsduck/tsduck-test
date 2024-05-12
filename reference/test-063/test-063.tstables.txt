@@ -288,7 +288,7 @@
         Data component id: 0x3456 (unknown)
 
 * CAT, TID 0x01 (1), PID 0x00C8 (200)
-  Version: 2, sections: 2, total size: 1351 bytes
+  Version: 2, sections: 2, total size: 1370 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
       Content type: 0x02 (2)
@@ -851,6 +851,13 @@
       Text info:
         Language: bar
         Text: "another text"
+    - Descriptor 4: ISDB Carousel Compatible Composite (0xF7, 247), 0 bytes
+    - Descriptor 5: ISDB Carousel Compatible Composite (0xF7, 247), 15 bytes
+      - Subdescriptor #0, type: 0x01 (1), 8 bytes
+        Payload (8 bytes): 01 23 45 67 89 AB CD EF
+      - Subdescriptor #1, type: 0x02 (2), 0 bytes
+      - Subdescriptor #2, type: 0x03 (3), 1 bytes
+        Payload (1 bytes): 47
 
 * CDT (ISDB), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 17 bytes

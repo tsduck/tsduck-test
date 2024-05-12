@@ -725,7 +725,7 @@
     Component tag: 0x11 (17)
 
 * CAT, TID 0x01 (1)
-  Section: 1 (last: 1), version: 2, size: 338 bytes
+  Section: 1 (last: 1), version: 2, size: 357 bytes
   - Descriptor 0: ISDB Download Content (0xC9, 201), 112 bytes
     Reboot: false
     Add-on: true
@@ -838,6 +838,13 @@
     Text info:
       Language: bar
       Text: "another text"
+  - Descriptor 4: ISDB Carousel Compatible Composite (0xF7, 247), 0 bytes
+  - Descriptor 5: ISDB Carousel Compatible Composite (0xF7, 247), 15 bytes
+    - Subdescriptor #0, type: 0x01 (1), 8 bytes
+      Payload (8 bytes): 01 23 45 67 89 AB CD EF
+    - Subdescriptor #1, type: 0x02 (2), 0 bytes
+    - Subdescriptor #2, type: 0x03 (3), 1 bytes
+      Payload (1 bytes): 47
 
 * CDT (ISDB), TID 0xC8 (200)
   Section: 0 (last: 0), version: 0, size: 17 bytes
