@@ -288,7 +288,7 @@
         Data component id: 0x3456 (unknown)
 
 * CAT, TID 0x01 (1), PID 0x00C8 (200)
-  Version: 2, sections: 2, total size: 1139 bytes
+  Version: 2, sections: 2, total size: 1351 bytes
   - Section 0:
     - Descriptor 0: ISDB Audio Component (0xC4, 196), 9 bytes
       Content type: 0x02 (2)
@@ -781,6 +781,76 @@
       Text info:
         Language: foo
         Text: "the text"
+    - Descriptor 1: ISDB Network Download Content (0xE2, 226), 22 bytes
+      Reboot: true
+      Add-on: false
+      Component size: 456789 bytes
+      Session protocol number: 0x45 (69)
+      Session id: 0x12345678 (305419896)
+      Retry: 12
+      Connect timer: 1234
+      Address type: IPv4 address (0x00)
+      IPv4: 10.11.12.13:4567
+    - Descriptor 2: ISDB Network Download Content (0xE2, 226), 109 bytes
+      Reboot: false
+      Add-on: true
+      Component size: 452 bytes
+      Session protocol number: 0xA2 (162)
+      Session id: 0xABCDEF12 (2882400018)
+      Retry: 85
+      Connect timer: 78523
+      Address type: IPv6 address (0x01)
+      IPv6: [fe80::93a3:dea0:2108:b81e]:8521
+      Compatibility descriptor (3 descriptors)
+      - Descriptor #0
+        Descriptor type: 0x01 (1), size: 24 bytes
+        Specifier type: 0x02 (2), data: 0x00123456 (1193046)
+        Model: 0xABCD (43981), version: 42
+        - Subdescriptor #0
+          Type: 0x04 (4)
+          Additional info (8 bytes): 01 23 45 67 89 AB CD EF
+        - Subdescriptor #1
+          Type: 0x05 (5)
+        - Subdescriptor #2
+          Type: 0x06 (6)
+          Additional info (1 bytes): FE
+      - Descriptor #1
+        Descriptor type: 0x02 (2), size: 9 bytes
+        Specifier type: 0x03 (3), data: 0x00000456 (1110)
+        Model: 0x0B45 (2885), version: 42
+      - Descriptor #2
+        Descriptor type: 0x03 (3), size: 16 bytes
+        Specifier type: 0x04 (4), data: 0x000000AB (171)
+        Model: 0x2587 (9607), version: 42
+        - Subdescriptor #0
+          Type: 0x08 (8)
+          Additional info (5 bytes): 98 76 54 32 10
+      Private data (3 bytes): 98 76 54
+      Text info:
+        Language: foo
+        Text: "the text"
+    - Descriptor 3: ISDB Network Download Content (0xE2, 226), 75 bytes
+      Reboot: true
+      Add-on: true
+      Component size: 3214 bytes
+      Session protocol number: 0x78 (120)
+      Session id: 0x14785236 (343429686)
+      Retry: 45
+      Connect timer: 789
+      Address type: URL (0x02)
+      URL: http://foo.bar/none
+      Compatibility descriptor (1 descriptors)
+      - Descriptor #0
+        Descriptor type: 0x02 (2), size: 13 bytes
+        Specifier type: 0x03 (3), data: 0x00000004 (4)
+        Model: 0x0005 (5), version: 6
+        - Subdescriptor #0
+          Type: 0x07 (7)
+          Additional info (2 bytes): 89 AB
+      Private data (3 bytes): 12 34 56
+      Text info:
+        Language: bar
+        Text: "another text"
 
 * CDT (ISDB), TID 0xC8 (200), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 17 bytes

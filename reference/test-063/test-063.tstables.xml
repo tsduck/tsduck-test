@@ -445,6 +445,47 @@
       </private_data>
       <text_info ISO_639_language_code="foo" text="the text"/>
     </download_content_descriptor>
+    <network_download_content_descriptor reboot="true" add_on="false" component_size="456,789" session_protocol_number="0x45" session_id="0x12345678" retry="12" connect_timer="1,234">
+      <ipv4 address="10.11.12.13" port="4,567"/>
+    </network_download_content_descriptor>
+    <network_download_content_descriptor reboot="false" add_on="true" component_size="452" session_protocol_number="0xA2" session_id="0xABCDEF12" retry="85" connect_timer="78,523">
+      <ipv6 address="fe80::93a3:dea0:2108:b81e" port="8,521"/>
+      <compatibility_descriptor>
+        <descriptor descriptor_type="0x01" specifier_type="0x02" specifier_data="0x00123456" model="0xABCD" version="42">
+          <subdescriptor type="0x04">
+            01 23 45 67 89 AB CD EF
+          </subdescriptor>
+          <subdescriptor type="0x05"/>
+          <subdescriptor type="0x06">
+            FE
+          </subdescriptor>
+        </descriptor>
+        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000456" model="0x0B45" version="42"/>
+        <descriptor descriptor_type="0x03" specifier_type="0x04" specifier_data="0x000000AB" model="0x2587" version="42">
+          <subdescriptor type="0x08">
+            98 76 54 32 10
+          </subdescriptor>
+        </descriptor>
+      </compatibility_descriptor>
+      <private_data>
+        98 76 54
+      </private_data>
+      <text_info ISO_639_language_code="foo" text="the text"/>
+    </network_download_content_descriptor>
+    <network_download_content_descriptor reboot="true" add_on="true" component_size="3,214" session_protocol_number="0x78" session_id="0x14785236" retry="45" connect_timer="789">
+      <url url="http://foo.bar/none"/>
+      <compatibility_descriptor>
+        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000004" model="0x0005" version="6">
+          <subdescriptor type="0x07">
+            89 AB
+          </subdescriptor>
+        </descriptor>
+      </compatibility_descriptor>
+      <private_data>
+        12 34 56
+      </private_data>
+      <text_info ISO_639_language_code="bar" text="another text"/>
+    </network_download_content_descriptor>
   </CAT>
   <CDT version="0" current="true" download_data_id="0x1234" original_network_id="0x5678" data_type="0x9A">
     <metadata PID="200"/>

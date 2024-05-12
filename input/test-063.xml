@@ -759,6 +759,91 @@
       <text_info ISO_639_language_code="foo" text="the text"/>
     </download_content_descriptor>
 
+    <network_download_content_descriptor
+        reboot="true"
+        add_on="false"
+        component_size="456789"
+        session_protocol_number="0x45"
+        session_id="0x12345678"
+        retry="12"
+        connect_timer="1234">
+      <ipv4 address="10.11.12.13" port="4567"/>
+    </network_download_content_descriptor>
+
+    <network_download_content_descriptor
+        reboot="false"
+        add_on="true"
+        component_size="452"
+        session_protocol_number="0xA2"
+        session_id="0xABCDEF12"
+        retry="85"
+        connect_timer="78523">
+      <ipv6 address="fe80::93a3:dea0:2108:b81e" port="8521"/>
+      <compatibility_descriptor>
+        <descriptor
+            descriptor_type="1"
+            specifier_type="2"
+            specifier_data="0x123456"
+            model="0xABCD"
+            version="42">
+          <subdescriptor type="4">
+            0123456789ABCDEF
+          </subdescriptor>
+          <subdescriptor type="5"/>
+          <subdescriptor type="6">
+            FE
+          </subdescriptor>
+        </descriptor>
+        <descriptor
+            descriptor_type="2"
+            specifier_type="3"
+            specifier_data="0x456"
+            model="0xB45"
+            version="42"/>
+        <descriptor
+            descriptor_type="3"
+            specifier_type="4"
+            specifier_data="0xAB"
+            model="0x2587"
+            version="42">
+          <subdescriptor type="8">
+            9876543210
+          </subdescriptor>
+        </descriptor>
+      </compatibility_descriptor>
+      <private_data>
+        987654
+      </private_data>
+      <text_info ISO_639_language_code="foo" text="the text"/>
+    </network_download_content_descriptor>
+
+    <network_download_content_descriptor
+        reboot="true"
+        add_on="true"
+        component_size="3214"
+        session_protocol_number="0x78"
+        session_id="0x14785236"
+        retry="45"
+        connect_timer="789">
+      <url url="http://foo.bar/none"/>
+      <compatibility_descriptor>
+        <descriptor
+            descriptor_type="2"
+            specifier_type="3"
+            specifier_data="4"
+            model="5"
+            version="6">
+          <subdescriptor type="7">
+            89AB
+          </subdescriptor>
+        </descriptor>
+      </compatibility_descriptor>
+      <private_data>
+        123456
+      </private_data>
+      <text_info ISO_639_language_code="bar" text="another text"/>
+    </network_download_content_descriptor>
+
   </CAT>
 
   <CDT download_data_id="0x1234" original_network_id="0x5678" data_type="0x9A"/>
