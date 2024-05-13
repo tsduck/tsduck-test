@@ -868,3 +868,75 @@
     0000:  01 23 45 67 89 AB CD EF A0 A1 A2 A3 A4 A5 A6 A7  .#Eg............
     0010:  B8 B9 BA BB BC BD BE BF                          ........
 
+* SDTT (ISDB), TID 0xC3 (195)
+  Section: 0 (last: 0), version: 0, size: 19 bytes
+  Table extension id: 0x1234 (4660)
+  Transport stream id: 0x5678 (22136)
+  Original network id: 0x9ABC (39612)
+  Service id: 0xDEF0 (57072)
+  Number of download contents: 0
+
+* SDTT (ISDB), TID 0xC3 (195)
+  Section: 0 (last: 0), version: 10, size: 147 bytes
+  Table extension id: 0x4321 (17185)
+  Transport stream id: 0x8765 (34661)
+  Original network id: 0xCBA9 (52137)
+  Service id: 0x0FED (4077)
+  Number of download contents: 5
+  - Download content #0:
+    Group: 1, target version: 512, new version: 520
+    Download level: 0 (Discretionary downloading)
+    Version indicator: 1 (Version specified or later)
+    Maker id flag: true (valid)
+    Schedule timeshift: 5 (Timeshift of 5 hours for each service_id)
+    Schedule #0: start: 2024/05/08 12:34:21, duration: 04:05:06
+    Schedule #1: start: 2024/05/08 13:40:00, duration: 12:13:14
+    - Descriptor 0: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x1000 (4096)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+    - Descriptor 1: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x2000 (8192)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+  - Download content #1:
+    Group: 2, target version: 513, new version: 521
+    Download level: 1 (Compulsory downloading)
+    Version indicator: 2 (Version specified or earlier)
+    Maker id flag: true (valid)
+    Schedule timeshift: 15 (Single service_id)
+    Schedule #0: start: 2024/05/09 12:34:21, duration: 04:05:06
+    Schedule #1: start: 2024/05/09 13:40:00, duration: 12:13:14
+    - Descriptor 0: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x3000 (12288)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+    - Descriptor 1: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x4000 (16384)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+  - Download content #2:
+    Group: 3, target version: 514, new version: 522
+    Download level: 1 (Compulsory downloading)
+    Version indicator: 0 (All versions)
+    Maker id flag: true (valid)
+    Schedule timeshift: 7 (Timeshift of 7 hours for each service_id)
+    Schedule #0: start: 2024/05/10 12:34:21, duration: 04:05:06
+    Schedule #1: start: 2024/05/10 13:40:00, duration: 12:13:14
+  - Download content #3:
+    Group: 4, target version: 515, new version: 523
+    Download level: 0 (Discretionary downloading)
+    Version indicator: 0 (All versions)
+    Maker id flag: true (valid)
+    Schedule timeshift: 0 (Same schedule with multiple service_id)
+  - Download content #4:
+    Group: 5, target version: 516, new version: 524
+    Download level: 1 (Compulsory downloading)
+    Version indicator: 1 (Version specified or later)
+    Maker id flag: true (valid)
+    Schedule timeshift: 8 (Timeshift of 8 hours for each service_id)
+    - Descriptor 0: ISDB Partial Reception (0xFB, 251), 6 bytes
+      Service id: 0x5000 (20480)
+      Service id: 0x5678 (22136)
+      Service id: 0x9ABC (39612)
+

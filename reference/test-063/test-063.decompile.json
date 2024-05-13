@@ -1875,5 +1875,193 @@
     "download_data_id": 57005,
     "original_network_id": 48879,
     "version": 0
+  },
+  {
+    "#name": "SDTT",
+    "current": true,
+    "original_network_id": 39612,
+    "service_id": 57072,
+    "table_id_ext": 4660,
+    "transport_stream_id": 22136,
+    "version": 0
+  },
+  {
+    "#name": "SDTT",
+    "#nodes": [
+      {
+        "#name": "content",
+        "#nodes": [
+          {
+            "#name": "schedule",
+            "duration": "04:05:06",
+            "start_time": "2024-05-08 12:34:21"
+          },
+          {
+            "#name": "schedule",
+            "duration": "12:13:14",
+            "start_time": "2024-05-08 13:40:00"
+          },
+          {
+            "#name": "partial_reception_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 4096
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ]
+          },
+          {
+            "#name": "partial_reception_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 8192
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ]
+          }
+        ],
+        "download_level": 0,
+        "group": 1,
+        "new_version": 520,
+        "schedule_timeshift_information": 5,
+        "target_version": 512,
+        "version_indicator": 1
+      },
+      {
+        "#name": "content",
+        "#nodes": [
+          {
+            "#name": "schedule",
+            "duration": "04:05:06",
+            "start_time": "2024-05-09 12:34:21"
+          },
+          {
+            "#name": "schedule",
+            "duration": "12:13:14",
+            "start_time": "2024-05-09 13:40:00"
+          },
+          {
+            "#name": "partial_reception_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 12288
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ]
+          },
+          {
+            "#name": "partial_reception_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 16384
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ]
+          }
+        ],
+        "download_level": 1,
+        "group": 2,
+        "new_version": 521,
+        "schedule_timeshift_information": 15,
+        "target_version": 513,
+        "version_indicator": 2
+      },
+      {
+        "#name": "content",
+        "#nodes": [
+          {
+            "#name": "schedule",
+            "duration": "04:05:06",
+            "start_time": "2024-05-10 12:34:21"
+          },
+          {
+            "#name": "schedule",
+            "duration": "12:13:14",
+            "start_time": "2024-05-10 13:40:00"
+          }
+        ],
+        "download_level": 1,
+        "group": 3,
+        "new_version": 522,
+        "schedule_timeshift_information": 7,
+        "target_version": 514,
+        "version_indicator": 0
+      },
+      {
+        "#name": "content",
+        "download_level": 0,
+        "group": 4,
+        "new_version": 523,
+        "schedule_timeshift_information": 0,
+        "target_version": 515,
+        "version_indicator": 0
+      },
+      {
+        "#name": "content",
+        "#nodes": [
+          {
+            "#name": "partial_reception_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "id": 20480
+              },
+              {
+                "#name": "service",
+                "id": 22136
+              },
+              {
+                "#name": "service",
+                "id": 39612
+              }
+            ]
+          }
+        ],
+        "download_level": 1,
+        "group": 5,
+        "new_version": 524,
+        "schedule_timeshift_information": 8,
+        "target_version": 516,
+        "version_indicator": 1
+      }
+    ],
+    "current": true,
+    "original_network_id": 52137,
+    "service_id": 4077,
+    "table_id_ext": 17185,
+    "transport_stream_id": 34661,
+    "version": 10
   }
 ]

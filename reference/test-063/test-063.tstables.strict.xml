@@ -510,4 +510,50 @@
       B8 B9 BA BB BC BD BE BF
     </data_module>
   </CDT>
+  <SDTT version="0" current="true" table_id_ext="0x1234" transport_stream_id="0x5678" original_network_id="0x9ABC" service_id="0xDEF0">
+    <metadata PID="200"/>
+  </SDTT>
+  <SDTT version="10" current="true" table_id_ext="0x4321" transport_stream_id="0x8765" original_network_id="0xCBA9" service_id="0x0FED">
+    <metadata PID="200"/>
+    <content group="1" target_version="512" new_version="520" download_level="0" version_indicator="1" schedule_timeshift_information="5">
+      <schedule start_time="2024-05-08 12:34:21" duration="04:05:06"/>
+      <schedule start_time="2024-05-08 13:40:00" duration="12:13:14"/>
+      <partial_reception_descriptor>
+        <service id="0x1000"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </partial_reception_descriptor>
+      <partial_reception_descriptor>
+        <service id="0x2000"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </partial_reception_descriptor>
+    </content>
+    <content group="2" target_version="513" new_version="521" download_level="1" version_indicator="2" schedule_timeshift_information="15">
+      <schedule start_time="2024-05-09 12:34:21" duration="04:05:06"/>
+      <schedule start_time="2024-05-09 13:40:00" duration="12:13:14"/>
+      <partial_reception_descriptor>
+        <service id="0x3000"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </partial_reception_descriptor>
+      <partial_reception_descriptor>
+        <service id="0x4000"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </partial_reception_descriptor>
+    </content>
+    <content group="3" target_version="514" new_version="522" download_level="1" version_indicator="0" schedule_timeshift_information="7">
+      <schedule start_time="2024-05-10 12:34:21" duration="04:05:06"/>
+      <schedule start_time="2024-05-10 13:40:00" duration="12:13:14"/>
+    </content>
+    <content group="4" target_version="515" new_version="523" download_level="0" version_indicator="0" schedule_timeshift_information="0"/>
+    <content group="5" target_version="516" new_version="524" download_level="1" version_indicator="1" schedule_timeshift_information="8">
+      <partial_reception_descriptor>
+        <service id="0x5000"/>
+        <service id="0x5678"/>
+        <service id="0x9ABC"/>
+      </partial_reception_descriptor>
+    </content>
+  </SDTT>
 </tsduck>
