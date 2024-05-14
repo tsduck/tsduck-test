@@ -1,0 +1,94 @@
+
+* Related Content, TID 0x76 (118), PID 0x00C8 (200)
+  Version: 2, sections: 1, total size: 17 bytes
+  - Section 0:
+    Service id: 0x1234 (4660)
+    Year offset: 2023
+
+* Related Content, TID 0x76 (118), PID 0x00C8 (200)
+  Version: 2, sections: 1, total size: 202 bytes
+  - Section 0:
+    Service id: 0x5678 (22136)
+    Year offset: 2024
+    - Link #0
+      Link type: 0x0 (URI string only)
+      Related classification: 0x02 (urn:tva:metadata:HowRelatedCS:2007)
+      Term id: 0x0ABC (2748), group id: 0x0008 (8)
+      Precedence: 2
+      Media URI: http://foo/bar
+      Promotional text #0:
+        Language: foo
+        Text: "text foo"
+      Promotional text #1:
+        Language: bar
+        Text: "text bar"
+      Default icon flag: 1, icon id: 2
+      - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+        Language: l01, Type: 0x01 (clean effects)
+      - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+        Language: l02, Type: 0x02 (hearing impaired)
+    - Link #1
+      Link type: 0x1 (Binary locator only)
+      Related classification: 0x03 (DVB reserved)
+      Term id: 0x0123 (291), group id: 0x0004 (4)
+      Precedence: 12
+      DVB binary locator:
+        Identifier type: 0x1 (Event identifier is an event_id)
+        Scheduled time reliability: false, inline service: true
+        Start date: 10 (2024/01/11)
+        Transport stream id: 0x1234 (4660)
+        Original network id: 0x5678 (22136)
+        Service id: 0x9ABC (39612)
+        Start time: 3600 x 2s (02:00:00)
+        Duration: 1000 x 2s (00:33:20)
+        Event id: 0x789A (30874)
+      Default icon flag: 0, icon id: 6
+    - Link #2
+      Link type: 0x1 (Binary locator only)
+      Related classification: 0x01 (urn:tva:metadata:HowRelatedCS:2005)
+      Term id: 0x0456 (1110), group id: 0x0001 (1)
+      Precedence: 2
+      DVB binary locator:
+        Identifier type: 0x3 (Event identifier is a TVA_id carried in PES)
+        Scheduled time reliability: true, inline service: false
+        Start date: 32 (2024/02/02)
+        DVB service triplet id: 100
+        Start time: 7200 x 2s (04:00:00)
+        Duration: 20 x 2s (00:00:40)
+        TVA id: 0x7896 (30870)
+        Component tag: 0x12 (18)
+      Promotional text #0:
+        Language: foo
+        Text: "text foo"
+      Promotional text #1:
+        Language: bar
+        Text: "text bar"
+      Default icon flag: 1, icon id: 7
+      - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+        Language: l01, Type: 0x01 (clean effects)
+      - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+        Language: l02, Type: 0x02 (hearing impaired)
+    - Link #3
+      Link type: 0x1 (Binary locator only)
+      Related classification: 0x01 (urn:tva:metadata:HowRelatedCS:2005)
+      Term id: 0x0456 (1110), group id: 0x0001 (1)
+      Precedence: 2
+      DVB binary locator:
+        Identifier type: 0x0 (No event identifier field is present)
+        Scheduled time reliability: true, inline service: false
+        Start date: 210 (2024/07/29)
+        DVB service triplet id: 12
+        Start time: 100 x 2s (00:03:20)
+        Duration: 50 x 2s (00:01:40)
+        Early start window: 7, late end window: 12
+      Promotional text #0:
+        Language: foo
+        Text: "text foo"
+      Default icon flag: 1, icon id: 7
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: l10, Type: 0x01 (clean effects)
+    - Descriptor 1: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: l11, Type: 0x02 (hearing impaired)
+    - Descriptor 2: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: l12, Type: 0x03 (visual impaired commentary)
+

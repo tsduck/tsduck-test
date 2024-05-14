@@ -250,3 +250,4 @@ repository. But we now limit their size to 20 MB.
 | 153  | `aes` plugin
 | 154  | Non-regression on event duplication in plugin `eitinject`
 | 155  | `tables` plugin with option `--joint-termination`
+| 156  | SI analysis and conversions: RCT

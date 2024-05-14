@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <RCT version="2" current="true" service_id="0x1234" year_offset="2,023"/>
+  <RCT version="2" current="true" service_id="0x5678" year_offset="2,024">
+    <link link_type="0" how_related_classification_scheme_id="2" term_id="0x0ABC" group_id="0x08" precedence="2" media_uri="http://foo/bar" default_icon_flag="true" icon_id="2">
+      <promotional_text language_code="foo" text="text foo"/>
+      <promotional_text language_code="bar" text="text bar"/>
+      <ISO_639_language_descriptor>
+        <language code="l01" audio_type="0x01"/>
+      </ISO_639_language_descriptor>
+      <ISO_639_language_descriptor>
+        <language code="l02" audio_type="0x02"/>
+      </ISO_639_language_descriptor>
+    </link>
+    <link link_type="1" how_related_classification_scheme_id="3" term_id="0x0123" group_id="0x04" precedence="12" default_icon_flag="false" icon_id="6">
+      <dvb_binary_locator identifier_type="1" scheduled_time_reliability="false" inline_service="true" start_date="10" transport_stream_id="0x1234" original_network_id="0x5678" service_id="0x9ABC" start_time="3,600" duration="1,000" event_id="0x789A"/>
+    </link>
+    <link link_type="1" how_related_classification_scheme_id="1" term_id="0x0456" group_id="0x01" precedence="2" default_icon_flag="true" icon_id="7">
+      <dvb_binary_locator identifier_type="3" scheduled_time_reliability="true" inline_service="false" start_date="32" dvb_service_triplet_id="100" start_time="7,200" duration="20" TVA_id="0x7896" component_tag="0x12"/>
+      <promotional_text language_code="foo" text="text foo"/>
+      <promotional_text language_code="bar" text="text bar"/>
+      <ISO_639_language_descriptor>
+        <language code="l01" audio_type="0x01"/>
+      </ISO_639_language_descriptor>
+      <ISO_639_language_descriptor>
+        <language code="l02" audio_type="0x02"/>
+      </ISO_639_language_descriptor>
+    </link>
+    <link link_type="1" how_related_classification_scheme_id="1" term_id="0x0456" group_id="0x01" precedence="2" default_icon_flag="true" icon_id="7">
+      <dvb_binary_locator identifier_type="0" scheduled_time_reliability="true" inline_service="false" start_date="210" dvb_service_triplet_id="12" start_time="100" duration="50" early_start_window="7" late_end_window="12"/>
+      <promotional_text language_code="foo" text="text foo"/>
+    </link>
+    <ISO_639_language_descriptor>
+      <language code="l10" audio_type="0x01"/>
+    </ISO_639_language_descriptor>
+    <ISO_639_language_descriptor>
+      <language code="l11" audio_type="0x02"/>
+    </ISO_639_language_descriptor>
+    <ISO_639_language_descriptor>
+      <language code="l12" audio_type="0x03"/>
+    </ISO_639_language_descriptor>
+  </RCT>
+</tsduck>
