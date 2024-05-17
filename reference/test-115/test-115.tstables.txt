@@ -428,18 +428,18 @@
   - Section 0:
     Network Id: 0x0000 (0)
     Network information:
-    - Descriptor 0: Extension Descriptor (0x7F, 127), 10 bytes
-      Extended descriptor: Service Prominence (0x22, 34)
-      private data (8 bytes): 00 11 22 33 44 55 66 77
-    - Descriptor 1: Extension Descriptor (0x7F, 127), 32 bytes
+    - Descriptor 0: Extension Descriptor (0x7F, 127), 32 bytes
       Extended descriptor: Service Prominence (0x22, 34)
       SOGI flag: false, priority: 12, service id: 1234
       SOGI flag: true, priority: 0, service id: 2345
-      Country: FRA
-      Country: GBR, primary region: 17
-      Primary region: 1, secondary region: 2
-      Primary region: 11, secondary region: 12, tertiary region: 13
+       Country: FRA
+       Country: GBR, primary region: 17
+       Primary region: 1, secondary region: 2
+       Primary region: 11, secondary region: 12, tertiary region: 13
       private data (4 bytes): DE AD BE EF
+    - Descriptor 1: Extension Descriptor (0x7F, 127), 10 bytes
+      Extended descriptor: Service Prominence (0x22, 34)
+      private data (8 bytes): 00 11 22 33 44 55 66 77
     - Descriptor 2: Extension Descriptor (0x7F, 127), 19 bytes
       Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
       Delivery sytsem id: 0x00123456, S2Xv2 mode: S2X (0x1), Roll-off factor: 0.20
@@ -479,7 +479,7 @@
     - Descriptor 0: Extension Descriptor (0x7F, 127), 13 bytes
       Extended descriptor: Service Prominence (0x22, 34)
       SOGI flag: false, priority: 14, service id: 2345
-      Country: GBR, primary region: 1, secondary region: 2
+       Country: GBR, primary region: 1, secondary region: 2
 
 * Resolution Provider Notification, TID 0x79 (121), PID 0x00C8 (200)
   Version: 9, sections: 1, total size: 106 bytes

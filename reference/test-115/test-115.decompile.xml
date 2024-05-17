@@ -310,11 +310,6 @@
   </PMT>
   <NIT version="0" current="true" network_id="0x0000" actual="true">
     <service_prominence_descriptor>
-      <private_data>
-        00 11 22 33 44 55 66 77
-      </private_data>
-    </service_prominence_descriptor>
-    <service_prominence_descriptor>
       <sogi SOGI_flag="false" SOGI_priority="12" service_id="1,234"/>
       <sogi SOGI_flag="true" SOGI_priority="0" service_id="2,345">
         <target_region country_code="FRA"/>
@@ -324,6 +319,11 @@
       </sogi>
       <private_data>
         DE AD BE EF
+      </private_data>
+    </service_prominence_descriptor>
+    <service_prominence_descriptor>
+      <private_data>
+        00 11 22 33 44 55 66 77
       </private_data>
     </service_prominence_descriptor>
     <S2Xv2_satellite_delivery_system_descriptor delivery_system_id="0x00123456" S2Xv2_mode="1" roll_off="0.20" NCR_version="0" channel_bond="0" polarization="horizontal" TS_GS_S2X_mode="1" receiver_profiles="0x09" satellite_id="0x00065432" frequency="34,567,890,000" symbol_rate="123,456,700"/>
