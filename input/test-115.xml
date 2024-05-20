@@ -21,6 +21,15 @@
         transfer_characteristics="14"
         matrix_coefficients="8"/>
 
+    <!-- Required for CUVV_video_stream_descriptor (UWA)--> 
+	<private_data_specifier_descriptor private_data_specifier="cuvv"/>
+	
+    <registration_descriptor format_identifier="0x63757676"/>
+	
+	<CUVV_video_stream_descriptor
+		cuvv_tag="0x63757676" cuva_version_map="0x0005" 
+		terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>
+
 	<!-- Required for AV1_video_descriptor --> 
     <private_data_specifier_descriptor private_data_specifier="aom"/>
 
@@ -521,12 +530,12 @@
 				<Substream offset="79"/>
 				<Substream offset="89"/>
 			</Pattern>
-		</SubRegionLayout>
+		</SubregionLayout>
 		<SubregionLayout PreambleSubstreamID="126" Level="10" PictureSizeHor="1280" PictureSizeVer="720">
 			<Pattern>
 				<Substream offset="-1"/>
 			</Pattern>
-		</SubRegionLayout>
+		</SubregionLayout>
 		
 	</HEVC_subregion_descriptor>
 
