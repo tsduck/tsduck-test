@@ -450,6 +450,7 @@
   - Descriptor 2: Extension Descriptor (0x7F, 127), 19 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x00123456, S2Xv2 mode: S2X (0x1), Roll-off factor: 0.20
+    NCR reference: The first symbol of the Start Of Frame field of the relevant DVB-S2(X) physical layer frame (0x0)
     NCR version: NCR (0x0), channel bond: Not part of a channel bond (0x0), polarization: linear - horizontal (0x0)
     TS/GS S2X mode: 1 (GSE)
     Receiver profiles: 0x09, broadcast services, professional services
@@ -458,6 +459,7 @@
   - Descriptor 3: Extension Descriptor (0x7F, 127), 28 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x00234567, S2Xv2 mode: S2X + time slicing (0x2), Roll-off factor: 0.05
+    NCR reference: The first symbol of the Start Of Frame field of the relevant DVB-S2(X) physical layer frame (0x0)
     NCR version: NCR_v2 (0x1), channel bond: Channel bond master (0x1), polarization: circular - left (0x2)
     TS/GS S2X mode: 2 (GSE high efficiency mode)
     Receiver profiles: 0x02, interactive services
@@ -467,6 +469,7 @@
   - Descriptor 4: Extension Descriptor (0x7F, 127), 32 bytes
     Extended descriptor: S2Xv2 Satellite Delivery System (0x24, 36)
     Delivery sytsem id: 0x11223344, S2Xv2 mode: S2X superframe (Annex E) + timeslicing (Annex M) (0x5), Roll-off factor: 0.35
+    NCR reference: The first symbol of the Start Of Superframe (SOSF) field of the DVB-S2X Annex E superframe (0x1)
     NCR version: NCR (0x0), channel bond: Channel bond secondary (0x2), polarization: circular - left (0x2)
     TS/GS S2X mode: 2 (GSE high efficiency mode)
     Receiver profiles: 0x02, interactive services
@@ -474,6 +477,7 @@
     Multiple input stream: no, timeslice number: 248
     SOSF WH sequence: 17, reference scrambling index: 32768, SFFI: 7
     Payload scrambling index: 13398, beamhopping time plan selector: 4294967294, superframe pilots WH sequence number: 30
+    Postamble PLI: L=360 symbols (0x5)
   - Descriptor 5: Default Authority (0x73, 115), 9 bytes
     Default authority:  74 73 64 75 63 6B 2E 69 6F
       fqdn: "tsduck.io"
