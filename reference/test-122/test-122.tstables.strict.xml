@@ -69,4 +69,60 @@
       </beamhopping_timeplan>
     </beamhopping_timeplan_info>
   </SAT>
+  <SAT version="1" current="true" satellite_table_id="4" table_count="0">
+    <metadata PID="200"/>
+    <satellite_position_v3_info oem_version_major="0" oem_version_minor="0">
+      <creation_date year="24" day="152" day_fraction="0.550000"/>
+    </satellite_position_v3_info>
+  </SAT>
+  <SAT version="1" current="true" satellite_table_id="4" table_count="1">
+    <metadata PID="200"/>
+    <satellite_position_v3_info oem_version_major="15" oem_version_minor="0">
+      <creation_date year="20" day="1" day_fraction="0.570000"/>
+      <v3_satellite satellite_id="0x00010101">
+        <ephemeris_data ephemeris_x="17.122999" ephemeris_y="546.229980" ephemeris_z="0.000000" ephemeris_x_dot="32.171001" ephemeris_y_dot="23.645000" ephemeris_z_dot="1000.000000" ephemeris_x_ddot="1.000000" ephemeris_y_ddot="1.000000" ephemeris_z_ddot="1.000000">
+          <epoch year="0" day="1" day_fraction="0.000000"/>
+        </ephemeris_data>
+        <ephemeris_data ephemeris_x="1000.000000" ephemeris_y="1000.000000" ephemeris_z="1000.000000" ephemeris_x_dot="1.000000" ephemeris_y_dot="1.000000" ephemeris_z_dot="1.000000" ephemeris_x_ddot="0.250000" ephemeris_y_ddot="0.500000" ephemeris_z_ddot="0.000000">
+          <epoch year="99" day="365" day_fraction="0.999900"/>
+        </ephemeris_data>
+      </v3_satellite>
+    </satellite_position_v3_info>
+  </SAT>
+  <SAT version="1" current="true" satellite_table_id="4" table_count="2">
+    <metadata PID="200"/>
+    <satellite_position_v3_info oem_version_major="0" oem_version_minor="0">
+      <creation_date year="24" day="152" day_fraction="0.550000"/>
+      <v3_satellite satellite_id="0x00FEFEFE" interpolation_type="Hermite" interpolation_degree="4">
+        <total_start_time year="0" day="12" day_fraction="0.500000"/>
+        <total_stop_time year="0" day="12" day_fraction="0.760000"/>
+        <usable_start_time year="0" day="12" day_fraction="0.520000"/>
+        <usable_stop_time year="0" day="12" day_fraction="0.750000"/>
+        <covariance>
+          <epoch year="0" day="1" day_fraction="0.000000"/>
+          <element>1.1</element>
+          <element>2.2</element>
+          <element>3.3</element>
+          <element>4.4</element>
+          <element>10.01</element>
+          <element>11.011</element>
+          <element>12.00012</element>
+          <element>13.00013</element>
+          <element>1000</element>
+          <element>1000</element>
+          <element>1000</element>
+          <element>999.999939</element>
+          <element>0</element>
+          <element>1000</element>
+          <element>1.0e+6</element>
+          <element>1.0e+9</element>
+          <element>1234.567871</element>
+          <element>1234.567871</element>
+          <element>1234.567871</element>
+          <element>1234.567871</element>
+          <element>1.0e-6</element>
+        </covariance>
+      </v3_satellite>
+    </satellite_position_v3_info>
+  </SAT>
 </tsduck>

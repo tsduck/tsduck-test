@@ -43,3 +43,33 @@
     Grid size: base=4369 ext=17 NCR(1310717), revisit duration: base=8738 ext=34 NCR(2621434)
     Sleep time: base=13107 ext=51 NCR(3932151), sleep duration: base=17476 ext=68 NCR(5242868)
 
+* SAT (Satellite Access), TID 0x4D (77)
+  Section: 0 (last: 0), version: 1, size: 20 bytes
+  OEM Version: major=0, minor=0, creation date: (year=24, day=152, fraction=0.55)
+
+* SAT (Satellite Access), TID 0x4D (77)
+  Section: 0 (last: 0), version: 1, size: 112 bytes
+  OEM Version: major=15, minor=0, creation date: (year=20, day=1, fraction=0.57)
+  Satellite [0] id: 0x010101
+   Ephemeris data [0] epoch: (year=0, day=1, fraction=0)
+  Position x: 17.122999, y: 546.229980, z: 0.000000, Velocity x: 32.171001, y: 23.645000, z: 1000.000000
+  Acceleration x: 1.000000, y: 1.000000, z: 1.000000 
+   Ephemeris data [1] epoch: (year=99, day=365, fraction=0.9999)
+  Position x: 1000.000000, y: 1000.000000, z: 1000.000000, Velocity x: 1.000000, y: 1.000000, z: 1.000000
+  Acceleration x: 0.250000, y: 0.500000, z: 0.000000 
+
+* SAT (Satellite Access), TID 0x4D (77)
+  Section: 0 (last: 0), version: 1, size: 146 bytes
+  OEM Version: major=0, minor=0, creation date: (year=24, day=152, fraction=0.55)
+  Satellite [0] id: 0xFEFEFE
+   Total start: (year=0, day=12, fraction=0.5), total stop: (year=0, day=12, fraction=0.76)
+   Interpolation: true, type: Hermite, degree: 4
+   Usable start time: (year=0, day=12, fraction=0.52), usable end time: (year=0, day=12, fraction=0.75)
+   Covariance epoch: (year=0, day=1, fraction=0)
+   Covariance matrix: 1.1         0           0           0           0           0          
+                      2.2         3.3         0           0           0           0          
+                      4.4         10.01       11.011      0           0           0          
+                      12.00012    13.00013    1000        1000        0           0          
+                      1000        999.999939  0           1000        1.0e+6      0          
+                      1.0e+9      1234.567871 1234.567871 1234.567871 1234.567871 1.0e-6     
+
