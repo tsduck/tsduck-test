@@ -181,18 +181,18 @@
         mpegh_3da_profile_level_indication="15"
         interactivity_enabled="true"
         reference_channel_layout="7">
-      <CompatibleSetIndication>
+      <compatibleSetIndication>
         01 02 03 04 05 11
-      </CompatibleSetIndication>
+      </compatibleSetIndication>
     </MPEGH_3D_audio_descriptor>
 
     <MPEGH_3D_audio_descriptor
         mpegh_3da_profile_level_indication="5"
         interactivity_enabled="false"
         reference_channel_layout="10">
-      <CompatibleSetIndication>
+      <compatibleSetIndication>
         01 12 14
-      </CompatibleSetIndication>
+      </compatibleSetIndication>
       <reserved>
         456789
       </reserved>
@@ -227,13 +227,13 @@
 	
 	<MPEGH_3D_audio_scene_descriptor sceneID="126">
 		<PresetGroup groupPresetID="5" groupPresetKind="2">
-			<PresetConditions groupPresetGroupID="6"/>
-			<PresetConditions groupPresetGroupID="7" groupPresetDisableGainInteractivity="true"  groupPresetDisablePositionInteractivity="false"/>
-			<PresetConditions groupPresetGroupID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false"
+			<PresetConditions groupPresetReferenceID="6"/>
+			<PresetConditions groupPresetReferenceID="7" groupPresetDisableGainInteractivity="true"  groupPresetDisablePositionInteractivity="false"/>
+			<PresetConditions groupPresetReferenceID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false"
 			  groupPresetGain="237"/>
-			<PresetConditions groupPresetGroupID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true"
+			<PresetConditions groupPresetReferenceID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true"
 			  groupPresetAzOffset="167" groupPresetElOffset="56" groupPresetDistFactor="9"/>
-			<PresetConditions groupPresetGroupID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true"
+			<PresetConditions groupPresetReferenceID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true"
 			  groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
 		</PresetGroup>
 		

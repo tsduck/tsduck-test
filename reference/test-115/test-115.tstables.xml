@@ -49,14 +49,14 @@
       </reserved>
     </MPEGH_3D_audio_descriptor>
     <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0x0F" interactivity_enabled="true" reference_channel_layout="0x07">
-      <CompatibleSetIndication>
+      <compatibleSetIndication>
         01 02 03 04 05 11
-      </CompatibleSetIndication>
+      </compatibleSetIndication>
     </MPEGH_3D_audio_descriptor>
     <MPEGH_3D_audio_descriptor mpegh_3da_profile_level_indication="0x05" interactivity_enabled="false" reference_channel_layout="0x0A">
-      <CompatibleSetIndication>
+      <compatibleSetIndication>
         01 12 14
-      </CompatibleSetIndication>
+      </compatibleSetIndication>
       <reserved>
         45 67 89
       </reserved>
@@ -89,11 +89,11 @@
     </MPEGH_3D_audio_scene_descriptor>
     <MPEGH_3D_audio_scene_descriptor sceneID="126">
       <PresetGroup groupPresetID="5" groupPresetKind="2">
-        <PresetConditions groupPresetGroupID="6"/>
-        <PresetConditions groupPresetGroupID="7" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="false"/>
-        <PresetConditions groupPresetGroupID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false" groupPresetGain="237"/>
-        <PresetConditions groupPresetGroupID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true" groupPresetAzOffset="167" groupPresetElOffset="56" groupPresetDistFactor="9"/>
-        <PresetConditions groupPresetGroupID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true" groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
+        <PresetConditions groupPresetReferenceID="6"/>
+        <PresetConditions groupPresetReferenceID="7" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="false"/>
+        <PresetConditions groupPresetReferenceID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false" groupPresetGain="237"/>
+        <PresetConditions groupPresetReferenceID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true" groupPresetAzOffset="167" groupPresetElOffset="56" groupPresetDistFactor="9"/>
+        <PresetConditions groupPresetReferenceID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true" groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
       </PresetGroup>
     </MPEGH_3D_audio_scene_descriptor>
     <TTML_subtitling_descriptor ISO_639_language_code="foo" subtitle_purpose="2" TTS_suitability="1" reserved_zero_future_count="0"/>
