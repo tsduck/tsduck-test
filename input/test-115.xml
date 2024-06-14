@@ -583,6 +583,35 @@
 			MaxCLL="1000"
 			MaxFALL="999"/>
 	</JPEG_XS_video_descriptor>
+
+	<auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x1b">
+		<si_message payload_type="0x253">
+			 <reserved_si_message>aa bb cc</reserved_si_message>
+		</si_message>
+		<si_message payload_type="0x00">
+			<generic_params aux_is_interlaced="false" position_offset_h="45" position_offset_v="234"/>
+			<depth_params kfar_numerator="18" knear_numerator="37"/>
+		</si_message>
+				<si_message payload_type="0x01">
+			<generic_params  aux_is_bottom_field="true" position_offset_h="255" position_offset_v="0"/>
+			<parallax_params parallax_zero="0" parallax_scale="0" dref="0" wref="0"/>
+		</si_message>
+	</auxiliary_video_stream_descriptor>
+
+	<auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x32">
+		<si_message payload_type="0x00">
+			<generic_params aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+			<depth_params kfar_numerator="127" knear_numerator="128"/>
+		</si_message>
+		<si_message payload_type="0x01">
+			<generic_params  aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+			<parallax_params parallax_zero="36463" parallax_scale="849" dref="1010" wref="2020"/>
+		</si_message>
+		<si_message payload_type="0x1001">
+			<reserved_si_message>98 76 54 32 10</reserved_si_message>
+		</si_message>
+	</auxiliary_video_stream_descriptor>
+
   </PMT>
 
   <NIT network_id="0">

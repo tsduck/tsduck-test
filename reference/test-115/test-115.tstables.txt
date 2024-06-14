@@ -1,6 +1,6 @@
 
 * PMT, TID 0x02 (2), PID 0x00C8 (200)
-  Version: 0, sections: 2, total size: 1146 bytes
+  Version: 0, sections: 2, total size: 1222 bytes
   - Section 0:
     Program: 0x0000 (0), PCR PID: none
     Program information:
@@ -429,6 +429,26 @@
         Chromaticity coordinates (white point) X: 45, Y: 54
         Luminance max: 145263, min: 0
         Max Content Light Level: 1000, Max Frame Average Light Level: 999
+    - Descriptor 3: Auxiliary Video Stream (0x2F, 47), 28 bytes
+      Auxiliary video coded stream type: 0x1b
+      SI Message, type: 0x00000253, size: 3
+       Reserved SI message (3 bytes): AA BB CC
+      SI Message, type: 0x00000000, size: 5
+       Interlaced: false, position offset h: 45, v: 234
+       kfar: 1.12500 (numerator=18), knear: 2.31250 (numerator=37)
+      SI Message, type: 0x00000001, size: 11
+       Bottom field: true, position offset h: 255, v: 0
+       Parallax zero: 0, scale: 0, wref: 0cm, dref: 0cm
+    - Descriptor 4: Auxiliary Video Stream (0x2F, 47), 44 bytes
+      Auxiliary video coded stream type: 0x32
+      SI Message, type: 0x00000000, size: 5
+       Bottom field: true, position offset h: 0, v: 255
+       kfar: 7.93750 (numerator=127), knear: 8.00000 (numerator=128)
+      SI Message, type: 0x00000001, size: 11
+       Bottom field: true, position offset h: 0, v: 255
+       Parallax zero: 36463, scale: 849, wref: 1010cm, dref: 2020cm
+      SI Message, type: 0x00001001, size: 5
+       Reserved SI message (5 bytes): 98 76 54 32 10
 
 * NIT Actual, TID 0x40 (64), PID 0x00C8 (200)
   Version: 0, sections: 1, total size: 158 bytes

@@ -311,6 +311,36 @@
     <JPEG_XS_video_descriptor descriptor_version="0" horizontal_size="1,920" vertical_size="1,080" brat="1,234" interlace_mode="2" framerate_DEN="1" framerate_NUM="120" sample_bitdepth="11" sampling_structure="6" Ppih="0xC340" level="0x38" sublevel="0x80" max_buffer_size="143" buffer_model_type="2" colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4" video_full_range_flag="true" still_mode="false">
       <mdm X_c0="810" Y_c0="145" X_c1="1,810" Y_c1="1,145" X_c2="970" Y_c2="1,217" X_wp="45" Y_wp="54" L_max="145,263" L_min="0" MaxCLL="1,000" MaxFALL="999"/>
     </JPEG_XS_video_descriptor>
+    <auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x1B">
+      <si_message payload_type="0x00000253">
+        <reserved_si_message>
+          AA BB CC
+        </reserved_si_message>
+      </si_message>
+      <si_message payload_type="0x00000000">
+        <generic_params aux_is_interlaced="false" position_offset_h="45" position_offset_v="234"/>
+        <depth_params kfar_numerator="18" knear_numerator="37"/>
+      </si_message>
+      <si_message payload_type="0x00000001">
+        <generic_params aux_is_bottom_field="true" position_offset_h="255" position_offset_v="0"/>
+        <parallax_params parallax_zero="0" parallax_scale="0" dref="0" wref="0"/>
+      </si_message>
+    </auxiliary_video_stream_descriptor>
+    <auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x32">
+      <si_message payload_type="0x00000000">
+        <generic_params aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+        <depth_params kfar_numerator="127" knear_numerator="128"/>
+      </si_message>
+      <si_message payload_type="0x00000001">
+        <generic_params aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+        <parallax_params parallax_zero="36,463" parallax_scale="849" dref="1,010" wref="2,020"/>
+      </si_message>
+      <si_message payload_type="0x00001001">
+        <reserved_si_message>
+          98 76 54 32 10
+        </reserved_si_message>
+      </si_message>
+    </auxiliary_video_stream_descriptor>
   </PMT>
   <NIT version="0" current="true" network_id="0x0000" actual="true">
     <metadata PID="200"/>

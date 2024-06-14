@@ -1365,6 +1365,114 @@
         "transfer_characteristics": "11",
         "vertical_size": 1080,
         "video_full_range_flag": true
+      },
+      {
+        "#name": "auxiliary_video_stream_descriptor",
+        "#nodes": [
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "reserved_si_message",
+                "#nodes": [
+                  "AA BB CC"
+                ]
+              }
+            ],
+            "payload_type": 595
+          },
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "generic_params",
+                "aux_is_interlaced": false,
+                "position_offset_h": 45,
+                "position_offset_v": 234
+              },
+              {
+                "#name": "depth_params",
+                "kfar_numerator": 18,
+                "knear_numerator": 37
+              }
+            ],
+            "payload_type": 0
+          },
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "generic_params",
+                "aux_is_bottom_field": true,
+                "position_offset_h": 255,
+                "position_offset_v": 0
+              },
+              {
+                "#name": "parallax_params",
+                "dref": 0,
+                "parallax_scale": 0,
+                "parallax_zero": 0,
+                "wref": 0
+              }
+            ],
+            "payload_type": 1
+          }
+        ],
+        "aux_video_codedstreamtype": 27
+      },
+      {
+        "#name": "auxiliary_video_stream_descriptor",
+        "#nodes": [
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "generic_params",
+                "aux_is_bottom_field": true,
+                "position_offset_h": 0,
+                "position_offset_v": 255
+              },
+              {
+                "#name": "depth_params",
+                "kfar_numerator": 127,
+                "knear_numerator": 128
+              }
+            ],
+            "payload_type": 0
+          },
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "generic_params",
+                "aux_is_bottom_field": true,
+                "position_offset_h": 0,
+                "position_offset_v": 255
+              },
+              {
+                "#name": "parallax_params",
+                "dref": 1010,
+                "parallax_scale": 849,
+                "parallax_zero": 36463,
+                "wref": 2020
+              }
+            ],
+            "payload_type": 1
+          },
+          {
+            "#name": "si_message",
+            "#nodes": [
+              {
+                "#name": "reserved_si_message",
+                "#nodes": [
+                  "98 76 54 32 10"
+                ]
+              }
+            ],
+            "payload_type": 4097
+          }
+        ],
+        "aux_video_codedstreamtype": 50
       }
     ],
     "current": true,
