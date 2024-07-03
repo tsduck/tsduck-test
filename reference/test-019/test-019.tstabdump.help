@@ -120,7 +120,7 @@ Options:
       Do not include explicit leap seconds in some UTC computations. Currently,
       this applies to SCTE 35 splice_schedule() commands only.
 
-  --ip-udp [address:]port
+  --ip-udp [[source@]address:]port
       The [address:]port describes the destination of UDP packets to receive.
       The 'port' part is mandatory and specifies the UDP port to listen on. The
       'address' part is optional. It specifies an IP multicast address to
@@ -200,7 +200,7 @@ Options:
   --safeaccess
       Equivalent to --default-cas-id 0x4ADC.
 
-  --source address[:port]
+  --source ip-address[:port]
       Filter UDP packets based on the specified source address. This option is
       useful when several sources send packets to the same destination address
       and port. Accepting all packets could result in a corrupted stream and

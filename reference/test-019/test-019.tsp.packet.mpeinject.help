@@ -65,7 +65,7 @@ Options:
       Specify the maximum number of queued UDP datagrams before their insertion
       into the MPE stream. The default is 32.
 
-  --new-destination address[:port]
+  --new-destination ip-address[:port]
       Change the destination IP address and UDP port in MPE sections. If the
       port is not specified, the original destination port from the UDP
       datagram is used. By default, the destination address is not modified.
@@ -74,7 +74,7 @@ Options:
       same order. It there are less --new-destination options than receivers,
       the last --new-destination applies for all remaining receivers.
 
-  --new-source address[:port]
+  --new-source ip-address[:port]
       Change the source IP address and UDP port in MPE sections. If the port is
       not specified, the original source port from the UDP datagram is used. By
       default, the source address is not modified.
@@ -119,15 +119,15 @@ Options:
       Set the reuse port socket option. This is now enabled by default, the
       option is present for legacy only.
 
-  -s address[:port]
-  --source address[:port]
+  -s ip-address[:port]
+  --source ip-address[:port]
       Filter UDP packets based on the specified source address. This option is
       useful when several sources send packets to the same destination address
       and port. Accepting all packets could result in a corrupted stream and
       only one sender shall be accepted. Options --first-source and --source
       are mutually exclusive.
       If several [address:]port parameters are specified, several --source
-      options can be specified, one for each receiver, in the same order. It
+      options can be specified, one for each receiver, in the same order. If
       there are less --source options than receivers, the last --source applies
       for all remaining receivers.
 
