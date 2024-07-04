@@ -93,35 +93,69 @@ INT3="<?xml version='1.0' encoding='UTF-8'?>
 
 # Multicast is a strange beast.
 # Distinct operating systems require distinct options.
+# Here, we use localhost to send and receive multicast.
+# This has several consequences:
+# - On macOS, we need --force-local-multicast-outgoing to send.
+# - On Windows, we need to start the receivers before the senders.
+#   Sending packets on localhost without receivers is considered "unreachable".
 
-FORCE=
-[[ $OS == mac ]] && FORCE="--force-local-multicast-outgoing"
+[[ $OS == mac ]] && FORCE="--force-local-multicast-outgoing" || FORCE=""
+
+CONTROL1=9101
+CONTROL2=9102
+CONTROL3=9103
+
+LOCALHOST=127.0.0.1
+
+MC1=239.111.211.111:9201
+MC2=239.112.212.112:9202
+MC4=239.114.214.114:9204
+MC5=239.115.215.115:9205
+
+# Receive T4 and TS5. Save one table and terminate.
+# Because of the multicast limitations on Windows, we need to start them first.
+
+outpids=()
+
+test_tsp \
+    -I ip $MC4 --local-address $LOCALHOST \
+    -P tables --pid 0 --max-tables 1 -o $(fpath "$OUTDIR/$SCRIPT.4.txt") -b $(fpath "$OUTDIR/$SCRIPT.4.bin") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.4.log" 2>&1 &
+outpids+=($!)
+
+test_tsp \
+    -I ip $MC5 --local-address $LOCALHOST \
+    -P tables --pid 0 --max-tables 1 -o $(fpath "$OUTDIR/$SCRIPT.5.txt") -b $(fpath "$OUTDIR/$SCRIPT.5.bin") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.5.log" 2>&1 &
+outpids+=($!)
 
 # Start TS1 and TS2 in the background.
 
-pids=()
+inpids=()
 
-test_tsp --bitrate 100,000 --control-port 9101 --control-source 127.0.0.1 \
+test_tsp --bitrate 100,000 --control-port $CONTROL1 --control-source $LOCALHOST \
     -I null \
     -P regulate --packet-burst 14 \
     -P inject "$PAT1" --pid 0 --bitrate 15000 --stuffing \
-    -O ip 239.111.111.111:9201 --enforce-burst --local-address 127.0.0.1 $FORCE \
+    -O ip $MC1 --enforce-burst --local-address $LOCALHOST $FORCE \
     >"$OUTDIR/$SCRIPT.1.log" 2>&1 &
-pids+=($!)
+inpids+=($!)
 
-test_tsp --bitrate 100,000 --control-port 9102 --control-source 127.0.0.1 \
+test_tsp --bitrate 100,000 --control-port $CONTROL2 --control-source $LOCALHOST \
     -I null \
     -P regulate --packet-burst 14 \
     -P inject "$PAT2" --pid 0 --bitrate 15000 --stuffing \
-    -O ip 239.112.112.112:9202 --enforce-burst --local-address 127.0.0.1 $FORCE \
+    -O ip $MC2 --enforce-burst --local-address $LOCALHOST $FORCE \
     >"$OUTDIR/$SCRIPT.2.log" 2>&1 &
-pids+=($!)
+inpids+=($!)
 
 # Start T3 in the background.
 # Encapsulate TS1 and TS2 in MPE PID and rename their redistination for TS4 and TS5.
 # Extract TS4 and TS5 from MPE PID and forward them over UDP.
 
-test_tsp --bitrate 500,000 --control-port 9103 --control-source 127.0.0.1 \
+test_tsp --bitrate 500,000 --control-port $CONTROL3 --control-source $LOCALHOST \
     -I null \
     -P regulate \
     -P inject "$PAT3" --pid 0 --bitrate 15000 \
@@ -129,34 +163,21 @@ test_tsp --bitrate 500,000 --control-port 9103 --control-source 127.0.0.1 \
     -P inject "$PMT3_INT" --pid 300 --bitrate 15000 \
     -P inject "$INT3" --pid 301 --bitrate 15000 \
     -P inject "$PMT3_MPE" --pid 310 --bitrate 15000 \
-    -P mpeinject --pid 311 --max-queue 512 --local-address 127.0.0.1 \
-        239.111.111.111:9201 --new-destination 239.114.114.114:9204 \
-        239.112.112.112:9202 --new-destination 239.115.115.115:9205 \
-    -P mpe --udp-forward --local-address 127.0.0.1 \
+    -P mpeinject --pid 311 --max-queue 512 --local-address $LOCALHOST \
+        $MC1 --new-destination $MC4 \
+        $MC2 --new-destination $MC5 \
+    -P mpe --udp-forward --local-address $LOCALHOST \
     -O drop \
     >"$OUTDIR/$SCRIPT.3.log" 2>&1 &
-pids+=($!)
-
-# Receive T4 and TS5. Save one table and terminate.
-
-test_tsp \
-    -I ip 239.114.114.114:9204 --local-address 127.0.0.1 \
-    -P tables --pid 0 --max-tables 1 -o $(fpath "$OUTDIR/$SCRIPT.4.txt") -b $(fpath "$OUTDIR/$SCRIPT.4.bin") \
-    -O drop \
-    >"$OUTDIR/$SCRIPT.4.log" 2>&1
-
-test_tsp \
-    -I ip 239.115.115.115:9205 --local-address 127.0.0.1 \
-    -P tables --pid 0 --max-tables 1 -o $(fpath "$OUTDIR/$SCRIPT.5.txt") -b $(fpath "$OUTDIR/$SCRIPT.5.bin") \
-    -O drop \
-    >"$OUTDIR/$SCRIPT.5.log" 2>&1
+inpids+=($!)
 
 # Terminate all background process and synchronously wait for them.
 
-$(tspath tspcontrol) -t 9101 exit >"$OUTDIR/$SCRIPT.exit.1.log" 2>&1
-$(tspath tspcontrol) -t 9102 exit >"$OUTDIR/$SCRIPT.exit.2.log" 2>&1
-$(tspath tspcontrol) -t 9103 exit >"$OUTDIR/$SCRIPT.exit.3.log" 2>&1
-wait ${pids[*]}
+wait ${outpids[*]}
+$(tspath tspcontrol) -t $CONTROL1 exit >"$OUTDIR/$SCRIPT.exit.1.log" 2>&1
+$(tspath tspcontrol) -t $CONTROL2 exit >"$OUTDIR/$SCRIPT.exit.2.log" 2>&1
+$(tspath tspcontrol) -t $CONTROL3 exit >"$OUTDIR/$SCRIPT.exit.3.log" 2>&1
+wait ${inpids[*]}
 
 test_text $SCRIPT.1.log
 test_text $SCRIPT.2.log
