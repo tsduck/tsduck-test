@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Test plugin mpeinject with multiple UDP streams.
 
+source $(dirname $0)/../../common/testrc.sh
 cd $(dirname "$0")
-source ../../common/testrc.sh
 
 # Service plan:
 # - service 700: INT
