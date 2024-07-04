@@ -91,6 +91,12 @@ INT3="<?xml version='1.0' encoding='UTF-8'?>
   </INT>
 </tsduck>"
 
+# Multicast is a strange beast.
+# Distinct operating systems require distinct options.
+
+FORCE=
+[[ $OS == mac ]] && FORCE="--force-local-multicast-outgoing"
+
 # Start TS1 and TS2 in the background.
 
 pids=()
@@ -99,7 +105,7 @@ test_tsp --bitrate 100,000 --control-port 9101 --control-source 127.0.0.1 \
     -I null \
     -P regulate --packet-burst 14 \
     -P inject "$PAT1" --pid 0 --bitrate 15000 --stuffing \
-    -O ip 239.111.111.111:9201 --enforce-burst --local-address 127.0.0.1 \
+    -O ip 239.111.111.111:9201 --enforce-burst --local-address 127.0.0.1 $FORCE \
     >"$OUTDIR/$SCRIPT.1.log" 2>&1 &
 pids+=($!)
 
@@ -107,7 +113,7 @@ test_tsp --bitrate 100,000 --control-port 9102 --control-source 127.0.0.1 \
     -I null \
     -P regulate --packet-burst 14 \
     -P inject "$PAT2" --pid 0 --bitrate 15000 --stuffing \
-    -O ip 239.112.112.112:9202 --enforce-burst --local-address 127.0.0.1 \
+    -O ip 239.112.112.112:9202 --enforce-burst --local-address 127.0.0.1 $FORCE \
     >"$OUTDIR/$SCRIPT.2.log" 2>&1 &
 pids+=($!)
 
@@ -147,9 +153,9 @@ test_tsp \
 
 # Terminate all background process and synchronously wait for them.
 
-$(tspath tspcontrol) -t 9101 exit
-$(tspath tspcontrol) -t 9102 exit
-$(tspath tspcontrol) -t 9103 exit
+$(tspath tspcontrol) -t 9101 exit >"$OUTDIR/$SCRIPT.exit.1.log" 2>&1
+$(tspath tspcontrol) -t 9102 exit >"$OUTDIR/$SCRIPT.exit.2.log" 2>&1
+$(tspath tspcontrol) -t 9103 exit >"$OUTDIR/$SCRIPT.exit.3.log" 2>&1
 wait ${pids[*]}
 
 test_text $SCRIPT.1.log
@@ -161,3 +167,6 @@ test_bin  $SCRIPT.4.bin
 test_text $SCRIPT.5.log
 test_text $SCRIPT.5.txt
 test_bin  $SCRIPT.5.bin
+test_text $SCRIPT.exit.1.log
+test_text $SCRIPT.exit.2.log
+test_text $SCRIPT.exit.3.log
