@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
-    <private_data_specifier_descriptor private_data_specifier="AVS"/>
+    <private_data_specifier_descriptor private_data_specifier="AVSV"/>
     <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="8" sample_precision="2" chroma_format="1" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="9" transfer_characteristics="14" matrix_coefficients="8"/>
+    <private_data_specifier_descriptor private_data_specifier="AVSA"/>
+    <registration_descriptor format_identifier="0x41565341"/>
+    <AVS3_audio_descriptor sampling_frequency_index="0x08" resolution="-2">
+      <general_coding coding_profile="basic" bitrate_index="0x08" bitstream_type="uniform" channel_number_index="0x04" raw_frame_length="27,230"/>
+    </AVS3_audio_descriptor>
+    <AVS3_audio_descriptor sampling_frequency_index="0x0F" resolution="16 bits">
+      <lossless_coding sampling_frequency="0x0000350B" coding_profile="HOA" channel_number="7"/>
+      <additional_info>
+        FF EE DD CC BB AA 99 88 77 66
+      </additional_info>
+    </AVS3_audio_descriptor>
+    <AVS3_audio_descriptor sampling_frequency_index="0x05" resolution="8 bits">
+      <fullrate_coding nn_type="1" channel_num_index="0x06" total_bitrate="12,345"/>
+    </AVS3_audio_descriptor>
+    <AVS3_audio_descriptor sampling_frequency_index="0x04" resolution="8 bits">
+      <fullrate_coding nn_type="0" hoa_order="0" total_bitrate="1,000"/>
+    </AVS3_audio_descriptor>
+    <AVS3_audio_descriptor sampling_frequency_index="0x02" resolution="16 bits">
+      <fullrate_coding nn_type="0" channel_num_index="0x01" num_objects="5" total_bitrate="50,000"/>
+    </AVS3_audio_descriptor>
+    <AVS2_audio_descriptor num_channels="2" sample_rate_index="0"/>
+    <AVS2_audio_descriptor num_channels="1" sample_rate_index="1">
+      <version_info audio_codec_id="1" coding_profile="object" resolution="24 bits"/>
+      <additional_info>
+        DE AD BE EF 00
+      </additional_info>
+    </AVS2_audio_descriptor>
+    <AVS2_audio_descriptor num_channels="9" sample_rate_index="7" language="eng"/>
+    <AVS2_audio_descriptor num_channels="23" sample_rate_index="10" description="Unheard audio!!" language="zhn">
+      <version_info audio_codec_id="0" coding_profile="basic" resolution="16 bits" bitrate_index="0x04" bitstream_type="variable" raw_frame_length="14,525"/>
+    </AVS2_audio_descriptor>
     <private_data_specifier_descriptor private_data_specifier="cuvv"/>
     <registration_descriptor format_identifier="0x63757676"/>
     <CUVV_video_stream_descriptor cuvv_tag="0x63757676" cuva_version_map="0x0005" terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>

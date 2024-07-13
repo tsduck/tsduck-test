@@ -4,7 +4,7 @@
   <PMT service_id="0">
 
     <!-- Required for AVS3_video_descriptor --> 
-    <private_data_specifier_descriptor private_data_specifier="avs"/>
+    <private_data_specifier_descriptor private_data_specifier="avsv"/>
 
     <AVS3_video_descriptor
         profile_id="50"
@@ -20,6 +20,77 @@
         colour_primaries="9"
         transfer_characteristics="14"
         matrix_coefficients="8"/>
+
+	<!-- Required for AVS3_audio_descriptor and AVS2_audio_descriptor--> 
+	<private_data_specifier_descriptor private_data_specifier="avsa"/>
+
+	<registration_descriptor format_identifier="0x41565341"/>
+		   
+    <AVS3_audio_descriptor
+        sampling_frequency_index="0x8"
+        resolution="24 bits">
+      <general_coding
+          coding_profile="basic"
+          bitrate_index="0x8"
+          bitstream_type="uniform"
+          channel_number_index="4"
+          raw_frame_length="27230">
+      </general_coding>
+    </AVS3_audio_descriptor>
+    
+    <AVS3_audio_descriptor
+        sampling_frequency_index="0xf"
+        resolution="16 bits">
+      <lossless_coding coding_profile="HOA" channel_number="7" sampling_frequency="13579"/>
+      <additional_info>
+        ff ee dd cc bb aa 99 88 77 66
+      </additional_info>
+    </AVS3_audio_descriptor>
+
+    <AVS3_audio_descriptor
+        sampling_frequency_index="0x5" resolution="8 bits">
+      <fullrate_coding nn_type="1" channel_num_index="6" total_bitrate="12345"/>
+    </AVS3_audio_descriptor>
+
+    <AVS3_audio_descriptor
+        sampling_frequency_index="0x4" resolution="8 bits">
+      <fullrate_coding nn_type="0" hoa_order="0" total_bitrate="1000"/>
+    </AVS3_audio_descriptor>
+
+    <AVS3_audio_descriptor
+        sampling_frequency_index="0x2" resolution="16 bits">
+      <fullrate_coding nn_type="0" channel_num_index="1" num_objects="5" total_bitrate="50000"/>
+    </AVS3_audio_descriptor>
+
+    <AVS2_audio_descriptor
+        sample_rate_index="0"
+        num_channels="2"/>
+
+	<AVS2_audio_descriptor
+        sample_rate_index="1"
+        num_channels="1">
+		<version_info
+		    audio_codec_id="1" coding_profile="object" resolution="24 bits"/>
+        <additional_info>
+          DE AD BE EF 00
+        </additional_info>
+    </AVS2_audio_descriptor>	
+
+    <AVS2_audio_descriptor
+        sample_rate_index="7"
+        num_channels="9"
+        language="eng"/>
+
+	  <AVS2_audio_descriptor
+		  sample_rate_index="10"
+		  num_channels="23"
+		  language="zhn"
+		  description="Unheard audio!!">
+		<version_info 
+		    audio_codec_id="0" 
+			coding_profile="basic" resolution="16 bits"
+			bitrate_index="4" bitstream_type="variable" raw_frame_length="14525"/>
+	  </AVS2_audio_descriptor>
 
     <!-- Required for CUVV_video_stream_descriptor (UWA)--> 
 	<private_data_specifier_descriptor private_data_specifier="cuvv"/>
