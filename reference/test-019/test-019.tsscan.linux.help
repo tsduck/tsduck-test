@@ -325,6 +325,12 @@ Options:
       Used for DVB-S2 tuners only. Physical Layer Scrambling (PLS) code value.
       With multistream only. Warning: this option is supported on Linux only.
 
+  --pls-dvbapi
+      Used for DVB-S2 tuners only. Set Physical Layer Scrambling (PLS) (GOLD)
+      code using designated DVB API property instead of the older way to merge
+      into the "stream id". With multistream only. Warning: this option is
+      supported on Linux only.
+
   --pls-mode mode
       Used for DVB-S2 tuners only. Physical Layer Scrambling (PLS) mode. With
       multistream only. The default is ROOT. Warning: this option is supported
