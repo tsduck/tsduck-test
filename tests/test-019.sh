@@ -65,7 +65,9 @@ valid-test()
 for name in ${TOOLS[@]}; do
     if valid-test $name; then
         name=${name/\/*/}
+        $(trace $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help")
         $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help" 2>&1
+        $(trace test_text $SCRIPT.$name.help)
         test_text $SCRIPT.$name.help
     fi
 done
@@ -73,7 +75,9 @@ done
 for name in ${INPUT_PLUGINS[@]}; do
     if valid-test $name; then
         name=${name/\/*/}
+        $(trace $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help")
         $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help" 2>&1
+        $(trace test_text $SCRIPT.tsp.input.$name.help)
         test_text $SCRIPT.tsp.input.$name.help
     fi
 done
@@ -81,7 +85,9 @@ done
 for name in ${OUTPUT_PLUGINS[@]}; do
     if valid-test $name; then
         name=${name/\/*/}
+        $(trace $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help")
         $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help" 2>&1
+        $(trace test_text $SCRIPT.tsp.output.$name.help)
         test_text $SCRIPT.tsp.output.$name.help
     fi
 done
@@ -89,7 +95,9 @@ done
 for name in ${PACKET_PLUGINS[@]}; do
     if valid-test $name; then
         name=${name/\/*/}
+        $(trace $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help")
         $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help" 2>&1
+        $(trace test_text $SCRIPT.tsp.packet.$name.help)
         test_text $SCRIPT.tsp.packet.$name.help
     fi
 done
