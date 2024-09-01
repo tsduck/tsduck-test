@@ -86,6 +86,14 @@ Options:
   --delivery-system value
       Specify which delivery system to use. By default, use the default system
       for the tuner.
+      With --nit-scan, this is the delivery system for the stream which
+      contains the NIT to scan.
+      With --uhf-band and --vhf-band, the option can be specified several
+      times. In that case, the multiple delivery systems are tested in the
+      specified order on each channel. This is typically used to scan
+      terrestrial networks using DVB-T and DVT-T2. Be aware that the scan time
+      is multiplied by the number of specified systems on channels without
+      signal.
       The 'value' must be one of "ATSC", "ATSC-MH", "CMMB", "DAB", "DSS",
       "DTMB", "DVB-C", "DVB-C/A", "DVB-C/B", "DVB-C/C", "DVB-C2", "DVB-H",
       "DVB-S", "DVB-S-Turbo", "DVB-S2", "DVB-T", "DVB-T2", "ISDB-C", "ISDB-S",
