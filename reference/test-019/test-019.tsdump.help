@@ -20,6 +20,9 @@ Options:
   --binary
       Include binary dump in addition to hexadecimal.
 
+  --buffer-size value
+      Specify the UDP socket receive buffer size in bytes (socket option).
+
   --byte-offset value
       Start reading each file at the specified byte offset (default: 0). This
       option is allowed only if all input files are regular files.
@@ -33,6 +36,27 @@ Options:
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
+
+  --default-interface
+      Let the system find the appropriate local interface on which to listen.
+      By default, listen on all local interfaces.
+
+  --disable-multicast-loop
+      Disable multicast loopback. By default, incoming multicast packets are
+      looped back on local interfaces, if an application sends packets to the
+      same group from the same system. This option disables this.
+      Warning: On input sockets, this option is effective only on Windows
+      systems. On Unix systems (Linux, macOS, BSD), this option applies only to
+      output sockets.
+
+  --first-source
+      Filter UDP packets based on the source address. Use the sender address of
+      the first received packet as only allowed source. This option is useful
+      when several sources send packets to the same destination address and
+      port. Accepting all packets could result in a corrupted stream and only
+      one sender shall be accepted. To allow a more precise selection of the
+      sender, use option --source. Options --first-source and --source are
+      mutually exclusive.
 
   -f name
   --format name
@@ -48,6 +72,19 @@ Options:
 
   --help
       Display this help text.
+
+  --ip-udp [[source@]address:]port
+      The [address:]port describes the destination of UDP packets to receive.
+      The 'port' part is mandatory and specifies the UDP port to listen on. The
+      'address' part is optional. It specifies an IP multicast address to
+      listen on. It can be also a host name that translates to a multicast
+      address. An optional source address can be specified as 'source@address:
+      port' in the case of SSM.
+
+  --local-address ip-address
+      Specify the IP address of the local interface on which to listen. It can
+      be also a host name that translates to a local address. By default,
+      listen on all local interfaces.
 
   -l
   --log
@@ -72,6 +109,10 @@ Options:
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
 
+  --no-reuse-port
+      Disable the reuse port socket option. Do not use unless completely
+      necessary.
+
   -o
   --offset
       Include offset from start of packet with hexadecimal dump.
@@ -91,6 +132,27 @@ Options:
   -r
   --raw-file
       Raw dump of file, do not interpret as TS packets.
+
+  --receive-timeout milliseconds
+      Specify the UDP reception timeout in milliseconds. This timeout applies
+      to each receive operation, individually. By default, receive operations
+      wait for data, possibly forever.
+
+  --reuse-port
+      Set the reuse port socket option. This is now enabled by default, the
+      option is present for legacy only.
+
+  --source ip-address[:port]
+      Filter UDP packets based on the specified source address. This option is
+      useful when several sources send packets to the same destination address
+      and port. Accepting all packets could result in a corrupted stream and
+      only one sender shall be accepted. Options --first-source and --source
+      are mutually exclusive.
+
+  --ssm
+      Force the usage of Source-Specific Multicast (SSM) using the source which
+      is specified by the option --source. The --ssm option is implicit when
+      the syntax 'source@address:port' is used.
 
   -v
   --verbose
