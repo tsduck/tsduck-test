@@ -142,10 +142,11 @@ Options:
 
   -i address:port
   --ip-udp address:port
-      Send binary tables over UDP/IP to the specified destination. The
-      'address' specifies an IP address which can be either unicast or
-      multicast. It can be also a host name that translates to an IP address.
-      The 'port' specifies the destination UDP port.
+      Send the tables or individual sections over UDP/IP to the specified
+      destination. The 'address' specifies an IP address which can be either
+      unicast or multicast. It can be also a host name that translates to an IP
+      address. The 'port' specifies the destination UDP port. See also option
+      --udp-format.
 
   --irdeto
       Equivalent to --default-cas-id 0x0600.
@@ -271,7 +272,8 @@ Options:
 
   --no-encapsulation
       With --ip-udp, send the tables as raw binary messages in UDP packets. By
-      default, the tables are formatted into TLV messages.
+      default, the tables are formatted into TLV messages. Ignored if
+      --udp-format is not binary.
 
   --only-invalid-sections
       Same as --invalid-sections but do not display valid tables and sections.
@@ -420,6 +422,12 @@ Options:
       option is either "Unicast TTL" or "Multicast TTL", depending on the
       destination address. Remember that the default Multicast TTL is 1 on most
       systems.
+
+  --udp-format value
+      With --ip-udp, specify the format of sections in the UDP datagrams. The
+      default is binary. With --all-sections or --all-once, the only allowed
+      format is binary.
+      The 'value' must be one of "binary", "JSON", "XML".
 
   --usa
       A synonym for '--atsc'. This is a handy shortcut when working on North
