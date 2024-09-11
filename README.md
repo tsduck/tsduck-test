@@ -254,3 +254,4 @@ repository. But we now limit their size to 20 MB.
 | 157  | Multicast, `ip`, `mpe` and `mpeinject` plugins
 | 158  | Plugin `tables` with `--ip-udp`
 | 159  | Non regression on incorrect use of stdout in `tstabcomp`
+| 160  | Non-regression on incorrect SCTE 35 `program_splice_flag` (issue #1519)
