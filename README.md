@@ -252,4 +252,5 @@ repository. But we now limit their size to 20 MB.
 | 155  | `tables` plugin with option `--joint-termination`
 | 156  | SI analysis and conversions: RCT
 | 157  | Multicast, `ip`, `mpe` and `mpeinject` plugins
-| 158  | Plugin `tables` with `--ip-udp`.
+| 158  | Plugin `tables` with `--ip-udp`
+| 159  | Non regression on incorrect use of stdout in `tstabcomp`
