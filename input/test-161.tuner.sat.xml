@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <defaults bandwidth="4,000,000" directory="../tmp"/>
+
+  <channel delivery="DVB-S2"
+           frequency="11,200,000,000"
+           polarization="vertical"
+           modulation="8-PSK"
+           symbol_rate="22,000,000"
+           FEC_inner="2/3"
+           file="test-161.sat.1.ts"/>
+
+  <channel delivery="DVB-S"
+           frequency="11,600,000,000"
+           polarization="vertical"
+           modulation="QPSK"
+           symbol_rate="20,000,000"
+           FEC_inner="3/4"
+           file="test-161.sat.2.ts"/>
+
+</tsduck>

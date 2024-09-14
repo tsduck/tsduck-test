@@ -1,0 +1,82 @@
+
+* PAT, TID 0x00 (0), PID 0x0000 (0)
+  Version: 0, sections: 1, total size: 20 bytes
+  - Section 0:
+    TS id:       1 (0x0001)
+    Program:    10 (0x000A)  PID:  110 (0x006E)
+    Program:    20 (0x0014)  PID:  220 (0x00DC)
+
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
+  Version: 0, sections: 1, total size: 67 bytes
+  - Section 0:
+    Transport Stream Id: 0x0001 (1)
+    Original Network Id: 0x029A (666)
+    Service Id: 0x000A (10), EITs: no, EITp/f: no, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 19 bytes
+      Service type: 0x19 (Advanced codec HD digital television service)
+      Service: "Service 10", Provider: "TSDuck"
+    Service Id: 0x0014 (20), EITs: no, EITp/f: no, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 19 bytes
+      Service type: 0x19 (Advanced codec HD digital television service)
+      Service: "Service 20", Provider: "TSDuck"
+
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
+  Version: 0, sections: 1, total size: 104 bytes
+  - Section 0:
+    Network Id: 0x029A (666)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 16 bytes
+      Name: "TSDuck Satellite"
+    Transport Stream Id: 0x0001 (1), Original Network Id: 0x029A (666)
+    - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 1: Logical Channel Number (0x83, 131), 8 bytes
+      Service Id:    10 (0x000A), Visible: 1, Channel number:   1
+      Service Id:    20 (0x0014), Visible: 1, Channel number:   2
+    - Descriptor 2: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.20000 GHz
+      Orbital position: 19.2 degree, east
+      Polarization: linear - vertical (1)
+      Delivery system: DVB-S2
+      Modulation: 8-PSK (2), roll off: alpha=0.35 (0)
+      Symbol rate: 22.0000 Msymbol/s
+      Inner FEC: 2/3 (2)
+    Transport Stream Id: 0x0002 (2), Original Network Id: 0x029A (666)
+    - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
+      Specifier: 0x00000028 (EACEM/EICTA)
+    - Descriptor 1: Logical Channel Number (0x83, 131), 8 bytes
+      Service Id:    30 (0x001E), Visible: 1, Channel number:   3
+      Service Id:    40 (0x0028), Visible: 1, Channel number:   4
+    - Descriptor 2: Satellite Delivery System (0x43, 67), 11 bytes
+      Frequency: 11.60000 GHz
+      Orbital position: 19.2 degree, east
+      Polarization: linear - vertical (1)
+      Delivery system: DVB-S
+      Modulation: QPSK (1)
+      Symbol rate: 20.0000 Msymbol/s
+      Inner FEC: 3/4 (3)
+
+* PMT, TID 0x02 (2), PID 0x006E (110)
+  Version: 0, sections: 1, total size: 36 bytes
+  - Section 0:
+    Program: 0x000A (10), PCR PID: 0x006F (111)
+    Elementary stream: type 0x1B (AVC video), PID: 0x006F (111)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0070 (112)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+
+* PMT, TID 0x02 (2), PID 0x00DC (220)
+  Version: 0, sections: 1, total size: 36 bytes
+  - Section 0:
+    Program: 0x0014 (20), PCR PID: 0x00DD (221)
+    Elementary stream: type 0x1B (AVC video), PID: 0x00DD (221)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x00DE (222)
+    - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
+      Language: fra, Type: 0x00 (undefined)
+    - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
+      Component type: 0x42 (AC-3, full, complete main, 2 channels)
+

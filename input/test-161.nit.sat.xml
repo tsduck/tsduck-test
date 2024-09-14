@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT network_id="666">
+    <network_name_descriptor network_name="TSDuck Satellite"/>
+    <transport_stream transport_stream_id="1" original_network_id="666">
+      <private_data_specifier_descriptor private_data_specifier="eacem"/>
+      <eacem_logical_channel_number_descriptor>
+        <service service_id="10" logical_channel_number="1"/>
+        <service service_id="20" logical_channel_number="2"/>
+      </eacem_logical_channel_number_descriptor>
+      <satellite_delivery_system_descriptor
+          frequency="11,200,000,000"
+          orbital_position="19.2"
+          west_east_flag="east"
+          polarization="vertical"
+          roll_off="0.35"
+          modulation_system="DVB-S2"
+          modulation_type="8PSK"
+          symbol_rate="22,000,000"
+          FEC_inner="2/3"/>
+    </transport_stream>
+    <transport_stream transport_stream_id="2" original_network_id="666">
+      <private_data_specifier_descriptor private_data_specifier="eacem"/>
+      <eacem_logical_channel_number_descriptor>
+        <service service_id="30" logical_channel_number="3"/>
+        <service service_id="40" logical_channel_number="4"/>
+      </eacem_logical_channel_number_descriptor>
+      <satellite_delivery_system_descriptor
+          frequency="11,600,000,000"
+          orbital_position="19.2"
+          west_east_flag="east"
+          polarization="vertical"
+          modulation_system="DVB-S"
+          modulation_type="QPSK"
+          symbol_rate="20,000,000"
+          FEC_inner="3/4"/>
+    </transport_stream>
+  </NIT>
+</tsduck>
