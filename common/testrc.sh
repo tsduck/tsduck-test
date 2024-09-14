@@ -70,6 +70,8 @@ case $OS in
     darwin)
         OS=mac
         [[ $CPU == *64 || $CPU == *64e ]] && SYS64=true
+        BREWPREFIX=$(brew --prefix)
+        export PATH="$BREWPREFIX/bin:$PATH"
         ;;
     *)
         [[ $CPU == *64 ]] && SYS64=true
@@ -270,9 +272,8 @@ else
             export CLASSPATH="$TSDUCKJAR;"
             ;;
         mac)
-            BPREFIX=$(brew --prefix)
-            export PYTHONPATH=$BPREFIX/share/tsduck/python
-            export TSDUCKJAR=$BPREFIX/share/tsduck/java/tsduck.jar
+            export PYTHONPATH=$BREWPREFIX/share/tsduck/python
+            export TSDUCKJAR=$BREWPREFIX/share/tsduck/java/tsduck.jar
             export CLASSPATH="$TSDUCKJAR:"
             ;;
         freebsd|openbsd|dragonfly)
