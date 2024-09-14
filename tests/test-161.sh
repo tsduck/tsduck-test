@@ -7,7 +7,7 @@ test_cleanup "$SCRIPT.*"
 # Characteristics of the reference transponders.
 declare -A nitmod
 nitmod["sat"]="--delivery-system DVB-S --frequency 11,600,000,000 --polarity vertical --symbol 20,000,000 --fec-inner 3/4"
-nitmod["cable"]="--delivery-system DVB-C/A --frequency 750,000,000 --modulation 64-QAM --symbol 20,000,000 --fec-inner 3/4"
+nitmod["cable"]="--delivery-system DVB-C/B --frequency 750,000,000 --modulation 64-QAM --symbol 20,000,000 --fec-inner 3/4"
 
 # Run the tests.
 for sys in sat cable; do

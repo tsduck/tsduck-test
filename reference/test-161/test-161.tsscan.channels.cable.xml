@@ -2,12 +2,12 @@
 <tsduck>
   <network id="0x029A" type="DVB-C">
     <ts id="0x0001" onid="0x029A">
-      <dvbc frequency="700,000,000" symbolrate="22,000,000" modulation="32-QAM" FEC="2/3"/>
+      <dvbc frequency="700,000,000" symbolrate="22,000,000" modulation="32-QAM" system="DVB-C/B" FEC="2/3"/>
       <service id="0x000A" name="Service 10" provider="TSDuck" LCN="1" PMTPID="0x006E" type="0x19" cas="false"/>
       <service id="0x0014" name="Service 20" provider="TSDuck" LCN="2" PMTPID="0x00DC" type="0x19" cas="false"/>
     </ts>
     <ts id="0x0002" onid="0x029A">
-      <dvbc frequency="750,000,000" symbolrate="20,000,000" modulation="64-QAM" FEC="3/4"/>
+      <dvbc frequency="750,000,000" symbolrate="20,000,000" modulation="64-QAM" system="DVB-C/B" FEC="3/4"/>
       <service id="0x001E" name="Service 30" provider="TSDuck" LCN="3" PMTPID="0x014A" type="0x19" cas="false"/>
       <service id="0x0028" name="Service 40" provider="TSDuck" LCN="4" PMTPID="0x01B8" type="0x19" cas="false"/>
     </ts>
