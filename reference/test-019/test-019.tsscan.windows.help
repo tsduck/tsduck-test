@@ -198,9 +198,10 @@ Options:
   --isdbt-layer-a-modulation value
       Used for ISDB-T tuners only. Modulation for layer A. The default is
       automatically detected.
-      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
-      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
-      "DQPSK", "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-APSK-L", "8-PSK", "8-VSB",
+      "16-APSK", "16-APSK-L", "16-QAM", "16-VSB", "32-APSK", "32-APSK-L",
+      "32-QAM", "64-APSK", "64-APSK-L", "64-QAM", "128-QAM", "256-QAM",
+      "1024-QAM", "4096-QAM", "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-a-segment-count value
       Used for ISDB-T tuners only. Number of segments for layer A. Possible
@@ -220,9 +221,10 @@ Options:
 
   --isdbt-layer-b-modulation value
       Same as --isdbt-layer-a-modulation for layer B.
-      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
-      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
-      "DQPSK", "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-APSK-L", "8-PSK", "8-VSB",
+      "16-APSK", "16-APSK-L", "16-QAM", "16-VSB", "32-APSK", "32-APSK-L",
+      "32-QAM", "64-APSK", "64-APSK-L", "64-QAM", "128-QAM", "256-QAM",
+      "1024-QAM", "4096-QAM", "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-b-segment-count value
       Same as --isdbt-layer-a-segment-count for layer B.
@@ -240,9 +242,10 @@ Options:
 
   --isdbt-layer-c-modulation value
       Same as --isdbt-layer-a-modulation for layer C.
-      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
-      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
-      "DQPSK", "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-APSK-L", "8-PSK", "8-VSB",
+      "16-APSK", "16-APSK-L", "16-QAM", "16-VSB", "32-APSK", "32-APSK-L",
+      "32-QAM", "64-APSK", "64-APSK-L", "64-QAM", "128-QAM", "256-QAM",
+      "1024-QAM", "4096-QAM", "DQPSK", "QAM", "QPSK".
 
   --isdbt-layer-c-segment-count value
       Same as --isdbt-layer-a-segment-count for layer C.
@@ -312,9 +315,10 @@ Options:
       Used for DVB-C, DVB-T, DVB-S2 and ATSC tuners. Modulation type. The
       default is "64-QAM" for DVB-T/T2, "64-QAM" for DVB-C, "QPSK" for DVB-S2,
       "8-VSB" for ATSC.
-      The 'value' must be one of "4-QAM-NR", "8-PSK", "8-VSB", "16-APSK",
-      "16-QAM", "16-VSB", "32-APSK", "32-QAM", "64-QAM", "128-QAM", "256-QAM",
-      "DQPSK", "QAM", "QPSK".
+      The 'value' must be one of "4-QAM-NR", "8-APSK-L", "8-PSK", "8-VSB",
+      "16-APSK", "16-APSK-L", "16-QAM", "16-VSB", "32-APSK", "32-APSK-L",
+      "32-QAM", "64-APSK", "64-APSK-L", "64-QAM", "128-QAM", "256-QAM",
+      "1024-QAM", "4096-QAM", "DQPSK", "QAM", "QPSK".
 
   -n
   --nit-scan
