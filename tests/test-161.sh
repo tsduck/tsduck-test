@@ -12,6 +12,12 @@ nitmod["cable"]="--delivery-system DVB-C/B --frequency 750,000,000 --modulation 
 # Run the tests.
 for sys in sat cable; do
 
+    # Display tuner emulator characteristics.
+    $(tspath tslsdvb) --verbose --device $(fpath "$INDIR/$SCRIPT.tuner.$sys.xml") \
+        >"$OUTDIR/$SCRIPT.tslsdvb.$sys.log" 2>&1
+
+    test_text $SCRIPT.tslsdvb.$sys.log
+
     # Build the two input streams into the tmp directory.
     (
         $(tspath tspacketize) $(fpath "$INDIR/$SCRIPT.pat.1.xml") --pid 0
