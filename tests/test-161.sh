@@ -16,6 +16,10 @@ for sys in sat cable; do
     $(tspath tslsdvb) --verbose --device $(fpath "$INDIR/$SCRIPT.tuner.$sys.xml") \
         >"$OUTDIR/$SCRIPT.tslsdvb.$sys.log" 2>&1
 
+    # On Windows, tuner names are weird and quoted
+    # => remove the quotes to get the same output on all systems.
+    sed -i -e 's/"//g' "$OUTDIR/$SCRIPT.tslsdvb.$sys.log"
+
     test_text $SCRIPT.tslsdvb.$sys.log
 
     # Build the two input streams into the tmp directory.
