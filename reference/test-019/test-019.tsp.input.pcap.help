@@ -109,3 +109,8 @@ Options:
       a standard EMMG which feeds a MUX. By default, the UDP datagrams contain
       raw TS packets, with or without RTP headers.
 
+  --vlan-id value
+      Filter packets from the specified VLAN id. This option can be specified
+      multiple times. In that case, the values define nested VLAN ids, from the
+      outer to inner VLAN.
+

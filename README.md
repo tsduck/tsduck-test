@@ -256,3 +256,4 @@ repository. But we now limit their size to 20 MB.
 | 159  | Non regression on incorrect use of stdout in `tstabcomp`
 | 160  | Non-regression on incorrect SCTE 35 `program_splice_flag` (issue #1519)
 | 161  | Plugin `nitscan` and `tsscan --nit-scan`
+| 162  | Plugin `pcap` and `tspcap` with VLAN

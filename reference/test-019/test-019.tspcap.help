@@ -113,3 +113,8 @@ Options:
       "crypto", "date", "dektec", "http", "integer", "long", "nsis", "rist",
       "short", "srt", "system", "vatek".
 
+  --vlan-id value
+      Filter packets from the specified VLAN id. This option can be specified
+      multiple times. In that case, the values define nested VLAN ids, from the
+      outer to inner VLAN.
+
