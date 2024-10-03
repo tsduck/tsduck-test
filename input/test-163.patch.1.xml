@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <TOP x-undefine="SYM1">
+    <L1 b="21" x-define="SYM1"/>
+    <L1>
+      <L2 x-condition="SYM1" x-add-d="foo"/>
+      <L2 x-condition="!SYM1" x-add-e="bar"/>
+      <L2 x-condition="SYM100" x-add-f="zoo"/>
+      <L2 x-condition="!SYM100" x-add-g="shop"/>
+    </L1>
+  </TOP>
+</tsduck>

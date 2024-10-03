@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tsduck>
+  <splice_information_table x-undefine='NULLIFY'>
+    <splice_insert out_of_network='true' x-define='NULLIFY' x-node='delete'/>
+    <splice_null x-condition='NULLIFY' x-node='add'/>
+    <splice_avail_descriptor x-condition='NULLIFY' x-node='delete'/>
+  </splice_information_table>
+</tsduck>
