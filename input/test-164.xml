@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+
+  <PMT service_id="0">
+
+    <IOD_descriptor Scope_of_IOD_label="0x10" IOD_label="0xA7">
+      <InitialObjectDescriptor>
+        01 23 45 67 89 AB CD EF
+      </InitialObjectDescriptor>
+    </IOD_descriptor>
+
+    <IOD_descriptor Scope_of_IOD_label="0x27" IOD_label="0x12"/>
+
+    <MPEG4_audio_extension_descriptor/>
+
+    <MPEG4_audio_extension_descriptor>
+      <audioProfileLevelIndication value="0x01"/>
+      <audioProfileLevelIndication value="0x92"/>
+      <audioProfileLevelIndication value="0xFE"/>
+    </MPEG4_audio_extension_descriptor>
+
+    <MPEG4_audio_extension_descriptor>
+      <audioProfileLevelIndication value="1"/>
+      <audioProfileLevelIndication value="2"/>
+      <audioSpecificConfig>
+        DEAD BEEF
+      </audioSpecificConfig>
+    </MPEG4_audio_extension_descriptor>
+
+    <MPEGH_3D_audio_command_descriptor/>
+
+    <MPEGH_3D_audio_command_descriptor>
+      <MHAS>
+        F00 BAD
+      </MHAS>
+    </MPEGH_3D_audio_command_descriptor>
+
+    <MPEGH_3D_audio_config_descriptor/>
+
+    <MPEGH_3D_audio_config_descriptor>
+      <mpegh3daConfig>
+        DEAD BEEF
+      </mpegh3daConfig>
+    </MPEGH_3D_audio_config_descriptor>
+
+    <MPEGH_3D_audio_drc_loudness_descriptor/>
+
+    <MPEGH_3D_audio_drc_loudness_descriptor>
+      <drcInstructionsUniDrc
+          drcInstructionsType="0"
+          drcSetId="0x1B"
+          downmixId="0x71"
+          drcSetEffect="0xABCD"
+          dependsOnDrcSet="0x32"/>
+      <drcInstructionsUniDrc
+          drcInstructionsType="2"
+          mae_groupID="0x43"
+          drcSetId="4"
+          downmixId="7"
+          drcSetEffect="8"
+          bsLimiterPeakTarget="0xEF"
+          bsDrcSetTargetLoudnessValueUpper="0x3A"
+          dependsOnDrcSet="0"
+          noIndependentUse="true">
+        <additionalDownmixId value="0x7A"/>
+      </drcInstructionsUniDrc>
+      <drcInstructionsUniDrc
+          drcInstructionsType="3"
+          mae_groupPresetID="0x1B"
+          drcSetId="0x38"
+          downmixId="0x67"
+          drcSetEffect="0x1234"
+          bsDrcSetTargetLoudnessValueUpper="0x3B"
+          bsDrcSetTargetLoudnessValueLower="0x3C"
+          dependsOnDrcSet="0"
+          noIndependentUse="false">
+        <additionalDownmixId value="0x7B"/>
+        <additionalDownmixId value="0x7C"/>
+      </drcInstructionsUniDrc>
+      <loudnessInfo loudnessInfoType="0"/>
+      <loudnessInfo loudnessInfoType="1" mae_groupID="0x75">
+        <loudnessInfo>
+          DEAD BEEF
+        </loudnessInfo>
+      </loudnessInfo>
+      <loudnessInfo loudnessInfoType="3" mae_groupPresetID="0x1C"/>
+      <downmixId downmixId="0x44" downmixType="1" CICPspeakerLayoutIdx="0x23"/>
+      <downmixId downmixId="1" downmixType="3" CICPspeakerLayoutIdx="0x12"/>
+      <reserved>
+        0123456789
+      </reserved>
+    </MPEGH_3D_audio_drc_loudness_descriptor>>
+
+  </PMT>
+
+</tsduck>

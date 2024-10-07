@@ -1,0 +1,191 @@
+[
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "IOD_descriptor",
+        "#nodes": [
+          {
+            "#name": "InitialObjectDescriptor",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF"
+            ]
+          }
+        ],
+        "iod_label": 167,
+        "scope_of_iod_label": 16
+      },
+      {
+        "#name": "IOD_descriptor",
+        "iod_label": 18,
+        "scope_of_iod_label": 39
+      },
+      {
+        "#name": "MPEG4_audio_extension_descriptor"
+      },
+      {
+        "#name": "MPEG4_audio_extension_descriptor",
+        "#nodes": [
+          {
+            "#name": "audioProfileLevelIndication",
+            "value": 1
+          },
+          {
+            "#name": "audioProfileLevelIndication",
+            "value": 146
+          },
+          {
+            "#name": "audioProfileLevelIndication",
+            "value": 254
+          }
+        ]
+      },
+      {
+        "#name": "MPEG4_audio_extension_descriptor",
+        "#nodes": [
+          {
+            "#name": "audioProfileLevelIndication",
+            "value": 1
+          },
+          {
+            "#name": "audioProfileLevelIndication",
+            "value": 2
+          },
+          {
+            "#name": "audioSpecificConfig",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "MPEGH_3D_audio_command_descriptor"
+      },
+      {
+        "#name": "MPEGH_3D_audio_command_descriptor",
+        "#nodes": [
+          {
+            "#name": "MHAS",
+            "#nodes": [
+              "F0 0B AD"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "MPEGH_3D_audio_config_descriptor"
+      },
+      {
+        "#name": "MPEGH_3D_audio_config_descriptor",
+        "#nodes": [
+          {
+            "#name": "mpegh3daConfig",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "MPEGH_3D_audio_drc_loudness_descriptor"
+      },
+      {
+        "#name": "MPEGH_3D_audio_drc_loudness_descriptor",
+        "#nodes": [
+          {
+            "#name": "drcInstructionsUniDrc",
+            "dependsondrcset": 50,
+            "downmixid": 113,
+            "drcinstructionstype": 0,
+            "drcseteffect": 43981,
+            "drcsetid": 27
+          },
+          {
+            "#name": "drcInstructionsUniDrc",
+            "#nodes": [
+              {
+                "#name": "additionalDownmixId",
+                "value": 122
+              }
+            ],
+            "bsdrcsettargetloudnessvalueupper": 58,
+            "bslimiterpeaktarget": 239,
+            "dependsondrcset": 0,
+            "downmixid": 7,
+            "drcinstructionstype": 2,
+            "drcseteffect": 8,
+            "drcsetid": 4,
+            "mae_groupid": 67,
+            "noindependentuse": true
+          },
+          {
+            "#name": "drcInstructionsUniDrc",
+            "#nodes": [
+              {
+                "#name": "additionalDownmixId",
+                "value": 123
+              },
+              {
+                "#name": "additionalDownmixId",
+                "value": 124
+              }
+            ],
+            "bsdrcsettargetloudnessvaluelower": 60,
+            "bsdrcsettargetloudnessvalueupper": 59,
+            "dependsondrcset": 0,
+            "downmixid": 103,
+            "drcinstructionstype": 3,
+            "drcseteffect": 4660,
+            "drcsetid": 56,
+            "mae_grouppresetid": 27,
+            "noindependentuse": false
+          },
+          {
+            "#name": "loudnessInfo",
+            "loudnessinfotype": 0
+          },
+          {
+            "#name": "loudnessInfo",
+            "#nodes": [
+              {
+                "#name": "loudnessInfo",
+                "#nodes": [
+                  "DE AD BE EF"
+                ]
+              }
+            ],
+            "loudnessinfotype": 1,
+            "mae_groupid": 117
+          },
+          {
+            "#name": "loudnessInfo",
+            "loudnessinfotype": 3,
+            "mae_grouppresetid": 28
+          },
+          {
+            "#name": "downmixId",
+            "cicpspeakerlayoutidx": 35,
+            "downmixid": 68,
+            "downmixtype": 1
+          },
+          {
+            "#name": "downmixId",
+            "cicpspeakerlayoutidx": 18,
+            "downmixid": 1,
+            "downmixtype": 3
+          },
+          {
+            "#name": "reserved",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ]
+      }
+    ],
+    "current": true,
+    "service_id": 0,
+    "version": 0
+  }
+]

@@ -1,0 +1,90 @@
+
+* PMT, TID 0x02 (2), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 132 bytes
+  - Section 0:
+    Program: 0x0000 (0), PCR PID: none
+    Program information:
+    - Descriptor 0: IOD (0x1D, 29), 10 bytes
+      Scope of IOD label: 0x10 (16, unique within program / service)
+      IOD label: 0xA7 (167)
+      InitialObjectDescriptor (8 bytes): 01 23 45 67 89 AB CD EF
+    - Descriptor 1: IOD (0x1D, 29), 2 bytes
+      Scope of IOD label: 0x27 (39, unknown)
+      IOD label: 0x12 (18)
+    - Descriptor 2: MPEG-4 Audio Extension (0x2E, 46), 1 bytes
+      Number of audio profile levels: 0
+    - Descriptor 3: MPEG-4 Audio Extension (0x2E, 46), 4 bytes
+      Number of audio profile levels: 3
+      Audio profile level #0: 0x01 (1)
+      Audio profile level #1: 0x92 (146)
+      Audio profile level #2: 0xFE (254)
+    - Descriptor 4: MPEG-4 Audio Extension (0x2E, 46), 8 bytes
+      Number of audio profile levels: 2
+      Audio profile level #0: 0x01 (1)
+      Audio profile level #1: 0x02 (2)
+      audioSpecificConfig (4 bytes): DE AD BE EF
+    - Descriptor 5: MPEG-2 Extension (0x3F, 63), 1 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Command (0x0E, 14)
+    - Descriptor 6: MPEG-2 Extension (0x3F, 63), 4 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Command (0x0E, 14)
+      MHAS (3 bytes): F0 0B AD
+    - Descriptor 7: MPEG-2 Extension (0x3F, 63), 1 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Config (0x09, 9)
+    - Descriptor 8: MPEG-2 Extension (0x3F, 63), 5 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio Config (0x09, 9)
+      mpegh3daConfig (4 bytes): DE AD BE EF
+    - Descriptor 9: MPEG-2 Extension (0x3F, 63), 2 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio DRC Loudness (0x0D, 13)
+    - Descriptor 10: MPEG-2 Extension (0x3F, 63), 56 bytes
+      MPEG extended descriptor: MPEG-H 3D Audio DRC Loudness (0x0D, 13)
+      Number of DRC instructions: 3
+      - DRC instructions #0
+        DRC instructions type: 0
+        DRC set id: 0x1B (27)
+        Downmix id: 0x71 (113)
+        DRC set effect: 0xABCD (43981)
+        Depends on DRC set: 0x32 (50)
+      - DRC instructions #1
+        DRC instructions type: 2
+        MAE group id: 0x43 (67)
+        DRC set id: 0x04 (4)
+        Downmix id: 0x07 (7)
+        Additional downmix id: 0x7A (122)
+        DRC set effect: 0x0008 (8)
+        Limiter peak target: 0xEF (239)
+        DRC set target loudness value upper: 0x3A (58)
+        Depends on DRC set: 0x00 (0)
+        No independent use: true
+      - DRC instructions #2
+        DRC instructions type: 3
+        MAE group preset id: 0x1B (27)
+        DRC set id: 0x38 (56)
+        Downmix id: 0x67 (103)
+        Additional downmix id: 0x7B (123)
+        Additional downmix id: 0x7C (124)
+        DRC set effect: 0x1234 (4660)
+        DRC set target loudness value upper: 0x3B (59)
+        DRC set target loudness value lower: 0x3C (60)
+        Depends on DRC set: 0x00 (0)
+        No independent use: false
+      Number of loudness info: 3
+      - Loudness info #0
+        Loudness info type: 0
+      - Loudness info #1
+        Loudness info type: 1
+        MAE group id: 0x75 (117)
+        loudnessInfo() (4 bytes): DE AD BE EF
+      - Loudness info #2
+        Loudness info type: 3
+        MAE group preset id: 0x1C (28)
+      Number of downmix id: 2
+      - Downmix id #0
+        Downmix id: 0x44 (68)
+        Downmix type: 1
+        CICP speaker layout index: 0x23 (35)
+      - Downmix id #1
+        Downmix id: 0x01 (1)
+        Downmix type: 3
+        CICP speaker layout index: 0x12 (18)
+      reserved (5 bytes): 01 23 45 67 89
+

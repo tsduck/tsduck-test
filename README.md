@@ -258,3 +258,4 @@ repository. But we now limit their size to 20 MB.
 | 161  | Plugin `nitscan` and `tsscan --nit-scan`
 | 162  | Plugin `pcap` and `tspcap` with VLAN
 | 163  | Conditions in XML patch files
+| 164  | SI analysis and conversions: MPEG-defined descriptors with external blobs
