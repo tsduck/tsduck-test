@@ -3,12 +3,10 @@
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
-
-INFILE="$INDIR/test-012.ts"
-source "$COMMONDIR"/standard-ts-test.sh test-012.ts
+source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts
 
 test_tsp \
-    -I file $(fpath "$INFILE") \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
     -P teletext -o $(fpath "$OUTDIR/$SCRIPT.srt") \
     -O drop \
     >"$OUTDIR/$SCRIPT.teletext.log" 2>&1

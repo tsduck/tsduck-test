@@ -259,3 +259,5 @@ repository. But we now limit their size to 20 MB.
 | 162  | Plugin `pcap` and `tspcap` with VLAN
 | 163  | Conditions in XML patch files
 | 164  | SI analysis and conversions: MPEG-defined descriptors with external blobs
+| 165  | Analyze an ISDB live stream with software download
+| 166  | SI analysis and conversions: ISDB DCT and DLT

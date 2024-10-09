@@ -1,0 +1,288 @@
+[
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 671,
+        "last_ts_packet": 671,
+        "pid": 17
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "01 89 21 5D"
+            ],
+            "tag": 130
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "02 89 21 5D"
+            ],
+            "tag": 130
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "70 CA"
+            ],
+            "tag": 143
+          },
+          {
+            "#name": "cue_identifier_descriptor",
+            "cue_stream_type": "129"
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "04"
+            ],
+            "tag": 193
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": false,
+        "running_status": "undefined",
+        "service_id": 16586
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "01 3B 6E 38 33 25 41 25 63 25 73 25 4D 25 6B 23 39 23 38 23 33"
+            ],
+            "tag": 130
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "02 89 23 54 23 65 23 73 23 74 21 5D 23 43 23 68 23 61 23 6E 23 6E 23 65 23 6C 21 5D 23 39 23 38 23 33"
+            ],
+            "tag": 130
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "73 D7"
+            ],
+            "tag": 143
+          },
+          {
+            "#name": "cue_identifier_descriptor",
+            "cue_stream_type": "all"
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "0F"
+            ],
+            "tag": 193
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": false,
+        "running_status": "undefined",
+        "service_id": 17367
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "11 0B 00 03 40 CA"
+            ],
+            "tag": 145
+          }
+        ],
+        "ca_mode": true,
+        "eit_present_following": false,
+        "eit_schedule": false,
+        "running_status": "undefined",
+        "service_id": 28874
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "11 0B 00 03 43 D7"
+            ],
+            "tag": 145
+          }
+        ],
+        "ca_mode": true,
+        "eit_present_following": false,
+        "eit_schedule": false,
+        "running_status": "undefined",
+        "service_id": 29655
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "original_network_id": 3,
+    "transport_stream_id": 4363,
+    "version": 5
+  },
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 1162,
+        "last_ts_packet": 1162,
+        "pid": 0
+      }
+    ],
+    "current": true,
+    "network_pid": 16,
+    "transport_stream_id": 4363,
+    "version": 5
+  },
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 4017,
+        "last_ts_packet": 4017,
+        "pid": 1
+      },
+      {
+        "#name": "CA_descriptor",
+        "ca_pid": 515,
+        "ca_system_id": 1
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "23 59 59 06 00 00 FF"
+        ],
+        "tag": 156
+      }
+    ],
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "NIT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 4307,
+        "last_ts_packet": 4307,
+        "pid": 16
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "01 23 53 23 4B 23 59 25 35 F9 25 53 25 39"
+        ],
+        "tag": 130
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "FD 72 B0 95 B6 6D B9 03 FC 00 00 0F 0F 60 D0 2C"
+        ],
+        "tag": 139
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "02 11 0B"
+        ],
+        "tag": 153
+      },
+      {
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "00 03"
+        ],
+        "tag": 154
+      },
+      {
+        "#name": "transport_stream",
+        "#nodes": [
+          {
+            "#name": "service_list_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "service_id": 16586,
+                "service_type": 129
+              },
+              {
+                "#name": "service",
+                "service_id": 17367,
+                "service_type": 1
+              }
+            ]
+          },
+          {
+            "#name": "cable_delivery_system_descriptor",
+            "fec_inner": "none",
+            "fec_outer": "RS",
+            "frequency": "375,000,000",
+            "modulation": "64-QAM",
+            "symbol_rate": "5,274,000"
+          }
+        ],
+        "original_network_id": 3,
+        "preferred_section": 0,
+        "transport_stream_id": 4363
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "network_id": 3,
+    "version": 1
+  },
+  {
+    "#name": "EIT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 9218,
+        "last_ts_packet": 11786,
+        "pid": 18
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "last_table_id": 78,
+    "original_network_id": 3,
+    "service_id": 16586,
+    "transport_stream_id": 4363,
+    "type": "pf",
+    "version": 2
+  },
+  {
+    "#name": "EIT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 8365,
+        "last_ts_packet": 12639,
+        "pid": 18
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "last_table_id": 78,
+    "original_network_id": 3,
+    "service_id": 17367,
+    "transport_stream_id": 4363,
+    "type": "pf",
+    "version": 2
+  }
+]

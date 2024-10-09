@@ -3,4 +3,4 @@
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
-source "$COMMONDIR"/standard-ts-test.sh test-092.ts
+source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts

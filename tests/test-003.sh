@@ -5,7 +5,7 @@ source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
 # Standard stream analysis test.
-source "$COMMONDIR"/standard-ts-test.sh test-003.ts
+source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts
 
 # T2-MI extraction.
 test_tsp \

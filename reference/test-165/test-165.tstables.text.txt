@@ -1,0 +1,110 @@
+
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
+  Version: 5, sections: 1, total size: 142 bytes
+  - Section 0:
+    Transport Stream Id: 0x110B (4363)
+    Original Network Id: 0x0003 (3)
+    Service Id: 0x40CA (16586), EITs: no, EITp/f: yes, CA mode: free
+    Running status: undefined
+    - Descriptor 0: unknown (0x82, 130), 4 bytes
+      0000:  01 89 21 5D                                ..!]
+    - Descriptor 1: unknown (0x82, 130), 4 bytes
+      0000:  02 89 21 5D                                ..!]
+    - Descriptor 2: unknown (0x8F, 143), 2 bytes
+      0000:  70 CA                                      p.
+    - Descriptor 3: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x81
+    - Descriptor 4: unknown (0xC1, 193), 1 bytes
+      0000:  04                                         .
+    Service Id: 0x43D7 (17367), EITs: no, EITp/f: yes, CA mode: free
+    Running status: undefined
+    - Descriptor 0: unknown (0x82, 130), 21 bytes
+      0000:  01 3B 6E 38 33 25 41 25 63 25 73 25 4D 25  .;n83%A%c%s%M%
+      000E:  6B 23 39 23 38 23 33                       k#9#8#3
+    - Descriptor 1: unknown (0x82, 130), 34 bytes
+      0000:  02 89 23 54 23 65 23 73 23 74 21 5D 23 43  ..#T#e#s#t!]#C
+      000E:  23 68 23 61 23 6E 23 6E 23 65 23 6C 21 5D  #h#a#n#n#e#l!]
+      001C:  23 39 23 38 23 33                          #9#8#3
+    - Descriptor 2: unknown (0x8F, 143), 2 bytes
+      0000:  73 D7                                      s.
+    - Descriptor 3: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x01 (All commands)
+    - Descriptor 4: unknown (0xC1, 193), 1 bytes
+      0000:  0F                                         .
+    Service Id: 0x70CA (28874), EITs: no, EITp/f: no, CA mode: controlled
+    Running status: undefined
+    - Descriptor 0: unknown (0x91, 145), 6 bytes
+      0000:  11 0B 00 03 40 CA                          ....@.
+    Service Id: 0x73D7 (29655), EITs: no, EITp/f: no, CA mode: controlled
+    Running status: undefined
+    - Descriptor 0: unknown (0x91, 145), 6 bytes
+      0000:  11 0B 00 03 43 D7                          ....C.
+
+* PAT, TID 0x00 (0), PID 0x0000 (0)
+  Version: 5, sections: 1, total size: 16 bytes
+  - Section 0:
+    TS id:    4363 (0x110B)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+
+* CAT, TID 0x01 (1), PID 0x0001 (1)
+  Version: 0, sections: 1, total size: 27 bytes
+  - Section 0:
+    - Descriptor 0: CA (0x09, 9), 4 bytes
+      CA System Id: 0x0001 (IPDC SPP Open Security Framework Generic Roaming), EMM PID: 0x0203 (515)
+    - Descriptor 1: unknown (0x9C, 156), 7 bytes
+      0000:  23 59 59 06 00 00 FF                       #YY....
+
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
+  Version: 1, sections: 1, total size: 86 bytes
+  - Section 0:
+    Network Id: 0x0003 (3)
+    Network information:
+    - Descriptor 0: unknown (0x82, 130), 14 bytes
+      0000:  01 23 53 23 4B 23 59 25 35 F9 25 53 25 39  .#S#K#Y%5.%S%9
+    - Descriptor 1: unknown (0x8B, 139), 16 bytes
+      0000:  FD 72 B0 95 B6 6D B9 03 FC 00 00 0F 0F 60  .r...m.......`
+      000E:  D0 2C                                      .,
+    - Descriptor 2: unknown (0x99, 153), 3 bytes
+      0000:  02 11 0B                                   ...
+    - Descriptor 3: unknown (0x9A, 154), 2 bytes
+      0000:  00 03                                      ..
+    Transport Stream Id: 0x110B (4363), Original Network Id: 0x0003 (3)
+    - Descriptor 0: Service List (0x41, 65), 6 bytes
+      Service id: 0x40CA (16586), Type: 0x81 (unknown)
+      Service id: 0x43D7 (17367), Type: 0x01 (Digital television service)
+    - Descriptor 1: Cable Delivery System (0x44, 68), 11 bytes
+      Frequency: 375.0000 MHz
+      Symbol rate: 5.2740 Msymbol/s
+      Modulation: 64-QAM
+      Outer FEC: RS(204/188), Inner FEC: none
+
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
+  Version: 2, sections: 2, total size: 36 bytes
+  - Section 0:
+    Service Id: 0x40CA (16586)
+    TS Id: 0x110B (4363)
+    Original Network Id: 0x0003 (3)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+  - Section 1:
+    Service Id: 0x40CA (16586)
+    TS Id: 0x110B (4363)
+    Original Network Id: 0x0003 (3)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+
+* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
+  Version: 2, sections: 2, total size: 36 bytes
+  - Section 0:
+    Service Id: 0x43D7 (17367)
+    TS Id: 0x110B (4363)
+    Original Network Id: 0x0003 (3)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+  - Section 1:
+    Service Id: 0x43D7 (17367)
+    TS Id: 0x110B (4363)
+    Original Network Id: 0x0003 (3)
+    Segment last section: 0x01 (1)
+    Last Table Id: 0x4E (78), EIT p/f Actual
+
