@@ -2,12 +2,12 @@
 ===============================================================================
 |  TRANSPORT STREAM ANALYSIS REPORT                            test-165 full  |
 |=============================================================================|
-|  Transport Stream Id: ....... 0x110B (4363)  |  Services: .............. 4  |
+|  Transport Stream Id: ....... 0x110B (4363)  |  Services: .............. 6  |
 |  Bytes: ......................... 5,000,048  |  PID's: Total: ......... 22  |
 |  TS packets: ....................... 26,596  |         Clear: ......... 20  |
 |     With invalid sync: .................. 0  |         Scrambled: ...... 2  |
 |     With transport error: ............... 0  |         With PCR's: ..... 2  |
-|     Suspect and ignored: ................ 0  |         Unreferenced: .. 11  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 3  |
 |-----------------------------------------------------------------------------|
 |  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
 |  User-specified: ......................... 19,289,776 b/s   20,931,459 b/s  |
@@ -24,6 +24,8 @@
 |  Srv Id  Service Name                              Access          Bitrate  |
 |  0x40CA  (unknown) .................................... C          Unknown  |
 |  0x43D7  (unknown) .................................... C          Unknown  |
+|  0x5C78  (unknown) .................................... S   10,280,966 b/s  |
+|  0x5C79  (unknown) .................................... C    6,267,219 b/s  |
 |  0x70CA  (unknown) .................................... C          Unknown  |
 |  0x73D7  (unknown) .................................... C          Unknown  |
 |                                                                             |
@@ -36,10 +38,10 @@
 |  SERVICES ANALYSIS REPORT                                    test-165 full  |
 |=============================================================================|
 |  Global PID's                                                               |
-|  TS packets: 3,800, PID's: 11 (clear: 11, scrambled: 0)                     |
+|  TS packets: 3,765, PID's: 10 (clear: 10, scrambled: 0)                     |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Global PID's ................................. C    2,756,097 b/s  |
+|   Total  Global PID's ................................. C    2,730,712 b/s  |
 |   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       27,561 b/s  |
 |  0x0000  PAT .......................................... C       14,506 b/s  |
 |  0x0001  CAT .......................................... C        1,451 b/s  |
@@ -48,27 +50,18 @@
 |  0x0012  EIT .......................................... C        5,802 b/s  |
 |  0x0014  TDT/TOT ...................................... C        1,451 b/s  |
 |  0x0017  ISDB DCT ..................................... C        1,451 b/s  |
-|  0x0022  ISDB PCAT .................................... C       25,385 b/s  |
 |  0x0203  IPDC SPP Open Security Framework Generic Roam  C    1,496,996 b/s  |
 |  0x1C00  ISDB download (DLT) .......................... C    1,190,924 b/s  |
 |  0x1CE0  ECM for ISDB download (DLT scrambling) ....... C       15,231 b/s  |
 |=============================================================================|
 |  Unreferenced PID's                                                         |
-|  TS packets: 22,796, PID's: 11 (clear: 9, scrambled: 2)                     |
+|  TS packets: 15, PID's: 3 (clear: 3, scrambled: 0)                          |
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
-|   Total  Unreferenced PID's ........................... S   16,533,680 b/s  |
-|  0x0021  Unreferenced ................................. C       25,385 b/s  |
+|   Total  Unreferenced PID's ........................... C       10,879 b/s  |
 |  0x0030  Unreferenced ................................. C        6,528 b/s  |
 |  0x0034  Unreferenced ................................. C        2,176 b/s  |
 |  0x0036  Unreferenced ................................. C        2,176 b/s  |
-|  0x1001  Unreferenced ................................. S   10,000,280 b/s  |
-|  0x1002  Unreferenced (1440x1080i, @25 Hz, 16:9, 4:2:0  C    5,999,588 b/s  |
-|  0x1011  Unreferenced ................................. S      200,905 b/s  |
-|  0x1012  Unreferenced ................................. C      201,630 b/s  |
-|  0x1111  Unreferenced ................................. C       40,616 b/s  |
-|  0x1112  Unreferenced ................................. C       40,616 b/s  |
-|  0x1140  Unreferenced ................................. C       13,780 b/s  |
 |=============================================================================|
 |  Service: 0x40CA (16586), TS: 0x110B (4363), Original Netw: 0x0003 (3)      |
 |  Service name: (unknown), provider: (unknown)                               |
@@ -88,6 +81,35 @@
 |-----------------------------------------------------------------------------|
 |     PID  Usage                                     Access          Bitrate  |
 |   Total  Undefined .................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x5C78 (23672), TS: 0x110B (4363)                                 |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 14,175, PID's: 5 (clear: 3, scrambled: 2)                      |
+|  PMT PID: Unknown in PAT, PCR PID: 0x1111 (4369)                            |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... S   10,280,966 b/s  |
+|  0x0021  PMT .......................................... C       25,385 b/s  |
+|  0x1001  MPEG-2 Video ................................. S   10,000,280 b/s  |
+|  0x1011  MPEG-2 AAC Audio ............................. S      200,905 b/s  |
+|  0x1111  PCR (not otherwise referenced) ............... C       40,616 b/s  |
+|  0x1140  OMA BCAST / 3GPP GBA_U ECM ................... C       13,780 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x5C79 (23673), TS: 0x110B (4363)                                 |
+|  Service name: (unknown), provider: (unknown)                               |
+|  Service type: 0x00 (Undefined)                                             |
+|  TS packets: 8,641, PID's: 4 (clear: 4, scrambled: 0)                       |
+|  PMT PID: Unknown in PAT, PCR PID: 0x1112 (4370)                            |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Undefined .................................... C    6,267,219 b/s  |
+|  0x0022  PMT .......................................... C       25,385 b/s  |
+|  0x1002  MPEG-2 Video (1440x1080i, @25 Hz, 16:9, 4:2:0  C    5,999,588 b/s  |
+|  0x1012  MPEG-2 AAC Audio ............................. C      201,630 b/s  |
+|  0x1112  PCR (not otherwise referenced) ............... C       40,616 b/s  |
 |          (C=Clear, S=Scrambled, +=Shared)                                   |
 |=============================================================================|
 |  Service: 0x70CA (28874), TS: 0x110B (4363), Original Netw: 0x0003 (3)      |
@@ -172,17 +194,19 @@
 |                            Duplicated: .......... 0  Sections:              |
 |                                                      Unit start: ....... 2  |
 |=============================================================================|
-|  PID: 0x0021 (33)                                             Unreferenced  |
+|  PID: 0x0021 (33)                                                      PMT  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 25,385 b/s  Packets: ............ 35  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
 |                                                      Unit start: ...... 35  |
 |=============================================================================|
-|  PID: 0x0022 (34)                                                ISDB PCAT  |
+|  PID: 0x0022 (34)                                                      PMT  |
+|  Service: 0x5C79 (23673) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Global PID                Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 25,385 b/s  Packets: ............ 35  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
@@ -220,54 +244,63 @@
 |                            Duplicated: .......... 0  Sections:              |
 |                                                      Unit start: ... 2,064  |
 |=============================================================================|
-|  PID: 0x1001 (4097)                                           Unreferenced  |
+|  PID: 0x1001 (4097)                                           MPEG-2 Video  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate:  10,000,280 b/s  Packets: ........ 13,788  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: .......... 125  Unexpect: ......... 0  |
-|  Crypto-Per: .... Unknown  Duplicated: .......... 0  Sections:              |
-|  Inv.scramb.: ......... 0                            Unit start: ...... 63  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0                            Packets: ......... 63  |
+|                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x1002 (4098)                                           Unreferenced  |
+|  PID: 0x1002 (4098)                                           MPEG-2 Video  |
 |  PES stream id: 0xE0 (Video 0)                                              |
 |  1440x1080i, @25 Hz, 16:9, 4:2:0                                            |
+|  Service: 0x5C79 (23673) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: . 5,999,588 b/s  Packets: ......... 8,272  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: .......... 123  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  Sections:              |
-|                                                      Unit start: ...... 60  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 60  |
+|                                                      Inv.Start: ........ 0  |
 |  Clock values range:                                                        |
 |                            PTS: ................ 60  DTS: ............. 20  |
 |                            from ..... 7,066,190,653  from .. 7,066,196,659  |
 |                            to ....... 7,066,376,839  to .... 7,066,367,830  |
 |                            Leaps: ............... 0  Leaps: ............ 0  |
 |=============================================================================|
-|  PID: 0x1011 (4113)                                           Unreferenced  |
+|  PID: 0x1011 (4113)                                       MPEG-2 AAC Audio  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ... 200,905 b/s  Packets: ........... 277  Expected: ......... 0  |
 |  Access: ...... Scrambled  Adapt.F.: ........... 17  Unexpect: ......... 0  |
-|  Crypto-Per: .... Unknown  Duplicated: .......... 0  Sections:              |
-|  Inv.scramb.: ......... 0                            Unit start: ...... 17  |
+|  Crypto-Per: .... Unknown  Duplicated: .......... 0  PES:                   |
+|  Inv.scramb.: ......... 0                            Packets: ......... 17  |
+|                                                      Inv.Start: ........ 0  |
 |=============================================================================|
-|  PID: 0x1012 (4114)                                           Unreferenced  |
+|  PID: 0x1012 (4114)                                       MPEG-2 AAC Audio  |
 |  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C79 (23673) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: ... 201,630 b/s  Packets: ........... 278  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 17  Unexpect: ......... 0  |
-|                            Duplicated: .......... 0  Sections:              |
-|                                                      Unit start: ...... 16  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 16  |
+|                                                      Inv.Start: ........ 0  |
 |  Clock values range:                                                        |
 |                            PTS: ................ 16                         |
 |                            from ..... 7,066,147,024                         |
 |                            to ....... 7,066,319,824                         |
 |                            Leaps: ............... 0                         |
 |=============================================================================|
-|  PID: 0x1111 (4369)                                           Unreferenced  |
+|  PID: 0x1111 (4369)                         PCR (not otherwise referenced)  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 40,616 b/s  Packets: ............ 56  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 56  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
@@ -279,9 +312,10 @@
 |  to ... 2,116,498,981,105                                                   |
 |  Leaps: ............... 0                                                   |
 |=============================================================================|
-|  PID: 0x1112 (4370)                                           Unreferenced  |
+|  PID: 0x1112 (4370)                         PCR (not otherwise referenced)  |
+|  Service: 0x5C79 (23673) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 40,616 b/s  Packets: ............ 56  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ........... 56  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
@@ -293,9 +327,10 @@
 |  to ... 2,119,889,094,321                                                   |
 |  Leaps: ............... 0                                                   |
 |=============================================================================|
-|  PID: 0x1140 (4416)                                           Unreferenced  |
+|  PID: 0x1140 (4416)                             OMA BCAST / 3GPP GBA_U ECM  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
 |-----------------------------------------------------------------------------|
-|  Unreferenced PID          Transport:                Discontinuities:       |
+|  Single Service PID        Transport:                Discontinuities:       |
 |  Bitrate: .... 13,780 b/s  Packets: ............ 19  Expected: ......... 0  |
 |  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
 |                            Duplicated: .......... 0  Sections:              |
@@ -376,6 +411,22 @@
 |      Min repet.: .... 1000  ms  Table cnt: .......... 2                     |
 |      Max repet.: .... 1000  ms  Version: ........... 28                     |
 |=============================================================================|
+|  PID: 0x0021 (33)                                                      PMT  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x5C78 (23672)                                     |
+|      Repetition: ...... 60  ms  Section cnt: ....... 35                     |
+|      Min repet.: ...... 60  ms  Table cnt: ......... 35                     |
+|      Max repet.: ...... 60  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0022 (34)                                                      PMT  |
+|  Service: 0x5C79 (23673) (unknown)                                          |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x5C79 (23673)                                     |
+|      Repetition: ...... 60  ms  Section cnt: ....... 35                     |
+|      Min repet.: ...... 60  ms  Table cnt: ......... 35                     |
+|      Max repet.: ...... 60  ms  Version: ............ 1                     |
+|=============================================================================|
 |  PID: 0x0203 (515)    IPDC SPP Open Security Framework Generic Roaming EMM  |
 |-----------------------------------------------------------------------------|
 |  0x84 (132, EMM), TID ext: 0xFFFF (65535)                                   |
@@ -387,6 +438,14 @@
 |      Repetition: ....... 1  ms  Section cnt: .... 1,197  First version:  7  |
 |      Min repet.: ....... 1  ms  Table cnt: ...... 1,197  Last version:  19  |
 |      Max repet.: ...... 74  ms    , 22, 23, 24, 25, 26, 27, 28, 29, 30, 31  |
+|=============================================================================|
+|  PID: 0x1140 (4416)                             OMA BCAST / 3GPP GBA_U ECM  |
+|  Service: 0x5C78 (23672) (unknown)                                          |
+|-----------------------------------------------------------------------------|
+|  0x82 (130, EMM), TID ext: 0x0000 (0)                                       |
+|      Repetition: ..... 106  ms  Section cnt: ....... 19  First version  15  |
+|      Min repet.: ..... 105  ms  Table cnt: ......... 19  Last version:  16  |
+|      Max repet.: ..... 106  ms  Versions: ...... 15, 16                     |
 |=============================================================================|
 |  PID: 0x1C00 (7168)                                    ISDB download (DLT)  |
 |-----------------------------------------------------------------------------|

@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
+  <PMT version="1" current="true" service_id="0x5C79" PCR_PID="0x1112">
+    <metadata PID="34" first_ts_packet="206" last_ts_packet="206"/>
+    <component elementary_PID="0x1002" stream_type="0x02">
+      <stream_identifier_descriptor component_tag="0x00"/>
+    </component>
+    <component elementary_PID="0x1012" stream_type="0x0F">
+      <MPEG2_AAC_audio_descriptor MPEG2_AAC_profile="0x01" MPEG2_AAC_channel_configuration="0x02" MPEG2_AAC_additional_information="0x00"/>
+      <stream_identifier_descriptor component_tag="0x10"/>
+    </component>
+  </PMT>
+  <PMT version="1" current="true" service_id="0x5C78" PCR_PID="0x1111">
+    <metadata PID="33" first_ts_packet="207" last_ts_packet="207"/>
+    <CA_descriptor CA_system_id="0x0005" CA_PID="0x1140"/>
+    <component elementary_PID="0x1001" stream_type="0x02">
+      <stream_identifier_descriptor component_tag="0x00"/>
+    </component>
+    <component elementary_PID="0x1011" stream_type="0x0F">
+      <MPEG2_AAC_audio_descriptor MPEG2_AAC_profile="0x01" MPEG2_AAC_channel_configuration="0x02" MPEG2_AAC_additional_information="0x00"/>
+      <stream_identifier_descriptor component_tag="0x10"/>
+    </component>
+  </PMT>
   <SDT version="5" current="true" transport_stream_id="0x110B" original_network_id="0x0003" actual="true">
     <metadata PID="17" first_ts_packet="671" last_ts_packet="671"/>
     <service service_id="0x40CA" EIT_schedule="false" EIT_present_following="true" CA_mode="false" running_status="undefined">
