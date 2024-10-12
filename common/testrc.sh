@@ -111,9 +111,6 @@ else
     EXE=
 fi
 
-# No Dektec support on non-Intel processors.
-[[ $CPU != x86_64 && $CPU != i*86 ]] && TS_NO_DEKTEC=1
-
 # "Unusual" CPU architectures may indicate a Qemu emulated environment.
 # Use a 10 times longer timeout for tests since the emulation is very slow.
 # The concept of "unusual" CPU architecture is completely arbitrary.

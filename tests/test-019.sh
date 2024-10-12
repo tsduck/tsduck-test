@@ -11,27 +11,24 @@ test_cleanup "$SCRIPT.*"
 # and are executed elsewhere using name NAME.
 
 TOOLS=(
-    tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate
-    tsdektec.linux tsdektec.windows
+    tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate tsdektec
     tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsfuzz tsgenecm
-    tshides.linux tshides.windows
-    tslatencymonitor
+    tshides tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
     tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    tstestecmg tsvatek/windows-32/freebsd/netbsd/openbsd/dragonfly tsxml
+    tstestecmg tsvatek
 )
 
 INPUT_PLUGINS=(
-    craft dektec.linux dektec.windows dvb.linux dvb.mac dvb.windows file fork
-    hls http ip memory null pcap rist.mac rist.windows srt/openbsd/netbsd
+    craft dektec dvb.linux dvb.mac dvb.windows file fork
+    hls http ip memory null pcap rist srt
 )
 
 OUTPUT_PLUGINS=(
-    dektec.linux dektec.windows drop file fork hides.linux hides.windows hls
-    http ip memory play.linux play.mac play.windows rist.mac rist.windows
-    srt/openbsd/netbsd vatek/windows-32/freebsd/netbsd/openbsd/dragonfly
+    dektec.linux dektec.windows drop file fork hides hls http ip memory
+    play.linux play.mac play.windows rist srt vatek
 )
 
 PACKET_PLUGINS=(
@@ -48,8 +45,12 @@ PACKET_PLUGINS=(
 # Check if a tool or plugin name shall be tested.
 valid-test()
 {
-    # Dektec tests disabled by environment variable TS_NO_DEKTEC:
-    [[ -n "$TS_NO_DEKTEC" && $1 == *dektec* ]] && return $EXIT_FAILURE
+    # Skip tests on unsupported features.
+    for feat in dektec hides rist srt vatek; do
+        if [[ $1 == *${feat}* ]]; then
+            $(tspath tsversion) --support $feat || return $EXIT_FAILURE
+        fi
+    done
     # No OS-specific indication:
     [[ $1 != *.* && $1 != */* ]] && return $EXIT_SUCCESS
     # Test for that specific OS: 
