@@ -95,11 +95,11 @@ INT3="<?xml version='1.0' encoding='UTF-8'?>
 # Distinct operating systems require distinct options.
 # Here, we use localhost to send and receive multicast.
 # This has several consequences:
-# - On macOS, we need --force-local-multicast-outgoing to send.
+# - On macOS and BSD systems, we need --force-local-multicast-outgoing to send.
 # - On Windows, we need to start the receivers before the senders.
 #   Sending packets on localhost without receivers is considered "unreachable".
 
-[[ $OS == mac ]] && FORCE="--force-local-multicast-outgoing" || FORCE=""
+[[ $OS == mac || $OS == *bsd ]] && FORCE="--force-local-multicast-outgoing" || FORCE=""
 
 CONTROL1=9101
 CONTROL2=9102
