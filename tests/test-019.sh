@@ -18,7 +18,7 @@ TOOLS=(
     tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
-    tstestecmg tsvatek
+    tstestecmg tsvatek tsxml
 )
 
 INPUT_PLUGINS=(
