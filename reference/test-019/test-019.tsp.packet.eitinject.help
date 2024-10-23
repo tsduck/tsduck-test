@@ -77,6 +77,11 @@ Options:
       all DVB strings without explicit table code are assumed to use
       ISO-8859-15 instead of the standard ISO-6937 encoding.
 
+  --event-offset seconds
+      Specifies an offset in seconds to apply to the start time of all loaded
+      events. Can be negative. By default, no offset is applied.
+      See also option --input-event-offset.
+
   -f 'file-wildcard'
   --files 'file-wildcard'
       A file specification with optional wildcards indicating which event files
@@ -97,6 +102,11 @@ Options:
       Load events from incoming EIT's in the EPG. A typical use case is the
       generatation of EIT p/f from EIT schedule. By default, events are loaded
       from EIT files only.
+
+  --input-event-offset seconds
+      With --incoming-eits, specifies an offset in seconds to apply to the
+      start time of all events from the input EIT PID. By default, the same
+      offset is applied as specified with --event-offset
 
   --japan
       A synonym for '--default-charset ARIB-STD-B24'. This is a handy shortcut
