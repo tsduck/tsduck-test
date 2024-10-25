@@ -2,13 +2,19 @@
 # Check the integrity of help texts.
 
 source $(dirname $0)/../common/testrc.sh
-test_cleanup "$SCRIPT.*"
+
+# Important: do not call test_cleanup on --init. This would delete help files
+# on features which are not supported on this platform.
+if $INITEST; then
+    OUTFILES=$(test_outputs "$SCRIPT.*")
+else
+    test_cleanup "$SCRIPT.*"
+    OUTFILES=""
+fi
 
 # Some tools and plugins have output texts which depend on the operating system.
 # Some others are not implemented at all (eg. dektec plugins on macOS).
 # Tests named NAME.OS are executed on OS only, using name NAME.OS.
-# Tests named NAME/OS1/OS2/... are not executed on OS1, OS2, ...
-# and are executed elsewhere using name NAME.
 
 TOOLS=(
     tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate tsdektec
@@ -52,53 +58,59 @@ valid-test()
         fi
     done
     # No OS-specific indication:
-    [[ $1 != *.* && $1 != */* ]] && return $EXIT_SUCCESS
+    [[ $1 != *.* ]] && return $EXIT_SUCCESS
     # Test for that specific OS: 
     [[ $1 == *.$OS || $1 == *.$OS2 ]] && return $EXIT_SUCCESS
     # Test for another OS:
     [[ $1 == *.* ]] && return $EXIT_FAILURE
-    # Test excluded for that specific OS:
-    [[ $1/ == */$OS/* || $1/ == */$OS2/* ]] && return $EXIT_FAILURE
-    # Test not excluded for that specific OS:
+    # Test not excluded for any OS:
     return $EXIT_SUCCESS
 }
 
-for name in ${TOOLS[@]}; do
-    if valid-test $name; then
-        name=${name/\/*/}
-        $(trace $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help")
-        $(tspath ${name/.*/}) --help >"$OUTDIR/$SCRIPT.$name.help" 2>&1
-        $(trace test_text $SCRIPT.$name.help)
-        test_text $SCRIPT.$name.help
+for tname in ${TOOLS[@]}; do
+    name=${tname/\/*/}
+    file="$SCRIPT.$name.help"
+    if valid-test $tname; then
+        $INITEST && rm -rf "$OUTDIR/$file"
+        $(trace $(tspath ${name/.*/}) --help >"$OUTDIR/$file")
+        $(tspath ${name/.*/}) --help >"$OUTDIR/$file" 2>&1
+        $(trace test_text $file)
+        test_text $file
     fi
 done
 
-for name in ${INPUT_PLUGINS[@]}; do
-    if valid-test $name; then
-        name=${name/\/*/}
-        $(trace $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help")
-        $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.input.$name.help" 2>&1
-        $(trace test_text $SCRIPT.tsp.input.$name.help)
-        test_text $SCRIPT.tsp.input.$name.help
+for tname in ${INPUT_PLUGINS[@]}; do
+    name=${tname/\/*/}
+    file="$SCRIPT.tsp.input.$name.help"
+    if valid-test $tname; then
+        $INITEST && rm -rf "$OUTDIR/$file"
+        $(trace $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$file")
+        $(tspath tsp) -I ${name/.*/} --help >"$OUTDIR/$file" 2>&1
+        $(trace test_text $file)
+        test_text $file
     fi
 done
 
-for name in ${OUTPUT_PLUGINS[@]}; do
-    if valid-test $name; then
-        name=${name/\/*/}
-        $(trace $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help")
-        $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.output.$name.help" 2>&1
-        $(trace test_text $SCRIPT.tsp.output.$name.help)
-        test_text $SCRIPT.tsp.output.$name.help
+for tname in ${OUTPUT_PLUGINS[@]}; do
+    name=${tname/\/*/}
+    file="$SCRIPT.tsp.output.$name.help"
+    if valid-test $tname; then
+        $INITEST && rm -rf "$OUTDIR/$file"
+        $(trace $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$file")
+        $(tspath tsp) -O ${name/.*/} --help >"$OUTDIR/$file" 2>&1
+        $(trace test_text $file)
+        test_text $file
     fi
 done
 
-for name in ${PACKET_PLUGINS[@]}; do
-    if valid-test $name; then
-        name=${name/\/*/}
-        $(trace $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help")
-        $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$SCRIPT.tsp.packet.$name.help" 2>&1
-        $(trace test_text $SCRIPT.tsp.packet.$name.help)
-        test_text $SCRIPT.tsp.packet.$name.help
+for tname in ${PACKET_PLUGINS[@]}; do
+    name=${tname/\/*/}
+    file="$SCRIPT.tsp.packet.$name.help"
+    if valid-test $tname; then
+        $INITEST && rm -rf "$OUTDIR/$file"
+        $(trace $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$file")
+        $(tspath tsp) -P ${name/.*/} --help >"$OUTDIR/$file" 2>&1
+        $(trace test_text $file)
+        test_text $file
     fi
 done

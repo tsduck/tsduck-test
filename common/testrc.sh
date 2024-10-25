@@ -395,14 +395,20 @@ exclude_on_asan() {
     fi
 }
 
-# Cleanup temporary output file matching a wildcard.
-# Syntax: test_cleanup test-file-wildcard
-test_cleanup() {
+# Get the list of output files matching a wildcard.
+# Syntax: test_outputs test-file-wildcard
+test_outputs() {
     if [[ -n "$1" ]]; then
         local grepopts=
         for os in $OTHEROS; do grepopts="$grepopts -e .$os."; done
-        rm -rf $(ls -d 2>/dev/null "$OUTDIR"/$1 | grep -F -v $grepopts)
+        ls -1 -d 2>/dev/null "$OUTDIR"/$1 | grep -F -v $grepopts
     fi
+}
+
+# Cleanup temporary output file matching a wildcard.
+# Syntax: test_cleanup test-file-wildcard
+test_cleanup() {
+    rm -rf $(test_outputs "$1")
 }
 
 # Check a temporary text file in 'tmp' against a reference file in 'reference'.

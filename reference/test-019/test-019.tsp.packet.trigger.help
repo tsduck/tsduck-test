@@ -46,6 +46,11 @@ Options:
       Specify the minimum time, in milliseconds, between two triggered actions.
       Actions which should be triggered in the meantime are ignored.
 
+  --once
+      Trigger the actions only once per label. When a packet with one or more
+      labels from option --label has triggered the actions, these labels are
+      disabled.
+
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
