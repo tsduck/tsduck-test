@@ -14,6 +14,7 @@ Options:
   -e 'command'
   --execute 'command'
       Run the specified command when the current packet triggers the actions.
+      See also option --synchronous.
 
   --help
       Display this help text.
@@ -62,6 +63,11 @@ Options:
 
   --stop
       Trigger the actions on tsp stop.
+
+  -s
+  --synchronous
+      With --execute, wait for the command to complete before processing the
+      next packet. By default, the command runs asynchronously.
 
   --ttl value
       With --udp, specifies the TTL (Time-To-Live) socket option. The actual
