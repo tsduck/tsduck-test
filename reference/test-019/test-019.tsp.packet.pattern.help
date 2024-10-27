@@ -10,6 +10,13 @@ Parameter:
 
 Options:
 
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
   --help
       Display this help text.
 
@@ -33,8 +40,9 @@ Options:
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
-      through this one. Several --only-label options may be specified. This is
-      a generic option which is defined in all packet processing plugins.
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
 
   -p pid1[-pid2]
   --pid pid1[-pid2]
