@@ -11,6 +11,17 @@ Options:
       (logical 'and'). By default, a packet is selected if any label is set
       (logical 'or').
 
+  -c file-name
+  --copy file-name
+      Copy the specified file when the current packet triggers the actions.
+      See also option --destination.
+
+  -d file-name
+  --destination file-name
+      With --copy, the file is copied to that specified destination. If the
+      specified path is an existing directory, the file is copied in that
+      directory, with the same name as input.
+
   -e 'command'
   --execute 'command'
       Run the specified command when the current packet triggers the actions.
@@ -83,7 +94,7 @@ Options:
       translates to an IP address. The 'port' specifies the destination UDP
       port.
 
-  --udp-message hexa-string
+  --udp-message hexa-data
       With --udp, specifies the binary message to send as UDP datagram. The
       value must be a string of hexadecimal digits specifying any number of
       bytes.
