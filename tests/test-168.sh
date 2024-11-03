@@ -34,9 +34,18 @@ test_tsp --bitrate $BITRATE \
     -P eitinject --file $(fpath "$TMPDIR/")/"$SCRIPT.*.xml" --wait-first-batch --stuffing $CYCLES \
     -P filter --after-packets 60 --pid 18 --set-label 2 \
     -P trigger --once --label 2 --copy $(fpath "$INDIR/$SCRIPT.delete.xml") --destination $(fpath "$TMPDIR") \
-    -P tables --pid 18 --all-sections --no-deep-duplicate --max-tables 5 -o $(fpath "$OUTDIR/$SCRIPT.txt") \
+    -P tables -p 18 -a --no-deep-duplicate -x 5 -m -b $(fpath "$OUTDIR/$SCRIPT.bin") \
     -O drop \
     >"$OUTDIR/$SCRIPT.log" 2>&1
 
-test_text $SCRIPT.txt
 test_text $SCRIPT.log
+test_bin ${SCRIPT}_p0012_t4E_e0001_v00_s00.bin
+test_bin ${SCRIPT}_p0012_t4E_e0001_v00_s01.bin
+test_bin ${SCRIPT}_p0012_t50_e0001_v00_s00.bin
+test_bin ${SCRIPT}_p0012_t4E_e0001_v01_s01.bin
+test_bin ${SCRIPT}_p0012_t50_e0001_v01_s00.bin
+
+for t in t4E_e0001_v00_s00 t4E_e0001_v00_s01 t50_e0001_v00_s00 t4E_e0001_v01_s01 t50_e0001_v01_s00; do
+    $(tspath tstabdump) $(fpath "$OUTDIR/${SCRIPT}_p0012_$t.bin") >"$OUTDIR/${SCRIPT}_p0012_$t.log" 2>&1
+    test_text ${SCRIPT}_p0012_$t.log
+done
