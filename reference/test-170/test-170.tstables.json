@@ -1,0 +1,545 @@
+[
+  {
+    "#name": "PAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 636,
+        "last_ts_packet": 636,
+        "pid": 0
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 257,
+        "service_id": 23584
+      },
+      {
+        "#name": "service",
+        "program_map_pid": 8136,
+        "service_id": 23608
+      }
+    ],
+    "current": true,
+    "network_pid": 16,
+    "transport_stream_id": 737,
+    "version": 12
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 639,
+        "last_ts_packet": 639,
+        "pid": 257
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 0
+          }
+        ],
+        "elementary_pid": 273,
+        "stream_type": 27
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 16
+          }
+        ],
+        "elementary_pid": 274,
+        "stream_type": 17
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 17
+          }
+        ],
+        "elementary_pid": 275,
+        "stream_type": 17
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 18
+          }
+        ],
+        "elementary_pid": 276,
+        "stream_type": 17
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 19
+          }
+        ],
+        "elementary_pid": 277,
+        "stream_type": 17
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 48
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 08 3D"
+            ],
+            "tag": 253
+          }
+        ],
+        "elementary_pid": 278,
+        "stream_type": 6
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 A3"
+            ],
+            "tag": 253
+          }
+        ],
+        "elementary_pid": 500,
+        "stream_type": 5
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "carousel_identifier_descriptor",
+            "carousel_id": 1
+          },
+          {
+            "#name": "association_tag_descriptor",
+            "#nodes": [
+              {
+                "#name": "selector_bytes",
+                "#nodes": [
+                  "80 00 00 00 FF FF FF FF"
+                ]
+              }
+            ],
+            "association_tag": 64,
+            "use": 0
+          },
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 64
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 A0 A4 00 00 00 0A 00 64 00 00 00 01 1F"
+            ],
+            "tag": 253
+          }
+        ],
+        "elementary_pid": 900,
+        "stream_type": 11
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 120
+          }
+        ],
+        "elementary_pid": 1500,
+        "stream_type": 12
+      }
+    ],
+    "current": true,
+    "pcr_pid": 256,
+    "service_id": 23584,
+    "version": 5
+  },
+  {
+    "#name": "PMT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 840,
+        "last_ts_packet": 840,
+        "pid": 8136
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 131
+          }
+        ],
+        "elementary_pid": 530,
+        "stream_type": 17
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 129
+          }
+        ],
+        "elementary_pid": 529,
+        "stream_type": 27
+      },
+      {
+        "#name": "component",
+        "#nodes": [
+          {
+            "#name": "stream_identifier_descriptor",
+            "component_tag": 135
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 08 3D"
+            ],
+            "tag": 253
+          }
+        ],
+        "elementary_pid": 281,
+        "stream_type": 6
+      }
+    ],
+    "current": true,
+    "pcr_pid": 512,
+    "service_id": 23608,
+    "version": 6
+  },
+  {
+    "#name": "NIT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 11527,
+        "last_ts_packet": 11527,
+        "pid": 16
+      },
+      {
+        "#name": "network_name_descriptor",
+        "network_name": "TV INTEGR\u00C2O\u0307"
+      },
+      {
+        "#name": "transport_stream",
+        "#nodes": [
+          {
+            "#name": "service_list_descriptor",
+            "#nodes": [
+              {
+                "#name": "service",
+                "service_id": 23608,
+                "service_type": 192
+              },
+              {
+                "#name": "service",
+                "service_id": 23584,
+                "service_type": 1
+              }
+            ]
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "89 16 0F 90"
+            ],
+            "tag": 250
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "5C 38"
+            ],
+            "tag": 251
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "07 36 54 56 20 49 4E 54 45 47 52 41 C7 C3 4F AF 01 5C 38 0F 01 5C 20"
+            ],
+            "tag": 205
+          }
+        ],
+        "original_network_id": 737,
+        "preferred_section": 0,
+        "transport_stream_id": 737
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "network_id": 737,
+    "version": 12
+  },
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 11720,
+        "last_ts_packet": 11720,
+        "pid": 1
+      }
+    ],
+    "current": true,
+    "version": 0
+  },
+  {
+    "#name": "SDT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 13831,
+        "last_ts_packet": 13831,
+        "pid": 17
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "TV INTEGR\u00C2O\u0307 HD",
+            "service_provider_name": "TV INTEGR\u00C2O\u0307",
+            "service_type": 1
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": false,
+        "running_status": "running",
+        "service_id": 23584
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "service_descriptor",
+            "service_name": "TV INTEGR\u00C2O\u0307 1-SEG",
+            "service_provider_name": "TV INTEGR\u00C2O\u0307",
+            "service_type": 192
+          }
+        ],
+        "ca_mode": false,
+        "eit_present_following": true,
+        "eit_schedule": false,
+        "running_status": "running",
+        "service_id": 23608
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "original_network_id": 737,
+    "transport_stream_id": 737,
+    "version": 12
+  },
+  {
+    "#name": "EIT",
+    "#nodes": [
+      {
+        "#name": "metadata",
+        "first_ts_packet": 13045,
+        "last_ts_packet": 14840,
+        "pid": 18
+      },
+      {
+        "#name": "event",
+        "#nodes": [
+          {
+            "#name": "short_event_descriptor",
+            "#nodes": [
+              {
+                "#name": "event_name",
+                "#nodes": [
+                  "OLIMPIADAS DE PARIS 2024"
+                ]
+              },
+              {
+                "#name": "text",
+                "#nodes": [
+                  "Acompanhe os atletas brasileiros na disputa por medalhas em Paris."
+                ]
+              }
+            ],
+            "language_code": "por"
+          },
+          {
+            "#name": "parental_rating_descriptor",
+            "#nodes": [
+              {
+                "#name": "country",
+                "country_code": "BRA",
+                "rating": 1
+              }
+            ]
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "F6 03 10 11 FF 5F 70 6F 72 45 73 74 3F 72 65 6F"
+            ],
+            "tag": 196
+          },
+          {
+            "#name": "component_descriptor",
+            "component_tag": 0,
+            "component_type": 178,
+            "language_code": "por",
+            "stream_content": 5,
+            "stream_content_ext": 15,
+            "text": " "
+          },
+          {
+            "#name": "content_descriptor",
+            "#nodes": [
+              {
+                "#name": "content",
+                "content_nibble_level_1": 1,
+                "content_nibble_level_2": 0,
+                "user_byte": 0
+              }
+            ]
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 08 30 05 01 13 70 6F 72 00 70 6F 72 0D 63 6C 6F 73 65 64 63 61 70 74 69 6F 6E"
+            ],
+            "tag": 199
+          },
+          {
+            "#name": "extended_event_descriptor",
+            "#nodes": [
+              {
+                "#name": "text",
+                "#nodes": [
+                  "OLIMPIADAS DE PARIS 2024"
+                ]
+              }
+            ],
+            "descriptor_number": 0,
+            "language_code": "por",
+            "last_descriptor_number": 0
+          }
+        ],
+        "ca_mode": false,
+        "duration": "08:40:00",
+        "event_id": 5,
+        "running_status": "running",
+        "start_time": "2024-08-02 04:45:00"
+      },
+      {
+        "#name": "event",
+        "#nodes": [
+          {
+            "#name": "short_event_descriptor",
+            "#nodes": [
+              {
+                "#name": "event_name",
+                "#nodes": [
+                  "JORNAL HOJE"
+                ]
+              },
+              {
+                "#name": "text",
+                "#nodes": [
+                  "Os destaques do dia no Brasil e no mundo, com apresenta\u013F\u00AAo de C\u00D8sar Tralli."
+                ]
+              }
+            ],
+            "language_code": "por"
+          },
+          {
+            "#name": "parental_rating_descriptor",
+            "#nodes": [
+              {
+                "#name": "country",
+                "country_code": "BRA",
+                "rating": 1
+              }
+            ]
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "F6 03 10 11 FF 5F 70 6F 72 45 73 74 3F 72 65 6F"
+            ],
+            "tag": 196
+          },
+          {
+            "#name": "component_descriptor",
+            "component_tag": 0,
+            "component_type": 178,
+            "language_code": "por",
+            "stream_content": 5,
+            "stream_content_ext": 15,
+            "text": " "
+          },
+          {
+            "#name": "content_descriptor",
+            "#nodes": [
+              {
+                "#name": "content",
+                "content_nibble_level_1": 0,
+                "content_nibble_level_2": 0,
+                "user_byte": 0
+              }
+            ]
+          },
+          {
+            "#name": "generic_descriptor",
+            "#nodes": [
+              "00 08 30 05 01 13 70 6F 72 00 70 6F 72 0D 63 6C 6F 73 65 64 63 61 70 74 69 6F 6E"
+            ],
+            "tag": 199
+          },
+          {
+            "#name": "extended_event_descriptor",
+            "#nodes": [
+              {
+                "#name": "text",
+                "#nodes": [
+                  "JORNAL HOJE"
+                ]
+              }
+            ],
+            "descriptor_number": 0,
+            "language_code": "por",
+            "last_descriptor_number": 0
+          }
+        ],
+        "ca_mode": false,
+        "duration": "00:30:00",
+        "event_id": 6,
+        "running_status": "not-running",
+        "start_time": "2024-08-02 13:25:00"
+      }
+    ],
+    "actual": true,
+    "current": true,
+    "last_table_id": 0,
+    "original_network_id": 737,
+    "service_id": 23584,
+    "transport_stream_id": 737,
+    "type": "pf",
+    "version": 13
+  }
+]

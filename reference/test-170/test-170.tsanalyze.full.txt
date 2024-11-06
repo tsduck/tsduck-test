@@ -1,0 +1,504 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                  test-170 tsanalyze full  |
+|=============================================================================|
+|  Transport Stream Id: ........ 0x02E1 (737)  |  Services: .............. 2  |
+|  Bytes: ........................ 10,000,096  |  PID's: Total: ......... 24  |
+|  TS packets: ....................... 53,192  |         Clear: ......... 24  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 2  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ............... 29,958,294 b/s   32,507,936 b/s  |
+|  Selected reference bitrate: ............. 29,958,294 b/s   32,507,936 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ..................................... 2 sec (0 min 2 sec)  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x5C20  TV INTEGRÂȮ HD ............................... C   15,918,582 b/s  |
+|  0x5C38  TV INTEGRÂȮ 1-SEG ............................ C      397,627 b/s  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                          test-170 tsanalyze full  |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 24,222, PID's: 9 (clear: 9, scrambled: 0)                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C   13,642,085 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       79,976 b/s  |
+|  0x0000  PAT .......................................... C       24,781 b/s  |
+|  0x0001  CAT .......................................... C        1,690 b/s  |
+|  0x0010  NIT (Network: 0x02E1 (737) TV INTEGRÂȮ) ...... C        2,253 b/s  |
+|  0x0011  SDT/BAT ...................................... C        1,690 b/s  |
+|  0x0012  EIT .......................................... C       49,563 b/s  |
+|  0x0024  ISDB BIT ..................................... C        1,690 b/s  |
+|  0x0027  ISDB EIT ..................................... C        3,379 b/s  |
+|  0x1FF0  ISDB IIP ..................................... C        6,759 b/s  |
+|  0x1FFF  Stuffing ..................................... C   13,550,282 b/s  |
+|=============================================================================|
+|  Service: 0x5C20 (23584), TS: 0x02E1 (737), Original Netw: 0x02E1 (737)     |
+|  Service name: TV INTEGRÂȮ HD, provider: TV INTEGRÂȮ                        |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 28,264, PID's: 11 (clear: 11, scrambled: 0)                    |
+|  PMT PID: 0x0101 (257), PCR PID: 0x0100 (256)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C   15,918,582 b/s  |
+|  0x0100  PCR (not otherwise referenced) ............... C       59,700 b/s  |
+|  0x0101  PMT .......................................... C       24,781 b/s  |
+|  0x0111  AVC video (1920x1080, high profile, level 4.0  C   14,639,531 b/s  |
+|  0x0112  MPEG-4 AAC Audio ............................. C      105,884 b/s  |
+|  0x0113  MPEG-4 AAC Audio ............................. C      107,573 b/s  |
+|  0x0114  MPEG-4 AAC Audio ............................. C      107,010 b/s  |
+|  0x0115  MPEG-4 AAC Audio ............................. C      269,778 b/s  |
+|  0x0116  MPEG-2 PES private data ...................... C        1,690 b/s  |
+|  0x01F4  MPEG-2 Private sections ...................... C        2,816 b/s  |
+|  0x0384  DSM-CC U-N ................................... C      599,819 b/s  |
+|  0x05DC  DSM-CC Stream Descriptors .................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x5C38 (23608), TS: 0x02E1 (737), Original Netw: 0x02E1 (737)     |
+|  Service name: TV INTEGRÂȮ 1-SEG, provider: TV INTEGRÂȮ                     |
+|  Service type: 0xC0 (Data service)                                          |
+|  TS packets: 706, PID's: 5 (clear: 5, scrambled: 0)                         |
+|  PMT PID: 0x1FC8 (8136), PCR PID: 0x0200 (512)                              |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Data service ................................. C      397,627 b/s  |
+|  0x0119  MPEG-2 PES private data ...................... C        2,253 b/s  |
+|  0x0200  PCR (not otherwise referenced) ............... C        7,322 b/s  |
+|  0x0211  AVC video (320x180, baseline profile, level 1  C      312,582 b/s  |
+|  0x0212  MPEG-4 AAC Audio ............................. C       50,126 b/s  |
+|  0x1FC8  PMT .......................................... C       25,344 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                              test-170 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 24,781 b/s  Packets: ............ 44  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 44  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,690 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                      NIT  |
+|  Network: 0x02E1 (737) TV INTEGRÂȮ                                          |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,253 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 4  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,690 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 49,563 b/s  Packets: ............ 88  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 75  |
+|=============================================================================|
+|  PID: 0x0024 (36)                                                 ISDB BIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,690 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0027 (39)                                                 ISDB EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,379 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 3  |
+|=============================================================================|
+|  PID: 0x0100 (256)                          PCR (not otherwise referenced)  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 59,700 b/s  Packets: ........... 106  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 106  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 29,958,294 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ............... 106                                                   |
+|  from ... 624,843,527,475                                                   |
+|  to ..... 624,914,930,326                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0101 (257)                                                     PMT  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 24,781 b/s  Packets: ............ 44  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 44  |
+|=============================================================================|
+|  PID: 0x0111 (273)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.0, 4:2:0                                  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate:  14,639,531 b/s  Packets: ........ 25,993  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 143  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ........ 143  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ............... 143  DTS: ............ 109  |
+|                            from ..... 2,082,846,917  from .. 2,082,831,902  |
+|                            to ....... 2,083,085,655  to .... 2,083,070,640  |
+|                            Leaps: ............... 0  Leaps: ............ 0  |
+|=============================================================================|
+|  PID: 0x0112 (274)                                        MPEG-4 AAC Audio  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 105,884 b/s  Packets: ........... 188  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 125  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 63  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 63                         |
+|                            from ..... 2,082,828,001                         |
+|                            to ....... 2,083,066,081                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0113 (275)                                        MPEG-4 AAC Audio  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 107,573 b/s  Packets: ........... 191  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 125  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 63  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 63                         |
+|                            from ..... 2,082,828,001                         |
+|                            to ....... 2,083,066,081                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0114 (276)                                        MPEG-4 AAC Audio  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 107,010 b/s  Packets: ........... 190  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 125  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 63  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 63                         |
+|                            from ..... 2,082,828,001                         |
+|                            to ....... 2,083,066,081                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0115 (277)                                        MPEG-4 AAC Audio  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 269,778 b/s  Packets: ........... 479  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 121  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 62  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 62                         |
+|                            from ..... 2,082,824,161                         |
+|                            to ....... 2,083,058,401                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0116 (278)                                 MPEG-2 PES private data  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,690 b/s  Packets: ............. 3  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 3  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: .......... 3  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................. 3                         |
+|                            from ........... 180,000                         |
+|                            to ............. 180,000                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0119 (281)                                 MPEG-2 PES private data  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,253 b/s  Packets: ............. 4  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 4  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: .......... 4  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................. 4                         |
+|                            from ........... 180,000                         |
+|                            to ............. 180,000                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x01F4 (500)                                 MPEG-2 Private sections  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 2,816 b/s  Packets: ............. 5  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 5  |
+|=============================================================================|
+|  PID: 0x0200 (512)                          PCR (not otherwise referenced)  |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 7,322 b/s  Packets: ............ 13  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 13  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            TSrate: . 29,958,294 b/s  Unit start: ....... 0  |
+|                                                                             |
+|  Clock values range:                                                        |
+|  PCR: ................ 13                                                   |
+|  from ... 624,813,852,982                                                   |
+|  to ..... 624,880,881,686                                                   |
+|  Leaps: ............... 0                                                   |
+|=============================================================================|
+|  PID: 0x0211 (529)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  320x180, baseline profile, level 1.3, 4:2:0                                |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 312,582 b/s  Packets: ........... 555  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........... 81  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 80  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 80                         |
+|                            from ..... 2,082,761,331                         |
+|                            to ....... 2,082,998,568                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0212 (530)                                        MPEG-4 AAC Audio  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 50,126 b/s  Packets: ............ 89  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                                                      Packets: ......... 32  |
+|                                                      Inv.Start: ........ 0  |
+|  Clock values range:                                                        |
+|                            PTS: ................ 32                         |
+|                            from ..... 2,082,735,840                         |
+|                            to ....... 2,082,973,920                         |
+|                            Leaps: ............... 0                         |
+|=============================================================================|
+|  PID: 0x0384 (900)                                              DSM-CC U-N  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 599,819 b/s  Packets: ......... 1,065  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 59  |
+|=============================================================================|
+|  PID: 0x1FC8 (8136)                                                    PMT  |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 25,344 b/s  Packets: ............ 45  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 45  |
+|=============================================================================|
+|  PID: 0x1FF0 (8176)                                               ISDB IIP  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 6,759 b/s  Packets: ............ 12  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ...... 12  |
+|=============================================================================|
+|  PID: 0x1FFF (8191)                                               Stuffing  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate:  13,550,282 b/s  Packets: ........ 24,059  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                                                      Unit start: ....... 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                 test-170 tsanalyze full  |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x02E1 (737)                                       |
+|      Repetition: ...... 60  ms  Section cnt: ....... 44                     |
+|      Min repet.: ...... 59  ms  Table cnt: ......... 44                     |
+|      Max repet.: ...... 61  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 739  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 707  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 772  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                      NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x02E1 (737)                               |
+|      Repetition: ..... 646  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 601  ms  Table cnt: .......... 4                     |
+|      Max repet.: ..... 682  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x02E1 (737)                               |
+|      Repetition: ..... 620  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 570  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 669  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x5C20 (23584)                         |
+|      Repetition: ..... 962  ms  Section cnt: ........ 5                     |
+|      Min repet.: ..... 962  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 963  ms  Version: ........... 13                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x5C20 (23584)                    |
+|      Repetition: ....... 0  ms  Section cnt: ....... 17                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x5C20 (23584)                    |
+|      Repetition: ....... 0  ms  Section cnt: ....... 25                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 13                     |
+|-----------------------------------------------------------------------------|
+|  0x58 (88, EIT schedule Actual), TID ext: 0x5C20 (23584)                    |
+|      Repetition: ....... 0  ms  Section cnt: ....... 26                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 0                     |
+|      Max repet.: ....... 0  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x59 (89, EIT schedule Actual), TID ext: 0x5C20 (23584)                    |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 13                     |
+|=============================================================================|
+|  PID: 0x0024 (36)                                                 ISDB BIT  |
+|-----------------------------------------------------------------------------|
+|  0xC4 (196, BIT (ISDB)), TID ext: 0x02E1 (737)                              |
+|      Repetition: ..... 794  ms  Section cnt: ........ 3                     |
+|      Min repet.: ..... 775  ms  Table cnt: .......... 3                     |
+|      Max repet.: ..... 812  ms  Version: ........... 12                     |
+|=============================================================================|
+|  PID: 0x0027 (39)                                                 ISDB EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x5C38 (23608)                         |
+|      Repetition: ....... 0  ms  Section cnt: ........ 2                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 13                     |
+|=============================================================================|
+|  PID: 0x0101 (257)                                                     PMT  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x5C20 (23584)                                     |
+|      Repetition: ...... 60  ms  Section cnt: ....... 44                     |
+|      Min repet.: ...... 58  ms  Table cnt: ......... 44                     |
+|      Max repet.: ...... 61  ms  Version: ............ 5                     |
+|=============================================================================|
+|  PID: 0x01F4 (500)                                 MPEG-2 Private sections  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  0x74 (116, AIT), TID ext: 0x0009 (9)                                       |
+|      Repetition: ..... 491  ms  Section cnt: ........ 5                     |
+|      Min repet.: ..... 372  ms  Table cnt: .......... 5                     |
+|      Max repet.: ..... 532  ms  Version: ........... 26                     |
+|=============================================================================|
+|  PID: 0x0384 (900)                                              DSM-CC U-N  |
+|  Service: 0x5C20 (23584) TV INTEGRÂȮ HD                                     |
+|-----------------------------------------------------------------------------|
+|  0x3B (59, DSM-CC UNM), TID ext: 0x0000 (0)                                 |
+|      Repetition: ..... 785  ms  Section cnt: ........ 4                     |
+|      Min repet.: ..... 670  ms  Table cnt: .......... 4                     |
+|      Max repet.: .... 1015  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x3B (59, DSM-CC UNM), TID ext: 0x0004 (4)                                 |
+|      Repetition: ..... 471  ms  Section cnt: ........ 6                     |
+|      Min repet.: ....... 7  ms  Table cnt: .......... 6                     |
+|      Max repet.: .... 1014  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x3C (60, DSM-CC DDM), TID ext: 0x0001 (1)                                 |
+|      Repetition: .... 1685  ms  Section cnt: ........ 2                     |
+|      Min repet.: .... 1685  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1685  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x3C (60, DSM-CC DDM), TID ext: 0x0002 (2)                                 |
+|      Repetition: .... 1685  ms  Section cnt: ....... 18                     |
+|      Min repet.: .... 1685  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 1685  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x3C (60, DSM-CC DDM), TID ext: 0x0003 (3)                                 |
+|      Repetition: ....... 0  ms  Section cnt: ........ 1                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x3C (60, DSM-CC DDM), TID ext: 0x0004 (4)                                 |
+|      Repetition: ....... 0  ms  Section cnt: ....... 27                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 6                     |
+|=============================================================================|
+|  PID: 0x1FC8 (8136)                                                    PMT  |
+|  Service: 0x5C38 (23608) TV INTEGRÂȮ 1-SEG                                  |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x5C38 (23608)                                     |
+|      Repetition: ...... 60  ms  Section cnt: ....... 45                     |
+|      Min repet.: ...... 44  ms  Table cnt: ......... 45                     |
+|      Max repet.: ...... 95  ms  Version: ............ 6                     |
+===============================================================================
+

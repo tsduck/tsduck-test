@@ -5,6 +5,12 @@ Usage: tsp -P dump [options]
 
 Options:
 
+  --abnt
+      Assume that the transport stream is an ISDB one with ABNT-defined
+      variants. ISDB streams are normally automatically detected from their
+      signalization but there is no way to determine if this is an original
+      ARIB-defined ISDB or an ABNT-defined variant.
+
   --adaptation-field
       Include formatting of the adaptation field.
 
@@ -12,9 +18,20 @@ Options:
   --ascii
       Include ASCII dump in addition to hexadecimal.
 
+  --atsc
+      Assume that the transport stream is an ATSC one. ATSC streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ATSC-related stuff are found in the TS before the first
+      ATSC-specific table. For instance, when a PMT with ATSC-specific
+      descriptors is found before the first ATSC MGT or VCT.
+
   -b
   --binary
       Include binary dump in addition to hexadecimal.
+
+  --brazil
+      A synonym for '--isdb --abnt'. This is a handy shortcut when working on
+      South American ISDB-Tb transport streams.
 
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
@@ -29,6 +46,20 @@ Options:
 
   --help
       Display this help text.
+
+  --ignore-leap-seconds
+      Do not include explicit leap seconds in some UTC computations. Currently,
+      this applies to SCTE 35 splice_schedule() commands only.
+
+  --isdb
+      Assume that the transport stream is an ISDB one. ISDB streams are
+      normally automatically detected from their signalization. This option is
+      only useful when ISDB-related stuff are found in the TS before the first
+      ISDB-specific table.
+
+  --japan
+      A synonym for '--isdb'. This is a handy shortcut when working on Japanese
+      transport streams.
 
   -l
   --log
@@ -62,8 +93,19 @@ Options:
   --payload
       Hexadecimal dump of TS payload only, skip TS header.
 
+  --philippines
+      A synonym for '--isdb --abnt'. This is a handy shortcut when working on
+      Philippines transport streams.
+
   -p pid1[-pid2]
   --pid pid1[-pid2]
       Dump only packets with these PID values. Several --pid options may be
       specified. By default, all packets are displayed.
+
+  --rs204
+      Dump the 16-byte trailer as found in RS204 files.
+
+  --usa
+      A synonym for '--atsc'. This is a handy shortcut when working on North
+      American transport streams.
 

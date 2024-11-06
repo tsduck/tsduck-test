@@ -1,0 +1,128 @@
+
+* PAT, TID 0x00 (0), PID 0x0000 (0)
+  Version: 12, sections: 1, total size: 24 bytes
+  - Section 0:
+    TS id:     737 (0x02E1)
+    NIT:         0 (0x0000)  PID:   16 (0x0010)
+    Program: 23608 (0x5C38)  PID: 8136 (0x1FC8)
+    Program: 23584 (0x5C20)  PID:  257 (0x0101)
+
+* PMT, TID 0x02 (2), PID 0x0101 (257)
+  Version: 5, sections: 1, total size: 131 bytes
+  - Section 0:
+    Program: 0x5C20 (23584), PCR PID: 0x0100 (256)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0111 (273)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x00 (0)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 0x0112 (274)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x10 (16)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 0x0113 (275)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x11 (17)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 0x0114 (276)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x12 (18)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 0x0115 (277)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x13 (19)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0116 (278)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x30 (48)
+    - Descriptor 1: unknown (0xFD, 253), 3 bytes
+      0000:  00 08 3D                                   ..=
+    Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 0x01F4 (500)
+    - Descriptor 0: unknown (0xFD, 253), 2 bytes
+      0000:  00 A3                                      ..
+    Elementary stream: type 0x0B (DSM-CC U-N), PID: 0x0384 (900)
+    - Descriptor 0: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
+      Carousel id: 0x00000001 (1)
+    - Descriptor 1: DSM-CC Association Tag (0x14, 20), 13 bytes
+      Association tag: 0x0040 (64), use: 0x0000 (0)
+      Selector bytes (8 bytes): 80 00 00 00 FF FF FF FF
+    - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x40 (64)
+    - Descriptor 3: unknown (0xFD, 253), 14 bytes
+      0000:  00 A0 A4 00 00 00 0A 00 64 00 00 00 01 1F  ........d.....
+    Elementary stream: type 0x0C (DSM-CC Stream Descriptors), PID: 0x05DC (1500)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x78 (120)
+
+* PMT, TID 0x02 (2), PID 0x1FC8 (8136)
+  Version: 6, sections: 1, total size: 45 bytes
+  - Section 0:
+    Program: 0x5C38 (23608), PCR PID: 0x0200 (512)
+    Elementary stream: type 0x11 (MPEG-4 AAC Audio), PID: 0x0212 (530)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x83 (131)
+    Elementary stream: type 0x1B (AVC video), PID: 0x0211 (529)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x81 (129)
+    Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0119 (281)
+    - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
+      Component tag: 0x87 (135)
+    - Descriptor 1: unknown (0xFD, 253), 3 bytes
+      0000:  00 08 3D                                   ..=
+
+* BIT (ISDB), TID 0xC4 (196), PID 0x0024 (36)
+  Version: 12, sections: 1, total size: 23 bytes
+  - Section 0:
+    Original network id: 0x02E1 (737)
+    Broadcast view property: true
+    Broadcaster id: 0xFF (255)
+    - Descriptor 0: ISDB Extended Broadcaster (0xCE, 206), 4 bytes
+      Broadcaster type: 0x1 (Digital terrestrial television broadcast)
+      Terrestrial broadcaster id: 0x0001 (1)
+      Number of affiliations: 0, number of broadcaster ids: 0
+
+* NIT Actual, TID 0x40 (64), PID 0x0010 (16)
+  Version: 12, sections: 1, total size: 80 bytes
+  - Section 0:
+    Network Id: 0x02E1 (737)
+    Network information:
+    - Descriptor 0: Network Name (0x40, 64), 13 bytes
+      Name: "TV INTEGRÂȮ"
+    Transport Stream Id: 0x02E1 (737), Original Network Id: 0x02E1 (737)
+    - Descriptor 0: Service List (0x41, 65), 6 bytes
+      Service id: 0x5C38 (23608), Type: 0xC0 (Data service)
+      Service id: 0x5C20 (23584), Type: 0x01 (Digital television service)
+    - Descriptor 1: ISDB Terrestrial Delivery System (0xFA, 250), 4 bytes
+      Area code: 0x891 (2193)
+      Guard interval: 1 (1/16)
+      Transmission mode: 2 (8k)
+      Frequency: 569,142,857 Hz
+    - Descriptor 2: ISDB Partial Reception (0xFB, 251), 2 bytes
+      Service id: 0x5C38 (23608)
+    - Descriptor 3: ISDB TS Information (0xCD, 205), 23 bytes
+      Remote control key id: 0x07 (7)
+      TS name: "TV INTEGRÂȮ"
+      - Transmission type info: 0xAF (175)
+        Service id: 0x5C38 (23608)
+      - Transmission type info: 0x0F (15)
+        Service id: 0x5C20 (23584)
+
+* CAT, TID 0x01 (1), PID 0x0001 (1)
+  Version: 0, sections: 1, total size: 12 bytes
+  - Section 0:
+
+* SDT Actual, TID 0x42 (66), PID 0x0011 (17)
+  Version: 12, sections: 1, total size: 96 bytes
+  - Section 0:
+    Transport Stream Id: 0x02E1 (737)
+    Original Network Id: 0x02E1 (737)
+    Service Id: 0x5C38 (23608), EITs: no, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 35 bytes
+      Service type: 0xC0 (Data service)
+      Service: "TV INTEGRÂȮ 1-SEG", Provider: "TV INTEGRÂȮ"
+    Service Id: 0x5C20 (23584), EITs: no, EITp/f: yes, CA mode: free
+    Running status: running
+    - Descriptor 0: Service (0x48, 72), 32 bytes
+      Service type: 0x01 (Digital television service)
+      Service: "TV INTEGRÂȮ HD", Provider: "TV INTEGRÂȮ"
+    Reserved bits incorrectly set:
+      Byte 13, bit #4 should be '1'
+      Byte 13, bit #5 should be '1'
+      Byte 55, bit #5 should be '1'
+      Byte 55, bit #6 should be '1'
+
