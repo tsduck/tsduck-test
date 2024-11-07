@@ -267,3 +267,4 @@ repository. But we now limit their size to 20 MB.
 | 170  | Analyze a 204-byte ISDB-Tb live stream
 | 171  | Test packet trailers in a 204-byte ISDB-Tb live stream
 | 172  | Plugin `history`
+| 173  | Plugin `trace`

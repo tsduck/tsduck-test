@@ -45,7 +45,7 @@ PACKET_PLUGINS=(
     psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
     sifilter skip slice spliceinject splicemonitor stats stuffanalyze
     svremove svrename svresync t2mi tables teletext time timeref timeshift
-    trigger tsrename until zap
+    trace trigger tsrename until zap
 )
 
 # Check if a tool or plugin name shall be tested.

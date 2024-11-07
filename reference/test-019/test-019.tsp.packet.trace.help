@@ -1,0 +1,60 @@
+
+Trace packets with a custom message
+
+Usage: tsp -P trace [options]
+
+Options:
+
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
+  -f 'string'
+  --format 'string'
+      Specify the format of trace lines. The fields with a % sign are replaced
+      by the corresponding value:
+      - %p : PID value.
+      - %i : index of the packet as seen by the plugin.
+      - %a : index in the input stream, including removed packets.
+      When the letter after % is lowercase, the value is displayed in decimal.
+      When it is uppercase, the value is displayed in hexadecimal. Use %% for a
+      literal '%' sign. The default format is 'Packet: %i, PID: %P (%p)'.
+
+  --help
+      Display this help text.
+
+  -l label1[-label2]
+  --label label1[-label2]
+      Trace packets with any of these label values. Labels should have
+      typically been set by a previous plugin in the chain. Several --label
+      options may be specified.
+
+      Note that the option --label is different from the generic option
+      --only-label. The generic option --only-label acts at tsp level and
+      controls which packets are passed to the plugin. All other packets are
+      directly passed to the next plugin without going through this plugin. The
+      option --label, on the other hand, is specific to the trace plugin and
+      selects packets with specific labels among the packets which are passed
+      to this plugin.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
+
+  -o filename
+  --output-file filename
+      Specify the output file for reporting trace lines. By default, report
+      trace lines on standard error using the tsp logging mechanism.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Trace packets with these PID values. By default, when no option --label
+      or --pid is specified, all packets are traced. Several --pid options may
+      be specified.
+
