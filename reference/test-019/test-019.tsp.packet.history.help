@@ -29,6 +29,11 @@ Options:
       may constantly swap between "private stream" and "padding stream". This
       option suppresses these annoying messages.
 
+  --intra-frame
+      Report the start of all intra-frames in video PID's. Detecting
+      intra-frames depends on the video codec and not all of them are correctly
+      detected. By default, intra-frames are not reported.
+
   -m
   --milli-seconds
       For each message, report time in milli-seconds from the beginning of the
