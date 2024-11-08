@@ -80,7 +80,8 @@ Options:
 
   --rs204
       Use 204-byte format for TS packets in UDP datagrams. Each TS packet is
-      followed by a zeroed placeholder for a 16-byte Reed-Solomon trailer.
+      followed by a 16-byte trailer. If the input packet contained a trailer,
+      it is copied. Otherwise, the trailer is set to all 0xFF.
 
   -r
   --rtp
