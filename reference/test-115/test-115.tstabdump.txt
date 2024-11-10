@@ -18,7 +18,7 @@
   - Descriptor 4: AVS3 Audio (T/AI 109.7) (0xD2, 210), 6 bytes
     Codec ID: General high-rate (0x0), Sampling Frequency (index): 8000 Hz (0x8)
     General High-rate Coding. Coding Profile: basic framework (0x0), Bitstream Type: uniform
-    Bitrate: 10.2 Unspecified (0x0408), Raw Frame Length: 27230
+      Bitrate: Reserved (0x0A08), Raw Frame Length: 27230
     Resolution: 24 bits/sample (0x2)
   - Descriptor 5: AVS3 Audio (T/AI 109.7) (0xD2, 210), 17 bytes
     Codec ID: Lossless (0x1), Sampling Frequency (actual): 13579 Hz
@@ -28,15 +28,18 @@
       0000:  FF EE DD CC BB AA 99 88 77 66                    ........wf
   - Descriptor 6: AVS3 Audio (T/AI 109.7) (0xD2, 210), 6 bytes
     Codec ID: General full-rate (0x2), Sampling Frequency (index): 24000 Hz (0x5)
-    General Full-rate Coding. NN Type: low-complexity (0x1), Channel Signal - 4.0/FOA (0x06), total bitrate: 12345
+    General Full-rate Coding. NN Type: low-complexity (0x1)
+      Channel Signal - 4.0/FOA (0x06), total bitrate: 12345
     Resolution: 8 bits/sample (0x0)
   - Descriptor 7: AVS3 Audio (T/AI 109.7) (0xD2, 210), 6 bytes
     Codec ID: General full-rate (0x2), Sampling Frequency (index): 32000 Hz (0x4)
-    General Full-rate Coding. NN Type: basic (0x0), HOA Signal - order: 1, total bitrate: 1000
-    Resolution: 8 bits/sample (0x0)
+    General Full-rate Coding. NN Type: basic (0x0)
+      HOA Signal - order: 1, total bitrate: 1000
+    Resolution: 24 bits/sample (0x2)
   - Descriptor 8: AVS3 Audio (T/AI 109.7) (0xD2, 210), 7 bytes
     Codec ID: General full-rate (0x2), Sampling Frequency (index): 48000 Hz (0x2)
-    General Full-rate Coding. NN Type: basic (0x0), Mix Signal - Dual-channel stereo (0x01), number of objects: 5, total bitrate: 50000
+    General Full-rate Coding. NN Type: basic (0x0)
+      Mix Signal - Dual-channel stereo (0x01), number of objects: 6, total bitrate: 50000
     Resolution: 16 bits/sample (0x1)
   - Descriptor 9: AVS2 Audio (T/AI 109.7) (0xD3, 211), 2 bytes
     Channels: 2, Sample rate (Hz): 8000 (0)

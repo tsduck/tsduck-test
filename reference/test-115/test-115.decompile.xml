@@ -5,8 +5,8 @@
     <AVS3_video_descriptor profile_id="0x32" level_id="0x55" multiple_frame_rate_flag="false" frame_rate_code="8" sample_precision="2" chroma_format="1" temporal_id_flag="false" td_mode_flag="true" library_stream_flag="false" library_picture_enable_flag="true" colour_primaries="9" transfer_characteristics="14" matrix_coefficients="8"/>
     <private_data_specifier_descriptor private_data_specifier="AVSA"/>
     <registration_descriptor format_identifier="0x41565341"/>
-    <AVS3_audio_descriptor sampling_frequency_index="0x08" resolution="-2">
-      <general_coding coding_profile="basic" bitrate_index="0x08" bitstream_type="uniform" channel_number_index="0x04" raw_frame_length="27,230"/>
+    <AVS3_audio_descriptor sampling_frequency_index="0x08" resolution="24 bits">
+      <general_coding coding_profile="basic" bitrate_index="0x08" bitstream_type="uniform" channel_number_index="0x0A" raw_frame_length="27,230"/>
     </AVS3_audio_descriptor>
     <AVS3_audio_descriptor sampling_frequency_index="0x0F" resolution="16 bits">
       <lossless_coding sampling_frequency="0x0000350B" coding_profile="HOA" channel_number="7"/>
@@ -17,7 +17,7 @@
     <AVS3_audio_descriptor sampling_frequency_index="0x05" resolution="8 bits">
       <fullrate_coding nn_type="1" channel_num_index="0x06" total_bitrate="12,345"/>
     </AVS3_audio_descriptor>
-    <AVS3_audio_descriptor sampling_frequency_index="0x04" resolution="8 bits">
+    <AVS3_audio_descriptor sampling_frequency_index="0x04" resolution="24 bits">
       <fullrate_coding nn_type="0" hoa_order="0" total_bitrate="1,000"/>
     </AVS3_audio_descriptor>
     <AVS3_audio_descriptor sampling_frequency_index="0x02" resolution="16 bits">
