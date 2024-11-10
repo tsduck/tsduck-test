@@ -33,6 +33,9 @@ Options:
   --continuity-counter value
       Specify the value of the continuity_counter field.
 
+  --delete-rs204
+      Delete the 16-byte trailer of a 204-byte packet, if there is one.
+
   --discontinuity
       Set the discontinuity_indicator in the packets. Space is required in the
       adaptation field.
@@ -161,6 +164,12 @@ Options:
   --random-access
       Set the random_access_indicator in the packets. Space is required in the
       adaptation field.
+
+  --rs204 hexa-data
+      Specify the binary content to store in the 16-byte trailer of a 204-byte
+      packet. If the packets have no trailer, one is created. The value must be
+      a string of hexadecimal digits specifying up to 16 bytes. If the data are
+      shorter than 16 bytes, they are padded with 0xFF.
 
   --scrambling value
       Specify the value of the transport_scrambling_control field.
