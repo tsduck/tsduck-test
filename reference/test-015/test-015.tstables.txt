@@ -1,6 +1,6 @@
 
 * PMT, TID 0x02 (2), PID 0x00C8 (200)
-  Version: 0, sections: 1, total size: 778 bytes
+  Version: 0, sections: 1, total size: 802 bytes
   - Section 0:
     Program: 0x0000 (0), PCR PID: none
     Program information:
@@ -13,17 +13,36 @@
       Component tag: 0x0F (15)
       Language: eng
       Description: "A string description"
-    - Descriptor 2: AAC (0x7C, 124), 1 bytes
+    - Descriptor 2: Component (0x50, 80), 6 bytes
+      Content/type: 0xEB7F (NGA component type)
+      Component tag: 0x00 (0)
+        content is pre-rendered for consumption with headphones
+        content enables interactivity and dialogue enhancement
+        content contains spoken subtitles and audio description
+        three dimensional channel layout
+      Language: zhn
+    - Descriptor 3: Component (0x50, 80), 6 bytes
+      Content/type: 0xEB05 (NGA component type)
+      Component tag: 0x00 (0)
+        content contains audio description
+        stereo channel layout
+      Language: swe
+    - Descriptor 4: Component (0x50, 80), 6 bytes
+      Content/type: 0xEB00 (NGA component type)
+      Component tag: 0x00 (0)
+        no preferred reproduction channel layout
+      Language: deu
+    - Descriptor 5: AAC (0x7C, 124), 1 bytes
       Profile and level: 0x45
-    - Descriptor 3: AAC (0x7C, 124), 2 bytes
+    - Descriptor 6: AAC (0x7C, 124), 2 bytes
       Profile and level: 0x45
       SOAC DE flag: false
-    - Descriptor 4: AAC (0x7C, 124), 8 bytes
+    - Descriptor 7: AAC (0x7C, 124), 8 bytes
       Profile and level: 0x21
       SOAC DE flag: true
       AAC type: 0x40 (HE-AAC audio description for the visually impaired)
       Additional information (5 bytes): 01 23 45 67 89
-    - Descriptor 5: DTS (0x7B, 123), 5 bytes
+    - Descriptor 8: DTS (0x7B, 123), 5 bytes
       Sample rate code: 48 kHz
       Bit rate code: 256 kb/s
       NBLKS: 16
@@ -31,7 +50,7 @@
       Surround mode: 5 / C+L+R+SL+SR
       LFE (Low Frequency Effect) audio channel: off
       Extended surround flag: none
-    - Descriptor 6: DTS (0x7B, 123), 9 bytes
+    - Descriptor 9: DTS (0x7B, 123), 9 bytes
       Sample rate code: 48 kHz
       Bit rate code: 256 kb/s
       NBLKS: 16
@@ -40,73 +59,73 @@
       LFE (Low Frequency Effect) audio channel: on
       Extended surround flag: discrete
       Additional information (4 bytes): 78 96 54 12
-    - Descriptor 7: Cable Delivery System (0x44, 68), 11 bytes
+    - Descriptor 10: Cable Delivery System (0x44, 68), 11 bytes
       Frequency: 312.0000 MHz
       Symbol rate: 27.4500 Msymbol/s
       Modulation: 16-QAM
       Outer FEC: RS(204/188), Inner FEC: 3/5 conv. code rate
-    - Descriptor 8: Cable Delivery System (0x44, 68), 11 bytes
+    - Descriptor 11: Cable Delivery System (0x44, 68), 11 bytes
       Frequency: 220.1237 MHz
       Symbol rate: 18.0000 Msymbol/s
       Modulation: 64-QAM
       Outer FEC: none, Inner FEC: 3/4 conv. code rate
-    - Descriptor 9: Application Signalling (0x6F, 111), 0 bytes
-    - Descriptor 10: Application Signalling (0x6F, 111), 6 bytes
+    - Descriptor 12: Application Signalling (0x6F, 111), 0 bytes
+    - Descriptor 13: Application Signalling (0x6F, 111), 6 bytes
       Application type: 0x1234 (4660), AIT Version: 0x0C (12)
       Application type: 0x5678 (22136), AIT Version: 0x1F (31)
-    - Descriptor 11: Teletext (0x56, 86), 10 bytes
+    - Descriptor 14: Teletext (0x56, 86), 10 bytes
       Language: fra, Type: 0x05 (5)
       Type: Teletext subtitles for hearing impaired
       Magazine: 0, page: 136, full page: 888
       Language: fra, Type: 0x02 (2)
       Type: Teletext subtitles
       Magazine: 0, page: 137, full page: 889
-    - Descriptor 12: Teletext (0x56, 86), 0 bytes
-    - Descriptor 13: VBI Teletext (0x46, 70), 10 bytes
+    - Descriptor 15: Teletext (0x56, 86), 0 bytes
+    - Descriptor 16: VBI Teletext (0x46, 70), 10 bytes
       Language: fra, Type: 0x05 (5)
       Type: Teletext subtitles for hearing impaired
       Magazine: 0, page: 136, full page: 888
       Language: fra, Type: 0x02 (2)
       Type: Teletext subtitles
       Magazine: 0, page: 137, full page: 889
-    - Descriptor 14: VBI Teletext (0x46, 70), 0 bytes
-    - Descriptor 15: VBI Data (0x45, 69), 0 bytes
-    - Descriptor 16: VBI Data (0x45, 69), 15 bytes
+    - Descriptor 17: VBI Teletext (0x46, 70), 0 bytes
+    - Descriptor 18: VBI Data (0x45, 69), 0 bytes
+    - Descriptor 19: VBI Data (0x45, 69), 15 bytes
       Data service id: 0x01 (EBU teletext)
       Field parity: 0, line offset: 0
       Field parity: 0, line offset: 10
       Field parity: 1, line offset: 20
       Data service id: 0x03 (unknown)
       Associated data (8 bytes): 01 23 45 67 89 AB CD EF
-    - Descriptor 17: Maximum Bitrate (0x0E, 14), 3 bytes
+    - Descriptor 20: Maximum Bitrate (0x0E, 14), 3 bytes
       Maximum bitrate: 0x00004268 (17000), 6,800,000 bits/second
-    - Descriptor 18: Time Shifted Event (0x4F, 79), 4 bytes
+    - Descriptor 21: Time Shifted Event (0x4F, 79), 4 bytes
       Reference service id: 0x1234 (4660)
       Reference event id: 0x5678 (22136)
-    - Descriptor 19: Time Shifted Service (0x4C, 76), 2 bytes
+    - Descriptor 22: Time Shifted Service (0x4C, 76), 2 bytes
       Reference service id: 0x9ABC (39612)
-    - Descriptor 20: NVOD Reference (0x4B, 75), 0 bytes
-    - Descriptor 21: NVOD Reference (0x4B, 75), 12 bytes
+    - Descriptor 23: NVOD Reference (0x4B, 75), 0 bytes
+    - Descriptor 24: NVOD Reference (0x4B, 75), 12 bytes
       - Transport stream id: 0x1234 (4660)
         Original network id: 0x5678 (22136)
         Service id: 0x9ABC (39612)
       - Transport stream id: 0xFEDC (65244)
         Original network id: 0xBA98 (47768)
         Service id: 0x7654 (30292)
-    - Descriptor 22: Scrambling (0x65, 101), 1 bytes
+    - Descriptor 25: Scrambling (0x65, 101), 1 bytes
       Scrambling mode: 0x02 (DVB-CSA2)
-    - Descriptor 23: Scrambling (0x65, 101), 1 bytes
+    - Descriptor 26: Scrambling (0x65, 101), 1 bytes
       Scrambling mode: 0x70 (ATIS IIF IDSA for MPEG-2 TS)
-    - Descriptor 24: Extension Descriptor (0x7F, 127), 5 bytes
+    - Descriptor 27: Extension Descriptor (0x7F, 127), 5 bytes
       Extended descriptor: CP (0x02, 2)
       CP System Id: 0x0001 (DVB CPCM Auxiliary Data), CP PID: 0x0200 (512)
-    - Descriptor 25: Extension Descriptor (0x7F, 127), 10 bytes
+    - Descriptor 28: Extension Descriptor (0x7F, 127), 10 bytes
       Extended descriptor: CP (0x02, 2)
       CP System Id: 0x5678 (unknown), CP PID: 0x1BCD (7117)
       Private CP data (5 bytes): 01 23 45 67 89
-    - Descriptor 26: Extension Descriptor (0x7F, 127), 1 bytes
+    - Descriptor 29: Extension Descriptor (0x7F, 127), 1 bytes
       Extended descriptor: CP Identifier (0x03, 3)
-    - Descriptor 27: Extension Descriptor (0x7F, 127), 13 bytes
+    - Descriptor 30: Extension Descriptor (0x7F, 127), 13 bytes
       Extended descriptor: CP Identifier (0x03, 3)
       CP System Id: 0x0000 (DVB CPCM Content Licence)
       CP System Id: 0x0001 (DVB CPCM Auxiliary Data)
@@ -114,100 +133,100 @@
       CP System Id: 0x0100 (DTCP Renewability Messages)
       CP System Id: 0x0101 (HDCP Renewability Messages)
       CP System Id: 0x1234 (unknown)
-    - Descriptor 28: Service Identifier (0x71, 113), 11 bytes
+    - Descriptor 31: Service Identifier (0x71, 113), 11 bytes
       Service identifier: "Foo service"
-    - Descriptor 29: Multilingual Bouquet Name (0x5C, 92), 0 bytes
-    - Descriptor 30: Multilingual Bouquet Name (0x5C, 92), 27 bytes
+    - Descriptor 32: Multilingual Bouquet Name (0x5C, 92), 0 bytes
+    - Descriptor 33: Multilingual Bouquet Name (0x5C, 92), 27 bytes
       Language: foo, name: "Foo bouquet"
       Language: bar, name: "Bar maid"
-    - Descriptor 31: Multilingual Network Name (0x5B, 91), 0 bytes
-    - Descriptor 32: Multilingual Network Name (0x5B, 91), 27 bytes
+    - Descriptor 34: Multilingual Network Name (0x5B, 91), 0 bytes
+    - Descriptor 35: Multilingual Network Name (0x5B, 91), 27 bytes
       Language: foo, name: "Foo network"
       Language: bar, name: "Bar maid"
-    - Descriptor 33: Multilingual Component (0x5E, 94), 1 bytes
+    - Descriptor 36: Multilingual Component (0x5E, 94), 1 bytes
       Component tag: 0x07 (7)
-    - Descriptor 34: Multilingual Component (0x5E, 94), 35 bytes
+    - Descriptor 37: Multilingual Component (0x5E, 94), 35 bytes
       Component tag: 0x0A (10)
       Language: foo, name: "Foo component"
       Language: bar, name: "Bar component"
-    - Descriptor 35: Multilingual Service Name (0x5D, 93), 0 bytes
-    - Descriptor 36: Multilingual Service Name (0x5D, 93), 53 bytes
+    - Descriptor 38: Multilingual Service Name (0x5D, 93), 0 bytes
+    - Descriptor 39: Multilingual Service Name (0x5D, 93), 53 bytes
       Language: foo, provider: "Foo provider", service: "Foo service"
       Language: bar, provider: "Bar provider", service: "Bar maid"
-    - Descriptor 37: Extension Descriptor (0x7F, 127), 2 bytes
+    - Descriptor 40: Extension Descriptor (0x7F, 127), 2 bytes
       Extended descriptor: AC-4 (0x15, 21)
-    - Descriptor 38: Extension Descriptor (0x7F, 127), 9 bytes
+    - Descriptor 41: Extension Descriptor (0x7F, 127), 9 bytes
       Extended descriptor: AC-4 (0x15, 21)
       Dialog enhancement enabled: 0, channel mode: 0x01 (Stereo)
       AC-4 TOC (in DSI) (5 bytes): 12 35 65 32 23
-    - Descriptor 39: Extension Descriptor (0x7F, 127), 8 bytes
+    - Descriptor 42: Extension Descriptor (0x7F, 127), 8 bytes
       Extended descriptor: AC-4 (0x15, 21)
       Additional information (6 bytes): 78 96 23 12 45 46
-    - Descriptor 40: Extension Descriptor (0x7F, 127), 15 bytes
+    - Descriptor 43: Extension Descriptor (0x7F, 127), 15 bytes
       Extended descriptor: AC-4 (0x15, 21)
       Dialog enhancement enabled: 1, channel mode: 0x02 (Multi-channel)
       AC-4 TOC (in DSI) (5 bytes): 12 35 65 32 23
       Additional information (6 bytes): 78 96 23 12 45 46
-    - Descriptor 41: Service Move (0x60, 96), 6 bytes
+    - Descriptor 44: Service Move (0x60, 96), 6 bytes
       New original network id: 0x1234 (4660)
       New transport stream id: 0x5678 (22136)
       New service id: 0xABCD (43981)
-    - Descriptor 42: Service Availability (0x72, 114), 1 bytes
+    - Descriptor 45: Service Availability (0x72, 114), 1 bytes
       Availability: true
-    - Descriptor 43: Service Availability (0x72, 114), 7 bytes
+    - Descriptor 46: Service Availability (0x72, 114), 7 bytes
       Availability: false
       Cell id: 0x1234 (4660)
       Cell id: 0x5678 (22136)
       Cell id: 0x9ABC (39612)
-    - Descriptor 44: Stuffing (0x42, 66), 0 bytes
-    - Descriptor 45: Stuffing (0x42, 66), 5 bytes
+    - Descriptor 47: Stuffing (0x42, 66), 0 bytes
+    - Descriptor 48: Stuffing (0x42, 66), 5 bytes
       Stuffing data (5 bytes): 01 23 45 67 89
-    - Descriptor 46: AVC Video (0x28, 40), 4 bytes
+    - Descriptor 49: AVC Video (0x28, 40), 4 bytes
       Profile IDC: 45, level IDC: 78
       Constraint set0: true, set1: false, set2: true, set3: false, set4: true, set5: false
       AVC compatible flags: 0x02
       Still pictures: true, 24-hour pictures: false
       Frame packing SEI not present: true
-    - Descriptor 47: AVC Timing and HRD (0x2A, 42), 2 bytes
+    - Descriptor 50: AVC Timing and HRD (0x2A, 42), 2 bytes
       HRD management valid: true
       Fixed frame rate: false
       Temporal picture order count: true
       Picture to display conversion: false
-    - Descriptor 48: AVC Timing and HRD (0x2A, 42), 7 bytes
+    - Descriptor 51: AVC Timing and HRD (0x2A, 42), 7 bytes
       HRD management valid: false
       Num. units in tick: 1,234,567
       Fixed frame rate: true
       Temporal picture order count: false
       Picture to display conversion: true
-    - Descriptor 49: AVC Timing and HRD (0x2A, 42), 15 bytes
+    - Descriptor 52: AVC Timing and HRD (0x2A, 42), 15 bytes
       HRD management valid: true
       90 kHz: N = 789,654, K = 365,214
       Num. units in tick: 741,369
       Fixed frame rate: true
       Temporal picture order count: false
       Picture to display conversion: false
-    - Descriptor 50: MPEG-2 Extension (0x3F, 63), 2 bytes
+    - Descriptor 53: MPEG-2 Extension (0x3F, 63), 2 bytes
       MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
       HRD management valid: true
-    - Descriptor 51: MPEG-2 Extension (0x3F, 63), 7 bytes
+    - Descriptor 54: MPEG-2 Extension (0x3F, 63), 7 bytes
       MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
       HRD management valid: false
       Target schedule idx: 0x1f (31)
       Num. units in tick: 1,234,567
-    - Descriptor 52: MPEG-2 Extension (0x3F, 63), 15 bytes
+    - Descriptor 55: MPEG-2 Extension (0x3F, 63), 15 bytes
       MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
       HRD management valid: true
       Target schedule idx: 0x05 (5)
       90 kHz: N = 789,654, K = 365,214
       Num. units in tick: 741,369
-    - Descriptor 53: HEVC Video (0x38, 56), 13 bytes
+    - Descriptor 56: HEVC Video (0x38, 56), 13 bytes
       Profile space: 1, tier: true, profile IDC: 31
       Profile compatibility: 0x87654321
       Progressive source: true, interlaced source: false, non packed: true, frame only: false
       Copied 44 bits: 0x00000000000
       Level IDC: 171, still pictures: true, 24-hour pictures: false
       No sub-pic HRD params: true, HDR WCG idc: 3
-    - Descriptor 54: HEVC Video (0x38, 56), 15 bytes
+    - Descriptor 57: HEVC Video (0x38, 56), 15 bytes
       Profile space: 2, tier: false, profile IDC: 4
       Profile compatibility: 0x12345678
       Progressive source: false, interlaced source: true, non packed: false, frame only: true
@@ -215,15 +234,15 @@
       Level IDC: 86, still pictures: false, 24-hour pictures: true
       No sub-pic HRD params: false, HDR WCG idc: 2
       Temporal id min: 1, max: 4
-    - Descriptor 55: External ES id (0x20, 32), 2 bytes
+    - Descriptor 58: External ES id (0x20, 32), 2 bytes
       External ES id: 0x4567 (17767)
-    - Descriptor 56: MPEG-4 Audio Stream (0x1C, 28), 1 bytes
+    - Descriptor 59: MPEG-4 Audio Stream (0x1C, 28), 1 bytes
       MPEG-4 Audio profile and level: 0x12 (18)
-    - Descriptor 57: MPEG-4 Video Stream (0x1B, 27), 1 bytes
+    - Descriptor 60: MPEG-4 Video Stream (0x1B, 27), 1 bytes
       MPEG-4 Video profile and level: 0x34 (52)
-    - Descriptor 58: Data Stream Alignment (0x06, 6), 1 bytes
+    - Descriptor 61: Data Stream Alignment (0x06, 6), 1 bytes
       Alignment type: 0x03 (3, GOP or SEQ)
-    - Descriptor 59: Hierarchy (0x04, 4), 4 bytes
+    - Descriptor 62: Hierarchy (0x04, 4), 4 bytes
       No view scalability: true
       No temporal scalability: true
       No spatial scalability: false
@@ -233,33 +252,33 @@
       Tref present: false
       Hierarchy embedded layer index: 11
       Hierarchy channel: 12
-    - Descriptor 60: Audio Stream (0x03, 3), 1 bytes
+    - Descriptor 63: Audio Stream (0x03, 3), 1 bytes
       Free format: true, variable rate: false
       ID: 0, layer: 2
-    - Descriptor 61: Video Stream (0x02, 2), 1 bytes
+    - Descriptor 64: Video Stream (0x02, 2), 1 bytes
       Multiple frame rate: true, frame rate: 0x02 (24 fps)
       MPEG-1 only: true, constained parameter: false, still picture: true
-    - Descriptor 62: Video Stream (0x02, 2), 3 bytes
+    - Descriptor 65: Video Stream (0x02, 2), 3 bytes
       Multiple frame rate: false, frame rate: 0x03 (25 fps)
       MPEG-1 only: false, constained parameter: true, still picture: false
       Profile and level: 0x30 (48)
       Chroma format: 0x02 (4:2:2)
       Frame rate extension: false
-    - Descriptor 63: Target Background Grid (0x07, 7), 4 bytes
+    - Descriptor 66: Target Background Grid (0x07, 7), 4 bytes
       Size: 100x200, aspect ratio: 3 (16:9)
-    - Descriptor 64: Video Window (0x08, 8), 4 bytes
+    - Descriptor 67: Video Window (0x08, 8), 4 bytes
       Offset x: 50, y: 70, window priority: 1
-    - Descriptor 65: Smoothing Buffer (0x10, 16), 6 bytes
+    - Descriptor 68: Smoothing Buffer (0x10, 16), 6 bytes
       Smoothing buffer leak rate: 0x00123456 (1193046) x 400 b/s
       Smoothing buffer size: 0x00258963 (2460003) bytes
-    - Descriptor 66: Time Slice FEC Identifier (0x77, 119), 3 bytes
+    - Descriptor 69: Time Slice FEC Identifier (0x77, 119), 3 bytes
       Use time slice: true
       MPE FEC: Reed-Solomon(255, 191, 64)
       Frame size: 1536 kbits, 768 rows
       Max burst duration: 0x45 (69)
       Max average rate: reserved value 0x08
       Time slice FEC id: 0x00 (0)
-    - Descriptor 67: Time Slice FEC Identifier (0x77, 119), 8 bytes
+    - Descriptor 70: Time Slice FEC Identifier (0x77, 119), 8 bytes
       Use time slice: false
       MPE FEC: none
       Frame size: 2048 kbits, 1024 rows
@@ -267,50 +286,50 @@
       Max average rate: 128 kbps
       Time slice FEC id: 0x09 (9)
       Id selector bytes (5 bytes): 01 23 45 67 89
-    - Descriptor 68: ECM Repetition Rate (0x78, 120), 4 bytes
+    - Descriptor 71: ECM Repetition Rate (0x78, 120), 4 bytes
       CA System Id: 0x1234 (TV/Com)
       ECM repetition rate: 100 ms
-    - Descriptor 69: ECM Repetition Rate (0x78, 120), 8 bytes
+    - Descriptor 72: ECM Repetition Rate (0x78, 120), 8 bytes
       CA System Id: 0x5678 (unknown)
       ECM repetition rate: 200 ms
       Private data (4 bytes): 78 96 32 14
-    - Descriptor 70: Extension Descriptor (0x7F, 127), 7 bytes
+    - Descriptor 73: Extension Descriptor (0x7F, 127), 7 bytes
       Extended descriptor: Service Relocated (0x0B, 11)
       Old original network id: 0x1234 (4660)
       Old transport stream id: 0x5678 (22136)
       Old service id: 0xABCD (43981)
-    - Descriptor 71: System Clock (0x0B, 11), 2 bytes
+    - Descriptor 74: System Clock (0x0B, 11), 2 bytes
       External clock reference: false
       Clock accuracy integer: 47, exponent: 3
-    - Descriptor 72: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
+    - Descriptor 75: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
       Bound valid: no
-    - Descriptor 73: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
+    - Descriptor 76: Multiplex Buffer Utilization (0x0C, 12), 4 bytes
       Bound valid: yes
       LTW offset bounds: lower: 0x3039 (12345), upper: 0x5D57 (23895)
-    - Descriptor 74: Copyright (0x0D, 13), 4 bytes
+    - Descriptor 77: Copyright (0x0D, 13), 4 bytes
       Copyright identifier: 0x00001234
-    - Descriptor 75: Copyright (0x0D, 13), 9 bytes
+    - Descriptor 78: Copyright (0x0D, 13), 9 bytes
       Copyright identifier: 0x00006789
       Additional copyright info (5 bytes): 78 96 32 14 52
-    - Descriptor 76: IBP (0x12, 18), 2 bytes
+    - Descriptor 79: IBP (0x12, 18), 2 bytes
       Closed GOP: false, identical GOP: true, max GOP length: 0x0018 (24)
-    - Descriptor 77: SL (0x1E, 30), 2 bytes
+    - Descriptor 80: SL (0x1E, 30), 2 bytes
       ES id: 0x9876 (39030)
-    - Descriptor 78: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
+    - Descriptor 81: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
       Carousel id: 0x12345678 (305419896)
-    - Descriptor 79: DSM-CC Carousel Identifier (0x13, 19), 7 bytes
+    - Descriptor 82: DSM-CC Carousel Identifier (0x13, 19), 7 bytes
       Carousel id: 0x96325874 (2519881844)
       Private data (3 bytes): 45 69 87
-    - Descriptor 80: DSM-CC Association Tag (0x14, 20), 5 bytes
+    - Descriptor 83: DSM-CC Association Tag (0x14, 20), 5 bytes
       Association tag: 0x5823 (22563), use: 0x7854 (30804)
-    - Descriptor 81: DSM-CC Association Tag (0x14, 20), 13 bytes
+    - Descriptor 84: DSM-CC Association Tag (0x14, 20), 13 bytes
       Association tag: 0x8523 (34083), use: 0x9654 (38484)
       Selector bytes (3 bytes): 85 23 69
       Private data (5 bytes): 12 25 74 89 63
-    - Descriptor 82: DSM-CC Deferred Association Tags (0x15, 21), 5 bytes
+    - Descriptor 85: DSM-CC Deferred Association Tags (0x15, 21), 5 bytes
       Transport stream id: 0x1234 (4660)
       Program number: 0x5678 (22136)
-    - Descriptor 83: DSM-CC Deferred Association Tags (0x15, 21), 16 bytes
+    - Descriptor 86: DSM-CC Deferred Association Tags (0x15, 21), 16 bytes
       Association tag: 0x9654 (38484)
       Association tag: 0x1236 (4662)
       Association tag: 0x8546 (34118)
