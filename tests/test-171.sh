@@ -134,7 +134,7 @@ test_tsp \
 test_text $SCRIPT.tsp.11.log
 test_bin $SCRIPT.11.ts
 
-# 12) Output and input plugin "ip", all 204-byte.
+# 12) Output and input plugin "srt", all 204-byte.
 # Run the test only if srt is supported on this platform
 if $(tspath tsversion) --support srt; then
 
@@ -159,5 +159,39 @@ if $(tspath tsversion) --support srt; then
     test_text $SCRIPT.tsp.12s.log
     test_text $SCRIPT.tsp.12r.log
     test_bin $SCRIPT.12.ts
+
+fi
+
+# 13) Output and input plugin "rist", all 204-byte.
+# Run the test only if rist is supported on this platform
+if $(tspath tsversion) --support rist; then
+
+    test_tsp -b 1,000,000 --control-port 11240 \
+        -I craft --rs204 DEADBEEF --pid 100 \
+        -P regulate \
+        -O rist rist://127.0.0.1:11242 --rs204 \
+        >"$OUTDIR/$SCRIPT.tsp.13s.log" 2>&1 &
+
+    outpid=$!
+
+    test_tsp \
+        -I rist rist://@127.0.0.1:11242 \
+        -P until --packets 50 \
+        -O file $(fpath "$OUTDIR/$SCRIPT.13.ts") --format rs204 \
+        >"$OUTDIR/$SCRIPT.tsp.13r.log" 2>&1
+
+    $(tspath tspcontrol) --tsp 11240 exit
+    wait $outpid
+
+    # Remove RIST error messages about performances and response time.
+    sed -i \
+        -e '/rist:.*Failed to set .* scheduler/d' \
+        -e '/rist:.*RIST receive queue /d' \
+        -e '/rist:.*handshake is still pending /d' \
+        "$OUTDIR/$SCRIPT.tsp.13s.log" "$OUTDIR/$SCRIPT.tsp.13r.log"
+
+    test_text $SCRIPT.tsp.13s.log
+    test_text $SCRIPT.tsp.13r.log
+    test_bin $SCRIPT.13.ts
 
 fi

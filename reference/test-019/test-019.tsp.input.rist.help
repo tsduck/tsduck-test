@@ -29,23 +29,35 @@ Options:
       optional port) to connect. More than one --deny option can be used to
       specify several denied addresses.
 
+  --display-interval seconds
+      Specify the interval in seconds between two displays of the evaluated
+      real-time input bitrate. The default is to never display the bitrate.
+      This option is ignored if --evaluation-interval is not specified.
+
   -e name
   --encryption-type name
       Specify the encryption type (none by default). This value is used when
       the 'aes-type=' parameter is not present in the URL.
       The 'name' must be one of "AES-128", "AES-256".
 
+  --evaluation-interval seconds
+      Specify that the real-time input bitrate shall be evaluated on a regular
+      basis. The value specifies the number of seconds between two evaluations.
+      By default, the real-time input bitrate is never evaluated and the input
+      bitrate is evaluated from the PCR in the input packets.
+
   --help
       Display this help text.
-
-  --ignore-rist-timestamps
-      Ignore source timestamps, use reception time as packet timestamps. By
-      default, use the source timestamps from the sender as packet timestamp.
 
   -p name
   --profile name
       Specify the RIST profile (main profile by default).
       The 'name' must be one of "advanced", "main", "simple".
+
+  --rs204
+      Specify that all packets are in 204-byte format. By default, the input
+      packet size, 188 or 204 bytes, is automatically detected. Use this option
+      only when necessary.
 
   -s string
   --secret string
@@ -60,4 +72,17 @@ Options:
   --stats-prefix 'prefix'
       With --stats-interval, specify a prefix to prepend on the statistics line
       before the JSON text to locate the appropriate line in the logs.
+
+  --timestamp-priority name
+      Specify how the input time-stamp of each packet is computed. The name
+      specifies an ordered list. The first available time-stamp value is used
+      as input time-stamp. The possible time-stamp sources are:
+      - rtp : The RTP time stamp, when the UDP packet is an RTP packet.
+      - rist : RIST source time stamp.
+      - tsp : A software time-stamp, provided by tsp when the input plugin
+      returns a chunk of packets.
+      The tsp-provided time-stamp is always available, always comes last and is
+      less precise. The default is rtp-rist-tsp.
+      The 'name' must be one of "rist-rtp-tsp", "rist-tsp", "rtp-rist-tsp",
+      "rtp-tsp", "tsp".
 

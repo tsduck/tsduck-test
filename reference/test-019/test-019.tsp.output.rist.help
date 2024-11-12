@@ -56,6 +56,11 @@ Options:
       Specify the RIST profile (main profile by default).
       The 'name' must be one of "advanced", "main", "simple".
 
+  --rs204
+      Use 204-byte format for TS packets in UDP datagrams. Each TS packet is
+      followed by a 16-byte trailer. If the input packet contained a trailer,
+      it is copied. Otherwise, the trailer is set to all 0xFF.
+
   -s string
   --secret string
       Default pre-shared encryption secret. If a pre-shared secret is specified
