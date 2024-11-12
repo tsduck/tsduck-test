@@ -78,6 +78,12 @@ Options:
       Set the random_access_indicator in the packets. An adaptation field is
       created.
 
+  --rs204 hexa-data
+      Generate a 204-byte packet and specify the binary content to store in the
+      16-byte trailer. The value must be a string of hexadecimal digits
+      specifying up to 16 bytes. If the data are shorter than 16 bytes, they
+      are padded with 0xFF.
+
   --scrambling value
       Specify the value of the transport_scrambling_control field (0 by
       default).

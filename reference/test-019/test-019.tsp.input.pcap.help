@@ -72,6 +72,11 @@ Options:
       which is found in a UDP datagram. By default, use the destination address
       of the first UDP datagram containing TS packets, unicast or multicast.
 
+  --rs204
+      Specify that all packets are in 204-byte format. By default, the input
+      packet size, 188 or 204 bytes, is automatically detected. Use this option
+      only when necessary.
+
   -s [ip-address]:[port]
   --source [ip-address]:[port]
       Filter UDP datagrams based on the specified source socket address. By
