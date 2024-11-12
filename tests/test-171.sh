@@ -105,7 +105,7 @@ test_bin $SCRIPT.9.ts
 # 10) Output and input plugin "ip", all 204-byte.
 # Cannot synchronize on first IP packet -> all packets must have same content for reproductibility.
 test_tsp -b 1,000,000 --control-port 11234 \
-    -I craft --rs204 DEADBEEF --pid 100 \
+    -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
     -P regulate --packet-burst 7 \
     -O ip --rs204 127.0.0.1:11236 --enforce-burst --local-address 127.0.0.1 \
     >"$OUTDIR/$SCRIPT.tsp.10s.log" 2>&1 &
@@ -139,7 +139,7 @@ test_bin $SCRIPT.11.ts
 if $(tspath tsversion) --support srt; then
 
     test_tsp \
-        -I craft --rs204 DEADBEEF --pid 100 \
+        -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
         -O srt --listener 127.0.0.1:11238 --transtype live --rs204 \
         >"$OUTDIR/$SCRIPT.tsp.12s.log" 2>&1 &
 
@@ -167,7 +167,7 @@ fi
 if $(tspath tsversion) --support rist; then
 
     test_tsp -b 1,000,000 --control-port 11240 \
-        -I craft --rs204 DEADBEEF --pid 100 \
+        -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
         -P regulate \
         -O rist rist://127.0.0.1:11242 --rs204 \
         >"$OUTDIR/$SCRIPT.tsp.13s.log" 2>&1 &
