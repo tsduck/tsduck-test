@@ -133,3 +133,31 @@ test_tsp \
 
 test_text $SCRIPT.tsp.11.log
 test_bin $SCRIPT.11.ts
+
+# 12) Output and input plugin "ip", all 204-byte.
+# Run the test only if srt is supported on this platform
+if $(tspath tsversion) --support srt; then
+
+    test_tsp \
+        -I craft --rs204 DEADBEEF --pid 100 \
+        -O srt --listener 127.0.0.1:11238 --transtype live --rs204 \
+        >"$OUTDIR/$SCRIPT.tsp.12s.log" 2>&1 &
+
+    outpid=$!
+
+    test_tsp \
+        -I srt --caller 127.0.0.1:11238 --local-interface 127.0.0.1 --transtype live \
+        -P until --packets 50 \
+        -O file $(fpath "$OUTDIR/$SCRIPT.12.ts") --format rs204 \
+        >"$OUTDIR/$SCRIPT.tsp.12r.log" 2>&1
+
+    wait $outpid
+
+    # Remove SRT logs, they are not deterministic.
+    sed -i -e '/\/SRT:/d' -e '/:SRT\./d' "$OUTDIR/$SCRIPT.tsp.12s.log" "$OUTDIR/$SCRIPT.tsp.12r.log"
+
+    test_text $SCRIPT.tsp.12s.log
+    test_text $SCRIPT.tsp.12r.log
+    test_bin $SCRIPT.12.ts
+
+fi

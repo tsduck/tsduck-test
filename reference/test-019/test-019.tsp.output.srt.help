@@ -218,6 +218,11 @@ Options:
   --restart-delay milliseconds
       With --multiple, wait the specified delay before restarting.
 
+  --rs204
+      Use 204-byte format for TS packets in UDP datagrams. Each TS packet is
+      followed by a 16-byte trailer. If the input packet contained a trailer,
+      it is copied. Otherwise, the trailer is set to all 0xFF.
+
   --sndbuf value
       Send Buffer Size. Warning: configured in bytes, converted in packets,
       when set, based on MSS value. For desired result, configure MSS first.
