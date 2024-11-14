@@ -29,7 +29,7 @@ sender_pid=$!
 test_tsp \
     -I ip $TSP_SEND_PORT --receive-timeout 2000 \
     -P until --packet 40,000 \
-    -P scrambler 0x0407 --atis-idsa --ecmg localhost:$ECMG_PORT --super-cas-id 0x12345678 \
+    -P scrambler 0x0407 --atis-idsa --ecmg localhost:$ECMG_PORT --synchronous --super-cas-id 0x12345678 \
     -P filter --pattern DEADBEEF --set-label 1 \
     -P file --only-label 1 $(fpath "$TMPDIR/$SCRIPT.1.ts") \
     -P descrambler 0x0407 \
