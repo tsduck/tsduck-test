@@ -4,9 +4,6 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-# There is a bug in RIST on Windows.
-[[ $OS == windows ]] && exit 0
-
 # Run the test only if rist is supported on this platform
 if $(tspath tsversion) --support rist; then
 
@@ -32,7 +29,7 @@ if $(tspath tsversion) --support rist; then
     $(tspath tspcontrol) --tsp $TSP_PORT exit
     wait $outpid
 
-    # Remove RIST error messages about performances and response tile.
+    # Remove RIST error messages about performances and response time.
     sed -i \
         -e '/rist:.*Failed to set .* scheduler/d' \
         -e '/rist:.*RIST receive queue /d' \

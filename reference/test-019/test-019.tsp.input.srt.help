@@ -213,6 +213,11 @@ Options:
   --rendezvous [address:]port
       Local address and port. This is a legacy option, now use --listener.
 
+  --rs204
+      Specify that all packets are in 204-byte format. By default, the input
+      packet size, 188 or 204 bytes, is automatically detected. Use this option
+      only when necessary.
+
   --sndbuf value
       Send Buffer Size. Warning: configured in bytes, converted in packets,
       when set, based on MSS value. For desired result, configure MSS first.
