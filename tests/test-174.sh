@@ -45,3 +45,22 @@ test_tsp \
 
 test_text $SCRIPT.4.log
 test_text $SCRIPT.4.txt
+
+test_tsp \
+    -I file $(fpath "$INFILE") \
+    -P isdbinfo --statistics --output $(fpath "$OUTDIR/$SCRIPT.5.txt") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.5.log" 2>&1
+
+test_text $SCRIPT.5.log
+test_text $SCRIPT.5.txt
+
+test_tsp \
+    -I file $(fpath "$INFILE") \
+    -P until --packets 50 \
+    -P isdbinfo --trailers --output $(fpath "$OUTDIR/$SCRIPT.6.txt") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.6.log" 2>&1
+
+test_text $SCRIPT.6.log
+test_text $SCRIPT.6.txt
