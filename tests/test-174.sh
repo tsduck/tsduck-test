@@ -64,3 +64,14 @@ test_tsp \
 
 test_text $SCRIPT.6.log
 test_text $SCRIPT.6.txt
+
+test_tsp \
+    -I file $(fpath "$INFILE") \
+    -P filter --pid 0x1FF0 --set-label 1 \
+    -P until --only-label 1 --packets 4 \
+    -P isdbinfo --iip --output $(fpath "$OUTDIR/$SCRIPT.7.txt") \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.7.log" 2>&1
+
+test_text $SCRIPT.7.log
+test_text $SCRIPT.7.txt
