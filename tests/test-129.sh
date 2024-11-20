@@ -13,20 +13,20 @@ test_tsp -b 1,000,000 --control-port $TSP_PORT \
     -I null \
     -P regulate \
     -P inject --pid 0 --bitrate 15,000 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
-    -P ip 127.0.0.1:$UDP_PORT_1 --local-address 127.0.0.1 \
-    -O ip 127.0.0.1:$UDP_PORT_2 --enforce-burst --local-address 127.0.0.1 \
+    -P ip $LOCALHOST:$UDP_PORT_1 --local-address $LOCALHOST \
+    -O ip $LOCALHOST:$UDP_PORT_2 --enforce-burst --local-address $LOCALHOST \
     >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1 &
 
 outpid=$!
 
 test_tsp \
-    -I ip $UDP_PORT_1 --local-address 127.0.0.1 \
+    -I ip $UDP_PORT_1 --local-address $LOCALHOST \
     -P tables --max-tables 1 --pid 0 --xml $(fpath "$OUTDIR/$SCRIPT.2.xml") --binary-output $(fpath "$OUTDIR/$SCRIPT.2.bin") \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1
 
 test_tsp \
-    -I ip $UDP_PORT_2 --local-address 127.0.0.1 \
+    -I ip $UDP_PORT_2 --local-address $LOCALHOST \
     -P tables --max-tables 1 --pid 0 --xml $(fpath "$OUTDIR/$SCRIPT.3.xml") --binary-output $(fpath "$OUTDIR/$SCRIPT.3.bin") \
     -O drop \
     >"$OUTDIR/$SCRIPT.tsp.3.log" 2>&1

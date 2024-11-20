@@ -16,7 +16,7 @@ ecmg_pid=$!
 sleep 0.5
 
 $(tspath tsgenecm) $(fpath "$OUTDIR/$SCRIPT.ecm.1.bin") \
-    --ecmg localhost:31456 --super-cas-id 0x12345678 \
+    --ecmg $LOCALHOST:$PORT --super-cas-id 0x12345678 \
     --log-protocol=info --log-data=info \
     --cw-current 0123456789ABCDEF --cw-next FEDCBA9876543210 \
     --access-criteria 1478523690 \
@@ -38,7 +38,7 @@ ecmg_pid=$!
 sleep 0.5
 
 $(tspath tsgenecm) $(fpath "$OUTDIR/$SCRIPT.ecm.2.bin") \
-    --ecmg localhost:31456 --super-cas-id 0x12345678 \
+    --ecmg $LOCALHOST:$PORT --super-cas-id 0x12345678 \
     --log-protocol=info --log-data=info \
     --cw-current 0123456789ABCDEF --cw-next FEDCBA9876543210 \
     --access-criteria 1478523690 \
@@ -60,7 +60,7 @@ ecmg_pid=$!
 sleep 0.5
 
 $(tspath tsgenecm) $(fpath "$OUTDIR/$SCRIPT.ecm.3.bin") \
-    --ecmg localhost:31456 --super-cas-id 0x12345678 \
+    --ecmg $LOCALHOST:$PORT --super-cas-id 0x12345678 \
     --log-protocol=info --log-data=info \
     --cw-current 0123456789ABCDEF --cw-next FEDCBA9876543210 \
     --access-criteria 1478523690 \

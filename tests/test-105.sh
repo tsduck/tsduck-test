@@ -23,7 +23,7 @@ sleep 0.5
 
 # Inject EMM's, one cycle, packet mode (default).
 $(tspath tsemmg) $(fpath "$INDIR/$SCRIPT.xml") \
-    --mux 127.0.0.1:$PORT --log-protocol --cycles 1 --bytes-per-send 188 \
+    --mux $LOCALHOST:$PORT --log-protocol --cycles 1 --bytes-per-send 188 \
     >"$OUTDIR/$SCRIPT.tsemmg.1.log" 2>&1
 
 wait $tsp_pid
@@ -48,7 +48,7 @@ sleep 0.5
 
 # Inject EMM's, one cycle, section mode.
 $(tspath tsemmg) $(fpath "$INDIR/$SCRIPT.xml") \
-    --mux 127.0.0.1:$PORT --log-protocol --cycles 1 --bytes-per-send 1000 --section-mode \
+    --mux $LOCALHOST:$PORT --log-protocol --cycles 1 --bytes-per-send 1000 --section-mode \
     >"$OUTDIR/$SCRIPT.tsemmg.2.log" 2>&1
 
 wait $tsp_pid
@@ -73,7 +73,7 @@ sleep 0.5
 
 # Inject EMM's, one cycle, packet mode, UDP transport.
 $(tspath tsemmg) $(fpath "$INDIR/$SCRIPT.xml") \
-    --mux 127.0.0.1:$PORT --udp 127.0.0.1:$PORT --log-protocol --cycles 1 --bytes-per-send 188 \
+    --mux $LOCALHOST:$PORT --udp $LOCALHOST:$PORT --log-protocol --cycles 1 --bytes-per-send 188 \
     >"$OUTDIR/$SCRIPT.tsemmg.3.log" 2>&1
 
 wait $tsp_pid

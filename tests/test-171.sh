@@ -107,13 +107,13 @@ test_bin $SCRIPT.9.ts
 test_tsp -b 1,000,000 --control-port 11234 \
     -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
     -P regulate --packet-burst 7 \
-    -O ip --rs204 127.0.0.1:11236 --enforce-burst --local-address 127.0.0.1 \
+    -O ip --rs204 $LOCALHOST:11236 --enforce-burst --local-address $LOCALHOST \
     >"$OUTDIR/$SCRIPT.tsp.10s.log" 2>&1 &
 
 outpid=$!
 
 test_tsp \
-    -I ip 11236 --local-address 127.0.0.1 \
+    -I ip 11236 --local-address $LOCALHOST \
     -P until --packet 50 \
     -O file $(fpath "$OUTDIR/$SCRIPT.10.ts") --format rs204 \
     >"$OUTDIR/$SCRIPT.tsp.10r.log" 2>&1
@@ -140,13 +140,13 @@ if $(tspath tsversion) --support srt; then
 
     test_tsp \
         -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
-        -O srt --listener 127.0.0.1:11238 --transtype live --rs204 \
+        -O srt --listener $LOCALHOST:11238 --transtype live --rs204 \
         >"$OUTDIR/$SCRIPT.tsp.12s.log" 2>&1 &
 
     outpid=$!
 
     test_tsp \
-        -I srt --caller 127.0.0.1:11238 --local-interface 127.0.0.1 --transtype live \
+        -I srt --caller $LOCALHOST:11238 --local-interface $LOCALHOST --transtype live \
         -P until --packets 50 \
         -O file $(fpath "$OUTDIR/$SCRIPT.12.ts") --format rs204 \
         >"$OUTDIR/$SCRIPT.tsp.12r.log" 2>&1
@@ -169,13 +169,13 @@ if $(tspath tsversion) --support rist; then
     test_tsp -b 1,000,000 --control-port 11240 \
         -I craft --pid 100 --cc 0 --constant-cc --rs204 DEADBEEF \
         -P regulate \
-        -O rist rist://127.0.0.1:11242 --rs204 \
+        -O rist rist://$LOCALHOST:11242 --rs204 \
         >"$OUTDIR/$SCRIPT.tsp.13s.log" 2>&1 &
 
     outpid=$!
 
     test_tsp \
-        -I rist rist://@127.0.0.1:11242 \
+        -I rist rist://@$LOCALHOST:11242 \
         -P until --packets 50 \
         -O file $(fpath "$OUTDIR/$SCRIPT.13.ts") --format rs204 \
         >"$OUTDIR/$SCRIPT.tsp.13r.log" 2>&1

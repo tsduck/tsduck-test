@@ -15,13 +15,13 @@ if $(tspath tsversion) --support rist; then
         -I null \
         -P regulate \
         -P inject --pid 0 --bitrate 15,000 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
-        -O rist "rist://127.0.0.1:$RIST_PORT?aes-type=128&secret=abcdefgh" --null-packet-deletion \
+        -O rist "rist://$LOCALHOST:$RIST_PORT?aes-type=128&secret=abcdefgh" --null-packet-deletion \
         >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1 &
 
     outpid=$!
 
     test_tsp \
-        -I rist "rist://@127.0.0.1:$RIST_PORT?aes-type=128&secret=abcdefgh" \
+        -I rist "rist://@$LOCALHOST:$RIST_PORT?aes-type=128&secret=abcdefgh" \
         -P tables --max-tables 1 --pid 0 --xml $(fpath "$OUTDIR/$SCRIPT.2.xml") --binary-output $(fpath "$OUTDIR/$SCRIPT.2.bin") \
         -O drop \
         >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1

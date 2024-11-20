@@ -15,7 +15,7 @@ tsp_pid=$!
 sleep 0.5
 
 test_tsp \
-    -I http http://localhost:$PORT/ \
+    -I http http://$LOCALHOST:$PORT/ \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") 
     >"$OUTDIR/$SCRIPT.receive.log" 2>&1 &
 

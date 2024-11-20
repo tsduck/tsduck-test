@@ -21,7 +21,7 @@ test_tsp --control-port $TSP_CMD_PORT --control-reuse-port --add-input-stuffing 
     -P regulate \
     -P filter --pid 0x0140 --set-label 1 \
     -P craft --only-label 1 --payload-pattern DEADBEEF --no-repeat \
-    -O ip localhost:$TSP_SEND_PORT \
+    -O ip $LOCALHOST:$TSP_SEND_PORT \
     >"$OUTDIR/$SCRIPT.sender.log" 2>&1 &
 
 sender_pid=$!
@@ -29,7 +29,7 @@ sender_pid=$!
 test_tsp \
     -I ip $TSP_SEND_PORT --receive-timeout 2000 \
     -P until --packet 40,000 \
-    -P scrambler 0x0407 --atis-idsa --ecmg localhost:$ECMG_PORT --synchronous --super-cas-id 0x12345678 \
+    -P scrambler 0x0407 --atis-idsa --ecmg $LOCALHOST:$ECMG_PORT --synchronous --super-cas-id 0x12345678 \
     -P filter --pattern DEADBEEF --set-label 1 \
     -P file --only-label 1 $(fpath "$TMPDIR/$SCRIPT.1.ts") \
     -P descrambler 0x0407 \
@@ -38,7 +38,7 @@ test_tsp \
     -O file $(fpath "$TMPDIR/$SCRIPT.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.log" 2>&1
 
-$(tspath tspcontrol) --tsp localhost:$TSP_CMD_PORT exit \
+$(tspath tspcontrol) --tsp $LOCALHOST:$TSP_CMD_PORT exit \
     >"$OUTDIR/$SCRIPT.tspcontrol.log" 2>&1
 
 wait $ecmg_pid $sender_pid

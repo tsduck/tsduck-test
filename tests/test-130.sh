@@ -18,13 +18,13 @@ if $(tspath tsversion) --support srt; then
         -I null \
         -P regulate \
         -P inject --pid 0 --bitrate 15,000 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
-        -O srt --listener 127.0.0.1:$PORT $SRTOPT \
+        -O srt --listener $LOCALHOST:$PORT $SRTOPT \
         >"$OUTDIR/$SCRIPT.tsp.1.log" 2>&1 &
 
     outpid=$!
 
     test_tsp \
-        -I srt --caller 127.0.0.1:$PORT --local-interface 127.0.0.1 $SRTOPT \
+        -I srt --caller $LOCALHOST:$PORT --local-interface $LOCALHOST $SRTOPT \
         -P tables --max-tables 1 --pid 0 --xml $(fpath "$OUTDIR/$SCRIPT.2.xml") --binary-output $(fpath "$OUTDIR/$SCRIPT.2.bin") \
         -O drop \
         >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1

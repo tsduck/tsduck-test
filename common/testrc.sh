@@ -39,6 +39,10 @@ PRVOID="    "
 EXIT_SUCCESS=0
 EXIT_FAILURE=1
 
+# A consistent way of using IPv4 localhost.
+# Don't use the name "localhost", it can translate to an IPv4 or IPv6 address.
+LOCALHOST=127.0.0.1
+
 # Functions to report messages.
 error() { echo >&2 "$SCRIPT: $*"; exit $EXIT_FAILURE; }
 info()  { echo >&2 "$*"; }
