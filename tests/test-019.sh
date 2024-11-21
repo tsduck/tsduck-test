@@ -40,8 +40,8 @@ OUTPUT_PLUGINS=(
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject descrambler dump duplicate eit eitinject feed file filter
-    fork fuzz history inject ip limit merge mpe mpeinject mux nit nitscan pat pattern
-    pcradjust pcrbitrate pcrcopy pcredit pcrextract pcrverify pes pidshift pmt
+    fork fuzz history inject ip isdbinfo limit merge mpe mpeinject mux nit nitscan pat
+    pattern pcradjust pcrbitrate pcrcopy pcredit pcrextract pcrverify pes pidshift pmt
     psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
     sifilter skip slice spliceinject splicemonitor stats stuffanalyze
     svremove svrename svresync t2mi tables teletext time timeref timeshift

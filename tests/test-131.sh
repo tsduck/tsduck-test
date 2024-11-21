@@ -33,6 +33,7 @@ if $(tspath tsversion) --support rist; then
     sed -i \
         -e '/rist:.*Failed to set .* scheduler/d' \
         -e '/rist:.*RIST receive queue /d' \
+        -e '/rist:.*Received data packet .* but handshake is still pending /d' \
         "$OUTDIR/$SCRIPT.tsp.1.log" "$OUTDIR/$SCRIPT.tsp.2.log"
 
     test_text $SCRIPT.tsp.1.log

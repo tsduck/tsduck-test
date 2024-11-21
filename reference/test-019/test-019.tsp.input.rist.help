@@ -34,12 +34,12 @@ Options:
       real-time input bitrate. The default is to never display the bitrate.
       This option is ignored if --evaluation-interval is not specified.
 
-  -e name
   --encryption-type name
       Specify the encryption type (none by default). This value is used when
       the 'aes-type=' parameter is not present in the URL.
       The 'name' must be one of "AES-128", "AES-256".
 
+  -e seconds
   --evaluation-interval seconds
       Specify that the real-time input bitrate shall be evaluated on a regular
       basis. The value specifies the number of seconds between two evaluations.
@@ -49,7 +49,6 @@ Options:
   --help
       Display this help text.
 
-  -p name
   --profile name
       Specify the RIST profile (main profile by default).
       The 'name' must be one of "advanced", "main", "simple".

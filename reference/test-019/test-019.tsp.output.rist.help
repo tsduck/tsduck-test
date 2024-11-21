@@ -29,12 +29,12 @@ Options:
       optional port) to connect. More than one --deny option can be used to
       specify several denied addresses.
 
-  -e name
   --encryption-type name
       Specify the encryption type (none by default). This value is used when
       the 'aes-type=' parameter is not present in the URL.
       The 'name' must be one of "AES-128", "AES-256".
 
+  -e
   --enforce-burst
       Enforce that the number of TS packets per UDP packet is exactly what is
       specified in option --packet-burst. By default, this is only a maximum
@@ -47,11 +47,11 @@ Options:
   --null-packet-deletion
       Enable null packet deletion. The receiver needs to support this.
 
+  -p value
   --packet-burst value
       Specifies the maximum number of TS packets per UDP packet. The default is
       7, the maximum is 128.
 
-  -p name
   --profile name
       Specify the RIST profile (main profile by default).
       The 'name' must be one of "advanced", "main", "simple".
