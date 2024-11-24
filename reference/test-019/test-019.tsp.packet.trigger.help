@@ -52,7 +52,7 @@ Options:
       selects packets with specific labels among the packets which are passed
       to this plugin.
 
-  --local-address address
+  --local-address ip-address
       With --udp, when the destination is a multicast address, specify the IP
       address of the outgoing local interface. It can be also a host name that
       translates to a local address.
@@ -94,8 +94,8 @@ Options:
       destination address. Remember that the default Multicast TTL is 1 on most
       systems.
 
-  -u address:port
-  --udp address:port
+  -u ip-address:port
+  --udp ip-address:port
       Send a UDP/IP message to the specified destination when the current
       packet triggers the actions. The 'address' specifies an IP address which
       can be either unicast or multicast. It can be also a host name that
