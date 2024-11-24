@@ -269,3 +269,4 @@ repository. But we now limit their size to 20 MB.
 | 172  | Plugin `history`
 | 173  | Plugin `trace`
 | 174  | Plugin `isdbinfo`
+| 175  | `tsfclean`
