@@ -16,9 +16,9 @@ Options:
   --bufferapi
       When set, this socket uses the Buffer API. The default is Message API.
 
-  -c address:port
-  --caller address:port
-      Use SRT in caller (or rendezvous) mode. The parameter specifies the IPv4
+  -c ip-address:port
+  --caller ip-address:port
+      Use SRT in caller (or rendezvous) mode. The parameter specifies the IP
       remote address (or host name) and UDP port. If --listener is also
       specified, the SRT socket works in rendezvous mode.
 
@@ -112,14 +112,14 @@ Options:
       Linger time on close. Define how long, in seconds, to enable queued data
       to be sent after end of stream. Default: no linger.
 
-  -l [address:]port
-  --listener [address:]port
-      Use SRT in listener (or rendezvous) mode. The parameter specifies the
-      IPv4 local address and UDP port on which the SRT socket listens. The
-      address is optional, the port is mandatory. If --caller is also
-      specified, the SRT socket works in rendezvous mode.
+  -l [ip-address:]port
+  --listener [ip-address:]port
+      Use SRT in listener (or rendezvous) mode. The parameter specifies the IP
+      local address and UDP port on which the SRT socket listens. The address
+      is optional, the port is mandatory. If --caller is also specified, the
+      SRT socket works in rendezvous mode.
 
-  --local-interface address
+  --local-interface ip-address
       In caller mode, use the specified local IP interface for outgoing
       connections. This option is incompatible with --listener.
 
