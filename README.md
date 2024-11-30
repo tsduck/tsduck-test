@@ -270,3 +270,4 @@ repository. But we now limit their size to 20 MB.
 | 173  | Plugin `trace`
 | 174  | Plugin `isdbinfo`
 | 175  | `tsfclean`
+| 176  | `tspcap` and `pcap` plugin with IPv6 capture
