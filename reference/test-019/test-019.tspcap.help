@@ -16,8 +16,8 @@ Options:
 
   -d [ip-address]:[port]
   --destination [ip-address]:[port]
-      Filter IPv4 packets based on the specified destination socket address.
-      The optional port number is used for TCP and UDP packets only.
+      Filter IP packets based on the specified destination socket address. The
+      optional port number is used for TCP and UDP packets only.
 
   --dvb-simulcrypt
       Dump the content of a session as DVB SimulCrypt protocol.
@@ -92,7 +92,7 @@ Options:
 
   -s [ip-address]:[port]
   --source [ip-address]:[port]
-      Filter IPv4 packets based on the specified source socket address. The
+      Filter IP packets based on the specified source socket address. The
       optional port number is used for TCP and UDP packets only.
 
   -t
