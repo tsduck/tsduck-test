@@ -144,12 +144,16 @@
 
     <EVC_timing_and_HRD_descriptor
         hrd_management_valid="true"
-        N_90khz="0x12345678"
-        K_90khz="0xDEADBEEF"
-        num_units_in_tick="0x87654321"/>
+        N="12345678"
+        K="17"
+        num_units_in_tick="87654321"/>
 
     <EVC_timing_and_HRD_descriptor
         hrd_management_valid="false"/>
+		
+	<EVC_timing_and_HRD_descriptor
+        hrd_management_valid="false"
+		num_units_in_tick="16"/>
 
     <EVC_video_descriptor
         profile_idc="0xFE"
@@ -200,12 +204,16 @@
 
     <VVC_timing_and_HRD_descriptor
         hrd_management_valid="false"/>
+		
+	<VVC_timing_and_HRD_descriptor
+        hrd_management_valid="false"
+		num_units_in_tick="16"/>
 
     <VVC_timing_and_HRD_descriptor
         hrd_management_valid="true"
-        N_90khz="0x12398756"
-        K_90khz="0x14785236"
-        num_units_in_tick="0x96325841"/>
+        N="789654"
+        K="365214"
+        num_units_in_tick="96325841"/>
 
     <VVC_video_descriptor
         profile_idc="0x01"

@@ -490,22 +490,18 @@
         "temporal_poc": true
       },
       {
-        "#name": "AVC_timing_and_HRD_descriptor",
-        "fixed_frame_rate": true,
-        "hrd_management_valid": false,
-        "num_units_in_tick": 1234567,
-        "picture_to_display_conversion": true,
-        "temporal_poc": false
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "7F FF 00 12 D6 87 BF"
+        ],
+        "tag": 42
       },
       {
-        "#name": "AVC_timing_and_HRD_descriptor",
-        "fixed_frame_rate": true,
-        "hrd_management_valid": true,
-        "k_90khz": 365214,
-        "n_90khz": 789654,
-        "num_units_in_tick": 741369,
-        "picture_to_display_conversion": false,
-        "temporal_poc": false
+        "#name": "generic_descriptor",
+        "#nodes": [
+          "FF 7F 00 0C 0C 96 00 05 92 9E 00 0B 4F F9 9F"
+        ],
+        "tag": 42
       },
       {
         "#name": "HEVC_timing_and_HRD_descriptor",
@@ -520,8 +516,8 @@
       {
         "#name": "HEVC_timing_and_HRD_descriptor",
         "hrd_management_valid": true,
-        "k_90khz": 365214,
-        "n_90khz": 789654,
+        "k": 365214,
+        "n": 789654,
         "num_units_in_tick": 741369,
         "target_schedule_idx": 5
       },

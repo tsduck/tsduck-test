@@ -127,11 +127,15 @@
     </DVB_stuffing_descriptor>
     <AVC_video_descriptor profile_idc="0x2D" constraint_set0="true" constraint_set1="false" constraint_set2="true" constraint_set3="false" constraint_set4="true" constraint_set5="false" AVC_compatible_flags="0x02" level_idc="0x4E" AVC_still_present="true" AVC_24_hour_picture="false" frame_packing_SEI_not_present="true"/>
     <AVC_timing_and_HRD_descriptor hrd_management_valid="true" fixed_frame_rate="false" temporal_poc="true" picture_to_display_conversion="false"/>
-    <AVC_timing_and_HRD_descriptor hrd_management_valid="false" num_units_in_tick="1,234,567" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="true"/>
-    <AVC_timing_and_HRD_descriptor hrd_management_valid="true" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369" fixed_frame_rate="true" temporal_poc="false" picture_to_display_conversion="false"/>
+    <generic_descriptor tag="0x2A">
+      7F FF 00 12 D6 87 BF
+    </generic_descriptor>
+    <generic_descriptor tag="0x2A">
+      FF 7F 00 0C 0C 96 00 05 92 9E 00 0B 4F F9 9F
+    </generic_descriptor>
     <HEVC_timing_and_HRD_descriptor hrd_management_valid="true"/>
     <HEVC_timing_and_HRD_descriptor hrd_management_valid="false" target_schedule_idx="31" num_units_in_tick="1,234,567"/>
-    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true" target_schedule_idx="5" N_90khz="789,654" K_90khz="365,214" num_units_in_tick="741,369"/>
+    <HEVC_timing_and_HRD_descriptor hrd_management_valid="true" target_schedule_idx="5" N="789,654" K="365,214" num_units_in_tick="741,369"/>
     <HEVC_video_descriptor profile_space="0x01" tier_flag="true" profile_idc="0x1F" profile_compatibility_indication="0x87654321" progressive_source_flag="true" interlaced_source_flag="false" non_packed_constraint_flag="true" frame_only_constraint_flag="false" copied_44bits="0x0000000000000000" level_idc="0xAB" HEVC_still_present_flag="true" HEVC_24hr_picture_present_flag="false" sub_pic_hrd_params_not_present="true" HDR_WCG_idc="3"/>
     <HEVC_video_descriptor profile_space="0x02" tier_flag="false" profile_idc="0x04" profile_compatibility_indication="0x12345678" progressive_source_flag="false" interlaced_source_flag="true" non_packed_constraint_flag="false" frame_only_constraint_flag="true" copied_44bits="0x00000ABCDEF12345" level_idc="0x56" HEVC_still_present_flag="false" HEVC_24hr_picture_present_flag="true" sub_pic_hrd_params_not_present="false" HDR_WCG_idc="2" temporal_id_min="1" temporal_id_max="4"/>
     <external_ES_ID_descriptor external_ES_ID="0x4567"/>

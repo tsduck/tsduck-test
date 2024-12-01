@@ -269,13 +269,18 @@
       {
         "#name": "EVC_timing_and_HRD_descriptor",
         "hrd_management_valid": true,
-        "k_90khz": 3735928559,
-        "n_90khz": 305419896,
-        "num_units_in_tick": 2271560481
+        "k": 17,
+        "n": 12345678,
+        "num_units_in_tick": 87654321
       },
       {
         "#name": "EVC_timing_and_HRD_descriptor",
         "hrd_management_valid": false
+      },
+      {
+        "#name": "EVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": false,
+        "num_units_in_tick": 16
       },
       {
         "#name": "EVC_video_descriptor",
@@ -341,10 +346,15 @@
       },
       {
         "#name": "VVC_timing_and_HRD_descriptor",
+        "hrd_management_valid": false,
+        "num_units_in_tick": 16
+      },
+      {
+        "#name": "VVC_timing_and_HRD_descriptor",
         "hrd_management_valid": true,
-        "k_90khz": 343429686,
-        "n_90khz": 305760086,
-        "num_units_in_tick": 2519881793
+        "k": 365214,
+        "n": 789654,
+        "num_units_in_tick": 96325841
       },
       {
         "#name": "VVC_video_descriptor",

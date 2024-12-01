@@ -1,6 +1,6 @@
 
 * PMT, TID 0x02 (2)
-  Section: 0 (last: 1), version: 0, size: 1009 bytes
+  Section: 0 (last: 1), version: 0, size: 939 bytes
   Program: 0x0000 (0), PCR PID: none
   Program information:
   - Descriptor 0: Private Data Specifier (0x5F, 95), 4 bytes
@@ -100,61 +100,71 @@
   - Descriptor 22: MPEG-2 Extension (0x3F, 63), 15 bytes
     MPEG extended descriptor: EVC timing and HRD (0x16, 22)
     HRD management valid: true
-    90 kHz: N = 305,419,896, K = 3,735,928,559
-    Num. units in tick: 2,271,560,481
+    time_scale: N = 12,345,678, K = 17
+    Num. units in tick: 87,654,321
   - Descriptor 23: MPEG-2 Extension (0x3F, 63), 2 bytes
     MPEG extended descriptor: EVC timing and HRD (0x16, 22)
     HRD management valid: false
-  - Descriptor 24: EVC Video (H.222.0) (0x3A, 58), 12 bytes
+  - Descriptor 24: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: EVC timing and HRD (0x16, 22)
+    HRD management valid: false
+    EVC time base is 90 kHz
+    Num. units in tick: 16
+  - Descriptor 25: EVC Video (H.222.0) (0x3A, 58), 12 bytes
     Profile IDC: unknown (0xFE), level IDC: unknown (0xC5)
     Toolset h: 0x98765432, l: 0x45698523
     Progressive source: true, interlaced source: false, non packed: true, frame only: false
     Still pictures: false, 24-hour pictures: true
     HDR WCG idc: no indication (3), video properties: not known (0)
-  - Descriptor 25: EVC Video (H.222.0) (0x3A, 58), 14 bytes
+  - Descriptor 26: EVC Video (H.222.0) (0x3A, 58), 14 bytes
     Profile IDC: unknown (0x18), level IDC: unknown (0x76)
     Toolset h: 0x45876239, l: 0x25812398
     Progressive source: false, interlaced source: true, non packed: false, frame only: true
     Still pictures: true, 24-hour pictures: false
     HDR WCG idc: HDR and WCG (2), video properties: unknown (0x0209) (9)
     Temporal id min: 2, max: 5
-  - Descriptor 26: MPEG-2 Extension (0x3F, 63), 2 bytes
+  - Descriptor 27: MPEG-2 Extension (0x3F, 63), 2 bytes
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
-  - Descriptor 27: MPEG-2 Extension (0x3F, 63), 5 bytes
+  - Descriptor 28: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC linkage (0x18, 24)
     LCEVC stream tag: 01 23 45
-  - Descriptor 28: MPEG-2 Extension (0x3F, 63), 5 bytes
+  - Descriptor 29: MPEG-2 Extension (0x3F, 63), 5 bytes
     MPEG extended descriptor: LCEVC video (0x17, 23)
     LCEVC stream tag: 0x56, profile IDC: unknown (0x5), level IDC: 9, sublevel: 1
     Processed planes: true, picture type: false, field type: true
     HDR WCG idc: HDR and WCG (2), video properties: unknown (0x0206) (6)
-  - Descriptor 29: MPEG-2 Extension (0x3F, 63), 2 bytes
+  - Descriptor 30: MPEG-2 Extension (0x3F, 63), 2 bytes
     MPEG extended descriptor: VVC timing and HRD (0x15, 21)
     HRD management valid: false
-  - Descriptor 30: MPEG-2 Extension (0x3F, 63), 15 bytes
+  - Descriptor 31: MPEG-2 Extension (0x3F, 63), 7 bytes
+    MPEG extended descriptor: VVC timing and HRD (0x15, 21)
+    HRD management valid: false
+    VVC time base is 90 kHz
+    Num. units in tick: 16
+  - Descriptor 32: MPEG-2 Extension (0x3F, 63), 15 bytes
     MPEG extended descriptor: VVC timing and HRD (0x15, 21)
     HRD management valid: true
-    90 kHz: N = 305,760,086, K = 343,429,686
-    Num. units in tick: 2,519,881,793
-  - Descriptor 31: VVC Video (H.222.0) (0x39, 57), 6 bytes
+    time_scale: N = 789,654, K = 365,214
+    Num. units in tick: 96,325,841
+  - Descriptor 33: VVC Video (H.222.0) (0x39, 57), 6 bytes
     Profile IDC: Main 10 (0x01), tier: Main
     Progressive source: true, interlaced source: false, non packed: true, frame only: false
     Level IDC: 5.0 (0x50), still pictures: false, 24-hour pictures: true
     HDR WCG idc: HDR and WCG (2), video properties: BT2100_PQ_RGB (4)
-  - Descriptor 32: VVC Video (H.222.0) (0x39, 57), 20 bytes
+  - Descriptor 34: VVC Video (H.222.0) (0x39, 57), 20 bytes
     Profile IDC: Main 10 (0x01), tier: Main
     Sub profile IDC: 0x12369874 0x01236985 0x41558723
     Progressive source: false, interlaced source: true, non packed: false, frame only: true
     Level IDC: 6.2 (0x66), still pictures: true, 24-hour pictures: false
     HDR WCG idc: SDR (0), video properties: not known (0)
     Temporal id min: 3, max: 5
-  - Descriptor 33: MPEG-2 Extension (0x3F, 63), 9 bytes
+  - Descriptor 35: MPEG-2 Extension (0x3F, 63), 9 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
     3D-audio profile level indication: Baseline profile L5 (0x14)
     Interactivity enabled: false
     Reference channel layout: 7/6.1 (20)
     Reserved data (5 bytes): 01 23 45 67 89
-  - Descriptor 34: MPEG-2 Extension (0x3F, 63), 11 bytes
+  - Descriptor 36: MPEG-2 Extension (0x3F, 63), 11 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
     3D-audio profile level indication: Low Complexity profile L5 (0x0F)
     Interactivity enabled: true
@@ -165,7 +175,7 @@
     Compatible Set Indication: Main profile L4 (0x04)
     Compatible Set Indication: Main profile L5 (0x05)
     Compatible Set Indication: Baseline profile L2 (0x11)
-  - Descriptor 35: MPEG-2 Extension (0x3F, 63), 11 bytes
+  - Descriptor 37: MPEG-2 Extension (0x3F, 63), 11 bytes
     MPEG extended descriptor: MPEG-H 3D Audio (0x08, 8)
     3D-audio profile level indication: Main profile L5 (0x05)
     Interactivity enabled: false
@@ -174,14 +184,14 @@
     Compatible Set Indication: Baseline profile L3 (0x12)
     Compatible Set Indication: Baseline profile L5 (0x14)
     Reserved data (3 bytes): 45 67 89
-  - Descriptor 36: MPEG-2 Extension (0x3F, 63), 3 bytes
+  - Descriptor 38: MPEG-2 Extension (0x3F, 63), 3 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
     3D-audio scene info ID: 12
-  - Descriptor 37: MPEG-2 Extension (0x3F, 63), 6 bytes
+  - Descriptor 39: MPEG-2 Extension (0x3F, 63), 6 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
     3D-audio scene info ID: 23
     Reserved data (3 bytes): 45 67 89
-  - Descriptor 38: MPEG-2 Extension (0x3F, 63), 76 bytes
+  - Descriptor 40: MPEG-2 Extension (0x3F, 63), 76 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
     3D-audio scene info ID: 127
     Interactivity Group (0) id: 2, allow OnOff: false, default OnOff: true, content kind: LFE (6)
@@ -205,7 +215,7 @@
       Group Member IDs:  11 22 33 44 71 62 53 7F
                          00
       Default Group ID: 119
-  - Descriptor 39: MPEG-2 Extension (0x3F, 63), 24 bytes
+  - Descriptor 41: MPEG-2 Extension (0x3F, 63), 24 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Scene (0x0A, 10)
     3D-audio scene info ID: 126
     Preset Group (0) id: 5, kind: high quality loudspeaker (2)
@@ -224,11 +234,11 @@
        Preset Gain: -95.500000 dB
        Azimuth Offset: -190.500000 degrees, Elevation Offset: -96.000000 degrees
        Distance Factor: 4.000000
-  - Descriptor 40: Extension Descriptor (0x7F, 127), 7 bytes
+  - Descriptor 42: Extension Descriptor (0x7F, 127), 7 bytes
     Extended descriptor: TTML Subtitling (0x20, 32)
     ISO 639 language code: foo
     Subtitle purpose: 0x02 (all-dialogue), TTS suitability: 0x01 (suitable)
-  - Descriptor 41: Extension Descriptor (0x7F, 127), 35 bytes
+  - Descriptor 43: Extension Descriptor (0x7F, 127), 35 bytes
     Extended descriptor: TTML Subtitling (0x20, 32)
     ISO 639 language code: bar
     Subtitle purpose: 0x10 (hard-of-hearing), TTS suitability: 0x02 (not suitable)
@@ -237,12 +247,12 @@
     Essential font IDs: 03 04 05
     Service Name: Dummy service
     reserved_zero_future_use (5 bytes): 00 00 00 00 00
-  - Descriptor 42: MPEG-4 Text (0x2D, 45), 14 bytes
+  - Descriptor 44: MPEG-4 Text (0x2D, 45), 14 bytes
     Text format: Timed Text as specified in 3GPP TS 26.245 (0x01), config length: 11
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 5 Hz
     Sample description: In-band only (0x2)
     Layer: 6, text track width=7, height=8
-  - Descriptor 43: MPEG-4 Text (0x2D, 45), 31 bytes
+  - Descriptor 45: MPEG-4 Text (0x2D, 45), 31 bytes
     Text format: unknown (0x0A), config length: 28
     3GPP base format: Timed Text as specified in 3GPP TS 26.245 (0x10), level: Base profile, base level (0x10), clock frequency: 14 Hz
     Sample description: Out-of-band only (0x1)
@@ -251,56 +261,56 @@
     Sample description[0]: index=0x04, format: User-private (0xF1), length: 0
     Sample description[1]: index=0x06, format: User-private (0xF2), length: 4
     DE AD BE EF
-  - Descriptor 44: MuxCode (0x21, 33), 8 bytes
+  - Descriptor 46: MuxCode (0x21, 33), 8 bytes
     index[0] MuxCode: 4, version: 1
      substructure[0], repetition count: 7
       M4 mux channel: 240, byte count: 16
       M4 mux channel: 1, byte count: 253
-  - Descriptor 45: MuxCode (0x21, 33), 3 bytes
+  - Descriptor 47: MuxCode (0x21, 33), 3 bytes
     index[0] MuxCode: 15, version: 12
-  - Descriptor 46: MuxCode (0x21, 33), 5 bytes
+  - Descriptor 48: MuxCode (0x21, 33), 5 bytes
     index[0] MuxCode: 6, version: 6
      substructure[0], repetition count: 4
      substructure[1], repetition count: 0
-  - Descriptor 47: MuxCode (0x21, 33), 12 bytes
+  - Descriptor 49: MuxCode (0x21, 33), 12 bytes
     index[0] MuxCode: 6, version: 6
      substructure[0], repetition count: 4
     index[1] MuxCode: 5, version: 6
      substructure[0], repetition count: 7
       M4 mux channel: 240, byte count: 16
       M4 mux channel: 1, byte count: 253
-  - Descriptor 48: FmxBufferSize (0x22, 34), 4 bytes
+  - Descriptor 50: FmxBufferSize (0x22, 34), 4 bytes
      M4MuxBuffer(default) channel: 156, size: 15549729
-  - Descriptor 49: FmxBufferSize (0x22, 34), 8 bytes
+  - Descriptor 51: FmxBufferSize (0x22, 34), 8 bytes
      M4MuxBuffer(default) channel: 201, size: 8208677
      M4MuxBuffer(0) channel: 17, size: 901127
-  - Descriptor 50: FmxBufferSize (0x22, 34), 12 bytes
+  - Descriptor 52: FmxBufferSize (0x22, 34), 12 bytes
      M4MuxBuffer(default) channel: 42, size: 1234567
      M4MuxBuffer(0) channel: 177, size: 901127
      M4MuxBuffer(1) channel: 178, size: 901127
-  - Descriptor 51: MPEG-2 Extension (0x3F, 63), 7 bytes
+  - Descriptor 53: MPEG-2 Extension (0x3F, 63), 7 bytes
     MPEG extended descriptor: HEVC Operation Point (0x05, 5)
     operation point[ 0]  target OLS: 156
       Constant Frame Rate Info: 0, applicable temporal id: 6
-  - Descriptor 52: MPEG-2 Extension (0x3F, 63), 21 bytes
+  - Descriptor 54: MPEG-2 Extension (0x3F, 63), 21 bytes
     MPEG extended descriptor: HEVC Operation Point (0x05, 5)
     profile_tier_level_info[0] DE AD BE EF DE AD BE EF DE AD BE EF
     operation point[ 0]  target OLS: 156
       Constant Frame Rate Info: 1, applicable temporal id: 6
       Frame rate indicator: 2048
-  - Descriptor 53: MPEG-2 Extension (0x3F, 63), 10 bytes
+  - Descriptor 55: MPEG-2 Extension (0x3F, 63), 10 bytes
     MPEG extended descriptor: HEVC Operation Point (0x05, 5)
     operation point[ 0]  target OLS: 16
       ES[0] prepend dependencies : false, ES reference: 62
       ES[1] prepend dependencies : true, ES reference: 0
       ESinOP[0] necessary layer: true, output layer: false, PTL ref index: 56
       Constant Frame Rate Info: 0, applicable temporal id: 5
-  - Descriptor 54: MPEG-2 Extension (0x3F, 63), 15 bytes
+  - Descriptor 56: MPEG-2 Extension (0x3F, 63), 15 bytes
     MPEG extended descriptor: HEVC Operation Point (0x05, 5)
     operation point[ 0]  target OLS: 1
       Constant Frame Rate Info: 2, applicable temporal id: 2
       Frame rate indicator: 4095, Avg. bit rate: 12233445, Max. bit rate: 4332211
-  - Descriptor 55: Extension Descriptor (0x7F, 127), 5 bytes
+  - Descriptor 57: Extension Descriptor (0x7F, 127), 5 bytes
     Extended descriptor: CPCM Delivery Signalling (0x01, 1)
     CPCM version: 1
     Copy control: Copy Once (1)
@@ -311,7 +321,7 @@
     Remote access record: true, export beyond trust: true, image constraint : false
     Disable Analogue SD  export: false, consumption: false
     Disable Analogue HD  export: false, consumption: false
-  - Descriptor 56: Extension Descriptor (0x7F, 127), 25 bytes
+  - Descriptor 58: Extension Descriptor (0x7F, 127), 25 bytes
     Extended descriptor: CPCM Delivery Signalling (0x01, 1)
     CPCM version: 1
     Copy control: Copy No More (2)
@@ -327,7 +337,7 @@
     Simultaneous view count 174
     Remote access delay: 14 (15 minute periods)
     Remote access date: 2020/01/01 00:00:00
-  - Descriptor 57: Extension Descriptor (0x7F, 127), 44 bytes
+  - Descriptor 59: Extension Descriptor (0x7F, 127), 44 bytes
     Extended descriptor: CPCM Delivery Signalling (0x01, 1)
     CPCM version: 1
     Copy control: Not Asserted (0)
@@ -346,7 +356,7 @@
         DE AD BE EF
     cps[002] - C and R regime mask: 11111111
         01 23 45 67 89 AB CD EF
-  - Descriptor 58: MPEG-2 Extension (0x3F, 63), 27 bytes
+  - Descriptor 60: MPEG-2 Extension (0x3F, 63), 27 bytes
     MPEG extended descriptor: Quality Extension (0x0F, 15)
     Field size bytes: 1
     Metric code [1]: 0x7373696D (SSIM, Structural Similarity Index)
@@ -355,32 +365,37 @@
     Metric code [4]: 0x6A323437 (PEVQ, Perceptual Evaluation of Video Quality)
     Metric code [5]: 0x6D6F7073 (MOS, Mean Opinion Score)
     Metric code [6]: 0x66736967 (FSIG, Frame Significance)
-  - Descriptor 59: MPEG-2 Extension (0x3F, 63), 7 bytes
+  - Descriptor 61: MPEG-2 Extension (0x3F, 63), 7 bytes
     MPEG extended descriptor: Quality Extension (0x0F, 15)
     Field size bytes: 2
     Metric code [1]: 0x70736E72 (PSRN, Peak Signal Noise Ratio)
-  - Descriptor 60: MPEG-2 Extension (0x3F, 63), 7 bytes
+  - Descriptor 62: MPEG-2 Extension (0x3F, 63), 7 bytes
     MPEG extended descriptor: Quality Extension (0x0F, 15)
     Field size bytes: 0
     Metric code [1]: 0xDEADB00B (unknown)
-  - Descriptor 61: Extension Descriptor (0x7F, 127), 3 bytes
+  - Descriptor 63: Extension Descriptor (0x7F, 127), 3 bytes
     Extended descriptor: DTS UHD (0x21, 33)
     Decoder profile code: 0, decoder profile: 2
     Frame duration: 2048 samples (2), max payload: 131072 bytes (6), stream index: 0
     Codec Selector: 
-  - Descriptor 62: Extension Descriptor (0x7F, 127), 7 bytes
+  - Descriptor 64: Extension Descriptor (0x7F, 127), 7 bytes
     Extended descriptor: DTS UHD (0x21, 33)
     Decoder profile code: 2, decoder profile: 4
     Frame duration: 4096 samples (3), max payload: 4096 bytes (1), stream index: 4
     Codec Selector: DE AD BE EF
-  - Descriptor 63: MPEG-2 Extension (0x3F, 63), 3 bytes
+  - Descriptor 65: MPEG-2 Extension (0x3F, 63), 3 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Text Label (0x0B, 11)
     3D Audio Scene Id: 1
-  - Descriptor 64: MPEG-2 Extension (0x3F, 63), 9 bytes
+  - Descriptor 66: MPEG-2 Extension (0x3F, 63), 9 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Text Label (0x0B, 11)
     3D Audio Scene Id: 13
     Description Language: fre
-  - Descriptor 65: MPEG-2 Extension (0x3F, 63), 86 bytes
+
+* PMT, TID 0x02 (2)
+  Section: 1 (last: 1), version: 0, size: 430 bytes
+  Program: 0x0000 (0), PCR PID: none
+  Program information:
+  - Descriptor 0: MPEG-2 Extension (0x3F, 63), 86 bytes
     MPEG extended descriptor: MPEG-H 3D Audio Text Label (0x0B, 11)
     3D Audio Scene Id: 113
     Description Language: eng
@@ -390,12 +405,7 @@
      Group Preset Description [0] id: 13 - "group_preset_13"
     Description Language: chi
      Switch Group Description [0] id: 22 - "switch_group-22"
-
-* PMT, TID 0x02 (2)
-  Section: 1 (last: 1), version: 0, size: 342 bytes
-  Program: 0x0000 (0), PCR PID: none
-  Program information:
-  - Descriptor 0: MPEG-2 Extension (0x3F, 63), 18 bytes
+  - Descriptor 1: MPEG-2 Extension (0x3F, 63), 18 bytes
     MPEG extended descriptor: Media Service Kind (0x19, 25)
     [0] self (0), media type: video (1)
     [1] self (0), media type: unknown (0)
@@ -404,25 +414,25 @@
       Purposes: main (0x01)                 dub (0x07)                 
                 caption (0x11)              primary commentary (0x08)  
                 alternate commentary (0x17)
-  - Descriptor 1: MPEG-2 Extension (0x3F, 63), 19 bytes
+  - Descriptor 2: MPEG-2 Extension (0x3F, 63), 19 bytes
     MPEG extended descriptor: Media Service Kind (0x19, 25)
     [0] associate (1), media type: audio (2)
      ID type: According to ANSI SCTE/35 Table 22 (0x0200), media ID: TSDuck
       language [0] configuration: complete (0), language: french
-  - Descriptor 2: MPEG-2 Extension (0x3F, 63), 2 bytes
+  - Descriptor 3: MPEG-2 Extension (0x3F, 63), 2 bytes
     MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
     Substream id : 19
-  - Descriptor 3: MPEG-2 Extension (0x3F, 63), 3 bytes
+  - Descriptor 4: MPEG-2 Extension (0x3F, 63), 3 bytes
     MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
     Reference flag: 1, substream id : 67, preamble flag: 1, pattern reference: 99
-  - Descriptor 4: MPEG-2 Extension (0x3F, 63), 7 bytes
+  - Descriptor 5: MPEG-2 Extension (0x3F, 63), 7 bytes
     MPEG extended descriptor: HEVC Tile Substream (0x12, 18)
     Reference flag: 0, substream id : 68
     Additional Stream IDs: 1-14  0-19  0-119 1-86  1-125
-  - Descriptor 5: MPEG-2 Extension (0x3F, 63), 4 bytes
+  - Descriptor 6: MPEG-2 Extension (0x3F, 63), 4 bytes
     MPEG extended descriptor: HEVC Subregion (0x13, 19)
     Substream IDs per line: 125, total substream IDs: 255, level full panorama: 55
-  - Descriptor 6: MPEG-2 Extension (0x3F, 63), 55 bytes
+  - Descriptor 7: MPEG-2 Extension (0x3F, 63), 55 bytes
     MPEG extended descriptor: HEVC Subregion (0x13, 19)
     Substream IDs per line: 15, total substream IDs: 254, level full panorama: 54
     Layout [0]: Preamble substream: 1, level: 255, picture size hor=1920 ver=1080
@@ -434,7 +444,7 @@
                     59   69   79   89
     Layout [2]: Preamble substream: 126, level: 10, picture size hor=1280 ver=720
      Pattern [0]:   -1
-  - Descriptor 7: MPEG-2 Extension (0x3F, 63), 30 bytes
+  - Descriptor 8: MPEG-2 Extension (0x3F, 63), 30 bytes
     MPEG extended descriptor: JPEG XS Video (0x14, 20)
     Descriptor version: 0, horizontal size: 1920, vertical size: 1080
     Max bitrate: 123Mbit/s
@@ -445,7 +455,7 @@
     Colour primaries: ITU-R BT.2020-2/2100-2 (9), transfer characteristics: ITU-R BT.2020-2 (12 bit) (15)
     Matrix coefficients: ITU-R BT.2020-2 NCL (9)
     Video full range: false, still mode: true
-  - Descriptor 8: MPEG-2 Extension (0x3F, 63), 34 bytes
+  - Descriptor 9: MPEG-2 Extension (0x3F, 63), 34 bytes
     MPEG extended descriptor: JPEG XS Video (0x14, 20)
     Descriptor version: 0, horizontal size: 1920, vertical size: 1080
     Max bitrate: 1234Mbit/s
@@ -457,7 +467,7 @@
     Matrix coefficients: US FCC Title 47 [73.682 (a)(20)] (4)
     Video full range: true, still mode: false
     private data (4 bytes): DE AD BE EF
-  - Descriptor 9: MPEG-2 Extension (0x3F, 63), 58 bytes
+  - Descriptor 10: MPEG-2 Extension (0x3F, 63), 58 bytes
     MPEG extended descriptor: JPEG XS Video (0x14, 20)
     Descriptor version: 0, horizontal size: 1920, vertical size: 1080
     Max bitrate: 1234Mbit/s
@@ -475,7 +485,7 @@
       Chromaticity coordinates (white point) X: 45, Y: 54
       Luminance max: 145263, min: 0
       Max Content Light Level: 1000, Max Frame Average Light Level: 999
-  - Descriptor 10: Auxiliary Video Stream (0x2F, 47), 28 bytes
+  - Descriptor 11: Auxiliary Video Stream (0x2F, 47), 28 bytes
     Auxiliary video coded stream type: 0x1b
     SI Message, type: 0x00000253, size: 3
      Reserved SI message (3 bytes): AA BB CC
@@ -485,7 +495,7 @@
     SI Message, type: 0x00000001, size: 11
      Bottom field: true, position offset h: 255, v: 0
      Parallax zero: 0, scale: 0, wref: 0cm, dref: 0cm
-  - Descriptor 11: Auxiliary Video Stream (0x2F, 47), 44 bytes
+  - Descriptor 12: Auxiliary Video Stream (0x2F, 47), 44 bytes
     Auxiliary video coded stream type: 0x32
     SI Message, type: 0x00000000, size: 5
      Bottom field: true, position offset h: 0, v: 255

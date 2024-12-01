@@ -194,13 +194,14 @@
       Picture to display conversion: false
     - Descriptor 51: AVC Timing and HRD (0x2A, 42), 7 bytes
       HRD management valid: false
+      AVC time base is 90 kHz
       Num. units in tick: 1,234,567
       Fixed frame rate: true
       Temporal picture order count: false
       Picture to display conversion: true
     - Descriptor 52: AVC Timing and HRD (0x2A, 42), 15 bytes
       HRD management valid: true
-      90 kHz: N = 789,654, K = 365,214
+      time_scale: N = 789,654, K = 365,214
       Num. units in tick: 741,369
       Fixed frame rate: true
       Temporal picture order count: false
@@ -212,12 +213,13 @@
       MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
       HRD management valid: false
       Target schedule idx: 0x1f (31)
+      HEVC time base is 90 kHz
       Num. units in tick: 1,234,567
     - Descriptor 55: MPEG-2 Extension (0x3F, 63), 15 bytes
       MPEG extended descriptor: HEVC Timing and HRD (0x03, 3)
       HRD management valid: true
       Target schedule idx: 0x05 (5)
-      90 kHz: N = 789,654, K = 365,214
+      time_scale: N = 789,654, K = 365,214
       Num. units in tick: 741,369
     - Descriptor 56: HEVC Video (0x38, 56), 13 bytes
       Profile space: 1, tier: true, profile IDC: 31
