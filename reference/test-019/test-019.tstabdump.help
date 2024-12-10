@@ -90,15 +90,21 @@ Options:
       systems. On Unix systems (Linux, macOS, BSD), this option applies only to
       output sockets.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
   --europe
-      A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
-      for commonly incorrect signalization on some European satellites. In that
-      signalization, the character encoding is ISO-8859-15, the most common
-      encoding for Latin & Western Europe languages. However, this is not the
-      default DVB character set and it should be properly specified in all
-      strings, which is not the case with some operators. Using this option,
-      all DVB strings without explicit table code are assumed to use
-      ISO-8859-15 instead of the standard ISO-6937 encoding.
+      A synonym for '--dvb --default-charset ISO-8859-15'. This is a handy
+      shortcut for commonly incorrect signalization on some European
+      satellites. In that signalization, the character encoding is ISO-8859-15,
+      the most common encoding for Latin & Western Europe languages. However,
+      this is not the default DVB character set and it should be properly
+      specified in all strings, which is not the case with some operators.
+      Using this option, all DVB strings without explicit table code are
+      assumed to use ISO-8859-15 instead of the standard ISO-6937 encoding.
 
   --first-source
       Filter UDP packets based on the source address. Use the sender address of

@@ -66,6 +66,15 @@ Options:
       systems. On Unix systems (Linux, macOS, BSD), this option applies only to
       output sockets.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
+  --europe
+      A synonym for '--dvb'.
+
   --first-source
       Filter UDP packets based on the source address. Use the sender address of
       the first received packet as only allowed source. This option is useful

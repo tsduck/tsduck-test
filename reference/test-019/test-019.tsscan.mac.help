@@ -104,15 +104,21 @@ Options:
       By default, the first receiver device is used. Use the tslsdvb utility to
       list all DVB devices.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
   --europe
-      A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
-      for commonly incorrect signalization on some European satellites. In that
-      signalization, the character encoding is ISO-8859-15, the most common
-      encoding for Latin & Western Europe languages. However, this is not the
-      default DVB character set and it should be properly specified in all
-      strings, which is not the case with some operators. Using this option,
-      all DVB strings without explicit table code are assumed to use
-      ISO-8859-15 instead of the standard ISO-6937 encoding.
+      A synonym for '--dvb --default-charset ISO-8859-15'. This is a handy
+      shortcut for commonly incorrect signalization on some European
+      satellites. In that signalization, the character encoding is ISO-8859-15,
+      the most common encoding for Latin & Western Europe languages. However,
+      this is not the default DVB character set and it should be properly
+      specified in all strings, which is not the case with some operators.
+      Using this option, all DVB strings without explicit table code are
+      assumed to use ISO-8859-15 instead of the standard ISO-6937 encoding.
 
   --fec-inner value
       Used for satellite and cable tuners only. Inner Forward Error Correction.

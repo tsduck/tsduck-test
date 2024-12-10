@@ -36,6 +36,15 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
+  --europe
+      A synonym for '--dvb'.
+
   -f name
   --format name
       Specify the format of the input TS file. By default, the format is

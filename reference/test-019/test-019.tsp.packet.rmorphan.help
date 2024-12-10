@@ -22,6 +22,15 @@ Options:
       A synonym for '--isdb --abnt'. This is a handy shortcut when working on
       South American ISDB-Tb transport streams.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
+  --europe
+      A synonym for '--dvb'.
+
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
