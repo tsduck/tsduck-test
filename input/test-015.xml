@@ -1144,6 +1144,8 @@
 		matrix_coefficients="14"
 		video_full_range_flag="true"/>
 
+    <!-- "CUEI" registration identifier required for SCTE-35 splice information -->
+    <registration_descriptor format_identifier="0x43554549"/>
     <cue_identifier_descriptor cue_stream_type="insert_null_schedule"/>
     <cue_identifier_descriptor cue_stream_type="all"/>
 

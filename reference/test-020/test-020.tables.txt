@@ -17,19 +17,22 @@
     Program:  8899 (0x22C3)  PID: 4099 (0x1003)
 
 * PMT, TID 0x02 (2), PID 0x0258 (600)
-  Version: 8, sections: 1, total size: 72 bytes
+  Version: 8, sections: 1, total size: 78 bytes
   - Section 0:
     Program: 0x2266 (8806), PCR PID: 0x0262 (610)
+    Program information:
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x43554549 ("CUEI")
     Elementary stream: type 0x1B (AVC video), PID: 0x0262 (610)
-    - Descriptor 0: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
-      Cue stream type: 0x01 (All commands)
+    - Descriptor 0: unknown (0x8A, 138), 1 bytes
+      0000:  01                                         .
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x026D (621)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    - Descriptor 2: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
-      Cue stream type: 0x02 (Segmentation)
+    - Descriptor 2: unknown (0x8A, 138), 1 bytes
+      0000:  02                                         .
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0282 (642)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
       Language: fra, Type: 0x10 (16)

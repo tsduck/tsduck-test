@@ -14,7 +14,7 @@ test_tsp \
     -P pmt -p 300 --remove-descriptor 9 --add-stream-identifier \
     -P pmt -p 400 --remove-descriptor 9 \
     -P pmt -p 500 --remove-descriptor 9 --set-stream-identifier 510/3 --set-stream-identifier 521/123 \
-    -P pmt -p 600 --remove-descriptor 9 --set-cue-type 610/1 --set-cue-type 621/2 --remove-pid 622 \
+    -P pmt -p 600 --remove-descriptor 9 --add-registration 0x43554549 --set-cue-type 610/1 --set-cue-type 621/2 --remove-pid 622 \
     -P pmt -p 700 --remove-descriptor 9 \
     -P pmt -p 800 --remove-descriptor 9 \
     -P pmt -p 900 --remove-descriptor 9 \
