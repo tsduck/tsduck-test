@@ -29,11 +29,12 @@
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0116 (278)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x30 (48)
-    - Descriptor 1: unknown (0xFD, 253), 3 bytes
-      0000:  00 08 3D                                   ..=
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
     Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 0x01F4 (500)
-    - Descriptor 0: unknown (0xFD, 253), 2 bytes
-      0000:  00 A3                                      ..
+    - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+      Data component id: 0x00A3 (unknown)
     Elementary stream: type 0x0B (DSM-CC U-N), PID: 0x0384 (900)
     - Descriptor 0: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
       Carousel id: 0x00000001 (1)
@@ -42,8 +43,10 @@
       Selector bytes (8 bytes): 80 00 00 00 FF FF FF FF
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x40 (64)
-    - Descriptor 3: unknown (0xFD, 253), 14 bytes
-      0000:  00 A0 A4 00 00 00 0A 00 64 00 00 00 01 1F  ........d.....
+    - Descriptor 3: ISDB Data Component (0xFD, 253), 14 bytes
+      Data component id: 0x00A0 (unknown)
+      Additional data component info (12 bytes):
+        0000:  A4 00 00 00 0A 00 64 00 00 00 01 1F              ......d.....
     Elementary stream: type 0x0C (DSM-CC Stream Descriptors), PID: 0x05DC (1500)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x78 (120)
@@ -61,8 +64,9 @@
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0119 (281)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x87 (135)
-    - Descriptor 1: unknown (0xFD, 253), 3 bytes
-      0000:  00 08 3D                                   ..=
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
 
 * NIT Actual, TID 0x40 (64), PID 0x0010 (16)
   Version: 12, sections: 1, total size: 80 bytes
@@ -75,13 +79,20 @@
     - Descriptor 0: Service List (0x41, 65), 6 bytes
       Service id: 0x5C38 (23608), Type: 0xC0 (Data service)
       Service id: 0x5C20 (23584), Type: 0x01 (Digital television service)
-    - Descriptor 1: unknown (0xFA, 250), 4 bytes
-      0000:  89 16 0F 90                                ....
-    - Descriptor 2: unknown (0xFB, 251), 2 bytes
-      0000:  5C 38                                      \8
-    - Descriptor 3: unknown (0xCD, 205), 23 bytes
-      0000:  07 36 54 56 20 49 4E 54 45 47 52 41 C7 C3  .6TV INTEGRA..
-      000E:  4F AF 01 5C 38 0F 01 5C 20                 O..\8..\
+    - Descriptor 1: ISDB Terrestrial Delivery System (0xFA, 250), 4 bytes
+      Area code: 0x891 (2193)
+      Guard interval: 1 (1/16)
+      Transmission mode: 2 (8k)
+      Frequency: 569,142,857 Hz
+    - Descriptor 2: ISDB Partial Reception (0xFB, 251), 2 bytes
+      Service id: 0x5C38 (23608)
+    - Descriptor 3: ISDB TS Information (0xCD, 205), 23 bytes
+      Remote control key id: 0x07 (7)
+      TS name: "TV INTEGRÂȮ"
+      - Transmission type info: 0xAF (175)
+        Service id: 0x5C38 (23608)
+      - Transmission type info: 0x0F (15)
+        Service id: 0x5C20 (23584)
 
 * CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 0, sections: 1, total size: 12 bytes
@@ -129,9 +140,17 @@
         Description: "Acompanhe os atletas brasileiros na disputa por medalhas em Paris."
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: BRA, rating: 0x01 (min. 4 years)
-      - Descriptor 2: unknown (0xC4, 196), 16 bytes
-        0000:  F6 03 10 11 FF 5F 70 6F 72 45 73 74 3F 72  ....._porEst?r
-        000E:  65 6F                                      eo
+      - Descriptor 2: ISDB Audio Component (0xC4, 196), 16 bytes
+        Content type: 0x06 (6)
+        Component type: 0x03 (2/0 mode (stereo))
+        Component tag: 0x10 (16)
+        Stream type: 0x11 (MPEG-4 AAC Audio)
+        Simulcast group: 0xFF (255, none)
+        Main component: true
+        Quality indicator: 0x1 (Mode 1)
+        Sampling rate: 0x7 (48 kHz)
+        Language code: "por"
+        Text: "Est?reo"
       - Descriptor 3: Component (0x50, 80), 7 bytes
         Content/type: 0x05B2 (H.264/AVC)
         Component tag: 0x00 (0)
@@ -139,9 +158,12 @@
         Description: " "
       - Descriptor 4: Content (0x54, 84), 2 bytes
         Content: 0x10 (movie/drama (general)) / User: 0x00
-      - Descriptor 5: unknown (0xC7, 199), 27 bytes
-        0000:  00 08 30 05 01 13 70 6F 72 00 70 6F 72 0D  ..0...por.por.
-        000E:  63 6C 6F 73 65 64 63 61 70 74 69 6F 6E     closedcaption
+      - Descriptor 5: ISDB Data Content (0xC7, 199), 27 bytes
+        Data component id: 0x0008 (ARIB subtitle & teletext coding)
+        Entry component: 0x30 (48)
+        Selector bytes (5 bytes): 01 13 70 6F 72
+        Language: "por"
+        Text: "closedcaption"
       - Descriptor 6: Extended Event (0x4E, 78), 30 bytes
         Descriptor number: 0, last: 0
         Language: por
@@ -165,9 +187,17 @@
         Description: "Os destaques do dia no Brasil e no mundo, com apresentaĿªo de CØsar Tralli."
       - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
         Country code: BRA, rating: 0x01 (min. 4 years)
-      - Descriptor 2: unknown (0xC4, 196), 16 bytes
-        0000:  F6 03 10 11 FF 5F 70 6F 72 45 73 74 3F 72  ....._porEst?r
-        000E:  65 6F                                      eo
+      - Descriptor 2: ISDB Audio Component (0xC4, 196), 16 bytes
+        Content type: 0x06 (6)
+        Component type: 0x03 (2/0 mode (stereo))
+        Component tag: 0x10 (16)
+        Stream type: 0x11 (MPEG-4 AAC Audio)
+        Simulcast group: 0xFF (255, none)
+        Main component: true
+        Quality indicator: 0x1 (Mode 1)
+        Sampling rate: 0x7 (48 kHz)
+        Language code: "por"
+        Text: "Est?reo"
       - Descriptor 3: Component (0x50, 80), 7 bytes
         Content/type: 0x05B2 (H.264/AVC)
         Component tag: 0x00 (0)
@@ -175,9 +205,12 @@
         Description: " "
       - Descriptor 4: Content (0x54, 84), 2 bytes
         Content: 0x00 (unknown) / User: 0x00
-      - Descriptor 5: unknown (0xC7, 199), 27 bytes
-        0000:  00 08 30 05 01 13 70 6F 72 00 70 6F 72 0D  ..0...por.por.
-        000E:  63 6C 6F 73 65 64 63 61 70 74 69 6F 6E     closedcaption
+      - Descriptor 5: ISDB Data Content (0xC7, 199), 27 bytes
+        Data component id: 0x0008 (ARIB subtitle & teletext coding)
+        Entry component: 0x30 (48)
+        Selector bytes (5 bytes): 01 13 70 6F 72
+        Language: "por"
+        Text: "closedcaption"
       - Descriptor 6: Extended Event (0x4E, 78), 17 bytes
         Descriptor number: 0, last: 0
         Language: por

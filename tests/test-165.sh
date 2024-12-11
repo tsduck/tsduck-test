@@ -3,9 +3,9 @@
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
-source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts
+source "$COMMONDIR"/standard-ts-test.sh $SCRIPT.ts --isdb
 
-$(tspath tstables) $(fpath "$INDIR/$SCRIPT.ts") --pid 0x17 \
+$(tspath tstables) $(fpath "$INDIR/$SCRIPT.ts") --pid 0x17 --isdb \
     --text $(fpath "$OUTDIR/$SCRIPT.dct.txt") \
     --xml $(fpath "$OUTDIR/$SCRIPT.dct.xml") \
     --json $(fpath "$OUTDIR/$SCRIPT.dct.json") \
@@ -16,7 +16,7 @@ test_text $SCRIPT.dct.txt
 test_text $SCRIPT.dct.xml
 test_text $SCRIPT.dct.json
 
-$(tspath tstables) $(fpath "$INDIR/$SCRIPT.ts") --pid 0x1C00 --max-tables 4 \
+$(tspath tstables) $(fpath "$INDIR/$SCRIPT.ts") --pid 0x1C00 --isdb --max-tables 4 \
     --text $(fpath "$OUTDIR/$SCRIPT.dlt.txt") \
     --xml $(fpath "$OUTDIR/$SCRIPT.dlt.xml") \
     --json $(fpath "$OUTDIR/$SCRIPT.dlt.json") \

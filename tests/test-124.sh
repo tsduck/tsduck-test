@@ -14,6 +14,10 @@ test_tsp \
     -O file $(fpath "$OUTDIR/$SCRIPT.ts") \
     >"$OUTDIR/$SCRIPT.log" 2>&1
 
+# Note: an error is generated in the log: "sections: <extended_event_descriptor>, line 0, is not a valid descriptor"
+# This is expected. The test in the extended_event_descriptor is very long. In the original stream, the chosen
+# character encoding fits in the descriptor size. On output, TSDuck choses another encoding which does not fit.
+
 test_text $SCRIPT.nit.out.txt
 test_text $SCRIPT.eit.out.txt
 test_text $SCRIPT.log

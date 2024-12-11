@@ -76,13 +76,24 @@ Options:
 
   --default-pds value
       Default private data specifier. This option is meaningful only when the
-      signalization is incorrect, when private descriptors appear in tables
+      signalization is incorrect, when DVB private descriptors appear in tables
       without a preceding private_data_specifier_descriptor. The specified
-      value is used as private data specifier to interpret private descriptors.
-      The PDS value can be an integer or one of (not case-sensitive) names.
+      value is used as private data specifier to interpret DVB private
+      descriptors. The PDS value can be an integer or one of (not
+      case-sensitive) names.
       The 'value' must be one of "AOM", "Australia", "AVSA", "AVSV", "BskyB",
       "CanalPlus", "cuvv", "EACEM", "EICTA", "Eutelsat", "Logiways", "Nagra",
       "NorDig", "OFCOM", "TPS".
+
+  --default-registration value
+      Default registration id. This option is meaningful only when the
+      signalization is incorrect, when MPEG private descriptors appear in
+      tables without a preceding registration_descriptor. The specified value
+      is used as registration id (also know as format identifier) to interpret
+      MPEG private descriptors or stream types.
+      Several options --default-registration can be specified. Unlike DVB
+      private data specifiers, several MPEG registration ids can be
+      simultaneously defined.
 
   --delivery-system value
       Specify which delivery system to use. By default, use the default system
@@ -111,15 +122,21 @@ Options:
       name (not case sensitive, blanks are ignored). By default, the first
       receiver device is used. Use the tslsdvb utility to list all DVB devices.
 
+  --dvb
+      Assume that the transport stream is a DVB one. DVB streams are normally
+      automatically detected from their signalization. This option is only
+      useful when possibly incorrect non-DVB stuff are found in the TS before
+      the first DVB-specific table.
+
   --europe
-      A synonym for '--default-charset ISO-8859-15'. This is a handy shortcut
-      for commonly incorrect signalization on some European satellites. In that
-      signalization, the character encoding is ISO-8859-15, the most common
-      encoding for Latin & Western Europe languages. However, this is not the
-      default DVB character set and it should be properly specified in all
-      strings, which is not the case with some operators. Using this option,
-      all DVB strings without explicit table code are assumed to use
-      ISO-8859-15 instead of the standard ISO-6937 encoding.
+      A synonym for '--dvb --default-charset ISO-8859-15'. This is a handy
+      shortcut for commonly incorrect signalization on some European
+      satellites. In that signalization, the character encoding is ISO-8859-15,
+      the most common encoding for Latin & Western Europe languages. However,
+      this is not the default DVB character set and it should be properly
+      specified in all strings, which is not the case with some operators.
+      Using this option, all DVB strings without explicit table code are
+      assumed to use ISO-8859-15 instead of the standard ISO-6937 encoding.
 
   --fec-inner value
       Used for satellite and cable tuners only. Inner Forward Error Correction.

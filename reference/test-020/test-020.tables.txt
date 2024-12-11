@@ -17,9 +17,12 @@
     Program:  8899 (0x22C3)  PID: 4099 (0x1003)
 
 * PMT, TID 0x02 (2), PID 0x0258 (600)
-  Version: 8, sections: 1, total size: 72 bytes
+  Version: 8, sections: 1, total size: 78 bytes
   - Section 0:
     Program: 0x2266 (8806), PCR PID: 0x0262 (610)
+    Program information:
+    - Descriptor 0: Registration (0x05, 5), 4 bytes
+      Format identifier: 0x43554549 ("CUEI")
     Elementary stream: type 0x1B (AVC video), PID: 0x0262 (610)
     - Descriptor 0: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
       Cue stream type: 0x01 (All commands)
