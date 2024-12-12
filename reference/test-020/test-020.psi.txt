@@ -24,15 +24,15 @@
     - Descriptor 0: Registration (0x05, 5), 4 bytes
       Format identifier: 0x43554549 ("CUEI")
     Elementary stream: type 0x1B (AVC video), PID: 0x0262 (610)
-    - Descriptor 0: unknown (0x8A, 138), 1 bytes
-      0000:  01                                         .
+    - Descriptor 0: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x01 (All commands)
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x026D (621)
     - Descriptor 0: ISO-639 Language (0x0A, 10), 4 bytes
       Language: fra, Type: 0x00 (undefined)
     - Descriptor 1: AC-3 (0x6A, 106), 2 bytes
       Component type: 0x42 (AC-3, full, complete main, 2 channels)
-    - Descriptor 2: unknown (0x8A, 138), 1 bytes
-      0000:  02                                         .
+    - Descriptor 2: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
+      Cue stream type: 0x02 (Segmentation)
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0282 (642)
     - Descriptor 0: Subtitling (0x59, 89), 8 bytes
       Language: fra, Type: 0x10 (16)

@@ -74,13 +74,24 @@ Options:
 
   --default-pds value
       Default private data specifier. This option is meaningful only when the
-      signalization is incorrect, when private descriptors appear in tables
+      signalization is incorrect, when DVB private descriptors appear in tables
       without a preceding private_data_specifier_descriptor. The specified
-      value is used as private data specifier to interpret private descriptors.
-      The PDS value can be an integer or one of (not case-sensitive) names.
+      value is used as private data specifier to interpret DVB private
+      descriptors. The PDS value can be an integer or one of (not
+      case-sensitive) names.
       The 'value' must be one of "AOM", "Australia", "AVSA", "AVSV", "BskyB",
       "CanalPlus", "cuvv", "EACEM", "EICTA", "Eutelsat", "Logiways", "Nagra",
       "NorDig", "OFCOM", "TPS".
+
+  --default-registration value
+      Default registration id. This option is meaningful only when the
+      signalization is incorrect, when MPEG private descriptors appear in
+      tables without a preceding registration_descriptor. The specified value
+      is used as registration id (also know as format identifier) to interpret
+      MPEG private descriptors or stream types.
+      Several options --default-registration can be specified. Unlike DVB
+      private data specifiers, several MPEG registration ids can be
+      simultaneously defined.
 
   -d
   --dump
