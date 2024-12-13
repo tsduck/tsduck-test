@@ -29,11 +29,12 @@
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0116 (278)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x30 (48)
-    - Descriptor 1: unknown (0xFD, 253), 3 bytes
-      0000:  00 08 3D                                   ..=
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
     Elementary stream: type 0x05 (MPEG-2 Private sections), PID: 0x01F4 (500)
-    - Descriptor 0: unknown (0xFD, 253), 2 bytes
-      0000:  00 A3                                      ..
+    - Descriptor 0: ISDB Data Component (0xFD, 253), 2 bytes
+      Data component id: 0x00A3 (unknown)
     Elementary stream: type 0x0B (DSM-CC U-N), PID: 0x0384 (900)
     - Descriptor 0: DSM-CC Carousel Identifier (0x13, 19), 4 bytes
       Carousel id: 0x00000001 (1)
@@ -42,8 +43,10 @@
       Selector bytes (8 bytes): 80 00 00 00 FF FF FF FF
     - Descriptor 2: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x40 (64)
-    - Descriptor 3: unknown (0xFD, 253), 14 bytes
-      0000:  00 A0 A4 00 00 00 0A 00 64 00 00 00 01 1F  ........d.....
+    - Descriptor 3: ISDB Data Component (0xFD, 253), 14 bytes
+      Data component id: 0x00A0 (unknown)
+      Additional data component info (12 bytes):
+        0000:  A4 00 00 00 0A 00 64 00 00 00 01 1F              ......d.....
     Elementary stream: type 0x0C (DSM-CC Stream Descriptors), PID: 0x05DC (1500)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x78 (120)
@@ -61,8 +64,9 @@
     Elementary stream: type 0x06 (MPEG-2 PES private data), PID: 0x0119 (281)
     - Descriptor 0: Stream Identifier (0x52, 82), 1 bytes
       Component tag: 0x87 (135)
-    - Descriptor 1: unknown (0xFD, 253), 3 bytes
-      0000:  00 08 3D                                   ..=
+    - Descriptor 1: ISDB Data Component (0xFD, 253), 3 bytes
+      Data component id: 0x0008 (ARIB subtitle & teletext coding)
+      Additional data component info (1 bytes): 3D
 
 * BIT (ISDB), TID 0xC4 (196), PID 0x0024 (36)
   Version: 12, sections: 1, total size: 23 bytes

@@ -27,10 +27,11 @@
       0000:  02 89 21 5D                                ..!]
     - Descriptor 2: unknown (0x8F, 143), 2 bytes
       0000:  70 CA                                      p.
-    - Descriptor 3: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
-      Cue stream type: 0x81
-    - Descriptor 4: unknown (0xC1, 193), 1 bytes
-      0000:  04                                         .
+    - Descriptor 3: unknown (0x8A, 138), 1 bytes
+      0000:  81                                         .
+    - Descriptor 4: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+      Recording control: 0 (Copy can be made without control condition)
+      User-defined: 0x4 (4)
     Service Id: 0x43D7 (17367), EITs: no, EITp/f: yes, CA mode: free
     Running status: undefined
     - Descriptor 0: unknown (0x82, 130), 21 bytes
@@ -42,10 +43,11 @@
       001C:  23 39 23 38 23 33                          #9#8#3
     - Descriptor 2: unknown (0x8F, 143), 2 bytes
       0000:  73 D7                                      s.
-    - Descriptor 3: Cue Identifier (SCTE 35) (0x8A, 138), 1 bytes
-      Cue stream type: 0x01 (All commands)
-    - Descriptor 4: unknown (0xC1, 193), 1 bytes
-      0000:  0F                                         .
+    - Descriptor 3: unknown (0x8A, 138), 1 bytes
+      0000:  01                                         .
+    - Descriptor 4: ISDB Digital Copy Control (0xC1, 193), 1 bytes
+      Recording control: 0 (Copy can be made without control condition)
+      User-defined: 0xF (15)
     Service Id: 0x70CA (28874), EITs: no, EITp/f: no, CA mode: controlled
     Running status: undefined
     - Descriptor 0: unknown (0x91, 145), 6 bytes
@@ -65,7 +67,7 @@
   Version: 0, sections: 1, total size: 27 bytes
   - Section 0:
     - Descriptor 0: CA (0x09, 9), 4 bytes
-      CA System Id: 0x0001 (IPDC SPP Open Security Framework Generic Roaming), EMM PID: 0x0203 (515)
+      CA System Id: 0x0001 (SKY Perfect Communications), EMM PID: 0x0203 (515)
     - Descriptor 1: unknown (0x9C, 156), 7 bytes
       0000:  23 59 59 06 00 00 FF                       #YY....
 
