@@ -58,9 +58,9 @@
     Platform id: 0x123456 (unknown)
     Action type: 0x01, processing order: 0x00, id hash: 0x70 (valid)
     Platform descriptors:
-    - Descriptor 0: INT Target IP Address (0x09, 9), 4 bytes
+    - Descriptor 0: UNT/INT Target IP Address (0x09, 9), 4 bytes
       Address mask: 12.34.56.78
-    - Descriptor 1: INT Target IP Address (0x09, 9), 12 bytes
+    - Descriptor 1: UNT/INT Target IP Address (0x09, 9), 12 bytes
       Address mask: 12.34.56.78
       Address: 1.2.3.4
       Address: 54.124.12.78
@@ -74,9 +74,9 @@
         Destination: 5.6.7.8/16
       - Source:      45.85.35.14/24
         Destination: 123.124.178.1/25
-    - Descriptor 6: INT Target IPv6 Address (0x0A, 10), 16 bytes
+    - Descriptor 6: UNT/INT Target IPv6 Address (0x0A, 10), 16 bytes
       Address mask: ffff:ffff:ff00::
-    - Descriptor 7: INT Target IPv6 Address (0x0A, 10), 48 bytes
+    - Descriptor 7: UNT/INT Target IPv6 Address (0x0A, 10), 48 bytes
       Address mask: ffff:f0::
       Address: fe80::93a3:dea0:2108:b81e
       Address: fe80::ba3:a0:8:be
@@ -90,17 +90,17 @@
         Destination: fe80::93a3:dea0:2108:b81e/16
       - Source:      fe80::ba3:a0:8:be/128
         Destination: ::1/64
-    - Descriptor 12: INT Target MAC Address (0x07, 7), 12 bytes
+    - Descriptor 12: UNT/INT Target MAC Address (0x07, 7), 12 bytes
       Address mask: 01:A3:E4:BA:45:74
       Address: AB:CD:EF:01:23:45
     - Descriptor 13: INT Target MAC Address Range (0x0E, 14), 12 bytes
       First address: 12:78:65:32:59:32, last: 78:44:54:54:98:87
-    - Descriptor 14: INT Target Serial Number (0x08, 8), 0 bytes
-    - Descriptor 15: INT Target Serial Number (0x08, 8), 4 bytes
+    - Descriptor 14: UNT/INT Target Serial Number (0x08, 8), 0 bytes
+    - Descriptor 15: UNT/INT Target Serial Number (0x08, 8), 4 bytes
       Serial number (4 bytes): 12 34 56 78
-    - Descriptor 16: INT Target Smartcard (0x06, 6), 4 bytes
+    - Descriptor 16: UNT/INT Target Smartcard (0x06, 6), 4 bytes
       Super CAS Id: 0x98765432 (2557891634)
-    - Descriptor 17: INT Target Smartcard (0x06, 6), 10 bytes
+    - Descriptor 17: UNT/INT Target Smartcard (0x06, 6), 10 bytes
       Super CAS Id: 0x12345678 (305419896)
       Private data (6 bytes): 45 89 32 84 21 54
     - Descriptor 18: INT IP/MAC Generic Stream Location (0x15, 21), 7 bytes
