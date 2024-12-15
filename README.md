@@ -271,3 +271,4 @@ repository. But we now limit their size to 20 MB.
 | 174  | Plugin `isdbinfo`
 | 175  | `tsfclean`
 | 176  | `tspcap` and `pcap` plugin with IPv6 capture
+| 177  | XAIT descriptors
