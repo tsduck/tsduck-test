@@ -21,9 +21,10 @@
         transfer_characteristics="14"
         matrix_coefficients="8"/>
 
-	<!-- Required for AVS3_audio_descriptor and AVS2_audio_descriptor--> 
+	<!-- Required for AVS3_audio_descriptor --> 
 	<private_data_specifier_descriptor private_data_specifier="avsa"/>
 
+    <!-- Required for AVS2_audio-descriptor, optional for AVS3_audio_descriptor in DVB PDS context -->
 	<registration_descriptor format_identifier="0x41565341"/>
 		   
     <AVS3_audio_descriptor
@@ -62,6 +63,10 @@
       <fullrate_coding nn_type="0" channel_num_index="1" num_objects="5" total_bitrate="50000"/>
     </AVS3_audio_descriptor>
 
+
+	<!-- no DVB PDS for AVS2 audio descriptor -->
+	<private_data_specifier_descriptor private_data_specifier="none"/>
+	
     <AVS2_audio_descriptor
         sample_rate_index="0"
         num_channels="2"/>
@@ -81,27 +86,25 @@
         num_channels="9"
         language="eng"/>
 
-	  <AVS2_audio_descriptor
-		  sample_rate_index="10"
-		  num_channels="23"
-		  language="zhn"
-		  description="Unheard audio!!">
-		<version_info 
-		    audio_codec_id="0" 
-			coding_profile="basic" resolution="16 bits"
-			bitrate_index="4" bitstream_type="variable" raw_frame_length="14525"/>
-	  </AVS2_audio_descriptor>
+    <AVS2_audio_descriptor
+        sample_rate_index="10"
+        num_channels="23"
+        language="zhn"
+        description="Unheard audio!!">
+        <version_info 
+            audio_codec_id="0" 
+            coding_profile="basic" resolution="16 bits"
+            bitrate_index="4" bitstream_type="variable" raw_frame_length="14525"/>
+    </AVS2_audio_descriptor>
 
     <!-- Required for CUVV_video_stream_descriptor (UWA)--> 
-	<private_data_specifier_descriptor private_data_specifier="cuvv"/>
-	
     <registration_descriptor format_identifier="0x63757676"/>
 	
 	<CUVV_video_stream_descriptor
 		cuvv_tag="0x63757676" cuva_version_map="0x0005" 
 		terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>
 
-	<!-- Required for AV1_video_descriptor --> 
+	<!-- AV1_video_descriptor valid in any MPEG registration context --> 
     <private_data_specifier_descriptor private_data_specifier="aom"/>
 
     <AV1_video_descriptor
@@ -109,6 +112,10 @@
 		high_bitdepth="false" twelve_bit="false" monochrome="false" 
 		chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated"
 		HDR_WCG_idc="0"/>
+
+	<!-- AV1 video descriptor should also be valid in just registration_descriptor context, i.e. any DVB PDS context -->
+    <registration_descriptor format_identifier="0x41563031"/>
+    <private_data_specifier_descriptor private_data_specifier="none"/>
 
     <AV1_video_descriptor
 		version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0"

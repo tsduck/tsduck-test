@@ -24,6 +24,7 @@
     <AVS3_audio_descriptor sampling_frequency_index="0x02" resolution="16 bits">
       <fullrate_coding nn_type="0" channel_num_index="0x01" num_objects="5" total_bitrate="50,000"/>
     </AVS3_audio_descriptor>
+    <private_data_specifier_descriptor private_data_specifier="none"/>
     <AVS2_audio_descriptor num_channels="2" sample_rate_index="0"/>
     <AVS2_audio_descriptor num_channels="1" sample_rate_index="1">
       <version_info audio_codec_id="1" coding_profile="object" resolution="24 bits"/>
@@ -35,11 +36,12 @@
     <AVS2_audio_descriptor num_channels="23" sample_rate_index="10" description="Unheard audio!!" language="zhn">
       <version_info audio_codec_id="0" coding_profile="basic" resolution="16 bits" bitrate_index="0x04" bitstream_type="variable" raw_frame_length="14,525"/>
     </AVS2_audio_descriptor>
-    <private_data_specifier_descriptor private_data_specifier="cuvv"/>
     <registration_descriptor format_identifier="0x63757676"/>
     <CUVV_video_stream_descriptor cuvv_tag="0x63757676" cuva_version_map="0x0005" terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>
     <private_data_specifier_descriptor private_data_specifier="AOM"/>
     <AV1_video_descriptor version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1" high_bitdepth="false" twelve_bit="false" monochrome="false" chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated" HDR_WCG_idc="0"/>
+    <registration_descriptor format_identifier="0x41563031"/>
+    <private_data_specifier_descriptor private_data_specifier="none"/>
     <AV1_video_descriptor version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0" high_bitdepth="true" twelve_bit="true" monochrome="true" chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical" HDR_WCG_idc="2" initial_presentation_delay_minus_one="11"/>
     <vvc_subpictures_descriptor default_service_mode="true" processing_mode="1" service_description="whole mosaic">
       <subpicture component_tag="1" subpicture_id="0"/>
