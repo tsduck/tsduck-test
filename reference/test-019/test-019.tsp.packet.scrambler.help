@@ -11,13 +11,15 @@ Parameter:
 
   If no fixed CW is specified, a random CW is generated for each crypto-period
   and ECM's containing the current and next CW's are created and inserted in
-  the stream. ECM's can be created only when a service is specified.
+  the stream. Crypto-periods and ECM's can be created only when a service is
+  specified.
 
   If the argument is an integer value (either decimal or hexadecimal), it is
   interpreted as a service id. If it is an empty string or "-", the first
   service in the PAT is scrambled. Otherwise, it is interpreted as a service
   name, as specified in the SDT. The name is not case sensitive and blanks are
-  ignored. If the input TS does not contain an SDT, use service ids only.
+  ignored. If the input TS does not contain any SDT or VCT, use service ids
+  only.
 
 Options:
 
@@ -217,7 +219,8 @@ Options:
   -p pid1[-pid2]
   --pid pid1[-pid2]
       Scramble packets with these PID values. Several -p or --pid options may
-      be specified. By default, scramble the specified service.
+      be specified. By default, scramble the service which is provided as
+      parameter.
 
   --pid-ecm value
       Specifies the new ECM PID for the service. By defaut, use the first
