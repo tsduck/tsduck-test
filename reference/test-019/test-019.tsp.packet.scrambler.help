@@ -200,6 +200,11 @@ Options:
       option --except-label. This is a generic option which is defined in all
       packet processing plugins.
 
+  --only-pid value
+      Only scramble the component from the selected service which matches the
+      given PID. By default, all audio and video components of the service are
+      scrambled.
+
   --output-cw-file name
       Specifies a text file to create. Each line of the file will contain a
       control word in hexadecimal digits. Each time a new control word is used
