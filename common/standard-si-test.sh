@@ -11,6 +11,7 @@ STDOPT=$2
 PACKOPT=${STDOPT/--atsc/}
 PACKOPT=${PACKOPT/--isdb/}
 PACKOPT=${PACKOPT/--abnt/}
+PACKOPT=${PACKOPT/--dvb/}
 
 # ==== tstabcomp (compile)
 $(trace $(tspath tstabcomp) $STDOPT \
