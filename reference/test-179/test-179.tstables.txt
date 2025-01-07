@@ -1,0 +1,84 @@
+
+* DSM-CC UNM, TID 0x3B (59), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 112 bytes
+  - Section 0:
+    Protocol discriminator: 0x11 (17)
+    Dsmcc type: 0x03 (Download message)
+    Message id: 0x1006 (DownloadServerInitiate)
+    Transaction id: 0x80000000 (2147483648)
+    Server id (20 bytes):
+      0000:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      0010:  FF FF FF FF                                      ....
+    Type id:  73 72 67 00
+    ProfileId Tag: 0x49534F06 (TAG_BIOP (BIOP Profile Body))
+    Profile Data Byte Orded: 0x00 (0)
+    Lite Component Count: 0x02 (2)
+    ComponentId Tag: 0x49534F50 (TAG_ObjectLocation (BIOP::ObjectLocation))
+    Carousel Id: 0x0000000A (10)
+    Module Id: 0x0001 (1)
+    Version Major: 0x01 (1)
+    Version Minor: 0x00 (0)
+    Object Key Data:  01
+    ComponentId Tag: 0x49534F40 (TAG_ConnBinder (DSM::ConnBinder))
+    Tap id: 0x0000 (0)
+    Tap use: 0x0016 (BIOP_DELIVERY_PARA_USE (Module delivery parameters))
+    Tap association tag: 0x000A (10)
+    Tap selector type: 0x0001 (1)
+    Tap transaction id: 0x80000002 (2147483650)
+    Tap timeout: 0x03938700 (60000000)
+    Download taps count: 0x00 (0)
+    Service context list count: 0x00 (0)
+    User info length: 0x0000 (0)
+
+* DSM-CC UNM, TID 0x3B (59), PID 0x00C8 (200)
+  Version: 29, sections: 1, total size: 154 bytes
+  - Section 0:
+    Protocol discriminator: 0x11 (17)
+    Dsmcc type: 0x03 (Download message)
+    Message id: 0x1002 (DownloadInfoIndication)
+    Transaction id: 0xA97D0003 (2843541507)
+    Download id: 0x0000000A (10)
+    Block size: 0x0FE2 (4066)
+    Module id: 0x0001 (1)
+    Module size: 0x00000085 (133)
+    Module version: 0x7D (125)
+    Module timeout: 0x03938700 (60000000)
+    Block timeout: 0x03938700 (60000000)
+    Min block time: 0x00000000 (0)
+    Taps count: 0x01 (1)
+    Tap id: 0x0000 (0)
+    Tap use: 0x0017 (BIOP_OBJECT_USE (BIOP objects in Modules))
+    Tap association tag: 0x000A (10)
+    Descriptor List:
+    - Descriptor 0: DSM-CC U-N Message Compressed Module (0x09, 9), 5 bytes
+      Compression Method: 0x78 (120)
+      Original Size: 0x00000126 (294)
+    Module id: 0x0002 (2)
+    Module size: 0x0005C902 (379138)
+    Module version: 0x7D (125)
+    Module timeout: 0x03938700 (60000000)
+    Block timeout: 0x03938700 (60000000)
+    Min block time: 0x00000000 (0)
+    Taps count: 0x01 (1)
+    Tap id: 0x0000 (0)
+    Tap use: 0x0017 (BIOP_OBJECT_USE (BIOP objects in Modules))
+    Tap association tag: 0x000A (10)
+    Descriptor List:
+    - Descriptor 0: DSM-CC U-N Message Compressed Module (0x09, 9), 5 bytes
+      Compression Method: 0x78 (120)
+      Original Size: 0x000B8991 (756113)
+    Module id: 0x0003 (3)
+    Module size: 0x0000746E (29806)
+    Module version: 0x7D (125)
+    Module timeout: 0x03938700 (60000000)
+    Block timeout: 0x03938700 (60000000)
+    Min block time: 0x00000000 (0)
+    Taps count: 0x01 (1)
+    Tap id: 0x0000 (0)
+    Tap use: 0x0017 (BIOP_OBJECT_USE (BIOP objects in Modules))
+    Tap association tag: 0x000A (10)
+    Descriptor List:
+    - Descriptor 0: DSM-CC U-N Message Compressed Module (0x09, 9), 5 bytes
+      Compression Method: 0x78 (120)
+      Original Size: 0x00007CCA (31946)
+

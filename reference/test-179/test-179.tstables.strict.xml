@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <DSMCC_user_to_network_message version="0" current="true" protocol_discriminator="0x11" dsmcc_type="0x03" message_id="0x1006" transaction_id="0x80000000">
+    <metadata PID="200"/>
+    <DSI>
+      <server_id>
+        FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+        FF FF FF FF
+      </server_id>
+      <IOR>
+        <type_id>
+          73 72 67 00
+        </type_id>
+        <tagged_profile profile_id_tag="0x49534F06" profile_data_byte_order="0x00">
+          <BIOP_profile_body>
+            <lite_component component_id_tag="0x49534F50">
+              <BIOP_object_location carousel_id="0x0000000A" module_id="0x0001" version_major="0x01" version_minor="0x00">
+                <object_key_data>
+                  01
+                </object_key_data>
+              </BIOP_object_location>
+            </lite_component>
+            <lite_component component_id_tag="0x49534F40">
+              <DSM_conn_binder>
+                <BIOP_tap id="0x0000" use="0x0016" association_tag="0x000A" selector_type="0x0001" transaction_id="0x80000002" timeout="0x03938700"/>
+              </DSM_conn_binder>
+            </lite_component>
+          </BIOP_profile_body>
+        </tagged_profile>
+      </IOR>
+    </DSI>
+  </DSMCC_user_to_network_message>
+  <DSMCC_user_to_network_message version="29" current="true" protocol_discriminator="0x11" dsmcc_type="0x03" message_id="0x1002" transaction_id="0xA97D0003">
+    <metadata PID="200"/>
+    <DII download_id="0x0000000A" block_size="0x0FE2">
+      <module module_id="0x0001" module_size="0x00000085" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
+        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x00000126"/>
+      </module>
+      <module module_id="0x0002" module_size="0x0005C902" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
+        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x000B8991"/>
+      </module>
+      <module module_id="0x0003" module_size="0x0000746E" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
+        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x00007CCA"/>
+      </module>
+    </DII>
+  </DSMCC_user_to_network_message>
+</tsduck>

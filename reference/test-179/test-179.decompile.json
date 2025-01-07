@@ -1,0 +1,172 @@
+[
+  {
+    "#name": "DSMCC_user_to_network_message",
+    "#nodes": [
+      {
+        "#name": "DSI",
+        "#nodes": [
+          {
+            "#name": "server_id",
+            "#nodes": [
+              "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF"
+            ]
+          },
+          {
+            "#name": "IOR",
+            "#nodes": [
+              {
+                "#name": "type_id",
+                "#nodes": [
+                  "73 72 67 00"
+                ]
+              },
+              {
+                "#name": "tagged_profile",
+                "#nodes": [
+                  {
+                    "#name": "BIOP_profile_body",
+                    "#nodes": [
+                      {
+                        "#name": "lite_component",
+                        "#nodes": [
+                          {
+                            "#name": "BIOP_object_location",
+                            "#nodes": [
+                              {
+                                "#name": "object_key_data",
+                                "#nodes": [
+                                  "01"
+                                ]
+                              }
+                            ],
+                            "carousel_id": 10,
+                            "module_id": 1,
+                            "version_major": 1,
+                            "version_minor": 0
+                          }
+                        ],
+                        "component_id_tag": 1230196560
+                      },
+                      {
+                        "#name": "lite_component",
+                        "#nodes": [
+                          {
+                            "#name": "DSM_conn_binder",
+                            "#nodes": [
+                              {
+                                "#name": "BIOP_tap",
+                                "association_tag": 10,
+                                "id": 0,
+                                "selector_type": 1,
+                                "timeout": 60000000,
+                                "transaction_id": 2147483650,
+                                "use": 22
+                              }
+                            ]
+                          }
+                        ],
+                        "component_id_tag": 1230196544
+                      }
+                    ]
+                  }
+                ],
+                "profile_data_byte_order": 0,
+                "profile_id_tag": 1230196486
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "current": true,
+    "dsmcc_type": 3,
+    "message_id": 4102,
+    "protocol_discriminator": 17,
+    "transaction_id": 2147483648,
+    "version": 0
+  },
+  {
+    "#name": "DSMCC_user_to_network_message",
+    "#nodes": [
+      {
+        "#name": "DII",
+        "#nodes": [
+          {
+            "#name": "module",
+            "#nodes": [
+              {
+                "#name": "tap",
+                "association_tag": 10,
+                "id": 0,
+                "use": 23
+              },
+              {
+                "#name": "dsmcc_compressed_module_descriptor",
+                "compression_method": 120,
+                "original_size": 294
+              }
+            ],
+            "block_timeout": 60000000,
+            "min_block_time": 0,
+            "module_id": 1,
+            "module_size": 133,
+            "module_timeout": 60000000,
+            "module_version": 125
+          },
+          {
+            "#name": "module",
+            "#nodes": [
+              {
+                "#name": "tap",
+                "association_tag": 10,
+                "id": 0,
+                "use": 23
+              },
+              {
+                "#name": "dsmcc_compressed_module_descriptor",
+                "compression_method": 120,
+                "original_size": 756113
+              }
+            ],
+            "block_timeout": 60000000,
+            "min_block_time": 0,
+            "module_id": 2,
+            "module_size": 379138,
+            "module_timeout": 60000000,
+            "module_version": 125
+          },
+          {
+            "#name": "module",
+            "#nodes": [
+              {
+                "#name": "tap",
+                "association_tag": 10,
+                "id": 0,
+                "use": 23
+              },
+              {
+                "#name": "dsmcc_compressed_module_descriptor",
+                "compression_method": 120,
+                "original_size": 31946
+              }
+            ],
+            "block_timeout": 60000000,
+            "min_block_time": 0,
+            "module_id": 3,
+            "module_size": 29806,
+            "module_timeout": 60000000,
+            "module_version": 125
+          }
+        ],
+        "block_size": 4066,
+        "download_id": 10
+      }
+    ],
+    "current": true,
+    "dsmcc_type": 3,
+    "message_id": 4098,
+    "protocol_discriminator": 17,
+    "transaction_id": 2843541507,
+    "version": 29
+  }
+]
