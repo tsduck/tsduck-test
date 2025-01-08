@@ -273,4 +273,4 @@ repository. But we now limit their size to 20 MB.
 | 176  | `tspcap` and `pcap` plugin with IPv6 capture
 | 177  | XAIT descriptors
 | 178  | Non-regression on `scrambler` plugin (`--only-pid` option)
-| 032  | DSM-CC UNM (DSI/DII) and descriptors
+| 179  | DSM-CC UNM (DSI/DII), DDM (DDB) and table-specific descriptors
