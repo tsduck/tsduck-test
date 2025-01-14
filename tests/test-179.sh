@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Test descriptors
+# Test DSM-CC UNM and specific descriptors
 
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
