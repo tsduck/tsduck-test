@@ -110,6 +110,19 @@ $(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") $STDOPT \
 test_text $SCRIPT.tstables.strict.xml
 test_text $SCRIPT.tstables.strict.log
 
+# ==== tstables, packetized file (next tables)
+$(trace $(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") --exclude-current $STDOPT \
+    --text $(fpath "$OUTDIR/$SCRIPT.tstables.next.txt") \
+    --xml $(fpath "$OUTDIR/$SCRIPT.tstables.next.xml"))
+$(tspath tstables) $(fpath "$OUTDIR/$SCRIPT.pack.ts") --include-next  --exclude-current $STDOPT \
+    --text $(fpath "$OUTDIR/$SCRIPT.tstables.next.txt") \
+    --xml $(fpath "$OUTDIR/$SCRIPT.tstables.next.xml") \
+    >"$OUTDIR/$SCRIPT.tstables.next.log" 2>&1
+
+test_text $SCRIPT.tstables.next.txt
+test_text $SCRIPT.tstables.next.xml
+test_text $SCRIPT.tstables.next.log
+
 # ==== tstabdump
 $(trace $(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.compile.bin") $STDOPT)
 $(tspath tstabdump) $(fpath "$OUTDIR/$SCRIPT.compile.bin") $STDOPT \

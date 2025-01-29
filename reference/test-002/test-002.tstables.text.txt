@@ -966,7 +966,7 @@
       Data broadcast id: 0x010B (267, NDS France system software download)
       Data Broadcast selector (6 bytes): 02 04 00 07 FF 00
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 526 bytes:
     0000:  46 F2 0B 27 10 F9 01 01 FB FF FF 34 27 FE 90 8A  F..'.......4'...
     0010:  48 1A 01 0A 05 53 6B 79 49 74 61 6C 69 61 0D 05  H....SkyItalia..
@@ -3750,7 +3750,7 @@
       - Descriptor 7: unknown (0xCC, 204), 2 bytes
         0000:  07 FF                                      ..
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   BAT, TID 0x4A (74), PID 0x0011 (17), 582 bytes:
     0000:  4A F2 43 62 57 D5 0A 1D F0 37 47 00 5F 04 00 00  J.CbW....7G._...
     0010:  00 02 4A 07 16 A8 FB FF 0E 70 90 4A 07 1A F4 FB  ..J......p.J....
@@ -4811,7 +4811,7 @@
       - Descriptor 6: unknown (0xCC, 204), 2 bytes
         0000:  07 FF                                      ..
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 976 bytes:
     0000:  46 F3 CD 14 B4 FD 00 01 FB FF FF 0D EC FE 90 83  F...............
     0010:  48 1C 19 0A 05 53 6B 79 49 74 61 6C 69 61 0F 05  H....SkyItalia..
@@ -6594,22 +6594,6 @@
     - Descriptor 3: Sky Service (0xB2, 178), 4 bytes
       0000:  00 4F E0 02                                .O..
 
-* Invalid section, invalid CRC32, corrupted section
-  PMT, TID 0x02 (2), PID 0x0456 (1110), 208 bytes:
-    0000:  02 B0 CD 2D 61 CE 00 00 E0 A9 F0 00 02 E0 A9 F0  ...-a...........
-    0010:  15 52 01 01 09 04 09 19 E6 25 09 04 09 3B E6 AD  .R.......%...;..
-    0020:  09 04 09 CD E7 11 04 E1 B4 F0 18 09 04 09 19 E6  ................
-    0030:  49 09 04 09 3B E6 AD ED 04 09 CD E7 11 0A 04 69  I...;..........i
-    0040:  74 61 00 04 E1 7D F0 18 09 04 09 99 E6 49 09 04  ta...}.......I..
-    0050:  09 3B E6 AD 09 04 09 CD E7 11 0A 04 75 6E 64 00  .;..........und.
-    0060:  89 E7 DB F0 0F 0F 04 4F 54 56 00 90 01 9D FE 04  .......OTV......
-    0070:  54 7D 54 00 05 F6 D0 F0 13 52 C6 08 0E 03 C0 05  T}T......R......
-    0080:  07 66 09 01 0B 02 05 00 08 14 00 00 05 E8 98 F0  .f..............
-    0090:  0F 0F 04 4F 54 56 00 90 01 90 FE 04 54 47 54 02  ...OTV......TGT.
-    00A0:  05 E3 18 F0 0F 0F 04 4F 54 56 00 90 01 90 FE 04  .......OTV......
-    00B0:  53 4B 59 50 05 F5 89 F0 13 52 01 09 0E 03 C0 05  SKYP.....R......
-    00C0:  07 66 09 01 0B 02 05 00 09 14 00 01 97 4B E9 71  .f...........K.q
-
 * Invalid section, invalid section size: 4042, data size: 1103
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 1,103 bytes:
     0000:  46 FF C7 15 E0 FB 00 01 FB FF FF 1E 4F FE 90 A2  F...........O...
@@ -7734,7 +7718,7 @@
     - Descriptor 3: unknown (0xC0, 192), 14 bytes
       0000:  05 53 6B 79 20 53 65 6C 65 63 74 69 6F 6E  .Sky Selection
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 1,017 bytes:
     0000:  46 F3 F6 16 44 F9 01 02 FB FF FF 10 FF FE 90 65  F...D..........e
     0010:  49 04 FF 49 54 41 5F 04 00 00 00 02 48 1D 82 0A  I..ITA_.....H...
@@ -7801,7 +7785,7 @@
     03E0:  75 73 69 6F 6E 20 42 47 44 4C 20 34 33 39 30 B2  usion BGDL 4390.
     03F0:  04 00 41 10 02 1D 34 3E 2A                       ..A...4>*
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 1,022 bytes:
     0000:  46 F3 FB 20 D0 FB 00 01 01 3E FF 0B BA FC 90 39  F.. .....>.....9
     0010:  48 25 01 0A 05 53 6B 79 49 74 61 6C 69 61 18 05  H%...SkyItalia..
@@ -8251,7 +8235,7 @@
     - Descriptor 3: Sky Service (0xB2, 178), 4 bytes
       0000:  00 4F E0 02                                .O..
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 992 bytes:
     0000:  46 F3 DD 17 0C FB 00 01 FB FF FF 25 03 FE 90 2A  F..........%...*
     0010:  48 16 19 0A 05 53 6B 79 49 74 61 6C 69 61 09 05  H....SkyItalia..
@@ -8316,7 +8300,7 @@
     03C0:  09 05 58 20 46 61 63 74 6F 72 49 04 FF 49 54 41  ..X FactorI..ITA
     03D0:  5F 04 00 00 00 02 B2 04 1C 41 30 02 6B D5 83 05  _........A0.k...
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   BAT, TID 0x4A (74), PID 0x0011 (17), 804 bytes:
     0000:  4A F3 21 62 57 D5 17 1D F0 37 47 00 5F 04 00 00  J.!bW....7G._...
     0010:  00 02 91 07 16 A8 FB FF 0E 70 90 4A 07 1A F4 FB  .........p.J....
@@ -8370,7 +8354,7 @@
     0310:  83 02 4F FF FF FF F0 39 01 FB 11 F1 FF FF FF F0  ..O....9........
     0320:  16 3D 2F 8A                                      .=/.
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid section number: 216, last section: 0
   PMT, TID 0x02 (2), PID 0x0455 (1109), 208 bytes:
     0000:  02 B0 CD 2D 5F C3 D8 00 E0 A8 F0 00 02 E0 A8 F0  ...-_...........
     0010:  15 52 88 01 09 04 09 19 E6 48 10 04 09 3B E6 AC  .R.......H...;..
@@ -9918,7 +9902,7 @@
     - Descriptor 3: Sky Service (0xB2, 178), 4 bytes
       0000:  00 4F E0 02                                .O..
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 1,023 bytes:
     0000:  46 F3 FC 3C 8C F9 00 01 01 3E FF 02 60 FC 90 2E  F..<.....>..`...
     0010:  48 1A 01 0A 05 53 6B 79 49 74 61 6C 69 61 0D 05  H....SkyItalia..
@@ -13277,7 +13261,7 @@
     - Descriptor 3: unknown (0xC0, 192), 13 bytes
       0000:  05 53 75 62 61 63 71 75 65 61 20 54 76     .Subacquea Tv
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   BAT, TID 0x4A (74), PID 0x0011 (17), 896 bytes:
     0000:  4A F3 7D 62 59 CF 01 0B F0 37 47 00 5F 04 00 00  J.}bY....7G._...
     0010:  00 02 4A 07 16 A8 FB FF 0E 70 90 4A 07 1A F4 FB  ..J......p.J....
@@ -13336,7 +13320,11 @@
     0360:  02 06 00 D4 0D 4E B1 14 FF FF 1E 6E FB 1E 6E FF  .....N.....n..n.
     0370:  FF FF F0 1E 76 83 03 1E FF FF FF F0 09 E9 7D 78  ....v.........}x
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid section size: 4098, data size: 5
+  unknown (0x31), TID 0x31 (49), PID 0x0012 (18), 5 bytes:
+    0000:  31 FF FF FF FF                                   1....
+
+* Invalid section, invalid CRC32
   PMT, TID 0x02 (2), PID 0x045B (1115), 97 bytes:
     0000:  02 B0 5E 05 A4 D1 00 00 E0 AC F0 00 02 E0 AC F0  ..^.............
     0010:  12 09 04 09 19 4C 4C 09 04 09 3B E6 B0 09 04 09  .....LL...;.....
@@ -13346,7 +13334,7 @@
     0050:  B0 09 04 89 CD E7 14 84 04 75 6E 64 00 3A 22 AB  .........und.:".
     0060:  B0                                               .
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 911 bytes:
     0000:  46 F3 8C 19 00 FB 00 02 FB FF FF 10 90 FE 90 A2  F...............
     0010:  48 1E 19 0A 05 53 6B 79 49 74 61 6C 69 61 11 05  H....SkyItalia..
@@ -13427,7 +13415,7 @@
     Transport Stream Id: 0x3E1C (15900)
     Original Network Id: 0x013F (319)
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 929 bytes:
     0000:  46 F3 9E 19 00 FB 01 02 FB FF FF 2B 1B FE 90 A5  F..........+....
     0010:  48 1C 19 0A 05 53 6B 79 49 74 61 6C 69 61 0F 05  H....SkyItalia..
@@ -14085,7 +14073,7 @@
     - Descriptor 3: Sky Service (0xB2, 178), 4 bytes
       0000:  00 4F E0 02                                .O..
 
-* Invalid section, invalid CRC32, corrupted section
+* Invalid section, invalid CRC32
   SDT Other, TID 0x46 (70), PID 0x0011 (17), 1,019 bytes:
     0000:  46 F3 F8 25 80 F9 00 02 FB FF FF 0F CA FE 90 89  F..%............
     0010:  48 1B 01 0A 05 53 6B 79 49 74 61 6C 69 61 0E 05  H....SkyItalia..
