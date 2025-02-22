@@ -345,5 +345,42 @@
     "protocol_version": 0,
     "pts_adjustment": 0,
     "tier": 4095
+  },
+  {
+    "#name": "splice_information_table",
+    "#nodes": [
+      {
+        "#name": "splice_null"
+      },
+      {
+        "#name": "splice_audio_descriptor",
+        "identifier": 1129661769
+      },
+      {
+        "#name": "splice_audio_descriptor",
+        "#nodes": [
+          {
+            "#name": "audio",
+            "bit_stream_mode": 6,
+            "component_tag": 137,
+            "full_srvc_audio": true,
+            "iso_code": "foo",
+            "num_channels": 14
+          },
+          {
+            "#name": "audio",
+            "bit_stream_mode": 2,
+            "component_tag": 18,
+            "full_srvc_audio": false,
+            "iso_code": "bar",
+            "num_channels": 3
+          }
+        ],
+        "identifier": 1129661769
+      }
+    ],
+    "protocol_version": 0,
+    "pts_adjustment": 0,
+    "tier": 4095
   }
 ]

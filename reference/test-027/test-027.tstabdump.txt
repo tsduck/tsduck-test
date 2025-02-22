@@ -201,3 +201,22 @@
     Provider id: 0x00000012
   CRC32: 0x99EBD2E0 (OK)
 
+* SCTE 35 Splice Information, TID 0xFC (252)
+  Short section, size: 44 bytes
+  Protocol version: 0
+  Encryption: none
+  PTS adjustment: 0x000000000
+  CW index: 0x00 (0), tier: 0xFFF (4095)
+  Command type: 0x00 (SpliceNull), size: 0 bytes
+  - Descriptor 0: SCTE 35 Audio (0x04, 4), 5 bytes
+    Identifier: 0x43554549 ("CUEI")
+    Audio count: 0
+  - Descriptor 1: SCTE 35 Audio (0x04, 4), 15 bytes
+    Identifier: 0x43554549 ("CUEI")
+    Audio count: 2
+    - Component tag: 0x89 (137), language: foo
+      Bit stream mode: 0x06 (6), num channels: 14, full service: true
+    - Component tag: 0x12 (18), language: bar
+      Bit stream mode: 0x02 (2), num channels: 3, full service: false
+  CRC32: 0xCCC34891 (OK)
+

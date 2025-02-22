@@ -134,4 +134,21 @@
     <splice_avail_descriptor identifier="0x43554549" provider_avail_id="0x00000012"/>
   </splice_information_table>
 
+  <splice_information_table>
+    <splice_null/>
+    <splice_audio_descriptor/>
+    <splice_audio_descriptor>
+      <audio component_tag="0x89"
+             ISO_code="foo"
+             Bit_Stream_Mode="6"
+             Num_Channels="14"
+             Full_Srvc_Audio="true"/>
+      <audio component_tag="0x12"
+             ISO_code="bar"
+             Bit_Stream_Mode="2"
+             Num_Channels="3"
+             Full_Srvc_Audio="false"/>
+    </splice_audio_descriptor>
+  </splice_information_table>
+
 </tsduck>

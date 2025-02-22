@@ -91,4 +91,13 @@
     </splice_insert>
     <splice_avail_descriptor identifier="0x43554549" provider_avail_id="0x00000012"/>
   </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <metadata PID="200"/>
+    <splice_null/>
+    <splice_audio_descriptor identifier="0x43554549"/>
+    <splice_audio_descriptor identifier="0x43554549">
+      <audio component_tag="137" ISO_code="foo" Bit_Stream_Mode="6" Num_Channels="14" Full_Srvc_Audio="true"/>
+      <audio component_tag="18" ISO_code="bar" Bit_Stream_Mode="2" Num_Channels="3" Full_Srvc_Audio="false"/>
+    </splice_audio_descriptor>
+  </splice_information_table>
 </tsduck>
