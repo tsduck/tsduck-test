@@ -188,6 +188,10 @@ Options:
       With --ip-udp, receive the tables as raw binary messages in UDP packets.
       By default, the tables are formatted into TLV messages.
 
+  --no-link-local
+      Do not join multicast groups from link-local addresses. By default, join
+      from all local interfaces.
+
   --no-pager
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.

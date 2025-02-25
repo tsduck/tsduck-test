@@ -66,6 +66,10 @@ Options:
       Specify the maximum number of queued UDP commands before their execution
       into the stream. The default is 128.
 
+  --no-link-local
+      Do not join multicast groups from link-local addresses. By default, join
+      from all local interfaces.
+
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely
       necessary.

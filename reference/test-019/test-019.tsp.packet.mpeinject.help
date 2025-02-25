@@ -90,6 +90,10 @@ Options:
       there are less --new-source options than receivers, the last --new-source
       applies for all remaining receivers.
 
+  --no-link-local
+      Do not join multicast groups from link-local addresses. By default, join
+      from all local interfaces.
+
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely
       necessary.

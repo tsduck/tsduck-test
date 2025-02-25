@@ -62,6 +62,10 @@ Options:
       be also a host name that translates to a local address. By default,
       listen on all local interfaces.
 
+  --no-link-local
+      Do not join multicast groups from link-local addresses. By default, join
+      from all local interfaces.
+
   --no-reuse-port
       Disable the reuse port socket option. Do not use unless completely
       necessary.
