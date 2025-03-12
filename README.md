@@ -274,3 +274,4 @@ repository. But we now limit their size to 20 MB.
 | 177  | XAIT descriptors
 | 178  | Non-regression on `scrambler` plugin (`--only-pid` option)
 | 179  | DSM-CC UNM (DSI/DII), DDM (DDB) and table-specific descriptors
+| 180  | Container table
