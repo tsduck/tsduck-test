@@ -1,0 +1,50 @@
+
+* Cable Emergency Alert (ATSC), TID 0xD8 (216), PID 0x195C (6492)
+  Short section, total size: 44 bytes
+  - Section 0:
+    Protocol version: 0x0B (11)
+    EAS event id: 0xC3C8 (50120)
+    Originator code: "", event code: ""
+    Extraneous 35 bytes:
+    0000:  40 8A 0B 49 59 05 7E DA 02 A3 D4 96 22 F9 D9 EB  @..IY.~....."...
+    0010:  0C BC A3 B0 C6 5F 5D 7F C5 8F C0 F4 EC E2 89 A9  ....._].........
+    0020:  6E 6F BF                                         no.
+
+* BIT (ISDB), TID 0xC4 (196), PID 0x0024 (36)
+  Version: 16, sections: 1, total size: 87 bytes
+  - Section 0:
+    Original network id: 0x7E93 (32403)
+    Broadcast view property: true
+    Common descriptors:
+    - Descriptor 0: ISDB SI Parameter (0xD7, 215), 34 bytes
+      Parameter version: 0xFF (255)
+      Update time: 2003/11/01
+      - Table id: 0x40 (NIT Actual)
+        Table description (1 bytes): 01
+      - Table id: 0xC4 (BIT (ISDB))
+        Table description (1 bytes): 01
+      - Table id: 0x42 (SDT Actual)
+        Table description (1 bytes): 02
+      - Table id: 0x4E (EIT p/f Actual)
+        Table description (4 bytes): 01 01 01 22
+      - Table id: 0x50 (EIT schedule Actual)
+        Table description (14 bytes):
+          0000:  4F 08 06 0E 03 03 13 10 CF 02 06 0D 00 03        O.............
+    Broadcaster id: 0xFF (255)
+    - Descriptor 0: ISDB SI Parameter (0xD7, 215), 25 bytes
+      Parameter version: 0xFF (255)
+      Update time: 2006/06/23
+      - Table id: 0x4E (EIT p/f Actual)
+        Table description (4 bytes): FF 00 01 03
+      - Table id: 0x58 (EIT schedule Actual)
+        Table description (6 bytes): 7F 08 06 0D 24 10
+      - Table id: 0xC3 (SDTT (ISDB))
+        Table description (2 bytes): 01 80
+      - Table id: 0xC8 (TVCT (ATSC))
+        Table description (2 bytes): 06 00
+    - Descriptor 1: ISDB Extended Broadcaster (0xCE, 206), 5 bytes
+      Broadcaster type: 0x1 (Digital terrestrial television broadcast)
+      Terrestrial broadcaster id: 0x7E93 (32403)
+      Number of affiliations: 1, number of broadcaster ids: 0
+      - Affiliation id: 0x03 (3)
+
