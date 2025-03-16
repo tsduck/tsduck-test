@@ -313,3 +313,20 @@
       07F0:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
     CRC32: 0x49DD8025 (OK)
 
+* AMT (ISDB), TID 0xFE (254), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 14 bytes
+  - Section 0:
+    Number of services: 0
+
+* AMT (ISDB), TID 0xFE (254), PID 0x00C8 (200)
+  Version: 15, sections: 1, total size: 70 bytes
+  - Section 0:
+    Number of services: 2
+    - Service id: 0x1234 (4660)
+      Source: 101.102.103.104/24
+      Destination: 221.222.223.224/15
+    - Service id: 0x5678 (22136)
+      Source: fd00::5cb0:3a35:cbbb:3a9e/64
+      Destination: fe80::e7:b35f:13b2:5b44/64
+      Private data (4 bytes): DE AD BE EF
+

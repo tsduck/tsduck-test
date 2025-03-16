@@ -260,7 +260,7 @@ repository. But we now limit their size to 20 MB.
 | 163  | Conditions in XML patch files
 | 164  | SI analysis and conversions: MPEG-defined descriptors with external blobs
 | 165  | Analyze an ISDB live stream with software download
-| 166  | SI analysis and conversions: ISDB DCT and DLT
+| 166  | SI analysis and conversions: ISDB AMT, DCT and DLT
 | 167  | Options `--event-offset` and `--input-event-offset` in plugin `eitinject`
 | 168  | Event deletion in plugin `eitinject`
 | 169  | Options `--only-labels` and `--except-label` in `tsp` plugins

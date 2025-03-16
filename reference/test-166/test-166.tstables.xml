@@ -301,4 +301,16 @@
       FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
     </code_data>
   </DLT>
+  <AMT version="0" current="true">
+    <metadata PID="200"/>
+  </AMT>
+  <AMT version="15" current="true">
+    <metadata PID="200"/>
+    <service service_id="0x1234" src="101.102.103.104/24" dst="221.222.223.224/15"/>
+    <service service_id="0x5678" src="fd00::5cb0:3a35:cbbb:3a9e/64" dst="fe80::e7:b35f:13b2:5b44/64">
+      <private_data>
+        DE AD BE EF
+      </private_data>
+    </service>
+  </AMT>
 </tsduck>
