@@ -324,3 +324,45 @@
     Destination: fe80::e7:b35f:13b2:5b44/64
     Private data (4 bytes): DE AD BE EF
 
+* CAT, TID 0x01 (1)
+  Section: 0 (last: 0), version: 0, size: 110 bytes
+  - Descriptor 0: ISDB Character Code (0xE5, 229), 1 bytes
+    Character code: 0x01 (UTF-8)
+  - Descriptor 1: ISDB Character Code (0xE5, 229), 1 bytes
+    Character code: 0xFE (reserved)
+  - Descriptor 2: ISDB Hybrid Information (0x68, 104), 1 bytes
+    Has location: no
+    Location type: broadcast
+    Format: 0 (MPD (Media Presentation Descriptor) in MPEG-DASH (ISO/IEC 23009-1))
+  - Descriptor 3: ISDB Hybrid Information (0x68, 104), 4 bytes
+    Has location: yes
+    Location type: broadcast
+    Format: 1 (Playback control descriptor in IPTV VOD spec (IPTV FJ STD-0002))
+    Component tag: 0x0AB (171)
+    Module id: 0x0CDEF (52719)
+  - Descriptor 4: ISDB Hybrid Information (0x68, 104), 16 bytes
+    Has location: yes
+    Location type: connected
+    Format: 2 (With a TS time stamp according to IPTV VOD spec (IPTV FJ STD-0002))
+    URL: "http://foo/bar"
+  - Descriptor 5: ISDB Material Information (0x67, 103), 2 bytes
+    Descriptor number: 1, last: 12
+    Number of material sets: 0
+  - Descriptor 6: ISDB Material Information (0x67, 103), 59 bytes
+    Descriptor number: 5, last: 7
+    Number of material sets: 2
+    - Material type: 0xAB (171)
+      Material name: "Name 1"
+      Material code type: 0x00 (Out of use)
+      Material code: "Code 1"
+      Material URL type: 0xCD (205)
+      Material URL: "URL 1"
+    - Material type: 0x12 (18)
+      Material name: "Name 2"
+      Material code type: 0x01 (IEC 62227)
+      Material code: "Code 2"
+      Material period: 12:34:56
+      Material URL type: 0xEF (239)
+      Material URL: "URL 2"
+      Reserved (4 bytes): DE AD BE EF
+

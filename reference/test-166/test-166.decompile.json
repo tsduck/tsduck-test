@@ -117,5 +117,74 @@
     ],
     "current": true,
     "version": 15
+  },
+  {
+    "#name": "CAT",
+    "#nodes": [
+      {
+        "#name": "ISDB_character_code_descriptor",
+        "character_code": 1
+      },
+      {
+        "#name": "ISDB_character_code_descriptor",
+        "character_code": 254
+      },
+      {
+        "#name": "hybrid_information_descriptor",
+        "format": 0
+      },
+      {
+        "#name": "hybrid_information_descriptor",
+        "component_tag": 171,
+        "format": 1,
+        "module_id": 52719
+      },
+      {
+        "#name": "hybrid_information_descriptor",
+        "format": 2,
+        "url": "http://foo/bar"
+      },
+      {
+        "#name": "material_information_descriptor",
+        "descriptor_number": 1,
+        "last_descriptor_number": 12
+      },
+      {
+        "#name": "material_information_descriptor",
+        "#nodes": [
+          {
+            "#name": "material",
+            "material_code": "Code 1",
+            "material_code_type": 0,
+            "material_name": "Name 1",
+            "material_type": 171,
+            "material_url": "URL 1",
+            "material_url_type": 205
+          },
+          {
+            "#name": "material",
+            "#nodes": [
+              {
+                "#name": "reserved_future_use",
+                "#nodes": [
+                  "DE AD BE EF"
+                ]
+              }
+            ],
+            "material_code": "Code 2",
+            "material_code_type": 1,
+            "material_name": "Name 2",
+            "material_period": "12:34:56",
+            "material_type": 18,
+            "material_url": "URL 2",
+            "material_url_type": 239
+          }
+        ],
+        "descriptor_number": 5,
+        "last_descriptor_number": 7
+      }
+    ],
+    "current": true,
+    "version": 0
   }
 ]

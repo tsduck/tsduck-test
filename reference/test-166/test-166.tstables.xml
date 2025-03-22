@@ -313,4 +313,21 @@
       </private_data>
     </service>
   </AMT>
+  <CAT version="0" current="true">
+    <metadata PID="200"/>
+    <ISDB_character_code_descriptor character_code="1"/>
+    <ISDB_character_code_descriptor character_code="254"/>
+    <hybrid_information_descriptor format="0"/>
+    <hybrid_information_descriptor format="1" component_tag="0xAB" module_id="0xCDEF"/>
+    <hybrid_information_descriptor format="2" URL="http://foo/bar"/>
+    <material_information_descriptor descriptor_number="1" last_descriptor_number="12"/>
+    <material_information_descriptor descriptor_number="5" last_descriptor_number="7">
+      <material material_type="0xAB" material_name="Name 1" material_code_type="0x00" material_code="Code 1" material_url_type="0xCD" material_url="URL 1"/>
+      <material material_type="0x12" material_name="Name 2" material_code_type="0x01" material_code="Code 2" material_period="12:34:56" material_url_type="0xEF" material_url="URL 2">
+        <reserved_future_use>
+          DE AD BE EF
+        </reserved_future_use>
+      </material>
+    </material_information_descriptor>
+  </CAT>
 </tsduck>
