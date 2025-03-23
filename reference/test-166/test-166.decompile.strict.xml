@@ -320,5 +320,24 @@
         </reserved_future_use>
       </material>
     </material_information_descriptor>
+    <ISDB_CA_startup_descriptor CA_system_ID="0xABCD" CA_program_ID="0x1234" load_indicator="0x27"/>
+    <ISDB_CA_startup_descriptor CA_system_ID="0x5678" CA_program_ID="0x1ABC" load_indicator="0x28" second_CA_program_ID="0x1678" second_load_indicator="0x38">
+      <exclusion CA_program_ID="0x1234"/>
+      <exclusion CA_program_ID="0x0567"/>
+      <exclusion CA_program_ID="0x19AB"/>
+      <exclusion CA_program_ID="0x0010"/>
+      <load_security_info>
+        01 23 45 67 89 AB CD EF
+      </load_security_info>
+      <private_data>
+        DE AD BE EF
+      </private_data>
+    </ISDB_CA_startup_descriptor>
+    <ISDB_download_protection_descriptor DL_system_ID="0xAB" PID="0x1234" encrypt_protocol_number="0xCD"/>
+    <ISDB_download_protection_descriptor DL_system_ID="0x23" PID="0x1ABC" encrypt_protocol_number="0x23">
+      <encrypt_info>
+        DE AD BE EF
+      </encrypt_info>
+    </ISDB_download_protection_descriptor>
   </CAT>
 </tsduck>

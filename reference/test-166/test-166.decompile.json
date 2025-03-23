@@ -182,6 +182,70 @@
         ],
         "descriptor_number": 5,
         "last_descriptor_number": 7
+      },
+      {
+        "#name": "ISDB_CA_startup_descriptor",
+        "ca_program_id": 4660,
+        "ca_system_id": 43981,
+        "load_indicator": 39
+      },
+      {
+        "#name": "ISDB_CA_startup_descriptor",
+        "#nodes": [
+          {
+            "#name": "exclusion",
+            "ca_program_id": 4660
+          },
+          {
+            "#name": "exclusion",
+            "ca_program_id": 1383
+          },
+          {
+            "#name": "exclusion",
+            "ca_program_id": 6571
+          },
+          {
+            "#name": "exclusion",
+            "ca_program_id": 16
+          },
+          {
+            "#name": "load_security_info",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF"
+            ]
+          },
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ],
+        "ca_program_id": 6844,
+        "ca_system_id": 22136,
+        "load_indicator": 40,
+        "second_ca_program_id": 5752,
+        "second_load_indicator": 56
+      },
+      {
+        "#name": "ISDB_download_protection_descriptor",
+        "dl_system_id": 171,
+        "encrypt_protocol_number": 205,
+        "pid": 4660
+      },
+      {
+        "#name": "ISDB_download_protection_descriptor",
+        "#nodes": [
+          {
+            "#name": "encrypt_info",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ],
+        "dl_system_id": 35,
+        "encrypt_protocol_number": 35,
+        "pid": 6844
       }
     ],
     "current": true,

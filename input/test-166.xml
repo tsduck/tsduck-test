@@ -36,9 +36,11 @@
   <CAT>
     <ISDB_character_code_descriptor character_code="1"/>
     <ISDB_character_code_descriptor character_code="0xFE"/>
+
     <hybrid_information_descriptor format="0"/>
     <hybrid_information_descriptor format="1" component_tag="0xAB" module_id="0xCDEF"/>
     <hybrid_information_descriptor format="2" URL="http://foo/bar"/>
+
     <material_information_descriptor descriptor_number="1" last_descriptor_number="12"/>
     <material_information_descriptor descriptor_number="5" last_descriptor_number="7">
       <material
@@ -61,6 +63,41 @@
         </reserved_future_use>
       </material>
     </material_information_descriptor>
+
+    <ISDB_CA_startup_descriptor
+        CA_system_ID="0xABCD"
+        CA_program_ID="0x1234"
+        load_indicator="0x27"/>
+    <ISDB_CA_startup_descriptor
+        CA_system_ID="0x5678"
+        CA_program_ID="0x1ABC"
+        load_indicator="0x28"
+        second_CA_program_ID="0x1678"
+        second_load_indicator="0x38">
+      <exclusion CA_program_ID="0x1234"/>
+      <exclusion CA_program_ID="0x0567"/>
+      <exclusion CA_program_ID="0x19AB"/>
+      <exclusion CA_program_ID="0x0010"/>
+      <load_security_info>
+        0123456789ABCDEF
+      </load_security_info>
+      <private_data>
+        DEAD BEEF
+      </private_data>
+    </ISDB_CA_startup_descriptor>
+
+    <ISDB_download_protection_descriptor
+        DL_system_ID="0xAB"
+        PID="0x1234"
+        encrypt_protocol_number="0xCD"/>
+    <ISDB_download_protection_descriptor
+        DL_system_ID="0x23"
+        PID="0x1ABC"
+        encrypt_protocol_number="0x23">
+      <encrypt_info>
+        DEAD BEEF
+      </encrypt_info>
+    </ISDB_download_protection_descriptor>
   </CAT>
 
 </tsduck>

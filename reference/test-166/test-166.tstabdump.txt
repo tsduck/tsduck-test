@@ -325,7 +325,7 @@
     Private data (4 bytes): DE AD BE EF
 
 * CAT, TID 0x01 (1)
-  Section: 0 (last: 0), version: 0, size: 110 bytes
+  Section: 0 (last: 0), version: 0, size: 167 bytes
   - Descriptor 0: ISDB Character Code (0xE5, 229), 1 bytes
     Character code: 0x01 (UTF-8)
   - Descriptor 1: ISDB Character Code (0xE5, 229), 1 bytes
@@ -365,4 +365,31 @@
       Material URL type: 0xEF (239)
       Material URL: "URL 2"
       Reserved (4 bytes): DE AD BE EF
+  - Descriptor 7: ISDB CA Startup (0xE4, 228), 7 bytes
+    CA system id: 0xABCD (43981)
+    CA PID: 0x1234 (4660)
+    Load indicator: 0x27
+    Exclusion CA PID count: 0
+  - Descriptor 8: ISDB CA Startup (0xE4, 228), 30 bytes
+    CA system id: 0x5678 (22136)
+    CA PID: 0x1ABC (6844)
+    Load indicator: 0x28
+    2nd CA PID: 0x1678 (5752)
+    2nd load indicator: 0x38
+    Exclusion CA PID count: 4
+    - Exclusion CA PID: 0x1234 (4660)
+    - Exclusion CA PID: 0x0567 (1383)
+    - Exclusion CA PID: 0x19AB (6571)
+    - Exclusion CA PID: 0x0010 (16)
+    Load security info (8 bytes): 01 23 45 67 89 AB CD EF
+    Private data (4 bytes): DE AD BE EF
+  - Descriptor 9: ISDB Download Protection (0xE3, 227), 4 bytes
+    Download system id: 0xAB (171)
+    Download PID: 0x1234 (4660)
+    Encrypt protocol number: 0xCD (205)
+  - Descriptor 10: ISDB Download Protection (0xE3, 227), 8 bytes
+    Download system id: 0x23 (35)
+    Download PID: 0x1ABC (6844)
+    Encrypt protocol number: 0x23 (35)
+    Encrypt info (4 bytes): DE AD BE EF
 
