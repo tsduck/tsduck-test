@@ -90,6 +90,50 @@
         "#name": "ATSC_group_link_descriptor",
         "group_id": 3735928559,
         "position": 2
+      },
+      {
+        "#name": "ATSC_parameterized_service_descriptor",
+        "application_tag": 171
+      },
+      {
+        "#name": "ATSC_parameterized_service_descriptor",
+        "#nodes": [
+          {
+            "#name": "application_data",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF"
+            ]
+          }
+        ],
+        "application_tag": 18
+      },
+      {
+        "#name": "ATSC_component_list_descriptor",
+        "alternate": false
+      },
+      {
+        "#name": "ATSC_component_list_descriptor",
+        "#nodes": [
+          {
+            "#name": "component",
+            "format_identifier": 2882400137,
+            "stream_type": 18
+          },
+          {
+            "#name": "component",
+            "#nodes": [
+              {
+                "#name": "stream_info",
+                "#nodes": [
+                  "DE AD BE EF"
+                ]
+              }
+            ],
+            "format_identifier": 305419896,
+            "stream_type": 205
+          }
+        ],
+        "alternate": true
       }
     ],
     "protocol_version": 0,

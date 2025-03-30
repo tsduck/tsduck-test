@@ -36,6 +36,23 @@
     <ATSC_module_link_descriptor position="1" module_id="0xABCD"/>
     <ATSC_group_link_descriptor position="2" group_id="0xDEADBEEF"/>
 
+    <ATSC_parameterized_service_descriptor application_tag="0xAB"/>
+    <ATSC_parameterized_service_descriptor application_tag="0x12">
+      <application_data>
+        0123456789ABCDEF
+      </application_data>
+    </ATSC_parameterized_service_descriptor>
+
+    <ATSC_component_list_descriptor alternate="false"/>
+    <ATSC_component_list_descriptor alternate="true">
+      <component stream_type="0x12" format_identifier="0xABCDEF89"/>
+      <component stream_type="0xCD" format_identifier="0x12345678">
+        <stream_info>
+          DEAD BEEF
+        </stream_info>
+      </component>
+    </ATSC_component_list_descriptor>
+
   </MGT>
 
 </tsduck>

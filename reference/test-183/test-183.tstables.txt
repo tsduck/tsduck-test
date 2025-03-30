@@ -1,6 +1,6 @@
 
 * MGT (ATSC), TID 0xC7 (199), PID 0x00C8 (200)
-  Version: 0, sections: 1, total size: 119 bytes
+  Version: 0, sections: 1, total size: 155 bytes
   - Section 0:
     Protocol version: 0, number of table types: 0
     Global descriptors:
@@ -51,4 +51,18 @@
     - Descriptor 13: ATSC Group Link (0xB8, 184), 5 bytes
       Position: 0x02 (last group)
       Group id: 0xDEADBEEF (3735928559)
+    - Descriptor 14: ATSC Parameterized Service (0x8D, 141), 1 bytes
+      Application tag: 0xAB (171)
+    - Descriptor 15: ATSC Parameterized Service (0x8D, 141), 9 bytes
+      Application tag: 0x12 (18)
+      Application data (8 bytes): 01 23 45 67 89 AB CD EF
+    - Descriptor 16: ATSC Component List (0xBB, 187), 1 bytes
+      Alternate: no
+      Number of components: 0
+    - Descriptor 17: ATSC Component List (0xBB, 187), 17 bytes
+      Alternate: yes
+      Number of components: 2
+      - Stream type: 0x12 (18), format identifier: 0xABCDEF89 (2882400137)
+      - Stream type: 0xCD (205), format identifier: 0x12345678 (305419896)
+        Stream info (4 bytes): DE AD BE EF
 
