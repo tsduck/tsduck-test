@@ -1,0 +1,53 @@
+
+* MGT (ATSC), TID 0xC7 (199)
+  Section: 0 (last: 0), version: 0, size: 119 bytes
+  Protocol version: 0, number of table types: 0
+  Global descriptors:
+  - Descriptor 0: ATSC Private Information (0xAD, 173), 4 bytes
+    Format identifier: 0x12345678
+  - Descriptor 1: ATSC Private Information (0xAD, 173), 8 bytes
+    Format identifier: 0x89ABCDEF
+    Private data (4 bytes): DE AD BE EF
+  - Descriptor 2: ATSC Data Service (0xA4, 164), 3 bytes
+    Data service profile: 0x01 (ATSC Data Broadcast Service Profile G1)
+    Data service level: 0x04 (Data Service Level 4, DBESn = 480480 bytes)
+  - Descriptor 3: ATSC Data Service (0xA4, 164), 8 bytes
+    Data service profile: 0x04 (ATSC Data Broadcast Service Profile A1)
+    Data service level: 0x40 (Data Service Level 64, DBESn = 7687680 bytes)
+    Private data (5 bytes): BA DC 0F FE E2
+  - Descriptor 4: ATSC PID Count (0xA5, 165), 4 bytes
+    Total number of PID's: 0
+    Minimum number of PID's: 0
+  - Descriptor 5: ATSC PID Count (0xA5, 165), 4 bytes
+    Total number of PID's: 200
+    Minimum number of PID's: 4
+  - Descriptor 6: ATSC Download (0xA6, 166), 12 bytes
+    Download id: 0xDEADBEEF (3735928559)
+    Carousel period: 0 ms
+    Control message timeout: 0 ms
+  - Descriptor 7: ATSC Download (0xA6, 166), 12 bytes
+    Download id: 0x12345678 (305419896)
+    Carousel period: 123 ms
+    Control message timeout: 789 ms
+  - Descriptor 8: ATSC Multiprotocol Encapsulation (0xA7, 167), 2 bytes
+    Device id address range: 6 (deviceId[47..0])
+    Device id IP mapping: yes
+    Alignment indicator: no
+    Max sections per datagram: 1
+  - Descriptor 9: ATSC Multiprotocol Encapsulation (0xA7, 167), 2 bytes
+    Device id address range: 3 (deviceId[23..0])
+    Device id IP mapping: no
+    Alignment indicator: yes
+    Max sections per datagram: 5
+  - Descriptor 10: ATSC CRC32 (0xB5, 181), 4 bytes
+    CRC-32: 0x12345678
+  - Descriptor 11: ATSC Module Link (0xB4, 180), 3 bytes
+    Position: 0x00 (first module)
+    Module id: 0x1234 (4660)
+  - Descriptor 12: ATSC Module Link (0xB4, 180), 3 bytes
+    Position: 0x01 (intermediate module)
+    Module id: 0xABCD (43981)
+  - Descriptor 13: ATSC Group Link (0xB8, 184), 5 bytes
+    Position: 0x02 (last group)
+    Group id: 0xDEADBEEF (3735928559)
+

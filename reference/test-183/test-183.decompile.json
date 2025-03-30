@@ -1,0 +1,98 @@
+[
+  {
+    "#name": "MGT",
+    "#nodes": [
+      {
+        "#name": "ATSC_private_information_descriptor",
+        "format_identifier": 305419896
+      },
+      {
+        "#name": "ATSC_private_information_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "DE AD BE EF"
+            ]
+          }
+        ],
+        "format_identifier": 2309737967
+      },
+      {
+        "#name": "ATSC_data_service_descriptor",
+        "data_service_level": 4,
+        "data_service_profile": 1
+      },
+      {
+        "#name": "ATSC_data_service_descriptor",
+        "#nodes": [
+          {
+            "#name": "private_data",
+            "#nodes": [
+              "BA DC 0F FE E2"
+            ]
+          }
+        ],
+        "data_service_level": 64,
+        "data_service_profile": 4
+      },
+      {
+        "#name": "ATSC_PID_count_descriptor",
+        "min_number_of_pids": 0,
+        "total_number_of_pids": 0
+      },
+      {
+        "#name": "ATSC_PID_count_descriptor",
+        "min_number_of_pids": 4,
+        "total_number_of_pids": 200
+      },
+      {
+        "#name": "ATSC_download_descriptor",
+        "carousel_period": 0,
+        "control_msg_time_out_value": 0,
+        "download_id": 3735928559
+      },
+      {
+        "#name": "ATSC_download_descriptor",
+        "carousel_period": 123,
+        "control_msg_time_out_value": 789,
+        "download_id": 305419896
+      },
+      {
+        "#name": "ATSC_multiprotocol_encapsulation_descriptor",
+        "alignment_indicator": false,
+        "deviceid_address_range": 6,
+        "deviceid_ip_mapping_flag": true,
+        "max_sections_per_datagram": 1
+      },
+      {
+        "#name": "ATSC_multiprotocol_encapsulation_descriptor",
+        "alignment_indicator": true,
+        "deviceid_address_range": 3,
+        "deviceid_ip_mapping_flag": false,
+        "max_sections_per_datagram": 5
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 305419896
+      },
+      {
+        "#name": "ATSC_module_link_descriptor",
+        "module_id": 4660,
+        "position": 0
+      },
+      {
+        "#name": "ATSC_module_link_descriptor",
+        "module_id": 43981,
+        "position": 1
+      },
+      {
+        "#name": "ATSC_group_link_descriptor",
+        "group_id": 3735928559,
+        "position": 2
+      }
+    ],
+    "protocol_version": 0,
+    "version": 0
+  }
+]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <MGT version="0" protocol_version="0">
+    <metadata PID="200"/>
+    <ATSC_private_information_descriptor format_identifier="0x12345678"/>
+    <ATSC_private_information_descriptor format_identifier="0x89ABCDEF">
+      <private_data>
+        DE AD BE EF
+      </private_data>
+    </ATSC_private_information_descriptor>
+    <ATSC_data_service_descriptor data_service_profile="0x01" data_service_level="0x04"/>
+    <ATSC_data_service_descriptor data_service_profile="0x04" data_service_level="0x40">
+      <private_data>
+        BA DC 0F FE E2
+      </private_data>
+    </ATSC_data_service_descriptor>
+    <ATSC_PID_count_descriptor total_number_of_PIDs="0" min_number_of_PIDs="0"/>
+    <ATSC_PID_count_descriptor total_number_of_PIDs="200" min_number_of_PIDs="4"/>
+    <ATSC_download_descriptor download_id="0xDEADBEEF" carousel_period="0" control_msg_time_out_value="0"/>
+    <ATSC_download_descriptor download_id="0x12345678" carousel_period="123" control_msg_time_out_value="789"/>
+    <ATSC_multiprotocol_encapsulation_descriptor deviceId_address_range="6" deviceId_IP_mapping_flag="true" alignment_indicator="false" max_sections_per_datagram="1"/>
+    <ATSC_multiprotocol_encapsulation_descriptor deviceId_address_range="3" deviceId_IP_mapping_flag="false" alignment_indicator="true" max_sections_per_datagram="5"/>
+    <ATSC_CRC32_descriptor CRC_32="0x12345678"/>
+    <ATSC_module_link_descriptor position="0" module_id="0x1234"/>
+    <ATSC_module_link_descriptor position="1" module_id="0xABCD"/>
+    <ATSC_group_link_descriptor position="2" group_id="0xDEADBEEF"/>
+  </MGT>
+</tsduck>
