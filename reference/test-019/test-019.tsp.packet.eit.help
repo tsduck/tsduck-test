@@ -5,6 +5,14 @@ Usage: tsp -P eit [options]
 
 Options:
 
+  -d
+  --detailed
+      With --epg-dump, display detailed information on events.
+
+  -e
+  --epg-dump
+      Display the content of the EPG, all events, per service.
+
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
@@ -25,4 +33,9 @@ Options:
   -o file-name
   --output-file file-name
       Specify the output file for the report (default: standard output).
+
+  -s
+  --summary
+      Display a summary of EIT presence. This is the default if --epg-dump is
+      not specified.
 

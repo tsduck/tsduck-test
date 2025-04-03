@@ -14,6 +14,7 @@ test_tsp \
     -P tables --pid 17 --tid 74 -o $(fpath "$OUTDIR/$SCRIPT.bat.txt") \
     -P cat --add 0x1234/777/01020304 --remove-casid 0x1811 --increment-version \
     -P tables --pid 1 --tid 1 -o $(fpath "$OUTDIR/$SCRIPT.cat.txt") \
+    -P eit -o $(fpath "$OUTDIR/$SCRIPT.eit.txt") \
     -P pat -r 8810 -a 9900/6001 --increment-version \
     -P tables --pid 0 --tid 0 -o $(fpath "$OUTDIR/$SCRIPT.pat.txt") \
     -P pmt --service 8804 -r 442 -r 443 --remove-descriptor 9 --increment-version \
@@ -25,7 +26,6 @@ test_tsp \
     -P tables --pid 16 --tid 64 -o $(fpath "$OUTDIR/$SCRIPT.nit.txt") \
     -P sdt --increment-version -s 2000 -n "Foo Channel" -p "Dumb TV" \
     -P tables --pid 17 --tid 66 -o $(fpath "$OUTDIR/$SCRIPT.sdt.txt") \
-    -P eit -o $(fpath "$OUTDIR/$SCRIPT.eit.txt") \
     -P filter -n -p 0x0BC9 -p 0x019A -p 0x01FE -p 0x0262 -p 0x02C6 -p 0x032A -p 0x038E -p 0x03F2 \
     -P pcrbitrate --min-pcr 32 \
     -P filter -n -p 0x02D2 --stuffing \
