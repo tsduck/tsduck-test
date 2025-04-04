@@ -98,6 +98,25 @@
         DEAD BEEF
       </encrypt_info>
     </ISDB_download_protection_descriptor>
+
+    <ISDB_wired_multicarrier_transmission_descriptor/>
+    <ISDB_wired_multicarrier_transmission_descriptor>
+      <carrier
+          frequency="842123400"
+          frame_type="1"
+          FEC_outer="2"
+          modulation="4"
+          symbol_rate="5123400"
+          group_id="0xAB"/>
+      <carrier
+          frequency="1234567800"
+          frame_type="15"
+          FEC_outer="1"
+          modulation="7"
+          symbol_rate="123456700"
+          FEC_inner="14"
+          group_id="0x23"/>
+    </ISDB_wired_multicarrier_transmission_descriptor>
   </CAT>
 
 </tsduck>

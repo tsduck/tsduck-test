@@ -348,5 +348,10 @@
         DE AD BE EF
       </encrypt_info>
     </ISDB_download_protection_descriptor>
+    <ISDB_wired_multicarrier_transmission_descriptor/>
+    <ISDB_wired_multicarrier_transmission_descriptor>
+      <carrier frequency="842,123,400" frame_type="0x01" FEC_outer="0x02" modulation="0x04" symbol_rate="5,123,400" group_id="0xAB"/>
+      <carrier frequency="1,234,567,800" frame_type="0x0F" FEC_outer="0x01" modulation="0x07" symbol_rate="123,456,700" FEC_inner="0x0E" group_id="0x23"/>
+    </ISDB_wired_multicarrier_transmission_descriptor>
   </CAT>
 </tsduck>

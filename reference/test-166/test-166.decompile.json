@@ -246,6 +246,33 @@
         "dl_system_id": 35,
         "encrypt_protocol_number": 35,
         "pid": 6844
+      },
+      {
+        "#name": "ISDB_wired_multicarrier_transmission_descriptor"
+      },
+      {
+        "#name": "ISDB_wired_multicarrier_transmission_descriptor",
+        "#nodes": [
+          {
+            "#name": "carrier",
+            "fec_outer": 2,
+            "frame_type": 1,
+            "frequency": 842123400,
+            "group_id": 171,
+            "modulation": 4,
+            "symbol_rate": 5123400
+          },
+          {
+            "#name": "carrier",
+            "fec_inner": 14,
+            "fec_outer": 1,
+            "frame_type": 15,
+            "frequency": 1234567800,
+            "group_id": 35,
+            "modulation": 7,
+            "symbol_rate": 123456700
+          }
+        ]
       }
     ],
     "current": true,
