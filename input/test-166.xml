@@ -34,6 +34,7 @@
   </AMT>
 
   <CAT>
+
     <ISDB_character_code_descriptor character_code="1"/>
     <ISDB_character_code_descriptor character_code="0xFE"/>
 
@@ -117,6 +118,81 @@
           FEC_inner="14"
           group_id="0x23"/>
     </ISDB_wired_multicarrier_transmission_descriptor>
+
+    <ISDB_cable_TS_division_system_descriptor/>
+    <ISDB_cable_TS_division_system_descriptor>
+      <carrier
+          frequency="842123400"
+          frame_type="1"
+          FEC_outer="2"
+          modulation="4"
+          symbol_rate="5123400"/>
+      <carrier
+          frequency="1234567800"
+          frame_type="15"
+          FEC_outer="1"
+          modulation="7"
+          symbol_rate="123456700"
+          FEC_inner="12">
+        <future_use_data>
+          0123456789ABCDEF
+        </future_use_data>
+        <service id="0xABCD"/>
+        <service id="0x1234"/>
+        <service id="0xBEEF"/>
+      </carrier>
+    </ISDB_cable_TS_division_system_descriptor>
+
+    <ISDB_advanced_cable_delivery_system_descriptor>
+      <normal_data
+          plp_id="0xAB"
+          effective_symbol_length="5"
+          guard_interval="6"
+          bundled_channel="0x8A"/>
+    </ISDB_advanced_cable_delivery_system_descriptor>
+
+    <ISDB_advanced_cable_delivery_system_descriptor>
+      <normal_data
+          plp_id="0x12"
+          effective_symbol_length="2"
+          guard_interval="4"
+          bundled_channel="0x67">
+        <carrier
+            data_slice_id="0x99"
+            frequency="123,456,700"
+            frame_type="2"
+            FEC_outer="12"
+            modulation="0x34"
+            FEC_inner="11"/>
+        <carrier
+            data_slice_id="0x12"
+            frequency="2,123,456,700"
+            frame_type="1"
+            FEC_outer="7"
+            modulation="0xAB"
+            FEC_inner="8"/>
+      </normal_data>
+    </ISDB_advanced_cable_delivery_system_descriptor>
+
+    <ISDB_advanced_cable_delivery_system_descriptor>
+      <other_data>
+        0123456789ABCDEF 0123456789ABCDEF 0123456789ABCDEF 0123456789
+      </other_data>
+    </ISDB_advanced_cable_delivery_system_descriptor>
+
+    <ISDB_advanced_cable_delivery_system_descriptor>
+      <other_data descriptor_tag_extension="0XE5">
+        DEAD BEEF
+      </other_data>
+    </ISDB_advanced_cable_delivery_system_descriptor>
+
+    <ISDB_scrambler_descriptor scrambler_identification="0xCD"/>
+    <ISDB_scrambler_descriptor scrambler_identification="0xEF">
+      <data>
+        BADD C0FFEE
+      </data>
+    </ISDB_scrambler_descriptor>
+
   </CAT>
 
 </tsduck>

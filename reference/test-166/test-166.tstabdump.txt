@@ -325,7 +325,7 @@
     Private data (4 bytes): DE AD BE EF
 
 * CAT, TID 0x01 (1)
-  Section: 0 (last: 0), version: 0, size: 195 bytes
+  Section: 0 (last: 0), version: 0, size: 375 bytes
   - Descriptor 0: ISDB Character Code (0xE5, 229), 1 bytes
     Character code: 0x01 (UTF-8)
   - Descriptor 1: ISDB Character Code (0xE5, 229), 1 bytes
@@ -408,4 +408,63 @@
       Symbol rate: 123.4567 Msymbol/s
       FEC inner: 0xE
       Group id: 0x23
+  - Descriptor 13: ISDB Cable TS Division System (0xF9, 249), 0 bytes
+  - Descriptor 14: ISDB Cable TS Division System (0xF9, 249), 39 bytes
+    - Carrier #0: Frequency: 842.1234 MHz
+      Frame type: 0x1 (Uses multiplexed frames)
+      FEC outer: 0x2 (RS(204,188))
+      Modulation: 0x04 (128-QAM)
+      Symbol rate: 5.1234 Msymbol/s
+      FEC inner: 0xF
+    - Carrier #1: Frequency: 1234.5678 MHz
+      Frame type: 0xF (Does not use multiplexed frames)
+      FEC outer: 0x1 (No outer code)
+      Modulation: 0x07 (Reserved)
+      Symbol rate: 123.4567 Msymbol/s
+      FEC inner: 0xC
+      Future use data (8 bytes): 01 23 45 67 89 AB CD EF
+      Service id: 0xABCD (43981)
+      Service id: 0x1234 (4660)
+      Service id: 0xBEEF (48879)
+  - Descriptor 15: ISDB Advanced Cable Delivery System (0xF4, 244), 4 bytes
+    Tag extension: 0x00 (normal data transmission)
+    PLP id: 0xAB (171)
+    Effective symbol length: 0x05 (5)
+    Guard interval: 0x06 (6)
+    Bundled channel: 0x8A (138)
+  - Descriptor 16: ISDB Advanced Cable Delivery System (0xF4, 244), 20 bytes
+    Tag extension: 0x00 (normal data transmission)
+    PLP id: 0x12 (18)
+    Effective symbol length: 0x02 (2)
+    Guard interval: 0x04 (4)
+    Bundled channel: 0x67 (103)
+    - Carrier #0: Data slice id 0x99 (153)
+      Frequency: 123.4567 MHz
+      Frame type: 0x02 (2)
+      FEC outer: 0x0C (12)
+      Modulation: 0x34 (52)
+      FEC inner: 0x0B (11)
+    - Carrier #1: Data slice id 0x12 (18)
+      Frequency: 2123.4567 MHz
+      Frame type: 0x01 (1)
+      FEC outer: 0x07 (7)
+      Modulation: 0xAB (171)
+      FEC inner: 0x08 (8)
+  - Descriptor 17: ISDB Advanced Cable Delivery System (0xF4, 244), 89 bytes
+    Tag extension: 0x01 (earthquake warning information transmission)
+    Data (88 bytes):
+      0000:  01 23 45 67 89 AB CD EF 01 23 45 67 89 AB CD EF  .#Eg.....#Eg....
+      0010:  01 23 45 67 89 AB CD EF 01 23 45 67 89 FF FF FF  .#Eg.....#Eg....
+      0020:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      0030:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      0040:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      0050:  FF FF FF FF FF FF FF FF                          ........
+  - Descriptor 18: ISDB Advanced Cable Delivery System (0xF4, 244), 5 bytes
+    Tag extension: 0xE5 (unknown)
+    Data (4 bytes): DE AD BE EF
+  - Descriptor 19: ISDB Scrambler (0xF5, 245), 1 bytes
+    Scrambler identification: 0xCD (205)
+  - Descriptor 20: ISDB Scrambler (0xF5, 245), 6 bytes
+    Scrambler identification: 0xEF (239)
+    Data (5 bytes): BA DD C0 FF EE
 

@@ -273,6 +273,135 @@
             "symbol_rate": 123456700
           }
         ]
+      },
+      {
+        "#name": "ISDB_cable_TS_division_system_descriptor"
+      },
+      {
+        "#name": "ISDB_cable_TS_division_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "carrier",
+            "fec_outer": 2,
+            "frame_type": 1,
+            "frequency": 842123400,
+            "modulation": 4,
+            "symbol_rate": 5123400
+          },
+          {
+            "#name": "carrier",
+            "#nodes": [
+              {
+                "#name": "future_use_data",
+                "#nodes": [
+                  "01 23 45 67 89 AB CD EF"
+                ]
+              },
+              {
+                "#name": "service",
+                "id": 43981
+              },
+              {
+                "#name": "service",
+                "id": 4660
+              },
+              {
+                "#name": "service",
+                "id": 48879
+              }
+            ],
+            "fec_inner": 12,
+            "fec_outer": 1,
+            "frame_type": 15,
+            "frequency": 1234567800,
+            "modulation": 7,
+            "symbol_rate": 123456700
+          }
+        ]
+      },
+      {
+        "#name": "ISDB_advanced_cable_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "normal_data",
+            "bundled_channel": 138,
+            "effective_symbol_length": 5,
+            "guard_interval": 6,
+            "plp_id": 171
+          }
+        ]
+      },
+      {
+        "#name": "ISDB_advanced_cable_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "normal_data",
+            "#nodes": [
+              {
+                "#name": "carrier",
+                "data_slice_id": 153,
+                "fec_inner": 11,
+                "fec_outer": 12,
+                "frame_type": 2,
+                "frequency": 123456700,
+                "modulation": 52
+              },
+              {
+                "#name": "carrier",
+                "data_slice_id": 18,
+                "fec_inner": 8,
+                "fec_outer": 7,
+                "frame_type": 1,
+                "frequency": 2123456700,
+                "modulation": 171
+              }
+            ],
+            "bundled_channel": 103,
+            "effective_symbol_length": 2,
+            "guard_interval": 4,
+            "plp_id": 18
+          }
+        ]
+      },
+      {
+        "#name": "ISDB_advanced_cable_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "other_data",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF 01 23 45 67 89 AB CD EF 01 23 45 67 89 AB CD EF 01 23 45 67 89 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF"
+            ],
+            "descriptor_tag_extension": 1
+          }
+        ]
+      },
+      {
+        "#name": "ISDB_advanced_cable_delivery_system_descriptor",
+        "#nodes": [
+          {
+            "#name": "other_data",
+            "#nodes": [
+              "DE AD BE EF"
+            ],
+            "descriptor_tag_extension": 229
+          }
+        ]
+      },
+      {
+        "#name": "ISDB_scrambler_descriptor",
+        "scrambler_identification": 205
+      },
+      {
+        "#name": "ISDB_scrambler_descriptor",
+        "#nodes": [
+          {
+            "#name": "data",
+            "#nodes": [
+              "BA DD C0 FF EE"
+            ]
+          }
+        ],
+        "scrambler_identification": 239
       }
     ],
     "current": true,
