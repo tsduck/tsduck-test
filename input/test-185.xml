@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <DSMCC_user_to_network_message protocol_discriminator="0x11" dsmcc_type="3" message_id="0x1002" transaction_id="4">
+    <DII download_id="0x12345678" block_size="0x2345">
+      <module module_id="1" module_size="2" module_version="3" module_timeout="4" block_timeout="5" min_block_time="6">
+        <dsmcc_type_descriptor type="foo"/>
+        <dsmcc_name_descriptor name="bar"/>
+        <dsmcc_info_descriptor language_code="eng" info="das information"/>
+        <dsmcc_module_link_descriptor position="0x12" module_id="0x3456"/>
+        <dsmcc_CRC32_descriptor CRC_32="0xFEDCBA98"/>
+        <dsmcc_location_descriptor location_tag="0xAB"/>
+        <dsmcc_est_download_time_descriptor est_download_time="0x12345678"/>
+        <dsmcc_group_link_descriptor position="0x78" group_id="0x12345678"/>
+        <dsmcc_compressed_module_descriptor compression_method="0x66" original_size="0x87654321"/>
+        <dsmcc_ssu_module_type_descriptor SSU_module_type ="0xAB"/>
+        <dsmcc_subgroup_association_descriptor subgroup_tag="0x123456789A"/>
+        <dsmcc_label_descriptor label="foo-bar"/>
+        <dsmcc_caching_priority_descriptor priority_value="0x23" transparency_level="0x45"/>
+        <dsmcc_content_type_descriptor content_type="foo:bar"/>
+      </module>
+    </DII>
+  </DSMCC_user_to_network_message>
+</tsduck>

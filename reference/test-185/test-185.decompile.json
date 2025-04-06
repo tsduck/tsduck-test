@@ -1,0 +1,92 @@
+[
+  {
+    "#name": "DSMCC_user_to_network_message",
+    "#nodes": [
+      {
+        "#name": "DII",
+        "#nodes": [
+          {
+            "#name": "module",
+            "#nodes": [
+              {
+                "#name": "dsmcc_type_descriptor",
+                "type": "foo"
+              },
+              {
+                "#name": "dsmcc_name_descriptor",
+                "name": "bar"
+              },
+              {
+                "#name": "dsmcc_info_descriptor",
+                "info": "das information",
+                "language_code": "eng"
+              },
+              {
+                "#name": "dsmcc_module_link_descriptor",
+                "module_id": 13398,
+                "position": 18
+              },
+              {
+                "#name": "dsmcc_CRC32_descriptor",
+                "crc_32": 4275878552
+              },
+              {
+                "#name": "dsmcc_location_descriptor",
+                "location_tag": 171
+              },
+              {
+                "#name": "dsmcc_est_download_time_descriptor",
+                "est_download_time": 305419896
+              },
+              {
+                "#name": "dsmcc_group_link_descriptor",
+                "group_id": 305419896,
+                "position": 120
+              },
+              {
+                "#name": "dsmcc_compressed_module_descriptor",
+                "compression_method": 102,
+                "original_size": 2271560481
+              },
+              {
+                "#name": "dsmcc_ssu_module_type_descriptor",
+                "ssu_module_type": 171
+              },
+              {
+                "#name": "dsmcc_subgroup_association_descriptor",
+                "subgroup_tag": 78187493530
+              },
+              {
+                "#name": "dsmcc_label_descriptor",
+                "label": "foo-bar"
+              },
+              {
+                "#name": "dsmcc_caching_priority_descriptor",
+                "priority_value": 35,
+                "transparency_level": 69
+              },
+              {
+                "#name": "dsmcc_content_type_descriptor",
+                "content_type": "foo:bar"
+              }
+            ],
+            "block_timeout": 5,
+            "min_block_time": 6,
+            "module_id": 1,
+            "module_size": 2,
+            "module_timeout": 4,
+            "module_version": 3
+          }
+        ],
+        "block_size": 9029,
+        "download_id": 305419896
+      }
+    ],
+    "current": true,
+    "dsmcc_type": 3,
+    "message_id": 4098,
+    "protocol_discriminator": 17,
+    "transaction_id": 4,
+    "version": 0
+  }
+]
