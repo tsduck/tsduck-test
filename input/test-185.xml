@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tsduck>
+
   <DSMCC_user_to_network_message protocol_discriminator="0x11" dsmcc_type="3" message_id="0x1002" transaction_id="4">
     <DII download_id="0x12345678" block_size="0x2345">
       <module module_id="1" module_size="2" module_version="3" module_timeout="4" block_timeout="5" min_block_time="6">
@@ -20,4 +21,53 @@
       </module>
     </DII>
   </DSMCC_user_to_network_message>
+
+  <MPE_FEC padding_columns="45">
+    <column>
+      <real_time_parameters delta_t="1234" table_boundary="true" frame_boundary="false" address="98765"/>
+      <rs_data>
+        0123456789
+      </rs_data>
+    </column>
+    <column>
+      <real_time_parameters delta_t="2345" table_boundary="false" frame_boundary="true" address="147"/>
+      <rs_data>
+        ABCDEF0123
+      </rs_data>
+    </column>
+    <column>
+      <real_time_parameters delta_t="852" table_boundary="true" frame_boundary="false" address="963"/>
+      <rs_data>
+        456789ABCD
+      </rs_data>
+    </column>
+  </MPE_FEC>
+
+  <MPE_IFEC burst_number="0xAB" IFEC_burst_size="0xCD">
+    <burst>
+      <real_time_parameters delta_t="147" MPE_boundary="true" frame_boundary="false" prev_burst_size="12345"/>
+      <IFEC_data>
+        0123456789ABCDEF
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="2587" MPE_boundary="false" frame_boundary="true" prev_burst_size="25874"/>
+      <IFEC_data>
+        456789ABCDEF0123
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="415" MPE_boundary="true" frame_boundary="false" prev_burst_size="96321"/>
+      <IFEC_data>
+        89ABCDEF01234567
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="1597" MPE_boundary="false" frame_boundary="true" prev_burst_size="4523"/>
+      <IFEC_data>
+        CDEF0123456789AB
+      </IFEC_data>
+    </burst>
+  </MPE_IFEC>
+
 </tsduck>

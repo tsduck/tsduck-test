@@ -88,5 +88,144 @@
     "protocol_discriminator": 17,
     "transaction_id": 4,
     "version": 0
+  },
+  {
+    "#name": "MPE_FEC",
+    "#nodes": [
+      {
+        "#name": "column",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "address": 98765,
+            "delta_t": 1234,
+            "frame_boundary": false,
+            "table_boundary": true
+          },
+          {
+            "#name": "rs_data",
+            "#nodes": [
+              "01 23 45 67 89"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "column",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "address": 147,
+            "delta_t": 2345,
+            "frame_boundary": true,
+            "table_boundary": false
+          },
+          {
+            "#name": "rs_data",
+            "#nodes": [
+              "AB CD EF 01 23"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "column",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "address": 963,
+            "delta_t": 852,
+            "frame_boundary": false,
+            "table_boundary": true
+          },
+          {
+            "#name": "rs_data",
+            "#nodes": [
+              "45 67 89 AB CD"
+            ]
+          }
+        ]
+      }
+    ],
+    "padding_columns": 45
+  },
+  {
+    "#name": "MPE_IFEC",
+    "#nodes": [
+      {
+        "#name": "burst",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "delta_t": 147,
+            "frame_boundary": false,
+            "mpe_boundary": true,
+            "prev_burst_size": 12345
+          },
+          {
+            "#name": "IFEC_data",
+            "#nodes": [
+              "01 23 45 67 89 AB CD EF"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "burst",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "delta_t": 2587,
+            "frame_boundary": true,
+            "mpe_boundary": false,
+            "prev_burst_size": 25874
+          },
+          {
+            "#name": "IFEC_data",
+            "#nodes": [
+              "45 67 89 AB CD EF 01 23"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "burst",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "delta_t": 415,
+            "frame_boundary": false,
+            "mpe_boundary": true,
+            "prev_burst_size": 96321
+          },
+          {
+            "#name": "IFEC_data",
+            "#nodes": [
+              "89 AB CD EF 01 23 45 67"
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "burst",
+        "#nodes": [
+          {
+            "#name": "real_time_parameters",
+            "delta_t": 1597,
+            "frame_boundary": true,
+            "mpe_boundary": false,
+            "prev_burst_size": 4523
+          },
+          {
+            "#name": "IFEC_data",
+            "#nodes": [
+              "CD EF 01 23 45 67 89 AB"
+            ]
+          }
+        ]
+      }
+    ],
+    "burst_number": 171,
+    "ifec_burst_size": 205
   }
 ]

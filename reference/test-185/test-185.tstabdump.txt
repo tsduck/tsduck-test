@@ -49,3 +49,77 @@
   - Descriptor 13: DSM-CC U-N Message Content Type (0x72, 114), 7 bytes
     Content type: foo:bar
 
+* MPE-FEC, TID 0x78 (120)
+  Section: 0 (last: 2), version: 31, size: 21 bytes
+  Padding columns: 45
+  - Real time parameters:
+    delta_t: 0x04D2 (1234)
+    table_boundary: true
+    frame_boundary: false
+    address: 0x000181CD (98765)
+  - RS data (5 bytes): 01 23 45 67 89
+
+* MPE-FEC, TID 0x78 (120)
+  Section: 1 (last: 2), version: 31, size: 21 bytes
+  Padding columns: 45
+  - Real time parameters:
+    delta_t: 0x0929 (2345)
+    table_boundary: false
+    frame_boundary: true
+    address: 0x00000093 (147)
+  - RS data (5 bytes): AB CD EF 01 23
+
+* MPE-FEC, TID 0x78 (120)
+  Section: 2 (last: 2), version: 31, size: 21 bytes
+  Padding columns: 45
+  - Real time parameters:
+    delta_t: 0x0354 (852)
+    table_boundary: true
+    frame_boundary: false
+    address: 0x000003C3 (963)
+  - RS data (5 bytes): 45 67 89 AB CD
+
+* MPE-IFEC, TID 0x7A (122)
+  Section: 0 (last: 3), version: 0, size: 24 bytes
+  Burst number: 171
+  IFEC burst size: 205
+  - Real time parameters:
+    delta_t: 0x0093 (147)
+    MPE_boundary: true
+    frame_boundary: false
+    prev_burst_size: 0x00003039 (12345)
+  - IFEC data (8 bytes): 01 23 45 67 89 AB CD EF
+
+* MPE-IFEC, TID 0x7A (122)
+  Section: 1 (last: 3), version: 0, size: 24 bytes
+  Burst number: 171
+  IFEC burst size: 205
+  - Real time parameters:
+    delta_t: 0x0A1B (2587)
+    MPE_boundary: false
+    frame_boundary: true
+    prev_burst_size: 0x00006512 (25874)
+  - IFEC data (8 bytes): 45 67 89 AB CD EF 01 23
+
+* MPE-IFEC, TID 0x7A (122)
+  Section: 2 (last: 3), version: 0, size: 24 bytes
+  Burst number: 171
+  IFEC burst size: 205
+  - Real time parameters:
+    delta_t: 0x019F (415)
+    MPE_boundary: true
+    frame_boundary: false
+    prev_burst_size: 0x00017841 (96321)
+  - IFEC data (8 bytes): 89 AB CD EF 01 23 45 67
+
+* MPE-IFEC, TID 0x7A (122)
+  Section: 3 (last: 3), version: 0, size: 24 bytes
+  Burst number: 171
+  IFEC burst size: 205
+  - Real time parameters:
+    delta_t: 0x063D (1597)
+    MPE_boundary: false
+    frame_boundary: true
+    prev_burst_size: 0x000011AB (4523)
+  - IFEC data (8 bytes): CD EF 01 23 45 67 89 AB
+

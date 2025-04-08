@@ -21,4 +21,52 @@
       </module>
     </DII>
   </DSMCC_user_to_network_message>
+  <MPE_FEC padding_columns="45">
+    <metadata PID="200"/>
+    <column>
+      <real_time_parameters delta_t="1,234" table_boundary="true" frame_boundary="false" address="98,765"/>
+      <rs_data>
+        01 23 45 67 89
+      </rs_data>
+    </column>
+    <column>
+      <real_time_parameters delta_t="2,345" table_boundary="false" frame_boundary="true" address="147"/>
+      <rs_data>
+        AB CD EF 01 23
+      </rs_data>
+    </column>
+    <column>
+      <real_time_parameters delta_t="852" table_boundary="true" frame_boundary="false" address="963"/>
+      <rs_data>
+        45 67 89 AB CD
+      </rs_data>
+    </column>
+  </MPE_FEC>
+  <MPE_IFEC burst_number="171" IFEC_burst_size="205">
+    <metadata PID="200"/>
+    <burst>
+      <real_time_parameters delta_t="147" MPE_boundary="true" frame_boundary="false" prev_burst_size="12,345"/>
+      <IFEC_data>
+        01 23 45 67 89 AB CD EF
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="2,587" MPE_boundary="false" frame_boundary="true" prev_burst_size="25,874"/>
+      <IFEC_data>
+        45 67 89 AB CD EF 01 23
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="415" MPE_boundary="true" frame_boundary="false" prev_burst_size="96,321"/>
+      <IFEC_data>
+        89 AB CD EF 01 23 45 67
+      </IFEC_data>
+    </burst>
+    <burst>
+      <real_time_parameters delta_t="1,597" MPE_boundary="false" frame_boundary="true" prev_burst_size="4,523"/>
+      <IFEC_data>
+        CD EF 01 23 45 67 89 AB
+      </IFEC_data>
+    </burst>
+  </MPE_IFEC>
 </tsduck>
