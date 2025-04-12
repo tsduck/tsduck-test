@@ -138,5 +138,62 @@
     ],
     "protocol_version": 0,
     "version": 0
+  },
+  {
+    "#name": "DET",
+    "protocol_version": 0,
+    "source_id": 43981,
+    "version": 0
+  },
+  {
+    "#name": "DET",
+    "#nodes": [
+      {
+        "#name": "data",
+        "data_id": 13398,
+        "etm_location": 2,
+        "length_in_seconds": 12345,
+        "start_time": "2025-04-12 13:14:15"
+      },
+      {
+        "#name": "data",
+        "#nodes": [
+          {
+            "#name": "title_text",
+            "#nodes": [
+              {
+                "#name": "string",
+                "language": "eng",
+                "text": "English title"
+              },
+              {
+                "#name": "string",
+                "language": "foo",
+                "text": "Foo title"
+              }
+            ]
+          },
+          {
+            "#name": "ATSC_CRC32_descriptor",
+            "crc_32": 305419896
+          },
+          {
+            "#name": "ATSC_CRC32_descriptor",
+            "crc_32": 3735928559
+          },
+          {
+            "#name": "ATSC_CRC32_descriptor",
+            "crc_32": 3134984190
+          }
+        ],
+        "data_id": 4660,
+        "etm_location": 1,
+        "length_in_seconds": 780,
+        "start_time": "2025-04-14 15:16:17"
+      }
+    ],
+    "protocol_version": 7,
+    "source_id": 13398,
+    "version": 7
   }
 ]

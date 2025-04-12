@@ -40,4 +40,20 @@
       </component>
     </ATSC_component_list_descriptor>
   </MGT>
+  <DET version="0" source_id="0xABCD" protocol_version="0">
+    <metadata PID="200"/>
+  </DET>
+  <DET version="7" source_id="0x3456" protocol_version="7">
+    <metadata PID="200"/>
+    <data data_id="0x3456" start_time="2025-04-12 13:14:15" ETM_location="0x02" length_in_seconds="12,345"/>
+    <data data_id="0x1234" start_time="2025-04-14 15:16:17" ETM_location="0x01" length_in_seconds="780">
+      <title_text>
+        <string language="eng" text="English title"/>
+        <string language="foo" text="Foo title"/>
+      </title_text>
+      <ATSC_CRC32_descriptor CRC_32="0x12345678"/>
+      <ATSC_CRC32_descriptor CRC_32="0xDEADBEEF"/>
+      <ATSC_CRC32_descriptor CRC_32="0xBADC0FFE"/>
+    </data>
+  </DET>
 </tsduck>

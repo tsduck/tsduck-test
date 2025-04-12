@@ -66,3 +66,32 @@
       - Stream type: 0xCD (205), format identifier: 0x12345678 (305419896)
         Stream info (4 bytes): DE AD BE EF
 
+* DET (ATSC A/90), TID 0xCE (206), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 14 bytes
+  - Section 0:
+    Source Id: 0xABCD (43981)
+    Protocol version: 0, number of data events: 0
+
+* DET (ATSC A/90), TID 0xCE (206), PID 0x00C8 (200)
+  Version: 7, sections: 1, total size: 93 bytes
+  - Section 0:
+    Source Id: 0x3456 (13398)
+    Protocol version: 7, number of data events: 2
+    - Data Id: 0x3456 (13398)
+      Start UTC: 2025/04/12 13:14:15
+      ETM location: 2
+      Duration: 12345 seconds
+    - Data Id: 0x1234 (4660)
+      Start UTC: 2025/04/14 15:16:17
+      ETM location: 1
+      Duration: 780 seconds
+      Title text: Number of strings: 2
+        Language: "eng", text: "English title"
+        Language: "foo", text: "Foo title"
+      - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x12345678
+      - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0xDEADBEEF
+      - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0xBADC0FFE
+
