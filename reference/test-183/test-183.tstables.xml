@@ -113,4 +113,18 @@
       </extended_text_message>
     </ETM_data>
   </AETT>
+  <SVCT version="0" current="true" SVCT_subtype="0x00" SVCT_id="0x89" protocol_version="0">
+    <metadata PID="200"/>
+  </SVCT>
+  <SVCT version="17" current="true" SVCT_subtype="0x9A" SVCT_id="0x12" protocol_version="5">
+    <metadata PID="200"/>
+    <ATSC_CRC32_descriptor CRC_32="0x12345678"/>
+    <ATSC_CRC32_descriptor CRC_32="0xDEADBEEF"/>
+    <ATSC_CRC32_descriptor CRC_32="0xBADC0FFE"/>
+    <channel short_name="FOO" major_channel_number="21" minor_channel_number="42" modulation_mode="0x09" carrier_frequency="12,345,678,900" carrier_symbol_rate="53,000,000" polarization="3" FEC_Inner="0x08" channel_TSID="0x5678" program_number="0x2345" ETM_location="3" hidden="false" hide_guide="true" service_type="audio" source_id="0x2345" feed_id="0x9A"/>
+    <channel short_name="BAR" major_channel_number="12" minor_channel_number="22" modulation_mode="0x02" carrier_frequency="1,234,567,800" carrier_symbol_rate="21,000,000" polarization="1" FEC_Inner="0x04" channel_TSID="0x1234" program_number="0xABCD" ETM_location="1" hidden="true" hide_guide="false" service_type="data" source_id="0x8765" feed_id="0xCD">
+      <ATSC_CRC32_descriptor CRC_32="0x00000001"/>
+      <ATSC_CRC32_descriptor CRC_32="0x00000002"/>
+    </channel>
+  </SVCT>
 </tsduck>

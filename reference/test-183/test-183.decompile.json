@@ -376,5 +376,83 @@
     "aett_subtype": 0,
     "mgt_tag": 137,
     "version": 14
+  },
+  {
+    "#name": "SVCT",
+    "current": true,
+    "protocol_version": 0,
+    "svct_id": 137,
+    "svct_subtype": 0,
+    "version": 0
+  },
+  {
+    "#name": "SVCT",
+    "#nodes": [
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 305419896
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 3735928559
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 3134984190
+      },
+      {
+        "#name": "channel",
+        "carrier_frequency": 12345678900,
+        "carrier_symbol_rate": 53000000,
+        "channel_tsid": 22136,
+        "etm_location": 3,
+        "fec_inner": 8,
+        "feed_id": 154,
+        "hidden": false,
+        "hide_guide": true,
+        "major_channel_number": 21,
+        "minor_channel_number": 42,
+        "modulation_mode": 9,
+        "polarization": 3,
+        "program_number": 9029,
+        "service_type": "audio",
+        "short_name": "FOO",
+        "source_id": 9029
+      },
+      {
+        "#name": "channel",
+        "#nodes": [
+          {
+            "#name": "ATSC_CRC32_descriptor",
+            "crc_32": 1
+          },
+          {
+            "#name": "ATSC_CRC32_descriptor",
+            "crc_32": 2
+          }
+        ],
+        "carrier_frequency": 1234567800,
+        "carrier_symbol_rate": 21000000,
+        "channel_tsid": 4660,
+        "etm_location": 1,
+        "fec_inner": 4,
+        "feed_id": 205,
+        "hidden": true,
+        "hide_guide": false,
+        "major_channel_number": 12,
+        "minor_channel_number": 22,
+        "modulation_mode": 2,
+        "polarization": 1,
+        "program_number": 43981,
+        "service_type": "data",
+        "short_name": "BAR",
+        "source_id": 34661
+      }
+    ],
+    "current": true,
+    "protocol_version": 5,
+    "svct_id": 18,
+    "svct_subtype": 154,
+    "version": 17
   }
 ]

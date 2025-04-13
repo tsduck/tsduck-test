@@ -171,3 +171,46 @@
       Extended text message: Number of strings: 1
         Language: "eng", text: "English text"
 
+* SVCT (ATSC), TID 0xDA (218), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 16 bytes
+  - Section 0:
+    SVCT subtype: 0x00 (0), SVCT id: 0x89 (137)
+    Protocol version: 0, number of channels: 0
+
+* SVCT (ATSC), TID 0xDA (218), PID 0x00C8 (200)
+  Version: 17, sections: 1, total size: 126 bytes
+  - Section 0:
+    SVCT subtype: 0x9A (154), SVCT id: 0x12 (18)
+    Protocol version: 5, number of channels: 2
+    - Channel 21.42, short name: "FOO"
+      Modulation: 0x09 (16PSK (ATSC A/80)), frequency: 12,345,678,900 Hz
+      Symbol rate: 53,000,000 sym/sec
+      Polarization: 0x3 (Circular - right)
+      FEC inner: 0x08 (3/4)
+      TS id: 0x5678 (22136), program number: 0x2345 (9029)
+      ETM location: 3
+      Hidden: no, hide guide: yes
+      Service type: 0x03 (ATSC Audio)
+      Source id: 0x2345 (9029), feed id: 0x9A (154)
+    - Channel 12.22, short name: "BAR"
+      Modulation: 0x02 (BPSK), frequency: 1,234,567,800 Hz
+      Symbol rate: 21,000,000 sym/sec
+      Polarization: 0x1 (Linear - vertical)
+      FEC inner: 0x04 (3/5)
+      TS id: 0x1234 (4660), program number: 0xABCD (43981)
+      ETM location: 1
+      Hidden: yes, hide guide: no
+      Service type: 0x04 (ATSC Data Only Service)
+      Source id: 0x8765 (34661), feed id: 0xCD (205)
+      - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x00000001
+      - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x00000002
+    Additional descriptors:
+    - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x12345678
+    - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0xDEADBEEF
+    - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0xBADC0FFE
+
