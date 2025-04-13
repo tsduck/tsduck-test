@@ -69,4 +69,54 @@
     </data>
   </DET>
 
+  <LTST table_id_extension="0x1234"/>
+  <LTST version="30" table_id_extension="0xCDEF" protocol_version="47">
+    <source source_id="0x6789">
+      <data data_id="0x3BCD" start_time="2021-03-07 04:05:06" ETM_location="3" length_in_seconds="6789">
+        <title_text>
+          <string language="eng" text="English title"/>
+          <string language="foo" text="Foo title"/>
+        </title_text>
+        <ATSC_CRC32_descriptor CRC_32="0x12345678"/>
+        <ATSC_CRC32_descriptor CRC_32="0xDEADBEEF"/>
+        <ATSC_CRC32_descriptor CRC_32="0xBADC0FFE"/>
+      </data>
+    </source>
+    <source source_id="0x8523"/>
+    <source source_id="0x1234">
+      <data data_id="0x2587" start_time="2021-03-08 14:15:16" ETM_location="1" length_in_seconds="2587">
+        <ATSC_CRC32_descriptor CRC_32="1"/>
+        <ATSC_CRC32_descriptor CRC_32="2"/>
+        <ATSC_CRC32_descriptor CRC_32="3"/>
+      </data>
+      <data data_id="0x1489" start_time="2021-03-07 04:05:06" ETM_location="3" length_in_seconds="6789">
+        <title_text>
+          <string language="bar" text="Bar title"/>
+        </title_text>
+      </data>
+    </source>
+  </LTST>
+
+  <AETT MGT_tag="0xAB"/>
+  <AETT AETT_subtype="3" MGT_tag="0xCD"/>
+  <AETT version="29" AETT_subtype="7" MGT_tag="0x12">
+    <reserved>
+      0123456789
+    </reserved>
+  </AETT>
+  <AETT version="14" MGT_tag="0x89">
+    <ETM_data ETM_id="0xDEADBEEF">
+      <extended_text_message>
+        <string language="foo" text="foo text"/>
+        <string language="bar" text="bar text"/>
+      </extended_text_message>
+    </ETM_data>
+    <ETM_data ETM_id="0x12345678"/>
+    <ETM_data ETM_id="0x87654321">
+      <extended_text_message>
+        <string language="eng" text="English text"/>
+      </extended_text_message>
+    </ETM_data>
+  </AETT>
+
 </tsduck>
