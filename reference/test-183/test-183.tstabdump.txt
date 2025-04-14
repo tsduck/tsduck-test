@@ -203,3 +203,43 @@
   - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
     CRC-32: 0xBADC0FFE
 
+* AEIT (ATSC), TID 0xD6 (214)
+  Section: 0 (last: 0), version: 0, size: 13 bytes
+  AEIT subtype: 0x00 (0), MGT tag: 0x9A (154)
+  Number of event sources: 0
+
+* AEIT (ATSC), TID 0xD6 (214)
+  Section: 0 (last: 0), version: 0, size: 12 bytes
+  AEIT subtype: 0x01 (1), MGT tag: 0x21 (33)
+
+* AEIT (ATSC), TID 0xD6 (214)
+  Section: 0 (last: 0), version: 13, size: 16 bytes
+  AEIT subtype: 0xEA (234), MGT tag: 0x12 (18)
+  Reserved (4 bytes): DE AD BE EF
+
+* AEIT (ATSC), TID 0xD6 (214)
+  Section: 0 (last: 0), version: 0, size: 107 bytes
+  AEIT subtype: 0x00 (0), MGT tag: 0x02 (2)
+  Number of event sources: 3
+  - Source Id: 0x6789 (26505), number of events: 1
+    - Event Id: 0x1654 (5716), off air: true
+      Start UTC: 2025/02/03 21:22:23
+      Duration: 840 seconds
+  - Source Id: 0x1234 (4660), number of events: 0
+  - Source Id: 0x6547 (25927), number of events: 2
+    - Event Id: 0x1478 (5240), off air: false
+      Start UTC: 2025/01/02 12:22:32
+      Duration: 1840 seconds
+      Title text: Number of strings: 2
+        Language: "eng", text: "In English"
+        Language: "foo", text: "In Foo"
+      - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x00000001
+    - Event Id: 0x3524 (13604), off air: true
+      Start UTC: 2025/01/02 02:03:04
+      Duration: 127 seconds
+      - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x00000007
+      - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+        CRC-32: 0x00000008
+

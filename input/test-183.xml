@@ -161,4 +161,31 @@
     </channel>
   </SVCT>
 
+  <AEIT MGT_tag="0x9A"/>
+  <AEIT AEIT_subtype="1" MGT_tag="0x21"/>
+  <AEIT version="13" AEIT_subtype="0xEA" MGT_tag="0x12">
+    <reserved>
+      DEAD BEEF
+    </reserved>
+  </AEIT>
+  <AEIT MGT_tag="2">
+    <source source_id="0x6789">
+      <event off_air="true" event_id="0x1654" start_time="2025-02-03 21:22:23" duration="840"/>
+    </source>
+    <source source_id="0x1234"/>
+    <source source_id="0x6547">
+      <event off_air="false" event_id="0x1478" start_time="2025-01-02 12:22:32" duration="1840">
+        <title_text>
+          <string language="eng" text="In English"/>
+          <string language="foo" text="In Foo"/>
+        </title_text>
+        <ATSC_CRC32_descriptor CRC_32="1"/>
+      </event>
+      <event off_air="true" event_id="0x3524" start_time="2025-01-02 02:03:04" duration="127">
+        <ATSC_CRC32_descriptor CRC_32="7"/>
+        <ATSC_CRC32_descriptor CRC_32="8"/>
+      </event>
+    </source>
+  </AEIT>
+
 </tsduck>

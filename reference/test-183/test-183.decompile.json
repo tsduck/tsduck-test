@@ -454,5 +454,107 @@
     "svct_id": 18,
     "svct_subtype": 154,
     "version": 17
+  },
+  {
+    "#name": "AEIT",
+    "aeit_subtype": 0,
+    "mgt_tag": 154,
+    "version": 0
+  },
+  {
+    "#name": "AEIT",
+    "aeit_subtype": 1,
+    "mgt_tag": 33,
+    "version": 0
+  },
+  {
+    "#name": "AEIT",
+    "#nodes": [
+      {
+        "#name": "reserved",
+        "#nodes": [
+          "DE AD BE EF"
+        ]
+      }
+    ],
+    "aeit_subtype": 234,
+    "mgt_tag": 18,
+    "version": 13
+  },
+  {
+    "#name": "AEIT",
+    "#nodes": [
+      {
+        "#name": "source",
+        "#nodes": [
+          {
+            "#name": "event",
+            "duration": 840,
+            "event_id": 5716,
+            "off_air": true,
+            "start_time": "2025-02-03 21:22:23"
+          }
+        ],
+        "source_id": 26505
+      },
+      {
+        "#name": "source",
+        "source_id": 4660
+      },
+      {
+        "#name": "source",
+        "#nodes": [
+          {
+            "#name": "event",
+            "#nodes": [
+              {
+                "#name": "title_text",
+                "#nodes": [
+                  {
+                    "#name": "string",
+                    "language": "eng",
+                    "text": "In English"
+                  },
+                  {
+                    "#name": "string",
+                    "language": "foo",
+                    "text": "In Foo"
+                  }
+                ]
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 1
+              }
+            ],
+            "duration": 1840,
+            "event_id": 5240,
+            "off_air": false,
+            "start_time": "2025-01-02 12:22:32"
+          },
+          {
+            "#name": "event",
+            "#nodes": [
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 7
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 8
+              }
+            ],
+            "duration": 127,
+            "event_id": 13604,
+            "off_air": true,
+            "start_time": "2025-01-02 02:03:04"
+          }
+        ],
+        "source_id": 25927
+      }
+    ],
+    "aeit_subtype": 0,
+    "mgt_tag": 2,
+    "version": 0
   }
 ]
