@@ -29,6 +29,11 @@ Options:
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
 
+  -e
+  --expand-environment
+      Expand environment variables in the XML files. Environment variables must
+      be referenced as '${name}'.
+
   -f
   --from-json
       Each input file must be a JSON file, typically from a previous automated

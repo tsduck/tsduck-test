@@ -17,3 +17,18 @@ for file in "$INDIR"/$SCRIPT.*.in.xml; do
     test_text $base.log
 
 done
+
+# Test environment variables.
+export TEST_1=AAA
+export TEST_2=BBB
+export TEST_3=
+unset  TEST_4
+export TEST_5=CCC
+
+$(tspath tsxml) --strict-xml $(fpath "$INDIR/$SCRIPT.env.xml") \
+    --expand-environment \
+    --output $(fpath "$OUTDIR/$SCRIPT.env.xml") \
+    >"$OUTDIR/$SCRIPT.env.log" 2>&1
+
+test_text $SCRIPT.env.xml
+test_text $SCRIPT.env.log
