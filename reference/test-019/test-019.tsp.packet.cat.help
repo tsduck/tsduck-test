@@ -39,6 +39,12 @@ Options:
       also option --only-label. This is a generic option which is defined in
       all packet processing plugins.
 
+  --expand-patch-xml
+      Expand all environment variables in the patch files before patching. The
+      expansion is performed each time a patch file is used. Therefore, if the
+      values of the environment variables changed between two usages of the
+      patch file, the latest up-to-date environment values are always used.
+
   --help
       Display this help text.
 

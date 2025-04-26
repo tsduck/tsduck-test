@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <PMT>
+    <component elementary_PID="${VIDEO_PID}">
+      <ISO_639_language_descriptor x-node="add">
+        <language code="foo" audio_type="0xAB"/>
+      </ISO_639_language_descriptor>
+      <stream_identifier_descriptor component_tag="0xCD" x-node="add"/>
+      <network_name_descriptor network_name="substituted: ${VIDEO_PID}, not substituted: \${VIDEO_PID}" x-node="add"/>
+    </component>
+  </PMT>
+</tsduck>

@@ -31,8 +31,14 @@ Options:
 
   -e
   --expand-environment
-      Expand environment variables in the XML files. Environment variables must
-      be referenced as '${name}'.
+      Expand environment variables in the input XML files. Environment
+      variables must be referenced as '${name}'. See also option
+      --expand-patch-xml for patch files.
+
+  --expand-patch-xml
+      With --patch, expand all environment variables in the patch files before
+      patching. Environment variables must be referenced as '${name}'. See also
+      option --expand-environment for input XML files.
 
   -f
   --from-json

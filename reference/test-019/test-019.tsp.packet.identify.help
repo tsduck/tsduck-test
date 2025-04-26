@@ -5,6 +5,10 @@ Usage: tsp -P identify [options]
 
 Options:
 
+  --all-set-label label1[-label2]
+      Set the specified labels on all packets of all PID's in the TS after
+      identifying the first PID. See also the option --set-label.
+
   -a
   --audio
       Identify all PID's carrying audio.
@@ -25,8 +29,9 @@ Options:
       language. The specified name must be a 3-character ISO-639 language code.
 
   --log
-      Log a message on each newly identified PID. This is the default if
-      --set-label is not specified.
+      Log a message on each newly identified PID. This is the default when
+      nothing else is specified (--set-label --all-set-label
+      --set-environment-variable).
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
@@ -48,6 +53,15 @@ Options:
       an integer value (either decimal or hexadecimal), it is interpreted as a
       service id. Otherwise, it is interpreted as a service name, as specified
       in the SDT. The name is not case sensitive and blanks are ignored.
+
+  --set-environment-variable name
+      When a PID is identified, define the specific environment variable with
+      this PID value. This environment variable can be reused in a XML patch
+      file in another plugin, downstream the chain, for instance. It is
+      recommended to use this option only when one PID will be identified. When
+      several PID's are identified, the environment variable is redefined for
+      each new identified PID and using the environment variable later produces
+      different results.
 
   --set-label label1[-label2]
       Set the specified labels on all packets of the identified PID's. Several
