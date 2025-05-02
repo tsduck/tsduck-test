@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <SGT version="0" current="true" service_list_id="0x1234">
+    <metadata PID="200"/>
+  </SGT>
+  <SGT version="10" current="true" service_list_id="0xABCD">
+    <metadata PID="200"/>
+    <network_name_descriptor network_name="foo"/>
+    <network_name_descriptor network_name="bar"/>
+    <private_data_specifier_descriptor private_data_specifier="Astra"/>
+    <astra_service_list_name_descriptor language_code="foo" name="Bar List"/>
+    <service service_id="0xCDEF" transport_stream_id="0x9876" original_network_id="0x8765" logical_channel_number="47" visible_service_flag="true" new_service_flag="false" genre_code="0xFFFF"/>
+    <service service_id="0x1234" transport_stream_id="0x5678" original_network_id="0x9ABC" logical_channel_number="234" visible_service_flag="false" new_service_flag="true" genre_code="0x8523">
+      <network_name_descriptor network_name="123"/>
+      <network_name_descriptor network_name="456"/>
+      <private_data_specifier_descriptor private_data_specifier="Astra"/>
+      <astra_bouquet_list_descriptor/>
+      <astra_bouquet_list_descriptor>
+        <bouquet name="english"/>
+        <bouquet name="français"/>
+        <bouquet name="ελληνικά"/>
+      </astra_bouquet_list_descriptor>
+      <astra_virtual_service_id_descriptor virtual_service_id="0xABCD"/>
+      <astra_virtual_service_id_descriptor virtual_service_id="0x1234">
+        <reserved>
+          DE AD BE EF
+        </reserved>
+      </astra_virtual_service_id_descriptor>
+    </service>
+  </SGT>
+</tsduck>

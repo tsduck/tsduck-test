@@ -282,3 +282,4 @@ repository. But we now limit their size to 20 MB.
 | 185  | DSM-CC UNM (DSI/DII) table-specific descriptors
 | 186  | Real-world SIT from NHK
 | 187  | Plugin `identify`
+| 188  | SES Astra specific table and descriptors

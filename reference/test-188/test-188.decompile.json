@@ -1,0 +1,103 @@
+[
+  {
+    "#name": "SGT",
+    "current": true,
+    "service_list_id": 4660,
+    "version": 0
+  },
+  {
+    "#name": "SGT",
+    "#nodes": [
+      {
+        "#name": "network_name_descriptor",
+        "network_name": "foo"
+      },
+      {
+        "#name": "network_name_descriptor",
+        "network_name": "bar"
+      },
+      {
+        "#name": "private_data_specifier_descriptor",
+        "private_data_specifier": "Astra"
+      },
+      {
+        "#name": "astra_service_list_name_descriptor",
+        "language_code": "foo",
+        "name": "Bar List"
+      },
+      {
+        "#name": "service",
+        "genre_code": 65535,
+        "logical_channel_number": 47,
+        "new_service_flag": false,
+        "original_network_id": 34661,
+        "service_id": 52719,
+        "transport_stream_id": 39030,
+        "visible_service_flag": true
+      },
+      {
+        "#name": "service",
+        "#nodes": [
+          {
+            "#name": "network_name_descriptor",
+            "network_name": "123"
+          },
+          {
+            "#name": "network_name_descriptor",
+            "network_name": "456"
+          },
+          {
+            "#name": "private_data_specifier_descriptor",
+            "private_data_specifier": "Astra"
+          },
+          {
+            "#name": "astra_bouquet_list_descriptor"
+          },
+          {
+            "#name": "astra_bouquet_list_descriptor",
+            "#nodes": [
+              {
+                "#name": "bouquet",
+                "name": "english"
+              },
+              {
+                "#name": "bouquet",
+                "name": "fran\u00E7ais"
+              },
+              {
+                "#name": "bouquet",
+                "name": "\u03B5\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
+              }
+            ]
+          },
+          {
+            "#name": "astra_virtual_service_id_descriptor",
+            "virtual_service_id": 43981
+          },
+          {
+            "#name": "astra_virtual_service_id_descriptor",
+            "#nodes": [
+              {
+                "#name": "reserved",
+                "#nodes": [
+                  "DE AD BE EF"
+                ]
+              }
+            ],
+            "virtual_service_id": 4660
+          }
+        ],
+        "genre_code": 34083,
+        "logical_channel_number": 234,
+        "new_service_flag": true,
+        "original_network_id": 39612,
+        "service_id": 4660,
+        "transport_stream_id": 22136,
+        "visible_service_flag": false
+      }
+    ],
+    "current": true,
+    "service_list_id": 43981,
+    "version": 10
+  }
+]
