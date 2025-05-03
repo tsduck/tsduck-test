@@ -283,3 +283,5 @@ repository. But we now limit their size to 20 MB.
 | 186  | Real-world SIT from NHK
 | 187  | Plugin `identify`
 | 188  | SES Astra specific table and descriptors
+| 189  | Option `--fix-missing-pds` in `tstabcomp`
+| 190  | Multi-section real-world SES Astra SGT

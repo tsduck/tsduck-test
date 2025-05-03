@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  
+  <CAT>
+    <network_name_descriptor network_name="foo"/>
+    <eacem_logical_channel_number_descriptor>
+      <service service_id="0x1234" logical_channel_number="1"/>
+    </eacem_logical_channel_number_descriptor>
+    <eacem_HD_simulcast_logical_channel_descriptor>
+      <service service_id="0x5678" logical_channel_number="2"/>
+    </eacem_HD_simulcast_logical_channel_descriptor>
+    <dtg_logical_channel_descriptor>
+      <service service_id="0x9ABC" logical_channel_number="3"/>
+    </dtg_logical_channel_descriptor>
+    <dtg_HD_simulcast_logical_channel_descriptor>
+      <service service_id="0xDEF0" logical_channel_number="4"/>
+    </dtg_HD_simulcast_logical_channel_descriptor>
+    <astra_service_list_name_descriptor language_code="eng" name="List name"/>
+    <network_name_descriptor network_name="bar"/>
+  </CAT>
+
+</tsduck>

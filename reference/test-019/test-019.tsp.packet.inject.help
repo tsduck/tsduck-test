@@ -122,6 +122,10 @@ Options:
       also option --only-label. This is a generic option which is defined in
       all packet processing plugins.
 
+  --fix-missing-pds
+      When serializing XML MPEG or DVB private descriptors, automatically add
+      missing registration descriptors and private data specifier descriptors.
+
   -f
   --force-crc
       Force recomputation of CRC32 in long sections. Ignore CRC32 values in

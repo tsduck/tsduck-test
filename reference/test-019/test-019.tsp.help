@@ -152,6 +152,10 @@ Options:
       Wait the specified duration after the last input packet. Zero means wait
       forever.
 
+  --fix-missing-pds
+      When serializing XML MPEG or DVB private descriptors, automatically add
+      missing registration descriptors and private data specifier descriptors.
+
   --help
       Display this help text.
 
