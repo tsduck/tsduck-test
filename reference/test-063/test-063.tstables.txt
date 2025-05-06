@@ -747,30 +747,26 @@
       Timeout DII: 147
       Leak rate: 741 bytes
       Component tag: 0x32 (50)
-      Compatibility descriptor (3 descriptors)
-      - Descriptor #0
-        Descriptor type: 0x01 (1), size: 24 bytes
-        Specifier type: 0x02 (2), data: 0x00123456 (1193046)
-        Model: 0xABCD (43981), version: 42
-        - Subdescriptor #0
-          Type: 0x04 (4)
-          Additional info (8 bytes): 01 23 45 67 89 AB CD EF
-        - Subdescriptor #1
-          Type: 0x05 (5)
-        - Subdescriptor #2
-          Type: 0x06 (6)
-          Additional info (1 bytes): FE
-      - Descriptor #1
-        Descriptor type: 0x02 (2), size: 9 bytes
-        Specifier type: 0x03 (3), data: 0x00000456 (1110)
-        Model: 0x0B45 (2885), version: 42
-      - Descriptor #2
-        Descriptor type: 0x03 (3), size: 16 bytes
-        Specifier type: 0x04 (4), data: 0x000000AB (171)
-        Model: 0x2587 (9607), version: 42
-        - Subdescriptor #0
-          Type: 0x08 (8)
-          Additional info (5 bytes): 98 76 54 32 10
+      DSM-CC compatibility descriptor: 3 descriptors
+      - Descriptor #0, type: 0x01 (System Hardware descriptor)
+        Specifier type: 0x02 (unknown), specifier data: 0x00123456 (1193046)
+        Model: 0xABCD (43981), version: 0x002A (42)
+        Number of subdescriptors: 3
+        - Subdescriptor #0, type: 0x04 (4)
+          Additional information (8 bytes): 01 23 45 67 89 AB CD EF
+        - Subdescriptor #1, type: 0x05 (5)
+        - Subdescriptor #2, type: 0x06 (6)
+          Additional information (1 bytes): FE
+      - Descriptor #1, type: 0x02 (System Software descriptor)
+        Specifier type: 0x03 (unknown), specifier data: 0x00000456 (1110)
+        Model: 0x0B45 (2885), version: 0x002A (42)
+        Number of subdescriptors: 0
+      - Descriptor #2, type: 0x03 (unknown)
+        Specifier type: 0x04 (unknown), specifier data: 0x000000AB (171)
+        Model: 0x2587 (9607), version: 0x002A (42)
+        Number of subdescriptors: 1
+        - Subdescriptor #0, type: 0x08 (8)
+          Additional information (5 bytes): 98 76 54 32 10
       Number of modules: 2
       - Module #0
         Module id: 0x0001 (1), size: 100 bytes
@@ -801,30 +797,26 @@
       Connect timer: 78523
       Address type: IPv6 address (0x01)
       IPv6: [fe80::93a3:dea0:2108:b81e]:8521
-      Compatibility descriptor (3 descriptors)
-      - Descriptor #0
-        Descriptor type: 0x01 (1), size: 24 bytes
-        Specifier type: 0x02 (2), data: 0x00123456 (1193046)
-        Model: 0xABCD (43981), version: 42
-        - Subdescriptor #0
-          Type: 0x04 (4)
-          Additional info (8 bytes): 01 23 45 67 89 AB CD EF
-        - Subdescriptor #1
-          Type: 0x05 (5)
-        - Subdescriptor #2
-          Type: 0x06 (6)
-          Additional info (1 bytes): FE
-      - Descriptor #1
-        Descriptor type: 0x02 (2), size: 9 bytes
-        Specifier type: 0x03 (3), data: 0x00000456 (1110)
-        Model: 0x0B45 (2885), version: 42
-      - Descriptor #2
-        Descriptor type: 0x03 (3), size: 16 bytes
-        Specifier type: 0x04 (4), data: 0x000000AB (171)
-        Model: 0x2587 (9607), version: 42
-        - Subdescriptor #0
-          Type: 0x08 (8)
-          Additional info (5 bytes): 98 76 54 32 10
+      DSM-CC compatibility descriptor: 3 descriptors
+      - Descriptor #0, type: 0x01 (System Hardware descriptor)
+        Specifier type: 0x02 (unknown), specifier data: 0x00123456 (1193046)
+        Model: 0xABCD (43981), version: 0x002A (42)
+        Number of subdescriptors: 3
+        - Subdescriptor #0, type: 0x04 (4)
+          Additional information (8 bytes): 01 23 45 67 89 AB CD EF
+        - Subdescriptor #1, type: 0x05 (5)
+        - Subdescriptor #2, type: 0x06 (6)
+          Additional information (1 bytes): FE
+      - Descriptor #1, type: 0x02 (System Software descriptor)
+        Specifier type: 0x03 (unknown), specifier data: 0x00000456 (1110)
+        Model: 0x0B45 (2885), version: 0x002A (42)
+        Number of subdescriptors: 0
+      - Descriptor #2, type: 0x03 (unknown)
+        Specifier type: 0x04 (unknown), specifier data: 0x000000AB (171)
+        Model: 0x2587 (9607), version: 0x002A (42)
+        Number of subdescriptors: 1
+        - Subdescriptor #0, type: 0x08 (8)
+          Additional information (5 bytes): 98 76 54 32 10
       Private data (3 bytes): 98 76 54
       Text info:
         Language: foo
@@ -839,14 +831,13 @@
       Connect timer: 789
       Address type: URL (0x02)
       URL: http://foo.bar/none
-      Compatibility descriptor (1 descriptors)
-      - Descriptor #0
-        Descriptor type: 0x02 (2), size: 13 bytes
-        Specifier type: 0x03 (3), data: 0x00000004 (4)
-        Model: 0x0005 (5), version: 6
-        - Subdescriptor #0
-          Type: 0x07 (7)
-          Additional info (2 bytes): 89 AB
+      DSM-CC compatibility descriptor: 1 descriptors
+      - Descriptor #0, type: 0x02 (System Software descriptor)
+        Specifier type: 0x03 (unknown), specifier data: 0x00000004 (4)
+        Model: 0x0005 (5), version: 0x0006 (6)
+        Number of subdescriptors: 1
+        - Subdescriptor #0, type: 0x07 (7)
+          Additional information (2 bytes): 89 AB
       Private data (3 bytes): 12 34 56
       Text info:
         Language: bar

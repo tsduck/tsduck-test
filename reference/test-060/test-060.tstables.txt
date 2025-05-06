@@ -76,19 +76,19 @@
       Text: "Some foo message."
     Sets of devices:
     - Devices 0:
-      Compatibility descriptor: 36 bytes, 2 descriptors
-      - Descriptor 0, type 0x00 (pad descriptor)
-        Specifier type: 0x01, specifier data (OUI): 0x123456 (unknown)
+      DSM-CC compatibility descriptor: 2 descriptors
+      - Descriptor #0, type: 0x00 (Pad descriptor)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x123456 (unknown)
         Model: 0x9876 (39030), version: 0x5432 (21554)
-        Sub-descriptor count: 2
-        - Sub-descriptor 0, type: 0x12 (18), 3 bytes
-          0000:  01 23 45                                   .#E
-        - Sub-descriptor 1, type: 0x92 (146), 5 bytes
-          0000:  98 76 54 AB CD                             .vT..
-      - Descriptor 1, type 0x01 (system hardware descriptor)
-        Specifier type: 0x02, specifier data (OUI): 0x789ABC (unknown)
+        Number of subdescriptors: 2
+        - Subdescriptor #0, type: 0x12 (18)
+          Additional information (3 bytes): 01 23 45
+        - Subdescriptor #1, type: 0x92 (146)
+          Additional information (5 bytes): 98 76 54 AB CD
+      - Descriptor #1, type: 0x01 (System Hardware descriptor)
+        Specifier type: 0x02 (unknown), specifier data: 0x00789ABC (7903932)
         Model: 0x6789 (26505), version: 0x2345 (9029)
-        Sub-descriptor count: 0
+        Number of subdescriptors: 0
       Platform 0:
         Target descriptors:
         - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
@@ -114,7 +114,7 @@
         - Descriptor 1: UNT SSU Subgroup Association (0x0B, 11), 5 bytes
           Subgroup tag: 0x0000000009 (9)
     - Devices 1:
-      Compatibility descriptor: 2 bytes, 0 descriptors
+      DSM-CC compatibility descriptor: 0 descriptors
       Platform 0:
         Target descriptors:
         - Descriptor 0: UNT SSU Subgroup Association (0x0B, 11), 5 bytes

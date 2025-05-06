@@ -173,33 +173,38 @@
             "#name": "compatibilityDescriptor",
             "#nodes": [
               {
-                "#name": "subDescriptor",
+                "#name": "descriptor",
                 "#nodes": [
-                  "01 23 45"
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "01 23 45"
+                    ],
+                    "subdescriptortype": 18
+                  },
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "98 76 54 AB CD"
+                    ],
+                    "subdescriptortype": 146
+                  }
                 ],
-                "subdescriptortype": 18
+                "descriptortype": 0,
+                "model": 39030,
+                "specifierdata": 1193046,
+                "specifiertype": 1,
+                "version": 21554
               },
               {
-                "#name": "subDescriptor",
-                "#nodes": [
-                  "98 76 54 AB CD"
-                ],
-                "subdescriptortype": 146
+                "#name": "descriptor",
+                "descriptortype": 1,
+                "model": 26505,
+                "specifierdata": 7903932,
+                "specifiertype": 2,
+                "version": 9029
               }
-            ],
-            "descriptortype": 0,
-            "model": 39030,
-            "specifierdata": 1193046,
-            "specifiertype": 1,
-            "version": 21554
-          },
-          {
-            "#name": "compatibilityDescriptor",
-            "descriptortype": 1,
-            "model": 26505,
-            "specifierdata": 7903932,
-            "specifiertype": 2,
-            "version": 9029
+            ]
           },
           {
             "#name": "platform",
@@ -272,6 +277,9 @@
       {
         "#name": "devices",
         "#nodes": [
+          {
+            "#name": "compatibilityDescriptor"
+          },
           {
             "#name": "platform",
             "#nodes": [

@@ -18,24 +18,26 @@
     <SSU_subgroup_association_descriptor subgroup_tag="0x9876543210"/>
 
     <devices>
-      <compatibilityDescriptor
-          descriptorType="0"
-          specifierData="0x123456"
-          model="0x9876"
-          version="0x5432">
-        <subDescriptor subDescriptorType="0x12">
-          012345
-        </subDescriptor>
-        <subDescriptor subDescriptorType="0x92">
-          987654ABCD
-        </subDescriptor>
+      <compatibilityDescriptor>
+        <descriptor
+            descriptorType="0"
+            specifierData="0x123456"
+            model="0x9876"
+            version="0x5432">
+          <subDescriptor subDescriptorType="0x12">
+            012345
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x92">
+            987654ABCD
+          </subDescriptor>
+        </descriptor>
+        <descriptor
+            descriptorType="1"
+            specifierType="2"
+            specifierData="0x789ABC"
+            model="0x6789"
+            version="0x2345"/>
       </compatibilityDescriptor>
-      <compatibilityDescriptor
-          descriptorType="1"
-          specifierType="2"
-          specifierData="0x789ABC"
-          model="0x6789"
-          version="0x2345"/>
       <platform>
         <target>
           <SSU_subgroup_association_descriptor subgroup_tag="1"/>
@@ -60,6 +62,7 @@
     </devices>
 
     <devices>
+      <compatibilityDescriptor/>
       <platform>
         <target>
           <SSU_subgroup_association_descriptor subgroup_tag="10"/>

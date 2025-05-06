@@ -44,15 +44,17 @@
       <text>Some foo message.</text>
     </SSU_enhanced_message_descriptor>
     <devices>
-      <compatibilityDescriptor descriptorType="0x00" specifierType="0x01" specifierData="0x00123456" model="0x9876" version="0x5432">
-        <subDescriptor subDescriptorType="0x12">
-          01 23 45
-        </subDescriptor>
-        <subDescriptor subDescriptorType="0x92">
-          98 76 54 AB CD
-        </subDescriptor>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x00" specifierType="0x01" specifierData="0x00123456" model="0x9876" version="0x5432">
+          <subDescriptor subDescriptorType="0x12">
+            01 23 45
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x92">
+            98 76 54 AB CD
+          </subDescriptor>
+        </descriptor>
+        <descriptor descriptorType="0x01" specifierType="0x02" specifierData="0x00789ABC" model="0x6789" version="0x2345"/>
       </compatibilityDescriptor>
-      <compatibilityDescriptor descriptorType="0x01" specifierType="0x02" specifierData="0x00789ABC" model="0x6789" version="0x2345"/>
       <platform>
         <target>
           <SSU_subgroup_association_descriptor subgroup_tag="0x0000000000000001"/>
@@ -76,6 +78,7 @@
       </platform>
     </devices>
     <devices>
+      <compatibilityDescriptor/>
       <platform>
         <target>
           <SSU_subgroup_association_descriptor subgroup_tag="0x000000000000000A"/>

@@ -396,23 +396,23 @@
     <partialTS_time_descriptor event_version_number="201" offset="03:01:07" offset_flag="0" other_descriptor_status="false"/>
     <download_content_descriptor reboot="true" add_on="false" component_size="12,345" download_id="0x00000456" time_out_value_DII="789" leak_rate="963" component_tag="0x11"/>
     <download_content_descriptor reboot="false" add_on="true" component_size="258,147" download_id="0xDEADBEEF" time_out_value_DII="147" leak_rate="741" component_tag="0x32">
-      <compatibility_descriptor>
-        <descriptor descriptor_type="0x01" specifier_type="0x02" specifier_data="0x00123456" model="0xABCD" version="42">
-          <subdescriptor type="0x04">
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x01" specifierType="0x02" specifierData="0x00123456" model="0xABCD" version="0x002A">
+          <subDescriptor subDescriptorType="0x04">
             01 23 45 67 89 AB CD EF
-          </subdescriptor>
-          <subdescriptor type="0x05"/>
-          <subdescriptor type="0x06">
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x05"/>
+          <subDescriptor subDescriptorType="0x06">
             FE
-          </subdescriptor>
+          </subDescriptor>
         </descriptor>
-        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000456" model="0x0B45" version="42"/>
-        <descriptor descriptor_type="0x03" specifier_type="0x04" specifier_data="0x000000AB" model="0x2587" version="42">
-          <subdescriptor type="0x08">
+        <descriptor descriptorType="0x02" specifierType="0x03" specifierData="0x00000456" model="0x0B45" version="0x002A"/>
+        <descriptor descriptorType="0x03" specifierType="0x04" specifierData="0x000000AB" model="0x2587" version="0x002A">
+          <subDescriptor subDescriptorType="0x08">
             98 76 54 32 10
-          </subdescriptor>
+          </subDescriptor>
         </descriptor>
-      </compatibility_descriptor>
+      </compatibilityDescriptor>
       <module module_id="0x0001" module_size="100"/>
       <module module_id="0x0002" module_size="202">
         <module_info>
@@ -429,23 +429,23 @@
     </network_download_content_descriptor>
     <network_download_content_descriptor reboot="false" add_on="true" component_size="452" session_protocol_number="0xA2" session_id="0xABCDEF12" retry="85" connect_timer="78,523">
       <ipv6 address="fe80::93a3:dea0:2108:b81e" port="8,521"/>
-      <compatibility_descriptor>
-        <descriptor descriptor_type="0x01" specifier_type="0x02" specifier_data="0x00123456" model="0xABCD" version="42">
-          <subdescriptor type="0x04">
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x01" specifierType="0x02" specifierData="0x00123456" model="0xABCD" version="0x002A">
+          <subDescriptor subDescriptorType="0x04">
             01 23 45 67 89 AB CD EF
-          </subdescriptor>
-          <subdescriptor type="0x05"/>
-          <subdescriptor type="0x06">
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x05"/>
+          <subDescriptor subDescriptorType="0x06">
             FE
-          </subdescriptor>
+          </subDescriptor>
         </descriptor>
-        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000456" model="0x0B45" version="42"/>
-        <descriptor descriptor_type="0x03" specifier_type="0x04" specifier_data="0x000000AB" model="0x2587" version="42">
-          <subdescriptor type="0x08">
+        <descriptor descriptorType="0x02" specifierType="0x03" specifierData="0x00000456" model="0x0B45" version="0x002A"/>
+        <descriptor descriptorType="0x03" specifierType="0x04" specifierData="0x000000AB" model="0x2587" version="0x002A">
+          <subDescriptor subDescriptorType="0x08">
             98 76 54 32 10
-          </subdescriptor>
+          </subDescriptor>
         </descriptor>
-      </compatibility_descriptor>
+      </compatibilityDescriptor>
       <private_data>
         98 76 54
       </private_data>
@@ -453,13 +453,13 @@
     </network_download_content_descriptor>
     <network_download_content_descriptor reboot="true" add_on="true" component_size="3,214" session_protocol_number="0x78" session_id="0x14785236" retry="45" connect_timer="789">
       <url url="http://foo.bar/none"/>
-      <compatibility_descriptor>
-        <descriptor descriptor_type="0x02" specifier_type="0x03" specifier_data="0x00000004" model="0x0005" version="6">
-          <subdescriptor type="0x07">
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x02" specifierType="0x03" specifierData="0x00000004" model="0x0005" version="0x0006">
+          <subDescriptor subDescriptorType="0x07">
             89 AB
-          </subdescriptor>
+          </subDescriptor>
         </descriptor>
-      </compatibility_descriptor>
+      </compatibilityDescriptor>
       <private_data>
         12 34 56
       </private_data>
