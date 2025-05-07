@@ -22,7 +22,7 @@
             </lite_component>
             <lite_component component_id_tag="0x49534F40">
               <DSM_conn_binder>
-                <BIOP_tap id="0x0000" use="0x0016" association_tag="0x000A" selector_type="0x0001" transaction_id="0x80000002" timeout="0x03938700"/>
+                <Tap id="0x0000" use="0x0016" association_tag="0x000A" selector_type="0x0001" transaction_id="0x80000002" timeout="60,000,000"/>
               </DSM_conn_binder>
             </lite_component>
           </BIOP_profile_body>
@@ -34,15 +34,15 @@
     <metadata PID="200"/>
     <DII download_id="0x0000000A" block_size="0x0FE2">
       <module module_id="0x0001" module_size="0x00000085" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
-        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <Tap id="0x0000" use="0x0017" association_tag="0x000A"/>
         <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x00000126"/>
       </module>
       <module module_id="0x0002" module_size="0x0005C902" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
-        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <Tap id="0x0000" use="0x0017" association_tag="0x000A"/>
         <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x000B8991"/>
       </module>
       <module module_id="0x0003" module_size="0x0000746E" module_version="0x7D" module_timeout="0x03938700" block_timeout="0x03938700" min_block_time="0x00000000">
-        <tap id="0x0000" use="0x0017" association_tag="0x000A"/>
+        <Tap id="0x0000" use="0x0017" association_tag="0x000A"/>
         <dsmcc_compressed_module_descriptor compression_method="0x78" original_size="0x00007CCA"/>
       </module>
     </DII>
