@@ -258,3 +258,99 @@
         - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
           CRC-32: 0x00000008
 
+* DST (ATSC A/90), TID 0xCF (207), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 18 bytes
+  - Section 0:
+    Table id extension: 0xFFFF (65535)
+    SDF protocol version: 1, number of applications: 0
+
+* DST (ATSC A/90), TID 0xCF (207), PID 0x00C8 (200)
+  Version: 12, sections: 1, total size: 46 bytes
+  - Section 0:
+    Table id extension: 0xABCD (43981)
+    SDF protocol version: 75, number of applications: 0
+    Service descriptors
+    - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x00000001
+    - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x00000002
+    - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x00000003
+    - Descriptor 3: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x00000004
+    Service private data (4 bytes): DE AD BE EF
+
+* DST (ATSC A/90), TID 0xCF (207), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 192 bytes
+  - Section 0:
+    Table id extension: 0x1234 (4660)
+    SDF protocol version: 1, number of applications: 2
+    - Application #0
+      DSM-CC compatibility descriptor: 1 descriptors
+      - Descriptor #0, type: 0x01 (System Hardware descriptor)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x123456 (unknown)
+        Model: 0x0000 (0), version: 0x0000 (0)
+        Number of subdescriptors: 2
+        - Subdescriptor #0, type: 0xCD (205)
+          Additional information (5 bytes): 01 23 45 67 89
+        - Subdescriptor #1, type: 0xCD (205)
+          Additional information (4 bytes): BA DC 0F FE
+      Number of taps: 0
+    - Application #1
+      DSM-CC compatibility descriptor: 1 descriptors
+      - Descriptor #0, type: 0x02 (System Software descriptor)
+        Specifier type: 0x89 (unknown), specifier data: 0x00ABCDEF (11259375)
+        Model: 0x9ABC (39612), version: 0xCDEF (52719)
+        Number of subdescriptors: 2
+        - Subdescriptor #0, type: 0x12 (18)
+          Additional information (8 bytes): 01 23 45 67 89 AB CD EF
+        - Subdescriptor #1, type: 0x34 (52)
+      App id description: 0xA874 (43124)
+      App id (3 bytes): 25 89 63
+      Number of taps: 3
+      - Tap #0
+        Protocol encapsulation: 0x09 (Synchronized streaming IP Datagrams in PES)
+        Action type: 0x01 (Bootstrap data)
+        Resource location: 1
+        DSM-CC Tap: id: 0x1234 (4660)
+          Tap use: 0x0008 (DOWNLOAD_DATA_USE)
+          Association tag: 0x5678 (22136)
+        Tap descriptors
+        - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+          CRC-32: 0x00000005
+        - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+          CRC-32: 0x00000006
+        - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
+          CRC-32: 0x00000007
+      - Tap #1
+        Protocol encapsulation: 0x08 (Synchronous streaming multiprotocol datagrams in PES using LLC/SNAP header)
+        Action type: 0x00 (Run-time data)
+        Resource location: 0
+        DSM-CC Tap: id: 0x5678 (22136)
+          Tap use: 0x0007 (DOWNLOAD_CTRL_DOWN_USE)
+          Association tag: 0x9ABC (39612)
+          Selector type: 0x0001 (1)
+          Transaction id: 0x12345678 (305419896), timeout: 600 microseconds
+        Tap descriptors
+        - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+          CRC-32: 0x00000008
+      - Tap #2
+        Protocol encapsulation: 0x09 (Synchronized streaming IP Datagrams in PES)
+        Action type: 0x01 (Bootstrap data)
+        Resource location: 1
+        DSM-CC Tap: id: 0x9ABC (39612)
+          Tap use: 0x0007 (DOWNLOAD_CTRL_DOWN_USE)
+          Association tag: 0x7896 (30870)
+          Selector type: 0x0002 (2)
+          Selector bytes (4 bytes): DE AD BE EF
+    Service descriptors
+    - Descriptor 0: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x00000009
+    - Descriptor 1: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x0000000A
+    - Descriptor 2: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x0000000B
+    - Descriptor 3: ATSC CRC32 (0xB5, 181), 4 bytes
+      CRC-32: 0x0000000C
+    Service private data (3 bytes): F0 0B AD
+

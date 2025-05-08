@@ -156,8 +156,8 @@
              service_type="data"
              source_id="0x8765"
              feed_id="0xCD">
-        <ATSC_CRC32_descriptor CRC_32="1"/>
-        <ATSC_CRC32_descriptor CRC_32="2"/>
+      <ATSC_CRC32_descriptor CRC_32="1"/>
+      <ATSC_CRC32_descriptor CRC_32="2"/>
     </channel>
   </SVCT>
 
@@ -187,5 +187,67 @@
       </event>
     </source>
   </AEIT>
+
+  <DST/>
+  <DST version="12" table_id_extension="0xABCD" sdf_protocol_version="75">
+    <ATSC_CRC32_descriptor CRC_32="1"/>
+    <ATSC_CRC32_descriptor CRC_32="2"/>
+    <ATSC_CRC32_descriptor CRC_32="3"/>
+    <ATSC_CRC32_descriptor CRC_32="4"/>
+    <service_private_data>
+      DEAD BEEF
+    </service_private_data>
+  </DST>
+  <DST table_id_extension="0x1234">
+    <application>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="1" specifierData="0x123456">
+          <subDescriptor subDescriptorType="0xCD">
+            0123456789
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0xCD">
+            BAD C0FFE
+          </subDescriptor>
+        </descriptor>
+      </compatibilityDescriptor>
+    </application>
+    <application>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="2" specifierType="0x89" specifierData="0xABCDEF" model="0x9ABC" version="0xCDEF">
+          <subDescriptor subDescriptorType="0x12">
+            0123456789ABCDEF
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x34"/>
+        </descriptor>
+      </compatibilityDescriptor>
+      <app_id description="0xA874">
+        258963
+      </app_id>
+      <tap protocol_encapsulation="9" action_type="1" resource_location="true">
+        <Tap id="0x1234" use="8" association_tag="0x5678"/>
+        <ATSC_CRC32_descriptor CRC_32="5"/>
+        <ATSC_CRC32_descriptor CRC_32="6"/>
+        <ATSC_CRC32_descriptor CRC_32="7"/>
+      </tap>
+      <tap protocol_encapsulation="8" action_type="0" resource_location="false">
+        <Tap id="0x5678" use="7" association_tag="0x9ABC" selector_type="1" transaction_id="0x12345678" timeout="600"/>
+        <ATSC_CRC32_descriptor CRC_32="8"/>
+      </tap>
+      <tap protocol_encapsulation="9" action_type="1" resource_location="true">
+        <Tap id="0x9ABC" use="7" association_tag="0x7896" selector_type="2">
+          <selector_bytes>
+            DEAD BEEF
+          </selector_bytes>
+        </Tap>
+      </tap>
+    </application>
+    <ATSC_CRC32_descriptor CRC_32="9"/>
+    <ATSC_CRC32_descriptor CRC_32="10"/>
+    <ATSC_CRC32_descriptor CRC_32="11"/>
+    <ATSC_CRC32_descriptor CRC_32="12"/>
+    <service_private_data>
+      F00 BAD
+    </service_private_data>
+  </DST>
 
 </tsduck>

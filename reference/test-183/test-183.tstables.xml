@@ -159,4 +159,69 @@
       </event>
     </source>
   </AEIT>
+  <DST version="0" table_id_extension="0xFFFF" sdf_protocol_version="1">
+    <metadata PID="200"/>
+  </DST>
+  <DST version="12" table_id_extension="0xABCD" sdf_protocol_version="75">
+    <metadata PID="200"/>
+    <ATSC_CRC32_descriptor CRC_32="0x00000001"/>
+    <ATSC_CRC32_descriptor CRC_32="0x00000002"/>
+    <ATSC_CRC32_descriptor CRC_32="0x00000003"/>
+    <ATSC_CRC32_descriptor CRC_32="0x00000004"/>
+    <service_private_data>
+      DE AD BE EF
+    </service_private_data>
+  </DST>
+  <DST version="0" table_id_extension="0x1234" sdf_protocol_version="1">
+    <metadata PID="200"/>
+    <application>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x01" specifierType="0x01" specifierData="0x00123456" model="0x0000" version="0x0000">
+          <subDescriptor subDescriptorType="0xCD">
+            01 23 45 67 89
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0xCD">
+            BA DC 0F FE
+          </subDescriptor>
+        </descriptor>
+      </compatibilityDescriptor>
+    </application>
+    <application>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x02" specifierType="0x89" specifierData="0x00ABCDEF" model="0x9ABC" version="0xCDEF">
+          <subDescriptor subDescriptorType="0x12">
+            01 23 45 67 89 AB CD EF
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x34"/>
+        </descriptor>
+      </compatibilityDescriptor>
+      <app_id description="0xA874">
+        25 89 63
+      </app_id>
+      <tap protocol_encapsulation="0x09" action_type="0x01" resource_location="true">
+        <Tap id="0x1234" use="0x0008" association_tag="0x5678"/>
+        <ATSC_CRC32_descriptor CRC_32="0x00000005"/>
+        <ATSC_CRC32_descriptor CRC_32="0x00000006"/>
+        <ATSC_CRC32_descriptor CRC_32="0x00000007"/>
+      </tap>
+      <tap protocol_encapsulation="0x08" action_type="0x00" resource_location="false">
+        <Tap id="0x5678" use="0x0007" association_tag="0x9ABC" selector_type="0x0001" transaction_id="0x12345678" timeout="600"/>
+        <ATSC_CRC32_descriptor CRC_32="0x00000008"/>
+      </tap>
+      <tap protocol_encapsulation="0x09" action_type="0x01" resource_location="true">
+        <Tap id="0x9ABC" use="0x0007" association_tag="0x7896" selector_type="0x0002">
+          <selector_bytes>
+            DE AD BE EF
+          </selector_bytes>
+        </Tap>
+      </tap>
+    </application>
+    <ATSC_CRC32_descriptor CRC_32="0x00000009"/>
+    <ATSC_CRC32_descriptor CRC_32="0x0000000A"/>
+    <ATSC_CRC32_descriptor CRC_32="0x0000000B"/>
+    <ATSC_CRC32_descriptor CRC_32="0x0000000C"/>
+    <service_private_data>
+      F0 0B AD
+    </service_private_data>
+  </DST>
 </tsduck>

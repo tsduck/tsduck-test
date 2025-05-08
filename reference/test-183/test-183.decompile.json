@@ -556,5 +556,213 @@
     "aeit_subtype": 0,
     "mgt_tag": 2,
     "version": 0
+  },
+  {
+    "#name": "DST",
+    "sdf_protocol_version": 1,
+    "table_id_extension": 65535,
+    "version": 0
+  },
+  {
+    "#name": "DST",
+    "#nodes": [
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 1
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 2
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 3
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 4
+      },
+      {
+        "#name": "service_private_data",
+        "#nodes": [
+          "DE AD BE EF"
+        ]
+      }
+    ],
+    "sdf_protocol_version": 75,
+    "table_id_extension": 43981,
+    "version": 12
+  },
+  {
+    "#name": "DST",
+    "#nodes": [
+      {
+        "#name": "application",
+        "#nodes": [
+          {
+            "#name": "compatibilityDescriptor",
+            "#nodes": [
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "01 23 45 67 89"
+                    ],
+                    "subdescriptortype": 205
+                  },
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "BA DC 0F FE"
+                    ],
+                    "subdescriptortype": 205
+                  }
+                ],
+                "descriptortype": 1,
+                "model": 0,
+                "specifierdata": 1193046,
+                "specifiertype": 1,
+                "version": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "#name": "application",
+        "#nodes": [
+          {
+            "#name": "compatibilityDescriptor",
+            "#nodes": [
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "01 23 45 67 89 AB CD EF"
+                    ],
+                    "subdescriptortype": 18
+                  },
+                  {
+                    "#name": "subDescriptor",
+                    "subdescriptortype": 52
+                  }
+                ],
+                "descriptortype": 2,
+                "model": 39612,
+                "specifierdata": 11259375,
+                "specifiertype": 137,
+                "version": 52719
+              }
+            ]
+          },
+          {
+            "#name": "app_id",
+            "#nodes": [
+              "25 89 63"
+            ],
+            "description": 43124
+          },
+          {
+            "#name": "tap",
+            "#nodes": [
+              {
+                "#name": "Tap",
+                "association_tag": 22136,
+                "id": 4660,
+                "use": 8
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 5
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 6
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 7
+              }
+            ],
+            "action_type": 1,
+            "protocol_encapsulation": 9,
+            "resource_location": true
+          },
+          {
+            "#name": "tap",
+            "#nodes": [
+              {
+                "#name": "Tap",
+                "association_tag": 39612,
+                "id": 22136,
+                "selector_type": 1,
+                "timeout": 600,
+                "transaction_id": 305419896,
+                "use": 7
+              },
+              {
+                "#name": "ATSC_CRC32_descriptor",
+                "crc_32": 8
+              }
+            ],
+            "action_type": 0,
+            "protocol_encapsulation": 8,
+            "resource_location": false
+          },
+          {
+            "#name": "tap",
+            "#nodes": [
+              {
+                "#name": "Tap",
+                "#nodes": [
+                  {
+                    "#name": "selector_bytes",
+                    "#nodes": [
+                      "DE AD BE EF"
+                    ]
+                  }
+                ],
+                "association_tag": 30870,
+                "id": 39612,
+                "selector_type": 2,
+                "use": 7
+              }
+            ],
+            "action_type": 1,
+            "protocol_encapsulation": 9,
+            "resource_location": true
+          }
+        ]
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 9
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 10
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 11
+      },
+      {
+        "#name": "ATSC_CRC32_descriptor",
+        "crc_32": 12
+      },
+      {
+        "#name": "service_private_data",
+        "#nodes": [
+          "F0 0B AD"
+        ]
+      }
+    ],
+    "sdf_protocol_version": 1,
+    "table_id_extension": 4660,
+    "version": 0
   }
 ]

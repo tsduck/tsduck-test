@@ -277,7 +277,7 @@ repository. But we now limit their size to 20 MB.
 | 180  | Container table
 | 181  | Non-regression on incorrect TS with inconsistent standards (issue #1590)
 | 182  | New DVB MJD format for dates after 2038 (from BBC test streams)
-| 183  | SI analysis and conversions: additional ATSC descriptors
+| 183  | SI analysis and conversions: additional ATSC tables and descriptors
 | 184  | Plugin `eit` with EPG dump
 | 185  | DSM-CC UNM (DSI/DII) table-specific descriptors
 | 186  | Real-world SIT from NHK
