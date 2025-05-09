@@ -764,5 +764,126 @@
     "sdf_protocol_version": 1,
     "table_id_extension": 4660,
     "version": 0
+  },
+  {
+    "#name": "NRT",
+    "table_id_extension": 65535,
+    "version": 0
+  },
+  {
+    "#name": "NRT",
+    "#nodes": [
+      {
+        "#name": "resource",
+        "#nodes": [
+          {
+            "#name": "compatibilityDescriptor",
+            "#nodes": [
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "01 23 45 67 89"
+                    ],
+                    "subdescriptortype": 205
+                  },
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "BA DC 0F FE"
+                    ],
+                    "subdescriptortype": 205
+                  }
+                ],
+                "descriptortype": 1,
+                "model": 0,
+                "specifierdata": 1193046,
+                "specifiertype": 1,
+                "version": 0
+              }
+            ]
+          },
+          {
+            "#name": "dsmccResourceDescriptor",
+            "#nodes": [
+              {
+                "#name": "resourceDescriptorDataFields",
+                "#nodes": [
+                  "DE AD BE EF"
+                ]
+              }
+            ],
+            "associationtag": 39612,
+            "resourcedatafieldcount": 2,
+            "resourcedescriptortype": 65535,
+            "resourceflags": 165,
+            "resourcenum": 22136,
+            "resourcerequestid": 4660,
+            "resourcestatus": 90,
+            "typeownerid": 9843288,
+            "typeownervalue": 1341522
+          }
+        ]
+      },
+      {
+        "#name": "resource",
+        "#nodes": [
+          {
+            "#name": "compatibilityDescriptor",
+            "#nodes": [
+              {
+                "#name": "descriptor",
+                "#nodes": [
+                  {
+                    "#name": "subDescriptor",
+                    "#nodes": [
+                      "01 23 45 67 89 AB CD EF"
+                    ],
+                    "subdescriptortype": 18
+                  },
+                  {
+                    "#name": "subDescriptor",
+                    "subdescriptortype": 52
+                  }
+                ],
+                "descriptortype": 2,
+                "model": 39612,
+                "specifierdata": 11259375,
+                "specifiertype": 137,
+                "version": 52719
+              }
+            ]
+          },
+          {
+            "#name": "dsmccResourceDescriptor",
+            "#nodes": [
+              {
+                "#name": "resourceDescriptorDataFields",
+                "#nodes": [
+                  "01 23 45 67 89 AB CD EF"
+                ]
+              }
+            ],
+            "associationtag": 4660,
+            "resourcedatafieldcount": 7,
+            "resourcedescriptortype": 8,
+            "resourceflags": 18,
+            "resourcenum": 43981,
+            "resourcerequestid": 4660,
+            "resourcestatus": 52
+          }
+        ]
+      },
+      {
+        "#name": "private_data",
+        "#nodes": [
+          "14 78 52 36 90"
+        ]
+      }
+    ],
+    "table_id_extension": 25923,
+    "version": 11
   }
 ]

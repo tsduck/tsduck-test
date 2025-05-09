@@ -224,4 +224,45 @@
       F0 0B AD
     </service_private_data>
   </DST>
+  <NRT version="0" table_id_extension="0xFFFF">
+    <metadata PID="200"/>
+  </NRT>
+  <NRT version="11" table_id_extension="0x6543">
+    <metadata PID="200"/>
+    <resource>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x01" specifierType="0x01" specifierData="0x00123456" model="0x0000" version="0x0000">
+          <subDescriptor subDescriptorType="0xCD">
+            01 23 45 67 89
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0xCD">
+            BA DC 0F FE
+          </subDescriptor>
+        </descriptor>
+      </compatibilityDescriptor>
+      <dsmccResourceDescriptor resourceRequestId="0x1234" resourceDescriptorType="0xFFFF" resourceNum="0x5678" associationTag="0x9ABC" resourceFlags="0xA5" resourceStatus="0x5A" resourceDataFieldCount="2" typeOwnerId="0x00963258" typeOwnerValue="0x00147852">
+        <resourceDescriptorDataFields>
+          DE AD BE EF
+        </resourceDescriptorDataFields>
+      </dsmccResourceDescriptor>
+    </resource>
+    <resource>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="0x02" specifierType="0x89" specifierData="0x00ABCDEF" model="0x9ABC" version="0xCDEF">
+          <subDescriptor subDescriptorType="0x12">
+            01 23 45 67 89 AB CD EF
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x34"/>
+        </descriptor>
+      </compatibilityDescriptor>
+      <dsmccResourceDescriptor resourceRequestId="0x1234" resourceDescriptorType="0x0008" resourceNum="0xABCD" associationTag="0x1234" resourceFlags="0x12" resourceStatus="0x34" resourceDataFieldCount="7">
+        <resourceDescriptorDataFields>
+          01 23 45 67 89 AB CD EF
+        </resourceDescriptorDataFields>
+      </dsmccResourceDescriptor>
+    </resource>
+    <private_data>
+      14 78 52 36 90
+    </private_data>
+  </NRT>
 </tsduck>

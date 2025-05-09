@@ -250,4 +250,59 @@
     </service_private_data>
   </DST>
 
+  <NRT/>
+  <NRT version="11" table_id_extension="0x6543">
+    <resource>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="1" specifierData="0x123456">
+          <subDescriptor subDescriptorType="0xCD">
+            0123456789
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0xCD">
+            BAD C0FFE
+          </subDescriptor>
+        </descriptor>
+      </compatibilityDescriptor>
+      <dsmccResourceDescriptor
+          resourceRequestId="0x1234"
+          resourceDescriptorType="0xFFFF"
+          resourceNum="0x5678"
+          associationTag="0x9ABC"
+          resourceFlags="0xA5"
+          resourceStatus="0x5A"
+          resourceDataFieldCount="2"
+          typeOwnerId="0x963258"
+          typeOwnerValue="0x147852">
+        <resourceDescriptorDataFields>
+          DEAD BEEF
+        </resourceDescriptorDataFields>
+      </dsmccResourceDescriptor>
+    </resource>
+    <resource>
+      <compatibilityDescriptor>
+        <descriptor descriptorType="2" specifierType="0x89" specifierData="0xABCDEF" model="0x9ABC" version="0xCDEF">
+          <subDescriptor subDescriptorType="0x12">
+            0123456789ABCDEF
+          </subDescriptor>
+          <subDescriptor subDescriptorType="0x34"/>
+        </descriptor>
+      </compatibilityDescriptor>
+      <dsmccResourceDescriptor
+          resourceRequestId="0x1234"
+          resourceDescriptorType="8"
+          resourceNum="0xABCD"
+          associationTag="0x1234"
+          resourceFlags="0x12"
+          resourceStatus="0x34"
+          resourceDataFieldCount="7">
+        <resourceDescriptorDataFields>
+          0123456789ABCDEF
+        </resourceDescriptorDataFields>
+      </dsmccResourceDescriptor>
+    </resource>
+    <private_data>
+      1478523690
+    </private_data>
+  </NRT>
+
 </tsduck>
