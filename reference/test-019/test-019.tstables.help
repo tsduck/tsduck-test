@@ -104,6 +104,9 @@ Options:
       instance) are ignored. Typically, such sections are stuffing and can be
       ignored that way.
 
+  --dump-psi-repository
+      Dump the internal state of the PSI repository. This is a debug function.
+
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally
       automatically detected from their signalization. This option is only
@@ -191,6 +194,12 @@ Options:
       initially formatted as XML and automated XML-to-JSON conversion is
       applied. To output the JSON text on the standard output, explicitly
       specify this option with "-" as output file name.
+
+  --list-descriptors
+      List all supported PSI/SI descriptors.
+
+  --list-tables
+      List all supported PSI/SI tables.
 
   --local-udp address
       With --ip-udp, when the destination is a multicast address, specify the
