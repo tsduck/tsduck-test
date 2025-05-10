@@ -1932,7 +1932,7 @@ Sous-titres pour sourds et malentendants disponibles pour ce programme"
       Language: fre
 
 * EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
-  Section: 1 (last: 1), version: 27, size: 319 bytes
+  Section: 1 (last: 1), version: 27, size: 314 bytes
   Service Id: 0x0A04 (2564)
   TS Id: 0x000A (10)
   Original Network Id: 0x20FA (8442)
@@ -1943,7 +1943,7 @@ Sous-titres pour sourds et malentendants disponibles pour ce programme"
     Duration: 00:58:23
     Running status: not running
     CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 209 bytes
+    - Descriptor 0: Short Event (0x4D, 77), 204 bytes
       Language: fre
       Event name: "mecanos express : avion legendaire"
       Description: "nos amis sont confrontés à un défi majeur. michael manousakis veut traverser l'atlantique et se rendre aux etats-unis à bord de son vieil avion militaire l´antonov."
@@ -5439,6 +5439,56 @@ Episode : 2 / 20"
       Language: fre
       Description: "Malentendant"
 
+* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
+  Section: 1 (last: 1), version: 21, size: 550 bytes
+  Service Id: 0x0401 (1025)
+  TS Id: 0x0004 (4)
+  Original Network Id: 0x20FA (8442)
+  Segment last section: 0x01 (1)
+  Last Table Id: 0x4F (79), EIT p/f Other
+  - Event Id: 0x0031 (49)
+    Start UTC: 2019/01/22 12:55:00
+    Duration: 02:00:00
+    Running status: not running
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 24 bytes
+      Language: fre
+      Event name: "La perle de l'amour"
+      Description: ""
+    - Descriptor 1: Extended Event (0x4E, 78), 251 bytes
+      Descriptor number: 0, last: 1
+      Language: fre
+      Text: "Alex, photographe pour un magazine de voyage, et Colin, auteur d´un roman à succès, font équipe à la recherche d´une perle bleue légendaire aux îles Fidji. Alors que leurs deux carrières sont en jeu, cette chasse au trésor pourrait bien les ame"
+    - Descriptor 2: Extended Event (0x4E, 78), 56 bytes
+      Descriptor number: 1, last: 1
+      Language: fre
+      Text: "ner à trouver le seul trésor qui compte vraiment."
+    - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
+      Country code: fra, rating: 0x00 (undefined)
+    - Descriptor 4: Content (0x54, 84), 4 bytes
+      Content: 0x10 (movie/drama (general)) / User: 0x00
+      Content: 0x12 (adventure/western/war) / User: 0x00
+    - Descriptor 5: Component (0x50, 80), 42 bytes
+      Content/type: 0xF50B (H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz)
+      Component tag: 0x01 (1)
+      Language: fre
+      Description: "video, 16:9 without pan vector, 25Hz"
+    - Descriptor 6: Component (0x50, 80), 23 bytes
+      Content/type: 0xF4C5 (Enhanced AC-3, full, complete main, multichannel > 5.1)
+      Component tag: 0x02 (2)
+      Language: fre
+      Description: "multi-channel 5.1"
+    - Descriptor 7: Component (0x50, 80), 12 bytes
+      Content/type: 0xF4C2 (Enhanced AC-3, full, complete main, 2 channels)
+      Component tag: 0x04 (4)
+      Language: qaa
+      Description: "stereo"
+    - Descriptor 8: Component (0x50, 80), 86 bytes
+      Content/type: 0xF324 (DVB subtitles for hard of hearing, high definition)
+      Component tag: 0x05 (5)
+      Language: fre
+      Description: "DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor"
+
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
   Section: 0 (last: 1), version: 4, size: 353 bytes
   Service Id: 0x0111 (273)
@@ -5713,65 +5763,4 @@ Episode : 2 / 20"
       Component tag: 0x05 (5)
       Language: fre
       Description: "Malentendant"
-
-* EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 25, size: 188 bytes
-  Service Id: 0x0170 (368)
-  TS Id: 0x0001 (1)
-  Original Network Id: 0x20FA (8442)
-  Segment last section: 0x01 (1)
-  Last Table Id: 0x4E (78), EIT p/f Actual
-  - Event Id: 0x0003 (3)
-    Start UTC: 2019/01/22 11:00:00
-    Duration: 03:00:00
-    Running status: running
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 41 bytes
-      Language: fre
-      Event name: "Paris Express"
-      Description: "Magazine d'information."
-    - Descriptor 1: Extended Event (0x4E, 78), 77 bytes
-      Descriptor number: 0, last: 0
-      Language: fre
-      Text: "L'info francilienne en images et en continu, actualisée en permanence."
-    - Descriptor 2: Content (0x54, 84), 2 bytes
-      Content: 0x22 (news magazine) / User: 0x00
-    - Descriptor 3: Parental Rating (0x55, 85), 4 bytes
-      Country code: fra, rating: 0x00 (undefined)
-    - Descriptor 4: Component (0x50, 80), 16 bytes
-      Content/type: 0xF203 (MPEG-1 Layer 2 audio, stereo (2 channel))
-      Component tag: 0x02 (2)
-      Language: fre
-      Description: "AudioTrack"
-    - Descriptor 5: Component (0x50, 80), 6 bytes
-      Content/type: 0xF101 (MPEG-2 video, 4:3 aspect ratio, 25 Hz)
-      Component tag: 0x01 (1)
-      Language: fre
-
-* EIT p/f Other, TID 0x4F (79), PID 0x0012 (18)
-  Section: 1 (last: 1), version: 13, size: 198 bytes
-  Service Id: 0x0606 (1542)
-  TS Id: 0x0006 (6)
-  Original Network Id: 0x20FA (8442)
-  Segment last section: 0x01 (1)
-  Last Table Id: 0x4F (79), EIT p/f Other
-  - Event Id: 0x6103 (24835)
-    Start UTC: 2019/01/22 12:55:00
-    Duration: 00:55:00
-    Running status: not running
-    CA mode: free
-    - Descriptor 0: Short Event (0x4D, 77), 160 bytes
-      Language: fre
-      Event name: "Les experts. "Tout feu,..."
-      Description: "Les experts. "Tout feu, tout flamme" Série (USA). Un homme accusé de meurtre implore Grissom de l'aider à prouver son innocence."
-    - Descriptor 1: Parental Rating (0x55, 85), 4 bytes
-      Country code: FRA, rating: 0x00 (undefined)
-
-* EIT schedule Actual, TID 0x50 (80), PID 0x0012 (18)
-  Section: 0 (last: 120), version: 29, size: 18 bytes
-  Service Id: 0x0106 (262)
-  TS Id: 0x0001 (1)
-  Original Network Id: 0x20FA (8442)
-  Segment last section: 0x00 (0)
-  Last Table Id: 0x50 (80), EIT schedule Actual
 
