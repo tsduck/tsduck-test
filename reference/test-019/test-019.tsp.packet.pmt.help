@@ -187,10 +187,15 @@ Options:
       Remove the component with the specified PID's from the PMT. Several
       --remove-pid options may be specified to remove several components.
 
-  --remove-stream-type value[-value]
+  --remove-stream-type value1[-value2]
       Remove all components with a stream type matching the specified value (or
       in the specified range of values). Several --remove-stream-type options
       may be specified.
+
+  --remove-with-registration value1[-value2]
+      Remove all components with a registration descriptor containing the
+      specified value (or in the specified range of values). Several
+      --remove-with-registration options may be specified.
 
   -s name-or-id
   --service name-or-id
