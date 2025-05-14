@@ -43,7 +43,7 @@ PACKET_PLUGINS=(
     fork fuzz history identify inject ip isdbinfo limit merge mpe mpeinject mux nit nitscan pat
     pattern pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes pidshift
     pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
-    sifilter skip slice spliceinject splicemonitor stats stuffanalyze
+    sifilter skip slice spliceinject splicemonitor splicerestamp stats stuffanalyze
     svremove svrename svresync t2mi tables teletext time timeref timeshift
     trace trigger tsrename until zap
 )
