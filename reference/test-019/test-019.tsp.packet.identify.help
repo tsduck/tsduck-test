@@ -44,6 +44,11 @@ Options:
   --pmt
       Identify all PID's carrying PMT's.
 
+  --registration value1[-value2]
+      Identify all PID's with a registration descriptor in the PMT containing
+      the specified value (or in the specified range of values). Several
+      options --registration are allowed.
+
   --scte-35
       Identify all PID's carrying SCTE-35 splice commands.
 
