@@ -23,6 +23,11 @@ Options:
       does not contain enough null packets to absorb the encapsulation
       overhead.
 
+  -l label1[-label2]
+  --label label1[-label2]
+      Encapsulate packets with the specified labels. Several --label options
+      may be specified.
+
   -m value
   --max-buffered-packets value
       Specify the maximum number of buffered packets. The buffered packets are
@@ -70,8 +75,9 @@ Options:
       Offset used in Synchronous PES mode encapsulation. The value (positive or
       negative) is added to the current PCR to generate the PTS timestamp
       inserted in the PES header. The recommended values are between -90000 and
-      +90000 (1 second). It requires to use the PCR option (--pcr-pid). The
-      value 0 is equivalent to use the Asynchronous PES encapsulation.
+      +90000 (1 second). It requires to use the PCR option (--pcr-pid or
+      --pcr-label). The value 0 is equivalent to use the Asynchronous PES
+      encapsulation.
 
   -p pid1[-pid2]
   --pid pid1[-pid2]
