@@ -1,0 +1,80 @@
+
+Encapsulate packets from several PID's into one single PID
+
+Usage: tsp -P encap [options]
+
+Options:
+
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
+  --help
+      Display this help text.
+
+  -i
+  --ignore-errors
+      Ignore errors such as PID conflict or packet overflow. By default, a PID
+      conflict is reported when the output PID is already present on input but
+      not encapsulated. A packet overflow is reported when the input stream
+      does not contain enough null packets to absorb the encapsulation
+      overhead.
+
+  -m value
+  --max-buffered-packets value
+      Specify the maximum number of buffered packets. The buffered packets are
+      produced by the encapsulation overhead. An overflow is usually caused by
+      insufficient null packets in the input stream. The default is 1,024
+      packets.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
+
+  -o value
+  --output-pid value
+      Specify the output PID containing all encapsulated PID's. This is a
+      mandatory parameter, there is no default. The null PID 0x1FFF cannot be
+      the output PID.
+
+  --pack[=value]
+      Emit outer packets when they are full only. By default, emit outer
+      packets as soon as possible, when null packets are available on input.
+      With the default behavior, inner packets are decapsulated with a better
+      time accuracy, at the expense of a higher bitrate of the outer PID when
+      there are many null packets in input. You can limit the distance between
+      packets adding a positive value. With a 0 value the distance is disabled
+      (=unlimited). The value 1 is equivalent to not use the pack mode.
+
+  --pcr-label value
+      Specify a label for reference packets containing PCR's. The output PID
+      will contain PCR's, based on the same clock. By default, the output PID
+      does not contain any PCR.
+
+  --pcr-pid value
+      Specify a reference PID containing PCR's. The output PID will contain
+      PCR's, based on the same clock. By default, the output PID does not
+      contain any PCR.
+
+  --pes-mode mode
+      Enable PES mode encapsulation.
+      The 'mode' must be one of "disabled", "fixed", "variable".
+
+  --pes-offset value
+      Offset used in Synchronous PES mode encapsulation. The value (positive or
+      negative) is added to the current PCR to generate the PTS timestamp
+      inserted in the PES header. The recommended values are between -90000 and
+      +90000 (1 second). It requires to use the PCR option (--pcr-pid). The
+      value 0 is equivalent to use the Asynchronous PES encapsulation.
+
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Specify an input PID or range of PID's to encapsulate. Several --pid
+      options can be specified. The null PID 0x1FFF cannot be encapsulated.
+
