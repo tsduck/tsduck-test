@@ -286,3 +286,4 @@ repository. But we now limit their size to 20 MB.
 | 189  | Option `--fix-missing-pds` in `tstabcomp`
 | 190  | Multi-section real-world SES Astra SGT
 | 191  | Encoding order of DVB character sets
+| 192  | SI analysis and conversions: SMPTE descriptors
