@@ -26,9 +26,7 @@ tspid=$!
 
 $(tspath tsdump) \
     --ip-udp $OUTPORT1 --local-address $LOCALHOST --no-pager --ascii --no-header --max-packets 1 \
-    >"$OUTDIR/$SCRIPT.tsdump.1.log" 2>&1 &
-
-sleep 0.5
+    >"$OUTDIR/$SCRIPT.tsdump.1.log" 2>&1
 
 $(tspath tspcontrol) --tsp $CONTROL1 exit \
     >"$OUTDIR/$SCRIPT.exit.1.log" 2>&1
@@ -53,9 +51,7 @@ tspid=$!
 
 $(tspath tsdump) \
     --ip-udp $OUTPORT2 --local-address $LOCALHOST --no-pager --ascii --no-header --max-packets 1 \
-    >"$OUTDIR/$SCRIPT.tsdump.2.log" 2>&1 &
-
-sleep 0.5
+    >"$OUTDIR/$SCRIPT.tsdump.2.log" 2>&1
 
 $(tspath tspcontrol) --tsp $CONTROL2 exit \
     >"$OUTDIR/$SCRIPT.exit.2.log" 2>&1
@@ -80,9 +76,7 @@ tspid=$!
 
 $(tspath tsdump) \
     --ip-udp $OUTPORT3 --local-address $LOCALHOST --no-pager --ascii --no-header --max-packets 1 \
-    >"$OUTDIR/$SCRIPT.tsdump.3.log" 2>&1 &
-
-sleep 0.5
+    >"$OUTDIR/$SCRIPT.tsdump.3.log" 2>&1
 
 $(tspath tspcontrol) --tsp $CONTROL3 exit \
     >"$OUTDIR/$SCRIPT.exit.3.log" 2>&1
