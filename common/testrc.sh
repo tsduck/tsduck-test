@@ -300,6 +300,7 @@ case $OS in
     windows)
         PYTHON=python
         JAVA=java
+        JAVA_FLAGS=
         JAVAC=javac
         JAVAP=javap
         JAR=jar
@@ -307,6 +308,7 @@ case $OS in
     *)
         PYTHON=$(which python3 2>/dev/null)
         JAVA=$("$TSDUCKDIR/scripts/java-config.sh" --java)
+        JAVA_FLAGS=$("$TSDUCKDIR/scripts/java-config.sh" --jflags)
         JAVAC=$("$TSDUCKDIR/scripts/java-config.sh" --javac)
         JAVAP=$("$TSDUCKDIR/scripts/java-config.sh" --bin)/javap
         JAR=$("$TSDUCKDIR/scripts/java-config.sh" --jar)

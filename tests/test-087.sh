@@ -31,7 +31,7 @@ test_text $SCRIPT.version.log
 
 test_text $SCRIPT.javac.log
 
-"$JAVA" Test087 $(fpath "$INFILE") $(fpath "$OUTFILE") >"$OUTDIR/$SCRIPT.java.log" 2>&1
+"$JAVA" $JAVA_FLAGS Test087 $(fpath "$INFILE") $(fpath "$OUTFILE") >"$OUTDIR/$SCRIPT.java.log" 2>&1
 
 test_text $SCRIPT.java.log
 
