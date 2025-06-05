@@ -70,6 +70,10 @@ Options:
       default, if no packet is found in a PID during 60 seconds, the PID is
       considered as suspended.
 
+  --tag 'string'
+      Leading tag to be displayed with each message. Useful when the plugin is
+      used several times in the same process.
+
   -t
   --time-all
       Report all TDT and TOT. By default, only report TDT preceeding another

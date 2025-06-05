@@ -32,7 +32,8 @@ Options:
   -m milliseconds
   --milli-seconds milliseconds
       Stop the specified number of milli-seconds after receiving the first
-      packet.
+      packet. By default, this is wall-clock time (real time). See also option
+      --pcr-based.
 
   -n value
   --null-sequence-count value
@@ -50,9 +51,15 @@ Options:
   --packets value
       Stop after the specified number of packets.
 
+  --pcr-based
+      With --seconds or --milli-seconds, use playout time based on PCR values.
+      By default, the time is based on the wall-clock time (real time).
+
   -s seconds
   --seconds seconds
-      Stop the specified number of seconds after receiving the first packet.
+      Stop the specified number of seconds after receiving the first packet. By
+      default, this is wall-clock time (real time). See also option
+      --pcr-based.
 
   -u value
   --unit-start-count value
