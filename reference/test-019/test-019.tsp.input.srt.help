@@ -22,12 +22,13 @@ Options:
       remote address (or host name) and UDP port. If --listener is also
       specified, the SRT socket works in rendezvous mode.
 
-  --conn-timeout value
-      Connect timeout. SRT cannot connect for RTT > 1500 msec (2 handshake
-      exchanges) with the default connect timeout of 3 seconds. This option
-      applies to the caller and rendezvous connection modes. The connect
-      timeout is 10 times the value set for the rendezvous mode (which can be
-      used as a workaround for this connection problem with earlier versions).
+  --conn-timeout milliseconds
+      Connect timeout, in milliseconds. SRT cannot connect for RTT > 1500 msec
+      (2 handshake exchanges) with the default connect timeout of 3 seconds.
+      This option applies to the caller and rendezvous connection modes. The
+      connect timeout is 10 times the value set for the rendezvous mode (which
+      can be used as a workaround for this connection problem with earlier
+      versions).
 
   -d seconds
   --display-interval seconds
@@ -158,6 +159,10 @@ Options:
       to be mistaken with the size of the UDP payload or SRT payload - this
       size is the size of the IP packet, including the UDP and SRT headers.
 
+  -m
+  --multiple
+      When the sender peer disconnects, wait for another one and continue.
+
   --nakreport
       When this option is specified, the receiver will send UMSG_LOSSREPORT
       messages periodically until the lost packet is retransmitted or
@@ -212,6 +217,9 @@ Options:
 
   --rendezvous [address:]port
       Local address and port. This is a legacy option, now use --listener.
+
+  --restart-delay milliseconds
+      With --multiple, wait the specified delay before restarting.
 
   --rs204
       Specify that all packets are in 204-byte format. By default, the input
