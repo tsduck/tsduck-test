@@ -1,0 +1,84 @@
+
+Send live TS metrics to InfluxDB, a data source for Grafana
+
+Usage: tsp -P influx [options]
+
+Options:
+
+  -c value
+  --active-config value
+      Config name to use in the InfluxDB CLI configurations file. By default,
+      use the environment variable INFLUX_ACTIVE_CONFIG, then look for the
+      active configuration in the configuration file, or the first
+      configuration if none is marked as active.
+
+  -b name
+  --bucket name
+      Name of the InfluxDB bucket. By default, use the environment variable
+      INFLUX_BUCKET_NAME.
+
+  --bucket-id id
+      Identifier of the InfluxDB bucket. The 'id' must be a 16-character value.
+      By default, use the environment variable INFLUX_BUCKET_ID. Only one of
+      --bucket and --bucket-id shall be specified.
+
+  --configs-path file-name
+      Path to the InfluxDB CLI configurations file. By default, use the
+      environment variable INFLUX_CONFIGS_PATH, then $HOME/.influxdbv2/configs.
+
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
+  --help
+      Display this help text.
+
+  -h name
+  --host-url name
+      Host name or URL of the InfluxDB server. If a host name is used instead
+      of a URL, http: is assumed. By default, use the environment variable
+      INFLUX_HOST, then the InfluxDB CLI configuration file.
+
+  -i seconds
+  --interval seconds
+      Interval in seconds between metrics reports to InfluxDB. The default is
+      one second.
+
+  --local-time
+      Transmit timestamps as local time, based on the current system
+      configuration. By default, timestamps are transmitted as UTC time.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
+
+  -o name
+  --org name
+      Name of the InfluxDB organization. By default, use the environment
+      variable INFLUX_ORG, then the InfluxDB CLI configuration file.
+
+  --org-id id
+      Identifier of the InfluxDB organization. The 'id' must be a 16-character
+      value. By default, use the environment variable INFLUX_ORG_ID. Only one
+      of --org and --org-id shall be specified.
+
+  --pcr-based
+      Use playout time based on PCR values. By default, the time is based on
+      the wall-clock time (real time).
+
+  --start-time year/month/day:hour:minute:second
+      With --pcr-based, specify the initial date & time reference. By default,
+      with --pcr-based, the activity starts at the first UTC time which is
+      found in a DVB TDT or ATSC STT.
+
+  -t string
+  --token string
+      Token to authenticate InfluxDB requests. By default, use the environment
+      variable INFLUX_TOKEN, then the InfluxDB CLI configuration file.
+
