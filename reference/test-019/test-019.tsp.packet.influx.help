@@ -12,6 +12,10 @@ Options:
       active configuration in the configuration file, or the first
       configuration if none is marked as active.
 
+  -a
+  --all-pids
+      Send bitrate monitoring data for all PID's. Equivalent to --pid 0-8191.
+
   -b name
   --bucket name
       Name of the InfluxDB bucket. By default, use the environment variable
@@ -44,12 +48,17 @@ Options:
 
   -i seconds
   --interval seconds
-      Interval in seconds between metrics reports to InfluxDB. The default is
-      one second.
+      Interval in seconds between metrics reports to InfluxDB. The default is 5
+      seconds.
 
   --local-time
       Transmit timestamps as local time, based on the current system
       configuration. By default, timestamps are transmitted as UTC time.
+
+  -n
+  --names
+      With --services, the services are identified in InfluxDB by their name,
+      when available.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
@@ -72,6 +81,17 @@ Options:
       Use playout time based on PCR values. By default, the time is based on
       the wall-clock time (real time).
 
+  -p pid1[-pid2]
+  --pid pid1[-pid2]
+      Send bitrate monitoring data for the specified PID's. The PID's are
+      identified in InfluxDB by their value in decimal. Several -p or --pid
+      options may be specified.
+
+  -s
+  --services
+      Send bitrate monitoring data for services. The services are identified in
+      InfluxDB by their id in decimal.
+
   --start-time year/month/day:hour:minute:second
       With --pcr-based, specify the initial date & time reference. By default,
       with --pcr-based, the activity starts at the first UTC time which is
@@ -81,4 +101,9 @@ Options:
   --token string
       Token to authenticate InfluxDB requests. By default, use the environment
       variable INFLUX_TOKEN, then the InfluxDB CLI configuration file.
+
+  --type
+      Send bitrate monitoring for types of PID's. The types are identified in
+      InfluxDB as "audio", "data", "ecm", "emm", "pcr", "psi", "stuffing",
+      "subtitles", "undefined", "video".
 
