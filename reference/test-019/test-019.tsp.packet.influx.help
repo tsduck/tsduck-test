@@ -87,6 +87,12 @@ Options:
       identified in InfluxDB by their value in decimal. Several -p or --pid
       options may be specified.
 
+  --queue-size count
+      Maximum number of queued metrics between the plugin thread and the
+      communication thread with InfluxDB. With --pcr-based, on off-line streams
+      which are processed at high speed, increase this value if some metrics
+      are lost. The default queue size is 10 messages.
+
   -s
   --services
       Send bitrate monitoring data for services. The services are identified in
