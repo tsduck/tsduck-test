@@ -287,3 +287,4 @@ repository. But we now limit their size to 20 MB.
 | 190  | Multi-section real-world SES Astra SGT
 | 191  | Encoding order of DVB character sets
 | 192  | SI analysis and conversions: SMPTE descriptors
+| 193  | Plugin `influx`

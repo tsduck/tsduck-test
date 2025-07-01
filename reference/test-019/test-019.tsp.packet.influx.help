@@ -55,6 +55,10 @@ Options:
       Transmit timestamps as local time, based on the current system
       configuration. By default, timestamps are transmitted as UTC time.
 
+  --max-metrics count
+      Stop after sending that number of metrics. This is a test option. Never
+      stop by default.
+
   -n
   --names
       With --services, the services are identified in InfluxDB by their name,
