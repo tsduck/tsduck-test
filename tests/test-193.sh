@@ -8,6 +8,7 @@ INFILE="$INDIR/test-001.ts"
 INFLUX_PORT=47852
 
 $(tspath tsdebug) server :$INFLUX_PORT --max-clients 3 \
+    --sort-headers --hide-header Connection --hide-header Cache-Control \
     >"$OUTDIR/$SCRIPT.server.log" 2>&1 &
 
 server_pid=$!
