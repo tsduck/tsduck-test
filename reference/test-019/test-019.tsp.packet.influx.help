@@ -120,6 +120,11 @@ Options:
       Token to authenticate InfluxDB requests. By default, use the environment
       variable INFLUX_TOKEN, then the InfluxDB CLI configuration file.
 
+  --tr-101-290
+      Send error counters as defined by ETSI TR 101 290. This plugin can detect
+      a subset of ETSI TR 101 290 only: all transport stream logical checks are
+      performed but physical checks on modulation cannot be reported.
+
   --type
       Send bitrate monitoring for types of PID's. The types are identified in
       InfluxDB as "audio", "data", "ecm", "emm", "pcr", "psi", "stuffing",
