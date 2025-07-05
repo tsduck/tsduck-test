@@ -93,9 +93,10 @@ Options:
 
   --queue-size count
       Maximum number of queued metrics between the plugin thread and the
-      communication thread with InfluxDB. With --pcr-based, on off-line streams
-      which are processed at high speed, increase this value if some metrics
-      are lost. The default queue size is 10 messages.
+      communication thread with InfluxDB. With --pcr-based or
+      --timestamp-based, on off-line streams which are processed at high speed,
+      increase this value if some metrics are lost. The default queue size is
+      10 messages.
 
   -s
   --services
@@ -103,9 +104,16 @@ Options:
       InfluxDB by their id in decimal.
 
   --start-time year/month/day:hour:minute:second
-      With --pcr-based, specify the initial date & time reference. By default,
-      with --pcr-based, the activity starts at the first UTC time which is
-      found in a DVB TDT or ATSC STT.
+      With --pcr-based or --timestamp-based, specify the initial date & time
+      reference. By default, with --pcr-based or --timestamp-based, the
+      activity starts at the first UTC time which is found in a DVB TDT or ATSC
+      STT.
+
+  --timestamp-based
+      Use playout time based on timestamp values from the input plugin. When
+      input timestamps are not available or not monotonic, fallback to
+      --pcr-based. By default, the time is based on the wall-clock time (real
+      time).
 
   -t string
   --token string
