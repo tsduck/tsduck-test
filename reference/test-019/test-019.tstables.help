@@ -253,13 +253,14 @@ Options:
 
   -m
   --multiple-files
-      Create multiple binary output files, one per section. A binary output
-      file name must be specified (option -b or --binary-output). Assuming that
-      the specified file name has the form 'base.ext', each file is created
-      with the name 'base_pXXXX_tXX.ext' for short sections and
-      'base_pXXXX_tXX_eXXXX_vXX_sXX.ext' for long sections, where the XX
-      specify the hexadecimal values of the PID, TID (table id), TIDext (table
-      id extension), version and section index.
+      Create multiple output files, one per table for XML and JSON files, one
+      per section for binary files. Assuming that the specified file name has
+      the form 'base.ext', each file is created with the name 'base_pXXXX_tXX.
+      ext' for short sections and 'base_pXXXX_tXX_eXXXX_vXX_sXX.ext' for binary
+      long sections, where the XX specify the hexadecimal values of the PID,
+      TID (table id), TIDext (table id extension), version and section index.
+      The file name is 'base_pXXXX_tXX_eXXXX_vXX.ext' for XML or JSON long
+      sections.
 
   --nagravision
       Equivalent to --default-cas-id 0x1800.
