@@ -405,8 +405,10 @@ Options:
       35", "auto".
 
   --satellite-number value
-      Used for satellite tuners only. Satellite/dish number. Must be 0 to 3
-      with DiSEqC switches and 0 to 1 fornon-DiSEqC switches. The default is 0.
+      Used for satellite tuners only. Satellite/dish number. Must be 0 to 63
+      with DiSEqC switches and 0 to 1 for non-DiSEqC switches. The default is
+      0. If you have cascaded switches, it is assumed that the DiSEqC 1.1
+      switch is nearest to the receiver.
 
   --save-channels filename
       Save the description of all channels in the specified XML file. If the
