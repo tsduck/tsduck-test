@@ -480,6 +480,12 @@ Options:
       an --offset-count option. The UHF frequency layout depends on the region,
       see --hf-band-region option.
 
+  --unicable value
+      Used for satellite tuners only, in local Unicable distribution networks.
+      Description of the Unicable switch. The value is of the form: <version>,
+      <userband slot>,<userband frequency in MHz>. Version 1 indicates EN50494
+      (Unicable I), version 2 indicates EN50607 (Unicable II).
+
   --update-channels filename
       Update the description of all channels in the specified XML file. The
       content of each scanned transport stream is replaced in the file. If the
