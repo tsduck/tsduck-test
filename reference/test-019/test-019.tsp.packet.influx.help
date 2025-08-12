@@ -14,7 +14,12 @@ Options:
 
   -a
   --all-pids
-      Send bitrate monitoring data for all PID's. Equivalent to --pid 0-8191.
+      Send bitrate or PCR/PTS/DTS monitoring data for all PID's. Equivalent to
+      --pid 0-8191.
+
+  --bitrate
+      Send bitrate monitoring data. This is the default. This option is only
+      useful when any of --pcr, --pts, --dts, --tr-101-290 are also set.
 
   -b name
   --bucket name
@@ -29,6 +34,10 @@ Options:
   --configs-path file-name
       Path to the InfluxDB CLI configurations file. By default, use the
       environment variable INFLUX_CONFIGS_PATH, then $HOME/.influxdbv2/configs.
+
+  --dts
+      Send the last DTS value in a set of PID and/or services. Also specify at
+      least one of --pid, --all-pids, --services.
 
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
@@ -87,15 +96,23 @@ Options:
       value. By default, use the environment variable INFLUX_ORG_ID. Only one
       of --org and --org-id shall be specified.
 
+  --pcr
+      Send the last PCR value in a set of PID and/or services. Also specify at
+      least one of --pid, --all-pids, --services.
+
   --pcr-based
       Use playout time based on PCR values. By default, the time is based on
       the wall-clock time (real time).
 
   -p pid1[-pid2]
   --pid pid1[-pid2]
-      Send bitrate monitoring data for the specified PID's. The PID's are
-      identified in InfluxDB by their value in decimal. Several -p or --pid
-      options may be specified.
+      Send bitrate or PCR/PTS/DTS monitoring data for the specified PID's. The
+      PID's are identified in InfluxDB by their value in decimal. Several -p or
+      --pid options may be specified.
+
+  --pts
+      Send the last PTS value in a set of PID and/or services. Also specify at
+      least one of --pid, --all-pids, --services.
 
   --queue-size count
       Maximum number of queued metrics between the plugin thread and the
@@ -106,8 +123,8 @@ Options:
 
   -s
   --services
-      Send bitrate monitoring data for services. The services are identified in
-      InfluxDB by their id in decimal.
+      Send bitrate or PCR/PTS/DTS monitoring data for services. The services
+      are identified in InfluxDB by their id in decimal.
 
   --start-time year/month/day:hour:minute:second
       With --pcr-based or --timestamp-based, specify the initial date & time
