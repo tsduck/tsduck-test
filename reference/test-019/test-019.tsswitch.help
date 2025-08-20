@@ -149,6 +149,39 @@ Options:
       an optional address is specified, it must be a local IP address of the
       system. By default, there is no remote control.
 
+  --remote-certificate-path name
+      With --remote-tls, path to the certificate for the remote control. The
+      default value is the value of environment variable
+      TSDUCK_TLS_CERTIFICATE.
+      On UNIX systems, this is the path name of the certificate file in PEM
+      format.
+      On Windows, this is the name of a certificate in the user or system
+      store.
+
+  --remote-key-path name
+      With --remote-tls, path to the private key for the remote control. The
+      default value is the value of environment variable TSDUCK_TLS_KEY.
+      On UNIX systems, this is the path name of the private key file in PEM
+      format.
+      On Windows, the private key is retrieved with the certificate and this
+      parameter is unused.
+
+  --remote-store name
+      With --remote-tls, path to the certificate store for the remote control.
+      The default value is the value of environment variable TSDUCK_TLS_STORE.
+      On Windows, the possible values are "system" (Cert:\LocalMachine\My) and
+      "user" (Cert:\CurrentUser\My). The default is "user".
+      On UNIX systems, this parameter is unused.
+
+  --remote-tls
+      The remote control uses SSL/TLS. In that case, a server certificate is
+      required. By default, use unencrypted communications.
+
+  --remote-token string
+      Optional authentication token that clients are required to provide to the
+      remote control. The default value is the value of environment variable
+      TSDUCK_TOKEN. For security reasons, use only with --remote-tls.
+
   -s
   --synchronous-log
       Each logged message is guaranteed to be displayed, synchronously, without
