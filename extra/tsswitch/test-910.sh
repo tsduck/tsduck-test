@@ -5,20 +5,21 @@
 
 source $(dirname "$0")/../../common/testrc.sh
 
+CONTROL_PORT=5260
+PORT_IN_1=5261
+PORT_IN_2=5262
+PORT_OUT=5263
+TOKEN=Test-Token
+
 if [[ $1 == tls ]]; then
     USE_TLS=true
-    REMOTE_OPTS="--remote-tls"
+    REMOTE_OPTS="--remote-tls --remote-token $TOKEN"
     source "$COMMONDIR/setup-tls-certificate.sh"
 else
     USE_TLS=false
     REMOTE_OPTS=
 fi
 echo "==== Using TLS control port: $USE_TLS"
-
-CONTROL_PORT=5260
-PORT_IN_1=5261
-PORT_IN_2=5262
-PORT_OUT=5263
 
 # Run input sources in the background.
 $(tspath tsp) -b 1,000,000 -I craft --pid 100 -P regulate -O ip -e $LOCALHOST:$PORT_IN_1 &
@@ -48,7 +49,7 @@ for cmd in ${commands[*]}; do
     sleep 4
     echo "==== Sending command \"$cmd\""
     if $USE_TLS; then
-        curl https://$LOCALHOST:$CONTROL_PORT/$cmd --silent --insecure
+        curl -sSk -H "Authorization: Token $TOKEN" https://$LOCALHOST:$CONTROL_PORT/$cmd
     else
         echo >/dev/udp/127.0.0.1/$CONTROL_PORT $cmd
     fi
