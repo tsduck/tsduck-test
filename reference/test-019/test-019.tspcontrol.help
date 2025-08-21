@@ -17,12 +17,23 @@ Options:
   --help
       Display this help text.
 
-  -t [ip-address:]port
-  --tsp [ip-address:]port
+  --insecure
+      With --tls, do not verify the TLS server's certificate. Use with care
+      because it opens the door the man-in-the-middle attacks.
+
+  --tls
+      Connect to the tsp process using SSL/TLS. By default, use unencrypted
+      communications.
+
+  --token string
+      Authentication token for the tsp process, if required. The default value
+      is the value of environment variable TSDUCK_TOKEN.
+
+  -t ip-address:port
+  --tsp ip-address:port
       Specify the IP address (or host name) and port where the tsp process
-      expects control commands (tsp option --control-port). If the IP address
-      is omitted, the local host is used. This is a required parameter, there
-      is no default.
+      expects control commands (tsp option --control). This is a required
+      parameter, there is no default.
 
   -v
   --verbose

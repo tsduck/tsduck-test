@@ -64,14 +64,34 @@ Options:
   --conax
       Equivalent to --default-cas-id 0x0B00.
 
+  --control [ip-address:]port
+      Specify the TCP port on which tsp listens for control commands. The
+      optional address must be a local interface address to restrict the
+      reception of control commands on this interface only. If unspecified, no
+      control commands are expected.
+
+  --control-certificate-path name
+      With --control-tls, path to the certificate for the control port. The
+      default value is the value of environment variable
+      TSDUCK_TLS_CERTIFICATE.
+      On UNIX systems, this is the path name of the certificate file in PEM
+      format.
+      On Windows, this is the name of a certificate in the user or system
+      store.
+
+  --control-key-path name
+      With --control-tls, path to the private key for the control port. The
+      default value is the value of environment variable TSDUCK_TLS_KEY.
+      On UNIX systems, this is the path name of the private key file in PEM
+      format.
+      On Windows, the private key is retrieved with the certificate and this
+      parameter is unused.
+
   --control-local ip-address
-      Specify the IP address of the local interface on which to listen for
-      control commands. It can be also a host name that translates to a local
-      address. By default, listen on all local interfaces.
+      Legacy option, superseded by --control.
 
   --control-port value
-      Specify the TCP port on which tsp listens for control commands. If
-      unspecified, no control commands are expected.
+      Legacy option, superseded by --control.
 
   --control-reuse-port
       Set the 'reuse port' socket option on the control TCP server port. This
@@ -80,12 +100,29 @@ Options:
 
   --control-source ip-address
       Specify a remote IP address which is allowed to send control commands. By
-      default, as a security precaution, only the local host is allowed to
-      connect. Several --control-source options are allowed.
+      default, as a security precaution, without --control-tls and
+      --control-token, only the local host is allowed to connect. Several
+      --control-source options are allowed.
+
+  --control-store name
+      With --control-tls, path to the certificate store for the control port.
+      The default value is the value of environment variable TSDUCK_TLS_STORE.
+      On Windows, the possible values are "system" (Cert:\LocalMachine\My) and
+      "user" (Cert:\CurrentUser\My). The default is "user".
+      On UNIX systems, this parameter is unused.
 
   --control-timeout milliseconds
       Specify the reception timeout for control commands. The default timeout
       is 5,000 ms.
+
+  --control-tls
+      The control port uses SSL/TLS. In that case, a server certificate is
+      required. By default, use unencrypted communications.
+
+  --control-token string
+      Optional authentication token that clients are required to provide to the
+      control port. The default value is the value of environment variable
+      TSDUCK_TOKEN. For security reasons, use only with --control-tls.
 
   -d[level]
   --debug[=level]
