@@ -29,11 +29,12 @@ Options:
       Authentication token for the tsp process, if required. The default value
       is the value of environment variable TSDUCK_TOKEN.
 
-  -t ip-address:port
-  --tsp ip-address:port
+  -t [ip-address:]port
+  --tsp [ip-address:]port
       Specify the IP address (or host name) and port where the tsp process
-      expects control commands (tsp option --control). This is a required
-      parameter, there is no default.
+      expects control commands (tsp option --control). If the IP address is
+      omitted, the local host is used. This is a required parameter, there is
+      no default.
 
   -v
   --verbose
