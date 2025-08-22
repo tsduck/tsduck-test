@@ -8,6 +8,26 @@
 
 if [[ $OS != windows ]]; then
 
+    # Handle a special case on GiHub macOS runners.
+    if [[ $OS == mac ]]; then
+        # On 2025, with runner macos-latest, identified as "macos-14-arm64 Version: 20250818.1747",
+        # Homebrew provides openssl@3. However, for some weird reasons, "/opt/homebrew/bin/openssl version"
+        # displays "OpenSSL 1.1.1w  11 Sep 2023". OpenSSL commands fail because of parameters which are not
+        # supported in 1.1. Trying to "brew install openssl@3" fails because HomeBrew says it is already
+        # installed. However, "brew reinstall openssl@3" correctly reinstalls OpenSSL 3.
+        if openssl version | grep -qi 'OpenSSL 1'; then
+            echo "=== Inconsistent OpenSSL version detected"
+            echo "openssl command: $(which openssl)"
+            echo "openssl version: $(openssl version)"
+            ls -l $(which openssl)
+            echo "reinstalling openssl@3"
+            brew reinstall openssl@3
+            echo "openssl command: $(which openssl)"
+            echo "openssl version: $(openssl version)"
+            ls -l $(which openssl)
+        fi
+    fi
+
     # On UNIX systems, certificates are created by OpenSSL.
     CERTFILE="$TMPDIR/test_cert.pem"
     KEYFILE="$TMPDIR/test_key.pem"
