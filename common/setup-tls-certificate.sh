@@ -13,9 +13,13 @@ if [[ $OS != windows ]]; then
     KEYFILE="$TMPDIR/test_key.pem"
 
     # Create the certificate if it does not exist.
+    # The command "openssl req" outputs a lot of garbage when creating the key.
+    # The option -quiet suppresses it but it is not supported in older versions of openssl.
+    # So, we remove it the hard way, trying to preserve potential error messages.
     if [[ ! -f "$CERTFILE" || ! -f "$KEYFILE" ]]; then
-        openssl req -quiet -newkey rsa:3072 -new -noenc -x509 -subj="/CN=$(hostname)" \
-                -days 3650 -keyout "$KEYFILE" -out "$CERTFILE"
+        openssl req -newkey rsa:3072 -new -noenc -x509 -subj="/CN=$(hostname)" \
+                -days 3650 -keyout "$KEYFILE" -out "$CERTFILE" \
+                2>&1 | grep -v -e '\.\.\.\.' -e '^--*$'
     fi
 
     export TSDUCK_TLS_CERTIFICATE="$CERTFILE"
