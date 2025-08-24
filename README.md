@@ -1,4 +1,4 @@
-[15~## TSDuck Test Suite
+## TSDuck Test Suite
 
 ### TSDuck tests
 
