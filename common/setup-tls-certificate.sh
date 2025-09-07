@@ -36,8 +36,9 @@ if [[ $OS != windows ]]; then
     # The command "openssl req" outputs a lot of garbage when creating the key.
     # The option -quiet suppresses it but it is not supported in older versions of openssl.
     # So, we remove it the hard way, trying to preserve potential error messages.
+    # Additionally, CN names are limited to 64 characters in OpenSSL.
     if [[ ! -f "$CERTFILE" || ! -f "$KEYFILE" ]]; then
-        openssl req -newkey rsa:3072 -new -noenc -x509 -subj="/CN=$(hostname)" \
+        openssl req -newkey rsa:3072 -new -noenc -x509 -subj="/CN=$(hostname | cut -c 1-62)" \
                 -days 3650 -keyout "$KEYFILE" -out "$CERTFILE" \
                 2>&1 | grep -v -e '\.\.\.\.' -e '^--*$'
     fi
