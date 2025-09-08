@@ -130,8 +130,8 @@ Options:
   -o filename
   --output filename
       Specify the name of the output file (standard output by default). An
-      output file is produced only if --patch, --reformat or --json are
-      specified.
+      output file is produced only if at least one of --patch, --reformat,
+      --json, --yaml is specified.
 
   -p filename
   --patch filename
@@ -210,4 +210,8 @@ Options:
       output file. The optional string parameter specifies a prefix to prepend
       on the log line before the XML text to locate the appropriate line in the
       logs.
+
+  -y
+  --yaml
+      Convert the XML content to YAML (experimental).
 
