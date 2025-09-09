@@ -1,0 +1,658 @@
+%YAML 1.2
+---
+- "#name": SDT
+  "#nodes": 
+  - "#name": metadata
+    pid: 17
+  - "#name": service
+    "#nodes": 
+    - "#name": service_descriptor
+      service_name: M6
+      service_provider_name: Multi4
+      service_type: 0x19
+    ca_mode: false
+    eit_present_following: true
+    eit_schedule: true
+    running_status: running
+    service_id: 0x0401
+  - "#name": service
+    "#nodes": 
+    - "#name": service_descriptor
+      service_name: W9
+      service_provider_name: Multi4
+      service_type: 0x19
+    ca_mode: false
+    eit_present_following: true
+    eit_schedule: true
+    running_status: running
+    service_id: 0x0402
+  - "#name": service
+    "#nodes": 
+    - "#name": service_descriptor
+      service_name: Arte
+      service_provider_name: Multi4
+      service_type: 0x19
+    ca_mode: false
+    eit_present_following: true
+    eit_schedule: true
+    running_status: running
+    service_id: 0x0407
+  - "#name": service
+    "#nodes": 
+    - "#name": service_descriptor
+      service_name: France 5
+      service_provider_name: Multi4
+      service_type: 0x19
+    ca_mode: false
+    eit_present_following: true
+    eit_schedule: true
+    running_status: running
+    service_id: 0x0415
+  - "#name": service
+    "#nodes": 
+    - "#name": service_descriptor
+      service_name: 6ter
+      service_provider_name: Multi4
+      service_type: 0x19
+    ca_mode: false
+    eit_present_following: true
+    eit_schedule: true
+    running_status: running
+    service_id: 0x0416
+  actual: true
+  current: true
+  original_network_id: 0x20FA
+  transport_stream_id: 0x0004
+  version: 16
+- "#name": NIT
+  "#nodes": 
+  - "#name": metadata
+    pid: 16
+  - "#name": network_name_descriptor
+    network_name: F
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 2
+        service_id: 0x0101
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 14
+        service_id: 0x0104
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 19
+        service_id: 0x0105
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 27
+        service_id: 0x0106
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0113
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0115
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0119
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x011A
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0111
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0112
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x011F
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0120
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 3
+        service_id: 0x0124
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 33
+        service_id: 0x0143
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 33
+        service_id: 0x0144
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 30
+        service_id: 0x0170
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 31
+        service_id: 0x0171
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 32
+        service_id: 0x0172
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 33
+        service_id: 0x0173
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 34
+        service_id: 0x0174
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 35
+        service_id: 0x0175
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 36
+        service_id: 0x0176
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 37
+        service_id: 0x0177
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 38
+        service_id: 0x0178
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 32
+        service_id: 0x0145
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 32
+        service_id: 0x0146
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0101
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0104
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0105
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0106
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0113
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0115
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0119
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x011A
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0111
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0112
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x011F
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0120
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0124
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0143
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0144
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0170
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0171
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0172
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0173
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0174
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0175
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0176
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0177
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0178
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0145
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0146
+        service_type: 0x01
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0001
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 8
+        service_id: 0x0201
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 15
+        service_id: 0x0203
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 16
+        service_id: 0x0204
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 17
+        service_id: 0x0205
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 18
+        service_id: 0x0206
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0201
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0203
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0204
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0205
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0206
+        service_type: 0x19
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0002
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 4
+        service_id: 0x0301
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 43
+        service_id: 0x0302
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 42
+        service_id: 0x0303
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 45
+        service_id: 0x0304
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 26
+        service_id: 0x0308
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 41
+        service_id: 0x0309
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0301
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0302
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0303
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0304
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0308
+        service_type: 0x16
+      - "#name": service
+        service_id: 0x0309
+        service_type: 0x16
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0003
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 6
+        service_id: 0x0401
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 9
+        service_id: 0x0402
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 7
+        service_id: 0x0407
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 5
+        service_id: 0x0415
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 22
+        service_id: 0x0416
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0401
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0402
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0407
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0415
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0416
+        service_type: 0x19
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0004
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 1
+        service_id: 0x0601
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 12
+        service_id: 0x0602
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 10
+        service_id: 0x0606
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 11
+        service_id: 0x0608
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 13
+        service_id: 0x0609
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0601
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0602
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0606
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0608
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0609
+        service_type: 0x19
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0006
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/32
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 34
+        service_id: 0x0805
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 36
+        service_id: 0x0807
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 30
+        service_id: 0x0801
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 31
+        service_id: 0x0802
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 32
+        service_id: 0x0803
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 33
+        service_id: 0x0804
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 32
+        service_id: 0x0883
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0805
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0807
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0801
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0802
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0803
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0804
+        service_type: 0x01
+      - "#name": service
+        service_id: 0x0883
+        service_type: 0x01
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x0008
+  - "#name": transport_stream
+    "#nodes": 
+    - "#name": terrestrial_delivery_system_descriptor
+      bandwidth: 8MHz
+      centre_frequency: 0
+      code_rate_hp_stream: 0x05
+      code_rate_lp_stream: 3/4
+      constellation: 64-QAM
+      guard_interval: 1/8
+      hierarchy_information: 0
+      no_mpe_fec: true
+      no_time_slicing: true
+      other_frequency: false
+      priority: HP
+      transmission_mode: 8k
+    - "#name": private_data_specifier_descriptor
+      private_data_specifier: EACEM
+    - "#name": eacem_logical_channel_number_descriptor
+      "#nodes": 
+      - "#name": service
+        logical_channel_number: 20
+        service_id: 0x0A01
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 25
+        service_id: 0x0A03
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 21
+        service_id: 0x0A02
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 24
+        service_id: 0x0A04
+        visible_service: true
+      - "#name": service
+        logical_channel_number: 23
+        service_id: 0x0A05
+        visible_service: true
+    - "#name": service_list_descriptor
+      "#nodes": 
+      - "#name": service
+        service_id: 0x0A01
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0A03
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0A02
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0A04
+        service_type: 0x19
+      - "#name": service
+        service_id: 0x0A05
+        service_type: 0x19
+    original_network_id: 0x20FA
+    preferred_section: 0
+    transport_stream_id: 0x000A
+  actual: true
+  current: true
+  network_id: 0x20FA
+  version: 30
+...

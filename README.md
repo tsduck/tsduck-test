@@ -289,3 +289,4 @@ repository. But we now limit their size to 20 MB.
 | 192  | SI analysis and conversions: SMPTE descriptors
 | 193  | Plugin `influx`
 | 194  | `tsp` and `tspcontrol` with TLS control port
+| 195  | YAML output of `tsxml`
