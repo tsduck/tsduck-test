@@ -6,7 +6,7 @@ test_cleanup "$SCRIPT.*"
 
 for n in 1 2 3; do
 
-    $(tspath tsxml) $(fpath "$INDIR/$SCRIPT.$n.xml") \
+    $(tspath tsxml) --tables $(fpath "$INDIR/$SCRIPT.$n.xml") \
         --yaml --output $(fpath "$OUTDIR/$SCRIPT.$n.yml") \
         >"$OUTDIR/$SCRIPT.$n.log" 2>&1
 
