@@ -264,13 +264,13 @@ Options:
       Specify the maximum number of packets to be processed before flushing
       them to the next processor or the output. When the processing time is
       high and some packets are lost, try decreasing this value. The default is
-      10,000 packets in offline mode and 1,000 in real-time mode.
+      10,000 packets in offline mode and 7 in real-time mode.
 
   --max-input-packets value
       Specify the maximum number of packets to be received at a time from the
       input plug-in. By default, in offline mode, tsp reads as many packets as
       it can, depending on the free space in the buffer. In real-time mode, the
-      default is 1,000 packets.
+      default is 7 packets.
 
   --max-output-packets value
       Specify the maximum number of packets to be sent at a time by the output
