@@ -132,6 +132,11 @@ Options:
       activity starts at the first UTC time which is found in a DVB TDT or ATSC
       STT.
 
+  --tag name=value
+      Add the specified tag, with the specified value, to all metrics which are
+      sent to InfluxDB. This can be used to identify a source of metrics and
+      filter it using InfluxDB queries. Several --tag options may be specified.
+
   --timestamp-based
       Use playout time based on timestamp values from the input plugin. When
       input timestamps are not available or not monotonic, fallback to
