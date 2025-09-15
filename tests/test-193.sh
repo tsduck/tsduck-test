@@ -31,6 +31,7 @@ influx_test()
     test_text $SCRIPT.tsp.$name.log
 }
 
-influx_test bitrate  "--all-pids --services --names --type"
-influx_test pcr      "--pid 200-250 --services --names --pcr --pts --dts"
-influx_test ts101290 "--tr-101-290"
+influx_test bitrate     "--all-pids --services --names --type"
+influx_test pcr         "--pid 200-250 --services --names --pcr --pts --dts"
+influx_test tr101290    "--tr-101-290"
+influx_test alltr101290 "--tr-101-290 --all-pids --services --names --max-severity 3"

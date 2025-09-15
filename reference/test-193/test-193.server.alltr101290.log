@@ -1,0 +1,529 @@
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 6696
+Content-Type: text/plain; charset=utf-8
+Host: localhost:47852
+User-Agent: tsduck
+==== Request data (6696 bytes):
+bitrate,scope=ts,tsid=1080 value=47787227 1752496499010
+counter,name=ts_sync_loss,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=sync_byte_error,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pat_error,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pat_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=continuity_count_error,severity=1,scope=ts,tsid=1080 value=26 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+ value=3 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ DECALE value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ CINEMA value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SPORT value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ FAMILY value=3 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SERIES value=3 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FRISSON value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FAMIZ value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ CLASSIC value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CNEWS value=3 1752496499010
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=global value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=18 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=110 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=122 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=210 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=310 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=321 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=410 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=510 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=522 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=610 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=621 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=710 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=810 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=910 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1010 value=2 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1021 value=1 1752496499010
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5193 value=1 1752496499010
+counter,name=pmt_error,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pmt_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pid_error,severity=1,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=transport_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=crc_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=crc_error_2,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pcr_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pcr_repetition_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pcr_accuracy_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=pts_error,severity=2,scope=ts,tsid=1080 value=1 1752496499010
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=1 1752496499010
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=642 value=1 1752496499010
+counter,name=cat_error,severity=2,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=nit_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=nit_actual_error,severity=3,scope=ts,tsid=1080 value=2 1752496499010
+counter,name=nit_actual_error,severity=3,scope=service,tsid=1080,service=global value=2 1752496499010
+counter,name=nit_actual_error,severity=3,scope=pid,tsid=1080,pid=16 value=2 1752496499010
+counter,name=nit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=si_repetition_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=si_pid_error,severity=3,scope=ts,tsid=1080 value=65 1752496499010
+counter,name=si_pid_error,severity=3,scope=service,tsid=1080,service=global value=65 1752496499010
+counter,name=si_pid_error,severity=3,scope=pid,tsid=1080,pid=3017 value=65 1752496499010
+counter,name=buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=unreferenced_pid,severity=3,scope=ts,tsid=1080 value=1 1752496499010
+counter,name=unreferenced_pid,severity=3,scope=service,tsid=1080,service=global value=1 1752496499010
+counter,name=unreferenced_pid,severity=3,scope=pid,tsid=1080,pid=3017 value=1 1752496499010
+counter,name=sdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=sdt_actual_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=sdt_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=eit_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=eit_actual_error,severity=3,scope=ts,tsid=1080 value=16 1752496499010
+counter,name=eit_actual_error,severity=3,scope=service,tsid=1080,service=global value=16 1752496499010
+counter,name=eit_actual_error,severity=3,scope=pid,tsid=1080,pid=18 value=16 1752496499010
+counter,name=eit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=eit_pf_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=rst_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=tdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=empty_buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+counter,name=data_delay_error,severity=3,scope=ts,tsid=1080 value=0 1752496499010
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 20180
+Content-Type: text/plain; charset=utf-8
+Host: localhost:47852
+User-Agent: tsduck
+==== Request data (20180 bytes):
+bitrate,scope=ts,tsid=1080 value=47827200 1752496502031
+counter,name=ts_sync_loss,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=sync_byte_error,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pat_error,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pat_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=continuity_count_error,severity=1,scope=ts,tsid=1080 value=129 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+ value=11 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ DECALE value=6 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ CINEMA value=10 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SPORT value=9 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ FAMILY value=13 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SERIES value=12 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FRISSON value=10 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FAMIZ value=10 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ CLASSIC value=13 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CNEWS value=5 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=DATASYSTEM value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=global value=29 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=0 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=16 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=17 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=18 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=100 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=110 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=121 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=122 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=123 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=176 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=180 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=182 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=187 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=200 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=210 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=221 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=222 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=243 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=300 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=310 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=321 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=322 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=343 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=376 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=380 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=382 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=387 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=400 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=410 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=421 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=422 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=471 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=480 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=482 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=487 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=500 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=510 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=521 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=522 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=542 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=566 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=571 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=576 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=580 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=582 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=587 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=600 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=610 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=621 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=622 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=642 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=666 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=677 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=680 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=682 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=687 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=700 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=710 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=721 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=722 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=765 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=777 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=780 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=781 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=782 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=800 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=810 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=821 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=822 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=843 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=876 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=880 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=881 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=882 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=900 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=910 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=921 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=922 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=943 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=965 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=971 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=976 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=977 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=980 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=981 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=982 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1000 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1010 value=3 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1021 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=3017 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=4005 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=4099 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5193 value=2 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5701 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5703 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5710 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5725 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5770 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5772 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5775 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5776 value=1 1752496502031
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5785 value=1 1752496502031
+counter,name=pmt_error,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pmt_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pid_error,severity=1,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=transport_error,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=crc_error,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=crc_error_2,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pcr_error,severity=2,scope=ts,tsid=1080 value=10 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+ value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SPORT value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ FRISSON value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CNEWS value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=110 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=210 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=310 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=410 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=510 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=610 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=710 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=810 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=910 value=1 1752496502031
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=1010 value=1 1752496502031
+counter,name=pcr_repetition_error,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=ts,tsid=1080 value=10 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+ value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SPORT value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ FRISSON value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CNEWS value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=110 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=210 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=310 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=410 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=510 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=610 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=710 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=810 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=910 value=1 1752496502031
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=1010 value=1 1752496502031
+counter,name=pcr_accuracy_error,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=pts_error,severity=2,scope=ts,tsid=1080 value=7 1752496502031
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496502031
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496502031
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=3 1752496502031
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496502031
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=243 value=1 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=343 value=1 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=642 value=2 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=643 value=1 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=843 value=1 1752496502031
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=943 value=1 1752496502031
+counter,name=cat_error,severity=2,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=nit_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=nit_actual_error,severity=3,scope=ts,tsid=1080 value=1 1752496502031
+counter,name=nit_actual_error,severity=3,scope=service,tsid=1080,service=global value=1 1752496502031
+counter,name=nit_actual_error,severity=3,scope=pid,tsid=1080,pid=16 value=1 1752496502031
+counter,name=nit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=si_repetition_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=si_pid_error,severity=3,scope=ts,tsid=1080 value=65 1752496502031
+counter,name=si_pid_error,severity=3,scope=service,tsid=1080,service=global value=65 1752496502031
+counter,name=si_pid_error,severity=3,scope=pid,tsid=1080,pid=3017 value=65 1752496502031
+counter,name=buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=unreferenced_pid,severity=3,scope=ts,tsid=1080 value=1 1752496502031
+counter,name=unreferenced_pid,severity=3,scope=service,tsid=1080,service=global value=1 1752496502031
+counter,name=unreferenced_pid,severity=3,scope=pid,tsid=1080,pid=3017 value=1 1752496502031
+counter,name=sdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=sdt_actual_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=sdt_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=eit_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=eit_actual_error,severity=3,scope=ts,tsid=1080 value=18 1752496502031
+counter,name=eit_actual_error,severity=3,scope=service,tsid=1080,service=global value=18 1752496502031
+counter,name=eit_actual_error,severity=3,scope=pid,tsid=1080,pid=18 value=18 1752496502031
+counter,name=eit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=eit_pf_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=rst_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=tdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=empty_buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+counter,name=data_delay_error,severity=3,scope=ts,tsid=1080 value=0 1752496502031
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 20930
+Content-Type: text/plain; charset=utf-8
+Host: localhost:47852
+User-Agent: tsduck
+==== Request data (20930 bytes):
+bitrate,scope=ts,tsid=1080 value=47790419 1752496505017
+counter,name=ts_sync_loss,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=sync_byte_error,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pat_error,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pat_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=continuity_count_error,severity=1,scope=ts,tsid=1080 value=132 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+ value=11 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ DECALE value=6 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ CINEMA value=10 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SPORT value=9 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ FAMILY value=14 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CANAL+\ SERIES value=12 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FRISSON value=11 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ FAMIZ value=10 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CINE+\ CLASSIC value=14 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=CNEWS value=5 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=DATASYSTEM value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=service,tsid=1080,service=global value=29 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=0 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=16 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=17 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=18 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=100 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=110 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=121 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=122 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=123 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=176 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=180 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=182 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=187 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=200 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=210 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=221 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=222 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=243 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=300 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=310 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=321 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=322 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=343 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=376 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=380 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=382 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=387 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=400 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=410 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=421 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=422 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=471 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=480 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=482 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=487 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=500 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=510 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=521 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=522 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=542 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=543 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=566 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=571 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=576 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=580 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=582 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=587 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=600 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=610 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=621 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=622 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=642 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=666 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=677 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=680 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=682 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=687 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=700 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=710 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=721 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=722 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=742 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=765 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=777 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=780 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=781 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=782 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=800 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=810 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=821 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=822 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=843 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=876 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=880 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=881 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=882 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=900 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=910 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=921 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=922 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=942 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=943 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=965 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=971 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=976 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=977 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=980 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=981 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=982 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1000 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1010 value=3 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=1021 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=3017 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=4005 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=4099 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5193 value=2 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5701 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5703 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5710 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5725 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5770 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5772 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5775 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5776 value=1 1752496505017
+counter,name=continuity_count_error,severity=1,scope=pid,tsid=1080,pid=5785 value=1 1752496505017
+counter,name=pmt_error,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pmt_error_2,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pid_error,severity=1,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=transport_error,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=crc_error,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=crc_error_2,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pcr_error,severity=2,scope=ts,tsid=1080 value=10 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+ value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SPORT value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ FRISSON value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=service,tsid=1080,service=CNEWS value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=110 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=210 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=310 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=410 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=510 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=610 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=710 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=810 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=910 value=1 1752496505017
+counter,name=pcr_error,severity=2,scope=pid,tsid=1080,pid=1010 value=1 1752496505017
+counter,name=pcr_repetition_error,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=ts,tsid=1080 value=10 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+ value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SPORT value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ FRISSON value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=service,tsid=1080,service=CNEWS value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=110 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=210 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=310 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=410 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=510 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=610 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=710 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=810 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=910 value=1 1752496505017
+counter,name=pcr_discontinuity_indicator_error,severity=2,scope=pid,tsid=1080,pid=1010 value=1 1752496505017
+counter,name=pcr_accuracy_error,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=pts_error,severity=2,scope=ts,tsid=1080 value=10 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ DECALE value=1 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ FAMILY value=2 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CANAL+\ SERIES value=3 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CINE+\ FRISSON value=1 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1 1752496505017
+counter,name=pts_error,severity=2,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=243 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=343 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=542 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=543 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=642 value=2 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=643 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=742 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=843 value=1 1752496505017
+counter,name=pts_error,severity=2,scope=pid,tsid=1080,pid=942 value=1 1752496505017
+counter,name=cat_error,severity=2,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=nit_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=nit_actual_error,severity=3,scope=ts,tsid=1080 value=2 1752496505017
+counter,name=nit_actual_error,severity=3,scope=service,tsid=1080,service=global value=2 1752496505017
+counter,name=nit_actual_error,severity=3,scope=pid,tsid=1080,pid=16 value=2 1752496505017
+counter,name=nit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=si_repetition_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=si_pid_error,severity=3,scope=ts,tsid=1080 value=65 1752496505017
+counter,name=si_pid_error,severity=3,scope=service,tsid=1080,service=global value=65 1752496505017
+counter,name=si_pid_error,severity=3,scope=pid,tsid=1080,pid=3017 value=65 1752496505017
+counter,name=buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=unreferenced_pid,severity=3,scope=ts,tsid=1080 value=1 1752496505017
+counter,name=unreferenced_pid,severity=3,scope=service,tsid=1080,service=global value=1 1752496505017
+counter,name=unreferenced_pid,severity=3,scope=pid,tsid=1080,pid=3017 value=1 1752496505017
+counter,name=sdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=sdt_actual_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=sdt_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=eit_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=eit_actual_error,severity=3,scope=ts,tsid=1080 value=18 1752496505017
+counter,name=eit_actual_error,severity=3,scope=service,tsid=1080,service=global value=18 1752496505017
+counter,name=eit_actual_error,severity=3,scope=pid,tsid=1080,pid=18 value=18 1752496505017
+counter,name=eit_other_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=eit_pf_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=rst_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=tdt_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=empty_buffer_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017
+counter,name=data_delay_error,severity=3,scope=ts,tsid=1080 value=0 1752496505017

@@ -14,8 +14,7 @@ Options:
 
   -a
   --all-pids
-      Send bitrate or PCR/PTS/DTS monitoring data for all PID's. Equivalent to
-      --pid 0-8191.
+      Send metrics data for all PID's. Equivalent to --pid 0-8191.
 
   --bitrate
       Send bitrate monitoring data. This is the default. This option is only
@@ -106,9 +105,9 @@ Options:
 
   -p pid1[-pid2]
   --pid pid1[-pid2]
-      Send bitrate or PCR/PTS/DTS monitoring data for the specified PID's. The
-      PID's are identified in InfluxDB by their value in decimal. Several -p or
-      --pid options may be specified.
+      Send metrics data for the specified PID's. The PID's are identified in
+      InfluxDB by their value in decimal. Several -p or --pid options may be
+      specified.
 
   --pts
       Send the last PTS value in a set of PID and/or services. Also specify at
@@ -123,8 +122,8 @@ Options:
 
   -s
   --services
-      Send bitrate or PCR/PTS/DTS monitoring data for services. The services
-      are identified in InfluxDB by their id in decimal.
+      Send metrics data for services. The services are identified in InfluxDB
+      by their id in decimal.
 
   --start-time year/month/day:hour:minute:second
       With --pcr-based or --timestamp-based, specify the initial date & time
@@ -154,7 +153,7 @@ Options:
       performed but physical checks on modulation cannot be reported.
 
   --type
-      Send bitrate monitoring for types of PID's. The types are identified in
+      Send bitrate metrics for types of PID's. The types are identified in
       InfluxDB as "audio", "data", "ecm", "emm", "pcr", "psi", "stuffing",
       "subtitles", "undefined", "video".
 
