@@ -72,6 +72,13 @@ Options:
   --help
       Display this help text.
 
+  --ignore-pid-conflict
+      Ignore conflicts between the splice PID (option --pid) and an existing
+      identical PID. By default, this is an error if existing input packets
+      have the same PID as the splice PID. Using this option may lead to
+      incorrect streams, use with care. A verbose-level message is still
+      displayed the first time a PID conflict is detected.
+
   --inject-count value
       For non-immediate splice_insert() and time_signal() commands, specifies
       the number of times the same splice information section is injected. The
