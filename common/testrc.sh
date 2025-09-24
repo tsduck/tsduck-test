@@ -300,10 +300,16 @@ case $OS in
     windows)
         PYTHON=python
         JAVA=java
-        JAVA_FLAGS=
         JAVAC=javac
         JAVAP=javap
         JAR=jar
+        JAVA_VERSION=$("$JAVA" --version 2>/dev/null | sed -e '2,$d' -e 's/^[^0-9]*//' -e 's/[^0-9].*$//')
+        if [[ -n $JAVA_VERSION && $JAVA_VERSION -ge 24 ]]; then
+            # Starting with Java 24, access to native function through JNI is restricted.
+            JAVA_FLAGS="--enable-native-access=ALL-UNNAMED"
+        else
+            JAVA_FLAGS=
+        fi
         ;;
     *)
         PYTHON=$(which python3 2>/dev/null)
