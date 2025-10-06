@@ -97,6 +97,11 @@ Options:
       instance) are ignored. Typically, such sections are stuffing and can be
       ignored that way.
 
+  --duration
+      Display the time offset from the beginning of the stream with each table.
+      This duration is based on PCR and other time stamps in the stream. See
+      also option --time-stamp.
+
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally
       automatically detected from their signalization. This option is only
@@ -426,7 +431,8 @@ Options:
       Brazil).
 
   --time-stamp
-      Display a time stamp (current local time) with each table.
+      Display a time stamp (current local time) with each table. See also
+      option --duration.
 
   --tlv value
       For sections of unknown types, this option specifies how to interpret
