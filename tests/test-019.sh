@@ -39,13 +39,14 @@ OUTPUT_PLUGINS=(
 
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
-    craft cutoff datainject decap descrambler dump duplicate eit eitinject encap feed file filter
-    fork fuzz history identify influx inject ip isdbinfo limit merge mpe mpeinject mux nit nitscan pat
-    pattern pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes pidshift
-    pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt sections
-    sifilter skip slice spliceinject splicemonitor splicerestamp stats stuffanalyze
-    svremove svrename svresync t2mi tables teletext time timeref timeshift
-    trace trigger tsrename until zap
+    craft cutoff datainject decap descrambler dump duplicate eit eitinject
+    encap feed file filter fork fuzz history iat identify influx inject ip
+    isdbinfo limit merge mpe mpeinject mux nit nitscan pat pattern pcradjust
+    pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes pidshift
+    pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt
+    sections sifilter skip slice spliceinject splicemonitor splicerestamp
+    stats stuffanalyze svremove svrename svresync t2mi tables teletext time
+    timeref timeshift trace trigger tsrename until zap
 )
 
 # Check if a tool or plugin name shall be tested.
