@@ -54,6 +54,10 @@ Options:
       of a URL, http: is assumed. By default, use the environment variable
       INFLUX_HOST, then the InfluxDB CLI configuration file.
 
+  --iat
+      Send metrics on Inter-packet Arrival Time (IAT) for datagram-based inputs
+      (ip, pcap, srt, rist). Ignored if the input is not datagram-based.
+
   -i seconds
   --interval seconds
       Interval in seconds between metrics reports to InfluxDB. The default is 5

@@ -2,89 +2,89 @@
 POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
 Accept: application/json
 Authorization: Token test-token
-Content-Length: 1576
+Content-Length: 2017
 Content-Type: text/plain; charset=utf-8
 Host: localhost:47852
 User-Agent: tsduck
-==== Request data (1576 bytes):
-bitrate,scope=ts,tsid=1080 value=47787227 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+ value=1749909067136 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+\ DECALE value=1722772037393 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1747788231945 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+\ SPORT value=1861937716407 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1745857520265 1752496499010
-pcr,scope=service,tsid=1080,service=CANAL+\ SERIES value=1920229259371 1752496499010
-pcr,scope=service,tsid=1080,service=CINE+\ FRISSON value=1722771723449 1752496499010
-pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1418838699261 1752496499010
-pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1191594344474 1752496499010
-pcr,scope=service,tsid=1080,service=CNEWS value=1191597947174 1752496499010
-pcr,scope=pid,tsid=1080,pid=210 value=1722772037393 1752496499010
-pts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742636001 1752496499010
-pts,scope=service,tsid=1080,service=CNEWS value=3972050140 1752496499010
-pts,scope=pid,tsid=1080,pid=210 value=5742636001 1752496499010
-pts,scope=pid,tsid=1080,pid=221 value=5742577423 1752496499010
-pts,scope=pid,tsid=1080,pid=222 value=5742577423 1752496499010
-pts,scope=pid,tsid=1080,pid=243 value=5742682801 1752496499010
-dts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742628801 1752496499010
-dts,scope=service,tsid=1080,service=CNEWS value=3972032140 1752496499010
-dts,scope=pid,tsid=1080,pid=210 value=5742628801 1752496499010
+==== Request data (2017 bytes):
+bitrate,scope=ts,tsid=1080,sat=foo,operator=bar value=47787227 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+,sat=foo,operator=bar value=1749909067136 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=1722772037393 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA,sat=foo,operator=bar value=1747788231945 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+\ SPORT,sat=foo,operator=bar value=1861937716407 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY,sat=foo,operator=bar value=1745857520265 1752496499010
+pcr,scope=service,tsid=1080,service=CANAL+\ SERIES,sat=foo,operator=bar value=1920229259371 1752496499010
+pcr,scope=service,tsid=1080,service=CINE+\ FRISSON,sat=foo,operator=bar value=1722771723449 1752496499010
+pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ,sat=foo,operator=bar value=1418838699261 1752496499010
+pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC,sat=foo,operator=bar value=1191594344474 1752496499010
+pcr,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=1191597947174 1752496499010
+pcr,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=1722772037393 1752496499010
+pts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742636001 1752496499010
+pts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3972050140 1752496499010
+pts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742636001 1752496499010
+pts,scope=pid,tsid=1080,pid=221,sat=foo,operator=bar value=5742577423 1752496499010
+pts,scope=pid,tsid=1080,pid=222,sat=foo,operator=bar value=5742577423 1752496499010
+pts,scope=pid,tsid=1080,pid=243,sat=foo,operator=bar value=5742682801 1752496499010
+dts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742628801 1752496499010
+dts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3972032140 1752496499010
+dts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742628801 1752496499010
 ==== Request headers:
 POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
 Accept: application/json
 Authorization: Token test-token
-Content-Length: 1576
+Content-Length: 2017
 Content-Type: text/plain; charset=utf-8
 Host: localhost:47852
 User-Agent: tsduck
-==== Request data (1576 bytes):
-bitrate,scope=ts,tsid=1080 value=47827200 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+ value=1749895838665 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+\ DECALE value=1722758809752 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1747774993566 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+\ SPORT value=1861924488764 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1745844289323 1752496502031
-pcr,scope=service,tsid=1080,service=CANAL+\ SERIES value=1920216021817 1752496502031
-pcr,scope=service,tsid=1080,service=CINE+\ FRISSON value=1722758499938 1752496502031
-pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1418825462528 1752496502031
-pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1191581114350 1752496502031
-pcr,scope=service,tsid=1080,service=CNEWS value=1191584717050 1752496502031
-pcr,scope=pid,tsid=1080,pid=210 value=1722758809752 1752496502031
-pts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742589201 1752496502031
-pts,scope=service,tsid=1080,service=CNEWS value=3972035740 1752496502031
-pts,scope=pid,tsid=1080,pid=210 value=5742589201 1752496502031
-pts,scope=pid,tsid=1080,pid=221 value=5742534223 1752496502031
-pts,scope=pid,tsid=1080,pid=222 value=5742534223 1752496502031
-pts,scope=pid,tsid=1080,pid=243 value=5742682801 1752496502031
-dts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742585601 1752496502031
-dts,scope=service,tsid=1080,service=CNEWS value=3972017740 1752496502031
-dts,scope=pid,tsid=1080,pid=210 value=5742585601 1752496502031
+==== Request data (2017 bytes):
+bitrate,scope=ts,tsid=1080,sat=foo,operator=bar value=47827200 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+,sat=foo,operator=bar value=1749895838665 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=1722758809752 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA,sat=foo,operator=bar value=1747774993566 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+\ SPORT,sat=foo,operator=bar value=1861924488764 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY,sat=foo,operator=bar value=1745844289323 1752496502031
+pcr,scope=service,tsid=1080,service=CANAL+\ SERIES,sat=foo,operator=bar value=1920216021817 1752496502031
+pcr,scope=service,tsid=1080,service=CINE+\ FRISSON,sat=foo,operator=bar value=1722758499938 1752496502031
+pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ,sat=foo,operator=bar value=1418825462528 1752496502031
+pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC,sat=foo,operator=bar value=1191581114350 1752496502031
+pcr,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=1191584717050 1752496502031
+pcr,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=1722758809752 1752496502031
+pts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742589201 1752496502031
+pts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3972035740 1752496502031
+pts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742589201 1752496502031
+pts,scope=pid,tsid=1080,pid=221,sat=foo,operator=bar value=5742534223 1752496502031
+pts,scope=pid,tsid=1080,pid=222,sat=foo,operator=bar value=5742534223 1752496502031
+pts,scope=pid,tsid=1080,pid=243,sat=foo,operator=bar value=5742682801 1752496502031
+dts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742585601 1752496502031
+dts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3972017740 1752496502031
+dts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742585601 1752496502031
 ==== Request headers:
 POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
 Accept: application/json
 Authorization: Token test-token
-Content-Length: 1576
+Content-Length: 2017
 Content-Type: text/plain; charset=utf-8
 Host: localhost:47852
 User-Agent: tsduck
-==== Request data (1576 bytes):
-bitrate,scope=ts,tsid=1080 value=47790419 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+ value=1749881664067 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+\ DECALE value=1722744627716 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA value=1747760822278 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+\ SPORT value=1861910314166 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY value=1745830121335 1752496505017
-pcr,scope=service,tsid=1080,service=CANAL+\ SERIES value=1920201844747 1752496505017
-pcr,scope=service,tsid=1080,service=CINE+\ FRISSON value=1722744326992 1752496505017
-pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ value=1418811290410 1752496505017
-pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC value=1191566936438 1752496505017
-pcr,scope=service,tsid=1080,service=CNEWS value=1191570539971 1752496505017
-pcr,scope=pid,tsid=1080,pid=210 value=1722744627716 1752496505017
-pts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742571201 1752496505017
-pts,scope=service,tsid=1080,service=CNEWS value=3971996140 1752496505017
-pts,scope=pid,tsid=1080,pid=210 value=5742571201 1752496505017
-pts,scope=pid,tsid=1080,pid=221 value=5742476623 1752496505017
-pts,scope=pid,tsid=1080,pid=222 value=5742476623 1752496505017
-pts,scope=pid,tsid=1080,pid=243 value=5742682801 1752496505017
-dts,scope=service,tsid=1080,service=CANAL+\ DECALE value=5742535201 1752496505017
-dts,scope=service,tsid=1080,service=CNEWS value=3971960140 1752496505017
-dts,scope=pid,tsid=1080,pid=210 value=5742535201 1752496505017
+==== Request data (2017 bytes):
+bitrate,scope=ts,tsid=1080,sat=foo,operator=bar value=47790419 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+,sat=foo,operator=bar value=1749881664067 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=1722744627716 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+\ CINEMA,sat=foo,operator=bar value=1747760822278 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+\ SPORT,sat=foo,operator=bar value=1861910314166 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+\ FAMILY,sat=foo,operator=bar value=1745830121335 1752496505017
+pcr,scope=service,tsid=1080,service=CANAL+\ SERIES,sat=foo,operator=bar value=1920201844747 1752496505017
+pcr,scope=service,tsid=1080,service=CINE+\ FRISSON,sat=foo,operator=bar value=1722744326992 1752496505017
+pcr,scope=service,tsid=1080,service=CINE+\ FAMIZ,sat=foo,operator=bar value=1418811290410 1752496505017
+pcr,scope=service,tsid=1080,service=CINE+\ CLASSIC,sat=foo,operator=bar value=1191566936438 1752496505017
+pcr,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=1191570539971 1752496505017
+pcr,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=1722744627716 1752496505017
+pts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742571201 1752496505017
+pts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3971996140 1752496505017
+pts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742571201 1752496505017
+pts,scope=pid,tsid=1080,pid=221,sat=foo,operator=bar value=5742476623 1752496505017
+pts,scope=pid,tsid=1080,pid=222,sat=foo,operator=bar value=5742476623 1752496505017
+pts,scope=pid,tsid=1080,pid=243,sat=foo,operator=bar value=5742682801 1752496505017
+dts,scope=service,tsid=1080,service=CANAL+\ DECALE,sat=foo,operator=bar value=5742535201 1752496505017
+dts,scope=service,tsid=1080,service=CNEWS,sat=foo,operator=bar value=3971960140 1752496505017
+dts,scope=pid,tsid=1080,pid=210,sat=foo,operator=bar value=5742535201 1752496505017
