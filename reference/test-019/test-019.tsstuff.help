@@ -33,7 +33,7 @@ Options:
   -f value
   --final-inter-packet value
       Number of stuffing packets to add between input packets after the last
-      time stamp (PCR or DTS). By default, use the same number as in the
+      timestamp (PCR or DTS). By default, use the same number as in the
       previous segment, between the last two time stamps.
 
   --help
@@ -42,14 +42,14 @@ Options:
   -i value
   --initial-inter-packet value
       Number of stuffing packets to add between input packets before the first
-      time stamp (PCR or DTS). By default, use the same number as in the first
-      segment, between the first two time stamps.
+      timestamp (PCR or DTS). By default, use the same number as in the first
+      segment, between the first two timestamps.
 
   --input-format name
       Specify the format of the input TS file. By default, the format is
       automatically detected. But the auto-detection may fail in some cases
-      (for instance when the first time-stamp of an M2TS file starts with
-      0x47). Using this option forces a specific format.
+      (for instance when the first timestamp of an M2TS file starts with 0x47).
+      Using this option forces a specific format.
       The 'name' must be one of "autodetect", "duck", "M2TS", "RS204", "TS".
 
   -l value
@@ -60,7 +60,7 @@ Options:
   -m value
   --min-interval value
       Minimum interval, in milli-seconds, between two recomputations of the
-      amount of stuffing to insert. This duration is based on time-stamps, not
+      amount of stuffing to insert. This duration is based on timestamps, not
       real time. The default is 100 ms.
 
   -o filename

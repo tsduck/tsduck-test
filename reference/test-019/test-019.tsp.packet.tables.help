@@ -100,7 +100,7 @@ Options:
   --duration
       Display the time offset from the beginning of the stream with each table.
       This duration is based on PCR and other time stamps in the stream. See
-      also option --time-stamp.
+      also option --timestamp.
 
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally
@@ -430,9 +430,9 @@ Options:
       'UTC+9' (same as 'JST' for ARIB ISDB), 'UTC-3' (for ABNT ISDB-Tb in
       Brazil).
 
-  --time-stamp
-      Display a time stamp (current local time) with each table. See also
-      option --duration.
+  --timestamp
+      Display a timestamp (current local time) with each table. See also option
+      --duration.
 
   --tlv value
       For sections of unknown types, this option specifies how to interpret

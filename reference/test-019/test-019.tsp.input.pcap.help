@@ -93,14 +93,14 @@ Options:
       specified portions is selected.
 
   --timestamp-priority name
-      Specify how the input time-stamp of each packet is computed. The name
-      specifies an ordered list. The first available time-stamp value is used
-      as input time-stamp. The possible time-stamp sources are:
+      Specify how the input timestamp of each packet is computed. The name
+      specifies an ordered list. The first available timestamp value is used as
+      input timestamp. The possible timestamp sources are:
       - rtp : The RTP time stamp, when the UDP packet is an RTP packet.
       - pcap : pcap capture time stamp.
-      - tsp : A software time-stamp, provided by tsp when the input plugin
+      - tsp : A software timestamp, provided by tsp when the input plugin
       returns a chunk of packets.
-      The tsp-provided time-stamp is always available, always comes last and is
+      The tsp-provided timestamp is always available, always comes last and is
       less precise. The default is rtp-pcap-tsp.
       The 'name' must be one of "pcap-rtp-tsp", "pcap-tsp", "rtp-pcap-tsp",
       "rtp-tsp", "tsp".
