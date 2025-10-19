@@ -39,6 +39,83 @@ Options:
   --help
       Display this help text.
 
+  --influx value
+      Send to an InfluxDB server all events of the specified types. See all
+      other --influx-* options for more details. The default is 'none', meaning
+      no connection to an InfluxDB server. Use 'all' to specify all types of
+      events. Several options --influx are allowed.
+      The 'value' must be one of "all", "cancelled", "immediate", "none",
+      "occurred", "signalled".
+
+  --influx-active-config value
+      Config name to use in the InfluxDB CLI configurations file. By default,
+      use the environment variable INFLUX_ACTIVE_CONFIG, then look for the
+      active configuration in the configuration file, or the first
+      configuration if none is marked as active.
+
+  --influx-bucket name
+      Name of the InfluxDB bucket. By default, use the environment variable
+      INFLUX_BUCKET_NAME.
+
+  --influx-bucket-id id
+      Identifier of the InfluxDB bucket. The 'id' must be a 16-character value.
+      By default, use the environment variable INFLUX_BUCKET_ID. Only one of
+      --influx-bucket and --influx-bucket-id shall be specified.
+
+  --influx-configs-path file-name
+      Path to the InfluxDB CLI configurations file. By default, use the
+      environment variable INFLUX_CONFIGS_PATH, then $HOME/.influxdbv2/configs.
+
+  --influx-host-url name
+      Host name or URL of the InfluxDB server. If a host name is used instead
+      of a URL, http: is assumed. By default, use the environment variable
+      INFLUX_HOST, then the InfluxDB CLI configuration file.
+
+  --influx-local-time
+      Interpret timestamps as local time, based on the current system
+      configuration. By default, timestamps are interpreted as UTC time.
+
+  --influx-org name
+      Name of the InfluxDB organization. By default, use the environment
+      variable INFLUX_ORG, then the InfluxDB CLI configuration file.
+
+  --influx-org-id id
+      Identifier of the InfluxDB organization. The 'id' must be a 16-character
+      value. By default, use the environment variable INFLUX_ORG_ID. Only one
+      of --influx-org and --influx-org-id shall be specified.
+
+  --influx-pcr-based
+      Use playout time based on PCR values. By default, the time is based on
+      the wall-clock time (real time).
+
+  --influx-queue-size count
+      Maximum number of queued metrics between the plugin thread and the
+      communication thread with InfluxDB. On off-line streams which are
+      processed at high speed, increase this value if some metrics are lost.
+      The default queue size is 10 messages.
+
+  --influx-start-time year/month/day:hour:minute:second
+      With --influx-pcr-based or --influx-timestamp-based, specify the initial
+      date & time reference. By default, with --influx-pcr-based or
+      --influx-timestamp-based, the activity starts at the first UTC time which
+      is found in a DVB TDT or ATSC STT.
+
+  --influx-tag name=value
+      Add the specified tag, with the specified value, to all metrics which are
+      sent to InfluxDB. This can be used to identify a source of metrics and
+      filter it using InfluxDB queries. Several --influx-tag options may be
+      specified.
+
+  --influx-timestamp-based
+      Use playout time based on timestamp values from the input plugin. When
+      input timestamps are not available or not monotonic, fallback to
+      --influx-pcr-based. By default, the time is based on the wall-clock time
+      (real time).
+
+  --influx-token string
+      Token to authenticate InfluxDB requests. By default, use the environment
+      variable INFLUX_TOKEN, then the InfluxDB CLI configuration file.
+
   -j
   --json
       Build a JSON description of splice events.

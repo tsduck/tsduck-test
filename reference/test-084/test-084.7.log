@@ -1,0 +1,80 @@
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 111
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (111 bytes):
+splice,pid=1055,event=18,direction=out,state=signalled start=1752496508367,duration=75000,count=1 1752496497885
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 111
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (111 bytes):
+splice,pid=1055,event=18,direction=out,state=signalled start=1752496508367,duration=75000,count=2 1752496499892
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 111
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (111 bytes):
+splice,pid=1055,event=18,direction=out,state=signalled start=1752496508367,duration=75000,count=3 1752496501899
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 123
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (123 bytes):
+splice,pid=1055,event=18,direction=out,state=occurred start=1752496507462,duration=75000,preroll=9557,count=3 1752496507462
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 95
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (95 bytes):
+splice,pid=1055,event=18,direction=in,state=signalled start=1752496523531,count=1 1752496513044
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 95
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (95 bytes):
+splice,pid=1055,event=18,direction=in,state=signalled start=1752496523531,count=2 1752496515051
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 95
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (95 bytes):
+splice,pid=1055,event=18,direction=in,state=signalled start=1752496523531,count=3 1752496517058
+==== Request headers:
+POST /api/v2/write?bucket=test-bucket&org=test-org&precision=ms HTTP/1.1
+Accept: application/json
+Authorization: Token test-token
+Content-Length: 107
+Content-Type: text/plain; charset=utf-8
+Host: 127.0.0.1:47878
+User-Agent: tsduck
+==== Request data (107 bytes):
+splice,pid=1055,event=18,direction=in,state=occurred start=1752496522768,preroll=9701,count=3 1752496522768

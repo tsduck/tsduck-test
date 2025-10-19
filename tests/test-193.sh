@@ -21,7 +21,7 @@ influx_test()
     test_tsp \
         -I file --infinite $(fpath "$INFILE") \
         -P influx $2 --interval 3 --max-metrics 3 --pcr-based --start-time 2025/07/14:12:34:56 \
-                  --host-url http://localhost:$INFLUX_PORT/ --bucket test-bucket --org test-org --token test-token \
+                  --host-url http://$LOCALHOST:$INFLUX_PORT/ --bucket test-bucket --org test-org --token test-token \
         -O drop \
         >"$OUTDIR/$SCRIPT.tsp.$name.log" 2>&1
 

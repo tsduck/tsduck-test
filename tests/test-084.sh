@@ -35,3 +35,26 @@ test_tsp \
     >"$OUTDIR/$SCRIPT.6.log" 2>&1
 
 test_text $SCRIPT.6.log
+
+# Test with InfluxDB options.
+INFLUX_PORT=47878
+
+$(tspath tsdebug) server :$INFLUX_PORT --max-clients 8 \
+    --sort-headers --hide-header Connection --hide-header Cache-Control \
+    >"$OUTDIR/$SCRIPT.7.log" 2>&1 &
+
+server_pid=$!
+sleep 0.5
+
+test_tsp \
+    -I file $(fpath "$INDIR/$SCRIPT.ts") \
+    -P splicemonitor --influx all --influx-pcr-based --influx-start-time 2025/07/14:12:34:56 \
+                     --influx-host-url http://$LOCALHOST:$INFLUX_PORT/ --influx-bucket test-bucket \
+                     --influx-org test-org --influx-token test-token \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.8.log" 2>&1
+
+wait $server_pid
+
+test_text $SCRIPT.7.log
+test_text $SCRIPT.8.log
