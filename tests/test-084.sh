@@ -44,7 +44,7 @@ $(tspath tsdebug) server :$INFLUX_PORT --max-clients 8 \
     >"$OUTDIR/$SCRIPT.7.log" 2>&1 &
 
 server_pid=$!
-sleep 0.5
+sleep 1
 
 test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \
