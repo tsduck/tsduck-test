@@ -3,11 +3,19 @@
     "#name": "PMT",
     "#nodes": [
       {
-        "#name": "generic_descriptor",
+        "#name": "ITU_DRM_descriptor",
         "#nodes": [
-          "14 E6 99 88 77 66 55 44 33 22 11"
+          {
+            "#name": "DRM_data_bytes",
+            "#nodes": [
+              "99 88 77 66 55 44 33 22 11"
+            ]
+          }
         ],
-        "tag": 192
+        "audio_encryption_method": 6,
+        "audio_format": 14,
+        "video_encryption_method": 4,
+        "video_format": 1
       }
     ],
     "current": true,

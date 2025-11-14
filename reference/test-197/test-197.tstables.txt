@@ -4,6 +4,10 @@
   - Section 0:
     Program: 0x0000 (0), PCR PID: none
     Program information:
-    - Descriptor 0: unknown (0xC0, 192), 11 bytes
-      0000:  14 E6 99 88 77 66 55 44 33 22 11           ....wfUD3".
+    - Descriptor 0: ITU DRM Descriptor (0xC0, 192), 11 bytes
+      Video format: IEEE Standard for Second-Generation IEEE 1857 Video Coding (specified in IEEE 1857.4-2018) (0x1)
+      Video encryption method: SM4-CTR (Full encryption mode using SM4-CTR) (0x4)
+      Audio format: 0xE, Audio encryption method: 0x6
+      DRM data types (9 bytes):
+        0000:  99 88 77 66 55 44 33 22 11                       ..wfUD3".
 

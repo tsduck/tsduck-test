@@ -2,8 +2,10 @@
 <tsduck>
   <PMT version="0" current="true" service_id="0x0000">
     <metadata PID="200"/>
-    <generic_descriptor tag="0xC0">
-      14 E6 99 88 77 66 55 44 33 22 11
-    </generic_descriptor>
+    <ITU_DRM_descriptor video_format="0x01" video_encryption_method="0x04" audio_format="0x0E" audio_encryption_method="0x06">
+      <DRM_data_bytes>
+        99 88 77 66 55 44 33 22 11
+      </DRM_data_bytes>
+    </ITU_DRM_descriptor>
   </PMT>
 </tsduck>
