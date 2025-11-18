@@ -41,7 +41,7 @@ PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject decap descrambler dump duplicate eit eitinject
     encap feed file filter fork fuzz history iat identify influx inject ip
-    isdbinfo limit merge mpe mpeinject mux nit nitscan pat pattern pcradjust
+    isdbinfo limit merge mpe mpeinject mux nip nit nitscan pat pattern pcradjust
     pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes pidshift
     pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt
     sections sifilter skip slice spliceinject splicemonitor splicerestamp
