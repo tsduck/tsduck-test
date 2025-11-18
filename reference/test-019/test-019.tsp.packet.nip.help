@@ -5,6 +5,10 @@ Usage: tsp -P nip [options]
 
 Options:
 
+  --dump-flute-payload
+      Same as --log-flute-packets and also dump the payload of each FLUTE
+      packet.
+
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
@@ -15,6 +19,9 @@ Options:
   --help
       Display this help text.
 
+  --log-flute-packets
+      Log a message describing the structure of each FLUTE packet.
+
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
@@ -24,7 +31,7 @@ Options:
 
   -p value
   --pid value
-      Specify the MPE containing the DVB-NIP stream. By default, if neither
+      Specify the MPE PID containing the DVB-NIP stream. By default, if neither
       --pid nor --service is specified, use the first MPE PID which is found.
       Options --pid and --service are mutually exclusive.
 
