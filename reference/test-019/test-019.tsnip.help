@@ -1,0 +1,73 @@
+
+Analyze a DVB-NIP stream from a pcap or pcap-ng file
+
+Usage: tsnip [options] [input-file]
+
+Parameter:
+
+  Input file in pcap or pcap-ng format, typically as saved by Wireshark. Use
+  the standard input if no file name is specified.
+
+Options:
+
+  -d[level]
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --dump-flute-payload
+      Same as --log-flute-packets and also dump the payload of each FLUTE
+      packet.
+
+  --first-date date-time
+      Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
+      mm:ss.mmm.
+
+  --first-packet value
+      Filter packets starting at the specified number. The packet numbering
+      counts all captured packets from the beginning of the file, starting at
+      1. This is the same value as seen on Wireshark in the leftmost column.
+
+  --first-timestamp microseconds
+      Filter packets starting at the specified timestamp in micro-seconds from
+      the beginning of the capture. This is the same value as seen on Wireshark
+      in the "Time" column (in seconds).
+
+  --help
+      Display this help text.
+
+  --last-date date-time
+      Filter packets up to the specified date. Use format YYYY/MM/DD:hh:mm:ss.
+      mmm.
+
+  --last-packet value
+      Filter packets up to the specified number. The packet numbering counts
+      all captured packets from the beginning of the file, starting at 1. This
+      is the same value as seen on Wireshark in the leftmost column.
+
+  --last-timestamp microseconds
+      Filter packets up to the specified timestamp in micro-seconds from the
+      beginning of the capture. This is the same value as seen on Wireshark in
+      the "Time" column (in seconds).
+
+  --log-fdt
+      Log a message describing each FLUTE File Delivery Table (FDT).
+
+  --log-flute-packets
+      Log a message describing the structure of each FLUTE packet.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version[=name]
+      Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "rist", "short",
+      "srt", "system", "tls", "vatek", "zlib".
+
+  --vlan-id value
+      Filter packets from the specified VLAN id. This option can be specified
+      multiple times. In that case, the values define nested VLAN ids, from the
+      outer to inner VLAN.
+

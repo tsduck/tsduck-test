@@ -21,7 +21,7 @@ TOOLS=(
     tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsfuzz tsgenecm
     tshides tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
-    tsp tspacketize tspcap tspcontrol tspsi tsresync
+    tsnip tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
     tstestecmg tsvatek tsxml
