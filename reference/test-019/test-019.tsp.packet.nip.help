@@ -9,6 +9,9 @@ Options:
       Same as --log-flute-packets and also dump the payload of each FLUTE
       packet.
 
+  --dump-xml-files
+      Dump the content of XML files when they are received.
+
   --except-label label1[-label2]
       Invoke this plugin only for packets without any of the specified labels.
       Other packets are transparently passed to the next plugin, without going
@@ -21,6 +24,9 @@ Options:
 
   --log-fdt
       Log a message describing each FLUTE File Delivery Table (FDT).
+
+  --log-files
+      Log a message describing each received file.
 
   --log-flute-packets
       Log a message describing the structure of each FLUTE packet.
@@ -37,6 +43,23 @@ Options:
       Specify the MPE PID containing the DVB-NIP stream. By default, if neither
       --pid nor --service is specified, use the first MPE PID which is found.
       Options --pid and --service are mutually exclusive.
+
+  --save-fdt file-name
+      Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
+      saved in a separate file. If the specified path is 'dir/fdt.xml' for
+      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'.
+
+  --save-nif file-name
+      Save the DVB-NIP Network Information File (NIF) in the specified file.
+      This is a XML file.
+
+  --save-sif file-name
+      Save the DVB-NIP Service Information File (SIF) in the specified file.
+      This is a XML file.
+
+  --save-slep file-name
+      Save the DVB-I Service List Entry Points (SLEP) in the specified file.
+      This is a XML file.
 
   -s name-or-id
   --service name-or-id

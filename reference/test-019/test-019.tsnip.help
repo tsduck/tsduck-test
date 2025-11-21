@@ -19,6 +19,9 @@ Options:
       Same as --log-flute-packets and also dump the payload of each FLUTE
       packet.
 
+  --dump-xml-files
+      Dump the content of XML files when they are received.
+
   --first-date date-time
       Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
       mm:ss.mmm.
@@ -53,8 +56,32 @@ Options:
   --log-fdt
       Log a message describing each FLUTE File Delivery Table (FDT).
 
+  --log-files
+      Log a message describing each received file.
+
   --log-flute-packets
       Log a message describing the structure of each FLUTE packet.
+
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
+  --save-fdt file-name
+      Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
+      saved in a separate file. If the specified path is 'dir/fdt.xml' for
+      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'.
+
+  --save-nif file-name
+      Save the DVB-NIP Network Information File (NIF) in the specified file.
+      This is a XML file.
+
+  --save-sif file-name
+      Save the DVB-NIP Service Information File (SIF) in the specified file.
+      This is a XML file.
+
+  --save-slep file-name
+      Save the DVB-I Service List Entry Points (SLEP) in the specified file.
+      This is a XML file.
 
   -v
   --verbose
