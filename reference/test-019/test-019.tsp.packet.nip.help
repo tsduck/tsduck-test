@@ -44,22 +44,31 @@ Options:
       --pid nor --service is specified, use the first MPE PID which is found.
       Options --pid and --service are mutually exclusive.
 
+  --save-bootstrap file-name
+      Save the bootstrap multicast gateway configuration in the specified file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
+
   --save-fdt file-name
       Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
       saved in a separate file. If the specified path is 'dir/fdt.xml' for
-      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'.
+      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'. If
+      the specified path is '-', the file is written to standard output.
 
   --save-nif file-name
       Save the DVB-NIP Network Information File (NIF) in the specified file.
-      This is a XML file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
 
   --save-sif file-name
       Save the DVB-NIP Service Information File (SIF) in the specified file.
-      This is a XML file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
 
   --save-slep file-name
       Save the DVB-I Service List Entry Points (SLEP) in the specified file.
-      This is a XML file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
 
   -s name-or-id
   --service name-or-id
