@@ -62,6 +62,15 @@ Options:
   --log-flute-packets
       Log a message describing the structure of each FLUTE packet.
 
+  --max-file-size value
+      Maximum size of files to analyze or extract. Each received file is
+      accumulated in memory, chunk by chunk, until the file is complete. After
+      processing the file, all chunks are freeed. This option is useful when
+      the stream contains many large files which clutter the memory during
+      their reception. All files which are announced as larger than the
+      specified size are ignored. By default, all files are received and
+      analyzed or saved.
+
   --no-pager
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
@@ -70,6 +79,13 @@ Options:
       Save the bootstrap multicast gateway configuration in the specified file.
       This is a XML file. If the specified path is '-', the file is written to
       standard output.
+
+  --save-dvb-gw directory-name
+      Save all files in the DVB-NIP carousel with URI starting with http://dvb.
+      gw/. The specified path is a directory. The file hierarchy is recreated
+      from this directory. Example: with '--save-dvb-gw /save/to', the file
+      http://dvb.gw/operator.com/materials/f.jpg is saved as /save/to/operator.
+      com/materials/f.jpg.
 
   --save-fdt file-name
       Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
