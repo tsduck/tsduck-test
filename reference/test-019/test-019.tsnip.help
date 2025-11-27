@@ -22,6 +22,28 @@ Options:
   --dump-xml-files
       Dump the content of XML files when they are received.
 
+  --extract-destination [ip-address]:[port]
+      With --extract-file, specify the destination IP address and/or UDP port
+      of files. By default, extract the files with matching name and any IP
+      destination.
+
+  -e name-or-urn
+  --extract-file name-or-urn
+      Extract the specified file from the FLUTE carousel. The name-or-urn shall
+      be the exact complete name of the file, as identified in the FDT. The
+      option --extract-file can be specified several times. All files are
+      extracted in the output directory which is specified in option
+      --output-directory. The output base name of each file is the last part of
+      the name-or-urn, after the last slash or colon.
+
+  --extract-source ip-address
+      With --extract-file, specify the source IP address of files. By default,
+      extract the files with matching name and any IP source address.
+
+  --extract-tsi value
+      With --extract-file, specify the Transport Session Identifier (TSI) of
+      files. By default, extract the files with matching name and any TSI.
+
   --first-date date-time
       Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
       mm:ss.mmm.
@@ -74,6 +96,11 @@ Options:
   --no-pager
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
+
+  -o directory-name
+  --output-directory directory-name
+      Output directory for files which are extracted using option
+      --extract-file. The default is the current directory.
 
   --save-bootstrap file-name
       Save the bootstrap multicast gateway configuration in the specified file.
