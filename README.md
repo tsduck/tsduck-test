@@ -291,3 +291,5 @@ repository. But we now limit their size to 20 MB.
 | 194  | `tsp` and `tspcontrol` with TLS control port
 | 195  | YAML output of `tsxml`
 | 196  | Non-regression on plugin `pat` when the TS id changes (issue #1668)
+| 197  | `tsnip`
+| 198  | Plugin `nip`

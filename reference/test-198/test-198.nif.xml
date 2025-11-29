@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkInformationFile xmlns="urn:dvb:metadata:nativeip:2023" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VersionUpdate>2025-09-02T16:25:34.586Z</VersionUpdate>
+  <NIFType>Physical Network</NIFType>
+  <ActualBroadcastNetwork>
+    <NetworkType>Satellite</NetworkType>
+    <NetworkName>Eutelsat</NetworkName>
+    <NIPNetworkProviderName>Eutelsat</NIPNetworkProviderName>
+    <SatellitePosition>
+      <OrbitalPosition>13</OrbitalPosition>
+      <West_East_flag>East</West_East_flag>
+    </SatellitePosition>
+    <NIPNetworkID>318</NIPNetworkID>
+    <NIPStream>
+      <LinkLayerFormat>TS</LinkLayerFormat>
+      <NIPStreamProviderName>EUTELSAT</NIPStreamProviderName>
+      <NIPCarrierID>7600</NIPCarrierID>
+      <NIPLinkID>0</NIPLinkID>
+      <NIPServiceID>17702</NIPServiceID>
+      <BootstrapStream>
+        <BootstrapType>Physical Network</BootstrapType>
+        <Status>Active</Status>
+      </BootstrapStream>
+      <DVBS2_NIPDeliveryParameters>
+        <Frequency>1222616</Frequency>
+        <Polarization>vertical</Polarization>
+        <Modulation_Type>8PSK</Modulation_Type>
+        <Roll_off>0.20</Roll_off>
+        <SymbolRate>27500</SymbolRate>
+        <FEC>3/4</FEC>
+        <input_stream_identifier>0</input_stream_identifier>
+      </DVBS2_NIPDeliveryParameters>
+    </NIPStream>
+    <NIPStream>
+      <LinkLayerFormat>TS</LinkLayerFormat>
+      <NIPStreamProviderName>Rai POC</NIPStreamProviderName>
+      <NIPCarrierID>8400</NIPCarrierID>
+      <NIPLinkID>0</NIPLinkID>
+      <NIPServiceID>1501</NIPServiceID>
+      <DVBS2_NIPDeliveryParameters>
+        <Frequency>1238000</Frequency>
+        <Polarization>vertical</Polarization>
+        <Modulation_Type>8PSK</Modulation_Type>
+        <Roll_off>0.20</Roll_off>
+        <SymbolRate>30000</SymbolRate>
+        <FEC>5/6</FEC>
+        <input_stream_identifier>0</input_stream_identifier>
+      </DVBS2_NIPDeliveryParameters>
+    </NIPStream>
+  </ActualBroadcastNetwork>
+</NetworkInformationFile>

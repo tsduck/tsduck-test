@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:MulticastGatewayConfiguration ns3:schemaVersion="0" validityPeriod="P99Y11M30DT0H0M0.000S" xmlns:ns2="urn:dvb:metadata:MulticastSessionConfiguration:2024" xmlns:ns1="urn:mpeg:mpeg7:schema:2001" xmlns:ns3="urn:dvb:metadata:Extensibility:2024">
+  <ns2:MulticastGatewayConfigurationTransportSession transportSecurity="integrity">
+    <ns2:TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <ns2:EndpointAddress>
+      <ns2:NetworkSourceAddress>10.31.30.11</ns2:NetworkSourceAddress>
+      <ns2:NetworkDestinationGroupAddress>224.0.23.14</ns2:NetworkDestinationGroupAddress>
+      <ns2:TransportDestinationPort>3937</ns2:TransportDestinationPort>
+      <ns2:MediaTransportSessionIdentifier>0</ns2:MediaTransportSessionIdentifier>
+    </ns2:EndpointAddress>
+    <ns2:BitRate average="500000" maximum="500000"/>
+  </ns2:MulticastGatewayConfigurationTransportSession>
+  <ns2:MulticastGatewayConfigurationTransportSession transportSecurity="integrity">
+    <ns2:TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <ns2:EndpointAddress>
+      <ns2:NetworkSourceAddress>10.31.30.11</ns2:NetworkSourceAddress>
+      <ns2:NetworkDestinationGroupAddress>225.80.232.176</ns2:NetworkDestinationGroupAddress>
+      <ns2:TransportDestinationPort>50001</ns2:TransportDestinationPort>
+      <ns2:MediaTransportSessionIdentifier>9</ns2:MediaTransportSessionIdentifier>
+    </ns2:EndpointAddress>
+    <ns2:BitRate average="204800" maximum="204800"/>
+  </ns2:MulticastGatewayConfigurationTransportSession>
+  <ns2:MulticastGatewayConfigurationTransportSession serviceClass="urn:3gpp:metadata:2005:MBMS:envelope" transportSecurity="integrity">
+    <ns2:TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <ns2:EndpointAddress>
+      <ns2:NetworkSourceAddress>10.31.30.11</ns2:NetworkSourceAddress>
+      <ns2:NetworkDestinationGroupAddress>225.80.232.176</ns2:NetworkDestinationGroupAddress>
+      <ns2:TransportDestinationPort>50000</ns2:TransportDestinationPort>
+      <ns2:MediaTransportSessionIdentifier>8</ns2:MediaTransportSessionIdentifier>
+    </ns2:EndpointAddress>
+    <ns2:BitRate average="204800" maximum="204800"/>
+  </ns2:MulticastGatewayConfigurationTransportSession>
+</ns2:MulticastGatewayConfiguration>

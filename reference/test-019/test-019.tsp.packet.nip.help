@@ -69,10 +69,15 @@ Options:
       option --except-label. This is a generic option which is defined in all
       packet processing plugins.
 
-  -o directory-name
+  -d directory-name
   --output-directory directory-name
       Output directory for files which are extracted using option
       --extract-file. The default is the current directory.
+
+  -o file-name
+  --output-file file-name
+      With --summary, save the report in the specified file. By default or if
+      the specified path is '-', the report is written to standard output.
 
   -p value
   --pid value

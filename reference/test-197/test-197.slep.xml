@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceListEntryPoints xmlns="urn:dvb:metadata:servicelistdiscovery:2024" xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dvbi-types="urn:dvb:metadata:servicediscovery-types:2023" xsi:schemaLocation="urn:dvb:metadata:servicelistdiscovery:2024 dvbi_service_list_discovery_v1.6.xsd" xml:lang="en">
+  <ServiceListRegistryEntity regulatorFlag="false">
+    <mpeg7:Icon>
+      <mpeg7:MediaUri>http://dvb.gw/ses.com/materials/dvb-nip.jpg</mpeg7:MediaUri>
+    </mpeg7:Icon>
+    <Name>SES DVB-NIP</Name>
+    <Address>
+      <mpeg7:Name>SES</mpeg7:Name>
+      <mpeg7:PostalAddress>
+        <mpeg7:AddressLine>Château de Betzdorf, L-6815 Betzdorf, Luxembourg</mpeg7:AddressLine>
+      </mpeg7:PostalAddress>
+    </Address>
+    <ElectronicAddress>
+      <mpeg7:Email>dvbnip@ses.com</mpeg7:Email>
+      <mpeg7:Url>ses.com</mpeg7:Url>
+    </ElectronicAddress>
+  </ServiceListRegistryEntity>
+  <ProviderOffering>
+    <Provider regulatorFlag="false">
+      <mpeg7:Icon>
+        <mpeg7:MediaUri>http://dvb.gw/ses.com/materials/dvb-nip.jpg</mpeg7:MediaUri>
+      </mpeg7:Icon>
+      <Name>SES</Name>
+      <Address>
+        <mpeg7:Name>SES</mpeg7:Name>
+        <mpeg7:PostalAddress>
+          <mpeg7:AddressLine>Château de Betzdorf, L-6815 Betzdorf, Luxembourg</mpeg7:AddressLine>
+        </mpeg7:PostalAddress>
+      </Address>
+      <ElectronicAddress>
+        <mpeg7:Email>dvbnip@ses.com</mpeg7:Email>
+        <mpeg7:Url>ses.com</mpeg7:Url>
+      </ElectronicAddress>
+    </Provider>
+    <ServiceListOffering regulatorListFlag="false">
+      <dvbi-types:ServiceListName>DVB-NIP SES Network</dvbi-types:ServiceListName>
+      <dvbi-types:ServiceListURI contentType="application/xml">
+        <dvbi-types:URI>http://dvb.gw/ses.com/dvbi/service_list_full.xml</dvbi-types:URI>
+      </dvbi-types:ServiceListURI>
+      <dvbi-types:Delivery>
+        <dvbi-types:DASHDelivery required="true"/>
+      </dvbi-types:Delivery>
+      <dvbi-types:Language>en</dvbi-types:Language>
+      <dvbi-types:TargetCountry>LUX</dvbi-types:TargetCountry>
+      <dvbi-types:ServiceListId>tag:ses.com,2024:DVB-NIP_SES_Network</dvbi-types:ServiceListId>
+    </ServiceListOffering>
+    <ServiceListOffering regulatorListFlag="false">
+      <dvbi-types:ServiceListName>DVB-NIP Offline Content</dvbi-types:ServiceListName>
+      <dvbi-types:ServiceListURI contentType="application/xml">
+        <dvbi-types:URI>http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml</dvbi-types:URI>
+      </dvbi-types:ServiceListURI>
+      <dvbi-types:Delivery>
+        <dvbi-types:DASHDelivery required="true"/>
+      </dvbi-types:Delivery>
+      <dvbi-types:Language>en</dvbi-types:Language>
+      <dvbi-types:TargetCountry>LUX</dvbi-types:TargetCountry>
+      <dvbi-types:ServiceListId>tag:ses.com,2024:DVB-NIP_Offline_Content</dvbi-types:ServiceListId>
+    </ServiceListOffering>
+    <ServiceListOffering regulatorListFlag="false">
+      <dvbi-types:ServiceListName>DVB-NIP TP1045</dvbi-types:ServiceListName>
+      <dvbi-types:ServiceListURI contentType="application/xml">
+        <dvbi-types:URI>http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml</dvbi-types:URI>
+      </dvbi-types:ServiceListURI>
+      <dvbi-types:Delivery>
+        <dvbi-types:DASHDelivery required="true"/>
+      </dvbi-types:Delivery>
+      <dvbi-types:Language>en</dvbi-types:Language>
+      <dvbi-types:TargetCountry>LUX</dvbi-types:TargetCountry>
+      <dvbi-types:ServiceListId>tag:ses.com,2024:DVB-NIP_TP1045</dvbi-types:ServiceListId>
+    </ServiceListOffering>
+  </ProviderOffering>
+</ServiceListEntryPoints>

@@ -10,7 +10,6 @@ Parameter:
 
 Options:
 
-  -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
@@ -97,10 +96,15 @@ Options:
       Do not send output through a pager process. By default, if the output
       device is a terminal, the output is paged.
 
-  -o directory-name
+  -d directory-name
   --output-directory directory-name
       Output directory for files which are extracted using option
       --extract-file. The default is the current directory.
+
+  -o file-name
+  --output-file file-name
+      With --summary, save the report in the specified file. By default or if
+      the specified path is '-', the report is written to standard output.
 
   --save-bootstrap file-name
       Save the bootstrap multicast gateway configuration in the specified file.
