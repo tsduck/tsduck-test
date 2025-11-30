@@ -119,8 +119,8 @@ Options:
       by one. With this option, all input XML files must have the same root
       tag.
 
-  -m filename
-  --model filename
+  -m file-name
+  --model file-name
       Specify an XML model file which is used to validate all input files.
 
   --monitor
@@ -130,14 +130,18 @@ Options:
   --no-yaml-header
       With --yaml, do not add the standard YAML header and trailer.
 
-  -o filename
-  --output filename
-      Specify the name of the output file (standard output by default). An
-      output file is produced only if at least one of --patch, --reformat,
-      --json, --yaml is specified.
+  -o file-name
+  --output file-name
+      Specify the name of the output file (standard output by default). If the
+      specified file is an existing directory, the files are created with the
+      same name as input, with extension .xml, .json, or .yml, as appropriate.
+      If several input files are specified without --merge, the specified
+      output must be a directory. An output file is produced only if at least
+      one of --patch, --reformat, --uncomment, --merge, --json, --yaml is
+      specified.
 
-  -p filename
-  --patch filename
+  -p file-name
+  --patch file-name
       Specify an XML patch file. All operations which are specified in this
       file are applied on each input file. Several --patch options can be
       specified. Patch files are sequentially applied on each input file.
