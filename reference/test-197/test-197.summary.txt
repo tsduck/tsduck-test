@@ -6,15 +6,15 @@ Provider: "SES", network: 1, carrier: 1102, link: 1, service: 0
 Session #1: source: 192.168.200.180, destination: 224.0.23.14:3937, TSI: 0
     Size      TOI    Status  Name                                                                       Type
      642  143,134  complete  http://dvb.gw/ses.com/dvbi/cg/manifest.xml                                 application/xml+dvb-nip-cgm
-   8,538       16  complete  http://dvb.gw/ses.com/dvbi/service_list_full.xml                           application/vnd.dvb.dvbisl+xml; charset=utf-8
-   5,851       17  complete  http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml                         application/vnd.dvb.dvbisl+xml; charset=utf-8
+   8,538       16  complete  http://dvb.gw/ses.com/dvbi/service_list_full.xml                           application/vnd.dvb.dvbisl+xml
+   5,851       17  complete  http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml                         application/vnd.dvb.dvbisl+xml
   83,746  143,642  complete  urn:dvb:metadata:cs:NativeIPMulticastTransportObjectTypeCS:2023:bootstrap  application/xml+dvb-mabr-session-configuration
    1,937       18  complete  urn:dvb:metadata:nativeip:NetworkInformationFile                           application/xml+dvb-nip-nif
      764       21  complete  urn:dvb:metadata:nativeip:PrivateDataSignalling                            application/xml+dvb-nip-pds
      656  143,640         0  urn:dvb:metadata:nativeip:ServiceGuide                                     application/xml+dvb-nip-sgm
    4,433       19  complete  urn:dvb:metadata:nativeip:ServiceInformationFile                           application/xml+dvb-nip-sif
      686       20  complete  urn:dvb:metadata:nativeip:TimeOffsetFile                                   application/xml+dvb-nip-tof
-   3,152       15  complete  urn:dvb:metadata:nativeip:dvb-i-slep                                       application/xml+dvb-i-slep; charset=utf-8
+   3,152       15  complete  urn:dvb:metadata:nativeip:dvb-i-slep                                       application/xml+dvb-i-slep
 
 Session #2: source: 192.168.200.180, destination: 224.0.46.1:46001, TSI: 46001
      Size        TOI  Status  Name
@@ -74,7 +74,7 @@ Session #12: source: 192.168.200.180, destination: 224.0.49.2:49002, TSI: 49002
 
 Session #13: source: 192.168.200.180, destination: 224.0.49.3:49003, TSI: 49003
     Size  TOI    Status  Name                                                                           Type
-  30,281    2  complete  http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml                application/vnd.dvb.dvbisl+xml; charset=utf-8
+  30,281    2  complete  http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml                application/vnd.dvb.dvbisl+xml
      337    1  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
 
 Session #14: source: 192.168.200.180, destination: 224.0.49.4:49004, TSI: 49004
