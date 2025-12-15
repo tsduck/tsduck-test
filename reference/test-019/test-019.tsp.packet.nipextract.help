@@ -1,0 +1,51 @@
+
+DVB-NIP (Native IP) live service extraction
+
+Usage: tsp -P nipextract [options]
+
+Options:
+
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
+  --help
+      Display this help text.
+
+  -l value
+  --lcn value
+      Logical channel number of the DVB-NIP service to extract. If neither
+      --lcn nor --name are specified, extract the first service that is found.
+
+  -n 'string'
+  --name 'string'
+      Name of the DVB-NIP service to extract. The name is case-insensitive and
+      blanks are ignored. If neither --lcn nor --name are specified, extract
+      the first service that is found.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
+
+  -p value
+  --pid value
+      Specify the MPE PID containing the DVB-NIP stream. By default, if neither
+      --pid nor --service is specified, use the first MPE PID which is found.
+      Options --pid and --service are mutually exclusive.
+
+  -s name-or-id
+  --service name-or-id
+      Specify the service containing the DVB-NIP stream in a MPE PID. If the
+      argument is an integer value (either decimal or hexadecimal), it is
+      interpreted as a service id. Otherwise, it is interpreted as a service
+      name, as specified in the SDT. The name is not case sensitive and blanks
+      are ignored. By default, if neither --pid nor --service is specified, use
+      the first MPE PID which is found.Options --pid and --service are mutually
+      exclusive.
+
