@@ -18,8 +18,8 @@ fi
 
 TOOLS=(
     tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate tsdektec
-    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsfuzz tsgenecm
-    tshides tslatencymonitor
+    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsflute tsftrunc
+    tsfuzz tsgenecm tshides tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
     tsnip tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
@@ -40,7 +40,7 @@ OUTPUT_PLUGINS=(
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject decap descrambler dump duplicate eit eitinject
-    encap feed file filter fork fuzz history iat identify influx inject ip
+    encap feed file filter flute fork fuzz history iat identify influx inject ip
     isdbinfo limit merge mpe mpeinject mux nip nipextract nit nitscan pat pattern
     pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes
     pidshift pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler

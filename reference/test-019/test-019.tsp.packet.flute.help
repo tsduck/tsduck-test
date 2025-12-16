@@ -1,0 +1,122 @@
+
+FLUTE analyzer
+
+Usage: tsp -P flute [options]
+
+Options:
+
+  -d [ip-address]:[port]
+  --destination [ip-address]:[port]
+      Only use UDP packets with the specified destination IP address and/or UDP
+      port. Multiple options --destination can be specified. By default, use
+      all UDP packets.
+
+  --dump-flute-payload
+      Same as --log-flute-packets and also dump the payload of each FLUTE
+      packet.
+
+  --dump-xml-files
+      Dump the content of XML files when they are received.
+
+  --except-label label1[-label2]
+      Invoke this plugin only for packets without any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --except-label options may be specified. See
+      also option --only-label. This is a generic option which is defined in
+      all packet processing plugins.
+
+  --extract-carousel directory-name
+      Save all files in the FLUTE carousel. The specified path is a directory.
+      The file hierarchy is recreated from this directory. When a FLUTE file
+      name is an URI, the URI scheme is removed. The characters which are not
+      allowed in file names are replaced with an underscore.
+
+  --extract-destination [ip-address]:[port]
+      With --extract-file, specify the destination IP address and/or UDP port
+      of files. By default, extract the files with matching name and any IP
+      destination.
+
+  -e name-or-urn
+  --extract-file name-or-urn
+      Extract the specified file from the FLUTE carousel. The name-or-urn shall
+      be the exact complete name of the file, as identified in the FDT. The
+      option --extract-file can be specified several times. All files are
+      extracted in the output directory which is specified in option
+      --output-directory. The output base name of each file is the last part of
+      the name-or-urn, after the last slash or colon.
+
+  --extract-source ip-address
+      With --extract-file, specify the source IP address of files. By default,
+      extract the files with matching name and any IP source address.
+
+  --extract-tsi value
+      With --extract-file, specify the Transport Session Identifier (TSI) of
+      files. By default, extract the files with matching name and any TSI.
+
+  --help
+      Display this help text.
+
+  --log-fdt
+      Log a message describing each FLUTE File Delivery Table (FDT).
+
+  --log-files
+      Log a message describing each received file.
+
+  --log-flute-packets
+      Log a message describing the structure of each FLUTE packet.
+
+  --max-file-size value
+      Maximum size of files to analyze or extract. Each received file is
+      accumulated in memory, chunk by chunk, until the file is complete. After
+      processing the file, all chunks are freeed. This option is useful when
+      the stream contains many large files which clutter the memory during
+      their reception. All files which are announced as larger than the
+      specified size are ignored. By default, all files are received and
+      analyzed or saved.
+
+  --only-label label1[-label2]
+      Invoke this plugin only for packets with any of the specified labels.
+      Other packets are transparently passed to the next plugin, without going
+      through this one. Several --only-label options may be specified. See also
+      option --except-label. This is a generic option which is defined in all
+      packet processing plugins.
+
+  --output-directory directory-name
+      Output directory for files which are extracted using option
+      --extract-file. The default is the current directory.
+
+  -o file-name
+  --output-file file-name
+      With --summary, save the report in the specified file. By default or if
+      the specified path is '-', the report is written to standard output.
+
+  -p value
+  --pid value
+      Specify the MPE PID containing the FLUTE stream. By default, if neither
+      --pid nor --service is specified, use the first MPE PID which is found.
+      Options --pid and --service are mutually exclusive.
+
+  --save-fdt file-name
+      Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
+      saved in a separate file. If the specified path is 'dir/fdt.xml' for
+      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'. If
+      the specified path is '-', the file is written to standard output.
+
+  -s name-or-id
+  --service name-or-id
+      Specify the service containing the FLUTE stream in a MPE PID. If the
+      argument is an integer value (either decimal or hexadecimal), it is
+      interpreted as a service id. Otherwise, it is interpreted as a service
+      name, as specified in the SDT. The name is not case sensitive and blanks
+      are ignored. By default, if neither --pid nor --service is specified, use
+      the first MPE PID which is found.Options --pid and --service are mutually
+      exclusive.
+
+  --strict
+      Apply a strict interpretation of protocols. By default, non-fatal
+      misusages of the protocols are ignored.
+
+  --summary
+      Display a summary of the FLUTE sessions and files. This is the default if
+      no other option is specified.
+

@@ -293,3 +293,5 @@ repository. But we now limit their size to 20 MB.
 | 196  | Non-regression on plugin `pat` when the TS id changes (issue #1668)
 | 197  | `tsnip`
 | 198  | Plugin `nip`
+| 199  | `tsflute`
+| 200  | Plugin `flute`
