@@ -40,6 +40,10 @@ Options:
       --time-reference UTC-3'. This is a handy shortcut when working on South
       American ISDB-Tb transport streams.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   -c
   --compile
       Compile all files as XML or JSON source files into binary files. This is
@@ -87,6 +91,9 @@ Options:
       Several options --default-registration can be specified. Unlike DVB
       private data specifiers, several MPEG registration ids can be
       simultaneously defined.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally

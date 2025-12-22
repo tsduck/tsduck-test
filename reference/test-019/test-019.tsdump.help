@@ -49,6 +49,10 @@ Options:
       Same as --raw-dump (no interpretation of packet) but dump the bytes in
       C-language style.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   -d[level]
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
@@ -65,6 +69,9 @@ Options:
       Warning: On input sockets, this option is effective only on Windows
       systems. On Unix systems (Linux, macOS, BSD), this option applies only to
       output sockets.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally

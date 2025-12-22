@@ -61,6 +61,10 @@ Options:
       between the input and output devices. The default is 16 MB.
       The value may include up to 6 meaningful decimal digits.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   --conax
       Equivalent to --default-cas-id 0x0B00.
 
@@ -169,6 +173,9 @@ Options:
       Several options --default-registration can be specified. Unlike DVB
       private data specifiers, several MPEG registration ids can be
       simultaneously defined.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally

@@ -41,6 +41,10 @@ Options:
   --cat-only
       Display only the CAT, ignore other PSI tables.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   --clear
       Indicate that this is a clear transport stream, without conditional
       access information. Useful to avoid reading the complete transport
@@ -93,6 +97,9 @@ Options:
       Several options --default-registration can be specified. Unlike DVB
       private data specifiers, several MPEG registration ids can be
       simultaneously defined.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   -d
   --dump

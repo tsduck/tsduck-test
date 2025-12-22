@@ -46,6 +46,10 @@ Options:
       Same as --raw-dump (no interpretation of section) but dump the bytes in
       C-language style.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   --conax
       Equivalent to --default-cas-id 0x0B00.
 
@@ -96,6 +100,9 @@ Options:
       payloads containing the same byte value (all 0x00 or all 0xFF for
       instance) are ignored. Typically, such sections are stuffing and can be
       ignored that way.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   --duration
       Display the time offset from the beginning of the stream with each table.

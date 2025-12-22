@@ -21,6 +21,10 @@ Options:
       Use Cipher Block Chaining (CBC) mode without padding. The residue (last
       part of the packet payload, shorter than 16 bytes) is left clear.
 
+  --china
+      A synonym for ''. This is a handy shortcut when working on Chinese
+      transport streams.
+
   --cts1
       Use Cipher Text Stealing (CTS) mode, as defined by Bruce Schneier in its
       "Applied Cryptography" and by RFC 2040 as RC5-CTS. TS packets with a
