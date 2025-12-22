@@ -18,10 +18,10 @@ fi
 
 TOOLS=(
     tsanalyze tsbitrate tscharset tscmp tscrc32 tsdate tsdektec
-    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsftrunc tsfuzz tsgenecm
-    tshides tslatencymonitor
+    tsdump tsecmg tseit tsemmg tsfclean tsfixcc tsflute tsftrunc
+    tsfuzz tsgenecm tshides tslatencymonitor
     tslsdvb.linux tslsdvb.mac tslsdvb.windows
-    tsp tspacketize tspcap tspcontrol tspsi tsresync
+    tsnip tsp tspacketize tspcap tspcontrol tspsi tsresync
     tsscan.linux tsscan.mac tsscan.windows
     tssmartcard tsstuff tsswitch tstabcomp tstabdump tstables tsterinfo
     tstestecmg tsvatek tsxml
@@ -40,11 +40,11 @@ OUTPUT_PLUGINS=(
 PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject decap descrambler dump duplicate eit eitinject
-    encap feed file filter fork fuzz history iat identify influx inject ip
-    isdbinfo limit merge mpe mpeinject mux nit nitscan pat pattern pcradjust
-    pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes pidshift
-    pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler sdt
-    sections sifilter skip slice spliceinject splicemonitor splicerestamp
+    encap feed file filter flute fork fuzz history iat identify influx inject ip
+    isdbinfo limit merge mpe mpeinject mux nip nipextract nit nitscan pat pattern
+    pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes
+    pidshift pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler
+    sdt sections sifilter skip slice spliceinject splicemonitor splicerestamp
     stats stuffanalyze svremove svrename svresync t2mi tables teletext time
     timeref timeshift trace trigger tsrename until zap
 )

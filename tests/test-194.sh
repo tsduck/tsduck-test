@@ -54,4 +54,3 @@ test_text $SCRIPT.tsp.2.log
 test_text $SCRIPT.tspcontrol.2a.log
 test_text $SCRIPT.tspcontrol.2b.log
 test_text $SCRIPT.tspcontrol.2c.log
-

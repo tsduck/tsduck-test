@@ -1,0 +1,51 @@
+
+DVB-NIP carriers: 3
+Provider: "EUTELSAT", network: 318, carrier: 7600, link: 0, service: 17702
+Provider: "Eutelsat", network: 318, carrier: 7600, link: 0, service: 17702
+Provider: "Eutelsat", network: 318, carrier: 8400, link: 0, service: 1501
+
+Service lists: 0
+
+Services: 0 (V: visible, S: selectable)
+
+Session #1: source: 10.31.30.11, destination: 224.0.23.14:3937, TSI: 0
+   Size     TOI    Status  Name                                                                       Type
+  2,591  20,767  complete  urn:dvb:metadata:cs:NativeIPMulticastTransportObjectTypeCS:2023:bootstrap  application/xml+dvb-mabr-session-configuration
+  1,930  20,751  complete  urn:dvb:metadata:nativeip:NetworkInformationFile                           application/xml+dvb-nip-nif
+  1,890  20,752  complete  urn:dvb:metadata:nativeip:ServiceInformationFile                           application/xml+dvb-nip-sif
+
+Session #2: source: 10.31.30.11, destination: 225.80.232.176:50000, TSI: 8
+  Size     TOI  Status  Name
+     0  20,659  27,596  (unknown, TOI 20659)
+
+Session #3: source: 10.31.30.11, destination: 225.80.232.176:50001, TSI: 9
+    Size     TOI    Status  Name                                                                           Type
+     629  20,695  complete  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch007/hls-sb/index.m3u8             application/vnd.apple.mpegurl
+     629  20,696  complete  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch008/hls-sb/index.m3u8             application/vnd.apple.mpegurl
+     629  20,694  complete  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch009/hls-sb/index.m3u8             application/vnd.apple.mpegurl
+     136  20,693  complete  http://dvb.gw/eutelsat/corp/73_arryadia_k2tgcj0_480p/playlist.m3u8             application/vnd.apple.mpegurl
+     456  20,699  complete  http://dvb.gw/eutelsat/ts_corp/73_almaghribia_83tz85q/playlist.m3u8            application/vnd.apple.mpegurl
+     441  20,698  complete  http://dvb.gw/eutelsat/ts_corp/73_aloula_w1dqfwm/playlist.m3u8                 application/vnd.apple.mpegurl
+  13,316  20,697  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #4: source: 10.31.30.11, destination: 225.80.232.177:50018, TSI: 50018
+       Size     TOI   Status  Name                                                                                                                           Type
+  1,236,664  34,901  162,400  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch009/hls-sb/orp01-ten999-ch009-audio_133600_eng=131600-video=2600000-439308098.ts  video/MP2T
+
+Session #5: source: 10.31.30.11, destination: 225.80.232.177:50019, TSI: 50019
+       Size     TOI   Status  Name                                                                                                                           Type
+    146,640  34,884        0  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch008/hls-sb/keyframes/orp01-ten999-ch008-video=2600000-439308098.ts                video/MP2T
+  1,338,936  34,883  159,600  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch008/hls-sb/orp01-ten999-ch008-audio_133600_eng=131600-video=2600000-439308098.ts  video/MP2T
+
+Session #6: source: 10.31.30.11, destination: 225.80.232.177:50020, TSI: 50020
+       Size     TOI   Status  Name                                                                                                                           Type
+  1,492,344  34,930  162,400  http://dvb.gw/eutelsat/bpk-tv/orp01-ten999-ch007/hls-sb/orp01-ten999-ch007-audio_132000_eng=130000-video=2580000-439308097.ts  video/MP2T
+
+Session #7: source: 10.31.30.11, destination: 225.80.232.177:50021, TSI: 50021
+  Size     TOI   Status  Name
+     0  32,786  162,400  (unknown, TOI 32786)
+
+Session #8: source: 10.31.30.11, destination: 225.80.232.177:50022, TSI: 50022
+  Size     TOI   Status  Name
+     0  46,606  162,400  (unknown, TOI 46606)
+

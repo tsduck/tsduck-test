@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkInformationFile xmlns="urn:dvb:metadata:nativeip:2024" xmlns:mpeg7="urn:tva:metadata:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="urn:dvb:metadata:Extensibility:2024" ext:schemaVersion="1">
+  <VersionUpdate>2025-01-10T11:36:58Z</VersionUpdate>
+  <NIFType>Physical Network</NIFType>
+  <ActualBroadcastNetwork>
+    <NetworkType>Satellite</NetworkType>
+    <NetworkName>SES</NetworkName>
+    <NIPNetworkProviderName>SES</NIPNetworkProviderName>
+    <SatellitePosition>
+      <OrbitalPosition>19.2</OrbitalPosition>
+      <West_East_flag>East</West_East_flag>
+    </SatellitePosition>
+    <NIPNetworkID>1</NIPNetworkID>
+    <NIPStream>
+      <LinkLayerFormat>GSE-Lite</LinkLayerFormat>
+      <NIPStreamProviderName>SES</NIPStreamProviderName>
+      <NIPCarrierID>1045</NIPCarrierID>
+      <NIPLinkID>1</NIPLinkID>
+      <NIPServiceID>0</NIPServiceID>
+      <BootstrapStream>
+        <BootstrapType>Physical Network</BootstrapType>
+        <Status>Active</Status>
+      </BootstrapStream>
+      <DVBS2X_NIPDeliveryParameters>
+        <receiver_profiles>Broadcast services</receiver_profiles>
+        <S2X_mode>S2X</S2X_mode>
+        <Frequency>1114100</Frequency>
+        <Polarization>horizontal</Polarization>
+        <Roll_off>0.20</Roll_off>
+        <SymbolRate>23500</SymbolRate>
+        <input_stream_identifier>0</input_stream_identifier>
+      </DVBS2X_NIPDeliveryParameters>
+    </NIPStream>
+    <NIPStream>
+      <LinkLayerFormat>GSE-Lite</LinkLayerFormat>
+      <NIPStreamProviderName>SES</NIPStreamProviderName>
+      <NIPCarrierID>1102</NIPCarrierID>
+      <NIPLinkID>1</NIPLinkID>
+      <NIPServiceID>0</NIPServiceID>
+      <BootstrapStream>
+        <BootstrapType>Commercial Operator</BootstrapType>
+        <Status>Active</Status>
+      </BootstrapStream>
+      <DVBS2X_NIPDeliveryParameters>
+        <receiver_profiles>Broadcast services</receiver_profiles>
+        <S2X_mode>S2X</S2X_mode>
+        <Frequency>1244100</Frequency>
+        <Polarization>vertical</Polarization>
+        <Roll_off>0.20</Roll_off>
+        <SymbolRate>27500</SymbolRate>
+        <input_stream_identifier>0</input_stream_identifier>
+      </DVBS2X_NIPDeliveryParameters>
+    </NIPStream>
+  </ActualBroadcastNetwork>
+</NetworkInformationFile>

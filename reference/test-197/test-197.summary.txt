@@ -1,0 +1,222 @@
+
+DVB-NIP carriers: 2
+Provider: "SES", network: 1, carrier: 1045, link: 1, service: 0
+Provider: "SES", network: 1, carrier: 1102, link: 1, service: 0
+
+Service lists: 3
+  Provider  List name                Session id                                                          File URN
+  SES       DVB-NIP SES Network      source: 192.168.200.180, destination: 224.0.23.14:3937, TSI: 0      http://dvb.gw/ses.com/dvbi/service_list_full.xml
+  SES       DVB-NIP TP1045           source: 192.168.200.180, destination: 224.0.23.14:3937, TSI: 0      http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml
+  SES       DVB-NIP Offline Content  source: 192.168.200.180, destination: 224.0.49.3:49003, TSI: 49003  http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml
+
+Services: 39 (V: visible, S: selectable)
+    LCN  VS  Type      Provider  Service                      Media URN                                                                      Type
+      1  vs  linear    SES       B1                           http://dvb.gw/ses.com/livesim2/B1/Manifest.mpd                                 application/dash+xml
+      1  vs  linear    SES       B1                           http://dvb.gw/ses.com/livesim2/B1/playlist.m3u8                                application/vnd.apple.mpegurl
+      2  vs  linear    SES       B2                           http://dvb.gw/ses.com/livesim2/B2/Manifest.mpd                                 application/dash+xml
+      2  vs  linear    SES       B2                           http://dvb.gw/ses.com/livesim2/B2/playlist.m3u8                                application/vnd.apple.mpegurl
+      3  vs  linear    SES       C1                           http://dvb.gw/ses.com/livesim2/C1/Manifest.mpd                                 application/dash+xml
+      3  vs  linear    SES       C1                           http://dvb.gw/ses.com/livesim2/C1/playlist.m3u8                                application/vnd.apple.mpegurl
+      5  vs  linear    Inverto   Inverto 1                    http://dvb.gw/inverto.tv/s0/5G-EMERGE/Live/hls/crits_linear/crits_linear.m3u8  application/vnd.apple.mpegurl
+      6  vs  linear    Inverto   Inverto 2                    http://dvb.gw/inverto.tv/s1/5G-EMERGE/Live/hls/RaiStoria/RaiStoria.m3u8        application/vnd.apple.mpegurl
+      7  vs  linear    Inverto   Inverto 3                    http://dvb.gw/inverto.tv/s2/5G-EMERGE/Live/hls/RaiScuola/RaiScuola.m3u8        application/vnd.apple.mpegurl
+  1,100  vs  data      SES       brayden-prato.jpg            http://dvb.gw/ses.com/private/pictures/brayden-prato.jpg                       image/jpeg
+  1,101  vs  data      SES       fabrice-villard.jpg          http://dvb.gw/ses.com/private/pictures/fabrice-villard.jpg                     image/jpeg
+  1,102  vs  data      SES       nicolas-hans.jpg             http://dvb.gw/ses.com/private/pictures/nicolas-hans.jpg                        image/jpeg
+  1,103  vs  data      SES       caleb-smith.jpg              http://dvb.gw/ses.com/private/pictures/caleb-smith.jpg                         image/jpeg
+  1,104  vs  data      SES       haberdoedas.jpg              http://dvb.gw/ses.com/private/pictures/haberdoedas.jpg                         image/jpeg
+  1,105  vs  data      SES       marek-piwnicki.jpg           http://dvb.gw/ses.com/private/pictures/marek-piwnicki.jpg                      image/jpeg
+  1,106  vs  data      SES       vadym-chuma.jpg              http://dvb.gw/ses.com/private/pictures/vadym-chuma.jpg                         image/jpeg
+  1,107  vs  data      SES       marek-piwnicki2.jpg          http://dvb.gw/ses.com/private/pictures/marek-piwnicki2.jpg                     image/jpeg
+  1,108  vs  data      SES       eberhard-grossgasteiger.jpg  http://dvb.gw/ses.com/private/pictures/eberhard-grossgasteiger.jpg             image/jpeg
+  1,109  vs  data      SES       anton-sobotyak.jpg           http://dvb.gw/ses.com/private/pictures/anton-sobotyak.jpg                      image/jpeg
+  1,110  vs  data      SES       quang-nguyen-vinh.jpg        http://dvb.gw/ses.com/private/pictures/quang-nguyen-vinh.jpg                   image/jpeg
+  1,111  vs  data      SES       anna-kasin.jpg               http://dvb.gw/ses.com/private/pictures/anna-kasin.jpg                          image/jpeg
+  1,200  vs  ondemand  SES       2017_SES_4K_trailer_IBC.mp4  http://dvb.gw/ses.com/private/vod_small/2017_SES_4K_trailer_IBC.mp4            video/mp4
+  1,201  vs  ondemand  SES       ASTRA_06_Unternehmen.mp4     http://dvb.gw/ses.com/private/vod_small/ASTRA_06_Unternehmen.mp4               video/mp4
+  1,202  vs  ondemand  SES       Welcome to Luxembourg.mp4    http://dvb.gw/ses.com/private/vod_small/Welcome%20to%20Luxembourg.mp4          video/mp4
+  1,203  vs  ondemand  SES       SES Beyond Frontiers.mp4     http://dvb.gw/ses.com/private/vod_small/SES%20Beyond%20Frontiers.mp4           video/mp4
+  1,204  vs  ondemand  SES       A Better Super Bowl.mp4      http://dvb.gw/ses.com/private/vod_small/A%20Better%20Super%20Bowl.mp4          video/mp4
+  1,205  vs  ondemand  SES       SES_PS_Infrastructure.mp4    http://dvb.gw/ses.com/private/vod_small/SES_PS_Infrastructure.mp4              video/mp4
+  1,206  vs  ondemand  SES       SES_BS.mp4                   http://dvb.gw/ses.com/private/vod_small/SES_BS.mp4                             video/mp4
+  1,207  vs  ondemand  SES       HDplus_ExtraScreen.mp4       http://dvb.gw/ses.com/private/vod_small/HDplus_ExtraScreen.mp4                 video/mp4
+  1,208  vs  ondemand  SES       AIT_VF-10-08-15_French.mp4   http://dvb.gw/ses.com/private/vod_small/AIT_VF-10-08-15_French.mp4             video/mp4
+  1,209  vs  ondemand  SES       SES_Techcom.mp4              http://dvb.gw/ses.com/private/vod_small/SES_Techcom.mp4                        video/mp4
+  1,300  vs  data      SES       P.M. Magazin.pdf             http://dvb.gw/ses.com/private/pdf/P.M.%20Magazin.pdf                           application/pdf
+  1,301  vs  data      SES       Schöner Wohnen.pdf           http://dvb.gw/ses.com/private/pdf/Scho%CC%88ner%20Wohnen.pdf                   application/pdf
+  1,302  vs  data      SES       invisible man.pdf            http://dvb.gw/ses.com/private/pdf/invisible%20man.pdf                          application/pdf
+  1,303  vs  data      SES       GEO WISSEN.pdf               http://dvb.gw/ses.com/private/pdf/GEO%20WISSEN.pdf                             application/pdf
+  1,304  vs  data      SES       l'odyssée homère.pdf         http://dvb.gw/ses.com/private/pdf/l'odyss%C3%A9e%20hom%C3%A8re.pdf             application/pdf
+  1,305  vs  data      SES       phantom ship.pdf             http://dvb.gw/ses.com/private/pdf/phantom%20ship.pdf                           application/pdf
+  1,306  vs  data      SES       BILD AM SONNTAG.pdf          http://dvb.gw/ses.com/private/pdf/BILD%20AM%20SONNTAG.pdf                      application/pdf
+  1,307  vs  data      SES       F.A.Z.pdf                    http://dvb.gw/ses.com/private/pdf/F.A.Z.pdf                                    application/pdf
+  1,308  vs  data      SES       robinson crusoe.pdf          http://dvb.gw/ses.com/private/pdf/robinson%20crusoe.pdf                        application/pdf
+  1,309  vs  data      SES       wonderful wizardo.pdf        http://dvb.gw/ses.com/private/pdf/wonderful%20wizardo.pdf                      application/pdf
+  1,310  vs  data      SES       Süddeutsche Zeitung.pdf      http://dvb.gw/ses.com/private/pdf/Su%CC%88ddeutsche%20Zeitung.pdf              application/pdf
+
+Session #1: source: 192.168.200.180, destination: 224.0.23.14:3937, TSI: 0
+    Size      TOI    Status  Name                                                                       Type
+     642  143,134  complete  http://dvb.gw/ses.com/dvbi/cg/manifest.xml                                 application/xml+dvb-nip-cgm
+   8,538       16  complete  http://dvb.gw/ses.com/dvbi/service_list_full.xml                           application/vnd.dvb.dvbisl+xml
+   5,851       17  complete  http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml                         application/vnd.dvb.dvbisl+xml
+  83,746  143,642  complete  urn:dvb:metadata:cs:NativeIPMulticastTransportObjectTypeCS:2023:bootstrap  application/xml+dvb-mabr-session-configuration
+   1,937       18  complete  urn:dvb:metadata:nativeip:NetworkInformationFile                           application/xml+dvb-nip-nif
+     764       21  complete  urn:dvb:metadata:nativeip:PrivateDataSignalling                            application/xml+dvb-nip-pds
+     656  143,640         0  urn:dvb:metadata:nativeip:ServiceGuide                                     application/xml+dvb-nip-sgm
+   4,433       19  complete  urn:dvb:metadata:nativeip:ServiceInformationFile                           application/xml+dvb-nip-sif
+     686       20  complete  urn:dvb:metadata:nativeip:TimeOffsetFile                                   application/xml+dvb-nip-tof
+   3,152       15  complete  urn:dvb:metadata:nativeip:dvb-i-slep                                       application/xml+dvb-i-slep
+
+Session #2: source: 192.168.200.180, destination: 224.0.46.1:46001, TSI: 46001
+     Size        TOI  Status  Name
+  313,431  4,160,868  74,752  (unknown, TOI 4160868)
+
+Session #3: source: 192.168.200.180, destination: 224.0.46.2:46002, TSI: 46002
+       Size        TOI   Status  Name
+  1,300,950  2,774,088  320,512  (unknown, TOI 2774088)
+
+Session #4: source: 192.168.200.180, destination: 224.0.46.3:46003, TSI: 46003
+    Size        TOI  Status  Name
+  24,410  2,774,088   6,144  (unknown, TOI 2774088)
+
+Session #5: source: 192.168.200.180, destination: 224.0.48.1:48001, TSI: 48001
+       Size        TOI    Status  Name
+        712          1  complete  (unknown, TOI 1)
+        414          2  complete  (unknown, TOI 2)
+  1,012,187  4,160,881   233,472  (unknown, TOI 4160881)
+
+Session #6: source: 192.168.200.180, destination: 224.0.48.2:48002, TSI: 48002
+     Size        TOI  Status  Name
+  268,894  2,774,094  63,488  (unknown, TOI 2774094)
+
+Session #7: source: 192.168.200.180, destination: 224.0.48.3:48003, TSI: 48003
+    Size        TOI  Status  Name
+  24,603  2,774,089   5,120  (unknown, TOI 2774089)
+
+Session #8: source: 192.168.200.180, destination: 224.0.48.10:48011, TSI: 48011
+     Size        TOI    Status  Name
+      863          1  complete  (unknown, TOI 1)
+      655          2  complete  (unknown, TOI 2)
+  182,125  8,321,711    83,968  (unknown, TOI 8321711)
+
+Session #9: source: 192.168.200.180, destination: 224.0.48.11:48012, TSI: 48012
+    Size        TOI  Status  Name
+  32,515  5,548,167  15,360  (unknown, TOI 5548167)
+
+Session #10: source: 192.168.200.180, destination: 224.0.48.12:48013, TSI: 48013
+    Size        TOI  Status  Name
+  32,515  5,548,164  15,360  (unknown, TOI 5548164)
+
+Session #11: source: 192.168.200.180, destination: 224.0.49.1:49001, TSI: 49001
+    Size  TOI    Status  Name                                                                           Type
+  14,347    4  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #12: source: 192.168.200.180, destination: 224.0.49.2:49002, TSI: 49002
+     Size  TOI    Status  Name                                                                           Type
+    9,502    3  complete  http://dvb.gw/ses.com/materials/5G-EMERGE.jpg                                  image/jpeg
+  239,117    7     2,048  http://dvb.gw/ses.com/materials/banners/a2.jpg                                 image/jpeg
+  233,257    5    66,560  http://dvb.gw/ses.com/materials/banners/b1.jpg                                 image/jpeg
+  188,728    6         0  http://dvb.gw/ses.com/materials/banners/b2.jpg                                 image/jpeg
+  165,707    8         0  http://dvb.gw/ses.com/materials/banners/c1.jpg                                 image/jpeg
+  169,162    9     1,226  http://dvb.gw/ses.com/materials/banners/c2.jpg                                 image/jpeg
+   24,105    2         0  http://dvb.gw/ses.com/materials/dvb-nip.jpg                                    image/jpeg
+    2,857    4         0  http://dvb.gw/ses.com/materials/ses.jpg                                        image/jpeg
+      337    1  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #13: source: 192.168.200.180, destination: 224.0.49.3:49003, TSI: 49003
+    Size  TOI    Status  Name                                                                           Type
+  30,281    2  complete  http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml                application/vnd.dvb.dvbisl+xml
+     337    1  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #14: source: 192.168.200.180, destination: 224.0.49.4:49004, TSI: 49004
+     Size  TOI    Status  Name
+      337    1  complete  (unknown, TOI 1)
+  646,426   11    17,408  (unknown, TOI 11)
+  366,793   12    16,384  (unknown, TOI 12)
+  413,489    2    17,408  (unknown, TOI 2)
+  140,547    3    17,408  (unknown, TOI 3)
+  519,012    4    17,408  (unknown, TOI 4)
+
+Session #15: source: 192.168.200.180, destination: 224.0.49.5:49005, TSI: 49005
+         Size  TOI    Status  Name                                                                           Type
+  215,608,714    2         0  http://dvb.gw/ses.com/private/vod_small/2017_SES_4K_trailer_IBC.mp4            video/mp4
+   16,778,599    6   342,016  http://dvb.gw/ses.com/private/vod_small/A%20Better%20Super%20Bowl.mp4          video/mp4
+  291,189,815   10   342,016  http://dvb.gw/ses.com/private/vod_small/AIT_VF-10-08-15_French.mp4             video/mp4
+  169,918,341    3   342,016  http://dvb.gw/ses.com/private/vod_small/ASTRA_06_Unternehmen.mp4               video/mp4
+   40,447,218    9   342,016  http://dvb.gw/ses.com/private/vod_small/HDplus_ExtraScreen.mp4                 video/mp4
+  186,366,721    5         0  http://dvb.gw/ses.com/private/vod_small/SES%20Beyond%20Frontiers.mp4           video/mp4
+   41,593,847    8         0  http://dvb.gw/ses.com/private/vod_small/SES_BS.mp4                             video/mp4
+   39,491,369    7         0  http://dvb.gw/ses.com/private/vod_small/SES_PS_Infrastructure.mp4              video/mp4
+   39,931,598   11         0  http://dvb.gw/ses.com/private/vod_small/SES_Techcom.mp4                        video/mp4
+   93,859,831    4   342,016  http://dvb.gw/ses.com/private/vod_small/Welcome%20to%20Luxembourg.mp4          video/mp4
+          337    1  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #16: source: 192.168.200.180, destination: 224.0.49.5:49005, TSI: 49006
+    Size  TOI    Status  Name
+     337    1  complete  (unknown, TOI 1)
+  21,732    4  complete  (unknown, TOI 4)
+  23,794    8  complete  (unknown, TOI 8)
+
+Session #17: source: 192.168.200.180, destination: 224.0.49.6:49006, TSI: 49006
+         Size  TOI    Status  Name                                                                           Type
+   29,971,986    8   169,984  http://dvb.gw/ses.com/private/pdf/BILD%20AM%20SONNTAG.pdf                      application/pdf
+   18,026,759    9         0  http://dvb.gw/ses.com/private/pdf/F.A.Z.pdf                                    application/pdf
+  161,244,536    5         0  http://dvb.gw/ses.com/private/pdf/GEO%20WISSEN.pdf                             application/pdf
+  115,445,603    2   169,984  http://dvb.gw/ses.com/private/pdf/P.M.%20Magazin.pdf                           application/pdf
+   99,201,612    3   169,984  http://dvb.gw/ses.com/private/pdf/Scho%CC%88ner%20Wohnen.pdf                   application/pdf
+   26,157,169   12         0  http://dvb.gw/ses.com/private/pdf/Su%CC%88ddeutsche%20Zeitung.pdf              application/pdf
+    7,877,214    4         0  http://dvb.gw/ses.com/private/pdf/invisible%20man.pdf                          application/pdf
+   10,000,413    6   169,984  http://dvb.gw/ses.com/private/pdf/l'odyss%C3%A9e%20hom%C3%A8re.pdf             application/pdf
+   19,228,704    7   169,984  http://dvb.gw/ses.com/private/pdf/phantom%20ship.pdf                           application/pdf
+   30,754,537   10         0  http://dvb.gw/ses.com/private/pdf/robinson%20crusoe.pdf                        application/pdf
+   17,423,589   11         0  http://dvb.gw/ses.com/private/pdf/wonderful%20wizardo.pdf                      application/pdf
+          337    1  complete  urn:dvb:metadata:cs:MulticastTransportObjectTypeCS:2021:gateway-configuration  application/xml+dvb-mabr-session-configuration
+
+Session #18: source: 192.168.200.180, destination: 224.0.49.6:49006, TSI: 49007
+    Size  TOI    Status  Name
+     337    1  complete  (unknown, TOI 1)
+  44,016   10    33,776  (unknown, TOI 10)
+  38,493   12    32,349  (unknown, TOI 12)
+  51,492    4     1,024  (unknown, TOI 4)
+  37,368    8    12,288  (unknown, TOI 8)
+  36,587    9     2,795  (unknown, TOI 9)
+
+Session #19: source: 192.168.200.180, destination: 224.0.49.8:49008, TSI: 49008
+    Size  TOI    Status  Name
+     337    1  complete  (unknown, TOI 1)
+   5,215   10  complete  (unknown, TOI 10)
+   2,488    2  complete  (unknown, TOI 2)
+   3,322    3  complete  (unknown, TOI 3)
+   3,293    4  complete  (unknown, TOI 4)
+   4,464    5  complete  (unknown, TOI 5)
+   2,153    6  complete  (unknown, TOI 6)
+  16,289    7     7,073  (unknown, TOI 7)
+  59,672    8    49,152  (unknown, TOI 8)
+  51,278    9     7,246  (unknown, TOI 9)
+
+Session #20: source: 192.168.200.180, destination: 224.0.49.10:49010, TSI: 49010
+  Size  TOI    Status  Name
+   337    1  complete  (unknown, TOI 1)
+
+Session #21: source: 192.168.200.180, destination: 224.0.49.11:49011, TSI: 49011
+       Size    TOI    Status  Name
+        337      1  complete  (unknown, TOI 1)
+    281,427    116     6,144  (unknown, TOI 116)
+    366,460  1,433     6,144  (unknown, TOI 1433)
+    495,137  1,462     5,120  (unknown, TOI 1462)
+     95,459  1,535     6,144  (unknown, TOI 1535)
+    511,106  1,556     6,144  (unknown, TOI 1556)
+    275,452  1,557     6,144  (unknown, TOI 1557)
+     42,626  1,635     6,144  (unknown, TOI 1635)
+  3,039,966  1,646     6,144  (unknown, TOI 1646)
+  1,948,688    237     5,120  (unknown, TOI 237)
+    274,567    867     6,144  (unknown, TOI 867)
+
+Session #22: source: 192.168.200.180, destination: 224.0.49.12:49012, TSI: 49012
+  Size  TOI    Status  Name
+   337    1  complete  (unknown, TOI 1)
+
+Session #23: source: 192.168.200.180, destination: 224.0.49.13:49013, TSI: 49013
+  Size  TOI    Status  Name
+   337    1  complete  (unknown, TOI 1)
+

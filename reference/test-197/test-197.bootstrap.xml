@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MulticastGatewayConfiguration xmlns="urn:dvb:metadata:MulticastSessionConfiguration:2024" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="urn:dvb:metadata:Extensibility:2024" xmlns:mpeg7="urn:mpeg:mpeg7:schema:2001" ext:schemaVersion="2" validUntil="2099-06-26T07:01:50:000F1000">
+  <MulticastGatewayConfigurationTransportSession transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.23.14</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>3937</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>0</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="1048576"/>
+    <ObjectCarousel aggregateTransportSize="26659" aggregateContentSize="26659">
+      <ResourceLocator targetAcquisitionLatency="PT5.005S">urn:dvb:metadata:nativeip:ServiceGuide</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.004S">http://dvb.gw/ses.com/dvbi/cg/manifest.xml</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.065S">http://dvb.gw/ses.com/dvbi/service_list_full.xml</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT0.533S">urn:dvb:metadata:nativeip:ServiceInformationFile</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.044S">http://dvb.gw/ses.com/dvbi/service_list_tp1045.xml</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT0.514S">urn:dvb:metadata:nativeip:NetworkInformationFile</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.024S">urn:dvb:metadata:nativeip:dvb-i-slep</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.005S">urn:dvb:metadata:nativeip:PrivateDataSignalling</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT0.505S">urn:dvb:metadata:nativeip:TimeOffsetFile</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.1</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49001</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49001</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="2097152"/>
+    <ObjectCarousel aggregateTransportSize="0" aggregateContentSize="0">
+      <PresentationManifests targetAcquisitionLatency="PT2S" serviceIdRef="tag:ses.com,2024:B1.1"/>
+      <PresentationManifests targetAcquisitionLatency="PT2S" serviceIdRef="tag:ses.com,2024:B2.2"/>
+      <PresentationManifests targetAcquisitionLatency="PT1S" serviceIdRef="tag:ses.com,2024:C1.3"/>
+      <InitSegments targetAcquisitionLatency="PT2S" serviceIdRef="tag:ses.com,2024:B1.1"/>
+      <InitSegments targetAcquisitionLatency="PT2S" serviceIdRef="tag:ses.com,2024:B2.2"/>
+      <InitSegments targetAcquisitionLatency="PT1S" serviceIdRef="tag:ses.com,2024:C1.3"/>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:ContentGuide" tags="http://dvb.gw/ses.com/dvbi/cg/CoreSet" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.10</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49010</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49010</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="1048576"/>
+    <ObjectCarousel aggregateTransportSize="86954" aggregateContentSize="958961">
+      <ResourceLocator targetAcquisitionLatency="PT10.663S">http://dvb.gw/ses.com/dvbi/cg/tva_schedule_20250210230000_P28DT20M_CoreSet.xml</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:ContentGuide" tags="http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.11</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49011</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49011</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="1048576"/>
+    <ObjectCarousel aggregateTransportSize="50188689" aggregateContentSize="50188689">
+      <ResourceLocator targetAcquisitionLatency="PT39.446S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787a88b6abff49911c86cc8_1736943501909.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.5S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOC0yNg==/66cd12ffb4a64d469bd91765_1724715775930.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.599S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff4990359aef000973c01b_1719487229127.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.628S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0yMw==/669f9298a4aa42a167e3e215_1721734045753.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.599S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMi0yNw==/63fc0a00318f350008d9ab5d_1677462016414.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.147S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNC0yNA==/6445ea352107470008c50c43_1682303541838.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.485S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMA==/5faae5d35dde520007a56692_1621605647366.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.481S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMS0wNw==/5ff760678e2fff000812ae95_1677597542876.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.352S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNi0yNg==/6498eb57f31da70008b617ff_1687743319631.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.655S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xOA==/678af9167d6536a8361bd1c8_1737160982221.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.232S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOS0yMw==/66f14bbfa4487f8389c9404c_1727089661224.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.872S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783107f34daabde469fbc19_1736642687967.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.155S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b09f34daabde469ff2f4_1738629084750.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.719S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMi0yOQ==/5feb9976a1f61d000895efbb_1609275766179.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT57.775S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bc2ea20957deb60f9c47_1737592286502.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.135S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wNC0wMQ==/6246566bd71c790008e8d23d_1677608897590.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.174S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNC0yMw==/64449bb1dd014a000850d577_1682217905042.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.434S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xOA==/6698af3f5c6ce0eb8900b37f_1729235367288.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.672S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xOA==/65088f337393ea00089d890d_1695059763533.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.691S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNQ==/67a30acc2879b3a96fedaa8d_1738738430277.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.992S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d56bdd4dc9d0008ac726f_1695372989975.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.943S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNi0wOQ==/60c021713951b200095008df_1677599580164.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.789S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/678461759effa5e7402b6905_1736728949968.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.671S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xMg==/6691233faebb768a0136b4c5_1721053584918.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT58.994S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787021848814ec5a68d512e_1738197081700.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.81S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xOA==/678af632971271536d562cc2_1737160242469.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT39.431S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d17d16825e573a2d45_1737765074032.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.546S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMy0xMg==/640d2ddabaa2b80008e0e1ba_1678585306684.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.649S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783107c9effa5e7402b5282_1736642685002.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.991S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xNQ==/669512965c6ce0eb890075cd_1736438205840.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.193S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/678701b49effa5e7402bab23_1736901044503.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.102S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0xMS0xNA==/6552c1e0ec0dfaea77b83029_1699922400615.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT41.62S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d4826d3d5140008460198_1695369254302.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT41.015S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b22134daabde469ff2f9_1737506393095.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.598S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff51170a60890007f7c561_1694454039328.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.608S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMS0xMg==/61de2fc1d653840008657dbd_1677606013306.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.809S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781beefa486b13c257b0393_1736556272047.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT46.045S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d5102e7ef3d5937dda_1737765077157.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.13S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMg==/650090f27cf0ea000882baa1_1696180008549.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT47.011S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d4dd4eca3bd8bd7234_1737765076882.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.926S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806aa8d358202581fc7e46_1738801838417.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.324S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f9219397c38b43c01f683_1737463504485.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.15S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/678461770bc781e2fd2a0f9b_1736728951536.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT45.263S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806aa634daabde469f8ac3_1738801829970.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.696S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMS0wOQ==/636b0737701726000857b620_1677665045271.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.339S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f90251e9b2a9aa905ca52_1737463010772.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.688S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNQ==/67a31012b754475a457c9b02_1738925376402.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.869S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0wMg==/65bc38925fb6dba65808a454_1706834066922.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.188S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMA==/5faaf19c354a8d0007fb98f4_1677597281497.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.406S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0wNg==/60e3b45d3951b200095c812b_1677600507902.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT40.564S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bc2fec367a3d7548e53d_1738629079683.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.533S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0xMg==/65ca2295334ae2379c46716e_1707745942355.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.748S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMQ==/650c35ee05dc3c00090add59_1695299361553.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.591S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806aa59d20e734718ec90e_1738629076980.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.234S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0xMg==/6164e61c22e4f30008dadca3_1677602867764.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT58.88S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bc2e75333c6eff83d08f_1738629081318.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.627S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMS0wOA==/61d8e98522e4f30008080e84_1677605895260.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.367S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6786278ba8ff4491b1226d49_1736846527982.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.289S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xMg==/66911c5daebb768a0136b488_1720786126968.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.645S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0wNg==/60e3b4593951b200095c8122_1677600506203.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.115S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781beefa20957deb60f9c50_1736556271087.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.436S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bc2dbc470c93139c20ba_1736555565980.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.193S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781beeaec367a3d7548e54a_1736556266412.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.276S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0wNw==/6703f315219662a5d403aa55_1728390419739.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.562S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b32f7f04647eae0ae4fa_1736815407953.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.403S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0xMQ==/6163945b6dff7b0008716745_1677602839651.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.061S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMS0wNw==/5ff761caa1f61d0008b3a112_1677597557222.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.661S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0wOA==/677dca1034daabde469f47c8_1736296976554.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.009S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xNQ==/65044a033f708200085a3f79_1700219011857.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT4M11.93S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0xMQ==/67ab26732879b3a96fedaaf7_1739269760983.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.364S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMy0wMQ==/63feae3dbaa2b80008d18b88_1677635133693.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.038S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783108548814ec5a68d01a4_1736642693757.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.837S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff2f19fca76d00089981f2_1694445337959.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT30.409S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wOS0yNw==/6332fb5b481af00008316be7_1677664856966.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.901S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d410cd4dc9d0008ac545c_1695367436531.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.663S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wOS0yNw==/6332fa22481af000083160fc_1677664851046.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.744S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b0a0e5c4206147ab4b62_1738110699365.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.658S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d4bab9e8fbc0008252653_1695370155812.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.574S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOS0wNw==/66dce50b854e9fcdcb964b01_1725752587775.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.148S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d6075333c6eff83a8f1_1736469857026.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.631S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wOS0yNw==/6332fa1ff1565e0008e171dd_1677664851009.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.216S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMy0xMA==/640a8ee3baa2b80008df1171_1678413539252.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.254S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806aa575333c6eff83a8e7_1738801828199.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.94S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f92b47d16825e573985ec_1737463465590.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT36.941S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xNg==/66967a9c01121ae866ca0731_1721137820363.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT39.224S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d5dd4eca3bd8bd7235_1737765077974.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.268S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMS0yOQ==/638566cd740c7d00070c3198_1677665141402.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.271S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOS0yMw==/66f1459eb69e85c943109638_1729247113566.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.226S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMC0yMg==/63534bcbf7d2be00090630bb_1677664973972.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.353S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNi0yNg==/6498eb56f31da70008b617fc_1687743318923.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.656S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b335f22e01e243977419_1736815413688.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT36.961S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNg==/6795851be861d8409ac55dfc_1737852187439.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.551S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d5f75333c6eff83a8f0_1736469855828.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.987S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0xMA==/616242d36dff7b00087143dd_1677602821130.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT40.722S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0wOA==/677e2c426c18705d0e3311cb_1736322182065.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT40.947S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d3ed12e47d000091296a8_1695366865651.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.403S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNi0wOQ==/60c02437b64b3100083697ff_1677599650639.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.525S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/67846171a486b13c257b39b8_1736728945539.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT40.55S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMQ==/679c87a8480571be003de019_1738311659236.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.971S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b09d75333c6eff843038_1738629080346.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.158S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMy0xMw==/604c15b6c6aaee000809a54d_1677598402302.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.118S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0wOA==/677dca079effa5e7402ad1c0_1736296967924.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.901S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783107a48814ec5a68d01a2_1736642682854.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.53S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wOC0xOA==/611c62a80304d10008aad380_1677601528845.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.589S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/6784617434daabde469fd7b6_1736728948124.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.927S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0wMw==/6159089b6dff7b00086ce250_1677602634699.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT30.71S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wOS0yNw==/6332fa155c59a10008923561_1677664850813.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT2M48.673S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNi0zMA==/649e9908c6e4ed00086427fa_1688117116834.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1M6.55S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNg==/67a402a27664d8ce7970937d_1738801826232.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.407S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b220a20957deb60fefe7_1738111546702.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT40.465S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b09e48814ec5a68d34a3_1738629093943.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.742S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNA==/67a163bd601f2d8a6beb1f7c_1738630077100.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.698S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679aca1bfd38f7e01abb77e6_1738197543067.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.404S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b0a0e5c4206147ab4b63_1738110716545.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.563S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f909a1834d7796b214ead_1737463319084.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT45.452S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMQ==/679c92bcab3d850d9c6f0d10_1738314428893.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.976S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f907cfd38f7e01ab9df01_1737463249908.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.945S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d61b89e8fbc0008256cb3_1695375800279.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.808S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d5de5c4206147aada75_1736469853779.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.751S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679ac8b21834d7796b22eb13_1738197170527.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.592S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNi0yNA==/667a01bf90533e0ad8c3bdea_1719271871488.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT20.823S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMQ==/5fac166426c3e700087eb9d5_1621604755958.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.282S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMS0wNw==/5ff761288b895e0007a8275a_1677597551137.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.353S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMg==/6500930e7cf0ea000882bb86_1713612561335.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT45.871S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMi0yOQ==/677098ac75333c6eff81db5c_1738801830624.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT52.336S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xOA==/67120bddf2c5a5f8a33d3644_1729236089864.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.62S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMS0wNA==/6595fc69df9ba54c115a500b_1704328297401.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M0.997S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0xMQ==/67ab26e1ab3d850d9c6f0d8d_1739269865791.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT48.878S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNS0yMw==/664f0239a279ee30f685d545_1716453986034.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT47.958S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNg==/67a402a1359ca8d03125721c_1738801825526.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.834S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f934f7d16825e573985ed_1737463631716.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.406S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d5c34daabde469f8acc_1736469852626.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.94S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f928cfd38f7e01ab9df43_1737463487587.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.484S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMC0yNQ==/63573d058c56e80008cfcac5_1677664982450.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.316S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNC0zMA==/608c4af30544ad00086984a7_1619806963144.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.452S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMS0xMg==/5ffcfd958e2fff000822b273_1677597646331.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT39.811S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0xMA==/65c6c4c35d7a385af1b8a9d8_1707525315472.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.263S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783107348814ec5a68d01a0_1736642675750.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.614S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0wMQ==/608ca6370544ad00086b144e_1637768782144.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT49.56S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d254c73657c2e31aaa_1737765074898.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT44.594S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0wOA==/677e359a6c18705d0e3311cd_1736324557410.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.888S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0xMC0wMg==/651a1e6ece40a5000873d896_1696210542992.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.109S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yOQ==/679976ea102e7ef3d594337e_1738110698652.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.189S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMS0yMA==/63798548f92aa90008d7c4cc_1677665089576.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.76S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wOS0yNw==/6332fa1c5f8f380008e7175a_1677664850983.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.151S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMi0yNA==/676a03fd90e2631c9f981400_1735001085569.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.068S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMi0wNA==/674fa32620de709f52e47abc_1733272358336.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT41.17S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d4bf59e8fbc000825268b_1695370229634.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.644S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0wMQ==/608ca6fe823e2c0008c6717a_1694092451602.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.731S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787050c9effa5e7402bab30_1736901901013.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT47.953S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0wNA==/66868a27a584ce71f141c527_1720093320460.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.58S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0wOQ==/6160f16922e4f30008d9713d_1677602798314.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.61S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0xMS0xMA==/654d7d61894d28058cce7bc2_1699577185325.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.081S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOS0yMQ==/66eed22402f3e593f09dab18_1729246917655.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT4M40.372S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNg==/67a4e627480571be003de05a_1738860090545.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.561S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d71e9b2a9aa9067716_1737765079126.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.574S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/67090f7fb2f3d3e66cff33ef_1728647438296.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.808S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wNS0xOQ==/62866103121e7100091b7218_1652973827105.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.411S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff45cb0a60890007f7b42d_1694451147049.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.296S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787050df22e01e24397996a_1736901901894.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.471S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0wNQ==/60e261f7b64b31000843a983_1677600486164.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT43.273S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787023fe5c4206147ab6bbe_1737505904270.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.838S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMi0wMQ==/61a6d0e422e4f30008f5cc1b_1677604537297.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.064S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d42c3d3d5140008460077_1695367875288.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.8S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d56f22e01e24396fe19_1736469846853.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.59S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d4acdd3d51400084601ee_1695369933318.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT41.851S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d44a39e8fbc00082524cf_1695368355341.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.655S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0wMQ==/608ca68f0b51af0008d81658_1619830415327.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.5S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xOA==/6698cb06aebb768a01373009_1729235298398.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.71S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMi0xNA==/675cd5327f04647eae053419_1734137138622.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.448S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0xMg==/65ca2296485208f72a57bb18_1707745942801.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.459S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d5ba20957deb60f7e78_1736469851285.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.988S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0yNA==/66a18ec62b38d28503b50756_1721863878754.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.67S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMQ==/5fac3916b88b0d0008b96972_1620646683276.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.435S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/67870510a20957deb6100d7e_1736901904696.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.273S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bef034daabde469fa607_1736556272817.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT44.284S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wMQ==/679d6b4a359ca8d031242e89_1738369867488.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT30.313S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff43420a60890007f7b3a1_1694450498764.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.454S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMQ==/6781bee80bc781e2fd29db0a_1736556264807.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT58.107S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNS0yNA==/66505ed226052d16f5511dfe_1716543231192.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT49.078S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNQ==/67a2b163cb00baba16423069_1738715491427.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT39.919S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d3865d69bf2c6ce4b7_1737765076035.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.252S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787050fa8ff4491b1228cb0_1736901903082.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.957S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMQ==/650c28aee11ed2000886c85e_1695295662119.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT44.227S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMS0wNQ==/659808b946594ee24a09ad0c_1705660579042.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT57.991S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787024034daabde46a01b41_1738801862241.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.353S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d56bc470c93139c003b_1736469846229.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.26S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMi0yMw==/62158e6d9c781100085310bc_1677607479158.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.601S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMy0wOQ==/640939c03da93900085dc9d4_1678326208179.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.147S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNy0xNQ==/669526f1a4fbe786c87d41a7_1721050947126.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT51.874S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMy0wNA==/65e5d0159e364a81c7217302_1709559829907.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.843S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/67846178ec367a3d7549225c_1736728952938.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT36.66S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d8865d69bf2c6ce4b8_1737765080792.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.001S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wNS0yMg==/664d91476d0aa824b84a023f_1716359560529.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.582S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMi0wMQ==/674bb15b269744109c0cf488_1733013851745.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.962S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0wMQ==/67748f76bc470c93139a9249_1735692150769.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.411S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff455b0a60890007f7b427_1694451035892.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.572S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNy0wMg==/64a0d40ac6e4ed0008668985_1688261642790.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.039S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0wNw==/67047261921f2e24f13b0945_1728344673999.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.57S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMy0yNg==/623e6ce6d71c790008df4663_1677608658318.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.324S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787050bf22e01e243979969_1736901899427.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.78S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0wMQ==/65bae70748821d965a519f9f_1706747655895.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.239S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/67870508a20957deb6100d7d_1736901897041.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.561S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMQ==/650c8b6a227e2e0008f24899_1695320985142.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.738S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMy0yMA==/6055502fc6aaee000813df53_1677598515976.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.552S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d9926d3d514000846fb4f_1710939217746.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.823S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMy0wMg==/621ec8b59c781100085ddde4_1677607687093.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.8S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNg==/67a4d063480571be003de058_1738854545782.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.572S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/67870512f22e01e24397996b_1736901906734.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.323S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNS0wOQ==/6459a406f6d46a00083c726d_1683596294527.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.262S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787050f0bc781e2fd2a4b40_1736901903558.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.104S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b21d9d20e734718f3e0e_1737852178732.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT44.017S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNw==/67a5ee3d480571be003de063_1738927718982.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT59.838S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNQ==/67a30805480571be003de036_1738737715209.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT43.894S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d8102e7ef3d5937ddb_1737765080108.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.049S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMi0wNQ==/638d4af7740c7d00071b1185_1677665172157.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.311S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xNQ==/6504311b2baa640008690eb3_1707918317485.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.458S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806a9d75333c6eff83a8e4_1738715430874.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT44.087S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNQ==/67a30d35ab3d850d9c6f0d2c_1738739042078.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.213S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0xMQ==/64ff4e6470ed4900085df221_1694453348574.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.064S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0yNw==/6178ac58a5eb740008d04403_1677603303333.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.907S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wMi0yNw==/621ad488a4242b00093d2eb9_1677607618615.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.171S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783106f34daabde469fbc17_1736642671812.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.546S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783107576083b841b092a1b_1736642677270.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.122S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMi0wMQ==/5fc5f4b58b895e000728f1ba_1606808757562.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.116S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNQ==/6787024034daabde46a01b42_1738801863417.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.635S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wOS0yMQ==/66ee9fd3a4487f8389c91b31_1729246573445.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.468S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMy0wNg==/6042db46c6aaee000800447e_1677598293747.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.551S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMS0yOQ==/65b6f286aac55139d1e31718_1706488454529.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.454S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMi0xMg==/60264b6b3d976b00081f7550_1613122411953.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.484S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f90d2fd38f7e01ab9df02_1737463140821.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.529S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/67831081bc470c93139c412c_1736642689363.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.346S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0yMg==/60f8ca320304d100089cf975_1677600881987.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.617S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0yOA==/60b0e439823e2c0008e06557_1622205497466.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT32.478S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679acc9ae861d8409ac62a64_1738198170403.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT31.867S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xNA==/6785b21f48814ec5a68d34a6_1737679235082.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.708S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0xMg==/6164e5e222e4f30008dadc7e_1677602865510.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT35.358S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d43699e8fbc00082524b1_1695368041171.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.124S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0wNQ==/615bab83d653840008314d69_1677602678927.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.123S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMC0yNA==/6355efa904cc1a00084a0a94_1677664980450.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.237S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yNQ==/679430d41834d7796b2202ea_1737765076972.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.574S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/67090f8802f3e593f09f4ba7_1728647419315.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.358S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMC0xNQ==/634a1175144c7f0008ba3f9d_1677664942923.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.316S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMQ==/5fab93d55dde520007b0d8c5_1677597316148.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.691S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNi0wOQ==/60c02a3d0304d10008882463_1677599845606.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT30.958S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMi0wNA==/638bfba506e3c500084706f1_1677665169067.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.994S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMC0xMS0xMA==/5faafbf95dde520007a56df8_1665398362926.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.215S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wMy0wMg==/603e4470c09dec0008fe664e_1677598090707.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT42.291S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNw==/67a5e78fb754475a457c9b23_1738926034942.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21.435S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0wMQ==/608ca68f0b51af0008d8165a_1619830415827.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.296S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0wNi0yMg==/62b27d0a73bc1b0008ea41f5_1677611350548.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.057S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0xMC0wNQ==/615bab7e6dff7b00086d9460_1677602678916.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT41.471S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d3f9d2e47d000091296bb_1695367069558.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT33.571S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNw==/67a5d56bb754475a457c9b21_1738921323969.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.832S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNC0zMA==/608c4b010544ad0008698530_1619806977497.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT42.873S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMQ==/650c8ac705dc3c00090b745f_1695320775973.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT39.15S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMQ==/679c9554b754475a457c9adb_1738315161419.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.12S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMi0xMS0yMA==/6379854c70172600087570a0_1677665089620.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT42.832S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679ac8c11e9b2a9aa9077842_1738197185278.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.432S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0wNQ==/60e261670304d10008941e27_1677600480735.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT45.389S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679ac8a5fd38f7e01abb774e_1738197161205.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT47.018S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMw==/678556279effa5e7402b8407_1736791591770.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.894S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMS0xOA==/65a8710ebc58030ca61da565_1705537806417.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.945S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/6708d17d02f3e593f09f42fb_1728631274860.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.316S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMg==/650d43c49e8fbc00082524b3_1695368132960.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT26.742S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNy0xNA==/60ee3e5d0304d10008981f71_1677600675769.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.414S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0yMQ==/678f90661e9b2a9aa905ca53_1737463265468.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.208S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNC0xNg==/6078e9a2823e2c0008ad98e2_1677599007754.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.093S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0wNw==/67a5c3ac2879b3a96fedaab2_1738916847475.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.13S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMg==/6783108348814ec5a68d01a3_1736642691333.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.207S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNS0wMg==/608e01e90544ad00086ca447_1677599329360.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.565S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wMy0wOQ==/640939c23da93900085dc9e0_1678326210470.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.4S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0zMA==/679ac8aa7d16825e573b205d_1738197162455.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT29.395S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806aa2a486b13c257aea4c_1736469155865.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.783S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMS0xMA==/67806d5934daabde469f8acb_1736469849489.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.461S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0wMi0wOA==/65c42129ad90d4e49de20646_1707352361944.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.486S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0xMS0yOQ==/65668732aa28d3eea0b9dd68_1701218098091.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT27.574S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/6709107936f596345482e2c7_1728647702168.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.423S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNC0wMw==/6067c5723d976b00085fda6c_1677598756179.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT30.116S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0yMQ==/650c88f9227e2e0008f246f9_1711379992501.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT25.808S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wNC0yOQ==/644c7d5ce30e4c0009ed93ed_1682734428080.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.793S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMS0wNC0yOA==/6088baab0544ad000865ec35_1677599237717.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT28.552S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/6708d4dab2f3d3e66cff2d54_1728632825693.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.404S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyMy0wOS0wNA==/64f5349ca2f47100080537ea_1693791388765.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT24.126S">http://dvb.gw/ses.com/dvbi/cg/CoreSetRelatedMaterials/programm-api.ard.de/images/MjAyNS0wMi0xMQ==/67aa9e2c876868276fc7706b_1739234860302.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:ServiceGuide" tags="http://dvb.gw/ses.com/dvbi/sg/CoreSet" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.12</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49012</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49012</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="1048576"/>
+    <ObjectCarousel aggregateTransportSize="2338" aggregateContentSize="12176">
+      <ResourceLocator targetAcquisitionLatency="PT10.017S">http://dvb.gw/ses.com/dvbi/sg/CoreSet/tva_schedule_20250211130000_PT2H30M_CoreSet.xml</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:ServiceGuide" tags="http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterials" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.13</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49013</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49013</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="1048576"/>
+    <ObjectCarousel aggregateTransportSize="1002191" aggregateContentSize="1002191">
+      <ResourceLocator targetAcquisitionLatency="PT20.288S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyMy0xMC0wMg==/651a1e6ece40a5000873d896_1696210542992.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT20.358S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyMS0xMC0wOQ==/6160f16922e4f30008d9713d_1677602798314.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT20.212S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyMC0xMi0wMQ==/5fc5f4b58b895e000728f1ba_1606808757562.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.795S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyNS0wMi0wNg==/67a402a1359ca8d03125721c_1738801825526.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT23.233S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyNC0xMC0xOA==/67120bddf2c5a5f8a33d3644_1729236089864.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT20.757S">http://dvb.gw/ses.com/dvbi/sg/CoreSetRelatedMaterial/programm-api.ard.de/images/MjAyNC0xMC0xMQ==/67090f8802f3e593f09f4ba7_1728647419315.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:dvb-i-slep-sl-related-material" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.2</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49002</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49002</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="1032435" aggregateContentSize="1032435">
+      <ResourceLocator targetAcquisitionLatency="PT5.288S">http://dvb.gw/ses.com/materials/5G-EMERGE.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT10.734S">http://dvb.gw/ses.com/materials/banners/b2.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT12.265S">http://dvb.gw/ses.com/materials/banners/a2.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.086S">http://dvb.gw/ses.com/materials/ses.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT10.034S">http://dvb.gw/ses.com/materials/banners/c1.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.732S">http://dvb.gw/ses.com/materials/dvb-nip.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT12.087S">http://dvb.gw/ses.com/materials/banners/b1.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT10.139S">http://dvb.gw/ses.com/materials/banners/c2.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/dvbi" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.3</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49003</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49003</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="30281" aggregateContentSize="30281">
+      <ResourceLocator targetAcquisitionLatency="PT1.462S">http://dvb.gw/ses.com/private/dvbi/service_list_ses_private.xml</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/pictures" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.4</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49004</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49004</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="4656397" aggregateContentSize="4656397">
+      <ResourceLocator targetAcquisitionLatency="PT45.915S">http://dvb.gw/ses.com/private/pictures/caleb-smith.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.212S">http://dvb.gw/ses.com/private/pictures/marek-piwnicki2.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT22.14S">http://dvb.gw/ses.com/private/pictures/vadym-chuma.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT56.318S">http://dvb.gw/ses.com/private/pictures/anton-sobotyak.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT17.722S">http://dvb.gw/ses.com/private/pictures/fabrice-villard.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT38.546S">http://dvb.gw/ses.com/private/pictures/brayden-prato.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT46.597S">http://dvb.gw/ses.com/private/pictures/nicolas-hans.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.984S">http://dvb.gw/ses.com/private/pictures/quang-nguyen-vinh.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT49.186S">http://dvb.gw/ses.com/private/pictures/haberdoedas.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT17.394S">http://dvb.gw/ses.com/private/pictures/marek-piwnicki.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT37.796S">http://dvb.gw/ses.com/private/pictures/eberhard-grossgasteiger.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT34.44S">http://dvb.gw/ses.com/private/pictures/anna-kasin.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/vod_small" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.5</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49005</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49005</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="10485760"/>
+    <ObjectCarousel aggregateTransportSize="1135186053" aggregateContentSize="1135186053">
+      <ResourceLocator targetAcquisitionLatency="PT14M12.481S">http://dvb.gw/ses.com/private/vod_small/2017_SES_4K_trailer_IBC.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M0.647S">http://dvb.gw/ses.com/private/vod_small/SES_PS_Infrastructure.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT6M28.046S">http://dvb.gw/ses.com/private/vod_small/Welcome%20to%20Luxembourg.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT19M0.8S">http://dvb.gw/ses.com/private/vod_small/AIT_VF-10-08-15_French.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1M34.005S">http://dvb.gw/ses.com/private/vod_small/A%20Better%20Super%20Bowl.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M8.667S">http://dvb.gw/ses.com/private/vod_small/SES_BS.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT12M20.932S">http://dvb.gw/ses.com/private/vod_small/SES%20Beyond%20Frontiers.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M2.326S">http://dvb.gw/ses.com/private/vod_small/SES_Techcom.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M4.293S">http://dvb.gw/ses.com/private/vod_small/HDplus_ExtraScreen.mp4</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT11M18.187S">http://dvb.gw/ses.com/private/vod_small/ASTRA_06_Unternehmen.mp4</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/vod_small/covers" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.5</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49005</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49006</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="250884" aggregateContentSize="250884">
+      <ResourceLocator targetAcquisitionLatency="PT5.404S">http://dvb.gw/ses.com/private/vod_small/covers/AIT_VF-10-08-15_French.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.567S">http://dvb.gw/ses.com/private/vod_small/covers/ASTRA_06_Unternehmen.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.363S">http://dvb.gw/ses.com/private/vod_small/covers/A%20Better%20Super%20Bowl.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.223S">http://dvb.gw/ses.com/private/vod_small/covers/SES_PS_Infrastructure.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.381S">http://dvb.gw/ses.com/private/vod_small/covers/SES_BS.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.331S">http://dvb.gw/ses.com/private/vod_small/covers/Welcome%20to%20Luxembourg.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.427S">http://dvb.gw/ses.com/private/vod_small/covers/SES_Techcom.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.217S">http://dvb.gw/ses.com/private/vod_small/covers/HDplus_ExtraScreen.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.211S">http://dvb.gw/ses.com/private/vod_small/covers/2017_SES_4K_trailer_IBC.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.699S">http://dvb.gw/ses.com/private/vod_small/covers/SES%20Beyond%20Frontiers.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/pdf" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.6</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49006</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49006</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="5242880"/>
+    <ObjectCarousel aggregateTransportSize="535332122" aggregateContentSize="535332122">
+      <ResourceLocator targetAcquisitionLatency="PT2M47.533S">http://dvb.gw/ses.com/private/pdf/F.A.Z.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT15M10.78S">http://dvb.gw/ses.com/private/pdf/P.M.%20Magazin.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1M46.297S">http://dvb.gw/ses.com/private/pdf/l'odyss%C3%A9e%20hom%C3%A8re.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT3M49.563S">http://dvb.gw/ses.com/private/pdf/Su%CC%88ddeutsche%20Zeitung.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT4M24.638S">http://dvb.gw/ses.com/private/pdf/robinson%20crusoe.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1M30.098S">http://dvb.gw/ses.com/private/pdf/invisible%20man.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT13M6.848S">http://dvb.gw/ses.com/private/pdf/Scho%CC%88ner%20Wohnen.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT4M18.668S">http://dvb.gw/ses.com/private/pdf/BILD%20AM%20SONNTAG.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT2M42.931S">http://dvb.gw/ses.com/private/pdf/wonderful%20wizardo.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT2M56.703S">http://dvb.gw/ses.com/private/pdf/phantom%20ship.pdf</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT21M0.198S">http://dvb.gw/ses.com/private/pdf/GEO%20WISSEN.pdf</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:PrivateDataManifest" tags="http://dvb.gw/ses.com/private/pdf/covers" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.6</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49006</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49007</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="327714" aggregateContentSize="327714">
+      <ResourceLocator targetAcquisitionLatency="PT5.558S">http://dvb.gw/ses.com/private/pdf/covers/P.M.%20Magazin.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.289S">http://dvb.gw/ses.com/private/pdf/covers/l'odyss%C3%A9e%20hom%C3%A8re.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.785S">http://dvb.gw/ses.com/private/pdf/covers/BILD%20AM%20SONNTAG.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.671S">http://dvb.gw/ses.com/private/pdf/covers/F.A.Z.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.587S">http://dvb.gw/ses.com/private/pdf/covers/GEO%20WISSEN.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.57S">http://dvb.gw/ses.com/private/pdf/covers/Scho%CC%88ner%20Wohnen.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.089S">http://dvb.gw/ses.com/private/pdf/covers/invisible%20man.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.288S">http://dvb.gw/ses.com/private/pdf/covers/phantom%20ship.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.281S">http://dvb.gw/ses.com/private/pdf/covers/robinson%20crusoe.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.217S">http://dvb.gw/ses.com/private/pdf/covers/wonderful%20wizardo.jpg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT5.66S">http://dvb.gw/ses.com/private/pdf/covers/Su%CC%88ddeutsche%20Zeitung.jpg</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+  <MulticastGatewayConfigurationTransportSession serviceClass="urn:dvb:metadata:nativeip:HbbTVApplication" transportSecurity="integrity">
+    <TransportProtocol protocolIdentifier="urn:dvb:metadata:cs:MulticastTransportProtocolCS:2019:FLUTE" protocolVersion="1"/>
+    <EndpointAddress>
+      <NetworkSourceAddress>192.168.200.180</NetworkSourceAddress>
+      <NetworkDestinationGroupAddress>224.0.49.8</NetworkDestinationGroupAddress>
+      <TransportDestinationPort>49008</TransportDestinationPort>
+      <MediaTransportSessionIdentifier>49008</MediaTransportSessionIdentifier>
+    </EndpointAddress>
+    <BitRate maximum="524288"/>
+    <ObjectCarousel aggregateTransportSize="148174" aggregateContentSize="148174">
+      <ResourceLocator targetAcquisitionLatency="PT1.113S">http://dvb.gw/ses.com/hbbtv/img/dvbnip.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.353S">http://dvb.gw/ses.com/hbbtv/img/WTqW6FTJ2.jpeg</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.071S">http://dvb.gw/ses.com/hbbtv/index.html</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT2.295S">http://dvb.gw/ses.com/hbbtv/img/table1.png</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.054S">http://dvb.gw/ses.com/hbbtv/xml.aitx</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.096S">http://dvb.gw/ses.com/hbbtv/main.js</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.046S">http://dvb.gw/ses.com/hbbtv/style.css</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT1.072S">http://dvb.gw/ses.com/hbbtv/button.js</ResourceLocator>
+      <ResourceLocator targetAcquisitionLatency="PT2.113S">http://dvb.gw/ses.com/hbbtv/img/graph1.png</ResourceLocator>
+    </ObjectCarousel>
+  </MulticastGatewayConfigurationTransportSession>
+</MulticastGatewayConfiguration>

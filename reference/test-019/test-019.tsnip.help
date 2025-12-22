@@ -1,0 +1,164 @@
+
+Analyze a DVB-NIP stream from a pcap or pcap-ng file
+
+Usage: tsnip [options] [input-file]
+
+Parameter:
+
+  Input file in pcap or pcap-ng format, typically as saved by Wireshark. Use
+  the standard input if no file name is specified.
+
+Options:
+
+  --debug[=level]
+      Produce debug traces. The default level is 1. Higher levels produce more
+      messages.
+
+  --dump-flute-payload
+      Same as --log-flute-packets and also dump the payload of each FLUTE
+      packet.
+
+  --dump-xml-files
+      Dump the content of XML files when they are received.
+
+  --extract-destination [ip-address]:[port]
+      With --extract-file, specify the destination IP address and/or UDP port
+      of files. By default, extract the files with matching name and any IP
+      destination.
+
+  -e name-or-urn
+  --extract-file name-or-urn
+      Extract the specified file from the FLUTE carousel. The name-or-urn shall
+      be the exact complete name of the file, as identified in the FDT. The
+      option --extract-file can be specified several times. All files are
+      extracted in the output directory which is specified in option
+      --output-directory. The output base name of each file is the last part of
+      the name-or-urn, after the last slash or colon.
+
+  --extract-source ip-address
+      With --extract-file, specify the source IP address of files. By default,
+      extract the files with matching name and any IP source address.
+
+  --extract-tsi value
+      With --extract-file, specify the Transport Session Identifier (TSI) of
+      files. By default, extract the files with matching name and any TSI.
+
+  --first-date date-time
+      Filter packets starting at the specified date. Use format YYYY/MM/DD:hh:
+      mm:ss.mmm.
+
+  --first-packet value
+      Filter packets starting at the specified number. The packet numbering
+      counts all captured packets from the beginning of the file, starting at
+      1. This is the same value as seen on Wireshark in the leftmost column.
+
+  --first-timestamp microseconds
+      Filter packets starting at the specified timestamp in micro-seconds from
+      the beginning of the capture. This is the same value as seen on Wireshark
+      in the "Time" column (in seconds).
+
+  --help
+      Display this help text.
+
+  --last-date date-time
+      Filter packets up to the specified date. Use format YYYY/MM/DD:hh:mm:ss.
+      mmm.
+
+  --last-packet value
+      Filter packets up to the specified number. The packet numbering counts
+      all captured packets from the beginning of the file, starting at 1. This
+      is the same value as seen on Wireshark in the leftmost column.
+
+  --last-timestamp microseconds
+      Filter packets up to the specified timestamp in micro-seconds from the
+      beginning of the capture. This is the same value as seen on Wireshark in
+      the "Time" column (in seconds).
+
+  --log-fdt
+      Log a message describing each FLUTE File Delivery Table (FDT).
+
+  --log-files
+      Log a message describing each received file.
+
+  --log-flute-packets
+      Log a message describing the structure of each FLUTE packet.
+
+  --max-file-size value
+      Maximum size of files to analyze or extract. Each received file is
+      accumulated in memory, chunk by chunk, until the file is complete. After
+      processing the file, all chunks are freeed. This option is useful when
+      the stream contains many large files which clutter the memory during
+      their reception. All files which are announced as larger than the
+      specified size are ignored. By default, all files are received and
+      analyzed or saved.
+
+  --no-pager
+      Do not send output through a pager process. By default, if the output
+      device is a terminal, the output is paged.
+
+  -d directory-name
+  --output-directory directory-name
+      Output directory for files which are extracted using option
+      --extract-file. The default is the current directory.
+
+  -o file-name
+  --output-file file-name
+      With --summary, save the report in the specified file. By default or if
+      the specified path is '-', the report is written to standard output.
+
+  --save-bootstrap file-name
+      Save the bootstrap multicast gateway configuration in the specified file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
+
+  --save-dvb-gw directory-name
+      Save all files in the DVB-NIP carousel with URI starting with http://dvb.
+      gw/. The specified path is a directory. The file hierarchy is recreated
+      from this directory. Example: with '--save-dvb-gw /save/to', the file
+      http://dvb.gw/operator.com/materials/f.jpg is saved as /save/to/operator.
+      com/materials/f.jpg.
+
+  --save-fdt file-name
+      Save each FLUTE File Delivery Table (FDT) in a file. Each FDT instance is
+      saved in a separate file. If the specified path is 'dir/fdt.xml' for
+      instance, the FDT with instance N is saved in file 'dir/fdt-N.xml'. If
+      the specified path is '-', the file is written to standard output.
+
+  --save-nif file-name
+      Save the DVB-NIP Network Information File (NIF) in the specified file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
+
+  --save-sif file-name
+      Save the DVB-NIP Service Information File (SIF) in the specified file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
+
+  --save-slep file-name
+      Save the DVB-I Service List Entry Points (SLEP) in the specified file.
+      This is a XML file. If the specified path is '-', the file is written to
+      standard output.
+
+  --strict
+      Apply a strict interpretation of protocols. By default, non-fatal
+      misusages of the protocols are ignored.
+
+  --summary
+      Display a summary of the DVB-NIP session. This is the default if no other
+      option is specified.
+
+  -v
+  --verbose
+      Produce verbose output.
+
+  --version[=name]
+      Display the TSDuck version number.
+      The 'name' must be one of "acceleration", "all", "bitrate", "compiler",
+      "crypto", "date", "dektec", "http", "integer", "long", "rist", "short",
+      "srt", "system", "tls", "vatek", "zlib".
+
+  --vlan-id value
+      Filter packets from the specified VLAN id. This option can be specified
+      multiple times. In that case, the values define nested VLAN ids, from the
+      outer to inner VLAN.
+
