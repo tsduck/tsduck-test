@@ -57,6 +57,10 @@ Options:
       A "TV channel" name is searched in a "tuning file" and the corresponding
       tuning information in this file is used. See also option --tuning-file.
 
+  --china
+      A synonym for '--dtmb'. This is a handy shortcut when working on Chinese
+      transport streams.
+
   --debug[=level]
       Produce debug traces. The default level is 1. Higher levels produce more
       messages.
@@ -115,6 +119,9 @@ Options:
   --device-name name
       By default, the first receiver device is used. Use the tslsdvb utility to
       list all DVB devices.
+
+  --dtmb
+      Assume that the transport stream is a DTMB one.
 
   --dvb
       Assume that the transport stream is a DVB one. DVB streams are normally
