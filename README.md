@@ -296,3 +296,4 @@ repository. But we now limit their size to 20 MB.
 | 199  | `tsflute`
 | 200  | Plugin `flute`
 | 201  | SI analysis and conversions: DTMB signalization
+| 202  | Plugin `mpeextract`

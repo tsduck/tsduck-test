@@ -41,10 +41,10 @@ PACKET_PLUGINS=(
     aes analyze bat bitrate_monitor boostpid cat clear continuity count
     craft cutoff datainject decap descrambler dump duplicate eit eitinject
     encap feed file filter flute fork fuzz history iat identify influx inject ip
-    isdbinfo limit merge mpe mpeinject mux nip nipextract nit nitscan pat pattern
-    pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract pcrverify pes
-    pidshift pmt psi psimerge reduce regulate remap rmorphan rmsplice scrambler
-    sdt sections sifilter skip slice spliceinject splicemonitor splicerestamp
+    isdbinfo limit merge mpe mpeextract mpeinject mux nip nipextract nit nitscan
+    pat pattern pcradjust pcrbitrate pcrcopy pcrduplicate pcredit pcrextract
+    pcrverify pes pidshift pmt psi psimerge reduce regulate remap rmorphan rmsplice
+    scrambler sdt sections sifilter skip slice spliceinject splicemonitor splicerestamp
     stats stuffanalyze svremove svrename svresync t2mi tables teletext time
     timeref timeshift trace trigger tsrename until zap
 )
