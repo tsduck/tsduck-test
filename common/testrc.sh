@@ -6,8 +6,9 @@
 
 # Build script name from caller's name.
 if [ ${#BASH_SOURCE[*]} -gt 1 ]; then
-    SCRIPT=$(basename ${BASH_SOURCE[1]} .sh)
-    SCRIPTDIR=$(cd $(dirname ${BASH_SOURCE[1]}); pwd)
+    SCRIPTPATH=${BASH_SOURCE[1]}
+    SCRIPT=$(basename "$SCRIPTPATH" .sh)
+    SCRIPTDIR=$(cd $(dirname "$SCRIPTPATH"); pwd)
 fi
 
 # Root directory of test repository and subdirs.
@@ -27,6 +28,7 @@ TSDUCKDIR=$(cd "$ROOTDIR/.."; pwd)/tsduck
 # Default values for command line options.
 DEVEL=false
 NATIVE=true
+SI_ONLY=false
 TESTINIT=false
 VERBOSE=false
 
@@ -164,6 +166,9 @@ Common test options:
       for each test. The reference files must be checked manually to ensure
       that they are correct. They will be later used as reference for the test.
 
+  --si-only
+      Execute standard PSI/SI tests only, skip other tests.
+
   -v
   --verbose
       Display verbose information.
@@ -210,6 +215,9 @@ while [[ $# -gt 0 ]]; do
         --init*)
             TESTINIT=true
             ;;
+        --si-only)
+            SI_ONLY=true
+            ;;
         -v|--verbose)
             VERBOSE=true
             ;;
@@ -219,6 +227,9 @@ while [[ $# -gt 0 ]]; do
     esac
     shift
 done
+
+# If --si-only, and executing a test script, and not a PSI/SI test, exit immediately.
+$SI_ONLY && [[ "$SCRIPTDIR" -ef "$TESTSDIR" ]] && ! grep -q standard-si-test.sh "$SCRIPTPATH" && exit 0
 
 # Replace command line arguments for the test script.
 set -- $ARGS
