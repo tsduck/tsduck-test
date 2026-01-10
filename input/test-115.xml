@@ -21,12 +21,12 @@
         transfer_characteristics="14"
         matrix_coefficients="8"/>
 
-	<!-- Required for AVS3_audio_descriptor --> 
-	<private_data_specifier_descriptor private_data_specifier="avsa"/>
+    <!-- Required for AVS3_audio_descriptor --> 
+    <private_data_specifier_descriptor private_data_specifier="avsa"/>
 
     <!-- Required for AVS2_audio-descriptor, optional for AVS3_audio_descriptor in DVB PDS context -->
-	<registration_descriptor format_identifier="0x41565341"/>
-		   
+    <registration_descriptor format_identifier="0x41565341"/>
+    
     <AVS3_audio_descriptor
         sampling_frequency_index="0x8"
         resolution="24 bits">
@@ -64,21 +64,21 @@
     </AVS3_audio_descriptor>
 
 
-	<!-- no DVB PDS for AVS2 audio descriptor -->
-	<private_data_specifier_descriptor private_data_specifier="none"/>
-	
+    <!-- no DVB PDS for AVS2 audio descriptor -->
+    <private_data_specifier_descriptor private_data_specifier="none"/>
+    
     <AVS2_audio_descriptor
         sample_rate_index="0"
         num_channels="2"/>
 
-	<AVS2_audio_descriptor
+    <AVS2_audio_descriptor
         sample_rate_index="1"
         num_channels="1">
-		<version_info
-		    audio_codec_id="1" coding_profile="object" resolution="24 bits"/>
-        <additional_info>
-          DE AD BE EF 00
-        </additional_info>
+      <version_info
+	  audio_codec_id="1" coding_profile="object" resolution="24 bits"/>
+      <additional_info>
+        DE AD BE EF 00
+      </additional_info>
     </AVS2_audio_descriptor>	
 
     <AVS2_audio_descriptor
@@ -91,38 +91,38 @@
         num_channels="23"
         language="zhn"
         description="Unheard audio!!">
-        <version_info 
-            audio_codec_id="0" 
-            coding_profile="basic" resolution="16 bits"
-            bitrate_index="4" bitstream_type="variable" raw_frame_length="14525"/>
+      <version_info 
+          audio_codec_id="0" 
+          coding_profile="basic" resolution="16 bits"
+          bitrate_index="4" bitstream_type="variable" raw_frame_length="14525"/>
     </AVS2_audio_descriptor>
 
     <!-- Required for CUVV_video_stream_descriptor (UWA)--> 
     <registration_descriptor format_identifier="0x63757676"/>
-	
-	<CUVV_video_stream_descriptor
-		cuvv_tag="0x63757676" cuva_version_map="0x0005" 
-		terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>
+    
+    <CUVV_video_stream_descriptor
+	cuvv_tag="0x63757676" cuva_version_map="0x0005" 
+	terminal_provide_code="0x0004" terminal_provide_oriented_code="4.0"/>
 
-	<!-- AV1_video_descriptor valid in any MPEG registration context --> 
+    <!-- AV1_video_descriptor valid in any MPEG registration context --> 
     <private_data_specifier_descriptor private_data_specifier="aom"/>
 
     <AV1_video_descriptor
-		version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1"
-		high_bitdepth="false" twelve_bit="false" monochrome="false" 
-		chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated"
-		HDR_WCG_idc="0"/>
+	version="1" seq_profile="4" seq_level_idx_0="9" seq_tier_0="1"
+	high_bitdepth="false" twelve_bit="false" monochrome="false" 
+	chroma_subsampling_x="false" chroma_subsampling_y="false" chroma_sample_position="colocated"
+	HDR_WCG_idc="0"/>
 
-	<!-- AV1 video descriptor should also be valid in just registration_descriptor context, i.e. any DVB PDS context -->
+    <!-- AV1 video descriptor should also be valid in just registration_descriptor context, i.e. any DVB PDS context -->
     <registration_descriptor format_identifier="0x41563031"/>
     <private_data_specifier_descriptor private_data_specifier="none"/>
 
     <AV1_video_descriptor
-		version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0"
-		high_bitdepth="true" twelve_bit="true" monochrome="true" 
-		chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical"
-		HDR_WCG_idc="2"
-		initial_presentation_delay_minus_one="11"/>
+	version="1" seq_profile="6" seq_level_idx_0="23" seq_tier_0="0"
+	high_bitdepth="true" twelve_bit="true" monochrome="true" 
+	chroma_subsampling_x="true" chroma_subsampling_y="true" chroma_sample_position="vertical"
+	HDR_WCG_idc="2"
+	initial_presentation_delay_minus_one="11"/>
 
     <vvc_subpictures_descriptor
         default_service_mode="true"
@@ -157,10 +157,10 @@
 
     <EVC_timing_and_HRD_descriptor
         hrd_management_valid="false"/>
-		
-	<EVC_timing_and_HRD_descriptor
+    
+    <EVC_timing_and_HRD_descriptor
         hrd_management_valid="false"
-		num_units_in_tick="16"/>
+	num_units_in_tick="16"/>
 
     <EVC_video_descriptor
         profile_idc="0xFE"
@@ -211,10 +211,10 @@
 
     <VVC_timing_and_HRD_descriptor
         hrd_management_valid="false"/>
-		
-	<VVC_timing_and_HRD_descriptor
+    
+    <VVC_timing_and_HRD_descriptor
         hrd_management_valid="false"
-		num_units_in_tick="16"/>
+	num_units_in_tick="16"/>
 
     <VVC_timing_and_HRD_descriptor
         hrd_management_valid="true"
@@ -283,60 +283,60 @@
         456789
       </reserved>
     </MPEGH_3D_audio_descriptor>
-	
-	<MPEGH_3D_audio_scene_descriptor sceneID="12"/>
-	
-	<MPEGH_3D_audio_scene_descriptor sceneID="23">
-	  <reserved>
+    
+    <MPEGH_3D_audio_scene_descriptor sceneID="12"/>
+    
+    <MPEGH_3D_audio_scene_descriptor sceneID="23">
+      <reserved>
         456789
       </reserved>
-	</MPEGH_3D_audio_scene_descriptor>
-	
-	<MPEGH_3D_audio_scene_descriptor sceneID="127">
-	  <InteractivityGroup groupID="2" allowOnOff="false" defaultOnOff="true" contentKind="6" contentLanguage="eng">
+    </MPEGH_3D_audio_scene_descriptor>
+    
+    <MPEGH_3D_audio_scene_descriptor sceneID="127">
+      <InteractivityGroup groupID="2" allowOnOff="false" defaultOnOff="true" contentKind="6" contentLanguage="eng">
         <PositionInteractivity 
-		    azimuthOffsetMin="0" azimuthOffsetMax="5" elevationOffsetMin="6" elevationOffsetMax="12" distanceOffsetMin="3" distanceOffsetMax="9"/>
-	  </InteractivityGroup>
-	  <InteractivityGroup groupID="3" allowOnOff="true" defaultOnOff="true" contentKind="9" contentLanguage="fra">
-	    <PositionInteractivity 
-		    azimuthOffsetMin="0" azimuthOffsetMax="0" elevationOffsetMin="0" elevationOffsetMax="0" distanceOffsetMin="0" distanceOffsetMax="0"/>
-		<GainInteractivity
-			interactivityGainMin="0" interactivityGainMax="3"/>
-	  </InteractivityGroup>
-	  <SwitchGroup switchGroupID="16" switchGroupAllowOnOff="false" switchGroupDefaultOnOff="false" switchGroupDefaultGroupID="101">  
-	  	<SwitchGroupMembers>10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 30 31 32 33 34 35 36 47 48 49 4a 4b 4c 4d 4e 4f</SwitchGroupMembers>
-	  </SwitchGroup>
-	  <SwitchGroup switchGroupID="17" switchGroupAllowOnOff="true"  switchGroupDefaultOnOff="true"  switchGroupDefaultGroupID="119">
-	    <SwitchGroupMembers>11 22 33 44 71 62 53 7f 00</SwitchGroupMembers>
-	  </SwitchGroup>	  
-	</MPEGH_3D_audio_scene_descriptor>
-	
-	<MPEGH_3D_audio_scene_descriptor sceneID="126">
-		<PresetGroup groupPresetID="5" groupPresetKind="2">
-			<PresetConditions groupPresetReferenceID="6"/>
-			<PresetConditions groupPresetReferenceID="7" groupPresetDisableGainInteractivity="true"  groupPresetDisablePositionInteractivity="false"/>
-			<PresetConditions groupPresetReferenceID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false"
+	    azimuthOffsetMin="0" azimuthOffsetMax="5" elevationOffsetMin="6" elevationOffsetMax="12" distanceOffsetMin="3" distanceOffsetMax="9"/>
+      </InteractivityGroup>
+      <InteractivityGroup groupID="3" allowOnOff="true" defaultOnOff="true" contentKind="9" contentLanguage="fra">
+	<PositionInteractivity 
+	    azimuthOffsetMin="0" azimuthOffsetMax="0" elevationOffsetMin="0" elevationOffsetMax="0" distanceOffsetMin="0" distanceOffsetMax="0"/>
+	<GainInteractivity
+	    interactivityGainMin="0" interactivityGainMax="3"/>
+      </InteractivityGroup>
+      <SwitchGroup switchGroupID="16" switchGroupAllowOnOff="false" switchGroupDefaultOnOff="false" switchGroupDefaultGroupID="101">  
+	<SwitchGroupMembers>10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 30 31 32 33 34 35 36 47 48 49 4a 4b 4c 4d 4e 4f</SwitchGroupMembers>
+      </SwitchGroup>
+      <SwitchGroup switchGroupID="17" switchGroupAllowOnOff="true"  switchGroupDefaultOnOff="true"  switchGroupDefaultGroupID="119">
+	<SwitchGroupMembers>11 22 33 44 71 62 53 7f 00</SwitchGroupMembers>
+      </SwitchGroup>	  
+    </MPEGH_3D_audio_scene_descriptor>
+    
+    <MPEGH_3D_audio_scene_descriptor sceneID="126">
+      <PresetGroup groupPresetID="5" groupPresetKind="2">
+	<PresetConditions groupPresetReferenceID="6"/>
+	<PresetConditions groupPresetReferenceID="7" groupPresetDisableGainInteractivity="true"  groupPresetDisablePositionInteractivity="false"/>
+	<PresetConditions groupPresetReferenceID="8" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="false"
 			  groupPresetGain="237"/>
-			<PresetConditions groupPresetReferenceID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true"
+	<PresetConditions groupPresetReferenceID="9" groupPresetDisableGainInteractivity="true" groupPresetDisablePositionInteractivity="true"
 			  groupPresetAzOffset="167" groupPresetElOffset="56" groupPresetDistFactor="9"/>
-			<PresetConditions groupPresetReferenceID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true"
+	<PresetConditions groupPresetReferenceID="10" groupPresetDisableGainInteractivity="false" groupPresetDisablePositionInteractivity="true"
 			  groupPresetGain="0" groupPresetAzOffset="0" groupPresetElOffset="0" groupPresetDistFactor="14"/>
-		</PresetGroup>
-		
-	</MPEGH_3D_audio_scene_descriptor>
-	
+      </PresetGroup>
+      
+    </MPEGH_3D_audio_scene_descriptor>
+    
     <TTML_subtitling_descriptor
-      ISO_639_language_code="foo" 
-      subtitle_purpose="2"
-      TTS_suitability="1"/>
+        ISO_639_language_code="foo" 
+        subtitle_purpose="2"
+        TTS_suitability="1"/>
 
     <TTML_subtitling_descriptor
-      ISO_639_language_code="bar" 
-      subtitle_purpose="16"
-      TTS_suitability="2"
-      qualifier="0x12345678"
-      service_name="Dummy service"
-      reserved_zero_future_count="5">
+        ISO_639_language_code="bar" 
+        subtitle_purpose="16"
+        TTS_suitability="2"
+        qualifier="0x12345678"
+        service_name="Dummy service"
+        reserved_zero_future_count="5">
       <dvb_ttml_profile value="1"/>
       <dvb_ttml_profile value="2"/>
       <font_id value="3"/>
@@ -374,414 +374,414 @@
       </Sample_index_and_description>
 
     </MPEG4_text_descriptor>
-	
-	<MuxCode_descriptor>
-	  <MuxCodeEntry MuxCode="4" version="1">
-		<substructure repetitionCount="7">
-		  <slot m4MuxChannel="240" numberOfBytes="16"/>
-		  <slot m4MuxChannel="1" numberOfBytes="253"/>
-		</substructure>
-	  </MuxCodeEntry>
-	</MuxCode_descriptor>
-		
-	<MuxCode_descriptor>
- 	  <MuxCodeEntry MuxCode="15" version="12"/>
-	</MuxCode_descriptor>
-	
-	<MuxCode_descriptor>
-	  <MuxCodeEntry MuxCode="6" version="6">
-	    <substructure repetitionCount="4"/>
-		<substructure repetitionCount="0"/>
-	  </MuxCodeEntry>
-	</MuxCode_descriptor>
+    
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="4" version="1">
+	<substructure repetitionCount="7">
+	  <slot m4MuxChannel="240" numberOfBytes="16"/>
+	  <slot m4MuxChannel="1" numberOfBytes="253"/>
+	</substructure>
+      </MuxCodeEntry>
+    </MuxCode_descriptor>
+    
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="15" version="12"/>
+    </MuxCode_descriptor>
+    
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="6" version="6">
+	<substructure repetitionCount="4"/>
+	<substructure repetitionCount="0"/>
+      </MuxCodeEntry>
+    </MuxCode_descriptor>
 
-	<MuxCode_descriptor>
-	  <MuxCodeEntry MuxCode="6" version="6">
-	    <substructure repetitionCount="4"/>
-	  </MuxCodeEntry>
-	  <MuxCodeEntry MuxCode="5" version="6">
-		<substructure repetitionCount="7">
-		  <slot m4MuxChannel="240" numberOfBytes="16"/>
-		  <slot m4MuxChannel="1" numberOfBytes="253"/>
-		</substructure>
-	  </MuxCodeEntry>
-	</MuxCode_descriptor>
+    <MuxCode_descriptor>
+      <MuxCodeEntry MuxCode="6" version="6">
+	<substructure repetitionCount="4"/>
+      </MuxCodeEntry>
+      <MuxCodeEntry MuxCode="5" version="6">
+	<substructure repetitionCount="7">
+	  <slot m4MuxChannel="240" numberOfBytes="16"/>
+	  <slot m4MuxChannel="1" numberOfBytes="253"/>
+	</substructure>
+      </MuxCodeEntry>
+    </MuxCode_descriptor>
 
-	<M4MuxBufferSize_descriptor>
-		<DefaultM4MuxBufferDescriptor m4MuxChannel="156" FB_BufferSize="15549729"/>
-	</M4MuxBufferSize_descriptor>
-	
-	<M4MuxBufferSize_descriptor>
-		<DefaultM4MuxBufferDescriptor m4MuxChannel="201" FB_BufferSize="8208677"/>
-		<M4MuxBufferDescriptor m4MuxChannel="17" FB_BufferSize="901127"/>
-	</M4MuxBufferSize_descriptor>
-	
-	<M4MuxBufferSize_descriptor>
-		<DefaultM4MuxBufferDescriptor m4MuxChannel="42" FB_BufferSize="1234567"/>
-		<M4MuxBufferDescriptor m4MuxChannel="177" FB_BufferSize="901127"/>
-		<M4MuxBufferDescriptor m4MuxChannel="178" FB_BufferSize="901127"/>
-	</M4MuxBufferSize_descriptor>
-	
-	<HEVC_operation_point_descriptor>
-		<operation_point 
-			target_ols="156" constant_frame_rate_info_idc="0" applicable_temporal_id="6"/>
-	</HEVC_operation_point_descriptor>
-	
-	<HEVC_operation_point_descriptor>
-		<profile_tier_level_info>
-			DEAD BEEF DEAD BEEF DEAD BEEF
-		</profile_tier_level_info>
-		<operation_point 
-			target_ols="156" constant_frame_rate_info_idc="1" applicable_temporal_id="6" frame_rate_indicator="2048"/>
-	</HEVC_operation_point_descriptor>
-	
-	<HEVC_operation_point_descriptor>
-		<operation_point 
-			target_ols="16" constant_frame_rate_info_idc="0" applicable_temporal_id="5">
-			<ES prepend_dependencies="false" ES_reference="62"/>
-			<ES prepend_dependencies="true" ES_reference="0"/>
-			<ESinOP necessary_layer="true" output_layer="false" ptl_ref_idx="56"/>
-		</operation_point>
-	</HEVC_operation_point_descriptor>
-	
-	<HEVC_operation_point_descriptor>
-		<operation_point 
-			target_ols="1" constant_frame_rate_info_idc="2" applicable_temporal_id="2"
-			frame_rate_indicator="4095" avg_bit_rate="12233445" max_bit_rate="4332211"/>
-	</HEVC_operation_point_descriptor>
+    <M4MuxBufferSize_descriptor>
+      <DefaultM4MuxBufferDescriptor m4MuxChannel="156" FB_BufferSize="15549729"/>
+    </M4MuxBufferSize_descriptor>
+    
+    <M4MuxBufferSize_descriptor>
+      <DefaultM4MuxBufferDescriptor m4MuxChannel="201" FB_BufferSize="8208677"/>
+      <M4MuxBufferDescriptor m4MuxChannel="17" FB_BufferSize="901127"/>
+    </M4MuxBufferSize_descriptor>
+    
+    <M4MuxBufferSize_descriptor>
+      <DefaultM4MuxBufferDescriptor m4MuxChannel="42" FB_BufferSize="1234567"/>
+      <M4MuxBufferDescriptor m4MuxChannel="177" FB_BufferSize="901127"/>
+      <M4MuxBufferDescriptor m4MuxChannel="178" FB_BufferSize="901127"/>
+    </M4MuxBufferSize_descriptor>
+    
+    <HEVC_operation_point_descriptor>
+      <operation_point 
+	  target_ols="156" constant_frame_rate_info_idc="0" applicable_temporal_id="6"/>
+    </HEVC_operation_point_descriptor>
+    
+    <HEVC_operation_point_descriptor>
+      <profile_tier_level_info>
+	DEAD BEEF DEAD BEEF DEAD BEEF
+      </profile_tier_level_info>
+      <operation_point 
+	  target_ols="156" constant_frame_rate_info_idc="1" applicable_temporal_id="6" frame_rate_indicator="2048"/>
+    </HEVC_operation_point_descriptor>
+    
+    <HEVC_operation_point_descriptor>
+      <operation_point 
+	  target_ols="16" constant_frame_rate_info_idc="0" applicable_temporal_id="5">
+	<ES prepend_dependencies="false" ES_reference="62"/>
+	<ES prepend_dependencies="true" ES_reference="0"/>
+	<ESinOP necessary_layer="true" output_layer="false" ptl_ref_idx="56"/>
+      </operation_point>
+    </HEVC_operation_point_descriptor>
+    
+    <HEVC_operation_point_descriptor>
+      <operation_point 
+	  target_ols="1" constant_frame_rate_info_idc="2" applicable_temporal_id="2"
+	  frame_rate_indicator="4095" avg_bit_rate="12233445" max_bit_rate="4332211"/>
+    </HEVC_operation_point_descriptor>
 
-	<cpcm_delivery_signalling_descriptor cpcm_version="1">
-	  <cpcm_v1_delivery_signalling
-		copy_control="1" do_not_cpcm_scramble="true" viewable="true" move_local="false" 
-		move_and_copy_propagation_information="2" view_propagation_information="3"
-		remote_access_record_flag="true" export_beyond_trust="true"
-		disable_analogue_sd_export="false" disable_analogue_sd_consumption="false"
-		disable_analogue_hd_export="false" disable_analogue_hd_consumption="false"
-		image_constraint="false"/>
-	</cpcm_delivery_signalling_descriptor>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling
+	  copy_control="1" do_not_cpcm_scramble="true" viewable="true" move_local="false" 
+	  move_and_copy_propagation_information="2" view_propagation_information="3"
+	  remote_access_record_flag="true" export_beyond_trust="true"
+	  disable_analogue_sd_export="false" disable_analogue_sd_consumption="false"
+	  disable_analogue_hd_export="false" disable_analogue_hd_consumption="false"
+	  image_constraint="false"/>
+    </cpcm_delivery_signalling_descriptor>
 
-	<cpcm_delivery_signalling_descriptor cpcm_version="1">
-	  <cpcm_v1_delivery_signalling
-		copy_control="2" do_not_cpcm_scramble="false" viewable="false" move_local="false" 
-		move_and_copy_propagation_information="1" view_propagation_information="0"
-		remote_access_record_flag="true" export_beyond_trust="true"
-		disable_analogue_sd_export="true" disable_analogue_sd_consumption="false"
-		disable_analogue_hd_export="true" disable_analogue_hd_consumption="false"
-		image_constraint="true" view_period_from_first_playback="23"
-		view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14"
-		simultaneous_view_count="174" remote_access_delay="14" remote_access_date="2020-01-01 00:00:00"/>
-	</cpcm_delivery_signalling_descriptor>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling
+	  copy_control="2" do_not_cpcm_scramble="false" viewable="false" move_local="false" 
+	  move_and_copy_propagation_information="1" view_propagation_information="0"
+	  remote_access_record_flag="true" export_beyond_trust="true"
+	  disable_analogue_sd_export="true" disable_analogue_sd_consumption="false"
+	  disable_analogue_hd_export="true" disable_analogue_hd_consumption="false"
+	  image_constraint="true" view_period_from_first_playback="23"
+	  view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14"
+	  simultaneous_view_count="174" remote_access_delay="14" remote_access_date="2020-01-01 00:00:00"/>
+    </cpcm_delivery_signalling_descriptor>
 
-	<cpcm_delivery_signalling_descriptor cpcm_version="1">
-	  <cpcm_v1_delivery_signalling
-		copy_control="0" do_not_cpcm_scramble="true" viewable="false" move_local="false" 
-		move_and_copy_propagation_information="1" view_propagation_information="0"
-		remote_access_record_flag="false" export_beyond_trust="false"
-		disable_analogue_sd_export="false" disable_analogue_sd_consumption="true"
-		disable_analogue_hd_export="false" disable_analogue_hd_consumption="true"
-		image_constraint="true" view_period_from_first_playback="231"
-		view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14">
-		<cps C_and_R_regime_mask="147">AA 00 BB CC 11</cps>
-		<cps C_and_R_regime_mask="212">DE AD BE EF</cps>
-		<cps C_and_R_regime_mask="255">01 23 45 67 89 ab cd ef</cps>
-		</cpcm_v1_delivery_signalling>
-	</cpcm_delivery_signalling_descriptor>
-	
-	<quality_extension_descriptor field_size_bytes="1">
-		<metric code="0x7373696d"/>
-		<metric code="0x6d73696d"/>
-		<metric code="0x6a313434"/>
-		<metric code="0x6a323437"/>
-		<metric code="0x6d6f7073"/>
-		<metric code="0x66736967"/>
-	</quality_extension_descriptor>
-	<quality_extension_descriptor field_size_bytes="2">
-		<metric code="0x70736e72"/>
-	</quality_extension_descriptor>
-		<quality_extension_descriptor field_size_bytes="0">
-		<metric code="0xdeadb00b"/>
-	</quality_extension_descriptor>
-	
-	<DTS_UHD_descriptor 
-		DecoderProfileCode="0" FrameDurationCode="2" 
-		MaxPayloadCode="6" StreamIndex="0">
-	</DTS_UHD_descriptor>
-	
-	<DTS_UHD_descriptor 
-		DecoderProfileCode="2" FrameDurationCode="3" 
-		MaxPayloadCode="1" StreamIndex="4">
-		<codec_selector>
-			DEAD BEEF
-		</codec_selector>
-	</DTS_UHD_descriptor>
-	
-	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="1"/>
+    <cpcm_delivery_signalling_descriptor cpcm_version="1">
+      <cpcm_v1_delivery_signalling
+	  copy_control="0" do_not_cpcm_scramble="true" viewable="false" move_local="false" 
+	  move_and_copy_propagation_information="1" view_propagation_information="0"
+	  remote_access_record_flag="false" export_beyond_trust="false"
+	  disable_analogue_sd_export="false" disable_analogue_sd_consumption="true"
+	  disable_analogue_hd_export="false" disable_analogue_hd_consumption="true"
+	  image_constraint="true" view_period_from_first_playback="231"
+	  view_window_start="2022-10-01 03:23:15" view_window_end="2025-10-01 03:23:14">
+	<cps C_and_R_regime_mask="147">AA 00 BB CC 11</cps>
+	<cps C_and_R_regime_mask="212">DE AD BE EF</cps>
+	<cps C_and_R_regime_mask="255">01 23 45 67 89 ab cd ef</cps>
+      </cpcm_v1_delivery_signalling>
+    </cpcm_delivery_signalling_descriptor>
+    
+    <quality_extension_descriptor field_size_bytes="1">
+      <metric code="0x7373696d"/>
+      <metric code="0x6d73696d"/>
+      <metric code="0x6a313434"/>
+      <metric code="0x6a323437"/>
+      <metric code="0x6d6f7073"/>
+      <metric code="0x66736967"/>
+    </quality_extension_descriptor>
+    <quality_extension_descriptor field_size_bytes="2">
+      <metric code="0x70736e72"/>
+    </quality_extension_descriptor>
+    <quality_extension_descriptor field_size_bytes="0">
+      <metric code="0xdeadb00b"/>
+    </quality_extension_descriptor>
+    
+    <DTS_UHD_descriptor 
+	DecoderProfileCode="0" FrameDurationCode="2" 
+	MaxPayloadCode="6" StreamIndex="0">
+    </DTS_UHD_descriptor>
+    
+    <DTS_UHD_descriptor 
+	DecoderProfileCode="2" FrameDurationCode="3" 
+	MaxPayloadCode="1" StreamIndex="4">
+      <codec_selector>
+	DEAD BEEF
+      </codec_selector>
+    </DTS_UHD_descriptor>
+    
+    <MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="1"/>
 
-	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="13">
-		<DescriptionLanguage descriptionLanguage="fre"/>
-	</MPEGH_3D_audio_text_label_descriptor>
-	
-	<MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="113">
-		<DescriptionLanguage descriptionLanguage="eng">
-			<GroupDescription 
-				mae_descriptionGroupID="10" groupDescription="group-10"/>
-			<GroupDescription 
-				mae_descriptionGroupID="11" groupDescription="group-11"/>
-			<SwitchGroupDescription 
-				mae_descriptionSwitchGroupID="12" switchGroupDescription="switch_group-12"/>
-			<GroupPresetDescription
-				mae_descriptionGroupPresetID="13" groupPresetDescription="group_preset_13"/>
-		</DescriptionLanguage>
-		<DescriptionLanguage descriptionLanguage="chi">
-			<SwitchGroupDescription 
-				mae_descriptionSwitchGroupID="22" switchGroupDescription="switch_group-22"/>
-		</DescriptionLanguage>
-	</MPEGH_3D_audio_text_label_descriptor>
-	
-	<Media_service_kind_descriptor>
-		<media_service_kind 
-			media_description="self" media_type="video"/>
-		<media_service_kind
-			media_description="self" media_type="unknown"
-			ID_length_code="2" ID_type="0x0200" media_ID="Paul">
-			<language_media_pair configuration_type="0" lang_len_idc="2" BCP47_language_code="eng">
-				<media_service_type purpose="0x01"/>
-				<media_service_type purpose="0x07"/>
-				<media_service_type purpose="0x11"/>
-				<media_service_type purpose="0x08"/>
-				<media_service_type purpose="0x17"/>
-			</language_media_pair>
-		</media_service_kind>
-	</Media_service_kind_descriptor>
-	
-	<Media_service_kind_descriptor>
-		<media_service_kind
-			media_description="associate" media_type="audio"
-			ID_length_code="7" ID_type="0x0200" ID_len="6" media_ID="TSDuck">
-			<language_media_pair configuration_type="0" lang_len_idc="0" lang_len="6" BCP47_language_code="french"/>
-		</media_service_kind>
-	</Media_service_kind_descriptor>
+    <MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="13">
+      <DescriptionLanguage descriptionLanguage="fre"/>
+    </MPEGH_3D_audio_text_label_descriptor>
+    
+    <MPEGH_3D_audio_text_label_descriptor _3dAudioSceneInfoID="113">
+      <DescriptionLanguage descriptionLanguage="eng">
+	<GroupDescription 
+	    mae_descriptionGroupID="10" groupDescription="group-10"/>
+	<GroupDescription 
+	    mae_descriptionGroupID="11" groupDescription="group-11"/>
+	<SwitchGroupDescription 
+	    mae_descriptionSwitchGroupID="12" switchGroupDescription="switch_group-12"/>
+	<GroupPresetDescription
+	    mae_descriptionGroupPresetID="13" groupPresetDescription="group_preset_13"/>
+      </DescriptionLanguage>
+      <DescriptionLanguage descriptionLanguage="chi">
+	<SwitchGroupDescription 
+	    mae_descriptionSwitchGroupID="22" switchGroupDescription="switch_group-22"/>
+      </DescriptionLanguage>
+    </MPEGH_3D_audio_text_label_descriptor>
+    
+    <Media_service_kind_descriptor>
+      <media_service_kind 
+	  media_description="self" media_type="video"/>
+      <media_service_kind
+	  media_description="self" media_type="unknown"
+	  ID_length_code="2" ID_type="0x0200" media_ID="Paul">
+	<language_media_pair configuration_type="0" lang_len_idc="2" BCP47_language_code="eng">
+	  <media_service_type purpose="0x01"/>
+	  <media_service_type purpose="0x07"/>
+	  <media_service_type purpose="0x11"/>
+	  <media_service_type purpose="0x08"/>
+	  <media_service_type purpose="0x17"/>
+	</language_media_pair>
+      </media_service_kind>
+    </Media_service_kind_descriptor>
+    
+    <Media_service_kind_descriptor>
+      <media_service_kind
+	  media_description="associate" media_type="audio"
+	  ID_length_code="7" ID_type="0x0200" ID_len="6" media_ID="TSDuck">
+	<language_media_pair configuration_type="0" lang_len_idc="0" lang_len="6" BCP47_language_code="french"/>
+      </media_service_kind>
+    </Media_service_kind_descriptor>
 
-	<HEVC_tile_substream_descriptor SubstreamID="19"/>
-	
-	<HEVC_tile_substream_descriptor SubstreamID="67">
-		<Reference PreambleFlag="1" PatternReference="99"/>
-	</HEVC_tile_substream_descriptor>
+    <HEVC_tile_substream_descriptor SubstreamID="19"/>
+    
+    <HEVC_tile_substream_descriptor SubstreamID="67">
+      <Reference PreambleFlag="1" PatternReference="99"/>
+    </HEVC_tile_substream_descriptor>
 
-	<HEVC_tile_substream_descriptor SubstreamID="68">
-		<Substream Flag="1" AdditionalSubstreamID="14"/>
-		<Substream Flag="0" AdditionalSubstreamID="19"/>
-		<Substream Flag="0" AdditionalSubstreamID="119"/>
-		<Substream Flag="1" AdditionalSubstreamID="86"/>
-		<Substream Flag="1" AdditionalSubstreamID="125"/>
-	</HEVC_tile_substream_descriptor>
+    <HEVC_tile_substream_descriptor SubstreamID="68">
+      <Substream Flag="1" AdditionalSubstreamID="14"/>
+      <Substream Flag="0" AdditionalSubstreamID="19"/>
+      <Substream Flag="0" AdditionalSubstreamID="119"/>
+      <Substream Flag="1" AdditionalSubstreamID="86"/>
+      <Substream Flag="1" AdditionalSubstreamID="125"/>
+    </HEVC_tile_substream_descriptor>
 
-	<HEVC_subregion_descriptor 
-		SubstreamIDsPerLine="125" TotalSubstreamIDs="255" LevelFullPanorama="55"/>
+    <HEVC_subregion_descriptor 
+	SubstreamIDsPerLine="125" TotalSubstreamIDs="255" LevelFullPanorama="55"/>
 
-	<HEVC_subregion_descriptor 
-		SubstreamIDsPerLine="15" TotalSubstreamIDs="254" LevelFullPanorama="54">
-		<SubregionLayout PreambleSubstreamID="1" Level="255" PictureSizeHor="1920" PictureSizeVer="1080">
-			<Pattern>
-				<Substream offset="-127"/>
-				<Substream offset="127"/>
-			</Pattern>
-		</SubregionLayout>
-		<SubregionLayout PreambleSubstreamID="2" Level="254" PictureSizeHor="3840" PictureSizeVer="1920">
-			<Pattern>
-				<Substream offset="-30"/>
-				<Substream offset="-20"/>
-				<Substream offset="-10"/>
-				<Substream offset="10"/>
-				<Substream offset="20"/>
-				<Substream offset="30"/>
-				<Substream offset="40"/>
-				<Substream offset="50"/>
-				<Substream offset="60"/>
-				<Substream offset="70"/>
-				<Substream offset="80"/>
-				<Substream offset="90"/>
-			</Pattern>
-			<Pattern>
-				<Substream offset="-31"/>
-				<Substream offset="-21"/>
-				<Substream offset="-11"/>
-				<Substream offset="9"/>
-				<Substream offset="19"/>
-				<Substream offset="29"/>
-				<Substream offset="39"/>
-				<Substream offset="49"/>
-				<Substream offset="59"/>
-				<Substream offset="69"/>
-				<Substream offset="79"/>
-				<Substream offset="89"/>
-			</Pattern>
-		</SubregionLayout>
-		<SubregionLayout PreambleSubstreamID="126" Level="10" PictureSizeHor="1280" PictureSizeVer="720">
-			<Pattern>
-				<Substream offset="-1"/>
-			</Pattern>
-		</SubregionLayout>
-		
-	</HEVC_subregion_descriptor>
+    <HEVC_subregion_descriptor 
+	SubstreamIDsPerLine="15" TotalSubstreamIDs="254" LevelFullPanorama="54">
+      <SubregionLayout PreambleSubstreamID="1" Level="255" PictureSizeHor="1920" PictureSizeVer="1080">
+	<Pattern>
+	  <Substream offset="-127"/>
+	  <Substream offset="127"/>
+	</Pattern>
+      </SubregionLayout>
+      <SubregionLayout PreambleSubstreamID="2" Level="254" PictureSizeHor="3840" PictureSizeVer="1920">
+	<Pattern>
+	  <Substream offset="-30"/>
+	  <Substream offset="-20"/>
+	  <Substream offset="-10"/>
+	  <Substream offset="10"/>
+	  <Substream offset="20"/>
+	  <Substream offset="30"/>
+	  <Substream offset="40"/>
+	  <Substream offset="50"/>
+	  <Substream offset="60"/>
+	  <Substream offset="70"/>
+	  <Substream offset="80"/>
+	  <Substream offset="90"/>
+	</Pattern>
+	<Pattern>
+	  <Substream offset="-31"/>
+	  <Substream offset="-21"/>
+	  <Substream offset="-11"/>
+	  <Substream offset="9"/>
+	  <Substream offset="19"/>
+	  <Substream offset="29"/>
+	  <Substream offset="39"/>
+	  <Substream offset="49"/>
+	  <Substream offset="59"/>
+	  <Substream offset="69"/>
+	  <Substream offset="79"/>
+	  <Substream offset="89"/>
+	</Pattern>
+      </SubregionLayout>
+      <SubregionLayout PreambleSubstreamID="126" Level="10" PictureSizeHor="1280" PictureSizeVer="720">
+	<Pattern>
+	  <Substream offset="-1"/>
+	</Pattern>
+      </SubregionLayout>
+      
+    </HEVC_subregion_descriptor>
 
-	<JPEG_XS_video_descriptor 
-		descriptor_version="0"
-		horizontal_size="1920" vertical_size="1080"
-		brat="123" 
-		interlace_mode="0" framerate_DEN="1" framerate_NUM="100"
-		sample_bitdepth="9" sampling_structure="0" 
-		Ppih="0x1500" level="0x04" sublevel="0x0C"
-		max_buffer_size="14" buffer_model_type="2"
-		colour_primaries="9" transfer_characteristics="15" matrix_coefficients="9"
-		video_full_range_flag="false" still_mode="true">
-	</JPEG_XS_video_descriptor>
+    <JPEG_XS_video_descriptor 
+	descriptor_version="0"
+	horizontal_size="1920" vertical_size="1080"
+	brat="123" 
+	interlace_mode="0" framerate_DEN="1" framerate_NUM="100"
+	sample_bitdepth="9" sampling_structure="0" 
+	Ppih="0x1500" level="0x04" sublevel="0x0C"
+	max_buffer_size="14" buffer_model_type="2"
+	colour_primaries="9" transfer_characteristics="15" matrix_coefficients="9"
+	video_full_range_flag="false" still_mode="true">
+    </JPEG_XS_video_descriptor>
 
-	<JPEG_XS_video_descriptor 
-		descriptor_version="0"
-		horizontal_size="1920" vertical_size="1080"
-		brat="1234" 
-		interlace_mode="1" framerate_DEN="1.001" framerate_NUM="30"
-		Ppih="0x4E40" level="0x24" sublevel="0x00"
-		max_buffer_size="143" buffer_model_type="2"
-		colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
-		video_full_range_flag="true" still_mode="false">
-		<private_data>
-			dead beef
-		</private_data>
-	</JPEG_XS_video_descriptor>
-	
-	<JPEG_XS_video_descriptor 
-		descriptor_version="0"
-		horizontal_size="1920" vertical_size="1080" brat="1234" 
-		interlace_mode="2" framerate_DEN="1" framerate_NUM="120"		
-		sample_bitdepth="11" sampling_structure="6"
-		Ppih="0xC340" level="0x38" sublevel="0x80"
-		max_buffer_size="143" buffer_model_type="2"
-		colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
-		video_full_range_flag="true" still_mode="false">
-		<mdm 
-			X_c0="810" Y_c0="145"
-			X_c1="1810" Y_c1="1145"
-			X_c2="970" Y_c2="1217"
-			X_wp="45" Y_wp="54"
-			L_max="145263" L_min="0"
-			MaxCLL="1000"
-			MaxFALL="999"/>
-	</JPEG_XS_video_descriptor>
+    <JPEG_XS_video_descriptor 
+	descriptor_version="0"
+	horizontal_size="1920" vertical_size="1080"
+	brat="1234" 
+	interlace_mode="1" framerate_DEN="1.001" framerate_NUM="30"
+	Ppih="0x4E40" level="0x24" sublevel="0x00"
+	max_buffer_size="143" buffer_model_type="2"
+	colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
+	video_full_range_flag="true" still_mode="false">
+      <private_data>
+	dead beef
+      </private_data>
+    </JPEG_XS_video_descriptor>
+    
+    <JPEG_XS_video_descriptor 
+	descriptor_version="0"
+	horizontal_size="1920" vertical_size="1080" brat="1234" 
+	interlace_mode="2" framerate_DEN="1" framerate_NUM="120"		
+	sample_bitdepth="11" sampling_structure="6"
+	Ppih="0xC340" level="0x38" sublevel="0x80"
+	max_buffer_size="143" buffer_model_type="2"
+	colour_primaries="6" transfer_characteristics="11" matrix_coefficients="4"
+	video_full_range_flag="true" still_mode="false">
+      <mdm 
+	  X_c0="810" Y_c0="145"
+	  X_c1="1810" Y_c1="1145"
+	  X_c2="970" Y_c2="1217"
+	  X_wp="45" Y_wp="54"
+	  L_max="145263" L_min="0"
+	  MaxCLL="1000"
+	  MaxFALL="999"/>
+    </JPEG_XS_video_descriptor>
 
-	<auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x1b">
-		<si_message payload_type="0x253">
-			 <reserved_si_message>aa bb cc</reserved_si_message>
-		</si_message>
-		<si_message payload_type="0x00">
-			<generic_params aux_is_interlaced="false" position_offset_h="45" position_offset_v="234"/>
-			<depth_params kfar_numerator="18" knear_numerator="37"/>
-		</si_message>
-				<si_message payload_type="0x01">
-			<generic_params  aux_is_bottom_field="true" position_offset_h="255" position_offset_v="0"/>
-			<parallax_params parallax_zero="0" parallax_scale="0" dref="0" wref="0"/>
-		</si_message>
-	</auxiliary_video_stream_descriptor>
+    <auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x1b">
+      <si_message payload_type="0x253">
+	<reserved_si_message>aa bb cc</reserved_si_message>
+      </si_message>
+      <si_message payload_type="0x00">
+	<generic_params aux_is_interlaced="false" position_offset_h="45" position_offset_v="234"/>
+	<depth_params kfar_numerator="18" knear_numerator="37"/>
+      </si_message>
+      <si_message payload_type="0x01">
+	<generic_params  aux_is_bottom_field="true" position_offset_h="255" position_offset_v="0"/>
+	<parallax_params parallax_zero="0" parallax_scale="0" dref="0" wref="0"/>
+      </si_message>
+    </auxiliary_video_stream_descriptor>
 
-	<auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x32">
-		<si_message payload_type="0x00">
-			<generic_params aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
-			<depth_params kfar_numerator="127" knear_numerator="128"/>
-		</si_message>
-		<si_message payload_type="0x01">
-			<generic_params  aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
-			<parallax_params parallax_zero="36463" parallax_scale="849" dref="1010" wref="2020"/>
-		</si_message>
-		<si_message payload_type="0x1001">
-			<reserved_si_message>98 76 54 32 10</reserved_si_message>
-		</si_message>
-	</auxiliary_video_stream_descriptor>
+    <auxiliary_video_stream_descriptor aux_video_codedstreamtype="0x32">
+      <si_message payload_type="0x00">
+	<generic_params aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+	<depth_params kfar_numerator="127" knear_numerator="128"/>
+      </si_message>
+      <si_message payload_type="0x01">
+	<generic_params  aux_is_bottom_field="true" position_offset_h="0" position_offset_v="255"/>
+	<parallax_params parallax_zero="36463" parallax_scale="849" dref="1010" wref="2020"/>
+      </si_message>
+      <si_message payload_type="0x1001">
+	<reserved_si_message>98 76 54 32 10</reserved_si_message>
+      </si_message>
+    </auxiliary_video_stream_descriptor>
 
   </PMT>
 
   <NIT network_id="0">
 
 
-  	<service_prominence_descriptor>
-		<sogi SOGI_flag="false" SOGI_priority="12" service_id="1234"/>
-		<sogi SOGI_flag="true" SOGI_priority="0" service_id="2345">
-			<target_region country_code="FRA"/>
-			<target_region country_code="GBR" primary_region_code="17"/>
-			<target_region primary_region_code="1" secondary_region_code="2"/>
-			<target_region primary_region_code="11" secondary_region_code="12" tertiary_region_code="13"/>
-		</sogi>
-		<private_data>
-			dead beef
-		</private_data>
-	</service_prominence_descriptor>
-	
-	<service_prominence_descriptor>
-  		<private_data>
-			00112233 44556677
-		</private_data>
-	</service_prominence_descriptor>
+    <service_prominence_descriptor>
+      <sogi SOGI_flag="false" SOGI_priority="12" service_id="1234"/>
+      <sogi SOGI_flag="true" SOGI_priority="0" service_id="2345">
+	<target_region country_code="FRA"/>
+	<target_region country_code="GBR" primary_region_code="17"/>
+	<target_region primary_region_code="1" secondary_region_code="2"/>
+	<target_region primary_region_code="11" secondary_region_code="12" tertiary_region_code="13"/>
+      </sogi>
+      <private_data>
+	dead beef
+      </private_data>
+    </service_prominence_descriptor>
+    
+    <service_prominence_descriptor>
+      <private_data>
+	00112233 44556677
+      </private_data>
+    </service_prominence_descriptor>
 
-	<S2Xv2_satellite_delivery_system_descriptor
-		delivery_system_id="0x123456" S2Xv2_mode="1" roll_off="0.20" NCR_reference="0" NCR_version="0"
-		channel_bond="0" polarization="horizontal" TS_GS_S2X_mode="1"  receiver_profiles="0x09"
-		satellite_id="0x65432" frequency="34,567,890,000" symbol_rate="123,456,700"/>
+    <S2Xv2_satellite_delivery_system_descriptor
+	delivery_system_id="0x123456" S2Xv2_mode="1" roll_off="0.20" NCR_reference="0" NCR_version="0"
+	channel_bond="0" polarization="horizontal" TS_GS_S2X_mode="1"  receiver_profiles="0x09"
+	satellite_id="0x65432" frequency="34,567,890,000" symbol_rate="123,456,700"/>
 
-	<S2Xv2_satellite_delivery_system_descriptor
-		delivery_system_id="0x234567" S2Xv2_mode="2" roll_off="0.05" NCR_reference="0" NCR_version="1"
-		channel_bond="1" polarization="left" TS_GS_S2X_mode="2"  receiver_profiles="0x02"
-		satellite_id="0x765432" frequency="876,543,210,000" symbol_rate="456,789,600"
-		scrambling_sequence_index="65539" timeslice_number="247">
-		<secondary_delivery_system id="0x776655"/>
-	</S2Xv2_satellite_delivery_system_descriptor>
-	
-	<S2Xv2_satellite_delivery_system_descriptor
-		delivery_system_id="0x11223344" S2Xv2_mode="5" roll_off="0.35" NCR_reference="1" NCR_version="0"
-		channel_bond="2" polarization="left" TS_GS_S2X_mode="2"  receiver_profiles="0x02"
-		satellite_id="0x765432" frequency="65,432,180,000" symbol_rate="24,675,400"
-		timeslice_number="248">
-		<superframe SOSF_WH_sequence_number="17" reference_scrambling_index="32768" SFFI="7"
-		payload_scrambling_index="0x3456" beamhopping_time_plan_id="0xFFFFFFFE" superframe_pilots_WH_sequence_number="0x1e"
-		postamble_PLI="5"/>
-	</S2Xv2_satellite_delivery_system_descriptor>
+    <S2Xv2_satellite_delivery_system_descriptor
+	delivery_system_id="0x234567" S2Xv2_mode="2" roll_off="0.05" NCR_reference="0" NCR_version="1"
+	channel_bond="1" polarization="left" TS_GS_S2X_mode="2"  receiver_profiles="0x02"
+	satellite_id="0x765432" frequency="876,543,210,000" symbol_rate="456,789,600"
+	scrambling_sequence_index="65539" timeslice_number="247">
+      <secondary_delivery_system id="0x776655"/>
+    </S2Xv2_satellite_delivery_system_descriptor>
+    
+    <S2Xv2_satellite_delivery_system_descriptor
+	delivery_system_id="0x11223344" S2Xv2_mode="5" roll_off="0.35" NCR_reference="1" NCR_version="0"
+	channel_bond="2" polarization="left" TS_GS_S2X_mode="2"  receiver_profiles="0x02"
+	satellite_id="0x765432" frequency="65,432,180,000" symbol_rate="24,675,400"
+	timeslice_number="248">
+      <superframe SOSF_WH_sequence_number="17" reference_scrambling_index="32768" SFFI="7"
+		  payload_scrambling_index="0x3456" beamhopping_time_plan_id="0xFFFFFFFE" superframe_pilots_WH_sequence_number="0x1e"
+		  postamble_PLI="5"/>
+    </S2Xv2_satellite_delivery_system_descriptor>
 
-	<default_authority_descriptor fqdn="tsduck.io"/>
+    <default_authority_descriptor fqdn="tsduck.io"/>
 
   </NIT>
 
   <BAT version="9" current="true" bouquet_id="0xC01D">
- 
+    
     <service_prominence_descriptor>
-		<sogi SOGI_flag="false" SOGI_priority="14" service_id="2345">
-			<target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
-		</sogi>
-	</service_prominence_descriptor>
+      <sogi SOGI_flag="false" SOGI_priority="14" service_id="2345">
+	<target_region country_code="GBR" primary_region_code="1" secondary_region_code="2"/>
+      </sogi>
+    </service_prominence_descriptor>
 
   </BAT>
   
   <RNT version="9" current="true" context_id="0xABCD" context_id_type="0x01">
-  
-	<RAR_over_DVB_stream_descriptor
-		first_valid_date="2023-01-01 07:12:00" last_valid_date="2023-11-30 06:55:17"
-		weighting="48" complete_flag="true"
-		transport_stream_id="0x1111" original_network_id="0x2222" service_id="0x3333" component_tag="0x2e"/>
-  
-	<RAR_over_DVB_stream_descriptor
-		first_valid_date="2022-04-01 00:00:00" last_valid_date="2022-04-01 23:59:59"
-		weighting="6" complete_flag="false"
-		transport_stream_id="0xdead" original_network_id="0xdead" service_id="0xdead" component_tag="0xee"
-		download_start_time="2022-04-01 14:15:16" download_period_duration="1" download_cycle_time="2"/>
-  
-  	<RAR_over_IP_descriptor
-		first_valid_date="2023-11-30 06:55:17" last_valid_date="2023-11-30 07:12:42"
-		weighting="9" complete_flag="true"
-		url="https://tsduck.io/"/>
-		
-	<RNT_scan_descriptor>
-		<RNT_reference transport_stream_id="0x2020" original_network_id="0x2121" scan_weighting="12"/>
-		<RNT_reference transport_stream_id="0xdead" original_network_id="0xbeef" scan_weighting="4"/>
-	</RNT_scan_descriptor>
-	
+    
+    <RAR_over_DVB_stream_descriptor
+	first_valid_date="2023-01-01 07:12:00" last_valid_date="2023-11-30 06:55:17"
+	weighting="48" complete_flag="true"
+	transport_stream_id="0x1111" original_network_id="0x2222" service_id="0x3333" component_tag="0x2e"/>
+    
+    <RAR_over_DVB_stream_descriptor
+	first_valid_date="2022-04-01 00:00:00" last_valid_date="2022-04-01 23:59:59"
+	weighting="6" complete_flag="false"
+	transport_stream_id="0xdead" original_network_id="0xdead" service_id="0xdead" component_tag="0xee"
+	download_start_time="2022-04-01 14:15:16" download_period_duration="1" download_cycle_time="2"/>
+    
+    <RAR_over_IP_descriptor
+	first_valid_date="2023-11-30 06:55:17" last_valid_date="2023-11-30 07:12:42"
+	weighting="9" complete_flag="true"
+	url="https://tsduck.io/"/>
+    
+    <RNT_scan_descriptor>
+      <RNT_reference transport_stream_id="0x2020" original_network_id="0x2121" scan_weighting="12"/>
+      <RNT_reference transport_stream_id="0xdead" original_network_id="0xbeef" scan_weighting="4"/>
+    </RNT_scan_descriptor>
+    
   </RNT>
 
 </tsduck>
