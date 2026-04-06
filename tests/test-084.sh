@@ -19,6 +19,7 @@ test_tsp \
     -P splicemonitor --all-commands --json -o $(fpath "$OUTDIR/$SCRIPT.4.json") \
     -P splicemonitor --json -o $(fpath "$OUTDIR/$SCRIPT.5.json") \
     -P splicemonitor --all-commands --json --meta-sections -o $(fpath "$OUTDIR/$SCRIPT.6.json") \
+    -P splicemonitor --all-commands --json --meta-base64-sections -o $(fpath "$OUTDIR/$SCRIPT.7.json") \
     -O drop \
     >"$OUTDIR/$SCRIPT.2.log" 2>&1
 
@@ -27,6 +28,8 @@ test_text $SCRIPT.2.txt
 test_text $SCRIPT.3.txt
 test_text $SCRIPT.4.json
 test_text $SCRIPT.5.json
+test_text $SCRIPT.6.json
+test_text $SCRIPT.7.json
 
 test_tsp \
     -I file $(fpath "$INDIR/$SCRIPT.ts") \

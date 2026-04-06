@@ -43,3 +43,21 @@ $(tspath tstabcomp) $(fpath "$OUTDIR/$SCRIPT.3.bin") \
 
 test_text $SCRIPT.5.log
 test_text $SCRIPT.3.json
+
+$(tspath tstables) $(fpath "$INFILE") --meta-base64-sections --pid 16 \
+    --xml-output $(fpath "$OUTDIR/$SCRIPT.b.xml") \
+    --json-output $(fpath "$OUTDIR/$SCRIPT.b.json") \
+    >"$OUTDIR/$SCRIPT.b.log" 2>&1
+
+test_text $SCRIPT.b.log
+test_text $SCRIPT.b.xml
+test_text $SCRIPT.b.json
+
+$(tspath tstables) $(fpath "$INFILE") --meta-sections --meta-base64-sections --pid 16 \
+    --xml-output $(fpath "$OUTDIR/$SCRIPT.bh.xml") \
+    --json-output $(fpath "$OUTDIR/$SCRIPT.bh.json") \
+    >"$OUTDIR/$SCRIPT.bh.log" 2>&1
+
+test_text $SCRIPT.bh.log
+test_text $SCRIPT.bh.xml
+test_text $SCRIPT.bh.json
