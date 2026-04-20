@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/vnd.hbbtv.xhtml+xml; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<script type="text/javascript">
+//<![CDATA[
+function $(z){return document.getElementById(z);}
+function on(){$("tp").className="on";}
+function off(){$("tp").className="off";}
+function start(){
+var app=$('mgr');
+if(app&&app.getOwnerApplication)app=app.getOwnerApplication(document);
+if(app&&app.show)app.show();
+if(app&&app.activate)app.activate();
+on();
+var il=0,l=[
+"Connectez votre TV pour bénéficier de",
+"Подключите телевизор к",
+"وصل التلفزيون للاستفادة منه"
+,"Connettere il televisore a vantaggio","Connect your TV to benefit from"
+];
+var iD=setInterval(function(){
+if(il>=l.length){
+il=0;
+}$('txt').innerHTML="<i>"+l[il++]+" <b>Sat.tv</b></i>";
+},5000);}
+//]]>
+</script>
+<style type="text/css">
+body {
+position:absolute;
+width:1270px;
+height:710px;
+top:0;
+left:0;
+margin:0;
+padding:0;
+background-color:transparent;
+overflow:hidden;
+font-family:"Arial",sans-serif;
+font-size:24px;
+line-height:28px;
+}
+#tp {
+outline:0;
+position:absolute;
+left:1300px;
+top:36px;
+width:470px;
+height:120px;
+background:linear-gradient(to bottom,rgba(255,255,255,1.0) 0%,rgba(240,240,240,1.0) 100%);
+background:-o-linear-gradient(top,rgba(255,255,255,1.0) 0%,rgba(240,240,240,1.0) 100%);
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,1.0)),color-stop(100%,rgba(240,240,240,1.0)));
+background:-webkit-linear-gradient(top,rgba(255,255,255,1.0) 0%,rgba(240,240,240,1.0) 100%);
+-webkit-box-shadow:0 10px 0 -4px rgba(0,0,0,0.2);
+-o-box-shadow:0 10px 0 -4px rgba(0,0,0,0.2);
+box-shadow:0 10px 0 -4px rgba(0,0,0,0.2);
+-webkit-transition:left 1000ms ease;
+-o-transition:left 1000ms ease;
+}
+#tp.on {left:820px;}
+#tp.off {left:1300px;}
+#txt {
+float:left;
+margin:20px 10px 0 20px;
+width:280px;
+height:105px;
+color:#252525;
+font-style:italic;
+letter-spacing:1px;
+}
+#logo {
+position:absolute;
+right:64px;
+top:16px;
+width:94px;
+height:94px;
+border:0;
+}
+#mgr {visibility:hidden;}
+</style>
+</head>
+<body onload="start()">
+<object id="mgr" type="application/oipfApplicationManager"></object>
+<div id="tp">
+<img id="logo" src="rj45.gif" />
+<p id="txt">Connect your TV to benefit from <b> Sat.tv</b></p>
+</div>
+</body>
+</html>
+
