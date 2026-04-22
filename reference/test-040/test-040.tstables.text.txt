@@ -47,9 +47,9 @@
       Service type: ATSC Digital Television, source id: 0x0001 (1)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 21 bytes
         PCR PID: 0x0031 (49), number of elements: 3
-        - PID: 0x0031 (49), language: "", type: 0x02 (Digital radio sound service)
-        - PID: 0x0034 (52), language: "eng", type: 0x81 (unknown)
-        - PID: 0x0035 (53), language: "eng", type: 0x81 (unknown)
+        - PID: 0x0031 (49), language: "", type: ISO/IEC 13818-2 Video or ISO/IEC 11172-2 constrained parameter video stream (0x02)
+        - PID: 0x0034 (52), language: "eng", type: Audio per ATSC A/53 Part 5 (0x81)
+        - PID: 0x0035 (53), language: "eng", type: Audio per ATSC A/53 Part 5 (0x81)
     - Channel 10.2, short name: "TelXito"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0004 (4)
@@ -58,8 +58,8 @@
       Service type: ATSC Digital Television, source id: 0x0002 (2)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
         PCR PID: 0x0041 (65), number of elements: 2
-        - PID: 0x0041 (65), language: "", type: 0x02 (Digital radio sound service)
-        - PID: 0x0044 (68), language: "eng", type: 0x81 (unknown)
+        - PID: 0x0041 (65), language: "", type: ISO/IEC 13818-2 Video or ISO/IEC 11172-2 constrained parameter video stream (0x02)
+        - PID: 0x0044 (68), language: "eng", type: Audio per ATSC A/53 Part 5 (0x81)
     - Channel 10.3, short name: "LightTV"
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0005 (5)
@@ -68,8 +68,8 @@
       Service type: ATSC Digital Television, source id: 0x0003 (3)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
         PCR PID: 0x0051 (81), number of elements: 2
-        - PID: 0x0051 (81), language: "", type: 0x02 (Digital radio sound service)
-        - PID: 0x0054 (84), language: "eng", type: 0x81 (unknown)
+        - PID: 0x0051 (81), language: "", type: ISO/IEC 13818-2 Video or ISO/IEC 11172-2 constrained parameter video stream (0x02)
+        - PID: 0x0054 (84), language: "eng", type: Audio per ATSC A/53 Part 5 (0x81)
     - Channel 10.4, short name: "Quest  "
       Modulation: ATSC 8-VSB, frequency: 0
       TS id: 0x1FE1 (8161), program number: 0x0006 (6)
@@ -78,8 +78,8 @@
       Service type: ATSC Digital Television, source id: 0x0004 (4)
       - Descriptor 0: ATSC Service Location (0xA1, 161), 15 bytes
         PCR PID: 0x0061 (97), number of elements: 2
-        - PID: 0x0061 (97), language: "", type: 0x02 (Digital radio sound service)
-        - PID: 0x0064 (100), language: "eng", type: 0x81 (unknown)
+        - PID: 0x0061 (97), language: "", type: ISO/IEC 13818-2 Video or ISO/IEC 11172-2 constrained parameter video stream (0x02)
+        - PID: 0x0064 (100), language: "eng", type: Audio per ATSC A/53 Part 5 (0x81)
 
 * PAT, TID 0x00 (0), PID 0x0000 (0)
   Version: 2, sections: 1, total size: 28 bytes
