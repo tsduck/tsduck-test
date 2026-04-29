@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <DSMCC_user_to_network_message version="0" current="true" protocol_discriminator="0x11" dsmcc_type="0x03" message_id="0x1006" transaction_id="0x80000000">
+    <DSI>
+      <server_id>
+        FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+        FF FF FF FF
+      </server_id>
+      <GroupInfoIndication>
+        <group group_id="0x80000002" group_size="0x00058860">
+          <compatibilityDescriptor>
+            <descriptor descriptorType="0x01" specifierType="0x01" specifierData="0x0000237C" model="0x0088" version="0x0016"/>
+            <descriptor descriptorType="0x02" specifierType="0x01" specifierData="0x0000237C" model="0x0180" version="0x0002"/>
+            <descriptor descriptorType="0x40" specifierType="0x01" specifierData="0x0000237C" model="0x0000" version="0x0000"/>
+          </compatibilityDescriptor>
+        </group>
+        <group group_id="0x80000003" group_size="0x00012345">
+          <compatibilityDescriptor>
+            <descriptor descriptorType="0x02" specifierType="0x01" specifierData="0x0000237C" model="0x0001" version="0x0001">
+              <subDescriptor subDescriptorType="0x01">
+                DE AD BE EF
+              </subDescriptor>
+            </descriptor>
+          </compatibilityDescriptor>
+        </group>
+      </GroupInfoIndication>
+    </DSI>
+  </DSMCC_user_to_network_message>
+</tsduck>

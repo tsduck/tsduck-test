@@ -1,0 +1,35 @@
+
+* DSM-CC UNM, TID 0x3B (59), PID 0x00C8 (200)
+  Version: 0, sections: 1, total size: 130 bytes
+  - Section 0:
+    Protocol discriminator: 0x11 (17)
+    Dsmcc type: 0x03 (Download message)
+    Message id: 0x1006 (DownloadServerInitiate)
+    Transaction id: 0x80000000 (2147483648)
+    Server id (20 bytes):
+      0000:  FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF  ................
+      0010:  FF FF FF FF                                      ....
+    Number of groups: 2
+    - Group #0, id: 0x80000002 (2147483650), size: 0x00058860 (362592)
+      DSM-CC compatibility descriptor: 3 descriptors
+      - Descriptor #0, type: 0x01 (System Hardware descriptor)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x00237C (NEOTION)
+        Model: 0x0088 (136), version: 0x0016 (22)
+        Number of subdescriptors: 0
+      - Descriptor #1, type: 0x02 (System Software descriptor)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x00237C (NEOTION)
+        Model: 0x0180 (384), version: 0x0002 (2)
+        Number of subdescriptors: 0
+      - Descriptor #2, type: 0x40 (DVB reserved)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x00237C (NEOTION)
+        Model: 0x0000 (0), version: 0x0000 (0)
+        Number of subdescriptors: 0
+    - Group #1, id: 0x80000003 (2147483651), size: 0x00012345 (74565)
+      DSM-CC compatibility descriptor: 1 descriptors
+      - Descriptor #0, type: 0x02 (System Software descriptor)
+        Specifier type: 0x01 (IEEE OUI), specifier data: 0x00237C (NEOTION)
+        Model: 0x0001 (1), version: 0x0001 (1)
+        Number of subdescriptors: 1
+        - Subdescriptor #0, type: 0x01 (1)
+          Additional information (4 bytes): DE AD BE EF
+

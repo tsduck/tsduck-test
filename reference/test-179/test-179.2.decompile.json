@@ -1,0 +1,94 @@
+[
+  {
+    "#name": "DSMCC_user_to_network_message",
+    "#nodes": [
+      {
+        "#name": "DSI",
+        "#nodes": [
+          {
+            "#name": "server_id",
+            "#nodes": [
+              "FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF"
+            ]
+          },
+          {
+            "#name": "GroupInfoIndication",
+            "#nodes": [
+              {
+                "#name": "group",
+                "#nodes": [
+                  {
+                    "#name": "compatibilityDescriptor",
+                    "#nodes": [
+                      {
+                        "#name": "descriptor",
+                        "descriptortype": 1,
+                        "model": 136,
+                        "specifierdata": 9084,
+                        "specifiertype": 1,
+                        "version": 22
+                      },
+                      {
+                        "#name": "descriptor",
+                        "descriptortype": 2,
+                        "model": 384,
+                        "specifierdata": 9084,
+                        "specifiertype": 1,
+                        "version": 2
+                      },
+                      {
+                        "#name": "descriptor",
+                        "descriptortype": 64,
+                        "model": 0,
+                        "specifierdata": 9084,
+                        "specifiertype": 1,
+                        "version": 0
+                      }
+                    ]
+                  }
+                ],
+                "group_id": 2147483650,
+                "group_size": 362592
+              },
+              {
+                "#name": "group",
+                "#nodes": [
+                  {
+                    "#name": "compatibilityDescriptor",
+                    "#nodes": [
+                      {
+                        "#name": "descriptor",
+                        "#nodes": [
+                          {
+                            "#name": "subDescriptor",
+                            "#nodes": [
+                              "DE AD BE EF"
+                            ],
+                            "subdescriptortype": 1
+                          }
+                        ],
+                        "descriptortype": 2,
+                        "model": 1,
+                        "specifierdata": 9084,
+                        "specifiertype": 1,
+                        "version": 1
+                      }
+                    ]
+                  }
+                ],
+                "group_id": 2147483651,
+                "group_size": 74565
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "current": true,
+    "dsmcc_type": 3,
+    "message_id": 4102,
+    "protocol_discriminator": 17,
+    "transaction_id": 2147483648,
+    "version": 0
+  }
+]
