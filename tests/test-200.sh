@@ -34,4 +34,4 @@ test_text $SCRIPT.summary.txt
 ) >"$OUTDIR/$SCRIPT.files.log" 2>&1
 
 test_text $SCRIPT.files.log
-test_bin $SCRIPT.out.1.m3u8
+test_text $SCRIPT.out.1.m3u8

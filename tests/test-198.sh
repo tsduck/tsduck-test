@@ -46,10 +46,10 @@ test_text $SCRIPT.sif.xml
 ) >"$OUTDIR/$SCRIPT.files.log" 2>&1
 
 test_text $SCRIPT.files.log
-test_bin $SCRIPT.out.1.m3u8
-test_bin $SCRIPT.out.2.m3u8
-test_bin $SCRIPT.out.3.m3u8
-test_bin $SCRIPT.out.4.m3u8
-test_bin $SCRIPT.out.5.m3u8
-test_bin $SCRIPT.out.6.m3u8
-test_bin $SCRIPT.out.7.m3u8
+test_text $SCRIPT.out.1.m3u8
+test_text $SCRIPT.out.2.m3u8
+test_text $SCRIPT.out.3.m3u8
+test_text $SCRIPT.out.4.m3u8
+test_text $SCRIPT.out.5.m3u8
+test_text $SCRIPT.out.6.m3u8
+test_text $SCRIPT.out.7.m3u8
