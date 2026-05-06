@@ -29,9 +29,9 @@ test_text $SCRIPT.tsp.log
     mv "$TMPDIR/$SCRIPT.tmp/files/deja.ttf"   "$OUTDIR/$SCRIPT.file.deja.ttf"
     mv "$TMPDIR/$SCRIPT.tmp/files/index.html" "$OUTDIR/$SCRIPT.file.index.html"
     mv "$TMPDIR/$SCRIPT.tmp/files/rj45.gif"   "$OUTDIR/$SCRIPT.file.rj45.gif"
-    mv "$TMPDIR/$SCRIPT.tmp/modules/module_0001.bin" "$OUTDIR/$SCRIPT.module_0001.bin"
-    mv "$TMPDIR/$SCRIPT.tmp/modules/module_0002.bin" "$OUTDIR/$SCRIPT.module_0002.bin"
-    mv "$TMPDIR/$SCRIPT.tmp/modules/module_0003.bin" "$OUTDIR/$SCRIPT.module_0003.bin"
+    mv "$TMPDIR/$SCRIPT.tmp/modules/0000000A/module_0001.bin" "$OUTDIR/$SCRIPT.module_0001.bin"
+    mv "$TMPDIR/$SCRIPT.tmp/modules/0000000A/module_0002.bin" "$OUTDIR/$SCRIPT.module_0002.bin"
+    mv "$TMPDIR/$SCRIPT.tmp/modules/0000000A/module_0003.bin" "$OUTDIR/$SCRIPT.module_0003.bin"
     # Confirm nothing else was produced.
     find "$TMPDIR/$SCRIPT.tmp" -type f
     rm -rf "$TMPDIR/$SCRIPT.tmp"
