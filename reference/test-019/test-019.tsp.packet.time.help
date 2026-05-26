@@ -44,6 +44,14 @@ Options:
       All packets are passed unmodified after the specified time. Several
       --pass options may be specified.
 
+  --preserve-units
+      Preserve payload unit boundaries (PUSI) when starting to pass or starting
+      to drop packets. When transitioning from passing to dropping packets,
+      continue to pass each PID until the next payload unit boundary. When
+      transitioning from dropping to passing packets, start to pass each PID at
+      the next payload unit boundary. By default, the transport stream is
+      abruptly cut at transition points.
+
   -r
   --relative
       All time values are interpreted as a number of seconds relative to the
@@ -51,9 +59,20 @@ Options:
       absolute time in the format "year/month/day:hour:minute:second". Option
       --relative is incompatible with --tdt or --utc.
 
+  --silent-after value
+      With --preserve-unit, specify the maximum number of packets after which a
+      PID is considered as silent during a transition period. The default is
+      5000 packets (7,343 kb).
+
   -s value
   --stop value
       Packet transmission stops after the specified time and tsp terminates.
+
+  --stuffing
+      With --preserve-unit, maintain the global bitrate of the transport stream
+      during transition periods by replacing dropped packets with null packets.
+      By default, during transition periods, the bitrate is gradually
+      decreasing or increasing.
 
   -t
   --tdt
