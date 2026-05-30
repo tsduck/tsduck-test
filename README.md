@@ -301,3 +301,4 @@ repository. But we now limit their size to 20 MB.
 | 204  | Non-regression on ATSC `service_location_descriptor` (issue #1705)
 | 205  | Plugin `slice`
 | 206  | Plugin `time`
+| 207  | Plugin `eitinject`: preservation of midnight events in EIT p/f (issue #1724)

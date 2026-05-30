@@ -879,12 +879,21 @@
 
 * First TS packet: 6,652, UTC: 2020-07-02 00:00:00.00
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 3, size: 18 bytes
+  Section: 0 (last: 1), version: 2, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
   Segment last section: 0x01 (1)
   Last Table Id: 0x4E (78), EIT p/f Actual
+  - Event Id: 0x0BB9 (3001)
+    Start UTC: 2020/07/01 23:59:57
+    Duration: 00:00:05
+    Running status: undefined
+    CA mode: free
+    - Descriptor 0: Short Event (0x4D, 77), 15 bytes
+      Language: foo
+      Event name: "Event 3001"
+      Description: ""
 
 * First TS packet: 6,654, UTC: 2020-07-02 00:00:00.00
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
@@ -1145,7 +1154,7 @@
 
 * First TS packet: 7,998, UTC: 2020-07-02 00:00:02.02
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 4, size: 47 bytes
+  Section: 0 (last: 1), version: 3, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1208,7 +1217,7 @@
 
 * First TS packet: 9,328, UTC: 2020-07-02 00:00:04.02
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 4, size: 47 bytes
+  Section: 0 (last: 1), version: 3, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1397,7 +1406,7 @@
 
 * First TS packet: 10,658, UTC: 2020-07-02 00:00:06.02
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 4, size: 47 bytes
+  Section: 0 (last: 1), version: 3, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1487,7 +1496,7 @@
 
 * First TS packet: 11,988, UTC: 2020-07-02 00:00:08.02
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 5, size: 47 bytes
+  Section: 0 (last: 1), version: 4, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1550,7 +1559,7 @@
 
 * First TS packet: 13,318, UTC: 2020-07-02 00:00:10.03
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 5, size: 47 bytes
+  Section: 0 (last: 1), version: 4, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1807,7 +1816,7 @@
 
 * First TS packet: 14,666, UTC: 2020-07-02 00:00:12.05
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 6, size: 47 bytes
+  Section: 0 (last: 1), version: 5, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -1861,7 +1870,7 @@
 
 * First TS packet: 15,996, UTC: 2020-07-02 00:00:14.05
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 6, size: 47 bytes
+  Section: 0 (last: 1), version: 5, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -2005,7 +2014,7 @@
 
 * First TS packet: 17,326, UTC: 2020-07-02 00:00:16.05
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 6, size: 47 bytes
+  Section: 0 (last: 1), version: 5, size: 47 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -2059,7 +2068,7 @@
 
 * First TS packet: 18,656, UTC: 2020-07-02 00:00:18.05
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 7, size: 18 bytes
+  Section: 0 (last: 1), version: 6, size: 18 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
@@ -2104,7 +2113,7 @@
 
 * First TS packet: 19,986, UTC: 2020-07-02 00:00:20.05
 * EIT p/f Actual, TID 0x4E (78), PID 0x0012 (18)
-  Section: 0 (last: 1), version: 7, size: 18 bytes
+  Section: 0 (last: 1), version: 6, size: 18 bytes
   Service Id: 0x0002 (2)
   TS Id: 0x0007 (7)
   Original Network Id: 0x0001 (1)
