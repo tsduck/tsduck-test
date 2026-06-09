@@ -113,6 +113,9 @@ Options:
       "DVB-S2-8PSK", "DVB-S2-16APSK", "DVB-S2-32APSK", "DVB-S2-QPSK", "DVB-T",
       "DVB-T2", "ISDB-T", "QAM".
 
+  --no-lnb-control
+      DVB-S/S2 receivers: do not send any control command to the LNB.
+
   --polarity value
       DVB-S/S2 receivers: indicate the polarity. The default is "vertical".
       The 'value' must be one of "auto", "horizontal", "left", "none", "right",
