@@ -52,11 +52,11 @@
   - Descriptor 11: ISDB TS Information (0xCD, 205), 20 bytes
     Remote control key id: 0x12 (18)
     TS name: "bar"
-    - Transmission type info: 0xEF (239)
+    - Transmission type info: 0xEF (239) (Reserved, QPSK)
       Service id: 0x1234 (4660)
       Service id: 0x5678 (22136)
       Service id: 0x9ABC (39612)
-    - Transmission type info: 0x23 (35)
+    - Transmission type info: 0x23 (35) (Type a, QPSK)
     Reserved for future use (4 bytes): CD EF 12 56
   - Descriptor 12: ISDB Logo Transmission (0xCF, 207), 7 bytes
     Logo transmission type: 0x01 (CDT transmission scheme 1: direct download data identification)
