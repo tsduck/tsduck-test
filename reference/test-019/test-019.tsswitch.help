@@ -158,6 +158,16 @@ Options:
       On Windows, this is the name of a certificate in the user or system
       store.
 
+  --remote-ephemeral-rsa-bits value
+      With --remote-tls, create an ephemeral self-signed certificate for the
+      remote control. The value specifies the size in bits of the ephemeral RSA
+      key which it generated. The default value is the value of environment
+      variable TSDUCK_TLS_EPHEMERAL_RSA_BITS.
+      Keep in mind that ephemeral self-signed certificates are considered as
+      "invalid" or "insecure" by client applications. Be sure to disable the
+      verification of the TLS server's certificate on the client side. By
+      default, the remote control needs a designated persistent certificate.
+
   --remote-key-path name
       With --remote-tls, path to the private key for the remote control. The
       default value is the value of environment variable TSDUCK_TLS_KEY.
