@@ -302,3 +302,4 @@ repository. But we now limit their size to 20 MB.
 | 205  | Plugin `slice`
 | 206  | Plugin `time`
 | 207  | Plugin `eitinject`: preservation of midnight events in EIT p/f (issue #1724)
+| 208  | Non-regression on `ISDB_terrestrial_delivery_system_descriptor` (issue #1733)

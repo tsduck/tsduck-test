@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <NIT version="8" current="true" network_id="0x7ED2" actual="true">
+    <metadata PID="16"/>
+    <network_name_descriptor network_name="=)ED!!2"/>
+    <system_management_descriptor broadcasting_flag="0" broadcasting_identifier="0x03" additional_broadcasting_identification="0x01"/>
+    <transport_stream transport_stream_id="0x7ED2" original_network_id="0x7ED2" preferred_section="0">
+      <service_list_descriptor>
+        <service service_id="0x4810" service_type="0x01"/>
+        <service service_id="0x4811" service_type="0x01"/>
+        <service service_id="0x4990" service_type="0xC0"/>
+        <service service_id="0x4813" service_type="0xA1"/>
+      </service_list_descriptor>
+      <ISDB_terrestrial_delivery_system_descriptor area_code="0x0AC6" guard_interval="1/8" transmission_mode="8k">
+        <frequency value="485,142,857"/>
+        <frequency value="497,142,857"/>
+        <frequency value="503,142,857"/>
+        <frequency value="509,142,857"/>
+        <frequency value="533,142,857"/>
+        <frequency value="545,142,857"/>
+        <frequency value="551,142,857"/>
+        <frequency value="557,142,857"/>
+        <frequency value="563,142,857"/>
+        <frequency value="569,142,857"/>
+        <frequency value="575,142,857"/>
+        <frequency value="587,142,857"/>
+        <frequency value="593,142,857"/>
+        <frequency value="605,142,857"/>
+        <frequency value="611,142,857"/>
+        <frequency value="623,142,857"/>
+        <frequency value="629,142,857"/>
+        <frequency value="635,142,857"/>
+        <frequency value="641,142,857"/>
+        <frequency value="653,142,857"/>
+        <frequency value="659,142,857"/>
+        <frequency value="665,142,857"/>
+        <frequency value="671,142,857"/>
+        <frequency value="689,142,857"/>
+        <frequency value="695,142,857"/>
+      </ISDB_terrestrial_delivery_system_descriptor>
+      <partial_reception_descriptor>
+        <service id="0x4990"/>
+      </partial_reception_descriptor>
+      <TS_information_descriptor remote_control_key_id="0x04" ts_name="ABS.=)EDJ|Aw">
+        <transmission_type transmission_type_info="0x0F">
+          <service id="0x4810"/>
+          <service id="0x4811"/>
+          <service id="0x4813"/>
+        </transmission_type>
+        <transmission_type transmission_type_info="0xAF">
+          <service id="0x4990"/>
+        </transmission_type>
+      </TS_information_descriptor>
+    </transport_stream>
+  </NIT>
+</tsduck>
