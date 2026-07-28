@@ -30,6 +30,12 @@ Options:
       "MPEG-2-Video", "MPEG-4-Video", "Teletext", "undefined", "VC1", "VC4",
       "VP9", "VVC".
 
+  --dts
+      Select packets with a DTS (in a clear PES header).
+
+  --dts-range minvalue[-maxvalue]
+      Select packets with DTS values in the specified range.
+
   --ecm
       Select packets from any ECM PID.
 
@@ -152,8 +158,11 @@ Options:
   --pcr
       Select packets with PCR or OPCR.
 
+  --pcr-range minvalue[-maxvalue]
+      Select packets with PCR or OPCR values in the specified range.
+
   --pes
-      Select packets with clear PES headers.
+      Select packets with a clear PES header.
 
   -p pid1[-pid2]
   --pid pid1[-pid2]
@@ -162,6 +171,12 @@ Options:
 
   --psi-si
       Select packets from any PSI/SI PID.
+
+  --pts
+      Select packets with a PTS (in a clear PES header).
+
+  --pts-range minvalue[-maxvalue]
+      Select packets with PTS values in the specified range.
 
   --reset-label label1[-label2]
       Clear the specified labels on the selected packets. Do not drop
