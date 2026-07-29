@@ -204,3 +204,13 @@ test_tsp \
     >"$OUTDIR/$SCRIPT.analyze.json.line.log" 2>&1
 
 test_text $SCRIPT.analyze.json.line.log
+
+# ==== timewrap plugin
+
+test_tsp \
+    -I file $(fpath "$INFILE") \
+    -P timewrap \
+    -O drop \
+    >"$OUTDIR/$SCRIPT.timewrap.log" 2>&1
+
+test_text $SCRIPT.timewrap.log
