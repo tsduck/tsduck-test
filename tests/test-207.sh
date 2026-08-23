@@ -12,7 +12,7 @@ test_tsp --bitrate 1,000,000 \
     -P inject "$PATXML" --pid 0 --bitrate 3000 --stuffing \
     -P inject "$TDTXML" --pid 20 --bitrate 1500 --stuffing \
     -P timeref --start 2026/05/28:23:59:55 \
-    -P eitinject --file  $(fpath "$INDIR/$SCRIPT.xml") --wait-first-batch \
+    -P eitinject --file $(fpath "$INDIR/$SCRIPT.xml") --wait-first-batch \
                  --stuffing --cycle-pf-actual 2 --cycle-schedule-actual-prime 2 \
     -P until --packet 7000 \
     -P tables --packet-index --all-sections --pid 18-20 -o $(fpath "$OUTDIR/$SCRIPT.txt") \
