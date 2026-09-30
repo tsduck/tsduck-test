@@ -320,8 +320,8 @@ Options:
       philippines --time-reference UTC+8'. This is a handy shortcut when
       working on Philippines transport streams.
 
-  -r[value]
-  --realtime[=value]
+  -r[true|false|unknown]
+  --realtime[=true|false|unknown]
       Specifies if tsp and all plugins should use default values for real-time
       or offline processing. By default, if any plugin prefers real-time, the
       real-time defaults are used. If no plugin prefers real-time, the offline
