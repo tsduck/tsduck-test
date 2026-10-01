@@ -6,7 +6,8 @@ Usage: tsp -I srt [options] [URL]
 Parameter:
 
   Optional srt:// URL which specifies all or most parameters. The parameters in
-  the URL overwrite specific options in case of conflict.
+  the URL overwrite specific options in case of conflict. It is possible to use
+  an URL only, options only, or a mixture of both.
 
 Options:
 
@@ -15,7 +16,8 @@ Options:
       The default is one.
 
   --bufferapi
-      When set, this socket uses the Buffer API. The default is Message API.
+      When set, this socket uses the Buffer API. This is the default in file
+      mode. It is not available in live mode
 
   -c ip-address:port
   --caller ip-address:port
@@ -143,13 +145,13 @@ Options:
       SRTO_INPUTBW and SRTO_OHEADBW options.
 
   --messageapi
-      Use the Message API. This is now the default, use --bufferapi to disable
-      it.
+      Use the Message API. This is the default and only possible API in live
+      mode. Use --bufferapi to use the Buffer API in file mode.
 
   --min-version value
-      The minimum SRT version that is required from the peer, in the format
-      0x010203 for v1.2.3 for instance. A connection to a peer that does not
-      satisfy the minimum version requirement will be rejected.
+      The minimum SRT version that is required from the peer, in the format "1.
+      5.3" for instance. A connection to a peer that does not satisfy the
+      minimum version requirement will be rejected.
 
   --mss bytes
       Maximum Segment Size. Used for buffer allocation and rate calculation
@@ -225,7 +227,7 @@ Options:
       Send Buffer Size. Warning: configured in bytes, converted in packets,
       when set, based on MSS value. For desired result, configure MSS first.
 
-  --snddropdelay value
+  --snddropdelay milliseconds
       Sets an extra delay, in milliseconds, before --tlpktdrop is triggered on
       the data sender. This delay is added to the default drop delay time
       interval value. Keep in mind that the longer the delay, the more probable
