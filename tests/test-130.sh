@@ -39,4 +39,33 @@ if $(tspath tsversion) --support srt; then
     test_text $SCRIPT.2.xml
     test_text $SCRIPT.tsp.2.log
 
+    # Similar test using URL
+    PORT=$(( 20011 + ($$ % 40000) ))
+    SRTOPT="transtype=live&enforcedencryption=on&pbkeylen=16&passphrase=abcdefghijklmnop"
+
+    test_tsp -b 1,000,000 \
+        -I null \
+        -P regulate \
+        -P inject --pid 0 --bitrate 15,000 --stuffing $(fpath "$INDIR/$SCRIPT.xml") \
+        -O srt "srt://:$PORT?mode=listener&adapter=$LOCALHOST&$SRTOPT" \
+        >"$OUTDIR/$SCRIPT.tsp.3.log" 2>&1 &
+
+    outpid=$!
+
+    test_tsp \
+        -I srt "srt://$LOCALHOST:$PORT?mode=caller&adapter=$LOCALHOST&$SRTOPT" \
+        -P tables --max-tables 1 --pid 0 --xml $(fpath "$OUTDIR/$SCRIPT.4.xml") --binary-output $(fpath "$OUTDIR/$SCRIPT.4.bin") \
+        -O drop \
+        >"$OUTDIR/$SCRIPT.tsp.4.log" 2>&1
+
+    wait $outpid
+
+    # Remove SRT logs, they are not deterministic.
+    sed -i -e '/\/SRT:/d' "$OUTDIR/$SCRIPT.tsp.3.log" "$OUTDIR/$SCRIPT.tsp.4.log"
+
+    test_text $SCRIPT.tsp.3.log
+    test_bin $SCRIPT.4.bin
+    test_text $SCRIPT.4.xml
+    test_text $SCRIPT.tsp.4.log
+
 fi
