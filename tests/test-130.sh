@@ -31,8 +31,8 @@ if $(tspath tsversion) --support srt; then
 
     wait $outpid
 
-    # Remove SRT logs, they are not deterministic.
-    sed -i -e '/\/SRT:/d' "$OUTDIR/$SCRIPT.tsp.1.log" "$OUTDIR/$SCRIPT.tsp.2.log"
+    cleanup_srt_log $SCRIPT.tsp.1.log
+    cleanup_srt_log $SCRIPT.tsp.2.log
 
     test_text $SCRIPT.tsp.1.log
     test_bin $SCRIPT.2.bin
@@ -60,8 +60,8 @@ if $(tspath tsversion) --support srt; then
 
     wait $outpid
 
-    # Remove SRT logs, they are not deterministic.
-    sed -i -e '/\/SRT:/d' "$OUTDIR/$SCRIPT.tsp.3.log" "$OUTDIR/$SCRIPT.tsp.4.log"
+    cleanup_srt_log $SCRIPT.tsp.3.log
+    cleanup_srt_log $SCRIPT.tsp.4.log
 
     test_text $SCRIPT.tsp.3.log
     test_bin $SCRIPT.4.bin

@@ -153,8 +153,8 @@ if $(tspath tsversion) --support srt; then
 
     wait $outpid
 
-    # Remove SRT logs, they are not deterministic.
-    sed -i -e '/\/SRT:/d' -e '/:SRT\./d' "$OUTDIR/$SCRIPT.tsp.12s.log" "$OUTDIR/$SCRIPT.tsp.12r.log"
+    cleanup_srt_log $SCRIPT.tsp.12s.log
+    cleanup_srt_log $SCRIPT.tsp.12r.log
 
     test_text $SCRIPT.tsp.12s.log
     test_text $SCRIPT.tsp.12r.log
