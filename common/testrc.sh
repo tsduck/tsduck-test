@@ -421,7 +421,7 @@ exclude_on_asan() {
 # Cleanup a log file from non-deterministic SRT logs.
 # Syntax: cleanup_srt_log test-XXX.log
 cleanup_srt_log() {
-    sed -i -e '/\/SRT:/d' -e '/\/!W:SRT/d' -e '/:socket:/d' $(test_outputs "$1")
+    sed -i -e '/\/SRT:/d' -e '/!W:SRT/d' -e '/:socket:/d' $(test_outputs "$1")
 }
 
 # Get the list of output files matching a wildcard.
