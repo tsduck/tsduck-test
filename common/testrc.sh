@@ -412,8 +412,16 @@ native_only() {
 # Abort current test if testing on asan (address sanitizer) build.
 # Useful to skip java/python tests and tests which use libraries with memory leaks and other issues.
 exclude_on_asan() {
-    if [[ -n "$ASAN_RUN" ]]; then
+    if $(tspath tsp) --version=compiler 2>&1 | grep -q "compiled with ASAN"; then
         pass "skipped on address sanitizer build"
+        exit $EXIT_SUCCESS
+    fi
+}
+
+# Abort current test if testing on ubsan (undefined behavior sanitizer) build.
+exclude_on_ubsan() {
+    if $(tspath tsp) --version=compiler 2>&1 | grep -q "compiled with UBSAN"; then
+        pass "skipped on undefined behavior sanitizer build"
         exit $EXIT_SUCCESS
     fi
 }
