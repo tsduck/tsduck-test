@@ -319,7 +319,7 @@
     CPCM version: 1
     Copy control: Copy Once (1)
     Do not CPCM scramble: true, viewable: true
-    Move local: false, copy local: false
+    Move local: false, view local: false
     Move and copy propagation: MAD - Copying and/or Movement within the same Authorized Domain is allowed. (2)
     View propagation: VCPCM - Viewing, i.e. Consumption, using any CPCM-compliant Storage Entity is allowed. (3)
     Remote access record: true, export beyond trust: true, image constraint : false
@@ -330,7 +330,7 @@
     CPCM version: 1
     Copy control: Copy No More (2)
     Do not CPCM scramble: false, viewable: false
-    Move local: false, copy local: false
+    Move local: true, view local: false
     Move and copy propagation: MGAD - Copying and/or Movement within the same Geographically-constrained AD is allowed. (1)
     View propagation: VLAD - Viewing, i.e. Consumption, within the same Localized AD is allowed. (0)
     Remote access record: true, export beyond trust: true, image constraint : true
@@ -346,7 +346,7 @@
     CPCM version: 1
     Copy control: Not Asserted (0)
     Do not CPCM scramble: true, viewable: false
-    Move local: false, copy local: false
+    Move local: false, view local: true
     Move and copy propagation: MGAD - Copying and/or Movement within the same Geographically-constrained AD is allowed. (1)
     View propagation: VLAD - Viewing, i.e. Consumption, within the same Localized AD is allowed. (0)
     Remote access record: false, export beyond trust: false, image constraint : true
