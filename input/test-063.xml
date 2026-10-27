@@ -287,33 +287,33 @@
         text="sample text"/>
 
 	<ISDB_target_region_descriptor region_spec_type="0x03"/>
-	
+
 	<ISDB_target_region_descriptor region_spec_type="0x01"
 	  regions_mask="00000000000000000000000000000000000000000000000000000000"/>
-	  
+
 	<ISDB_target_region_descriptor region_spec_type="0x01"
 	  regions_mask="11111111111111111111111111111111111111111111111111111111"/>
-	  
+
 	<ISDB_target_region_descriptor region_spec_type="0x01"
 	  regions_mask="00000000110011000111100101001000011100110100010001111010"/>
-	  
+
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0xAA" link_destination_type="0x55">
 		<private_data>aa bb cc dd ee ff</private_data>
 	</ISDB_hyperlink_descriptor>
-	
+
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0x05" link_destination_type="0x01">
 		<Service original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF"/>
 	</ISDB_hyperlink_descriptor>
-	
+
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0x09" link_destination_type="0x02">
 		<Event original_network_id="0xBEEF" transport_stream_id="0xBEEF" service_id="0xBEEF" event_id="0x1234"/>
 	</ISDB_hyperlink_descriptor>
-	
+
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0x03" link_destination_type="0x03">
 		<Module original_network_id="0x0001" transport_stream_id="0x0001" service_id="0x0003" event_id="0x0004"
 				component_tag="0x44" module_id="0x9876"/>
 	</ISDB_hyperlink_descriptor>
-	
+
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0x07" link_destination_type="0x04">
 		<Content original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF" content_id="0x5555"/>
 	</ISDB_hyperlink_descriptor>
@@ -330,23 +330,23 @@
 	<ISDB_hyperlink_descriptor hyper_linkage_type="0xEF" link_destination_type="0x07">
 		<StoredContent uri="https://tsduck.io/"/>
 	</ISDB_hyperlink_descriptor>
- 
+
 	<ISDB_LDT_linkage_descriptor original_service_id="0xAABB" transport_stream_id="0xCCDD" original_network_id="0xEEFF"/>
-	
+
 	<ISDB_LDT_linkage_descriptor original_service_id="0x1111" transport_stream_id="0x2222" original_network_id="0x3333">
 		<Description id="0x9876" type="0x2" user_defined="0"/>
 		<Description id="0x1234" type="0xF" user_defined="56"/>
 		<Description id="0xBEEF" type="0x1" user_defined="202"/>
 	</ISDB_LDT_linkage_descriptor>
-	
+
 	<ISDB_connected_transmission_descriptor connected_transmission_group_id="0x7654" segment_type="0x2" modulation_type_A="0x0" modulation_type_B="0x0" modulation_type_C="0x2"/>
-	
+
 	<ISDB_connected_transmission_descriptor connected_transmission_group_id="0x1357" segment_type="0x1" modulation_type_A="0x1" modulation_type_B="0x2" modulation_type_C="0x3">
 		<additional_connected_transmission_info> 00 00 de ad be ef 00 00 </additional_connected_transmission_info>
 	</ISDB_connected_transmission_descriptor>
-	
+
 	<ISDB_component_group_descriptor component_group_type="0x0"/>
-	
+
 	<ISDB_component_group_descriptor component_group_type="0x3">
 		<component_group component_group_id="0x0" total_bit_rate="12" explanation="main">
 			<CAUnit CA_unit_id="0x1"/>
@@ -360,10 +360,10 @@
 					70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e
 				</component_tags>
 			</CAUnit>
-		</component_group> 
+		</component_group>
 		<component_group component_group_id="0x1" total_bit_rate="3" explanation="other"/>
 	</ISDB_component_group_descriptor>
-	
+
 	<ISDB_component_group_descriptor component_group_type="0x4">
 		<component_group component_group_id="0x0" explanation="main 2">
 			<CAUnit CA_unit_id="0x1"/>
@@ -377,14 +377,14 @@
 					aa bb cc dd ee ff
 				</component_tags>
 			</CAUnit>
-		</component_group> 
+		</component_group>
 		<component_group component_group_id="0x1" explanation="other 2"/>
 	</ISDB_component_group_descriptor>
-	
+
 	<ISDB_network_identifier_descriptor country_code="JPN" media_type="TB" network_id="0x7654"/>
-	
+
 	<ISDB_network_identifier_descriptor country_code="JPN" media_type="BS" network_id="0x11FF"/>
-		
+
 	<ISDB_network_identifier_descriptor country_code="JPN" media_type="AC" network_id="0xEEEE">
 		<private_data>
 			00 11 22 33 44

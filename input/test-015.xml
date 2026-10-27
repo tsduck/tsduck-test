@@ -18,7 +18,7 @@
     <component_descriptor stream_content="0xB" stream_content_ext="0xE" component_type="0x05" language_code="swe"/>
 
     <component_descriptor stream_content="0xB" stream_content_ext="0xE" component_type="0" language_code="deu"/>
-	
+
 	<component_descriptor stream_content="0x6" stream_content_ext="0x5" component_type="0x11" language_code="eng"/>
 
     <AAC_descriptor profile_and_level="0x45"/>
@@ -1075,8 +1075,8 @@
         98 74 56
       </private_data>
     </J2K_video_descriptor>
-	
-	<J2K_video_descriptor
+
+    <J2K_video_descriptor
         profile_and_level="0x0346"
         horizontal_size="1920"
         vertical_size="1080"
@@ -1086,25 +1086,25 @@
         NUM_frame_rate="50"
         still_mode="false"
         interlaced_video="true"
-		colour_primaries="9"
-		transfer_characteristics="15"
-		matrix_coefficients="9"
-		video_full_range_flag="true">
-	  	<mdm 
-			X_c0="810" Y_c0="145"
-			X_c1="1810" Y_c1="1145"
-			X_c2="970" Y_c2="1217"
-			X_wp="45" Y_wp="54"
-			L_max="145263" L_min="0"
-			MaxCLL="1000"
-			MaxFALL="999"/>
+	colour_primaries="9"
+	transfer_characteristics="15"
+	matrix_coefficients="9"
+	video_full_range_flag="true">
+      <mdm
+	  X_c0="810" Y_c0="145"
+	  X_c1="1810" Y_c1="1145"
+	  X_c2="970" Y_c2="1217"
+	  X_wp="45" Y_wp="54"
+	  L_max="145263" L_min="0"
+	  MaxCLL="1000"
+	  MaxFALL="999"/>
       <private_data>
         98 76 54 32
       </private_data>
     </J2K_video_descriptor>
-	
-	<J2K_video_descriptor
-		profile_and_level="0x0567"
+
+    <J2K_video_descriptor
+	profile_and_level="0x0567"
         horizontal_size="3840"
         vertical_size="2160"
         max_bit_rate="12000000"
@@ -1113,26 +1113,26 @@
         NUM_frame_rate="100"
         still_mode="false"
         interlaced_video="false"
-		colour_primaries="5"
-		transfer_characteristics="5"
-		matrix_coefficients="4"
-		video_full_range_flag="true">
-		<stripe
-		  strp_max_idx="127"
-		  strp_height="1000"/>
-		<block
-		  full_horizontal_size="3840"
-		  full_vertical_size="2160"
-		  blk_width="40"
-		  blk_height="40"
-		  max_blk_idx_h="95"
-		  max_blk_idx_v="53"
-		  blk_idx_h="12"
-		  blk_idx_v="13"/>
+	colour_primaries="5"
+	transfer_characteristics="5"
+	matrix_coefficients="4"
+	video_full_range_flag="true">
+      <stripe
+	  strp_max_idx="127"
+	  strp_height="1000"/>
+      <block
+	  full_horizontal_size="3840"
+	  full_vertical_size="2160"
+	  blk_width="40"
+	  blk_height="40"
+	  max_blk_idx_h="95"
+	  max_blk_idx_v="53"
+	  blk_idx_h="12"
+	  blk_idx_v="13"/>
     </J2K_video_descriptor>
-	
-	<J2K_video_descriptor
-		profile_and_level="0x0789"
+
+    <J2K_video_descriptor
+	profile_and_level="0x0789"
         horizontal_size="3840"
         vertical_size="2160"
         max_bit_rate="12000000"
@@ -1141,10 +1141,10 @@
         NUM_frame_rate="100"
         still_mode="false"
         interlaced_video="false"
-		colour_primaries="12"
-		transfer_characteristics="18"
-		matrix_coefficients="14"
-		video_full_range_flag="true"/>
+	colour_primaries="12"
+	transfer_characteristics="18"
+	matrix_coefficients="14"
+	video_full_range_flag="true"/>
 
     <!-- "CUEI" registration identifier required for SCTE-35 splice information -->
     <registration_descriptor format_identifier="0x43554549"/>
