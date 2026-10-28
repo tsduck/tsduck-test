@@ -19,6 +19,14 @@ Options:
       Specifies the Linux DVB adapter N (/dev/dvb/adapterN). This option can be
       used instead of device name.
 
+  --allow-emulator-pipes
+      Allow the tuner emulator to run processes using pipes. The TSDuck tuner
+      emulator uses XML files to describe transport streams in an emulated
+      network. The content of a transport stream can be read from a file or
+      from the output of a piped command. By default, running commands through
+      the emulator is disabled for security reasons. This option authorizes the
+      creation of processes.
+
   --atsc
       Assume that the transport stream is an ATSC one. ATSC streams are
       normally automatically detected from their signalization. This option is
