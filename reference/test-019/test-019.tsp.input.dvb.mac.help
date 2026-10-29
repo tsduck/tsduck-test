@@ -9,6 +9,14 @@ Options:
   --adapter N
       This option can be used instead of device name.
 
+  --allow-emulator-pipes
+      Allow the tuner emulator to run processes using pipes. The TSDuck tuner
+      emulator uses XML files to describe transport streams in an emulated
+      network. The content of a transport stream can be read from a file or
+      from the output of a piped command. By default, running commands through
+      the emulator is disabled for security reasons. This option authorizes the
+      creation of processes.
+
   --bandwidth value
       Bandwidth in Hz. For compatibility with old versions, low values (below
       1000) are interpreted in MHz. The default is 8,000,000 for DVB-T/T2 and
