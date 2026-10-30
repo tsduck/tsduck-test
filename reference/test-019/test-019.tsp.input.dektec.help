@@ -90,6 +90,12 @@ Options:
       ISDB-T demodulators: indicate the sub-channel number (0..41) of the
       centre segment of the spectrum. The default is 22.
 
+  --isi value
+      DVB-S2 demodulators: select the Input Stream Id (ISI) of the multistream
+      to demodulate, from 0 to 255. Without this option, the input stream
+      selection of the device is left unchanged. This option has no effect on
+      single-stream carriers or non-DVB-S2 modulations.
+
   --j83 value
       QAM demodulators: indicate the ITU-T J.83 annex to use. A is DVB-C, B is
       American QAM, C is Japanese QAM. The default is A.
@@ -115,6 +121,19 @@ Options:
 
   --no-lnb-control
       DVB-S/S2 receivers: do not send any control command to the LNB.
+
+  --pls-code value
+      DVB-S2 demodulators: specify the Physical Layer Scrambling (PLS) code
+      value, from 0 to 262143, in GOLD or ROOT mode depending on --pls-mode.
+      The default is 0 (GOLD), the standard scrambling sequence. Other values
+      require Dektec SDK 2026.09 or higher (drivers, DTAPI 6.14 and
+      DtapiService) and a device which supports them, such as DTA-2127,
+      DTA-2128 or DTA-2132.
+
+  --pls-mode mode
+      DVB-S2 demodulators: specify the Physical Layer Scrambling (PLS) mode of
+      --pls-code. The default is GOLD.
+      The 'mode' must be one of "GOLD", "ROOT".
 
   --polarity value
       DVB-S/S2 receivers: indicate the polarity. The default is "vertical".
