@@ -70,6 +70,7 @@ case $OS in
         [[ -d '/cygdrive/c/Program Files (x86)' ]] && SYS64=true
         ;;
     msys*|mingw*)
+        [[ $OS == *arm64 ]] && CPU=arm64
         OS=windows
         [[ -d '/c/Program Files (x86)' ]] && SYS64=true
         ;;
@@ -101,8 +102,13 @@ fi
 if [[ $OS == windows ]]; then
     WINDOWS=true
     TSDUCKBIN_ROOT=$TSDUCKDIR/bin
-    TSDUCKBIN_RELEASE=$TSDUCKBIN_ROOT/Release-x64
-    TSDUCKBIN_DEBUG=$TSDUCKBIN_ROOT/Debug-x64
+    if [[ $CPU == arm64 ]]; then
+        TSDUCKBIN_RELEASE=$TSDUCKBIN_ROOT/Release-ARM64
+        TSDUCKBIN_DEBUG=$TSDUCKBIN_ROOT/Debug-ARM64
+    else
+        TSDUCKBIN_RELEASE=$TSDUCKBIN_ROOT/Release-x64
+        TSDUCKBIN_DEBUG=$TSDUCKBIN_ROOT/Debug-x64
+    fi
     TSDUCKBIN32_RELEASE=$TSDUCKBIN_ROOT/Release-Win32
     TSDUCKBIN32_DEBUG=$TSDUCKBIN_ROOT/Debug-Win32
     EXE=.exe
