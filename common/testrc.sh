@@ -416,7 +416,7 @@ native_only() {
 }
 
 # Abort current test if testing on asan (address sanitizer) build.
-# Useful to skip java/python tests and tests which use libraries with memory leaks and other issues.
+# Useful to skip java/python tests where the external main application doesn't start with asan.
 exclude_on_asan() {
     if $(tspath tsp) --version=compiler 2>&1 | grep -q "compiled with ASAN"; then
         pass "skipped on address sanitizer build"
@@ -428,6 +428,15 @@ exclude_on_asan() {
 exclude_on_ubsan() {
     if $(tspath tsp) --version=compiler 2>&1 | grep -q "compiled with UBSAN"; then
         pass "skipped on undefined behavior sanitizer build"
+        exit $EXIT_SUCCESS
+    fi
+}
+
+# Abort current test if testing on tsan (thread sanitizer) build.
+# Useful to skip java/python tests where the external main application doesn't start with tsan.
+exclude_on_tsan() {
+    if $(tspath tsp) --version=compiler 2>&1 | grep -q "compiled with TSAN"; then
+        pass "skipped on thread sanitizer build"
         exit $EXIT_SUCCESS
     fi
 }

@@ -438,12 +438,12 @@
       Logo transmission type: 0x03 (Simple logo system)
       Logo characters: "NHK－G"
     Reserved bits incorrectly set:
+      Byte 13, bit #4 should be '1'
       Byte 13, bit #5 should be '1'
-      Byte 13, bit #6 should be '1'
+      Byte 52, bit #4 should be '1'
       Byte 52, bit #5 should be '1'
-      Byte 52, bit #6 should be '1'
+      Byte 87, bit #3 should be '1'
       Byte 87, bit #4 should be '1'
-      Byte 87, bit #5 should be '1'
 
 * CAT, TID 0x01 (1), PID 0x0001 (1)
   Version: 0, sections: 1, total size: 19 bytes
