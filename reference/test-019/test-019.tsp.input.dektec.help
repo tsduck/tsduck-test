@@ -171,6 +171,12 @@ Options:
       with DiSEqC switches and 0 to 1 for non-DiSEqC switches. The default is
       0.
 
+  --serial value
+      Serial number of the Dektec device to use, as displayed by "tsdektec -a
+      -v" or in the JSON output of "tsdektec -a -j". The options --device and
+      --serial are mutually exclusive. By default, use the first input Dektec
+      device.
+
   --smpte-2022-fec
       TS-over-IP: Use SMPTE-2022 error correction.
 

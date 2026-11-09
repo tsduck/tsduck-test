@@ -412,6 +412,12 @@ Options:
       the satellite frequency is better known than the intermediate frequency.
       The options --frequency and --satellite-frequency are mutually exclusive.
 
+  --serial value
+      Serial number of the Dektec device to use, as displayed by "tsdektec -a
+      -v" or in the JSON output of "tsdektec -a -j". The options --device and
+      --serial are mutually exclusive. By default, use the first output Dektec
+      device.
+
   --smpte-2022-d value
       TS-over-IP with SMPTE-2022 error correction: Specify the number of rows
       in the FEC matrix, aka 'D' parameter.
