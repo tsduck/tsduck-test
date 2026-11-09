@@ -101,6 +101,12 @@ Options:
   --reset
       Reset the device.
 
+  -s value
+  --serial value
+      Serial number of the device to control, as displayed by "tsdektec -a -v"
+      or in the JSON output of "tsdektec -a -j". The device index parameter and
+      --serial are mutually exclusive.
+
   -v
   --verbose
       Produce verbose output.
