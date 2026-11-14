@@ -305,3 +305,4 @@ repository. But we now limit their size to 20 MB.
 | 208  | Non-regression on `ISDB_terrestrial_delivery_system_descriptor` (issue #1733)
 | 209  | Plugin `spliceinject`: event PTS close to wrap-down point (issue #1742)
 | 210  | TS extraction from T2 PLP's with NPD, in HEM and in NM with ISSY (issue #1759).
+| 211  | Command `tsanalyze`: identification of DVB-TTML subtitle PID's (ETSI EN 303 560)
