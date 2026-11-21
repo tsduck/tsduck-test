@@ -4,10 +4,6 @@
 source $(dirname $0)/../common/testrc.sh
 test_cleanup "$SCRIPT.*"
 
-# Looking for GNU date command: "gdate" first, then "date" if not found.
-DATE=$(which gdate 2>/dev/null)
-DATE=${DATE:-date}
-
 # The input XML file is built from an initial file plus a lot of generated EIT.
 XMLFILE="$TMPDIR/$SCRIPT.xml"
 (
@@ -15,7 +11,7 @@ XMLFILE="$TMPDIR/$SCRIPT.xml"
 
     # Events to generate
     EVENT_ID=3000
-    EVENT_DATE=$($DATE -d "2020-06-13 05:00:00" +%s)
+    EVENT_DATE=$(date -d "2020-06-13 05:00:00" +%s)
     EVENT_COUNT=100
     DESC_COUNT=8
 
@@ -30,7 +26,7 @@ XMLFILE="$TMPDIR/$SCRIPT.xml"
     
     # Generate events
     for ((i=0; $i < $EVENT_COUNT; i++)); do
-        evdate=$($DATE -d @$EVENT_DATE '+%Y-%m-%d %H:%M:%S')
+        evdate=$(date -d @$EVENT_DATE '+%Y-%m-%d %H:%M:%S')
         printf '    <event event_id="%d" start_time="%s" duration="00:01:00">\n' $EVENT_ID "$evdate"
         for ((desc=0; $desc < $DESC_COUNT; desc++)); do
             printf '      <short_event_descriptor language_code="foo">\n'

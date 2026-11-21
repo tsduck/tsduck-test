@@ -52,9 +52,10 @@ trace() { $VERBOSE && info "$PRVOID  $*"; }
 usage() { echo >&2 "invalid command, try \"$SCRIPT --help\""; exit $EXIT_FAILURE; }
 
 # Use GNU variants of sed and grep when available.
-unalias sed grep 2>/dev/null
+unalias sed grep date 2>/dev/null
 [[ -n "$(which gsed 2>/dev/null)" ]] && sed() { gsed "$@"; }
 [[ -n "$(which ggrep 2>/dev/null)" ]] && grep() { ggrep "$@"; }
+[[ -n "$(which gdate 2>/dev/null)" ]] && date() { gdate "$@"; }
 
 # Prefix of a file path (remove extension).
 prefix() { sed -e 's/\.[^\.]*$//' <<<$1; }
@@ -386,22 +387,44 @@ test_arg() {
     return 1
 }
 
+# Get a start time for an operation. Return seconds since Epoch.
+start_time() {
+    date +%s
+}
+
+# Compute a duration, as a string, since a start_time.
+duration_since() {
+    local diff=$(( $(date +%s) - $1 ))
+    local hours=$(( $diff / 3600 ))
+    local minutes=$(( ($diff / 60) % 60 ))
+    local seconds=$(( $diff % 60 ))
+    if [[ $hours -gt 0 ]]; then
+        printf '%dh %dmn %ds' $hours $minutes $seconds
+    elif [[ $minutes -gt 0 ]]; then
+        printf '%dmn %ds' $minutes $seconds
+    else
+        printf '%ds' $seconds
+    fi
+}
+
 # Initializes a test run, reset passed and failed tests.
 test_start() {
     rm -f "$PASSED" "$FAILED"
     touch "$PASSED" "$FAILED"
+    START_TIME=$(start_time)
 }
 
 # Exit test script, report failed or passed tests.
 test_exit() {
+    DURATION=$(duration_since $START_TIME)
     NPASSED=$(linecount "$PASSED")
     NFAILED=$(linecount "$FAILED")
     if $TESTINIT; then
-        info "$PRPASS  Tests initialization completed"
+        info "$PRPASS  Tests initialization completed in $DURATION"
     elif [[ $NFAILED -eq 0 ]]; then
-        info "$PRPASS  ALL $NPASSED tests passed"
+        info "$PRPASS  ALL $NPASSED tests passed in $DURATION"
     else
-        info "$PRFAIL  $NFAILED tests FAILED, $NPASSED tests passed, review failed tests in $FAILED"
+        info "$PRFAIL  $NFAILED tests FAILED, $NPASSED tests passed, $DURATION, review failed tests in $FAILED"
     fi
     exit $NFAILED
 }
