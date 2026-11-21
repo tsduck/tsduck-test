@@ -186,9 +186,9 @@
     <ISDB_hyperlink_descriptor hyper_linkage_type="0x03" link_destination_type="0x03">
       <Module original_network_id="0x0001" transport_stream_id="0x0001" service_id="0x0003" event_id="0x0004" component_tag="0x44" module_id="0x9876"/>
     </ISDB_hyperlink_descriptor>
-    <generic_descriptor tag="0xC5">
-      07 04 AA BB CC DD EE FF 55 55
-    </generic_descriptor>
+    <ISDB_hyperlink_descriptor hyper_linkage_type="0x07" link_destination_type="0x04">
+      <Content original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF" content_id="0x5555"/>
+    </ISDB_hyperlink_descriptor>
     <ISDB_hyperlink_descriptor hyper_linkage_type="0x88" link_destination_type="0x05">
       <ContentModule original_network_id="0xAABB" transport_stream_id="0xCCDD" service_id="0xEEFF" content_id="0x5555" component_tag="0xAA" module_id="0x0BCD"/>
     </ISDB_hyperlink_descriptor>

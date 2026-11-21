@@ -694,11 +694,18 @@
         "link_destination_type": 3
       },
       {
-        "#name": "generic_descriptor",
+        "#name": "ISDB_hyperlink_descriptor",
         "#nodes": [
-          "07 04 AA BB CC DD EE FF 55 55"
+          {
+            "#name": "Content",
+            "content_id": 21845,
+            "original_network_id": 43707,
+            "service_id": 61183,
+            "transport_stream_id": 52445
+          }
         ],
-        "tag": 197
+        "hyper_linkage_type": 7,
+        "link_destination_type": 4
       },
       {
         "#name": "ISDB_hyperlink_descriptor",
