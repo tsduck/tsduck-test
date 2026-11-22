@@ -22,7 +22,7 @@ test_text $SCRIPT.tsdump.1.log
 
 # Create some packets, test 2
 test_tsp \
-    -I craft --count 2 --cc 7 --no-payload --private-data 96321478 --es-priority --discontinuity --splice-countdown 0x8A \
+    -I craft --count 2 --cc 7 --no-payload --private-data 96321478 --es-priority --discontinuity --splice-countdown -118 \
     -O file $(fpath "$OUTDIR/$SCRIPT.2.ts") \
     >"$OUTDIR/$SCRIPT.tsp.2.log" 2>&1
 
