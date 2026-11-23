@@ -61,11 +61,11 @@ Options:
   --max-file-size value
       Maximum size of files to analyze or extract. Each received file is
       accumulated in memory, chunk by chunk, until the file is complete. After
-      processing the file, all chunks are freeed. This option is useful when
-      the stream contains many large files which clutter the memory during
-      their reception. All files which are announced as larger than the
-      specified size are ignored. By default, all files are received and
-      analyzed or saved.
+      processing the file, all chunks are freed. This option is useful when the
+      stream contains many large files which clutter the memory during their
+      reception. All files which are announced as larger than the specified
+      size are ignored. By default, all files are received and analyzed or
+      saved.
 
   --only-label label1[-label2]
       Invoke this plugin only for packets with any of the specified labels.
